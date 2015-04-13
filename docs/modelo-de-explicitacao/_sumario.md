@@ -1,0 +1,2 @@
+- [Modelo de explicitação de serviço](./modelo-de-explicitacao/index.md)
+  - [Definição técnica](./modelo-de-explicitacao/definicao-tecnica.md)
