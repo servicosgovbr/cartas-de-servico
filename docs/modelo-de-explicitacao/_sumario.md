@@ -1,2 +1,3 @@
 - [Modelo de explicitação de serviço](./modelo-de-explicitacao/index.md)
   - [Definição técnica](./modelo-de-explicitacao/definicao-tecnica.md)
+    - [Exemplo XSD](./modelo-de-explicitacao/exemplo-xsd.md)
