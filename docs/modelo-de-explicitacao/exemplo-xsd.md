@@ -51,8 +51,8 @@ Arquivo ```XML``` validado pelo ```XSD``` acima definido:
   <titulo>Retificadora On Line (Extrato da DIRPF)</titulo>
 
   <descricao>
-      Alterar alguns dados da declaração, diretamente pela internet, sem a utilização do 
-      programa IRPF e nem do Receitanet. Não há necessidade de preencher novamente os dados que não serão alterados. 
+      Alterar alguns dados da declaração, diretamente pela internet, sem a utilização do
+      programa IRPF e nem do Receitanet. Não há necessidade de preencher novamente os dados que não serão alterados.
   </descricao>
 
 </servico>
