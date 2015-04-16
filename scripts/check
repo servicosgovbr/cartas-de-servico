@@ -10,9 +10,9 @@ if ! which xmllint > /dev/null; then
   exit -1
 fi
 
-XMLLINT_VERSAO_ATUAL=$(xmllint --version 2>&1 | head -n1 | grep -Eo '\d+')
+XMLLINT_VERSAO_ATUAL=$(xmllint --version 2>&1 | head -n1 | grep -Eo '[0-9]+' || echo 0)
 
-if [ "${XMLLINT_VERSAO_ATUAL:-0}" -lt "$XMLLINT_VERSAO_MINIMA" ]; then
+if [ "$XMLLINT_VERSAO_ATUAL" -lt "$XMLLINT_VERSAO_MINIMA" ]; then
   echo "Versão do xmllint é atualmente ${XMLLINT_VERSAO_ATUAL}. Versão mínima é ${XMLLINT_VERSAO_MINIMA}."
   exit -1
 fi
