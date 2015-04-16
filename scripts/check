@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+CARTAS="${SNAP_CACHE_DIR:-$(pwd)}/cartasServico"
+
+if [ ! -d "$CARTAS" ]; then
+  echo "Diretório de cartas de serviço não encontrado em: $CARTAS"
+  exit -1
+fi
+
+cd "$CARTAS"
+
+find . -type f -regex ".*/v[0-9]*/[^_].*\.xsd" | while read xsd
+do
+  xml="${xsd/.xsd/-exemplo.xml}"
+
+  echo -e "\nValidando arquivo ${xml} contra ${xsd}..."
+  xmllint --noout --schema "$xsd" "$xml"
+done
