@@ -3,7 +3,7 @@
 set -e -o pipefail
 
 XMLLINT_VERSAO_MINIMA='20900'
-CARTAS_DIR='cartasServico'
+CARTAS_DIR='cartas-servico'
 
 if ! which xmllint > /dev/null; then
   echo 'Commando xmllint não encontrado. verifique se você tem o pacote libxml instalado corretamente.'
