@@ -2,14 +2,15 @@
 
 set -e -o pipefail
 
-CARTAS="${SNAP_CACHE_DIR:-$(pwd)}/cartasServico"
+CARTAS_DIR="cartasServico"
 
-if [ ! -d "$CARTAS" ]; then
-  echo "Diretório de cartas de serviço não encontrado em: $CARTAS"
+if [ ! -d "$CARTAS_DIR" ]; then
+  echo "Diretório de cartas de serviço não encontrado em: $(pwd)"
+  echo "Script deve ser executado no diretório principal do projeto"
   exit -1
 fi
 
-cd "$CARTAS"
+cd "$CARTAS_DIR"
 
 find . -type f -regex ".*/v[0-9]*/[^_].*\.xsd" | while read xsd
 do
