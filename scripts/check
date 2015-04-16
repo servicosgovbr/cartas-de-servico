@@ -2,20 +2,33 @@
 
 set -e -o pipefail
 
-CARTAS_DIR="cartasServico"
+XMLLINT_VERSAO_MINIMA='20900'
+CARTAS_DIR='cartasServico'
 
-if [ ! -d "$CARTAS_DIR" ]; then
-  echo "Diretório de cartas de serviço não encontrado em: $(pwd)"
-  echo "Script deve ser executado no diretório principal do projeto"
+if ! which xmllint > /dev/null; then
+  echo 'Commando xmllint não encontrado. verifique se você tem o pacote libxml instalado corretamente.'
   exit -1
 fi
 
-cd "$CARTAS_DIR"
+XMLLINT_VERSAO_ATUAL=$(xmllint --version 2>&1 | head -n1 | grep -Eo '\d+')
 
-find . -type f -regex ".*/v[0-9]*/[^_].*\.xsd" | while read xsd
-do
-  xml="${xsd/.xsd/-exemplo.xml}"
+if [ "${XMLLINT_VERSAO_ATUAL:-0}" -lt "$XMLLINT_VERSAO_MINIMA" ]; then
+  echo "Versão do xmllint é atualmente ${XMLLINT_VERSAO_ATUAL}. Versão mínima é ${XMLLINT_VERSAO_MINIMA}."
+  exit -1
+fi
 
-  echo -e "\nValidando arquivo ${xml} contra ${xsd}..."
-  xmllint --noout --schema "$xsd" "$xml"
-done
+if [ ! -d "$CARTAS_DIR" ]; then
+  echo "Diretório de cartas de serviço não encontrado em: $(pwd)"
+  echo 'Script deve ser executado no diretório principal do projeto'
+  exit -1
+fi
+
+pushd "$CARTAS_DIR"
+  find . -type f -regex '.*/v[0-9]*/[^_].*\.xsd' | while read xsd
+  do
+    xml="${xsd/.xsd/-exemplo.xml}"
+
+    echo -e "\nValidando arquivo ${xml} contra ${xsd}..."
+    xmllint --noout --schema "$xsd" "$xml"
+  done
+popd
