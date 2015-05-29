@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e -o pipefail
+
+[ $# -ne 3 ] &&
+  echo "Como usar: sh scripts/inportador <url endpoit de servicos> <diretorio com xml legados> <diretorio para salvar xmls novos>" &&
+  exit 1
+
+ENDPOIT_SERVICOS="$1"
+SERVICOS_LEGADOS="$2"
+DIRETORIO_SAIDA="$3"
+RELATORIO="relatorio_importacao.txt"
+
+echo 'Importando servicos legados...'
+
+find "$SERVICOS_LEGADOS" -type f -name '*.xml' -print0 |
+  xargs -0 basename |
+  xargs -I {} curl --silent \
+    --write-out "%{http_code}|%{url_effective}|%{filename_effective}\n" \
+    --output "${DIRETORIO_SAIDA}/{}" "${ENDPOIT_SERVICOS}/{}" |
+  tee "$RELATORIO"
+
+sort "$RELATORIO" | column -t -s '|' | less
+
+echo 'Importação concluida.'
