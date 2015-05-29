@@ -24,11 +24,11 @@ if [ ! -d "$CARTAS_DIR" ]; then
 fi
 
 pushd "$CARTAS_DIR"
-  find . -type f -regex '.*/v[0-9]*/[^_].*\.xsd' | while read xsd
+  find . -type f -regex '.*/v[0-9]*/schema/[^_].*\.xsd' | while read xsd
   do
-    xml="${xsd/.xsd/-exemplo.xml}"
+    xml=$(echo "$xsd" | sed 's/\([a-z]*\).xsd/exemplos\/\1.xml/')
 
-    echo -e "\nValidando arquivo ${xml} contra ${xsd}..."
+    echo "\nValidando arquivo ${xml} contra ${xsd}..."
     xmllint --noout --schema "$xsd" "$xml"
   done
 popd
