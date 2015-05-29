@@ -14,6 +14,7 @@ RELATORIO="relatorio_importacao.txt"
 
 echo 'Importando servicos legados...'
 
+mkdir -p "${DIRETORIO_SAIDA}"
 find "$SERVICOS_LEGADOS" -type f -name '*.xml' -print0 |
   xargs -0 basename |
   xargs -I {} curl --silent \
