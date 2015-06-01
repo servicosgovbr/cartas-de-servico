@@ -1,4 +1,5 @@
 - [Modelo de explicitação de serviço](./modelo-de-explicitacao/index.md)
   - [Definição técnica](./modelo-de-explicitacao/definicao-tecnica.md)
     - [Versões](./modelo-de-explicitacao/versoes.md)
+    - [Estrutura de diretórios](./modelo-de-explicitacao/estrutura-de-diretorios.md)
     - [Exemplo XSD](./modelo-de-explicitacao/exemplo-xsd.md)
