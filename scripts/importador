@@ -7,7 +7,7 @@ set -e -o pipefail
   echo "Exemplo: sh scripts/importador http://localhost:8080/servico ../guia-de-servicos/src/main/resources/legado/ cartas-servicos/v1/servicos" &&
   exit 1
 
-ENDPOIT_SERVICOS="$1"
+ENDPOINT_SERVICOS="$1"
 SERVICOS_LEGADOS="$2"
 DIRETORIO_SAIDA="$3"
 RELATORIO="relatorio_importacao.txt"
@@ -19,7 +19,7 @@ find "$SERVICOS_LEGADOS" -type f -name '*.xml' -print0 |
   xargs -0 basename |
   xargs -I {} curl --silent \
     --write-out "%{http_code}|%{url_effective}|%{filename_effective}\n" \
-    --output "${DIRETORIO_SAIDA}/{}" "${ENDPOIT_SERVICOS}/{}" |
+    --output "${DIRETORIO_SAIDA}/{}" "${ENDPOINT_SERVICOS}/{}" |
   tee "$RELATORIO"
 
 sort "$RELATORIO" | column -t -s '|' | less
