@@ -1,2 +1,3 @@
-# cartas-de-servico
-Modelo (schema) e cartas de serviço do Guia de Serviços
+# Cartas de Servico
+
+Modelo e cartas de serviço do Portal de Serviços do Governo Federal.
