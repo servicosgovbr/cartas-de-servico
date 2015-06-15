@@ -1,0 +1,8 @@
+import groovy.io.FileType
+
+sourceSets.create('cartas') {
+    resources {
+        srcDir 'cartas-servico'
+        include 'v*/servicos/**/*.xml'
+    }
+}

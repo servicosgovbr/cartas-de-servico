@@ -1,0 +1,32 @@
+import groovy.util.XmlSlurper
+import com.github.slugify.Slugify
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.github.slugify:slugify:2.1.3'
+    }
+}
+
+def verificaServico(arquivoXml, servico) {
+    def slug = new Slugify()
+    def nomeArquivo = arquivoXml.name.replaceAll('.xml', '')
+
+    def idServico = servico.id.toString().trim()
+    assert nomeArquivo == idServico
+
+    def slugNomeServico = slug.slugify(servico.nome as String)
+    assert nomeArquivo == slugNomeServico
+}
+
+task verificaCartasDeServico << {
+
+    def cartasServico = sourceSets.cartas.resources.files
+    cartasServico
+        .collect { arquivo -> [arquivo, new XmlSlurper().parse(arquivo)] }
+        .each { verificaServico(*it)  }
+
+}
