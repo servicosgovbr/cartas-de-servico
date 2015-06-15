@@ -1,6 +1,8 @@
 import com.github.slugify.Slugify
 import org.jsoup.Jsoup
 import java.net.URL
+import org.xml.sax.helpers.XMLReaderFactory
+import org.xml.sax.InputSource
 
 buildscript {
     repositories {
@@ -10,6 +12,17 @@ buildscript {
     dependencies {
         classpath 'com.github.slugify:slugify:2.1.3'
         classpath 'org.jsoup:jsoup:1.8.2'
+    }
+}
+
+def validaXml(arquivoXml) {
+    def xmlReader = XMLReaderFactory.createXMLReader();
+
+    try {
+        arquivoXml.withInputStream { input -> xmlReader.parse(new InputSource(input)) }
+    } catch (erro) {
+        println "Arquivo XML inválido ${arquivoXml} -> ${erro.message}"
+        throw erro
     }
 }
 
@@ -38,6 +51,7 @@ def verificaLinks(arquivoXml, doc) {
 }
 
 def verificaServico(arquivoXml, doc) {
+    validaXml(arquivoXml)
     verificaNomeServico(arquivoXml, doc)
     verificaLinks(arquivoXml, doc)
 }
