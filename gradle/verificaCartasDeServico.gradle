@@ -49,3 +49,5 @@ task verificaCartasDeServico << {
         .collect { arquivo -> [arquivo, Jsoup.parse(arquivo, 'UTF-8')] }
         .each { verificaServico(*it)  }
 }
+
+test.dependsOn verificaCartasDeServico
