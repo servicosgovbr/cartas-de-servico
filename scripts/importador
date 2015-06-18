@@ -3,7 +3,7 @@
 set -e -o pipefail
 
 [ $# -ne 3 ] &&
-  echo "Como usar: sh scripts/inportador <url endpoit de servicos> <diretorio com xml legados> <diretorio para salvar xmls novos>" &&
+  echo "Como usar: sh scripts/importador <url endpoint de servicos> <diretorio com xml legados> <diretorio para salvar xmls novos>" &&
   echo "Exemplo: sh scripts/importador http://localhost:8080/servico ../guia-de-servicos/src/main/resources/legado/ cartas-servicos/v1/servicos" &&
   exit 1
 
