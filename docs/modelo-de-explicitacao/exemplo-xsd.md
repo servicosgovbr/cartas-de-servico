@@ -4,8 +4,8 @@ Este é um exemplo simples, contendo apenas dois campos, afim de ilustrar como m
 especificações de serviços utilizando o formato ```XSD```.
 
 Campos:
-- ```titulo```: campo obrigatório contento no mínimo 5 e no máximo 255 caracteres
-- ```descricao```: campo obrigatório contento no mínimo 50 e no máximo 500 caracteres
+- `titulo`: campo obrigatório contento no mínimo 5 e no máximo 255 caracteres
+- `descricao`: campo obrigatório contento no mínimo 50 e no máximo 500 caracteres
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -41,7 +41,7 @@ Campos:
 </xs:schema>
 ```
 
-Arquivo ```XML``` validado pelo ```XSD``` acima definido:
+Arquivo XML validado pelo XSD acima definido:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

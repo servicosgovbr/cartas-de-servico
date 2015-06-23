@@ -1,3 +1,3 @@
 # Introdução
 
-Esta é a documentação oficial das Cartas de Serviços, parte do Guia de Serviços Públicos do Governo Federal.
+Esta é a documentação oficial das Cartas de Serviços, parte do Portal de Serviços Públicos do Governo Federal.
