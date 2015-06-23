@@ -31,7 +31,9 @@ def verificaNomeServico(arquivoXml, doc) {
     def nomeArquivo = arquivoXml.name.replaceAll('.xml', '')
 
     def idServico = doc.select('servico > id').text().trim()
-    assert nomeArquivo == idServico
+    if(idServico) {
+        assert nomeArquivo == idServico
+    }
 
     def slugNomeServico = slug.slugify(doc.select('servico > nome').text())
     assert nomeArquivo == slugNomeServico
