@@ -10,13 +10,13 @@ set -e -o pipefail
 ENDPOINT_SERVICOS="$1"
 SERVICOS_LEGADOS="$2"
 DIRETORIO_SAIDA="$3"
+
 RELATORIO="relatorio_importacao.txt"
 
 echo 'Importando servicos legados...'
 
 mkdir -p "${DIRETORIO_SAIDA}"
-find "$SERVICOS_LEGADOS" -type f -name '*.xml' -print0 |
-  xargs -0 basename |
+find "$SERVICOS_LEGADOS" -type f -name '*.xml' -exec basename {} \; |
   xargs -I {} curl --silent \
     --write-out "%{http_code}|%{url_effective}|%{filename_effective}\n" \
     --output "${DIRETORIO_SAIDA}/{}" "${ENDPOINT_SERVICOS}/{}" |
