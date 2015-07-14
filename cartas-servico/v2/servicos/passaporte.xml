@@ -84,12 +84,20 @@ Na cidade de São Paulo/SP, o Passaporte de Emergência apenas é emitido no pos
   <solicitante>
   </solicitante>
  </solicitantes>
- <tempo-total-estimado></tempo-total-estimado>
+ <tempo-total-estimado tipo="até">
+  <maximo tipo="dias úteis">
+   6
+  </maximo>
+  <excecoes>
+   A unidade da Polícia Federal verificará os documentos e coletará os dados eletrônicos e será impresso protocolo onde constará a data provável da entrega do passaporte, que será de no máximo 6 (seis) dias úteis.
+  </excecoes>
+ </tempo-total-estimado>
  <etapas>
   <etapa>
    <titulo>
+    Preencher o formulário disponível no portal da Polícia Federal
    </titulo>
-   <descricao>
+   <descricao>Em caso de dúvidas sobre o preenchimento, informações podem ser obtidas pelo telefone 194.
    </descricao>
    <documentos>
     <documento>
@@ -97,7 +105,7 @@ Na cidade de São Paulo/SP, o Passaporte de Emergência apenas é emitido no pos
    </documentos>
    <custos excecoes="false">
     <custo>
-     <descricao>
+     <descricao>Taxa de confecção
      </descricao>
      <valor>
       257,25
@@ -107,13 +115,15 @@ Na cidade de São Paulo/SP, o Passaporte de Emergência apenas é emitido no pos
    <canais-de-prestacao>
     <canal-de-prestacao tipo="Web" preferencial="true">
      <titulo>
+      Requerer Passaporte
      </titulo>
      <referencia>
       http://www.dpf.gov.br/servicos/passaporte/requerer-passaporte
      </referencia>
     </canal-de-prestacao>
-    <canal-de-prestacao tipo="Web" preferencial="false">
+    <canal-de-prestacao tipo="Telefone" preferencial="false">
      <titulo>
+      194
      </titulo>
      <referencia>
      </referencia>
@@ -129,4 +139,7 @@ Na cidade de São Paulo/SP, o Passaporte de Emergência apenas é emitido no pos
    Ministério da Justiça (MJ)
   </nome>
  </orgao>
+ <gratuito>
+  false
+ </gratuito>
 </servico>
