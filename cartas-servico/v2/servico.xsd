@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://servicos.gov.br/cartas-servico/v2/schema/servico"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://servicos.gov.br/cartas-servico/v2/schema/servico"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0">
+
+    <xs:element name="servico">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="nomes-populares" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="descricao" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="palavras-chave" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="areas-de-interesse" type="areas-de-interesse-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="segmentos-da-sociedade" type="segmentos-da-sociedade-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="eventos-da-linha-da-vida" type="eventos-da-linha-da-vida-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="legislacao-relacionada" type="legislacao-relacionada-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="solicitantes" type="solicitantes-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="tempo-total-estimado" type="tempo-total-estimado-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="etapas" type="etapas-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="orgao" type="orgao-type" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="gratuito" minOccurs="0" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:boolean"/>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="situacao" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="versao" fixed="2"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="areas-de-interesse-type">
+        <xs:sequence>
+            <xs:element name="area-de-interesse">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="id"/>
+                        <xs:element name="area"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="segmentos-da-sociedade-type">
+        <xs:sequence>
+            <xs:element name="segmento-da-sociedade">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="id"/>
+                        <xs:element name="nome"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="eventos-da-linha-da-vida-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="evento-da-linha-da-vida">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="id"/>
+                        <xs:element name="nome"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="legislacao-relacionada-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="link" type="link-type"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="link-type">
+        <xs:attribute name="href" type="xs:anyURI"/>
+    </xs:complexType>
+
+    <xs:complexType name="solicitantes-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="solicitante">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string"/>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipo-de-tempo-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="minutos"/>
+            <xs:enumeration value="horas"/>
+            <xs:enumeration value="dias"/>
+            <xs:enumeration value="dias corridos"/>
+            <xs:enumeration value="dias úteis"/>
+            <xs:enumeration value="meses"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tempo-total-estimado-type">
+        <xs:all>
+            <xs:element name="minimo">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="tipo" type="tipo-de-tempo-type"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="maximo">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="tipo" type="tipo-de-tempo-type"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="excecoes"/>
+        </xs:all>
+
+        <xs:attribute name="tipo">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="até"/>
+                    <xs:enumeration value="entre"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="documentos-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="documento"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="custos-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="custo">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="descricao"/>
+                        <xs:element name="valor"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="excecoes" type="xs:boolean"/>
+    </xs:complexType>
+
+    <xs:complexType name="canais-de-prestacao-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="canal-de-prestacao">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:sequence>
+                            <xs:element name="titulo"/>
+                            <xs:element name="referencia"/>
+                        </xs:sequence>
+                        <xs:sequence>
+                            <xs:element name="descricao"/>
+                        </xs:sequence>
+                    </xs:choice>
+                    <xs:attribute name="tipo">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Agendamento"/>
+                                <xs:enumeration value="Web"/>
+                                <xs:enumeration value="Presencial"/>
+                                <xs:enumeration value="Telefone"/>
+                                <xs:enumeration value="E-mail"/>
+                                <xs:enumeration value="Caixa postal"/>
+                                <xs:enumeration value="Aplicativo móvel"/>
+                                <xs:enumeration value="SMS"/>
+                                <xs:enumeration value="Fax"/>
+                                <xs:enumeration value="Rede social"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="preferencial" type="xs:boolean"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="etapas-type">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="etapa">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="titulo"/>
+                        <xs:element name="descricao"/>
+                        <xs:element name="documentos" type="documentos-type"/>
+                        <xs:element name="custos" type="custos-type"/>
+                        <xs:element name="canais-de-prestacao" type="canais-de-prestacao-type"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="orgao-type">
+        <xs:all>
+            <xs:element name="id"/>
+            <xs:element name="nome"/>
+        </xs:all>
+    </xs:complexType>
+
+</xs:schema>
