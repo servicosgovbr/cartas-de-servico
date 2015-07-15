@@ -33,7 +33,7 @@
     </xs:element>
 
     <xs:complexType name="areas-de-interesse-type">
-        <xs:sequence>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="area-de-interesse">
                 <xs:complexType>
                     <xs:all>
@@ -46,7 +46,7 @@
     </xs:complexType>
 
     <xs:complexType name="segmentos-da-sociedade-type">
-        <xs:sequence>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="segmento-da-sociedade">
                 <xs:complexType>
                     <xs:all>
@@ -183,6 +183,7 @@
                                 <xs:enumeration value="SMS"/>
                                 <xs:enumeration value="Fax"/>
                                 <xs:enumeration value="Rede social"/>
+                                <xs:enumeration value="Outros"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:attribute>
