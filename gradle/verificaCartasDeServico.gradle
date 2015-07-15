@@ -41,8 +41,6 @@ def verificaNomeServico(arquivoXml, doc) {
 
 def verificaLinks(arquivoXml, doc) {
     def links = doc.select("link").collect { it.attr("href") }
-    links += doc.select('url').collect { it.text() }
-    links += doc.select('urlAgendamento').collect { it.text() }
 
     try {
         links.each { new URL(it).toURI() }
