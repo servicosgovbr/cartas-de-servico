@@ -21,7 +21,14 @@
    Qualquer consumidor de energia elétrica
   </solicitante>
  </solicitantes>
- <tempo-total-estimado></tempo-total-estimado>
+ <tempo-total-estimado tipo="até">
+  <maximo tipo="dias corridos">
+   30
+  </maximo>
+  <excecoes>
+   O prazo referencial é de 30 dias, prorrogáveis por igual período.
+  </excecoes>
+ </tempo-total-estimado>
  <etapas>
   <etapa>
    <titulo>
@@ -50,4 +57,10 @@
    </canais-de-prestacao>
   </etapa>
  </etapas>
+ <gratuito>
+  true
+ </gratuito>
+ <situacao>
+  Sim: serviço totalmente eletrônico
+ </situacao>
 </servico>
