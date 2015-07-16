@@ -82,7 +82,7 @@
                 <xs:element name="tempo-total-estimado" minOccurs="0" maxOccurs="1">
                     <xs:complexType>
                         <xs:all>
-                            <xs:element name="minimo" type="unidade-de-tempo-estimado"/>
+                            <xs:element name="minimo" minOccurs="0" maxOccurs="1" type="unidade-de-tempo-estimado"/>
                             <xs:element name="maximo" type="unidade-de-tempo-estimado"/>
                             <xs:element name="excecoes" type="texto-longo"/>
                         </xs:all>
