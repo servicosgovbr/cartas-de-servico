@@ -41,12 +41,11 @@
    <titulo>
     Busca de atendimento
    </titulo>
-   <descricao>A ANEEL oferece a possibilidade de registros de solicitações de ouvidoria no portal da Agência na internet, na seção "Fale Conosco"
-http://www.aneel.gov.br/area.cfm?id_area=30; via contato gratuito pelo telefone 167 , ou ainda presencialmente na sede da Agência - SGAN 603 Bloco I, Brasília/DF. 
-No “Fale Conosco” o cidadão pode preencher um formulário com sua solicitação tratar via chat, onde conversa com um atendente para esclarecer suas dúvidas e/ou efetuar o registro de reclamações.
+   <descricao>A ANEEL oferece a possibilidade de registros de solicitações de ouvidoria no portal da Agência na internet, na seção "Fale Conosco" http://www.aneel.gov.br/area.cfm?id_area=30; via contato gratuito pelo telefone 167 , ou ainda presencialmente na sede da Agência - SGAN 603 Bloco I, Brasília/DF. No “Fale Conosco” o cidadão pode preencher um formulário com sua solicitação tratar via chat, onde conversa com um atendente para esclarecer suas dúvidas e/ou efetuar o registro de reclamações.
    </descricao>
    <documentos>
     <documento>
+     Número da unidade consumidora presente na fatura de energia elétrica
     </documento>
    </documentos>
    <custos excecoes="false">
@@ -58,7 +57,15 @@ No “Fale Conosco” o cidadão pode preencher um formulário com sua solicita�
     </custo>
    </custos>
    <canais-de-prestacao>
-    <canal-de-prestacao tipo="" preferencial="false">
+    <canal-de-prestacao tipo="Web" preferencial="true">
+     <titulo>
+      Ouvidoria Setorial ANEEL
+     </titulo>
+     <referencia>
+       http://www.aneel.gov.br/area.cfm?id_area=30
+     </referencia>
+    </canal-de-prestacao>
+    <canal-de-prestacao tipo="" preferencial="null">
      <titulo>
      </titulo>
      <referencia>
