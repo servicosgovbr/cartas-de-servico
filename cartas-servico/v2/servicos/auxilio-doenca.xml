@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servico versao="2" xmlns="http://servicos.gov.br/cartas-servico/v2/schema/servico" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/cartas-servico/v2/schema/servico ../servico.xsd">
  <nome>
-  Auxilio-doença
+  Auxílio-Doença
  </nome>
  <nomes-populares>
-  Encostar, Afastamento
  </nomes-populares>
- <descricao>Benefício devido ao segurado do INSS acometido por uma doença ou acidente que o torne temporariamente incapaz para o trabalho.
+ <descricao>Benefício concedido ao segurado impedido de trabalhar por doença ou acidente por mais de 15 dias consecutivos. No caso dos trabalhadores com carteira assinada, os primeiros 15 dias são pagos pelo empregador, exceto o doméstico, e a Previdência Social paga a partir do 16º dia de afastamento do trabalho. Para os demais segurados inclusive o doméstico, a Previdência paga o auxílio desde o início da incapacidade e enquanto a mesma perdurar.
+
+
  </descricao>
  <palavras-chave>
-  benefício, doença, afastamento do trabalho
  </palavras-chave>
  <areas-de-interesse>
   <area-de-interesse>
@@ -29,40 +29,25 @@
    </nome>
   </segmento-da-sociedade>
  </segmentos-da-sociedade>
- <eventos-da-linha-da-vida></eventos-da-linha-da-vida>
- <legislacao-relacionada>
-  <link href="http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1991-07-24;8213" />
- </legislacao-relacionada>
- <solicitantes>
-  <solicitante>
-   Segurado do INSS
-  </solicitante>
- </solicitantes>
- <tempo-total-estimado tipo="até">
-  <maximo tipo="minutos">
-   45
-  </maximo>
-  <excecoes>
-   A legislação prevê 45 dias para atender a solicitação sem que ocorra o pagamento de correção monetária.
-  </excecoes>
- </tempo-total-estimado>
+ <eventos-da-linha-da-vida>
+  <evento-da-linha-da-vida>
+   <id>
+    cuidados-com-a-saude
+   </id>
+   <nome>
+    Cuidados com a saúde
+   </nome>
+  </evento-da-linha-da-vida>
+ </eventos-da-linha-da-vida>
+ <legislacao-relacionada></legislacao-relacionada>
+ <solicitantes></solicitantes>
  <etapas>
   <etapa>
    <titulo>
-    Agendar auxílio-doença.
    </titulo>
-   <descricao>Ligar no telefone 135 ou acessar a [página da Previdência Social.](http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view)
+   <descricao>
    </descricao>
-   <documentos>
-    <documento>
-     CPF
-    </documento>
-    <documento>
-     RG
-    </documento>
-    <documento>
-    </documento>
-   </documentos>
+   <documentos></documentos>
    <custos excecoes="false">
     <custo>
      <descricao>
@@ -72,67 +57,23 @@
     </custo>
    </custos>
    <canais-de-prestacao>
-    <canal-de-prestacao tipo="Telefone" preferencial="false">
+    <canal-de-prestacao tipo="Web" preferencial="true">
      <titulo>
-      135
      </titulo>
      <referencia>
      </referencia>
     </canal-de-prestacao>
-    <canal-de-prestacao tipo="Web" preferencial="false">
+    <canal-de-prestacao tipo="Agendamento" preferencial="false">
      <titulo>
-      Agendamento
      </titulo>
      <referencia>
       http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view
      </referencia>
     </canal-de-prestacao>
-   </canais-de-prestacao>
-  </etapa>
-  <etapa>
-   <titulo>
-    Comparecer para perícia médica
-   </titulo>
-   <descricao>Comparecer ao INSS na data e hora marcada com a documentação necessária.
-   </descricao>
-   <documentos>
-    <documento>
-     RG
-    </documento>
-    <documento>
-     CPF
-    </documento>
-    <documento>
-     Documentos que comprovem os seus períodos trabalhados, como carteira profissional, carnês de contribuição e outros comprovantes de pagamento ao INSS.
-    </documento>
-    <documento>
-     Se você é empregado em empresa, apresentar a declaração do seu empregador na data da perícia, confirmando o seu afastamento e o seu último dia trabalhado.
-    </documento>
-    <documento>
-     Caso você seja um segurado especial (trabalhador rural, lavrador, pescador, etc.), leve também os documentos que comprovem esta situação, como a declaração do sindicato, contratos de arrendamento, documentos da época onde conste a sua ocupação, etc.
-    </documento>
-    <documento>
-     Para empregado de empresa: documentos médicos que indiquem a causa do problema de saúde, o tratamento médico que foi indicado e que deverá ficar afastado do trabalho por mais de 15 dias (podendo ser 15 dias intercalados dentro do prazo de 60 dias).
-    </documento>
-    <documento>
-     Para empregado Doméstico, Trabalhador Avulso, Contribuinte individual, Facultativo, Segurado Especial e Desempregado: documentos médicos que demonstrem a causa do problema de saúde, o tratamento médico que foi indicado e que deverá ficar afastado do trabalho/atividade por qualquer período.
-    </documento>
-   </documentos>
-   <custos excecoes="false">
-    <custo>
-     <descricao>
-     </descricao>
-     <valor>
-     </valor>
-    </custo>
-   </custos>
-   <canais-de-prestacao>
     <canal-de-prestacao tipo="Presencial" preferencial="false">
      <titulo>
-      Agência da Previdência Social
      </titulo>
      <referencia>
-      http://www010.dataprev.gov.br/enderecoAPS/mps1.asp
      </referencia>
     </canal-de-prestacao>
    </canais-de-prestacao>
@@ -140,16 +81,12 @@
  </etapas>
  <orgao>
   <id>
-   instituto-nacional-do-seguro-social-inss
+   ministerio-da-previdencia-social-mps
   </id>
   <nome>
-   Instituto Nacional do Seguro Social (INSS)
+   Ministério da Previdência Social (MPS)
   </nome>
  </orgao>
- <gratuito>
-  false
- </gratuito>
  <situacao>
-  Sim: serviço parcialmente eletrônico (partes presenciais, via telefone ou em papel)
  </situacao>
 </servico>
