@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servico versao="2" xmlns="http://servicos.gov.br/cartas-servico/v2/schema/servico" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/cartas-servico/v2/schema/servico ../servico.xsd">
  <nome>
-  Auxílio-Doença
+  Auxilio-doença
  </nome>
  <nomes-populares>
+  Encostar; Afastamento;
  </nomes-populares>
- <descricao>Benefício concedido ao segurado impedido de trabalhar por doença ou acidente por mais de 15 dias consecutivos. No caso dos trabalhadores com carteira assinada, os primeiros 15 dias são pagos pelo empregador, exceto o doméstico, e a Previdência Social paga a partir do 16º dia de afastamento do trabalho. Para os demais segurados inclusive o doméstico, a Previdência paga o auxílio desde o início da incapacidade e enquanto a mesma perdurar.
-
-
+ <descricao>Benefício  devido ao segurado do INSS acometido por uma doença ou acidente que o torne temporariamente incapaz para o trabalho.
  </descricao>
  <palavras-chave>
  </palavras-chave>
- <areas-de-interesse>
-  <area-de-interesse>
-   <id>
-    previdencia-social
-   </id>
-   <area>Previdência Social</area>
-  </area-de-interesse>
- </areas-de-interesse>
- <segmentos-da-sociedade>
-  <segmento-da-sociedade>
-   <id>
-    cidadaos
-   </id>
-   <nome>
-    Cidadãos
-   </nome>
-  </segmento-da-sociedade>
- </segmentos-da-sociedade>
- <eventos-da-linha-da-vida>
-  <evento-da-linha-da-vida>
-   <id>
-    cuidados-com-a-saude
-   </id>
-   <nome>
-    Cuidados com a saúde
-   </nome>
-  </evento-da-linha-da-vida>
- </eventos-da-linha-da-vida>
- <legislacao-relacionada></legislacao-relacionada>
- <solicitantes></solicitantes>
+ <areas-de-interesse></areas-de-interesse>
+ <segmentos-da-sociedade></segmentos-da-sociedade>
+ <eventos-da-linha-da-vida></eventos-da-linha-da-vida>
+ <legislacao-relacionada>
+  <link href="" />
+ </legislacao-relacionada>
+ <solicitantes>
+  <solicitante>
+   Segurado do INSS.
+  </solicitante>
+ </solicitantes>
+ <tempo-total-estimado tipo="até">
+  <maximo tipo="minutos">
+   45
+  </maximo>
+  <excecoes>
+   A legislação prevê 45 dias para atender a solicitação sem que ocorra o pagamento de correção monetária. 
+  </excecoes>
+ </tempo-total-estimado>
  <etapas>
   <etapa>
    <titulo>
    </titulo>
    <descricao>
    </descricao>
-   <documentos></documentos>
+   <documentos>
+    <documento>
+    </documento>
+   </documentos>
    <custos excecoes="false">
     <custo>
      <descricao>
@@ -57,20 +48,7 @@
     </custo>
    </custos>
    <canais-de-prestacao>
-    <canal-de-prestacao tipo="Web" preferencial="true">
-     <titulo>
-     </titulo>
-     <referencia>
-     </referencia>
-    </canal-de-prestacao>
-    <canal-de-prestacao tipo="Agendamento" preferencial="false">
-     <titulo>
-     </titulo>
-     <referencia>
-      http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view
-     </referencia>
-    </canal-de-prestacao>
-    <canal-de-prestacao tipo="Presencial" preferencial="false">
+    <canal-de-prestacao tipo="" preferencial="false">
      <titulo>
      </titulo>
      <referencia>
@@ -79,14 +57,4 @@
    </canais-de-prestacao>
   </etapa>
  </etapas>
- <orgao>
-  <id>
-   ministerio-da-previdencia-social-mps
-  </id>
-  <nome>
-   Ministério da Previdência Social (MPS)
-  </nome>
- </orgao>
- <situacao>
- </situacao>
 </servico>
