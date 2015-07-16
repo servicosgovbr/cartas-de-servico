@@ -10,11 +10,11 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="nome" minOccurs="1" maxOccurs="1" type="texto-curto"/>
-                <xs:element name="nomes-populares" minOccurs="0" maxOccurs="1" type="texto-curto"/>
+                <xs:element name="nomes-populares" minOccurs="1" maxOccurs="1" type="texto-curto"/>
                 <xs:element name="descricao" minOccurs="1" maxOccurs="1" type="texto-longo"/>
-                <xs:element name="palavras-chave" minOccurs="0" maxOccurs="1" type="texto-curto"/>
+                <xs:element name="palavras-chave" minOccurs="1" maxOccurs="1" type="texto-curto"/>
 
-                <xs:element name="areas-de-interesse" minOccurs="0" maxOccurs="1">
+                <xs:element name="areas-de-interesse" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="area-de-interesse">
@@ -29,7 +29,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="segmentos-da-sociedade" minOccurs="0" maxOccurs="1">
+                <xs:element name="segmentos-da-sociedade" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="segmento-da-sociedade">
@@ -44,7 +44,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="eventos-da-linha-da-vida" minOccurs="0" maxOccurs="1">
+                <xs:element name="eventos-da-linha-da-vida" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="evento-da-linha-da-vida">
@@ -59,7 +59,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="legislacao-relacionada" minOccurs="0" maxOccurs="1">
+                <xs:element name="legislacao-relacionada" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="link">
@@ -71,7 +71,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="solicitantes" minOccurs="0" maxOccurs="1">
+                <xs:element name="solicitantes" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="solicitante" type="texto-curto"/>
@@ -98,7 +98,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="etapas" minOccurs="0" maxOccurs="1">
+                <xs:element name="etapas" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence minOccurs="0" maxOccurs="unbounded">
                             <xs:element name="etapa">
@@ -175,7 +175,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="orgao" minOccurs="0" maxOccurs="1">
+                <xs:element name="orgao" minOccurs="1" maxOccurs="1">
                     <xs:complexType>
                         <xs:all>
                             <xs:element name="id" type="id"/>
