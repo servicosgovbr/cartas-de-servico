@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servico versao="2" xmlns="http://servicos.gov.br/cartas-servico/v2/schema/servico" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/cartas-servico/v2/schema/servico ../servico.xsd">
+ <nome>
+  Atendimento de Ouvidoria Setorial
+ </nome>
+ <nomes-populares>
+  Ouvidoria, reclame aqui, fale conosco
+ </nomes-populares>
+ <descricao>Segunda instância para receber, apurar e solucionar reclamações de agentes e consumidores, quando não satisfeitos com atendimento oferecido pelo próprio prestador do serviço (a companhia de energia da sua cidade)
+ </descricao>
+ <palavras-chave>
+  Eletricidade, Setor elétrico, Qualidade do serviço, Ouvidoria, reclamações, solução de problemas
+ </palavras-chave>
+ <areas-de-interesse>
+  <area-de-interesse>
+   <id>
+    energia
+   </id>
+   <area>Energia</area>
+  </area-de-interesse>
+ </areas-de-interesse>
+ <segmentos-da-sociedade>
+  <segmento-da-sociedade>
+   <id>
+    cidadaos
+   </id>
+   <nome>
+    Cidadãos
+   </nome>
+  </segmento-da-sociedade>
+  <segmento-da-sociedade>
+   <id>
+    empresas
+   </id>
+   <nome>
+    Empresas
+   </nome>
+  </segmento-da-sociedade>
+ </segmentos-da-sociedade>
+ <eventos-da-linha-da-vida>
+  <evento-da-linha-da-vida>
+   <id>
+    contas-e-impostos
+   </id>
+   <nome>
+    Contas e Impostos
+   </nome>
+  </evento-da-linha-da-vida>
+ </eventos-da-linha-da-vida>
+ <legislacao-relacionada>
+  <link href="http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1996-12-26;9427" />
+  <link href="http://www.lexml.gov.br/urn/urn:lex:br:agencia.nacional.energia.eletrica:resolucao.normativa:2010-09-15;414" />
+ </legislacao-relacionada>
+ <solicitantes>
+  <solicitante>
+   Qualquer consumidor de energia elétrica
+  </solicitante>
+ </solicitantes>
+ <tempo-total-estimado tipo="até">
+  <maximo tipo="dias corridos">
+   30
+  </maximo>
+  <excecoes>
+   O prazo referencial é de 30 dias, prorrogáveis por igual período. Para garantir o direito ao contraditório, a solicitação é encaminhada via sistema para a distribuidora, sendo-lhe concedido um prazo para avaliar a demanda e responder ao órgão regulador.
+  </excecoes>
+ </tempo-total-estimado>
+ <etapas>
+  <etapa>
+   <titulo>
+    Registro da reclamação
+   </titulo>
+   <descricao>A ANEEL oferece a possibilidade de registros de solicitações de ouvidoria no portal da Agência na internet, na seção "Fale Conosco"; via contato gratuito pelo telefone 167 ou ainda presencialmente na sede da Agência. No “Fale Conosco” o cidadão pode preencher um formulário com sua solicitação ou tratar via chat, onde conversa com um atendente para esclarecer suas dúvidas e/ou efetuar o registro de reclamações.
+   </descricao>
+   <documentos>
+    <documento>
+     Número da unidade consumidora presente na fatura de energia elétrica.
+    </documento>
+   </documentos>
+   <custos excecoes="false">
+    <custo>
+     <descricao>
+     </descricao>
+     <valor>
+     </valor>
+    </custo>
+   </custos>
+   <canais-de-prestacao>
+    <canal-de-prestacao tipo="Web" preferencial="true">
+     <titulo>
+      Atendimento pela internet
+     </titulo>
+     <referencia>
+      http://www.aneel.gov.br/area.cfm?id_area=30
+     </referencia>
+    </canal-de-prestacao>
+    <canal-de-prestacao tipo="Telefone" preferencial="false">
+     <titulo>
+      Ligue 167 (24 horas / 7 dias)
+     </titulo>
+     <referencia>
+      Número da CTA: 167
+     </referencia>
+    </canal-de-prestacao>
+    <canal-de-prestacao tipo="Presencial" preferencial="false">
+     <titulo>
+      Na sede da ANEEL, SGAN 603 Bloco I - Brasília/DF, nos dias úteis das 8h às 18h, ou nas sessões presenciais das audiências públicas realizadas pela Agência.
+     </titulo>
+     <referencia>
+     </referencia>
+    </canal-de-prestacao>
+   </canais-de-prestacao>
+  </etapa>
+  <etapa>
+   <titulo>
+    Acompanhamento da reclamação
+   </titulo>
+   <descricao>O consumidor acompanha o andamento do atendimento pelo portal da Agência mediante número de protocolo recebido ao final da etapa anterior.
+   </descricao>
+   <documentos>
+    <documento>
+     Número do protocolo de atendimento recebido na etapa anterior
+    </documento>
+   </documentos>
+   <custos excecoes="false">
+    <custo>
+     <descricao>
+     </descricao>
+     <valor>
+     </valor>
+    </custo>
+   </custos>
+   <canais-de-prestacao>
+    <canal-de-prestacao tipo="Web" preferencial="true">
+     <titulo>
+      Acompanhamento da reclamação
+     </titulo>
+     <referencia>
+      http://www.aneel.gov.br/area.cfm?id_area=30
+     </referencia>
+    </canal-de-prestacao>
+   </canais-de-prestacao>
+  </etapa>
+ </etapas>
+ <gratuito>
+  true
+ </gratuito>
+ <situacao>
+  Sim: serviço totalmente eletrônico
+ </situacao>
+</servico>
