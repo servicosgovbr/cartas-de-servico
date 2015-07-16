@@ -18,8 +18,34 @@
    <area>Energia</area>
   </area-de-interesse>
  </areas-de-interesse>
- <segmentos-da-sociedade></segmentos-da-sociedade>
- <eventos-da-linha-da-vida></eventos-da-linha-da-vida>
+ <segmentos-da-sociedade>
+  <segmento-da-sociedade>
+   <id>
+    cidadaos
+   </id>
+   <nome>
+    Cidadãos
+   </nome>
+  </segmento-da-sociedade>
+  <segmento-da-sociedade>
+   <id>
+    empresas
+   </id>
+   <nome>
+    Empresas
+   </nome>
+  </segmento-da-sociedade>
+ </segmentos-da-sociedade>
+ <eventos-da-linha-da-vida>
+  <evento-da-linha-da-vida>
+   <id>
+    contas-e-impostos
+   </id>
+   <nome>
+    Contas e Impostos
+   </nome>
+  </evento-da-linha-da-vida>
+ </eventos-da-linha-da-vida>
  <legislacao-relacionada>
   <link href="" />
  </legislacao-relacionada>
@@ -84,12 +110,33 @@
   </etapa>
   <etapa>
    <titulo>
+    Acompanhamento do Atendimento
    </titulo>
-   <descricao>
+   <descricao>O consumidor acompanha o andamento do atendimento pelo portal da Agência mediante número de protocolo recebido ao final da etapa anterior.
    </descricao>
-   <documentos></documentos>
-   <custos excecoes="false"></custos>
-   <canais-de-prestacao></canais-de-prestacao>
+   <documentos>
+    <documento>
+     Número do protocolo de atendimento recebido ao final da etapa anterior
+    </documento>
+   </documentos>
+   <custos excecoes="false">
+    <custo>
+     <descricao>
+     </descricao>
+     <valor>
+     </valor>
+    </custo>
+   </custos>
+   <canais-de-prestacao>
+    <canal-de-prestacao tipo="Web" preferencial="true">
+     <titulo>
+      Acompanhamento do atendimento
+     </titulo>
+     <referencia>
+       http://www.aneel.gov.br/area.cfm?id_area=30
+     </referencia>
+    </canal-de-prestacao>
+   </canais-de-prestacao>
   </etapa>
  </etapas>
  <gratuito>
