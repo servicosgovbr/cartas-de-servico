@@ -139,7 +139,7 @@
                                                             <xs:choice>
                                                                 <xs:sequence>
                                                                     <xs:element name="titulo" type="texto-curto"/>
-                                                                    <xs:element name="referencia" type="xs:anyURI"/>
+                                                                    <xs:element name="referencia" type="xs:string"/>
                                                                 </xs:sequence>
                                                                 <xs:sequence>
                                                                     <xs:element name="descricao" type="texto-curto"/>
@@ -175,7 +175,7 @@
                     </xs:complexType>
                 </xs:element>
 
-                <xs:element name="orgao" minOccurs="1" maxOccurs="1">
+                <xs:element name="orgao" minOccurs="0" maxOccurs="1">
                     <xs:complexType>
                         <xs:all>
                             <xs:element name="id" type="id"/>
