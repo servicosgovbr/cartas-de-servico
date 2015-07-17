@@ -9,7 +9,7 @@
     <xs:element name="servico">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="nome" minOccurs="1" maxOccurs="1" type="texto-curto"/>
+                <xs:element name="nome" minOccurs="1" maxOccurs="1" type="nome"/>
                 <xs:element name="nomes-populares" minOccurs="1" maxOccurs="1" type="texto-curto"/>
                 <xs:element name="descricao" minOccurs="1" maxOccurs="1" type="texto-longo"/>
                 <xs:element name="palavras-chave" minOccurs="1" maxOccurs="1" type="texto-curto"/>
@@ -215,6 +215,12 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+
+    <xs:simpleType name="nome">
+        <xs:restriction base="texto-curto">
+            <xs:maxLength value="151"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="texto-curto">
         <xs:restriction base="xs:string">
