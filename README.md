@@ -1,4 +1,4 @@
-[![Gitter](https://badges.gitter.im/Fale%20conosco.svg)](https://gitter.im/servicosgovbr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/Fale%20conosco.svg)](https://gitter.im/servicosgovbr/portal-de-servicos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Cartas de Servico
 
