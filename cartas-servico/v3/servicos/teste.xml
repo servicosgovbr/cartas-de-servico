@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Teste</nome>
+    <sigla>TST</sigla>
+    <nomes-populares>
+        <item>Nome Popular 1</item>
+        <item>Nome Popular 2</item>
+    </nomes-populares>
+    <descricao>Descrição do serviço
+
+* Item 1
+* Item 2</descricao>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Tipo de solicitante 1</tipo>
+            <requisitos>Requisitos do solicitante 1
+
+* Item 1
+* Item 2</requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Tipo de solicitante 2</tipo>
+            <requisitos>Requisitos do solicitante 2
+
+* Item 1
+* Item 2</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Título da etapa 1</titulo>
+            <descricao>Descrição da etapa 1
+
+* Item 1
+* Item 2</descricao>
+            <documentos>
+                <default>
+                    <item>Documento do caso padrão</item>
+                </default>
+                <caso descricao="Caso 1">
+                    <item>Documento 1 do caso 1</item>
+                    <item>Documento 2 do caso 1</item>
+                </caso>
+                <caso descricao="Caso 2">
+                    <item>Documento 1 do caso 2</item>
+                    <item>Documento 2 do caso 2</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao>Descrição do custo 1</descricao>
+                        <moeda>R$</moeda>
+                        <valor>10,00</valor>
+                    </custo>
+                    <custo>
+                        <descricao>Descrição do custo 2</descricao>
+                        <moeda>R$</moeda>
+                        <valor>11,00</valor>
+                    </custo>
+                </default>
+                <caso descricao="Caso de custos 1">
+                    <custo>
+                        <descricao>Custo 1 do caso 1</descricao>
+                        <moeda>R$</moeda>
+                        <valor>13,00</valor>
+                    </custo>
+                    <custo>
+                        <descricao>Custo 2 do caso 1</descricao>
+                        <moeda>R$</moeda>
+                        <valor>14,00</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-agendar">
+                        <descricao>Canal 1 padrão</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web-calcular-taxas">
+                        <descricao>Canal 2 padrão</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso descricao="Caso canais 1">
+                    <canal-de-prestacao tipo="web-acompanhar">
+                        <descricao>Canal 1 caso 1</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Título da etapa 2</titulo>
+            <descricao/>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>Caso da etapa 2</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="advocacia-geral-da-uniao-agu"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <eventos-da-linha-da-vida>
+        <item>Apoio financeiro e crédito</item>
+        <item>Contas e Impostos</item>
+        <item>Aposentadoria</item>
+        <item>Cuidados com a saúde</item>
+    </eventos-da-linha-da-vida>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Agropecuária</item>
+        <item>Agricultura orgânica</item>
+        <item>Abastecimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Palavra 1</item>
+        <item>Palavra 2</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>Lei 1</item>
+        <item>Lei 2</item>
+    </legislacoes>
+</servico>
