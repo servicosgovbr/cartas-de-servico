@@ -26,3 +26,7 @@ fi
 for xml in $CARTAS_DIR/v2/servicos/*.xml; do
   xmllint --schema $CARTAS_DIR/v2/servico.xsd --noout "$xml"
 done
+
+for xml in $CARTAS_DIR/v3/servicos/*.xml; do
+  xmllint --schema $CARTAS_DIR/v3/servico.xsd --noout "$xml"
+done
