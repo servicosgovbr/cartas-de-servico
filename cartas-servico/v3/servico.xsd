@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://servicos.gov.br/v3/schema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://servicos.gov.br/v3/schema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="1.0">
+
+    <xs:element name="servico" type="Servico"/>
+    <xs:complexType name="Servico">
+        <xs:sequence>
+            <xs:element name="nome" type="NomeDoServico"/>
+            <xs:element name="sigla" type="Sigla"/>
+            <xs:element name="nomes-populares" type="NomesPopulares"/>
+            <xs:element name="descricao" type="DescricaoDoServico"/>
+            <xs:element name="gratuito" type="Gratuito"/>
+            <xs:element name="solicitantes" type="Solicitantes"/>
+            <xs:element name="tempo-total-estimado" type="TempoTotalEstimado"/>
+            <xs:element name="etapas" type="Etapas"/>
+            <xs:element name="orgao" type="Orgao"/>
+            <xs:element name="segmentos-da-sociedade" type="SegmentosDaSociedade"/>
+            <xs:element name="eventos-da-linha-da-vida" type="EventosDaLinhaDaVida"/>
+            <xs:element name="areas-de-interesse" type="AreasDeInteresse"/>
+            <xs:element name="palavras-chave" type="PalavrasChave"/>
+            <xs:element name="legislacoes" type="Legislacoes"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="NomeDoServico">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Sigla">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="NomesPopulares">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="NomePopular"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="NomePopular">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="DescricaoDoServico">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Gratuito">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Solicitantes">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="solicitante" type="Solicitante"/>
+        </xs:sequence>
+
+    </xs:complexType>
+    <xs:complexType name="Solicitante">
+        <xs:sequence>
+            <xs:element name="tipo" type="TipoDeSolicitante"/>
+            <xs:element name="requisitos" type="Requisitos"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="TipoDeSolicitante">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Requisitos">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="TempoTotalEstimado">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="entre" type="Entre"/>
+                <xs:element name="ate" type="Ate"/>
+            </xs:choice>
+            <xs:element name="descricao" type="DescricaoDoTempoTotalEstimado"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Entre">
+        <xs:attribute name="min" type="UnidadeDeTempo"/>
+        <xs:attribute name="max" type="UnidadeDeTempo"/>
+        <xs:attribute name="tipo" type="TipoDeTempoTotalEstimado"/>
+    </xs:complexType>
+
+    <xs:complexType name="Ate">
+        <xs:attribute name="max" type="UnidadeDeTempo"/>
+        <xs:attribute name="tipo" type="TipoDeTempoTotalEstimado"/>
+    </xs:complexType>
+
+    <xs:simpleType name="TipoDeTempoTotalEstimado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="minutos"/>
+            <xs:enumeration value="horas"/>
+            <xs:enumeration value="dias"/>
+            <xs:enumeration value="dias-corridos"/>
+            <xs:enumeration value="dias-uteis"/>
+            <xs:enumeration value="meses"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="UnidadeDeTempo">
+        <xs:restriction base="xs:nonNegativeInteger"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="DescricaoDoTempoTotalEstimado">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Etapas">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="etapa" type="Etapa"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Etapa">
+        <xs:sequence>
+            <xs:element name="titulo" type="Titulo"/>
+            <xs:element name="descricao" type="DescricaoDaEtapa"/>
+            <xs:element name="documentos" type="Documentos"/>
+            <xs:element name="custos" type="Custos"/>
+            <xs:element name="canais-de-prestacao" type="CanaisDePrestacao"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="Titulo">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="DescricaoDaEtapa">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Documentos">
+        <xs:sequence>
+            <xs:element name="default" type="CasoDeDocumentos"/>
+            <xs:element name="caso" type="CasoDeDocumentos" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CasoDeDocumentos">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="item" type="Documento"/>
+        </xs:sequence>
+        <xs:attribute name="descricao" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="Documento">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Custos">
+        <xs:sequence>
+            <xs:element name="default" type="CasoDeCustos"/>
+            <xs:element name="caso" type="CasoDeCustos" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CasoDeCustos">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="custo" type="Custo" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="descricao" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="Custo">
+        <xs:sequence>
+            <xs:element name="descricao" type="DescricaoDoCusto"/>
+            <xs:element name="moeda" type="Moeda"/>
+            <xs:element name="valor" type="Valor"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="DescricaoDoCusto">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Moeda">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Valor">
+        <xs:restriction base="xs:string"/>
+        <!-- TODO: restringir usando expressão regular para aceitar números e vírgula separando os centavos -->
+    </xs:simpleType>
+
+    <xs:complexType name="CanaisDePrestacao">
+        <xs:sequence>
+            <xs:element name="default" type="CasoDeCanaisDePrestacao"/>
+            <xs:element name="caso" type="CasoDeCanaisDePrestacao" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CasoDeCanaisDePrestacao">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="canal-de-prestacao" type="CanalDePrestacao"/>
+        </xs:sequence>
+        <xs:attribute name="descricao" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="CanalDePrestacao">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="descricao" type="DescricaoDeCanalDePrestacao"/>
+        </xs:sequence>
+        <xs:attribute name="tipo" type="TipoDeCanalDePrestacao"/>
+    </xs:complexType>
+
+    <xs:simpleType name="DescricaoDeCanalDePrestacao">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoDeCanalDePrestacao">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="web"/>
+            <xs:enumeration value="web-agendar"/>
+            <xs:enumeration value="web-inscrever-se"/>
+            <xs:enumeration value="web-simular"/>
+            <xs:enumeration value="web-calcular-taxas"/>
+            <xs:enumeration value="web-acompanhar"/>
+            <xs:enumeration value="web-consultar"/>
+            <xs:enumeration value="web-emitir"/>
+            <xs:enumeration value="web-preencher"/>
+            <xs:enumeration value="web-declarar"/>
+            <xs:enumeration value="presencial"/>
+            <xs:enumeration value="telefone"/>
+            <xs:enumeration value="e-mail"/>
+            <xs:enumeration value="postal"/>
+            <xs:enumeration value="aplicativo-movel"/>
+            <xs:enumeration value="sms"/>
+            <xs:enumeration value="fax"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Orgao">
+        <xs:attribute name="id" type="xs:string"/>
+        <!-- TODO: restringir aos orgaos existentes -->
+    </xs:complexType>
+
+    <xs:complexType name="SegmentosDaSociedade">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="SegmentoDaSociedade"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="SegmentoDaSociedade">
+        <xs:restriction base="xs:string"/>
+        <!-- TODO: restringir aos tipos existentes -->
+    </xs:simpleType>
+
+    <xs:complexType name="EventosDaLinhaDaVida">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="EventoDaLinhaDaVida"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="EventoDaLinhaDaVida">
+        <xs:restriction base="xs:string"/>
+        <!-- TODO: restringir aos tipos existentes -->
+    </xs:simpleType>
+
+    <xs:complexType name="AreasDeInteresse">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="AreaDeInteresse"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="AreaDeInteresse">
+        <xs:restriction base="xs:string"/>
+        <!-- TODO: restringir aos tipos existentes -->
+    </xs:simpleType>
+
+    <xs:complexType name="PalavrasChave">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="PalavraChave"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="PalavraChave">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="Legislacoes">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="item" type="Legislacao"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="Legislacao">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+</xs:schema>

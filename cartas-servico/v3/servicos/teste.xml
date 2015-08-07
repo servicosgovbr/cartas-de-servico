@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<servico xmlns="http://servicos.gov.br/v3/schema"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+
     <nome>Teste</nome>
     <sigla>TST</sigla>
     <nomes-populares>
@@ -28,6 +31,7 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
+        <entre max="10" min="1" tipo="dias-corridos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
