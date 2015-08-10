@@ -239,7 +239,6 @@
 
     <xs:complexType name="Orgao">
         <xs:attribute name="id" type="xs:string"/>
-        <!-- TODO: restringir aos orgaos existentes -->
     </xs:complexType>
 
     <xs:complexType name="SegmentosDaSociedade">
@@ -249,8 +248,12 @@
     </xs:complexType>
 
     <xs:simpleType name="SegmentoDaSociedade">
-        <xs:restriction base="xs:string"/>
-        <!-- TODO: restringir aos tipos existentes -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cidadãos"/>
+            <xs:enumeration value="Empresas"/>
+            <xs:enumeration value="Órgãos e entidades públicas"/>
+            <xs:enumeration value="Demais segmentos (ONGs, organizações sociais, etc)"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:complexType name="EventosDaLinhaDaVida">
@@ -260,8 +263,23 @@
     </xs:complexType>
 
     <xs:simpleType name="EventoDaLinhaDaVida">
-        <xs:restriction base="xs:string"/>
-        <!-- TODO: restringir aos tipos existentes -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Apoio financeiro e crédito"/>
+            <xs:enumeration value="Aposentadoria"/>
+            <xs:enumeration value="Contas e Impostos"/>
+            <xs:enumeration value="Cuidados com a saúde"/>
+            <xs:enumeration value="Documentos e certidões"/>
+            <xs:enumeration value="Empreendedorismo e negócios"/>
+            <xs:enumeration value="Estrangeiros no Brasil"/>
+            <xs:enumeration value="Estudos"/>
+            <xs:enumeration value="Exportação de produtos e serviços"/>
+            <xs:enumeration value="Família"/>
+            <xs:enumeration value="Importação de produtos e serviços"/>
+            <xs:enumeration value="Imóveis"/>
+            <xs:enumeration value="Profissão e trabalho"/>
+            <xs:enumeration value="Veículos"/>
+            <xs:enumeration value="Viagem ao exterior"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:complexType name="AreasDeInteresse">
@@ -271,8 +289,50 @@
     </xs:complexType>
 
     <xs:simpleType name="AreaDeInteresse">
-        <xs:restriction base="xs:string"/>
-        <!-- TODO: restringir aos tipos existentes -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Abastecimento"/>
+            <xs:enumeration value="Administração financeira"/>
+            <xs:enumeration value="Agricultura orgânica"/>
+            <xs:enumeration value="Agropecuária"/>
+            <xs:enumeration value="Águas"/>
+            <xs:enumeration value="Alimento"/>
+            <xs:enumeration value="Ambiente e saúde"/>
+            <xs:enumeration value="Comunicações"/>
+            <xs:enumeration value="Comércio e Serviços"/>
+            <xs:enumeration value="Economia e Finanças"/>
+            <xs:enumeration value="Educação"/>
+            <xs:enumeration value="Educação básica"/>
+            <xs:enumeration value="Educação superior"/>
+            <xs:enumeration value="Educação à distância"/>
+            <xs:enumeration value="Emergências e Urgências"/>
+            <xs:enumeration value="Encargos financeiros"/>
+            <xs:enumeration value="Esporte e Lazer"/>
+            <xs:enumeration value="Finanças"/>
+            <xs:enumeration value="Habitação"/>
+            <xs:enumeration value="Humanização na saúde"/>
+            <xs:enumeration value="Indústria"/>
+            <xs:enumeration value="Meio ambiente"/>
+            <xs:enumeration value="Pecuária"/>
+            <xs:enumeration value="Pessoa"/>
+            <xs:enumeration value="Previdência Social"/>
+            <xs:enumeration value="Previdência social"/>
+            <xs:enumeration value="Profissionais da educação"/>
+            <xs:enumeration value="Proteção social"/>
+            <xs:enumeration value="Qualidade ambiental"/>
+            <xs:enumeration value="Relações Internacionais"/>
+            <xs:enumeration value="Saúde"/>
+            <xs:enumeration value="Saúde da criança"/>
+            <xs:enumeration value="Saúde da família"/>
+            <xs:enumeration value="Saúde da mulher"/>
+            <xs:enumeration value="Saúde do homem"/>
+            <xs:enumeration value="Saúde do idoso"/>
+            <xs:enumeration value="Saúde dos portadores de deficiências"/>
+            <xs:enumeration value="Segurança e Ordem Pública"/>
+            <xs:enumeration value="Trabalho"/>
+            <xs:enumeration value="Transportes"/>
+            <xs:enumeration value="Turismo"/>
+            <xs:enumeration value="Urbanismo"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:complexType name="PalavrasChave">
