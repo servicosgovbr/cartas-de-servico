@@ -349,7 +349,7 @@
     </xs:simpleType>
 
     <xs:complexType name="Legislacoes">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="Legislacao"/>
         </xs:sequence>
     </xs:complexType>
