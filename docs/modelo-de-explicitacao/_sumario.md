@@ -3,3 +3,4 @@
     - [Versões](./modelo-de-explicitacao/versoes.md)
     - [Estrutura de diretórios](./modelo-de-explicitacao/estrutura-de-diretorios.md)
     - [Exemplo XSD](./modelo-de-explicitacao/exemplo-xsd.md)
+  - [Diagrama de entidade relacionamento](./modelo-de-explicitacao/der.md)
