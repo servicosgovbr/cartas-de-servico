@@ -57,11 +57,11 @@
     </xs:simpleType>
 
     <xs:complexType name="Solicitantes">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="solicitante" type="Solicitante"/>
         </xs:sequence>
-
     </xs:complexType>
+
     <xs:complexType name="Solicitante">
         <xs:sequence>
             <xs:element name="tipo" type="TipoDeSolicitante"/>
