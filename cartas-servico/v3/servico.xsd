@@ -246,7 +246,7 @@
     </xs:complexType>
 
     <xs:complexType name="SegmentosDaSociedade">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="SegmentoDaSociedade"/>
         </xs:sequence>
     </xs:complexType>
