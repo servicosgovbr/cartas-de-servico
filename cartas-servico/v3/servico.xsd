@@ -35,7 +35,7 @@
     </xs:simpleType>
 
     <xs:complexType name="NomesPopulares">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="NomePopular"/>
         </xs:sequence>
     </xs:complexType>
