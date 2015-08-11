@@ -261,7 +261,7 @@
     </xs:simpleType>
 
     <xs:complexType name="EventosDaLinhaDaVida">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="EventoDaLinhaDaVida"/>
         </xs:sequence>
     </xs:complexType>
