@@ -79,7 +79,7 @@
 
     <xs:complexType name="TempoTotalEstimado">
         <xs:sequence>
-            <xs:choice>
+            <xs:choice minOccurs="0" maxOccurs="1">
                 <xs:element name="entre" type="Entre"/>
                 <xs:element name="ate" type="Ate"/>
             </xs:choice>
