@@ -49,7 +49,11 @@
     </xs:simpleType>
 
     <xs:simpleType name="Gratuito">
-        <xs:restriction base="xs:boolean"/>
+        <xs:restriction>
+            <xs:enumeration value=""/>
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:complexType name="Solicitantes">
