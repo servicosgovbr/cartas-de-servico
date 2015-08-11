@@ -339,7 +339,7 @@
     </xs:simpleType>
 
     <xs:complexType name="PalavrasChave">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="PalavraChave"/>
         </xs:sequence>
     </xs:complexType>
