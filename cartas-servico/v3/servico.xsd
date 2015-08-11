@@ -84,14 +84,14 @@
     </xs:complexType>
 
     <xs:complexType name="Entre">
-        <xs:attribute name="min" type="UnidadeDeTempo"/>
-        <xs:attribute name="max" type="UnidadeDeTempo"/>
-        <xs:attribute name="tipo" type="TipoDeTempoTotalEstimado"/>
+        <xs:attribute name="min" type="UnidadeDeTempo" use="required"/>
+        <xs:attribute name="max" type="UnidadeDeTempo" use="required"/>
+        <xs:attribute name="unidade" type="TipoDeTempoTotalEstimado" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="Ate">
-        <xs:attribute name="max" type="UnidadeDeTempo"/>
-        <xs:attribute name="tipo" type="TipoDeTempoTotalEstimado"/>
+        <xs:attribute name="max" type="UnidadeDeTempo" use="required"/>
+        <xs:attribute name="unidade" type="TipoDeTempoTotalEstimado" use="required"/>
     </xs:complexType>
 
     <xs:simpleType name="TipoDeTempoTotalEstimado">
@@ -148,7 +148,7 @@
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="item" type="Documento"/>
         </xs:sequence>
-        <xs:attribute name="descricao" type="xs:string"/>
+        <xs:attribute name="descricao" type="xs:string" use="optional"/>
     </xs:complexType>
 
     <xs:simpleType name="Documento">
@@ -166,7 +166,7 @@
         <xs:sequence maxOccurs="unbounded">
             <xs:element name="custo" type="Custo" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-        <xs:attribute name="descricao" type="xs:string"/>
+        <xs:attribute name="descricao" type="xs:string" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="Custo">
@@ -201,14 +201,14 @@
         <xs:sequence maxOccurs="unbounded">
             <xs:element name="canal-de-prestacao" type="CanalDePrestacao"/>
         </xs:sequence>
-        <xs:attribute name="descricao" type="xs:string"/>
+        <xs:attribute name="descricao" type="xs:string" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="CanalDePrestacao">
         <xs:sequence maxOccurs="unbounded">
             <xs:element name="descricao" type="DescricaoDeCanalDePrestacao"/>
         </xs:sequence>
-        <xs:attribute name="tipo" type="TipoDeCanalDePrestacao"/>
+        <xs:attribute name="tipo" type="TipoDeCanalDePrestacao" use="required"/>
     </xs:complexType>
 
     <xs:simpleType name="DescricaoDeCanalDePrestacao">
@@ -238,7 +238,7 @@
     </xs:simpleType>
 
     <xs:complexType name="Orgao">
-        <xs:attribute name="id" type="xs:string"/>
+        <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="SegmentosDaSociedade">
