@@ -9,20 +9,20 @@
     <xs:element name="servico" type="Servico"/>
     <xs:complexType name="Servico">
         <xs:sequence>
-            <xs:element name="nome" type="NomeDoServico"/>
-            <xs:element name="sigla" type="Sigla"/>
-            <xs:element name="nomes-populares" type="NomesPopulares"/>
-            <xs:element name="descricao" type="DescricaoDoServico"/>
-            <xs:element name="gratuito" type="Gratuito"/>
-            <xs:element name="solicitantes" type="Solicitantes"/>
-            <xs:element name="tempo-total-estimado" type="TempoTotalEstimado"/>
-            <xs:element name="etapas" type="Etapas"/>
-            <xs:element name="orgao" type="Orgao"/>
-            <xs:element name="segmentos-da-sociedade" type="SegmentosDaSociedade"/>
-            <xs:element name="eventos-da-linha-da-vida" type="EventosDaLinhaDaVida"/>
-            <xs:element name="areas-de-interesse" type="AreasDeInteresse"/>
-            <xs:element name="palavras-chave" type="PalavrasChave"/>
-            <xs:element name="legislacoes" type="Legislacoes"/>
+            <xs:element name="nome" type="NomeDoServico" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="sigla" type="Sigla" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="nomes-populares" type="NomesPopulares" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="descricao" type="DescricaoDoServico" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="gratuito" type="Gratuito" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="solicitantes" type="Solicitantes" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="tempo-total-estimado" type="TempoTotalEstimado" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="etapas" type="Etapas" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="orgao" type="Orgao" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="segmentos-da-sociedade" type="SegmentosDaSociedade" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="eventos-da-linha-da-vida" type="EventosDaLinhaDaVida" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="areas-de-interesse" type="AreasDeInteresse" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="palavras-chave" type="PalavrasChave" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="legislacoes" type="Legislacoes" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -118,15 +118,15 @@
     </xs:simpleType>
 
     <xs:complexType name="Etapas">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="etapa" type="Etapa"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="Etapa">
         <xs:sequence>
-            <xs:element name="titulo" type="Titulo"/>
-            <xs:element name="descricao" type="DescricaoDaEtapa"/>
+            <xs:element name="titulo" type="Titulo" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="descricao" type="DescricaoDaEtapa" minOccurs="0" maxOccurs="1"/>
             <xs:element name="documentos" type="Documentos" minOccurs="0" maxOccurs="1"/>
             <xs:element name="custos" type="Custos" minOccurs="0" maxOccurs="1"/>
             <xs:element name="canais-de-prestacao" type="CanaisDePrestacao" minOccurs="0" maxOccurs="1"/>
