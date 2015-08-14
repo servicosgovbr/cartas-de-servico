@@ -127,9 +127,9 @@
         <xs:sequence>
             <xs:element name="titulo" type="Titulo"/>
             <xs:element name="descricao" type="DescricaoDaEtapa"/>
-            <xs:element name="documentos" type="Documentos"/>
-            <xs:element name="custos" type="Custos"/>
-            <xs:element name="canais-de-prestacao" type="CanaisDePrestacao"/>
+            <xs:element name="documentos" type="Documentos" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="custos" type="Custos" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="canais-de-prestacao" type="CanaisDePrestacao" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
 
