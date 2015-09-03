@@ -17,96 +17,119 @@
             <tipo>Menores de idade</tipo>
             <requisitos>Os requisitos do solicitante menor de idade são:
 
-* Item 1
-* Item 2</requisitos>
+* Acompanhar as operações afetas às instituições de ensino superior
+* Solicitar e validar aditamento de contrato de financiamento</requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Tipo de solicitante 2</tipo>
+            <tipo>Maiores de idade</tipo>
             <requisitos>Requisitos do solicitante 2
 
-* Item 1
-* Item 2</requisitos>
+* Solicitar e validar aditamento de contrato de financiamento
+* Acompanhar as operações afetas às instituições de ensino superior</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <entre max="10" min="1" unidade="dias-uteis"/>
-        <descricao>Slicitar e validar aditamento de contrato de financiamento, emitir documentos de regularidade de inscrição e de aditamento e acompanhar a legislação do FIES.</descricao>
+        <descricao>Solicitar e validar aditamento de contrato de financiamento, emitir documentos de regularidade de inscrição e de aditamento e acompanhar a legislação do FIES.</descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Título da etapa 1</titulo>
-            <descricao>Descrição da etapa 1
+            <titulo>Agendamento da visita</titulo>
+            <descricao>Solicitar recompra de CFT-E e acompanhar as operações afetas às instituições de ensino superior mantidas (IES), dentre outras funcionalidades.
 
-* Item 1
-* Item 2</descricao>
+* Primeiro item sobre essa descrição
+* Segundo sobre essa descrição</descricao>
             <documentos>
                 <default>
-                    <item>Documento do caso padrão</item>
+                    <item>RG</item>
+                    <item>CPF</item>
+                    <item>Certificado de reservista</item>
                 </default>
-                <caso descricao="Caso 1">
-                    <item>Documento 1 do caso 1</item>
-                    <item>Documento 2 do caso 1</item>
+                <caso descricao="Menores de idade">
+                    <item>Comprovante de liberação dos pais</item>
                 </caso>
-                <caso descricao="Caso 2">
-                    <item>Documento 1 do caso 2</item>
-                    <item>Documento 2 do caso 2</item>
+                <caso descricao="Estudantes bolsistas">
+                    <item>Comprovante do INSS</item>
+                    <item>Comprovante negativo de alguma coisa</item>
                 </caso>
             </documentos>
             <custos>
                 <default>
                     <custo>
-                        <descricao>Descrição do custo 1</descricao>
+                        <descricao>Taxa de inscrição</descricao>
                         <moeda>R$</moeda>
-                        <valor>10,00</valor>
+                        <valor>60,00</valor>
                     </custo>
                     <custo>
-                        <descricao>Descrição do custo 2</descricao>
+                        <descricao>Impressão da segunda via do comprovante</descricao>
                         <moeda>R$</moeda>
-                        <valor>11,00</valor>
+                        <valor>2,00</valor>
                     </custo>
                 </default>
-                <caso descricao="Caso de custos 1">
+                <caso descricao="Estudantes bolsistas">
                     <custo>
-                        <descricao>Custo 1 do caso 1</descricao>
+                        <descricao>Taxa de inscrição</descricao>
                         <moeda>R$</moeda>
-                        <valor>13,00</valor>
+                        <valor>0,00</valor>
                     </custo>
                     <custo>
-                        <descricao>Custo 2 do caso 1</descricao>
+                        <descricao>Impressão da segunda via do comprovante</descricao>
                         <moeda>R$</moeda>
-                        <valor>14,00</valor>
+                        <valor>0,00</valor>
                     </custo>
                 </caso>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web-agendar">
-                        <descricao>Canal 1 padrão</descricao>
+                        <descricao>http://sisfiesaluno.mec.gov.br/seguranca/principal</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web-calcular-taxas">
-                        <descricao>Canal 2 padrão</descricao>
+                    <canal-de-prestacao tipo="web-simular">
+                        <descricao>http://sisfiesportal.mec.gov.br/simulacao.php</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao>0800 616161</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http://mec.cube.callsp.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Fmec.cube.callsp.inf.br%2Fauto-atendimento%2Fauth-callback&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw&amp;balcao_redirect_uri=%2Fauto-atendimento%2Fnavegacao-informacoes%2F#/MjA0Ni1zZQ==</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso descricao="Caso canais 1">
-                    <canal-de-prestacao tipo="web-acompanhar">
-                        <descricao>Canal 1 caso 1</descricao>
+                <caso descricao="Deficientes auditivos">
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao>0800 616162</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Título da etapa 2</titulo>
-            <descricao/>
+            <titulo>Recebimento do benefício</titulo>
+            <descricao>Neste módulo do SisFIES, além da adesão ao Fundo, as entidades mantenedoras podem atualizar.</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>CPF</item>
+                    <item>RG</item>
+                </default>
+                <caso descricao="Alunos do ensino privado">
+                    <item>Comprovante de pagamento da taxa de inscrição</item>
+                    <item>Certificado de conclusão do ensino médio</item>
+                </caso>
+                <caso descricao="Alunos do ensino público">
+                    <item>Certificado de conclusão do ensino médio</item>
+                </caso>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo>
+                        <descricao>Pagamento da taxa de matrícula</descricao>
+                        <moeda/>
+                        <valor>90,00</valor>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>Caso da etapa 2</descricao>
+                        <descricao>Rua Santana 1754, Rio Branco - Paraná - CEP 91877-530</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -124,12 +147,12 @@
         <item>Abastecimento</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Palavra 1</item>
-        <item>Palavra 2</item>
+        <item>palavra</item>
+        <item>palavra</item>
+        <item>palavra</item>
     </palavras-chave>
     <legislacoes>
-        <item>Lei 1</item>
-        <item>Lei 2</item>
-        <item>Lei 3</item>
+        <item>http://www.lexml.gov.br/urn/urn:lex:br;justica.trabalho;regiao.24:tribunal.regional.trabalho;turma.1:acordao:2014-04-29;0000123-65.2012.5.24.0072</item>
+        <item>http://www.lexml.gov.br/urn/urn:lex:br:superior.tribunal.justica;turma.1:acordao;rms:1990-04-18;123-12114</item>
     </legislacoes>
 </servico>
