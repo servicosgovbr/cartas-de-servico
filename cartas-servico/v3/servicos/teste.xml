@@ -82,24 +82,34 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web-agendar">
-                        <descricao>Canal 1 padrão</descricao>
+                        <descricao>http://sisfiesaluno.mec.gov.br/seguranca/principal</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web-calcular-taxas">
-                        <descricao>Canal 2 padrão</descricao>
+                    <canal-de-prestacao tipo="web-simular">
+                        <descricao>http://sisfiesportal.mec.gov.br/simulacao.php</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao>0800 616161</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http://mec.cube.callsp.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Fmec.cube.callsp.inf.br%2Fauto-atendimento%2Fauth-callback&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw&amp;balcao_redirect_uri=%2Fauto-atendimento%2Fnavegacao-informacoes%2F#/MjA0Ni1zZQ==</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso descricao="Caso canais 1">
-                    <canal-de-prestacao tipo="web-acompanhar">
-                        <descricao>Canal 1 caso 1</descricao>
+                <caso descricao="Deficientes auditivos">
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao>0800 616162</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Título da etapa 2</titulo>
-            <descricao/>
+            <titulo>Recebimento do benefício</titulo>
+            <descricao>Neste módulo do SisFIES, além da adesão ao Fundo, as entidades mantenedoras podem atualizar.</descricao>
             <documentos>
                 <default/>
+                <caso descricao="Alunos bolsistas"/>
+                <caso descricao="">
+                    <item>Comprovante de pagamento da taxa de inscrição</item>
+                </caso>
             </documentos>
             <custos>
                 <default/>
