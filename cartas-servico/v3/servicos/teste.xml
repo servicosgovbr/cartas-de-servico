@@ -105,19 +105,31 @@
             <titulo>Recebimento do benefício</titulo>
             <descricao>Neste módulo do SisFIES, além da adesão ao Fundo, as entidades mantenedoras podem atualizar.</descricao>
             <documentos>
-                <default/>
-                <caso descricao="Alunos bolsistas"/>
-                <caso descricao="">
+                <default>
+                    <item>CPF</item>
+                    <item>RG</item>
+                </default>
+                <caso descricao="Alunos do ensino privado">
                     <item>Comprovante de pagamento da taxa de inscrição</item>
+                    <item>Certificado de conclusão do ensino médio</item>
+                </caso>
+                <caso descricao="Alunos do ensino público">
+                    <item>Certificado de conclusão do ensino médio</item>
                 </caso>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo>
+                        <descricao>Pagamento da taxa de matrícula</descricao>
+                        <moeda/>
+                        <valor>90,00</valor>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>Caso da etapa 2</descricao>
+                        <descricao>Rua Santana 1754, Rio Branco - Paraná - CEP 91877-530</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -134,7 +146,11 @@
         <item>Agricultura orgânica</item>
         <item>Abastecimento</item>
     </areas-de-interesse>
-    <palavras-chave/>
+    <palavras-chave>
+        <item>certificado de conclusão</item>
+        <item>nome da palavra-chave 2</item>
+        <item>keyword</item>
+    </palavras-chave>
     <legislacoes>
         <item>Lei 1</item>
         <item>Lei 2</item>
