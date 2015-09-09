@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Denúncias On Line</nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao>Registro e Classificação de denúncias recebidas via Internet.</descricao>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Denunciante Anôninimo</tipo>
+            <requisitos>Nenhum.</requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Denunciante Identificado</tipo>
+            <requisitos>Possuir documento de identidade válido;
+Possuir um endereço eletrônico para contato;
+Possuir telefone para contato;
+Possuir endereço fixo para contato;
+Estar disponível para contato, caso necessário.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="15" min="10" unidade="dias-corridos"/>
+        <descricao>A classificação de uma denúncia pode demorar se os classificadores não estiverem disponíveis.</descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Registrar Denúncia</titulo>
+            <descricao>Consiste em capturar e registrar no sistema de denúncias os dados relativos à denúncia.</descricao>
+            <documentos>
+                <default>
+                    <item>Documentos indicativos da veracidade da denúncia (imagens, videos, sons, documentos, mensagens, relatos e outros tipos de arquivos)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http:\\www.dpf.gov.br\denunciaonline</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Classificação Colaborativa da Denúncia</titulo>
+            <descricao>Consiste em determinar de forma colaborativa os graus de relevância e confiabilidade de denúncias registradas, bem como identificar os principais elementos constitutivos da denúncia (vítima, autor do fato, local, data, condições, testemunhas, vestígios, etc).</descricao>
+            <documentos>
+                <default>
+                    <item>Não se aplica.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http:\\www.dpf.gov.br\denunciaonline?numeroDaDenuncia=xxxxxxxxxx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id=""/>
+    <segmentos-da-sociedade/>
+    <areas-de-interesse/>
+    <palavras-chave/>
+    <legislacoes/>
+</servico>
