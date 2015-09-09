@@ -135,6 +135,28 @@ http://atendimentovirtual.spu.planejamento.gov.br/Consultas/Fin_Pedido.asp</desc
             <titulo>Emitir Certidão de Autorização para Transferência (CAT).</titulo>
             <descricao>A CAT só poderá ser emitida se os débitos de sua responsabilidade estiverem constando como quitados em nosso sistema, o que poderá levar de três a quinze dias após o pagamento do laudêmio.</descricao>
             <documentos>
+                <default>
+                    <item>informação do tipo de transação; número da FCL  e Número do RIP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-emitir">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Transferências de Imóveis - Cálculo de Laudêmio, Emissão de CAT, Validação de CAT e Emissão de Darf
+
+ou diretamente em:
+http://atendimentovirtual.spu.planejamento.gov.br/Transferencia/Transf_Cat_Pedido.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Averbação de transferência</titulo>
+            <descricao/>
+            <documentos>
                 <default/>
             </documentos>
             <custos>
