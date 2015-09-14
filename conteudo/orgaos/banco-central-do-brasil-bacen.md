@@ -1,4 +1,4 @@
-Banco Central do Brasil (BCB)
+Banco Central do Brasil (Bacen)
 ---
 
 Autarquia federal vinculada ao [Ministério da Fazenda], tem por finalidade:
