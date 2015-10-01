@@ -17,7 +17,7 @@
             <xs:element name="solicitantes" type="Solicitantes" minOccurs="0" maxOccurs="1"/>
             <xs:element name="tempo-total-estimado" type="TempoTotalEstimado" minOccurs="0" maxOccurs="1"/>
             <xs:element name="etapas" type="Etapas" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="orgao" type="Orgao" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="orgao" type="Orgao" minOccurs="1" maxOccurs="1"/>
             <xs:element name="segmentos-da-sociedade" type="SegmentosDaSociedade" minOccurs="0" maxOccurs="1"/>
             <xs:element name="areas-de-interesse" type="AreasDeInteresse" minOccurs="0" maxOccurs="1"/>
             <xs:element name="palavras-chave" type="PalavrasChave" minOccurs="0" maxOccurs="1"/>
@@ -242,7 +242,13 @@
     </xs:simpleType>
 
     <xs:complexType name="Orgao">
-        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="id" use="required">
+            <xs:simpleType>
+		<xs:restriction base="xs:string">
+		    <xs:minLength value="1"/>
+		</xs:restriction>
+            </xs:simpleType>
+	</xs:attribute>
     </xs:complexType>
 
     <xs:complexType name="SegmentosDaSociedade">
