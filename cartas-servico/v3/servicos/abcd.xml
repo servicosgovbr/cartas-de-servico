@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>abcd</nome>
+    <sigla>AD</sigla>
+    <nomes-populares/>
+    <descricao>Benefício devido ao segurado que estiver incapacitado para o trabalho, que requer a avaliação da capacidade laboral (perícia médica).</descricao>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>empregado doméstico</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>contribuintes individuais</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>trabalhadores avulsos</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>segurados especiais</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>segurados facultativos</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="60" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Agendar Atendimento na Previdência Social</titulo>
+            <descricao>O agendamento deverá ser realizado após o 15º dia em que o empregado tiver trabalhado na empresa. No ato do agendamento o requerente informará os dados bancários em que deseja receber o serviço.</descricao>
+            <documentos>
+                <default>
+                    <item>nome</item>
+                    <item>data de nascimento</item>
+                    <item>Número de Identificação do Trabalhador (NIT) ou Nº PIS/PASEP</item>
+                </default>
+                <caso descricao="para agendamento de benefício assistencial ao portador de deficiência">
+                    <item>CPF</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-agendar">
+                        <descricao>http://www2.dataprev.gov.br/sabiweb/consulta/inicio.view</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao>135</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>[Agências da previdência](http://www3.dataprev.gov.br/enderecoAPS/mps1.asp)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web-consultar">
+                        <descricao>http://www2.dataprev.gov.br/sabiweb/consulta/inicio.view</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Requerer Auxílio-doença previdenciário</titulo>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item>Número de Identificação do Trabalhador – NIT (PIS/PASEP)</item>
+                    <item>Atestado Médico, Exames de Laboratório, Atestado de Internação Hospitalar, Atestados de Tratamento Ambulatorial ou outros  documentos que comprovem a incapacidade para o trabalho, todos originais, devidamente atualizados</item>
+                    <item>Carteira de Identidade</item>
+                    <item>Cadastro de Pessoa Física - CPF</item>
+                    <item>Todas as Carteiras de Trabalho e Previdência Social ou outros documentos que comprovem o exercício de atividade e/ou tempo de contribuição, tais como guias e carnês de recolhimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>[Agências da previdência](http://www3.dataprev.gov.br/enderecoAPS/mps1.asp)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Avaliação da Capacidade Laboral (Perícia Médica)</titulo>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item>Número de Identificação do Trabalhador (NIT) ou PIS/PASEP</item>
+                    <item>Carteira de Identidade</item>
+                    <item>Cadastro de Pessoa Física (CPF)</item>
+                    <item>Todas as Carteiras de Trabalho e Previdência Social ou outros documentos que comprovem o exercício de atividade e/ou tempo de contribuição, tais como guias e carnês de recolhimento</item>
+                    <item>Atestado Médico, Exames de Laboratório, Atestado de Internação Hospitalar, Atestados de Tratamento Ambulatorial ou outros documentos que comprovem a incapacidade para o trabalho, todos originais, devidamente atualizados</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>[Agências da previdência](http://www3.dataprev.gov.br/enderecoAPS/mps1.asp)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1930"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Previdência Social</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>incapacidade</item>
+        <item>capacidade laborativa</item>
+        <item>acidente de trabalho</item>
+        <item>benefício</item>
+        <item>direito</item>
+        <item>perícia médica</item>
+        <item>INS</item>
+        <item>INPS</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>Lei 8.213/1991, Título III, Capítulo II, Seção V, Subseção V (Auxílio-doença)</item>
+    </legislacoes>
+</servico>
