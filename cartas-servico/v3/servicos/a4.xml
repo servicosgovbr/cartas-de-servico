@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>A4</nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Teste</item>
+        <item>Teste 1</item>
+    </nomes-populares>
+    <descricao>Este é um serviço de teste.</descricao>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Eu</tipo>
+            <requisitos>maior de 18 anos</requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Você</tipo>
+            <requisitos>MEnor de 18</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="10" unidade="horas"/>
+        <descricao>Apenas um teste.</descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Faz o agendamento</titulo>
+            <descricao>Este é apenas um teste
+AW EFW
+S WEF
+S WEF WF
+S WERF</descricao>
+            <documentos>
+                <default>
+                    <item>RG</item>
+                    <item>CPF</item>
+                    <item>CNH</item>
+                </default>
+                <caso descricao="Se for maior de 18 anos">
+                    <item>RG</item>
+                </caso>
+                <caso descricao="Se for menos de 18 anos">
+                    <item>certidão de nascimento</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao>Boleto</descricao>
+                        <moeda/>
+                        <valor>10</valor>
+                    </custo>
+                </default>
+                <caso descricao="Se for maior de 18 anos">
+                    <custo>
+                        <descricao/>
+                        <moeda/>
+                        <valor>10</valor>
+                    </custo>
+                </caso>
+                <caso descricao="Se for menor de 18 anos">
+                    <custo>
+                        <descricao/>
+                        <moeda/>
+                        <valor>0</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao>teste@teste.com</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>teste.com.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso descricao="Se for maior que 18 anos">
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>vai no local</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>www.teste.com</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Órgãos e entidades públicas</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Clima</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>teste</item>
+        <item>teste 1</item>
+        <item>teste 2</item>
+        <item>teste 3</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>Lei tal e tal</item>
+        <item>Decreto tal e tal</item>
+    </legislacoes>
+</servico>
