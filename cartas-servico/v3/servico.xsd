@@ -242,13 +242,24 @@
     </xs:simpleType>
 
     <xs:complexType name="Orgao">
+        <xs:sequence minOccurs="0" maxOccurs="1">
+            <xs:element name="contato">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="0"/>
+                        <xs:maxLength value="500"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
         <xs:attribute name="id" use="required">
             <xs:simpleType>
-		<xs:restriction base="xs:string">
-		    <xs:minLength value="1"/>
-		</xs:restriction>
+                <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                </xs:restriction>
             </xs:simpleType>
-	</xs:attribute>
+        </xs:attribute>
+
     </xs:complexType>
 
     <xs:complexType name="SegmentosDaSociedade">
