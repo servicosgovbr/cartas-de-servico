@@ -3,7 +3,8 @@
 set -e -o pipefail
 
 XMLLINT_VERSAO_MINIMA='20706'
-CARTAS_DIR='cartas-servico'
+SCHEMA='conteudo/servico.xsd'
+CARTAS_DIR='conteudo/servicos'
 
 if ! which xmllint > /dev/null; then
   echo 'Commando xmllint não encontrado. verifique se você tem o pacote libxml instalado corretamente.'
@@ -23,6 +24,6 @@ if [ ! -d "$CARTAS_DIR" ]; then
   exit -1
 fi
 
-for xml in $CARTAS_DIR/v3/servicos/*.xml; do
-  xmllint --schema $CARTAS_DIR/v3/servico.xsd --noout "$xml"
+for xml in $CARTAS_DIR/*.xml; do
+  xmllint --schema $SCHEMA --noout "$xml"
 done
