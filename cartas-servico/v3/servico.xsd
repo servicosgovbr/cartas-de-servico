@@ -201,14 +201,14 @@
     </xs:complexType>
 
     <xs:complexType name="CasoDeCanaisDePrestacao">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="canal-de-prestacao" type="CanalDePrestacao"/>
         </xs:sequence>
         <xs:attribute name="descricao" type="xs:string" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="CanalDePrestacao">
-        <xs:sequence maxOccurs="unbounded">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element name="descricao" type="DescricaoDeCanalDePrestacao"/>
         </xs:sequence>
         <xs:attribute name="tipo" type="TipoDeCanalDePrestacao" use="required"/>
