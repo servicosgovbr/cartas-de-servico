@@ -27,3 +27,6 @@ fi
 for xml in $CARTAS_DIR/*.xml; do
   xmllint --schema $SCHEMA --noout "$xml"
 done
+
+zip $CARTAS_DIR/servicos.zip $CARTAS_DIR/*.xml
+
