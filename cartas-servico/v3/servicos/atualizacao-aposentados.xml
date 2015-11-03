@@ -3,17 +3,23 @@
     <nome>Atualização aposentados</nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Permite a atualização de endereço de aposentados e pensionistas, informando o número do benefício, data de nascimento, novo CEP, nome do beneficiário e o CPF.
+    <descricao>Permite a atualização de endereço de aposentados e pensionistas, informando o número do benefício, data de nascimento, novo CEP, nome do beneficiário e o CPF. Teste.
 
 * [Telefone](undefined): Ligue 135 mais informações.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Solicitante</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="2" unidade="horas"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>Etapa 1</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -33,13 +39,21 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1930"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1930">
+        <contato/>
+    </orgao>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Teste 1</item>
+        <item>Teste 2</item>
+        <item>Teste 3</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>Le</item>
+    </legislacoes>
 </servico>
