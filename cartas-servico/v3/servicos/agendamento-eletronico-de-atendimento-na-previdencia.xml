@@ -3,17 +3,21 @@
     <nome>Agendamento eletrônico de atendimento na Previdência</nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Solicitação de agendamento dos serviços prestados pela Previdência Social.
-
-* [Telefone](undefined): Ligue 135 para mais informações</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <descricao>Solicitação</descricao>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Teste</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="10" unidade="dias-uteis"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>Teste</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -30,13 +34,23 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1930"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1930">
+        <contato/>
+    </orgao>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
+        <item>Agropecuária</item>
+        <item>Água</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Teste 1</item>
+        <item>Teste 2</item>
+        <item>Teste 3</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>Serviço</item>
+    </legislacoes>
 </servico>
