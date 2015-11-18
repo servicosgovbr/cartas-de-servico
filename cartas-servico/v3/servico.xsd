@@ -22,6 +22,14 @@
             <xs:element name="areas-de-interesse" type="AreasDeInteresse" minOccurs="0" maxOccurs="1"/>
             <xs:element name="palavras-chave" type="PalavrasChave" minOccurs="0" maxOccurs="1"/>
             <xs:element name="legislacoes" type="Legislacoes" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contato" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="0"/>
+                        <xs:maxLength value="500"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 
@@ -201,14 +209,14 @@
     </xs:complexType>
 
     <xs:complexType name="CasoDeCanaisDePrestacao">
-        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="canal-de-prestacao" type="CanalDePrestacao"/>
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="canal-de-prestacao" type="CanalDePrestacao" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="descricao" type="xs:string" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="CanalDePrestacao">
-        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:sequence maxOccurs="unbounded">
             <xs:element name="descricao" type="DescricaoDeCanalDePrestacao"/>
         </xs:sequence>
         <xs:attribute name="tipo" type="TipoDeCanalDePrestacao" use="required"/>
