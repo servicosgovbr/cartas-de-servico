@@ -2,25 +2,30 @@
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome>Teste</nome>
     <sigla>abcd</sigla>
-    <nomes-populares/>
+    <nomes-populares>
+        <item>test</item>
+    </nomes-populares>
     <descricao>Breve texto explicativo!!!</descricao>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
             <tipo>Eu</tipo>
-            <requisitos/>
+            <requisitos>ser maior de 18 anos</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="1" unidade="horas"/>
-        <descricao/>
+        <descricao>comentário sobre tempo estimado comentário sobre tempo estimado comentário sobre tempo estimado comentário sobre tempo estimado</descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Primeira</titulo>
-            <descricao/>
+            <titulo>Primeira etapa</titulo>
+            <descricao>desc da etapa um</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>RG</item>
+                    <item>CPF</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -35,7 +40,7 @@
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
-        <contato/>
+        <contato>0800 111111111</contato>
     </orgao>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
