@@ -8,9 +8,10 @@
 
     <xs:element name="servico" type="Servico"/>
     <xs:complexType name="Servico">
-        <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
             <xs:element name="nome" type="NomeDoServico" minOccurs="1" maxOccurs="1"/>
             <xs:element name="sigla" type="Sigla" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contato" type="Contato" minOccurs="0" maxOccurs="1"/>
             <xs:element name="nomes-populares" type="NomesPopulares" minOccurs="0" maxOccurs="1"/>
             <xs:element name="descricao" type="DescricaoDoServico" minOccurs="0" maxOccurs="1"/>
             <xs:element name="gratuito" type="Gratuito" minOccurs="0" maxOccurs="1"/>
@@ -22,19 +23,18 @@
             <xs:element name="areas-de-interesse" type="AreasDeInteresse" minOccurs="0" maxOccurs="1"/>
             <xs:element name="palavras-chave" type="PalavrasChave" minOccurs="0" maxOccurs="1"/>
             <xs:element name="legislacoes" type="Legislacoes" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="contato" minOccurs="0" maxOccurs="1">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:minLength value="0"/>
-                        <xs:maxLength value="500"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
+        </xs:choice>
     </xs:complexType>
 
     <xs:simpleType name="NomeDoServico">
         <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="Contato">
+        <xs:restriction base="xs:string">
+	    <xs:minLength value="0"/>
+	    <xs:maxLength value="500"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="Sigla">
@@ -250,16 +250,6 @@
     </xs:simpleType>
 
     <xs:complexType name="Orgao">
-        <xs:sequence minOccurs="0" maxOccurs="1">
-            <xs:element name="contato">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:minLength value="0"/>
-                        <xs:maxLength value="500"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
         <xs:attribute name="id" use="required">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
