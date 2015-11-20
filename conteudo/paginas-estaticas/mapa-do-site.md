@@ -5,7 +5,7 @@ Uma visão geral do conteúdo disponível no site.
 ### Informações
 
 - [Página Inicial](/)
-- [Perguntas Frequentes](/conteudo/perguntas-frequentes)
+- [Perguntas Frequentes](/pagina-estatica/perguntas-frequentes)
 - [Para Desenvolvedores](http://servicosgovbr.github.io)
 
 ### Serviços
@@ -20,4 +20,4 @@ Uma visão geral do conteúdo disponível no site.
 
 ### Navegação
 
-- [Acessibilidade](/conteudo/acessibilidade)
+- [Acessibilidade](/pagina-estatica/acessibilidade)
