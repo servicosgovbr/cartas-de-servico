@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome>teste fabricio</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>asdfaasdf</descricao>
+    <sigla>tf</sigla>
+    <nomes-populares>
+        <item>testfab</item>
+    </nomes-populares>
+    <descricao><![CDATA[asdfaasdf]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
             <tipo>asdfas</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>afsdf solic 2</tipo>
             <requisitos/>
         </solicitante>
     </solicitantes>
@@ -29,7 +35,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="telefone">
-                        <descricao>54654654</descricao>
+                        <descricao><![CDATA[54654654]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -48,6 +54,6 @@
         <item>zxcvz</item>
     </palavras-chave>
     <legislacoes>
-        <item>zxcvzxcv</item>
+        <item><![CDATA[zxcvzxcv]]></item>
     </legislacoes>
 </servico>
