@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Aqui tem Farmácia Popular</nome>
+    <nome><![CDATA[Aqui tem Farmácia Popular]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>Na rede credenciada é possível ter acesso aos medicamentos para as doenças mais comuns entre os cidadãos. O Programa possui uma rede própria de Farmácias Populares e a parceria com farmácias e drogarias da rede privada, chamada de "Aqui tem Farmácia Popular".</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>Farmácia do Povo</item>
+        <item>Drogaria Barata</item>
+    </nomes-populares>
+    <descricao><![CDATA[Na rede credenciada é possível ter acesso aos medicamentos para as doenças mais comuns entre os cidadãos. O Programa possui uma rede própria de Farmácias Populares e a parceria com farmácias e drogarias da rede privada, chamada de "Aqui tem Farmácia Popular".]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Cidadão</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="1" unidade="horas"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>Ir à farmácia</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -22,7 +32,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://sage.saude.gov.br/?link=aqt&amp;flt=true&amp;param=null</descricao>
+                        <descricao><![CDATA[http://sage.saude.gov.br/?link=aqt&flt=true&param=null]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -36,6 +46,12 @@
         <item>Previdência Social</item>
         <item>Saúde</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>farmácia</item>
+        <item>povo</item>
+        <item>remédio</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Constituição]]></item>
+    </legislacoes>
 </servico>
