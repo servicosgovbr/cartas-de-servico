@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Solicitação de averbação (DE ou DSE)]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Averbacao</item>
+    </nomes-populares>
+    <descricao><![CDATA[Descrição: Solicitar a averbação (DE ou DSE).
+Público alvo: pessoa física e pessoa jurídica
+Formas de atendimento:
+Acesso direto ou com senha específica
+Unidades de atendimento presencial (apenas na jurisdição do contribuinte)]]></descricao>
+    <contato><![CDATA[teste comunicação]]></contato>
+    <gratuito/>
+    <solicitantes>
+        <solicitante>
+            <tipo>tipo 1</tipo>
+            <requisitos><![CDATA[requisitos]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>tipo 2</tipo>
+            <requisitos><![CDATA[requisitos necessários da solicitação]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>etapa 1</titulo>
+            <descricao><![CDATA[descrição da etapa]]></descricao>
+            <documentos>
+                <default>
+                    <item>documentação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[nome]]></descricao>
+                        <moeda/>
+                        <valor>2,5335</valor>
+                    </custo>
+                    <custo>
+                        <descricao><![CDATA[nome 2]]></descricao>
+                        <moeda/>
+                        <valor>3,999</valor>
+                    </custo>
+                </default>
+                <caso descricao="caso novo">
+                    <custo>
+                        <descricao><![CDATA[custo]]></descricao>
+                        <moeda/>
+                        <valor>0,11</valor>
+                    </custo>
+                </caso>
+                <caso descricao="caso 2">
+                    <custo>
+                        <descricao><![CDATA[custo]]></descricao>
+                        <moeda/>
+                        <valor>333</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[teste@mail.com. br]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/13460"/>
+    <segmentos-da-sociedade>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave/>
+    <legislacoes>
+        <item><![CDATA[legislações]]></item>
+    </legislacoes>
+</servico>
