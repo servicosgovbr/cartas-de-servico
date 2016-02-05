@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Consulta Despacho Decisório (Isenção de IPI e IOF / Isenções)</nome>
+    <nome><![CDATA[Consulta Despacho Decisório (Isenção de IPI e IOF / Isenções)]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Tomar ciência do despacho decisório expedido pela Receita Federal para o pedido de Isenção de IPI e IOF e, se for deferimento, receber autorizações para aquisição do veículo.</descricao>
-    <gratuito/>
+    <descricao><![CDATA[Tomar ciência do despacho decisório expedido pela Receita Federal para o pedido de Isenção de IPI e IOF e, se for deferimento, receber autorizações para aquisição do veículo.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
     <solicitantes/>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="" unidade="minutos"/>
+        <descricao><![CDATA[Já a algum tempo que fiz o pedido]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
@@ -22,7 +24,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
+                        <descricao><![CDATA[https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -31,11 +33,12 @@
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
-        <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
     </areas-de-interesse>
-    <palavras-chave/>
+    <palavras-chave>
+        <item>Isenção</item>
+    </palavras-chave>
     <legislacoes/>
 </servico>
