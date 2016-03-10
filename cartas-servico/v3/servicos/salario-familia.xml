@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Salário-Família</nome>
+    <nome><![CDATA[Salário-Família]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Fornece informações sobre o Salário-Família e documentos necessários para solicitação do benefício em uma Agência da Previdência Social.
+    <descricao><![CDATA[Fornece informações sobre o Salário-Família e documentos necessários para solicitação do benefício em uma Agência da Previdência Social.
 
-* [Telefone](undefined): Ligue 135 para obter maiores informações.</descricao>
-    <gratuito/>
+* [Telefone](undefined): Ligue 135 para obter maiores informações.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
     <solicitantes/>
     <tempo-total-estimado>
         <descricao/>
@@ -24,7 +25,10 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://agencia.previdencia.gov.br/e-aps/servico/376</descricao>
+                        <descricao><![CDATA[http://agencia.previdencia.gov.br/e-aps/servico/376]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://salariofamilia.net]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
