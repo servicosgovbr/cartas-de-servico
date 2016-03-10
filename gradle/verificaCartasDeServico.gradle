@@ -31,7 +31,7 @@ def verificaNomeServico(arquivoXml, doc) {
     def nomeArquivo = arquivoXml.name.replaceAll('.xml', '')
 
     def idServico = doc.select('servico > id').text().trim()
-    if(idServico) {
+    if (idServico) {
         assert nomeArquivo == idServico
     }
 
@@ -60,7 +60,7 @@ task verificaCartasDeServico << {
     def cartasServico = sourceSets.cartas.resources.files
 
     cartasServico
-        .collect { arquivo -> [arquivo, Jsoup.parse(arquivo, 'UTF-8')] }
+        .collect { [it, Jsoup.parse(it, 'UTF-8')] }
         .each { verificaServico(*it)  }
 }
 
