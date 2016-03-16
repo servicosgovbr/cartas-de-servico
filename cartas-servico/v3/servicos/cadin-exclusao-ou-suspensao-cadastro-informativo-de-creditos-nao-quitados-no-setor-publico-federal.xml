@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>CADIN - Exclusão ou Suspensão Cadastro Informativo de Créditos Não Quitados no Setor Público Federal</nome>
-    <sigla/>
+    <nome><![CDATA[CADIN - Exclusão ou Suspensão Cadastro Informativo de Créditos Não Quitados no Setor Público Federal]]></nome>
+    <sigla>CADIN</sigla>
     <nomes-populares/>
-    <descricao>Apresentar requerimento de averbação de causa suspensiva/garantia e/ou exclusão do Cadin para a suspensão ou exclusão do Cadin - Cadastro Informativo de Créditos Não Quitados no Setor Público Federal.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <descricao><![CDATA[Apresentar requerimento de averbação de causa suspensiva/garantia e/ou exclusão do Cadin para a suspensão ou exclusão do Cadin - Cadastro Informativo de Créditos Não Quitados no Setor Público Federal.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Professora</tipo>
+            <requisitos><![CDATA[Ter vínculo profissional]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="12" unidade="dias-uteis"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Exclusão</titulo>
+            <descricao><![CDATA[Retirar do sistema o débito]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Comprovantes de entrada e pagamentos de taxas</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao><![CDATA[https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -35,6 +44,26 @@
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
+        <item>Cooperação Internacional</item>
+        <item>Defesa do Consumidor</item>
+        <item>Educação</item>
+        <item>Educação básica</item>
+        <item>Educação superior</item>
+        <item>Educação profissionalizante</item>
+        <item>Cidadania</item>
+        <item>Assistência ao Idoso</item>
+        <item>Administração</item>
+        <item>Empregabilidade</item>
+        <item>Lazer</item>
+        <item>Planejamento</item>
+        <item>Relações Internacionais</item>
+        <item>Recursos humanos</item>
+        <item>Relações Diplomáticas</item>
+        <item>Relações de Trabalho</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Trabalho</item>
+        <item>Urbanismo</item>
+        <item>Turismo</item>
     </areas-de-interesse>
     <palavras-chave/>
     <legislacoes/>
