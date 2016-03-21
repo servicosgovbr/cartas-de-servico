@@ -20,21 +20,23 @@
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Passo 1</titulo>
-            <descricao/>
+            <titulo>Solicitação</titulo>
+            <descricao><![CDATA[Requisição do cadastro no SUS junto a hospitais, clínicas públicas e  postos de saúde.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Documento de Identidade</item>
+                    <item>Comprovante de Residência</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-emitir">
-                        <descricao><![CDATA[É possível imprimi-lo em todos os municípios do Brasil. O ideal é que o cidadão tenha o seu Cartão Nacional de Saúde entregue no seu atendimento pelo SUS.]]></descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web-emitir">
-                        <descricao><![CDATA[O cadastro é feito em hospitais, clínicas e postos de saúde ou locais definidos pela secretaria municipal de saúde.]]></descricao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[O cadastro é feito em hospitais, clínicas e postos de saúde ou locais definidos pela secretaria municipal de saúde.
+
+É possível imprimi-lo em todos os municípios do Brasil. O ideal é que o cidadão tenha o seu Cartão Nacional de Saúde entregue no seu atendimento pelo SUS.]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -46,13 +48,23 @@
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Saúde</item>
+        <item>Serviços Públicos</item>
+        <item>Assistência Hospitalar e Ambulatorial</item>
+        <item>Atendimento básico</item>
+        <item>Cidadania</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>a</item>
-        <item>b</item>
-        <item>c</item>
+        <item>a SUS</item>
+        <item>b cartão</item>
+        <item>c posto de saúde</item>
+        <item>mais médicos</item>
+        <item>consulta</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Constituição]]></item>
+        <item><![CDATA[- Portaria nº 940, de 28/04/2011 – Regulamenta o Sistema Cartão Nacional de Saúde (Sistema Cartão);
+- Lei 8.080, de 19/09/1990;
+- Lei 8.159, de 08/01/1991;
+- Decreto Lei 4.553, de 27/12/2002;
+- Portaria nº 399/GM/MS, 22/02/2006.]]></item>
     </legislacoes>
 </servico>
