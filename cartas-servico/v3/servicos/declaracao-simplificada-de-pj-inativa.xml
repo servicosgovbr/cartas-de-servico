@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Declaração Simplificada de PJ Inativa</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Preencher a Declaração Simplificada da Pessoa Jurídica.
+    <nome><![CDATA[Declaração Simplificada de PJ Inativa]]></nome>
+    <sigla>PMDF</sigla>
+    <nomes-populares>
+        <item>MARTILIANO JOSE DA</item>
+    </nomes-populares>
+    <descricao><![CDATA[Preencher a Declaração Simplificada da Pessoa Jurídica.
 
 * [Mais informações](http://www.receita.fazenda.gov.br/PessoaJuridica/DeclInatividade/2013/OrientacoesGerais/Orientacoes.htm): Orientações gerais sobre o serviço
 
-* [Serviços relacionados](http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/default.aspx?/a/6): Ver todos os serviços do assunto "Declarações e Demonstrativos"</descricao>
+* [Serviços relacionados](http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/default.aspx?/a/6): Ver todos os serviços do assunto "Declarações e Demonstrativos"]]></descricao>
+    <contato/>
     <gratuito/>
-    <solicitantes/>
+    <solicitantes>
+        <solicitante>
+            <tipo>Servidor aposentado</tipo>
+            <requisitos><![CDATA[Eu preciso do comprovante annual de impostor de renta ano 2015
+gratto]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <entre max="" min="30" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>soldado PMDF</titulo>
+            <descricao><![CDATA[POLOICIAL MILITAR aponsentado]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>carteira de iidentidade</item>
+                </default>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[NAmMARTILIANO JOSE DA SILVA]]></descricao>
+                        <moeda/>
+                        <valor>000</valor>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www.receita.fazenda.gov.br/Principal/Informacoes/InfoDeclara/declaraPJSimples.htm</descricao>
+                        <descricao><![CDATA[http://www.receita.fazenda.gov.br/Principal/Informacoes/InfoDeclara/declaraPJSimples.htm]]></descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao tipo="web">
-                        <descricao>[Internet (via Portal e-CAC com certificado digital)](http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=263&amp;idArea=6&amp;idAssunto=52)</descricao>
+                        <descricao><![CDATA[[Internet (via Portal e-CAC com certificado digital)](http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=263&idArea=6&idAssunto=52)]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
