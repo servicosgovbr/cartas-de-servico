@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Consulta Rendimentos Informados por Fontes Pagadoras (DIRF – Declaração do Imposto de Renda Retido na Fonte /
-        Declarações e Demonstrativos)</nome>
+    <nome><![CDATA[Consulta Rendimentos Informados por Fontes Pagadoras (DIRF – Declaração do Imposto de Renda Retido na Fonte /
+        Declarações e Demonstrativos)]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Consultar informações de rendimentos apresentadas por fontes pagadoras de pessoas físicas e jurídicas na Dirf (Declaração de Imposto de Renda Retido na Fonte).</descricao>
-    <gratuito/>
+    <descricao><![CDATA[Consultar informações de rendimentos apresentadas por fontes pagadoras de pessoas físicas e jurídicas na Dirf (Declaração de Imposto de Renda Retido na Fonte).]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
     <solicitantes/>
     <tempo-total-estimado>
+        <ate max="1" unidade="horas"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
@@ -23,7 +25,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00021</descricao>
+                        <descricao><![CDATA[https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00021]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
