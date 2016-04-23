@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Consulta PJ Habilitadas - PIS/Pasep e Cofins IN 595/2005]]></nome>
-    <sigla>PI</sigla>
+    <sigla>PIS</sigla>
     <nomes-populares/>
     <descricao><![CDATA[Consultar as pessoas jurídicas habilitadas no Regime de Suspensão PIS/Pasep e Cofins IN SRF nº 595/2005.]]></descricao>
     <contato/>
@@ -13,7 +13,7 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="0" min="1" unidade="horas"/>
+        <ate max="5" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
@@ -22,7 +22,7 @@
             <descricao><![CDATA[Numero do mei PIS]]></descricao>
             <documentos>
                 <default>
-                    <item>CPF</item>
+                    <item>11988917859</item>
                 </default>
             </documentos>
             <custos>
@@ -44,7 +44,13 @@
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
+        <item>Cidadania</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>PIS</item>
+        <item>ELIANA</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[PRVIDENCIA]]></item>
+    </legislacoes>
 </servico>
