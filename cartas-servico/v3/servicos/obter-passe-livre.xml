@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Obter Passe livre]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Carteirinha do Passe Livre</item>
+    </nomes-populares>
+    <descricao><![CDATA[O Passe Livre é um programa do Governo Federal que proporciona a pessoas que possuem deficiência e são carentes gratuidade nas passagens para viajar entre os estados brasileiros.]]></descricao>
+    <contato><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF
+
+ Telefones: (61) 2029-8035.
+
+ e-mail: passelivre@transportes.gov.br
+
+ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa com deficiência física, mental, auditiva, visual ou múltipla comprovadamente carente.</tipo>
+            <requisitos><![CDATA[Para que uma pessoa tenha direito ao passe livre é necessário:
+
+*Possuir deficiência física, mental, auditiva, visual ou múltipla.
+
+*Ser comprovadamente carente.
+Conheça como funciona o cálculo para definir se uma pessoa é ou não carente clicando [aqui](http://www.transportes.gov.br/direto-ao-cidadao/passe-livre.html#conheca_melhorPL_beneficiario)]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="30" unidade="dias-corridos"/>
+        <descricao><![CDATA[O prazo estimado acima começa a contar a partir do recebimento dos documentos pelo Passe Livre.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Preencher formulários</titulo>
+            <descricao><![CDATA[O beneficiário preenche os formulários disponíveis no site do Ministério dos Transportes, Portos e Aviação Civil ou presencialmente.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://www.transportes.gov.br/direto-ao-cidadao/passe-livre/2-uncategorised/2761-formularios-para-requisicao-passe-livre.html]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[passelivre@transportes.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao><![CDATA[(61) 3329-9068.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Enviar formulários e documentação</titulo>
+            <descricao><![CDATA[Os formulários da etapa 1 e a documentação devem ser encaminhados via correio ou entregues pessoalmente.]]></descricao>
+            <documentos>
+                <default/>
+                <caso descricao="Benefício sem a necessidade de acompanhante">
+                    <item>Cópia de um documento de identificação. Pode ser um dos seguintes:</item>
+                    <item>Certidão de Nascimento;</item>
+                    <item>Certidão de Casamento;</item>
+                    <item>Certificado de Reservista;</item>
+                    <item>Carteira de Identidade;</item>
+                    <item>Carteira de Trabalho e Previdência Social;</item>
+                    <item>Título de Eleitor;</item>
+                    <item>Carteira Nacional de Habilitação.</item>
+                    <item>Atestado (laudo) da Equipe Multiprofissional do Sistema Único de Saúde (SUS), comprovando a deficiência ou incapacidade do interessado.</item>
+                    <item>Requerimento, acompanhado da Declaração da Composição e Renda Familiar</item>
+                </caso>
+                <caso descricao="Benefício com necessidade de acompanhante">
+                    <item>Cópia de um documento de identificação do Acompanhante. Pode ser um dos seguintes:</item>
+                    <item>Certidão de Nascimento;</item>
+                    <item>Certidão de Casamento;</item>
+                    <item>Certificado de Reservista;</item>
+                    <item>Carteira de Identidade;</item>
+                    <item>Carteira de Trabalho e Previdência Social;</item>
+                    <item>Título de Eleitor;</item>
+                    <item>Carteira Nacional de Habilitação.</item>
+                    <item>Deve constar no Laudo Médico da Pessoa com Deficiência, declaração do mesmo médico que atestou a deficiência, caso seja imprescindível à presença de Acompanhante durante a locomoção em viagem.</item>
+                    <item>Requerimento específico preenchido com os dados do Acompanhante, onde deverá constar além de outras informações, a renda familiar mensal. As regras para calculo da renda per capita do Acompanhante são as mesmas da Pessoa com Deficiência</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Aguardar análise do processo</titulo>
+            <descricao><![CDATA[Nesta etapa o solicitante aguarda a análise dos formulários e da documentação enviada ao Passe Livre.
+
+Serão resultados desta etapa:
+
+**Benefício aprovado**(será enviado a credencial via correios para o beneficiário)
+
+**Benefício com pendências**(será comunicado via correios quais as pendências para a emissão da credencial para o beneficiário)
+
+**Benefício rejeitado**(será comunicado via correios que o solicitante não cumpre com os requisitos do programa passe livre)]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sistemas3.transportes.gov.br/CAPPL/paginas/requerente/home.jsp]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transporte Rodoviário</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Transporte Ferroviário</item>
+        <item>Transporte Hidroviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Passe Livre</item>
+        <item>Carteira</item>
+        <item>Credencial</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)]]></item>
+    </legislacoes>
+</servico>
