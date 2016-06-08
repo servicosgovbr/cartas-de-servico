@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Pedido de Antecipação de Análise da DIRPF (Restituição do Imposto de Renda Pessoa Física - IRPF / Restituição
-        e Compensação)</nome>
+    <nome><![CDATA[Pedido de Antecipação de Análise da DIRPF (Restituição do Imposto de Renda Pessoa Física - IRPF / Restituição
+        e Compensação)]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>Solicitar a antecipação da análise da documentação que comprova as informações para fins de liberação de declaração retida em malha fiscal.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>ANTECIPAÇÃO A MALHA</item>
+    </nomes-populares>
+    <descricao><![CDATA[Solicitar a antecipação da análise da documentação que comprova as informações para fins de liberação de declaração retida em malha fiscal. Pois o declarante ASTROGILDO BATISTA DOS SANTOS é isento de IRRF desde 11/07/2013, como demonstrado no cadastro do mesmo junto ao  SIGEPE pois Astrogildo é AUDITOR FISCAL DA RECEITA FEDERAL DO BRASIL ( APOSENTADO) e beneficiário de rendimentos isentos e não tributáveis por moléstia grave 4-6 Comprovante de rendimentos.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>SERVIDOR APOSENTADO</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="1" unidade="horas"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Apresentação dos documentos</titulo>
+            <descricao><![CDATA[Apresentação dos documentos a Receita Federal São Borja - RS.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Relatório do SIGEPE DOS DEMONSTRATIVOS DE PAGAMENTO DO ANO CALENDÁRIO 2014, FOLHAS DE PAGAMENTO DOS MESES DE JANEIRO, FEVEREIRO, MARÇO, ABRIL, MAIO, JUNHO, JULHO E AGOSTO DE 2014, ONDE COMPROVAM QUE FOI DESCONTADO DE MANEIRA EQUIVOCADA O IRRF até o mês de JULHO DE 2014, pois o mesmo é ISENTO desde 11/07/2013 COMO COMPROVADO COM O CADASTRO DO SERVIDOR APOSENTADO JUNTO AO SIGEPE. Carteira de identidade RG do procurador, procuração, passaporte do declarante.</item>
+                </default>
+                <caso descricao="">
+                    <item>RG do procurador, procuração, passaporte para identificação do declarante, DIRPF 2015, comprovante de rendimentos, contra cheques do período com deduções do IRRF equivocadas que são de JANEIRO A JULHO DE 2014, comprovante da situação cadastral do declarante junto ao SIGEPE.</item>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -23,7 +37,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00011</descricao>
+                        <descricao><![CDATA[https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00011]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
