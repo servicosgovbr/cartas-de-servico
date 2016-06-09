@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Cadastro de pessoas jurídicas que atuam na cadeia produtiva do turismo.]]></nome>
-    <sigla/>
-    <nomes-populares>
-        <item>CADASTUR</item>
-    </nomes-populares>
+    <sigla>CADASTUR</sigla>
+    <nomes-populares/>
     <descricao><![CDATA[O Sistema recebe cadastros obrigatórios dos prestadores de serviços turísticos das seguintes atividades: 
 • Meios de Hospedagem (albergue, condo-hotel, flat, hotel urbano, hotel de selva, hotel fazenda, hotel histórico, pousada, resort e cama & café)
 • Agências de Turismo
@@ -87,14 +85,38 @@ Em caráter opcional, também poderão se cadastrar:
         <ate max="30" unidade="dias-corridos"/>
         <descricao/>
     </tempo-total-estimado>
-    <etapas/>
-    <orgao id=""/>
+    <etapas>
+        <etapa>
+            <titulo/>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item>cnpj</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao/>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao/>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/72084"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
-        <item>Órgãos e entidades públicas</item>
         <item>Empresas</item>
     </segmentos-da-sociedade>
-    <areas-de-interesse/>
+    <areas-de-interesse>
+        <item>Turismo</item>
+    </areas-de-interesse>
     <palavras-chave/>
     <legislacoes/>
 </servico>
