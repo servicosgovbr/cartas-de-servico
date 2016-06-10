@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Extrato de informações previdenciárias</nome>
+    <nome><![CDATA[Extrato de informações previdenciárias]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Permite realizar consulta às informações do trabalhador: benefícios, contribuições e remunerações.
+    <descricao><![CDATA[Permite realizar consulta às informações do trabalhador: benefícios, contribuições e remunerações.
 
-* [Telefone](undefined): Ligue 135 para obter mais informações.</descricao>
-    <gratuito/>
-    <solicitantes/>
+* [Telefone](undefined): Ligue 135 para obter mais informações.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Viúva aposentado</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="1" unidade="dias-uteis"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>Certidão da existência de dependentes INSS</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -24,7 +31,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www1.dataprev.gov.br/conweb/sp2cgi.exe?sp2application=conweb</descricao>
+                        <descricao><![CDATA[http://www1.dataprev.gov.br/conweb/sp2cgi.exe?sp2application=conweb]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
