@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Serviço Militar</nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Alistamento</item>
+        <item>Serviço Militar</item>
+    </nomes-populares>
+    <descricao><![CDATA[O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização e Pessoal, todos os encargos com a Defesa Nacional.
+
+A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, encarregado de dirigir, orientar, coordenar e controlar as atividades ligadas ao Serviço Militar, no âmbito do Exército, em todo o território nacional.]]></descricao>
+    <contato><![CDATA[* [Exército Brasileiro](http://eb.mil.br)
+* [Marinha Brasileira](http://mar.mil.br)
+* [Força Aérea Brasileira](http://fab.mil.br)
+* [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Cidadão Brasileiro Nato</tipo>
+            <requisitos><![CDATA[* Jovem brasileiro do sexo masculino
+* Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="12" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Cadastrar dados pessoais</titulo>
+            <descricao><![CDATA[O cidadão deverá comparecer à Junta de Serviço Militar mais próxima à sua residência munido da documentação descrita abaixo.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Certidão de nascimento ou documento de identidade válido conforme Lei 12.037 (identidade civil, passaporte, carteira de trabalho, carteira profissional)</item>
+                    <item>Comprovante de Residência ou declaração firmada pelo alistando ou por procurador bastante</item>
+                    <item>01 Fotografia 3x4 (recente, de frente e sem retoques)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).
+
+* O canal web apresentado abaixo é válido somente para os estados do Amapá, Bahia, Maranhão, Mato Grosso, Mato Grosso do Sul, Pará, Paraná, Santa Catarina e Sergipe.]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[(http://dsm2.dgp.eb.mil.br/alistamento/)]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer à Seleção Geral</titulo>
+            <descricao><![CDATA[* Na seleção geral, o cidadão passará por exames médicos e entrevistas.
+* Caso o cidadão esteja cursando medicina, odontologia, veterinária ou fármacia poderá ter o alistamento adiado.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Declaração escolar ou de universidade (quando se aplicar)</item>
+                    <item>Histórico Escolar</item>
+                    <item>Certificado de Alistamento Militar (caso já possua)</item>
+                    <item>Formulários impressos e preenchidos no canal digital (nas localidades em que se aplicam)</item>
+                    <item>Carteira de Trabalho</item>
+                    <item>Documentos de identidade conforme Lei 12.037</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Se dispensado, Jurar à Bandeira Nacional</titulo>
+            <descricao><![CDATA[Participar de solenidade de juramento à bandeira Nacional para tornar público o processo de recebimento da certidão de reservista.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Certificado de Alistamento Militar</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Conforme informado durante a Seleção Geral de serviço militar.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Se apto, comparecer à seleção complementar</titulo>
+            <descricao><![CDATA[O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Certificado de Alistamento Militar</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[O cidadão deverá se apresentar nas Organização Militares designadas durante as seleções complementares.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Defesa Nacional</item>
+        <item>Defesa militar</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>alistamento</item>
+        <item>serviço-militar</item>
+        <item>militarismo</item>
+        <item>carreira militar</item>
+        <item>ingresso no serviço militar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Lei 4.375/64]]></item>
+    </legislacoes>
+</servico>
