@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Serviço de Informações ao Cidadão]]></nome>
+    <sigla>SIC</sigla>
+    <nomes-populares>
+        <item>Acesso a informação</item>
+    </nomes-populares>
+    <descricao><![CDATA[Proporciona amplo acesso às informações custodiadas pelo Ministério das Comunicações, oferecendo transparência sobre os atos de governo, observados os princípios da administração pública e as diretrizes previstas na LAI.]]></descricao>
+    <contato><![CDATA[2027 6032]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Sociedade em geral</tipo>
+            <requisitos><![CDATA[É necessário efetuar o cadastro no sistema(e-SIC) para obter acesso a informação solicitada.
+http://esic.cgu.gov.br/sistema/site/index.html]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="30" min="20" unidade="dias-corridos"/>
+        <descricao><![CDATA[Prorrogáveis por mais 10 dias, mediante justificativa.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Cadastrar no site e-SIC</titulo>
+            <descricao><![CDATA[Cadastrar no site: http://esic.cgu.gov.br/sistema/Pessoa/CadastrarPessoa.aspx]]></descricao>
+            <documentos>
+                <default>
+                    <item>Informações pessoais</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://esic.cgu.gov.br/sistema/Pessoa/CadastrarPessoa.aspx]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala do SIC - Ed. Sede, Andar Térreo, Sala T-25, Bl. R - Esplanada dos Ministérios]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3159"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Órgãos e entidades públicas</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comunicações</item>
+        <item>Comunicações Postais</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Telecomunicações</item>
+        <item>Inclusão digital</item>
+        <item>Radiodifusão</item>
+        <item>Correios</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Lei de Acesso à Informação nº 12.527, de 18/11/2011 - LAI, conforme disposto em seu art. 9º]]></item>
+    </legislacoes>
+</servico>
