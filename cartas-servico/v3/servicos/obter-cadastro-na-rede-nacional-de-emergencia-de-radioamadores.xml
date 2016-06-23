@@ -22,15 +22,23 @@
     <etapas>
         <etapa>
             <titulo>Cadastrar o indicativo no Sistema de Gestão de Radioamadores</titulo>
-            <descricao><![CDATA[Anatel aplica prova ao cidadão que queira ser radioamador para obtenção do indicativo.]]></descricao>
+            <descricao><![CDATA[Realizar o seu cadastro junto à RENER.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Indicativo</item>
+                    <item>Identidade</item>
+                    <item>CPF</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
-                <default/>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sgrainternet.mi.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
