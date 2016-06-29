@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Alteração Cadastral no CPF</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Realizar pedido de alteração de dados no CPF em uma conveniada (Banco do Brasil, Caixa Econômica Federal, Correios) ou alteração de endereço em entidades que prestam o serviço gratuitamente.</descricao>
+    <nome><![CDATA[Alteração Cadastral no CPF]]></nome>
+    <sigla>RH</sigla>
+    <nomes-populares>
+        <item>CORREIOS</item>
+    </nomes-populares>
+    <descricao><![CDATA[Realizar pedido de alteração de dados no CPF em uma conveniada (Banco do Brasil, Caixa Econômica Federal, Correios) ou alteração de endereço em entidades que prestam o serviço gratuitamente.]]></descricao>
+    <contato/>
     <gratuito/>
     <solicitantes/>
     <tempo-total-estimado>
+        <ate max="" unidade=""/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
@@ -22,13 +26,13 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFEntPublicConven.htm</descricao>
+                        <descricao><![CDATA[http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFEntPublicConven.htm]]></descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>Unidades de Atendimento Conveniadas: Agências da CEF, BB e Correios</descricao>
+                        <descricao><![CDATA[Unidades de Atendimento Conveniadas: Agências da CEF, BB e Correios]]></descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao tipo="web">
-                        <descricao>[Informações sobre alteração cadastral do CPF](http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFAlteracaoDadosCad.htm)</descricao>
+                        <descricao><![CDATA[[Informações sobre alteração cadastral do CPF](http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFAlteracaoDadosCad.htm)]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
