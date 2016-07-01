@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Admissão Temporária - Concessão]]></nome>
-    <sigla/>
-    <nomes-populares/>
+    <sigla>Pernambuco</sigla>
+    <nomes-populares>
+        <item>motorista</item>
+    </nomes-populares>
     <descricao><![CDATA[Solicitar a concessão do Regime Especial de Admissão Temporária. Teste.]]></descricao>
     <contato/>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Qualquer Empresa</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre max="6" min="5" unidade="meses"/>
+        <descricao><![CDATA[Preciso de um Emprego e um temporário até encontrar um CLT]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
@@ -35,7 +43,14 @@
         <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
-        <item>Economia e Finanças</item>
+        <item>Transporte Rodoviário</item>
+        <item>Transportes</item>
+        <item>Turismo</item>
+        <item>Trabalho</item>
+        <item>Empregabilidade</item>
+        <item>Relações de Trabalho</item>
+        <item>Transporte Aéreo</item>
+        <item>Transporte Ferroviário</item>
     </areas-de-interesse>
     <palavras-chave/>
     <legislacoes/>
