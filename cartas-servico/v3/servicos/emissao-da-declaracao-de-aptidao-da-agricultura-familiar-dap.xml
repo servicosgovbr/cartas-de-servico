@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Emissão da Declaração de Aptidão da Agricultura Familiar - DAP</nome>
+    <nome><![CDATA[Emissão da Declaração de Aptidão da Agricultura Familiar - DAP]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>A DAP é utilizada como instrumento de identificação do agricultor familiar para acessar políticas públicas, como o Pronaf. Para obtê-la, o agricultor familiar deve dirigir-se a um órgão ou entidade credenciado pelo MDA, de posse do CPF e de dados acerca de seu estabelecimento de produção (área, número de pessoas residentes, composição da força de trabalho e da renda, endereço completo).
+    <descricao><![CDATA[A DAP é utilizada como instrumento de identificação do agricultor familiar para acessar políticas públicas, como o Pronaf. Para obtê-la, o agricultor familiar deve dirigir-se a um órgão ou entidade credenciado pelo MDA, de posse do CPF e de dados acerca de seu estabelecimento de produção (área, número de pessoas residentes, composição da força de trabalho e da renda, endereço completo).
 
 Para realizar o credenciamento da DAP:
 
@@ -21,19 +21,23 @@ Devem também ser cadastradas e obedecer a seguinte estrutura hierárquica:
 
 Assim, as Unidades Agregadoras cadastram as Unidades Sub-agregadoras, que, por sua vez, cadastram as Unidades Emissoras a elas vinculadas. Essas últimas cadastram os agentes emissores – pessoas físicas que efetivamente emitirão as DAP.
 
-* [Mais informações](http://smap14.mda.gov.br/extratopf/PesquisaTitular.aspx): Extrato da DAP individual
+* [Mais informações](http://smap14.mda.gov.br/extratodap/): Extrato da DAP individual
 
-* [Outros](http://smap14.mda.gov.br/extratopf/PesquisaMunicipio.aspx): Extrato da DAP por município
+* [Outros](http://smap14.mda.gov.br/extratodap/PesquisarDAP): Extrato da DAP por município
 
-* [Outros](http://smap14.mda.gov.br/extratopj/ExtratoDAP/ExtratoDAP.aspx): Extrato da DAP por CNPJ
+* [Outros](http://smap14.mda.gov.br/extratodap/PesquisarDAP): Extrato da DAP por CNPJ
 
-* [Cartilhas e Manuais](http://www.mda.gov.br/sitemda/sites/sitemda/files/user_arquivos_64/MANUAL_DO_AGENTE_EMISSOR_CORREÇÕES_16.01.2014_(1).pdf): Manual da DAP
+* [Cartilhas e Manuais](http://www.dap.mda.gov.br): Manual da DAP
 
-* [Serviços relacionados](http://www.mda.gov.br/sitemda/secretaria/saf-creditorural/sobre-o-programa): PRONAF - Programa Nacional de Fortalecimento da Agricultura Familiar
-
-* [Formulários](http://www.mda.gov.br/sitemda/sites/sitemda/files/user_img_19/FORM_CED_20151303.xlsx): Formulário de solicitação de Cadastro de Entidades</descricao>
-    <gratuito/>
-    <solicitantes/>
+* [Serviços relacionados](http://www.mda.gov.br/sitemda/secretaria/saf-creditorural/sobre-o-programa): PRONAF - Programa Nacional de Fortalecimento da Agricultura Familiar]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>agricultor e agricultora familiar, quilombolas, povos e comunidades tradicionais, pescadores a pescadoras artesanais</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <descricao/>
     </tempo-total-estimado>
@@ -50,7 +54,7 @@ Assim, as Unidades Agregadoras cadastram as Unidades Sub-agregadoras, que, por s
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://smap12.mda.gov.br/login/default.aspx</descricao>
+                        <descricao><![CDATA[http://smap12.mda.gov.br/login/default.aspx]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -63,7 +67,21 @@ Assim, as Unidades Agregadoras cadastram as Unidades Sub-agregadoras, que, por s
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
+        <item>Abastecimento</item>
+        <item>Cidadania</item>
+        <item>Serviços Públicos</item>
+        <item>Habitação Rural</item>
+        <item>Compras governamentais</item>
+        <item>Previdência Complementar</item>
     </areas-de-interesse>
     <palavras-chave/>
-    <legislacoes/>
+    <legislacoes>
+        <item><![CDATA[Portaria Nº 24 29 DE MAIO DE 2009 <http://www.mda.gov.br/sitemda/sites/sitemda/files/user_arquivos_64/PORTARIA_DAP_P.pdf>
+
+Instrução Normativa nº 001 de 14 de maio de 2010 <http://www.mda.gov.br/sitemda/sites/sitemda/files/user_arquivos_64/IN_001.pdf>
+
+Portaria n° 21, de 27 de março de 2014 <http://www.mda.gov.br/sitemda/secretaria/saf/declara%C3%A7%C3%A3o-de-aptid%C3%A3o-ao-pronaf-dap>
+
+PORTARIA N° 21, DE 27 DE MARÇO DE 2014 <http://www.mda.gov.br/sitemda/sites/sitemda/files/user_arquivos_64/PORTARIA_MDA_21_DAP_-_ALTERADA_33_-_22.05.2014.pdf>]]></item>
+    </legislacoes>
 </servico>
