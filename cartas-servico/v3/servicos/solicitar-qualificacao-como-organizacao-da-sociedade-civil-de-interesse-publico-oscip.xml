@@ -1,40 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Solicitar qualificação como Organização da Sociedade Civil de Interesse Público - OSCIP</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Qualificar entidade sem finalidade lucrativa de natureza privada como OSCIP - Organização da Sociedade Civil de Interesse Público -, a fim de que possa celebrar termos de parceria com Órgãos Públicos. Para requerer a qualificação como Oscip, a entidade interessada deverá atender aos requisitos da Lei nº 9.790/99, regulamentada pelo Decreto nº 3.100/99.
+    <nome><![CDATA[Solicitar qualificação como Organização da Sociedade Civil de Interesse Público - OSCIP]]></nome>
+    <sigla>OSCIP</sigla>
+    <nomes-populares>
+        <item>Certificado de qualificação como OSCIP, Lei nº 9.790/99</item>
+    </nomes-populares>
+    <descricao><![CDATA[Qualificar entidade, sem finalidade lucrativa e de natureza privada, como OSCIP - Organização da Sociedade Civil de Interesse Público, com a finalidade, única e exclusiva, de celebrar Termo de Parceria com o Poder Público, desde que constituída no Brasil e se encontre em funcionamento regular há, no mínimo, 3 anos, conforme objetivos sociais e normas estatutárias que atendam aos requisitos instituídos pela Lei nº 9.790/99 e Decreto nº 3.100/99.]]></descricao>
+    <contato><![CDATA[sac.dejus@mj.gov.br
 
-* [Formulários](http://portal.mj.gov.br/main.asp?ViewID=%7B0FA9C8DB-721B-4B8C-998E-0956ED31CC15%7D&amp;params=itemID=%7BB54EE78E-2719-4872-96BC-F45864F4789D%7D;&amp;UIPartUID=%7B2868BA3C-1C72-4347-BE11-A26F70F4CB26%7D): Requerimento de qualificação como Oscip
+http://www.justica.gov.br/central-de-atendimento/entidades/oscip]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Entidades Sociais</tipo>
+            <requisitos><![CDATA[- Entidade, sem finalidade lucrativa e de natureza privada;
+- Constituída no Brasil e que se encontre em funcionamento regular há, no mínimo, 3 anos, desde que os respectivos objetivos sociais e normas estatutárias atendam aos requisitos instituídos pela Lei nº 9.790/99 e Decreto nº 3.100/99.
 
-* [Outros](undefined): Informações adicionais podem ser obtidas enviando e-mail para: sac.dejus@mj.gov.br
-
-* [Mais informações](http://portal.mj.gov.br/main.asp?ViewID=%7B3FAC4E0B-D58A-4F3E-A10D-0E5E8DD20F0B%7D&amp;params=itemID=%7BBDBD4F11-1B03-4D5F-B977-3587EABA3D8C%7D;&amp;UIPartUID=%7BE0EA6E2F-2D28-4749-9852-31405415DD85%7D): Mais informações sobre Oscip
-
-* [Serviços relacionados](http://portal.mj.gov.br/main.asp?ViewID=%7B0FA9C8DB-721B-4B8C-998E-0956ED31CC15%7D&amp;params=itemID=%7BE0BCB314-2118-4407-BADA-442DFB11BDDC%7D;&amp;UIPartUID=%7B2868BA3C-1C72-4347-BE11-A26F70F4CB26%7D): Conheça as entidades qualificadas como Oscip em sua cidade
-
-* [Mais informações](http://www.planalto.gov.br/ccivil_03/Leis/L9790.htm): Lei nº 9.790/1999
-
-* [Mais informações](http://www.planalto.gov.br/ccivil_03/decreto/D3100.htm): Decreto nº 3.100/99</descricao>
-    <gratuito/>
-    <solicitantes/>
+NÃO é necessária a certificação como OSCIP para os fins dispostos na Lei nº 13.019/2014 (celebração de termo de fomento e colaboração, obtenção de benefícios - pois independem de qualquer certificação).]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="45" unidade="dias-corridos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Requerimento</titulo>
+            <descricao><![CDATA[A entidade deve apresentar requerimento, assinado pelo representante legal, endereçado ao Ministério da Justiça e Cidadania, solicitando a qualificação como OSCIP e apresentando toda a documentação necessária, conforme explicitado abaixo.
+
+Não é necessária a intermediação por advogados, contadores, etc.
+
+ATENÇÃO: Não se esqueça de informar um endereço de e-mail válido no requerimento, pois ele será utilizado para contatá-lo(a) no curso do processo, se for o caso.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>I - estatuto autenticado e registrado em cartório, que deverá obedecer ao disposto nos arts. 1º, 2º, 3º e 4º da [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790);</item>
+                    <item>II- ata de eleição da atual diretoria autenticada e registrada em cartório;</item>
+                    <item>III - declaração de estar em regular funcionamento há, no mínimo, 3 anos, de acordo com as respectivas finalidades estatutárias;</item>
+                    <item>IV - balanço patrimonial e demonstração do resultado do exercício, assinado pelo contador e pelo representante legal, referente ao ano anterior ao pedido de qualificação e em conformidade com as normas brasileiras de contabilidade;</item>
+                    <item>V - declaração afirmando que possui isenção do imposto de renda, assinada por seu representante legal;</item>
+                    <item>VI - inscrição atualizada no Cadastro Nacional da Pessoa Jurídica.</item>
+                </default>
+                <caso descricao="Promoção da educação ou da saúde">
+                    <item>Obs:  A entidade que tiver como finalidade a promoção da educação ou da saúde, na forma complementar, prevista em Lei, deverá fazer, no estatuto social, menção expressa de que os serviços prestados serão gratuitos.</item>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[Protocolo eletrônico, por meio do link: http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao tipo="postal">
-                        <descricao>A documentação, com o Requerimento de qualificação de Oscip, deve ser encaminhada ao endereço: Secretaria Nacional de Justiça. Esplanada dos Ministérios, bloco T, Ed. Anexo II – 3º Andar – Sala 326. CEP: 70.064-900. Brasília/DF.</descricao>
+                        <descricao><![CDATA[A entidade pode optar por encaminhar o pedido via postal para a Divisão de Credenciamento, no seguinte endereço:
+
+Secretaria Nacional de Justiça e Cidadania
+
+Departamento de Políticas de  Justiça
+
+Divisão de Credenciamento
+
+Ministério da Justiça e Cidadania, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[A entidade pode optar por entregar o pedido diretamente no Protocolo-Geral do Ministério da Justiça e Cidadania, no seguinte endereço:
+
+Secretaria Nacional de Justiça e Cidadania
+
+Departamento de Políticas de  Justiça
+
+Divisão de Credenciamento
+
+Ministério da Justiça e Cidadania, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -42,11 +88,31 @@
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Proteção social</item>
+        <item>Assistência ao Idoso</item>
+        <item>Cidadania</item>
+        <item>Combate a desigualdade</item>
+        <item>Difusão Cultural</item>
+        <item>Educação</item>
+        <item>Preservação e Conservação Ambiental</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Proteção Social</item>
+        <item>Patrimônio Cultural</item>
+        <item>Meio ambiente</item>
+        <item>Cultura</item>
+        <item>Assistência à Criança e ao Adolescente</item>
+        <item>Assistência ao Portador de Deficiência</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Certificado de OSCIP</item>
+        <item>Qualificação como OSCIP</item>
+        <item>Termo de Parceria</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790), [Decreto nº 3.100/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1999-06-30;3100) e Portaria MJ nº 362, de 1º de março de 2016.]]></item>
+    </legislacoes>
 </servico>
