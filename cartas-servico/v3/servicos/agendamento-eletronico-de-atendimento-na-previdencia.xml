@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Agendamento eletrônico de atendimento na Previdência]]></nome>
-    <sigla>CLT</sigla>
+    <sigla>rg</sigla>
     <nomes-populares>
-        <item>2° Via</item>
+        <item>mario</item>
+        <item>jose</item>
     </nomes-populares>
-    <descricao><![CDATA[Solicitação da 2° via do CLT ja cadastrado.]]></descricao>
-    <contato/>
+    <descricao><![CDATA[solicitaçao do nit]]></descricao>
+    <contato><![CDATA[ok]]></contato>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Teste</tipo>
-            <requisitos/>
+            <tipo>desempregado</tipo>
+            <requisitos><![CDATA[procurando emprego]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="1" unidade="dias-uteis"/>
-        <descricao><![CDATA[Preciso Para Assinar Minha Carteira.]]></descricao>
+        <ate max="1" unidade="minutos"/>
+        <descricao><![CDATA[Preciso Para consultas]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>preciso numero meu pis</titulo>
+            <descricao><![CDATA[diversas]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>rg</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -45,7 +48,9 @@
         <item>Previdência Social</item>
         <item>Serviços Públicos</item>
     </areas-de-interesse>
-    <palavras-chave/>
+    <palavras-chave>
+        <item>consulta teste  trabalho</item>
+    </palavras-chave>
     <legislacoes>
         <item><![CDATA[Serviço]]></item>
     </legislacoes>
