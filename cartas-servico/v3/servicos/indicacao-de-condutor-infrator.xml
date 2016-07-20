@@ -3,13 +3,13 @@
     <nome><![CDATA[Indicação de Condutor Infrator]]></nome>
     <sigla>FICI</sigla>
     <nomes-populares/>
-    <descricao><![CDATA[Oportunidade dada ao proprietário do veículo para que indique o condutor, caso o responsável pelo cometimento da infração não tenha sido ele.]]></descricao>
+    <descricao><![CDATA[Oportunidade dada ao proprietário do veículo para que indique o condutor de fato responsável pelo cometimento da infração.]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
             <tipo>Qualquer cidadão</tipo>
-            <requisitos><![CDATA[Ter recebido uma autuação de trânsito do DNIT]]></requisitos>
+            <requisitos><![CDATA[Desde que tenha recebido uma autuação de trânsito do DNIT]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -34,6 +34,21 @@
                         <descricao><![CDATA[É possível obter o formulário através do [site do DNIT](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit)]]></descricao>
                     </canal-de-prestacao>
                 </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Juntar Documentação</titulo>
+            <descricao><![CDATA[Anexar cópia da Carteira Nacional de Habilitação (CNH) tanto do condutor infrator e quanto do proprietário.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Carteira Nacional de Habilitação  (CNH)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default/>
             </canais-de-prestacao>
         </etapa>
     </etapas>
