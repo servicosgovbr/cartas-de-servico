@@ -3,14 +3,35 @@
     <nome><![CDATA[Indicação de Condutor Infrator]]></nome>
     <sigla>FICI</sigla>
     <nomes-populares/>
-    <descricao><![CDATA[Oportunidade dada ao proprietário do veículo para que indique o condutor, caso o responsável pelo cometimento da infração não seja ele.]]></descricao>
+    <descricao><![CDATA[Oportunidade dada ao proprietário do veículo para que indique o condutor, caso o responsável pelo cometimento da infração não tenha sido ele.]]></descricao>
     <contato/>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Qualquer cidadão</tipo>
+            <requisitos><![CDATA[Ter recebido uma autuação de trânsito do DNIT]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <descricao><![CDATA[O prazo para identificar o condutor será aquele constate na notificação de autuação, nunca sendo inferior a 15 (quinze) dias da data em que o infrator receba a notificação em seu endereço.]]></descricao>
     </tempo-total-estimado>
-    <etapas/>
+    <etapas>
+        <etapa>
+            <titulo/>
+            <descricao><![CDATA[Preencher o formulário (FICI) com os dados do condutor infrator, devendo este ser assinado pelo proprietário do veículo e pelo condutor infrator.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Formulário disponibilizado na autuação ou, caso queira, baixar formulário pelo site do DNIT.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default/>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id=""/>
     <segmentos-da-sociedade/>
     <areas-de-interesse/>
