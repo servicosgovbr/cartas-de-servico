@@ -13,22 +13,27 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <descricao><![CDATA[O prazo para identificar o condutor será aquele constate na notificação de autuação, nunca sendo inferior a 15 (quinze) dias da data em que o infrator receba a notificação em seu endereço.]]></descricao>
+        <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao><![CDATA[Preencher o formulário (FICI) com os dados do condutor infrator, devendo este ser assinado pelo proprietário do veículo e pelo condutor infrator.]]></descricao>
+            <titulo>Preencher o Formulário</titulo>
+            <descricao><![CDATA[O formulário de indicação de condutor infrator (FICI) deve ser preenchido com os dados do referido, devendo este ser assinado pelo proprietário do veículo e pelo infrator.]]></descricao>
             <documentos>
-                <default>
-                    <item>Formulário disponibilizado na autuação ou, caso queira, baixar formulário pelo site do DNIT.</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
-                <default/>
+                <default>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Formulário disponibilizado na Autuação]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[É possível obter o formulário através do [site do DNIT](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit)]]></descricao>
+                    </canal-de-prestacao>
+                </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
