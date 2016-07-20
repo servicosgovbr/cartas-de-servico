@@ -38,7 +38,7 @@
         </etapa>
         <etapa>
             <titulo>Juntar Documentação</titulo>
-            <descricao><![CDATA[Anexar cópia da Carteira Nacional de Habilitação (CNH) tanto do condutor infrator e quanto do proprietário.]]></descricao>
+            <descricao><![CDATA[Anexar cópia da Carteira Nacional de Habilitação (CNH) tanto do condutor infrator quanto do proprietário.]]></descricao>
             <documentos>
                 <default>
                     <item>Carteira Nacional de Habilitação  (CNH)</item>
@@ -51,8 +51,28 @@
                 <default/>
             </canais-de-prestacao>
         </etapa>
+        <etapa>
+            <titulo>Enviar indicação de condutor</titulo>
+            <descricao><![CDATA[O formulário de indicação do condutor infrator poderá ser enviado por meio do site do DNIT ou via Correios.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://infracoes.dnit.gov.br/dnitcidadao/login]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Setor de Autarquias Norte, Quadra 03, Lote “A”, Edifício Núcleo dos Transportes, 3º Andar, Sala 3269, CEP: 70040.902, Brasília-DF.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
     </etapas>
-    <orgao id=""/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
     <segmentos-da-sociedade/>
     <areas-de-interesse/>
     <palavras-chave/>
