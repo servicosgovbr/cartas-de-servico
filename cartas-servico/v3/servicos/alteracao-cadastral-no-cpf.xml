@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Alteração Cadastral no CPF]]></nome>
-    <sigla>RH</sigla>
+    <sigla>CPF</sigla>
     <nomes-populares>
-        <item>CORREIOS</item>
+        <item>Caixa Econômica Federal</item>
     </nomes-populares>
     <descricao><![CDATA[Realizar pedido de alteração de dados no CPF em uma conveniada (Banco do Brasil, Caixa Econômica Federal, Correios) ou alteração de endereço em entidades que prestam o serviço gratuitamente.]]></descricao>
     <contato/>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>cidadão</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <ate max="10" unidade="dias-corridos"/>
+        <entre max="2" min="1" unidade="horas"/>
         <descricao><![CDATA[Pretendo legalização do meu CPF]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>renovação cadastro CPF</titulo>
             <descricao/>
             <documentos>
                 <default/>
