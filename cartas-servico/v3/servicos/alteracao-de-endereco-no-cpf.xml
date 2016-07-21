@@ -5,12 +5,21 @@
     <nomes-populares>
         <item>Canafistula</item>
     </nomes-populares>
-    <descricao><![CDATA[Rua Valter Leandro, 17-bairro Canafístula- CEP 57302-723-Arapiraca-AL]]></descricao>
+    <descricao><![CDATA[Rua Walter José Wunderlich Jr 759 - CEP 81460357-Curitiba-Pr]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
-    <solicitantes/>
+    <solicitantes>
+        <solicitante>
+            <tipo/>
+            <requisitos><![CDATA[cadastro no CPF de pessoa física]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>titular do cpf</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <ate max="" unidade=""/>
+        <entre max="2" min="1" unidade="horas"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
@@ -18,7 +27,10 @@
             <titulo/>
             <descricao/>
             <documentos>
-                <default/>
+                <default>
+                    <item>23365382968</item>
+                </default>
+                <caso descricao="alteração do endereço"/>
             </documentos>
             <custos>
                 <default/>
