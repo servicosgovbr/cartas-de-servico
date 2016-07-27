@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Extrato do Cadastro Nacional de Informações Sociais – Vínculos e Remunerações</nome>
+    <nome><![CDATA[Extrato do Cadastro Nacional de Informações Sociais – Vínculos e Remunerações]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao>Permite obter informações sobre vínculos e remunerações que constam do Cadastro Nacional de Informações Sociais (CNIS), de modo que os segurados poderão acompanhar, mensalmente, se o empregador está recolhendo suas contribuições e, ainda, solicitar a correção ou inclusão de períodos que não constem do cadastro.
+    <descricao><![CDATA[Permite obter informações sobre vínculos e remunerações que constam do Cadastro Nacional de Informações Sociais (CNIS), de modo que os segurados poderão acompanhar, mensalmente, se o empregador está recolhendo suas contribuições e, ainda, solicitar a correção ou inclusão de períodos que não constem do cadastro.
 
-* [Telefone](undefined): Ligue 135 para mais informações</descricao>
-    <gratuito/>
-    <solicitantes/>
+* [Telefone](undefined): Ligue 135 para mais informações]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>o mesmo</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>consulta</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -24,7 +30,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www.previdencia.gov.br/conteudoDinamico.php?id=763</descricao>
+                        <descricao><![CDATA[http://www.previdencia.gov.br/conteudoDinamico.php?id=763]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
