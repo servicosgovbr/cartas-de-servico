@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Autenticidade Inscrição/Situação Cadastral CPF]]></nome>
-    <sigla>RH</sigla>
+    <sigla>salvador cursos</sigla>
     <nomes-populares>
-        <item>CORREIOS</item>
+        <item>grau</item>
     </nomes-populares>
-    <descricao><![CDATA[Consultar a autenticidade do comprovante de inscrição e de situação cadastral.]]></descricao>
-    <contato/>
+    <descricao><![CDATA[situacao cadastral junto ao mec receita previdencia]]></descricao>
+    <contato><![CDATA[bom]]></contato>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>APOSENTADA</tipo>
+            <tipo>aluno</tipo>
             <requisitos><![CDATA[MATRICULADO NO ENSINO MEDIO]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="" min="" unidade=""/>
+        <ate max="1" unidade="minutos"/>
         <descricao><![CDATA[24horas.]]></descricao>
     </tempo-total-estimado>
     <etapas>
@@ -30,10 +30,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/CPFautentic.asp]]></descricao>
+                    <canal-de-prestacao tipo="sms">
+                        <descricao><![CDATA[http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/CPFautentic.asp mec]]></descricao>
                     </canal-de-prestacao>
                 </default>
+                <caso descricao="salvador cursos tecnicos">
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[luiz66castro@hotmail.com]]></descricao>
+                    </canal-de-prestacao>
+                </caso>
             </canais-de-prestacao>
         </etapa>
     </etapas>
