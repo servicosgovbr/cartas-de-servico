@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
     <nome><![CDATA[Acesso aos documentos do Acervo do Arquivo Legal]]></nome>
-    <sigla/>
-    <nomes-populares/>
+    <sigla>SPED</sigla>
+    <nomes-populares>
+        <item>SPED CONTRIBUIÇÕES</item>
+    </nomes-populares>
     <descricao><![CDATA[Atendimento, a distância, das demandas de acesso aos documentos do acervo do Arquivo Nacional, como por exemplo a reprodução de documentos, transcrições e/ou certidões probatórias e informações sobre o acervo, por meio do sítio do órgão ou e-mail.
 
 Atendimento presencial na Sala de Consultas do Arquivo Nacional. O usuário requisita e examina os documentos de seu interesse, sejam os manuscritos, os filmes, as fitas audiomagnéticas, as fotografias, os mapas e plantas ou os livros, periódicos, folhetos e teses pertencentes ao acervo da Biblioteca.
@@ -17,14 +19,20 @@ Atendimento presencial na Sala de Consultas do Arquivo Nacional. O usuário requ
 
 * [Outros](undefined): Informações/dúvidas sobre atendimento presencial: saladeconsultas@arquivonacional.gov.br]]></descricao>
     <contato/>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Empresas</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="23" unidade="horas"/>
+        <descricao><![CDATA[Houve um problema inesperado com o banco de dados do PVA, favor encaminhar a descrição completa da operação realizada, com cópias de telas, mensagens de erros e se possível com o arquivo de escrituração, conforme orientações contidas no Fale Conosco da EFD-Contribuições - Solução de Inconsistência na Escrituração (Erros e Avisos), no sítio do SPED na Internet.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
+            <titulo>DIVINO ANTONIO NUNES CRISTINO</titulo>
             <descricao/>
             <documentos>
                 <default/>
@@ -43,7 +51,7 @@ Atendimento presencial na Sala de Consultas do Arquivo Nacional. O usuário requ
                     <canal-de-prestacao tipo="telefone">
                         <descricao><![CDATA[Para atendimento a distância: (21) 2179-1257]]></descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
+                    <canal-de-prestacao tipo="e-mail">
                         <descricao><![CDATA[Para atendimento presencial: - Arquivo Nacional/Sede: Praça da República, 173, Centro, Rio de Janeiro – RJ - Arquivo Nacional/Coordenação Regional no DF: Setor de Indústrias Gráficas, quadra 6, lote 800, Prédio da Imprensa Nacional, Brasília – DF]]></descricao>
                     </canal-de-prestacao>
                 </default>
@@ -53,9 +61,11 @@ Atendimento presencial na Sala de Consultas do Arquivo Nacional. O usuário requ
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/334"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
+        <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Proteção social</item>
+        <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave/>
     <legislacoes/>
