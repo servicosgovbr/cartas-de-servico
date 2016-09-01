@@ -14,29 +14,29 @@
     <gratuito>false</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Estrangeiro que veio para o Brasil com até 5 (cinco) anos.</tipo>
+            <tipo>Naturalização Provisória - Estrangeiro que veio para o Brasil com até 5 (cinco) anos.</tipo>
             <requisitos><![CDATA[Ter vindo para o Brasil nos primeiros 5 (cinco) anos de vida e ter se estabelecido definitivamente no país. 
 Permanência ?]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Estrangeiro com naturalização provisória</tipo>
+            <tipo>Naturalização Definitiva - Estrangeiro com naturalização provisória</tipo>
             <requisitos><![CDATA[Ser maior de idade (18 anos);
 Solicitar a naturalização definitiva em até 2(dois) anos após completar 18 (dezoito) anos.]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Estrangeiro casado(a) com diplomata brasileiro(a)/ Serviço Exterior Brasileiro</tipo>
+            <tipo>Naturalização Especial - Estrangeiro casado(a) com diplomata brasileiro(a)/ Serviço Exterior Brasileiro</tipo>
             <requisitos><![CDATA[Comprovar o casamento ou união estável.]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Estrangeiro casado(a) com pessoa a serviço do Estado brasileiro no exterior.</tipo>
+            <tipo>Naturalização Especial - Estrangeiro casado(a) com pessoa a serviço do Estado brasileiro no exterior.</tipo>
             <requisitos><![CDATA[Comprovar o casamento ou união estável.]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Estrangeiro empregado em missão diplomática ou repartição consular do Brasil.</tipo>
+            <tipo>Naturalização Especial - Estrangeiro empregado em missão diplomática ou repartição consular do Brasil.</tipo>
             <requisitos><![CDATA[Comprovar o vínculo empregatício por, no mínimo, 10 (dez) anos.]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Estrangeiro que mora no Brasil há, pelo menos, 15 (quinze) anos.</tipo>
+            <tipo>Naturalização Extraordinária -Estrangeiro que mora no Brasil há, pelo menos, 15 (quinze) anos.</tipo>
             <requisitos><![CDATA[Comprovar que mora no Brasil há 15 (quinze) anos, continuamente.]]></requisitos>
         </solicitante>
     </solicitantes>
@@ -44,7 +44,50 @@ Solicitar a naturalização definitiva em até 2(dois) anos após completar 18 (
         <entre max="12" min="6" unidade="meses"/>
         <descricao><![CDATA[A previsão do tempo para realização do serviço depende também de que o solicitante apresente todos os documentos.]]></descricao>
     </tempo-total-estimado>
-    <etapas/>
+    <etapas>
+        <etapa>
+            <titulo>Apresentar Requerimento</titulo>
+            <descricao><![CDATA[Nos casos de Naturalização Provisória, Definitiva e Extraordinária:
+O estrangeiro deverá solicitar, preencher e entregar o formulário de naturalização na Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades
+
+Nos casos de Naturalização Especial:
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]]></descricao>
+            <documentos>
+                <default>
+                    <item>Requerimento devidamente assinado pelo naturalizando ou por seu representante legal, conforme o caso;</item>
+                    <item>Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa (exceto para Naturalização Definitiva); ?</item>
+                    <item>Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores (exceto para Naturalização Definitiva);?</item>
+                    <item>Cópia integral do passaporte (exceto para Naturalização Definitiva); ?</item>
+                    <item>Comprovante de residência (exceto para Naturalização Especial), tais como: contas de água ou energia ou telefone; cópia de contrato de locação ou escritura de compra e venda de imóvel onde reside ou residiu;</item>
+                    <item>Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização;</item>
+                </default>
+                <caso descricao="Naturalização Provisória - Estrangeiro que veio para o Brasil com até 5 (cinco) anos.">
+                    <item>Cópia da cédula de identidade do naturalizando e de seu representante legal, atualizada. ?????</item>
+                </caso>
+                <caso descricao="Naturalização Definitiva - Estrangeiro com naturalização provisória">
+                    <item>Cópia da cédula de identidade - RG; ???</item>
+                    <item>Original do atestado de antecedentes criminais, expedido pela Polícia Civil dos Estados onde residiu nos últimos 5 (cindo) anos;</item>
+                </caso>
+                <caso descricao="Naturalização Especial - Estrangeiro casado(a) com diplomata brasileiro(a)/ Serviço Exterior Brasileiro">
+                    <item>Cópia da Certidão de Casamento, devidamente autorizada pelo governo brasileiro.</item>
+                </caso>
+                <caso descricao="Naturalização Especial - Estrangeiro casado(a) com pessoa a serviço do Estado brasileiro no exterior.">
+                    <item>Cópia da Certidão de Casamento, devidamente autorizada pelo governo brasileiro.</item>
+                </caso>
+                <caso descricao="Naturalização Especial - Estrangeiro empregado em missão diplomática ou repartição consular do Brasil.">
+                    <item>Declaração da autoridade competente recomendando a Naturalização;</item>
+                    <item>Declaração da autoridade competente que prove que o estrangeiro esteja em exercício efetivo, por mais de dez anos, ininterruptos;</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default/>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id=""/>
     <segmentos-da-sociedade/>
     <areas-de-interesse/>
