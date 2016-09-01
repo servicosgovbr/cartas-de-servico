@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Pedir Naturalização</nome>
+    <nome><![CDATA[Pedir Naturalização]]></nome>
     <sigla/>
     <nomes-populares>
-        <item>Naturalização;</item>
+        <item>Naturalização Especial</item>
+        <item>Transformação de Provisória em Definitiva</item>
+        <item>Naturalização Provisória</item>
+        <item>Transformação de Naturalização Provisória em Definitiva</item>
+        <item>Naturalização Extraordinária</item>
     </nomes-populares>
-    <descricao/>
+    <descricao><![CDATA[É o ato pelo qual uma pessoa solicita nacionalidade brasileira.]]></descricao>
     <contato/>
-    <gratuito/>
-    <solicitantes/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Estrangeiro que veio para o Brasil com até 5 (cinco) anos.</tipo>
+            <requisitos><![CDATA[Ter vindo para o Brasil nos primeiros 5 (cinco) anos de vida e ter se estabelecido definitivamente no país. 
+Permanência ?]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Estrangeiro com naturalização provisória</tipo>
+            <requisitos><![CDATA[Ser maior de idade (18 anos);
+Solicitar a naturalização definitiva em até 2(dois) anos após completar 18 (dezoito) anos.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Estrangeiro casado(a) com diplomata brasileiro(a)/ Serviço Exterior Brasileiro</tipo>
+            <requisitos><![CDATA[Comprovar o casamento ou união estável.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Estrangeiro casado(a) com pessoa a serviço do Estado brasileiro no exterior.</tipo>
+            <requisitos><![CDATA[Comprovar o casamento ou união estável.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Estrangeiro empregado em missão diplomática ou repartição consular do Brasil.</tipo>
+            <requisitos><![CDATA[Comprovar o vínculo empregatício por, no mínimo, 10 (dez) anos.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Estrangeiro que mora no Brasil há, pelo menos, 15 (quinze) anos.</tipo>
+            <requisitos><![CDATA[Comprovar que mora no Brasil há 15 (quinze) anos, continuamente.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre max="12" min="6" unidade="meses"/>
+        <descricao><![CDATA[A previsão do tempo para realização do serviço depende também de que o solicitante apresente todos os documentos.]]></descricao>
     </tempo-total-estimado>
     <etapas/>
     <orgao id=""/>
