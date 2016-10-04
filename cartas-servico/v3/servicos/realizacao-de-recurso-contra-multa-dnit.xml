@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Realização de Recurso contra multa - DNIT]]></nome>
+    <sigla>Recurso</sigla>
+    <nomes-populares>
+        <item>Recurso de Multa</item>
+    </nomes-populares>
+    <descricao><![CDATA[Processo administrativo, através do qual o interessado ou seu representante manifesta sua discordância da multa aplicada.]]></descricao>
+    <contato><![CDATA[0800 611 535]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Qualquer cidadão</tipo>
+            <requisitos><![CDATA[Ter recebido a notificação de penalidade de uma multa do DNIT.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="minutos"/>
+        <descricao><![CDATA[O prazo para interpor o Recurso será aquele constante na Notificação de Penalidade, não sendo este inferior a 30 (trinta) dias contados da data em que o infrator recebeu a Notificação de Penalidade em seu domicílio.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Preencher formulário de  recurso</titulo>
+            <descricao><![CDATA[O condutor deve apresentar os fatos que achar prudentes para anular a penalidade]]></descricao>
+            <documentos>
+                <default>
+                    <item>Formulário disponibilizado pelo DNIT</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Juntar documentação</titulo>
+            <descricao><![CDATA[O condutor deve juntar toda documentação solicitada no formulário da etapa anterior.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cópia legível dos Documentos de Identificação e CNH frente e verso</item>
+                    <item>Cópia da Notificação de Penalidade</item>
+                    <item>Formulário corretamente preenchido, datado e com assinatura original</item>
+                    <item>Fotocópia do CPF/CNPJ</item>
+                    <item>Outros documentos que considerar necessários para apoiar as razões alegadas</item>
+                </default>
+                <caso descricao="Pessoa Jurídica">
+                    <item>Se Pessoa Jurídica: Cópia do Estatuto e/ou da última alteração de Contrato Social</item>
+                </caso>
+                <caso descricao="Recorrente não proprietário do Veículo">
+                    <item>Anexar a procuração de poderes para recorrer</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Enviar recurso</titulo>
+            <descricao><![CDATA[O Recurso poderá ser impetrado por meio do site DNIT Cidadão ou via postal.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Formulário preenchido e documentação da etapa 2</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://infracoes.dnit.gov.br/dnitcidadao/login]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Departamento Nacional de Infraestrutura de Transportes - DNIT - S.A.N. Quadra 03, Bloco A, Edifício Núcleo dos Transportes – 3º Andar, Sala 3269 CEP: 70040-902 – Brasília/DF.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Solicitar Efeito Suspensivo</titulo>
+            <descricao><![CDATA[De acordo com o CTB, se por motivo de força maior o recurso não for julgado no prazo de (30) dias, a autoridade que impôs a penalidade, de ofício, ou por solicitação do recorrente, poderá conceder-lhe efeito suspensivo, que libera o veículo para o licenciamento. Para solicitá-lo, os interessados poderão entrar em contato com as Juntas Administrativas de Recurso de Infrações - JARI, na Superintendência Regional do DNIT no seu Estado.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Recurso interposto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[As Juntas Administrativas de Recurso de Infrações do DNIT nos Estados. Os endereços encontram-se no seguinte [link](http://www.dnit.gov.br/acesso-a-informacao/insitucional/copy_of_quem-e-quem)]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Órgãos e entidades públicas</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transporte Rodoviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>DNIT</item>
+        <item>Multa</item>
+        <item>Recurso de Multa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[CTB](http://www.planalto.gov.br/ccivil_03/leis/L9503Compilado.htm)]]></item>
+    </legislacoes>
+</servico>
