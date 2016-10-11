@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Solicitar a perda da nacionalidade brasileira]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>perda de nacionalidade</item>
+        <item>perda de nacionalidade de brasileiro nato</item>
+        <item>perda de nacionalidade de brasileiro naturalizado</item>
+    </nomes-populares>
+    <descricao><![CDATA[É o ato pelo qual uma pessoa perde voluntariamente a sua nacionalidade brasileira.
+Só é possível perder a nacionalidade brasileira caso a pessoa já tenha adquirido outra nacionalidade.]]></descricao>
+    <contato><![CDATA[processos.migracoes@mj.gov.br
+Site: http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Brasileiro nato</tipo>
+            <requisitos><![CDATA[Ter adquirido outra nacionalidade e desejar perder a brasileira.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Brasileiro naturalizado</tipo>
+            <requisitos><![CDATA[Ter outra nacionalidade e desejar perder a brasileira.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="45" min="30" unidade="dias-corridos"/>
+        <descricao><![CDATA[O prazo pode ser maior caso seja necessário complementar a documentação.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Apresentar requerimento.</titulo>
+            <descricao><![CDATA[O requerimento solicitando a perda da nacionalidade deve conter:
+- O nome completo do requerente;
+- A nacionalidade adquirida;
+- Endereço atualizado;
+- Assinatura;
+
+Obs1: Importante indicar, quando houver, e-mail para contato.
+Obs2: O serviço dispensa o auxílio de advogado.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cópia da certidão de nascimento;</item>
+                    <item>Cópia do certificado de naturalização, legalizado junto às autoridades consulares brasileiras no exterior e traduzido oficialmente.</item>
+                </default>
+                <caso descricao="No caso de brasileiro naturalizado">
+                    <item>Certificado de naturalização</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Ministério da Justiça e Cidadania – Departamento de Migrações
+Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF.]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Ministério da Justiça e Cidadania – Departamento de Migrações
+Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>perda de nacionalidade</item>
+        <item>perda</item>
+        <item>nacionalidade</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[Lei 818/49](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1949-09-18;818)
+[Lei 6.815/80](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815)
+Portaria 1.949/15 (http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/11/2015&jornal=1&pagina=53&totalArquivos=148)]]></item>
+    </legislacoes>
+</servico>
