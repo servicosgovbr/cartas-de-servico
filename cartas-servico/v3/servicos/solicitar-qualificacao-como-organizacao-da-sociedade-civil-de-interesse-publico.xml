@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Solicitar qualificação como Organização da Sociedade Civil de Interesse Público]]></nome>
+    <sigla>OSCIP</sigla>
+    <nomes-populares>
+        <item>Certidão de qualificação</item>
+        <item>Certificado de OSCIP</item>
+        <item>Certificado para termo de parceria</item>
+        <item>Manutenção da qualificação</item>
+        <item>Cancelamento da qualificação</item>
+        <item>Atualização cadastral de OSCIP</item>
+    </nomes-populares>
+    <descricao><![CDATA[Certificação de pessoas jurídicas de direito privado, sem fins lucrativos, que tenham sido constituídas e se encontrem em funcionamento regular há, no mínimo 3 (três) anos, na forma da Lei nº 9.790/99, a fim de habilitá-las para firmar termo de parceria com o Poder Público.
+A certificação de OSCIP não é necessária para firmar Termo de Colaboração e Termo de Fomento, previstos na Lei nº 13.019/2014.]]></descricao>
+    <contato><![CDATA[sac.dejus@mj.gov.br]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Entidades Sociais</tipo>
+            <requisitos><![CDATA[- Pessoas jurídicas de direito privado, sem fins lucrativos;
+- que tenham sido constituídas e se encontrem em funcionamento regular há, no mínimo 3 (três) anos;
+- que preencham os requisitos previstos na [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790), em especial, arts. 3º e  4º;
+- que não se enquadre no art. 2º da [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790).]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="45" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Apresentar requerimento de qualificação</titulo>
+            <descricao><![CDATA[A entidade deve apresentar requerimento, assinado pelo representante legal, solicitando a qualificação como OSCIP, dirigido ao Ministério da Justiça e Cidadania , com as seguintes informações:
+
+- Razão Social;
+- CNPJ;
+- e-mail.
+
+Obs: Para requerer a qualificação, não há necessidade de intermediação por advogado, contador, etc.]]></descricao>
+            <documentos>
+                <default>
+                    <item>a) ata de eleição de sua atual diretoria, autenticada e registrada em cartório;</item>
+                    <item>b) estatuto social, autenticado e registrado em cartório, que deverá obedecer ao disposto nos arts. 1º, 2º, 3º e 4º da [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790)</item>
+                    <item>c) inscrição no Cadastro Geral de Contribuintes - CNPJ;</item>
+                    <item>d) balanço patrimonial e demonstração do resultado do exercício (do último exercício), devidamente autenticados em cartório;</item>
+                    <item>e) declaração afirmando que a entidade é isenta do imposto de renda, assinada por seu representante legal;</item>
+                    <item>f) declaração de estar em regular funcionamento há, no mínimo, 3 anos, de acordo com as respectivas  finalidades estatutárias, assinada por seu representante legal.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Secretaria Nacional de Justiça e Cidadania
+
+Departamento de Políticas de  Justiça
+
+Divisão de Credenciamento
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Protocolo-Geral do Ministério da Justiça
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Manutenção da qualificação como OSCIP</titulo>
+            <descricao><![CDATA[A Oscip deve manter os seus dados cadastrais atualizados  perante o Ministério da Justiça e Cidadania, relativamente ao seu endereço de sede, razão social e alterações estatutárias que impliquem mudança do seu regime de funcionamento, sob pena de cancelamento de sua qualificação.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Requerimento solicitando a alteração cadastral, conforme cada caso, contendo também a identificação da entidade social (razão social e CNPJ), com e-mail válido para contato e deve ser assinado pelo representante legal.</item>
+                </default>
+                <caso descricao="Em caso de alteração de endereço de sede ou da razão social, enviar junto ao requerimento:">
+                    <item>Cartão de CNPJ atualizado ou</item>
+                    <item>Cópia autenticada da ata da assembleia que realizou a modificação.</item>
+                </caso>
+                <caso descricao="Em caso de alteração de finalidade ou no estatuto social, enviar junto ao requerimento:">
+                    <item>Cópia autenticada do estatuto social.</item>
+                </caso>
+                <caso descricao="Em caso de celebração de termo de parceria:">
+                    <item>Requerimento solicitando a certidão de qualificação; e</item>
+                    <item>Declaração da entidade de que mantém seu cadastro atualizado, relativamente ao seu endereço de sede, razão social e alterações estatutárias; ou</item>
+                    <item>Se não estiver com o cadastro atualizado, deverá realizar a respectiva atualização, conforme o caso em que se enquadre.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Secretaria Nacional de Justiça e Cidadania
+
+Departamento de Políticas de  Justiça
+
+Divisão de Credenciamento
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Protocolo-Geral do Ministério da Justiça
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Cancelamento da qualificação como OSCIP, a pedido.</titulo>
+            <descricao><![CDATA[As OSCIPs podem solicitar o cancelamento de sua qualificação.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Requerimento solicitando o cancelamento da sua qualificação,  contendo também a identificação da entidade social (razão social e CNPJ), com e-mail válido para contato e deve ser assinado pelo representante legal.</item>
+                    <item>Cópia autenticada da ata de eleição da atual diretoria;</item>
+                    <item>Declaração quanto ao recebimento de recursos públicos.</item>
+                </default>
+                <caso descricao="No caso de não ter recebido recursos públicos:">
+                    <item>Declaração da entidade informando o não recebimento de recursos públicos durante o período em que esteve qualificada.</item>
+                </caso>
+                <caso descricao="No caso de ter recebido recursos públicos:">
+                    <item>Declaração da entidade informando a transferência do respectivo acervo patrimonial à outra entidade qualificada como OSCIP federal, conforme art. 4, inciso V da Lei 9790/99;</item>
+                    <item>Declaração da entidade que recebeu a transferência.</item>
+                </caso>
+                <caso descricao="Dissolução da entidade">
+                    <item>Declaração informando que o respectivo patrimônio líquido foi transferido a outra pessoa jurídica qualificada como OSCIP Federal; e</item>
+                    <item>Declaração da entidade que recebeu os recursos/ patrimônio líquido, confirmando a transferência; ou</item>
+                    <item>Declaração afirmando que não possui patrimônio líquido a ser transferido, sob as penas da lei.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Secretaria Nacional de Justiça e Cidadania
+
+Departamento de Políticas de  Justiça
+
+Divisão de Credenciamento
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Protocolo-Geral do Ministério da Justiça
+
+Ministério da Justiça, Bloco T, Anexo II
+
+Esplanada dos Ministérios, Brasília – DF
+
+CEP: 70.064-900]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <segmentos-da-sociedade>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Educação</item>
+        <item>Meio ambiente</item>
+        <item>Preservação e Conservação Ambiental</item>
+        <item>Saúde</item>
+        <item>Proteção Social</item>
+        <item>Assistência à Criança e ao Adolescente</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Assistência ao Idoso</item>
+        <item>Cultura</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>OSCIP</item>
+        <item>Entidades Sociais</item>
+        <item>Qualificação</item>
+        <item>Certidão de qualificação</item>
+        <item>Certificado de qualificação</item>
+        <item>Termo de parceria</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[- [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790);
+[ Decreto nº 3.100/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1999-06-30;3100);
+Portaria do Ministério da Justiça nº 362/2016 (http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/03/2016&jornal=1&pagina=16&totalArquivos=120).]]></item>
+    </legislacoes>
+</servico>
