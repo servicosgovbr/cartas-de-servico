@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Consultar Documentos do Acervo]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Arquivo Nacional</item>
+    </nomes-populares>
+    <descricao><![CDATA[Acesso à informação pública contida em documentos guardados pelo Arquivo Nacional.]]></descricao>
+    <contato><![CDATA[consultas@arquivonacional.gov.br
+
+consultasdf@arquivonacional.gov.br]]></contato>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Qualquer pessoa</tipo>
+            <requisitos><![CDATA[Assinatura dos Termos de Responsabilidade correspondentes nos casos necessários.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="3" min="1" unidade="meses"/>
+        <descricao><![CDATA[O tempo estimado para realização do serviço dependerá: da identificação precisa da informação consultada; da quantidade de informação; do tipo e do estado do documento a ser consultado.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Cadastramento</titulo>
+            <descricao><![CDATA[Presencial: cadastramento do usuário mediante apresentação de
+documento de identificação.
+À distância: para acesso ao Sistema de Informação do Arquivo Nacional - SIAN  é necessário se cadastrar e aceitar os termos e regras de acesso a informação, assumindo responsabilidade pelo seu uso.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Brasileiro: documento de identidade com foto.</item>
+                    <item>Estrangeiro: passaporte.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sian.an.gov.br/sianex/consulta/login.asp]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[consultas@arquivonacional.gov.br
+consultasdf@arquivonacional.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao><![CDATA[+55 (21) 2179-1257 / 1304
++55 (61) 3966-8670]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Apresentar pedido de consulta</titulo>
+            <descricao><![CDATA[Identificar as informações que quer ter acesso.
+Obs: A rapidez do atendimento dependerá do nível de precisão do pedido.]]></descricao>
+            <documentos>
+                <default/>
+                <caso descricao="Documentação do Acervo do Regime Militar">
+                    <item>Preenchimento do Termo de responsabilidade pelo uso e divulgação de informações pessoais</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sian.an.gov.br/sianex/consulta/login.asp]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[consultas@arquivonacional.gov.br
+consultasdf@arquivonacional.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Complementação de Informação (se necessário)</titulo>
+            <descricao><![CDATA[Quando necessário a equipe do Arquivo Nacional entrará em contato com o usuário para pedir informações adicionais para auxiliar a busca.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[consultas@arquivonacional.gov.br
+consultasdf@arquivonacional.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao><![CDATA[+55 (21) 2179-1257 / 1304
++55 (61) 3966-8670]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acessar a informação</titulo>
+            <descricao><![CDATA[O usuário terá acesso às informações contidas nos documentos guardados pelo Arquivo Nacional.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sian.an.gov.br/sianex/consulta/login.asp
+Obs: A visualização da documentação pelo SIAN ocorre apenas para os documentos já digitalizados.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Solicitar Cópia  ou Transcrição Paleográfica ou Emissão de Certidão (se houver interesse)</titulo>
+            <descricao><![CDATA[O usuário pode solicitar esses serviços, mas o prazo do atendimento e o valor do serviço variará de acordo com o tipo e a quantidade de cópias solicitadas. 
+Ver tabela de prazos e custos: (tabela de prazos e custos)[http://www.arquivonacional.gov.br/images/pdf/tabela_atualizada_2013setfinal.pdf]]]></descricao>
+            <documentos>
+                <default>
+                    <item>Preenchimento do Formulário de Requisição de Reprodução de Documentos</item>
+                    <item>Comprovante de pagamento da Guia de Recolhimento da União - GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Custo mínimo por unidade]]></descricao>
+                        <moeda/>
+                        <valor>0,20</valor>
+                    </custo>
+                    <custo>
+                        <descricao><![CDATA[Custo máximo por unidade]]></descricao>
+                        <moeda/>
+                        <valor>100,00</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Sala de Consultas
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="e-mail">
+                        <descricao><![CDATA[consultas@arquivonacional.gov.br
+consultasdf@arquivonacional.gov.br]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Arquivo Nacional - Sede
+Praça da República , 173 – Centro –
+CEP 20211-350 – Rio de Janeiro – RJ]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Atendimento à distância
+Coordenação Regional do Arquivo Nacional
+Setor de Indústrias Gráficas, Quadra 6, Lote 800
+Prédio Anexo da Imprensa Nacional
+CEP 70610-460 – Brasília – DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Órgãos e entidades públicas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Educação</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio Cultural</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Serviços Públicos</item>
+        <item>Administração</item>
+        <item>Cultura</item>
+        <item>Difusão</item>
+        <item>Difusão Cultural</item>
+        <item>Educação básica</item>
+        <item>Educação superior</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Documentação e Informação</item>
+        <item>Pesquisa e Memória</item>
+        <item>Acesso à documentação pública</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[(Lei nº 12.527/2011)[http://www.lexml.gov.br/urn/urn:lex:br:rede.virtual.bibliotecas:artigo.revista:2013;1000973764]
+
+(Lei nº 12.528/2011)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2011-11-18;12528]
+
+(Lei nº 8.159/1991)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1991-01-08;8159]]]></item>
+    </legislacoes>
+</servico>
