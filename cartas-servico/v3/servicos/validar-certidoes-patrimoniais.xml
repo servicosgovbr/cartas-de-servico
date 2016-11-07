@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Validar Certidões Patrimoniais</nome>
+    <nome><![CDATA[Validar Certidões Patrimoniais]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>Aqui você poderá confirmar a autenticidade de certidão emitida pela Secretaria do Patrimônio da União, preenchendo os campos conforme os dados da certidão.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>Confirmação de Autenticidade</item>
+    </nomes-populares>
+    <descricao><![CDATA[Este serviço permite verificar a autenticidade de Certidão Negativa de Débitos Patrimoniais do Imóvel e do Responsável, Certidão de Situação de Ocupação/Aforamento e Certidão de Inteiro Teor do Imóvel.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Solicitar autenticação</titulo>
+            <descricao><![CDATA[O interessado deverá acessar o site da SPU e preencher as informações requisitadas.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>CPF/CNPJ</item>
+                    <item>Certidão que se deseja verificar</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -22,20 +35,27 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://atendimentovirtual.spu.planejamento.gov.br/Emissoes/Certidao/Cert_ValidaPedido.asp</descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/23]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
         <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
+        <item>Patrimônio</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>autenticidade</item>
+        <item>certidão</item>
+        <item>validação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
 </servico>
