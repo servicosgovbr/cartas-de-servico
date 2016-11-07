@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Emissão de DARF - Laudêmio</nome>
+    <nome><![CDATA[Emissão de DARF - Laudêmio]]></nome>
     <sigla/>
-    <nomes-populares>
-        <item>DARF patrimonial</item>
-    </nomes-populares>
-    <descricao><![CDATA[Este serviço permite a emissão de DARF para pagamento, nos bancos autorizados, da taxa de ocupação ou foro dos imóveis da União, além de outros débitos de caráter extraordinário (multas de transferências, diferenças de laudêmios e outros). Nele serão impressos os dados de identificação do imóvel, do titular ocupante ou foreiro, a data de pagamento e os respectivos valores, a serem recolhidos ao Tesouro Nacional.]]></descricao>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite a emissão da 2ª via de DARF de laudêmio após o Cálculo de Laudêmio (1º passo para transferência de titularidade). O DARF poderá ser emitido dentro do prazo de 30 dias, contados da data de geração do cálculo de laudêmio, e deverá ser pago em um dos bancos autorizados (relação disponível na página inicial deste Portal).]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Pessoas físicas e Jurídicas</tipo>
-            <requisitos><![CDATA[Com débitos a pagar relativos a patrimônios da União]]></requisitos>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que tenha realizado o cálculo de laudêmio e deseja obter a Certidão de Autorização para Transferência - CAT (2º passo para transferência de titularidade).]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -20,13 +18,10 @@
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Emitir a DARF</titulo>
-            <descricao><![CDATA[O usuário deverá entrar no site da SPU, informar o número da RIP ou do CPF/CNPJ, preencher os dados pedidos e emitir a DARF]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
             <documentos>
-                <default>
-                    <item>RIP</item>
-                    <item>CPF/CNPJ</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -34,7 +29,24 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/Emissoes/DARF/DARFPedido.asp]]></descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preencha a informação solicitada</titulo>
+            <descricao><![CDATA[Informe o número da Ficha de Cálculo de Laudêmio ou o número do Registro Imobiliário Patrimonial.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/16]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -52,11 +64,10 @@
     </areas-de-interesse>
     <palavras-chave>
         <item>DARF</item>
-        <item>Ocupação</item>
-        <item>Foro</item>
-        <item>Patrimonial</item>
+        <item>Emissão</item>
+        <item>Laudêmio</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[...]]></item>
+        <item><![CDATA[Não há legislação vigente.]]></item>
     </legislacoes>
 </servico>
