@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Consulta Dados Cadastrais</nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Consultar informações do imóvel</item>
+    </nomes-populares>
+    <descricao><![CDATA[A Consulta Dados Cadastrais mostra os dados cadastrais do imóvel, suas benfeitorias e utilizações ativas, bem como as informações do seu responsável atual. Serão apresentadas informações gerais e técnicas de endereço, das testadas e do local de endereçamento das correspondências.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar Informações</titulo>
+            <descricao><![CDATA[O interessado deve visitar a página de serviços da SPU e fazer a solicitação]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/Cadastro/Cad_ConsPedido.asp]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Imóvel</item>
+        <item>informações</item>
+        <item>dados cadastrais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[....]]></item>
+    </legislacoes>
+</servico>
