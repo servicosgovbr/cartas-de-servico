@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Emissão de DARF Patrimonial</nome>
-    <sigla>e-DARF</sigla>
-    <nomes-populares>
-        <item>Laudêmio</item>
-        <item>Foro</item>
-        <item>Taxa de Ocupação</item>
-    </nomes-populares>
-    <descricao><![CDATA[O serviço de emissão do Documento de Arrecadação de Receitas Federais – DARF é  utilizado para recolhimento, junto aos bancos autorizados, da taxa de ocupação, foro e laudêmio sobre a utilização dos imóveis da União.]]></descricao>
+    <nome><![CDATA[Emissão de DARF Patrimonial]]></nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite a emissão de DARF para pagamento, nos bancos autorizados, da taxa de ocupação ou foro dos imóveis da União, além de outros débitos de caráter extraordinário (multas de transferências, diferenças de laudêmios e outros). Nele serão impressos os dados de identificação do imóvel, do titular ocupante ou foreiro, a data de pagamento e os respectivos valores, a serem recolhidos ao Tesouro Nacional.]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Usuários de imóveis da União</tipo>
-            <requisitos/>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Possuir débito(s) a pagar.]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -22,11 +18,28 @@
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Emissão de DARF</titulo>
-            <descricao><![CDATA[O contribuinte deve preencher o formulário com as informações presentes no RIP. O não pagamento das taxas pode resultar em cadastro no CADIN, na Divida Ativa da União e, após três anos consecutivos (ou quatro intercalados), resultará na caducidade do aforamento. É prevista a isenção de pagamento de foros, taxas de ocupação e laudêmio para pessoas consideradas carentes ou de baixa renda, cuja renda familiar mensal for igual ou inferior a 5 (cinco) salários mínimos e que resida no imóvel.]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preencha a informação solicitada</titulo>
+            <descricao><![CDATA[Informe o número do Registro Imobiliário Patrimonial - RIP do Imóvel ou o CPF/CNPJ do responsável pelos débitos.]]></descricao>
             <documentos>
                 <default>
-                    <item>RIP do Imóvel</item>
+                    <item>Número do Registro Imobiliário Patrimonial - RIP do Imóvel ou o CPF/CNPJ do responsável pelos débitos.</item>
                 </default>
             </documentos>
             <custos>
@@ -35,7 +48,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/Emissoes/DARF/DARFPedido.asp]]></descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/32]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -50,13 +63,11 @@
         <item>Habitação</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>taxa de ocupação</item>
-        <item>foro</item>
-        <item>laudêmio</item>
-        <item>spu</item>
-        <item>darf</item>
+        <item>Emissão</item>
+        <item>DARF</item>
+        <item>Patrimonial</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1998-05-15;9636]]></item>
+        <item><![CDATA[Não há legislação vigente.]]></item>
     </legislacoes>
 </servico>
