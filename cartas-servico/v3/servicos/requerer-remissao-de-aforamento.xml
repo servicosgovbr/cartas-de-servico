@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Requerer Remissão de Aforamento]]></nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite ao foreiro solicitar o resgate referente a 17% do domínio pleno do imóvel, excluídas as benfeitorias, consolidando a propriedade do imóvel.]]></descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica que seja foreiro</tipo>
+            <requisitos/>
+        </solicitante>
+        <solicitante>
+            <tipo>Foreiro baixa renda</tipo>
+            <requisitos><![CDATA[Pessoa física responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar remissão</titulo>
+            <descricao><![CDATA[O foreiro deverá acessar o site da SPU e preencher as informações solicitadas.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Variável]]></descricao>
+                        <moeda/>
+                        <valor/>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCertidaoAforamento?servico=27]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber a resposta da SPU</titulo>
+            <descricao><![CDATA[A SPU analisará e dará a resposta ao foreiro]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCertidaoAforamento?servico=27]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>foreiro</item>
+        <item>domínio pleno</item>
+        <item>17%</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
+</servico>
