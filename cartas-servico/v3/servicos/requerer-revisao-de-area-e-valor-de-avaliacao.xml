@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Requerer revisão de área e valor de avaliação]]></nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite solicitar a revisão de valor de taxa de ocupação, foro, laudêmio e multa de transferência, bem como a revisão de dimensões ou fração ideal de imóvel da União cadastrado na SPU.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que seja titular de direito sobre imóvel da União]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar revisão</titulo>
+            <descricao><![CDATA[O interessado deve acessar o site da SPU e preencher as informações requisitadas]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                    <item>Documentação que justifique o pedido de revisão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/revisaoValorArea?servico=36]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber resposta da SPU</titulo>
+            <descricao><![CDATA[A SPU responderá ao solicitante sobre a mudança ou não de área e valores.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/revisaoValorArea?servico=36]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>reavaliação de valor</item>
+        <item>tamanho do imóvel</item>
+        <item>pedido de revisão</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
+</servico>
