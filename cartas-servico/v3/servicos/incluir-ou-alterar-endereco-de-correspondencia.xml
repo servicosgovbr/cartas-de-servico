@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Incluir ou Alterar Endereço de Correspondência</nome>
+    <nome><![CDATA[Incluir ou Alterar Endereço de Correspondência]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>A função ATUALIZAÇÃO DE ENDEREÇO ESPECIAL permite ao usuário incluir um endereço alternativo (que passa a ser o preferencial) para o recebimento de suas cobranças, notificações e correspondências da SPU.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>Mudar Endereço</item>
+    </nomes-populares>
+    <descricao><![CDATA[A função ATUALIZAÇÃO DE ENDEREÇO ESPECIAL permite ao usuário incluir um endereço alternativo (que passa a ser o preferencial) para o recebimento de suas cobranças, notificações e correspondências da SPU.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos><![CDATA[Que tenha qualquer relacionamento com a SPU]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Solicitar alteração</titulo>
+            <descricao><![CDATA[O usuário deverá proceder à alteração no site da SPU]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>CPF/CNPJ</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -22,20 +33,27 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://atendimentovirtual.spu.planejamento.gov.br/EnderecoEspecial/EndEsp_Pedido.asp</descricao>
+                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/EnderecoEspecial/EndEsp_Pedido.asp]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
         <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
+        <item>Patrimônio</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Endereço</item>
+        <item>Mudar</item>
+        <item>Trocar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
 </servico>
