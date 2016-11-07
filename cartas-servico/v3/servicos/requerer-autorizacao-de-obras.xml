@@ -42,6 +42,26 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
+        <etapa>
+            <titulo>Receber resposta da SPU</titulo>
+            <descricao><![CDATA[Após análise, a SPU dará resposta positiva ou negativa ao pedido de autorização]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoAutorizacaoObras?servico=30#dados-documentos]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
     <segmentos-da-sociedade>
