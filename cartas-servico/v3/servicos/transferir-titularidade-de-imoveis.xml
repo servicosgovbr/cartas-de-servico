@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Transferir Titularidade de Imóveis]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Transferir Imóveis</item>
+        <item>CAT</item>
+        <item>Cálculo do Laudêmio</item>
+    </nomes-populares>
+    <descricao><![CDATA[Este serviço possibilita a realização de todos os procedimentos necessários à transferência de titularidade de imóvel da União sob os regimes de aforamento e de ocupação.]]></descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Calcular o laudêmio</titulo>
+            <descricao><![CDATA[O interessado deverá acessar o site de serviços da SPU, informar os dados pedidos e gerar a Ficha de Cálculo de Laudêmio e a DARF de pagamento do Percentual de Transferência. A ficha tem validade de trinta dias, sendo possível imprimir 2ª via da DARF neste período.Esta etapa não se aplica às transações não onerosas, às pessoas físicas carentes e às pessoas jurídicas com isenção, que deverão preencher o Requerimento de Isenção de Pagamento disponível no Portal de Serviços da SPU.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do Imóvel</item>
+                    <item>Valor Declarado do Imóvel</item>
+                    <item>Percentual de Transferência do Imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[5% do valor atualizado do domínio pleno do terreno da União, excluídas as benfeitorias]]></descricao>
+                        <moeda/>
+                        <valor/>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/1]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Emitir a Certidão de Autorização para Transferência (CAT)</titulo>
+            <descricao><![CDATA[A certidão é emitida em nome do atual responsável pelo imóvel junto à SPU e tem prazo de validade de 90 dias da data de sua emissão, podendo ser novamente emitida dentro desse prazo. A certidão será exigida pelos Cartórios para a elaboração da escritura e/ou registro de escrituras públicas tendo por objeto a transferência de imóveis pertencentes à União.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>Ficha de Cálculo do Laudêmio</item>
+                    <item>Comprovante de Pagamento da DARF com o percentual de transferência</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/17]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Requerer a transferência de titularidade</titulo>
+            <descricao><![CDATA[Este serviço permite solicitar a alteração do titular responsável pelo imóvel no Cadastro da SPU após a transferência em cartório competente.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>CPF/CNPJ</item>
+                    <item>Certidão de Transmissão do imóvel no cartório.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoTransferenciaTitular?servico=14]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Transferir imóvel</item>
+        <item>laudêmio</item>
+        <item>CAT</item>
+        <item>FCL</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Lei nº 13.240, de 2015]]></item>
+    </legislacoes>
+</servico>
