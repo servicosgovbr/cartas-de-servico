@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Emitir Certidão Negativa de Débitos Patrimoniais do Imóvel</nome>
+    <nome><![CDATA[Emitir Certidão Negativa de Débitos Patrimoniais do Imóvel]]></nome>
     <sigla/>
     <nomes-populares>
         <item>Certidão de Imóvel</item>
@@ -15,7 +15,7 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="10" unidade="minutos"/>
+        <ate max="0" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
@@ -25,7 +25,7 @@
             <documentos>
                 <default>
                     <item>CPF/CPNJ</item>
-                    <item>RIP</item>
+                    <item>RIP do Imóvel</item>
                 </default>
             </documentos>
             <custos>
@@ -55,6 +55,6 @@
         <item>SPU</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Constituição Federal]]></item>
+        <item><![CDATA[...]]></item>
     </legislacoes>
 </servico>
