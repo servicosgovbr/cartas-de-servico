@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Consulta de Dados Cadastrais</nome>
+    <nome><![CDATA[Consulta de Dados Cadastrais]]></nome>
     <sigla/>
     <nomes-populares>
-        <item>Consultar informações do imóvel</item>
+        <item>Consulta de Dados Cadastrais</item>
     </nomes-populares>
     <descricao><![CDATA[Este serviço permite consultar os dados cadastrais do imóvel, suas benfeitorias e utilizações ativas, bem como as informações do seu responsável atual. Serão apresentadas informações gerais e técnicas de endereço, das testadas e do local de endereçamento das correspondências.]]></descricao>
     <contato/>
@@ -40,7 +40,9 @@
             <titulo>Preencha a informação solicitada</titulo>
             <descricao><![CDATA[Selecione a opção desejada (RIP SIAPA, CPF do Responsável, CNPJ do Responsável, Nome do Responsável) , preencha o campo e pressione o botão "OK".]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>RIP SIAPA, CPF do Responsável, CNPJ do Responsável ou Nome do Responsável</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
