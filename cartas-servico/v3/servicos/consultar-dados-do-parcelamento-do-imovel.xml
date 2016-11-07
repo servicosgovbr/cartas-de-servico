@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Consultar Dados do Parcelamento do Imóvel</nome>
+    <nome><![CDATA[Consultar Dados do Parcelamento do Imóvel]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>A Consulta Parcelamento mostrará os dados do parcelamento escolhido.
+    <nomes-populares>
+        <item>Consulta Parcelamento</item>
+    </nomes-populares>
+    <descricao><![CDATA[A Consulta Parcelamento mostrará os dados do parcelamento escolhido.
 
-Mostrará, também, dados dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.</descricao>
-    <gratuito/>
-    <solicitantes/>
+Mostrará, também, dados dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que necessite verificar a situação de débitos de um determinado imóvel.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
         <descricao/>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Solicitar Informações</titulo>
+            <descricao><![CDATA[O interessado deverá acessar o site de serviços da SPU]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>RIP do imóvel</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -24,20 +35,27 @@ Mostrará, também, dados dos débitos, dos créditos e dos imóveis envolvidos 
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://atendimentovirtual.spu.planejamento.gov.br/Consultas/Par_Pedido.asp</descricao>
+                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/Consultas/Par_Pedido.asp]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
     <segmentos-da-sociedade>
         <item>Cidadãos</item>
         <item>Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
+        <item>Patrimônio</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Parcelamento</item>
+        <item>Dívidas</item>
+        <item>Dados Financeiros</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
 </servico>
