@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Emissão de DARF Patrimonial</nome>
+    <sigla>e-DARF</sigla>
+    <nomes-populares>
+        <item>Laudêmio</item>
+        <item>Foro</item>
+        <item>Taxa de Ocupação</item>
+    </nomes-populares>
+    <descricao><![CDATA[O serviço de emissão do Documento de Arrecadação de Receitas Federais – DARF é  utilizado para recolhimento, junto aos bancos autorizados, da taxa de ocupação, foro e laudêmio sobre a utilização dos imóveis da União.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Usuários de imóveis da União</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Emissão de DARF</titulo>
+            <descricao><![CDATA[O contribuinte deve preencher o formulário com as informações presentes no RIP. O não pagamento das taxas pode resultar em cadastro no CADIN, na Divida Ativa da União e, após três anos consecutivos (ou quatro intercalados), resultará na caducidade do aforamento. É prevista a isenção de pagamento de foros, taxas de ocupação e laudêmio para pessoas consideradas carentes ou de baixa renda, cuja renda familiar mensal for igual ou inferior a 5 (cinco) salários mínimos e que resida no imóvel.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do Imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://atendimentovirtual.spu.planejamento.gov.br/Emissoes/DARF/DARFPedido.asp]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>taxa de ocupação</item>
+        <item>foro</item>
+        <item>laudêmio</item>
+        <item>spu</item>
+        <item>darf</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1998-05-15;9636]]></item>
+    </legislacoes>
+</servico>
