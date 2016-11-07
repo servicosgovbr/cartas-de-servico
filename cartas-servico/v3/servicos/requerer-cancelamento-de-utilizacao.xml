@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Requerer Cancelamento de Utilização]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Devolver o imóvel</item>
+    </nomes-populares>
+    <descricao><![CDATA[Este serviço permite solicitar o cancelamento da utilização vigente no imóvel, conforme regras estabelecidas nos contratos ou termos.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica que faça uso de imóvel da união</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar o cancelamento</titulo>
+            <descricao><![CDATA[O interessado deve acessar o site da SPU e preencher as informações requisitadas.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>CPF/CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCancelamentoUtilizacao?servico=28]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber resposta da SPU</titulo>
+            <descricao><![CDATA[A SPU confirmará o cancelamento da utilização]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>CPF/CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCancelamentoUtilizacao?servico=28]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>devolver</item>
+        <item>cancelar</item>
+        <item>entregar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
+</servico>
