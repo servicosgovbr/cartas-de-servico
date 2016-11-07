@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Requerer permissão de uso de área pública]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Permissão para eventos em área pública</item>
+    </nomes-populares>
+    <descricao><![CDATA[Este serviço permite solicitar o uso de área da União para eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional. O prazo máximo de vigência da permissão de uso é de 90 (noventa) dias, podendo ser prorrogado por igual período. A permissão será onerosa quando houver atividade lucrativa.]]></descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa Física</tipo>
+            <requisitos><![CDATA[Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e tenha qualidade de interessado (art. 9º da Lei nº 9.784, de 1999)]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Pessoa Jurídica</tipo>
+            <requisitos><![CDATA[Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar a permissão</titulo>
+            <descricao><![CDATA[O interessado deverá acessar o site da SPU e preencher as informações requeridas]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>Documentação do evento</item>
+                    <item>Dados da área do evento</item>
+                </default>
+                <caso descricao="Pessoa Física">
+                    <item>Planta ou croqui da área com a indicação dos equipamentos que serão instalados, especificando as áreas de exploração econômica, se for o caso</item>
+                    <item>Documento de identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
+                    <item>Comprovação da prévia autorização dos órgãos federais, estaduais e municipais competentes para a realização do evento</item>
+                    <item>Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente)</item>
+                    <item>Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente)</item>
+                </caso>
+                <caso descricao="Pessoa Jurídica">
+                    <item>Planta ou croqui da área com a indicação dos equipamentos que serão instalados, especificando as áreas de exploração econômica, se for o caso</item>
+                    <item>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</item>
+                    <item>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</item>
+                    <item>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
+                    <item>Comprovação da prévia autorização dos órgãos federais, estaduais e municipais competentes para a realização do evento</item>
+                    <item>Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente)</item>
+                    <item>Memorial descritivo da poligonal da área de abrangência do evento, com discriminação das áreas de exploração econômica, se for o caso</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21#dados-documentos]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber resposta da SPU</titulo>
+            <descricao><![CDATA[A SPU dará a resposta ao solicitante permitindo ou negando o uso.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21#dados-documentos]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Patrimônio</item>
+        <item>Lazer</item>
+        <item>Cultura</item>
+        <item>Esporte profissional</item>
+        <item>Esporte comunitário</item>
+        <item>Esporte e Lazer</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Eventos de rua</item>
+        <item>uso de área pública</item>
+        <item>permissão do goveno</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Lei n° 9.636/1988
+Decreto n° 3.725/2001]]></item>
+    </legislacoes>
+</servico>
