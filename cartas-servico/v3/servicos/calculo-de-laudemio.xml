@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Cálculo de Laudêmio]]></nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço possibilita a obtenção do valor de laudêmio a recolher para a transferência de titularidade, bem como a emissão do DARF para pagamento. Deve ser efetuado para iniciar o processo de transferência de imóvel pertencente à União envolvendo transações onerosas (compra e venda, promessa de compra e venda, permuta, dação em pagamento, fusão e outros) e corresponde a 5% do valor atualizado do domínio pleno do terreno da União, excluídas as benfeitorias (Lei nº 13.240, de 2015).]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que pretenda transferir imóvel pertencente à União envolvendo transações onerosas (como compra e venda, permuta, dação em pagamento etc.).]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preenchas as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha os dados abaixo e pressione o botão "OK":
+O Número do RIP do Imóvel,
+O Valor Declarado da Transação,
+Percentual de Transferência são de preenchimento obrigatório e o
+Valor do Laudêmio eventualmente já recolhido (informação não obrigatória).]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do RIP do Imóvel, Valor Declarado da Transação, Percentual de Transferência são de preenchimento obrigatório e Valor do Laudêmio eventualmente já recolhido (informação não obrigatória).</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/1]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Administração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Cálculo</item>
+        <item>Cálculo de Laudêmio</item>
+        <item>Laudêmio</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
+</servico>
