@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Requerimento de Autorização de obras</nome>
+    <nome><![CDATA[Requerimento de Autorização de obras]]></nome>
     <sigla/>
     <nomes-populares/>
     <descricao><![CDATA[Este serviço permite solicitar autorização para execução de obras e intervenções em imóveis da União, desde que não alterem a natureza do bem.]]></descricao>
@@ -17,19 +17,15 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="6" unidade="meses"/>
-        <descricao/>
+        <ate max="0" unidade="meses"/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar Autorização</titulo>
-            <descricao><![CDATA[O interessado deverá entrar no site da SPU e preencher as informações requisitadas.]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
             <documentos>
-                <default>
-                    <item>CPF/CNPJ</item>
-                    <item>Planejamento da obra</item>
-                    <item>Dados do imóvel</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -37,19 +33,16 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoAutorizacaoObras?servico=30#dados-documentos]]></descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Receber resposta da SPU</titulo>
-            <descricao><![CDATA[Após análise, a SPU dará resposta positiva ou negativa ao pedido de autorização]]></descricao>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
             <documentos>
-                <default>
-                    <item>CPF/CNPJ</item>
-                    <item>RIP do imóvel</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -57,7 +50,41 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoAutorizacaoObras?servico=30#dados-documentos]]></descricao>
+                        <descricao><![CDATA[http://e-spu.hom.intra.planejamento/#/requerimentoAutorizacaoObras?servico=30]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.hom.intra.planejamento/#/requerimentoAutorizacaoObras?servico=30]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.hom.intra.planejamento/#/requerimentoAutorizacaoObras?servico=30]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
