@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Requerimento de Mudança de Regime/Contrato</nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite mudar o regime de destinação de um imóvel, quando o requerente já possui vínculo com a SPU. A mudança de regime solicitada observará a legislação vigente. O instrumento de destinação a ser aplicado dependerá de cada caso.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física</tipo>
+            <requisitos><![CDATA[Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e qualidade de interessado (art. 9º da Lei nº 9.784, de 1999), bem como outros requisitos a depender do instrumento de destinação ou regularização]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Pessoa jurídica</tipo>
+            <requisitos><![CDATA[Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999; regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar mudança</titulo>
+            <descricao><![CDATA[O requerente deverá acessar o site da SPU e preencher as informações solicitadas para realizar a petição.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                    <item>Documentação que justifique o pedido de mudança</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber resposta da SPU</titulo>
+            <descricao><![CDATA[A SPU informará ao requerente se é possível ou não a mudança de regime ou contrato.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF/CNPJ</item>
+                    <item>RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>trocar regime</item>
+        <item>mudar contrato</item>
+        <item>usar imóvel para outro fim</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Lei nº 9.784, de 1999]]></item>
+    </legislacoes>
+</servico>
