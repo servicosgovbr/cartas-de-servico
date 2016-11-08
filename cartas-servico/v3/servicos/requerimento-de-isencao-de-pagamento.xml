@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Requerimento de Isenção de Pagamento</nome>
+    <nome><![CDATA[Requerimento de Isenção de Pagamento]]></nome>
     <sigla/>
-    <nomes-populares>
-        <item>Pedir isenção</item>
-        <item>Pedir carência</item>
-    </nomes-populares>
-    <descricao><![CDATA[Este serviço permite solicitar a isenção do pagamento de foros, taxas de ocupação e laudêmios para pessoas físicas carentes e para pessoas jurídicas enquadradas como entidades beneficentes ou de salvaguarda para bens culturais.]]></descricao>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite solicitar a isenção do pagamento de foros, taxas de ocupação e laudêmios para pessoas físicas carentes, ou para pessoas jurídicas enquadradas como entidades beneficentes ou de salvaguarda para bens culturais. Considera-se carente ou de baixa renda o responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
@@ -20,13 +17,30 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="6" unidade="meses"/>
-        <descricao/>
+        <ate max="0" unidade="meses"/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar Isenção</titulo>
-            <descricao><![CDATA[O interessado deverá acessar o site da SPU e preencher as informações pedidas.]]></descricao>
+            <titulo>Acesse o Portal de Atendimento da SPU</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber a resposta</titulo>
+            <descricao><![CDATA[Digite o RIP e CPF ou CNPJ, quando exigido, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço]]></descricao>
             <documentos>
                 <default>
                     <item>RIP do imóvel</item>
@@ -45,13 +59,44 @@
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Receber a resposta</titulo>
-            <descricao><![CDATA[A SPU informará ao interessado se seu pedido de isenção foi ou não aceito.]]></descricao>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
             <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
                 <default>
-                    <item>RIP do imóvel</item>
-                    <item>CPF/CNPJ</item>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoIsencao?servico=13]]></descricao>
+                    </canal-de-prestacao>
                 </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoIsencao?servico=13]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhe o status do seu atendimento</titulo>
+            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <documentos>
+                <default/>
             </documentos>
             <custos>
                 <default/>
