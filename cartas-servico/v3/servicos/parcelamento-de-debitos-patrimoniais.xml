@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Parcelamento de Débitos Patrimoniais</nome>
+    <nome><![CDATA[Parcelamento de Débitos Patrimoniais]]></nome>
     <sigla/>
-    <nomes-populares>
-        <item>Consulta Parcelamento</item>
-    </nomes-populares>
-    <descricao><![CDATA[A Consulta Parcelamento mostrará os dados do parcelamento escolhido.
-
-Mostrará, também, dados dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.]]></descricao>
+    <nomes-populares/>
+    <descricao><![CDATA[Os usuários de Imóveis da União que foram beneficiados pelo parcelamento de dívidas até julho de 2009 encontrarão aqui o lugar para emissão de seus DARF, bem como outras informações dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.]]></descricao>
     <contato/>
     <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos><![CDATA[Que necessite verificar a situação de débitos de um determinado imóvel.]]></requisitos>
+            <tipo>Pessoa física</tipo>
+            <requisitos><![CDATA[Que possua débitos objeto de parcelamento junto à SPU]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="minutos"/>
-        <descricao/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar Informações</titulo>
-            <descricao><![CDATA[O interessado deverá acessar o site de serviços da SPU]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
             <documentos>
                 <default>
                     <item>RIP do imóvel</item>
