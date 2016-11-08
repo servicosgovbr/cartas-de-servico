@@ -23,7 +23,7 @@
         </solicitante>
         <solicitante>
             <tipo>Advocacia-Geral da União</tipo>
-            <requisitos/>
+            <requisitos><![CDATA[Que tenha necessidade de manifestar-se sobre o domínio de determinado imóvel em processo judicial]]></requisitos>
         </solicitante>
         <solicitante>
             <tipo>Órgão ou entidade pública</tipo>
@@ -31,19 +31,32 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="6" unidade="meses"/>
-        <descricao/>
+        <ate max="0" unidade="meses"/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar a Declaração</titulo>
-            <descricao><![CDATA[O interessado deve acessar o site da SPU e preencher as informações pedidas.]]></descricao>
+            <titulo>Acesse o Portal de Atendimento da SPU</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado]]></descricao>
             <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
                 <default>
-                    <item>CPF/CNPJ</item>
-                    <item>Dados sobre o imóvel</item>
-                    <item>Fotos do imóvel</item>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
                 </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.);]]></descricao>
+            <documentos>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -57,12 +70,27 @@
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Receber a declaração</titulo>
-            <descricao><![CDATA[A SPU fornecerá a declaração positiva ou negativa de dominialidade do imóvel.]]></descricao>
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
             <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
                 <default>
-                    <item>CPF/CNPJ</item>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoConsultaDominialidade?servico=35#dados-documentos]]></descricao>
+                    </canal-de-prestacao>
                 </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhe o status do seu atendimento</titulo>
+            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <documentos>
+                <default/>
             </documentos>
             <custos>
                 <default/>
