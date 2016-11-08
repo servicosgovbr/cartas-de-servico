@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Requerimento de Remição de Aforamento</nome>
+    <nome><![CDATA[Requerimento de Remição de Aforamento]]></nome>
     <sigla/>
     <nomes-populares/>
-    <descricao><![CDATA[Este serviço permite ao foreiro solicitar o resgate referente a 17% do domínio pleno do imóvel, excluídas as benfeitorias, consolidando a propriedade do imóvel.]]></descricao>
+    <descricao><![CDATA[Este serviço permite ao foreiro solicitar o resgate referente a 17% do domínio pleno do imóvel, excluídas as benfeitorias, consolidando a propriedade do imóvel. No caso de alegação de carência, será considerado carente ou de baixa renda, o responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.]]></descricao>
     <contato/>
-    <gratuito>false</gratuito>
+    <gratuito>true</gratuito>
     <solicitantes>
         <solicitante>
-            <tipo>Pessoa física ou jurídica que seja foreiro</tipo>
-            <requisitos/>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que seja foreiro]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Foreiro baixa renda</tipo>
-            <requisitos><![CDATA[Pessoa física responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.]]></requisitos>
+            <tipo>Pessoa física - baixa renda</tipo>
+            <requisitos><![CDATA[Que seja foreiro e com renda familiar mensal igual ou inferior a cinco salários mínimos]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="6" unidade="meses"/>
-        <descricao/>
+        <ate max="0" unidade="meses"/>
+        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar remissão</titulo>
-            <descricao><![CDATA[O foreiro deverá acessar o site da SPU e preencher as informações solicitadas.]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
             <documentos>
-                <default>
-                    <item>CPF/CNPJ</item>
-                    <item>RIP do imóvel</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default>
@@ -42,19 +39,70 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Insira o RIP e CPF ou CNPJ</titulo>
+            <descricao><![CDATA[Digite o RIP e CPF ou CNPJ, quando exigido, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço]]></descricao>
+            <documentos>
+                <default>
+                    <item>RIP do imóvel</item>
+                    <item>CPF ou CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
                         <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCertidaoAforamento?servico=27]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Receber a resposta da SPU</titulo>
-            <descricao><![CDATA[A SPU analisará e dará a resposta ao foreiro]]></descricao>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
             <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
                 <default>
-                    <item>CPF/CNPJ</item>
-                    <item>RIP do imóvel</item>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCertidaoAforamento?servico=27]]></descricao>
+                    </canal-de-prestacao>
                 </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoCertidaoAforamento?servico=27]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhe o status do seu atendimento</titulo>
+            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <documentos>
+                <default/>
             </documentos>
             <custos>
                 <default/>
