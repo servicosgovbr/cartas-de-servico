@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Requerimento de Utilização/Regularização de Imóvel da União</nome>
+    <nome><![CDATA[Requerimento de Utilização/Regularização de Imóvel da União]]></nome>
     <sigla/>
     <nomes-populares>
         <item>CUEM, CDRU</item>
@@ -14,40 +14,20 @@
             <requisitos><![CDATA[Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e qualidade de interessado (art. 9º da Lei nº 9.784, de 1999), bem como outros requisitos a depender do instrumento de destinação ou regularização]]></requisitos>
         </solicitante>
         <solicitante>
-            <tipo>Pessoa jurídica</tipo>
-            <requisitos><![CDATA[Empresas, entidades com fins lucrativos e pessoa jurídica integrante de comunidade tradicional: que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999, bem como outros requisitos a depender do instrumento de destinação ou regularização]]></requisitos>
+            <tipo>Empresas, entidades com fins lucrativos, pessoa jurídica ou integrante de comunidade tradicional</tipo>
+            <requisitos><![CDATA[Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999, bem como outros requisitos a depender do instrumento de destinação ou regularização]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="6" unidade="meses"/>
-        <descricao/>
+        <ate max="0" unidade="meses"/>
+        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Solicitar utilização ou regularização</titulo>
-            <descricao><![CDATA[O interessado deve acessar o site da SPU e preencher as informações solicitadas]]></descricao>
+            <titulo>Acesse o Portal da SPU e selecione o requerimento desejado</titulo>
+            <descricao><![CDATA[Acesse o Portal de Atendimento da SPU (http://e-spu.planejamento.gov.br/) e selecione o tipo de requerimento desejado.]]></descricao>
             <documentos>
-                <default>
-                    <item>CPF/CPNJ</item>
-                    <item>RIP do imóvel</item>
-                    <item>Contratos e títulos de aquisição e/ou transferência do imóvel</item>
-                    <item>Memorial descritivo do imóvel</item>
-                    <item>Planta do imóvel</item>
-                    <item>Documentação mais antiga que comprove a posse ou ocupação do imóvel (carnê de IPTU, alvará de construção, declaração de órgãos públicos e contas de concessionários de serviços públicos etc)</item>
-                    <item>Certidão de inteiro teor da matrícula do imóvel, retroagindo a 5 de setembro de 1946</item>
-                </default>
-                <caso descricao="Pessoa física">
-                    <item>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
-                    <item>CPF do cônjuge</item>
-                    <item>Certidão de casamento ou de união estável</item>
-                    <item>Documento de representação legal (procuração, termo de compromisso de inventariante etc)</item>
-                    <item>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</item>
-                </caso>
-                <caso descricao="Pessoa jurídica">
-                    <item>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</item>
-                    <item>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</item>
-                    <item>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</item>
-                </caso>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -55,19 +35,16 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRegularizacaoUso?servico=19#dados-documentos]]></descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Receber resposta da SPU</titulo>
-            <descricao><![CDATA[A SPU responderá com a aceitação ou não do requerimento.]]></descricao>
+            <titulo>Preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
             <documentos>
-                <default>
-                    <item>CPF/CNPJ</item>
-                    <item>RIP do imóvel</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -75,7 +52,41 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRegularizacaoUso?servico=19#dados-documentos]]></descricao>
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRegularizacaoUso?servico=19]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRegularizacaoUso?servico=19]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhe o status do seu atendimento</titulo>
+            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRegularizacaoUso?servico=19]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -93,6 +104,10 @@
         <item>Uso de imóvel público</item>
         <item>Uso de terra pública</item>
         <item>imóvel do governo</item>
+        <item>Utilização</item>
+        <item>Imóvel</item>
+        <item>União</item>
+        <item>Regularização</item>
     </palavras-chave>
     <legislacoes>
         <item><![CDATA[Lei nº 9.784, de 1999]]></item>
