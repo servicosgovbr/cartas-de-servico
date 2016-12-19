@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Prestar o Exame Nacional do Ensino Médio</nome>
-    <sigla/>
+    <nome><![CDATA[Prestar o Exame Nacional do Ensino Médio]]></nome>
+    <sigla>ENEM</sigla>
     <nomes-populares/>
-    <descricao>Criado em 1998, o Exame Nacional do Ensino Médio (Enem) avalia o desempenho do estudante ao fim da escolaridade básica. É a principal forma de avaliação da qualidade do ensino médio. Podem participar do exame estudantes que estejam concluindo ou concluíram o ensino médio em anos anteriores. O Enem dá acesso à educação superior pública por meio do Sistema de Seleção Unificada (Sisu) e a particular com o Programa Universidade para Todos (ProUni). E também à educação profissional e tecnológica, pelo Sistema de Seleção Unificada da Educação Profissional e Tecnológica (Sisutec).</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <descricao><![CDATA[O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
+* Ser uma ferramenta para avaliar a qualidade do ensino no Brasil, auxiliando na construção de ações e políticas públicas que melhorem o currículo e a educação no Ensino Médio;
+* Ser um dos critérios de acesso dos participantes a programas governamentais e instituições de ensino superior;
+* Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.]]></descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
+            <requisitos><![CDATA[Cursado, no ano da prova, o terceiro ano do Ensino Médio.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
+            <requisitos><![CDATA[É necessário se enquadrar em pelo menos uma das condições abaixo:
+
+* Seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total.
+
+* Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou parte em escola da rede privada com bolsa integral e parte em escola da rede pública.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Todos os demais cidadãos brasileiros.</tipo>
+            <requisitos><![CDATA[Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="8" unidade="meses"/>
+        <descricao><![CDATA[Da inscrição ao resultado.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Preencher o formulário de inscrição</titulo>
+            <descricao><![CDATA[O candidato deverá acessar a página de inscrição do ENEM, criar uma senha e preencher as informações requisitadas.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF</item>
+                    <item>Documento de Identidade - RG</item>
+                    <item>Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -22,18 +48,187 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www.enem.inep.gov.br/</descricao>
+                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Requerer a isenção de taxa (para tipo de solicitantes 1 e 2)</titulo>
+            <descricao><![CDATA[O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.  
+*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF</item>
+                    <item>Senha do Site do ENEM</item>
+                </default>
+                <caso descricao="Estudante de escola pública (solicitante 1)">
+                    <item>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</item>
+                </caso>
+                <caso descricao="Pessoas em situação de carência sócio-econômica (solicitante 2)">
+                    <item>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</item>
+                    <item>Enviar documentações que comprovem esta situação.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Pagar a taxa de inscrição (Para não isentos)</titulo>
+            <descricao><![CDATA[Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.  
+*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*]]></descricao>
+            <documentos>
+                <default>
+                    <item>GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Taxa de Inscrição]]></descricao>
+                        <moeda/>
+                        <valor>68,00</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial (para imprimir a GRU)]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Rede Bancária]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Obter o Cartão de Confirmação da Inscrição</titulo>
+            <descricao><![CDATA[Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
+
+•	Número de inscrição; 
+•	Data e horário do Exame; 
+•	Local de realização das provas; 
+•	Indicação do(s) atendimento(s) (se for o caso); 
+•	Opção de língua estrangeira; 
+•	Solicitação de certificação (se for o caso)]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Senha do site do ENEM.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Prestar a prova</titulo>
+            <descricao><![CDATA[No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação válido, original e com foto;</item>
+                    <item>Cartão de Confirmação da Inscrição.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber o resultado da prova</titulo>
+            <descricao><![CDATA[Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
+
+Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do INEP, no endereço eletrônico http://portal.inep.gov.br/enem, até o terceiro dia útil seguinte ao de realização das últimas provas.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do CPF ou número da inscrição;</item>
+                    <item>Senha do site do ENEM.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244"/>
-    <segmentos-da-sociedade/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/249"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação básica</item>
         <item>Educação</item>
+        <item>Combate a desigualdade</item>
+        <item>Educação superior</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>prova</item>
+        <item>vestibular</item>
+        <item>faculdade</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[Editais
+•	Edital Enem 2016
+•	Edital nº 7 de 1º de abril de 2016-Chamada Pública Inep/Daeb
+•	Edital Enem 2015
+•	Edital Enem 2014 
+•	Edital Enem 2013
+•	Edital Enem 2012
+•	Edital de chamada pública n° 05/2012
+•	Edital nº 3, de 24 de maio de 2012
+•	Edital Nº 7, de 18 de maio de 2011 - Exame Nacional do Ensino Médio - ENEM 2011
+•	Edital Enem 2010 – reaplicação da prova
+•	Edital Retificação Enem 2010 PPL
+•	Edital - Enem 2010
+•	Edital nº 4, de 24 de setembro de 2010]]></item>
+        <item><![CDATA[Portarias 1
+•	Portaria nº 572, de 26 de novembro de 2014
+•	Portaria nº 533, de 30 de outubro de 2014
+•	Portaria nº 436, de 5 de setembro de 2014
+•	Retificação da Portaria nº 179, de 28 de abril de 2014
+•	Portaria nº 179, de 28 de abril de 2014
+•	Portaria Inep 42, de 14 de fevereiro de 2012
+•	Portaria MEC nº 10, de 23 de maio de 2012
+•	Portaria INEP nº 144, de 24 de maio de 2012
+•	Portaria n°342 de 28 de setembro 2012 - Dados preliminares do Enem por Unidade Escolar]]></item>
+        <item><![CDATA[Portarias 2
+•	Portaria nº 110, de 18 de maio de 2011
+•	Portaria Normativa n° 16 de 27 de julho de 2011 - Certificação ENEM 2011
+•	Portaria Normativa nº 4 de 11 de fevereiro de 2010 - Certificação ENEM 2009
+•	Portaria nº 183 de 22 de fevereiro de 2010 - Certificação ENEM 2010
+•	Portaria nº 807, de 18 de junho de 2010
+•	Portaria nº 202, de 8 de julho de 2010
+•	Portaria Enem, DOU 28 de maio de 2009
+•	Portaria Enem, DOU 8 de junho de 2009
+•	Portaria Enem, DOU 3 de novembro de 2009]]></item>
+    </legislacoes>
 </servico>
