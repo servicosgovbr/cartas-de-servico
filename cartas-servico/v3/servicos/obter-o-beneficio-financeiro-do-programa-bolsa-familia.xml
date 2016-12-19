@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Obter o benefício financeiro do Programa Bolsa-Família</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>O Bolsa Família é um programa que transfere renda diretamente para as famílias pobres como forma de garantir o direito à alimentação adequada, à educação e à saúde. As famílias extremamente pobres recebem um valor necessário para que cada membro da família ganhe no mínimo R$ 70,00. Ou seja, somado o valor do Bolsa Família e a renda desta família fica garantida uma renda por pessoa superior a R$ 70,00.
-
-Para as famílias pobres que recebem entre R$ 70,01 e R$ 140,00 o Bolsa Família repassa uma bolsa para cada criança, jovem, gestante ou nutriz. Para continuar a receber o benefício do Bolsa, a família deve manter as crianças e adolescentes na escola, assim como manter em dia o calendário de vacinação dos filhos de até 7 (sete) anos. As mulheres grávidas precisam fazer as consultas do pré-natal e as mães que estão amamentando (nutrizes) devem continuar o acompanhamento da sua saúde e da saúde do bebê.
-
-Para receber o Bolsa Família tem que se inscrever no Cadastro Único e quem recebe tem que atualizar suas informações no Cadastro Único a cada dois anos ou sempre que houver alguma mudança na situação da família. O Bolsa Família é repassado através de cartão magnético preferencialmente para as mães.
-
-* [Localização das unidades](http://aplicacoes.mds.gov.br/sagi/FerramentasSAGI/Mops/): Neste site você pode localizar o CRAS mais perto de sua residência. Esses dados podem ser
-                localizados no mapa, basta escolher o seu Estado e o seu Município.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nome><![CDATA[Obter o benefício financeiro do Programa Bolsa-Família]]></nome>
+    <sigla>PBF</sigla>
+    <nomes-populares>
+        <item>Bolsa-Família</item>
+        <item>Bolsa-escola</item>
+    </nomes-populares>
+    <descricao><![CDATA[O Bolsa Família é um programa que contribui para o combate à pobreza transferindo a cada mês uma quantia em dinheiro diretamente às famílias, que são acompanhadas nas áreas de saúde e educação, como a verificação mês a mês da frequência escolar de cada membro em idade escolar, com identificação de dificuldades de acesso à escola, assim como o acompanhamento da vacinação, peso e altura das crianças com menos de 7 anos, o pré-natal das gestantes e a orientação às mulheres em fase de amamentação.]]></descricao>
+    <contato><![CDATA[**Central de Atendimento** - 0800 707 2003 *(O horário de atendimento é de segunda a sexta-feira, das 7h às 19h)*
+´  
+**Contatos da Ouvidoria do MDSA**  
+´  
+* *Central de Atendimento*, opção 5
+* [Formulário Eletrônico](http://mds.gov.br/fale-com-o-mds)
+* *Carta ou atendimento presencial:*   
+Ministério do Desenvolvimento Social (MDSA).  
+Esplanada dos Ministérios – Bloco C – 9º andar – Sala 936   
+CEP 70046-900 – Brasília/DF  
+*De segunda a sexta-feira, das 8h às 18h.*]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Famílias em situação de extrema pobreza</tipo>
+            <requisitos><![CDATA[São aquelas com renda de R$ 85,00 mensal por pessoa da família.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Famílias em situação de pobreza</tipo>
+            <requisitos><![CDATA[São aquelas que têm renda mensal entre R$ 85,01 e R$ 170,00 por pessoa e que têm em sua composição gestantes ou membro que tenha idade entre 0 e 17 anos;]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre max="100" min="0" unidade="meses"/>
+        <descricao><![CDATA[Não há como precisar um prazo, pois o tempo de prestação depende  das características da família (renda, número de pessoas da família, presença de crianças e adolescentes) e da disponibilidade orçamentária para o programa. A seleção das famílias é feita de forma objetiva e automatizada.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Inscrever-se no Cadastro Único de Programas Sociais do Governo Federal</titulo>
+            <descricao><![CDATA[Você deverá comparecer no Setor Responsável pelo Cadastro Único de sua cidade ou CRAS e solicitar inscrição no Cadastro Único para Programas Sociais do Governo Federal, que é a porta de entrada unificada para todos os programas sociais do governo e manter as informações de toda a sua família atualizadas.]]></descricao>
             <documentos>
                 <default/>
+                <caso descricao="Responsável pela família (pessoa da família maior de 16 anos que fornece informações ao entrevistador no município, preferencialmente mulher):">
+                    <item>Cadastro de Pessoa Física - CPF; ou</item>
+                    <item>Título de eleitor.</item>
+                    <item>Se sua família for indígena, pode apresentar o Registro Administrativo de Nascimento Indígena (RANI) ou outros documentos de identificação, como certidão de nascimento, certidão de casamento, RG e carteira de trabalho.</item>
+                    <item>Se sua família for quilombola, são aceitos outros documentos de identificação, como certidão de nascimento, certidão de casamento, RG e carteira de trabalho.</item>
+                </caso>
+                <caso descricao="Outras pessoas da família">
+                    <item>Qualquer um dos seguintes documentos de identificação: certidão de nascimento, certidão de casamento, CPF, RG, carteira de trabalho ou título de eleitor.</item>
+                </caso>
+                <caso descricao="Os seguintes documentos não são obrigatórios, mas ajudam no cadastramento:">
+                    <item>Comprovante de endereço, de preferência a conta de luz;</item>
+                    <item>Comprovante de matrícula escolar das crianças e jovens até 17 anos. Se não tiver comprovante, leve o nome da escola de cada criança ou jovem;</item>
+                    <item>Carteira de trabalho.</item>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -29,7 +60,84 @@ Para receber o Bolsa Família tem que se inscrever no Cadastro Único e quem rec
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>É preciso se inscrever no Cadastro Único, para isso procure um Centro de Referência da Assistência Social - CRAS ou a Prefeitura do seu Município.</descricao>
+                        <descricao><![CDATA[No Setor Responsável pelo Cadastro Único de sua cidade ou CRAS.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Consultar se seu benefício está liberado</titulo>
+            <descricao><![CDATA[É através desta consulta que você poderá saber se sua família entrou para o Bolsa Família.]]></descricao>
+            <documentos>
+                <default>
+                    <item>•	NIS do responsável pela família (número de identificação social impresso no seu Cartão do Bolsa Família);</item>
+                    <item>Nome do responsável pela família.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[No Setor Responsável pelo Cadastro e Bolsa Família de sua cidade ou no CRAS de sua cidade.]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="telefone">
+                        <descricao><![CDATA[Central de Relacionamento MDSA 0800 707 2003]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="aplicativo-movel">
+                        <descricao><![CDATA[http://www.caixa.gov.br/atendimento/aplicativos/bolsa-familia/Paginas/default.aspx]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber o benefício</titulo>
+            <descricao><![CDATA[Com o benefício liberado, sua família passará a receber mensalmente uma quantia de dinheiro, que vai variar conforme a sua composição familiar e renda declarada no Cadastro.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cartão do Bolsa Família com senha cadastrada na CEF.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Canais de pagamento: agências bancárias da CAIXA; caixas eletrônicos da CAIXA; Casas lotéricas e CAIXA AQUI (estabelecimentos comercias credenciados pela CAIXA, tais como: padarias, mercados, etc.)]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[Você receberá uma carta do Ministério explicando o Bolsa Família e informações de como desbloquear seu cartão para sacar seu benefício mensal.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhar o extrato de pagamento das parcelas</titulo>
+            <descricao><![CDATA[Você pode, e deve, sempre conferir quais parcelas foram pagas, quando e seu valor, e verificar se foi realmente o valor recebido pela sua família. Além de ficar atento para mensagens sobre o seu benefício, como necessidade de atualização do Cadastro, algum problema como acompanhamento de saúde e educação de sua família.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cartão do Bolsa Família; ou</item>
+                    <item>Nome e NIS do responsável pela família.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Canais de pagamento: agências bancárias da CAIXA; caixas eletrônicos da CAIXA; Casas lotéricas e CAIXA AQUI (estabelecimentos comercias credenciados pela CAIXA, tais como: padarias, mercados, etc.).]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="aplicativo-movel">
+                        <descricao><![CDATA[http://www.caixa.gov.br/atendimento/aplicativos/bolsa-familia/Paginas/default.aspx]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -41,7 +149,25 @@ Para receber o Bolsa Família tem que se inscrever no Cadastro Único e quem rec
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
+        <item>Assistência à Criança e ao Adolescente</item>
+        <item>Assistência ao Idoso</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Cidadania</item>
+        <item>Atendimento básico</item>
+        <item>Proteção Social</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>Ajuda de custo</item>
+        <item>pobreza</item>
+        <item>distribuição de renda</item>
+        <item>Pobreza</item>
+        <item>Cidadania</item>
+        <item>assistência social</item>
+        <item>inclusão social</item>
+        <item>proteção social não contributiva</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[LEI No 10.836, DE 9 DE JANEIRO DE 2004.]]></item>
+        <item><![CDATA[[Regulamentação do programa](http://mds.gov.br/assuntos/bolsa-familia/legislacao#b_start=0)]]></item>
+    </legislacoes>
 </servico>
