@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Inscrever-se na lista nacional de espera para transplante de órgãos]]></nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Pacientes que foram diagnosticados por médico licenciado com problemas de saúde que requerem transplante de órgãos são cadastrados, pelo médico autorizado, na lista nacional de transplantes.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoas doentes que necessitem de um transplante de órgãos</tipo>
+            <requisitos><![CDATA[Qualquer pessoa que for diagnosticada, por médico devidamente licenciado, com um problema de saúde que requeira o transplante de órgãos e que aceite receber o tratamento.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="120" min="0" unidade="meses"/>
+        <descricao><![CDATA[Não é possível estimar um tempo, pois o prazo depende do número de pacientes esperando o transplante, a gravidade da situação do paciente e a disponibilidade de doadores compatíveis.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Consultar médico e ser diagnosticado</titulo>
+            <descricao><![CDATA[Você irá consultar um médico devidamente licenciado, onde será constatada a necessidade do transplante para resolução de um problema de saúde.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documentos requisitados no estabelecimento de saúde para realização da consulta.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Estabelecimento de saúde escolhido.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Estabelecimento de saúde escolhido</titulo>
+            <descricao><![CDATA[O médico autorizado, caso você concorde com a realização do transplante, irá incluir os seus dados e os do diagnóstico no sistema, que posicionará você na fila de espera de acordo com os critérios de prioridade (que incluem, entre outros, do órgão necessitado, gravidade e urgência da sua situação,  sua compatibilidade com doador existente e sua proximidade geográfica com o órgão disponível).]]></descricao>
+            <documentos>
+                <default>
+                    <item>Diagnóstico e demais documentações providenciadas pelo médico que comprovam a situação de necessidade de transplante;</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[Sistema próprio e com acesso exclusivo a agentes autorizados.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Acompanhar posição e evolução na fila para  transplante</titulo>
+            <descricao><![CDATA[Você poderá acompanhar, durante sua espera por um órgão, como está sua posição relativa na lista de espera.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Registro Geral da Central de Transplantes;</item>
+                    <item>Número do CPF;</item>
+                    <item>Mês de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-acompanhar">
+                        <descricao><![CDATA[https://snt.saude.gov.br/consulta/consultareceptorCO.aspx]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Passar por procedimento de transplante de órgão quando surgir um órgão compatível disponível</titulo>
+            <descricao><![CDATA[Quando surgir um órgão compatível e você tiver a maior prioridade entre os pacientes inscritos na lista de espera, ele será encaminhado para o estabelecimento de saúde onde você realizará o procedimento de transplante.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Não há documentação necessária nesta etapa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[No estabelecimento de saúde escolhido para realização do transplante.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Assistência Hospitalar e Ambulatorial</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>cirurgia</item>
+        <item>risco de morte</item>
+        <item>doador de órgãos</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[LEI Nº 9.434, DE 4 DE FEVEREIRO DE 1997.](https://www.planalto.gov.br/ccivil_03/leis/l9434.htm)]]></item>
+    </legislacoes>
+</servico>
