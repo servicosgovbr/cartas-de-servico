@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Obter Carteira de Identidade de Estrangeiro]]></nome>
+    <sigla>CIE</sigla>
+    <nomes-populares/>
+    <descricao><![CDATA[A CIE é o documento de identificação fornecido pela DPF aos estrangeiros residentes no Brasil.]]></descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Estrangeiros</tipo>
+            <requisitos><![CDATA[Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="60" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Preencher o formulário de solicitação</titulo>
+            <descricao><![CDATA[Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RNE;</item>
+                    <item>Dados pessoais;</item>
+                    <item>Dados de residência no Brasil;</item>
+                    <item>Cadastro de Pessoa Física - CPF.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://servicos.dpf.gov.br/sincreWeb/]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
+            <descricao><![CDATA[Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.]]></descricao>
+            <documentos>
+                <default>
+                    <item>GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Taxa de emissão]]></descricao>
+                        <moeda/>
+                        <valor>204,77</valor>
+                    </custo>
+                </default>
+                <caso descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
+                    <custo>
+                        <descricao><![CDATA[Estes usuários são isentos do pagamento desta taxa.]]></descricao>
+                        <moeda/>
+                        <valor>00</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://www.pf.gov.br/servicos-pf/gru/imigracao-estrangeiros]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Agendar atendimento presencial</titulo>
+            <descricao><![CDATA[Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Código dado no formulário preenchido na primeira etapa.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://servicos.dpf.gov.br/sincreWeb/pesquisaAgendamento.jsp]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
+            <descricao><![CDATA[Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.]]></descricao>
+            <documentos>
+                <default>
+                    <item>RNE;</item>
+                    <item>Comprovante bancário de pagamento da taxa (exceto para refugiados e asilados assim reconhecidos pelo Governo Brasileiro);</item>
+                    <item>Duas fotos 3x4 recentes, coloridas, com fundo branco;</item>
+                </default>
+                <caso descricao="Estrangeiros com visto permanente da da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
+                    <item>Carteira de identidade;</item>
+                    <item>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência.</item>
+                </caso>
+                <caso descricao="Estrangeiros com visto permanente de demais países">
+                    <item>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</item>
+                    <item>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência;</item>
+                </caso>
+                <caso descricao="Estrangeiros sem o visto permanente da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
+                    <item>Carteira de identidade;</item>
+                    <item>Visto consular e formulário original do pedido.</item>
+                </caso>
+                <caso descricao="Estrangeiros sem o visto permanente de demais países">
+                    <item>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</item>
+                    <item>Visto consular e formulário original do pedido.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Unidade da Polícia Federal indicada no agendamento.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Retirar a CIE</titulo>
+            <descricao><![CDATA[A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Deverá comparecer no local e horário especificado na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Relações Internacionais</item>
+        <item>Relações Diplomáticas</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>documento</item>
+        <item>identificação</item>
+        <item>estrangeiro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)]]></item>
+    </legislacoes>
+</servico>
