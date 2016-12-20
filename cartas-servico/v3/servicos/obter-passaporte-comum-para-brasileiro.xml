@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Obter passaporte comum para Brasileiro]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Documento de Viagem</item>
+        <item>Papel Internacional</item>
+        <item>Carteira para Viajar</item>
+    </nomes-populares>
+    <descricao><![CDATA[O Passaporte Brasileiro é o documento oficial,  emitido  pelo Departamento de Polícia Federal (DPF) (ou pelas Embaixadas do Brasil no exterior),  que identifica o cidadão brasileiro perante as autoridades  de outros países,  permitindo  a  anotação  de  entrada  e saída pelos  portos, aeroportos e vias  de acesso internacionais. Permite também conter os vistos de autorização de entrada.]]></descricao>
+    <contato><![CDATA[Fone: (61) 2024-7510]]></contato>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>cidadão brasileiro</tipo>
+            <requisitos><![CDATA[Pessoa nascida na República Federativa do Brasil, ainda que de pais estrangeiros, desde que estes não estejam a serviço de seu país ou nascida no estrangeiro, de pai brasileiro ou mãe brasileira, desde que qualquer deles esteja a serviço da República Federativa do Brasil, ou ainda, nascida no estrangeiro, de pai brasileiro ou mãe brasileira, desde que venha a residir na República Federativa do Brasil e opte, em qualquer tempo, pela nacionalidade brasileira.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="dias-uteis"/>
+        <descricao><![CDATA[Em alguns períodos do ano esse prazo pode variar por excesso na procura e/ou aproximação de período de férias escolares.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Solicitar Passaporte</titulo>
+            <descricao><![CDATA[Para solicitação do passaporte é necessário preencher um formulário. Esse formulário é dividido em quatro abas: Dados pessoais, documentos, Dados Complementares e Local de Atendimento. Após o atendimento será emitido um protocolo.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de Identidade;</item>
+                    <item>Título de eleitor (se tiver)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[Este é um link para [Formulário de Solicitação do Passaporte](https://servicos.dpf.gov.br/sinpa/inicializacaoSolicitacao.do?dispatch=inicializarSolicitacaoPassaporte).]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Realizar pagamento de taxa</titulo>
+            <descricao><![CDATA[Será necessário informar o número do protocolo de solicitação para emissão da GRU (Guia de Recolhimento da União) para a taxa a ser paga pelo Passaporte.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do protocolo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Pagamento da Taxa]]></descricao>
+                        <moeda/>
+                        <valor>257,25</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[A Guia de Pagamento será gerada automaticamente após o preenchimento da etapa 1, caso seja necessário reemissão acesse: [Reemissão da GRU](https://servicos.dpf.gov.br/sinpa/reemissaoGRU.do?dispatcher=exibirConsulta)]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Agendar Atendimento</titulo>
+            <descricao><![CDATA[Para o agendamento eletrônico é necessário ter realizado o pagamento da taxa.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do protocolo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[[Agendamento](https://servicos.dpf.gov.br/sinpa/paginaInicialAgendamento.do)]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer na Unidade de Polícia Federal</titulo>
+            <descricao><![CDATA[Você deverá comparecer na Unidade de Polícia Federal com os documentos solicitados no dia do agendamento.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Comprovante bancário de pagamento da taxa;</item>
+                </default>
+                <caso descricao="Maior de 18 anos do sexo masculino">
+                    <item>Documento de identidade;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Título de eleitor;</item>
+                    <item>Comprovante de votação na última eleição;</item>
+                    <item>Comprovante de quitação com o serviço militar obrigatório.</item>
+                </caso>
+                <caso descricao="Maior de 18 anos do sexo feminino">
+                    <item>Documento de Identidade</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Título de eleitor;</item>
+                    <item>Comprovante de votação na última eleição.</item>
+                </caso>
+                <caso descricao="Menor de 18 anos">
+                    <item>Formulário de Autorização para Obtenção de Passaporte para Menor a ser preenchido presencialmente na unidade da Polícia Federal.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Unidade da Polícia Federal indicada no agendamento]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Retirar o passaporte</titulo>
+            <descricao><![CDATA[O passaporte será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação original, válido e com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Deverá comparecer no local e horário especificado na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Turismo</item>
+        <item>Trabalho</item>
+        <item>Relações Internacionais</item>
+        <item>Relações Diplomáticas</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>férias</item>
+        <item>Visto</item>
+        <item>Viagem</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[DECRETO Nº 1.983, DE 14 DE AGOSTO DE 1996.](http://www.planalto.gov.br/ccivil_03/decreto/1996/D1983.htm)]]></item>
+    </legislacoes>
+</servico>
