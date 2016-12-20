@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
+    <nome><![CDATA[Obter financiamento do Fundo de Financiamento Estudantil]]></nome>
     <sigla>FIES</sigla>
     <nomes-populares/>
-    <descricao><![CDATA[O Fundo de Financiamento Estudantil(Fies) é um programa do Ministério da Educação destinado a financiar a graduação na educação superior de estudantes matriculados em cursos superiores não gratuitas na forma da Lei 10.260/2001. Podem recorrer ao financiamento os estudantes matriculados em cursos superiores que tenham avaliação positiva nos processos conduzidos pelo Ministério da Educação.]]></descricao>
-    <contato><![CDATA[Tel.: 0800 616161]]></contato>
+    <descricao><![CDATA[O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda.]]></descricao>
+    <contato><![CDATA[0800 616161]]></contato>
     <gratuito>false</gratuito>
     <solicitantes>
         <solicitante>
             <tipo>Estudante</tipo>
-            <requisitos/>
+            <requisitos><![CDATA[Que atenda as seguintes condições:
+
+•	Já estar matriculado em curso universitário presencial e pago, que tenha avaliação positiva no SINAES e seja oferecido por instituição que tenha aderido ao FIES;
+•	Não ter concluído curso superior antes de se candidatar;
+•	Ter participado de alguma edição do Enem de 2010 para cá, e obtido média das notas das questões objetivas de 450 ou mais pontos, e nota na redação superior a zero;
+•	Possuir renda familiar de até 3 salários mínimos mensais por pessoa.]]></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -18,11 +23,20 @@
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo>Inscrição no Sistema de Seleção do Fies</titulo>
-            <descricao><![CDATA[O primeiro passo para efetuar a inscrição consiste em acessar o Sistema de Seleção do FIES (FIES Seleção) e informar os dados solicitados. No primeiro acesso, o estudante informará seu número de Cadastro de Pessoa Física (CPF), sua data de nascimento, um endereço de e-mail válido e cadastrará uma senha que será utilizada sempre que o estudante acessar o Sistema. Após informar os dados solicitados, o estudante receberá uma mensagem no endereço de e-mail informado para validação do seu cadastro.]]></descricao>
+            <titulo>Inscrever-se no FIES seleção</titulo>
+            <descricao><![CDATA[Você irá se inscrever no FIES seleção através do Portal do MEC.]]></descricao>
             <documentos>
                 <default>
-                    <item>CPF</item>
+                    <item>Número do CPF;</item>
+                    <item>Informações e documentos pessoais;</item>
+                    <item>Informações e documentos relativos à sua escolaridade;</item>
+                    <item>Informações sobre a escola onde você estudou o Ensino Médio;</item>
+                    <item>Informações sobre a Instituição de Ensino Superior onde você está matriculado;</item>
+                    <item>Informações e documentos sobre a sua renda familiar;</item>
+                    <item>Informações e documentos sobre as edições do ENEM que tiver prestado a partir de 2010;</item>
+                    <item>Suas informações de endereço e contato;</item>
+                    <item>Certidão de casamento e informações sobre o cônjuge, se tiver;</item>
+                    <item>Informações e documentos sobre a bolsa parcial do ProUni, se tiver.</item>
                 </default>
             </documentos>
             <custos>
@@ -31,16 +45,18 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sisfiesaluno.mec.gov.br/seguranca/principal]]></descricao>
+                        <descricao><![CDATA[http://fiesselecaoaluno.mec.gov.br/usuario-login]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Inscrição no SisFIES</titulo>
-            <descricao><![CDATA[O estudante pré–selecionado deverá acessar o SisFIES e efetivar sua inscrição, em até 5 (cinco) dias corridos a contar da divulgação de sua pré–seleção, informando os dados de financiamento a ser contratado.]]></descricao>
+            <titulo>Obter resultado da Pré-Seleção</titulo>
+            <descricao><![CDATA[Você deve acessar o Portal do MEC  na data determinada para divulgação do resultado e verificar se foi pré-selecionado para as vagas existentes.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Informações sobre o curso superior e instituição de ensino onde você está matriculado.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -48,16 +64,52 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sisfies.mec.gov.br]]></descricao>
+                        <descricao><![CDATA[http://fiesselecaoaluno.mec.gov.br/selecao]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Validação das informações</titulo>
-            <descricao><![CDATA[O estudante deverá validar suas informações na Comissão Permanente de Supervisão e Acompanhamento [CPSA] http://www4.funcesi.br/web/index.php/graduacao/bolsas/fies/cpsa-comissao-fies), em sua instituição de ensino, em até 10 (dez) dias contados a partir do dia imediatamente posterior ao da conclusão da sua inscrição. A  [CPSA](http://www4.funcesi.br/web/index.php/graduacao/bolsas/fies/cpsa-comissao-fies) é o órgão responsável, na instituição de ensino, pela validação das informações prestadas.]]></descricao>
+            <titulo>Inscrever-se no SISFIES</titulo>
+            <descricao><![CDATA[Você deve acessar o SISFIES e concluir sua inscrição preenchendo as informações solicitadas. Se você foi pré-selecionado nas vagas da lista única, o prazo é de dois dias úteis após a divulgação do resultado. Para aqueles que foram para a lista de espera, o prazo é de cinco dias corridos.]]></descricao>
             <documentos>
+                <default>
+                    <item>Número do CPF;</item>
+                    <item>Dados do financiamento escolhido;</item>
+                    <item>Dados do fiador, se optar por fiança convencional ou solidária.</item>
+                </default>
+            </documentos>
+            <custos>
                 <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sisfiesportal.mec.gov.br/?pagina=inscricao]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Validar inscrição junto à CPSA</titulo>
+            <descricao><![CDATA[Você deverá, em até dez dias corridos imediatamente após sua inscrição no SISFIES, ir à instituição de ensino onde está matriculado e na qual pretende usar o financiamento e validar sua  inscrição junto à Comissão Permanente de Supervisão e Acompanhamento (CPSA) do FIES lá existente.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação válido com foto;</item>
+                    <item>Comprovante de residência;</item>
+                    <item>Diploma, certificado ou documento equivalente de conclusão do ensino médio expedido por instituição competente;</item>
+                    <item>Comprovante de rendimentos;</item>
+                    <item>CPF (para menores de 18 anos não emancipados, CPF do representante legal); e</item>
+                </default>
+                <caso descricao="Se for bolsista parcial do ProUni">
+                    <item>Termo de concessão ou de atualização do usufruto de bolsa parcial;</item>
+                </caso>
+                <caso descricao="Se for casado">
+                    <item>Certidão de casamento, CPF e documento de identificação do cônjuge;</item>
+                </caso>
+                <caso descricao="Se optar por fiança convencional ou solidária">
+                    <item>Documentação pessoal, comprovante de residência e de renda do fiador.</item>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -65,26 +117,48 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[.]]></descricao>
+                        <descricao><![CDATA[Instituição de ensino onde o financiamento será usado.]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa>
-            <titulo>Contratação do financiamento</titulo>
-            <descricao><![CDATA[O estudante, e se for o caso, seu(s) fiador(es) deverão comparecer a um agente financeiro do FIES em até 10 (dez) dias, contados a partir do terceiro dia útil imediatamente subsequente à data da validação da inscrição pela CPSA, para formalizar a contratação do financiamento.
-
-No ato da inscrição no SisFIES, o estudante escolherá a instituição bancária, assim como a agência de sua preferência, sendo o Banco do Brasil e a Caixa Econômica Federal os atuais Agentes Financeiros do Programa.]]></descricao>
+            <titulo>Comparecer a agente financeiro para contratar o financiamento</titulo>
+            <descricao><![CDATA[A partir do 3º dia útil após a validação das informações pela CPSA, você terá um prazo de dez dias corridos para comparecer a um agente financeiro do FIES (acompanhado de seu fiador, se for o caso) para formalizar a contratação do financiamento.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Originais e fotocópias dos seguintes documentos:</item>
+                </default>
+                <caso descricao="Documentos do aluno/requerente do financiamento">
+                    <item>Documento de Regularidade de Inscrição (DRI) emitido pela Comissão Permanente de Supervisão e Acompanhamento do FIES (CPSA);</item>
+                    <item>Termo de concessão ou de atualização do usufruto de bolsa parcial do ProUni, quando for o caso;</item>
+                    <item>Documento de identificação;</item>
+                    <item>CPF próprio e, se menor de 18 anos de idade não emancipado, CPF do seu representante legal;</item>
+                    <item>Certidão de casamento, CPF e documento de identificação do cônjuge, se for o caso;</item>
+                    <item>Comprovante de residência.</item>
+                </caso>
+                <caso descricao="Documentos do Fiador (para casos de opção por fiança convencional ou solidária)">
+                    <item>Documento de identificação;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Certidão de casamento;</item>
+                    <item>CPF e documento de identificação do cônjuge, se for o caso;</item>
+                    <item>Comprovante de residência;</item>
+                    <item>Comprovante de rendimentos, salvo no caso de fiança solidária.</item>
+                </caso>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Após a conclusão do curso, o aluno pagará o financiamento nos termos acordados.]]></descricao>
+                        <moeda/>
+                        <valor/>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do Banco do Brasil ou da Caixa Econômica Federal]]></descricao>
+                        <descricao><![CDATA[Agência do Banco do Brasil ou Caixa Econômica Federal escolhida durante a inscrição no SISFIES]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -97,10 +171,11 @@ No ato da inscrição no SisFIES, o estudante escolherá a instituição bancár
     <areas-de-interesse>
         <item>Educação</item>
         <item>Educação superior</item>
+        <item>Empregabilidade</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>FIES</item>
-        <item>Educação</item>
+        <item>bolsa</item>
+        <item>vestibular</item>
         <item>Financiamento</item>
     </palavras-chave>
     <legislacoes>
