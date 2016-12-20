@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Registrar furto ou roubo de veículos no Sistema Alerta do SINARF]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Sistema Alerta</item>
+    </nomes-populares>
+    <descricao><![CDATA[O sistema alerta serve para registrar roubos e furtos  de veículos no sistema de Alerta do SINARF. O Sistema Alerta tem por objetivo divulgar, imediatamente após o registro, informações de ocorrências de furto/roubo de veículos nas últimas 72 horas. A probabilidade de recuperação de um veículo é maior nas primeiras horas após a ocorrência do fato, assim, o Sistema Alerta supre uma importante necessidade como uma eficiente ferramenta no combate ao roubo e furto de veículos.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Qualquer pessoa que tenha sofrido roubo ou furto de veículos dentro do Brasil.</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
+        <descricao><![CDATA[Este serviço é imediato]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Registrar a ocorrência no sistema Alerta</titulo>
+            <descricao><![CDATA[Você deve registrar a ocorrência de roubo ou furto de veículo em até 72 horas após o ocorrido. A informação será então divulgada no sistema imediatamente após seu registro.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento do veículo roubado;</item>
+                    <item>CPF ou RG do notificante;</item>
+                    <item>Dados da ocorrência de furto ou roubo (onde aconteceu, hora aproximada, etc.)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://www.prf.gov.br/alerta/solicitacao/Alerta.seam]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/704"/>
+    <segmentos-da-sociedade>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item>Empresas</item>
+        <item>Cidadãos</item>
+        <item>Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Defesa Civil</item>
+        <item>Policiamento</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Transporte Rodoviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>crime</item>
+        <item>veículo roubado</item>
+        <item>ocorrência</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[DECRETO Nº 8.614, DE 22 DE DEZEMBRO DE 2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8614.htm)]]></item>
+    </legislacoes>
+</servico>
