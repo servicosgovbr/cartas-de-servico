@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Receber o dinheiro guardado no Fundo de Garantia do Tempo de Serviço]]></nome>
+    <sigla>FGTS</sigla>
+    <nomes-populares>
+        <item>Sacar o FGTS</item>
+        <item>Receber meus direitos</item>
+        <item>Fundo de Garantia</item>
+    </nomes-populares>
+    <descricao><![CDATA[O FGTS é um fundo que serve como seguro ao trabalhador regido pela Consolidação das Leis de Trabalho (CLT) no caso de demissão sem justa causa. Todo mês o empregador deposita o valor correspondente a 8% do salário do empregado, e o conjunto destes depósitos constitui o FGTS.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Trabalhador titular de conta no FGTS em decorrência do tempo</tipo>
+            <requisitos><![CDATA[´   
+O trabalhador poderá sacar o FGTS, em decorrência do tempo, nas seguintes situações:  
+´   
+
+
+* Término de contrato por prazo determinado;
+* Aposentadoria;
+* Quando o titular da conta vinculada tiver idade igual ou superior a 70 anos;]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Trabalhador titular de conta no FGTS em decorrência do empregador</tipo>
+            <requisitos><![CDATA[´   
+O trabalhador poderá sacar o FGTS, em decorrência do empregador, nas seguintes situações:    
+´     
+* Demissão sem justa causa;
+* Rescisão do contrato causado por fechamento da empresa; por ela deixar de atuar em alguma área que antes atuava, fechamento de algum estabelecimento, filial ou agência;]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Trabalhador titular de conta no FGTS em decorrência de situações extraordinárias</tipo>
+            <requisitos><![CDATA[´      
+O trabalhador poderá sacar o FGTS, em decorrência de situações extraordinárias, nas seguintes situações:       
+´       
+
+
+* Necessidade pessoal, urgente e grave, decorrente de desastre natural que tenha atingido a área de residência do trabalhador, decretado por portaria do Governo Federal;
+* Falecimento do trabalhador;
+* Falecimento do empregador individual;]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Trabalhador titular de conta no FGTS para atender necessidades prioritárias do trabalhador</tipo>
+            <requisitos><![CDATA[´    
+O trabalhador poderá sacar o FGTS, para atender necessidades extraordinárias , nas seguintes situações:        
+´       
+
+* Quando o trabalhador ou seu dependente for portador do vírus HIV, acometido de neoplasia maligna (câncer) ou estiver em estágio terminal por causa de doença grave;
+* Para ser usado na aquisição de moradia própria, liquidação, pagamento de parte das prestações ou para abater saldo devedor de financiamento habitacional concedido no âmbito do SFH.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Trabalhador titular de conta no FGTS em decorrência de situações específicas</tipo>
+            <requisitos><![CDATA[´     
+O trabalhador poderá sacar o FGTS, em decorrência das seguintes situações específicas:     
+´     
+
+* Nulidade do contrato de trabalho - inciso II do art. 37 da Constituição Federal, quando mantido o direito ao salário;
+* Rescisão do contrato por culpa recíproca ou força maior;
+* Suspensão do Trabalho Avulso por prazo igual ou superior a 90 dias;
+* Quando a conta permanecer sem depósito por 3 anos ininterruptos cujo afastamento tenha ocorrido até 13/07/90, inclusive;]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="15" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Consultar saldo do FGTS</titulo>
+            <descricao><![CDATA[Você irá acessar o Portal de Serviços Sociais da Caixa Econômica Federal para consultar o saldo e extrato da sua conta de FGTS]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número NIS.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-consultar">
+                        <descricao><![CDATA[https://servicossociais.caixa.gov.br/internet.do?segmento=CIDADAO01&produto=FGTS]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Ir à agência da Caixa Econômica Federal com a documentação necessária</titulo>
+            <descricao><![CDATA[Você irá a uma agência da CEF, com a documentação necessária, para dar entrada no pedido de retirada do dinheiro.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento oficial de identificação com foto;</item>
+                    <item>Carteira de Trabalho e Previdência Social;</item>
+                    <item>Número de inscrição no PIS/PASEP;</item>
+                    <item>Cartão Cidadão, Cartão do Bolsa Família ou outro Cartão de programas sociais, se tiver;</item>
+                    <item>Documentos de comprovação da condição específica que permite o saque do FGTS;</item>
+                </default>
+                <caso descricao="Se você está residindo no exterior">
+                    <item>Cópia junto aos originais da documentação exigida;</item>
+                    <item>Solicitação de Saque preenchida e assinada na presença do representante consular.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Agência da Caixa Econômica Federal de sua escolha.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Receber o dinheiro (representantes da CEF ou agência bancária onde o beneficiado tem conta)</titulo>
+            <descricao><![CDATA[Durante o pedido da etapa anterior, você poderá escolher se quer sacar o dinheiro na Caixa ou que ele seja depositado em sua conta bancária. Se sua documentação estiver toda regular e você tiver direito ao saque, você irá então à um representante da CEF para receber o dinheiro, ou o mesmo cairá direto na conta bancária informada.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física;</item>
+                    <item>Documento válido e original de identificação com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Representante da CEF ou agência de banco onde você tem conta.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>direitos</item>
+        <item>demissão</item>
+        <item>sem justa causa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[[LEI Nº 8.036, DE 11 DE MAIO DE 1990.](https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm)]]></item>
+    </legislacoes>
+</servico>
