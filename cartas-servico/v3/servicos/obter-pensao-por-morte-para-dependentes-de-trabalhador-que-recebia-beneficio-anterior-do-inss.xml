@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Obter pensão por morte para dependentes de trabalhador que recebia benefício anterior do INSS]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Pensão por morte de beneficiado</item>
+        <item>Pensão por morte</item>
+        <item>salário-viúva</item>
+    </nomes-populares>
+    <descricao><![CDATA[A pensão por morte é um benefício financeiro pago mensalmente aos dependentes do segurado do INSS que vier a falecer ou, em caso de desaparecimento, tiver sua morte presumida declarada judicialmente.
+Este caminho é para os dependentes de segurado que já recebia algum benefício anterior do INSS.]]></descricao>
+    <contato><![CDATA[Central de Atendimento do INSS, através do telefone 135.]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Dependentes de segurado beneficiado.</tipo>
+            <requisitos><![CDATA[Dependentes de trabalhador que possuísse inscrição no INSS, que estivesse realizando as contribuições mensais à Previdência Social na data do óbito e que recebesse benefício anterior do Instituto.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="meses"/>
+        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Preencher o formulário de pedido pela Internet</titulo>
+            <descricao><![CDATA[Você irá acessar o portal do INSS e preencher o requerimento do benefício, preenchendo as informações pedidas.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do benefício recebido anteriormente;</item>
+                    <item>Nome completo do beneficiado falecido;</item>
+                    <item>Data de nascimento do beneficiário falecido;</item>
+                    <item>Data de óbito do beneficiário falecido;</item>
+                    <item>Nome completo, data de nascimento, nome completo da mãe e o número da carteira de identidade ou carteira de trabalho ou nome do cartório que expediu a certidão de nascimento ou de casamento do dependente.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[https://sipa.inss.gov.br/SipaINSS/pages/pesmor/pesmorIntro.xhtml]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Enviar a documentação necessária pelo correio</titulo>
+            <descricao><![CDATA[Você irá enviar as cópias (autenticadas, quando for o caso) da documentação necessária ao INSS, via Correios.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação válido com foto;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documentos de identificação do falecido;</item>
+                    <item>Certidão de óbito;</item>
+                    <item>CAT, em caso de óbito por acidente de trabalho;</item>
+                    <item>Documentos de comprovação de tempo de contribuição do segurado falecido, caso pedido pelo INSS; e</item>
+                </default>
+                <caso descricao="Para cônjuges">
+                    <item>Certidão de casamento;</item>
+                </caso>
+                <caso descricao="Para filhos">
+                    <item>Certidão de nascimento;</item>
+                </caso>
+                <caso descricao="Para companheiro ou companheira">
+                    <item>Comprovação de união estável;</item>
+                    <item>Certidão de casamento com averbação da separação judicial, divórcio ou certidão óbito, no caso de um dos companheiros, ou ambos, já tiverem sido casados;</item>
+                </caso>
+                <caso descricao="Para menor tutelado">
+                    <item>Certidão judicial de tutela;</item>
+                    <item>Declaração de não emancipação;</item>
+                    <item>Comprovação de dependência econômica do tutelado;</item>
+                </caso>
+                <caso descricao="Para enteado">
+                    <item>Certidão de nascimento;</item>
+                    <item>Certidão de casamento ou provas de união estável do segurado com o(a) genitor(a) do enteado;</item>
+                    <item>Declaração de não emancipação;</item>
+                    <item>Comprovação de dependência econômica do tutelado;</item>
+                </caso>
+                <caso descricao="Para pai ou mãe">
+                    <item>Certidão de nascimento do segurado falecido;</item>
+                    <item>Declaração de inexistência de dependentes preferenciais;</item>
+                    <item>Comprovação de dependência econômica;</item>
+                </caso>
+                <caso descricao="Para irmão ou irmã">
+                    <item>Certidão de nascimento do segurado falecido;</item>
+                    <item>Certidão de nascimento do dependente;</item>
+                    <item>Declaração de inexistência de dependentes preferenciais;</item>
+                    <item>Comprovação de dependência econômica.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="postal">
+                        <descricao><![CDATA[SAS, Quadra 1, Bloco E/F, 1.º andar, Dataprev, CEP 70000-000, Brasília, DF]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do benefício;</item>
+                    <item>Data de nascimento;</item>
+                    <item>Documento de Identificação válido, original e com foto</item>
+                    <item>Cadastro de Pessoa Física - CPF.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Relações de Trabalho</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>dependente</item>
+        <item>falecimento</item>
+        <item>arrimo de família</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+    </legislacoes>
+</servico>
