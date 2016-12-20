@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Aposentar-se por ter atingido a idade mínima.</nome>
+    <nome><![CDATA[Aposentar-se por ter atingido a idade mínima.]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>Benefício devido aos trabalhadores urbanos do sexo masculino a partir dos 65 anos e do sexo feminino a partir dos 60 anos de idade. Os trabalhadores rurais podem pedir aposentadoria por idade com cinco anos a menos: a partir dos 60 anos, homens, e a partir dos 55 anos, mulheres.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>Aposentadoria por idade</item>
+        <item>Encostar</item>
+    </nomes-populares>
+    <descricao><![CDATA[A aposentadoria por idade é o benefício financeiro mensal a que tem direito o trabalhador que atinge a idade mínima para se aposentar e que tenha cumprido alguns outros requisitos.]]></descricao>
+    <contato><![CDATA[Central de Atendimento do INSS – Telefone 135]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Segurado Especial</tipo>
+            <requisitos><![CDATA[Trabalhador rural que exerce sua atividade de forma individual ou com a ajuda da família, assim como trabalhadores com atividades afins à atividade rural, como pescadores artesanais e indígenas, que tenham:
+
+•	No mínimo 180 meses de trabalho efetivo;
+•	Se for homem, 60 anos de idade;
+•	Se for mulher, 55 anos de idade.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Segurado Regular</tipo>
+            <requisitos><![CDATA[Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que tenha:
+
+•	No mínimo 180 meses de trabalho efetivo;
+•	Se for homem, 65 anos de idade;
+•	Se for mulher, 60 anos de idade.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="3" unidade="meses"/>
+        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Agendar atendimento em agência do INSS</titulo>
+            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Número do CPF;</item>
+                    <item>Data do Nascimento</item>
+                    <item>Informações de Contato.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -22,10 +48,60 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web-agendar">
-                        <descricao>http://www2.dataprev.gov.br/prevagenda/OpcaoInicialTela.view</descricao>
+                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
+            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de identificação válido, original e com foto; e</item>
+                </default>
+                <caso descricao="Segurado Especial (solicitante 1)">
+                    <item>Documentos que comprovem esta situação, como a declaração do sindicato, contratos de arrendamento, documentos da época em que conste a sua ocupação e similares;</item>
+                </caso>
+                <caso descricao="Segurado Regular">
+                    <item>Carteiras de trabalho;</item>
+                    <item>Carnês de contribuição;</item>
+                    <item>Outros documentos que comprovem pagamento ao INSS</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do benefício;</item>
+                    <item>Data de Nascimento;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de Identificação válido, original e com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>Serviço prestado nas Agências da Previdência Social.</descricao>
+                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -37,7 +113,16 @@
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>aposentadoria</item>
+        <item>velhice</item>
+        <item>idade mínima</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+    </legislacoes>
 </servico>
