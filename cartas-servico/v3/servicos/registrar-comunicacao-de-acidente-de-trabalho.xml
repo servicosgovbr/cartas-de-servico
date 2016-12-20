@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Registrar Comunicação de Acidente de Trabalho</nome>
-    <sigla/>
+    <nome><![CDATA[Registrar Comunicação de Acidente de Trabalho]]></nome>
+    <sigla>CAT</sigla>
     <nomes-populares/>
-    <descricao>Possibilita cadastrar a "Comunicação de Acidente de Trabalho - CAT" junto ao INSS, para facilitar e agilizar o registro dos Acidentes de Trabalho e das Doenças Ocupacionais, pelo Empregador, havendo ou não afastamento do trabalho por parte do acidentado. A aplicação permite também imprimir o formulário da CAT em branco para preenchimento das informações do Empregador, do Acidentado, do Acidente e do Atestado Médico.
-
-- Telefone: Ligue 135 para obter maiores informações.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <descricao><![CDATA[A Comunicação de Acidente de Trabalho é um documento emitido para reconhecer tanto um acidente de trabalho ou de trajeto bem como uma doença ocupacional. Este documento é necessário para diversos processos relacionados ao acidentado.]]></descricao>
+    <contato><![CDATA[Central de Atendimento do INSS, no telefone 135.]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Empresa onde trabalha a vítima do acidente de trabalho</tipo>
+            <requisitos><![CDATA[A empresa onde trabalha o empregado vítima do acidente é obrigada a informar o acidente de trabalho até o dia útil seguinte ao de sua ocorrência (caso o acidente resulte em morte, a comunicação deve ser imediata).]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Vítima da CAT ou pessoas o auxiliando</tipo>
+            <requisitos><![CDATA[Caso a empresa não cumpra com esta obrigação, podem registrar a CAT:
+ 
+•	O próprio empregado;
+•	Dependentes do empregado;
+•	Entidades sindicais;
+•	Médicos;
+•	Autoridades Públicas.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="0" unidade="minutos"/>
+        <descricao><![CDATA[Este serviço é imediato.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Baixar e instalar aplicativo para registro da CAT</titulo>
+            <descricao><![CDATA[Você irá acessar o portal do INSS e baixar o aplicativo necessário para realizar o registro.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Não é necessária documentação nesta etapa</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -24,19 +41,76 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web">
-                        <descricao>http://www.dataprev.gov.br/servicos/cat/cat.shtm</descricao>
+                        <descricao><![CDATA[http://cat.inss.gov.br/servicos/cat/cat.shtm]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preencher o formulário e enviar para o INSS via aplicativo</titulo>
+            <descricao><![CDATA[Você deve preencher toda a informação pedida (caso contrário o aplicativo não enviará o formulário).]]></descricao>
+            <documentos>
+                <default>
+                    <item>Informações do emitente (nome, filiação e email)</item>
+                    <item>informações do empregador (Razão social ou nome, tipo e número do documento, CNAE, Endereço, CEP e Telefone);</item>
+                    <item>Informações do acidentado (dados pessoais, remuneração, número da Carteira de Trabalho, Identidade, NIT/PIS/PASEP, Endereço, CEP, Telefone, CBO e área);</item>
+                    <item>Dados sobre o acidente;</item>
+                    <item>Dados sobre o atendimento emergencial e médico recebido;</item>
+                    <item>Dados sobre ocorrência policial, se for o caso.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[Aplicativo obtido na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Entregar CAT preenchida na Agência do INSS (Somente quando não for possível enviar pela Internet no prazo devido)</titulo>
+            <descricao><![CDATA[Em último caso, quando por qualquer problema não for possível registrar a CAT de forma online e para que sua empresa não sofra multas, você pode imprimir, preencher e assinar o formulário no aplicativo e, posteriormente, entregá-lo em uma agência do INSS.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de Identificação válido, original e com foto;</item>
+                    <item>Formulário da CAT devidamente preenchido e assinado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Em qualquer agência do INSS.]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
     <segmentos-da-sociedade>
         <item>Empresas</item>
+        <item>Cidadãos</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item>Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>imprevisto</item>
+        <item>ferimento</item>
+        <item>vítima</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+    </legislacoes>
 </servico>
