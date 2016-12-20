@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>Obter auxílio-doença</nome>
+    <nome><![CDATA[Obter auxílio-doença]]></nome>
     <sigla/>
-    <nomes-populares/>
-    <descricao>Benefício concedido ao segurado impedido de trabalhar por doença ou acidente por mais de 15 dias consecutivos. No caso dos trabalhadores com carteira assinada, os primeiros 15 dias são pagos pelo empregador, exceto o doméstico, e a Previdência Social paga a partir do 16º dia de afastamento do trabalho. Para os demais segurados inclusive o doméstico, a Previdência paga o auxílio desde o início da incapacidade e enquanto a mesma perdurar.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <nomes-populares>
+        <item>Auxílio-doença</item>
+        <item>Benefício por incapacidade</item>
+    </nomes-populares>
+    <descricao><![CDATA[O auxílio-doença é um benefício financeiro mensal recebido pelo segurado do INSS que estiver temporariamente incapaz de trabalhar devido a doença ou acidente.]]></descricao>
+    <contato><![CDATA[Central de Atendimento do INSS, através do telefone 135.]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Segurado Especial</tipo>
+            <requisitos><![CDATA[Trabalhador rural que exerce sua atividade individualmente ou com a ajuda da família, assim como trabalhadores com atividades afins, como pescadores artesanais e indígenas, que:
+•	Tenha feito ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
+•	Comprove ter doença ou outro impedimento físico que o torne incapaz de trabalhar;
+•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.]]></requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>Segurado Regular</tipo>
+            <requisitos><![CDATA[Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que:
+•	Tenha realizado ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
+•	Comprove ter doença ou outro impedimento físico por motivo de saúde que o torne incapaz de trabalhar;
+•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.]]></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <ate max="30" unidade="dias-corridos"/>
+        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até seis meses.]]></descricao>
     </tempo-total-estimado>
     <etapas>
         <etapa>
-            <titulo/>
-            <descricao/>
+            <titulo>Agendar perícia médica e entrega dos documentos em agência do INSS</titulo>
+            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar sua perícia para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item>Número do PIS/PASEP;</item>
+                    <item>Nome completo de sua mãe;</item>
+                    <item>Sua data de nascimento;</item>
+                    <item>Dados funcionais;</item>
+                    <item>CID, se souber.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -22,10 +48,61 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao tipo="web-agendar">
-                        <descricao>http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view</descricao>
+                        <descricao><![CDATA[http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view#sabiweb]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
+            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior, para realizar a perícia e entregar os documentos necessários ao pedido.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação válido e oficial com foto;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Carteira de trabalho, carnês de contribuição e outros documentos que comprovem pagamento ao INSS;</item>
+                    <item>Documentos médicos que comprovem a causa do problema de saúde, o tratamento médico indicado e a incapacidade de trabalhar;</item>
+                    <item>Caso o motivo da incapacitação for acidente de trabalho, a Comunicação de Acidente de Trabalho (CAT); e</item>
+                </default>
+                <caso descricao="Segurado Especial (Solicitante 1)">
+                    <item>Documentos que comprovem sua situação (declaração de sindicato, contratos de arrendamento, documentos onde conste a ocupação, etc.)</item>
+                </caso>
+                <caso descricao="Segurado Regular (solicitante 2)">
+                    <item>Declaração carimbada e assinada do empregador, informando último dia trabalhado (se precisar, imprima o requerimento no site do INSS).</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do benefício ou do requerimento;</item>
+                    <item>Data de Nascimento;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de Identificação válido, original e com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://www2.dataprev.gov.br/sabiweb/relatorio/imprimirCRER.view?acao=imprimir_CRER]]></descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao tipo="presencial">
-                        <descricao>Serviço prestado nas Agência da Previdência Social.</descricao>
+                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -37,7 +114,16 @@
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item>doença</item>
+        <item>benefício</item>
+        <item>saúde</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943.]]></item>
+    </legislacoes>
 </servico>
