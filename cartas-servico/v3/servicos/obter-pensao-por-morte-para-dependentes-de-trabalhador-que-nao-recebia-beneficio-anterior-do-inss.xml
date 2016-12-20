@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome><![CDATA[Obter pensão por morte para dependentes de trabalhador que não recebia benefício anterior do INSS.]]></nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Pensão por morte de não beneficiado</item>
+        <item>pensão por morte</item>
+        <item>salário-viúva</item>
+    </nomes-populares>
+    <descricao><![CDATA[A pensão por morte é um benefício financeiro pago mensalmente aos dependentes do segurado do INSS que vier a falecer ou, em caso de desaparecimento, tiver sua morte presumida declarada judicialmente.
+Este caminho é destinado aos dependentes de segurado que não recebia benefício anterior do INSS.]]></descricao>
+    <contato><![CDATA[Central de Atendimento do INSS, no número 135.]]></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Dependentes de segurado não beneficiado</tipo>
+            <requisitos><![CDATA[Dependentes de trabalhador que possuísse inscrição no INSS e estivesse realizando as contribuições mensais à Previdência Social na data do óbito, mas que não recebesse ainda qualquer benefício do instituto.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="meses"/>
+        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Agendar atendimento em agência do INSS</titulo>
+            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do CPF;</item>
+                    <item>Data de nascimento;</item>
+                    <item>Informações de contato.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
+            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identificação válido com foto;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documentos de identificação do falecido;</item>
+                    <item>Certidão de óbito;</item>
+                    <item>CAT, em caso de óbito por acidente de trabalho;</item>
+                    <item>Documentos de comprovação de tempo de contribuição do segurado falecido, caso pedido pelo INSS; e</item>
+                </default>
+                <caso descricao="Para cônjuges">
+                    <item>Certidão de casamento;</item>
+                </caso>
+                <caso descricao="Para filhos">
+                    <item>Certidão de nascimento;</item>
+                </caso>
+                <caso descricao="Para companheiros e companheiras">
+                    <item>Comprovação de união estável;</item>
+                    <item>Certidão de casamento com averbação da separação judicial, divórcio ou certidão óbito, no caso de um dos companheiros, ou ambos, já tiverem sido casados;</item>
+                </caso>
+                <caso descricao="Para menores tutelados">
+                    <item>Certidão judicial de tutela;</item>
+                    <item>Declaração de não emancipação;</item>
+                    <item>Comprovação de dependência econômica do tutelado;</item>
+                </caso>
+                <caso descricao="Para enteados">
+                    <item>Certidão de nascimento;</item>
+                    <item>Certidão de casamento ou provas de união estável do segurado com o(a) genitor(a) do enteado;</item>
+                    <item>Declaração de não emancipação;</item>
+                    <item>Comprovação de dependência econômica do tutelado;</item>
+                </caso>
+                <caso descricao="Para pais e mães">
+                    <item>Certidão de nascimento do segurado falecido;</item>
+                    <item>Declaração de inexistência de dependentes preferenciais;</item>
+                    <item>Comprovação de dependência econômica;</item>
+                </caso>
+                <caso descricao="Para irmãos e irmãs">
+                    <item>Certidão de nascimento do segurado falecido;</item>
+                    <item>Certidão de nascimento do dependente;</item>
+                    <item>Declaração de inexistência de dependentes preferenciais;</item>
+                    <item>Comprovação de dependência econômica.</item>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Número do benefício;</item>
+                    <item>Data de nascimento;</item>
+                    <item>Cadastro de Pessoa Física - CPF;</item>
+                    <item>Documento de Identificação válido, original e com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>dependente</item>
+        <item>falecimento</item>
+        <item>arrimo de família</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+    </legislacoes>
+</servico>
