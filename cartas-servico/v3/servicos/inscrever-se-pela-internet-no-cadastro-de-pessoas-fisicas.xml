@@ -42,11 +42,9 @@
         </etapa>
         <etapa>
             <titulo>Receber número de cadastro e imprimir comprovante de inscrição</titulo>
-            <descricao><![CDATA[Após realizada a inscrição, você receberá o seu número do CPF e poderá comprovar o comprovante de sua inscrição.]]></descricao>
+            <descricao><![CDATA[Após realizada a inscrição, você receberá o seu número do CPF e poderá imprimir o comprovante de sua inscrição.]]></descricao>
             <documentos>
-                <default>
-                    <item>Não há documentação necessária neste etapa.</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -57,6 +55,11 @@
                         <descricao><![CDATA[https://www.receita.fazenda.gov.br/Aplicacoes/ssl/ATCTA/CPF/InscricaoPublica/inscricao.asp]]></descricao>
                     </canal-de-prestacao>
                 </default>
+                <caso descricao="Caso você não tenha impresso o comprovante ao final da inscrição">
+                    <canal-de-prestacao tipo="web-emitir">
+                        <descricao><![CDATA[https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/ImpressaoComprovante/ConsultaImpressao.asp]]></descricao>
+                    </canal-de-prestacao>
+                </caso>
             </canais-de-prestacao>
         </etapa>
     </etapas>
