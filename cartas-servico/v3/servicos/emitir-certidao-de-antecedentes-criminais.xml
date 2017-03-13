@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-certidao-de-antecedentes-criminais</id>
+    <dbId>788</dbId>
+    <nome>Emitir Certidão de Antecedentes Criminais</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="623">Certidão</item>
+        <item id="624">Antecedentes Criminais</item>
+    </nomes-populares>
+    <descricao>A certidão de antecedentes criminais é um documento que informa a existência ou não de registros criminais em nome de determinada pessoa nos sistemas informatizados da Polícia Federal. Ao final da consulta, poderá ser impressa a Certidão de Antecedentes Criminais pela internet. Possui validade de 90 (noventa) dias.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante id="779">
+            <tipo>Qualquer pessoa física</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="5" unidade="minutos"/>
+        <descricao>Em caso de homônimos (pessoa com o mesmo nome), ou outra impossibilidade de emissão pela internet, será gerado um protocolo pela internet e a solicitação deverá ser feita presencialmente em uma unidade da Polícia Federal, neste caso a emissão da certidão poderá levar até 15 (quinze) dias.</descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa id="2109">
+            <titulo>Acessar o Portal PF</titulo>
+            <descricao>Acessar o Portal PF e clicar na opção "Antecedentes Criminais"</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2610" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/antecedentes-criminais</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2110">
+            <titulo>Clicar na Opção "Emissão" e preencher os dados solicitados</titulo>
+            <descricao>Preencha o formulário com o máximo de informações possíveis (CPF, Nome completo, filiação, etc)</descricao>
+            <documentos>
+                <default>
+                    <item id="2118">Não é necessário nenhum documento, entretanto, você deverá ter em mãos informações pessoais da pessoa a ser consultada - Nome completo, RG, CPF, Passaporte</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2618" tipo="web-preencher">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2111">
+            <titulo>Informar o código de segurança</titulo>
+            <descricao>Informar o código de segurança apresentado na tela</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2619" tipo="web-preencher">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2114">
+            <titulo>Imprima a Certidão, se for o caso</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2620" tipo="web-emitir">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="324"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2367">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1838">Certidão</item>
+        <item id="1839">Antecedentes</item>
+        <item id="1840">Criminais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="615">Lei 9051/95</item>
+    </legislacoes>
+</servico>
