@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-regularidade-de-empresa-de-seguranca</id>
+    <dbId>786</dbId>
+    <nome>Consultar Regularidade de Empresa de Segurança</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="620">Segurança Privada</item>
+        <item id="621">Regularidade</item>
+        <item id="622">Empresa Segurança</item>
+    </nomes-populares>
+    <descricao>Consulta que permite ao interessado conhecer se uma empresa de segurança privada está com sua sua autorização de funcionamento regular, seus os sócios proprietário, atividades de serviços de segurança privada autorizadas para a empresa e a Unidade da Federação que está autorizada a prestar serviços.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante id="777">
+            <tipo>Qualquer pessoa física ou jurídica, que necessite das informações.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="5" unidade="minutos"/>
+        <descricao>Serviço executado pela Web/Internet</descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa id="2103">
+            <titulo>Acessar o endereço da web</titulo>
+            <descricao>Acessar o Portal PF</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2604" tipo="web">
+                        <descricao>https://servicos.dpf.gov.br/pgdwebcertificado/public/pages/empresa/consultarSituacaoEmpresa.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2115">
+            <titulo>Informe o CNPJ</titulo>
+            <descricao>Informe o CNPJ da empresa a ser consultada</descricao>
+            <documentos>
+                <default>
+                    <item id="2117">CNPJ da empresa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2615" tipo="web-preencher">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2116">
+            <titulo>Código de segurança</titulo>
+            <descricao>Informe o código de segurança apresentado na tela</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2616" tipo="web-preencher">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2117">
+            <titulo>Imprimir a declaração</titulo>
+            <descricao>Imprima a declaração, se for o caso</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2617" tipo="web-emitir">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="324"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2362">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2363">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2364">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2365">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Sistema Financeiro</item>
+        <item>Policiamento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1832">Segurança Privada</item>
+        <item id="1833">Autorização</item>
+        <item id="1834">Funcionamento</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="613">Lei nº 7.102/83
+Decreto nº 89.056/83</item>
+    </legislacoes>
+</servico>
