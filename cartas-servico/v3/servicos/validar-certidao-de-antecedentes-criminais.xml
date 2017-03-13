@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>validar-certidao-de-antecedentes-criminais</id>
+    <dbId>790</dbId>
+    <nome>Validar Certidão de Antecedentes Criminais</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="625">Antecedentes</item>
+        <item id="626">Criminais</item>
+        <item id="627">Validação</item>
+    </nomes-populares>
+    <descricao>Conferência da veracidade (validação) da Certidão de Antecedentes Criminais emitida pela Políca Federal- PF.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante id="781">
+            <tipo>Qualquer cidadão</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa id="2118">
+            <titulo>Acesse o Portal PF</titulo>
+            <descricao>Acessar o Portal PF para validação</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2613" tipo="web">
+                        <descricao>https://servicos.dpf.gov.br/sinic-certidao/validarAutenticidade.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2119">
+            <titulo>Preencha o Formulário</titulo>
+            <descricao>Preencha o formulário com os dados solicitados (Nome, Número da Certidão, Hora de Emissão e Data da Emissão)</descricao>
+            <documentos>
+                <default>
+                    <item id="2119">Original ou Cópia da Certidão de Antecedentes Criminais Emitida</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2625" tipo="web-preencher">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2120">
+            <titulo>Validar</titulo>
+            <descricao>Clique no botão "Validar"</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2626" tipo="web-consultar">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="324"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2369">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1844">Certidão</item>
+        <item id="1845">Antecedentes</item>
+        <item id="1846">Criminais</item>
+        <item id="1847">Validação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="621">Lei 9051/95.</item>
+    </legislacoes>
+</servico>
