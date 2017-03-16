@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>analisar-pedido-de-alteracao-de-registro-de-exportacao-re-averbado</id>
+    <dbId>744</dbId>
+    <nome>Analisar pedido de alteração de Registro de Exportação (RE) averbado</nome>
+    <sigla></sigla>
+    <descricao>A exportação com embarque já realizado pode necessitar de correção nos dados do RE. Dependendo do campo alterado, pode ser necessária a anuência do Departamento de Operações de Comércio Exterior (DECEX).</descricao>
+    <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br/</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="717">
+            <tipo>Empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento/>
+    <etapas>
+        <etapa id="2004">
+            <titulo>Pedido inicial da empresa</titulo>
+            <descricao>Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir ou indeferir o pedido.</descricao>
+            <documentos>
+                <default>
+                    <item id="1986">Necessário cadastro para ter acesso ao Sistema Informatizado de Comércio Exterior (Siscomex)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2499" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="3162"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2291">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1711">alteração</item>
+        <item id="1712">registro</item>
+        <item id="1713">averbado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="544">Decreto nº 8.917/2016</item>
+    </legislacoes>
+</servico>
