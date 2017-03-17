@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
+            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
+            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
-            <item>Segurança e Ordem Pública</item>
-            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -21925,44 +21925,6 @@ Além de oferecer proteção e atendimento às pessoas e famílias com direitos 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>consulta-situacao-do-requerimento-de-beneficio-previdenciario</id>
-        <dbId>398</dbId>
-        <nome>Consulta Situação do Requerimento de Benefício Previdenciário</nome>
-        <sigla>Maria Rosana re</sigla>
-        <descricao>Permite acompanhar o andamento dos processos de concessão inicial de benefícios junto ao INSS.
-
-* [Telefone](undefined): Ligue 135 para mais informações</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1467">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1815" tipo="web">
-                            <descricao>http://sipa.inss.gov.br/SipaINSS/pages/concal/concalInicio.xhtml</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="1930"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1699">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Previdência Social</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>outros-recursos-ao-carf</id>
         <dbId>399</dbId>
         <nome>Outros Recursos ao CARF</nome>
@@ -22083,6 +22045,69 @@ Além de oferecer proteção e atendimento às pessoas e famílias com direitos 
         <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>consulta-situacao-do-requerimento-de-beneficio-previdenciario</id>
+        <dbId>398</dbId>
+        <nome>Consulta Situação do Requerimento de Benefício Previdenciário</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="634">Andamento de processo</item>
+        </nomes-populares>
+        <descricao>Permite acompanhar o andamento dos processos de concessão inicial de benefícios junto ao INSS.
+
+* [Telefone](undefined): Ligue 135 para mais informações</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="800">
+                <tipo>Cidadão</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1467">
+                <titulo>Consultar andamento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1815" tipo="web">
+                            <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="1934"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1699">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Previdência Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1901">aposentadoria</item>
+            <item id="1902">benefício</item>
+            <item id="1903">inss</item>
+            <item id="1904">andamento de pedido</item>
+            <item id="1905">andamento de processo</item>
+            <item id="1906">situação de benefício</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="633">[Lei nº 8.213, de 24 de julho de 1991](http://www.planalto.gov.br/ccivil_03/leis/L8213cons.htm).</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>vagas-de-emprego-sine-e-portal-mais-emprego</id>
@@ -38175,6 +38200,344 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             <item id="546">Portaria SECEX nº 23/2011</item>
             <item id="548">Portaria DECEX nº 08/1991</item>
             <item id="547">Decreto nº 6.759/2009</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>divulgar-exposicoes-e-feiras-de-negocios-de-produtos-e-servicos-no-pais</id>
+        <dbId>737</dbId>
+        <nome>Divulgar exposições e feiras de negócios de produtos e serviços no País.</nome>
+        <sigla>Expofeiras</sigla>
+        <nomes-populares>
+            <item id="573">Calendário Brasileiro de Exposições e Feiras</item>
+        </nomes-populares>
+        <descricao>O Sistema de Exposições e Feiras - Expofeiras é um site de governo para divulgação e promoção de eventos de negócio, mostrando a diversificação da economia do País. Os eventos estão disponíveis durante todo o ano em: www.expofeiras.gov.br. 
+
+Os dados do Expofeiras são compilados na edição impressa Calendário Brasileiro de Exposições e Feiras. A publicação é editada anualmente em três idiomas (português, inglês e espanhol) e divulgada no Brasil e no exterior em uma parceira MDIC/MRE.</descricao>
+        <contato>Coordenação-Geral de Mercado Doméstico
+Secretaria de Comércio e Serviços
+2027-7214
+calendario.scs@mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="709">
+                <tipo>Promotores de eventos que buscam divulgar suas feiras e exposições no no site do Expofeiras e no Calendário Brasileiro de Exposições e Feiras.</tipo>
+                <requisitos>a) A atividade econômica da solicitante deve estar relacionada com organização e promoção de eventos;
+b) Informar e-mail institucional; 
+c) Informar o site  da empresa; e, 
+d) os eventos devem: (i) estar relacionados ao setor de comércio, serviços, indústria ou agropecuária; (ii) estar na 2ª edição ou posterior; (iii) ter âmbito nacional, regional ou estadual; e (iv) possuir site.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao>Etapa única: cadastrar ou submeter evento de negócios para divulgação no sistema Expofeiras.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1997">
+                <titulo>Cadastrar ou submeter um evento de negócios para divulgação no sistema/site Expofeiras</titulo>
+                <descricao>Após a solicitação do cadastramento do evento, a Secretaria de Comércio e Serviços avalia a inclusão no expofeiras (deferimento, pedido de ajustes ou indeferimento). Se deferido o evento, o sistema informa  o usuário e passa a divulgar automaticamente a feira ou exposição no site.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1976">CNPJ, atividade econômica relacionada com organização e promoção de eventos, site institucional de empresa (informações para cadastro).</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2484" tipo="web">
+                            <descricao>www.expofeiras.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2277">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Cultura</item>
+            <item>Educação</item>
+            <item>Energia</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Turismo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1692">Expofeiras</item>
+            <item id="1693">Exposições</item>
+            <item id="1694">Feiras</item>
+            <item id="1695">Calendário</item>
+            <item id="1869">Negócios</item>
+            <item id="1870">Eventos</item>
+        </palavras-chave>
+    </servico>
+    <servico>
+        <id>avaliacao-dos-programas-de-pos-graduacao-no-brasil</id>
+        <dbId>812</dbId>
+        <nome>Avaliação dos Programas de Pós-Graduação no Brasil</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="636">Avaliação da CAPES</item>
+        </nomes-populares>
+        <descricao>A Avaliação do Sistema Nacional de Pós-Graduação é orientada pela CAPES e realizada com a participação da comunidade acadêmico-científica. A avaliação é atividade essencial para assegurar e manter a qualidade dos cursos de Mestrado e Doutorado no país. Os cursos de avaliados com nota igual ou superior a "3" são recomendados pela CAPES ao reconhecimento pelo Conselho Nacional de Educação. Somente os cursos reconhecidos estão autorizados a expedir diplomas com validade nacional.</descricao>
+        <contato>*Central de Atendimento
+0800 616161 - opção 7 - para assuntos da CAPES.
+Segunda a sexta das 8h às 20h
+
+*[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="804">
+                <tipo>Comunidade acadêmica e sociedade interessada em realizar uma pós-graduação</tipo>
+                <requisitos>Como apenas os cursos reconhecidos pelo CNE/MEC previamente recomendados pela CAPES estão autorizados a expedir diplomas de mestrado e/ou doutorado com validade nacional, os resultados da Avaliação devem ser consultados por toda a comunidade acadêmica e sociedade interessada em realizar uma pós-graduação stricto sensu. Os cursos podem ser consultados no [site](http://www.capes.gov.br/cursos-recomendados).</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="12" unidade="meses"/>
+            <descricao>A Avaliação da CAPES é quadrienal, realizada a cada quatro anos. A entrada no sistema, no entanto, é feita todo ano. As instituições devem apresentar suas propostas de cursos novos (APCN) conforme calendário divulgado no site da Capes no início de cada ano.</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2152">
+                <titulo>Acesso aos cursos recomendados pela CAPES</titulo>
+                <descricao>Os cursos podem ser consultados no [site](http://www.capes.gov.br/cursos-recomendados).</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2688" tipo="web">
+                            <descricao>www.capes.gov.br/cursos-recomendados</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="250"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2410">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1916">CAPES</item>
+            <item id="1917">AVALIAÇÃO DA PÓS-GRADUAÇÃO</item>
+            <item id="1918">CURSOS RECOMENDADOS</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="637">Acesse a [Legislação](http://www.capes.gov.br/avaliacao/sobre-a-avaliacao/legislacao-especifica)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>concessao-de-bolsas-de-pos-graduacao-no-exterior</id>
+        <dbId>809</dbId>
+        <nome>Concessão de Bolsas de Pós-Graduação no Exterior</nome>
+        <sigla></sigla>
+        <descricao>As bolsas concedidas pela CAPES para o exterior são nas seguintes modalidades: doutorado, estágio de doutorando e estágio pós-doutoral. Informações sobre esses programas estão disponíveis no [site da CAPES.](http://www.capes.gov.br/bolsas/bolsas-no-exterior) Todas as bolsas são concedidas por meio de chamadas públicas, que são amplamente divulgadas na página da Capes. Acesse o link para acesso aos [editais abertos](http://www.capes.gov.br/editais-abertos) no site da Capes.</descricao>
+        <contato>*Central de Atendimento
+0800 616161 - opção 7 - para assuntos da CAPES.
+Segunda a sexta das 8h às 20h
+
+*[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="801">
+                <tipo>Estudantes de Pós-Graduação</tipo>
+                <requisitos>Os requisitos incluem formação, nacionalidade, pertencimento a outros programas de fomento do Governo Federal, e devem ser consultadas em cada uma das chamadas públicas específicas.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="6" unidade="meses"/>
+            <descricao>Cada chamada pública possui um cronograma a ser cumprido para a concessão de bolsas. A bolsa pode ser de curta duração (3 meses) ou plena até 48 meses, a depender da modalidade</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2149">
+                <titulo>Seleção de Bolsistas</titulo>
+                <descricao>As etapas para concessão de bolsa no exterior da CAPES envolvem: inscrição, seleção, reconsideração e divulgação de resultado. Os detalhes sobre cada etapa devem ser consultados nos editais específicos de cada chamada.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2685" tipo="web-inscrever-se">
+                            <descricao>http://www.capes.gov.br/editais-abertos</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="250"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2407">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1907">CAPES</item>
+            <item id="1908">Bolsas de Estudo</item>
+            <item id="1909">Pós-Graduação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="634">[Regulamento Geral de Bolsas no Exterior](http://www.capes.gov.br/images/stories/download/bolsas/01072016-Regulamento-Geral-de-Bolsas-para-o-Exterior.pdf) 
+
+
+Valores das bolsas da Capes no exterior: [Portaria nº 82, de 2 junho de 2016](http://www.capes.gov.br/images/stories/download/legislacao/03062016-PORTARIA-N-82-DE-02-06-2016.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>concessao-de-bolsas-de-pos-graduacao-mestrado-e-doutorado-no-pais</id>
+        <dbId>810</dbId>
+        <nome>Concessão de Bolsas de Pós-Graduação (Mestrado e Doutorado) no País</nome>
+        <sigla></sigla>
+        <descricao>As bolsas de pós-graduação stricto sensu (mestrado e doutorado) da CAPES no país são institucionais. Isso significa que todos os cursos de mestrado e doutorado avaliados e recomendados pela Capes com nota igual ou superior a três podem dispor de uma cota de bolsas. 
+
+[Mais informações](http://www.capes.gov.br/bolsas/bolsas-no-pais)</descricao>
+        <contato>*Central de Atendimento
+0800 616161 - opção 7 - para assuntos da CAPES.
+Segunda a sexta das 8h às 20h
+
+*[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="802">
+                <tipo>Estudantes de cursos de pós-graduação stricto sensu (mestrado e doutorado) no país</tipo>
+                <requisitos>Os cursos precisam ser recomendados pela Capes e autorizados pelo CNE/MEC. A relação pode ser consultada no [site](http://www.capes.gov.br/cursos-recomendados).</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="6" unidade="meses"/>
+            <descricao>As bolsas de estudo são gerenciadas pelas instituições e cursos de pós-graduação, que são responsáveis pela seleção e acompanhamento dos bolsistas. Informações sobre concessão, pagamento, suspensão, cancelamento, implementação ou vigência de bolsa devem ser verificadas junto à Coordenação do Curso e à Pró-Reitoria de Pós-Graduação. As bolsas de mestrado podem durar até 24 meses e as bolsas de doutorado, até 48 meses.</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2150">
+                <titulo>Seleção de bolsistas</titulo>
+                <descricao>As bolsas de estudo são gerenciadas pelas instituições e cursos de pós-graduação, que são responsáveis pela seleção e acompanhamento dos bolsistas. Informações sobre concessão, pagamento, suspensão, cancelamento, implementação ou vigência de bolsa devem ser verificadas junto à Coordenação do Curso e à Pró-Reitoria de Pós-Graduação.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2686" tipo="web">
+                            <descricao>http://www.capes.gov.br/bolsas/bolsas-no-pais</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="250"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2408">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1910">CAPES</item>
+            <item id="1911">Bolsas de Estudo</item>
+            <item id="1912">Pós-Graduação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="635">Valores das bolsas da Capes no país: [Portaria Conjunta nº 1 de 28 de março de 2013](http://www.capes.gov.br/images/stories/download/legislacao/PortariaConjunta_1_2013_CapesCNPq_ReajusteBolsas.pdf). 
+Portaria n° 76, de 14 abril de 2010 - [Novo Regulamento - Demanda Social](http://www.capes.gov.br/images/stories/download/legislacao/Portaria_076_RegulamentoDS.pdf). 
+Portaria nº 181 de 18 de dezembro 2012 - [Regulamento do Programa de Suporte à Pós Graduação de instituições de Ensino Particulares](</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>disponibilizacao-de-periodicos-cientificos</id>
+        <dbId>811</dbId>
+        <nome>Disponibilização de periódicos científicos</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="635">Portal de Periódicos da CAPES</item>
+        </nomes-populares>
+        <descricao>O Portal de Periódicos, da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), é uma biblioteca virtual que reúne e disponibiliza a instituições de ensino e pesquisa no Brasil o melhor da produção científica internacional. Ele conta com um acervo de mais de 37 mil títulos com texto completo, 128 bases referenciais, 11 bases dedicadas exclusivamente a patentes, além de livros, enciclopédias e obras de referência, normas técnicas, estatísticas e conteúdo audiovisual.</descricao>
+        <contato>*Central de Atendimento
+0800 616161 - opção 7 - para assuntos da CAPES.
+Segunda a sexta das 8h às 20h
+
+*[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="803">
+                <tipo>Usuários autorizados das instituições participantes</tipo>
+                <requisitos>Apenas usuários autorizados das instituições participantes podem usar o Portal de Periódicos da CAPES. Os usuários autorizados são professores permanentes, temporários e visitantes, estudantes de graduação, pós-graduação e extensão e funcionários permanentes e temporários vinculados oficialmente a essas instituições.
+
+Alunos, professores e pesquisadores de instituições não participantes devem procurar a biblioteca da instituição participante mais próxima.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2151">
+                <titulo>Acesso ao Portal de Periódicos da CAPES</titulo>
+                <descricao>O acesso aos periódicos de textos completos assinados pela Capes e às bases de dados de resumos é livre e gratuito aos usuários autorizados. Ele é feito em terminais ligados à internet por meio de provedores de acesso autorizados nas instituições participantes. Estes terminais são autorizados a partir do registro do IPs da instituição junto à Capes, que verifica a validade e propriedade dos mesmos. Não há necessidade de senha ou de identificação de usuários.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2687" tipo="web">
+                            <descricao>www.periodicos.capes.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="250"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2409">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1913">CAPES</item>
+            <item id="1914">PORTAL DE PERIÓDICOS</item>
+            <item id="1915">DIVULGAÇÃO CIENTÍFICA</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="636">(PORTARIA Nº 34,
+DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.gov.br/images/documents/Portaria_34_19-07-2001.pdf]</item>
         </legislacoes>
     </servico>
 </servicos>
