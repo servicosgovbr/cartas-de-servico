@@ -6181,168 +6181,6 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </legislacoes>
     </servico>
     <servico>
-        <id>realizar-o-ajuste-anual-do-imposto-de-renda-de-pessoa-fisica</id>
-        <dbId>58</dbId>
-        <nome>Realizar o ajuste anual do imposto de renda de pessoa física</nome>
-        <sigla>DIRPF</sigla>
-        <nomes-populares>
-            <item id="505">Imposto de Renda</item>
-            <item id="506">Declaração do Imposto de Renda.</item>
-            <item id="507">Acertar as contas com o leão</item>
-        </nomes-populares>
-        <descricao>A DIRPF permite a você e a nós, do Governo Federal, realizar o ajuste fino do cálculo do imposto que você deve pagar sobre sua renda, permitindo que você confirme o cumprimento de sua obrigação, resolva obrigações não quitadas com a arrecadação compulsória ou receba valores arrecadados além do devido durante o ano base.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="585">
-                <tipo>Pessoa Física residente no país por critério de renda</tipo>
-                <requisitos>* Recebeu rendimentos tributáveis, sujeitos ao ajuste na declaração, cuja soma anual foi superior a R$ 28.123,91;
-* Recebeu rendimentos isentos, não tributáveis ou tributados exclusivamente na fonte, cuja soma foi superior a R$ 40.000,00;</requisitos>
-            </solicitante>
-            <solicitante id="586">
-                <tipo>Pessoa Física residente no país por critério de ganhos de capital e operações em bolsa de valores</tipo>
-                <requisitos>* Obteve, em qualquer mês, ganho de capital na alienação de bens ou direitos, sujeito à incidência do imposto, ou realizou operações em bolsas de valores e assemelhadas;
-* Optou pela isenção do imposto sobre a renda incidente sobre o ganho de capital auferido na venda de imóveis residenciais, cujo produto da venda seja destinado à aplicação na aquisição de imóveis residenciais localizados no país, no prazo de 180 (cento e oitenta) dias contados da celebração do contrato de venda.</requisitos>
-            </solicitante>
-            <solicitante id="587">
-                <tipo>Pessoa Física residente no país pelo critério Atividade Rural</tipo>
-                <requisitos>* Obteve receita bruta anual em valor superior a R$ 140.619,55;
-* Pretenda compensar, no ano-base ou posteriores, prejuízos de anos-bases anteriores ou do próprio ano-base atual;</requisitos>
-            </solicitante>
-            <solicitante id="588">
-                <tipo>Pessoa Física residente no país pelo critério bens e direitos</tipo>
-                <requisitos>Teve a posse ou a propriedade, em 31 de dezembro do ano-base, de bens ou direitos, inclusive terra nua, de valor total superior a R$ 300.000,00;</requisitos>
-            </solicitante>
-            <solicitante id="589">
-                <tipo>Pessoa Física não residente no país em parte do ano-base</tipo>
-                <requisitos>Mas que tenha, em qualquer mês, passado à condição de residente no país, e nesta condição se encontrasse no dia 31 de dezembro do ano-base.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="12" unidade="meses"/>
-            <descricao>Tempo que pode durar o processo desde a apresentação da declaração à Receita até o pagamento da última parcela de imposto devido ou recebimento de restituição de imposto pago.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1822">
-                <titulo>Fazer download dos programas IRPF e Receitanet</titulo>
-                <descricao>Você deve acessar o site da Receita, baixar e instalar em seu computador ou dispositivo os programas IRPF (para preenchimento da DIRPF) e o programa Receitanet (para envio da DIRF preenchida à receita).</descricao>
-                <documentos>
-                    <default>
-                        <item id="1549">Não há documentação necessária para a etapa</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2259" tipo="web">
-                            <descricao>http://idg.receita.fazenda.gov.br/programas-para-download/receitanet/receitanet</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2258" tipo="web">
-                            <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/declaracoes-e-demonstrativos/dirpf/entrega-da-declaracao-do-irpf/download-programas-dirpf</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1823">
-                <titulo>Preencher a declaração e calcular o valor devido ou a receber  no programa IRPF</titulo>
-                <descricao>Você deverá abrir o programa IRPF e preencher todos os campos da declaração que forem apropriados ao seu caso. No programa há ajuda e instruções sobre o preenchimento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1550">CPF;</item>
-                        <item id="1551">Título de Eleitor;</item>
-                        <item id="1552">Recibo da declaração entregue no ano anterior, se houver;</item>
-                        <item id="1553">Comprovante de rendimentos do empregador, se houver;</item>
-                        <item id="1554">Data de nascimento e CPF dos dependentes, se houver;</item>
-                        <item id="1555">Data de nascimento e CPF dos dependentes, se houver;</item>
-                        <item id="1556">Comprovantes e extratos de quaisquer rendimentos recebidos durante o ano;</item>
-                        <item id="1557">Comprovantes da posse de bens e direitos;</item>
-                        <item id="1558">Extrato de dívidas, se houver;</item>
-                        <item id="1559">Dados do inventariante, em caso de espólio;</item>
-                        <item id="1560">Dados bancários;</item>
-                        <item id="1561">Comprovantes de pagamento realizados a instituições e profissionais de saúde para si e dependentes, se houver;</item>
-                        <item id="1562">Comprovantes de pagamento realizados a instituições de educação para si ou dependentes, se houver;</item>
-                        <item id="1563">Comprovantes de pagamento a Planos de Saúde para si ou dependentes, se houver;</item>
-                        <item id="1564">Comprovantes de pagamentos a previdências privadas, se houver;</item>
-                        <item id="1565">Comprovantes de pagamentos de pensões alimentícias, se houver;</item>
-                        <item id="1566">Comprovante de contribuição paga à Previdência Social em razão de empregado doméstico, se houver;</item>
-                        <item id="1567">Comprovante de honorários pagos a advogados e outros profissionais liberais, se houver;</item>
-                        <item id="1568">Comprovante de pagamento de aluguéis de imóvel, se houver;</item>
-                        <item id="1569">Comprovante de pagamento de arrendamento rural, se houver;</item>
-                        <item id="1570">Comprovantes de doações feitas, se houver;</item>
-                        <item id="1571">Comprovantes de demais pagamentos que incidam em desconto do imposto de renda, se houver;</item>
-                        <item id="1572">Demais documentações relativas à sua vida financeira no ano-base da declaração.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2260" tipo="web">
-                            <descricao>Aplicativo IRPF obtido na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1824">
-                <titulo>Enviar a declaração preenchida à Receita pelo programa Receitanet e receber recibo de entrega.</titulo>
-                <descricao>Após o término do preenchimento da Declaração, você deverá abrir o programa Receitanet, selecionar o arquivo com a declaração e enviar o mesmo para a Receita. Quando bem sucedido, você receberá o recibo de entrega, que deverá gravar e/ou imprimir e guardar em local seguro.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1573">Arquivo gerado pelo programa IRPF com o a declaração devidamente preenchida</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2261" tipo="web">
-                            <descricao>Aplicativo Receitanet obtido na primeira etapa.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1825">
-                <titulo>Pagar ou receber a diferença entre o valor devido e o valor pago.</titulo>
-                <descricao>Após a entrega da declaração, você irá pagar ou receber a restituição de parcela do imposto pago, a depender do resultado do cálculo feito pelo programa IRPF, e da forma escolhida ao final do preenchimento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1574">Dados Bancários;</item>
-                        <item id="1575">Boleto de pagamento, se for o caso;</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2262" tipo="presencial">
-                            <descricao>Rede Bancária</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2120">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1475">pagamento</item>
-            <item id="1476">restituição</item>
-            <item id="1477">desconto</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="478">https://www.planalto.gov.br/ccivil_03/leis/l7713.htm</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>inscrever-se-pela-internet-no-cadastro-de-pessoas-fisicas</id>
         <dbId>59</dbId>
         <nome>Inscrever-se pela internet no Cadastro de Pessoas Físicas</nome>
@@ -38472,6 +38310,196 @@ Segunda a sexta das 8h às 20h
             <item id="635">Valores das bolsas da Capes no país: [Portaria Conjunta nº 1 de 28 de março de 2013](http://www.capes.gov.br/images/stories/download/legislacao/PortariaConjunta_1_2013_CapesCNPq_ReajusteBolsas.pdf). 
 Portaria n° 76, de 14 abril de 2010 - [Novo Regulamento - Demanda Social](http://www.capes.gov.br/images/stories/download/legislacao/Portaria_076_RegulamentoDS.pdf). 
 Portaria nº 181 de 18 de dezembro 2012 - [Regulamento do Programa de Suporte à Pós Graduação de instituições de Ensino Particulares](</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>declarar-o-imposto-de-renda-de-pessoa-fisica</id>
+        <dbId>58</dbId>
+        <nome>Declarar o imposto de Renda de Pessoa Física</nome>
+        <sigla>DIRPF</sigla>
+        <nomes-populares>
+            <item id="505">Imposto de Renda</item>
+            <item id="507">Acertar as contas com o leão</item>
+            <item id="506">Declaração do Imposto de Renda</item>
+            <item id="637">Ajuste Anual</item>
+        </nomes-populares>
+        <descricao>A DIRPF permite a você e a nós, do Governo Federal, realizar o ajuste fino do cálculo do imposto que você deve pagar sobre sua renda, permitindo que você confirme o cumprimento de sua obrigação, resolva obrigações não quitadas com a arrecadação compulsória ou receba valores arrecadados além do devido durante o ano base.</descricao>
+        <contato>* [Fale Conosco](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/dirf)
+* Receitafone - 146</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="585">
+                <tipo>Pessoa Física residente no país por critério de renda</tipo>
+                <requisitos>* Recebeu rendimentos tributáveis, sujeitos ao ajuste na declaração, cuja soma anual foi superior a R$ 28.123,91;
+* Recebeu rendimentos isentos, não tributáveis ou tributados exclusivamente na fonte, cuja soma foi superior a R$ 40.000,00;</requisitos>
+            </solicitante>
+            <solicitante id="586">
+                <tipo>Pessoa Física residente no país por critério de ganhos de capital e operações em bolsa de valores</tipo>
+                <requisitos>* Obteve, em qualquer mês, ganho de capital na alienação de bens ou direitos, sujeito à incidência do imposto, ou realizou operações em bolsas de valores e assemelhadas;
+* Optou pela isenção do imposto sobre a renda incidente sobre o ganho de capital auferido na venda de imóveis residenciais, cujo produto da venda seja destinado à aplicação na aquisição de imóveis residenciais localizados no país, no prazo de 180 (cento e oitenta) dias contados da celebração do contrato de venda.</requisitos>
+            </solicitante>
+            <solicitante id="587">
+                <tipo>Pessoa Física residente no país pelo critério Atividade Rural</tipo>
+                <requisitos>* Obteve receita bruta anual em valor superior a R$ 140.619,55;
+* Pretenda compensar, no ano-base ou posteriores, prejuízos de anos-bases anteriores ou do próprio ano-base atual;</requisitos>
+            </solicitante>
+            <solicitante id="588">
+                <tipo>Pessoa Física residente no país pelo critério bens e direitos</tipo>
+                <requisitos>Teve a posse ou a propriedade, em 31 de dezembro do ano-base, de bens ou direitos, inclusive terra nua, de valor total superior a R$ 300.000,00;</requisitos>
+            </solicitante>
+            <solicitante id="589">
+                <tipo>Pessoa Física não residente no país em parte do ano-base</tipo>
+                <requisitos>Mas que tenha, em qualquer mês, passado à condição de residente no país, e nesta condição se encontrasse no dia 31 de dezembro do ano-base.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao>Tempo que pode durar o processo desde a apresentação da declaração à Receita até o pagamento da última parcela de imposto devido ou recebimento de restituição de imposto pago.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>1</quantidade>
+            <unidade>anos</unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1822">
+                <titulo>Fazer download dos programa IRPF 2017</titulo>
+                <descricao>Você deve acessar o site da Receita, baixar e instalar em seu computador ou dispositivo móvel o programa IRPF 2017. O programa está disponível para computadores Windows, Mac, Linux e Solaris, além de dispositivos móveis Android e iOS.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1549">Não há documentação necessária para a etapa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2258" tipo="aplicativo-movel">
+                            <descricao>Computadores
+
+* [Windows](https://goo.gl/q4BbSL)
+
+* [Linux Bin 32 bits](https://goo.gl/nyvvxW)
+
+* [Linux Bin 64 bits](https://goo.gl/hSmtcT)
+
+* [Mac](https://goo.gl/ePuifC)
+
+* [Outros Sistemas](https://goo.gl/xJJqxV)
+
+***</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2689" tipo="aplicativo-movel">
+                            <descricao>Celulares e Tablets
+
+* [Google Play (Android)](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.irpf)
+
+* [App Store (iOS)](https://itunes.apple.com/br/app/irpf/id922529225?mt=8)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1823">
+                <titulo>Preencher a declaração e calcular o valor devido ou a receber no programa IRPF</titulo>
+                <descricao>Você deverá abrir o programa IRPF e preencher todos os campos da declaração que forem apropriados ao seu caso. No programa há ajuda e instruções sobre o preenchimento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1550">CPF;</item>
+                        <item id="1551">Título de Eleitor;</item>
+                        <item id="1552">Recibo da declaração entregue no ano anterior, se houver;</item>
+                        <item id="1553">Comprovante de rendimentos do empregador, se houver;</item>
+                        <item id="1554">Data de nascimento e CPF dos dependentes, se houver;</item>
+                        <item id="1555">Data de nascimento e CPF dos dependentes, se houver;</item>
+                        <item id="1556">Comprovantes e extratos de quaisquer rendimentos recebidos durante o ano;</item>
+                        <item id="1557">Comprovantes da posse de bens e direitos;</item>
+                        <item id="1558">Extrato de dívidas, se houver;</item>
+                        <item id="1559">Dados do inventariante, em caso de espólio;</item>
+                        <item id="1560">Dados bancários;</item>
+                        <item id="1561">Comprovantes de pagamento realizados a instituições e profissionais de saúde para si e dependentes, se houver;</item>
+                        <item id="1562">Comprovantes de pagamento realizados a instituições de educação para si ou dependentes, se houver;</item>
+                        <item id="1563">Comprovantes de pagamento a Planos de Saúde para si ou dependentes, se houver;</item>
+                        <item id="1564">Comprovantes de pagamentos a previdências privadas, se houver;</item>
+                        <item id="1565">Comprovantes de pagamentos de pensões alimentícias, se houver;</item>
+                        <item id="1566">Comprovante de contribuição paga à Previdência Social em razão de empregado doméstico, se houver;</item>
+                        <item id="1567">Comprovante de honorários pagos a advogados e outros profissionais liberais, se houver;</item>
+                        <item id="1568">Comprovante de pagamento de aluguéis de imóvel, se houver;</item>
+                        <item id="1569">Comprovante de pagamento de arrendamento rural, se houver;</item>
+                        <item id="1570">Comprovantes de doações feitas, se houver;</item>
+                        <item id="1571">Comprovantes de demais pagamentos que incidam em desconto do imposto de renda, se houver;</item>
+                        <item id="1572">Demais documentações relativas à sua vida financeira no ano-base da declaração.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2260" tipo="aplicativo-movel">
+                            <descricao>Aplicativo IRPF obtido na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1824">
+                <titulo>Enviar a declaração preenchida à Receita Federal</titulo>
+                <descricao>Após terminar de preencher a declaração, revise os dados para conferir se estão todos corretos, verifique o resultado apontado pelo programa (valor a pagar ou receber), escolha as opções para pagamento ou recebimento conforme o caso, e então envie a declaração à receita. Se o envio for bem sucedido, você receberá pelo aplicativo o recibo de declaração, que você deverá guardar como comprovação de que realizou a declaração.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1573">Arquivo gerado pelo programa IRPF com o a declaração devidamente preenchida</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2261" tipo="aplicativo-movel">
+                            <descricao>Aplicativo IRPF obtido na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1825">
+                <titulo>Pagar ou receber a diferença entre o valor devido e o valor pago.</titulo>
+                <descricao>Após a entrega da declaração, você irá pagar ou receber a restituição de parcela do imposto pago, a depender do resultado do cálculo feito pelo programa IRPF, e da forma escolhida por você antes de enviar a declaração.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1574">Dados Bancários;</item>
+                        <item id="1575">Boleto de pagamento, se for o caso;</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2262" tipo="presencial">
+                            <descricao>Rede Bancária</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="77"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2120">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1475">pagamento</item>
+            <item id="1476">restituição</item>
+            <item id="1477">desconto</item>
+            <item id="1919">ajuste</item>
+            <item id="1920">leão</item>
+            <item id="1921">carnê</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="478">[LEI Nº 7.713, DE 22 DE DEZEMBRO DE 1988.](https://www.planalto.gov.br/ccivil_03/leis/l7713.htm)</item>
         </legislacoes>
     </servico>
     <servico>
