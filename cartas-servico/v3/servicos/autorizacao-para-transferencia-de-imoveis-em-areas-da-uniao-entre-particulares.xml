@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>AUTORIZAÇÃO PARA TRANSFERÊNCIA DE IMÓVEIS EM ÁREAS DA UNIÃO ENTRE PARTICULARES</nome>
+    <sigla>CAT</sigla>
+    <nomes-populares>
+        <item>TRANSFERÊNCIA</item>
+    </nomes-populares>
+    <descricao>Realização de todos os procedimentos necessários à Autorização para Transferência de seu imóvel, sem precisar ir à SPU de seu estado.</descricao>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>qualquer particular regulamente inscrito no patrimônio da União ou seu representante legal</tipo>
+            <requisitos>pode realizar a solicitação:
+- o titular que estiver regularmente inscrito na SPU - pessoa física ou jurídica - com apresentação de documentos de identificação oficiais.</requisitos>
+        </solicitante>
+        <solicitante>
+            <tipo>representante legal do titular</tipo>
+            <requisitos>documentação oficial que o habilite como representante do titular;</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="15" min="3" unidade="dias-corridos"/>
+        <descricao>este prazo de 3 a 15 dias é contado após o pagamento do DARF, quando a CAT estará disponível para impressão na opção Emissão de CAT.</descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Verificar atualização dos dados cadastrais</titulo>
+            <descricao>Verifique antes se seus dados estão atualizados em nosso cadastro, na opção Dados Cadastrais no menu principal.</descricao>
+            <documentos>
+                <default>
+                    <item>para esta consulta ao cadastro é necessário informar: o número do RIP ou, o CPF ou CNPJ do titular ou, o nome do titular</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Transferências de Imóveis - Cálculo de Laudêmio, Emissão de CAT, Validação de CAT e Emissão de Darf
+
+Ou diretamente em http://atendimentovirtual.spu.planejamento.gov.br/Transferencia/Transf_Menu.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Cálculo do Laudêmio para transferências onerosas</titulo>
+            <descricao>Transações onerosas é exigido o pagamento do laudêmio. Você deve escolher a opção Cálculo de Laudêmio – (FCL). 
+-Para as transações não onerosas (sucessão, doação, meação, etc.), não é exigido o pagamento de laudêmio. Ir diretamente para a opção Emissão de CAT. 
+-Se você consta como isento do pagamento de receitas patrimoniais, nos termos dos arts. 1º e 2º do Decreto-Lei no 1.876, de 15 de julho de 1981, escolha  a opção Emissão de CAT, independentemente da natureza da transação.</descricao>
+            <documentos>
+                <default>
+                    <item>documentação que comprove transação não onerosa - sucessão, doação, meação, etc ou;  comprovação de isenção  nos termos º do Decreto-Lei no 1.876</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Transferências de Imóveis - Cálculo de Laudêmio, Emissão de CAT, Validação de CAT e Emissão de Darf
+
+ou diretamente em:
+http://atendimentovirtual.spu.planejamento.gov.br/fcl/Fcl_Inclusao_Pedido.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Emitir DARF</titulo>
+            <descricao>O Documento de Arrecadação para Receitas Federais – DARF – para o recolhimento do laudêmio poderá ser emitido ao final da Ficha de Cálculo de Laudêmio (FCL), após confirmação, ou na opção Emissão de DARF, informando o número da FCL.</descricao>
+            <documentos>
+                <default>
+                    <item>número da FCL emitida pela SPU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Transferências de Imóveis - Cálculo de Laudêmio, Emissão de CAT, Validação de CAT e Emissão de Darf
+
+ou diretamente em:
+http://atendimentovirtual.spu.planejamento.gov.br/fcl/Fcl_Emitir_Darf_Pedido.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>pagar DARF</titulo>
+            <descricao>O laudêmio poderá ser recolhido em qualquer estabelecimento da rede bancária, até o vencimento, via DARF.</descricao>
+            <documentos>
+                <default>
+                    <item>DARF emitido pela SPU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Verificar se há débitos em aberto de sua responsabilidade na SPU</titulo>
+            <descricao>Verifique em Dados Financeiros, na página principal do Balcão Virtual da SPU, se há débitos em aberto de sua responsabilidade, verificando o número de CPF nos DARFs disponíveis. A CAT só poderá ser emitida se os débitos de sua responsabilidade estiverem constando como quitados em nosso sistema, o que poderá levar de três a quinze dias após o pagamento.</descricao>
+            <documentos>
+                <default>
+                    <item>CPF ou CNPJ e RIP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-consultar">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Consulta Dados Financeiros - Relação de Débitos do Imóvel
+ 
+ou diretamente em
+http://atendimentovirtual.spu.planejamento.gov.br/Consultas/Fin_Pedido.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Emitir Certidão de Autorização para Transferência (CAT).</titulo>
+            <descricao>A CAT só poderá ser emitida se os débitos de sua responsabilidade estiverem constando como quitados em nosso sistema, o que poderá levar de três a quinze dias após o pagamento do laudêmio.</descricao>
+            <documentos>
+                <default>
+                    <item>informação do tipo de transação; número da FCL  e Número do RIP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-emitir">
+                        <descricao>http://www.servicos.gov.br/ opção: imóveis / opção: Transferências de Imóveis - Cálculo de Laudêmio, Emissão de CAT, Validação de CAT e Emissão de Darf
+
+ou diretamente em:
+http://atendimentovirtual.spu.planejamento.gov.br/Transferencia/Transf_Cat_Pedido.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Averbação de transferência</titulo>
+            <descricao>Após realizar a transação e realizar o registro no Cartório de RGI, a Averbação da Transferência é o momento em que a SPU faz constar de seu cadastro os dados de identificação do novo responsável e atualiza os dados técnicos do imóvel. 
+Por enquanto, este serviço não está disponível pela internet. Deverá ser entregue, na SPU de jurisdição do imóvel, o requerimento preenchido, datado e assinado pelo adquirente, com documentação necessária e cópia autenticada ou cópia com apresentação do original.</descricao>
+            <documentos>
+                <default>
+                    <item>requerimento assinado pelo adquirente, com documentação necessária, em cópia autenticada</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>Superintendência do patrimônio da União em seu estado.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Patrimônio</item>
+        <item>Urbanismo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Laudêmio</item>
+        <item>Transferência de Imóvel da União</item>
+        <item>CAT</item>
+        <item>Darf</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>arts. 1º e 2º do Decreto-Lei no 1.876, de 15 de julho de 1981</item>
+        <item>Art. 205, do Decreto-Lei nº 9.670, de 1946</item>
+    </legislacoes>
+</servico>
