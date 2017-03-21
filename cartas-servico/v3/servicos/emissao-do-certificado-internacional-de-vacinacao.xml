@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>Emissão do Certificado Internacional de Vacinação</nome>
+    <sigla>CIVP</sigla>
+    <nomes-populares>
+        <item>Carteira de Vacinação Internacional</item>
+    </nomes-populares>
+    <descricao>O Certificado Internacional de Vacinação e Profilaxia é um documento, exigido por alguns países, que as pessoas devem apresentar demonstrando que estão vacinadas contra doenças potencialmente perigosas.</descricao>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Todo e qualquer cidadão</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <descricao/>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Preenchimento de Formulário Web</titulo>
+            <descricao>O usuário acessa a pagina da Anvisa, preenche os dados necessários para a emissão do CIVP.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>www.anvisa.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Emitir o CIVP nos Centros credenciados.</titulo>
+            <descricao>Apresentação do Cartão Nacional de Vacinação preenchido corretamente com: data da administração da vacina, lote da vacina, assinatura do profissional que realizou e identificação da unidade de saúde.</descricao>
+            <documentos>
+                <default>
+                    <item>Documento de identidade oficial com foto (carteira de identidade, passaporte, carteira de motorista válida, etc)</item>
+                    <item>Certidão de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="presencial">
+                        <descricao>[Portal de Serviços](http://www.anvisa.gov.br/hotsite/viajante/centros.pdf).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Turismo</item>
+        <item>Serviços Públicos</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Viajante,</item>
+        <item>Certificado Internacional de Vacinação e Profilaxia,</item>
+        <item>CIVP.</item>
+    </palavras-chave>
+    <legislacoes>
+        <item>RDC nº 21 de 31/03/2008, inciso III do Art. 1º do Anexo II.</item>
+    </legislacoes>
+</servico>
