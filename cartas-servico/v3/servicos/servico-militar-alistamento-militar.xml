@@ -1,39 +1,44 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>servico-militar-alistamento-militar</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>servico-militar-alistamento-militar</id>
+    <dbId>55</dbId>
+    <nome>Serviço Militar (Alistamento Militar)</nome>
+    <sigla>SMO</sigla>
     <nomes-populares>
-        <item>Alistamento</item>
-        <item>Serviço Militar</item>
+        <item id="640">Serviço Militar Obrigatório</item>
+        <item id="350">Alistamento Militar</item>
+        <item id="351">Serviço Militar</item>
     </nomes-populares>
-    <descricao><![CDATA[O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização e Pessoal, todos os encargos com a Defesa Nacional.
+    <descricao>O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização e Pessoal, todos os encargos com a Defesa Nacional.
 
-A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, encarregado de dirigir, orientar, coordenar e controlar as atividades ligadas ao Serviço Militar, no âmbito do Exército, em todo o território nacional.]]></descricao>
-    <contato><![CDATA[* [Exército Brasileiro](http://eb.mil.br)
+A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, encarregado de dirigir, orientar, coordenar e controlar as atividades ligadas ao Serviço Militar, no âmbito do Exército, em todo o território nacional.</descricao>
+    <contato>* [Exército Brasileiro](http://eb.mil.br)
 * [Marinha Brasileira](http://mar.mil.br)
 * [Força Aérea Brasileira](http://fab.mil.br)
-* [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.]]></contato>
+* [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.</contato>
     <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="419">
             <tipo>Cidadão Brasileiro Nato</tipo>
-            <requisitos><![CDATA[* Jovem brasileiro do sexo masculino
-* Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos]]></requisitos>
+            <requisitos>* Jovem brasileiro do sexo masculino
+* Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="12" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1201">
             <titulo>Cadastrar dados pessoais</titulo>
-            <descricao><![CDATA[O cidadão deverá comparecer à Junta de Serviço Militar mais próxima à sua residência munido da documentação descrita abaixo.]]></descricao>
+            <descricao>O cidadão deverá comparecer à Junta de Serviço Militar mais próxima à sua residência munido da documentação descrita abaixo.</descricao>
             <documentos>
                 <default>
-                    <item>Certidão de nascimento ou documento de identidade válido conforme Lei 12.037 (identidade civil, passaporte, carteira de trabalho, carteira profissional)</item>
-                    <item>Comprovante de Residência ou declaração firmada pelo alistando ou por procurador bastante</item>
-                    <item>01 Fotografia 3x4 (recente, de frente e sem retoques)</item>
+                    <item id="1181">Certidão de nascimento ou documento de identidade válido conforme Lei 12.037 (identidade civil, passaporte, carteira de trabalho, carteira profissional)</item>
+                    <item id="1182">Comprovante de Residência ou declaração firmada pelo alistando ou por procurador bastante</item>
+                    <item id="1183">01 Fotografia 3x4 (recente, de frente e sem retoques)</item>
                 </default>
             </documentos>
             <custos>
@@ -41,29 +46,29 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).
+                    <canal-de-prestacao id="1468" tipo="presencial">
+                        <descricao>O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).
 
-* O canal web apresentado abaixo é válido somente para os estados do Amapá, Bahia, Maranhão, Mato Grosso, Mato Grosso do Sul, Pará, Paraná, Santa Catarina e Sergipe.]]></descricao>
+* O canal web apresentado abaixo é válido somente para os estados do Amapá, Bahia, Maranhão, Mato Grosso, Mato Grosso do Sul, Pará, Paraná, Santa Catarina e Sergipe.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[(http://www.alistamento.eb.mil.br/)]]></descricao>
+                    <canal-de-prestacao id="1469" tipo="web">
+                        <descricao>* [Alistamento Militar](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar))</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1202">
             <titulo>Comparecer à Seleção Geral</titulo>
-            <descricao><![CDATA[* Na seleção geral, o cidadão passará por exames médicos e entrevistas.
-* Caso o cidadão esteja cursando medicina, odontologia, veterinária ou fármacia poderá ter o alistamento adiado.]]></descricao>
+            <descricao>* Na seleção geral, o cidadão passará por exames médicos e entrevistas.
+* Caso o cidadão esteja cursando medicina, odontologia, veterinária ou fármacia poderá ter o alistamento adiado.</descricao>
             <documentos>
                 <default>
-                    <item>Declaração escolar ou de universidade (quando se aplicar)</item>
-                    <item>Histórico Escolar</item>
-                    <item>Certificado de Alistamento Militar (caso já possua)</item>
-                    <item>Formulários impressos e preenchidos no canal digital (nas localidades em que se aplicam)</item>
-                    <item>Carteira de Trabalho</item>
-                    <item>Documentos de identidade conforme Lei 12.037</item>
+                    <item id="1184">Declaração escolar ou de universidade (quando se aplicar)</item>
+                    <item id="1185">Histórico Escolar</item>
+                    <item id="1186">Certificado de Alistamento Militar (caso já possua)</item>
+                    <item id="1187">Formulários impressos e preenchidos no canal digital (nas localidades em que se aplicam)</item>
+                    <item id="1188">Carteira de Trabalho</item>
+                    <item id="1189">Documentos de identidade conforme Lei 12.037</item>
                 </default>
             </documentos>
             <custos>
@@ -71,18 +76,18 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).]]></descricao>
+                    <canal-de-prestacao id="1470" tipo="presencial">
+                        <descricao>A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1203">
             <titulo>Se dispensado, Jurar à Bandeira Nacional</titulo>
-            <descricao><![CDATA[Participar de solenidade de juramento à bandeira Nacional para tornar público o processo de recebimento da certidão de reservista.]]></descricao>
+            <descricao>Participar de solenidade de juramento à bandeira Nacional para tornar público o processo de recebimento da certidão de reservista.</descricao>
             <documentos>
                 <default>
-                    <item>Certificado de Alistamento Militar</item>
+                    <item id="1190">Certificado de Alistamento Militar</item>
                 </default>
             </documentos>
             <custos>
@@ -90,18 +95,18 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Conforme informado durante a Seleção Geral de serviço militar.]]></descricao>
+                    <canal-de-prestacao id="1471" tipo="presencial">
+                        <descricao>Conforme informado durante a Seleção Geral de serviço militar.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1204">
             <titulo>Se apto, comparecer à seleção complementar</titulo>
-            <descricao><![CDATA[O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.]]></descricao>
+            <descricao>O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.</descricao>
             <documentos>
                 <default>
-                    <item>Certificado de Alistamento Militar</item>
+                    <item id="1191">Certificado de Alistamento Militar</item>
                 </default>
             </documentos>
             <custos>
@@ -109,16 +114,16 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O cidadão deverá se apresentar nas Organização Militares designadas durante as seleções complementares.]]></descricao>
+                    <canal-de-prestacao id="1472" tipo="presencial">
+                        <descricao>O cidadão deverá se apresentar nas Organização Militares designadas durante as seleções complementares.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066"/>
+    <orgao id="41066"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1377">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Defesa Nacional</item>
@@ -126,13 +131,13 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>alistamento</item>
-        <item>serviço-militar</item>
-        <item>militarismo</item>
-        <item>carreira militar</item>
-        <item>ingresso no serviço militar</item>
+        <item id="1056">alistamento</item>
+        <item id="1057">serviço-militar</item>
+        <item id="1058">militarismo</item>
+        <item id="1059">carreira militar</item>
+        <item id="1060">ingresso no serviço militar</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Lei 4.375/64]]></item>
+        <item id="321">Lei 4.375/64</item>
     </legislacoes>
 </servico>
