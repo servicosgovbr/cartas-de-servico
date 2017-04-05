@@ -1,28 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>cadastramento-de-empresa-estrategica-de-defesa</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Certificação da empresa como de defesa ou estratégia de defesa.]]></descricao>
-    <contato><![CDATA[http://www.defesa.gov.br/industria-de-defesa]]></contato>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastramento-de-empresa-estrategica-de-defesa</id>
+    <dbId>263</dbId>
+    <nome>Cadastramento de Empresa Estratégica de Defesa</nome>
+    <sigla></sigla>
+    <descricao>Certificação da empresa como de defesa ou estratégia de defesa.</descricao>
+    <contato>http://www.defesa.gov.br/industria-de-defesa</contato>
     <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="444">
             <tipo>Empresas candidatas</tipo>
-            <requisitos><![CDATA[Produzir bem ou serviço de interesse das Forças Armadas]]></requisitos>
+            <requisitos>Produzir bem ou serviço de interesse das Forças Armadas</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="6" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1296">
             <titulo>Busca de Informações</titulo>
-            <descricao><![CDATA[A empresa interessada pesquisa na internet.]]></descricao>
+            <descricao>A empresa interessada pesquisa na internet.</descricao>
             <documentos>
                 <default>
-                    <item>Declaração de conteúdo nacional</item>
+                    <item id="1253">Declaração de conteúdo nacional</item>
                 </default>
             </documentos>
             <custos>
@@ -30,21 +33,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao/>
+                    <canal-de-prestacao id="1597" tipo="presencial">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1297">
             <titulo>Ligação com o CECAFA</titulo>
-            <descricao><![CDATA[A empresa interessada apresenta a documentação exigida ao CECAFA.]]></descricao>
+            <descricao>A empresa interessada apresenta a documentação exigida ao CECAFA.</descricao>
             <documentos>
                 <default>
-                    <item>A cargo do CECAFA</item>
+                    <item id="1254">A cargo do CECAFA</item>
                 </default>
             </documentos>
             <custos>
@@ -52,21 +52,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao/>
+                    <canal-de-prestacao id="1599" tipo="presencial">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1298">
             <titulo>Ligação com as Força Armada</titulo>
-            <descricao><![CDATA[Empresa solicita apoio e aprovação da(s) Força(s)]]></descricao>
+            <descricao>Empresa solicita apoio e aprovação da(s) Força(s)</descricao>
             <documentos>
                 <default>
-                    <item>A cargo da(s) Força(s) Armada(s)</item>
+                    <item id="1255">A cargo da(s) Força(s) Armada(s)</item>
                 </default>
             </documentos>
             <custos>
@@ -74,24 +71,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao/>
+                    <canal-de-prestacao id="1603" tipo="presencial">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1299">
             <titulo>Exame do produto pela comissão</titulo>
-            <descricao><![CDATA[Em reuniões de especialistas e na plenária, os produtos são apreciados.]]></descricao>
+            <descricao>Em reuniões de especialistas e na plenária, os produtos são apreciados.</descricao>
             <documentos>
                 <default>
-                    <item>A cargo do CMID</item>
+                    <item id="1256">A cargo do CMID</item>
                 </default>
             </documentos>
             <custos>
@@ -99,22 +90,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao/>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao/>
+                    <canal-de-prestacao id="1606" tipo="presencial">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066"/>
+    <orgao id="41066"/>
     <segmentos-da-sociedade>
-        <item>Órgãos e entidades públicas</item>
+        <item idSegmento="2" idServicoSegmento="1497">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -123,12 +108,12 @@
         <item>Compras governamentais</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>empresa</item>
-        <item>estratégia</item>
-        <item>defesa</item>
-        <item>produtos</item>
+        <item id="1110">empresa</item>
+        <item id="1111">estratégia</item>
+        <item id="1112">defesa</item>
+        <item id="1113">produtos</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Lei 12598/2013]]></item>
+        <item id="337">Lei 12598/2013</item>
     </legislacoes>
 </servico>
