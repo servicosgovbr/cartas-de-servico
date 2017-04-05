@@ -5668,145 +5668,6 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         </legislacoes>
     </servico>
     <servico>
-        <id>servico-militar</id>
-        <dbId>55</dbId>
-        <nome>Serviço Militar</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="350">Alistamento</item>
-            <item id="351">Serviço Militar</item>
-        </nomes-populares>
-        <descricao>O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização e Pessoal, todos os encargos com a Defesa Nacional.
-
-A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, encarregado de dirigir, orientar, coordenar e controlar as atividades ligadas ao Serviço Militar, no âmbito do Exército, em todo o território nacional.</descricao>
-        <contato>* [Exército Brasileiro](http://eb.mil.br)
-* [Marinha Brasileira](http://mar.mil.br)
-* [Força Aérea Brasileira](http://fab.mil.br)
-* [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.</contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="419">
-                <tipo>Cidadão Brasileiro Nato</tipo>
-                <requisitos>* Jovem brasileiro do sexo masculino
-* Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="12" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1201">
-                <titulo>Cadastrar dados pessoais</titulo>
-                <descricao>O cidadão deverá comparecer à Junta de Serviço Militar mais próxima à sua residência munido da documentação descrita abaixo.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1181">Certidão de nascimento ou documento de identidade válido conforme Lei 12.037 (identidade civil, passaporte, carteira de trabalho, carteira profissional)</item>
-                        <item id="1182">Comprovante de Residência ou declaração firmada pelo alistando ou por procurador bastante</item>
-                        <item id="1183">01 Fotografia 3x4 (recente, de frente e sem retoques)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1469" tipo="web">
-                            <descricao>(http://www.alistamento.eb.mil.br/)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1468" tipo="presencial">
-                            <descricao>O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).
-
-* O canal web apresentado abaixo é válido somente para os estados do Amapá, Bahia, Maranhão, Mato Grosso, Mato Grosso do Sul, Pará, Paraná, Santa Catarina e Sergipe.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1202">
-                <titulo>Comparecer à Seleção Geral</titulo>
-                <descricao>* Na seleção geral, o cidadão passará por exames médicos e entrevistas.
-* Caso o cidadão esteja cursando medicina, odontologia, veterinária ou fármacia poderá ter o alistamento adiado.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1184">Declaração escolar ou de universidade (quando se aplicar)</item>
-                        <item id="1185">Histórico Escolar</item>
-                        <item id="1186">Certificado de Alistamento Militar (caso já possua)</item>
-                        <item id="1187">Formulários impressos e preenchidos no canal digital (nas localidades em que se aplicam)</item>
-                        <item id="1188">Carteira de Trabalho</item>
-                        <item id="1189">Documentos de identidade conforme Lei 12.037</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1470" tipo="presencial">
-                            <descricao>A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1203">
-                <titulo>Se dispensado, Jurar à Bandeira Nacional</titulo>
-                <descricao>Participar de solenidade de juramento à bandeira Nacional para tornar público o processo de recebimento da certidão de reservista.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1190">Certificado de Alistamento Militar</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1471" tipo="presencial">
-                            <descricao>Conforme informado durante a Seleção Geral de serviço militar.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1204">
-                <titulo>Se apto, comparecer à seleção complementar</titulo>
-                <descricao>O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1191">Certificado de Alistamento Militar</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1472" tipo="presencial">
-                            <descricao>O cidadão deverá se apresentar nas Organização Militares designadas durante as seleções complementares.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="41066"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1377">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Defesa Nacional</item>
-            <item>Defesa militar</item>
-            <item>Segurança e Ordem Pública</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1056">alistamento</item>
-            <item id="1057">serviço-militar</item>
-            <item id="1058">militarismo</item>
-            <item id="1059">carreira militar</item>
-            <item id="1060">ingresso no serviço militar</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="321">Lei 4.375/64</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-financiamento-do-fundo-de-financiamento-estudantil</id>
         <dbId>56</dbId>
         <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
@@ -16416,140 +16277,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cadastramento-de-empresa-estrategica-de-defesa</id>
-        <dbId>263</dbId>
-        <nome>Cadastramento de Empresa Estratégica de Defesa</nome>
-        <sigla></sigla>
-        <descricao>Certificação da empresa como de defesa ou estratégia de defesa.</descricao>
-        <contato>http://www.defesa.gov.br/industria-de-defesa</contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="444">
-                <tipo>Empresas candidatas</tipo>
-                <requisitos>Produzir bem ou serviço de interesse das Forças Armadas</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="6" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1296">
-                <titulo>Busca de Informações</titulo>
-                <descricao>A empresa interessada pesquisa na internet.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1253">Declaração de conteúdo nacional</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1598" tipo="web">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1597" tipo="telefone">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1297">
-                <titulo>Ligação com o CECAFA</titulo>
-                <descricao>A empresa interessada apresenta a documentação exigida ao CECAFA.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1254">A cargo do CECAFA</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1600" tipo="web">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1599" tipo="postal">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1298">
-                <titulo>Ligação com as Força Armada</titulo>
-                <descricao>Empresa solicita apoio e aprovação da(s) Força(s)</descricao>
-                <documentos>
-                    <default>
-                        <item id="1255">A cargo da(s) Força(s) Armada(s)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1603" tipo="presencial">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1602" tipo="postal">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1601" tipo="web">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1299">
-                <titulo>Exame do produto pela comissão</titulo>
-                <descricao>Em reuniões de especialistas e na plenária, os produtos são apreciados.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1256">A cargo do CMID</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1606" tipo="presencial">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1605" tipo="web">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1604" tipo="postal">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="41066"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="1497">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-            <item>Compras governamentais</item>
-            <item>Defesa Nacional</item>
-            <item>Indústria</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1110">empresa</item>
-            <item id="1111">estratégia</item>
-            <item id="1112">defesa</item>
-            <item id="1113">produtos</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="337">Lei 12598/2013</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>programa-gerador-da-declaracao-pgd-dimof-e-receitanet</id>
         <dbId>264</dbId>
         <nome>Programa Gerador da Declaração (PGD) DIMOF e Receitanet</nome>
@@ -16623,6 +16350,124 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1499">Cidadãos</item>
         </segmentos-da-sociedade>
+    </servico>
+    <servico>
+        <id>cadastramento-de-empresa-estrategica-de-defesa</id>
+        <dbId>263</dbId>
+        <nome>Cadastramento de Empresa Estratégica de Defesa</nome>
+        <sigla></sigla>
+        <descricao>Certificação da empresa como de defesa ou estratégia de defesa.</descricao>
+        <contato>http://www.defesa.gov.br/industria-de-defesa</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="444">
+                <tipo>Empresas candidatas</tipo>
+                <requisitos>Produzir bem ou serviço de interesse das Forças Armadas</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="6" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1296">
+                <titulo>Busca de Informações</titulo>
+                <descricao>A empresa interessada pesquisa na internet.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1253">Declaração de conteúdo nacional</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1597" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1297">
+                <titulo>Ligação com o CECAFA</titulo>
+                <descricao>A empresa interessada apresenta a documentação exigida ao CECAFA.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1254">A cargo do CECAFA</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1599" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1298">
+                <titulo>Ligação com as Força Armada</titulo>
+                <descricao>Empresa solicita apoio e aprovação da(s) Força(s)</descricao>
+                <documentos>
+                    <default>
+                        <item id="1255">A cargo da(s) Força(s) Armada(s)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1603" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1299">
+                <titulo>Exame do produto pela comissão</titulo>
+                <descricao>Em reuniões de especialistas e na plenária, os produtos são apreciados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1256">A cargo do CMID</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1606" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="41066"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="1497">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Compras governamentais</item>
+            <item>Defesa Nacional</item>
+            <item>Indústria</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1110">empresa</item>
+            <item id="1111">estratégia</item>
+            <item id="1112">defesa</item>
+            <item id="1113">produtos</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="337">Lei 12598/2013</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>extrato-do-processamento-da-dirpf-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativos</id>
@@ -38573,6 +38418,150 @@ Alunos, professores e pesquisadores de instituições não participantes devem p
         <legislacoes>
             <item id="636">(PORTARIA Nº 34,
 DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.gov.br/images/documents/Portaria_34_19-07-2001.pdf]</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>servico-militar-alistamento-militar</id>
+        <dbId>55</dbId>
+        <nome>Serviço Militar - Alistamento Militar</nome>
+        <sigla>SMO</sigla>
+        <nomes-populares>
+            <item id="640">Serviço Militar Obrigatório</item>
+            <item id="350">Alistamento Militar</item>
+            <item id="351">Serviço Militar</item>
+        </nomes-populares>
+        <descricao>O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização e Pessoal, todos os encargos com a Defesa Nacional.
+
+A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, encarregado de dirigir, orientar, coordenar e controlar as atividades ligadas ao Serviço Militar, no âmbito do Exército, em todo o território nacional.</descricao>
+        <contato>* [Exército Brasileiro](http://eb.mil.br)
+* [Marinha Brasileira](http://mar.mil.br)
+* [Força Aérea Brasileira](http://fab.mil.br)
+* [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="419">
+                <tipo>Cidadão Brasileiro Nato</tipo>
+                <requisitos>* Jovem brasileiro do sexo masculino
+* Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1201">
+                <titulo>Cadastrar dados pessoais</titulo>
+                <descricao>O cidadão deverá comparecer à Junta de Serviço Militar mais próxima à sua residência munido da documentação descrita abaixo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1181">Certidão de nascimento ou documento de identidade válido conforme Lei 12.037 (identidade civil, passaporte, carteira de trabalho, carteira profissional)</item>
+                        <item id="1182">Comprovante de Residência ou declaração firmada pelo alistando ou por procurador bastante</item>
+                        <item id="1183">01 Fotografia 3x4 (recente, de frente e sem retoques)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2709" tipo="presencial">
+                            <descricao>*O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/).
+
+* [Alistamento Militar](https://www.alistamento.eb.mil.br/)
+
+* O canal web apresentado acima não está disponível para os seguintes estados: Acre, Amazonas, Espírito Santo, Rio de janeiro, Rondônia, Roraima e São Paulo (Interior).</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1468" tipo="web">
+                            <descricao>[Alistamento Militar](https://www.alistamento.eb.mil.br/)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1202">
+                <titulo>Comparecer à Seleção Geral</titulo>
+                <descricao>* Na seleção geral, o cidadão passará por exames médicos e entrevistas.
+* Caso o cidadão esteja cursando medicina, odontologia, veterinária ou fármacia poderá ter o alistamento adiado.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1184">Declaração escolar ou de universidade (quando se aplicar)</item>
+                        <item id="1185">Histórico Escolar</item>
+                        <item id="1186">Certificado de Alistamento Militar (caso já possua)</item>
+                        <item id="1187">Formulários impressos e preenchidos no canal digital (nas localidades em que se aplicam)</item>
+                        <item id="1188">Carteira de Trabalho</item>
+                        <item id="1189">Documentos de identidade conforme Lei 12.037</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1470" tipo="presencial">
+                            <descricao>A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1203">
+                <titulo>Se dispensado, Jurar à Bandeira Nacional</titulo>
+                <descricao>Participar de solenidade de juramento à bandeira Nacional para tornar público o processo de recebimento da certidão de reservista.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1190">Certificado de Alistamento Militar</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1471" tipo="presencial">
+                            <descricao>Conforme informado durante a Seleção Geral de serviço militar.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1204">
+                <titulo>Se apto, comparecer à seleção complementar</titulo>
+                <descricao>O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1191">Certificado de Alistamento Militar</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1472" tipo="presencial">
+                            <descricao>O cidadão deverá se apresentar nas Organização Militares designadas durante as seleções complementares.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="41066"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1377">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Defesa Nacional</item>
+            <item>Defesa militar</item>
+            <item>Segurança e Ordem Pública</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1056">alistamento</item>
+            <item id="1057">serviço-militar</item>
+            <item id="1058">militarismo</item>
+            <item id="1059">carreira militar</item>
+            <item id="1060">ingresso no serviço militar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="321">Lei 4.375/64</item>
         </legislacoes>
     </servico>
 </servicos>
