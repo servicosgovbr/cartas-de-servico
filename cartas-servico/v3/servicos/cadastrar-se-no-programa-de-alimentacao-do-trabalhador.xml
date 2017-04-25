@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-no-programa-de-alimentacao-do-trabalhador</id>
+    <dbId>820</dbId>
+    <nome>Cadastrar-se no Programa de Alimentação do Trabalhador</nome>
+    <sigla>PAT</sigla>
+    <nomes-populares>
+        <item id="644">Cadastro no PAT</item>
+    </nomes-populares>
+    <descricao>Através deste serviço o empregador e profissionais de nutrição habilitados podem aderir ao Programa de Alimentação do Trabalhador, que permite ao empregador deduzir parte destes gastos do Imposto de Renda. Ao final do processo, as empresas beneficiárias recebem um comprovante com o seu número de INSCRIÇÃO no PAT, e as empresas prestadoras e de responsáveis técnicos nutricionistas recebem um comprovante com o seu número de REGISTRO.</descricao>
+    <contato>Divisão do Programa de Alimentação do Trabalhador - 
+(61) 2031-6613 (de 08h às 12h e de 14h às 18h).</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="821">
+            <tipo>Empresas Públicas, Privadas ou de Economia Mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="822">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="823">
+            <tipo>Fundações e Autarquias de Direito Público</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2177">
+            <titulo>Cadastrar informações</titulo>
+            <descricao>O representante da empresa irá fornecer as informações necessárias ao cadastro.</descricao>
+            <documentos>
+                <default>
+                    <item id="2223">CNPJ</item>
+                    <item id="2224">Contrato Social</item>
+                    <item id="2225">Registro na Junta Comercial (se aplicado ao caso)</item>
+                    <item id="2226">ontrato com profissional legalmente habilitado em nutrição para atuar como responsável técnico</item>
+                    <item id="2227">mídias físicas de documentos de legitimação</item>
+                    <item id="2228">declaração sobre mecanismos de segurança contra fraudes</item>
+                    <item id="2229">declarações sobre filiais,  abrangência de atuação e demais dados da empresa.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2720" tipo="web-inscrever-se">
+                        <descricao>pat.mte.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="339" descricao="empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
+                    <canal-de-prestacao id="2719" tipo="postal">
+                        <descricao>Esplanada dos Ministérios
+Anexo B do Bloco F - 1ª Andar, Sala 150
+Brasília-DF - CEP 70059-900</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2178">
+            <titulo>Receber comprovante de inscrição</titulo>
+            <descricao>O representante receberá o comprovante de inscrição no PAT.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2722" tipo="web-acompanhar">
+                        <descricao>pat.mte.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="340" descricao="Empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
+                    <canal-de-prestacao id="2721" tipo="postal">
+                        <descricao>O comprovante será enviado para o endereço da sede da empresa, conforme informado no cadastro.</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2420">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2421">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="2422">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Trabalho</item>
+        <item>Recursos humanos</item>
+        <item>Relações de Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1938">Vale alimentação</item>
+        <item id="1939">Nutrição</item>
+        <item id="1940">cartão alimentação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="644">[LEI No 6.321, DE 14 DE ABRIL DE 1976](http://www.planalto.gov.br/ccivil_03/leis/L6321.htm)</item>
+        <item id="645">[DECRETO No 5, DE 14 DE JANEIRO DE 1991](http://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0005.htm)</item>
+    </legislacoes>
+</servico>
