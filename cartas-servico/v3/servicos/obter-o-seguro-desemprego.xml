@@ -1,67 +1,149 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-o-seguro-desemprego</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Seguro-Desemprego Formal: Seguro-desemprego ao trabalhador formal possui como finalidade: prover assistência financeira temporária a trabalhadores desempregados sem justa causa e auxiliá-los na busca de um novo emprego, por meio de orientação, recolocação no mercado de trabalho e/ou qualificação profissional.
-
-Seguro-Desemprego Pescador Artesanal: É dirigido ao pescador profissional que exerça sua atividade de forma artesanal, individual ou em regime de economia familiar, ainda que com auxílio eventual de parceiros e que teve que interromper a atividade pesqueira devido ao período de proibição da pesca, para preservação da espécie (defeso), fixado através de Instrumento Normativo publicado no Diário Oficial da União.
-
-Seguro-Desemprego Empregado Doméstico: Trata-se de ação que resulta em pagamento do benefício instituído pela Lei n.º 10.208, de 23 de março de 2001, tem por finalidade prover assistência financeira temporária ao empregado doméstico dispensado sem justa causa. O valor de cada parcela é de um salário mínimo, sendo que cada segurado recebe no máximo três parcelas. Com a aprovação da Emenda Constitucional nº 72, de 2 de abril de 2013, houve equiparação de direitos trabalhistas entre o doméstico e demais trabalhadores, entretanto, necessita-se de regulamentação quanto a percepção igualitária de parcelas inerentes ao seguro-desemprego.
-
-Seguro-Desemprego Trabalhador Resgatado: É um auxílio temporário concedido ao trabalhador comprovadamente resgatado de regime de trabalho forçado ou da condição análoga à de escravo. Tendo direito a no máximo três parcelas no valor de um salário mínimo.
-
-Seguro-Desemprego Bolsa Qualificação: A Bolsa de Qualificação Profissional é um benefício destinado a subvencionar os trabalhadores com contrato de trabalho suspenso, em conformidade com o disposto em convenção ou acordo coletivo de trabalho, devidamente matriculado em curso ou programa de qualificação profissional oferecido pelo empregador.
-
-* [Mais informações](http://granulito.mte.gov.br/sdweb/consulta.jsf): Consulta: Habilitação do Seguro-Desemprego
-
-* [Mais informações](http://portal.mte.gov.br/seg_desemp/seguro-desemprego-trabalhador-domestico.htm): Modalidade de Seguro-Desemprego Empregado Doméstico
-
-* [Mais informações](http://portal.mte.gov.br/seg_desemp/seguro-desemprego-pescador-artesanal.htm): Modalidade de Seguro-Desemprego Pescador Artesanal
-
-* [Mais informações](http://portal.mte.gov.br/seg_desemp/modalidades-seguro-desemprego-empregado-resgatado.htm): Modalidade Seguro-Desemprego Trabalhador Resgatado
-
-* [Mais informações](http://portal.mte.gov.br/seg_desemp/seguro-desemprego-formal-2.htm): Modalidade de Seguro-Desemprego Formal
-
-* [Mais informações](http://portal.mte.gov.br/seg_desemp/bolsa-qualificacao.htm): Bolsa Qualificação
-
-* [Telefone](undefined): Coordenação-Geral do Seguro-Desemprego: (61) 2031-6679
-                Pescador Artesanal: (61) 2031-6043/6973
-                Empregado Doméstico/Trabalhador Resgatado: (61) 2031-6135/6226
-                Bolsa Qualificação: (61) 2031-6196/6509
-
-* [Localização das unidades](http://portal.mte.gov.br/postos/): Postos de atendimento do Ministério do Trabalho e Emprego</descricao>
-    <gratuito/>
-    <solicitantes/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-seguro-desemprego</id>
+    <dbId>68</dbId>
+    <nome>Obter o Seguro-Desemprego</nome>
+    <sigla></sigla>
+    <descricao>Este serviço permite que você, caso tenha sido dispensado involuntariamente de seu último trabalho, requisite o seguro-desemprego, um auxílio financeiro temporário para que você possa manter seu sustento enquanto procura por um novo emprego.</descricao>
+    <contato>Central 158</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="833">
+            <tipo>Trabalhador formal e doméstico</tipo>
+            <requisitos>Em virtude da dispensa sem justa causa, inclusive dispensa indireta.</requisitos>
+        </solicitante>
+        <solicitante id="834">
+            <tipo>Trabalhador formal com contrato de trabalho suspenso</tipo>
+            <requisitos>Em virtude de participação em curso ou programa de qualificação profissional oferecido pelo empregador.</requisitos>
+        </solicitante>
+        <solicitante id="835">
+            <tipo>Pescador profissional</tipo>
+            <requisitos>Durante o período do defeso.</requisitos>
+        </solicitante>
+        <solicitante id="836">
+            <tipo>Trabalhador resgatado da condição semelhante à de escravo.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1357">
+            <titulo>Agendar o atendimento</titulo>
+            <descricao>Você deve agendar o atendimento em uma agência do Ministério do Trabalho</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="2254">CPF</item>
+                    <item id="2255">Data de Nascimento</item>
+                    <item id="2256">Número do Telefone</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao>O cidadão poderá comparecer a um dos postos de atendimento do Ministério do Trabalho e Emprego, como: Superintendência Regional do Trabalho e Emprego - SRTE; Gerência Regional; Agência Regional ou Postos credenciados do SINE.</descricao>
+                    <canal-de-prestacao id="2737" tipo="telefone">
+                        <descricao>Central 158</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="1674" tipo="web-agendar">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
+        <etapa id="2187">
+            <titulo>Realizar o pedido do seguro-desemprego</titulo>
+            <descricao>Você deverá se dirigir ao Posto de Atendimento escolhido na etapa anterior, no dia e horário agendados.</descricao>
+            <documentos>
+                <default>
+                    <item id="2257">Carteira de Identidade</item>
+                    <item id="2258">Carteira de Trabalho</item>
+                    <item id="2259">Comprovante de residência</item>
+                    <item id="2260">Comprovante de renda</item>
+                    <item id="2261">CPF</item>
+                    <item id="2262">Comprovantes de depósito do FGTS</item>
+                    <item id="2263">Número de Identificação do Trabalhador (NIT)</item>
+                    <item id="2264">Comprovante de escolaridade</item>
+                    <item id="2265">Termo de Rescisão do Contrato de Trabalho (TRCT)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2738" tipo="presencial">
+                        <descricao>Postos de Atendimento do Ministério do Trabalho ou do SINE</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2188">
+            <titulo>Receber as parcelas do seguro-desemprego</titulo>
+            <descricao>Após a análise e comprovação do seu direito a receber o seguro-desemprego, você receberá as parcelas através da Caixa Econômica Federal.</descricao>
+            <documentos>
+                <default/>
+                <caso id="348" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                    <documento>
+                        <id>2266</id>
+                        <descricao>Cartão da Caixa Econômica</descricao>
+                    </documento>
+                </caso>
+                <caso id="349" descricao="Se você não tem conta corrente ou conta poupança na Caixa">
+                    <documento>
+                        <id>2267</id>
+                        <descricao>Cartão Cidadão ou CPF e documento de identificação oficial com foto.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2742" tipo="presencial">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="350" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                    <canal-de-prestacao id="2739" tipo="presencial">
+                        <descricao>Através dos canais web, aplicativos móveis, caixas eletrônicos, agências e postos autorizados da Caixa</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="351" descricao="Se você tem o Cartão Cidadão com senha cadastrada">
+                    <canal-de-prestacao id="2740" tipo="presencial">
+                        <descricao>Caixas Eletrônicos, agências e postos autorizados da Caixa.</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="352" descricao="Se você não tem conta corrente ou conta poupança na Caixa e não tem o Cartão Cidadão com senha cadastrada">
+                    <canal-de-prestacao id="2741" tipo="presencial">
+                        <descricao>Agências da Caixa.</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <orgao id="2844"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
+        <item>Empregabilidade</item>
+        <item>Proteção Social</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="1951">demissão</item>
+        <item id="1952">desemprego</item>
+        <item id="1953">defeso</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="649">[LEI Nº 13.134, DE 16 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13134.htm)</item>
+    </legislacoes>
 </servico>
