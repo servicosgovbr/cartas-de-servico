@@ -6168,179 +6168,6 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>obter-a-carteira-de-trabalho-e-previdencia-social</id>
-        <dbId>60</dbId>
-        <nome>Obter a Carteira de Trabalho e Previdência Social</nome>
-        <sigla>CTPS</sigla>
-        <nomes-populares>
-            <item id="520">carta de trabalho</item>
-            <item id="521">carteira de trabalho.</item>
-            <item id="522">documento de trabalho</item>
-        </nomes-populares>
-        <descricao>A Carteira de Trabalho é o documento usado para registrar a vida funcional de todo trabalhador brasileiro que preste algum tipo de serviço, com exceção dos servidores públicos efetivos. É o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="607">
-                <tipo>Cidadão Brasileiro</tipo>
-                <requisitos>Brasileiro nato ou naturalizado com 14 anos ou mais de idade.</requisitos>
-            </solicitante>
-            <solicitante id="608">
-                <tipo>Estrangeiro residente permanente ou Cidadão do Mercosul</tipo>
-                <requisitos>Estrangeiro com visto permanente, que seja cidadão de país que faz parte do Acordo do Mercosul ou que seja residente refugiado e tenha 14 anos ou mais de idade.</requisitos>
-            </solicitante>
-            <solicitante id="609">
-                <tipo>Estrangeiro temporário</tipo>
-                <requisitos>Estrangeiro com visto temporário que tenha 14 anos ou mais de idade.</requisitos>
-            </solicitante>
-            <solicitante id="610">
-                <tipo>Candidato a refúgio</tipo>
-                <requisitos>Estrangeiro com processo de pedido de refúgio que tenha 14 anos ou mais de idade.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="2" unidade="dias-uteis"/>
-            <descricao>Dependendo da região, época do ano e procura do serviço,  o serviço pode vir a demorar excepcionalmente até 7 dias.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1852">
-                <titulo>Agendar atendimento</titulo>
-                <descricao>Você irá acessar a página do Sistema de Atendimento Agendado do MTPS, preencher os dados necessários e agendar seu atendimento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1674">Número do CPF;</item>
-                        <item id="1675">Data de nascimento;</item>
-                        <item id="1676">Informações de contato.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2300" tipo="web">
-                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1853">
-                <titulo>Ir, com a documentação necessária, ao local indicado no agendamento</titulo>
-                <descricao>Você irá ao local escolhido na data e horário definidos na etapa anterior, levando a documentação necessária para requisitar a CTPS.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1689">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1690">Comprovante de residência com CEP;</item>
-                        <item id="1691">Foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante; para o caso de ser necessária a emissão manual da CTPS; e</item>
-                    </default>
-                    <caso id="285" descricao="Cidadão Brasileiro">
-                        <documento>
-                            <id>1677</id>
-                            <descricao>Documento oficial de identificação civil que contenha nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1678</id>
-                            <descricao>Comprovação obrigatória do estado civil por meio de Certidão de Nascimento (se solteiro) ou Casamento (se casado). - com averbação, se for o caso (se separado, divorciado ou viúvo);</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="286" descricao="Estrangeiro residente permanente ou Cidadão do Mercosul">
-                        <documento>
-                            <id>1679</id>
-                            <descricao>Cédula de identidade de estrangeiro - CIE; ou</descricao>
-                        </documento>
-                        <documento>
-                            <id>1680</id>
-                            <descricao>Protocolo da PF ou publicação completa do DOU contendo a qualificação civil e prazo de vigência (caso as informações de qualificação civil não estejam presentes, apresentar certidão de andamento e qualquer outra documentação que contenha os dados); e</descricao>
-                        </documento>
-                        <documento>
-                            <id>1681</id>
-                            <descricao>Sincre da Polícia Federal, se tiver;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1682</id>
-                            <descricao>Documento com foto.</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="287" descricao="Estrangeiro temporário">
-                        <documento>
-                            <id>1683</id>
-                            <descricao>Cédula de Identidade de Estrangeiro;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1684</id>
-                            <descricao>Protocolo da Polícia Federal;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1685</id>
-                            <descricao>Diário Oficial da União -completo com a qualificação civil;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1686</id>
-                            <descricao>Sincre – caso o protocolo esteja incompleto na qualificação civil;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1687</id>
-                            <descricao>Documento com foto.</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="288" descricao="Candidato a refúgio">
-                        <documento>
-                            <id>1688</id>
-                            <descricao>Protocolo da Polícia Federal.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2301" tipo="presencial">
-                            <descricao>Local escolhido no agendamento.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1854">
-                <titulo>Receber a CTPS</titulo>
-                <descricao>Entregue toda a documentação, e ela estando em ordem, você receberá sua carteira de trabalho.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1692">Não há documentação necessária nesta etapa</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2302" tipo="presencial">
-                            <descricao>No local escolhido no agendamento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="2844"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2132">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Fomento ao Trabalho</item>
-            <item>Proteção e Benefícios ao Trabalhador</item>
-            <item>Relações de Trabalho</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1502">emprego</item>
-            <item id="1503">carteira assinada</item>
-            <item id="1504">direitos dos trabalhador</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="488">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-passaporte-comum-para-brasileiro</id>
         <dbId>62</dbId>
         <nome>Obter passaporte comum para Brasileiro</nome>
@@ -6994,44 +6821,6 @@ Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</de
         </legislacoes>
     </servico>
     <servico>
-        <id>seguro-desemprego</id>
-        <dbId>68</dbId>
-        <nome>Seguro-Desemprego</nome>
-        <sigla></sigla>
-        <descricao>Seguro-Desemprego Formal: Seguro-desemprego ao trabalhador formal possui como finalidade: prover assistência financeira temporária a trabalhadores desempregados sem justa causa e auxiliá-los na busca de um novo emprego, por meio de orientação, recolocação no mercado de trabalho e/ou qualificação profissional.
-
-Seguro-Desemprego Pescador Artesanal: É dirigido ao pescador profissional que exerça sua atividade de forma artesanal, individual ou em regime de economia familiar, ainda que com auxílio e</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1357">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1674" tipo="presencial">
-                            <descricao>O cidadão poderá comparecer a um dos postos de atendimento do Ministério do Trabalho e Emprego, como: Superintendência Regional do Trabalho e Emprego - SRTE; Gerência Regional; Agência Regional ou Postos credenciados do SINE.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="2844"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>solicitacao-de-imagens-e-videos-turisticos-do-brasil</id>
         <dbId>69</dbId>
         <nome>Solicitação de imagens e vídeos turísticos do Brasil</nome>
@@ -7335,6 +7124,339 @@ A Guia de Trânsito é um documento obrigatório para que o cidadão transporte 
             <item id="366">(Portaria MJ n° 797/2011)[http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=34&amp;data=06/05/2011] - Página 1
 (Portaria MJ n° 797/2011)[http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/05/2011&amp;jornal=1&amp;pagina=35&amp;totalArquivos=152] - Página 2
 (Portaria MJ 2.969/2012 - Valor da Indenização)[http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=114&amp;data=23/11/2012]</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-a-carteira-de-trabalho-e-previdencia-social</id>
+        <dbId>60</dbId>
+        <nome>Obter a Carteira de Trabalho e Previdência Social</nome>
+        <sigla>CTPS</sigla>
+        <nomes-populares>
+            <item id="520">carta de trabalho</item>
+            <item id="521">carteira de trabalho.</item>
+            <item id="522">documento de trabalho</item>
+        </nomes-populares>
+        <descricao>Permite a obtenção da carteira de trabalho, documento para habilitação do trabalhador brasileiro e estrangeiro no mercado de trabalho formal. É o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador.</descricao>
+        <contato>Central 158</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="607">
+                <tipo>Cidadão Brasileiro</tipo>
+                <requisitos>Brasileiro nato ou naturalizado com 14 anos ou mais de idade.</requisitos>
+            </solicitante>
+            <solicitante id="608">
+                <tipo>Estrangeiro residente permanente ou Cidadão do Mercosul</tipo>
+                <requisitos>Estrangeiro com visto permanente, que seja cidadão de país que faz parte do Acordo do Mercosul ou que seja residente refugiado e tenha 14 anos ou mais de idade.</requisitos>
+            </solicitante>
+            <solicitante id="609">
+                <tipo>Estrangeiro temporário</tipo>
+                <requisitos>Estrangeiro com visto temporário que tenha 14 anos ou mais de idade.</requisitos>
+            </solicitante>
+            <solicitante id="610">
+                <tipo>Candidato a refúgio</tipo>
+                <requisitos>Estrangeiro com processo de pedido de refúgio que tenha 14 anos ou mais de idade.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="8" max="15" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1852">
+                <titulo>Agendar atendimento</titulo>
+                <descricao>Você irá acessar a página do Sistema de Atendimento Agendado do MTPS, preencher os dados necessários e agendar seu atendimento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1674">Número do CPF;</item>
+                        <item id="1675">Data de nascimento;</item>
+                        <item id="1676">Informações de contato.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2729" tipo="telefone">
+                            <descricao>Central 158, opção "agendamento".</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2300" tipo="web">
+                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1853">
+                <titulo>Realizar o cadastro</titulo>
+                <descricao>Você irá ao local escolhido na data e horário definidos na etapa anterior, levando a documentação necessária para requisitar a CTPS, e lá fornecerá as informações requisitadas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1689">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="1690">Comprovante de residência com CEP;</item>
+                        <item id="1691">Foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante; para o caso de ser necessária a emissão manual da CTPS; e</item>
+                    </default>
+                    <caso id="285" descricao="Cidadão Brasileiro">
+                        <documento>
+                            <id>1677</id>
+                            <descricao>Documento oficial de identificação civil que contenha nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1678</id>
+                            <descricao>Comprovação obrigatória do estado civil por meio de Certidão de Nascimento (se solteiro) ou Casamento (se casado). - com averbação, se for o caso (se separado, divorciado ou viúvo);</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="286" descricao="Estrangeiro residente permanente ou Cidadão do Mercosul">
+                        <documento>
+                            <id>1679</id>
+                            <descricao>Cédula de identidade de estrangeiro - CIE; ou</descricao>
+                        </documento>
+                        <documento>
+                            <id>1680</id>
+                            <descricao>Protocolo da PF ou publicação completa do DOU contendo a qualificação civil e prazo de vigência (caso as informações de qualificação civil não estejam presentes, apresentar certidão de andamento e qualquer outra documentação que contenha os dados); e</descricao>
+                        </documento>
+                        <documento>
+                            <id>1681</id>
+                            <descricao>Sincre da Polícia Federal, se tiver;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1682</id>
+                            <descricao>Documento com foto.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="287" descricao="Estrangeiro temporário">
+                        <documento>
+                            <id>1683</id>
+                            <descricao>Cédula de Identidade de Estrangeiro;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1684</id>
+                            <descricao>Protocolo da Polícia Federal;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1685</id>
+                            <descricao>Diário Oficial da União -completo com a qualificação civil;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1686</id>
+                            <descricao>Sincre – caso o protocolo esteja incompleto na qualificação civil;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1687</id>
+                            <descricao>Documento com foto.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="288" descricao="Candidato a refúgio">
+                        <documento>
+                            <id>1688</id>
+                            <descricao>Protocolo da Polícia Federal.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2301" tipo="presencial">
+                            <descricao>Local escolhido no agendamento.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1854">
+                <titulo>Receber a CTPS</titulo>
+                <descricao>Dentro do prazo informado, você comparecerá ao local onde realizou a etapa anterior para receber sua carteira de trabalho personalizada.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1692">Informação biométrica (cadastrada no local)</item>
+                        <item id="2244">Protocolo de cadastro de atendimento (recebido na etapa anterior)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2302" tipo="presencial">
+                            <descricao>No local escolhido no agendamento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2132">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fomento ao Trabalho</item>
+            <item>Previdência Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1502">emprego</item>
+            <item id="1503">carteira assinada</item>
+            <item id="1504">direitos dos trabalhador</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="488">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-o-seguro-desemprego</id>
+        <dbId>68</dbId>
+        <nome>Obter o Seguro-Desemprego</nome>
+        <sigla></sigla>
+        <descricao>Este serviço permite que você, caso tenha sido dispensado involuntariamente de seu último trabalho, requisite o seguro-desemprego, um auxílio financeiro temporário para que você possa manter seu sustento enquanto procura por um novo emprego.</descricao>
+        <contato>Central 158</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="833">
+                <tipo>Trabalhador formal e doméstico</tipo>
+                <requisitos>Em virtude da dispensa sem justa causa, inclusive dispensa indireta.</requisitos>
+            </solicitante>
+            <solicitante id="834">
+                <tipo>Trabalhador formal com contrato de trabalho suspenso</tipo>
+                <requisitos>Em virtude de participação em curso ou programa de qualificação profissional oferecido pelo empregador.</requisitos>
+            </solicitante>
+            <solicitante id="835">
+                <tipo>Pescador profissional</tipo>
+                <requisitos>Durante o período do defeso.</requisitos>
+            </solicitante>
+            <solicitante id="836">
+                <tipo>Trabalhador resgatado da condição semelhante à de escravo.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1357">
+                <titulo>Agendar o atendimento</titulo>
+                <descricao>Você deve agendar o atendimento em uma agência do Ministério do Trabalho</descricao>
+                <documentos>
+                    <default>
+                        <item id="2254">CPF</item>
+                        <item id="2255">Data de Nascimento</item>
+                        <item id="2256">Número do Telefone</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2737" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1674" tipo="web-agendar">
+                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2187">
+                <titulo>Realizar o pedido do seguro-desemprego</titulo>
+                <descricao>Você deverá se dirigir ao Posto de Atendimento escolhido na etapa anterior, no dia e horário agendados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2257">Carteira de Identidade</item>
+                        <item id="2258">Carteira de Trabalho</item>
+                        <item id="2259">Comprovante de residência</item>
+                        <item id="2260">Comprovante de renda</item>
+                        <item id="2261">CPF</item>
+                        <item id="2262">Comprovantes de depósito do FGTS</item>
+                        <item id="2263">Número de Identificação do Trabalhador (NIT)</item>
+                        <item id="2264">Comprovante de escolaridade</item>
+                        <item id="2265">Termo de Rescisão do Contrato de Trabalho (TRCT)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2738" tipo="presencial">
+                            <descricao>Postos de Atendimento do Ministério do Trabalho ou do SINE</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2188">
+                <titulo>Receber as parcelas do seguro-desemprego</titulo>
+                <descricao>Após a análise e comprovação do seu direito a receber o seguro-desemprego, você receberá as parcelas através da Caixa Econômica Federal.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="348" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                        <documento>
+                            <id>2266</id>
+                            <descricao>Cartão da Caixa Econômica</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="349" descricao="Se você não tem conta corrente ou conta poupança na Caixa">
+                        <documento>
+                            <id>2267</id>
+                            <descricao>Cartão Cidadão ou CPF e documento de identificação oficial com foto.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2742" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="350" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                        <canal-de-prestacao id="2739" tipo="presencial">
+                            <descricao>Através dos canais web, aplicativos móveis, caixas eletrônicos, agências e postos autorizados da Caixa</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="351" descricao="Se você tem o Cartão Cidadão com senha cadastrada">
+                        <canal-de-prestacao id="2740" tipo="presencial">
+                            <descricao>Caixas Eletrônicos, agências e postos autorizados da Caixa.</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="352" descricao="Se você não tem conta corrente ou conta poupança na Caixa e não tem o Cartão Cidadão com senha cadastrada">
+                        <canal-de-prestacao id="2741" tipo="presencial">
+                            <descricao>Agências da Caixa.</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Proteção Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1951">demissão</item>
+            <item id="1952">desemprego</item>
+            <item id="1953">defeso</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="649">[LEI Nº 13.134, DE 16 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13134.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -10749,56 +10871,6 @@ Quem pode solicitar: somente o condutor de veículo envolvido no acidente.
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>autorizacao-de-trabalho-a-estrangeiros</id>
-        <dbId>142</dbId>
-        <nome>Autorização de Trabalho a Estrangeiros</nome>
-        <sigla></sigla>
-        <descricao>Autorização de trabalho a estrangeiros é o ato administrativo de competência do Ministério do Trabalho e Emprego que é exigido pelas autoridades consulares brasileiras, em conformidade com a legislação em vigor, para efeito de concessão de vistos permanentes e/ou temporário a estrangeiros que desejem permanecer no Brasil a trabalho. Delibera-se sobre os pedidos de prorrogação de estada e transformação de visto (de temporário para permanente) que digam respeito a trabalho.
-
-* [Cartilhas e Manuais</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1128">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="26">
-                            <descricao>Taxa de emissão</descricao>
-                            <moeda>R$</moeda>
-                            <valor>1,695</valor>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1382" tipo="presencial">
-                            <descricao>[Receber os documentos que instruirá o pedido de autorização de trabalho](http://portal.mte.gov.br/postos/)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1381" tipo="web">
-                            <descricao>[Acompanhar o pedido visualizando a carta de exigência caso haja ausência de documentação, bem
-                como verificar se o processo foi deferido ou indeferido.](http://migranteweb.mte.gov.br/migranteweb/publico/consultarProcessoInternet/consultarProcesso.seam)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1380" tipo="web">
-                            <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="2844"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1280">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Trabalho</item>
         </areas-de-interesse>
     </servico>
     <servico>
@@ -38337,6 +38409,387 @@ DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.
         </legislacoes>
     </servico>
     <servico>
+        <id>registrar-acordo-coletivo-de-trabalho</id>
+        <dbId>826</dbId>
+        <nome>Registrar acordo coletivo de trabalho</nome>
+        <sigla>ACT</sigla>
+        <nomes-populares>
+            <item id="650">Sistema Mediador</item>
+            <item id="651">Termo aditivo</item>
+            <item id="652">Instrumento Coletivo</item>
+            <item id="653">Convenção coletiva</item>
+        </nomes-populares>
+        <descricao>Através deste serviço, os empregadores e representantes dos trabalhadores podem registrar os acordos coletivos de trabalho assinados entre as partes.</descricao>
+        <contato>COORDENAÇÃO-GERAL DE RELAÇÕES DO TRABALHO
+* Fone: (61) 2061-6066
+* E-mail: cgrt.srt@mte.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="841">
+                <tipo>Empregador ou Representante</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="842">
+                <tipo>Representante dos Trabalhadores</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2198">
+                <titulo>Requisitar mediação (opcional)</titulo>
+                <descricao>Qualquer uma das partes pode requisitar serviço de mediação junto ao Ministério do Trabalho, para dirimir conflitos e formalizar as decisões</descricao>
+                <documentos>
+                    <default>
+                        <item id="2284">CNPJ/CEI</item>
+                        <item id="2285">Razão Social</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2757" tipo="web">
+                            <descricao>http://www3.mte.gov.br/sistemas/mediador/Mediacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2199">
+                <titulo>Negociar e elaborar o instrumento de acordo coletivo</titulo>
+                <descricao>As partes, com o auxílio do mediador, caso solicitado, negociarão os termos constantes do acordo coletivo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2286">Aquelas que as partes julgarem necessárias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2758" tipo="presencial">
+                            <descricao>Local escolhido pelas partes.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2200">
+                <titulo>Cadastrar o instrumento de acordo</titulo>
+                <descricao>Uma das partes irá acessar o sistema mediador e registrar ali os termos e informações do acordo coletivo de trabalho</descricao>
+                <documentos>
+                    <default>
+                        <item id="2287">CNPJ/CEI</item>
+                        <item id="2288">Razão Social</item>
+                        <item id="2289">Informações do Acordo Coletivo de Trabalho</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2759" tipo="web">
+                            <descricao>http://www3.mte.gov.br/sistemas/mediador/AcordoColetivo</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2201">
+                <titulo>Consultar o acordo cadastrado</titulo>
+                <descricao>Qualquer uma das partes pode consultar, a qualquer momento após o cadastro, as informações registradas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2290">CNPJ/CEI</item>
+                        <item id="2291">Razão Social</item>
+                        <item id="2292">Informações de localização, como partes, tipo de acordo, data, vigência, UF, abrangência, título e/ou palavras chaves do acordo.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2760" tipo="web">
+                            <descricao>http://www3.mte.gov.br/sistemas/mediador/ConsultarInstColetivo</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2437">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2438">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2436">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2435">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1960">acordo de trabalho</item>
+            <item id="1961">patrão</item>
+            <item id="1962">sindicato</item>
+            <item id="1963">mediação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="654">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-a-autorizacao-de-trabalho-a-estrangeiros</id>
+        <dbId>142</dbId>
+        <nome>Obter a Autorização de Trabalho a Estrangeiros</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="654">Migranteweb</item>
+        </nomes-populares>
+        <descricao>Os estrangeiros que queiram trabalhar no Brasil precisam de autorização do Ministério do Trabalho, obtida através deste serviço. Esta autorização é essencial para aqueles que estão se candidatando a visto permanente ou temporário de trabalho.</descricao>
+        <contato>Coordenação Geral de Imigração
+* Fone: (61) 2031-6216 (08h às 12h e 14h às 18h)</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="843">
+                <tipo>Estrangeiros</tipo>
+                <requisitos>Que pretendam trabalhar no Brasil</requisitos>
+            </solicitante>
+            <solicitante id="844">
+                <tipo>Empresas, órgãos ou entidades localizadas no país</tipo>
+                <requisitos>Que pretendam contratar um trabalhador estrangeiro,</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="16" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1128">
+                <titulo>Cadastrar-se no Sistema</titulo>
+                <descricao>Você deve se cadastrar no sistema MIGRANTEWEB.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2293">CPF, Passaporte ou RNE</item>
+                        <item id="2294">Nome</item>
+                        <item id="2295">Dados para contato</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1382" tipo="web">
+                            <descricao>http://migranteweb.mte.gov.br/migranteweb/publico/manterUsuarioExterno/incluirUsuarioExterno.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2202">
+                <titulo>Cadastrar pedido de autorização</titulo>
+                <descricao>Você agora deve registrar o pedido de autorização dentro do sistema MIGRANTEWEB.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2296">Dados da empresa contratante</item>
+                        <item id="2297">Dados pessoais do trabalhador a ser contratado</item>
+                        <item id="2298">Contrato de Trabalho</item>
+                        <item id="2299">Outras documentações de acordo com a natureza do trabalho a ser realizado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2761" tipo="web">
+                            <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam;jsessionid=448D611C490C6E4A9C2DB559D92DC820</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2203">
+                <titulo>Pagamento da Taxa Individual de Imigração</titulo>
+                <descricao>Ao final do cadastro, o sistema gerará uma GRU, que você deverá pagar nas redes bancárias</descricao>
+                <documentos>
+                    <default>
+                        <item id="2300">GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="86">
+                            <descricao>Taxa Individual de Imigração</descricao>
+                            <moeda></moeda>
+                            <valor>1,693</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2762" tipo="presencial">
+                            <descricao>Redes bancárias.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2204">
+                <titulo>Receber resposta sobre o pedido</titulo>
+                <descricao>Após a análise do Ministério do Trabalho, a resposta será disponibilizada a você através do sistema e do e-mail por você cadastrado.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2764" tipo="e-mail">
+                            <descricao>E-mail cadastrado por você no sistema MIGRANTEWEB.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2763" tipo="web">
+                            <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam;jsessionid=448D611C490C6E4A9C2DB559D92DC820</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1280">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2439">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fiscalização do Estado</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1964">permissão</item>
+            <item id="1965">visto</item>
+            <item id="1966">imigrante</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="655">[Lei 6.815/1980](http://www.planalto.gov.br/ccivil_03/leis/L6815.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>realizar-a-comunicacao-previa-de-obras</id>
+        <dbId>827</dbId>
+        <nome>Realizar a Comunicação Prévia de Obras</nome>
+        <sigla>SCPO</sigla>
+        <descricao>Caso você, sua empresa ou condomínio pretenda realizar uma obra, você deve primeiramente comunicar sua realização ao Ministério do Trabalho, através deste serviço. Somente após a comunicação sua obra pode começar.</descricao>
+        <contato>DEPARTAMENTO DE SEGURANÇA E SAÚDE NO TRABALHO
+* Fone: (61) 2031 3048 (08h às 12h e 14h às 18h)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="845">
+                <tipo>Pessoas físicas e pessoas jurídicas de direito privado.</tipo>
+                <requisitos>Que forem realizar obras em suas propriedades.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2205">
+                <titulo>Cadastrar-se no Sistema</titulo>
+                <descricao>Você inicialmente irá cadastrar-se no sistema SCPO.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2301">CPF</item>
+                        <item id="2302">Data de Nascimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2765" tipo="web">
+                            <descricao>https://scpo.mte.gov.br/Usuario/Cadastrar.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2206">
+                <titulo>Realizar a comunicação prévia</titulo>
+                <descricao>Você irá então registrar a comunicação, preenchendo os dados pedidos da obra.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2303">Endereço de realização da obra</item>
+                        <item id="2304">Qualificação do contratante, empregador ou condomínio (CEI, CNPJ ou CPF)</item>
+                        <item id="2305">Tipo de obra</item>
+                        <item id="2306">Datas previstas para início e fim da obra</item>
+                        <item id="2307">Número máximo previsto de trabalhadores na obra</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2766" tipo="web">
+                            <descricao>https://scpo.mte.gov.br//</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2207">
+                <titulo>Receber recibo da Comunicação Prévia</titulo>
+                <descricao>Após o término e envio da comunicação, o sistema irá gerar um recibo da CPO, que é o documento que comprova o cumprimento de sua obrigação junto ao Ministério do Trabalho.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2767" tipo="web-emitir">
+                            <descricao>https://scpo.mte.gov.br//</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2440">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2441">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2442">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Infraestrutura Urbana</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1967">Obras</item>
+            <item id="1968">Construção</item>
+            <item id="1969">Reforma</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="656">[Portaria SIT nº 540 de 25 de maio de 2016](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=112&amp;data=27/05/2016)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cadastrar-se-no-programa-de-alimentacao-do-trabalhador</id>
         <dbId>820</dbId>
         <nome>Cadastrar-se no Programa de Alimentação do Trabalhador</nome>
@@ -38596,6 +39049,177 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </legislacoes>
     </servico>
     <servico>
+        <id>entregar-a-relacao-anual-de-informacoes-sociais</id>
+        <dbId>822</dbId>
+        <nome>Entregar a Relação Anual de Informações Sociais</nome>
+        <sigla>RAIS</sigla>
+        <descricao>Através deste serviço as pessoas jurídicas cumprem sua obrigação junto ao Ministério do Trabalho de informar o número de funcionários que empregou no ano anterior, assim como os dados funcionais dos mesmos.</descricao>
+        <contato>**Coordenação Geral de Estatísticas do Trabalho**
+* Endereço: Ministério do Trabalho - Esplanada dos Ministérios, Bloco "F", Edifício Anexo Ala "B", Sala 204 - CEP: 70.059-900
+* E-mail: rais.sppe@mte.gov.br
+* Telefone: (61) 2031-6667</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="827">
+                <tipo>Pessoas Jurídicas</tipo>
+                <requisitos>Que tenham ou não empregados (no caso de não ter empregados, a PJ entregará a RAIS Negativa.</requisitos>
+            </solicitante>
+            <solicitante id="828">
+                <tipo>Empregadores</tipo>
+                <requisitos>Com exceção dos empregadores domésticos</requisitos>
+            </solicitante>
+            <solicitante id="829">
+                <tipo>Órgãos Públicos</tipo>
+                <requisitos>Da Administração Direta e Indireta, das esferas federais, estaduais e municipais</requisitos>
+            </solicitante>
+            <solicitante id="830">
+                <tipo>Condomínios e Sociedades Civis</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="831">
+                <tipo>Empregadores Rurais</tipo>
+                <requisitos>Que mantiveram empregados no ano base.</requisitos>
+            </solicitante>
+            <solicitante id="832">
+                <tipo>Pessoa Jurídica domiciliada no Exterior</tipo>
+                <requisitos>Caso tenha filiais, agências, sucursais, representações ou quaisquer outras formas de entidades vinculadas (deve apresentar as informações relacionadas aos empregados no pais).</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2183">
+                <titulo>Fazer download do programa de preenchimento da RAIS</titulo>
+                <descricao>Você deve baixar e instalar o programa gerador da RAIS no seu computador.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2248">Não há documentação necessária nesta etapa</item>
+                    </default>
+                    <caso id="345" descricao="Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
+                        <documento>
+                            <id>2245</id>
+                            <descricao>Dados do estabelecimento.</descricao>
+                        </documento>
+                        <documento>
+                            <id>2246</id>
+                            <descricao>Dados da entidade sindical a que a atividade está associada</descricao>
+                        </documento>
+                        <documento>
+                            <id>2247</id>
+                            <descricao>Dados do responsável pelo estabelecimento</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2733" tipo="web">
+                            <descricao>http://www.rais.gov.br/sitio/rais_ftp/GDRAIS2016-1.2-Setup.exe</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="346" descricao="Para computadores Linux">
+                        <canal-de-prestacao id="2731" tipo="web">
+                            <descricao>http://www.rais.gov.br/sitio/rais_ftp/GDRAIS2016-1.2-Linux-x86-Install.bin</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="347" descricao="Para Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
+                        <canal-de-prestacao id="2732" tipo="web">
+                            <descricao>http://www.rais.gov.br/sitio/negativa.jsf</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2184">
+                <titulo>Preencher os dados da RAIS (Exceto RAIS Negativa)</titulo>
+                <descricao>Você irá informar aqui os dados do seu estabelecimento (ou seus dados, no caso de empregador pessoa física) e fazer a relação de seus empregados no ano base, com suas informações funcionais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2249">Dados do estabelecimento/empregador</item>
+                        <item id="2250">Dados dos funcionários no ano-base</item>
+                        <item id="2251">Dados da entidade sindical a que estão associados os funcionários.</item>
+                        <item id="2252">Dados do responsável pelo estabelecimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2734" tipo="presencial">
+                            <descricao>Programa próprio do serviço obtido na etapa anterior</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2185">
+                <titulo>Enviar a RAIS e emitir o protocolo de entrega (Exceto RAIS NEGATIVA)</titulo>
+                <descricao>Terminado o preenchimento, você deverá salvar e enviar o arquivo, e em seguida imprimir o Protocolo de Entrega da RAIS</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2735" tipo="presencial">
+                            <descricao>Programa próprio do serviço obtido na primeira etapa.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2186">
+                <titulo>Obter o Recibo de Entrega da RAIS</titulo>
+                <descricao>Após 5 dias úteis do envio, você poderá imprimir o Recibo de Entrega da RAIS, que é o comprovante definitivo do cumprimento de sua obrigação naquele ano. O recibo só é disponibilizado no site do serviço.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2253">Protocolo de entrega obtido no ato de envio da declaração.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2736" tipo="web">
+                            <descricao>http://www.rais.gov.br/sitio/recibo_identificacao.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2428">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2426">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2425">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2427">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Previdência Social</item>
+            <item>Proteção Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1948">Lista de funcionários</item>
+            <item id="1949">Fiscalização</item>
+            <item id="1950">Obrigações do empregador</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="648">[Decreto 76.900 de 23 de dezembro de 1975](http://www.planalto.gov.br/ccivil_03/decreto/antigos/d76900.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>homologar-plano-de-cargos-e-salarios</id>
         <dbId>819</dbId>
         <nome>Homologar Plano de Cargos e Salários</nome>
@@ -38672,6 +39296,328 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </palavras-chave>
         <legislacoes>
             <item id="643">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-se-como-empresa-fabricante-de-registro-de-ponto-eletronico</id>
+        <dbId>821</dbId>
+        <nome>Cadastrar-se como empresa fabricante de registro de ponto eletrônico</nome>
+        <sigla>CAREP</sigla>
+        <descricao>Se a sua empresa pretende fabricar e comercializar registros de ponto eletrônicos (REP) ela deve ser registrada, assim como registrar cada modelo de REP fabricado,  junto ao Ministério do Trabalho através deste serviço.</descricao>
+        <contato>Secretaria de Inspeção do Trabalho
+Telefone: (61) 2031-4088 (de 08h às 12h e de 14h às 18h)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="826">
+                <tipo>Empresas Privadas, públicas ou de economia mista</tipo>
+                <requisitos>Que fabriquem ou pretendam fabricar registros de ponto eletrônico (REP).</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="15" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2181">
+                <titulo>Cadastrar-se no CAREP</titulo>
+                <descricao>Você deverá acessar o sistema CAREP e preencher as informações pedidas</descricao>
+                <documentos>
+                    <default>
+                        <item id="2240">Dados da empresa</item>
+                        <item id="2241">CPF do responsável pela empresa junto à Receita Federal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2727" tipo="web-inscrever-se">
+                            <descricao>http://carep.mte.gov.br/sistemas/carep/login/login.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2182">
+                <titulo>Cadastrar modelos de REP fabricados</titulo>
+                <descricao>Sua empresa deverá cadastrar todos os modelos de REP por ela fabricados, realizando o cadastro posterior de todos os modelos criados futuramente.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2242">Dados de Login no sistema CAREP (criados na etapa anterior)</item>
+                        <item id="2243">Dados do modelo de REP a ser cadastrado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2728" tipo="web">
+                            <descricao>http://carep.mte.gov.br/sistemas/carep/login/login.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2424">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Produção Industrial</item>
+            <item>Recursos humanos</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1945">Ponto eletrônico</item>
+            <item id="1946">REP</item>
+            <item id="1947">cadastro de empresa</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="647">[Portaria Ministerial 1.510/2009](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=63&amp;data=25/08/2009)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-entidades-sindicais</id>
+        <dbId>572</dbId>
+        <nome>Cadastrar Entidades Sindicais</nome>
+        <sigla></sigla>
+        <descricao>Possibilita elaborar pedido de registro ou de alteração estatutária de entidade sindical e consultar entidades sindicais registradas, conforme Portaria/MTE n.º 326/2013.</descricao>
+        <gratuito>false</gratuito>
+        <tempo-total-estimado/>
+        <etapas>
+            <etapa id="1722">
+                <titulo></titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2138" tipo="web">
+                            <descricao>[Solicitar Registro de Alteração Estatutária de Entidade Sindical - CNES.](http://portal.mte.gov.br/cnes/alteracao-estatutaria.htm)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2137" tipo="web">
+                            <descricao>[Solicitar Registro de Entidade Sindical - CNES.](http://portal.mte.gov.br/cnes/registro-sindical-sc.htm)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2136" tipo="web">
+                            <descricao>[Consultar a fila de distribuição de processos de registro sindical para análise.](http://www3.mte.gov.br/sistemas/sdp/consultadistribuicao.aspx)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2135" tipo="web">
+                            <descricao>[Recadastrar a entidade sindical.](http://portal.mte.gov.br/cnes/campanha-de-atualizacao-sindical-sr.htm)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2134" tipo="web">
+                            <descricao>http://portal.mte.gov.br/cnes/atualizacao-de-dados-perene-sd.htm</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2003">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2004">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>entregar-a-declaracao-mensal-para-o-cadastro-geral-de-empregados-e-desempregados</id>
+        <dbId>824</dbId>
+        <nome>Entregar a declaração mensal para o Cadastro Geral de Empregados e Desempregados</nome>
+        <sigla>CAGED</sigla>
+        <descricao>Este serviço permite que os estabelecimentos cumpram sua obrigação mensal de informar ao Ministério do Trabalho as modificações no quadro de pessoal regido pela CLT. **A declaração deve ser feita até o dia 7 do mês subsequente ao informado.** Se as movimentações não forem declaradas, ou se a movimentação de algum funcionário regido pela CLT for omitida, a empresa está sujeita a multa com valor condicionado ao tempo de atraso e número de movimentações omitidas.</descricao>
+        <contato>* Telefone: Alô Trabalho - 158
+* E-mail: caged.sppe@mte.gov.br;
+* Correspondência para: Ministério do Trabalho e Emprego - Secretaria de Políticas Públicas de Emprego - Departamento de Emprego e Salário - Coordenação-Geral de Estatísticas do Trabalho - Esplanada dos Ministérios, Bloco “F”, Edifício-Anexo, Ala “B” – Sala 211
+CEP:70059-900 – Brasília/DF.</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="837">
+                <tipo>Empresas e Empregadores</tipo>
+                <requisitos>Que tenham admitido, desligado ou transferido empregados com contrato de trabalho regido pela CLT, Contrato de Trabalho por Prazo Determinado (Lei 9.601/98), trabalhadores regidos pelo Estatuo do Trabalhador Rural ou aprendizes.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="horas"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>1</quantidade>
+            <unidade>meses</unidade>
+            <descricao>A declaração deve ser realizada todos os meses onde houver qualquer alteração no quadro de pessoal regido pela CLT</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2189">
+                <titulo>Baixar o programa gerador da declaração ou do layout padrão do arquivo da declaração (opcional)</titulo>
+                <descricao>Você deve baixar e instalar o programa CAGED Net.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2744" tipo="web">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/layout/TL_layout.xhtml#</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2743" tipo="aplicativo-movel">
+                            <descricao>[Programa CAGEDNet](https://caged.maisemprego.mte.gov.br/portalcaged/paginas/TL_downloads.xhtml?download=cagednet)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2190">
+                <titulo>Preencher a declaração</titulo>
+                <descricao>Você irá preencher os dados pedidos, informando as movimentações no seu quadro de pessoal.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2268">Dados da empresa/empregador</item>
+                        <item id="2269">Dados sobre as movimentações no quadro de pessoal</item>
+                        <item id="2270">Dados dos empregados que sofreram movimentação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2747" tipo="presencial">
+                            <descricao>Em documento com o layout obtido na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2746" tipo="web-declarar">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/fec/TL_FEC_Inicial.xhtml</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2745" tipo="aplicativo-movel">
+                            <descricao>No aplicativo obtido na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2191">
+                <titulo>Transmitir a declaração</titulo>
+                <descricao>Terminado o preenchimento, você deve enviar a declaração ao Ministério do Trabalho.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2271">Declaração do CAGED</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2750" tipo="web">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/recepcao/TL_022_TransmitirArquivoWeb.xhtml</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2749" tipo="web-declarar">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/fec/TL_FEC_Inicial.xhtml</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2748" tipo="aplicativo-movel">
+                            <descricao>O aplicativo obtido na primeira etapa permite o envio do arquivo após o preenchimento.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2192">
+                <titulo>Receber o recibo de entrega</titulo>
+                <descricao>Um arquivo com o recibo da entrega é gerado automaticamente após o envio mas, caso você não consiga gravá-lo ou ele se extravie, você pode obter uma segunda via no canal abaixo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2272">Protocolo de Transmissão de Arquivo (gerado e fornecido no ato da trasmissão)</item>
+                        <item id="2273">CNPJ/CEI</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2751" tipo="web">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/recibos/TL_022_ReciboDeclaracoesProcessadas.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2193">
+                <titulo>Consultar o extrato de movimentações processadas</titulo>
+                <descricao>O Extrato é disponibilizado após o dia 20 de cada mês, e permite que você verifique se as informações prestadas foram todas processadas de forma correta.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2274">CNPJ/CEI</item>
+                        <item id="2275">Recibo de entrega da declaração do CAGED</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2752" tipo="web-acompanhar">
+                            <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/extrato/TL_23_AberturaExtrato.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2194">
+                <titulo>Consertar informações incorretas</titulo>
+                <descricao>Caso haja informações incorretas ou incompletas na sua declaração, você poderá consertá-las repetindo as fases anteriores, mas escolhendo a opção "ACERTO" no preenchimento das declarações. Caso haja multas a serem pagas, você deve calcular o valor de acordo com [estas regras](http://portalfat.mte.gov.br/programas-e-acoes-2/caged-3/sobre-o-caged/multa-do-caged/) e emitir a DARF no canal abaixo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2276">Dados da empresa</item>
+                        <item id="2277">Dados das movimentações do quadro de pessoal</item>
+                        <item id="2278">Recibo de entrega da declaração original</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2753" tipo="web-emitir">
+                            <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/pagamentos-e-parcelamentos/pagamento/emissao-de-darf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2430">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2429">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2431">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fiscalização do Estado</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1954">quadro de pessoal</item>
+            <item id="1955">demissão</item>
+            <item id="1956">contratação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="650">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+            <item id="651">[Lei 4.923/65](http://www.planalto.gov.br/ccivil_03/leis/L4923.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -38818,39 +39764,99 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </legislacoes>
     </servico>
     <servico>
-        <id>cadastrar-entidades-sindicais</id>
-        <dbId>572</dbId>
-        <nome>Cadastrar Entidades Sindicais</nome>
-        <sigla></sigla>
-        <descricao>Possibilita elaborar pedido de registro ou de alteração estatutária de entidade sindical e consultar entidades sindicais registradas, conforme Portaria/MTE n.º 326/2013.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
+        <id>cadastrar-entidades-e-cursos-no-cadastro-nacional-de-aprendizagem-profissional</id>
+        <dbId>825</dbId>
+        <nome>Cadastrar entidades e cursos no Cadastro Nacional de Aprendizagem Profissional</nome>
+        <sigla>CNAP</sigla>
+        <nomes-populares>
+            <item id="647">Juventudeweb</item>
+            <item id="648">Mais Aprendiz</item>
+            <item id="649">Aprendizagem</item>
+        </nomes-populares>
+        <descricao>Este é o serviço para as entidades que oferecem cursos técnico-profissionais possam cumprir a obrigação de se inscrever, e inscrever a seus cursos, no Cadastro Nacional de Aprendizagem.</descricao>
+        <contato>Departamento de Políticas e Empregabilidade
+fone: (61) 2031 6816 (08h às 12h e 14h às 18h)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="838">
+                <tipo>Serviços Nacionais de Aprendizagem</tipo>
+                <requisitos>* Serviço Nacional de Aprendizagem Industrial - SENAI;
+* Serviço Nacional de Aprendizagem Comercial - SENAC;
+* Serviço Nacional de Aprendizagem Rural - SENAR;
+* Serviço Nacional de Aprendizagem do Transporte - SENAT; e
+* Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
+            </solicitante>
+            <solicitante id="839">
+                <tipo>Escolas técnicas de educação (inclusive agrotécnicas)</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="840">
+                <tipo>Entidades Sem fins lucrativos</tipo>
+                <requisitos>Que tenham por objetivos a assistência ao adolescente e à educação profissional, registradas no Conselho Municipal dos Direitos da Criança e do Adolescente, e com estrutura adequada ao Programa proposto.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
         <etapas>
-            <etapa id="1722">
-                <titulo></titulo>
-                <descricao></descricao>
+            <etapa id="2195">
+                <titulo>Cadastrar a entidade</titulo>
+                <descricao>Os dados da entidade devem ser cadastrados no sistema e a senha para o portal gerada.</descricao>
                 <documentos>
-                    <default/>
+                    <default>
+                        <item id="2279">Dados da entidade</item>
+                    </default>
                 </documentos>
                 <custos>
                     <default/>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2138" tipo="web">
-                            <descricao>[Solicitar Registro de Alteração Estatutária de Entidade Sindical - CNES.](http://portal.mte.gov.br/cnes/alteracao-estatutaria.htm)</descricao>
+                        <canal-de-prestacao id="2754" tipo="web">
+                            <descricao>http://www.juventudeweb.mte.gov.br/solicitacao_senha.asp</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="2137" tipo="web">
-                            <descricao>[Solicitar Registro de Entidade Sindical - CNES.](http://portal.mte.gov.br/cnes/registro-sindical-sc.htm)</descricao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2196">
+                <titulo>Cadastrar cursos no sistema</titulo>
+                <descricao>A entidade cadastrada poderá cadastrar os cursos técnicos-profissionalizantes que pretende oferecer, para análise e aprovação do Ministério do Trabalho.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2280">Programa e demais dados do curso</item>
+                        <item id="2281">Informações e documentação adicional podem ser pedidos pelo Ministério do Trabalho, cada caso.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2755" tipo="web">
+                            <descricao>http://www.juventudeweb.mte.gov.br/</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="2136" tipo="web">
-                            <descricao>[Consultar a fila de distribuição de processos de registro sindical para análise.](http://www3.mte.gov.br/sistemas/sdp/consultadistribuicao.aspx)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2135" tipo="web">
-                            <descricao>[Recadastrar a entidade sindical.](http://portal.mte.gov.br/cnes/campanha-de-atualizacao-sindical-sr.htm)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2134" tipo="web">
-                            <descricao>http://portal.mte.gov.br/cnes/atualizacao-de-dados-perene-sd.htm</descricao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2197">
+                <titulo>Cadastro de Turmas e Alunos</titulo>
+                <descricao>Após a análise do Ministério, a entidade deve cadastrar as turmas e alunos daqueles cursos classificados como "validados" ou "validados com recomendação".</descricao>
+                <documentos>
+                    <default>
+                        <item id="2282">Dados das turmas</item>
+                        <item id="2283">Dados dos alunos</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2756" tipo="web">
+                            <descricao>http://www.juventudeweb.mte.gov.br/</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -38858,11 +39864,26 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </etapas>
         <orgao id="2844"/>
         <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2003">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2004">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2434">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2433">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2432">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação profissionalizante</item>
+            <item>Fiscalização do Estado</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Relações de Trabalho</item>
             <item>Trabalho</item>
         </areas-de-interesse>
+        <palavras-chave>
+            <item id="1957">curso técnico</item>
+            <item id="1958">estágio</item>
+            <item id="1959">profissionalização</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="652">[DECRETO Nº 5.598, DE 1º DE DEZEMBRO DE 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5598.htm)</item>
+            <item id="653">[DECRETO Nº 8.740, DE 4 DE MAIO DE 2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Decreto/D8740.htm#art1)</item>
+        </legislacoes>
     </servico>
 </servicos>
