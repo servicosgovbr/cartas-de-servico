@@ -1,46 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-a-carteira-de-trabalho-e-previdencia-social</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-a-carteira-de-trabalho-e-previdencia-social</id>
+    <dbId>60</dbId>
+    <nome>Obter a Carteira de Trabalho e Previdência Social</nome>
     <sigla>CTPS</sigla>
     <nomes-populares>
-        <item>carta de trabalho</item>
-        <item>carteira de trabalho.</item>
-        <item>documento de trabalho</item>
+        <item id="520">carta de trabalho</item>
+        <item id="521">carteira de trabalho.</item>
+        <item id="522">documento de trabalho</item>
     </nomes-populares>
-    <descricao><![CDATA[A Carteira de Trabalho é o documento usado para registrar a vida funcional de todo trabalhador brasileiro que preste algum tipo de serviço, com exceção dos servidores públicos efetivos. É o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador.]]></descricao>
-    <contato/>
+    <descricao>Permite a obtenção da carteira de trabalho, documento para habilitação do trabalhador brasileiro e estrangeiro no mercado de trabalho formal. É o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador.</descricao>
+    <contato>Central 158</contato>
     <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="607">
             <tipo>Cidadão Brasileiro</tipo>
-            <requisitos><![CDATA[Brasileiro nato ou naturalizado com 14 anos ou mais de idade.]]></requisitos>
+            <requisitos>Brasileiro nato ou naturalizado com 14 anos ou mais de idade.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="608">
             <tipo>Estrangeiro residente permanente ou Cidadão do Mercosul</tipo>
-            <requisitos><![CDATA[Estrangeiro com visto permanente, que seja cidadão de país que faz parte do Acordo do Mercosul ou que seja residente refugiado e tenha 14 anos ou mais de idade.]]></requisitos>
+            <requisitos>Estrangeiro com visto permanente, que seja cidadão de país que faz parte do Acordo do Mercosul ou que seja residente refugiado e tenha 14 anos ou mais de idade.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="609">
             <tipo>Estrangeiro temporário</tipo>
-            <requisitos><![CDATA[Estrangeiro com visto temporário que tenha 14 anos ou mais de idade.]]></requisitos>
+            <requisitos>Estrangeiro com visto temporário que tenha 14 anos ou mais de idade.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="610">
             <tipo>Candidato a refúgio</tipo>
-            <requisitos><![CDATA[Estrangeiro com processo de pedido de refúgio que tenha 14 anos ou mais de idade.]]></requisitos>
+            <requisitos>Estrangeiro com processo de pedido de refúgio que tenha 14 anos ou mais de idade.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="2" unidade="dias-uteis"/>
-        <descricao><![CDATA[Dependendo da região, época do ano e procura do serviço,  o serviço pode vir a demorar excepcionalmente até 7 dias.]]></descricao>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1852">
             <titulo>Agendar atendimento</titulo>
-            <descricao><![CDATA[Você irá acessar a página do Sistema de Atendimento Agendado do MTPS, preencher os dados necessários e agendar seu atendimento.]]></descricao>
+            <descricao>Você irá acessar a página do Sistema de Atendimento Agendado do MTPS, preencher os dados necessários e agendar seu atendimento.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Data de nascimento;</item>
-                    <item>Informações de contato.</item>
+                    <item id="1674">Número do CPF;</item>
+                    <item id="1675">Data de nascimento;</item>
+                    <item id="1676">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
@@ -48,40 +57,79 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none]]></descricao>
+                    <canal-de-prestacao id="2729" tipo="telefone">
+                        <descricao>Central 158, opção "agendamento".</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2300" tipo="web">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
-            <titulo>Ir, com a documentação necessária, ao local indicado no agendamento</titulo>
-            <descricao><![CDATA[Você irá ao local escolhido na data e horário definidos na etapa anterior, levando a documentação necessária para requisitar a CTPS.]]></descricao>
+        <etapa id="1853">
+            <titulo>Realizar o cadastro</titulo>
+            <descricao>Você irá ao local escolhido na data e horário definidos na etapa anterior, levando a documentação necessária para requisitar a CTPS, e lá fornecerá as informações requisitadas.</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Comprovante de residência com CEP;</item>
-                    <item>Foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante; para o caso de ser necessária a emissão manual da CTPS; e</item>
+                    <item id="1689">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1690">Comprovante de residência com CEP;</item>
+                    <item id="1691">Foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante; para o caso de ser necessária a emissão manual da CTPS; e</item>
                 </default>
-                <caso descricao="Cidadão Brasileiro">
-                    <item>Documento oficial de identificação civil que contenha nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</item>
-                    <item>Comprovação obrigatória do estado civil por meio de Certidão de Nascimento (se solteiro) ou Casamento (se casado). - com averbação, se for o caso (se separado, divorciado ou viúvo);</item>
+                <caso id="285" descricao="Cidadão Brasileiro">
+                    <documento>
+                        <id>1677</id>
+                        <descricao>Documento oficial de identificação civil que contenha nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1678</id>
+                        <descricao>Comprovação obrigatória do estado civil por meio de Certidão de Nascimento (se solteiro) ou Casamento (se casado). - com averbação, se for o caso (se separado, divorciado ou viúvo);</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Estrangeiro residente permanente ou Cidadão do Mercosul">
-                    <item>Cédula de identidade de estrangeiro - CIE; ou</item>
-                    <item>Protocolo da PF ou publicação completa do DOU contendo a qualificação civil e prazo de vigência (caso as informações de qualificação civil não estejam presentes, apresentar certidão de andamento e qualquer outra documentação que contenha os dados); e</item>
-                    <item>Sincre da Polícia Federal, se tiver;</item>
-                    <item>Documento com foto.</item>
+                <caso id="286" descricao="Estrangeiro residente permanente ou Cidadão do Mercosul">
+                    <documento>
+                        <id>1679</id>
+                        <descricao>Cédula de identidade de estrangeiro - CIE; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>1680</id>
+                        <descricao>Protocolo da PF ou publicação completa do DOU contendo a qualificação civil e prazo de vigência (caso as informações de qualificação civil não estejam presentes, apresentar certidão de andamento e qualquer outra documentação que contenha os dados); e</descricao>
+                    </documento>
+                    <documento>
+                        <id>1681</id>
+                        <descricao>Sincre da Polícia Federal, se tiver;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1682</id>
+                        <descricao>Documento com foto.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Estrangeiro temporário">
-                    <item>Cédula de Identidade de Estrangeiro;</item>
-                    <item>Protocolo da Polícia Federal;</item>
-                    <item>Diário Oficial da União -completo com a qualificação civil;</item>
-                    <item>Sincre – caso o protocolo esteja incompleto na qualificação civil;</item>
-                    <item>Documento com foto.</item>
+                <caso id="287" descricao="Estrangeiro temporário">
+                    <documento>
+                        <id>1683</id>
+                        <descricao>Cédula de Identidade de Estrangeiro;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1684</id>
+                        <descricao>Protocolo da Polícia Federal;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1685</id>
+                        <descricao>Diário Oficial da União -completo com a qualificação civil;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1686</id>
+                        <descricao>Sincre – caso o protocolo esteja incompleto na qualificação civil;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1687</id>
+                        <descricao>Documento com foto.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Candidato a refúgio">
-                    <item>Protocolo da Polícia Federal.</item>
+                <caso id="288" descricao="Candidato a refúgio">
+                    <documento>
+                        <id>1688</id>
+                        <descricao>Protocolo da Polícia Federal.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -89,18 +137,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Local escolhido no agendamento.]]></descricao>
+                    <canal-de-prestacao id="2301" tipo="presencial">
+                        <descricao>Local escolhido no agendamento.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1854">
             <titulo>Receber a CTPS</titulo>
-            <descricao><![CDATA[Entregue toda a documentação, e ela estando em ordem, você receberá sua carteira de trabalho.]]></descricao>
+            <descricao>Dentro do prazo informado, você comparecerá ao local onde realizou a etapa anterior para receber sua carteira de trabalho personalizada.</descricao>
             <documentos>
                 <default>
-                    <item>Não há documentação necessária nesta etapa</item>
+                    <item id="1692">Informação biométrica (cadastrada no local)</item>
+                    <item id="2244">Protocolo de cadastro de atendimento (recebido na etapa anterior)</item>
                 </default>
             </documentos>
             <custos>
@@ -108,29 +157,30 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[No local escolhido no agendamento]]></descricao>
+                    <canal-de-prestacao id="2302" tipo="presencial">
+                        <descricao>No local escolhido no agendamento</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <orgao id="2844"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="2132">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
         <item>Fomento ao Trabalho</item>
         <item>Proteção e Benefícios ao Trabalhador</item>
         <item>Relações de Trabalho</item>
+        <item>Previdência Social</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>emprego</item>
-        <item>carteira assinada</item>
-        <item>direitos dos trabalhador</item>
+        <item id="1502">emprego</item>
+        <item id="1503">carteira assinada</item>
+        <item id="1504">direitos dos trabalhador</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)]]></item>
+        <item id="488">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)</item>
     </legislacoes>
 </servico>
