@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-a-comunicacao-previa-de-obras</id>
+    <dbId>827</dbId>
+    <nome>Realizar a Comunicação Prévia de Obras</nome>
+    <sigla>SCPO</sigla>
+    <descricao>Caso você, sua empresa ou condomínio pretenda realizar uma obra, você deve primeiramente comunicar sua realização ao Ministério do Trabalho, através deste serviço. Somente após a comunicação sua obra pode começar.</descricao>
+    <contato>DEPARTAMENTO DE SEGURANÇA E SAÚDE NO TRABALHO
+* Fone: (61) 2031 3048 (08h às 12h e 14h às 18h)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="845">
+            <tipo>Pessoas físicas e pessoas jurídicas de direito privado.</tipo>
+            <requisitos>Que forem realizar obras em suas propriedades.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento/>
+    <etapas>
+        <etapa id="2205">
+            <titulo>Cadastrar-se no Sistema</titulo>
+            <descricao>Você inicialmente irá cadastrar-se no sistema SCPO.</descricao>
+            <documentos>
+                <default>
+                    <item id="2301">CPF</item>
+                    <item id="2302">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2765" tipo="web">
+                        <descricao>https://scpo.mte.gov.br/Usuario/Cadastrar.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2206">
+            <titulo>Realizar a comunicação prévia</titulo>
+            <descricao>Você irá então registrar a comunicação, preenchendo os dados pedidos da obra.</descricao>
+            <documentos>
+                <default>
+                    <item id="2303">Endereço de realização da obra</item>
+                    <item id="2304">Qualificação do contratante, empregador ou condomínio (CEI, CNPJ ou CPF)</item>
+                    <item id="2305">Tipo de obra</item>
+                    <item id="2306">Datas previstas para início e fim da obra</item>
+                    <item id="2307">Número máximo previsto de trabalhadores na obra</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2766" tipo="web">
+                        <descricao>https://scpo.mte.gov.br//</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2207">
+            <titulo>Receber recibo da Comunicação Prévia</titulo>
+            <descricao>Após o término e envio da comunicação, o sistema irá gerar um recibo da CPO, que é o documento que comprova o cumprimento de sua obrigação junto ao Ministério do Trabalho.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2767" tipo="web-emitir">
+                        <descricao>https://scpo.mte.gov.br//</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2440">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2441">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2442">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Infraestrutura Urbana</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1967">Obras</item>
+        <item id="1968">Construção</item>
+        <item id="1969">Reforma</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="656">[Portaria SIT nº 540 de 25 de maio de 2016](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=112&amp;data=27/05/2016)</item>
+    </legislacoes>
+</servico>
