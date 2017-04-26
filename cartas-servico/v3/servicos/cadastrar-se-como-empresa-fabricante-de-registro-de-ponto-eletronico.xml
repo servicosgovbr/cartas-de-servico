@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-como-empresa-fabricante-de-registro-de-ponto-eletronico</id>
+    <dbId>821</dbId>
+    <nome>Cadastrar-se como empresa fabricante de registro de ponto eletrônico</nome>
+    <sigla>CAREP</sigla>
+    <descricao>Se a sua empresa pretende fabricar e comercializar registros de ponto eletrônicos (REP) ela deve ser registrada, assim como registrar cada modelo de REP fabricado,  junto ao Ministério do Trabalho através deste serviço.</descricao>
+    <contato>Secretaria de Inspeção do Trabalho
+Telefone: (61) 2031-4088 (de 08h às 12h e de 14h às 18h)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="826">
+            <tipo>Empresas Privadas, públicas ou de economia mista</tipo>
+            <requisitos>Que fabriquem ou pretendam fabricar registros de ponto eletrônico (REP).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="15" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2181">
+            <titulo>Cadastrar-se no CAREP</titulo>
+            <descricao>Você deverá acessar o sistema CAREP e preencher as informações pedidas</descricao>
+            <documentos>
+                <default>
+                    <item id="2240">Dados da empresa</item>
+                    <item id="2241">CPF do responsável pela empresa junto à Receita Federal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2727" tipo="web-inscrever-se">
+                        <descricao>http://carep.mte.gov.br/sistemas/carep/login/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2182">
+            <titulo>Cadastrar modelos de REP fabricados</titulo>
+            <descricao>Sua empresa deverá cadastrar todos os modelos de REP por ela fabricados, realizando o cadastro posterior de todos os modelos criados futuramente.</descricao>
+            <documentos>
+                <default>
+                    <item id="2242">Dados de Login no sistema CAREP (criados na etapa anterior)</item>
+                    <item id="2243">Dados do modelo de REP a ser cadastrado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2728" tipo="web">
+                        <descricao>http://carep.mte.gov.br/sistemas/carep/login/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2424">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Produção Industrial</item>
+        <item>Recursos humanos</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1945">Ponto eletrônico</item>
+        <item id="1946">REP</item>
+        <item id="1947">cadastro de empresa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="647">[Portaria Ministerial 1.510/2009](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=63&amp;data=25/08/2009)</item>
+    </legislacoes>
+</servico>
