@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-acordo-coletivo-de-trabalho</id>
+    <dbId>826</dbId>
+    <nome>Registrar acordo coletivo de trabalho</nome>
+    <sigla>ACT</sigla>
+    <nomes-populares>
+        <item id="650">Sistema Mediador</item>
+        <item id="651">Termo aditivo</item>
+        <item id="652">Instrumento Coletivo</item>
+        <item id="653">Convenção coletiva</item>
+    </nomes-populares>
+    <descricao>Através deste serviço, os empregadores e representantes dos trabalhadores podem registrar os acordos coletivos de trabalho assinados entre as partes.</descricao>
+    <contato>COORDENAÇÃO-GERAL DE RELAÇÕES DO TRABALHO
+* Fone: (61) 2061-6066
+* E-mail: cgrt.srt@mte.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="841">
+            <tipo>Empregador ou Representante</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="842">
+            <tipo>Representante dos Trabalhadores</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento/>
+    <etapas>
+        <etapa id="2198">
+            <titulo>Requisitar mediação (opcional)</titulo>
+            <descricao>Qualquer uma das partes pode requisitar serviço de mediação junto ao Ministério do Trabalho, para dirimir conflitos e formalizar as decisões</descricao>
+            <documentos>
+                <default>
+                    <item id="2284">CNPJ/CEI</item>
+                    <item id="2285">Razão Social</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2757" tipo="web">
+                        <descricao>http://www3.mte.gov.br/sistemas/mediador/Mediacao</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2199">
+            <titulo>Negociar e elaborar o instrumento de acordo coletivo</titulo>
+            <descricao>As partes, com o auxílio do mediador, caso solicitado, negociarão os termos constantes do acordo coletivo.</descricao>
+            <documentos>
+                <default>
+                    <item id="2286">Aquelas que as partes julgarem necessárias</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2758" tipo="presencial">
+                        <descricao>Local escolhido pelas partes.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2200">
+            <titulo>Cadastrar o instrumento de acordo</titulo>
+            <descricao>Uma das partes irá acessar o sistema mediador e registrar ali os termos e informações do acordo coletivo de trabalho</descricao>
+            <documentos>
+                <default>
+                    <item id="2287">CNPJ/CEI</item>
+                    <item id="2288">Razão Social</item>
+                    <item id="2289">Informações do Acordo Coletivo de Trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2759" tipo="web">
+                        <descricao>http://www3.mte.gov.br/sistemas/mediador/AcordoColetivo</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2201">
+            <titulo>Consultar o acordo cadastrado</titulo>
+            <descricao>Qualquer uma das partes pode consultar, a qualquer momento após o cadastro, as informações registradas.</descricao>
+            <documentos>
+                <default>
+                    <item id="2290">CNPJ/CEI</item>
+                    <item id="2291">Razão Social</item>
+                    <item id="2292">Informações de localização, como partes, tipo de acordo, data, vigência, UF, abrangência, título e/ou palavras chaves do acordo.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2760" tipo="web">
+                        <descricao>http://www3.mte.gov.br/sistemas/mediador/ConsultarInstColetivo</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="2435">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="2436">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2437">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="2438">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Empregabilidade</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1960">acordo de trabalho</item>
+        <item id="1961">patrão</item>
+        <item id="1962">sindicato</item>
+        <item id="1963">mediação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="654">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+    </legislacoes>
+</servico>
