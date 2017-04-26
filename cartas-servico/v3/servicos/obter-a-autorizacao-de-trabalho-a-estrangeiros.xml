@@ -1,58 +1,140 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-a-autorizacao-de-trabalho-a-estrangeiros</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Autorização de trabalho a estrangeiros é o ato administrativo de competência do Ministério do Trabalho e Emprego que é exigido pelas autoridades consulares brasileiras, em conformidade com a legislação em vigor, para efeito de concessão de vistos permanentes e/ou temporário a estrangeiros que desejem permanecer no Brasil a trabalho. Delibera-se sobre os pedidos de prorrogação de estada e transformação de visto (de temporário para permanente) que digam respeito a trabalho.
-
-* [Cartilhas e Manuais](http://portal.mte.gov.br/trab_estrang/guia-de-procedimentos.htm): Guia de procedimentos para os pedidos de autorização de trabalho
-
-* [Mais informações](http://portal.mte.gov.br/trab_estrang/resolucoes-normativas.htm): Os documentos a serem apresentados dependerão da Resolução Normativa e variam de acordo com o
-                caso concreto</descricao>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-a-autorizacao-de-trabalho-a-estrangeiros</id>
+    <dbId>142</dbId>
+    <nome>Obter a Autorização de Trabalho a Estrangeiros</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="654">Migranteweb</item>
+    </nomes-populares>
+    <descricao>Os estrangeiros que queiram trabalhar no Brasil precisam de autorização do Ministério do Trabalho, obtida através deste serviço. Esta autorização é essencial para aqueles que estão se candidatando a visto permanente ou temporário de trabalho.</descricao>
+    <contato>Coordenação Geral de Imigração
+* Fone: (61) 2031-6216 (08h às 12h e 14h às 18h)</contato>
     <gratuito>false</gratuito>
-    <solicitantes/>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="843">
+            <tipo>Estrangeiros</tipo>
+            <requisitos>Que pretendam trabalhar no Brasil</requisitos>
+        </solicitante>
+        <solicitante id="844">
+            <tipo>Empresas, órgãos ou entidades localizadas no país</tipo>
+            <requisitos>Que pretendam contratar um trabalhador estrangeiro,</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1128">
+            <titulo>Cadastrar-se no Sistema</titulo>
+            <descricao>Você deve se cadastrar no sistema MIGRANTEWEB.</descricao>
             <documentos>
+                <default>
+                    <item id="2293">CPF, Passaporte ou RNE</item>
+                    <item id="2294">Nome</item>
+                    <item id="2295">Dados para contato</item>
+                </default>
+            </documentos>
+            <custos>
                 <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="1382" tipo="web">
+                        <descricao>http://migranteweb.mte.gov.br/migranteweb/publico/manterUsuarioExterno/incluirUsuarioExterno.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2202">
+            <titulo>Cadastrar pedido de autorização</titulo>
+            <descricao>Você agora deve registrar o pedido de autorização dentro do sistema MIGRANTEWEB.</descricao>
+            <documentos>
+                <default>
+                    <item id="2296">Dados da empresa contratante</item>
+                    <item id="2297">Dados pessoais do trabalhador a ser contratado</item>
+                    <item id="2298">Contrato de Trabalho</item>
+                    <item id="2299">Outras documentações de acordo com a natureza do trabalho a ser realizado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2761" tipo="web">
+                        <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam;jsessionid=448D611C490C6E4A9C2DB559D92DC820</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2203">
+            <titulo>Pagamento da Taxa Individual de Imigração</titulo>
+            <descricao>Ao final do cadastro, o sistema gerará uma GRU, que você deverá pagar nas redes bancárias</descricao>
+            <documentos>
+                <default>
+                    <item id="2300">GRU</item>
+                </default>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao>Taxa de emissão</descricao>
-                        <moeda>R$</moeda>
-                        <valor>16,95</valor>
+                    <custo id="86">
+                        <descricao>Taxa Individual de Imigração</descricao>
+                        <moeda></moeda>
+                        <valor>1,693</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam</descricao>
+                    <canal-de-prestacao id="2762" tipo="presencial">
+                        <descricao>Redes bancárias.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>[Acompanhar o pedido visualizando a carta de exigência caso haja ausência de documentação, bem
-                como verificar se o processo foi deferido ou indeferido.](http://migranteweb.mte.gov.br/migranteweb/publico/consultarProcessoInternet/consultarProcesso.seam)</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2204">
+            <titulo>Receber resposta sobre o pedido</titulo>
+            <descricao>Após a análise do Ministério do Trabalho, a resposta será disponibilizada a você através do sistema e do e-mail por você cadastrado.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2764" tipo="e-mail">
+                        <descricao>E-mail cadastrado por você no sistema MIGRANTEWEB.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao>[Receber os documentos que instruirá o pedido de autorização de trabalho](http://portal.mte.gov.br/postos/)</descricao>
+                    <canal-de-prestacao id="2763" tipo="web">
+                        <descricao>http://migranteweb.mte.gov.br/migranteweb/login.seam;jsessionid=448D611C490C6E4A9C2DB559D92DC820</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <orgao id="2844"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2439">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="1280">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
+        <item>Empregabilidade</item>
+        <item>Fiscalização do Estado</item>
+        <item>Recursos humanos</item>
+        <item>Relações de Trabalho</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="1964">permissão</item>
+        <item id="1965">visto</item>
+        <item id="1966">imigrante</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="655">[Lei 6.815/1980](http://www.planalto.gov.br/ccivil_03/leis/L6815.htm)</item>
+    </legislacoes>
 </servico>
