@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-certidao-de-debitos-e-consulta-de-autos-de-infracao</id>
+    <dbId>835</dbId>
+    <nome>Emitir Certidão de débitos e Consulta de autos de infração</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="662">Certidão de débito</item>
+    </nomes-populares>
+    <descricao>Através deste serviço você pode emitir a certidão de débitos trabalhistas de empresas, assim como consultar seus autos de infração e andamento do processo. A certidão de débito é requerida para participação de licitações e outras interações da empresa com o Estado.</descricao>
+    <contato>Secretaria de Inspeção do Trabalho
+* Fone: (61) 2031-6909 (de 08h às 12h e de 14h às 18h)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="854">
+            <tipo>Pessoas Físicas e Jurídicas</tipo>
+            <requisitos>A certidão é um documento público, toda pessoa que tenha os dados necessários pode emiti-la</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento/>
+    <etapas>
+        <etapa id="2233">
+            <titulo>Emitir a Certidão</titulo>
+            <descricao>Você deve visitar a página e informar os dados pedidos</descricao>
+            <documentos>
+                <default>
+                    <item id="2369">CNPJ da empresa ou CPF do seu responsável</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2793" tipo="web-emitir">
+                        <descricao>http://consultacpmr.mte.gov.br/ConsultaCPMR/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2234">
+            <titulo>Verificar autenticidade da Certidão</titulo>
+            <descricao>Caso você deseje verificar a autenticidade de uma certidão apresentada, você pode fazê-lo na página do serviço</descricao>
+            <documentos>
+                <default>
+                    <item id="2370">Código de verificação da certidão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2794" tipo="web-consultar">
+                        <descricao>http://consultacpmr.mte.gov.br/ConsultaCPMR/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2454">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2455">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2456">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="2457">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Trabalho</item>
+        <item>Relações de Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1992">Débitos trabalhistas</item>
+        <item id="1993">infrações trabalhistas</item>
+        <item id="1994">CPMR</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="667">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+    </legislacoes>
+</servico>
