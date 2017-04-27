@@ -1,40 +1,100 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>registrar-empresa-de-trabalho-temporario</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Para solicitação de registro de empresa de trabalho temporário, conforme normatizado na Lei n.º 6.019/1974.</descricao>
-    <gratuito/>
-    <solicitantes/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-empresa-de-trabalho-temporario</id>
+    <dbId>381</dbId>
+    <nome>Registrar Empresa de Trabalho Temporário</nome>
+    <sigla>SIRETT</sigla>
+    <nomes-populares>
+        <item id="665">Trabalho temporário</item>
+    </nomes-populares>
+    <descricao>As empresas que precisam fazer uso de trabalho temporário devem registrar-se junto ao Ministério do Trabalho, através deste serviço.</descricao>
+    <contato>Contato Telefônico: (61) 2031.6886 (08h às 12h e 14h às 18h)
+
+E-mail: sirett.cgrt@mte.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="857">
+            <tipo>Empresas</tipo>
+            <requisitos>Que precisem atender a necessidade transitória de substituição de seu pessoal regular e permanente ou de acréscimo extraordinário de serviços</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <entre min="1" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1445">
+            <titulo>Solicitar registro da empresa</titulo>
+            <descricao>Você deve solicitar o registro da empresa no sistema</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="2396">CNPJ</item>
+                    <item id="2397">CPF do representante</item>
+                    <item id="2398">RG do representante</item>
+                    <item id="2399">Certidões da Receita Federal</item>
+                    <item id="2400">Comprovante de endereço</item>
+                    <item id="2401">Contrato Social</item>
+                    <item id="2402">Procuração do representante legal</item>
+                    <item id="2403">Registro na Junta Comercial</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>http://www3.mte.gov.br/sistemas/sirett/default.asp</descricao>
+                    <canal-de-prestacao id="1788" tipo="web">
+                        <descricao>http://www3.mte.gov.br/internet/sirett/pedidoregistro/autenticarempresa.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2241">
+            <titulo>Registrar contratos</titulo>
+            <descricao>Após o cadastro da empresa, você deve cadastrar os contratos temporários realizados pela empresa no mês anterior</descricao>
+            <documentos>
+                <default>
+                    <item id="2404">Contrato temporário de trabalho</item>
+                    <item id="2405">Dados do empregaod</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2804" tipo="web">
+                        <descricao>http://www3.mte.gov.br/internet/sirett/contratoTrabalho/autenticarEmpresa.asp?acao=incluirEstudoMercado</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844"/>
+    <orgao id="2844"/>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item idSegmento="3" idServicoSegmento="1673">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
+        <item>Comércio e Serviços</item>
+        <item>Empregabilidade</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Fiscalização do Estado</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Recursos humanos</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="2002">Contrato temporário</item>
+        <item id="2003">Substituição temporária</item>
+        <item id="2004">ETT</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="671">[PORTARIA n° 789 DE 02 de junho de 2014](http://acesso.mte.gov.br/data/files/8A7C816A4643DA0C01468252F52911BE/Portaria_789_TrabalhoTemporario.pdf)</item>
+        <item id="672">[Instrução Normativa 18, de 7 de novembro de 2014](http://acesso.mte.gov.br/data/files/FF80808148EC2E5E0149C965F4A060B1/IN%2018.pdf)</item>
+        <item id="673">[Lei 6.019, de 03 de janeiro de 1974](http://www.planalto.gov.br/ccivil_03/leis/L6019.htm)</item>
+        <item id="674">[Decreto 73.841, de 13 de março de 1974](http://www.planalto.gov.br/ccivil_03/decreto/Antigos/D73841.htm)</item>
+    </legislacoes>
 </servico>
