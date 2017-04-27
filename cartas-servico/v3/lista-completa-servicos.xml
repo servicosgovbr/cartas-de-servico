@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
+            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
+            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
-            <item>Segurança e Ordem Pública</item>
-            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -20972,41 +20972,6 @@ Informações sobre o serviço de defesa de autuação, que consiste no recebime
         </segmentos-da-sociedade>
     </servico>
     <servico>
-        <id>sistema-de-registro-de-empresas-de-trabalho-temporario-sirett</id>
-        <dbId>381</dbId>
-        <nome>Sistema de Registro de Empresas de Trabalho Temporário - SIRETT</nome>
-        <sigla></sigla>
-        <descricao>Para solicitação de registro de empresa de trabalho temporário, conforme normatizado na Lei n.º 6.019/1974.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1445">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1788" tipo="web">
-                            <descricao>http://www3.mte.gov.br/sistemas/sirett/default.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="2844"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1673">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-estabelecimentos-registrados-papel-imune</id>
         <dbId>382</dbId>
         <nome>Consulta Estabelecimentos Registrados - Papel Imune</nome>
@@ -31646,6 +31611,319 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>registrar-servicos-especializados-em-seguranca-e-medicina-do-trabalho</id>
+        <dbId>831</dbId>
+        <nome>Registrar Serviços Especializados em Segurança e Medicina do Trabalho</nome>
+        <sigla>SESMT</sigla>
+        <descricao>Todas as empresas tem a obrigação de manter serviços especializados em segurança e medicina do trabalho (SESMTs), e devem registrar estes serviços junto ao Ministério do Trabalho.Para permitir que as empresas cumpram esta obrigação é que existe este serviço.</descricao>
+        <contato>* E-mail: sesmt@mte.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="850">
+                <tipo>Empresas que possuam empregados</tipo>
+                <requisitos>Você pode saber quantos profissionais e SESMTs sua empresa deve ter consultando os quadros I e II da [Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2222">
+                <titulo>Cadastrar-se no sistema</titulo>
+                <descricao>Em primeiro lugar você deve cadastrar um usuário e senha no sistema SESMT</descricao>
+                <documentos>
+                    <default>
+                        <item id="2355">CPF</item>
+                        <item id="2356">Data de Nascimento</item>
+                        <item id="2357">Endereço de e-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2782" tipo="web">
+                            <descricao>https://sesmt.mte.gov.br/Usuario/CadastrarUsuario.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2223">
+                <titulo>Cadastrar serviços</titulo>
+                <descricao>Realizada a inscrição no sistema, você agora irá cadastrar os dados dos SESMTs de sua empresa, assim como os dados dos profissionais que os compõem.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2358">Dados da empresa</item>
+                        <item id="2359">Dados dos Serviços Especializados em Segurança e Medicina do Trabalho da Empresa</item>
+                        <item id="2360">Dados dos profissionais que compõe os serviços.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2783" tipo="web">
+                            <descricao>https://sesmt.mte.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2224">
+                <titulo>Imprimir recibo</titulo>
+                <descricao>Após a conclusão de cadastro do SESMT, o sistema irá gerar um recibo, que você poderá imprimir e que é o comprovante de cumprimento desta obrigação legal.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2784" tipo="web">
+                            <descricao>https://sesmt.mte.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2448">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2449">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Saúde</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1980">Segurança</item>
+            <item id="1981">Medicina do Trabalho</item>
+            <item id="1982">Cadastro</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="661">[Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</item>
+            <item id="662">[PORTARIA Nº 559, DE 3 DE AGOSTO DE 2016](http://trabalho.gov.br/images/Documentos/SST/sesmt/portaria-559.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>inscrever-se-no-cadastro-nacional-de-empreendimentos-economicos-solidarios-e-comercio-justo</id>
+        <dbId>832</dbId>
+        <nome>Inscrever-se no Cadastro Nacional de Empreendimentos Econômicos Solidários e Comércio Justo</nome>
+        <sigla>CADSOL</sigla>
+        <nomes-populares>
+            <item id="659">DCSOL</item>
+        </nomes-populares>
+        <descricao>Através deste serviço sua empresa pode requerer a Declaração de Empreendimento Econômico Solidário, que permite acesso a diversas políticas e programas públicos de Economia Solidária.</descricao>
+        <contato>E-mail: dados.senaes@mte.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="851">
+                <tipo>Empreendimentos que atendam aos seguintes requisitos:</tipo>
+                <requisitos>* Ser uma organização coletiva, formada por pessoas físicas ou formada por outros empreendimentos;
+* Exercer atividades de natureza econômica permanentes;
+* Ser uma organização autogestionária, onde os membros participam da gestão das atividades econômicas e da decisão sobre a partilha dos seus resultados, de forma democrática;
+* Ser suprafamiliar;
+* Realizar reuniões ou assembleias periódicas para deliberação de questões relativas à organização das atividades realizadas pelo empreendimento.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2225">
+                <titulo>Verificar se o seu empreendimento não está cadastrado</titulo>
+                <descricao>Os empreendimentos visitados na última rodada do mapeamento nacional do SIES (Sistema Nacional de Informações em Economia Solidária), realizada entre 2009 e 2013, já estão cadastrados no CADSOL e podem emitir a declaração, que nesse caso é válida somente até 24 de setembro de 2017. Assim, você deve primeiro verificar que o seu empreendimento já não está cadastrado.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2361">Nome e localização do empreendimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2785" tipo="web-consultar">
+                            <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/main.seam?cid=162</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2226">
+                <titulo>Preencher o formulário de cadastro</titulo>
+                <descricao>Se o seu empreendimento ainda não está cadastrado, você pode requisitar o inscrição preenchendo e enviando o formulário de cadastro no Sistema CADSOL</descricao>
+                <documentos>
+                    <default>
+                        <item id="2362">Informações sobre o empreendimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2786" tipo="web">
+                            <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/formulario/main.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2227">
+                <titulo>Verificar situação de seu empreendimento</titulo>
+                <descricao>Você deve verificar com frequência a situação em que se encontra sua requisição, porque pode ser necessário complementar ou corrigir informações e dados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2363">Nome e localização do empreendimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2787" tipo="web-consultar">
+                            <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/main.seam?cid=162</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2228">
+                <titulo>Emitir a DECSOL</titulo>
+                <descricao>Quando o seu cadastro for aprovado, você poderá imprimir no sistema a  Declaração de Empreendimento Econômico Solidário (DCSOL), que é o comprovante do cadastro do seu empreendimento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2364">IDSOL, CNPJ ou nome do empreendimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2788" tipo="web-emitir">
+                            <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/geral/main.seam?cid=164</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2450">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2451">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Combate a epidemias</item>
+            <item>Compras governamentais</item>
+            <item>Empregabilidade</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1983">Economia solidária</item>
+            <item id="1984">SIES</item>
+            <item id="1985">cooperação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="663">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 1](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B31C050C5/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.1.pdf)</item>
+            <item id="664">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 2](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B4CE451B6/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.2.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-empresas-que-utilizam-benzeno</id>
+        <dbId>833</dbId>
+        <nome>Cadastrar empresas que utilizam Benzeno</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="660">CETRAB</item>
+        </nomes-populares>
+        <descricao>Este serviço permite o cadastro, junto ao Ministério do Trabalho, das empresas que produzem ou lidam com Benzeno, como demanda a legislação.</descricao>
+        <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
+* Fone: (61) 2031-6689</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="852">
+                <tipo>Empresas</tipo>
+                <requisitos>Que produzem, transportam, armazenam, utilizam ou manipulam o produto Benzeno e suas misturas líquidas contendo 1% ou mais de volume</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="7" max="15" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2229">
+                <titulo>Preenchimento e entrega do formulário</titulo>
+                <descricao>O representante da empresa irá retirar, preencher e entregar o formulário no local de atendimento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2365">Formulário</item>
+                        <item id="2366">Documentação da empresa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2789" tipo="presencial">
+                            <descricao>Superintendências Regionais de Trabalho e Emprego</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2230">
+                <titulo>Confirmação do registro</titulo>
+                <descricao>A empresa receberá ofício confirmando seu cadastro.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2790" tipo="postal">
+                            <descricao>Endereço informado da sede da empresa</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2452">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Segurança e Ordem Pública</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1986">Benzeno</item>
+            <item id="1987">Insalubridade</item>
+            <item id="1988">Norma Regulamentadora nº 15</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="665">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>consulta-rendimentos-informados-por-fontes-pagadoras-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrati</id>
         <dbId>666</dbId>
         <nome>Consulta Rendimentos Informados por Fontes Pagadoras (DIRPF - Declaração do Imposto sobre a Renda da Pessoa
@@ -38367,6 +38645,86 @@ DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.
         </legislacoes>
     </servico>
     <servico>
+        <id>cadastrar-empresas-que-utilizam-amianto</id>
+        <dbId>834</dbId>
+        <nome>Cadastrar empresas que utilizam Amianto</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="661">Amianto</item>
+        </nomes-populares>
+        <descricao>Este serviço permite o cadastro, junto ao Ministério do Trabalho, das empresas que produzem ou lidam com Amianto, como demanda a legislação.</descricao>
+        <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
+* Fone: (61) 2031-6689</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="853">
+                <tipo>Empresas</tipo>
+                <requisitos>que produzem, utilizam ou comercializam fibras de asbesto e as responsáveis pela remoção de sistemas que contêm ou podem liberar fibras de asbesto para o ambiente.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2231">
+                <titulo>Preenchimento e entrega do formulário</titulo>
+                <descricao>O representante da empresa irá retirar, preencher e entregar o formulário no local de atendimento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2367">Formulário</item>
+                        <item id="2368">Documentação da empresa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2791" tipo="presencial">
+                            <descricao>Superintendências Regionais de Trabalho e Emprego</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2232">
+                <titulo>Confirmação do registro</titulo>
+                <descricao>A empresa receberá ofício confirmando seu cadastro.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2792" tipo="postal">
+                            <descricao>Endereço informado da sede da empresa</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2453">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Segurança e Ordem Pública</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1989">Asbesto</item>
+            <item id="1990">insalubridade</item>
+            <item id="1991">Norma Regulamentadora nº 15</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="666">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>download-de-programas-e-declaracoes-da-receita-federal</id>
         <dbId>364</dbId>
         <nome>Download de Programas e Declarações da Receita Federal</nome>
@@ -38406,6 +38764,91 @@ DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.
         </areas-de-interesse>
         <legislacoes>
             <item id="642">Teste</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>emitir-certidao-de-debitos-e-consulta-de-autos-de-infracao</id>
+        <dbId>835</dbId>
+        <nome>Emitir Certidão de débitos e Consulta de autos de infração</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="662">Certidão de débito</item>
+        </nomes-populares>
+        <descricao>Através deste serviço você pode emitir a certidão de débitos trabalhistas de empresas, assim como consultar seus autos de infração e andamento do processo. A certidão de débito é requerida para participação de licitações e outras interações da empresa com o Estado.</descricao>
+        <contato>Secretaria de Inspeção do Trabalho
+* Fone: (61) 2031-6909 (de 08h às 12h e de 14h às 18h)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="854">
+                <tipo>Pessoas Físicas e Jurídicas</tipo>
+                <requisitos>A certidão é um documento público, toda pessoa que tenha os dados necessários pode emiti-la</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2233">
+                <titulo>Emitir a Certidão</titulo>
+                <descricao>Você deve visitar a página e informar os dados pedidos</descricao>
+                <documentos>
+                    <default>
+                        <item id="2369">CNPJ da empresa ou CPF do seu responsável</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2793" tipo="web-emitir">
+                            <descricao>http://consultacpmr.mte.gov.br/ConsultaCPMR/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2234">
+                <titulo>Verificar autenticidade da Certidão</titulo>
+                <descricao>Caso você deseje verificar a autenticidade de uma certidão apresentada, você pode fazê-lo na página do serviço</descricao>
+                <documentos>
+                    <default>
+                        <item id="2370">Código de verificação da certidão</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2794" tipo="web-consultar">
+                            <descricao>http://consultacpmr.mte.gov.br/ConsultaCPMR/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2454">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2457">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2455">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2456">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1992">Débitos trabalhistas</item>
+            <item id="1993">infrações trabalhistas</item>
+            <item id="1994">CPMR</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="667">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -38544,6 +38987,844 @@ DE 19 DE JULHO DE 2001)[http://www-periodicos-capes-gov-br.ez1.periodicos.capes.
         </palavras-chave>
         <legislacoes>
             <item id="654">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certidao-declaratoria-de-transporte-de-trabalhadores</id>
+        <dbId>836</dbId>
+        <nome>Obter Certidão Declaratória de Transporte de Trabalhadores</nome>
+        <sigla>CDTT</sigla>
+        <descricao>Para  o  transporte  de  trabalhadores  contratados  em  qualquer  atividade  econômica,  urbana ou rural, recrutados  para  trabalhar  em  localidade  diversa  da  sua  origem,  é  necessária  a  comunicação  do  fato  ao  órgão  local  do  Ministério  do  Trabalho  e  Emprego  -  MTE  por  intermédio  da  Certidão  Declaratória  de Transporte de Trabalhadores - CDTT</descricao>
+        <contato>Superintendências Regionais do Trabalho e Emprego e Gerências Regionais de Trabalho e Emprego</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="855">
+                <tipo>Empregador</tipo>
+                <requisitos>Que vá transportar seus funcionários para local diferente do seu local de origem.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2235">
+                <titulo>Preencher e entregar a declaração</titulo>
+                <descricao>Você deve preencher e entregar a declaração, acompanhada da documentação pedida, no Posto de Atendimento do Ministério do Trabalho.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2371">CDTT preenchida</item>
+                        <item id="2372">Cópia da inscrição no CNPJ ou CEI e CPF do empregador;</item>
+                        <item id="2373">Procuração original ou cópia autenticada, concedendo poderes ao procurador para recrutar, contratar trabalhadores e proceder ao encaminhamento da CDTT junto à SRTE;</item>
+                        <item id="2374">Cópia do contrato social do empregador, quando se tratar de pessoa jurídica;</item>
+                        <item id="2375">Cópias do documento de identidade do procurador e das habilitações dos condutores dos veículos;</item>
+                        <item id="2376">Cópias dos contratos individuais de trabalho;</item>
+                        <item id="2377">Cópia do certificado de registro para fretamento da empresa transportadora ou do comprovante de custeio por parte do empregador do transporte efetuado por linhas regulares;</item>
+                        <item id="2378">Relação nominal dos trabalhadores recrutados, com os números da Carteira de Trabalho e Previdência Social - CTPS, e do Número de Inscrição do Trabalhador - NIT</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2795" tipo="presencial">
+                            <descricao>Superintendências Regionais do Trabalho e Emprego e Gerências Regionais de Trabalho e Emprego</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2236">
+                <titulo>Receber a Certidão Protocolada</titulo>
+                <descricao>Estando a documentação em ordem, a certidão será protocolada e você receberá uma cópia, que será o seu comprovante de cumprimento das exigências legais.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2796" tipo="presencial">
+                            <descricao>Superintendências Regionais do Trabalho e Emprego e Gerências Regionais de Trabalho e Emprego</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2458">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2459">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Proteção Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1995">transporte de trabalhadores</item>
+            <item id="1996">aliciamento de trabalhadores</item>
+            <item id="1997">segurança do trabalhador</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="668">[DECRETO-LEI No 2.848, DE 7 DE DEZEMBRO DE 1940](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del2848.htm)</item>
+            <item id="669">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980](http://www.planalto.gov.br/ccivil_03/leis/L6815.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>encontrar-emprego-no-servico-de-intermediacao-de-mao-de-obra-do-sine</id>
+        <dbId>837</dbId>
+        <nome>Encontrar emprego no Serviço de Intermediação de Mão de Obra do SINE</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="663">SINE</item>
+            <item id="664">Mais Emprego</item>
+        </nomes-populares>
+        <descricao>Este serviço permite que você busque um trabalho entre as vagas cadastradas no sistema.</descricao>
+        <contato>Você pode tirar dúvidas sobre o serviço na [rede de atendimento do Ministério do Trabalho](http://trabalho.gov.br/rede-de-atendimento) ou nos [Postos do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="856">
+                <tipo>Todo cidadão.</tipo>
+                <requisitos>Que tenha a Carteira de Trabalho e Previdência Social.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="15" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2237">
+                <titulo>Cadastrar-se no sistema</titulo>
+                <descricao>Você deve se cadastrar no serviço de Intermediação de Mão de Obra para poder encontrar e concorrer às vagas oferecidas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2379">PIS / PASEP / NIS / NIT</item>
+                        <item id="2380">CPF</item>
+                        <item id="2381">E-mail</item>
+                        <item id="2382">Dados Pessoais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2798" tipo="presencial">
+                            <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2797" tipo="web">
+                            <descricao>https://imo.maisemprego.mte.gov.br/imoweb/login.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2238">
+                <titulo>Consultar vagas</titulo>
+                <descricao>Você deve consultar as vagas disponíveis de emprego ou estágio no sistema</descricao>
+                <documentos>
+                    <default>
+                        <item id="2383">PIS / PASEP / NIS / NIT</item>
+                        <item id="2384">CPF</item>
+                        <item id="2385">RG</item>
+                        <item id="2386">Carteira de Trabalho e Previdência Social</item>
+                        <item id="2387">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2800" tipo="presencial">
+                            <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2799" tipo="web">
+                            <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2239">
+                <titulo>Se candidatar</titulo>
+                <descricao>Escolhida a vaga desejada, você pode se candidatar para participar do processo de intermediação</descricao>
+                <documentos>
+                    <default>
+                        <item id="2388">PIS / PASEP / NIS / NIT</item>
+                        <item id="2389">CPF</item>
+                        <item id="2390">RG</item>
+                        <item id="2391">Carteira de Trabalho e Previdência Social</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2802" tipo="presencial">
+                            <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2801" tipo="web">
+                            <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2240">
+                <titulo>Participar de entrevista</titulo>
+                <descricao>Sendo selecionado pelo empregador disponibilizando a vaga, você participará de entrevista com ele, onde será decidido se você ocupará a vaga.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2392">PIS / PASEP / NIS / NIT</item>
+                        <item id="2393">CPF</item>
+                        <item id="2394">RG</item>
+                        <item id="2395">Carteira de Trabalho e Previdência Social</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2803" tipo="presencial">
+                            <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2460">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1998">SINE</item>
+            <item id="1999">Emprego</item>
+            <item id="2000">Estágio</item>
+            <item id="2001">Vagas de trabalho</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="670">[Decreto Nº 76.403 de 08/10/1975](http://portalfat.mte.gov.br/programas-e-acoes-2/sistema-nacional-de-emprego-sine/rede-sine/legislacao-sine/decreto-no-76-403-de-08101975-cria-o-sistema-nacional-de-emprego-sine-e-da-outras-providencias/)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registrar-empresa-de-trabalho-temporario</id>
+        <dbId>381</dbId>
+        <nome>Registrar Empresa de Trabalho Temporário</nome>
+        <sigla>SIRETT</sigla>
+        <nomes-populares>
+            <item id="665">Trabalho temporário</item>
+        </nomes-populares>
+        <descricao>As empresas que precisam fazer uso de trabalho temporário devem registrar-se junto ao Ministério do Trabalho, através deste serviço.</descricao>
+        <contato>Contato Telefônico: (61) 2031.6886 (08h às 12h e 14h às 18h)
+
+E-mail: sirett.cgrt@mte.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="857">
+                <tipo>Empresas</tipo>
+                <requisitos>Que precisem atender a necessidade transitória de substituição de seu pessoal regular e permanente ou de acréscimo extraordinário de serviços</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1445">
+                <titulo>Solicitar registro da empresa</titulo>
+                <descricao>Você deve solicitar o registro da empresa no sistema</descricao>
+                <documentos>
+                    <default>
+                        <item id="2396">CNPJ</item>
+                        <item id="2397">CPF do representante</item>
+                        <item id="2398">RG do representante</item>
+                        <item id="2399">Certidões da Receita Federal</item>
+                        <item id="2400">Comprovante de endereço</item>
+                        <item id="2401">Contrato Social</item>
+                        <item id="2402">Procuração do representante legal</item>
+                        <item id="2403">Registro na Junta Comercial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1788" tipo="web">
+                            <descricao>http://www3.mte.gov.br/internet/sirett/pedidoregistro/autenticarempresa.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2241">
+                <titulo>Registrar contratos</titulo>
+                <descricao>Após o cadastro da empresa, você deve cadastrar os contratos temporários realizados pela empresa no mês anterior</descricao>
+                <documentos>
+                    <default>
+                        <item id="2404">Contrato temporário de trabalho</item>
+                        <item id="2405">Dados do empregaod</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2804" tipo="web">
+                            <descricao>http://www3.mte.gov.br/internet/sirett/contratoTrabalho/autenticarEmpresa.asp?acao=incluirEstudoMercado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1673">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Empregabilidade</item>
+            <item>Fiscalização do Estado</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2002">Contrato temporário</item>
+            <item id="2003">Substituição temporária</item>
+            <item id="2004">ETT</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="671">[PORTARIA n° 789 DE 02 de junho de 2014](http://acesso.mte.gov.br/data/files/8A7C816A4643DA0C01468252F52911BE/Portaria_789_TrabalhoTemporario.pdf)</item>
+            <item id="672">[Instrução Normativa 18, de 7 de novembro de 2014](http://acesso.mte.gov.br/data/files/FF80808148EC2E5E0149C965F4A060B1/IN%2018.pdf)</item>
+            <item id="673">[Lei 6.019, de 03 de janeiro de 1974](http://www.planalto.gov.br/ccivil_03/leis/L6019.htm)</item>
+            <item id="674">[Decreto 73.841, de 13 de março de 1974](http://www.planalto.gov.br/ccivil_03/decreto/Antigos/D73841.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual</id>
+        <dbId>828</dbId>
+        <nome>Obter Certificado de Aprovação de Equipamento de Proteção Individual</nome>
+        <sigla>CA</sigla>
+        <nomes-populares>
+            <item id="655">CA do EPI</item>
+        </nomes-populares>
+        <descricao>Se um produto será utilizado como Equipamento de Proteção de Individual (EPI) e encontra-se listado no Anexo I da [Norma Regulamentadora 06 (NR-06)](http://trabalho.gov.br/images/Documentos/SST/NR/NR6.pdf), então há necessidade de emissão de Certificado de Aprovação - CA, através deste serviço, para que ele possa ser comercializado.</descricao>
+        <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
+* Fone: (61) 2031 6689
+* Endereço: Esplanada dos Ministérios Bloco F, Ed. Anexo, Ala B, Brasília-DF
+* CEP: 70056-900,</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="846">
+                <tipo>Empresa fabricante</tipo>
+                <requisitos>De produto que pretende ser comercializado como Equipamento de Proteção Individual (EPI) listado no Anexo I da NR-06.</requisitos>
+            </solicitante>
+            <solicitante id="847">
+                <tipo>Empresa importadora</tipo>
+                <requisitos>De produto que pretende ser comercializado como Equipamento de Proteção Individual (EPI) listado no Anexo I da NR-06.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>5</quantidade>
+            <unidade>anos</unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2208">
+                <titulo>Obter e preencher os formulários necessários</titulo>
+                <descricao>Será preciso preencher 3 formulários: 
+* Cadastro de Usuário CAEPI;
+* Cadastro da Empresa no Sistema CAEPI;
+* Requerimento de Emissão do CA;</descricao>
+                <documentos>
+                    <default>
+                        <item id="2308">Dados do produto</item>
+                        <item id="2309">Dados da empresa</item>
+                        <item id="2310">Dados do representante da empresa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2768" tipo="web">
+                            <descricao>http://trabalho.gov.br/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual-epi/cadastramento-de-empresas-e-emissao-de-ca</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2209">
+                <titulo>Envio da documentação ao Ministério do Trabalho</titulo>
+                <descricao>Preenchidos os formulários, você deve reunir a documentação necessária e enviá-la para o Ministério do Trabalho.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2317">Formulário de Cadastro de Usuário CAEPI</item>
+                        <item id="2318">Formulário de Cadastro da Empresa no Sistema CAEPI</item>
+                        <item id="2319">Formulário de Requerimento de Emissão do CA</item>
+                        <item id="2320">Cópia autenticada do ato constitutivo da empresa, no qual conste expressamente, dentre os objetivos sociais da empresa, a fabricação e/ou a importação de EPI.</item>
+                        <item id="2321">Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da Norma Regulamentadora n.º 6 - NR-6;</item>
+                        <item id="2322">Cópia autenticada do relatório de ensaio, emitido por laboratório credenciado pelo DSST em nome da empresa requerente do CA, quando o equipamento não tiver sua conformidade avaliada no âmbito do SINMETRO;</item>
+                        <item id="2323">Cópia autenticada do certificado de conformidade, emitido em nome da empresa requerente do CA, que comprove que o produto teve sua conformidade avaliada no âmbito do SINMETRO, quando for o caso</item>
+                        <item id="2324">Cópia autenticada do certificado de origem e da declaração do fabricante estrangeiro que autorize o importador a comercializar o produto no Brasil, quando se tratar de EPI importado, ambos com tradução juramentada para língua portuguesa.</item>
+                    </default>
+                    <caso id="353" descricao="º Para a emissão ou renovação do CA de equipamentos ensaiados ou certificados por laboratório ou organismo certificador estrangeiro">
+                        <documento>
+                            <id>2311</id>
+                            <descricao>Memorial descritivo do EPI, conforme disposto na Portaria DSST/SIT n.º 452, de 20/11/2014</descricao>
+                        </documento>
+                        <documento>
+                            <id>2312</id>
+                            <descricao>Cópia do manual de instruções do EPI, conforme na Portaria DSST/SIT n.º 452, de 20/11/2014;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2313</id>
+                            <descricao>Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da NR-6;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2314</id>
+                            <descricao>Cópia autenticada do certificado de origem e da declaração do fabricante estrangeiro que autorize o importador a comercializar o produto no Brasil, quando se tratar de EPI importado, ambos com tradução juramentada para língua portuguesa;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2315</id>
+                            <descricao>Cópia autenticada dos certificados de conformidade ou relatórios de ensaios realizados no exterior, emitidos em nome da empresa requerente do CA, com tradução juramentada para língua portuguesa.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="354" descricao="Para emissão ou renovação de CA de equipamento de proteção individual conjugado cujos dispositivos são fabricados por empresas distintas">
+                        <documento>
+                            <id>2316</id>
+                            <descricao>Declaração de autorização de utilização em dispositivo conjungado, firmada pelo representante legal do fabricante e/ou importador detentor do CA do dispositivo que será conjugado com o equipamento do requerente, com firma reconhecida em cartório.</descricao>
+                        </documento>
+                        <documento>
+                            <id>2325</id>
+                            <descricao>Cópia autenticada do relatório de ensaio comprovando a eficácia das conexões e junções</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2769" tipo="postal">
+                            <descricao>Coordenação-Geral de Normatização e Programas – CGNOR/ DSST/ SIT/MTb
+* Endereço: Esplanada dos Ministérios Bloco F, Ed. Anexo, Ala B, Brasília-DF
+* CEP: 70056-900,</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2210">
+                <titulo>Confirmar recebimento da documentação pelo Ministério do Trabalho (opcional)</titulo>
+                <descricao>Você pode confirmar o recebimento pelo Ministério do Trabalho da documentação enviada pela sua empresa, através do canal abaixo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2326">Número do protocolo</item>
+                        <item id="2327">Nome da empresa ou do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2770" tipo="web-consultar">
+                            <descricao>http://consulta.mte.gov.br/cprodweb/consulta_externa.asp?cmdCommand=Novo</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2211">
+                <titulo>Receber resultado e o Certificado, se aprovado.</titulo>
+                <descricao>Após a análise, o Ministério enviará o resultado e, se aprovado, o CA para você.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2771" tipo="postal">
+                            <descricao>Endereço da empresa cadastrado junto à Receita Federal.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2443">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Normalização e Qualidade</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Saúde</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1970">segurança do trabalho</item>
+            <item id="1971">equipamento de proteção</item>
+            <item id="1972">Aprovação de equipamentos</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="658">[Norma Regulamentadora 06](http://trabalho.gov.br/images/Documentos/SST/NR/NR6.pdf)</item>
+            <item id="657">[PORTARIA N.º 451, DE 20 DE NOVEMBRO DE 2014](http://trabalho.gov.br/images/Documentos/SST/EPI/Portaria451Sistema-CAEPI.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registro-profissional</id>
+        <dbId>830</dbId>
+        <nome>Registro Profissional</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="658">SIRPWEB</item>
+            <item id="657">DRT</item>
+        </nomes-populares>
+        <descricao>O registro profissional é exigido de trabalhadores de 14 categorias para ingressarem no mercado de trabalho. Se você é um profissional de uma delas, você deve utilizar este serviço para obter o seu Cartão de Registro Profissional.</descricao>
+        <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="849">
+                <tipo>Profissional das categorias regulamentadas por leis federais</tipo>
+                <requisitos>* Agenciador de propaganda;
+* Arquivista;
+* Artista;
+* Atuário;
+* Guardador e lavador de veículos;
+* Jornalista;
+* Publicitário;
+* Radialista;
+* Secretário;
+* Sociólogo;
+* Técnico em arquivo;
+* Técnico em espetáculos de diversões;
+* Técnico de segurança do trabalho; e
+* Técnico em secretariado.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2217">
+                <titulo>Agendar atendimento</titulo>
+                <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2340">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2777" tipo="web-agendar">
+                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2218">
+                <titulo>Preencher Solicitação de Registro</titulo>
+                <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB **antes de comparecer ao seu atendimento presencial**</descricao>
+                <documentos>
+                    <default>
+                        <item id="2341">CPF</item>
+                        <item id="2342">Dados pessoais e de escolaridade</item>
+                        <item id="2343">Dados de sua profissão</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2778" tipo="web-preencher">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/solicitacoes/solicitarRegistro.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2219">
+                <titulo>Comparecer à unidade de atendimento</titulo>
+                <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2344">Requerimento em 2 (duas) vias, devidamente assinado;</item>
+                        <item id="2345">Fotocópia autenticada do documento de identificação que será apresentado ao órgão;</item>
+                        <item id="2346">Fotocópia autenticada do Cadastro de Pessoa Física (CPF);</item>
+                        <item id="2347">Fotocópia autenticada do número, série e qualificação civil da Carteira de Trabalho e Previdência Social (CTPS); e</item>
+                        <item id="2348">Documentos de capacitação específicos da profissão.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2779" tipo="presencial">
+                            <descricao>Unidade do Ministério do Trabalho escolhida no agendamento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2220">
+                <titulo>Verificar o andamento da solicitação</titulo>
+                <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2349">CPF</item>
+                        <item id="2350">Número da solicitação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2780" tipo="web-acompanhar">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/consultas/acompanharSolicitacao.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2221">
+                <titulo>Emitir Cartão de Registro Profissional</titulo>
+                <descricao>Quando o processo for finalizado, você deve emitir o seu Cartão de Registro de Contratante no SIRPWEB, que é o documento que irá permitir a contratação dos profissionais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2351">CPF</item>
+                        <item id="2352">Nome</item>
+                        <item id="2353">Nome da Mãe</item>
+                        <item id="2354">Data de Nascimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2781" tipo="web-emitir">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/impressoes/emitircartao/profissional/main.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2447">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1977">Licença para exercer profissão</item>
+            <item id="1978">Cartão profissional</item>
+            <item id="1979">regulamentação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="660">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registro-de-contratante</id>
+        <dbId>829</dbId>
+        <nome>Registro de Contratante</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="656">SIRPWEB</item>
+        </nomes-populares>
+        <descricao>Se você deseja contratar artistas, músicos e/ou técnicos de espetáculos de diversões, o Ministério do Trabalho fornece a você este serviço, para que você se registre como contratante.</descricao>
+        <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="848">
+                <tipo>Cidadãos brasileiros ou estrangeiros, empresas e outras entidades de direito privado</tipo>
+                <requisitos>Que queiram contratar artistas, músicos e/ou técnicos de espetáculo de diversões no país.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2212">
+                <titulo>Agendar atendimento</titulo>
+                <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2328">CPF/CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2772" tipo="web-agendar">
+                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2213">
+                <titulo>Preencher Solicitação de Registro</titulo>
+                <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB **antes de comparecer ao seu atendimento presencial**</descricao>
+                <documentos>
+                    <default>
+                        <item id="2329">CNPJ/CEI</item>
+                        <item id="2330">Dados da Empresa e sua atividade</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2773" tipo="web-preencher">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/solicitacoes/empresa/solicitarRegistro.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2214">
+                <titulo>Comparecer à unidade de atendimento</titulo>
+                <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2331">Carteira de Identidade</item>
+                        <item id="2332">CNPJ/CEI</item>
+                        <item id="2333">CPF</item>
+                        <item id="2334">Certidão de Casamento (se houver)</item>
+                        <item id="2335">Comprovante de endereço</item>
+                        <item id="2336">Registro na Junta Comercial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2774" tipo="presencial">
+                            <descricao>Unidade do Ministério do Trabalho escolhida no agendamento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2215">
+                <titulo>Verificar o andamento da solicitação</titulo>
+                <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2337">CNPJ/CEI</item>
+                        <item id="2338">Número da solicitação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2775" tipo="web-acompanhar">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/consultas/acompanharSolicitacaoEmpresa.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2216">
+                <titulo>Emitir Cartão de Registro de Contratante</titulo>
+                <descricao>Quando o processo for finalizado, você deve emitir o seu Cartão de Registro de Contratante no SIRPWEB, que é o documento que irá permitir a contratação dos profissionais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2339">CNPJ/CEI</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2776" tipo="web-emitir">
+                            <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/impressoes/emitircartao/contratante/main.seam</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2445">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2444">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2446">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Cultura</item>
+            <item>Empregabilidade</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1973">Técnicos em espetáculos de diversões</item>
+            <item id="1974">artistas</item>
+            <item id="1975">músicos</item>
+            <item id="1976">contratação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="659">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
         </legislacoes>
     </servico>
     <servico>
