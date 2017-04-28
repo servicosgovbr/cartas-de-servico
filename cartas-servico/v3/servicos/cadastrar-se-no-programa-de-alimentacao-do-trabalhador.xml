@@ -56,12 +56,17 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2720" tipo="web-inscrever-se">
-                        <descricao>pat.mte.gov.br</descricao>
+                    <canal-de-prestacao id="2720" tipo="web">
+                        <descricao>http://pat.mte.gov.br/login/login.asp#</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="339" descricao="empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
-                    <canal-de-prestacao id="2719" tipo="postal">
+                <caso id="339" descricao="Caso sua empresa ainda não tenha cadastro no sistema">
+                    <canal-de-prestacao id="2719" tipo="web-inscrever-se">
+                        <descricao>http://pat.mte.gov.br/login/cad_usuario.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="355" descricao="empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
+                    <canal-de-prestacao id="2805" tipo="postal">
                         <descricao>Esplanada dos Ministérios
 Anexo B do Bloco F - 1ª Andar, Sala 150
 Brasília-DF - CEP 70059-900</descricao>
@@ -81,7 +86,7 @@ Brasília-DF - CEP 70059-900</descricao>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2722" tipo="web-acompanhar">
-                        <descricao>pat.mte.gov.br/</descricao>
+                        <descricao>http://pat.mte.gov.br/login/login.asp#</descricao>
                     </canal-de-prestacao>
                 </default>
                 <caso id="340" descricao="Empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
