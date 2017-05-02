@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -32199,6 +32199,76 @@ Brasília/DF</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>prover-respostas-sobre-comercio-exterior-ao-usuario</id>
+        <dbId>735</dbId>
+        <nome>Prover respostas sobre comércio exterior ao usuário</nome>
+        <sigla>Comex Responde</sigla>
+        <nomes-populares>
+            <item id="566">Comex Responde</item>
+        </nomes-populares>
+        <descricao>Serviço no qual participam 20 órgãos intervenientes prestando, na Internet, informações a respeito dos seguintes assuntos relacionados ao comércio exterior brasileiro: Legislação, exigências, documentos, e procedimentos operacionais e técnicos relativos às operações de importação e exportação; Acordos internacionais; Nomenclaturas; Logística; Estatísticas; Tributos; Crédito, financiamento e apoio à exportação; Promoção comercial; e Oportunidades de negócios.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="718">
+                <tipo>Público em geral</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1996">
+                <titulo>Envio de questionamentos</titulo>
+                <descricao>O usuário envia questão e esta é respondida pelo órgão/setor competente.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1975">Nome</item>
+                        <item id="1987">E-mail</item>
+                        <item id="1988">Telefone</item>
+                        <item id="1989">Estado</item>
+                        <item id="1990">Município</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2483" tipo="web">
+                            <descricao>http://www.comexresponde.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2273">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2276">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2274">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2275">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1689">Comércio Exterior</item>
+            <item id="1690">Informações</item>
+            <item id="1691">Intervenientes</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="541">Decreto nº 8.917/2016</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>calculo-de-laudemio</id>
         <dbId>23</dbId>
         <nome>Cálculo de Laudêmio</nome>
@@ -32257,76 +32327,6 @@ Valor do Laudêmio eventualmente já recolhido (informação não obrigatória).
         </palavras-chave>
         <legislacoes>
             <item id="526">Decreto-Lei 2.490/1940, Decreto-Lei 3.438/1941, Lei 5.666/1943, Decreto-Lei 9.760/1946, Lei 5.972/1973, Lei 6.015/1973, Decreto-Lei 2.398/1987, Decreto 95.760/1988, Lei 9.636/1988, ON/SPU/GEARP 001/2000. Decreto 3.725/2001. ON/SPU/GEANE 001/2002 e Portaria/SPU 293/2007.</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>prover-respostas-sobre-comercio-exterior-ao-usuario</id>
-        <dbId>735</dbId>
-        <nome>Prover respostas sobre comércio exterior ao usuário</nome>
-        <sigla>Comex Responde</sigla>
-        <nomes-populares>
-            <item id="566">Comex Responde</item>
-        </nomes-populares>
-        <descricao>Serviço no qual participam 20 órgãos intervenientes prestando, na Internet, informações a respeito dos seguintes assuntos relacionados ao comércio exterior brasileiro: Legislação, exigências, documentos, e procedimentos operacionais e técnicos relativos às operações de importação e exportação; Acordos internacionais; Nomenclaturas; Logística; Estatísticas; Tributos; Crédito, financiamento e apoio à exportação; Promoção comercial; e Oportunidades de negócios.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="718">
-                <tipo>Público em geral</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="1996">
-                <titulo>Envio de questionamentos</titulo>
-                <descricao>O usuário envia questão e esta é respondida pelo órgão/setor competente.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1975">Nome</item>
-                        <item id="1987">E-mail</item>
-                        <item id="1988">Telefone</item>
-                        <item id="1989">Estado</item>
-                        <item id="1990">Município</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2483" tipo="web">
-                            <descricao>www.comexresponde.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2273">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2276">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2274">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2275">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comercio externo</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1689">Comércio Exterior</item>
-            <item id="1690">Informações</item>
-            <item id="1691">Intervenientes</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="541">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -33695,66 +33695,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>controlar-cotas-de-exportacao</id>
-        <dbId>766</dbId>
-        <nome>Controlar cotas de exportação</nome>
-        <sigla></sigla>
-        <descricao>Os produtos sujeitos ao controle de cota são aqueles que possuem preferências tarifárias para a entrada nos países de destino das exportações das mercadorias e devem ter o controle das quantidades monitoradas pelo país de origem.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="756">
-                <tipo>Empresas</tipo>
-                <requisitos>Empresas produtoras e/ou exportadoras de produtos sujeitos cotas tarifárias</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2079">
-                <titulo>Pedido de Registro de Exportação (RE) no Siscomex</titulo>
-                <descricao>Pedido de Registro de Exportação (RE) no Siscomex</descricao>
-                <documentos>
-                    <default>
-                        <item id="2070">Não são necessários documentos específicos</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2572" tipo="web">
-                            <descricao>www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2320">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1779">Cotas</item>
-            <item id="1780">Preferências tarifárias</item>
-            <item id="1781">Exportação</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="592">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>conduzir-procedimento-de-redeterminacao</id>
         <dbId>758</dbId>
         <nome>Conduzir procedimento de redeterminação</nome>
@@ -33873,6 +33813,66 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         <legislacoes>
             <item id="574">Decreto nº 8.058/2013</item>
             <item id="575">Decreto nº 8.917/2016</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>controlar-cotas-de-exportacao</id>
+        <dbId>766</dbId>
+        <nome>Controlar cotas de exportação</nome>
+        <sigla></sigla>
+        <descricao>Os produtos sujeitos ao controle de cota são aqueles que possuem preferências tarifárias para a entrada nos países de destino das exportações das mercadorias e devem ter o controle das quantidades monitoradas pelo país de origem.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="756">
+                <tipo>Empresas</tipo>
+                <requisitos>Empresas produtoras e/ou exportadoras de produtos sujeitos cotas tarifárias</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2079">
+                <titulo>Pedido de Registro de Exportação (RE) no Siscomex</titulo>
+                <descricao>Pedido de Registro de Exportação (RE) no Siscomex</descricao>
+                <documentos>
+                    <default>
+                        <item id="2070">Não são necessários documentos específicos</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2572" tipo="web">
+                            <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2320">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1779">Cotas</item>
+            <item id="1780">Preferências tarifárias</item>
+            <item id="1781">Exportação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="592">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -34057,81 +34057,6 @@ As etapas do serviço variam conforme as características de cada processo, como
         <legislacoes>
             <item id="567">Decreto nº 8.058/2013</item>
             <item id="568">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>desenvolver-acoes-em-conjunto-com-instituicoes-parceiras-para-auxiliar-empresas-durante-o-processo-de-exportacao</id>
-        <dbId>767</dbId>
-        <nome>Desenvolver ações, em conjunto com instituições parceiras, para auxiliar empresas durante o processo de exportação</nome>
-        <sigla>PNCE</sigla>
-        <nomes-populares>
-            <item id="607">Plano Nacional da Cultura Exportadora</item>
-        </nomes-populares>
-        <descricao>Desenvolver, em conjunto com instituições parceiras, ações que auxiliam
-as empresas durante o processo exportador, considerando o grau de maturidade
-exportadora das empresas segundo as cinco etapas a seguir: sensibilização;
-inteligência comercial; adequação de produtos e processos; promoção
-comercial; e comercialização.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="757">
-                <tipo>Empresas</tipo>
-                <requisitos>Micro, pequenas e médias empresas que desejam exportar.</requisitos>
-            </solicitante>
-            <solicitante id="758">
-                <tipo>Governos estaduais, municipais, órgãos públicos de outros poderes.</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="60" unidade="dias-uteis"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2080">
-                <titulo>Não se aplica</titulo>
-                <descricao>Não se aplica</descricao>
-                <documentos>
-                    <default>
-                        <item id="2071">Não se aplica</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2573" tipo="web">
-                            <descricao>www.pnce.mdic.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="2322">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2321">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-            <item>Economia e Finanças</item>
-            <item>Indústria</item>
-            <item>Relações Internacionais</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1782">Base exportadora</item>
-            <item id="1783">Auxílio</item>
-            <item id="1784">Exportação</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="593">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -34844,6 +34769,81 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>desenvolver-acoes-em-conjunto-com-instituicoes-parceiras-para-auxiliar-empresas-durante-o-processo-de-exportacao</id>
+        <dbId>767</dbId>
+        <nome>Desenvolver ações, em conjunto com instituições parceiras, para auxiliar empresas durante o processo de exportação</nome>
+        <sigla>PNCE</sigla>
+        <nomes-populares>
+            <item id="607">Plano Nacional da Cultura Exportadora</item>
+        </nomes-populares>
+        <descricao>Desenvolver, em conjunto com instituições parceiras, ações que auxiliam
+as empresas durante o processo exportador, considerando o grau de maturidade
+exportadora das empresas segundo as cinco etapas a seguir: sensibilização;
+inteligência comercial; adequação de produtos e processos; promoção
+comercial; e comercialização.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="757">
+                <tipo>Empresas</tipo>
+                <requisitos>Micro, pequenas e médias empresas que desejam exportar.</requisitos>
+            </solicitante>
+            <solicitante id="758">
+                <tipo>Governos estaduais, municipais, órgãos públicos de outros poderes.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="60" unidade="dias-uteis"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2080">
+                <titulo>Não se aplica</titulo>
+                <descricao>Não se aplica</descricao>
+                <documentos>
+                    <default>
+                        <item id="2071">Não se aplica</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2573" tipo="web">
+                            <descricao>http://www.pnce.mdic.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2322">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2321">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Indústria</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1782">Base exportadora</item>
+            <item id="1783">Auxílio</item>
+            <item id="1784">Exportação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="593">Decreto nº 8.917/2016</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>outorgar-atos-concessorios-de-drawback-isencao</id>
         <dbId>789</dbId>
         <nome>Outorgar Atos Concessórios de Drawback Isenção</nome>
@@ -35284,14 +35284,14 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2583" tipo="e-mail">
-                            <descricao>vitrinedoexportador@mdic.gov.br</descricao>
+                        <canal-de-prestacao id="2581" tipo="web">
+                            <descricao>http://www.vitrinedoexportador.gov.br</descricao>
                         </canal-de-prestacao>
                         <canal-de-prestacao id="2582" tipo="web">
-                            <descricao>www.comexresponde.gov.br</descricao>
+                            <descricao>http://www.comexresponde.gov.br</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="2581" tipo="web">
-                            <descricao>www.vitrinedoexportador.gov.br</descricao>
+                        <canal-de-prestacao id="2583" tipo="e-mail">
+                            <descricao>vitrinedoexportador@mdic.gov.br</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -35544,107 +35544,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>emitir-certificado-de-cota-leite-para-colombia</id>
-        <dbId>781</dbId>
-        <nome>Emitir Certificado de Cota Leite para Colômbia</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="619">Cota Leite</item>
-        </nomes-populares>
-        <descricao>Emissão do Certificado de Autorização do Brasil exigido para as exportações de produtos lácteos para a Colômbia, realizadas ao amparo do Acordo de Complementação Econômica nº 59.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="771">
-                <tipo>Pessoas Jurídicas</tipo>
-                <requisitos>Empresas produtoras e/ou exportadoras de lácteos.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2095">
-                <titulo>Confecção do Registro de Exportação no Siscomex</titulo>
-                <descricao>Confecção do Registro de Exportação no Siscomex informando todas as características da operação.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2595" tipo="web">
-                            <descricao>siscomex.desenvolvimento.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2096">
-                <titulo>Solicitação de Certificado de Origem</titulo>
-                <descricao>Preenchimento de dados referente ao CO através do sistema de Cotas</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2596" tipo="web">
-                            <descricao>http://www.mdic.gov.br/sistemas_web/cotasugar/default/seguranca</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2097">
-                <titulo>Retirada de Documento</titulo>
-                <descricao>Após a emissão de CO, a retirada do documento é realizada por representante de empresa munida de procuração.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2088">Procuração</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2597" tipo="presencial">
-                            <descricao>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2357">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1817">Certificado</item>
-            <item id="1818">Cota</item>
-            <item id="1819">Leite</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="605">Acordo de Complementação Econômica nº 59</item>
-            <item id="606">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>emitir-certidao-de-antecedentes-criminais</id>
         <dbId>788</dbId>
         <nome>Emitir Certidão de Antecedentes Criminais</nome>
@@ -35752,6 +35651,107 @@ Endereço Eletrônico: http://www.mdic.gov.br</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="615">Lei 9051/95</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>emitir-certificado-de-cota-acucar-para-uniao-europeia</id>
+        <dbId>779</dbId>
+        <nome>Emitir Certificado de Cota Açúcar para União Europeia</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="617">Cota Açúcar</item>
+        </nomes-populares>
+        <descricao>Emissão de certificado para empresas exportadoras de açúcares de cana em bruto para refinação, sem adição de aromatizantes ou de corantes, classificados nos itens NCM 1701.13.00 e 1701.14.00, quando destinadas a país da União Europeia.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="769">
+                <tipo>Pessoa jurídica</tipo>
+                <requisitos>Empresas exportadoras da Região Norte e Nordeste.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2089">
+                <titulo>Confecção do Registro de Exportação no Siscomex</titulo>
+                <descricao>Confecção do Registro de Exportação no Siscomex, informando todas as características da operação.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2586" tipo="web">
+                            <descricao>http://siscomex.desenvolvimento.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2090">
+                <titulo>Solicitação de Certificado de Origem</titulo>
+                <descricao>Preenchimento de dados referente ao CO através do sistema de Cotas</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2587" tipo="web">
+                            <descricao>http://www.mdic.gov.br/sistemas_web/cotasugar/default/seguranca</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2091">
+                <titulo>Retirada de Documento</titulo>
+                <descricao>Após a emissão de CO, a retirada do documento é realizada por representante de empresa munida de procuração.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2083">Procuração</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2588" tipo="presencial">
+                            <descricao>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2352">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1809">certificado</item>
+            <item id="1810">cota</item>
+            <item id="1811">açúcar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="602">Regulamento (CE) 891/2009, alterado pelo Regulamento de Execução (UE) nº 61/2012.</item>
+            <item id="603">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -35867,14 +35867,14 @@ Portaria SDP/MDIC nº 92, de 14/05/2015 (DOU 15/05/2015).</item>
         </legislacoes>
     </servico>
     <servico>
-        <id>emitir-certificado-de-cota-acucar-para-uniao-europeia</id>
-        <dbId>779</dbId>
-        <nome>Emitir Certificado de Cota Açúcar para União Europeia</nome>
+        <id>emitir-certificado-de-cota-leite-para-colombia</id>
+        <dbId>781</dbId>
+        <nome>Emitir Certificado de Cota Leite para Colômbia</nome>
         <sigla></sigla>
         <nomes-populares>
-            <item id="617">Cota Açúcar</item>
+            <item id="619">Cota Leite</item>
         </nomes-populares>
-        <descricao>Emissão de certificado para empresas exportadoras de açúcares de cana em bruto para refinação, sem adição de aromatizantes ou de corantes, classificados nos itens NCM 1701.13.00 e 1701.14.00, quando destinadas a país da União Europeia.</descricao>
+        <descricao>Emissão do Certificado de Autorização do Brasil exigido para as exportações de produtos lácteos para a Colômbia, realizadas ao amparo do Acordo de Complementação Econômica nº 59.</descricao>
         <contato>Secretaria de Comércio Exterior (SECEX)
 Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
 Telefone: (61) 2027-7000
@@ -35882,9 +35882,9 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         <gratuito>true</gratuito>
         <porcentagem-digital>0</porcentagem-digital>
         <solicitantes>
-            <solicitante id="769">
-                <tipo>Pessoa jurídica</tipo>
-                <requisitos>Empresas exportadoras da Região Norte e Nordeste.</requisitos>
+            <solicitante id="771">
+                <tipo>Pessoas Jurídicas</tipo>
+                <requisitos>Empresas produtoras e/ou exportadoras de lácteos.</requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
@@ -35893,9 +35893,9 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </tempo-total-estimado>
         <validade-documento/>
         <etapas>
-            <etapa id="2089">
+            <etapa id="2095">
                 <titulo>Confecção do Registro de Exportação no Siscomex</titulo>
-                <descricao>Confecção do Registro de Exportação no Siscomex, informando todas as características da operação.</descricao>
+                <descricao>Confecção do Registro de Exportação no Siscomex informando todas as características da operação.</descricao>
                 <documentos>
                     <default/>
                 </documentos>
@@ -35904,13 +35904,13 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2586" tipo="web">
-                            <descricao>siscomex.desenvolvimento.gov.br</descricao>
+                        <canal-de-prestacao id="2595" tipo="web">
+                            <descricao>http://siscomex.desenvolvimento.gov.br</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
-            <etapa id="2090">
+            <etapa id="2096">
                 <titulo>Solicitação de Certificado de Origem</titulo>
                 <descricao>Preenchimento de dados referente ao CO através do sistema de Cotas</descricao>
                 <documentos>
@@ -35921,18 +35921,18 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2587" tipo="web">
+                        <canal-de-prestacao id="2596" tipo="web">
                             <descricao>http://www.mdic.gov.br/sistemas_web/cotasugar/default/seguranca</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
-            <etapa id="2091">
+            <etapa id="2097">
                 <titulo>Retirada de Documento</titulo>
                 <descricao>Após a emissão de CO, a retirada do documento é realizada por representante de empresa munida de procuração.</descricao>
                 <documentos>
                     <default>
-                        <item id="2083">Procuração</item>
+                        <item id="2088">Procuração</item>
                     </default>
                 </documentos>
                 <custos>
@@ -35940,7 +35940,7 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2588" tipo="presencial">
+                        <canal-de-prestacao id="2597" tipo="presencial">
                             <descricao>Secretaria de Comércio Exterior (SECEX)
 Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
 Telefone: (61) 2027-7000
@@ -35952,19 +35952,19 @@ Endereço Eletrônico: http://www.mdic.gov.br</descricao>
         </etapas>
         <orgao id="3162"/>
         <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2352">Empresas</item>
+            <item idSegmento="3" idServicoSegmento="2357">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Comércio e Serviços</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="1809">certificado</item>
-            <item id="1810">cota</item>
-            <item id="1811">açúcar</item>
+            <item id="1817">Certificado</item>
+            <item id="1818">Cota</item>
+            <item id="1819">Leite</item>
         </palavras-chave>
         <legislacoes>
-            <item id="602">Regulamento (CE) 891/2009, alterado pelo Regulamento de Execução (UE) nº 61/2012.</item>
-            <item id="603">Decreto nº 8.917/2016</item>
+            <item id="605">Acordo de Complementação Econômica nº 59</item>
+            <item id="606">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -36605,72 +36605,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>disponibilizar-informacoes-sobre-os-procedimentos-operacionais-da-exportacao</id>
-        <dbId>771</dbId>
-        <nome>Disponibilizar informações sobre os procedimentos operacionais da exportação</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="611">Série Aprendendo a Exportar</item>
-            <item id="612">Aprendendo a Exportar</item>
-            <item id="613">Aprendex</item>
-        </nomes-populares>
-        <descricao>A série Aprendendo a Exportar está orientada para o aprendizado dos procedimentos operacionais da exportação, com abordagem de diversas áreas temáticas de interesse do exportador incluindo simulador do preço de exportação e o fluxo lógico e operacional do processo de exportação. Possui características que possibilitam a usuários de diferentes níveis de conhecimento a obtenção de informações de acordo com o grau de interesse.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="764">
-                <tipo>Público em geral</tipo>
-                <requisitos>Interessados em geral em comércio exterior, especialmente temas relacionados à exportação, acadêmicos, empresários, artesãos, consultores, empreendedores em geral, funcionários de instituições que possuem as pequenas empresas entre seu público-alvo e que possuem interesse no tema exportação.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2084">
-                <titulo>Acesso on-line</titulo>
-                <descricao>O acesso ao serviço consiste em uma única etapa, ou seja, o acesso on-line por intermédio da url www.aprendendoaexportar.gov.br</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2578" tipo="web">
-                            <descricao>www.aprendendoaexportar.gov.br.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2334">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2336">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2335">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2337">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comercio externo</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1794">Procedimentos</item>
-            <item id="1795">Exportação</item>
-            <item id="1796">Informações</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="597">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>examinar-pleitos-de-empresas-para-fruicao-dos-beneficios-fiscais-da-lei-de-informatica</id>
         <dbId>797</dbId>
         <nome>Examinar pleitos de empresas para fruição dos benefícios fiscais da Lei de Informática.</nome>
@@ -36939,78 +36873,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             <item id="578">Portaria SECEX nº 42/2013</item>
             <item id="579">Portaria SECEX nº 28/2013</item>
             <item id="580">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>divulgar-informacoes-gerais-e-detalhadas-sobre-exportacao-importacao-e-investimento-de-orgaos-intervenientes-de-comercio-exterior</id>
-        <dbId>776</dbId>
-        <nome>Divulgar informações gerais e detalhadas sobre exportação, importação e investimento de órgãos intervenientes de comércio exterior</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="614">Invest &amp; Export Brasil</item>
-            <item id="615">Guia de Comércio Exterior e Investimento</item>
-        </nomes-populares>
-        <descricao>O Invest &amp; Export Brasil – Guia de Comércio Exterior e Investimento – é resultado de uma ação governamental coordenada, o site reúne diversas informações sobre exportação, importação e investimentos, além de seguir a tendência internacional de compartilhamento de produtos e serviços entre diversos órgãos, em um único ambiente eletrônico, com layout padronizado.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="766">
-                <tipo>Público em geral</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2086">
-                <titulo>Atualização do conteúdo</titulo>
-                <descricao>É realizada atualização diária dos conteúdos e notícias disponibilizadas no site para consulta pelos usuários.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2580" tipo="web">
-                            <descricao>www.investexportbrasil.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="3162"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2342">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2344">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2343">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2345">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Comércio e Serviços</item>
-            <item>Comercio externo</item>
-            <item>Comunicações</item>
-            <item>Economia e Finanças</item>
-            <item>Indústria</item>
-            <item>Pesquisa e Desenvolvimento</item>
-            <item>Relações Internacionais</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1800">Exportação</item>
-            <item id="1801">Importação</item>
-            <item id="1802">Investimentos</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="599">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
     <servico>
@@ -37594,7 +37456,7 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         <nomes-populares>
             <item id="573">Calendário Brasileiro de Exposições e Feiras</item>
         </nomes-populares>
-        <descricao>O Sistema de Exposições e Feiras - Expofeiras é um site de governo para divulgação e promoção de eventos de negócio, mostrando a diversificação da economia do País. Os eventos estão disponíveis durante todo o ano em: www.expofeiras.gov.br. 
+        <descricao>O Sistema de Exposições e Feiras - Expofeiras é um site de governo para divulgação e promoção de eventos de negócio, mostrando a diversificação da economia do País. Os eventos estão disponíveis durante todo o ano em: http://www.expofeiras.gov.br. 
 
 Os dados do Expofeiras são compilados na edição impressa Calendário Brasileiro de Exposições e Feiras. A publicação é editada anualmente em três idiomas (português, inglês e espanhol) e divulgada no Brasil e no exterior em uma parceira MDIC/MRE.</descricao>
         <contato>Coordenação-Geral de Mercado Doméstico
@@ -37637,7 +37499,7 @@ d) os eventos devem: (i) estar relacionados ao setor de comércio, serviços, in
                 <canais-de-prestacao>
                     <default>
                         <canal-de-prestacao id="2484" tipo="web">
-                            <descricao>www.expofeiras.gov.br</descricao>
+                            <descricao>http://www.expofeiras.gov.br</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -37668,7 +37530,7 @@ d) os eventos devem: (i) estar relacionados ao setor de comércio, serviços, in
             <item id="1870">Eventos</item>
         </palavras-chave>
         <legislacoes>
-            <item id="638">www.expofeiras.gov.br</item>
+            <item id="638">http://www.expofeiras.gov.br</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40478,6 +40340,72 @@ fone: (61) 2031 6816 (08h às 12h e 14h às 18h)</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>disponibilizar-informacoes-sobre-os-procedimentos-operacionais-da-exportacao</id>
+        <dbId>771</dbId>
+        <nome>Disponibilizar informações sobre os procedimentos operacionais da exportação</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="611">Série Aprendendo a Exportar</item>
+            <item id="612">Aprendendo a Exportar</item>
+            <item id="613">Aprendex</item>
+        </nomes-populares>
+        <descricao>A série Aprendendo a Exportar está orientada para o aprendizado dos procedimentos operacionais da exportação, com abordagem de diversas áreas temáticas de interesse do exportador incluindo simulador do preço de exportação e o fluxo lógico e operacional do processo de exportação. Possui características que possibilitam a usuários de diferentes níveis de conhecimento a obtenção de informações de acordo com o grau de interesse.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="764">
+                <tipo>Público em geral</tipo>
+                <requisitos>Interessados em geral em comércio exterior, especialmente temas relacionados à exportação, acadêmicos, empresários, artesãos, consultores, empreendedores em geral, funcionários de instituições que possuem as pequenas empresas entre seu público-alvo e que possuem interesse no tema exportação.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2084">
+                <titulo>Acesso on-line</titulo>
+                <descricao>O acesso ao serviço consiste em uma única etapa, ou seja, o acesso on-line por intermédio da url http://www.aprendendoaexportar.gov.br</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2578" tipo="web">
+                            <descricao>http://www.aprendendoaexportar.gov.br.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2334">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2336">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2335">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2337">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1794">Procedimentos</item>
+            <item id="1795">Exportação</item>
+            <item id="1796">Informações</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="597">Decreto nº 8.917/2016</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cadastrar-se-no-programa-de-alimentacao-do-trabalhador</id>
         <dbId>820</dbId>
         <nome>Cadastrar-se no Programa de Alimentação do Trabalhador</nome>
@@ -40595,6 +40523,78 @@ Brasília-DF - CEP 70059-900</descricao>
         <legislacoes>
             <item id="644">[LEI No 6.321, DE 14 DE ABRIL DE 1976](http://www.planalto.gov.br/ccivil_03/leis/L6321.htm)</item>
             <item id="645">[DECRETO No 5, DE 14 DE JANEIRO DE 1991](http://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0005.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>divulgar-informacoes-gerais-e-detalhadas-sobre-exportacao-importacao-e-investimento-de-orgaos-intervenientes-de-comercio-exterior</id>
+        <dbId>776</dbId>
+        <nome>Divulgar informações gerais e detalhadas sobre exportação, importação e investimento de órgãos intervenientes de comércio exterior</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="614">Invest &amp; Export Brasil</item>
+            <item id="615">Guia de Comércio Exterior e Investimento</item>
+        </nomes-populares>
+        <descricao>O Invest &amp; Export Brasil – Guia de Comércio Exterior e Investimento – é resultado de uma ação governamental coordenada, o site reúne diversas informações sobre exportação, importação e investimentos, além de seguir a tendência internacional de compartilhamento de produtos e serviços entre diversos órgãos, em um único ambiente eletrônico, com layout padronizado.</descricao>
+        <contato>Secretaria de Comércio Exterior (SECEX)
+Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
+Telefone: (61) 2027-7000
+Endereço Eletrônico: http://www.mdic.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="766">
+                <tipo>Público em geral</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2086">
+                <titulo>Atualização do conteúdo</titulo>
+                <descricao>É realizada atualização diária dos conteúdos e notícias disponibilizadas no site para consulta pelos usuários.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2580" tipo="web">
+                            <descricao>http://www.investexportbrasil.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="3162"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2342">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2344">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2343">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2345">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Comunicações</item>
+            <item>Economia e Finanças</item>
+            <item>Indústria</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1800">Exportação</item>
+            <item id="1801">Importação</item>
+            <item id="1802">Investimentos</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="599">Decreto nº 8.917/2016</item>
         </legislacoes>
     </servico>
 </servicos>
