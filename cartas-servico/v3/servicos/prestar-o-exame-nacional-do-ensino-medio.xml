@@ -1,47 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>prestar-o-exame-nacional-do-ensino-medio</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>prestar-o-exame-nacional-do-ensino-medio</id>
+    <dbId>44</dbId>
+    <nome>Prestar o Exame Nacional do Ensino Médio</nome>
     <sigla>ENEM</sigla>
-    <nomes-populares/>
-    <descricao><![CDATA[O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
+    <descricao>O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
 
 * Ser uma ferramenta para avaliar a qualidade do ensino no Brasil, auxiliando na construção de ações e políticas públicas que melhorem o currículo e a educação no Ensino Médio;
 * Ser um dos critérios de acesso dos participantes a programas governamentais e instituições de ensino superior;
-* Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.]]></descricao>
-    <contato/>
+* Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.</descricao>
+    <contato></contato>
     <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="590">
             <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
-            <requisitos><![CDATA[Cursado, no ano da prova, o terceiro ano do Ensino Médio.]]></requisitos>
+            <requisitos>Cursado, no ano da prova, o terceiro ano do Ensino Médio.</requisitos>
         </solicitante>
-        <solicitante>
-            <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
-            <requisitos><![CDATA[É necessário se enquadrar em pelo menos uma das condições abaixo:
-
-* Seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total.
-
-* Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou parte em escola da rede privada com bolsa integral e parte em escola da rede pública.]]></requisitos>
-        </solicitante>
-        <solicitante>
+        <solicitante id="592">
             <tipo>Todos os demais cidadãos brasileiros.</tipo>
-            <requisitos><![CDATA[Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.]]></requisitos>
+            <requisitos>Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.</requisitos>
+        </solicitante>
+        <solicitante id="591">
+            <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
+            <requisitos>* Que seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total;
+* Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou partes em cada uma destas situações.
+* [Esteja inscrito no **Cadastro Único**](http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/)</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="8" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1826">
             <titulo>Preencher o formulário de inscrição</titulo>
-            <descricao><![CDATA[O candidato deverá acessar a página de inscrição do ENEM, ou o aplicativo para dispositivos móveis, e criar uma senha e preencher as informações requisitadas.   
-***OBS:** Novas inscrições no site só são possíveis nas épocas de inscrição do ENEM*]]></descricao>
+            <descricao>O candidato deverá acessar a página de inscrição do ENEM, ou o aplicativo para dispositivos móveis, e criar uma senha e preencher as informações requisitadas.   
+***OBS:** Novas inscrições no site só são possíveis nas épocas de inscrição do ENEM*</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF</item>
-                    <item>Documento de Identidade - RG</item>
-                    <item>Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
+                    <item id="1576">Cadastro de Pessoa Física - CPF</item>
+                    <item id="1577">Documento de Identidade - RG</item>
+                    <item id="1578">Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
                 </default>
             </documentos>
             <custos>
@@ -49,30 +50,39 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    <canal-de-prestacao id="2264" tipo="aplicativo-movel">
+                        <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="aplicativo-movel">
-                        <descricao><![CDATA[http://enem.inep.gov.br/aplicativo.html]]></descricao>
+                    <canal-de-prestacao id="2263" tipo="web">
+                        <descricao>http://enem.inep.gov.br/participante/#/inicial</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1827">
             <titulo>Requerer a isenção de taxa (para tipo de solicitantes 1 e 2)</titulo>
-            <descricao><![CDATA[O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.  
-*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*]]></descricao>
+            <descricao>O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.  
+*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF</item>
-                    <item>Senha do Site do ENEM</item>
+                    <item id="1582">Cadastro de Pessoa Física - CPF</item>
+                    <item id="1583">Senha do Site do ENEM</item>
                 </default>
-                <caso descricao="Estudante de escola pública (solicitante 1)">
-                    <item>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</item>
+                <caso id="276" descricao="Estudante de escola pública (solicitante 1)">
+                    <documento>
+                        <id>1579</id>
+                        <descricao>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Pessoas em situação de carência sócio-econômica (solicitante 2)">
-                    <item>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</item>
-                    <item>Enviar documentações que comprovem esta situação.</item>
+                <caso id="277" descricao="Pessoas em situação de carência sócio-econômica (solicitante 2)">
+                    <documento>
+                        <id>1580</id>
+                        <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1581</id>
+                        <descricao>Enviar documentações que comprovem esta situação.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -80,58 +90,58 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    <canal-de-prestacao id="2266" tipo="aplicativo-movel">
+                        <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="aplicativo-movel">
-                        <descricao><![CDATA[http://enem.inep.gov.br/aplicativo.html]]></descricao>
+                    <canal-de-prestacao id="2265" tipo="web">
+                        <descricao>http://enem.inep.gov.br/participante/#/inicial</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1828">
             <titulo>Pagar a taxa de inscrição (Para não isentos)</titulo>
-            <descricao><![CDATA[Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.  
-*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*]]></descricao>
+            <descricao>Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.  
+*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*</descricao>
             <documentos>
                 <default>
-                    <item>GRU</item>
+                    <item id="1584">GRU</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao><![CDATA[Taxa de Inscrição]]></descricao>
-                        <moeda/>
-                        <valor>68,00</valor>
+                    <custo id="47">
+                        <descricao>Taxa de Inscrição</descricao>
+                        <moeda></moeda>
+                        <valor>6,800</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial (para imprimir a GRU)]]></descricao>
+                    <canal-de-prestacao id="2268" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Rede Bancária]]></descricao>
+                    <canal-de-prestacao id="2267" tipo="web">
+                        <descricao>http://enem.inep.gov.br/participante/#/inicial (para imprimir a GRU)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1829">
             <titulo>Obter o Cartão de Confirmação da Inscrição</titulo>
-            <descricao><![CDATA[Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
+            <descricao>Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
 
 •	Número de inscrição; 
 •	Data e horário do Exame; 
 •	Local de realização das provas; 
 •	Indicação do(s) atendimento(s) (se for o caso); 
 •	Opção de língua estrangeira; 
-•	Solicitação de certificação (se for o caso)]]></descricao>
+•	Solicitação de certificação (se for o caso)</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Senha do site do ENEM.</item>
+                    <item id="1585">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1586">Senha do site do ENEM.</item>
                 </default>
             </documentos>
             <custos>
@@ -139,22 +149,22 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    <canal-de-prestacao id="2270" tipo="aplicativo-movel">
+                        <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="aplicativo-movel">
-                        <descricao><![CDATA[http://enem.inep.gov.br/aplicativo.html]]></descricao>
+                    <canal-de-prestacao id="2269" tipo="web">
+                        <descricao>http://enem.inep.gov.br/participante/#/inicial</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1830">
             <titulo>Prestar a prova</titulo>
-            <descricao><![CDATA[No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.]]></descricao>
+            <descricao>No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.</descricao>
             <documentos>
                 <default>
-                    <item>Documento de identificação válido, original e com foto;</item>
-                    <item>Cartão de Confirmação da Inscrição.</item>
+                    <item id="1587">Documento de identificação válido, original e com foto;</item>
+                    <item id="1588">Cartão de Confirmação da Inscrição.</item>
                 </default>
             </documentos>
             <custos>
@@ -162,21 +172,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.]]></descricao>
+                    <canal-de-prestacao id="2271" tipo="presencial">
+                        <descricao>Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1831">
             <titulo>Receber o resultado da prova</titulo>
-            <descricao><![CDATA[Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
+            <descricao>Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
 
-Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do INEP, no endereço eletrônico http://portal.inep.gov.br/enem, até o terceiro dia útil seguinte ao de realização das últimas provas.]]></descricao>
+Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do INEP, no endereço eletrônico http://portal.inep.gov.br/enem, até o terceiro dia útil seguinte ao de realização das últimas provas.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF ou número da inscrição;</item>
-                    <item>Senha do site do ENEM.</item>
+                    <item id="1589">Número do CPF ou número da inscrição;</item>
+                    <item id="1590">Senha do site do ENEM.</item>
                 </default>
             </documentos>
             <custos>
@@ -184,19 +194,19 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://enem.inep.gov.br/participante/#/inicial]]></descricao>
+                    <canal-de-prestacao id="2273" tipo="aplicativo-movel">
+                        <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="aplicativo-movel">
-                        <descricao><![CDATA[http://enem.inep.gov.br/aplicativo.html]]></descricao>
+                    <canal-de-prestacao id="2272" tipo="web">
+                        <descricao>http://enem.inep.gov.br/participante/#/inicial</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/249"/>
+    <orgao id="249"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="2121">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação básica</item>
@@ -205,11 +215,13 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
         <item>Educação superior</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>prova</item>
-        <item>vestibular</item>
-        <item>faculdade</item>
+        <item id="1478">prova</item>
+        <item id="1479">vestibular</item>
+        <item id="1480">faculdade</item>
+        <item id="2005">NIS</item>
+        <item id="2006">isenção</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Toda a legislação relacionada ao ENEM pode ser encontrada [aqui](http://portal.inep.gov.br/web/enem/legislacao-e-documentos)]]></item>
+        <item id="479">Toda a legislação relacionada ao ENEM pode ser encontrada [aqui](http://portal.inep.gov.br/web/enem/legislacao-e-documentos)</item>
     </legislacoes>
 </servico>
