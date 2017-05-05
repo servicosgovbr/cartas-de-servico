@@ -1,18 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-o-comprovante-de-inscricao-no-cpf</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Imprimir o comprovante de inscrição no CPF.</descricao>
-    <gratuito/>
-    <solicitantes/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-comprovante-de-inscricao-no-cpf</id>
+    <dbId>131</dbId>
+    <nome>Obter o comprovante de inscrição no CPF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="669">CPF</item>
+    </nomes-populares>
+    <descricao>Através deste serviço, você poderá imprimir o seu comprovante de inscrição no Cadastro de Pessoas Físicas (CPF), que é um documento necessário para a grande maioria de suas interações com agentes financeiros e órgãos governamentais. O comprovante é valido como o documento em si.</descricao>
+    <contato>Receita Fone: 146
+
+* Veja outras formas de contato [**aqui**](https://idg.receita.fazenda.gov.br/contato/fale-conosco)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="859">
+            <tipo>Cidadão Brasileiro</tipo>
+            <requisitos>De qualquer idade, desde que já esteja inscrito no Cadastro de Pessoas Físicas</requisitos>
+        </solicitante>
+        <solicitante id="860">
+            <tipo>Cidadão Estrangeiro</tipo>
+            <requisitos>Que já tenha feito e aceito o pedido de inscrição no Cadastro de Pessoas Físicas</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <atendimento-imediato/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1143">
+            <titulo>Cadastrar-se no Centro Virtual de Atendimento da Receita Federal</titulo>
+            <descricao>Para que você tenha acesso ao serviço, você deve inicialmente gerar o código de acesso para pessoa física no eCAC e criar uma senha, preenchendo os dados requisitados.</descricao>
+            <documentos>
+                <default>
+                    <item id="2409">Nº do CPF</item>
+                    <item id="2410">Data de Nascimento</item>
+                    <item id="2411">Número do recibo da declaração do imposto de renda do ano anterior</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="1401" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/aplicacoes/ssl/atbhe/codacesso.app/PFCodAcesso.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2243">
+            <titulo>Requisitar o Comprovante</titulo>
+            <descricao>Você irá acessar o eCAC e clicar no item de requisição do comprovante.</descricao>
+            <documentos>
+                <default>
+                    <item id="2412">Número do CPF</item>
+                    <item id="2413">Código de Acesso (gerado na etapa anterior)</item>
+                    <item id="2414">Senha (gerado na etapa anterior)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2807" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2244">
+            <titulo>Receber e imprimir o comprovante</titulo>
+            <descricao>Feito o pedido, o sistema fornecerá o comprovante em formato pronto para ser impresso.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -21,20 +87,35 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFSegVia.htm</descricao>
+                    <canal-de-prestacao id="2808" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77"/>
+    <orgao id="77"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1296">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
+        <item>Cidadania</item>
+        <item>Serviços Públicos</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="2015">CPF</item>
+        <item id="2016">documento CPF</item>
+        <item id="2017">imprimir CPF</item>
+        <item id="2018">Abrir conta no banco</item>
+        <item id="2019">perdi o meu cpf</item>
+        <item id="2020">2 via de cpf</item>
+        <item id="2021">emitir cpf</item>
+        <item id="2022">tirar documentos</item>
+        <item id="2023">primeiro emprego</item>
+        <item id="2024">primeira conta</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="676">[DECRETO-LEI No 401, DE 30 DE DEZEMBRO DE 1968](http://www.planalto.gov.br/CCivil_03/Decreto-Lei/Del0401.htm)</item>
+    </legislacoes>
 </servico>
