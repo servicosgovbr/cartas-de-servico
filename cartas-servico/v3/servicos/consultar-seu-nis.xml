@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>verificar-se-voce-esta-inscrito-no-cadastro-unico-de-servicos-sociais-do-governo-federal</id>
+    <dbId>838</dbId>
+    <nome>consultar-seu-nis</nome>
+    <sigla/>
+    <nomes-populares>
+        <item id="666">Consulta Cidadão</item>
+        <item id="667">Número NIS</item>
+    </nomes-populares>
+    <descricao>Este serviço serve para que você verifique se está inscrito no Cadastro Único e qual é o seu NIS (Número de Identificação Social).</descricao>
+    <contato>CENTRAL DE RELACIONAMENTO DO MDSA
+Telefone: 0800 707 2003
+O serviço é gratuito e exclusivo para ligações de **telefones fixos**
+* **Horário de Atendimento:**
+Segunda a Sexta-feira, de 07h às 19h de segunda a sexta-feira. Nos finais de semana, feriados nacionais e durante o Calendário de Pagamento do Programa Bolsa Família o horário é de 10h às 16h.  
+
+* O [atendimento eletrônico](http://mds.gov.br/fale-com-o-mds) é disponível 24 horas, todos os dias da semana.</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="858">
+            <tipo>Cidadão Brasileiro</tipo>
+            <requisitos>Qualquer cidadão pode realizar a consulta</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade/>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="2242">
+            <titulo>Pedir a consulta</titulo>
+            <descricao>Você deve acessar o site e preencher as informações pedidas (a pesquisa é realizada por estado, então você deve informar corretamente em qual estado fez o pedido de inscrição). 
+Ao clicar no botão "emitir", você receberá o resultado de sua consulta e o seu NIS.</descricao>
+            <documentos>
+                <default>
+                    <item id="2406">Nome completo</item>
+                    <item id="2407">Data de Nascimento</item>
+                    <item id="2408">Nome da mãe</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2806" tipo="web-consultar">
+                        <descricao>http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="1945"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2461">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Educação profissionalizante</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Proteção Social</item>
+        <item>Assistência à Criança e ao Adolescente</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2007">ENEM</item>
+        <item id="2008">NIS</item>
+        <item id="2009">Bolsa Família</item>
+        <item id="2010">Cadastro Único</item>
+        <item id="2011">CRAS</item>
+        <item id="2012">isenção no ENEM</item>
+        <item id="2013">isenção de taxa</item>
+        <item id="2014">Programas sociais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="675">http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/manual/manual_consulta_cidadao.pdf</item>
+    </legislacoes>
+</servico>
