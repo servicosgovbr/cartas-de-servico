@@ -1,42 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-financiamento-do-fundo-de-financiamento-estudantil</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-financiamento-do-fundo-de-financiamento-estudantil</id>
+    <dbId>56</dbId>
+    <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
     <sigla>FIES</sigla>
-    <nomes-populares/>
-    <descricao><![CDATA[O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda]]></descricao>
-    <contato><![CDATA[0800 616161]]></contato>
+    <descricao>O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda</descricao>
+    <contato>0800 616161</contato>
     <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="545">
             <tipo>Estudante</tipo>
-            <requisitos><![CDATA[Que atenda as seguintes condições:
+            <requisitos>Que atenda as seguintes condições:
 
 •	Já estar matriculado em curso universitário presencial e pago, que tenha avaliação positiva no SINAES e seja oferecido por instituição que tenha aderido ao FIES;
 •	Não ter concluído curso superior antes de se candidatar;
 •	Ter participado de alguma edição do Enem de 2010 para cá, e obtido média das notas das questões objetivas de 450 ou mais pontos, e nota na redação superior a zero;
-•	Possuir renda familiar de até 3 salários mínimos mensais por pessoa.]]></requisitos>
+•	Possuir renda familiar de até 3 salários mínimos mensais por pessoa.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="60" min="15" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="15" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1712">
             <titulo>Inscrever-se no FIES seleção</titulo>
-            <descricao><![CDATA[Você irá se inscrever no FIES seleção através do Portal do MEC.]]></descricao>
+            <descricao>Você irá se inscrever no FIES seleção através do Portal do MEC.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Informações e documentos pessoais;</item>
-                    <item>Informações e documentos relativos à sua escolaridade;</item>
-                    <item>Informações sobre a escola onde você estudou o Ensino Médio;</item>
-                    <item>Informações sobre a Instituição de Ensino Superior onde você está matriculado;</item>
-                    <item>Informações e documentos sobre a sua renda familiar;</item>
-                    <item>Informações e documentos sobre as edições do ENEM que tiver prestado a partir de 2010;</item>
-                    <item>Suas informações de endereço e contato;</item>
-                    <item>Certidão de casamento e informações sobre o cônjuge, se tiver;</item>
-                    <item>Informações e documentos sobre a bolsa parcial do ProUni, se tiver.</item>
+                    <item id="1454">Número do CPF;</item>
+                    <item id="1455">Informações e documentos pessoais;</item>
+                    <item id="1456">Informações e documentos relativos à sua escolaridade;</item>
+                    <item id="1457">Informações sobre a escola onde você estudou o Ensino Médio;</item>
+                    <item id="1458">Informações sobre a Instituição de Ensino Superior onde você está matriculado;</item>
+                    <item id="1459">Informações e documentos sobre a sua renda familiar;</item>
+                    <item id="1460">Informações e documentos sobre as edições do ENEM que tiver prestado a partir de 2010;</item>
+                    <item id="1461">Suas informações de endereço e contato;</item>
+                    <item id="1462">Certidão de casamento e informações sobre o cônjuge, se tiver;</item>
+                    <item id="1463">Informações e documentos sobre a bolsa parcial do ProUni, se tiver.</item>
                 </default>
             </documentos>
             <custos>
@@ -44,18 +47,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://fiesselecaoaluno.mec.gov.br/usuario-login]]></descricao>
+                    <canal-de-prestacao id="2123" tipo="web">
+                        <descricao>http://fiesselecaoaluno.mec.gov.br/usuario-login</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1713">
             <titulo>Obter resultado da Pré-Seleção</titulo>
-            <descricao><![CDATA[Você deve acessar o Portal do MEC  na data determinada para divulgação do resultado e verificar se foi pré-selecionado para as vagas existentes.]]></descricao>
+            <descricao>Você deve acessar o Portal do MEC  na data determinada para divulgação do resultado e verificar se foi pré-selecionado para as vagas existentes.</descricao>
             <documentos>
                 <default>
-                    <item>Informações sobre o curso superior e instituição de ensino onde você está matriculado.</item>
+                    <item id="1464">Informações sobre o curso superior e instituição de ensino onde você está matriculado.</item>
                 </default>
             </documentos>
             <custos>
@@ -63,20 +66,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://fiesselecaoaluno.mec.gov.br/selecao]]></descricao>
+                    <canal-de-prestacao id="2124" tipo="web">
+                        <descricao>http://fiesselecaoaluno.mec.gov.br/selecao</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1714">
             <titulo>Inscrever-se no SISFIES</titulo>
-            <descricao><![CDATA[Você deve acessar o SISFIES e concluir sua inscrição preenchendo as informações solicitadas. Se você foi pré-selecionado nas vagas da lista única, o prazo é de dois dias úteis após a divulgação do resultado. Para aqueles que foram para a lista de espera, o prazo é de cinco dias corridos.]]></descricao>
+            <descricao>Você deve acessar o SISFIES e concluir sua inscrição preenchendo as informações solicitadas. Se você foi pré-selecionado nas vagas da lista única, o prazo é de dois dias úteis após a divulgação do resultado. Para aqueles que foram para a lista de espera, o prazo é de cinco dias corridos.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Dados do financiamento escolhido;</item>
-                    <item>Dados do fiador, se optar por fiança convencional ou solidária.</item>
+                    <item id="1465">Número do CPF;</item>
+                    <item id="1466">Dados do financiamento escolhido;</item>
+                    <item id="1467">Dados do fiador, se optar por fiança convencional ou solidária.</item>
                 </default>
             </documentos>
             <custos>
@@ -84,31 +87,40 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sisfiesportal.mec.gov.br/?pagina=inscricao]]></descricao>
+                    <canal-de-prestacao id="2125" tipo="web">
+                        <descricao>http://sisfiesportal.mec.gov.br/?pagina=inscricao</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1715">
             <titulo>Validar inscrição junto à CPSA</titulo>
-            <descricao><![CDATA[Você deverá, em até dez dias corridos imediatamente após sua inscrição no SISFIES, ir à instituição de ensino onde está matriculado e na qual pretende usar o financiamento e validar sua  inscrição junto à Comissão Permanente de Supervisão e Acompanhamento (CPSA) do FIES lá existente.]]></descricao>
+            <descricao>Você deverá, em até dez dias corridos imediatamente após sua inscrição no SISFIES, ir à instituição de ensino onde está matriculado e na qual pretende usar o financiamento e validar sua  inscrição junto à Comissão Permanente de Supervisão e Acompanhamento (CPSA) do FIES lá existente.</descricao>
             <documentos>
                 <default>
-                    <item>Documento de identificação válido com foto;</item>
-                    <item>Comprovante de residência;</item>
-                    <item>Diploma, certificado ou documento equivalente de conclusão do ensino médio expedido por instituição competente;</item>
-                    <item>Comprovante de rendimentos;</item>
-                    <item>CPF (para menores de 18 anos não emancipados, CPF do representante legal); e</item>
+                    <item id="1471">Documento de identificação válido com foto;</item>
+                    <item id="1472">Comprovante de residência;</item>
+                    <item id="1473">Diploma, certificado ou documento equivalente de conclusão do ensino médio expedido por instituição competente;</item>
+                    <item id="1474">Comprovante de rendimentos;</item>
+                    <item id="1475">CPF (para menores de 18 anos não emancipados, CPF do representante legal); e</item>
                 </default>
-                <caso descricao="Se for bolsista parcial do ProUni">
-                    <item>Termo de concessão ou de atualização do usufruto de bolsa parcial;</item>
+                <caso id="253" descricao="Se for bolsista parcial do ProUni">
+                    <documento>
+                        <id>1468</id>
+                        <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Se for casado">
-                    <item>Certidão de casamento, CPF e documento de identificação do cônjuge;</item>
+                <caso id="254" descricao="Se for casado">
+                    <documento>
+                        <id>1469</id>
+                        <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Se optar por fiança convencional ou solidária">
-                    <item>Documentação pessoal, comprovante de residência e de renda do fiador.</item>
+                <caso id="255" descricao="Se optar por fiança convencional ou solidária">
+                    <documento>
+                        <id>1470</id>
+                        <descricao>Documentação pessoal, comprovante de residência e de renda do fiador.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -116,57 +128,92 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Instituição de ensino onde o financiamento será usado.]]></descricao>
+                    <canal-de-prestacao id="2126" tipo="presencial">
+                        <descricao>Instituição de ensino onde o financiamento será usado.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1716">
             <titulo>Comparecer a agente financeiro para contratar o financiamento</titulo>
-            <descricao><![CDATA[A partir do 3º dia útil após a validação das informações pela CPSA, você terá um prazo de dez dias corridos para comparecer a um agente financeiro do FIES (acompanhado de seu fiador, se for o caso) para formalizar a contratação do financiamento.]]></descricao>
+            <descricao>A partir do 3º dia útil após a validação das informações pela CPSA, você terá um prazo de dez dias corridos para comparecer a um agente financeiro do FIES (acompanhado de seu fiador, se for o caso) para formalizar a contratação do financiamento.</descricao>
             <documentos>
                 <default>
-                    <item>Originais e fotocópias dos seguintes documentos:</item>
+                    <item id="1488">Originais e fotocópias dos seguintes documentos:</item>
                 </default>
-                <caso descricao="Documentos do aluno/requerente do financiamento">
-                    <item>Documento de Regularidade de Inscrição (DRI) emitido pela Comissão Permanente de Supervisão e Acompanhamento do FIES (CPSA);</item>
-                    <item>Termo de concessão ou de atualização do usufruto de bolsa parcial do ProUni, quando for o caso;</item>
-                    <item>Documento de identificação;</item>
-                    <item>CPF próprio e, se menor de 18 anos de idade não emancipado, CPF do seu representante legal;</item>
-                    <item>Certidão de casamento, CPF e documento de identificação do cônjuge, se for o caso;</item>
-                    <item>Comprovante de residência.</item>
+                <caso id="256" descricao="Documentos do aluno/requerente do financiamento">
+                    <documento>
+                        <id>1476</id>
+                        <descricao>Documento de Regularidade de Inscrição (DRI) emitido pela Comissão Permanente de Supervisão e Acompanhamento do FIES (CPSA);</descricao>
+                    </documento>
+                    <documento>
+                        <id>1477</id>
+                        <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial do ProUni, quando for o caso;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1478</id>
+                        <descricao>Documento de identificação;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1479</id>
+                        <descricao>CPF próprio e, se menor de 18 anos de idade não emancipado, CPF do seu representante legal;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1480</id>
+                        <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge, se for o caso;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1481</id>
+                        <descricao>Comprovante de residência.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Documentos do Fiador (para casos de opção por fiança convencional ou solidária)">
-                    <item>Documento de identificação;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Certidão de casamento;</item>
-                    <item>CPF e documento de identificação do cônjuge, se for o caso;</item>
-                    <item>Comprovante de residência;</item>
-                    <item>Comprovante de rendimentos, salvo no caso de fiança solidária.</item>
+                <caso id="257" descricao="Documentos do Fiador (para casos de opção por fiança convencional ou solidária)">
+                    <documento>
+                        <id>1482</id>
+                        <descricao>Documento de identificação;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1483</id>
+                        <descricao>Cadastro de Pessoa Física - CPF;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1484</id>
+                        <descricao>Certidão de casamento;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1485</id>
+                        <descricao>CPF e documento de identificação do cônjuge, se for o caso;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1486</id>
+                        <descricao>Comprovante de residência;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1487</id>
+                        <descricao>Comprovante de rendimentos, salvo no caso de fiança solidária.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao><![CDATA[Após a conclusão do curso, o aluno pagará o financiamento nos termos acordados.]]></descricao>
-                        <moeda/>
-                        <valor/>
+                    <custo id="40">
+                        <descricao>Após a conclusão do curso, o aluno pagará o financiamento nos termos acordados.</descricao>
+                        <moeda></moeda>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do Banco do Brasil ou Caixa Econômica Federal escolhida durante a inscrição no SISFIES]]></descricao>
+                    <canal-de-prestacao id="2127" tipo="presencial">
+                        <descricao>Agência do Banco do Brasil ou Caixa Econômica Federal escolhida durante a inscrição no SISFIES</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244"/>
+    <orgao id="244"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1994">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação</item>
@@ -174,11 +221,12 @@
         <item>Empregabilidade</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>bolsa</item>
-        <item>vestibular</item>
-        <item>Financiamento</item>
+        <item id="1374">bolsa</item>
+        <item id="1375">vestibular</item>
+        <item id="1376">Financiamento</item>
+        <item id="2027">MEC</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Legislação Básica do FIES](https://www.fnde.gov.br/fndelegis/action/ActionDatalegis.php?acao=abrirTreeview&cod_menu=1315&cod_modulo=85)]]></item>
+        <item id="407">[Legislação Básica do FIES](https://www.fnde.gov.br/fndelegis/action/ActionDatalegis.php?acao=abrirTreeview&amp;cod_menu=1315&amp;cod_modulo=85)</item>
     </legislacoes>
 </servico>
