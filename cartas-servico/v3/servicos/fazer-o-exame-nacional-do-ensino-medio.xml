@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>fazer-o-enem</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>fazer-o-exame-nacional-do-ensino-medio</id>
     <dbId>839</dbId>
-    <nome>fazer-o-exame-nacional-do-ensino-medio</nome>
+    <nome>Fazer o Exame Nacional do Ensino Médio</nome>
     <sigla>ENEM</sigla>
     <nomes-populares>
         <item id="671">Fazer o ENEM</item>
@@ -13,7 +13,7 @@
 * Ser uma ferramenta para avaliar a qualidade do ensino no Brasil, auxiliando na construção de ações e políticas públicas que melhorem o currículo e a educação no Ensino Médio;
 * Ser um dos critérios de acesso dos participantes a programas governamentais e instituições de ensino superior;
 * Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.</descricao>
-    <contato/>
+    <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
@@ -37,7 +37,7 @@
     </solicitantes>
     <tempo-total-estimado>
         <ate max="8" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento/>
     <etapas>
@@ -74,13 +74,13 @@
                     <item id="2422">Cadastro de Pessoa Física - CPF</item>
                     <item id="2423">Senha do Site do ENEM</item>
                 </default>
-                <caso descricao="Estudante de escola pública (solicitante 1)" id="356">
+                <caso id="356" descricao="Estudante de escola pública (solicitante 1)">
                     <documento>
                         <id>2418</id>
                         <descricao>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)" id="357">
+                <caso id="357" descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)">
                     <documento>
                         <id>2419</id>
                         <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
@@ -90,7 +90,7 @@
                         <descricao>Enviar documentações que comprovem esta situação.</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)" id="358">
+                <caso id="358" descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)">
                     <documento>
                         <id>2421</id>
                         <descricao>NIS</descricao>
@@ -123,7 +123,7 @@
                 <default>
                     <custo id="87">
                         <descricao>Taxa de Inscrição</descricao>
-                        <moeda/>
+                        <moeda></moeda>
                         <valor>6,800</valor>
                     </custo>
                 </default>
