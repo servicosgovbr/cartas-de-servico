@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -5444,234 +5444,6 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-financiamento-do-fundo-de-financiamento-estudantil</id>
-        <dbId>56</dbId>
-        <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
-        <sigla>FIES</sigla>
-        <descricao>O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda</descricao>
-        <contato>0800 616161</contato>
-        <gratuito>false</gratuito>
-        <solicitantes>
-            <solicitante id="545">
-                <tipo>Estudante</tipo>
-                <requisitos>Que atenda as seguintes condições:
-
-•	Já estar matriculado em curso universitário presencial e pago, que tenha avaliação positiva no SINAES e seja oferecido por instituição que tenha aderido ao FIES;
-•	Não ter concluído curso superior antes de se candidatar;
-•	Ter participado de alguma edição do Enem de 2010 para cá, e obtido média das notas das questões objetivas de 450 ou mais pontos, e nota na redação superior a zero;
-•	Possuir renda familiar de até 3 salários mínimos mensais por pessoa.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="15" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1712">
-                <titulo>Inscrever-se no FIES seleção</titulo>
-                <descricao>Você irá se inscrever no FIES seleção através do Portal do MEC.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1454">Número do CPF;</item>
-                        <item id="1455">Informações e documentos pessoais;</item>
-                        <item id="1456">Informações e documentos relativos à sua escolaridade;</item>
-                        <item id="1457">Informações sobre a escola onde você estudou o Ensino Médio;</item>
-                        <item id="1458">Informações sobre a Instituição de Ensino Superior onde você está matriculado;</item>
-                        <item id="1459">Informações e documentos sobre a sua renda familiar;</item>
-                        <item id="1460">Informações e documentos sobre as edições do ENEM que tiver prestado a partir de 2010;</item>
-                        <item id="1461">Suas informações de endereço e contato;</item>
-                        <item id="1462">Certidão de casamento e informações sobre o cônjuge, se tiver;</item>
-                        <item id="1463">Informações e documentos sobre a bolsa parcial do ProUni, se tiver.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2123" tipo="web">
-                            <descricao>http://fiesselecaoaluno.mec.gov.br/usuario-login</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1713">
-                <titulo>Obter resultado da Pré-Seleção</titulo>
-                <descricao>Você deve acessar o Portal do MEC  na data determinada para divulgação do resultado e verificar se foi pré-selecionado para as vagas existentes.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1464">Informações sobre o curso superior e instituição de ensino onde você está matriculado.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2124" tipo="web">
-                            <descricao>http://fiesselecaoaluno.mec.gov.br/selecao</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1714">
-                <titulo>Inscrever-se no SISFIES</titulo>
-                <descricao>Você deve acessar o SISFIES e concluir sua inscrição preenchendo as informações solicitadas. Se você foi pré-selecionado nas vagas da lista única, o prazo é de dois dias úteis após a divulgação do resultado. Para aqueles que foram para a lista de espera, o prazo é de cinco dias corridos.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1465">Número do CPF;</item>
-                        <item id="1466">Dados do financiamento escolhido;</item>
-                        <item id="1467">Dados do fiador, se optar por fiança convencional ou solidária.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2125" tipo="web">
-                            <descricao>http://sisfiesportal.mec.gov.br/?pagina=inscricao</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1715">
-                <titulo>Validar inscrição junto à CPSA</titulo>
-                <descricao>Você deverá, em até dez dias corridos imediatamente após sua inscrição no SISFIES, ir à instituição de ensino onde está matriculado e na qual pretende usar o financiamento e validar sua  inscrição junto à Comissão Permanente de Supervisão e Acompanhamento (CPSA) do FIES lá existente.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1471">Documento de identificação válido com foto;</item>
-                        <item id="1472">Comprovante de residência;</item>
-                        <item id="1473">Diploma, certificado ou documento equivalente de conclusão do ensino médio expedido por instituição competente;</item>
-                        <item id="1474">Comprovante de rendimentos;</item>
-                        <item id="1475">CPF (para menores de 18 anos não emancipados, CPF do representante legal); e</item>
-                    </default>
-                    <caso id="253" descricao="Se for bolsista parcial do ProUni">
-                        <documento>
-                            <id>1468</id>
-                            <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="254" descricao="Se for casado">
-                        <documento>
-                            <id>1469</id>
-                            <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="255" descricao="Se optar por fiança convencional ou solidária">
-                        <documento>
-                            <id>1470</id>
-                            <descricao>Documentação pessoal, comprovante de residência e de renda do fiador.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2126" tipo="presencial">
-                            <descricao>Instituição de ensino onde o financiamento será usado.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1716">
-                <titulo>Comparecer a agente financeiro para contratar o financiamento</titulo>
-                <descricao>A partir do 3º dia útil após a validação das informações pela CPSA, você terá um prazo de dez dias corridos para comparecer a um agente financeiro do FIES (acompanhado de seu fiador, se for o caso) para formalizar a contratação do financiamento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1488">Originais e fotocópias dos seguintes documentos:</item>
-                    </default>
-                    <caso id="256" descricao="Documentos do aluno/requerente do financiamento">
-                        <documento>
-                            <id>1476</id>
-                            <descricao>Documento de Regularidade de Inscrição (DRI) emitido pela Comissão Permanente de Supervisão e Acompanhamento do FIES (CPSA);</descricao>
-                        </documento>
-                        <documento>
-                            <id>1477</id>
-                            <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial do ProUni, quando for o caso;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1478</id>
-                            <descricao>Documento de identificação;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1479</id>
-                            <descricao>CPF próprio e, se menor de 18 anos de idade não emancipado, CPF do seu representante legal;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1480</id>
-                            <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge, se for o caso;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1481</id>
-                            <descricao>Comprovante de residência.</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="257" descricao="Documentos do Fiador (para casos de opção por fiança convencional ou solidária)">
-                        <documento>
-                            <id>1482</id>
-                            <descricao>Documento de identificação;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1483</id>
-                            <descricao>Cadastro de Pessoa Física - CPF;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1484</id>
-                            <descricao>Certidão de casamento;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1485</id>
-                            <descricao>CPF e documento de identificação do cônjuge, se for o caso;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1486</id>
-                            <descricao>Comprovante de residência;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1487</id>
-                            <descricao>Comprovante de rendimentos, salvo no caso de fiança solidária.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="40">
-                            <descricao>Após a conclusão do curso, o aluno pagará o financiamento nos termos acordados.</descricao>
-                            <moeda></moeda>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2127" tipo="presencial">
-                            <descricao>Agência do Banco do Brasil ou Caixa Econômica Federal escolhida durante a inscrição no SISFIES</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="244"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1994">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Educação</item>
-            <item>Educação superior</item>
-            <item>Empregabilidade</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1374">bolsa</item>
-            <item id="1375">vestibular</item>
-            <item id="1376">Financiamento</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="407">[Legislação Básica do FIES](https://www.fnde.gov.br/fndelegis/action/ActionDatalegis.php?acao=abrirTreeview&amp;cod_menu=1315&amp;cod_modulo=85)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-bolsa-de-estudo-do-programa-universidade-para-todos</id>
         <dbId>57</dbId>
         <nome>Obter bolsa de estudo do Programa Universidade para Todos</nome>
@@ -5942,6 +5714,237 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>obter-financiamento-do-fundo-de-financiamento-estudantil</id>
+        <dbId>56</dbId>
+        <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
+        <sigla>FIES</sigla>
+        <descricao>O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda</descricao>
+        <contato>0800 616161</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="545">
+                <tipo>Estudante</tipo>
+                <requisitos>Que atenda as seguintes condições:
+
+•	Já estar matriculado em curso universitário presencial e pago, que tenha avaliação positiva no SINAES e seja oferecido por instituição que tenha aderido ao FIES;
+•	Não ter concluído curso superior antes de se candidatar;
+•	Ter participado de alguma edição do Enem de 2010 para cá, e obtido média das notas das questões objetivas de 450 ou mais pontos, e nota na redação superior a zero;
+•	Possuir renda familiar de até 3 salários mínimos mensais por pessoa.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1712">
+                <titulo>Inscrever-se no FIES seleção</titulo>
+                <descricao>Você irá se inscrever no FIES seleção através do Portal do MEC.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1454">Número do CPF;</item>
+                        <item id="1455">Informações e documentos pessoais;</item>
+                        <item id="1456">Informações e documentos relativos à sua escolaridade;</item>
+                        <item id="1457">Informações sobre a escola onde você estudou o Ensino Médio;</item>
+                        <item id="1458">Informações sobre a Instituição de Ensino Superior onde você está matriculado;</item>
+                        <item id="1459">Informações e documentos sobre a sua renda familiar;</item>
+                        <item id="1460">Informações e documentos sobre as edições do ENEM que tiver prestado a partir de 2010;</item>
+                        <item id="1461">Suas informações de endereço e contato;</item>
+                        <item id="1462">Certidão de casamento e informações sobre o cônjuge, se tiver;</item>
+                        <item id="1463">Informações e documentos sobre a bolsa parcial do ProUni, se tiver.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2123" tipo="web">
+                            <descricao>http://fiesselecaoaluno.mec.gov.br/usuario-login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1713">
+                <titulo>Obter resultado da Pré-Seleção</titulo>
+                <descricao>Você deve acessar o Portal do MEC  na data determinada para divulgação do resultado e verificar se foi pré-selecionado para as vagas existentes.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1464">Informações sobre o curso superior e instituição de ensino onde você está matriculado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2124" tipo="web">
+                            <descricao>http://fiesselecaoaluno.mec.gov.br/selecao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1714">
+                <titulo>Inscrever-se no SISFIES</titulo>
+                <descricao>Você deve acessar o SISFIES e concluir sua inscrição preenchendo as informações solicitadas. Se você foi pré-selecionado nas vagas da lista única, o prazo é de dois dias úteis após a divulgação do resultado. Para aqueles que foram para a lista de espera, o prazo é de cinco dias corridos.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1465">Número do CPF;</item>
+                        <item id="1466">Dados do financiamento escolhido;</item>
+                        <item id="1467">Dados do fiador, se optar por fiança convencional ou solidária.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2125" tipo="web">
+                            <descricao>http://sisfiesportal.mec.gov.br/?pagina=inscricao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1715">
+                <titulo>Validar inscrição junto à CPSA</titulo>
+                <descricao>Você deverá, em até dez dias corridos imediatamente após sua inscrição no SISFIES, ir à instituição de ensino onde está matriculado e na qual pretende usar o financiamento e validar sua  inscrição junto à Comissão Permanente de Supervisão e Acompanhamento (CPSA) do FIES lá existente.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1471">Documento de identificação válido com foto;</item>
+                        <item id="1472">Comprovante de residência;</item>
+                        <item id="1473">Diploma, certificado ou documento equivalente de conclusão do ensino médio expedido por instituição competente;</item>
+                        <item id="1474">Comprovante de rendimentos;</item>
+                        <item id="1475">CPF (para menores de 18 anos não emancipados, CPF do representante legal); e</item>
+                    </default>
+                    <caso id="253" descricao="Se for bolsista parcial do ProUni">
+                        <documento>
+                            <id>1468</id>
+                            <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="254" descricao="Se for casado">
+                        <documento>
+                            <id>1469</id>
+                            <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="255" descricao="Se optar por fiança convencional ou solidária">
+                        <documento>
+                            <id>1470</id>
+                            <descricao>Documentação pessoal, comprovante de residência e de renda do fiador.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2126" tipo="presencial">
+                            <descricao>Instituição de ensino onde o financiamento será usado.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1716">
+                <titulo>Comparecer a agente financeiro para contratar o financiamento</titulo>
+                <descricao>A partir do 3º dia útil após a validação das informações pela CPSA, você terá um prazo de dez dias corridos para comparecer a um agente financeiro do FIES (acompanhado de seu fiador, se for o caso) para formalizar a contratação do financiamento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1488">Originais e fotocópias dos seguintes documentos:</item>
+                    </default>
+                    <caso id="256" descricao="Documentos do aluno/requerente do financiamento">
+                        <documento>
+                            <id>1476</id>
+                            <descricao>Documento de Regularidade de Inscrição (DRI) emitido pela Comissão Permanente de Supervisão e Acompanhamento do FIES (CPSA);</descricao>
+                        </documento>
+                        <documento>
+                            <id>1477</id>
+                            <descricao>Termo de concessão ou de atualização do usufruto de bolsa parcial do ProUni, quando for o caso;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1478</id>
+                            <descricao>Documento de identificação;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1479</id>
+                            <descricao>CPF próprio e, se menor de 18 anos de idade não emancipado, CPF do seu representante legal;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1480</id>
+                            <descricao>Certidão de casamento, CPF e documento de identificação do cônjuge, se for o caso;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1481</id>
+                            <descricao>Comprovante de residência.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="257" descricao="Documentos do Fiador (para casos de opção por fiança convencional ou solidária)">
+                        <documento>
+                            <id>1482</id>
+                            <descricao>Documento de identificação;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1483</id>
+                            <descricao>Cadastro de Pessoa Física - CPF;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1484</id>
+                            <descricao>Certidão de casamento;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1485</id>
+                            <descricao>CPF e documento de identificação do cônjuge, se for o caso;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1486</id>
+                            <descricao>Comprovante de residência;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1487</id>
+                            <descricao>Comprovante de rendimentos, salvo no caso de fiança solidária.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="40">
+                            <descricao>Após a conclusão do curso, o aluno pagará o financiamento nos termos acordados.</descricao>
+                            <moeda></moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2127" tipo="presencial">
+                            <descricao>Agência do Banco do Brasil ou Caixa Econômica Federal escolhida durante a inscrição no SISFIES</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="244"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1994">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+            <item>Empregabilidade</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1374">bolsa</item>
+            <item id="1375">vestibular</item>
+            <item id="1376">Financiamento</item>
+            <item id="2027">MEC</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="407">[Legislação Básica do FIES](https://www.fnde.gov.br/fndelegis/action/ActionDatalegis.php?acao=abrirTreeview&amp;cod_menu=1315&amp;cod_modulo=85)</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>obter-passaporte-comum-para-brasileiro</id>
@@ -7138,7 +7141,7 @@ A Guia de Trânsito é um documento obrigatório para que o cidadão transporte 
                         <canal-de-prestacao id="2737" tipo="telefone">
                             <descricao>Central 158</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="1674" tipo="web-agendar">
+                        <canal-de-prestacao id="1674" tipo="web">
                             <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
                         </canal-de-prestacao>
                     </default>
@@ -7195,7 +7198,7 @@ A Guia de Trânsito é um documento obrigatório para que o cidadão transporte 
                 <canais-de-prestacao>
                     <default>
                         <canal-de-prestacao id="2742" tipo="presencial">
-                            <descricao></descricao>
+                            <descricao>-</descricao>
                         </canal-de-prestacao>
                     </default>
                     <caso id="350" descricao="Se você tem conta corrente ou conta poupança na Caixa">
@@ -39267,22 +39270,26 @@ E-mail: sirett.cgrt@mte.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>verificar-se-voce-esta-inscrito-no-cadastro-unico-de-servicos-sociais-do-governo-federal</id>
+        <id>consultar-seu-nis</id>
         <dbId>838</dbId>
-        <nome>Verificar se você está inscrito no Cadastro Único de Serviços Sociais do Governo Federal</nome>
+        <nome>Consultar seu NIS</nome>
         <sigla></sigla>
         <nomes-populares>
             <item id="666">Consulta Cidadão</item>
-            <item id="667">Número NIS</item>
+            <item id="670">Número Cadastro Único</item>
         </nomes-populares>
         <descricao>Este serviço serve para que você verifique se está inscrito no Cadastro Único e qual é o seu NIS (Número de Identificação Social).</descricao>
         <contato>CENTRAL DE RELACIONAMENTO DO MDSA
+
 Telefone: 0800 707 2003
+
 O serviço é gratuito e exclusivo para ligações de **telefones fixos**
-* **Horário de Atendimento:**
+
+**Horário de Atendimento:**
+
 Segunda a Sexta-feira, de 07h às 19h de segunda a sexta-feira. Nos finais de semana, feriados nacionais e durante o Calendário de Pagamento do Programa Bolsa Família o horário é de 10h às 16h.  
 
-* O [atendimento eletrônico](http://mds.gov.br/fale-com-o-mds) é disponível 24 horas, todos os dias da semana.</contato>
+O [atendimento eletrônico](http://mds.gov.br/fale-com-o-mds) é disponível 24 horas, todos os dias da semana.</contato>
         <gratuito>true</gratuito>
         <porcentagem-digital>0</porcentagem-digital>
         <solicitantes>
@@ -39350,7 +39357,249 @@ Ao clicar no botão "emitir", você receberá o resultado de sua consulta e o se
             <item id="2014">Programas sociais</item>
         </palavras-chave>
         <legislacoes>
-            <item id="675">http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/manual/manual_consulta_cidadao.pdf</item>
+            <item id="675">[DECRETO Nº 6.135, DE 26 DE JUNHO DE 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6135.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>fazer-o-exame-nacional-do-ensino-medio</id>
+        <dbId>839</dbId>
+        <nome>Fazer o Exame Nacional do Ensino Médio</nome>
+        <sigla>ENEM</sigla>
+        <nomes-populares>
+            <item id="671">Fazer o ENEM</item>
+            <item id="672">Prestar o ENEM</item>
+        </nomes-populares>
+        <descricao>O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
+
+* Ser uma ferramenta para avaliar a qualidade do ensino no Brasil, auxiliando na construção de ações e políticas públicas que melhorem o currículo e a educação no Ensino Médio;
+* Ser um dos critérios de acesso dos participantes a programas governamentais e instituições de ensino superior;
+* Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="861">
+                <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
+                <requisitos>Cursando, no ano da prova, o terceiro ano do Ensino Médio.</requisitos>
+            </solicitante>
+            <solicitante id="862">
+                <tipo>Outros estudantes ou ex-estudantes</tipo>
+                <requisitos>Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.</requisitos>
+            </solicitante>
+            <solicitante id="863">
+                <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
+                <requisitos>* Que seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total;
+* Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou partes em cada uma destas situações.</requisitos>
+            </solicitante>
+            <solicitante id="864">
+                <tipo>Integrantes do Cadastro Único de Programas Sociais</tipo>
+                <requisitos>Que estejam inscritas no Cadastro Único.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="8" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2245">
+                <titulo>Preencher o formulário de inscrição</titulo>
+                <descricao>O candidato deverá acessar a página de inscrição do ENEM, ou o aplicativo para dispositivos móveis, e criar uma senha e preencher as informações requisitadas.   
+***OBS:** Novas inscrições no site só são possíveis nas épocas de inscrição do ENEM*</descricao>
+                <documentos>
+                    <default>
+                        <item id="2415">Cadastro de Pessoa Física - CPF</item>
+                        <item id="2416">Documento de Identidade - RG</item>
+                        <item id="2417">Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2810" tipo="web">
+                            <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2809" tipo="aplicativo-movel">
+                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2246">
+                <titulo>Requerer a isenção de taxa</titulo>
+                <descricao>**Para solicitantes do tipo 1, 3 e 4.** O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2422">Cadastro de Pessoa Física - CPF</item>
+                        <item id="2423">Senha do Site do ENEM</item>
+                    </default>
+                    <caso id="356" descricao="Estudante de escola pública (solicitante 1)">
+                        <documento>
+                            <id>2418</id>
+                            <descricao>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="357" descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)">
+                        <documento>
+                            <id>2419</id>
+                            <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2420</id>
+                            <descricao>Enviar documentações que comprovem esta situação.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="358" descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)">
+                        <documento>
+                            <id>2421</id>
+                            <descricao>NIS</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2811" tipo="web">
+                            <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2812" tipo="aplicativo-movel">
+                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2247">
+                <titulo>Pagar a taxa de inscrição</titulo>
+                <descricao>**Para solicitantes tipo 2.** Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2424">GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="87">
+                            <descricao>Taxa de Inscrição</descricao>
+                            <moeda></moeda>
+                            <valor>6,800</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2813" tipo="web">
+                            <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2814" tipo="aplicativo-movel">
+                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2248">
+                <titulo>Obter o Cartão de Confirmação da Inscrição</titulo>
+                <descricao>Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
+
+•	Número de inscrição; 
+•	Data e horário do Exame; 
+•	Local de realização das provas; 
+•	Indicação do(s) atendimento(s) (se for o caso); 
+•	Opção de língua estrangeira; 
+•	Solicitação de certificação (se for o caso)</descricao>
+                <documentos>
+                    <default>
+                        <item id="2425">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="2426">Senha do site do ENEM.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2815" tipo="web">
+                            <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2816" tipo="aplicativo-movel">
+                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2249">
+                <titulo>Prestar a prova</titulo>
+                <descricao>No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2427">Documento de identificação válido, original e com foto;</item>
+                        <item id="2428">Cartão de Confirmação da Inscrição.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2817" tipo="presencial">
+                            <descricao>Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2250">
+                <titulo>Receber o resultado da prova</titulo>
+                <descricao>Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
+
+Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do [INEP](http://portal.inep.gov.br/enem) até o terceiro dia útil seguinte ao de realização das últimas provas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2429">Número do CPF ou número da inscrição;</item>
+                        <item id="2430">Senha do site do ENEM.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2818" tipo="web">
+                            <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2819" tipo="aplicativo-movel">
+                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="249"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2462">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Combate a desigualdade</item>
+            <item>Educação</item>
+            <item>Educação profissionalizante</item>
+            <item>Educação superior</item>
+            <item>Empregabilidade</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2028">prova</item>
+            <item id="2029">vestibular</item>
+            <item id="2030">faculdade</item>
+            <item id="2031">MEC</item>
+            <item id="2032">NIS</item>
+            <item id="2033">isenção</item>
+            <item id="2034">INEP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="677">[Edital](http://download.inep.gov.br/educacao_basica/enem/edital/2017/edital_enem_2017.pdf)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40022,149 +40271,6 @@ CEP:70059-900 – Brasília/DF.</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>homologar-rescisao-de-contrato-de-trabalho</id>
-        <dbId>303</dbId>
-        <nome>Homologar Rescisão de Contrato de Trabalho</nome>
-        <sigla>TRCT</sigla>
-        <nomes-populares>
-            <item id="645">Homolognet</item>
-        </nomes-populares>
-        <descricao>Com este serviço você pode homologar a rescisão de seu contrato de trabalho, o que garante o direito de sacar o FGTS e dar entrada no Seguro Desemprego.</descricao>
-        <contato>Central 158</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="824">
-                <tipo>Trabalhador</tipo>
-                <requisitos>Cujo contrato de trabalho tenha sido rescindido.</requisitos>
-            </solicitante>
-            <solicitante id="825">
-                <tipo>Empregador</tipo>
-                <requisitos>Pessoa física ou jurídica</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="1345">
-                <titulo>Emitir o Termo de Rescisão do Contrato de Trabalho (TRCT)</titulo>
-                <descricao>Você deve acessar o sistema Homolognet, digitar os dados da rescisão do contrato e emitir o TRCT.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2232">Dados do contrato de trabalho</item>
-                        <item id="2233">Dados do trabalhador</item>
-                        <item id="2234">Dados do empregador</item>
-                    </default>
-                    <caso id="341" descricao="Empregador">
-                        <documento>
-                            <id>2230</id>
-                            <descricao>CNPJ</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="342" descricao="Trabalhadores">
-                        <documento>
-                            <id>2231</id>
-                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2724" tipo="telefone">
-                            <descricao>Central 158</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2723" tipo="presencial">
-                            <descricao>Sindicato de sua categoria na sua região</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1660" tipo="web-emitir">
-                            <descricao>http://trabalho.gov.br/homolognet</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2179">
-                <titulo>Agendar homologação do TRCT</titulo>
-                <descricao>Você deve agendar sua visita à Agência do MTE mais próxima.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2235">Número do TRCT</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2725" tipo="telefone">
-                            <descricao>Central 158</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2180">
-                <titulo>Homologar a Rescisão do Contrato de Trabalho</titulo>
-                <descricao>No dia e horário agendados na etapa anterior, você deverá comparecer, com a documentação necessária, à Agência do MTE.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2239">TRCT</item>
-                    </default>
-                    <caso id="343" descricao="Trabalhador">
-                        <documento>
-                            <id>2236</id>
-                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="344" descricao="Empregador">
-                        <documento>
-                            <id>2237</id>
-                            <descricao>CNPJ/CPF</descricao>
-                        </documento>
-                        <documento>
-                            <id>2238</id>
-                            <descricao>Comprovantes de pagamento do FGTS</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2726" tipo="presencial">
-                            <descricao>Agência do MTE onde a visita foi agendada na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="2844"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1555">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2423">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Previdência Social</item>
-            <item>Recursos humanos</item>
-            <item>Relações de Trabalho</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1941">Rescisão</item>
-            <item id="1942">Demissão</item>
-            <item id="1943">FGTS</item>
-            <item id="1944">Seguro Desemprego</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="646">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>cadastrar-entidades-e-cursos-no-cadastro-nacional-de-aprendizagem-profissional</id>
         <dbId>825</dbId>
         <nome>Cadastrar entidades e cursos no Cadastro Nacional de Aprendizagem Profissional</nome>
@@ -40285,6 +40391,149 @@ fone: (61) 2031 6816 (08h às 12h e 14h às 18h)</contato>
         <legislacoes>
             <item id="652">[DECRETO Nº 5.598, DE 1º DE DEZEMBRO DE 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5598.htm)</item>
             <item id="653">[DECRETO Nº 8.740, DE 4 DE MAIO DE 2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Decreto/D8740.htm#art1)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>homologar-rescisao-de-contrato-de-trabalho</id>
+        <dbId>303</dbId>
+        <nome>Homologar Rescisão de Contrato de Trabalho</nome>
+        <sigla>TRCT</sigla>
+        <nomes-populares>
+            <item id="645">Homolognet</item>
+        </nomes-populares>
+        <descricao>Com este serviço você pode homologar a rescisão de seu contrato de trabalho, o que garante o direito de sacar o FGTS e dar entrada no Seguro Desemprego.</descricao>
+        <contato>Central 158</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="824">
+                <tipo>Trabalhador</tipo>
+                <requisitos>Cujo contrato de trabalho tenha sido rescindido.</requisitos>
+            </solicitante>
+            <solicitante id="825">
+                <tipo>Empregador</tipo>
+                <requisitos>Pessoa física ou jurídica</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1345">
+                <titulo>Emitir o Termo de Rescisão do Contrato de Trabalho (TRCT)</titulo>
+                <descricao>Você deve acessar o sistema Homolognet, digitar os dados da rescisão do contrato e emitir o TRCT.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2232">Dados do contrato de trabalho</item>
+                        <item id="2233">Dados do trabalhador</item>
+                        <item id="2234">Dados do empregador</item>
+                    </default>
+                    <caso id="341" descricao="Empregador">
+                        <documento>
+                            <id>2230</id>
+                            <descricao>CNPJ</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="342" descricao="Trabalhadores">
+                        <documento>
+                            <id>2231</id>
+                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2724" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2723" tipo="presencial">
+                            <descricao>Sindicato de sua categoria na sua região</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1660" tipo="web">
+                            <descricao>http://trabalho.gov.br/homolognet</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2179">
+                <titulo>Agendar homologação do TRCT</titulo>
+                <descricao>Você deve agendar sua visita à Agência do MTE mais próxima.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2235">Número do TRCT</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2725" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2180">
+                <titulo>Homologar a Rescisão do Contrato de Trabalho</titulo>
+                <descricao>No dia e horário agendados na etapa anterior, você deverá comparecer, com a documentação necessária, à Agência do MTE.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2239">TRCT</item>
+                    </default>
+                    <caso id="343" descricao="Trabalhador">
+                        <documento>
+                            <id>2236</id>
+                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="344" descricao="Empregador">
+                        <documento>
+                            <id>2237</id>
+                            <descricao>CNPJ/CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>2238</id>
+                            <descricao>Comprovantes de pagamento do FGTS</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2726" tipo="presencial">
+                            <descricao>Agência do MTE onde a visita foi agendada na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1555">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2423">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Previdência Social</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1941">Rescisão</item>
+            <item id="1942">Demissão</item>
+            <item id="1943">FGTS</item>
+            <item id="1944">Seguro Desemprego</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="646">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40543,240 +40792,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </palavras-chave>
         <legislacoes>
             <item id="599">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>prestar-o-exame-nacional-do-ensino-medio</id>
-        <dbId>44</dbId>
-        <nome>Prestar o Exame Nacional do Ensino Médio</nome>
-        <sigla>ENEM</sigla>
-        <nomes-populares>
-            <item id="668">ENEM</item>
-        </nomes-populares>
-        <descricao>O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
-
-* Ser uma ferramenta para avaliar a qualidade do ensino no Brasil, auxiliando na construção de ações e políticas públicas que melhorem o currículo e a educação no Ensino Médio;
-* Ser um dos critérios de acesso dos participantes a programas governamentais e instituições de ensino superior;
-* Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="590">
-                <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
-                <requisitos>Cursado, no ano da prova, o terceiro ano do Ensino Médio.</requisitos>
-            </solicitante>
-            <solicitante id="592">
-                <tipo>Todos os demais cidadãos brasileiros.</tipo>
-                <requisitos>Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.</requisitos>
-            </solicitante>
-            <solicitante id="591">
-                <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
-                <requisitos>* Que seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total;
-* Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou partes em cada uma destas situações.
-* Esteja inscrito no Cadastro Único. {*Não sabe?* [*Consulte aqui*](http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/)}</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="8" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Sem validade</tipo>
-            <quantidade>0</quantidade>
-            <unidade></unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="1826">
-                <titulo>Preencher o formulário de inscrição</titulo>
-                <descricao>O candidato deverá acessar a página de inscrição do ENEM, ou o aplicativo para dispositivos móveis, e criar uma senha e preencher as informações requisitadas.   
-***OBS:** Novas inscrições no site só são possíveis nas épocas de inscrição do ENEM*</descricao>
-                <documentos>
-                    <default>
-                        <item id="1576">Cadastro de Pessoa Física - CPF</item>
-                        <item id="1577">Documento de Identidade - RG</item>
-                        <item id="1578">Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2264" tipo="aplicativo-movel">
-                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2263" tipo="web">
-                            <descricao>http://enem.inep.gov.br/participante</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1827">
-                <titulo>Requerer a isenção de taxa (para tipo de solicitantes 1 e 2)</titulo>
-                <descricao>O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.  
-*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*</descricao>
-                <documentos>
-                    <default>
-                        <item id="1582">Cadastro de Pessoa Física - CPF</item>
-                        <item id="1583">Senha do Site do ENEM</item>
-                    </default>
-                    <caso id="276" descricao="Estudante de escola pública (solicitante 1)">
-                        <documento>
-                            <id>1579</id>
-                            <descricao>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="277" descricao="Pessoas em situação de carência sócio-econômica (solicitante 2)">
-                        <documento>
-                            <id>1580</id>
-                            <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1581</id>
-                            <descricao>Enviar documentações que comprovem esta situação.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2265" tipo="web">
-                            <descricao>http://enem.inep.gov.br/participante</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2266" tipo="aplicativo-movel">
-                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1828">
-                <titulo>Pagar a taxa de inscrição (Para não isentos)</titulo>
-                <descricao>Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.  
-*ATENÇÃO: Esta etapa poderá sofrer alterações em 2017.*</descricao>
-                <documentos>
-                    <default>
-                        <item id="1584">GRU</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="47">
-                            <descricao>Taxa de Inscrição</descricao>
-                            <moeda></moeda>
-                            <valor>6,800</valor>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2267" tipo="web">
-                            <descricao>http://enem.inep.gov.br/participante</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2268" tipo="presencial">
-                            <descricao>Rede Bancária</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1829">
-                <titulo>Obter o Cartão de Confirmação da Inscrição</titulo>
-                <descricao>Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
-
-•	Número de inscrição; 
-•	Data e horário do Exame; 
-•	Local de realização das provas; 
-•	Indicação do(s) atendimento(s) (se for o caso); 
-•	Opção de língua estrangeira; 
-•	Solicitação de certificação (se for o caso)</descricao>
-                <documentos>
-                    <default>
-                        <item id="1585">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1586">Senha do site do ENEM.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2269" tipo="web">
-                            <descricao>http://enem.inep.gov.br/participante</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2270" tipo="aplicativo-movel">
-                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1830">
-                <titulo>Prestar a prova</titulo>
-                <descricao>No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1587">Documento de identificação válido, original e com foto;</item>
-                        <item id="1588">Cartão de Confirmação da Inscrição.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2271" tipo="presencial">
-                            <descricao>Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1831">
-                <titulo>Receber o resultado da prova</titulo>
-                <descricao>Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
-
-Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do INEP, no endereço eletrônico http://portal.inep.gov.br/enem, até o terceiro dia útil seguinte ao de realização das últimas provas.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1589">Número do CPF ou número da inscrição;</item>
-                        <item id="1590">Senha do site do ENEM.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2272" tipo="web">
-                            <descricao>http://enem.inep.gov.br/participante</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2273" tipo="aplicativo-movel">
-                            <descricao>http://enem.inep.gov.br/aplicativo.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="249"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2121">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Combate a desigualdade</item>
-            <item>Educação</item>
-            <item>Educação básica</item>
-            <item>Educação superior</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1478">prova</item>
-            <item id="1479">vestibular</item>
-            <item id="1480">faculdade</item>
-            <item id="2005">NIS</item>
-            <item id="2006">isenção</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="479">Toda a legislação relacionada ao ENEM pode ser encontrada [aqui](http://portal.inep.gov.br/web/enem/legislacao-e-documentos)</item>
         </legislacoes>
     </servico>
 </servicos>
