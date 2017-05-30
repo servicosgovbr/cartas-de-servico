@@ -1,18 +1,76 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>inscrever-se-no-sisu-sistema-de-selecao-unificada</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Criado em 2010, o Sistema de Seleção Unificada (Sisu) possibilita a oferta de vagas em instituições públicas de educação superior a candidatos participantes do Exame Nacional do Ensino Médio (Enem).</descricao>
-    <gratuito/>
-    <solicitantes/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>inscrever-se-no-sisu-sistema-de-selecao-unificada</id>
+    <dbId>546</dbId>
+    <nome>Inscrever-se no SISU (Sistema de Seleção Unificada)</nome>
+    <sigla>SISU</sigla>
+    <nomes-populares>
+        <item id="477"></item>
+    </nomes-populares>
+    <descricao>Este serviço permite que quem fez o ENEM se inscreva para concorrer a vagas em instituições públicas de ensino superior (universidades, faculdades e afins).</descricao>
+    <contato>* [Fale Conosco do MEC](http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw#/Mjg0Mi1zZSwzNDI1LXNlLDQyMS1zbw==)
+* Telefone: 0800-616161</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="913">
+            <tipo>Cidadãos que fizeram o ENEM no ano anterior à presente edição do SISU</tipo>
+            <requisitos>######que atendam aos seguintes critérios:######
+'
+* Tenham obtido na redação nota que não seja zero;           
+* Tenham concluído o ensino médio até a data de matrícula na faculdade;    
+
+*Obs:* É importante ressaltar que algumas instituições adotam notas mínimas e/ou médias mínimas para inscrição em determinados cursos. Nesse caso, no momento da inscrição, se a nota do candidato não for suficiente para concorrer àquele curso, o sistema emitirá mensagem com esta informação.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <em-media max="1" unidade="meses"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1688">
+            <titulo>Realizar o primeiro login no site do SISU</titulo>
+            <descricao>Você deve entrar no site e fazer seu login com seu número de inscrição e senha do ENEM do ano anterior (caso você não se lembre, pode recuperá-los [aqui](http://enem.inep.gov.br/participante/#!/loginParticipante)</descricao>
+            <documentos>
+                <default>
+                    <item id="2520">Número de inscrição no ENEM do ano anterior</item>
+                    <item id="2521">Senha do site do ENEM</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2098" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2304">
+            <titulo>Confirmar seus dados</titulo>
+            <descricao>Assim que você realizar seu primeiro login, o site do SISU vai pedir que você confirme seus dados. Você deve ler atentamente o que ali consta, mudar o que não estiver correto e confirmar.</descricao>
+            <documentos>
+                <default>
+                    <item id="2522">Dados pessoais</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2933" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2305">
+            <titulo>Pesquisar vagas disponíveis</titulo>
+            <descricao>Você deverá pesquisar, de acordo com seu interesse, as vagas disponíveis no curso, instituição e/ou município pretendido.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -21,19 +79,134 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>http://sisu.mec.gov.br/</descricao>
+                    <canal-de-prestacao id="2935" tipo="aplicativo-movel">
+                        <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2934" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2306">
+            <titulo>Escolher os cursos desejados</titulo>
+            <descricao>Você pode escolher até duas opções de cursos desejados entre as vagas existentes, com uma delas sendo sua primeira opção. Você deve: 1 - Clicar no curso para ver a quantidade de vagas e modalidades disponíveis; 2 - Escolher a modalidade em que deseja se inscrever; e 3 - Confirmar seu pedido de inscrição.    
+
+Faça isso para as duas opções.
+
+*Obs:* Durante o período de inscrições você poderá alterar os dados quantas vezes desejar. A informação existente no fim deste período será a considerada.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2936" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2307">
+            <titulo>Acompanhar a nota de corte e a classificação parcial nos cursos escolhidos</titulo>
+            <descricao>Nos três dias finais do período de inscrição, você pode acompanhar sua classificação parcial e as mudanças da nota de corte nos cursos escolhidos.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2938" tipo="aplicativo-movel">
+                        <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2937" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2308">
+            <titulo>Receber resultado da primeira chamada</titulo>
+            <descricao>Na data especificada no edital, você poderá verificar o resultado da chamada regular (1ª chamada).</descricao>
+            <documentos>
+                <default>
+                    <item id="2523">Nº da inscrição do ENEM</item>
+                    <item id="2524">Senha do ENEM</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2940" tipo="aplicativo-movel">
+                        <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2939" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2309">
+            <titulo>Manifestar interesse em participar da lista de espera.</titulo>
+            <descricao>Os candidatos que não forem selecionados em sua *primeira opção* na chamada regular podem participar da lista de espera por vagas provenientes de desistência dos selecionados. Só é possível participar da lista de espera para o curso que você escolheu como sua *primeira opção*. 
+
+Na data especificada no edital, você deverá entrar no sistema, acessar o seu boletim e clicar no botão de confirmação de interesse. *A inscrição na lista só estará concluída após mensagem de confirmação do sistema.*</descricao>
+            <documentos>
+                <default>
+                    <item id="2525">Número de inscrição no ENEM</item>
+                    <item id="2526">Senha do site do ENEM</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2941" tipo="web">
+                        <descricao>http://sisualuno.mec.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244"/>
-    <segmentos-da-sociedade/>
+    <orgao id="244"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="1954">Cidadãos</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação superior</item>
         <item>Educação</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="2169">SISU</item>
+        <item id="2170">vestibular</item>
+        <item id="2171">Universidade Pública</item>
+        <item id="2172">ENEM</item>
+        <item id="2173">MEC</item>
+        <item id="2174">ProUni</item>
+        <item id="2175">Processo seletivo</item>
+        <item id="2176">ensino superior</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="722">[Edital SISU 1º/2017](http://static03.mec.gov.br/sisu/portal/data/edital_n54.pdf)</item>
+        <item id="723">[Portaria Normativa nº21/2012](http://static03.mec.gov.br/sisu/portal/data/portaria_n21.pdf)</item>
+        <item id="724">[Lei 12.711/12 (lei das cotas)](http://static03.mec.gov.br/sisu/portal/data/lei_n12711.pdf)</item>
+        <item id="725">[Lei 13.409/16](http://static03.mec.gov.br/sisu/portal/data/dou_lei_n13409.pdf)</item>
+        <item id="726">[Decreto 7.824/12](http://static03.mec.gov.br/sisu/portal/data/decreto_n7824.pdf)</item>
+        <item id="727">[Decreto 9.034/17](http://static03.mec.gov.br/sisu/portal/data/dou_decreto_n9034.pdf)</item>
+        <item id="728">[Portaria Normativa nº 18/12](http://static03.mec.gov.br/sisu/portal/data/portaria_n18.pdf)</item>
+        <item id="729">[Portaria Normativa nº 9/2017](http://static03.mec.gov.br/sisu/portal/data/dou_portaria_n9.pdf)</item>
+    </legislacoes>
 </servico>
