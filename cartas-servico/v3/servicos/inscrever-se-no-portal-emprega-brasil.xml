@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>inscrever-se-no-portal-emprega-brasil</id>
+    <dbId>887</dbId>
+    <nome>Inscrever-se no Portal Emprega Brasil</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="687">Emprega Brasil</item>
+    </nomes-populares>
+    <descricao>Aqui você encontra a explicação passo a passo de como inscrever-se no Portal Emprega Brasil.</descricao>
+    <contato>* Telefone: Alô Trabalho – 158
+* Carta: Ouvidoria-Geral do Trabalho, Esplanada dos Ministérios, Bloco F, Anexo Ala A, Sala TA17, Brasília-DF, CEP: 70056-900
+* Presencial: Esplanada dos Ministérios, Bloco F, Edifício Anexo, Ala “A”, Térreo, Sala TA17 de 8h às 18h
+* [Mensagem para a ouvidoria](http://ouvidoria.mte.gov.br/sisouvidor/autoatendimento/cadastro/formularioMensagem.jsp)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="915">
+            <tipo>Cidadão Brasileiro ou Estrangeiro</tipo>
+            <requisitos>Que possua um CPF</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="horas"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento/>
+    <etapas>
+        <etapa id="2311">
+            <titulo>Informar dados de cadastro</titulo>
+            <descricao>Você deverá preencher as informações pedidas, preencher o campo de segurança e clicar no botão "confirmar"</descricao>
+            <documentos>
+                <default>
+                    <item id="2528">CPF</item>
+                    <item id="2529">Nome Completo</item>
+                    <item id="2530">Data de Nascimento</item>
+                    <item id="2531">Nome da mãe (com a opção de marcar "ignorado")</item>
+                    <item id="2532">Estado de Nascimento (com a opção de marcar "não sou brasileiro")</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2943" tipo="web">
+                        <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2312">
+            <titulo>Confirmar sua identidade</titulo>
+            <descricao>Você deverá responder a 5 perguntas sobre sua vida funcional e relação com a Previdência Social para confirmar sua identidade (as perguntas são escolhidas aleatoriamente pelo sistema a cada acesso), e depois clicar em confirmar.</descricao>
+            <documentos>
+                <default>
+                    <item id="2533">Carteira de Trabalho</item>
+                    <item id="2534">Demais documentação de sua vida funcional e relação com a receita</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2944" tipo="web">
+                        <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2313">
+            <titulo>Receber Senha Provisória</titulo>
+            <descricao>O sistema irá então dar a você uma senha provisória composta de 7 números. Anote-a.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2945" tipo="web">
+                        <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2314">
+            <titulo>Validar a senha provisória</titulo>
+            <descricao>Com a senha provisória em mãos, você deve ligar para a Central da Previdência (telefone 135). Sua ligação será atendida pelo sistema automático. Você então deve:
+
+* Esperar ele pedir o CPF, e então digitar seu CPF;
+* O sistema então irá te apresentar 6 opções. *Espere ele apresentar todas as opções* e então clique o botão 1 (opção 1);
+* Você será então direcionado a um atendente humano, que fará perguntas para confirmar sua identidade e então validará sua senha.</descricao>
+            <documentos>
+                <default>
+                    <item id="2535">CPF</item>
+                    <item id="2536">RG</item>
+                    <item id="2537">Carteira de Trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2946" tipo="telefone">
+                        <descricao>Central 135</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2315">
+            <titulo>Cadastrar senha definitiva</titulo>
+            <descricao>Com a senha provisória validada, você irá novamente acessar o Portal Emprega Brasil, mas desta vez irá acessar a guia “Entrar” (à esquerda da guia “Cadastrar”). O sistema irá então pedir para você cadastrar sua senha definitiva, que deverá conter pelo menos 8 caracteres, ter entre eles pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial. (*Exemplo: PortalServiço@2305*).</descricao>
+            <documentos>
+                <default>
+                    <item id="2538">CPF</item>
+                    <item id="2539">Senha provisória</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2947" tipo="web">
+                        <descricao>https://mte.api.dataprev.gov.br/auth/login?loginwith=pat</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2611">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2612">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2613">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Empregabilidade</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Fiscalização do Estado</item>
+        <item>Previdência Social</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2180">Emprega Brasil</item>
+        <item id="2181">SINE</item>
+        <item id="2182">Ministério do Trabalho</item>
+        <item id="2183">Sine Fácil</item>
+        <item id="2184">emprego</item>
+        <item id="2185">CBO</item>
+        <item id="2186">Vagas</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="731">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+    </legislacoes>
+</servico>
