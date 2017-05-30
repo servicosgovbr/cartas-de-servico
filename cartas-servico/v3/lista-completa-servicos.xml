@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -27593,46 +27593,6 @@ Email - incentivo.viagens@turismo.gov.br</contato>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>sisu-sistema-de-selecao-unificada</id>
-        <dbId>546</dbId>
-        <nome>Sisu — Sistema de Seleção Unificada</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="477">sisu</item>
-        </nomes-populares>
-        <descricao>Criado em 2010, o Sistema de Seleção Unificada (Sisu) possibilita a oferta de vagas em instituições públicas de educação superior a candidatos participantes do Exame Nacional do Ensino Médio (Enem).</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1688">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2098" tipo="web">
-                            <descricao>http://sisu.mec.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="244"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1954">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Educação</item>
-            <item>Educação superior</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>orientacoes-gerais-sobre-regimes-especiais-aduaneiros</id>
         <dbId>547</dbId>
         <nome>Orientações Gerais sobre Regimes Especiais Aduaneiros</nome>
@@ -43094,6 +43054,166 @@ Tempo para a prestação do serviço: Até trinta dias após o agendamento prév
         </legislacoes>
     </servico>
     <servico>
+        <id>inscrever-se-no-portal-emprega-brasil</id>
+        <dbId>887</dbId>
+        <nome>Inscrever-se no Portal Emprega Brasil</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="687">Emprega Brasil</item>
+        </nomes-populares>
+        <descricao>Aqui você encontra a explicação passo a passo de como inscrever-se no Portal Emprega Brasil.</descricao>
+        <contato>* Telefone: Alô Trabalho – 158
+* Carta: Ouvidoria-Geral do Trabalho, Esplanada dos Ministérios, Bloco F, Anexo Ala A, Sala TA17, Brasília-DF, CEP: 70056-900
+* Presencial: Esplanada dos Ministérios, Bloco F, Edifício Anexo, Ala “A”, Térreo, Sala TA17 de 8h às 18h
+* [Mensagem para a ouvidoria](http://ouvidoria.mte.gov.br/sisouvidor/autoatendimento/cadastro/formularioMensagem.jsp)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="915">
+                <tipo>Cidadão Brasileiro ou Estrangeiro</tipo>
+                <requisitos>Que possua um CPF</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="horas"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2311">
+                <titulo>Informar dados de cadastro</titulo>
+                <descricao>Você deverá preencher as informações pedidas, preencher o campo de segurança e clicar no botão "confirmar"</descricao>
+                <documentos>
+                    <default>
+                        <item id="2528">CPF</item>
+                        <item id="2529">Nome Completo</item>
+                        <item id="2530">Data de Nascimento</item>
+                        <item id="2531">Nome da mãe (com a opção de marcar "ignorado")</item>
+                        <item id="2532">Estado de Nascimento (com a opção de marcar "não sou brasileiro")</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2943" tipo="web">
+                            <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2312">
+                <titulo>Confirmar sua identidade</titulo>
+                <descricao>Você deverá responder a 5 perguntas sobre sua vida funcional e relação com a Previdência Social para confirmar sua identidade (as perguntas são escolhidas aleatoriamente pelo sistema a cada acesso), e depois clicar em confirmar.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2533">Carteira de Trabalho</item>
+                        <item id="2534">Demais documentação de sua vida funcional e relação com a receita</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2944" tipo="web">
+                            <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2313">
+                <titulo>Receber Senha Provisória</titulo>
+                <descricao>O sistema irá então dar a você uma senha provisória composta de 7 números. Anote-a.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2945" tipo="web">
+                            <descricao>https://autenticacao.dataprev.gov.br/autenticacao/pages/segurado/dadosCadastraisKBA.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2314">
+                <titulo>Validar a senha provisória</titulo>
+                <descricao>Com a senha provisória em mãos, você deve ligar para a Central da Previdência (telefone 135). Sua ligação será atendida pelo sistema automático. Você então deve:
+
+* Esperar ele pedir o CPF, e então digitar seu CPF;
+* O sistema então irá te apresentar 6 opções. *Espere ele apresentar todas as opções* e então clique o botão 1 (opção 1);
+* Você será então direcionado a um atendente humano, que fará perguntas para confirmar sua identidade e então validará sua senha.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2535">CPF</item>
+                        <item id="2536">RG</item>
+                        <item id="2537">Carteira de Trabalho</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2946" tipo="telefone">
+                            <descricao>Central 135</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2315">
+                <titulo>Cadastrar senha definitiva</titulo>
+                <descricao>Com a senha provisória validada, você irá novamente acessar o Portal Emprega Brasil, mas desta vez irá acessar a guia “Entrar” (à esquerda da guia “Cadastrar”). O sistema irá então pedir para você cadastrar sua senha definitiva, que deverá conter pelo menos 8 caracteres, ter entre eles pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial. (*Exemplo: PortalServiço@2305*).</descricao>
+                <documentos>
+                    <default>
+                        <item id="2538">CPF</item>
+                        <item id="2539">Senha provisória</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2947" tipo="web">
+                            <descricao>https://mte.api.dataprev.gov.br/auth/login?loginwith=pat</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="2844"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2611">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2612">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2613">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Fiscalização do Estado</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Previdência Social</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2180">Emprega Brasil</item>
+            <item id="2181">SINE</item>
+            <item id="2182">Ministério do Trabalho</item>
+            <item id="2183">Sine Fácil</item>
+            <item id="2184">emprego</item>
+            <item id="2185">CBO</item>
+            <item id="2186">Vagas</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="731">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>autorizacao-de-acesso-a-conhecimentos-tradicionais-associados-cta</id>
         <dbId>882</dbId>
         <nome>Autorização de Acesso a Conhecimentos Tradicionais Associados – CTA</nome>
@@ -43593,6 +43713,217 @@ Virtual: atendimento.bam@iphan.gov.br; Twitter: @biblioam; Blog: biblioam.wordpr
         </legislacoes>
     </servico>
     <servico>
+        <id>inscrever-se-no-sisu-sistema-de-selecao-unificada</id>
+        <dbId>546</dbId>
+        <nome>Inscrever-se no SISU (Sistema de Seleção Unificada)</nome>
+        <sigla>SISU</sigla>
+        <nomes-populares>
+            <item id="477"></item>
+        </nomes-populares>
+        <descricao>Este serviço permite que quem fez o ENEM se inscreva para concorrer a vagas em instituições públicas de ensino superior (universidades, faculdades e afins).</descricao>
+        <contato>* [Fale Conosco do MEC](http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw#/Mjg0Mi1zZSwzNDI1LXNlLDQyMS1zbw==)
+* Telefone: 0800-616161</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="913">
+                <tipo>Cidadãos que fizeram o ENEM no ano anterior à presente edição do SISU</tipo>
+                <requisitos>**que atendam aos seguintes critérios:**    
+       
+* Tenham obtido na redação nota que não seja zero;           
+* Tenham concluído o ensino médio até a data de matrícula na faculdade;    
+    
+*Obs:* É importante ressaltar que algumas instituições adotam notas mínimas e/ou médias mínimas para inscrição em determinados cursos. Nesse caso, no momento da inscrição, se a nota do candidato não for suficiente para concorrer àquele curso, o sistema emitirá mensagem com esta informação.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1688">
+                <titulo>Realizar o primeiro login no site do SISU</titulo>
+                <descricao>Você deve entrar no site e fazer seu login com seu número de inscrição e senha do ENEM do ano anterior (caso você não se lembre, pode recuperá-los [aqui](http://enem.inep.gov.br/participante/#!/loginParticipante)</descricao>
+                <documentos>
+                    <default>
+                        <item id="2520">Número de inscrição no ENEM do ano anterior</item>
+                        <item id="2521">Senha do site do ENEM</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2098" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2304">
+                <titulo>Confirmar seus dados</titulo>
+                <descricao>Assim que você realizar seu primeiro login, o site do SISU vai pedir que você confirme seus dados. Você deve ler atentamente o que ali consta, mudar o que não estiver correto e confirmar.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2522">Dados pessoais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2933" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2305">
+                <titulo>Pesquisar vagas disponíveis</titulo>
+                <descricao>Você deverá pesquisar, de acordo com seu interesse, as vagas disponíveis no curso, instituição e/ou município pretendido.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2935" tipo="aplicativo-movel">
+                            <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2934" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2306">
+                <titulo>Escolher os cursos desejados</titulo>
+                <descricao>Você pode escolher até duas opções de cursos desejados entre as vagas existentes, com uma delas sendo sua primeira opção. Você deve: 1 - Clicar no curso para ver a quantidade de vagas e modalidades disponíveis; 2 - Escolher a modalidade em que deseja se inscrever; e 3 - Confirmar seu pedido de inscrição.    
+
+Faça isso para as duas opções.
+
+*Obs:* Durante o período de inscrições você poderá alterar os dados quantas vezes desejar. A informação existente no fim deste período será a considerada.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2936" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2307">
+                <titulo>Acompanhar a nota de corte e a classificação parcial nos cursos escolhidos</titulo>
+                <descricao>Nos três dias finais do período de inscrição, você pode acompanhar sua classificação parcial e as mudanças da nota de corte nos cursos escolhidos.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2938" tipo="aplicativo-movel">
+                            <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2937" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2308">
+                <titulo>Receber resultado da primeira chamada</titulo>
+                <descricao>Na data especificada no edital, você poderá verificar o resultado da chamada regular (1ª chamada).</descricao>
+                <documentos>
+                    <default>
+                        <item id="2523">Nº da inscrição do ENEM</item>
+                        <item id="2524">Senha do ENEM</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2940" tipo="aplicativo-movel">
+                            <descricao>- [Plataforma Android](https://play.google.com/store/apps/details?id=br.gov.mec.sisu&amp;hl=pt)
+- [Plataforma Apple](https://itunes.apple.com/br/app/sisu/id956285292?mt=8)
+- [Plataforma Windows Phone](https://www.microsoft.com/en-us/store/p/sisu/9nblgggzq48z)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2939" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2309">
+                <titulo>Manifestar interesse em participar da lista de espera.</titulo>
+                <descricao>Os candidatos que não forem selecionados em sua *primeira opção* na chamada regular podem participar da lista de espera por vagas provenientes de desistência dos selecionados. Só é possível participar da lista de espera para o curso que você escolheu como sua *primeira opção*. 
+
+Na data especificada no edital, você deverá entrar no sistema, acessar o seu boletim e clicar no botão de confirmação de interesse. *A inscrição na lista só estará concluída após mensagem de confirmação do sistema.*</descricao>
+                <documentos>
+                    <default>
+                        <item id="2525">Número de inscrição no ENEM</item>
+                        <item id="2526">Senha do site do ENEM</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2941" tipo="web">
+                            <descricao>http://sisualuno.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="244"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1954">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2169">SISU</item>
+            <item id="2170">vestibular</item>
+            <item id="2171">Universidade Pública</item>
+            <item id="2172">ENEM</item>
+            <item id="2173">MEC</item>
+            <item id="2174">ProUni</item>
+            <item id="2175">Processo seletivo</item>
+            <item id="2176">ensino superior</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="722">[Edital SISU 1º/2017](http://static03.mec.gov.br/sisu/portal/data/edital_n54.pdf)</item>
+            <item id="723">[Portaria Normativa nº21/2012](http://static03.mec.gov.br/sisu/portal/data/portaria_n21.pdf)</item>
+            <item id="724">[Lei 12.711/12 (lei das cotas)](http://static03.mec.gov.br/sisu/portal/data/lei_n12711.pdf)</item>
+            <item id="725">[Lei 13.409/16](http://static03.mec.gov.br/sisu/portal/data/dou_lei_n13409.pdf)</item>
+            <item id="726">[Decreto 7.824/12](http://static03.mec.gov.br/sisu/portal/data/decreto_n7824.pdf)</item>
+            <item id="727">[Decreto 9.034/17](http://static03.mec.gov.br/sisu/portal/data/dou_decreto_n9034.pdf)</item>
+            <item id="728">[Portaria Normativa nº 18/12](http://static03.mec.gov.br/sisu/portal/data/portaria_n18.pdf)</item>
+            <item id="729">[Portaria Normativa nº 9/2017](http://static03.mec.gov.br/sisu/portal/data/dou_portaria_n9.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>edital-do-programa-nacional-do-patrimonio-imaterial</id>
         <dbId>851</dbId>
         <nome>Edital do Programa Nacional do Patrimônio Imaterial</nome>
@@ -43664,6 +43995,77 @@ Contar com a participação e o consentimento prévio e informado dos grupos det
         </palavras-chave>
         <legislacoes>
             <item id="715">Não se aplica.</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registro-de-marca</id>
+        <dbId>886</dbId>
+        <nome>Registro de marca</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="686">Registro de marca</item>
+        </nomes-populares>
+        <descricao>Para ter exclusividade sobre o nome de um serviço ou produto, ou ainda um logotipo que o identifique, você precisa registrar uma marca no INPI.</descricao>
+        <contato>Fale Conosco: http://faleconosco.inpi.gov.br/faleconosco/</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="914">
+                <tipo>Pessoa física e jurídica.</tipo>
+                <requisitos>Dados necessários: Nome completo, Endereço completo, Natureza jurídica do requerente, CPF ou CNPJ, E-mail.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="33" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>10</quantidade>
+            <unidade>anos</unidade>
+            <descricao>A marca é válida por um período de 10 anos, que pode ser renovado sucessivamente no INPI.</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2310">
+                <titulo>Cadastro no e-INPI</titulo>
+                <descricao>O primeiro passo para apresentar um pedido de registro ou uma petição de marca é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
+                <documentos>
+                    <default>
+                        <item id="2527">Dados necessários: Nome completo, Endereço completo, Natureza jurídica do requerente, CPF ou CNPJ, E-mail.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2942" tipo="web-acompanhar">
+                            <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
+
+Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="382"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2607">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2609">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2608">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2610">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Indústria</item>
+            <item>Serviços Urbanos</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2177">marca</item>
+            <item id="2178">propriedade industrial</item>
+            <item id="2179">INPI</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="730">Lei 9.279</item>
         </legislacoes>
     </servico>
 </servicos>
