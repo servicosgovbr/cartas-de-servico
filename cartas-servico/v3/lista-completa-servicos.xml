@@ -15983,42 +15983,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>restituicao-e-situacao-da-declaracao-do-imposto-de-renda-pessoa-fisica-irpf</id>
-        <dbId>262</dbId>
-        <nome>Restituição e Situação da Declaração do Imposto de Renda Pessoa Física - IRPF</nome>
-        <sigla></sigla>
-        <descricao>Consultar, por ano, se a restituição d o IRPF consta ou não em algum lote já liberado.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1243">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1529" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atrjo/ConsRest/Atual.app/index.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1428">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>programa-gerador-da-declaracao-pgd-dimof-e-receitanet</id>
         <dbId>264</dbId>
         <nome>Programa Gerador da Declaração (PGD) DIMOF e Receitanet</nome>
@@ -44292,6 +44256,107 @@ Lei nº 8.383/91 - Unidade Fiscal de Referência
 Lei nº 11.196/05 - Regimes especiais de Tributação e Aquisição de Bens de Capital. Incentivos fiscais para a inovação tecnológica.
 Lei nº 12.529/11 - Sistema de Defesa da Concorrência
 Lei nº 8.955/94 - Contrato de franquia empresarial</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>restituir-declaracao-do-imposto-de-renda-pessoa-fisica-irpf</id>
+        <dbId>262</dbId>
+        <nome>Restituir Declaração do Imposto de Renda Pessoa Física - IRPF</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="690">Restituição do Imposto de Renda</item>
+        </nomes-populares>
+        <descricao>O pagamento da restituição do Imposto sobre a Renda da Pessoa Física (IRPF) é efetuado pela Secretaria da Receita Federal do Brasil (RFB) exclusivamente mediante crédito em conta-corrente ou poupança de titularidade do beneficiário, informada na Declaração do Imposto sobre a Renda da Pessoa Física (DIRPF), admitida as exceções no caso de contribuinte falecido, menor de idade, incapaz ou com saída definitiva do país.</descricao>
+        <contato>Acesse o [Fale Conosco](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/dirf)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="919">
+                <tipo>Contribuinte que tenha pago imposto a mais no processo de Declaração de Ajuste Anual do Imposto sobre a Renda da Pessoa Física (DIRPF) no exercício.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="8" unidade="meses"/>
+            <descricao>* 1º Lote 16/06/2017 
+
+* 2º Lote 17/07/2017
+
+* 3º Lote 15/08/2017 
+
+* 4º Lote 15/09/2017
+
+* 5º Lote 16/10/2017
+
+* 6º Lote 16/11/2017 	
+
+* 7º Lote 15/12/2017</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>5</quantidade>
+            <unidade>anos</unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1243">
+                <titulo>Consultar Restituições do Imposto de Renda</titulo>
+                <descricao>Para verificar se a restituição foi liberada, faça a consulta online, pelo telefone ou pelo aplicativo da Receita disponível para smartphones.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1529" tipo="web-consultar">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atrjo/ConsRest/Atual.app/paginas/index.asp</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2952" tipo="aplicativo-movel">
+                            <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
+
+
+* [IOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2951" tipo="telefone">
+                            <descricao>Ligue para 146 e selecione a opção 3</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2320">
+                <titulo>Receber restituição</titulo>
+                <descricao>Restituição segue a programação de lotes abaixo. Havendo divergência relacionada aos seus dados bancários para depósito, o contribuinte deverá, caso ainda dentro do prazo de um ano da disponibilização da restituição na rede bancária,  ir pessoalmente em qualquer agência do Banco do Brasil para corrigir as informações e solicitar novo agendamento do crédito ou ligar na Central de Atendimento do Banco: 4004-0001 (capitais), 0800-729-0001 (demais localidades).</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2953" tipo="web-acompanhar">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atrjo/ConsRest/Atual.app/paginas/index.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="77"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1428">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2196">IRPF</item>
+            <item id="2197">Restituição</item>
+            <item id="2198">Imposto</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="735">Instrução Normativa RFB nº 1690, de 20 de fevereiro de 2017</item>
         </legislacoes>
     </servico>
 </servicos>
