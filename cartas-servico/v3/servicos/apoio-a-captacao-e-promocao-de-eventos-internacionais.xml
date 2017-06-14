@@ -1,43 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>apoio-a-captacao-e-promocao-de-eventos-internacionais</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>apoio-a-captacao-e-promocao-de-eventos-internacionais</id>
+    <dbId>236</dbId>
+    <nome>Apoio à Captação e Promoção de Eventos Internacionais</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Captação de Eventos</item>
-        <item>Promoção de Eventos</item>
-        <item>MICE</item>
-        <item>Negócios e Eventos</item>
-        <item>Congressos</item>
+        <item id="371">Captação de Eventos</item>
+        <item id="372">Promoção de Eventos</item>
+        <item id="373">MICE</item>
+        <item id="374">Negócios e Eventos</item>
+        <item id="375">Congressos</item>
     </nomes-populares>
-    <descricao><![CDATA[O Programa destina-se ao apoio às ações de Captação e de Promoção de eventos internacionais (congressos, convenções, oficinas, fóruns, seminários, simpósios, assembleias, feiras, competições esportivas) que tenha o Brasil como o destino, através de apoio institucional ou por meio de projetos apresentados por entes públicos ou entidades privadas sem fins lucrativos.]]></descricao>
-    <contato><![CDATA[Wilson Freitas
+    <descricao>O Programa destina-se ao apoio às ações de Captação e de Promoção de eventos internacionais (congressos, convenções, oficinas, fóruns, seminários, simpósios, assembleias, feiras, competições esportivas) que tenha o Brasil como o destino, através de apoio institucional ou por meio de projetos apresentados por entes públicos ou entidades privadas sem fins lucrativos.</descricao>
+    <contato>Wilson Freitas
 Divisão de Turismo de Negócios e eventos
 Telefone: 61 2023 8652
-Email: wilson.freitas@embratur.gov.br]]></contato>
+Email: wilson.freitas@embratur.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="437">
             <tipo>Entidades privadas sem fins lucrativos</tipo>
-            <requisitos><![CDATA[* Eventos com no mínimo 3 edições e periodicidade definida. 
+            <requisitos>* Eventos com no mínimo 3 edições e periodicidade definida. 
 * Eventos que tenham alternado sua realização em pelo menos outros dois países distintos nas edições anteriores; 
-* Eventos internacionais ou competições esportivas, com média de 150 participantes nas edições anteriores, sendo pelo menos 25% de turistas estrangeiros. No caso de competições esportivas serão considerados como participantes os espectadores.]]></requisitos>
+* Eventos internacionais ou competições esportivas, com média de 150 participantes nas edições anteriores, sendo pelo menos 25% de turistas estrangeiros. No caso de competições esportivas serão considerados como participantes os espectadores.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="minutos"/>
-        <descricao><![CDATA[Varia conforme apoio.]]></descricao>
+        <descricao>Varia conforme apoio.</descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1265">
             <titulo>Preenchimento da ficha de solicitação do apoio</titulo>
-            <descricao><![CDATA[O solicitante deverá identificar dentre as fichas contidas na portaria nº 62, de 30 de Junho de 2015 qual corresponde ao apoio desejado. Em seguida, deverá preenchê-la e enviar por e-mail à Embratur.]]></descricao>
+            <descricao>O solicitante deverá identificar dentre as fichas contidas na portaria nº 62, de 30 de Junho de 2015 qual corresponde ao apoio desejado. Em seguida, deverá preenchê-la e enviar por e-mail à Embratur.</descricao>
             <documentos>
                 <default/>
-                <caso descricao="Para apoio à Captação">
-                    <item>Declaração de exclusividade da cidade brasileira candidata</item>
+                <caso id="194" descricao="Para apoio à Captação">
+                    <documento>
+                        <id>1236</id>
+                        <descricao>Declaração de exclusividade da cidade brasileira candidata</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para apoio à Captação de eventos esportivos">
-                    <item>Publicação de pelo menos cinco matérias jornalísticas em veículos não sediados no país que recebeu as edições anteriores.</item>
+                <caso id="195" descricao="Para apoio à Captação de eventos esportivos">
+                    <documento>
+                        <id>1237</id>
+                        <descricao>Publicação de pelo menos cinco matérias jornalísticas em veículos não sediados no país que recebeu as edições anteriores.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -45,21 +55,21 @@ Email: wilson.freitas@embratur.gov.br]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-consultar">
-                        <descricao><![CDATA[http://www.lex.com.br/legis_26967638_PORTARIA_N_62_DE_30_DE_JUNHO_DE_2015.aspx]]></descricao>
+                    <canal-de-prestacao id="1555" tipo="telefone">
+                        <descricao>61 2023 8652</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[wilson.freitas@embratur.gov.br]]></descricao>
+                    <canal-de-prestacao id="1554" tipo="e-mail">
+                        <descricao>wilson.freitas@embratur.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[61 2023 8652]]></descricao>
+                    <canal-de-prestacao id="1553" tipo="web-consultar">
+                        <descricao>http://www.lex.com.br/legis_26967638_PORTARIA_N_62_DE_30_DE_JUNHO_DE_2015.aspx</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1266">
             <titulo>Envio da Ficha de solicitação de apoio</titulo>
-            <descricao><![CDATA[Após o preenchimento da ficha de solicitação de apoio, o solicitante deverá encaminhá-la por e-mail à divisão de turismo de negócios e eventos da EMBRATUR.]]></descricao>
+            <descricao>Após o preenchimento da ficha de solicitação de apoio, o solicitante deverá encaminhá-la por e-mail à divisão de turismo de negócios e eventos da EMBRATUR.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -68,18 +78,18 @@ Email: wilson.freitas@embratur.gov.br]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[wilson.freitas@embratur.gov.br]]></descricao>
+                    <canal-de-prestacao id="1557" tipo="telefone">
+                        <descricao>61 2023 8652</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[61 2023 8652]]></descricao>
+                    <canal-de-prestacao id="1556" tipo="e-mail">
+                        <descricao>wilson.freitas@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1267">
             <titulo>Obter resultado da análise da ficha de solicitação de apoio</titulo>
-            <descricao><![CDATA[A EMBRATUR analisará a solicitação de apoio com base nos critérios exigidos na portaria nº 62 de 30 de Junho de 2015 e comunicará aos solicitantes o resultado, no prazo de até 10 dias.]]></descricao>
+            <descricao>A EMBRATUR analisará a solicitação de apoio com base nos critérios exigidos na portaria nº 62 de 30 de Junho de 2015 e comunicará aos solicitantes o resultado, no prazo de até 10 dias.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -88,33 +98,51 @@ Email: wilson.freitas@embratur.gov.br]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[wilson.freitas@embratur.gov.br]]></descricao>
+                    <canal-de-prestacao id="1559" tipo="telefone">
+                        <descricao>61 2023 8652</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[61 2023 8652]]></descricao>
+                    <canal-de-prestacao id="1558" tipo="e-mail">
+                        <descricao>wilson.freitas@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1268">
             <titulo>Envio das informações complementares - Insumo para realização do apoio</titulo>
-            <descricao><![CDATA[Após a aprovação da EMBRATUR o solicitante deverá enviar as informações necessárias para execução do apoio.]]></descricao>
+            <descricao>Após a aprovação da EMBRATUR o solicitante deverá enviar as informações necessárias para execução do apoio.</descricao>
             <documentos>
                 <default/>
-                <caso descricao="Apoio Institucional - Para produção de Folder, Banner e Cartaz">
-                    <item>Carta convite - Carta da entidade ou informações específicas do evento que desejam promover</item>
-                    <item>Texto sobre a cidade sede do evento</item>
-                    <item>Logomarcas de apoiadores em alta resolução</item>
+                <caso id="196" descricao="Apoio Institucional - Para produção de Folder, Banner e Cartaz">
+                    <documento>
+                        <id>1238</id>
+                        <descricao>Carta convite - Carta da entidade ou informações específicas do evento que desejam promover</descricao>
+                    </documento>
+                    <documento>
+                        <id>1239</id>
+                        <descricao>Texto sobre a cidade sede do evento</descricao>
+                    </documento>
+                    <documento>
+                        <id>1240</id>
+                        <descricao>Logomarcas de apoiadores em alta resolução</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Apoio Institucional - Para criação do ofício de Apoio Institucional">
-                    <item>Nome e cargo do Destinatário</item>
+                <caso id="197" descricao="Apoio Institucional - Para criação do ofício de Apoio Institucional">
+                    <documento>
+                        <id>1241</id>
+                        <descricao>Nome e cargo do Destinatário</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Apoio Institucional - Para envio de brindes promocionais da EMBRATUR">
-                    <item>Nome, endereço completo, telefone e CPF/CNPJ do Destinatário</item>
+                <caso id="198" descricao="Apoio Institucional - Para envio de brindes promocionais da EMBRATUR">
+                    <documento>
+                        <id>1242</id>
+                        <descricao>Nome, endereço completo, telefone e CPF/CNPJ do Destinatário</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Apoio Institucional - Produção de Dossiê de Candidatura (Apoio à Captação)">
-                    <item>Conteúdo que comporá o Dossiê: infraestrutura da cidade, descritivo do proponente, projeto</item>
+                <caso id="199" descricao="Apoio Institucional - Produção de Dossiê de Candidatura (Apoio à Captação)">
+                    <documento>
+                        <id>1243</id>
+                        <descricao>Conteúdo que comporá o Dossiê: infraestrutura da cidade, descritivo do proponente, projeto</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -122,21 +150,21 @@ Email: wilson.freitas@embratur.gov.br]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[wilson.freitas@embratur.gov.br]]></descricao>
+                    <canal-de-prestacao id="1561" tipo="telefone">
+                        <descricao>61 2023 8652</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[61 2023 8652]]></descricao>
+                    <canal-de-prestacao id="1560" tipo="e-mail">
+                        <descricao>wilson.freitas@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1269">
             <titulo>Finalização do Apoio</titulo>
-            <descricao><![CDATA[Relatório da ação de captação/promoção de evento internacional desenvolvida deverá ser apresentado para a Embratur no prazo de 10 dias úteis após o término da ação, conforme ANEXO V da Portaria nº 62,de 30 de Junho de 2015.]]></descricao>
+            <descricao>Relatório da ação de captação/promoção de evento internacional desenvolvida deverá ser apresentado para a Embratur no prazo de 10 dias úteis após o término da ação, conforme ANEXO V da Portaria nº 62,de 30 de Junho de 2015.</descricao>
             <documentos>
                 <default>
-                    <item>Relatório da ação de captação ou promoção executada</item>
+                    <item id="1244">Relatório da ação de captação ou promoção executada</item>
                 </default>
             </documentos>
             <custos>
@@ -144,36 +172,33 @@ Email: wilson.freitas@embratur.gov.br]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[wilson.freitas@embratur.gov.br]]></descricao>
+                    <canal-de-prestacao id="1562" tipo="e-mail">
+                        <descricao>wilson.freitas@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241"/>
+    <orgao id="241"/>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="1459">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="1460">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Turismo</item>
-        <item>Saúde</item>
-        <item>Educação</item>
-        <item>Meio ambiente</item>
-        <item>Esporte profissional</item>
-        <item>Agropecuária</item>
-        <item>Urbanismo</item>
+        <item>Cooperação Internacional</item>
+        <item>Difusão</item>
+        <item>Relações Internacionais</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Captação</item>
-        <item>Promoção</item>
-        <item>Turismo</item>
-        <item>Congresso</item>
-        <item>MICE</item>
-        <item>Negócios e Eventos</item>
+        <item id="1098">Captação</item>
+        <item id="1099">Promoção</item>
+        <item id="1100">Turismo</item>
+        <item id="1101">Congresso</item>
+        <item id="1102">MICE</item>
+        <item id="1103">Negócios e Eventos</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[**http://www.lex.com.br/legis_26967638_PORTARIA_N_62_DE_30_DE_JUNHO_DE_2015.aspx**]]></item>
+        <item id="334">**http://www.lex.com.br/legis_26967638_PORTARIA_N_62_DE_30_DE_JUNHO_DE_2015.aspx**</item>
     </legislacoes>
 </servico>
