@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>pedir-naturalizacao-provisoria</id>
+    <dbId>814</dbId>
+    <nome>Pedir Naturalização Provisória</nome>
+    <sigla></sigla>
+    <descricao>É a emissão do Certificado Provisório de Naturalização.</descricao>
+    <contato>E-mail: processos.migracoes@mj.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="806">
+            <tipo>Representante Legal de Estrangeiro Menor de Idade</tipo>
+            <requisitos>Estrangeiro menor de idade, permanente, que tenha entrado no Brasil até os cinco anos de idade.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="3" max="6" unidade="meses"/>
+        <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao>Certificado válido até dois anos após o solicitante atingir a maioridade (20 anos).</descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2159">
+            <titulo>Apresentar Requerimento</titulo>
+            <descricao>O estrangeiro, por meio de representante legal, deverá solicitar, preencher e entregar o formulário de naturalização provisória no Departamento de Migrações do Ministério da Justiça e Segurança Pública.</descricao>
+            <documentos>
+                <default>
+                    <item id="2161">Requerimento devidamente assinado pelo naturalizando ou pelo seu representante legal;</item>
+                    <item id="2162">Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa;</item>
+                    <item id="2163">Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores;</item>
+                    <item id="2164">Cópia da cédula de identidade do naturalizando e de seu representante legal (atualizada);</item>
+                    <item id="2165">Comprovante de residência, tais como os descritos no art. 11 da Portaria MJ nº 1.949/2015</item>
+                    <item id="2166">Prova da data de entrada através da cópia do passaporte ou declaração de entrada no território nacional emitidas pelo Departamento de Polícia Federal;</item>
+                    <item id="2167">Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="79">
+                        <descricao>GRU - Pedido de Naturalização</descricao>
+                        <moeda></moeda>
+                        <valor>296,640</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2699" tipo="postal">
+                        <descricao>Ministério da Justiça e Segurança Pública - Esplanada dos Ministério, Bloco T, Anexo II, Sala 318, CEP: 70.064-901</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2701" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2700" tipo="web-calcular-taxas">
+                        <descricao>https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2160">
+            <titulo>Complementar documentação, caso seja necessário.</titulo>
+            <descricao>Nesta fase, o Departamento de Migrações do Ministério da Justiça e Segurança Pública  poderá solicitar ao representante legal que apresente documentos para complementar as informações do processo.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2703" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2702" tipo="postal">
+                        <descricao>Ministério da Justiça e Segurança Pública - Esplanada dos Ministério, Bloco T, Anexo II, Sala 318, CEP: 70.064-901</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2161">
+            <titulo>Apresentar pedido de reconsideração (desarquivamento), se o pedido de naturalização for indeferido.</titulo>
+            <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de naturalização, o requerente poderá apresentar um pedido de reconsideração, solicitando o desarquivamento do processo.</descricao>
+            <documentos>
+                <default>
+                    <item id="2168">Requerimento solicitando desarquivamento;</item>
+                    <item id="2169">Comprovante de pagamento da GRU (Pedido de Desarquivamento de Naturalização) https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2;</item>
+                    <item id="2170">Documentos que demonstrem a alteração de uma situação anterior (como, por exemplo, o cumprimento do prazo legal para obter a naturalização), se for o caso;</item>
+                    <item id="2171">Documentos que complementem o processo, se for o caso;</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="80">
+                        <descricao></descricao>
+                        <moeda></moeda>
+                        <valor>593,260</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2704" tipo="web-calcular-taxas">
+                        <descricao>https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2162">
+            <titulo>Apresentar recurso, se o pedido de reconsideração for indeferido.</titulo>
+            <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de reconsideração, o requerente poderá apresentar recurso.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2705" tipo="e-mail">
+                        <descricao>processos.migracoes@mj.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2163">
+            <titulo>Receber Certificado de Naturalização Provisória</titulo>
+            <descricao>O Departamento de Migrações enviará o Certificado Provisório de Naturalização para o email ou para o endereço cadastrado pelo solicitante.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2958" tipo="postal">
+                        <descricao>O Departamento de Migrações enviará o Certificado Provisório de Naturalização  para o endereço cadastrado pelo solicitante.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2957" tipo="e-mail">
+                        <descricao>O Departamento de Migrações enviará o Certificado Provisório de Naturalização para o email</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="316"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2412">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1925">Naturalização</item>
+        <item id="1926">Provisória</item>
+        <item id="1927">Estrangeiro menor de idade</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="640">(Lei 6.815/80)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815] (Decreto nº 86.715/81)[http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1981-12-10;86715]
+Portaria MJ n°1949/2015, 25 de novembro de 2015, publicada no DOU dia 26 de novembro de 2015.</item>
+    </legislacoes>
+</servico>
