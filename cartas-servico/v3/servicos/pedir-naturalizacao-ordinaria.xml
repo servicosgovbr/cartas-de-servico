@@ -1,86 +1,101 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>pedir-naturalizacao-ordinaria</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>pedir-naturalizacao-ordinaria</id>
+    <dbId>4</dbId>
+    <nome>Pedir Naturalização Ordinária</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Naturalização</item>
+        <item id="330">Naturalização</item>
     </nomes-populares>
-    <descricao><![CDATA[É o ato pelo qual uma pessoa adquire voluntariamente a nacionalidade brasileira, desde que atenda os requisitos estabelecidos em lei.]]></descricao>
-    <contato><![CDATA[O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+    <descricao>É o ato pelo qual uma pessoa adquire voluntariamente a nacionalidade brasileira, desde que atenda os requisitos estabelecidos em lei.</descricao>
+    <contato>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
 Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.
 
 Para consultar seu processo, acesse: http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei.
 
-Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.]]></contato>
+Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
     <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="398">
             <tipo>Estrangeiro que reside no Brasil</tipo>
-            <requisitos><![CDATA[Morar no Brasil há quatro anos, saber ler e escrever português e ser registrado como permanente;
+            <requisitos>Morar no Brasil há quatro anos, saber ler e escrever português e ser registrado como permanente;
 - Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
 - Ter boa conduta;
-- Cumprir demais requisitos do art. 112 da Lei 6.815/80.]]></requisitos>
+- Cumprir demais requisitos do art. 112 da Lei 6.815/80;
+-Ser permanente.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="399">
             <tipo>Estrangeiro(a) casado(a) com brasileiro(a), ou que seja filho(a) de brasileiro(a) ou tenha filho(a) brasileiro(a)</tipo>
-            <requisitos><![CDATA[Morar no Brasil há um ano, saber ler e escrever português e ser registrado como permanente;
+            <requisitos>Morar no Brasil há um ano, saber ler e escrever português e ser registrado como permanente;
 -Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
 - Ter boa conduta;
-- Cumprir demais requisitos do art. 112 da Lei 6.815/80.]]></requisitos>
+- Cumprir demais requisitos do art. 112 da Lei 6.815/80
+-Ser permanente.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="12" min="6" unidade="meses"/>
-        <descricao><![CDATA[A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.]]></descricao>
+        <entre min="6" max="12" unidade="meses"/>
+        <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
+        <etapa id="1114">
             <titulo>Apresentar Requerimento</titulo>
-            <descricao><![CDATA[O estrangeiro deverá solicitar, preencher e entregar o formulário de naturalização na Delegacia de Polícia Federal mais próxima de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades]]></descricao>
+            <descricao>O estrangeiro deverá solicitar, preencher e entregar o formulário de naturalização na Delegacia de Polícia Federal mais próxima de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades</descricao>
             <documentos>
                 <default>
-                    <item>Requerimento devidamente assinado pelo naturalizando;</item>
-                    <item>Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa;</item>
-                    <item>Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores;</item>
-                    <item>Cópia da cédula de identidade para estrangeiro permanente atualizada;</item>
-                    <item>Cópia do CPF ou cópia do recibo de entrega da última declaração de imposto de renda (pessoa física);</item>
-                    <item>Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização;</item>
-                    <item>Atestado de antecedentes criminais expedido pela Polícia Civil dos Estados onde residiu nos últimos cinco anos;</item>
-                    <item>Certidão negativa de ações criminais da Justiça Federal dos Estados onde residiu nos últimos cinco anos;</item>
-                    <item>Certidão dos cartórios de distribuição de ações criminais das comarcas onde residiu nos últimos cinco anos;</item>
-                    <item>Atestado de antecedentes criminais expedido pelo país de origem, legalizado junto à repartição consular brasileira e traduzido, no Brasil, por tradutor público Juramentado ou devidamente inscrito na Junta Comercial;</item>
-                    <item>Comprovante de residência, tais como os descritos no art. 11 da Portaria MJ nº 1.949/2015</item>
-                    <item>Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
-                    <item>Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
+                    <item id="1119">Requerimento devidamente assinado pelo naturalizando;</item>
+                    <item id="1120">Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa;</item>
+                    <item id="1121">Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores;</item>
+                    <item id="1122">Cópia da cédula de identidade para estrangeiro permanente atualizada;</item>
+                    <item id="1123">Cópia do CPF ou cópia do recibo de entrega da última declaração de imposto de renda (pessoa física);</item>
+                    <item id="1124">Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização;</item>
+                    <item id="1125">Atestado de antecedentes criminais expedido pela Polícia Civil dos Estados onde residiu nos últimos cinco anos;</item>
+                    <item id="1126">Certidão negativa de ações criminais da Justiça Federal dos Estados onde residiu nos últimos cinco anos;</item>
+                    <item id="1127">Certidão dos cartórios de distribuição de ações criminais das comarcas onde residiu nos últimos cinco anos;</item>
+                    <item id="1128">Atestado de antecedentes criminais expedido pelo país de origem, legalizado junto à repartição consular brasileira e traduzido, no Brasil, por tradutor público Juramentado ou devidamente inscrito na Junta Comercial;</item>
+                    <item id="1129">Comprovante de residência, tais como os descritos no art. 11 da Portaria MJ nº 1.949/2015</item>
+                    <item id="1130">Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
+                    <item id="1131">Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
                 </default>
-                <caso descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
-                    <item>Além dos documentos listados acima, apresentar:</item>
-                    <item>Cópia da certidão de nascimento comprovando o vínculo de parentesco, se for o caso;</item>
-                    <item>Cópia da certidão de casamento ou união estável com brasileiro, se for o caso;</item>
+                <caso id="174" descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
+                    <documento>
+                        <id>1116</id>
+                        <descricao>Além dos documentos listados acima, apresentar:</descricao>
+                    </documento>
+                    <documento>
+                        <id>1117</id>
+                        <descricao>Cópia da certidão de nascimento comprovando o vínculo de parentesco, se for o caso;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1118</id>
+                        <descricao>Cópia da certidão de casamento ou união estável com brasileiro, se for o caso;</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao/>
-                        <moeda/>
-                        <valor>296,64</valor>
+                    <custo id="24">
+                        <descricao></descricao>
+                        <moeda></moeda>
+                        <valor>29,664</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades]]></descricao>
+                    <canal-de-prestacao id="1362" tipo="presencial">
+                        <descricao>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1115">
             <titulo>Realizar teste de português, se necessário.</titulo>
-            <descricao><![CDATA[O requerente poderá realizar o teste de português em momento a ser agendado pelos servidores da Polícia Federal, conforme a disponibilidade do órgão.]]></descricao>
+            <descricao>O requerente poderá realizar o teste de português em momento a ser agendado pelos servidores da Polícia Federal, conforme a disponibilidade do órgão.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -89,19 +104,19 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.]]></descricao>
+                    <canal-de-prestacao id="1363" tipo="presencial">
+                        <descricao>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1116">
             <titulo>Participar de entrevista com agente de Polícia Federal, se necessário.</titulo>
-            <descricao><![CDATA[Caso sejam necessários maiores esclarecimentos, os servidores da Polícia Federal poderão agendar entrevista com o naturalizando, a ser realizada na unidade onde foi protocolado o pedido de Naturalização.]]></descricao>
+            <descricao>Caso sejam necessários maiores esclarecimentos, os servidores da Polícia Federal poderão agendar entrevista com o naturalizando, a ser realizada na unidade onde foi protocolado o pedido de Naturalização.</descricao>
             <documentos>
                 <default>
-                    <item>Documento complementar pode solicitado pelo servidor da Polícia Federal.</item>
+                    <item id="1132">Documento complementar pode solicitado pelo servidor da Polícia Federal.</item>
                 </default>
             </documentos>
             <custos>
@@ -109,15 +124,15 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O estrangeiro deve se dirigir à Unidade da Polícia Federal onde foi protocolado seu pedido de naturalização, podendo ser alterada em caso de mudança de endereço do requerente.]]></descricao>
+                    <canal-de-prestacao id="1364" tipo="presencial">
+                        <descricao>O estrangeiro deve se dirigir à Unidade da Polícia Federal onde foi protocolado seu pedido de naturalização, podendo ser alterada em caso de mudança de endereço do requerente.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1117">
             <titulo>Complementar documentação, caso seja necessário.</titulo>
-            <descricao><![CDATA[Nesta fase, o Departamento de Migrações do Ministério da Justiça e Cidadania poderá solicitar ao naturalizando que apresente documentos para complementar as informações do processo.]]></descricao>
+            <descricao>Nesta fase, o Departamento de Migrações do Ministério da Justiça e Cidadania poderá solicitar ao naturalizando que apresente documentos para complementar as informações do processo.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -126,58 +141,58 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[Protocolo eletrônico do Ministério da Justiça e Cidadania
-http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    <canal-de-prestacao id="1367" tipo="web-acompanhar">
+                        <descricao>Consulte o seu processo:
+http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Ministério da Justiça e Cidadania
+                    <canal-de-prestacao id="1366" tipo="postal">
+                        <descricao>Ministério da Justiça e Cidadania
 Esplanada dos Ministério, Bloco T, Anexo II, Sala 318
-CEP: 70.064-901]]></descricao>
+CEP: 70.064-901</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web-acompanhar">
-                        <descricao><![CDATA[Consulte o seu processo:
-http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei]]></descricao>
+                    <canal-de-prestacao id="1365" tipo="web">
+                        <descricao>Protocolo eletrônico do Ministério da Justiça e Cidadania
+http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1118">
             <titulo>Apresentar pedido de reconsideração (desarquivamento), se o pedido de naturalização for indeferido.</titulo>
-            <descricao><![CDATA[No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de naturalização, o requerente poderá apresentar um pedido de reconsideração, solicitando o desarquivamento do processo.]]></descricao>
+            <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de naturalização, o requerente poderá apresentar um pedido de reconsideração, solicitando o desarquivamento do processo.</descricao>
             <documentos>
                 <default>
-                    <item>Requerimento solicitando desarquivamento</item>
-                    <item>Comprovante de pagamento da GRU (Pedido de Desarquivamento de Naturalização) https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2;</item>
-                    <item>Documentos que demonstrem a alteração de uma situação anterior (como, por exemplo, o cumprimento do prazo legal para obter a naturalização), se for o caso;</item>
-                    <item>Documentos que complementem o processo, se for o caso;</item>
+                    <item id="1133">Requerimento solicitando desarquivamento</item>
+                    <item id="1134">Comprovante de pagamento da GRU (Pedido de Desarquivamento de Naturalização) https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2;</item>
+                    <item id="1135">Documentos que demonstrem a alteração de uma situação anterior (como, por exemplo, o cumprimento do prazo legal para obter a naturalização), se for o caso;</item>
+                    <item id="1136">Documentos que complementem o processo, se for o caso;</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao/>
-                        <moeda/>
-                        <valor>593,26</valor>
+                    <custo id="25">
+                        <descricao></descricao>
+                        <moeda></moeda>
+                        <valor>59,326</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[Protocolo eletrônico do Ministério da Justiça e Cidadania
-http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    <canal-de-prestacao id="1369" tipo="presencial">
+                        <descricao>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.]]></descricao>
+                    <canal-de-prestacao id="1368" tipo="web">
+                        <descricao>Protocolo eletrônico do Ministério da Justiça e Cidadania
+http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1119">
             <titulo>Apresentar recurso, se o pedido de reconsideração for indeferido.</titulo>
-            <descricao><![CDATA[No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de reconsideração, o requerente poderá apresentar recurso.]]></descricao>
+            <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de reconsideração, o requerente poderá apresentar recurso.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -186,18 +201,18 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[processos.migracoes@mj.gov.br]]></descricao>
+                    <canal-de-prestacao id="1370" tipo="e-mail">
+                        <descricao>processos.migracoes@mj.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
-            <titulo>Emitir Certidão de Naturalização, quando necessário.</titulo>
-            <descricao><![CDATA[A certidão é expedida gratuitamente e sua autenticidade poderá ser conferida no próprio endereço eletrônico. Qualquer pessoa pode acessar o site e solicitar uma certidão ou conferir sua autenticidade.]]></descricao>
+        <etapa id="1120">
+            <titulo>Emitir Certificado de Naturalização, quando necessário.</titulo>
+            <descricao>O certificado é expedida gratuitamente e sua autenticidade poderá ser conferida no próprio endereço eletrônico. Qualquer pessoa pode acessar o site e solicitar uma certidão ou conferir sua autenticidade.</descricao>
             <documentos>
                 <default>
-                    <item>Não há.</item>
+                    <item id="1137">Não há.</item>
                 </default>
             </documentos>
             <custos>
@@ -205,27 +220,27 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade]]></descricao>
+                    <canal-de-prestacao id="1371" tipo="web">
+                        <descricao>http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <orgao id="316"/>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1269">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Estrangeiro</item>
-        <item>Pedir naturalização</item>
-        <item>Naturalização Ordinária</item>
+        <item id="1018">Estrangeiro</item>
+        <item id="1019">Pedir naturalização</item>
+        <item id="1020">Naturalização Ordinária</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[(Lei 6.815/80)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815]
-(Decreto nº 86.715/81)[http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1981-12-10;86715]]]></item>
+        <item id="305">(Lei 6.815/80)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815]
+(Decreto nº 86.715/81)[http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1981-12-10;86715]</item>
     </legislacoes>
 </servico>
