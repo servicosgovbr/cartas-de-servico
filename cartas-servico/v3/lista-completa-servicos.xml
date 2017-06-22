@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -39239,6 +39239,172 @@ E-mail: sirett.cgrt@mte.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>solicitar-prorrogacao-do-prazo-de-estada-no-brasil</id>
+        <dbId>816</dbId>
+        <nome>Solicitar Prorrogação do Prazo de Estada no Brasil</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="641">PRORROGAÇÃO DE VISTO</item>
+        </nomes-populares>
+        <descricao>É o direito de um estrangeiro requerer a prorrogação da sua estada no país, além do prazo inicialmente concedido pelo visto, na forma da legislação.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="814">
+                <tipo>Estrangeiro que possua registro temporário com base nos incisos I, IV, VI e VII do art. 13, da Lei nº 6.815/80.</tipo>
+                <requisitos>Possuir capacidade civil segundo a lei brasileira (se menor de idade poderá reqeurer, no entanto, deverá estar assistido por seu representante legal)
+Ser registrado como temporário previsto nos incisos I, IV, VI e VII do art. 13, da Lei nº 6.815/80.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="180" unidade="dias-corridos"/>
+            <descricao>O tempo pode variar de acordo com o tipo, a complexidade, e a circunstâncias individuais do pedido.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>1</quantidade>
+            <unidade>anos</unidade>
+            <descricao>A validade da prorrogação vai depender do tipo de visto solicitado, podendo variar de 01 a 04 anos, conforme o caso.</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2170">
+                <titulo>Requerer a prorrogação</titulo>
+                <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o requerimento devidamente preenchido e assinado, com as taxas recolhidas e com todos os documentos solicitados de acordo com o caso específico.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2185">Formulário:https://servicos.dpf.gov.br/sincreWeb/</item>
+                        <item id="2186">Cópia autenticada do registro temporário (carteira de identidade para estrangeiro);</item>
+                        <item id="2187">Cópia autenticada nítida e completa do passaporte (inclusive das folhas em branco) ou documento de viagem utilizado;</item>
+                        <item id="2188">Comprovante de recolhimento de taxas (GRU)</item>
+                    </default>
+                    <caso id="335" descricao="Prorrogação da estada de estrangeiro correspondente de jornal, revista, rádio, televisão ou agência noticiosa estrangeira">
+                        <documento>
+                            <id>2198</id>
+                            <descricao>Declaração da matriz, legalizada junto às autoridades consulares brasileiras no exterior e traduzida por tradutor publico juramentado, explicitando o prazo desejado (máximo de até 04 anos)</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="336" descricao="Prorrogação da estada de estrangeiro na condição de ministro de confissão religiosa ou membro de congregação ou ordem religiosa">
+                        <documento>
+                            <id>2200</id>
+                            <descricao>Declaração da instituição religiosa que promoveu a vinda do estrangeiro, justificando a necessidade da prorrogação e comprometendo-se por sua manutenção e saída do território nacional;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2201</id>
+                            <descricao>Prova de formação religiosa legalizada junto às autoridades consulares brasileiras no exterior e traduzida por tradutor público juramentado;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2202</id>
+                            <descricao>Declaração da entidade religiosa de que não atua em área indígena ou apresentação da autorização da Funai;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="337" descricao="Prorrogação da estada de estrangeiro  em viagem cultural ou em missão de estudos (visto temporário item I)">
+                        <documento>
+                            <id>2204</id>
+                            <descricao>Renovação do convite de entidade que justifique o pedido e especifique o prazo de estada (máximo de dois anos) e a natureza da função;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2205</id>
+                            <descricao>Prova de meio de subsistência durante a sua estada no Brasil, ex: Termo de responsabilidade da entidade pela manutenção do estrangeiro durante a sua estada no Brasil, inclusive despesas médicas e hospitalares, e pelo seu regresso ao país de origem;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2206</id>
+                            <descricao>Ato constitutivo ou estatuto social da entidade requerente devidamente registrado no órgão competente;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2207</id>
+                            <descricao>Ato de nomeação, designação ou eleição da atual diretoria;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2208</id>
+                            <descricao>Prova de que a entidade encontra-se em pleno e regular funcionamento;</descricao>
+                        </documento>
+                        <documento>
+                            <id>2209</id>
+                            <descricao>Documento que comprove experiência profissional ou qualificação compatível com as atividades a serem exercidas (currículo)</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="338" descricao="Estrangeiro(a) na condição de estudante;">
+                        <documento>
+                            <id>2214</id>
+                            <descricao>Garantia de matrícula, mediante declaração de ensino.</descricao>
+                        </documento>
+                        <documento>
+                            <id>2212</id>
+                            <descricao>Prova de meio de subsistência durante a estada no Brasil - (Ex: bolsa de estudos, convênio cultural ou escritura pública de compromisso de manutenção, etc);</descricao>
+                        </documento>
+                        <documento>
+                            <id>2211</id>
+                            <descricao>Prova de aproveitamento escolar;</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="83">
+                            <descricao>Pedido de Prorrogação de Prazo de Estada</descricao>
+                            <moeda></moeda>
+                            <valor>11,044</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2711" tipo="presencial">
+                            <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal mais próxima.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2171">
+                <titulo>Efetuar o registro e requerer a Cédula de Identidade para Estrangeiros(CIE)</titulo>
+                <descricao>O requerente deverá comparecer pessoalmente à unidade do Departamento de Polícia Federal para efetuar o registro e requerer a Cédula de Identidade para Estrangeiros(CIE)</descricao>
+                <documentos>
+                    <default>
+                        <item id="2215">Duas (02) fotos 3x4, recentes, coloridas, com fundo branco.</item>
+                        <item id="2216">Ver documentos com o DPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="85">
+                            <descricao>Taxa da Carteira de Identidade para Estrangeiros</descricao>
+                            <moeda></moeda>
+                            <valor>20,477</valor>
+                        </custo>
+                        <custo id="84">
+                            <descricao>Registro de Estrangeiro</descricao>
+                            <moeda></moeda>
+                            <valor>10,645</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2821" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="316"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2464">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2241">Estada no Brasil</item>
+            <item id="2242">Prorrogação de Prazo</item>
+            <item id="2243">Estrangeiro no Brasil</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="679">Lei nº 6.815/80; Decreto nº 86.715/81 e Resoluções Normativas do Conselho Nacional de Imigração</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-certificado-de-aprovacao-de-equipamento-de-protecao-individual</id>
         <dbId>828</dbId>
         <nome>Obter Certificado de Aprovação de Equipamento de Proteção Individual</nome>
@@ -40076,6 +40242,77 @@ Ao clicar no botão "emitir", você receberá o resultado de sua consulta e o se
         </palavras-chave>
         <legislacoes>
             <item id="675">[DECRETO Nº 6.135, DE 26 DE JUNHO DE 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6135.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>solicitar-restabelecimento-de-permanencia-definitiva</id>
+        <dbId>843</dbId>
+        <nome>Solicitar Restabelecimento de Permanência Definitiva</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="677">Restabelecimento</item>
+        </nomes-populares>
+        <descricao>É o direito do estrangeiro que teve o seu visto permanente cancelado, por ter se ausentado do País por um período superior a dois anos, em requerer que lhe seja devolvida a condição de permanente.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="868">
+                <tipo>Todos os estrangeiros que tiveram o seu visto de Permanente cancelado, por terem se ausentado do País por um período superior a 2 anos.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="270" unidade="dias-corridos"/>
+            <descricao>O tempo pode variar de acordo com o tipo e a complexidade do pedido.</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2255">
+                <titulo>Requerer o Restabelecimento do Visto Permanente</titulo>
+                <descricao>O Estrangeiro poderá requerer o restabelecimento do visto permanente nos seguintes órgãos: 
+- Nos Consulados ou Embaixadas do Brasil;
+- No Ministério da Justiça (quando o estrangeiro se encontrar em situação regular no País); ou
+- Na Secretaria de Estado das Relações Exteriores (excepcionalmente).</descricao>
+                <documentos>
+                    <default>
+                        <item id="2449">Preenchimento do formulário DPF 1344 devidamente assinado pelo interessado (requerente);</item>
+                        <item id="2450">Cópia autenticada, nítida e completa do passaporte (inclusive das folhas em branco) ou do documento de viagem equivalente;</item>
+                        <item id="2451">Declaração, sob as penas da lei, de que não foi processado ou condenado no Brasil e nem no exterior, com firma reconhecida;</item>
+                        <item id="2452">Atestado de antecedentes criminais expedido pelo país de origem, devidamente legalizado e traduzido;</item>
+                        <item id="2453">Declaração de ausências do Brasil, especificando datas de ingressos e saídas do Território Nacional, com os respectivos destinos e motivos, devidamente assinada;</item>
+                        <item id="2454">Justificativa comprovada de que se enquadra em uma das hipóteses previstas nos art. 2º ou 3º da Resolução Normativa nº 05/1997,;</item>
+                        <item id="2455">Comprovante do pagamento da taxa referente ao respectivo pedido, por guia GRU, para cada pessoa (exceto se proveniente de país Integrante da Comunidade dos Países de Língua Portuguesa- Decreto nº 6.771/2009)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2963" tipo="presencial">
+                            <descricao>- Nos Consulados ou Embaixadas do Brasil;
+- No Ministério da Justiça (quando o estrangeiro se encontrar em situação regular no País); ou
+- Na Secretaria de Estado das Relações Exteriores (excepcionalmente).</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="316"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2635">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2235">Permanência definitiva</item>
+            <item id="2236">Restabelecimento de permanência definitiva</item>
+            <item id="2237">Requerer condição definitiva</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="743">Resolução Normativa nº 05/1997.</item>
         </legislacoes>
     </servico>
     <servico>
@@ -41132,6 +41369,85 @@ CEP:70059-900 – Brasília/DF.</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>solicitar-transformacao-da-residencia-temporaria-em-permanente</id>
+        <dbId>817</dbId>
+        <nome>Solicitar transformação da residência temporária em permanente</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="642">Transformação de visto</item>
+        </nomes-populares>
+        <descricao>É o direito de um estrangeiro registrado com residência temporária requerer sua fixação definitiva  no Brasil de acordo com as situações previstas na legislação.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="816">
+                <tipo>Estrangeiro com registro de residência temporária com base no Acordo de Residência para nacionais dos Estados Partes do Mercosul e Países Associados</tipo>
+                <requisitos>Possuir registro de residência temporária com base no Acordo de Residência para nacionais dos Estados Partes do Mercosul e Países Associados e requerer a transformação antes do vencimento do prazo de validade da Carteira de Identidade para Estrangeiros (CIE)</requisitos>
+            </solicitante>
+            <solicitante id="817">
+                <tipo>Estrangeiro com registro de residência temporária com amparo no visto temporário previsto no art. 13, V da Lei nº 6.815/80 (visto de trabalho)</tipo>
+                <requisitos>Possuir registro de residência temporária com amparo no visto temporário previsto no art. 13, V da Lei nº 6.815/80 (visto de trabalho), possui contrato de trabalho por prazo indeterminado ou ser indicado para o exercício de cargo diretivo na empresa contratante e  requerer a transformação antes do vencimento do prazo de validade da Carteira de Identidade para Estrangeiros (CIE)</requisitos>
+            </solicitante>
+            <solicitante id="818">
+                <tipo>Estrangeiro com registro de residência temporária com amparo no visto temporário previsto no art. 13, VII da Lei nº 6.815/80 (visto de religioso)</tipo>
+                <requisitos>Possuir registro de residência temporária com amparo no visto temporário previsto no art. 13, VII da Lei nº 6.815/80 (visto de religioso) e requerer a transformação antes do vencimento do prazo de validade da Carteira de Identidade para Estrangeiros (CIE)</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>9</quantidade>
+            <unidade>anos</unidade>
+            <descricao>A permanência não possui prazo de validade. Entretanto, a Carteira de Identidade de Estrangeiro possui validade de 9 anos, exceto nos casos em que o estrangeiro possua mais de 60 anos quando pode obter a carteira com prazo de validade indeterminado.</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2172">
+                <titulo>Requerer a Transformação</titulo>
+                <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o formulário para registro devidamente preenchido e impresso, com as taxas recolhidas e com todos os documentos solicitados.
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+                <documentos>
+                    <default>
+                        <item id="2217">Formulário:https://servicos.dpf.gov.br/sincreWeb/</item>
+                        <item id="2218">Cópia autenticada do registro temporário (carteira de identidade para estrangeiro);</item>
+                        <item id="2219">Cópia autenticada nítida e completa do passaporte (inclusive das folhas em branco) ou documento de viagem utilizado;</item>
+                        <item id="2220">Comprovante de recolhimento de taxas (GRU)</item>
+                        <item id="2221">Declaração de não condenação penal no Brasil ou no exterior (exceto para menores)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2962" tipo="presencial">
+                            <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o formulário para registro devidamente preenchido e impresso, com as taxas recolhidas e com todos os documentos solicitados.
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="316"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2634">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2213">Residência temporária em permanente</item>
+            <item id="2214">Transformar residência temporária</item>
+            <item id="2215">Permanente</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="740">(Decreto nº 6.975, de  7 de outubro de 2009)[http://lexml.gov.br/urn/urn:lex:br:federal:decreto:2009-10-07;6975]</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cadastrar-entidades-e-cursos-no-cadastro-nacional-de-aprendizagem-profissional</id>
         <dbId>825</dbId>
         <nome>Cadastrar entidades e cursos no Cadastro Nacional de Aprendizagem Profissional</nome>
@@ -41755,6 +42071,75 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </palavras-chave>
         <legislacoes>
             <item id="599">Decreto nº 8.917/2016</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>solicitar-residencia-temporaria-por-reuniao-familiar</id>
+        <dbId>842</dbId>
+        <nome>Solicitar residência temporária por reunião familiar</nome>
+        <sigla></sigla>
+        <descricao>É o direito de um estrangeiro dependente (chamado) requerer sua residência temporária no Brasil, quando o chamante possuir visto temporário.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="866">
+                <tipo>Estrangeiro dependente (ou com vinculo familiar) de outro estrangeiro(a) com visto temporário</tipo>
+                <requisitos>Ser dependente (ou possuir vínculo familiar) de estrangeiro com visto temporário e que se enquadre em uma das situações elencadas no Art.2º da Resolução Normativa nº108 do CNIG (Resolução CNIG 108/2014)[http://acesso.mte.gov.br/data/files/8A7C816A43DF98FC014445CEE6085CD6/RESOLU%C3%87%C3%83O%20108%20-%20REUNI%C3%83O%20FAMILIAR.pdf]</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="270" unidade="dias-corridos"/>
+            <descricao>O tempo pode variar de acordo com o tipo e a complexidade do pedido.</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="2252">
+                <titulo>Requerer a Residência Temporária</titulo>
+                <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o formulário para registro devidamente preenchido e impresso, com as taxas recolhidas e com todos os documentos solicitados.
+(Consulte a Unidade mais próxima de você)</descricao>
+                <documentos>
+                    <default>
+                        <item id="2432">Formulário:https://servicos.dpf.gov.br/sincreWeb/</item>
+                        <item id="2433">Comprovante de recolhimento de taxas (GRU)</item>
+                        <item id="2434">Passaporte ou documento de viagem válido (exceto refugiados)</item>
+                        <item id="2435">2 fotos tamanho 3x4 recentes,coloridas e com o fundo branco</item>
+                        <item id="2436">Declaração do chamado, sob as penas da lei, de que não foi processado ou condenado no Brasil e nem no exterior, com firma reconhecida;</item>
+                        <item id="2437">Prova do grau de parentesco entre o chamante e o chamado, através de cópia autenticada da certidão de nascimento ou casamento, ou documento hábil que comprove ser o chamante responsável pelo chamado;</item>
+                        <item id="2438">Cópia autenticada do documento de identidade do chamante (cédula de identidade de estrangeiro);</item>
+                        <item id="2439">Atestado de antecedentes criminais expedido país de origem, legalizado junto à repartição consular brasileira no país em que foi expedido, e traduzido por tradutor público juramentado no Brasil;</item>
+                        <item id="2440">Justificativa do chamante para a formulação do pedido;</item>
+                        <item id="2441">Declaração de compromisso de manutenção, subsistência e saída do território nacional,em favor do chamado, enquanto este permanecer no Brasil, com firma reconhecida;</item>
+                        <item id="2442">Prova de meio de vida e de capacidade financeira do chamante para sustentar o chamado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2966" tipo="presencial">
+                            <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal.
+(Consulte a Unidade mais próxima de você)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="316"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2463">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2238">Residência temporária</item>
+            <item id="2239">Reunião familiar</item>
+            <item id="2240">Visto temporário</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="744">Resolução Normativa nº 108 do CNIG.</item>
         </legislacoes>
     </servico>
     <servico>
@@ -45628,96 +46013,6 @@ Lei nº 8.955/94 - Contrato de franquia empresarial</item>
         </legislacoes>
     </servico>
     <servico>
-        <id>biblioteca-digital-da-fundacao-alexandre-de-gusmao-funag</id>
-        <dbId>893</dbId>
-        <nome>Biblioteca Digital da Fundação Alexandre de Gusmão (FUNAG)</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="691">Biblioteca Digital</item>
-            <item id="692">Download de livros</item>
-            <item id="693">livros gratuitos</item>
-            <item id="694">livros de relações internacionais</item>
-        </nomes-populares>
-        <descricao>Biblioteca digital que disponibiliza, para download gratuito, publicações sobre temas da política externa, das relações internacionais e da história diplomática do Brasil. Trata-se da maior Biblioteca Digital gratuita sobre o tema das relações internacionais no Brasil. Estão disponíveis mais de 600 obras em português, inglês e espanhol. As publicações estão nos formatos PDF, Epub e Mobi.</descricao>
-        <contato>Fundação Alexandre de Gusmão
-Endereço: Esplanda dos Ministérios, Bloco "H" - Anexo II, Térreo
-CEP: 70170-900       CNPJ: 00662197/0001-24
-Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
-E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
-Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="920">
-                <tipo>Qualquer cidadão interessado no tema de relações internacionais do Brasil</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Sem validade</tipo>
-            <quantidade>0</quantidade>
-            <unidade></unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2321">
-                <titulo>Acessar a Biblioteca Digital</titulo>
-                <descricao>Acesse em www.funag.gov.br/loja.
-Faça o download gratuito da publicação de seu interesse.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2954" tipo="web">
-                            <descricao>www.funag.gov.br/loja</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="299"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2626">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2628">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2627">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2629">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Clima</item>
-            <item>Comércio e Serviços</item>
-            <item>Comercio externo</item>
-            <item>Cultura</item>
-            <item>Difusão</item>
-            <item>Difusão Cultural</item>
-            <item>Economia e Finanças</item>
-            <item>Educação</item>
-            <item>Educação básica</item>
-            <item>Educação profissionalizante</item>
-            <item>Educação superior</item>
-            <item>Energia elétrica</item>
-            <item>Relações Diplomáticas</item>
-            <item>Relações Internacionais</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2199">Biblioteca digital</item>
-            <item id="2200">Download gratuito</item>
-            <item id="2201">relações internacionais</item>
-            <item id="2202">relações diplomáticas</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="737">http://funag.gov.br/index.php/pt-br/legislacao</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>solicitar-qualificacao-como-organizacao-da-sociedade-civil-de-interesse-publico</id>
         <dbId>665</dbId>
         <nome>Solicitar qualificação como Organização da Sociedade Civil de Interesse Público</nome>
@@ -45975,6 +46270,507 @@ CEP: 70.064-900</descricao>
             <item id="371">- [Lei nº 9.790/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1999-03-23;9790);
 [ Decreto nº 3.100/99](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1999-06-30;3100);
 Portaria do Ministério da Justiça nº 362/2016 (http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/03/2016&amp;jornal=1&amp;pagina=16&amp;totalArquivos=120).</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>atividades-culturais-e-pedagogicas-no-campo-das-relacoes-internacionais</id>
+        <dbId>895</dbId>
+        <nome>Atividades Culturais e Pedagógicas no campo das Relações Internacionais</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="698">Seminários</item>
+            <item id="699">Palestras</item>
+            <item id="700">Debates</item>
+            <item id="701">Conferência</item>
+            <item id="702">Mesa-redonda</item>
+            <item id="703">Relações Internacionais</item>
+            <item id="704">Relações exteriores</item>
+            <item id="705">Diplomacia</item>
+        </nomes-populares>
+        <descricao>São disponibilizadas informações e inscrições sobre as atividades que integram o Programa de Trabalho Anual da FUNAG (palestras, debates, seminários, conferências e outros sobre o tema das relações internacionais, política externa e história diplomática brasileira..</descricao>
+        <contato>* Fundação Alexandre de Gusmão
+* Endereço: Esplanda dos Ministérios, Bloco "H" - Anexo II, Térreo
+* CEP: 70170-900       CNPJ: 00662197/0001-24
+* Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
+* E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
+* Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="922">
+                <tipo>Qualquer cidadão interessado em participar atividade cultural no campo das relações internacionais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2325">
+                <titulo>Inscrever-se na atividade/evento</titulo>
+                <descricao>* Acessar a [página de inscrições para atividades/eventos](http://www.funag.gov.br/sisev)
+* Caso possua cadastro no sistema, entrar com usuário (e-mail) e senha
+* Caso não possua cadastro, clicar no ícone "cadastre-se aqui" e preencher o formulário de cadastro
+*  Ao acessar o sistema com o usuário e senha, clicar em "eventos abertos" e inscrever-se na atividade que tenha interesse
+*  Comparecer ao local, na data e hora especificada e participar da atividade</descricao>
+                <documentos>
+                    <default>
+                        <item id="2547">CPF</item>
+                        <item id="2548">RG</item>
+                        <item id="2549">Endereço de Residência</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2964" tipo="web">
+                            <descricao>http://funag.gov.br/sisev/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="299"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2636">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2638">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2637">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2639">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Clima</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Cultura</item>
+            <item>Defesa Nacional</item>
+            <item>Difusão Cultural</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Educação básica</item>
+            <item>Educação profissionalizante</item>
+            <item>Educação superior</item>
+            <item>Energia</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Meio ambiente</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2216">relações internacionais</item>
+            <item id="2217">relações exteriores</item>
+            <item id="2218">diplomacia</item>
+            <item id="2219">eventos</item>
+            <item id="2220">palestras</item>
+            <item id="2221">debates</item>
+            <item id="2222">seminários</item>
+            <item id="2223">mesa-redonda</item>
+            <item id="2224">conferências</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="741">http://funag.gov.br/index.php/pt-br/legislacao</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>boletim-informativo-e-editorial</id>
+        <dbId>896</dbId>
+        <nome>Boletim Informativo e Editorial</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="706">Informativo mensal de atividade e publicações da FUNAG</item>
+        </nomes-populares>
+        <descricao>Acesso aos boletins informativo e editorial com as recentes atividades culturais e pedagógicas e as novas publicações da FUNAG, bem como outras informações referentes às atividades realizadas pela Fundação. O cidadão pode cadastrar o seu endereço de e-mail para receber os boletins.</descricao>
+        <contato>* Fundação Alexandre de Gusmão
+* Endereço: Esplanda dos Ministérios, Bloco "H" - Anexo II, Térreo
+* CEP: 70170-900       CNPJ: 00662197/0001-24
+* Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
+* E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
+* Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="923">
+                <tipo>Qualquer cidadão interessado em conhecer os boletins informativos e editoriais da FUNAG</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2326">
+                <titulo>Acessar a página de Boletim Informativo e Editorial</titulo>
+                <descricao>* Acessar o portal da FUNAG e [cadastrar-se](http://funag.gov.br/loja/index.php?route=information/information&amp;information_id=7)
+* Informar o nome e endereço de e-mail para receber os boletins
+* O cidadão interessado pode acessar os boletins informativos anteriores [acessando a página oficial](http://funag.gov.br/index.php/pt-br/informativos.)
+* O cidadão interessado pode acessar os boletins editoriais [acessando a página oficial](http://funag.gov.br/index.php/pt-br/boletins-editoriais)</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2965" tipo="web">
+                            <descricao>http://funag.gov.br/loja/index.php?route=information/information&amp;information_id=7</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="299"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2640">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2641">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2643">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2642">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Clima</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Cultura</item>
+            <item>Defesa Nacional</item>
+            <item>Difusão</item>
+            <item>Difusão Cultural</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Educação básica</item>
+            <item>Educação profissionalizante</item>
+            <item>Educação superior</item>
+            <item>Fomento ao Trabalho</item>
+            <item>Meio ambiente</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Politica econômica</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+            <item>Serviços Públicos</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2225">boletim informativo</item>
+            <item id="2226">boletim editorial</item>
+            <item id="2227">newsletter</item>
+            <item id="2228">relações internacionais</item>
+            <item id="2229">relações exteriores</item>
+            <item id="2230">diplomacia</item>
+            <item id="2231">publicações</item>
+            <item id="2232">livros</item>
+            <item id="2233">biblioteca digital</item>
+            <item id="2234">loja virtual</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="742">http://funag.gov.br/index.php/pt-br/legislacao</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>loja-virtual-da-fundacao-alexandre-de-gusmao-funag</id>
+        <dbId>894</dbId>
+        <nome>Loja Virtual da Fundação Alexandre de Gusmão (FUNAG)</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="695">Loja virtual</item>
+            <item id="696">Loja de livros</item>
+            <item id="697">Comprar livros sobre o tema de relações internacionais</item>
+        </nomes-populares>
+        <descricao>Loja Virtual onde estão disponíveis para a compra as obras publicadas e editadas pela Fundação Alexandre de Gusmão sobre temas da política externa, das relações internacionais e da história diplomática do Brasil.</descricao>
+        <contato>* Fundação Alexandre de Gusmão
+* Endereço: Esplanda dos Ministérios, Bloco "H" - Anexo II, Térreo
+* CEP: 70170-900       CNPJ: 00662197/0001-24
+* Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
+* E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
+* Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="921">
+                <tipo>Qualquer cidadão interessado em adquirir publicações sobre o tema de relações internacionais do Brasil</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2324">
+                <titulo>Aquisição de uma obra da Loja Virtual da Fundação Alexandre de Gusmão</titulo>
+                <descricao>* Acessar o site da [loja virtual da FUNAG](http://www.funag.gov.br/loja)
+* Clicar em "Acesse" sua conta e preencher os campos de usuário e senha
+* Navegar pela loja, escolhendo os produtos de interesse e clicando em comprar para adicionar ao carrinho de compra
+* Finalizar a compra, informando o CEP para entrega
+* Será gerado um GRU (Guia de Recolhimento da União) para ser pago no Banco do Brasil
+* Aguardar a encomenda chegar pelos Correios no endereço informado</descricao>
+                <documentos>
+                    <default>
+                        <item id="2544">CPF</item>
+                        <item id="2545">RG</item>
+                        <item id="2546">Dados de endereço</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="94">
+                            <descricao>Custo do livro</descricao>
+                            <moeda></moeda>
+                            <valor>31,000</valor>
+                        </custo>
+                        <custo id="95">
+                            <descricao>Custo do livro</descricao>
+                            <moeda></moeda>
+                            <valor>15,000</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2961" tipo="web">
+                            <descricao>http://www.funag.gov.br/loja/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="299"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2630">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2632">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2631">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2633">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Clima</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Cultura</item>
+            <item>Defesa Nacional</item>
+            <item>Defesa militar</item>
+            <item>Difusão</item>
+            <item>Difusão Cultural</item>
+            <item>Educação</item>
+            <item>Educação básica</item>
+            <item>Educação profissionalizante</item>
+            <item>Educação superior</item>
+            <item>Energia</item>
+            <item>Energia elétrica</item>
+            <item>Meio ambiente</item>
+            <item>Preservação e Conservação Ambiental</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2207">Loja Virtual</item>
+            <item id="2208">Compra de Livros</item>
+            <item id="2209">Publicações sobre Relações Internacionais</item>
+            <item id="2210">Direito internacional</item>
+            <item id="2211">Diplomacia</item>
+            <item id="2212">Política Externa</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="739">http://funag.gov.br/index.php/pt-br/legislacao</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>biblioteca-digital-da-fundacao-alexandre-de-gusmao-funag</id>
+        <dbId>893</dbId>
+        <nome>Biblioteca Digital da Fundação Alexandre de Gusmão (FUNAG)</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="691">Biblioteca Digital</item>
+            <item id="692">Download de livros</item>
+            <item id="693">livros gratuitos</item>
+            <item id="694">livros de relações internacionais</item>
+        </nomes-populares>
+        <descricao>Biblioteca digital que disponibiliza, para download gratuito, publicações sobre temas da política externa, das relações internacionais e da história diplomática do Brasil. Trata-se da maior Biblioteca Digital gratuita sobre o tema das relações internacionais no Brasil. Estão disponíveis mais de 600 obras em português, inglês e espanhol. As publicações estão nos formatos PDF, Epub e Mobi.</descricao>
+        <contato>Fundação Alexandre de Gusmão
+Endereço: Esplanda dos Ministérios, Bloco "H" - Anexo II, Térreo
+CEP: 70170-900       CNPJ: 00662197/0001-24
+Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
+E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
+Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="920">
+                <tipo>Qualquer cidadão interessado no tema de relações internacionais do Brasil</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2321">
+                <titulo>Acessar a Biblioteca Digital</titulo>
+                <descricao>* Acessar o [portal da Biblioteca Digital da FUNAG](http://www.funag.gov.br/loja)
+* Pesquisar a publicação de interesse, por nome, ano, coleção, autor ou idioma;
+* Clicar em download, os formatos disponíveis são PDF, EPUB e MOBI;
+* Efetuado o download, o cidadão já tem acesso à publicação.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2954" tipo="web">
+                            <descricao>http://www.funag.gov.br/loja</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="299"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2626">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2628">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2627">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2629">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Clima</item>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Cultura</item>
+            <item>Difusão</item>
+            <item>Difusão Cultural</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Educação básica</item>
+            <item>Educação profissionalizante</item>
+            <item>Educação superior</item>
+            <item>Energia elétrica</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2199">Biblioteca digital</item>
+            <item id="2200">Download gratuito</item>
+            <item id="2201">relações internacionais</item>
+            <item id="2202">relações diplomáticas</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="737">http://funag.gov.br/index.php/pt-br/legislacao</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>solicitar-permanencia-de-carater-provisorio-a-titulo-especial-a-estrangeiros-em-cumprimento-de-pena-no-brasil</id>
+        <dbId>841</dbId>
+        <nome>Solicitar permanência de caráter provisório a título especial a estrangeiros em cumprimento de pena no Brasil</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="676">Permanência Provisória para Presos</item>
+        </nomes-populares>
+        <descricao>É o direito de um estrangeiro em cumprimento de pena no Brasil requerer sua regularização migratória provisoriamente durante  o prazo de sua pena a fim de que possa exercer os direitos civis correspondentes, conforme previsto na Resolução Normativa nº 110/2014 do Conselho Nacional de Imigração.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="867">
+                <tipo>Estrangeiro condenado criminalmente no Brasil</tipo>
+                <requisitos>Estrangeiro condenado criminalmente no Brasil que esteja em beneficiado com a liberdade provisória ou medidas cautelares alternativas à prisão, o livramento condicional ou a progressão de regime.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>0</quantidade>
+            <unidade>anos</unidade>
+            <descricao>A validade do documento será correspondente ao prazo de duração da pena</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2253">
+                <titulo>Requerer a permanência provisória</titulo>
+                <descricao>O próprio estrangeiro condenado, o seu procurador mediante procuração particular, ou a Defensoria Pública da União em favor do preso, deverão requerer a permanência ao Departamento de Migrações da Secretaria Nacional de Justiça do Ministério da Justiça e Segurança Pública</descricao>
+                <documentos>
+                    <default>
+                        <item id="2443">Formulário:https://servicos.dpf.gov.br/sincreWeb/</item>
+                        <item id="2444">Cópia da sentença condenatória ou decisão que concedeu a liberdade provisória ou medidas cautelares alternativas à prisão, o livramento condicional ou a progressão de regime</item>
+                        <item id="2445">Original ou cópia autenticada de identificação do preso estrangeiro, podendo a mesma ser feita por qualquer documento que ateste sua identidade e nacionalidade</item>
+                        <item id="2446">Declaração com a indicação de endereço ou localização do interessado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2822" tipo="presencial">
+                            <descricao>Departamento de Migrações da Secretaria Nacional de Justiça do Ministério da Justiça e Segurança Pública</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2254">
+                <titulo>Efetuar o registro e requerer a Cédula de Identidade para Estrangeiros</titulo>
+                <descricao>O requerente deverá comparecer pessoalmente ao Departamento de Polícia Federal a fim de efetuar o respectivo registro e requerer a Cédula de Identidade para Estrangeiros</descricao>
+                <documentos>
+                    <default>
+                        <item id="2447">Duas (02) fotos 3x4, recentes, coloridas, com fundo branco.</item>
+                        <item id="2448">Ver documentos com o DPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2967" tipo="presencial">
+                            <descricao>O requerente deverá comparecer pessoalmente ao Departamento de Polícia Federal.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="316"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2465">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2244">Estrangeiros em cumprimento de pena no Brasil</item>
+            <item id="2245">Cumprimento de pena no Brasil</item>
+            <item id="2246">Preso no Brasil</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="680">Lei nº 6.815/80; Decreto nº 86.715/81 e Resoluções Normativas do Conselho Nacional de Imigração</item>
         </legislacoes>
     </servico>
 </servicos>
