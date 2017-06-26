@@ -1,18 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>programa-gerador-da-declaracao-pgd-derc-e-receitanet</nome>
-    <sigla/>
-    <nomes-populares/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>programa-gerador-da-declaracao-pgd-derc-e-receitanet</id>
+    <dbId>181</dbId>
+    <nome>Programa Gerador da Declaração (PGD) DERC e Receitanet</nome>
+    <sigla></sigla>
     <descricao>Acessar o programa gerador da declaração – PGD e o Receitanet para download.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="924">
+            <tipo>Pessoa Jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <atendimento-imediato/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento/>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1187">
+            <titulo>1</titulo>
+            <descricao></descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -21,20 +31,26 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>https://www.receita.fazenda.gov.br/PessoaJuridica/DERC/Default.htm</descricao>
+                    <canal-de-prestacao id="1452" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/declaracoes-e-demonstrativos/derc-rendimentos-pagos-a-consultores-por-organismos-intern/programa-gerador-da-declaracao-pgd</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77"/>
+    <orgao id="77"/>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item idSegmento="3" idServicoSegmento="1355">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="2247">DERC</item>
+        <item id="2248">Rendimentos Pagos a Consultores</item>
+        <item id="2249">Organismos Internacionais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="745">https://idg.receita.fazenda.gov.br/acesso-rapido/legislacao/legislacao-por-assunto/derc</item>
+    </legislacoes>
 </servico>
