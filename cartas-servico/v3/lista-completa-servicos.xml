@@ -117,11 +117,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -12626,41 +12626,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1354">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>programa-gerador-da-declaracao-pgd-derc-e-receitanet</id>
-        <dbId>181</dbId>
-        <nome>Programa Gerador da Declaração (PGD) DERC e Receitanet</nome>
-        <sigla></sigla>
-        <descricao>Acessar o programa gerador da declaração – PGD e o Receitanet para download.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1187">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1452" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/PessoaJuridica/DERC/Default.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1355">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -46771,6 +46736,61 @@ Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
         </palavras-chave>
         <legislacoes>
             <item id="680">Lei nº 6.815/80; Decreto nº 86.715/81 e Resoluções Normativas do Conselho Nacional de Imigração</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>programa-gerador-da-declaracao-pgd-derc-e-receitanet</id>
+        <dbId>181</dbId>
+        <nome>Programa Gerador da Declaração (PGD) DERC e Receitanet</nome>
+        <sigla></sigla>
+        <descricao>Acessar o programa gerador da declaração – PGD e o Receitanet para download.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="924">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1187">
+                <titulo>1</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1452" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/declaracoes-e-demonstrativos/derc-rendimentos-pagos-a-consultores-por-organismos-intern/programa-gerador-da-declaracao-pgd</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="77"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1355">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2247">DERC</item>
+            <item id="2248">Rendimentos Pagos a Consultores</item>
+            <item id="2249">Organismos Internacionais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="745">https://idg.receita.fazenda.gov.br/acesso-rapido/legislacao/legislacao-por-assunto/derc</item>
         </legislacoes>
     </servico>
 </servicos>
