@@ -5566,9 +5566,9 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>obter-financiamento-do-fundo-de-financiamento-estudantil</id>
+        <id>obter-financiamento-do-fies</id>
         <dbId>56</dbId>
-        <nome>Obter financiamento do Fundo de Financiamento Estudantil</nome>
+        <nome>Obter financiamento do FIES</nome>
         <sigla>FIES</sigla>
         <descricao>O FIES é o sistema de financiamento de cursos superiores não gratuitos e com avaliação positiva no Sistema Nacional de Avaliação da Educação Superior (SINAES) para estudantes brasileiros provenientes de famílias de baixa renda</descricao>
         <contato>0800 616161</contato>
@@ -5792,6 +5792,7 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
             <item id="1376">Financiamento</item>
             <item id="2027">MEC</item>
             <item id="2250">FIES</item>
+            <item id="2251">fies</item>
         </palavras-chave>
         <legislacoes>
             <item id="407">[Legislação Básica do FIES](https://www.fnde.gov.br/fndelegis/action/ActionDatalegis.php?acao=abrirTreeview&amp;cod_menu=1315&amp;cod_modulo=85)</item>
@@ -21962,284 +21963,6 @@ Recomendamos, também, caso haja dificuldade em encontrar um prestador, que os d
         </palavras-chave>
         <legislacoes>
             <item id="373">http://www.turismo.gov.br/legislacao/?p=112</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>participacao-em-feiras-internacionais-de-turismo-embratur</id>
-        <dbId>418</dbId>
-        <nome>Participação em feiras internacionais de turismo - EMBRATUR</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="413">feiras internacionais de turismo</item>
-            <item id="414">feiras embratur</item>
-            <item id="415">FITUR</item>
-            <item id="416">ANATO</item>
-            <item id="417">ITB</item>
-            <item id="418">BTL</item>
-            <item id="419">IMEX</item>
-            <item id="420">FIEXPO</item>
-            <item id="421">IFTM Top Resa</item>
-            <item id="422">FIT</item>
-            <item id="423">FITPAR</item>
-            <item id="424">IMEX America</item>
-            <item id="425">WTM</item>
-        </nomes-populares>
-        <descricao>Participação como coexpositor no estande do Brasil/Embratur nas feiras internacionais de turismo previstas na Agenda de Promoção Comercial do Turismo Brasileiro no Exterior para promoção do Brasil como destino turístico e sede de eventos.
-A confirmação da participação depende de procedimento de inscrição e análise. Caso a inscrição seja aprovada dentro das vagas disponíveis no estande do Brasil/Embratur em cada feira, o coexpositor participará em posto de trabalho próprio na feira de interesse.</descricao>
-        <contato>Diretoria de Inteligência Competitiva e Promoção Turística - DIPRO &lt;br/&gt;
-Coordenação-Geral de Promoção e Eventos - CGPE  &lt;br/&gt;
-Divisão de Feiras - DFE  &lt;br/&gt;
-Telefone: 61 2023 8632  &lt;br/&gt;
-E-mail: inscricao.feiras@embratur.gov.br</contato>
-        <gratuito>false</gratuito>
-        <solicitantes>
-            <solicitante id="497">
-                <tipo>Operador/agência de turismo, Destination Management Company (DMC), meio de hospedagem</tipo>
-                <requisitos>* Envio do Certificado do CADASTUR válido para o e-mail inscricao.feiras@embratur.gov.br. Saiba mais sobre o CADASTUR em: http://www.cadastur.turismo.gov.br.
-* Aprovação da inscrição, dentro das vagas, na análise técnica feita pela Embratur.</requisitos>
-            </solicitante>
-            <solicitante id="498">
-                <tipo>Transportadora turística, organizadora de eventos, parque temático e acampamento turístico.</tipo>
-                <requisitos>* Envio do Certificado do CADASTUR válido para o e-mail inscricao.feiras@embratur.gov.br. Saiba mais sobre o CADASTUR em: http://www.cadastur.turismo.gov.br.
-* Aprovação da inscrição, dentro das vagas, na análise técnica feita pela Embratur.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="180" unidade="dias-corridos"/>
-            <descricao>Tal prazo varia conforme a feira.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1499">
-                <titulo>Verificar Agenda de Promoção Comercial do Turismo Brasileiro no Exterior</titulo>
-                <descricao>A Agenda de Promoção Comercial do Turismo Brasileiro no Exterior contempla as feiras nas quais está prevista a participação da Embratur, com estande próprio, para promoção do Brasil como destino turístico e sede de eventos.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1857" tipo="e-mail">
-                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="232" descricao="Portal Embratur &gt; AGENDA EVENTOS (canto inferior esquerdo da página)">
-                        <canal-de-prestacao id="1854" tipo="web-consultar">
-                            <descricao>http://www.embratur.gov.br/piembratur-new/opencms/agenda_eventos/index.html</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="233" descricao="Portal Visit Brasil &gt; aba TRADE &gt; aba AGENDA &gt; mês a mês">
-                        <canal-de-prestacao id="1855" tipo="web-consultar">
-                            <descricao>http://www2.visitbrasil.com/visitbrasil/opencms/portalembratur/pt/cadastro-trade.html</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="234" descricao="Telefone">
-                        <canal-de-prestacao id="1856" tipo="telefone">
-                            <descricao>61 2023 8632</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1500">
-                <titulo>Cadastramento</titulo>
-                <descricao>Para recebimento dos informativos sobre a abertura dos períodos de inscrição para cada feira, é necessário que o interessado esteja cadastrado no banco de dados da área da Embratur responsável pelo envio desses informativos. Para isso, é necessário que o interessado realize seu cadastro.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1358">CADASTRO para informativos EMBRATUR descrito no link do  canal de prestação</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1860" tipo="telefone">
-                            <descricao>61 2023-8632</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1859" tipo="e-mail">
-                            <descricao>inscricao.ferias@embratur.gov.br</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1858" tipo="web-preencher">
-                            <descricao>http://goo.gl/forms/6gpL7sHQ2L</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1501">
-                <titulo>Inscrição</titulo>
-                <descricao>Preencher o Formulário de Inscrição para a feira de interesse.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1359">O link para acesso ao Formulário de Inscrição para cada feira será fornecido nos informativos sobre a abertura dos períodos de inscrição.</item>
-                        <item id="1360">CADASTUR: [http://www.cadastur.turismo.gov.br]</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1868" tipo="telefone">
-                            <descricao>61 2023 8632</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1867" tipo="e-mail">
-                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="235" descricao="Formulário de Inscrição IFTM Top Resa 2016">
-                        <canal-de-prestacao id="1861" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/BW5Vi4SprF</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="236" descricao="Formulário de Inscrição JATA 2016">
-                        <canal-de-prestacao id="1862" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/o4WUIO8GTm</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="237" descricao="Formulário de Inscrição FIT América Latina 2016">
-                        <canal-de-prestacao id="1863" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/CBUVY49pvp</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="238" descricao="Formulário de Inscrição FITPAR 2016">
-                        <canal-de-prestacao id="1864" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/qn0uNLMhzs</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="239" descricao="Formulário de Inscrição IMEX America 2016">
-                        <canal-de-prestacao id="1865" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/vSauyhSJ1x</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="240" descricao="Formulário de Inscrição WTM 2016">
-                        <canal-de-prestacao id="1866" tipo="web-inscrever-se">
-                            <descricao>http://goo.gl/forms/UKMT6Ybiht</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1502">
-                <titulo>Resultado da inscrição</titulo>
-                <descricao>Após o encerramento do período de inscrições, essas serão analisadas pelas áreas técnicas da Embratur envolvidas em cada feira. Após o período de análise, a Embratur informará a cada candidato o status de sua inscrição:  confirmado; em lista de espera.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1870" tipo="telefone">
-                            <descricao>61 2023 8632</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1869" tipo="e-mail">
-                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1503">
-                <titulo>Credencial para acesso à feira</titulo>
-                <descricao>Em caso de confirmação, a credencial para acesso à feira será registrada conforme dados informados na Inscrição. Essas credenciais serão enviadas aos coexpositores por e-mail; coletadas in loco; ou distribuídas na reunião pré-evento. Alterações nos dados da credencial depois de registrada e eventuais custos são de responsabilidade do coexpositor</descricao>
-                <documentos>
-                    <default>
-                        <item id="1361">Preenchimento dos respectivos dados realizados na etapa de inscrição (Etapa 3)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1872" tipo="e-mail">
-                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1871" tipo="presencial">
-                            <descricao>Retirar credencial no balcão da organizadora da feira in loco.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1504">
-                <titulo>Participação na feira internacional</titulo>
-                <descricao>A participação na feira internacional tem início com a reunião pré-evento. A reunião pré-evento ocorre, normalmente, na véspera do início da feira. Nos períodos da feira, o coexpositor participa em seu posto de trabalho no estande do Brasil/Embratur, prestando atendimento, pré-agendado ou não, no idioma da feira, aos visitantes interessados em seu produto. Recomenda-se que o coexpositor disponha de material promocional, impresso ou digital, também no idioma da feira.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1362">Credencial para acesso à feira</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1873" tipo="presencial">
-                            <descricao>Estande do Brasil/Embratur em cada feira. A localização exata do estande será informada no Manual de Apoio enviado pela Embratur aos coexpositores  por meio de e-mail.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1505">
-                <titulo>Questionário de Avaliação</titulo>
-                <descricao>Ao final da participação em cada feira, o coexpositor deverá preencher o Questionário de Avaliação que será disponibilizado pela Embratur por e-mail.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1363">Preenchimento do Questionário de Avaliação Coexpositor PRIVADO constante no canal de prestação desta etapa</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1874" tipo="web-preencher">
-                            <descricao>http://goo.gl/forms/f8m5TEpR5x</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="241"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="1735">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="1734">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-            <item>Cultura</item>
-            <item>Difusão Cultural</item>
-            <item>Educação</item>
-            <item>Esporte e Lazer</item>
-            <item>Lazer</item>
-            <item>Patrimônio</item>
-            <item>Patrimônio Cultural</item>
-            <item>Relações Internacionais</item>
-            <item>Serviços Públicos</item>
-            <item>Transporte Aéreo</item>
-            <item>Transporte Hidroviário</item>
-            <item>Transportes</item>
-            <item>Turismo</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1239">turismo</item>
-            <item id="1240">feiras</item>
-            <item id="1241">evento</item>
-            <item id="1242">internacional</item>
-            <item id="1243">embratur</item>
-            <item id="1244">FITUR</item>
-            <item id="1245">ANATO</item>
-            <item id="1246">ITB</item>
-            <item id="1247">BTL</item>
-            <item id="1248">IMEX</item>
-            <item id="1249">FIEXPO</item>
-            <item id="1250">IFTM</item>
-            <item id="1251">FIT</item>
-            <item id="1252">FITPAR</item>
-            <item id="1253">WTM</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="374">http://www.planalto.gov.br/ccivil_03/leis/L8181.htm</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40084,97 +39807,6 @@ Ser registrado como temporário previsto nos incisos I, IV, VI e VII do art. 13,
         </legislacoes>
     </servico>
     <servico>
-        <id>consultar-seu-nis</id>
-        <dbId>838</dbId>
-        <nome>Consultar seu NIS</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="666">Consulta Cidadão</item>
-            <item id="670">Número Cadastro Único</item>
-        </nomes-populares>
-        <descricao>Este serviço serve para que você verifique se está inscrito no Cadastro Único e qual é o seu NIS (Número de Identificação Social).</descricao>
-        <contato>CENTRAL DE RELACIONAMENTO DO MDSA
-
-Telefone: 0800 707 2003
-
-O serviço é gratuito e exclusivo para ligações de **telefones fixos**
-
-**Horário de Atendimento:**
-
-Segunda a Sexta-feira, de 07h às 19h de segunda a sexta-feira. Nos finais de semana, feriados nacionais e durante o Calendário de Pagamento do Programa Bolsa Família o horário é de 10h às 16h.  
-
-O [atendimento eletrônico](http://mds.gov.br/fale-com-o-mds) é disponível 24 horas, todos os dias da semana.</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="858">
-                <tipo>Cidadão Brasileiro</tipo>
-                <requisitos>Qualquer cidadão pode realizar a consulta</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Sem validade</tipo>
-            <quantidade>0</quantidade>
-            <unidade></unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2242">
-                <titulo>Pedir a consulta</titulo>
-                <descricao>Você deve acessar o site e preencher as informações pedidas (a pesquisa é realizada por estado, então você deve informar corretamente em qual estado fez o pedido de inscrição). 
-Ao clicar no botão "emitir", você receberá o resultado de sua consulta e o seu NIS.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2406">Nome completo</item>
-                        <item id="2407">Data de Nascimento</item>
-                        <item id="2408">Nome da mãe</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2806" tipo="web-consultar">
-                            <descricao>http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="1945"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2461">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Assistência à Criança e ao Adolescente</item>
-            <item>Assistência ao Portador de Deficiência</item>
-            <item>Cidadania</item>
-            <item>Educação</item>
-            <item>Educação profissionalizante</item>
-            <item>Educação superior</item>
-            <item>Fomento ao Trabalho</item>
-            <item>Proteção Social</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2007">ENEM</item>
-            <item id="2008">NIS</item>
-            <item id="2009">Bolsa Família</item>
-            <item id="2010">Cadastro Único</item>
-            <item id="2011">CRAS</item>
-            <item id="2012">isenção no ENEM</item>
-            <item id="2013">isenção de taxa</item>
-            <item id="2014">Programas sociais</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="675">[DECRETO Nº 6.135, DE 26 DE JUNHO DE 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6135.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>solicitar-restabelecimento-de-permanencia-definitiva</id>
         <dbId>843</dbId>
         <nome>Solicitar Restabelecimento de Permanência Definitiva</nome>
@@ -46521,6 +46153,256 @@ Portaria do Ministério da Justiça nº 362/2016 (http://pesquisa.in.gov.br/impr
         </palavras-chave>
         <legislacoes>
             <item id="742">http://funag.gov.br/index.php/pt-br/legislacao</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>participacao-em-feiras-internacionais-de-turismo-embratur</id>
+        <dbId>418</dbId>
+        <nome>Participação em feiras internacionais de turismo - EMBRATUR</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="413">feiras internacionais de turismo</item>
+            <item id="414">feiras embratur</item>
+            <item id="415">FITUR</item>
+            <item id="416">ANATO</item>
+            <item id="417">ITB</item>
+            <item id="418">BTL</item>
+            <item id="419">IMEX</item>
+            <item id="420">FIEXPO</item>
+            <item id="421">IFTM Top Resa</item>
+            <item id="422">FIT</item>
+            <item id="423">FITPAR</item>
+            <item id="424">IMEX America</item>
+            <item id="425">WTM</item>
+        </nomes-populares>
+        <descricao>Participação como coexpositor no estande do Brasil/Embratur nas feiras internacionais de turismo previstas na Agenda de Promoção Comercial do Turismo Brasileiro no Exterior para promoção do Brasil como destino turístico e sede de eventos.
+A confirmação da participação depende de procedimento de inscrição e análise. Caso a inscrição seja aprovada dentro das vagas disponíveis no estande do Brasil/Embratur em cada feira, o coexpositor participará em posto de trabalho próprio na feira de interesse.</descricao>
+        <contato>Diretoria de Inteligência Competitiva e Promoção Turística - DIPRO &lt;br/&gt;
+Coordenação-Geral de Promoção e Eventos - CGPE  &lt;br/&gt;
+Divisão de Feiras - DFE  &lt;br/&gt;
+Telefone: 61 2023 8632  &lt;br/&gt;
+E-mail: inscricao.feiras@embratur.gov.br</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="497">
+                <tipo>Operador/agência de turismo, Destination Management Company (DMC), meio de hospedagem</tipo>
+                <requisitos>* Envio do Certificado do CADASTUR válido para o e-mail inscricao.feiras@embratur.gov.br. Saiba mais sobre o CADASTUR em: http://www.cadastur.turismo.gov.br.
+* Aprovação da inscrição, dentro das vagas, na análise técnica feita pela Embratur.</requisitos>
+            </solicitante>
+            <solicitante id="498">
+                <tipo>Transportadora turística, organizadora de eventos, parque temático e acampamento turístico.</tipo>
+                <requisitos>* Envio do Certificado do CADASTUR válido para o e-mail inscricao.feiras@embratur.gov.br. Saiba mais sobre o CADASTUR em: http://www.cadastur.turismo.gov.br.
+* Aprovação da inscrição, dentro das vagas, na análise técnica feita pela Embratur.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="180" unidade="dias-corridos"/>
+            <descricao>Tal prazo varia conforme a feira.</descricao>
+        </tempo-total-estimado>
+        <validade-documento/>
+        <etapas>
+            <etapa id="1499">
+                <titulo>Verificar Agenda de Promoção Comercial do Turismo Brasileiro no Exterior</titulo>
+                <descricao>A Agenda de Promoção Comercial do Turismo Brasileiro no Exterior contempla as feiras nas quais está prevista a participação da Embratur, com estande próprio, para promoção do Brasil como destino turístico e sede de eventos.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1857" tipo="e-mail">
+                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="232" descricao="Portal Embratur &gt; AGENDA EVENTOS (canto inferior esquerdo da página)">
+                        <canal-de-prestacao id="1854" tipo="web-consultar">
+                            <descricao>http://www.embratur.gov.br/piembratur-new/opencms/agenda_eventos/index.html</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="233" descricao="Portal Visit Brasil &gt; aba TRADE &gt; aba AGENDA &gt; mês a mês">
+                        <canal-de-prestacao id="1855" tipo="web-consultar">
+                            <descricao>http://www2.visitbrasil.com/visitbrasil/opencms/portalembratur/pt/cadastro-trade.html</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="234" descricao="Telefone">
+                        <canal-de-prestacao id="1856" tipo="telefone">
+                            <descricao>61 2023 8632</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1500">
+                <titulo>Cadastramento</titulo>
+                <descricao>Para recebimento dos informativos sobre a abertura dos períodos de inscrição para cada feira, é necessário que o interessado esteja cadastrado no banco de dados da área da Embratur responsável pelo envio desses informativos. Para isso, é necessário que o interessado realize seu cadastro.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1358">CADASTRO para informativos EMBRATUR descrito no link do  canal de prestação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1860" tipo="telefone">
+                            <descricao>61 2023-8632</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1859" tipo="e-mail">
+                            <descricao>inscricao.ferias@embratur.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1858" tipo="web-preencher">
+                            <descricao>http://goo.gl/forms/6gpL7sHQ2L</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1501">
+                <titulo>Inscrição</titulo>
+                <descricao>Preencher o Formulário de Inscrição para a feira de interesse.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1359">O link para acesso ao Formulário de Inscrição para cada feira será fornecido nos informativos sobre a abertura dos períodos de inscrição.</item>
+                        <item id="1360">CADASTUR: [http://www.cadastur.turismo.gov.br]</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1868" tipo="telefone">
+                            <descricao>61 2023 8632</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1867" tipo="e-mail">
+                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1502">
+                <titulo>Resultado da inscrição</titulo>
+                <descricao>Após o encerramento do período de inscrições, essas serão analisadas pelas áreas técnicas da Embratur envolvidas em cada feira. Após o período de análise, a Embratur informará a cada candidato o status de sua inscrição:  confirmado; em lista de espera.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1870" tipo="telefone">
+                            <descricao>61 2023 8632</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1869" tipo="e-mail">
+                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1503">
+                <titulo>Credencial para acesso à feira</titulo>
+                <descricao>Em caso de confirmação, a credencial para acesso à feira será registrada conforme dados informados na Inscrição. Essas credenciais serão enviadas aos coexpositores por e-mail; coletadas in loco; ou distribuídas na reunião pré-evento. Alterações nos dados da credencial depois de registrada e eventuais custos são de responsabilidade do coexpositor</descricao>
+                <documentos>
+                    <default>
+                        <item id="1361">Preenchimento dos respectivos dados realizados na etapa de inscrição (Etapa 3)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1872" tipo="e-mail">
+                            <descricao>inscricao.feiras@embratur.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1871" tipo="presencial">
+                            <descricao>Retirar credencial no balcão da organizadora da feira in loco.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1504">
+                <titulo>Participação na feira internacional</titulo>
+                <descricao>A participação na feira internacional tem início com a reunião pré-evento. A reunião pré-evento ocorre, normalmente, na véspera do início da feira. Nos períodos da feira, o coexpositor participa em seu posto de trabalho no estande do Brasil/Embratur, prestando atendimento, pré-agendado ou não, no idioma da feira, aos visitantes interessados em seu produto. Recomenda-se que o coexpositor disponha de material promocional, impresso ou digital, também no idioma da feira.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1362">Credencial para acesso à feira</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1873" tipo="presencial">
+                            <descricao>Estande do Brasil/Embratur em cada feira. A localização exata do estande será informada no Manual de Apoio enviado pela Embratur aos coexpositores  por meio de e-mail.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1505">
+                <titulo>Questionário de Avaliação</titulo>
+                <descricao>Ao final da participação em cada feira, o coexpositor deverá preencher o Questionário de Avaliação que será disponibilizado pela Embratur por e-mail.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1363">Preenchimento do Questionário de Avaliação Coexpositor PRIVADO constante no canal de prestação desta etapa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1874" tipo="web-preencher">
+                            <descricao>http://goo.gl/forms/f8m5TEpR5x</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="241"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="1735">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="1734">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Cultura</item>
+            <item>Difusão Cultural</item>
+            <item>Educação</item>
+            <item>Esporte e Lazer</item>
+            <item>Lazer</item>
+            <item>Patrimônio</item>
+            <item>Patrimônio Cultural</item>
+            <item>Relações Internacionais</item>
+            <item>Serviços Públicos</item>
+            <item>Transporte Aéreo</item>
+            <item>Transporte Hidroviário</item>
+            <item>Transportes</item>
+            <item>Turismo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1239">turismo</item>
+            <item id="1240">feiras</item>
+            <item id="1241">evento</item>
+            <item id="1242">internacional</item>
+            <item id="1243">embratur</item>
+            <item id="1244">FITUR</item>
+            <item id="1245">ANATO</item>
+            <item id="1246">ITB</item>
+            <item id="1247">BTL</item>
+            <item id="1248">IMEX</item>
+            <item id="1249">FIEXPO</item>
+            <item id="1250">IFTM</item>
+            <item id="1251">FIT</item>
+            <item id="1252">FITPAR</item>
+            <item id="1253">WTM</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="374">http://www.planalto.gov.br/ccivil_03/leis/L8181.htm</item>
         </legislacoes>
     </servico>
     <servico>
