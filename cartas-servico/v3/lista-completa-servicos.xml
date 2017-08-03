@@ -46640,4 +46640,338 @@ Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
             <item id="737">http://funag.gov.br/index.php/pt-br/legislacao</item>
         </legislacoes>
     </servico>
+    <servico>
+        <id>validar-diploma-de-medicina-recebido-fora-do-pais</id>
+        <dbId>898</dbId>
+        <nome>Validar diploma de medicina recebido fora do país</nome>
+        <sigla>Revalida</sigla>
+        <nomes-populares>
+            <item id="707">Revalida medicina</item>
+        </nomes-populares>
+        <descricao>É o processo pelo qual um cidadão brasileiro ou um estrangeiro que tenha se formado em medicina em outro país possam requerer a validação de seu diploma, o que permite a ele exercer a atividade médica no país.
+
+O Revalida é composto por um rigoroso processo avaliativo, dividido em duas etapas eliminatórias -prova escrita e avaliação de habilidades clínicas, fundamentado na demonstração de conhecimentos, habilidades e competências necessárias ao exercício da Medicina.</descricao>
+        <contato>* Central de Atendimentos - 0800 61 61 61;
+* [Fale Conosco](http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw#/0);</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="926">
+                <tipo>Cidadãos brasileiros que tenham se formado em medicina por universidade estrangeira</tipo>
+                <requisitos>Ter registro no Cadastro de Pessoas Físicas (CPF) emitido pela Receita Federal do Brasil;
+
+Ser portador de diploma médico expedido por instituição de ensino superior estrangeira, reconhecida no país de origem pelo seu ministério da educação ou órgão equivalente, e autenticado pela autoridade consular brasileira.</requisitos>
+            </solicitante>
+            <solicitante id="927">
+                <tipo>Estrangeiros que tenham se formado em medicina por universidade estrangeira</tipo>
+                <requisitos>Ser estrangeiro em situação legal de residência no Brasil;
+
+Ter registro no Cadastro de Pessoas Físicas (CPF) emitido pela Receita Federal do Brasil;
+
+Ser portador de diploma médico expedido por instituição de ensino superior estrangeira, reconhecida no país de origem pelo seu ministério da educação ou órgão equivalente, e autenticado pela autoridade consular brasileira.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2328">
+                <titulo>Cadastrar-se no site do Revalida</titulo>
+                <descricao>O usuário interessado em participar do processo deve se cadastrar no site do serviço no INEP. Após colocar todas as informações, uma senha temporária será encaminhada para o e-mail informado.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2560">CPF</item>
+                        <item id="2561">Data de Nascimento</item>
+                        <item id="2562">Endereço de e-mail</item>
+                        <item id="2563">Dados residenciais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2971" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2329">
+                <titulo>Cadastrar senha definitiva</titulo>
+                <descricao>Após o recebimento da senha provisória, você irá trocar sua senha provisória por uma senha definitiva.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2564">CPF</item>
+                        <item id="2565">Senha Provisória</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2972" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2330">
+                <titulo>Realizar inscrição para a 1ª etapa</titulo>
+                <descricao>Após a troca de senha, você deverá entrar com seu login e senha na área de inscrição do site, confirmar os seus dados de cadastro e informar os dados sobre a instituição e curso feito fora do país, enviar imagem digital do seu diploma e escolher o dia e instituição que revalidará seu diploma.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2566">CPF</item>
+                        <item id="2567">Senha</item>
+                        <item id="2568">Diploma estrangeiro de Medicina</item>
+                        <item id="2569">Dados da instituição e curso prestado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2973" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2331">
+                <titulo>Pagar GRU relativa à 1ª etapa</titulo>
+                <descricao>Após o preenchimento dos dados necessários, o sistema irá gerar uma Guia de Recolhimento da União com o valor da taxa de inscrição, que você deverá imprimir e pagar na rede bancária.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2570">GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="96">
+                            <descricao>Taxa de Inscrição na 1ª etapa</descricao>
+                            <moeda></moeda>
+                            <valor>150,000</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2974" tipo="presencial">
+                            <descricao>Rede bancária (Boleto do Banco do Brasil)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2332">
+                <titulo>Obter o Cartão de Confirmação de Inscrição</titulo>
+                <descricao>Em período a ser divulgado pelo INEP, após o término da inscrição para a primeira etapa, será disponibilizado o Cartão de Confirmação de Inscrição, onde será informado o local onde o participante realizará a prova</descricao>
+                <documentos>
+                    <default>
+                        <item id="2571">CPF</item>
+                        <item id="2572">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2975" tipo="web-emitir">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2333">
+                <titulo>Fazer as provas da 1ª etapa - Prova escrita</titulo>
+                <descricao>No dia estabelecido pelo edital, e no local informado no Cartão de Confirmação de Inscrição, o candidato irá se apresentar para fazer a etapa de avaliação escrita do processo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2573">Documento original e válido de identificação com foto</item>
+                        <item id="2574">CPF</item>
+                        <item id="2575">Cartão de Confirmação de Inscrição</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2976" tipo="presencial">
+                            <descricao>Local indicado no Cartão de Confirmação de Inscrição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2334">
+                <titulo>Verificar resultado da primeira etapa</titulo>
+                <descricao>Os resultados individuais da primeira etapa serão disponibilizado pelo INEP, em data divulgada posteriormente à realização das provas, no Portal do Revalida.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2576">CPF</item>
+                        <item id="2577">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2977" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2335">
+                <titulo>Inscrever-se na 2ª etapa - Prova de Habilidades Clínicas (somente para os aprovados na 1ª etapa)</titulo>
+                <descricao>Somente aqueles candidatos que obtiverem , no mínimo, 85 pontos na soma das provas objetivas e discursivas poderão participar da segunda etapa do exame (e assim dar continuidade ao processo de validação do diploma). Àqueles que cumprirem este requisito, estará disponível no sistema a inscrição para a segunda etapa.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2578">CPF</item>
+                        <item id="2579">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2978" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2336">
+                <titulo>Pagar GRU da 2ª etapa</titulo>
+                <descricao>Após a confirmação dos dados o sistema irá gerar uma Guia de Recolhimento da União com o valor da taxa de inscrição, que você deverá imprimir e pagar na rede bancária.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2580">GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="97">
+                            <descricao>Taxa de inscrição na 2ª etapa</descricao>
+                            <moeda></moeda>
+                            <valor>450,000</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2979" tipo="presencial">
+                            <descricao>Rede Bancária (Boleto do Banco do Brasil)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2337">
+                <titulo>Participar da Avaliação de Habilidades Clínicas</titulo>
+                <descricao>No dia a ser divulgado pelo INEP na página do participante, após o término das inscrições da 2ª etapa, o candidato irá participar do processo de avaliação de suas habilidades clínicas, composta de dez estações com cada uma valendo 10 pontos. Toda a avaliação será filmada para o caso de esclarecimentos de dúvidas serem necessários.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2581">Documento original e válido de identificação com foto</item>
+                        <item id="2582">CPF</item>
+                        <item id="2583">Cartão de Confirmação de Inscrição</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2980" tipo="presencial">
+                            <descricao>Local informado pelo INEP para realização da avaliação da 2ª etapa.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2338">
+                <titulo>Obter o resultado</titulo>
+                <descricao>Em data a ser divulgada pelo INEP, o participante poderá verificar o seu resultado individual na 2ª etapa. Só serão considerados  aprovados  na  prova  de  habilidades  clínicas  o  participante  que  obtiver,  no mínimo,  62  dos 100 pontos possíveis.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2584">CPF</item>
+                        <item id="2585">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2981" tipo="web">
+                            <descricao>http://revalida.inep.gov.br/revalida/inscricao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2339">
+                <titulo>Apresentar-se à Universidade para concluir processo de validação do diploma (somente para aprovados na 2ª etapa)</titulo>
+                <descricao>O participante aprovado na 2ª etapa  será  convocado a comparecer  à  Universidade
+escolhida, de posse da documentação necessária, para concluir o processo de revalidação do diploma.
+
+**ATENÇÃO:** A aprovação nos exames, apesar de ser necessária para a revalidação do diploma, não é **garantia** desta revalidação. A análise do restante da documentação também determina a conclusão do processo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2586">Documentos de identificação pessoais</item>
+                        <item id="2587">Original do Diploma a ser revalidado</item>
+                        <item id="2588">Demais documentação que a universidade possa requisitar</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2982" tipo="presencial">
+                            <descricao>Universidade escolhida para a revalidação na primeira inscrição no site do Revalida.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="244"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2648">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2252">diploma</item>
+            <item id="2253">estrangeiro</item>
+            <item id="2254">universidade</item>
+            <item id="2255">validação</item>
+            <item id="2256">exercer a profissão</item>
+            <item id="2257">medicina</item>
+            <item id="2258">habilidades clínicas</item>
+            <item id="2259">emigrante</item>
+            <item id="2260">refugiado</item>
+            <item id="2261">habilitação profissional</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="746">[Edital 2017](http://download.inep.gov.br/educacao_superior/revalida/edital/2017/edital_n42_de_14072017_revalida.pdf);</item>
+            <item id="747">[Portaria nº 278,  de  17  de  março  de  2011](http://download.inep.gov.br/educacao_superior/revalida/portaria/2011/portaria_n278_17032011_revalida.pdf)</item>
+            <item id="748">[Matriz de Correspondência Curricular](http://download.inep.gov.br/educacao_superior/revalida/matriz/2009/matriz_correspondencia_curricular_revalida_sem_logo.pdf)</item>
+            <item id="749">[Resolução CNE/CES nº1, de 28 de janeiro de 2002](http://portal.mec.gov.br/cne/arquivos/pdf/CES012002.pdf)</item>
+            <item id="750">[Resolução CNE nº 8, de 4 de outubro de 2007](http://portal.mec.gov.br/cne/arquivos/pdf/2007/rces008_07.pdf)</item>
+            <item id="751">[Resolução CNE nº 7, de 25 de setembro de 2009](http://portal.mec.gov.br/dmdocuments/rces007_09.pdf)</item>
+            <item id="752">[Resolução CNE nº 3, de 22 de junho de 2016](http://portal.mec.gov.br/index.php?option=com_docman&amp;view=download&amp;alias=44661-rces003-16-pdf&amp;category_slug=junho-2016-pdf&amp;Itemid=30192)</item>
+        </legislacoes>
+    </servico>
 </servicos>
