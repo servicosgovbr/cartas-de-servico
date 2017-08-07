@@ -4321,59 +4321,6 @@ Se for mulher
         </legislacoes>
     </servico>
     <servico>
-        <id>autenticidade-inscricao-situacao-cadastral-cpf</id>
-        <dbId>160</dbId>
-        <nome>Autenticidade Inscrição/Situação Cadastral CPF</nome>
-        <sigla>salvador cursos</sigla>
-        <nomes-populares>
-            <item id="340">grau</item>
-        </nomes-populares>
-        <descricao>situacao cadastral junto ao mec receita previdencia</descricao>
-        <contato>bom</contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="408">
-                <tipo>aluno</tipo>
-                <requisitos>MATRICULADO NO ENSINO MEDIO</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="1" unidade="minutos"/>
-            <descricao>24horas.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1158">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1421" tipo="sms">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/CPFautentic.asp mec</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="180" descricao="salvador cursos tecnicos">
-                        <canal-de-prestacao id="1420" tipo="e-mail">
-                            <descricao>luiz66castro@hotmail.com</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1322">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>aposentar-se-por-razao-de-invalidez</id>
         <dbId>48</dbId>
         <nome>Aposentar-se por razão de invalidez.</nome>
@@ -5528,42 +5475,6 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         <legislacoes>
             <item id="487">[DECRETO-LEI Nº 401, DE 30 DE DEZEMBRO DE 1968.](https://www.planalto.gov.br/ccivil_03/decreto-lei/del0401.htm)</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-imovel-rural</id>
-        <dbId>182</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Imóvel Rural</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão de imóvel rural emitida.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1188">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1453" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CertAut/NIAutentic.asp?origem=itr</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1356">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1357">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>obter-financiamento-do-fies</id>
@@ -8579,77 +8490,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cnpj-previdenciario-alteracao</id>
-        <dbId>87</dbId>
-        <nome>CNPJ Previdenciário – Alteração</nome>
-        <sigla></sigla>
-        <descricao>Atender à solicitação de correção de dados no cadastro previdenciário.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1064">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1305" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1203">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-pessoa-fisica-certidao-pessoa-fisica-certidoes-e-situacao-fiscal</id>
-        <dbId>88</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Pessoa Física (Certidão Pessoa Física / Certidões e Situação
-        Fiscal)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão de pessoa física emitida.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1065">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1306" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/certaut/OptaAutenticidade.asp?origem=PF</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1204">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>emissao-de-certidao-negativa-do-banco-central</id>
         <dbId>89</dbId>
         <nome>Emissão de Certidão Negativa do Banco Central</nome>
@@ -8732,41 +8572,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>atualizacao-das-bases-pessoa-fisica-bancos-credenciados</id>
-        <dbId>91</dbId>
-        <nome>Atualização das Bases Pessoa Física - Bancos Credenciados</nome>
-        <sigla></sigla>
-        <descricao>Sistema para atualização de Bases Pessoas Físicas por Bancos Credenciados.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1068">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1312" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/ATBHE/convweb/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1207">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>notificacoes-sms-do-simples-nacional</id>
         <dbId>92</dbId>
         <nome>Notificações SMS do Simples Nacional</nome>
@@ -8796,45 +8601,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1208">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cancelamento-do-pedido-no-cnpj</id>
-        <dbId>93</dbId>
-        <nome>Cancelamento do Pedido no CNPJ</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="304">Look Leide</item>
-        </nomes-populares>
-        <descricao>Cancelar um pedido perante o CNPJ ( este cancelamento é possível até o instante da recepção da solicitação pela Receita Federal ou convenente).</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1070">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1314" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/fcpj/cancela.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1209">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -9027,80 +8793,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>conclusao-do-servico-de-cpf-iniciado-na-conveniada</id>
-        <dbId>100</dbId>
-        <nome>Conclusão do Serviço de CPF Iniciado na Conveniada</nome>
-        <sigla></sigla>
-        <descricao>Concluir pedido no CPF cuja solicitação foi iniciada em uma conveniada e gerou um protocolo de atendimento não conclusivo.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1080">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1325" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1219">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>arrecadacao-do-microempreendedor-individual-pgmei</id>
-        <dbId>101</dbId>
-        <nome>Arrecadação do Microempreendedor Individual - PGMEI</nome>
-        <sigla></sigla>
-        <descricao>O Programa Gerador do Documento de Arrecadação do Simples Nacional para o Microempreendedor Individual (PGMEI) é um sistema eletrônico de geração do Documento de Arrecadação do Simples Nacional (DAS) para o Microempreendedor Individual.
-
-O acesso ao PGMEI se dá exclusivamente via Portal do Simples Nacional na internet e tem como objetivo gerar o Documento de Arrecadação do Simples Nacional para o Microempreendedor Individual (DAS) para recolhimento na rede bancária.
-
-* [Mais Informações](http://</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1082">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1327" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Default.aspx</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1222">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-declaracao-do-microempreendedor-individual</id>
         <dbId>102</dbId>
         <nome>Consulta Declaração do Microempreendedor Individual</nome>
@@ -9133,74 +8825,6 @@ O acesso ao PGMEI se dá exclusivamente via Portal do Simples Nacional na intern
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cadin-exclusao-ou-suspensao-cadastro-informativo-de-creditos-nao-quitados-no-setor-publico-federal</id>
-        <dbId>103</dbId>
-        <nome>CADIN - Exclusão ou Suspensão Cadastro Informativo de Créditos Não Quitados no Setor Público Federal</nome>
-        <sigla>CADIN</sigla>
-        <descricao>Apresentar requerimento de averbação de causa suspensiva/garantia e/ou exclusão do Cadin para a suspensão ou exclusão do Cadin - Cadastro Informativo de Créditos Não Quitados no Setor Público Federal.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="392">
-                <tipo>Professora</tipo>
-                <requisitos>Ter vínculo profissional</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="12" unidade="dias-uteis"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1085">
-                <titulo>Exclusão</titulo>
-                <descricao>Retirar do sistema o débito</descricao>
-                <documentos>
-                    <default>
-                        <item id="1108">Comprovantes de entrada e pagamentos de taxas</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1330" tipo="telefone">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1226">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1227">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Assistência ao Idoso</item>
-            <item>Cidadania</item>
-            <item>Cooperação Internacional</item>
-            <item>Defesa do Consumidor</item>
-            <item>Economia e Finanças</item>
-            <item>Educação</item>
-            <item>Educação básica</item>
-            <item>Educação profissionalizante</item>
-            <item>Educação superior</item>
-            <item>Empregabilidade</item>
-            <item>Lazer</item>
-            <item>Planejamento</item>
-            <item>Recursos humanos</item>
-            <item>Relações Diplomáticas</item>
-            <item>Relações Internacionais</item>
-            <item>Relações de Trabalho</item>
-            <item>Segurança e Ordem Pública</item>
-            <item>Trabalho</item>
-            <item>Turismo</item>
-            <item>Urbanismo</item>
         </areas-de-interesse>
     </servico>
     <servico>
@@ -9308,43 +8932,6 @@ O acesso ao PGMEI se dá exclusivamente via Portal do Simples Nacional na intern
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1229">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1230">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>confirmacao-autenticidade-de-certidao-emitida-ate-8-2-2000-certidao-contribuicoes-previdenciarias-certidoes-e-situacao-fiscal</id>
-        <dbId>107</dbId>
-        <nome>Confirmação Autenticidade de Certidão Emitida até 8/2/2000 (Certidão Contribuições Previdenciárias / Certidões
-        e Situação Fiscal)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão positiva de débitos com efeitos de negativa- CPD-EN, emitida até 08/02/2000.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1088">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1333" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=609&amp;idArea=3&amp;idAssunto=39</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1231">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1232">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -10043,46 +9630,6 @@ Quem pode solicitar: somente o condutor de veículo envolvido no acidente.
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>admissao-temporaria-prorrogacao</id>
-        <dbId>126</dbId>
-        <nome>Admissão Temporária - Prorrogação</nome>
-        <sigla></sigla>
-        <descricao>vdscds</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado>
-            <entre min="0" max="0"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1109">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1357" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=65&amp;idArea=1&amp;idAssunto=24</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1262">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1263">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>pedido-de-registro-especial-para-papel-imune</id>
         <dbId>127</dbId>
         <nome>Pedido de Registro Especial para Papel Imune</nome>
@@ -10183,41 +9730,6 @@ Quem pode solicitar: somente o condutor de veículo envolvido no acidente.
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1266">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1267">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cnpj-previdenciario-inclusao</id>
-        <dbId>130</dbId>
-        <nome>CNPJ Previdenciário – Inclusão</nome>
-        <sigla></sigla>
-        <descricao>Atender à solicitação de inclusão do número do CNPJ no cadastro previdenciário.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1113">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1361" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1268">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -10377,41 +9889,6 @@ Quem pode solicitar: somente o condutor de veículo envolvido no acidente.
         <legislacoes>
             <item id="676">[DECRETO-LEI No 401, DE 30 DE DEZEMBRO DE 1968](http://www.planalto.gov.br/CCivil_03/Decreto-Lei/Del0401.htm)</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>certidao-conjunta-de-debitos-relativos-a-tributos-federais-e-a-divida-ativa-da-uniao</id>
-        <dbId>133</dbId>
-        <nome>Certidão Conjunta de Débitos Relativos a Tributos Federais e à Dívida Ativa da União</nome>
-        <sigla></sigla>
-        <descricao>Solicitar emissão de certidão da pessoa física, exceto de contribuições previdenciárias.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1122">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1373" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1271">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>pagamentos-p-dirpf-carne-leao-ganho-de-capital-etc</id>
@@ -11265,42 +10742,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>consulta-a-processo-digital</id>
-        <dbId>155</dbId>
-        <nome>Consulta a Processo Digital</nome>
-        <sigla></sigla>
-        <descricao>Consultar processos administrativos criados em meio digital na Receita Federal (Receita Federal), no Conselho Administrativo de Recursos Fiscais (CARF) e na Procuradoria-Geral da Fazenda Nacional (PGFN). O inteiro teor dos processos digitalizados só podem ser acessados pelo contribuinte que tiver preenchido o Termo de Opção por Domicílio Tributário Eletrônico, utilizando certificado digital.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1150">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1410" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00051</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1308">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1309">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>despacho-simplificado-de-importacao-cancelamento</id>
         <dbId>156</dbId>
         <nome>Despacho Simplificado de Importação – Cancelamento</nome>
@@ -11438,42 +10879,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1500">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cadastro-de-intervenientes-nos-sistemas-informatizados-receita-federal</id>
-        <dbId>267</dbId>
-        <nome>Cadastro de Intervenientes nos Sistemas Informatizados Receita Federal</nome>
-        <sigla></sigla>
-        <descricao>Solicitar o cadastramento dos intervenientes do comércio exterior nos sistemas informatizados da Receita Federal.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1303">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1612" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1501">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1502">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -11690,41 +11095,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cancelamento-de-inscricao-no-cpf</id>
-        <dbId>274</dbId>
-        <nome>Cancelamento de Inscrição no CPF</nome>
-        <sigla></sigla>
-        <descricao>Realizar cancelamento a pedido, nos casos de multiplicidade de inscrição ou óbito sem espólio.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1310">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1619" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFCancelamento.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1510">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-pj-habilitadas-desenvolv-infra-estrutura-reidi</id>
         <dbId>275</dbId>
         <nome>Consulta PJ Habilitadas Desenvolv Infra-Estrutura - Reidi</nome>
@@ -11754,76 +11124,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1511">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>codigo-de-acesso-ao-portal-do-simples-nacional</id>
-        <dbId>276</dbId>
-        <nome>Código de Acesso ao Portal do Simples Nacional</nome>
-        <sigla></sigla>
-        <descricao>Gerar código de acesso para utilização no Portal do Simples Nacional.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1312">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1621" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/controleAcesso/GeraCodigo.aspx</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1512">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>atualizacao-das-bases-pessoa-juridica-bancos-credenciados</id>
-        <dbId>277</dbId>
-        <nome>Atualização das Bases Pessoa Jurídica - Bancos Credenciados</nome>
-        <sigla></sigla>
-        <descricao>Sistema para atualização de Bases Pessoas Jurídicas por Bancos Credenciados.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1313">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1622" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/ATBHE/convweb/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1513">Cidadãos</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -11860,78 +11160,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1514">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1515">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>baixa-de-inscricao-no-cei</id>
-        <dbId>301</dbId>
-        <nome>Baixa de Inscrição no CEI</nome>
-        <sigla></sigla>
-        <descricao>Solicitar o cancelamento da inscrição para as pessoas físicas equiparadas a empresas e empresas desobrigadas da inscrição no CNPJ.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1343">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1657" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1552">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1553">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>agendamento-da-opcao-pelo-simples-nacional</id>
-        <dbId>161</dbId>
-        <nome>Agendamento da Opção pelo Simples Nacional</nome>
-        <sigla></sigla>
-        <descricao>Agendar a opção pelo Simples Nacional entre o primeiro dia útil de novembro e o penúltimo dia útil de dezembro do ano anterior ao da opção.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1160">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1422" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=t&amp;area=1</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1323">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -12076,83 +11304,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1328">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1329">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>comprovante-de-situacao-cadastral-no-cpf</id>
-        <dbId>166</dbId>
-        <nome>Comprovante de Situação Cadastral no CPF</nome>
-        <sigla></sigla>
-        <descricao>Consultar a situação cadastral (regular, pendente, suspensa, cancelada ou nula).</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1164">
-                <titulo>consulta cpf</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1426" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATCTA/CPF/ConsultaPublica.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1330">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Atendimento básico</item>
-            <item>Sistema Financeiro</item>
-        </areas-de-interesse>
-        <legislacoes>
-            <item id="313">cadastro cpf</item>
-            <item id="314">verificar situação cadastral</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>atualizacao-cadastral-de-imovel-rural-cafir</id>
-        <dbId>167</dbId>
-        <nome>Atualização cadastral de imóvel rural (Cafir)</nome>
-        <sigla></sigla>
-        <descricao>Solicitar atualização cadastral de imóvel rural.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1165">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1427" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Pessoajuridica/cafir/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1331">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1332">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -12403,52 +11554,6 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>ade-de-exclusao-do-simples-nacional-2012-consulta-debitos</id>
-        <dbId>175</dbId>
-        <nome>ADE de Exclusão do Simples Nacional 2012 - Consulta Débitos</nome>
-        <sigla>augusto</sigla>
-        <nomes-populares>
-            <item id="346">augusto valentim da costa</item>
-            <item id="347">augusto</item>
-        </nomes-populares>
-        <descricao>Consultar débitos referentes ao Ato Declaratório de Exclusão do Simples Nacional 2012.</descricao>
-        <contato>declaraçao imposto de renda baixa</contato>
-        <gratuito>true</gratuito>
-        <tempo-total-estimado>
-            <entre min="0" max="0"/>
-            <descricao>por este motivo nao poso fazernada</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1181">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1446" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/aplicacoes/SSL/ATBHE/SivexSN.App/ControleAcesso.aspx</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1348">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Assistência à Criança e ao Adolescente</item>
-            <item>Economia e Finanças</item>
-            <item>Proteção Social</item>
-            <item>Recursos humanos</item>
         </areas-de-interesse>
     </servico>
     <servico>
@@ -12993,42 +12098,6 @@ http://justica.gov.br/sua-protecao/cooperacao-internacional/transferencia-de-pes
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>codigo-de-acesso-ao-portal-e-cac</id>
-        <dbId>191</dbId>
-        <nome>Código de Acesso ao Portal e-CAC</nome>
-        <sigla></sigla>
-        <descricao>Gerar código de acesso para utilização de alguns serviços dentro do portal e-CAC. O código somente poderá ser gerado para pessoas físicas ou pessoas jurídicas optantes pelo Simples Nacional.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1205">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1473" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/PessoaFisicaeJuridica/SitFisCodigoAcesso/Orientacoes.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1378">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1379">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>emissao-de-certidao-pessoa-juridica-certidoes-e-situacao-fiscal</id>
         <dbId>192</dbId>
         <nome>Emissão de Certidão Pessoa Jurídica (Certidões e Situação Fiscal)</nome>
@@ -13509,44 +12578,6 @@ Poderão participar de apresentações e residências artísticas, atividades de
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1391">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>comunicacao-de-saida-definitiva-do-pais</id>
-        <dbId>199</dbId>
-        <nome>Comunicação de Saída Definitiva do País</nome>
-        <sigla></sigla>
-        <descricao>Apresentar a Comunicação de Saída Definitiva do País, o contribuinte que se retirar do Brasil em caráter definitivo ou passar à condição de não residente no Brasil, quando houver saído do território nacional em caráter temporário.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1220">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1502" tipo="web">
-                            <descricao>[Endereço eletrônico do serviço](http://www.receita.fazenda.gov.br/Principal/Informacoes/InfoDeclara/declaraSaida.htm)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1501" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/IRPF/2012/declaracao/declaracao-saida-definitiva.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1395">Cidadãos</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -14232,62 +13263,6 @@ admpp.gesac@comunicacoes.gov.br
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>admissao-temporaria-concessao</id>
-        <dbId>218</dbId>
-        <nome>Admissão Temporária - Concessão</nome>
-        <sigla>Repositor</sigla>
-        <nomes-populares>
-            <item id="369">Repositor</item>
-        </nomes-populares>
-        <descricao></descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="433">
-                <tipo>Qualquer Empresa</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="5" max="6" unidade="meses"/>
-            <descricao>Preciso de um Emprego e um temporário até encontrar um CLT</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1245">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1531" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aduana/RegAdmExportTemp/RegAdm/RegEspAdmTemp.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1430">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1431">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Empregabilidade</item>
-            <item>Relações de Trabalho</item>
-            <item>Trabalho</item>
-            <item>Transporte Aéreo</item>
-            <item>Transporte Ferroviário</item>
-            <item>Transporte Rodoviário</item>
-            <item>Transportes</item>
-            <item>Turismo</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>retificadora-on-line-extrato-da-dirpf</id>
         <dbId>219</dbId>
         <nome>Retificadora On Line (Extrato da DIRPF)</nome>
@@ -14362,114 +13337,6 @@ admpp.gesac@comunicacoes.gov.br
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1433">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>averbacao-de-causa-suspensiva-ou-garantia-pgfn</id>
-        <dbId>221</dbId>
-        <nome>Averbação de Causa Suspensiva ou Garantia – PGFN</nome>
-        <sigla></sigla>
-        <descricao>Dar ciência de que determinado débito está garantido ou com a exigibilidade suspensa e requerer a alteração da situação da inscrição em Dívida Ativa da União.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1248">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1534" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1434">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1435">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-pessoa-juridica-certidao-pessoa-juridica-certidoes-e-situacao-fiscal</id>
-        <dbId>222</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Pessoa Jurídica (Certidão Pessoa Jurídica / Certidões e Situação
-        Fiscal)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão de pessoa jurídica emitida.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1251">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1539" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/certaut/OptaAutenticidade.asp?origem=PJ</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1439">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cancelamento-no-cafir</id>
-        <dbId>223</dbId>
-        <nome>Cancelamento no Cafir</nome>
-        <sigla></sigla>
-        <descricao>Solicitar cancelamento de inscrição de imóvel rural, comunicado através do formulário Diac – Cancelamento.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1252">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1540" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/TextConcat/Default.asp?Pos=2&amp;Div=Pessoajuridica/cafir/InfoGerais</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1440">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1441">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -14942,41 +13809,6 @@ O sistema permite a atualização de cadastro de estações e dados climáticos 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cnpj-previdenciario-entrega-de-documentos</id>
-        <dbId>238</dbId>
-        <nome>CNPJ Previdenciário – Entrega de Documentos</nome>
-        <sigla></sigla>
-        <descricao>Entregar documentos para posterior conclusão do atendimento do pedido de inclusão do número do CNPJ no cadastro previdenciário.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1271">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1564" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1463">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>declaracao-eletronica-de-porte-de-valores-e-dpv-declaracao-de-porte-de-valores-declaracoes-e-demonstrativos</id>
         <dbId>239</dbId>
         <nome>Declaração Eletrônica de Porte de Valores (e-DPV - Declaração de Porte de Valores / Declarações e
@@ -15262,43 +14094,6 @@ O sistema permite a atualização de cadastro de estações e dados climáticos 
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1471">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>avisos-de-cobranca</id>
-        <dbId>249</dbId>
-        <nome>Avisos de Cobrança</nome>
-        <sigla></sigla>
-        <descricao>Consultar as intimações recebidas.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1902">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2381" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATBHE/TUS/redirect.aspx?tipo=servico&amp;id=822&amp;idCanal=7&amp;idArea=4&amp;idAssunto=156</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2168">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2169">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -16423,42 +15218,6 @@ O SIMEI é a forma pela qual o microempreendedor individual (MEI) paga um valor 
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>concessao-do-regime-especial-de-exportacao-temporaria</id>
-        <dbId>284</dbId>
-        <nome>Concessão do Regime Especial de Exportação Temporária</nome>
-        <sigla></sigla>
-        <descricao>Solicitar a concessão do Regime Especial de Exportação Temporária.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1319">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1628" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aduana/RegAdmExportTemp/RegExp/RegEspExpTemp.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1522">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1523">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-comprovante-de-pagamento-gps</id>
         <dbId>285</dbId>
         <nome>Consulta Comprovante de Pagamento – GPS</nome>
@@ -17120,42 +15879,6 @@ Solicitar vistas de processo administrativo.</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>calculo-e-emissao-de-darf-para-pagamento-de-quotas-do-irpf</id>
-        <dbId>307</dbId>
-        <nome>Cálculo e Emissão de Darf para Pagamento de Quotas do IRPF</nome>
-        <sigla></sigla>
-        <descricao>Calcular os acréscimos legais e emitir Darf para pagamento de quotas do IRPF.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1350">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1667" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/CalQuotaIrpf2000/default.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1564">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>emissao-de-darf-divida-ativa-pagamento-e-parcelamento-divida-ativa-da-uniao-dau</id>
         <dbId>308</dbId>
         <nome>Emissão de Darf - Dívida Ativa (Pagamento e Parcelamento / Dívida Ativa da União – DAU)</nome>
@@ -17330,41 +16053,6 @@ Solicitar vistas de processo administrativo.</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>comprovante-de-inscricao-e-de-situacao-cadastral-no-cnpj</id>
-        <dbId>309</dbId>
-        <nome>Comprovante de Inscrição e de Situação Cadastral no CNPJ</nome>
-        <sigla></sigla>
-        <descricao>Consultar e emitir o comprovante de inscrição e de situação cadastral do CNPJ.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1352">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1669" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1567">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>ressarcimento-do-ipi-a-missoes-diplomaticas</id>
         <dbId>311</dbId>
         <nome>Ressarcimento do IPI a Missões Diplomáticas</nome>
@@ -17505,106 +16193,6 @@ Solicitar vistas de processo administrativo.</descricao>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Administração</item>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>alteracao-cadastral-no-cpf</id>
-        <dbId>319</dbId>
-        <nome>Alteração Cadastral no CPF</nome>
-        <sigla>09070406403</sigla>
-        <nomes-populares>
-            <item id="386">Caixa Econômica Federal</item>
-        </nomes-populares>
-        <descricao>Realizar pedido de alteração de dados no CPF em uma conveniada (Banco do Brasil, Caixa Econômica Federal, Correios) ou alteração de endereço em entidades que prestam o serviço gratuitamente.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="449">
-                <tipo>cidadão</tipo>
-                <requisitos>Pretendo regularisa meu CPF</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="1" max="2" unidade="minutos"/>
-            <descricao>Pretedo Regularisa meu CPF</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1362">
-                <titulo>renovação cadastro CPF</titulo>
-                <descricao>Regularisa meu CPF</descricao>
-                <documentos>
-                    <default>
-                        <item id="1277">55396432x</item>
-                    </default>
-                    <caso id="203" descricao="Regularisa meu CPF">
-                        <documento>
-                            <id>1276</id>
-                            <descricao>08082101490</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1683" tipo="web">
-                            <descricao>[Informações sobre alteração cadastral do CPF](http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFAlteracaoDadosCad.htm)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1682" tipo="presencial">
-                            <descricao>Unidades de Atendimento Conveniadas: Agências da CEF, BB e Correios</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1681" tipo="web-consultar">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/CPF/CPFEntPublicConven.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1580">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1126">Regularisa meu CPF</item>
-        </palavras-chave>
-    </servico>
-    <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-pessoa-fisica-divida-ativa-da-uniao-dau</id>
-        <dbId>320</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Pessoa Física (Dívida Ativa da União – DAU)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão de pessoa física emitida.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1363">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1684" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/certaut/OptaAutenticidade.asp?origem=P</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1581">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
     </servico>
@@ -17940,42 +16528,6 @@ Solicitar vistas de processo administrativo.</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>autorizacao-para-acesso-provisorio-a-recinto-alfandegado</id>
-        <dbId>330</dbId>
-        <nome>Autorização para Acesso Provisório a Recinto Alfandegado</nome>
-        <sigla></sigla>
-        <descricao>Solicitar autorização para acesso provisório a recinto alfandegado.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1372">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1693" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1592">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1593">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>pedido-de-baixa-de-empresa-certidao-contribuicoes-previdenciarias-divida-ativa-da-uniao-dau</id>
         <dbId>331</dbId>
         <nome>Pedido de Baixa de Empresa (Certidão Contribuições Previdenciárias / Dívida Ativa da União – DAU)</nome>
@@ -18181,41 +16733,6 @@ Portaria nº 55, de 12 de março de 2013</item>
             </etapa>
         </etapas>
         <orgao id="77"/>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>calculo-do-valor-devido-e-geracao-do-das-documento-de-arrecadacao-do-simples-nacional-ate-12-2011</id>
-        <dbId>338</dbId>
-        <nome>Cálculo do Valor Devido e Geração do DAS (Documento de Arrecadação do Simples Nacional), até 12/2011</nome>
-        <sigla></sigla>
-        <descricao>Preencher PGDAS e gerar o Documento de Arrecadação do Simples Nacional – DAS – até 12/2011.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1380">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1701" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=5</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1604">Empresas</item>
-        </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
@@ -18578,41 +17095,6 @@ Portaria nº 55, de 12 de março de 2013</item>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>consolidacao-dos-lancamentos-efetuados-rede-arrecadadora</id>
-        <dbId>349</dbId>
-        <nome>Consolidação dos Lançamentos Efetuados - Rede Arrecadadora</nome>
-        <sigla></sigla>
-        <descricao>Consolidar os lançamentos efetuados pelo agente arrecadador à Conta Única do Tesouro Nacional, a título de recolhimento do produto arrecadado, devolução, remuneração e encargos, relativos a uma data de arrecadação, para verificar eventual existência de saldo residual. Contempla somente os lançamentos relativos a data de arrecadação posterior a 01/01/2001.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1404">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1730" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atspo/redearrecadadora/InicialConsolidacao.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1628">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>salario-familia</id>
         <dbId>350</dbId>
         <nome>Salário-Família</nome>
@@ -18922,95 +17404,6 @@ Telefone: (61) 2027-6000</contato>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1632">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1633">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>avisos-de-cobranca-conta-corrente-pessoa-juridica</id>
-        <dbId>355</dbId>
-        <nome>Avisos de Cobrança – Conta Corrente Pessoa Jurídica</nome>
-        <sigla></sigla>
-        <descricao>Permite consultar as intimações emitidas pelo Conta Corrente da Pessoa Jurídica, com opção para a impressão de documento para pagamento.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1409">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1739" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/ContaCor/default.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1634">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>alteracao-de-endereco-no-cpf</id>
-        <dbId>356</dbId>
-        <nome>Alteração de Endereço no CPF</nome>
-        <sigla>Paulo Sergio Ro</sigla>
-        <nomes-populares>
-            <item id="393">Canafistula</item>
-        </nomes-populares>
-        <descricao>Rua Brasilina Ilka Barbosa Ferraz, 266 Jd. Brasilia (zona leste) CEP:03583-010 - São Paulo -SP</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="462">
-                <tipo></tipo>
-                <requisitos>cadastro no CPF de pessoa física</requisitos>
-            </solicitante>
-            <solicitante id="463">
-                <tipo>titular do cpf</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="1" max="2" unidade="horas"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1410">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="1301">23365382968</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1740" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00017</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1635">Cidadãos</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -19413,44 +17806,6 @@ CEP: 70.064-900 – Brasília – DF.</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cadastro-de-senha-para-auto-atendimento-previdenciario</id>
-        <dbId>361</dbId>
-        <nome>Cadastro De Senha Para Auto Atendimento Previdenciário</nome>
-        <sigla></sigla>
-        <descricao>Cadastrar senha que permite, por meio da internet, consultar dados básicos do cadastro, ao extrato de
-        contribuições, verificação da regularidade das contribuições previdenciárias e emissão de certidão com
-        finalidade de baixa no cadastro previdenciário.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1534">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1907" tipo="web">
-                            <descricao>http://www010.dataprev.gov.br/cws/contexto/cndfisco/cndfisco.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1776">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1777">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>pedido-de-antecipacao-de-analise-da-dirpf-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativos</id>
         <dbId>362</dbId>
         <nome>Pedido de Antecipação de Análise da DIRPF (DIRPF - Declaração do Imposto sobre a Renda da Pessoa Física /
@@ -19552,46 +17907,6 @@ CEP: 70.064-900 – Brasília – DF.</descricao>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1645">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1646">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cadastro-de-procuracao-para-o-portal-e-cac-presencial</id>
-        <dbId>366</dbId>
-        <nome>Cadastro de Procuração para o Portal e-CAC – Presencial</nome>
-        <sigla></sigla>
-        <descricao>Cadastrar, consultar e cancelar procuração, que delega a terceiro, possuidor de certificado digital, a
-        realização de serviços dentro do portal e-CAC. Não há necessidade de o outorgante possuir certificado digital
-        para constituir a procuração. No caso do cadastro e cancelamento, o documento impresso deve ser entregue na
-        unidade de atendimento presencial, conforme orientações gerais. Não há necessidade de o outorgante possuir
-        certificado digital para constituir a pr</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1478">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1826" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSDR/procuracoesrfb/controlador/controlePrincipal.asp?acao=telaInicial</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1712">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1713">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -21605,41 +19920,6 @@ Serão resultados desta etapa:
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>consulta-acao-fiscal-do-simples-nacional-simples-nacional-cobranca-e-fiscalizacao</id>
-        <dbId>412</dbId>
-        <nome>Consulta Ação Fiscal do Simples Nacional (Simples Nacional / Cobrança e Fiscalização)</nome>
-        <sigla></sigla>
-        <descricao>Consulta informações sobre uma Ação Fiscal direcionada ao contribuinte.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1490">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1845" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=05121</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1725">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>conversao-de-moedas</id>
         <dbId>413</dbId>
         <nome>Conversão de moedas</nome>
@@ -21966,42 +20246,6 @@ Recomendamos, também, caso haja dificuldade em encontrar um prestador, que os d
         </legislacoes>
     </servico>
     <servico>
-        <id>autorizacao-para-acesso-permanente-a-recinto-alfandegado</id>
-        <dbId>419</dbId>
-        <nome>Autorização para Acesso Permanente a Recinto Alfandegado</nome>
-        <sigla></sigla>
-        <descricao>Solicitar autorização para acesso permanente a recinto alfandegado.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1507">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1876" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=105&amp;idArea=1&amp;idAssunto=30</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1737">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1738">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-restituicao-e-situacao-da-declaracao-irpf-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativo</id>
         <dbId>420</dbId>
         <nome>Consulta Restituição e Situação da Declaração IRPF (DIRPF - Declaração do Imposto sobre a Renda da Pessoa
@@ -22105,21 +20349,6 @@ o com voçes...obrigado</descricao>
         <legislacoes>
             <item id="375">Serviço</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>alteracao-de-dados-bancarios-p-restituicao-e-ressarcimento-imposto-de-renda</id>
-        <dbId>422</dbId>
-        <nome>Alteração de Dados Bancários p/ Restituição e Ressarcimento Imposto de Renda</nome>
-        <sigla></sigla>
-        <descricao></descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado>
-            <entre min="0" max="0"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas/>
-        <orgao id="77"/>
     </servico>
     <servico>
         <id>ranking-do-valor-efetivo-total-vet-das-operacoes-de-cambio</id>
@@ -22275,79 +20504,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1755">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>carne-leao</id>
-        <dbId>427</dbId>
-        <nome>Carnê Leão</nome>
-        <sigla></sigla>
-        <descricao>Acessar o programa Carnê Leão para download.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1513">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1883" tipo="web">
-                            <descricao>[Endereço eletrônico do serviço](http://www.receita.fazenda.gov.br/PessoaFisica/CarneLeao/default.htm)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1882" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/IRPF/2006/perguntas/CarneLeao.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1747">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>consulta-ao-resultado-do-agendamento-da-opcao-pelo-simples-nacional</id>
-        <dbId>428</dbId>
-        <nome>Consulta ao Resultado do Agendamento da Opção pelo Simples Nacional</nome>
-        <sigla></sigla>
-        <descricao>Consulta resultado do agendamento da opção pelo Simples Nacional.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1514">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1884" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=t&amp;area=</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1748">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -22560,41 +20716,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1762">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>cancelamento-do-agendamento-da-opcao-pelo-simples-nacional</id>
-        <dbId>434</dbId>
-        <nome>Cancelamento do Agendamento da Opção pelo Simples Nacional</nome>
-        <sigla></sigla>
-        <descricao>Cancelar o agendamento da opção pelo Simples Nacional. Este serviço somente estará disponível durante o período do agendamento (entre o primeiro dia útil de novembro e o penúltimo dia útil de dezembro do ano anterior ao da opção).</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1524">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1896" tipo="web">
-                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=t&amp;area=1</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1763">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -22953,41 +21074,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         </legislacoes>
     </servico>
     <servico>
-        <id>atividade-rural</id>
-        <dbId>445</dbId>
-        <nome>Atividade Rural</nome>
-        <sigla></sigla>
-        <descricao>Acessar o programa Atividade Rural para download.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1538">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1911" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaFisica/LivroCaixa/default.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1781">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>atendimento-a-acidentes-de-transito-dprf</id>
         <dbId>446</dbId>
         <nome>Atendimento a acidentes de trânsito/ DPRF</nome>
@@ -23023,78 +21109,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1782">Cidadãos</item>
         </segmentos-da-sociedade>
-    </servico>
-    <servico>
-        <id>alteracao-de-dados-de-embarque</id>
-        <dbId>447</dbId>
-        <nome>Alteração de Dados de Embarque</nome>
-        <sigla></sigla>
-        <descricao>Solicitar a alteração dos dados de embarque da Declaração de Exportação.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1540">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1914" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=39&amp;idArea=1&amp;idAssunto=21</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1783">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1784">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>calculo-de-restituicao-e-reembolso-previdenciarios</id>
-        <dbId>449</dbId>
-        <nome>Cálculo de Restituição e Reembolso Previdenciários</nome>
-        <sigla></sigla>
-        <descricao>Calcular valor atualizado da contribuição a ser restituída.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1542">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1916" tipo="web">
-                            <descricao>http://www2.dataprev.gov.br/pls/sal/pkg_sal2_contrib.pr_sal2_dados_restit_internet</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1787">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1788">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>orientacoes-sobre-obtencao-de-certificado-digital</id>
@@ -23312,41 +21326,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cadastro-de-pessoas-de-contato-contribuinte-diferenciado</id>
-        <dbId>456</dbId>
-        <nome>Cadastro de Pessoas de Contato – Contribuinte Diferenciado</nome>
-        <sigla></sigla>
-        <descricao>Cadastrar responsáveis pela prestação das informações que forem solicitadas pela Receita Federal, no âmbito do referido acompanhamento. Esta opção é restrita às pessoas jurídicas sujeitas ao acompanhamento econômico-tributário diferenciado.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1553">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1929" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00042</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1796">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>malha-fiscal-dirpf-atendimento-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativos</id>
         <dbId>457</dbId>
         <nome>Malha Fiscal DIRPF - Atendimento (DIRPF - Declaração do Imposto sobre a Renda da Pessoa Física / Declarações e
@@ -23377,80 +21356,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1797">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>autorizacao-para-registro-de-di-unica</id>
-        <dbId>458</dbId>
-        <nome>Autorização para Registro de DI Única</nome>
-        <sigla></sigla>
-        <descricao>Solicitar a autorização para registro de Declaração de Importação (DI) Única.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1555">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1931" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=54&amp;idArea=1&amp;idAssunto=22</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1798">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>certidao-conjunta-divida-ativa-da-uniao</id>
-        <dbId>459</dbId>
-        <nome>Certidão Conjunta – Dívida Ativa da União</nome>
-        <sigla></sigla>
-        <descricao>Apresentar requerimento de Certidão Conjunta - Certificação quanto à Dívida Ativa da União, e demais documentos, visando a liberação da certidão, uma vez que existem pendências no âmbito da PGFN que impedem a emissão desta certidão pela internet.
-
-Testando descrição.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1670">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2078" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1927">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1928">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -23770,42 +21675,6 @@ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</contato>
         <legislacoes>
             <item id="382">[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>comunicacao-de-alienacao-ao-cafir</id>
-        <dbId>467</dbId>
-        <nome>Comunicação de Alienação ao Cafir</nome>
-        <sigla></sigla>
-        <descricao>Solicitar comunicação de alienação de imóvel rural, comunicado através do formulário Diac – Comunicação de Alienação.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1568">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1946" tipo="web">
-                            <descricao>http://hom.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=165</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1811">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1812">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>consulta-de-declaracao-transmitida-do-simples-nacional</id>
@@ -24242,51 +22111,6 @@ Deverá ser feita por meio de requerimento junto ao Órgão Oficial de Turismo n
         </legislacoes>
     </servico>
     <servico>
-        <id>cadastro-de-dispositivos-moveis-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativos</id>
-        <dbId>473</dbId>
-        <nome>Cadastro de Dispositivos Móveis (DIRPF - Declaração do Imposto sobre a Renda da Pessoa Física / Declarações
-        e Demonstrativos)</nome>
-        <sigla>recibo declaraç</sigla>
-        <nomes-populares>
-            <item id="443">Andre Souza</item>
-        </nomes-populares>
-        <descricao>Cadastrar no Portal e-CAC os dispositivos móveis (celular e tablet) que poderão ser utilizados para acessar o serviço "Pagando Imposto".
-
-O cadastramento estará disponível para o contribuinte que tem "imposto de renda a pagar" no link "Para autorizar o acesso às cotas e à impressão do Darf, através de um dispositivo móvel (tablet ou smartphones) clique aqui”, localizado dentro do “Extrato do Processamento da DIRPF”, “Extrato” item "Demonstrativo de Débitos da Declaração".</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1587">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1975" tipo="web">
-                            <descricao>[Endereço eletrônico do serviço](https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00011)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1974" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/servico.aspx?id=522</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1824">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>realizar-desistencia-refri</id>
         <dbId>474</dbId>
         <nome>Realizar desistência – REFRI</nome>
@@ -24498,41 +22322,6 @@ O cadastramento estará disponível para o contribuinte que tem "imposto de rend
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="1834">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>calculo-e-emissao-de-darf-imposto-para-bagagem-acompanhada</id>
-        <dbId>479</dbId>
-        <nome>Cálculo e Emissão de Darf - Imposto para Bagagem Acompanhada</nome>
-        <sigla></sigla>
-        <descricao>Solicitar o cálculo do Imposto de Importação e a emissão de Darf para bagagem acompanhada.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1594">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1983" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/Servico.aspx?id=60&amp;idArea=1&amp;idAssunto=23</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1835">Cidadãos</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -24995,41 +22784,6 @@ cidades.digitais@comunicacoes.gov.br</contato>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>calculo-encargos-recolhimento-em-atraso-rede-arrecadadora</id>
-        <dbId>490</dbId>
-        <nome>Cálculo Encargos Recolhimento em Atraso-Rede Arrecadadora</nome>
-        <sigla></sigla>
-        <descricao>Apurar o valor de encargos devidos pelo recolhimento efetuado fora do prazo. Contempla somente os lançamentos relativos a data de arrecadação posterior a 01/01/2001.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1609">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2004" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atspo/redearrecadadora/inicialcalculo.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1850">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>licenca-de-pescador-amador</id>
         <dbId>491</dbId>
         <nome>Licença de Pescador Amador</nome>
@@ -25293,41 +23047,6 @@ cidades.digitais@comunicacoes.gov.br</contato>
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1863">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>autorizacao-para-retirada-de-residuo-pedido</id>
-        <dbId>562</dbId>
-        <nome>Autorização para Retirada de Resíduo – Pedido</nome>
-        <sigla></sigla>
-        <descricao>Solicitar autorização para efetuar a retirada de resíduos líquidos e sólidos das embarcações e recintos.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1705">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2116" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="1983">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -25623,41 +23342,6 @@ Telefone: (61) 2027-5379/6608/6969</contato>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="1878">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="1879">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>complementacao-de-informacoes-cadastrais-no-cpf</id>
-        <dbId>505</dbId>
-        <nome>Complementação de Informações Cadastrais no CPF</nome>
-        <sigla></sigla>
-        <descricao>Incluir dados cadastrais não informados no CPF.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1630">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2027" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00016</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1880">Cidadãos</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -27045,42 +24729,6 @@ Email - incentivo.viagens@turismo.gov.br</contato>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>caixa-postal</id>
-        <dbId>542</dbId>
-        <nome>Caixa Postal</nome>
-        <sigla></sigla>
-        <descricao>Receber mensagens eletrônicas enviadas pela Receita Federal. Existem dois tipos de mensagens: mensagens de interesse geral e mensagens de interesse específico do detentor da Caixa Postal.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1683">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2091" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00006</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1947">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1948">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>pedido-de-antecipacao-de-analise-da-dirpf-restituicao-do-imposto-de-renda-pessoa-fisica-irpf-restituicao-e-compensacao</id>
         <dbId>543</dbId>
         <nome>Pedido de Antecipação de Análise da DIRPF (Restituição do Imposto de Renda Pessoa Física - IRPF / Restituição
@@ -27591,58 +25239,6 @@ Acessar o Sisobranet para realizar a transmissão do relatório. Serviço dispon
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>agendamento-de-atendimento-presencial</id>
-        <dbId>557</dbId>
-        <nome>Agendamento de Atendimento Presencial</nome>
-        <sigla>SISCOSERV</sigla>
-        <nomes-populares>
-            <item id="478">SISCOSERV</item>
-        </nomes-populares>
-        <descricao>ORIENTAÇÃO PARA HABILITAÇÃO</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <solicitantes>
-            <solicitante id="543">
-                <tipo>Pessoa fisica</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="4" max="25" unidade="minutos"/>
-            <descricao>Imposto de renda</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1701">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2112" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1977">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1978">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1370">DISO - Espólio José Joaquim de Souza</item>
-        </palavras-chave>
-    </servico>
-    <servico>
         <id>opcao-convenio-itr</id>
         <dbId>558</dbId>
         <nome>Opção Convênio ITR</nome>
@@ -27748,43 +25344,6 @@ Acessar o Sisobranet para realizar a transmissão do relatório. Serviço dispon
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Previdência Social</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>consulta-a-processo</id>
-        <dbId>561</dbId>
-        <nome>Consulta a Processo</nome>
-        <sigla></sigla>
-        <descricao>Consultar andamento de processo administrativo.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1704">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2115" tipo="web">
-                            <descricao>http://comprot.fazenda.gov.br/e-gov/Cons_Generica_Processos.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1981">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1982">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
         </areas-de-interesse>
     </servico>
     <servico>
@@ -28246,41 +25805,6 @@ Para aqueles que possuem bens de valor total igual ou superior a US$100.000.000,
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>coleta-online-programa-gerador-de-documentos-do-cnpj</id>
-        <dbId>575</dbId>
-        <nome>Coleta Online – Programa Gerador de Documentos do CNPJ</nome>
-        <sigla></sigla>
-        <descricao>Versão para internet do Programa Gerador de Documentos do CNPJ para preenchimento de solicitações (inscrição, alteração e cancelamento).</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1729">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2147" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/PessoaJuridica/ColetaWeb.htm</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2009">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>ciencia-sem-fronteiras</id>
         <dbId>576</dbId>
         <nome>Ciência sem Fronteiras</nome>
@@ -28611,45 +26135,6 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cadastro-de-representante-legal-sist-de-comercio-exterior</id>
-        <dbId>586</dbId>
-        <nome>Cadastro de Representante Legal – Sist. de Comércio Exterior</nome>
-        <sigla></sigla>
-        <descricao>Cadastrar o representante legal da pessoa física ou jurídica no Siscomex.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1739">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2159" tipo="web">
-                            <descricao>[Endereço eletrônico do serviço](https://www4.receita.fazenda.gov.br/g33159/jsp/logon.jsp?ind=07)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2158" tipo="web">
-                            <descricao>http://idg.receita.fazenda.gov.br/orientacao/aduaneira/manuais/despacho-de-exportacao/topicos/conceitos-e-definicoes/cadastros/cadastro-de-representantes-legais-1/cadastro-de-representantes-legais</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2024">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2025">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>solicita-altera-cancela-substituicao-tributaria-ipi</id>
         <dbId>587</dbId>
         <nome>Solicita, Altera, Cancela - Substituição Tributária IPI</nome>
@@ -28749,79 +26234,6 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         <orgao id="77"/>
         <segmentos-da-sociedade>
             <item idSegmento="3" idServicoSegmento="2026">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>comunicacao-para-compensacao-de-oficio</id>
-        <dbId>590</dbId>
-        <nome>Comunicação para Compensação de Ofício</nome>
-        <sigla></sigla>
-        <descricao>Consultar e imprimir segunda via da comunicação de ofício, encaminhada anteriormente para o domicilio do contribuinte ou sua caixa postal no portal e-CAC da página da Receita Federal. Os contribuintes optantes pelo Domicílio Tributário Eletrônico – DTE poderão também autorizar ou recusar a compensação.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1696">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2106" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=00083</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1969">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1970">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-previdenciaria-certidao-contribuicoes-previdenciarias-certidoes-e-situacao-fiscal</id>
-        <dbId>591</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Previdenciária (Certidão Contribuições Previdenciárias / Certidões e
-        Situação Fiscal)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão previdenciária emitida.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1742">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2162" tipo="web">
-                            <descricao>http://www010.dataprev.gov.br/cws/contexto/cnd/cnd.html</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2029">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2030">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -28951,42 +26363,6 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         <legislacoes>
             <item id="411">gsdfgsdf</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>codigo-de-acesso-parcelamento-mp-303-paex-e-timemania</id>
-        <dbId>595</dbId>
-        <nome>Código de Acesso - Parcelamento MP 303 (Paex) e Timemania</nome>
-        <sigla></sigla>
-        <descricao>Gerar código de acesso para acompanhar o pedido de parcelamento da MP 303 (Paex) e Timemania.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1750">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2175" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATSPO/PAEX/PaexAdesao/PaexCodigoAcesso/PaexCodigoAcesso_P1.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2038">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2039">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>sisutec-sistema-de-selecao-unificada-da-educacao-profissional-e-tecnologica</id>
@@ -29123,41 +26499,6 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="2046">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="2047">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>consulta-acesso-a-escrituracao-contabil-sped</id>
-        <dbId>601</dbId>
-        <nome>Consulta Acesso à Escrituração Contábil – SPED</nome>
-        <sigla></sigla>
-        <descricao>Verificar quais membros do Sped (Sistema Público de Escrituração Digital) acessaram a escrituração contábil digital do contribuinte.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1756">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2181" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=05070</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2048">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -29855,46 +27196,6 @@ DECRETO Nº 70.235, DE 6 DE MARÇO DE 1972.</item>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>confirmacao-de-autenticidade-de-certidao-pessoa-juridica-certidao-pessoa-juridica-divida-ativa-da-uniao-dau</id>
-        <dbId>612</dbId>
-        <nome>Confirmação de Autenticidade de Certidão Pessoa Jurídica (Certidão Pessoa Jurídica / Dívida Ativa da União –
-        DAU)</nome>
-        <sigla></sigla>
-        <descricao>Consultar a autenticidade de certidão de pessoa jurídica emitida.
-
-* [Mais informações](http://www.receita.fazenda.gov.br/GuiaContribuinte/CN_%20PJ.htm): Orientações gerais sobre o serviço
-
-* [Serviços relacionados](http://www.receita.fazenda.gov.br/aplicacoes/atbhe/tus/default.aspx?/a/3): Ver todos os serviços do assunto "Certidões e Situação Fiscal"</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1773">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2210" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/certaut/OptaAutenticidade.asp?origem=P</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2070">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>desoneracao-de-smartphones</id>
         <dbId>613</dbId>
         <nome>Desoneração de Smartphones</nome>
@@ -30098,41 +27399,6 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>alteracao-de-codevedor-responsavel-pgfn</id>
-        <dbId>618</dbId>
-        <nome>Alteração de Codevedor Responsável – PGFN</nome>
-        <sigla></sigla>
-        <descricao>Apresentar requerimento de alteração de codevedor e outros documentos, fim de requerer a exclusão do seu nome como responsável tributário do cadastro da Dívida Ativa da União.</descricao>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1780">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2217" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2078">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>siscomex-mantra-desdobramento-de-conhecimento-de-carga</id>
         <dbId>619</dbId>
         <nome>Siscomex Mantra – Desdobramento de Conhecimento de Carga</nome>
@@ -30313,47 +27579,6 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>cadastro-consulta-e-cancelamento-procuracao-via-e-cac-centro-virtual-de-atendimento-da-receita</id>
-        <dbId>624</dbId>
-        <nome>Cadastro, Consulta e Cancelamento – Procuração via e-CAC (centro virtual de atendimento da Receita)</nome>
-        <sigla>neurologista</sigla>
-        <descricao>.nao tenho nenhum certificado minha primeira consulta</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <tempo-total-estimado>
-            <entre min="1" max="2" unidade="dias-corridos"/>
-            <descricao>encontro me com sindrome tuneo do carpo em ambas as maos ,sendo a esquerda em quadro bem avançado,aguardo passar por neuro cirurgiao para analise e possivel cirurgia,qto a mao direita nao foi ainda diadnosticada,unfelizmente cidade de Santos encontra se sem medico da area no Sus,fila de espera 3 anos,nao tenho convenio estou desempregada sou cardiopata,cirurgia a 2 anos,diabetica e faço tratamento psquiatrico para depressao e ansiedade,agradeço atençao,e aguardo uma resposta,Grata</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1787">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2224" tipo="sms">
-                            <descricao>13 - 99103-6791</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2087">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2088">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Assistência Hospitalar e Ambulatorial</item>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>parcelamento-mp-n-449-de-2008</id>
         <dbId>625</dbId>
         <nome>Parcelamento MP nº 449, de 2008</nome>
@@ -30384,43 +27609,6 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         <segmentos-da-sociedade>
             <item idSegmento="1" idServicoSegmento="2089">Cidadãos</item>
             <item idSegmento="3" idServicoSegmento="2090">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>comprovacao-de-pagamento-realizado</id>
-        <dbId>626</dbId>
-        <nome>Comprovação de Pagamento Realizado</nome>
-        <sigla></sigla>
-        <descricao>Comprovar pagamento já efetuado de débitos que constam no sistema de conta corrente.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1794">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2232" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="77"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2096">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2097">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
@@ -44012,82 +41200,6 @@ Tempo para a prestação do serviço: Até trinta dias após o agendamento prév
         </legislacoes>
     </servico>
     <servico>
-        <id>deposito-de-pedido-de-patente</id>
-        <dbId>889</dbId>
-        <nome>Depósito de pedido de patente</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="689">Pedido de patente</item>
-        </nomes-populares>
-        <descricao>Se você inventou uma nova tecnologia, seja para produto ou processo, pode buscar o direito a uma patente. A patente também vale para melhorias no uso ou fabricação de objetos de uso prático, como utensílios e ferramentas. Ela pode ser uma Patente de Invenção ou Patente de Modelo de Utilidade.</descricao>
-        <contato>Fale Conosco: http://faleconosco.inpi.gov.br/faleconosco/
-
-Site: www.inpi.gov.br</contato>
-        <gratuito>false</gratuito>
-        <porcentagem-digital>0</porcentagem-digital>
-        <solicitantes>
-            <solicitante id="916">
-                <tipo>Pessoas físicas ou jurídicas</tipo>
-                <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="129" unidade="meses"/>
-            <descricao>Isso significa em média 10,8 anos.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Válido por</tipo>
-            <quantidade>20</quantidade>
-            <unidade>anos</unidade>
-            <descricao>A patente de invenção é válida por 20 anos a partir do depósito e o modelo de utilidade, por 15 anos.</descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2317">
-                <titulo>Inscrição no e-INPI</titulo>
-                <descricao>O primeiro passo para depositar o pedido de patente é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
-                <documentos>
-                    <default>
-                        <item id="2541">relatório descritivo, quadro reivindicatório, listagem de sequências (para pedido da área biotecnológica), desenhos (se for o caso) e resumo</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2948" tipo="web-acompanhar">
-                            <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
-
-Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="382"/>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2614">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2616">Órgãos e entidades públicas</item>
-            <item idSegmento="3" idServicoSegmento="2615">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2617">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Propriedade Industrial</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2187">INPI</item>
-            <item id="2188">patente</item>
-            <item id="2189">invenção</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="732">Lei 9.279.</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>autorizacao-de-acesso-a-conhecimentos-tradicionais-associados-cta</id>
         <dbId>882</dbId>
         <nome>Autorização de Acesso a Conhecimentos Tradicionais Associados – CTA</nome>
@@ -44156,6 +41268,114 @@ retorno=detalheInstitucional);
         <legislacoes>
             <item id="697">Medida Provisória nº 2.186-16/2001 (http://portal.iphan.gov.
 br/portal/baixaFcdAnexo.do?id=3765) e o Decreto nº 3.945/2001 (http://portal.iphan.gov.br/portal/baixaFcdAnexo.do?id=3312).</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>deposito-de-pedido-de-patente</id>
+        <dbId>889</dbId>
+        <nome>Depósito de pedido de patente</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="689">Pedido de patente</item>
+        </nomes-populares>
+        <descricao>Se você inventou uma nova tecnologia, seja para produto ou processo, pode buscar o direito a uma patente. A patente também vale para melhorias no uso ou fabricação de objetos de uso prático, como utensílios e ferramentas. Ela pode ser uma Patente de Invenção ou Patente de Modelo de Utilidade.</descricao>
+        <contato>Fale Conosco: http://faleconosco.inpi.gov.br/faleconosco/
+
+Site: www.inpi.gov.br</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-digital>0</porcentagem-digital>
+        <solicitantes>
+            <solicitante id="916">
+                <tipo>Pessoas físicas ou jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="129" unidade="meses"/>
+            <descricao>Isso significa em média 10,8 anos.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>20</quantidade>
+            <unidade>anos</unidade>
+            <descricao>A patente de invenção é válida por 20 anos a partir do depósito e o modelo de utilidade, por 15 anos.</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2317">
+                <titulo>Inscrição no e-INPI</titulo>
+                <descricao>O primeiro passo para depositar o pedido de patente é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
+                <documentos>
+                    <default>
+                        <item id="2541">CPF ou CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2948" tipo="web-inscrever-se">
+                            <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2344">
+                <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+                <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2987" tipo="web-emitir">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2345">
+                <titulo>Preenchimento do formulário online</titulo>
+                <descricao>O usuário deve preencher o formulário online no sistema Peticionamento Eletrônico, disponível no portal do INPI: https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                <documentos>
+                    <default>
+                        <item id="2591">Relatório descritivo, quadro reivindicatório, listagem de sequências (para pedido da área biotecnológica), desenhos (se for o caso) e resumo</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2988" tipo="web-acompanhar">
+                            <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
+
+Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="382"/>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2614">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2616">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2615">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2617">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Propriedade Industrial</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2187">INPI</item>
+            <item id="2188">patente</item>
+            <item id="2189">invenção</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="732">Lei 9.279.</item>
         </legislacoes>
     </servico>
     <servico>
@@ -45177,11 +42397,7 @@ www.inpi.gov.br</contato>
         <solicitantes>
             <solicitante id="914">
                 <tipo>Pessoa física e jurídica.</tipo>
-                <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://marcas.inpi.gov.br/emarcas/</requisitos>
+                <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
@@ -45200,7 +42416,7 @@ www.inpi.gov.br</contato>
                 <descricao>O primeiro passo para apresentar um pedido de registro ou uma petição de marca é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
                 <documentos>
                     <default>
-                        <item id="2527">GRU paga, CPF ou CNPJ</item>
+                        <item id="2527">CPF ou CNPJ</item>
                     </default>
                 </documentos>
                 <custos>
@@ -45208,7 +42424,45 @@ www.inpi.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2942" tipo="web-acompanhar">
+                        <canal-de-prestacao id="2942" tipo="web-inscrever-se">
+                            <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2340">
+                <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+                <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2984" tipo="web-emitir">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2341">
+                <titulo>Preenchimento do formulário online no sistema e-Marcas</titulo>
+                <descricao>O sistema está disponível no site do INPI, neste link: https://marcas.inpi.gov.br/emarcas/
+
+O usuário deve preencher com os dados do titular, assim como informações sobre o tipo de marca que deseja solicitar.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2589">CPF ou CNPJ, nome da marca, imagem da marca (se for o caso)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2983" tipo="web-acompanhar">
                             <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
 
 Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
@@ -45250,11 +42504,7 @@ Site: www.inpi.gov.br</contato>
         <solicitantes>
             <solicitante id="917">
                 <tipo>Pessoa física e jurídica</tipo>
-                <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/</requisitos>
+                <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
@@ -45273,7 +42523,7 @@ Site: www.inpi.gov.br</contato>
                 <descricao>O primeiro passo para solicitar o registro de desenho industrial é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
                 <documentos>
                     <default>
-                        <item id="2542">GRU paga, figuras e, se for o caso de pedido com variantes, relatório e reivindicações.</item>
+                        <item id="2542">CPF ou CNPJ</item>
                     </default>
                 </documentos>
                 <custos>
@@ -45281,7 +42531,43 @@ Site: www.inpi.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2949" tipo="web-acompanhar">
+                        <canal-de-prestacao id="2949" tipo="web-inscrever-se">
+                            <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2342">
+                <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+                <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2985" tipo="web-emitir">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2343">
+                <titulo>Preenchimento do formulário online</titulo>
+                <descricao>Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                <documentos>
+                    <default>
+                        <item id="2590">GRU paga, figuras e, se for o caso de pedido com variantes, relatório e reivindicações.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2986" tipo="web-acompanhar">
                             <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
 
 Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
@@ -45323,11 +42609,7 @@ Site: www.inpi.gov.br</contato>
         <solicitantes>
             <solicitante id="918">
                 <tipo>Pessoas físicas e jurídicas</tipo>
-                <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://gru.inpi.gov.br/contrato/</requisitos>
+                <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
@@ -45341,7 +42623,7 @@ Site: www.inpi.gov.br</contato>
                 <descricao>O primeiro passo para solicitar serviços relativos a contratos é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
                 <documentos>
                     <default>
-                        <item id="2543">Guia de Recolhimento da União (GRU) paga, Carta explicativa datada e assinada, documento a ser averbado.</item>
+                        <item id="2543">CPF ou CNPJ</item>
                     </default>
                 </documentos>
                 <custos>
@@ -45349,8 +42631,46 @@ Site: www.inpi.gov.br</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2950" tipo="web-acompanhar">
-                            <descricao>Fale Conosco: http://faleconosco.inpi.gov.br/faleconosco/</descricao>
+                        <canal-de-prestacao id="2950" tipo="web-inscrever-se">
+                            <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2346">
+                <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+                <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2989" tipo="web-emitir">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2347">
+                <titulo>Preenchimento do formulário online</titulo>
+                <descricao>O usuário deverá preencher o formulário online do sistema Peticionamento Eletrônico, disponível no portal do INPI: https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                <documentos>
+                    <default>
+                        <item id="2592">Guia de Recolhimento da União (GRU) paga, carta explicativa datada e assinada, documento a ser averbado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2990" tipo="web-acompanhar">
+                            <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
+
+Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
