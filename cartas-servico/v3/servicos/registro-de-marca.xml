@@ -16,11 +16,7 @@ www.inpi.gov.br</contato>
     <solicitantes>
         <solicitante id="914">
             <tipo>Pessoa física e jurídica.</tipo>
-            <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://marcas.inpi.gov.br/emarcas/</requisitos>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -39,7 +35,7 @@ www.inpi.gov.br</contato>
             <descricao>O primeiro passo para apresentar um pedido de registro ou uma petição de marca é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
             <documentos>
                 <default>
-                    <item id="2527">GRU paga, CPF ou CNPJ</item>
+                    <item id="2527">CPF ou CNPJ</item>
                 </default>
             </documentos>
             <custos>
@@ -47,7 +43,45 @@ www.inpi.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2942" tipo="web-acompanhar">
+                    <canal-de-prestacao id="2942" tipo="web-preencher">
+                        <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2340">
+            <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+            <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2984" tipo="web-emitir">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2341">
+            <titulo>Preenchimento do formulário online no sistema e-Marcas</titulo>
+            <descricao>O sistema está disponível no site do INPI, neste link: https://marcas.inpi.gov.br/emarcas/
+
+O usuário deve preencher com os dados do titular, assim como informações sobre o tipo de marca que deseja solicitar.</descricao>
+            <documentos>
+                <default>
+                    <item id="2589">CPF ou CNPJ, nome da marca, imagem da marca (se for o caso)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2983" tipo="web-consultar">
                         <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
 
 Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
