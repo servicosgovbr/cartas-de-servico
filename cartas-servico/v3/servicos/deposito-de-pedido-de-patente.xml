@@ -16,11 +16,7 @@ Site: www.inpi.gov.br</contato>
     <solicitantes>
         <solicitante id="916">
             <tipo>Pessoas físicas ou jurídicas</tipo>
-            <requisitos>- Inscrição no e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi
-
-- Emissão e pagamento da Guia de Recolhimento da União (GRU): https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp
-
-- Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/</requisitos>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -39,7 +35,7 @@ Site: www.inpi.gov.br</contato>
             <descricao>O primeiro passo para depositar o pedido de patente é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
             <documentos>
                 <default>
-                    <item id="2541">relatório descritivo, quadro reivindicatório, listagem de sequências (para pedido da área biotecnológica), desenhos (se for o caso) e resumo</item>
+                    <item id="2541">CPF ou CNPJ</item>
                 </default>
             </documentos>
             <custos>
@@ -47,7 +43,43 @@ Site: www.inpi.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2948" tipo="web-acompanhar">
+                    <canal-de-prestacao id="2948" tipo="web-inscrever-se">
+                        <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2344">
+            <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
+            <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2987" tipo="web-emitir">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2345">
+            <titulo>Preenchimento do formulário online</titulo>
+            <descricao>O usuário deve preencher o formulário online no sistema Peticionamento Eletrônico, disponível no portal do INPI: https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+            <documentos>
+                <default>
+                    <item id="2591">Relatório descritivo, quadro reivindicatório, listagem de sequências (para pedido da área biotecnológica), desenhos (se for o caso) e resumo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2988" tipo="web-acompanhar">
                         <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
 
 Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
