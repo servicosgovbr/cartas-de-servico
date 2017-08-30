@@ -123,11 +123,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -8906,6 +8906,65 @@ Há duas formas de solicitar o BPC: a pessoa pode agendar o atendimento diretame
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>gerar-codigo-de-acesso-ao-portal-do-simples-nacional</id>
+        <dbId>276</dbId>
+        <nome>Gerar Código de Acesso ao Portal do Simples Nacional.</nome>
+        <sigla></sigla>
+        <descricao>Gerar código de acesso para utilização no Portal do Simples Nacional.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="983">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1312">
+                <titulo>Gerar Código de Acesso ao Portal do Simples Nacional</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1621" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/controleAcesso/GeraCodigo.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1512">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2305">Portal do Simples</item>
+            <item id="2306">Simples Nacional</item>
+            <item id="2307">Código de Acesso</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="761">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>recuperar-recibo-regime-especial-de-apuracao-e-pagamento-da-contribuicao-para-o-pis-pasep-e-cofins-incidentes-sobre-combustiveis-e-bebidas</id>
         <dbId>184</dbId>
         <nome>Recuperar Recibo – Regime Especial de Apuração e Pagamento da Contribuição para o PIS/Pasep e Cofins
@@ -14313,6 +14372,66 @@ Telefone: (61) 2027-6000</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>validar-assinatura-digital</id>
+        <dbId>503</dbId>
+        <nome>Validar Assinatura Digital</nome>
+        <sigla></sigla>
+        <descricao>Validar assinatura de arquivo digital.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="987">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1628">
+                <titulo>Validar Assinatura Digital</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2025" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/Assinadoc/ValidadorAssinaturas.app/valida.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1876">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1877">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2317">Validar</item>
+            <item id="2318">Senha</item>
+            <item id="2319">Digital</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="765">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>consultar-eventos-turisticos-no-brasil</id>
         <dbId>533</dbId>
         <nome>Consultar eventos Turísticos no Brasil</nome>
@@ -14931,6 +15050,66 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         <areas-de-interesse>
             <item>Educação</item>
         </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>cadastrar-senha-para-matricula-cei</id>
+        <dbId>566</dbId>
+        <nome>Cadastrar Senha para Matrícula CEI</nome>
+        <sigla></sigla>
+        <descricao>Cadastrar senha para concessão de matrícula CEI – Cadastro Específico do INSS.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="986">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1709">
+                <titulo>Cadastrar Senha para Matrícula CEI</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2120" tipo="web">
+                            <descricao>http://www2.dataprev.gov.br/ceiweb/cadastrarSenhaIdentificador.view</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1988">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1989">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2314">Senha</item>
+            <item id="2315">Matrícula CEI</item>
+            <item id="2316">Cadastro</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="764">N/A</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>emissao-de-autorizacao-especial-de-transito</id>
@@ -32443,6 +32622,311 @@ Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
         </legislacoes>
     </servico>
     <servico>
+        <id>consultar-legislacao-tributaria-e-aduaneira</id>
+        <dbId>416</dbId>
+        <nome>Consultar Legislação Tributária e Aduaneira.</nome>
+        <sigla></sigla>
+        <descricao>Consultar legislação tributária e aduaneira.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="978">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1493">
+                <titulo>Consultar Legislação Tributária e Aduaneira</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1848" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/acesso-rapido/legislacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1728">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1729">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2289">Legislação</item>
+            <item id="2290">Tributária</item>
+            <item id="2291">Aduaneira</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="757">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>optar-pelo-sistema-de-informacoes-juridico-tributarias-sijut</id>
+        <dbId>170</dbId>
+        <nome>Optar pelo Sistema de Informações Jurídico-Tributárias - Sijut</nome>
+        <sigla></sigla>
+        <descricao>Optar pelo recebimento, na Caixa Postal do e-CAC, da legislação diária do Sijut - Sistema de Informações Jurídico-Tributárias.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="979">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1172">
+                <titulo>Optar pelo Sistema de Informações Jurídico-Tributárias - Sijut</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1434" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=05034</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1337">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2292">Sistema de Informações</item>
+            <item id="2293">Jurídico-Tributarias</item>
+            <item id="2294">Sijut</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="758">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-interpretacao-da-legislacao-tributaria</id>
+        <dbId>225</dbId>
+        <nome>Consultar Interpretação da Legislação Tributária.</nome>
+        <sigla></sigla>
+        <descricao>Formalizar processo de consulta sobre a legislação tributária e aduaneira</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="977">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1254">
+                <titulo>Consultar Interpretação da Legislação Tributária</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1542" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1444">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1445">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2286">Consultar Interpretação</item>
+            <item id="2287">Legislação</item>
+            <item id="2288">Tributária</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="756">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>gerar-codigo-de-acesso-parcelamento-mp-303-paex-e-timemania</id>
+        <dbId>595</dbId>
+        <nome>Gerar Código de Acesso - Parcelamento MP 303 (Paex) e Timemania</nome>
+        <sigla></sigla>
+        <descricao>Gerar código de acesso para acompanhar o pedido de parcelamento da MP 303 (Paex) e Timemania.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="982">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1750">
+                <titulo>Gerar Código de Acesso - Parcelamento MP 303 (Paex) e Timemania</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2175" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATSPO/PAEX/PaexAdesao/PaexCodigoAcesso/PaexCodigoAcesso_P1.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2038">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2039">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2301">Código de Acesso</item>
+            <item id="2302">MP 303</item>
+            <item id="2303">Paex</item>
+            <item id="2304">Timemania</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="760">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-consultar-cancelar-procuracao-e-cac-eletronica</id>
+        <dbId>366</dbId>
+        <nome>Cadastrar|Consultar|Cancelar Procuração e-CAC Eletrônica</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="715">Procuração Eletrônica</item>
+        </nomes-populares>
+        <descricao>Cadastrar, consultar ou cancelar procuração eletrônica, que delega a terceiro,  a realização de serviços dentro do portal e-CAC. Outorgante e terceiro devem possuir certificado digital para constituir a procuração eletrônica.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="988">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1478">
+                <titulo>Cadastrar|Consultar|Cancelar Procuração e-CAC Eletrônica</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1826" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=05020</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1712">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1713">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2320">Procuração Eletrônica</item>
+            <item id="2321">Consultar</item>
+            <item id="2322">Cadastrar</item>
+            <item id="2323">Cancelar</item>
+            <item id="2324">e-cac</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="766">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=16044&amp;visao=anotado</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>consultar-classificacao-fiscal-de-mercadorias</id>
         <dbId>906</dbId>
         <nome>Consultar Classificação Fiscal de Mercadorias</nome>
@@ -32500,6 +32984,135 @@ Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
         </palavras-chave>
         <legislacoes>
             <item id="759">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-ou-alterar-senha-de-auto-atendimento-previdenciario</id>
+        <dbId>361</dbId>
+        <nome>Cadastrar ou Alterar Senha de Auto Atendimento Previdenciário</nome>
+        <sigla></sigla>
+        <descricao>Cadastrar e alterar senha que permite, por meio da internet, consultar dados básicos do cadastro e extrato de contribuições.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="984">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Sem validade</tipo>
+            <quantidade>0</quantidade>
+            <unidade></unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1534">
+                <titulo>Cadastrar ou Alterar Senha de Auto Atendimento Previdenciário</titulo>
+                <descricao>Documentação necessária:
+a) Solicitação de Senha Eletrônica devidamente preenchida e assinada pelo contribuinte ou seu representante legal; 
+b) Documento de Identificação oficial (cópia autenticada ou original) do contribuinte e do seu representante legal, se for o caso, sendo dispensado quando houver reconhecimento de firma no formulário; 
+c) Procuração com poderes específicos (cópia autenticada ou original), se for o caso.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1907" tipo="web">
+                            <descricao>http://www2.dataprev.gov.br/pls/pradar/pkg_baixa_empr_Senha.pr_BewSenha?wOndeVeio=1</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3020" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1776">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1777">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2308">Cadastro de Senha</item>
+            <item id="2309">Auto Atendimento</item>
+            <item id="2310">Previdenciário</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="762">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15937</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>gerar-codigo-de-acesso-ao-portal-e-cac</id>
+        <dbId>191</dbId>
+        <nome>Gerar Código de Acesso ao Portal e-CAC</nome>
+        <sigla></sigla>
+        <descricao>Gerar código de acesso para utilização de serviços dentro do portal e-CAC. O código somente poderá ser gerado para pessoas físicas ou pessoas jurídicas optantes pelo Simples Nacional.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="985">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1205">
+                <titulo>Gerar Código de Acesso ao Portal e-CAC</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1473" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/interface/atendimento-virtual/geracao-do-codigo-de-acesso-para-o-portal-e-cac</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1378">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1379">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2311">Código de Acesso</item>
+            <item id="2312">Portal e-cac</item>
+            <item id="2313">Gerar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="763">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=16044&amp;visao=anotado</item>
         </legislacoes>
     </servico>
 </servicos>
