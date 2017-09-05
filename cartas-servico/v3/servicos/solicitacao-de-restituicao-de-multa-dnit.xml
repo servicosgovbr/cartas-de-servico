@@ -1,30 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Solicitação de restituição de Multa DNIT]]></nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitacao-de-restituicao-de-multa-dnit</id>
+    <dbId>911</dbId>
+    <nome>Solicitação de restituição de Multa DNIT</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Devolução de Valores de Multa</item>
+        <item id="720">Devolução de Valores de Multa</item>
     </nomes-populares>
-    <descricao><![CDATA[Caso haja a duplicidade no pagamento de uma multa de trânsito, pagamento de valor maior, ou calcelamento de auto de infração, o condutor pode solicitar a restituição ao DNIT.]]></descricao>
-    <contato><![CDATA[0800 611 535]]></contato>
+    <descricao>Caso haja a duplicidade no pagamento de uma multa de trânsito, pagamento de valor maior, ou calcelamento de auto de infração, o condutor pode solicitar a restituição ao DNIT.</descricao>
+    <contato>0800 611 535</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="997">
             <tipo>Pessoa que tenha sido multada</tipo>
-            <requisitos><![CDATA[Se enquadrar em alguma das condições que propiciam interposição de solicitação de reembolso.]]></requisitos>
+            <requisitos>Se enquadrar em alguma das condições que propiciam interposição de solicitação de reembolso.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="1" unidade="minutos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="2374">
             <titulo>Preencher formulário de restituição</titulo>
-            <descricao><![CDATA[Redigir o motivo da solicitação de restituição em formulário disponibilizado pelo DNIT.]]></descricao>
+            <descricao>Redigir o motivo da solicitação de restituição em formulário disponibilizado pelo DNIT.</descricao>
             <documentos>
                 <default>
-                    <item>Formulário disponibilizado no site do DNIT</item>
+                    <item id="2629">Formulário disponibilizado no site do DNIT</item>
                 </default>
             </documentos>
             <custos>
@@ -32,51 +38,41 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit]]></descricao>
+                    <canal-de-prestacao id="3031" tipo="web">
+                        <descricao>http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="2375">
             <titulo>Juntar documentação</titulo>
-            <descricao><![CDATA[O condutor deve juntar toda documentação solicitada no formulário da etapa anterior.]]></descricao>
+            <descricao>O condutor deve juntar toda documentação solicitada no formulário da etapa anterior.</descricao>
             <documentos>
                 <default>
-                    <item>Todos os comprovantes legíveis e autenticados referentes ao pagamento</item>
-                    <item>Requerimento corretamente preenchido, datado e com assinatura original</item>
-                    <item>Cópia legível dos Documentos de Identificação (CNH; RG; Carteira de Órgãos de Classe etc.) e do veículo (frente e verso);</item>
-                    <item>Cópia da Notificação de Autuação/Penalidade</item>
-                    <item>Outros documentos que considerar necessários para fundamentar as razões do pedido</item>
+                    <item id="2630">Todos os comprovantes legíveis e autenticados referentes ao pagamento</item>
+                    <item id="2631">Requerimento corretamente preenchido, datado e com assinatura original</item>
+                    <item id="2632">Cópia legível dos Documentos de Identificação (CNH; RG; Carteira de Órgãos de Classe etc.) e do veículo (frente e verso);</item>
+                    <item id="2633">Cópia da Notificação de Autuação/Penalidade</item>
+                    <item id="2634">Outros documentos que considerar necessários para fundamentar as razões do pedido</item>
                 </default>
-                <caso descricao="Solicitante que não é proprietário do veículo">
-                    <item>Anexar procuração com outorga de poderes plenos para representação</item>
-                </caso>
-                <caso descricao="Solicitante Pessoa Jurídica">
-                    <item>Cópia do Estatuto e/ou da última alteração de Contrato Social</item>
-                </caso>
-                <caso descricao="Restituição em conta não pertencente ao solicitante">
-                    <item>Autorização específica para o depósito em conta de terceiro</item>
-                    <item>Documentação do titular da conta</item>
-                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit]]></descricao>
+                    <canal-de-prestacao id="3032" tipo="web">
+                        <descricao>http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/multas-de-transito-aplicadas-pelo-dnit</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="2376">
             <titulo>Enviar solicitação</titulo>
-            <descricao><![CDATA[Enviar via Correios a solicitação de restituição para o Departamento Nacional de Infraestrutura de Transportes - DNIT]]></descricao>
+            <descricao>Enviar via Correios a solicitação de restituição para o Departamento Nacional de Infraestrutura de Transportes - DNIT</descricao>
             <documentos>
                 <default>
-                    <item>Formulário preenchido e documentação da etapa 2</item>
+                    <item id="2635">Formulário preenchido e documentação da etapa 2</item>
                 </default>
             </documentos>
             <custos>
@@ -84,29 +80,31 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Departamento Nacional de Infraestrutura de Transportes - DNIT - S.A.N. Quadra 03, Bloco A, Edifício Núcleo dos Transportes –  3º Andar, Sala 3269 CEP: 70040-902 – Brasília/DF.]]></descricao>
+                    <canal-de-prestacao id="3033" tipo="postal">
+                        <descricao>Departamento Nacional de Infraestrutura de Transportes - DNIT - S.A.N. Quadra 03, Bloco A, Edifício Núcleo dos Transportes –  3º Andar, Sala 3269 CEP: 70040-902 – Brasília/DF.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844" dbId="23732">
+        <nomeOrgao>Departamento Nacional de Infraestrutura de Transportes (DNIT/MT)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Empresas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="2664">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2665">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2666">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transporte Rodoviário</item>
         <item>Transportes</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>DNIT</item>
-        <item>Restituição</item>
-        <item>Multa</item>
+        <item id="2334">DNIT</item>
+        <item id="2335">Restituição</item>
+        <item id="2336">Multa</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[CTB](http://www.planalto.gov.br/ccivil_03/leis/L9503Compilado.htm)]]></item>
+        <item id="770">[CTB](http://www.planalto.gov.br/ccivil_03/leis/L9503Compilado.htm)</item>
     </legislacoes>
 </servico>
