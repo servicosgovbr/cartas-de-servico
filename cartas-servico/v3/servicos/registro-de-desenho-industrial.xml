@@ -9,7 +9,8 @@
 
 Site: www.inpi.gov.br</contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="917">
             <tipo>Pessoa física e jurídica</tipo>
@@ -29,7 +30,9 @@ Site: www.inpi.gov.br</contato>
     <etapas>
         <etapa id="2318">
             <titulo>Inscrição no e-INPI</titulo>
-            <descricao>O primeiro passo para solicitar o registro de desenho industrial é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi</descricao>
+            <descricao>O primeiro passo para solicitar o registro de desenho industrial é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi.
+
+O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
             <documentos>
                 <default>
                     <item id="2542">CPF ou CNPJ</item>
@@ -41,7 +44,7 @@ Site: www.inpi.gov.br</contato>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2949" tipo="web-inscrever-se">
-                        <descricao>O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+                        <descricao>[Inscrever-se](http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -58,14 +61,19 @@ Site: www.inpi.gov.br</contato>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2985" tipo="web-emitir">
-                        <descricao></descricao>
+                        <descricao>[Emitir](https://gru.inpi.gov.br/pag)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="2343">
             <titulo>Preenchimento do formulário online</titulo>
-            <descricao>Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+            <descricao>Preenchimento do formulário online: https://gru.inpi.gov.br/peticionamentoeletronico/.
+
+
+O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
+
+Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
             <documentos>
                 <default>
                     <item id="2590">GRU paga, figuras e, se for o caso de pedido com variantes, relatório e reivindicações.</item>
@@ -77,15 +85,15 @@ Site: www.inpi.gov.br</contato>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2986" tipo="web-acompanhar">
-                        <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
-
-Adicionalmente, o status do processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
+                        <descricao>[Acompanhar](http://revistas.inpi.gov.br/rpi/)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="382"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2618">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2619">Empresas</item>
