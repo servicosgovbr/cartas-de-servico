@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>pagar-debitos-a-orgaos-federais</id>
+    <dbId>913</dbId>
+    <nome>Pagar Débitos a Órgãos Federais</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="721">PGF</item>
+    </nomes-populares>
+    <descricao>Pagamento de créditos (multas decorrentes do poder de polícia, taxas de serviço, taxas de uso, preço público,  ressarcimentos/indenizações em geral) à vista ou de forma parcelada, de créditos constituídos pelas Autarquias e Fundações Públicas Federais, em face dos usuários do serviço (potencialmente ou não) ou daqueles sujeitos a fiscalização e/ou regulação da atividade que executa.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="999">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1000">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1001">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1002">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2379">
+            <titulo>Pedir Parcelamento</titulo>
+            <descricao>Pedido e apresentação de documentos</descricao>
+            <documentos>
+                <default>
+                    <item id="2638">Carteira de identidade</item>
+                    <item id="2639">CNPJ</item>
+                    <item id="2640">Comprovante de endereço/residência</item>
+                    <item id="2641">Contrato Social</item>
+                    <item id="2642">CPF</item>
+                    <item id="2643">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3036" tipo="presencial">
+                        <descricao>sedes das PSF´s, PFs e PRFs</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3037" tipo="web">
+                        <descricao>os das PSF´s, PFs e PRFs</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3038" tipo="postal">
+                        <descricao>os das PSF´s, PFs e PRFs</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2380">
+            <titulo>Confirmar Pagamento</titulo>
+            <descricao>Tirar duvidas e confirmar pagamento</descricao>
+            <documentos>
+                <default>
+                    <item id="2644">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3039" tipo="presencial">
+                        <descricao>sede das PSFs, PF,s  e PRFs</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3040" tipo="web">
+                        <descricao>as páginas das PSFs, PFs  e PRFs</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3041" tipo="postal">
+                        <descricao>os das PSFs, PFs  e PRFs</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/46" dbId="822">
+        <nomeOrgao>Advocacia-Geral da União (AGU)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2668">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2669">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2670">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2671">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2343">Parcelamento</item>
+        <item id="2344">Dívida</item>
+        <item id="2345">Divida Ativa</item>
+        <item id="2346">Procuradoria-Geral Federal</item>
+        <item id="2347">Negociar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="773">-</item>
+    </legislacoes>
+</servico>
