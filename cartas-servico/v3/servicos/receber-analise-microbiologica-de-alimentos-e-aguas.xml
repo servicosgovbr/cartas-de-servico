@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-analise-microbiologica-de-alimentos-e-aguas</id>
+    <dbId>926</dbId>
+    <nome>Receber Análise microbiológica de alimentos e águas.</nome>
+    <sigla></sigla>
+    <descricao>Realiza análises microbiológicas  de:  contagem total de  microrganismos, coliformes totais e fecais, mofo e levedura e salmonela em alimentos e água. Os usuários são: Órgãos públicos da região, hospitais, maternidades, pessoas físicas e jurídicas, empresas de alimentos da região.  O usuário agenda o serviço, pega na Seção o vasilhame adequado e esterilizado para o tipo de água, e depois vem pegar o resultado; em caso de alimento, ele agenda e recebe orientações para trazer a amostra na sua própria embalagem.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1040">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1041">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1042">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1043">
+            <tipo>Órgãos da administração direta</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2422">
+            <titulo>Agendar a análises</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2733">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3100" tipo="presencial">
+                        <descricao>Laboratório de Microbiologia de Alimentos da Seção de Agro industrialização e Engenharia Agrícola do Centro de Pesquisas e Assistência Técnica e Extensão Rural da CEPLAC</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3101" tipo="telefone">
+                        <descricao>7332143230</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2423">
+            <titulo>Entregar a amostra para análise</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2734">Carteira de identidade</item>
+                    <item id="2735">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3102" tipo="presencial">
+                        <descricao>Laboratório de Microbiologia da Seção de Agroindustrialização e Engenharia Agrícola do Centro de Pesquisas Assistência Técnica e Extensão Rural da CEPLAC</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2424">
+            <titulo>Pagar a taxa e entrega de resultados e esclarecimentos necessários</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2736">Carteira de identidade</item>
+                    <item id="2737">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3103" tipo="presencial">
+                        <descricao>Pagamento na Seção de Finanças e a entrega de resultados no Laboratório de Microbiologia da Seção de Agroindustrialização e Engenharia Agrícola do Centro de Pesquisas Assistência Técnica e Extensão Rural da CEPLAC</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2700">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2701">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2702">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2423">Análises microbiológicas</item>
+        <item id="2424">contagem de microorganismos</item>
+        <item id="2425">coliformes totais</item>
+        <item id="2426">coliformes fecais</item>
+        <item id="2427">alimentos</item>
+        <item id="2428">salmonela</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="786">-</item>
+    </legislacoes>
+</servico>
