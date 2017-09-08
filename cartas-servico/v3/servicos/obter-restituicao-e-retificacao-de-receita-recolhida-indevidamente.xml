@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-restituicao-e-retificacao-de-receita-recolhida-indevidamente</id>
+    <dbId>914</dbId>
+    <nome>Obter restituição e retificação de receita recolhida indevidamente</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="722">Não</item>
+    </nomes-populares>
+    <descricao>Considera-se RESTITUIÇÃO de valor, a devolução realizada através de depósito em conta judicial, a devolução em conta bancária de particular ou o estorno parcial a órgão ou entidade da administração pública através do Sistema Integrado de Administração Financeira - SIAFI.
+
+Considera-se RETIFICAÇÃO de valor, a correção de dados da Guia de Recolhimento da União - GRU através do Sistema de Gestão do Recolhimento da União - SISGRU.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1003">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1004">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1005">
+            <tipo>Fundações e autarquias de direito público</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1006">
+            <tipo>Órgãos da administração direta</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2381">
+            <titulo>Fazer requisição</titulo>
+            <descricao>Entrega de requisição e documentos comprobatórios</descricao>
+            <documentos>
+                <default>
+                    <item id="2645">Carteira de identidade</item>
+                    <item id="2646">Comprovante de pagamento</item>
+                    <item id="2647">Contrato Social</item>
+                    <item id="2648">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3042" tipo="presencial">
+                        <descricao>Unidades da AGU</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3043" tipo="postal">
+                        <descricao>SIG Quadra 06, Lote 800, Ed. Sede II – Sala 202 – D – CEP 70610-460, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2382">
+            <titulo>Receber resultado</titulo>
+            <descricao>Comunicação sobre o atendimento ou deferimento da requisição</descricao>
+            <documentos>
+                <default>
+                    <item id="2649">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3044" tipo="web">
+                        <descricao>https://sapiens.agu.gov.br/login</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3045" tipo="postal">
+                        <descricao>SIG Quadra 06, Lote 800, Ed. Sede II – Sala 202 – D – CEP 70610-460, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/46" dbId="822">
+        <nomeOrgao>Advocacia-Geral da União (AGU)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2672">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2673">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2674">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2348">Restituição</item>
+        <item id="2349">Retificação</item>
+        <item id="2350">Cobrança errada</item>
+        <item id="2351">Cobrança indevida</item>
+        <item id="2352">GRU</item>
+        <item id="2353">SIAFI</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="774">-</item>
+    </legislacoes>
+</servico>
