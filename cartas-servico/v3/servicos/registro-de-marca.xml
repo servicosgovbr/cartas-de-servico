@@ -33,9 +33,7 @@ www.inpi.gov.br</contato>
     <etapas>
         <etapa id="2310">
             <titulo>Cadastro no e-INPI</titulo>
-            <descricao>O primeiro passo para apresentar um pedido de registro ou uma petição de marca é o cadastro no sistema e-INPI: http://www.inpi.gov.br/pedidos-em-etapas/faca-busca/cadastro-no-e-inpi.
-
-O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
+            <descricao>O primeiro passo para apresentar um pedido de registro ou uma petição de marca é o cadastro no sistema e-INPI. O procedimento é automático. Após inscrição, basta fazer o login no sistema.</descricao>
             <documentos>
                 <default>
                     <item id="2527">CPF ou CNPJ</item>
@@ -54,7 +52,7 @@ O procedimento é automático. Após inscrição, basta fazer o login no sistema
         </etapa>
         <etapa id="2340">
             <titulo>Emissão e pagamento da Guia de Recolhimento da União (GRU)</titulo>
-            <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI: https://gru.inpi.gov.br/e-inpi/internetCliente/Principal.jsp</descricao>
+            <descricao>Após cadastro no e-INPI, o usuário deve entrar no link da GRU, disponível no site do INPI. O usuário deve pagar a guia antes de entrar com o pedido e guardar o número do documento, que será necessário em etapas posteriores.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -70,14 +68,8 @@ O procedimento é automático. Após inscrição, basta fazer o login no sistema
             </canais-de-prestacao>
         </etapa>
         <etapa id="2341">
-            <titulo>Preenchimento do formulário online no sistema e-Marcas</titulo>
-            <descricao>O sistema está disponível no site do INPI: https://marcas.inpi.gov.br/emarcas/
-
-O usuário deve preencher os dados do titular, assim como informações sobre o tipo de marca que deseja solicitar.
-
-O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras: http://revistas.inpi.gov.br/rpi/
-
-Adicionalmente, o  processo pode ser verificado no sistema de busca na web.</descricao>
+            <titulo>Preenchimento do formulário on-line no sistema e-Marcas</titulo>
+            <descricao>O sistema e-Marcas está disponível no site do INPI. O usuário deve preencher os dados do titular, assim como informações sobre o tipo de marca que deseja solicitar.</descricao>
             <documentos>
                 <default>
                     <item id="2589">CPF ou CNPJ, nome da marca, imagem da marca (se for o caso)</item>
@@ -88,7 +80,26 @@ Adicionalmente, o  processo pode ser verificado no sistema de busca na web.</des
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2983" tipo="web-acompanhar">
+                    <canal-de-prestacao id="2983" tipo="web-preencher">
+                        <descricao>[Acompanhar](https://marcas.inpi.gov.br/emarcas/)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2405">
+            <titulo>Acompanhamento do processo</titulo>
+            <descricao>O processo passará por diferentes etapas, que poderão exigir do usuário o envio de documentos. Portanto, ele deve consultar a Revista da Propriedade Industrial (RPI) todas as terças-feiras.
+
+Adicionalmente, o  processo pode ser verificado no sistema de busca na web: https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3079" tipo="web-acompanhar">
                         <descricao>[Acompanhar](http://revistas.inpi.gov.br/rpi/)</descricao>
                     </canal-de-prestacao>
                 </default>
