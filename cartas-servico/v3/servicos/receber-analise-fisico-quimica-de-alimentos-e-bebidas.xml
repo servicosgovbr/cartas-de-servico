@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-analise-fisico-quimica-de-alimentos-e-bebidas</id>
+    <dbId>927</dbId>
+    <nome>Receber análise físico-química de alimentos e bebidas</nome>
+    <sigla></sigla>
+    <descricao>Realiza análise de pH, Acidez Total, Brix, Sólidos totais, Umidade, Lipídios, Pigmentos, Resíduo mineral fixo (cinzas), Fibras, Densidade, Cromatografia (açúcares, álcoois, ácidos, alcalóides e flavonóides, ocratoxina).</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1044">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1045">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1046">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2425">
+            <titulo>Agendar análises</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2738">CNPJ</item>
+                    <item id="2739">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3104" tipo="presencial">
+                        <descricao>Laboratório de análise Físico-Química /Seção SAGRE</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3105" tipo="telefone">
+                        <descricao>7332143230</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2426">
+            <titulo>Trazer amostra</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2740">CNPJ</item>
+                    <item id="2741">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3106" tipo="presencial">
+                        <descricao>Laboratório de análise  Físico-Química</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2427">
+            <titulo>Realizar o pagamento e receber o resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2742">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="99">
+                        <descricao>Taxa de Análise</descricao>
+                        <moeda>R$</moeda>
+                        <valor>12,000</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3107" tipo="presencial">
+                        <descricao>Laboratório de Análise Físico-Química</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2703">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2704">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2705">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2429">Análise</item>
+        <item id="2430">Análise físico-química</item>
+        <item id="2431">Alimentos</item>
+        <item id="2432">Bebidas</item>
+        <item id="2433">Análise de pH</item>
+        <item id="2434">Acidez Total</item>
+        <item id="2435">Brix</item>
+        <item id="2436">Sólidos totais</item>
+        <item id="2437">Umidade</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="787">-</item>
+    </legislacoes>
+</servico>
