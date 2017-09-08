@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-antecedentes-em-processo-correcional</id>
+    <dbId>920</dbId>
+    <nome>Obter certidão de antecedentes em processo correcional</nome>
+    <sigla></sigla>
+    <descricao>A partir de solicitação do interessado, a Corregedoria informa seus antecedentes no Sistema CGU-PAD (base de dados de processos disciplinares mantida pela CGU e alimentada pelos órgãos e entidades do Poder Executivo Federal). Ainda que a solicitação seja em meio digital (por exemplo, via e-mail), a informação é entregue presencialmente mediante comprovação de identidade ou apresentação de procuração.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1014">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1015">
+            <tipo>Órgãos da administração direta</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1016">
+            <tipo>agentes públicos federais</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2401">
+            <titulo>Solicitar os antecedentes</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2705">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3076" tipo="presencial">
+                        <descricao>Corregedoria-Geral da União</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2403">
+            <titulo>Receber certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2707">Carteira de identidade</item>
+                    <item id="2708">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3077" tipo="presencial">
+                        <descricao>Corregedoria-Geral da União</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/214460" dbId="37535">
+        <nomeOrgao>Ministério da Transparência Fiscalização e Controle (MTFC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2681">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2682">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2683">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Compras governamentais</item>
+        <item>Fiscalização do Estado</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2390">CGU-PAD</item>
+        <item id="2391">Cadastro em órgãos federais</item>
+        <item id="2392">Certidão Negativa de empresas</item>
+        <item id="2393">Cadastro Negativo de empresas</item>
+        <item id="2394">Certidão de Antecedentes</item>
+        <item id="2395">Poder Executivo</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="780">-</item>
+    </legislacoes>
+</servico>
