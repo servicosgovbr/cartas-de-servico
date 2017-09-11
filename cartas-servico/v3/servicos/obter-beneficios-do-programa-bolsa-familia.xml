@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-beneficios-do-programa-bolsa-familia</id>
+    <dbId>954</dbId>
+    <nome>Obter Benefícios do Programa Bolsa Família</nome>
+    <sigla>PBF</sigla>
+    <nomes-populares>
+        <item id="737">Bolsa Família</item>
+        <item id="738">Bolsa</item>
+    </nomes-populares>
+    <descricao>O Bolsa Família é um programa que contribui para o combate à pobreza, transferindo a cada mês uma quantia em dinheiro diretamente às famílias, que são acompanhadas nas áreas de saúde e educação. É feito o acompanhamento mês a mês da frequência escolar das crianças e adolescentes de 6 a 17 anos, com identificação de dificuldade de acesso à escola, o acompanhamento da vacinação, peso e altura das crianças com menos de 7 anos, e o pré-natal das gestantes e orientação às mulheres em fase de amamentação. É necessário cumprir esses compromissos para continuar recebendo o benefício.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1105">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos>Em situação de pobreza e extrema pobreza</requisitos>
+        </solicitante>
+        <solicitante id="1106">
+            <tipo>Estrangeiros</tipo>
+            <requisitos>Vivendo no Brasil e em situação de pobreza e extrema pobreza</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2486">
+            <titulo>Inscrever-se no Cadastro Único</titulo>
+            <descricao>Inscrição no Cadastro Único de Programas Sociais do Governo Federal. O cidadão deverá solicitar a sua inscrição no Cadastro Único, que é a porta de entrada unificada para todos os programas sociais do governo, e manter as informações de toda a sua família atualizadas.</descricao>
+            <documentos>
+                <default>
+                    <item id="2857">Carteira de identidade</item>
+                    <item id="2858">Carteira de trabalho</item>
+                    <item id="2859">Certidão de casamento</item>
+                    <item id="2860">Certidão de nascimento</item>
+                    <item id="2861">Comprovante de endereço/residência</item>
+                    <item id="2862">CPF</item>
+                    <item id="2863">Título de eleitor</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3179" tipo="presencial">
+                        <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único.
+http://aplicacoes.mds.gov.br/cadsuas/pesquisarConsultaExterna.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2487">
+            <titulo>Receber o Cartão do PBF</titulo>
+            <descricao>Entrega do cartão do PBF. Recebimento e ativação do cartão do PBF – o cidadão precisa desbloquear, cadastrar senha e ativar seu cartão em um ponto de pagamento de benefícios do PBF.</descricao>
+            <documentos>
+                <default>
+                    <item id="2864">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3180" tipo="postal">
+                        <descricao>O cartão do Bolsa é enviado via Correios. O novo beneficiário receberá uma carta do MDS, explicando o programa e informações sobre como desbloquear seu cartão para o saque do benefício mensal. 
+
+Ministério do Desenvolvimento Social (MDS) - Esplanada Dos Ministérios - s/n bl A, DF
+
+Secretaria Nacional de Renda de Cidadania (Senarc/MDSA)
+SMAS, Trecho 3, Quadra 2, Lote 1 – Ed. The Union – 70610-051 – Brasília – DF
+Deben: 2º andar
+Fone/Atendimento: 0800 707 2003 ; Gabinete/Senarc: (61) 2030-3619</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2488">
+            <titulo>Receber Benefício Financeiro</titulo>
+            <descricao>A família passará a receber mensalmente uma quantia de dinheiro que varia conforme a sua composição familiar e renda. O benefício básico atualmente é R$ 85,00, pago apenas a famílias extremamente pobres, e os benefícios variáveis são R$ 39,00, para crianças e adolescentes de 0 a 15 anos, gestantes e nutrizes e R$ 46,00, para adolescentes entre 16 e 17 anos. O limite de benefícios variáveis é de 5 por família. O cidadão tem no máximo 3 meses para sacar cada parcela do benefício.</descricao>
+            <documentos>
+                <default>
+                    <item id="2865">Carteira de identidade</item>
+                    <item id="2866">CPF</item>
+                    <item id="2867">Título de Eleitor, Cartão do Bolsa Família</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3181" tipo="presencial">
+                        <descricao>Canais de pagamento: agências bancárias da CAIXA; caixas eletrônicos da CAIXA; Casas lotéricas e CAIXA AQUI (estabelecimentos comercias credenciados pela CAIXA, tais como: padarias, mercados, etc.)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3182" tipo="telefone">
+                        <descricao>8007072003</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3183" tipo="web">
+                        <descricao>http://mds.gov.br/assuntos/bolsa-familia 
+https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3184" tipo="aplicativo-movel">
+                        <descricao>Aplicativo Bolsa Família da CAIXA – para consulta do benefício, localização de canal de pagamento mais próximo e calendário de pagamento.
+http://www.caixa.gov.br/atendimento/aplicativos/bolsa-familia/Paginas/default.aspx</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3185" tipo="postal">
+                        <descricao>Setor Responsável pelo Programa Bolsa Família ou CRAS de cada município. É possível localizar em:
+http://aplicacoes.mds.gov.br/cadsuas/pesquisarConsultaExterna.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2489">
+            <titulo>Passar por fiscalização de cumprimento das condicionalidades.</titulo>
+            <descricao>As famílias devem assumir e cumprir esses compromissos para continuar recebendo o benefício:
+
+* Educação: frequência escolar mensal mínima de 85% para beneficiários de 6 a 15 anos e de 75% para os de 16 e 17 anos beneficiários do Benefício Variável Vinculado ao Adolescente (BVJ);
+
+* Saúde: vacinação e acompanhamento nutricional (peso e altura) de crianças de até 7 anos e pré-natal de gestantes.</descricao>
+            <documentos>
+                <default>
+                    <item id="2868">Não há documentação obrigatória para apresentação de recurso</item>
+                    <item id="2869">Documentação comprobatória de frequência escolar (não obrigatório)</item>
+                    <item id="2870">Cartão de Vacina (não obrigatório)</item>
+                    <item id="2871">Relatórios da Área Social do Município (não obrigatório)</item>
+                    <item id="2872">Outros documentos que possam auxiliar a comprovação do alegado no recurso.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3186" tipo="presencial">
+                        <descricao>Para interposição de recurso: gestão municipal do PBF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3187" tipo="aplicativo-movel">
+                        <descricao>Para a visualização das mensagens de extrato: aplicativo Bolsa Família da CAIXA – para consulta do benefício, localização de canal de pagamento mais próximo e calendário de pagamento.
+http://www.caixa.gov.br/atendimento/aplicativos/bolsa-familia/Paginas/default.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2490">
+            <titulo>Manter o Cadastro Atualizado</titulo>
+            <descricao>Ir até o posto de atendimento e prestar informações ao entrevistador para atualizar os dados do Cadastro Único.</descricao>
+            <documentos>
+                <default>
+                    <item id="2873">CPF</item>
+                    <item id="2874">Registro em Cartório</item>
+                    <item id="2875">Título de eleitor</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3188" tipo="presencial">
+                        <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único
+É possível localizar em:
+http://aplicacoes.mds.gov.br/cadsuas/pesquisarConsultaExterna.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+        <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2752">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="2753">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Proteção Social</item>
+        <item>Cidadania</item>
+        <item>Educação</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2575">combate à pobreza</item>
+        <item id="2576">Bolsa Família</item>
+        <item id="2577">Auxílio Financeiro</item>
+        <item id="2578">Combate à Fome</item>
+        <item id="2579">MDS</item>
+        <item id="2580">Condicionalidades</item>
+        <item id="2581">Complementação de Renda</item>
+        <item id="2582">Transferência de Renda</item>
+        <item id="2583">Extrema pobreza</item>
+        <item id="2584">Pobreza</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="815">[Lei nº 10.836, de 9 de janeiro de 2004](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.836.htm)</item>
+    </legislacoes>
+</servico>
