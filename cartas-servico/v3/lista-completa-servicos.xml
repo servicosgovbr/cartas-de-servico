@@ -123,11 +123,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
+            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
+            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
-            <item>Segurança e Ordem Pública</item>
-            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -8960,6 +8960,69 @@ As séries podem ser consultadas individualmente, em grupos ou listas personaliz
         <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>consultar-processamento-perdcomp</id>
+        <dbId>180</dbId>
+        <nome>Consultar Processamento - PERDCOMP</nome>
+        <sigla></sigla>
+        <descricao>Consultar o detalhamento do processamento do PER/DCOMP - Pedido Eletrônico de Restituição ou Ressarcimento e da Declaração de Compensação.</descricao>
+        <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1156">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1186">
+                <titulo>Consultar Processamento - PER/DCOMP</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1451" tipo="web">
+                            <descricao>https://www32.receita.fazenda.gov.br/Aplicacoes/SSL/ATRCE/SCC/perdcomp/index.asp</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3292" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/82</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1354">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2792">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2702">Consultar</item>
+            <item id="2703">Processamento</item>
+            <item id="2704">PER/DCOMP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="843">N/A</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>solicitar-transferencia-de-pessoas-condenadas</id>
@@ -18737,131 +18800,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>cadastro-unico-para-programas-sociais-do-governo-federal</id>
-        <dbId>80</dbId>
-        <nome>Cadastro Único para Programas Sociais do Governo Federal</nome>
-        <sigla>CadÚnico</sigla>
-        <nomes-populares>
-            <item id="592">Cadastro Único</item>
-            <item id="593">CadÚnico</item>
-            <item id="484">Cadastro</item>
-        </nomes-populares>
-        <descricao>O Cadastro Único é um banco de dados que foi criado para o Governo Federal saber melhor quem são e como vivem as famílias brasileiras mais pobres. Para sua família ser beneficiada por programas como o Bolsa Família, a Tarifa Social de Energia Elétrica e o Telefone Popular, entre outros, ela deve estar inscrita no Cadastro Único, embora estar no Cadastro não significa a entrada automática nestes programas, pois cada um deles tem suas regras.
-O Cadastro deve ser atualizado a cada dois anos.</descricao>
-        <contato>Secretaria Nacional de Renda e Cidadania
-Telefone: (61) 2030-1939
-Endereço: Ed. The Union – SMAS – Setor de Múltiplas Atividades Sul – Trecho 3 – Lote 1 – Ao lado da Leroy Merlin - 2º Andar - Gabinete Senarc – CEP: 71215-300 – Brasília – DF</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="553">
-                <tipo>Famílias de Baixa Renda</tipo>
-                <requisitos>Famílias que tem renda mensal de até meio salário  por pessoa ou que ganhem até 3 salários mínimos de renda total por mês.
-
-É importante saber que, para o Cadastro Único, família é o grupo de pessoas que vivem juntas em uma mesma casa e que dividem o que ganham para custear suas despesas. Também são consideradas famílias pessoas que moram sozinhas.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="1" unidade="horas"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1754">
-                <titulo>Entrevista para inclusão no cadastro</titulo>
-                <descricao>O responsável familiar (RF) leva a documentação necessária e responde a entrevista que será feita por um funcionário da prefeitura. Esta entrevista pode ser com ou sem visita domiciliar. Ao final do atendimento, o RF deverá assinar um comprovante de prestação de informações.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1504">CPF do responsável pela família</item>
-                        <item id="2034">Título de eleitor do responsável pela família</item>
-                        <item id="2035">Documentos de identificaçãodentificação os outros membros da família (certidão de nascimento, certidão de casamento, CPF, RG, carteira de trabalho ou título de eleitor).</item>
-                    </default>
-                    <caso id="325" descricao="Família indígena">
-                        <documento>
-                            <id>2029</id>
-                            <descricao>Registro Administrativo de Nascimento Indígena (RANI)</descricao>
-                        </documento>
-                        <documento>
-                            <id>2030</id>
-                            <descricao>Outros documentos de identificação do responsável (como certidão de nascimento, certidão de casamento, RG e carteira de trabalho)</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="326" descricao="Família Quilombola">
-                        <documento>
-                            <id>2031</id>
-                            <descricao>Documentos de Identificação do responsável (certidão de nascimento, certidão de casamento, RG e carteira de trabalho)</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="327" descricao="Documentos não obrigatórios, mas que auxiliam no cadastro">
-                        <documento>
-                            <id>2032</id>
-                            <descricao>Comprovante de endereço, de preferência a conta de luz;</descricao>
-                        </documento>
-                        <documento>
-                            <id>2033</id>
-                            <descricao>Comprovante de matrícula escolar das crianças e jovens até 17 anos (caso não tenha o comprovante, levar o nome da escola de cada criança ou jovem)</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2179" tipo="presencial">
-                            <descricao>Para se inscrever no Cadastro Único você deve procurar o Centro de Referência da Assistência Social - CRAS ou a Prefeitura do seu município [Consulte aqui o endereço da sua cidade](http://aplicacoes.mds.gov.br/cadsuas/pesquisarConsultaExterna.html)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2044">
-                <titulo>Atribuição do NIS à família.</titulo>
-                <descricao>Inserção dos dados no sistema de cadastramento.  Após a entrevista, um servidor da prefeitura deve inserir os dados coletados na entrevista no sistema de cadastramento. A entrevista também pode ser feita diretamente no sistema. Somente após a inserção dos dados no sistema e a atribuição de NIS a família está, de fato, cadastrada.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2537" tipo="presencial">
-                            <descricao>Mesmo local da etapa anterior</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2045">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Assistência à Criança e ao Adolescente</item>
-            <item>Assistência ao Idoso</item>
-            <item>Assistência ao Portador de Deficiência</item>
-            <item>Atendimento básico</item>
-            <item>Cidadania</item>
-            <item>Combate a desigualdade</item>
-            <item>Educação</item>
-            <item>Educação básica</item>
-            <item>Educação profissionalizante</item>
-            <item>Proteção Social</item>
-            <item>Proteção e Benefícios ao Trabalhador</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1760">NIS</item>
-            <item id="1404">CRAS</item>
-            <item id="1405">Programas Sociais</item>
-            <item id="1406">Bolsa</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="577">[LEI Nº 12.212, DE 20 DE JANEIRO DE 2010](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12212.htm)</item>
-            <item id="414">[DECRETO Nº 6.135, DE 26 DE JUNHO DE 2007](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6135.htm);</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>conduzir-revisao-de-restituicao-de-direito-antidumping</id>
         <dbId>763</dbId>
         <nome>Conduzir revisão de restituição de direito antidumping</nome>
@@ -21512,130 +21450,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
         </palavras-chave>
         <legislacoes>
             <item id="608">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>obter-carta-de-aprovacao-no-ambito-do-mdl</id>
-        <dbId>956</dbId>
-        <nome>Obter Carta de Aprovação no âmbito do MDL</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="739">MDL</item>
-        </nomes-populares>
-        <descricao>A Comissão Interministerial de Mudança Global do Clima – CIMGC,  é a Autoridade Nacional Designada – AND, ponto focal, no Brasil, do Mecanismo de Desenvolvimento Limpo do Protocolo de Quioto. A Autoridade Nacional Designada deve atestar a participação voluntária dos participantes da atividade de projeto no âmbito do Mecanismo de Desenvolvimento Limpo - MDL, atestar que a atividade de projeto contribui para o desenvolvimento sustentável e, finalmente, emitir a Carta de Aprovação do projeto para os participantes nacionais de atividades de projeto MDL.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1115">
-                <tipo>Empresas privadas</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1116">
-                <tipo>Empresas públicas ou de economia mista</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1117">
-                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1118">
-                <tipo>Estados e municípios</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="60" max="90" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2493">
-                <titulo>Submeter Projeto</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2881">CNPJ</item>
-                        <item id="2882">Comprovante de endereço/residência</item>
-                        <item id="2883">Contrato Social</item>
-                        <item id="2884">Registro da Junta Comercial</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3194" tipo="postal">
-                            <descricao>A/C Comissão Interministerial de Mudança Global de Clima
-Ministério da Ciência, Tecnologia, Inovações e Comunicações
-Esplanada dos Ministérios, Bloco E, Sala 258
-CEP: 70.067-900</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2494">
-                <titulo>Pedir Revisões no Projeto (Opcional)</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2885">Documentos Complementares.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3195" tipo="postal">
-                            <descricao>Endereço do Proponente.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2495">
-                <titulo>Enviar documentos complementares</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2886">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3196" tipo="postal">
-                            <descricao>Ministério da Ciência, Tecnologia, Inovação e Comunicações</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
-            <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2755">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="2756">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2757">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Meio ambiente</item>
-            <item>Pesquisa e Desenvolvimento</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2610">Protocolo de Quioto</item>
-            <item id="2611">MDL</item>
-            <item id="2612">Mecanismo de Desenvolvimento Limpo</item>
-            <item id="2613">Carta de Aprovação</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="824">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -33168,6 +32982,135 @@ Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
         </legislacoes>
     </servico>
     <servico>
+        <id>atualizar-tabelas-perdcomp</id>
+        <dbId>508</dbId>
+        <nome>Atualizar Tabelas - PERDCOMP</nome>
+        <sigla></sigla>
+        <descricao>Acessar o arquivo para atualização das tabelas do PER/DCOMP.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1153">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1633">
+                <titulo>Atualizar Tabelas - PER/DCOMP</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2030" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp/atualizacao-das-tabelas</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1883">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1884">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2691">Atualizar Tabela</item>
+            <item id="2692">PER/DCOMP</item>
+            <item id="2693">Tabela</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="840">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-intimacao-perdcomp</id>
+        <dbId>206</dbId>
+        <nome>Consultar Intimação – PERDCOMP</nome>
+        <sigla></sigla>
+        <descricao>Consultar e imprimir intimação emitida eletronicamente referente ao PER/DCOMP - Pedido Eletrônico de Restituição ou Ressarcimento e da Declaração de Compensação.</descricao>
+        <contato>https://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp/termo-de-intimacao-perdcomp</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1158">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1227">
+                <titulo>Consultar Intimação – PER/DCOMP</titulo>
+                <descricao>Documentação Necessária:
+a) Solicitação de Pesquisa de Situação Fiscal e Cadastral preenchida e assinada pelo responsável ou seu representante legal;
+b) Documento de Identificação oficial (cópia autenticada ou original) do contribuinte e do seu representante legal, se for o caso, sendo dispensado quando houver reconhecimento de firma no formulário;
+c) Procuração (cópia autenticada ou original), se for o caso.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1511" tipo="web">
+                            <descricao>https://www32.receita.fazenda.gov.br/Aplicacoes/SSL/ATRCE/SCC/intimacao/index.asp</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3293" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3294" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/5106</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1407">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1408">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2708">Consultar</item>
+            <item id="2709">Intimação</item>
+            <item id="2710">PER/DCOMP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="845">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-cessao-de-areas-naturais-para-a-realizacao-de-estudos-ambientais</id>
         <dbId>960</dbId>
         <nome>Obter cessão de áreas naturais para a realização de estudos ambientais</nome>
@@ -33400,6 +33343,130 @@ Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-carta-de-aprovacao-no-ambito-do-mdl</id>
+        <dbId>956</dbId>
+        <nome>Obter Carta de Aprovação no âmbito do MDL</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="739">MDL</item>
+        </nomes-populares>
+        <descricao>A Comissão Interministerial de Mudança Global do Clima – CIMGC,  é a Autoridade Nacional Designada – AND, ponto focal, no Brasil, do Mecanismo de Desenvolvimento Limpo do Protocolo de Quioto. A Autoridade Nacional Designada deve atestar a participação voluntária dos participantes da atividade de projeto no âmbito do Mecanismo de Desenvolvimento Limpo - MDL, atestar que a atividade de projeto contribui para o desenvolvimento sustentável e, finalmente, emitir a Carta de Aprovação do projeto para os participantes nacionais de atividades de projeto MDL.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1115">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1116">
+                <tipo>Empresas públicas ou de economia mista</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1117">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1118">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2493">
+                <titulo>Submeter Projeto</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="2881">CNPJ</item>
+                        <item id="2882">Comprovante de endereço/residência</item>
+                        <item id="2883">Contrato Social</item>
+                        <item id="2884">Registro da Junta Comercial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3194" tipo="postal">
+                            <descricao>A/C Comissão Interministerial de Mudança Global de Clima
+Ministério da Ciência, Tecnologia, Inovações e Comunicações
+Esplanada dos Ministérios, Bloco E, Sala 258
+CEP: 70.067-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2494">
+                <titulo>Pedir Revisões no Projeto (Opcional)</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="2885">Documentos Complementares.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3195" tipo="postal">
+                            <descricao>Endereço do Proponente.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2495">
+                <titulo>Enviar documentos complementares</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="2886">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3196" tipo="postal">
+                            <descricao>Ministério da Ciência, Tecnologia, Inovação e Comunicações</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+            <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2755">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2756">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2757">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Meio ambiente</item>
+            <item>Pesquisa e Desenvolvimento</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2610">Protocolo de Quioto</item>
+            <item id="2611">MDL</item>
+            <item id="2612">Mecanismo de Desenvolvimento Limpo</item>
+            <item id="2613">Carta de Aprovação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="836">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>consultar-legislacao-tributaria-e-aduaneira</id>
         <dbId>416</dbId>
         <nome>Consultar Legislação Tributária e Aduaneira.</nome>
@@ -33516,6 +33583,212 @@ Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
         </palavras-chave>
         <legislacoes>
             <item id="758">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>programa-perdcomp-e-receitanet</id>
+        <dbId>327</dbId>
+        <nome>Programa PERDCOMP e Receitanet</nome>
+        <sigla></sigla>
+        <descricao>Acessar o programa gerador da declaração - PGD para download.</descricao>
+        <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1157">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1369">
+                <titulo>Acessar Programa PER/DCOMP e Receitanet</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1690" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp/download</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1588">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1589">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2705">Receitanet</item>
+            <item id="2706">Acessar Programa</item>
+            <item id="2707">PER/DCOMP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="844">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-dados-do-imovel-rural-cafir</id>
+        <dbId>970</dbId>
+        <nome>Consultar Dados do Imóvel Rural - CAFIR</nome>
+        <sigla></sigla>
+        <descricao>Emitir o Comprovante completo  de Inscrição e de Situação Cadastral  do imóvel rural no Cafir – Cadastro de Imóveis Rurais</descricao>
+        <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1154">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2547">
+                <titulo>Consultar Dados do Imóvel - CAFIR</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3288" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/coletor-web</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2788">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2789">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2694">CAFIR</item>
+            <item id="2695">Cadastro</item>
+            <item id="2696">Imóvel</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="841">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=52681</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-de-forma-gratuita-sementes-destinadas-a-agricultura-familiar</id>
+        <dbId>973</dbId>
+        <nome>Receber de forma gratuita sementes destinadas à agricultura familiar.</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="756">PAA Sementes</item>
+        </nomes-populares>
+        <descricao>Através desta modalidade o PAA pode comprar sementes de organizações da agricultura familiar detentoras da Declaração de Aptidão ao Pronaf – DAP Jurídica, e destinar tais sementes a agricultores familiares detentores de DAP Pessoa Física, conforme demanda de órgãos parceiros.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1161">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2556">
+                <titulo>Demandar sementes</titulo>
+                <descricao>Apresentação da demanda ao Órgão Demandante</descricao>
+                <documentos>
+                    <default>
+                        <item id="3014">Demanda por sementes (tipo de semente, quantidade, município de entrega, período de plantio)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3300" tipo="presencial">
+                            <descricao>Órgãos Demandantes: Secretaria Especial de Agricultura Familiar e Desenvolvimento Agrário (SEAD) inclusive em suas Delegacias Federais; Instituto Nacional de Colonização e Reforma Agrária (INCRA), inclusive em suas Superintendências Regionais; Fundação Nacional do Índio (FUNAI); Fundação Cultural Palmares (FCP); Instituto Chico Mendes (ICMBio); Governos estaduais.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2557">
+                <titulo>Receber sementes</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3015">Declaração de Aptidão ao Pronaf – DAP Pessoa Física válida</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3301" tipo="presencial">
+                            <descricao>Local acordado com órgão demandante para o recebimento das sementes.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2794">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2795">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2718">Pronaf</item>
+            <item id="2719">sementes</item>
+            <item id="2720">PAA</item>
+            <item id="2721">agricultura familiar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="848">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -33824,6 +34097,182 @@ Brasil</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="830">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-kit-de-equipamentos-de-exibicao-audiovisual</id>
+        <dbId>967</dbId>
+        <nome>Obter Kit de equipamentos de exibição audiovisual.</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="752">Cine Mais Cultura - C+C</item>
+        </nomes-populares>
+        <descricao>O Cine Mais Cultura tem como objetivo fomentar o acesso a equipamentos de exibição audiovisual, por meio da organização de uma rede de cineclubes que oportunizem o desenvolvimento local, o empoderamento de grupos exibidores no campo do audiovisual e o fortalecimento da exibição do cinema brasileiro. Os cineclubes são práticas audiovisuais não comerciais. O serviço é prestado por meio da disponibilização de kits de equipamentos de exibição para organizações não governamentais, Estados, Municípios, Universidades ou Institutos Federais ou outros entes públicos.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1144">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1145">
+                <tipo>Fundações e autarquias de direito público</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1146">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="90" max="120" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2540">
+                <titulo>Declarar interesse</titulo>
+                <descricao>Manifestação de Interesse do órgão/entidade.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2970">Não se aplica</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3272" tipo="presencial">
+                            <descricao>Esplanada dos Ministérios, Bloco B, 2º andar. CEP: 70068-900 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3273" tipo="telefone">
+                            <descricao>6120242962</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3274" tipo="e-mail">
+                            <descricao>audiovisual@cultura.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2541">
+                <titulo>Enviar documentação</titulo>
+                <descricao>Envio de documentos para compor o processo. Os documentos variam de acordo com o instrumento de pactuação (Edital, Convênio, TED etc.).</descricao>
+                <documentos>
+                    <default>
+                        <item id="2971">Certidões da Receita Federal</item>
+                        <item id="2972">Documentos variarão dependendo do instrumento de pactuação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3275" tipo="presencial">
+                            <descricao>Edifício Sede
+Esplanada dos Ministérios, Bloco B, 2º andar.
+CEP: 70068-900 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3276" tipo="telefone">
+                            <descricao>6120242962</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3277" tipo="web">
+                            <descricao>http://sistemas.cultura.gov.br/propostaweb/ (em caso de editais)
+www.convenios.gov.br (em caso de convênios)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3278" tipo="e-mail">
+                            <descricao>concurso.sav@cultura.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3279" tipo="postal">
+                            <descricao>Edifício Sede
+Esplanada dos Ministérios, Bloco B, 2º andar.
+CEP: 70068-900 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2542">
+                <titulo>Assinar termo</titulo>
+                <descricao>Assinatura do Termo. O termo variará conforme o instrumento de pactuação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2973">Termo de Convênio / Termo de Execução Descentralizada / Termo de Cessão de Equipamentos</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="105">
+                            <descricao>Contrapartida (apenas em caso de convênio) - Valor variável</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3280" tipo="presencial">
+                            <descricao>Edifício Sede
+Esplanada dos Ministérios, Bloco B, 2º andar.
+CEP: 70068-900 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3281" tipo="web">
+                            <descricao>www.convenios.gov.br (em caso de convênio) ou http://sei.cultura.gov.br/ - Sistema Eletrônico de Informações (SEI) (em caso de termo de cessão)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3282" tipo="e-mail">
+                            <descricao>audiovisual@cultura.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3283" tipo="postal">
+                            <descricao>Edifício Sede
+Esplanada dos Ministérios, Bloco B, 2º andar
+CEP: 70068-900 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2543">
+                <titulo>Estabelecer o Cine Mais Cultura</titulo>
+                <descricao>Implantação do Cine Mais Cultura.Esta etapa variará de acordo com o instrumento de pactuação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2974">Certidões da Receita Federal</item>
+                        <item id="2975">Termo de Cessão.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3284" tipo="presencial">
+                            <descricao>CTAv
+Av. Brasil, 2482, Benfica. Rio de Janeiro, RJ</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1926" dbId="37526">
+            <nomeOrgao>Ministério da Cultura (MinC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2781">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2782">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cultura</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2678">cineclube</item>
+            <item id="2679">audiovisual</item>
+            <item id="2680">cinema brasileiro</item>
+            <item id="2681">kit de equipamentos</item>
+            <item id="2682">sala de exibição</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="837">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -34405,6 +34854,275 @@ Pesquisa e acesso a filmes brasileiros para pesquisa e projetos acadêmicos.</de
         </legislacoes>
     </servico>
     <servico>
+        <id>realizar-venda-direta-ao-poder-publico-de-alimentos-provenientes-de-agricultura-familiar</id>
+        <dbId>971</dbId>
+        <nome>Realizar venda direta ao poder público de alimentos provenientes de agricultura familiar</nome>
+        <sigla>PAA</sigla>
+        <nomes-populares>
+            <item id="754">Programa de Aquisição de Alimentos</item>
+        </nomes-populares>
+        <descricao>O Programa de Aquisição de Alimentos-PAA, modalidade Compra com Doação Simultânea – executado via Termo de Adesão com estados e municípios – é um programa por meio do qual o Governo Federal compra alimentos de agricultores familiares e os destina gratuitamente às pessoas em situação de insegurança alimentar e nutricional atendidas pela rede socioassistencial e pelos equipamentos públicos de alimentação e nutrição, como os restaurantes populares, bancos de alimentos e cozinhas comunitárias.
+Neste caso, o Estado/Município aderido ao PAA executa as etapas do Programa conforme pactuação com o MDS. Os recursos são depositados diretamente na conta do agricultor fornecedor, que pode sacar os valores utilizando cartão bancário próprio do PAA.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1155">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2548">
+                <titulo>Cadastrar-se</titulo>
+                <descricao>Apresentação de documentos para cadastramento</descricao>
+                <documentos>
+                    <default>
+                        <item id="2988">Carteira de identidade</item>
+                        <item id="2989">Comprovante de endereço/residência</item>
+                        <item id="2990">CPF</item>
+                        <item id="2991">NIT / PIS / PASEP</item>
+                        <item id="2992">Declaração de Aptidão ao Pronaf – DAP Pessoa Física válida</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3289" tipo="presencial">
+                            <descricao>Secretaria responsável pelo Programa no Município/ Estado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2549">
+                <titulo>Entregar alimentos</titulo>
+                <descricao>Entrega dos alimentos produzidos pelo agricultor na Central de Distribuição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2993">Carteira de identidade</item>
+                        <item id="2994">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3290" tipo="presencial">
+                            <descricao>Central de Distribuição de Alimentos, local definido pela Prefeitura Municipal</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2550">
+                <titulo>Receber pagamento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="2995">Carteira de identidade</item>
+                        <item id="2996">Cartão Bancário próprio do PAA</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3291" tipo="presencial">
+                            <descricao>Agência do Banco do Brasil</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2790">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2791">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2697">alimentação</item>
+            <item id="2698">agricultura familiar</item>
+            <item id="2699">venda</item>
+            <item id="2700">MDS</item>
+            <item id="2701">PAA</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="842">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>vender-sementes-provenientes-da-agricultura-familiar-ao-poder-publico-via-associacoes-e-cooperativas</id>
+        <dbId>972</dbId>
+        <nome>Vender sementes provenientes da agricultura familiar ao poder público, via associações e cooperativas</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="755">PAA Sementes</item>
+        </nomes-populares>
+        <descricao>Através desta modalidade o PAA pode comprar sementes de organizações da agricultura familiar detentoras da Declaração de Aptidão ao Pronaf – DAP Jurídica, e destinar tais sementes a agricultores familiares, conforme demanda apresentada por órgãos parceiros.
+Os órgãos parceiros que podem demandar sementes ao PAA são: Secretaria Especial de Agricultura Familiar e Desenvolvimento Agrário (SEAD); Instituto Nacional de Colonização e Reforma Agrária (INCRA); Fundação Nacional do Índio (FUNAI); Fundação Cultural Palmares (FCP); Instituto Chico Mendes (ICMBio); e Governos Estaduais.
+Nesta modalidade, o MDS repassa recursos para CONAB e a Companhia fica responsável por comprar as sementes junto às Cooperativas e Associações da agricultura familiar.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1160">
+                <tipo>Associações e cooperativas de agricultura familiar</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2551">
+                <titulo>Apresentar proposta</titulo>
+                <descricao>Apresentação de proposta de venda.
+Obs: os modelos dos documentos estão disponíveis no sítio eletrônico da CONAB. [Manual Operativo – MOC Título 86](http://www.conab.gov.br/conabweb/moc.php)
+[Consultar Documentos](http://mds.gov.br/assuntos/seguranca-alimentar/programa-de-aquisicao-de-alimentos-paa/programa-de-aquisicao-de-alimentos/compra-com-doacao-simultanea/compra-com-doacao-simultanea-conab)</descricao>
+                <documentos>
+                    <default>
+                        <item id="2997">Proposta de Participação conforme modelo disponibilizado pela CONAB;</item>
+                        <item id="2998">Declaração de Aptidão ao Pronaf – DAP Jurídica</item>
+                        <item id="2999">CNPJ</item>
+                        <item id="3000">Termo de Compromisso de beneficiário fornecedor e da organização fornecedora</item>
+                        <item id="3001">Certidões negativas junto ao INSS, FGTS, Dívida trabalhista, Dívida ativa da União, Receita Federal, CADIN e CEIS</item>
+                        <item id="3002">Estatuto e ata de eleição e posse da atual diretoria da organização (cópia autenticada)</item>
+                        <item id="3003">Cópias autenticadas de RG e CPF dos representantes legais que assinam a Proposta.</item>
+                        <item id="3004">Inscrição da organização e da cultivar no Cadastro Nacional de Cultivares Crioulas (sementes crioulas)</item>
+                        <item id="3005">Inscrição da cultivar no Registro Nacional de Cultivares (Cultivares)</item>
+                        <item id="3006">Registro Nacional de Sementes e Mudas (RENASEM) (Cultivares)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3295" tipo="presencial">
+                            <descricao>Superintendências Regionais da CONAB</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2552">
+                <titulo>Assinar contrato</titulo>
+                <descricao>Contratação da proposta de venda apresentada pela organização.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3007">Contrato de Aquisição de Sementes da Agricultura Familiar assinado (modelo disponibilizado pela CONAB).</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3296" tipo="presencial">
+                            <descricao>Superintendências Regionais da CONAB</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2553">
+                <titulo>Entregar sementes</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3008">Nota Fiscal de venda à CONAB</item>
+                        <item id="3009">Relação de beneficiários fornecedores (modelo disponibilizado pela CONAB)</item>
+                        <item id="3010">Termo de conformidade e comprovação do valor de cultivo e uso (teste de pureza, germinação e vigor) das sementes a serem ofertadas, obtido em laboratório oficial de análise de sementes</item>
+                        <item id="3011">Resultado do teste de transgenia.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3297" tipo="presencial">
+                            <descricao>Conforme estabelecido no contrato</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2554">
+                <titulo>Receber pagamento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3012">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3298" tipo="telefone">
+                            <descricao>6133126000</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2555">
+                <titulo>Entregar declaração</titulo>
+                <descricao>Entrega da Declaração de composição de pagamentos</descricao>
+                <documentos>
+                    <default>
+                        <item id="3013">Declaração de composição de pagamentos da organização aos agricultores fornecedores (modelo disponibilizado pela CONAB)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3299" tipo="presencial">
+                            <descricao>Superintendência Regional da CONAB, onde o contrato foi firmado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2793">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2714">agricultura familiar</item>
+            <item id="2715">sementes</item>
+            <item id="2716">venda</item>
+            <item id="2717">Pronaf</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="847">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cadastrar-consultar-cancelar-procuracao-e-cac-eletronica</id>
         <dbId>366</dbId>
         <nome>Cadastrar|Consultar|Cancelar Procuração e-CAC Eletrônica</nome>
@@ -34954,6 +35672,66 @@ c) Procuração com poderes específicos (cópia autenticada ou original), se fo
         </palavras-chave>
         <legislacoes>
             <item id="763">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=16044&amp;visao=anotado</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-dados-do-imovel-rural-cnir</id>
+        <dbId>940</dbId>
+        <nome>Consultar Dados do Imóvel Rural - CNIR</nome>
+        <sigla></sigla>
+        <descricao>Consultar os dados do imóvel rural cadastrado no CNIR</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1070">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2451">
+                <titulo>Consultar Dados do Imóvel</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3140" tipo="web">
+                            <descricao>http://www.cadastrorural.gov.br/servicos</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2729">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2730">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2502">Consultar</item>
+            <item id="2503">CNIR</item>
+            <item id="2504">Dados do CNIR</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="800">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=67113</item>
         </legislacoes>
     </servico>
     <servico>
@@ -35690,66 +36468,6 @@ Adicionalmente, o status do processo pode ser verificado no sistema de busca na 
         </legislacoes>
     </servico>
     <servico>
-        <id>consultar-dados-do-imovel</id>
-        <dbId>940</dbId>
-        <nome>Consultar Dados do Imóvel</nome>
-        <sigla></sigla>
-        <descricao>Consultar os dados do imóvel rural cadastrado no CNIR</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1070">
-                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2451">
-                <titulo>Consultar Dados do Imóvel</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3140" tipo="web">
-                            <descricao>http://www.cadastrorural.gov.br/servicos</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
-            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2729">Empresas</item>
-            <item idSegmento="1" idServicoSegmento="2730">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2502">Consultar</item>
-            <item id="2503">CNIR</item>
-            <item id="2504">Dados do CNIR</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="800">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=67113</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>credenciar-se-no-sisbacen-pessoa-juridica</id>
         <dbId>916</dbId>
         <nome>Credenciar-se no SISBACEN - Pessoa Jurídica</nome>
@@ -36078,6 +36796,163 @@ Compreende: São Paulo.</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="777">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>alterar-dados-bancarios-restituicao-e-ressarcimento</id>
+        <dbId>422</dbId>
+        <nome>Alterar Dados Bancários - Restituição e Ressarcimento</nome>
+        <sigla></sigla>
+        <descricao>Alterar os dados bancários informados na solicitação de restituição ou ressarcimento, que foram identificados como inválidos pela rede bancária. Obs.: Para alteração de dados bancários para recebimento de restituição de Imposto sobre a Renda da Pessoa Física consulte orientações do “Perguntas e Respostas IRPF”, através da aba Onde encontro?.</descricao>
+        <contato>https://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/restituicao/irpf/alteracao-dados-bancarios-restituicao</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1152">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="20" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2546">
+                <titulo>Alterar Dados Bancários - Restituição e Ressarcimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3287" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/82</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2786">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2787">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2688">Alterar dados Bancários</item>
+            <item id="2689">Restituição</item>
+            <item id="2690">Ressarcimento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="839">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=84503</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>inscrever-se-no-cadastro-unico-para-programas-sociais-do-governo-federal</id>
+        <dbId>969</dbId>
+        <nome>Inscrever-se no Cadastro Único para Programas Sociais do Governo Federal</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="753">Cadastro Único, CadÚnico.</item>
+        </nomes-populares>
+        <descricao>O Cadastro Único é um registro criado para o Governo Federal saber melhor quem são e como vivem as famílias brasileiras mais pobres. Ao se inscrever ou atualizar os dados no Cadastro Único, uma família ou pessoa pode tentar participar de diferentes programas sociais, como o Bolsa Família, a Tarifa Social de Energia Elétrica, o Telefone Popular, entre outros. Mas é importante saber que estar no Cadastro Único não significa a entrada automática nestes programas, pois cada um deles tem suas regras. É obrigatória a atualização das informações a cada dois anos, mesmo que não haja mudança nas características das famílias.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1147">
+                <tipo>Cidadãos e Famílias de baixa renda</tipo>
+                <requisitos>Recebem até meio salário mínimo por pessoa ou que ganham até 3 salários mínimos de renda total por mês.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2544">
+                <titulo>Cadastrar informações</titulo>
+                <descricao>Ir até o posto de atendimento e prestar informações ao entrevistador.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2976">Carteira de identidade</item>
+                        <item id="2977">Carteira de trabalho</item>
+                        <item id="2978">Certidão de casamento</item>
+                        <item id="2979">Certidão de nascimento</item>
+                        <item id="2980">CPF</item>
+                        <item id="2981">Título de Eleitor</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3285" tipo="presencial">
+                            <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2545">
+                <titulo>Atualizar informações</titulo>
+                <descricao>Ir até o posto de atendimento e prestar informações ao entrevistador para atualizar os dados do Cadastro Único.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2982">Carteira de identidade</item>
+                        <item id="2983">Carteira de trabalho</item>
+                        <item id="2984">Certidão de casamento</item>
+                        <item id="2985">Certidão de nascimento</item>
+                        <item id="2986">CPF</item>
+                        <item id="2987">Título de Eleitor</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3286" tipo="presencial">
+                            <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2783">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2784">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2785">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2683">programas sociais</item>
+            <item id="2684">benefícios</item>
+            <item id="2685">renda</item>
+            <item id="2686">cadastro único</item>
+            <item id="2687">bolsa família</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="838">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -38114,6 +38989,66 @@ Lei nº 8.955/94 - Contrato de franquia empresarial</item>
         </palavras-chave>
         <legislacoes>
             <item id="793">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>autorregularizar-perdcomp-consultar-analise-preliminar</id>
+        <dbId>429</dbId>
+        <nome>Autorregularizar PERDCOMP – Consultar Análise Preliminar</nome>
+        <sigla></sigla>
+        <descricao>Consultar a análise preliminar do direito creditório decorrente da apresentação de PER/DCOMP retificador ou, sendo o caso e estiver no prazo legal, retificando outras informações, como DCTF, DIPJ, Dacon. Após o prazo previsto para a autorregularização, a análise do direito creditório será revista. Observação: Consulta acessível exclusivamente para contribuintes que receberam, em sua caixa postal no e-CAC (Centro Virtual de Atendimento ao contribuinte - no sítio da RFB) comunicado dessa análise preliminar, estando disponível durante o prazo informado na mensagem.</descricao>
+        <contato>https://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp/autorregularizacao</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1159">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1515">
+                <titulo>Autorregularizar PER/DCOMP – Consultar Análise Preliminar</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1885" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/82</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1749">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="1750">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2711">Autorregularização</item>
+            <item id="2712">Análise Preliminar</item>
+            <item id="2713">PER/DCOMP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="846">N/A</item>
         </legislacoes>
     </servico>
     <servico>
