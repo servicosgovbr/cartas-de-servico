@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-processamento-perdcomp</id>
+    <dbId>180</dbId>
+    <nome>Consultar Processamento - PERDCOMP</nome>
+    <sigla></sigla>
+    <descricao>Consultar o detalhamento do processamento do PER/DCOMP - Pedido Eletrônico de Restituição ou Ressarcimento e da Declaração de Compensação.</descricao>
+    <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/restituicao-ressarcimento-reembolso-e-compensacao/perdcomp</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1156">
+            <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="1186">
+            <titulo>Consultar Processamento - PER/DCOMP</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="1451" tipo="web">
+                        <descricao>https://www32.receita.fazenda.gov.br/Aplicacoes/SSL/ATRCE/SCC/perdcomp/index.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3292" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/82</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+        <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="1354">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2792">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2702">Consultar</item>
+        <item id="2703">Processamento</item>
+        <item id="2704">PER/DCOMP</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="843">N/A</item>
+    </legislacoes>
+</servico>
