@@ -123,11 +123,11 @@
             <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Normalização e Qualidade</item>
             <item>Planejamento</item>
-            <item>Segurança e Ordem Pública</item>
             <item>Transporte Rodoviário</item>
             <item>Urbanismo</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Normalização e Qualidade</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1380">Faixa de Domínio</item>
@@ -363,8 +363,8 @@ Após a conclusão da análise, o Cade decide pela aprovação, com restrições
         <areas-de-interesse>
             <item>Economia e Finanças</item>
             <item>Fiscalização do Estado</item>
-            <item>Serviços Públicos</item>
             <item>Sistema Financeiro</item>
+            <item>Serviços Públicos</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1438">Atos de Concentração</item>
@@ -4514,11 +4514,11 @@ d) Documentação que comprove a sua solicitação."</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>emitir-comprovante-de-inscricao-e-situacao-cadastral-no-cafir</id>
+        <id>emitir-comprovante-simplificado-de-inscricao-e-situacao-cadastral-no-cafir-imovel-rural</id>
         <dbId>237</dbId>
-        <nome>Emitir Comprovante de Inscrição e Situação Cadastral no Cafir</nome>
+        <nome>Emitir Comprovante Simplificado de Inscrição e Situação Cadastral no Cafir - Imóvel Rural</nome>
         <sigla></sigla>
-        <descricao>Emitir o Comprovante de Inscrição e de Situação Cadastral – Simplificado, do imóvel rural no Cafir – Cadastro de Imóveis Rurais</descricao>
+        <descricao>Emitir o Comprovante Simplificado de Inscrição e de Situação Cadastral do imóvel rural no Cafir – Cadastro de Imóveis Rurais</descricao>
         <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir</contato>
         <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
@@ -8331,6 +8331,68 @@ CEP 70064-901   Brasília/DF</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>declaracao-anual-do-microempreendedor-individual-consultar</id>
+        <dbId>102</dbId>
+        <nome>Declaração Anual do Microempreendedor Individual – Consultar</nome>
+        <sigla></sigla>
+        <descricao>Consultar as declarações anuais transmitidas do optante pelo MEI.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1193">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1084">
+                <titulo>Declaração Anual do Microempreendedor Individual – Consultar</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1329" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=8</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3353" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/5118</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1225">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2806">Declaração Anual</item>
+            <item id="2807">Microempreendedor Individual</item>
+            <item id="2808">SIMEI</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="869">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>declaracao-de-acidente-de-transito-dat-dprf</id>
         <dbId>117</dbId>
         <nome>Declaração de Acidente de Trânsito – DAT/ DPRF</nome>
@@ -11497,6 +11559,65 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>declaracao-anual-para-o-microempreendedor-individual-preencher</id>
+        <dbId>363</dbId>
+        <nome>Declaração Anual para o Microempreendedor Individual – Preencher</nome>
+        <sigla></sigla>
+        <descricao>Preencher a declaração anual para o microempreendedor individual – DASN SIMEI.</descricao>
+        <contato>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Perguntas/Perguntas.aspx</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1192">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1420">
+                <titulo>Declaração Anual para o Microempreendedor Individual – Preencher</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1757" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/DASNSIMEI.app/Default.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1642">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2803">DASN</item>
+            <item id="2804">SIMEI</item>
+            <item id="2805">Preenchimento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="868">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=36833</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>tv-escola</id>
         <dbId>403</dbId>
         <nome>TV Escola</nome>
@@ -13106,45 +13227,6 @@ O Valor Efetivo Total - VET - engloba a taxa de câmbio, as tarifas e os tributo
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>programa-de-aquisicao-de-alimentos-da-agricultura-familiar-paa</id>
-        <dbId>438</dbId>
-        <nome>Programa de Aquisição de Alimentos da agricultura familiar - PAA</nome>
-        <sigla></sigla>
-        <descricao>O Programa de Aquisição de Alimentos (PAA) é uma ação do Governo Federal que compra alimentos da agricultura familiar e distribui a pessoas que precisam - aquelas que se encontram em situação de insegurança alimentar e nutricional e são atendidas pela rede socioassistencial. Os alimentos também servem para abastecer os restaurantes populares, cozinhas de creches e escolas públicas, de hospitais públicos e presídios - os chamados equipamentos públicos de alimentação e nutrição. Os produtos também</descricao>
-        <gratuito>false</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1529">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1902" tipo="presencial">
-                            <descricao>Na Prefeitura ou na CONAB do município.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1770">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Previdência Social</item>
         </areas-de-interesse>
     </servico>
     <servico>
@@ -15274,6 +15356,66 @@ Quanto vale hoje, corrigido pela inflação, o dinheiro utilizado no passado.</d
         <areas-de-interesse>
             <item>Educação</item>
         </areas-de-interesse>
+    </servico>
+    <servico>
+        <id>emitir-das-microempreendedor-individual</id>
+        <dbId>570</dbId>
+        <nome>Emitir DAS - Microempreendedor Individual</nome>
+        <sigla></sigla>
+        <descricao>Gerar DAS para recolhimento mensal do valor devido pelo MEI.</descricao>
+        <contato>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Perguntas/Perguntas.aspx</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1191">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1718">
+                <titulo>Emitir DAS - Microempreendedor Individual</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2129" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1995">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2800">Microempreendedor Individual</item>
+            <item id="2801">SIMEI</item>
+            <item id="2802">Emitir DAS</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="867">http://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm
+http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=36833</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>cadastrar-senha-para-matricula-cei</id>
@@ -32590,6 +32732,70 @@ escolhida, de posse da documentação necessária, para concluir o processo de r
         </legislacoes>
     </servico>
     <servico>
+        <id>simei-solicitar-enquadramento</id>
+        <dbId>101</dbId>
+        <nome>SIMEI – Solicitar Enquadramento</nome>
+        <sigla></sigla>
+        <descricao>Acompanhar o pedido de enquadramento no Simei.</descricao>
+        <contato>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Perguntas/Perguntas.aspx</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1195">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao>quando o empresário atender todos os requisitos para se enquadrar no SIMEI. Caso contrário,
+a solicitação ficará na situação “Em análise” até o processamento final das solicitações ou até um dos processamentos parciais, quando poderá ser deferida, se a pendência existente for resolvida, ou indeferida, se a pendência não for resolvida.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1082">
+                <titulo>SIMEI – Solicitar Enquadramento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1327" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/5101</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3357" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=7</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1222">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2818">Solicitar</item>
+            <item id="2819">Enquadramento</item>
+            <item id="2820">SIMEI</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="871">http://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm
+http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=36833</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>participacao-em-feiras-internacionais-de-turismo-embratur</id>
         <dbId>418</dbId>
         <nome>Participação em feiras internacionais de turismo - EMBRATUR</nome>
@@ -33646,66 +33852,6 @@ CEP: 70.067-900</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>consultar-dados-do-imovel-rural-cafir</id>
-        <dbId>970</dbId>
-        <nome>Consultar Dados do Imóvel Rural - CAFIR</nome>
-        <sigla></sigla>
-        <descricao>Emitir o Comprovante completo  de Inscrição e de Situação Cadastral  do imóvel rural no Cafir – Cadastro de Imóveis Rurais</descricao>
-        <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1154">
-                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2547">
-                <titulo>Consultar Dados do Imóvel - CAFIR</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3288" tipo="web">
-                            <descricao>https://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/coletor-web</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
-            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2788">Empresas</item>
-            <item idSegmento="1" idServicoSegmento="2789">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2694">CAFIR</item>
-            <item id="2695">Cadastro</item>
-            <item id="2696">Imóvel</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="841">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=52681</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>receber-de-forma-gratuita-sementes-destinadas-a-agricultura-familiar</id>
         <dbId>973</dbId>
         <nome>Receber de forma gratuita sementes destinadas à agricultura familiar.</nome>
@@ -33789,6 +33935,469 @@ CEP: 70.067-900</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="848">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>emitir-comprovante-completo-de-inscricao-e-situacao-cadastral-no-cafir-imovel-rural</id>
+        <dbId>970</dbId>
+        <nome>Emitir Comprovante Completo de Inscrição e Situação Cadastral no Cafir - Imóvel Rural</nome>
+        <sigla></sigla>
+        <descricao>Emitir o Comprovante Completo de Inscrição e de Situação Cadastral do imóvel rural no Cafir – Cadastro de Imóveis Rurais. Permite o envio e posterior consulta das solicitações de inscrição, alteração de dados cadastrais, alteração de titularidade por alienação total, cancelamento e reativação de imóveis rurais no Cadastro de Imóveis Rurais (Cafir) administrado pela RFB.</descricao>
+        <contato>http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1154">
+                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2547">
+                <titulo>Consultar Dados do Imóvel - CAFIR</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3288" tipo="web">
+                            <descricao>https://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/coletor-web</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2788">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2789">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2694">CAFIR</item>
+            <item id="2695">Cadastro</item>
+            <item id="2696">Imóvel</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="841">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=52681</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-apoio-suplementar-para-abertura-de-turmas-de-alfabetizacao-de-jovens-e-adultos</id>
+        <dbId>990</dbId>
+        <nome>Obter apoio suplementar para abertura de turmas de alfabetização de jovens e adultos</nome>
+        <sigla>PBA</sigla>
+        <nomes-populares>
+            <item id="766">Programa Brasil Alfabetizado (PBA)</item>
+        </nomes-populares>
+        <descricao>Apoio suplementar da União (técnico e financeiro) aos municípios, aos estados e ao Distrito Federal para abertura de turma de alfabetização de jovens e adultos.  
+O objetivo do Programa é universalizar a alfabetização de jovens e adultos com 15 anos ou mais de idade e promover a elevação de escolaridade desse publico.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1198">
+                <tipo>Estados, Municípios e o Distrito Federal</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2608">
+                <titulo>Solicitar Pré-Cadastro no Sistema do MEC</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3120">CPF</item>
+                        <item id="3121">Informações pessoais e do ente federado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3367" tipo="web">
+                            <descricao>http://ssd.mec.gov.br/adm/usr/informacaoUsuario.seam;jsessionid=EA23B4D98C79601B54A563F8864E2636.server1?cid=175344</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2609">
+                <titulo>Apontar Gestor local e solicitar liberação do acesso</titulo>
+                <descricao>Após o pré-cadastro é necessário solicitar e aguardar a liberação do acesso, que será realizada pelo Gestor MEC a partir do recebimento do ofício apontando o Gestor Local do PBA.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3122">Ofício assinado pelo Prefeito ou Secretário Estadual/Distrital de Educação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3368" tipo="postal">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Continuada, Alfabetização, Diversidade e Inclusão - SECADI
+Coordenação-Geral de Alfabetização
+Esplanada dos Ministérios, Bl. “L” - 2º Andar - Sala 205
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2610">
+                <titulo>Acessar o Sistema e Aderir ao Programa</titulo>
+                <descricao>O usuário deverá escolher o ano/exercício a que irá aderir e preencher as informações requisitadas</descricao>
+                <documentos>
+                    <default>
+                        <item id="3123">Informações sobre o ente federado</item>
+                        <item id="3124">Informações sobre as turmas de EJA</item>
+                        <item id="3125">Informações Pessoais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3369" tipo="web">
+                            <descricao>http://brasilalfabetizado.fnde.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2611">
+                <titulo>Receber aprovação dos Gestores do MEC</titulo>
+                <descricao>Os gestores irão analisar a informação e, se for o caso, aprovar a adesão</descricao>
+                <documentos>
+                    <default>
+                        <item id="3126">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3370" tipo="web">
+                            <descricao>http://brasilalfabetizado.fnde.gov.br/#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2612">
+                <titulo>Enviar Termo de Adesão assinado ao MEC</titulo>
+                <descricao>A impressão e o envio ao MEC só deve ser realizado após a aprovação dos Gestores MEC.
+O repasse da primeira parcela do valor de apoio só será realizado após o recebimento pelo MEC da documentação de adesão assinada pelo dirigente e gestor local e com firma reconhecida.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3127">Termo de Adesão impresso e assinado com firma reconhecida</item>
+                        <item id="3128">Plano Plurianual de Alfabetização com firma reconhecida da assinatura do responsável administrativo pela execução do Programa e do gestor local, indicando a sua concordância em relação a designação para o trabalho</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3371" tipo="postal">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Continuada, Alfabetização, Diversidade e Inclusão - SECADI
+Coordenação-Geral de Alfabetização
+Esplanada dos Ministérios, Bl. “L” - 2º Andar - Sala 205
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2822">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação básica</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2839">EJA</item>
+            <item id="2840">Educação de jovens e adultos</item>
+            <item id="2841">alfabetização de adultos</item>
+            <item id="2842">alfabetização</item>
+            <item id="2843">bolsa</item>
+            <item id="2844">Brasil Alfabetizado</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="874">[RESOLUÇÃO CD/FNDE Nº 32 DE 1º DE JULHO DE 2011](http://portal.mec.gov.br/index.php?option=com_docman&amp;view=download&amp;alias=8465-resolucacao-32-010711-brasilalfabetizado-pdf&amp;category_slug=julho-2011-pdf&amp;Itemid=30192)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>candidatar-se-ao-premio-professores-do-brasil</id>
+        <dbId>991</dbId>
+        <nome>Candidatar-se ao Prêmio Professores do Brasil</nome>
+        <sigla>PPB</sigla>
+        <descricao>Os candidatos se inscrevem ao prêmio por meio de um relato de prática pedagógica. os relatos são avaliados e selecionados. Os melhores do país são premiados.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1199">
+                <tipo>Profissionais do magistério</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="6" unidade="meses"/>
+            <descricao>Da inscrição à premiação e gravação do programa</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2613">
+                <titulo>Inscrever-se no concurso</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3129">Carteira de identidade</item>
+                        <item id="3130">Comprovante de endereço/residência</item>
+                        <item id="3131">CPF</item>
+                        <item id="3132">Diploma</item>
+                        <item id="3133">Comprovação da prática pedagógica</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3372" tipo="web">
+                            <descricao>http://premioprofessoresdobrasil.mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3373" tipo="e-mail">
+                            <descricao>ppb@mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3374" tipo="aplicativo-movel">
+                            <descricao>(No momento apenas para acompanhamento e informações)
+[Android](https://play.google.com/store/apps/details?id=br.gov.mec.ppb)
+[IOs](https://itunes.apple.com/br/app/ppb/id1234573499?mt=8)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2614">
+                <titulo>Receber informações sobre o resultado e recebimento do prêmio</titulo>
+                <descricao>Se for premiado, receberá notificação e orientações sobre o recebimento do prêmio.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3134">Dados Bancários</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3375" tipo="telefone">
+                            <descricao>(61) 2022-8309</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3376" tipo="e-mail">
+                            <descricao>ppb@mec.gov.br e cgcep@mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2615">
+                <titulo>Receber premiação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3135">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3377" tipo="presencial">
+                            <descricao>Em local escolhido para a cerimônia de premiação.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2616">
+                <titulo>Gravar programa para a TV Escola</titulo>
+                <descricao>Participação em programa da TV Escola</descricao>
+                <documentos>
+                    <default>
+                        <item id="3136">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3378" tipo="presencial">
+                            <descricao>Estúdio de gravação</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2823">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Serviços Públicos</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2845">prêmio</item>
+            <item id="2846">PPB</item>
+            <item id="2847">práticas pedagógicas</item>
+            <item id="2848">professor</item>
+            <item id="2849">dedicação</item>
+            <item id="2850">relato de prática pedagógica</item>
+            <item id="2851">prêmio para professores</item>
+            <item id="2852">professores de escola pública</item>
+            <item id="2853">reconhecimento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="875">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>capacitar-se-na-gestao-dos-sistemas-de-ensino-e-das-politicas-educacionais</id>
+        <dbId>992</dbId>
+        <nome>Capacitar-se na gestão dos sistemas de ensino e das políticas educacionais</nome>
+        <sigla>Pradime</sigla>
+        <nomes-populares>
+            <item id="767">O Programa de Apoio aos Dirigentes Municipais de Educação</item>
+        </nomes-populares>
+        <descricao>O Ministério da Educação, em parceria com a União Nacional dos Dirigentes Municipais (UNDIME), criou o Pradime para fortalecer e apoiar os dirigentes municipais de educação na gestão dos sistemas de ensino e das políticas educacionais.
+O Programa objetiva oferecer a todos os dirigentes municipais de educação e as equipes técnicas que atuam na gestão da educação do sistema municipal, um espaço permanente de formação, troca de experiências, acesso a informações sistematizadas e à legislação pertinente, que ajude a promover a qualidade da educação básica nos sistemas públicos municipais de ensino, focando as diversas dimensões da gestão educacional.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1200">
+                <tipo>Dirigentes municipais de educação</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2617">
+                <titulo>Matricular-se na Capacitação</titulo>
+                <descricao>Entrega de documentos para  matricular-se no curso a distância.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3137">Carteira de identidade</item>
+                        <item id="3138">Certificado de conclusão de curso</item>
+                        <item id="3139">Comprovante de endereço/residência</item>
+                        <item id="3140">CPF</item>
+                        <item id="3141">Diploma</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3379" tipo="presencial">
+                            <descricao>No Institutos Federais de Ensino Superior - IFES parceiro.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2618">
+                <titulo>Fazer a capacitação</titulo>
+                <descricao>Interação durante a oferta do curso de capacitação a distância</descricao>
+                <documentos>
+                    <default>
+                        <item id="3142">Carteira de identidade</item>
+                        <item id="3143">Certificado de conclusão de curso</item>
+                        <item id="3144">Comprovante de endereço/residência</item>
+                        <item id="3145">CPF</item>
+                        <item id="3146">Diploma</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3380" tipo="web">
+                            <descricao>http://pradimead.mec.gov.br/matriz/login/index.php</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3381" tipo="aplicativo-movel">
+                            <descricao>http://cursos.mec.gov.br/pradime/matriz/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2824">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Orçamento</item>
+            <item>Serviços Públicos</item>
+            <item>Administração financeira</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2854">Undime</item>
+            <item id="2855">Dirigentes municipais</item>
+            <item id="2856">Gestão de Recursos</item>
+            <item id="2857">Capacitação</item>
+            <item id="2858">Curso a Distância</item>
+            <item id="2859">Municípios</item>
+            <item id="2860">DME</item>
+            <item id="2861">equipe técnica</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="876">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -34273,6 +34882,408 @@ Av. Brasil, 2482, Benfica. Rio de Janeiro, RJ</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="837">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-tecnologia-social-de-acesso-a-agua-escolas-publicas-rurais</id>
+        <dbId>978</dbId>
+        <nome>Receber tecnologia social de acesso à água - escolas públicas rurais</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="760">Programa Cisternas</item>
+        </nomes-populares>
+        <descricao>Como forma de mitigar as dificuldades de acesso à água nas escolas públicas rurais, o serviço consiste na implantação de cisternas com captação de água a partir do telhado dessas escolas. Neste caso, a principal tecnologia social apoiada é a cisterna escolar de 52 mil litros, já amplamente implantada no semiárido brasileiro.
+A execução do Programa é realizada por meio da celebração de instrumentos de parcerias entre o MDS com os Estados, consórcios públicos municipais e organizações da sociedade civil, desde que cumpridas as exigências estabelecidas em Edital de Seleção Pública.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1166">
+                <tipo>Escolas Públicas Rurais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="90" max="120" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2568">
+                <titulo>Cadastrar Escola</titulo>
+                <descricao>Seleção e cadastramento das escolas e da comunidade escolar</descricao>
+                <documentos>
+                    <default>
+                        <item id="3032">CNPJ</item>
+                        <item id="3033">CPF</item>
+                        <item id="3034">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3313" tipo="presencial">
+                            <descricao>Na escola ou na própria comunidade da escola a ser beneficiada, podendo ser a sede do sindicato rural, secretaria municipal de educação ou assistência social, igreja, sede da associação comunitária, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2569">
+                <titulo>Participar de capacitações</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3035">CPF</item>
+                        <item id="3036">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3314" tipo="presencial">
+                            <descricao>Nas próprias escolas a serem atendidas e em locais definidos pela entidade executora, podendo ser: sede da associação comunitária, escolas da comunidade, igreja, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2570">
+                <titulo>Receber a tecnologia social</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3037">CNPJ</item>
+                        <item id="3038">CPF</item>
+                        <item id="3039">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3315" tipo="presencial">
+                            <descricao>A própria escola a ser beneficiada pela tecnologia social.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2802">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2803">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Educação</item>
+            <item>Proteção Social</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2742">escola pública rural</item>
+            <item id="2743">acesso à agua</item>
+            <item id="2744">cisternas</item>
+            <item id="2745">comunidade</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="852">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-a-bolsa-atleta</id>
+        <dbId>985</dbId>
+        <nome>Receber a Bolsa Atleta</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="764">Bolsa Atleta</item>
+        </nomes-populares>
+        <descricao>Concessão de bolsas a atletas praticantes de esportes olímpicos, paralímpicos, não olímpicos e não paralímpicos. 
+Para ser contemplado o atleta precisa atender aos critérios estabelecidos na legislação vigente e os requisitos elencados nos Editais publicados anualmente.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1185">
+                <tipo>Atletas de Alto Rendimento</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2588">
+                <titulo>Inscrever-se e enviar documentação</titulo>
+                <descricao>Inscrição online e envio de documentações (a documentação formaliza as informações prestadas na inscrição online).
+(modelo das declarações na terceira etapa)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3078">Carteira de identidade</item>
+                        <item id="3079">CPF</item>
+                        <item id="3080">Declarações emitidas pelas Confederações e/ou Clubes.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3339" tipo="telefone">
+                            <descricao>6134296906</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3340" tipo="web">
+                            <descricao>www.esporte.gov.br - link Bolsa Atleta</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3341" tipo="e-mail">
+                            <descricao>duvidasbolsa@esporte.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2589">
+                <titulo>Enviar termo de adesão</titulo>
+                <descricao>Envio do Termo de Adesão, se contemplado.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3081">Termo de Adesão ao Programa.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3342" tipo="web">
+                            <descricao>www.esporte.gov.br - link Bolsa Atleta (área restrita do atleta)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2590">
+                <titulo>Prestar contas</titulo>
+                <descricao>Modelos das declarações:
+* [Clube](http://www2.esporte.gov.br/arquivos/snear/bolsaAtleta/declaracoes/declaracaoEntidadePraticaClube.doc)
+* [Confederações - Esportes Olimpicos e Paralímpicos](http://www2.esporte.gov.br/arquivos/snear/bolsaAtleta/declaracoes/declaracaoConfederacaoEsportesOlimpicosParaolimpicos.doc)
+* [Confederações - Esportes Não olímpicos](http://www2.esporte.gov.br/arquivos/snear/bolsaAtleta/declaracoes/declaracaoConfederacaoEsportesNaoOlimpicos.doc)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3082">Declarações emitidas pelas Confederações e/ou Clubes.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3343" tipo="telefone">
+                            <descricao>6134296841</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3344" tipo="web">
+                            <descricao>www.esporte.gov.br - link bolsa atleta</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3345" tipo="e-mail">
+                            <descricao>prestacaobolsa@esporte.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3346" tipo="postal">
+                            <descricao>Setor de Industrias Gráficas (SIG), Quadra 4 – lote 83 Centro Empresarial Capital Financial Center (Bolsa Atleta)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36670" dbId="37543">
+            <nomeOrgao>Ministério do Esporte (ME)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2814">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Esporte e Lazer</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2783">bolsa</item>
+            <item id="2784">atleta</item>
+            <item id="2785">patrocínio</item>
+            <item id="2786">olimpíadas</item>
+            <item id="2787">alto rendimento</item>
+            <item id="2788">esporte</item>
+            <item id="2789">seleção brasileira</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="864">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-apoio-para-implementacao-de-programas-de-extensao-universitaria</id>
+        <dbId>986</dbId>
+        <nome>Obter apoio para implementação de programas de extensão universitária</nome>
+        <sigla>PROEXT</sigla>
+        <descricao>O Programa de Extensão Universitária (ProExt) tem o objetivo de apoiar as instituições públicas de ensino superior no desenvolvimento de programas ou projetos de extensão que contribuam para a implementação de políticas públicas.
+Entende-se como Programa de Extensão o conjunto articulado de projetos e outras ações de extensão, de caráter multidisciplinar e integrado a atividades de pesquisa e de ensino. Tem caráter orgânico-institucional, integração no território e/ou grupos populacionais, clareza de diretrizes e orientação para um objetivo comum, sendo executado a médio e longo prazo por alunos orientados por um ou mais professores da instituição.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1186">
+                <tipo>Universidades Públicas Federais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1187">
+                <tipo>Universidades Públicas Estaduais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1188">
+                <tipo>Universidades Públicas Municipais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1189">
+                <tipo>Institutos Federais de Educação, Ciência e Tecnologia (IF), Centros de Educação Tecnológica (Cefet) e  Instituições Comunitárias de Educação Superior.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>Não é possível estabelecer um tempo padrão, pois ele varia de acordo com o projeto de extensão</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2591">
+                <titulo>Cadastrar-se no SisProExt (caso ainda não seja cadastrado)</titulo>
+                <descricao>Os Pró-Reitores de Extensão ou equivalentes das Instituições deverão acessar o sistema de informação (http://sisproext.mec.gov.br), preencher os campos do cadastro, anexar os documentos obrigatórios e aguardar a homologação de seus cadastros por parte do MEC.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3083">Cópia digitalizada de sua nomeação para o cargo de Pró-Reitor de Extensão ou equivalente</item>
+                        <item id="3084">Cópia digitalizada do Certificado de Qualificação de Instituição Comunitária de Educação Superior, nos termos da Lei 12.881 de 2013</item>
+                        <item id="3085">Cópia digitalizada do termo de autodeclararão da Instituição Comunitária de Educação Superior, assinada pelo dirigente máximo (apenas para Instituições Comunitárias)</item>
+                        <item id="3086">Dados pessoais e da instituição</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3347" tipo="web-inscrever-se">
+                            <descricao>http://sisproext.mec.gov.br/admin/solicitaracesso.php</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2592">
+                <titulo>Prestação de Contas</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3087">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3348" tipo="web">
+                            <descricao>Sisproext</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2593">
+                <titulo>Submeter Proposta</titulo>
+                <descricao>As propostas de extensão que serão submetidas, conforme decidido por processo interno das entidades, deverão ser cadastradas no Sistema</descricao>
+                <documentos>
+                    <default>
+                        <item id="3088">Declaração, assinada pelo Reitor da instituição, contendo a lista de propostas a serem submetidas e o compromisso institucional com a aplicação integral dos recursos a serem disponibilizados.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3349" tipo="web">
+                            <descricao>http://sisproext.mec.gov.br/admin/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2594">
+                <titulo>Receber recursos</titulo>
+                <descricao>A instituição receberá os recursos através dos canais apropriados</descricao>
+                <documentos>
+                    <default>
+                        <item id="3089">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3350" tipo="presencial">
+                            <descricao>O processo varia de acordo com o tipo de instituição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2595">
+                <titulo>Prestar contas</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3090">Documentos e informações comprobatórias do uso dos recursos para o fim declarado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3351" tipo="web">
+                            <descricao>http://sisproext.mec.gov.br/admin/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2815">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2816">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+            <item>Pesquisa e Desenvolvimento</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2790">extensão</item>
+            <item id="2791">bolsa</item>
+            <item id="2792">pesquisa</item>
+            <item id="2793">universidades</item>
+            <item id="2794">proext</item>
+            <item id="2795">financiamento de pesquisa</item>
+            <item id="2796">construção de conhecimento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="865">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -39150,6 +40161,542 @@ Lei nº 8.955/94 - Contrato de franquia empresarial</item>
         </legislacoes>
     </servico>
     <servico>
+        <id>teste-descricao</id>
+        <dbId>975</dbId>
+        <nome>Teste Descricao</nome>
+        <sigla>Teste</sigla>
+        <nomes-populares>
+            <item id="758">Nome</item>
+        </nomes-populares>
+        <descricao>orem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, per jkdshfjkhdsajghjshgjhfgh jkasdjhfjahfgjfkhghjfkghjkhfjgkhjfkgkhfjkghjkhfjghjafghfgjkfkghjkfghjkfgjkghgfjfkhgj ujkfhjkhfdgjkhfjfgjfhdgjkf jkfhgjkhfjghf fjkhgjhfdjgjkdfhgjkhfdjkshgjkdfshgjkhfjdkshn  njkhbjkfhdjkghfdjkghjkfhdjghjfkd kfgkfghfjkdhgjkhfdjghjfdhgjkhfdjkghjdfhjgkhfjdkhgjk jkfhgjkhfdjkgjfkdhgjkfjdkg kljgjkfdhjksgjkfdshgjkhdfjk
+
+jkasdjhfjahfgjfkhghjfkghjkhfjgkhjfkgkhfjkghjkhfjghjafghfgjkfkghjkfghjkfgjkghgfjfkhgj ujkfhjkhfdgjkhfjfgjfhdgjkf jkfhgjkhfjghf fjkhgjhfdjgjkdfhgjkhfdjkshgjkdfshgjkhfjdkshn  njkhbjkfhdjkghfdjkghjkfhdjghjfkd kfgkfghfjkdhgjkhfdjghjfdhgjkhfdjkghjdfhjgkhfjdkhgjk jkfhgjkhfdjkgjfkdhgjkfjdkg kljgjkfdhjksgjkfdshgjkhdfjd</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1164">
+                <tipo>Solicitante 1</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2564">
+                <titulo>Etapa 1</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3309" tipo="e-mail">
+                            <descricao>sadasddfs</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2798">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2799">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Água</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2734">teste</item>
+            <item id="2735">teste</item>
+            <item id="2736">teste</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="850">teste</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-tecnologia-social-de-acesso-a-agua-para-producao-de-alimentos</id>
+        <dbId>979</dbId>
+        <nome>Receber tecnologia social de acesso à água para produção de alimentos</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="761">Programa Cisternas</item>
+        </nomes-populares>
+        <descricao>O Programa Nacional de Apoio à Captação de Água de Chuva e Outras Tecnologias Sociais de Acesso à Água - Programa Cisternas tem como finalidade promover o acesso à água para o consumo humano e animal e para a produção de alimentos, por meio de implementação de tecnologias sociais, destinado às famílias rurais de baixa renda atingidas pela seca ou falta regular de água.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1168">
+                <tipo>Famílias rurais de baixa renda</tipo>
+                <requisitos>Atingidas pela seca ou falta regular de água</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="4" max="120" unidade="meses"/>
+            <descricao>Mais de 120 dias.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2571">
+                <titulo>Cadastra-se no Programa</titulo>
+                <descricao>Mobilização, seleção e cadastramento</descricao>
+                <documentos>
+                    <default>
+                        <item id="3040">CPF</item>
+                        <item id="3041">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3316" tipo="presencial">
+                            <descricao>Na própria residência do beneficiário ou em algum outro local definido no município pela entidade executora, podendo ser: sede do sindicato rural, secretaria municipal de assistência social, igreja, sede da associação comunitária, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2572">
+                <titulo>Participar das capacitações</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3042">CPF</item>
+                        <item id="3043">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3317" tipo="presencial">
+                            <descricao>Locais definidos pela entidade executora, podendo ser: sede da associação comunitária, escolas da comunidade, igreja, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2573">
+                <titulo>Receber a tecnologia social</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3044">CPF</item>
+                        <item id="3045">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3318" tipo="presencial">
+                            <descricao>A própria residência do beneficiário da tecnologia social</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2804">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2805">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Meio ambiente</item>
+            <item>Proteção Social</item>
+            <item>Saneamento</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2746">produção de alimentos</item>
+            <item id="2747">famílias rurais</item>
+            <item id="2748">baixa renda</item>
+            <item id="2749">acesso à água</item>
+            <item id="2750">cisternas</item>
+            <item id="2751">rural</item>
+            <item id="2752">tecnologia social</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="853">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>credenciar-entidade-no-programa-cisternas</id>
+        <dbId>980</dbId>
+        <nome>Credenciar entidade no Programa Cisternas</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="762">Credenciamento no Programa Cisternas</item>
+        </nomes-populares>
+        <descricao>Credenciar entidades privadas sem fins lucrativos para participação em chamadas públicas no âmbito do Programa Cisternas.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1169">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos>¨Estar legalmente constituída há mais de três anos e ter como objeto social a promoção de ações relacionadas ao desenvolvimento rural e/ou segurança alimentar;
+¨Possuir área de atuação com abrangência definida e ter realizado a execução de projetos com vistas ao desenvolvimento rural ou à segurança alimentar e nutricional
+¨Não estar incluída no Cadastro de Entidades Privadas sem Fins Lucrativos Impedidas – CEPIM;</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="16" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>5</quantidade>
+            <unidade>anos</unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2574">
+                <titulo>Enviar documentação</titulo>
+                <descricao>Envio da documentação pela entidade privada sem fins lucrativos.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3046">CNPJ</item>
+                        <item id="3047">Comprovante de endereço/residência</item>
+                        <item id="3048">Estatuto social ou correspondente registrado em cartório e respectivas alterações</item>
+                        <item id="3049">Cópias de contratos, convênios ou congêneres com parceiros públicos ou privados que indiquem o objeto, prazo de vigência, metas e recursos envolvidos</item>
+                        <item id="3050">Declaração do contratante ou parceiro de que o respectivo objeto foi executado de forma satisfatória</item>
+                        <item id="3051">Ofício de solicitação de credenciamento assinado pelo representante legal da entidade</item>
+                        <item id="3052">Formulário de informações acompanhado dos documentos comprobatórios das experiências citadas.</item>
+                        <item id="3053">Atestado de capacidade Técnica</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3319" tipo="e-mail">
+                            <descricao>cisternas@mds.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3320" tipo="postal">
+                            <descricao>Secretaria Nacional de Segurança Alimentar e Nutricional
+Ministério do Desenvolvimento Social e Agrário
+Esplanada dos Ministérios, Bloco C, 4º Andar
+Brasília, Distrito Federal, CEP 70.054-906</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2575">
+                <titulo>Verificar credenciamento</titulo>
+                <descricao>Caso a documentação e as informações estejam em ordem, a entidade será credenciada no Programa e constará na lista de entidades credenciadas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3054">CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3321" tipo="web">
+                            <descricao>http://www.mds.gov.br/webarquivos/arquivo/seguranca_alimentar/Lista%20de%20credenciamento%20para%20divulga%C3%A7%C3%A3o%2021_06_17.pdf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2806">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Água</item>
+            <item>Produção agropecuária</item>
+            <item>Proteção Social</item>
+            <item>Saneamento Básico Rural</item>
+            <item>Alimento</item>
+            <item>Pecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2753">credenciamento</item>
+            <item id="2754">cisternas</item>
+            <item id="2755">acesso à agua</item>
+            <item id="2756">ONGs</item>
+            <item id="2757">Associação comunitária</item>
+            <item id="2758">cooperativa</item>
+            <item id="2759">chamadas públicas</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="862">[PORTARIA MDS Nº 99, DE 20 DE SETEMBRO DE 2013](http://www.lex.com.br/legis_24861896_PORTARIA_N_99_DE_20_DE_SETEMBRO_DE_2013.aspx)</item>
+            <item id="854">[DECRETO Nº 8.038, DE 4 DE JULHO DE 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/D8038.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>certificar-se-como-entidade-beneficente-de-assistencia-social</id>
+        <dbId>981</dbId>
+        <nome>Certificar-se como Entidade Beneficente de Assistência Social</nome>
+        <sigla>CEBAS</sigla>
+        <descricao>A certificação, facultada às entidades e organizações da assistência social, é um instrumento que possibilita a entidade usufruir da isenção das contribuições sociais, tais como a parte patronal da contribuição previdenciária sobre a folha de pagamento, Contribuição Social sobre o Lucro Líquido – CSLL, Contribuição para o Financiamento da Seguridade Social – COFINS e Contribuição PIS/PASEP, permite ainda a priorização na celebração de contratualização/convênios com o poder público, entre outros benefícios.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1170">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos>¨Realizar ações de acordo com as normativas da política de assistência social;
+¨Estar inscrita no CMAS;
+¨Realizar atendimento, assessoramento e defesa e garantia de direitos, de forma gratuita, continuada e planejada e universal;
+¨Estar em funcionamento no mínimo há 12 meses;</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="180" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2576">
+                <titulo>Requerer certificação</titulo>
+                <descricao>I) Protocolo de requerimento do CEBAS - Atendimento no balcão do protocolo para recebimento do requerimento da certificação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3055">CNPJ</item>
+                        <item id="3056">Procuração do representante legal</item>
+                        <item id="3057">Requerimento do pedido de certificação</item>
+                        <item id="3058">Demonstrativo do Resultado do Exercício com Nota Explicativa,</item>
+                        <item id="3059">Relatório de atividades</item>
+                        <item id="3060">Ata de Eleição dos dirigentes</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3322" tipo="presencial">
+                            <descricao>Protocolo da Secretaria Nacional de Assistência Social</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3323" tipo="telefone">
+                            <descricao>8007072003</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3324" tipo="web-consultar">
+                            <descricao>http://www.mds.gov.br/webarquivos/arquivo/assistencia_social/cneas/Cartilha_passos_certificacao.pdf (cartilha passo a passo para certificação – orientações acerca do CEBAS)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3325" tipo="postal">
+                            <descricao>Setor de Múltiplas Atividades Sul, Trecho 3 Lote 1, Ed. The Union – CEP.: 70.610-635 – Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2577">
+                <titulo>Receber decisão</titulo>
+                <descricao>Comunicação por meio de Ofício da emissão da decisão e publicação no Diário Oficial da União</descricao>
+                <documentos>
+                    <default>
+                        <item id="3061">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3326" tipo="web-consultar">
+                            <descricao>www.in.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3327" tipo="postal">
+                            <descricao>Endereço da entidade a ser notificada.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2807">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Assistência à Criança e ao Adolescente</item>
+            <item>Assistência ao Idoso</item>
+            <item>Assistência ao Portador de Deficiência</item>
+            <item>Cidadania</item>
+            <item>Proteção Social</item>
+            <item>Serviços Públicos</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2760">Assistência Social</item>
+            <item id="2761">Credenciamento</item>
+            <item id="2762">CMAS</item>
+            <item id="2763">Entidade Beneficiente</item>
+            <item id="2764">Direitos</item>
+            <item id="2765">MDS</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="855">[Lei 12.101 de 27 de novembro de 2009](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12101.htm)</item>
+            <item id="856">[Resolução CNAS nº 109/2009](http://www.mds.gov.br/suas/noticias/resolucao_cnas_no109_-_11_11_2009_-tipificacao_de_servicos.pdf)</item>
+            <item id="857">[Resolução CNAS nº 27/2011](http://www.mds.gov.br/webarquivos/legislacao/assistencia_social/resolucoes/2011/RESOLUCaO%20No%2027%20DE%2019%20DE%20SETEMBRO%20DE%202011.pdf)</item>
+            <item id="858">[Resolução CNAS nº 33/2011](http://www.mds.gov.br/cnas/legislacao/resolucoes/arquivos-2011/cnas-2011-033-28-11-2011.pdf)</item>
+            <item id="859">[Resolução CNAS n° 34/2011](http://www.mds.gov.br/cnas/legislacao/resolucoes/arquivos-2011/cnas-2011-034-28-11-2011.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>capacitar-se-em-temas-relativos-ao-desenvolvimento-social</id>
+        <dbId>983</dbId>
+        <nome>Capacitar-se em temas relativos ao Desenvolvimento Social</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="763">Portal EaD/MDS</item>
+        </nomes-populares>
+        <descricao>O Portal EaD/MDS é um espaço virtual de aprendizagem onde são oferecidos cursos e tutoriais a distância, voltados especialmente para técnicos, gestores e profissionais das diversas áreas de atuação do Ministério do Desenvolvimento Social. Atualmente, nossos cursos e tutoriais são abertos para qualquer cidadão interessado, mas podem existir turmas e salas com restrição de público.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1173">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1174">
+                <tipo>Órgãos da administração direta</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1175">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2582">
+                <titulo>Cadastrar-se no Portal EaD/MDS.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3070">CPF</item>
+                        <item id="3071">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3333" tipo="web">
+                            <descricao>www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2583">
+                <titulo>Inscrever-se em um curso ou escolher o tutorial desejado</titulo>
+                <descricao>Realizar o login no Portal, escolher os cursos ou tutoriais desejados e confirmar a inscrição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3072">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3334" tipo="web">
+                            <descricao>www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2584">
+                <titulo>Complementar dados (apenas para matrícula em cursos)</titulo>
+                <descricao>Complementação do cadastro com dados adicionais</descricao>
+                <documentos>
+                    <default>
+                        <item id="3073">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3335" tipo="web">
+                            <descricao>http://www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2585">
+                <titulo>Receber certificado de conclusão (apenas para matrícula em cursos)</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3336" tipo="web">
+                            <descricao>http://www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2809">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2810">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2811">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2772">capacitação</item>
+            <item id="2773">curso a distância</item>
+            <item id="2774">Portal EAD</item>
+            <item id="2775">MDS</item>
+            <item id="2776">tutoriais</item>
+            <item id="2777">Desenvolvimento Social</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="861">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cancelar-registro-de-funcionamento-para-estabelecimentos-que-lidam-com-produtos-destinados-a-alimentacao-animal</id>
         <dbId>935</dbId>
         <nome>Cancelar registro de funcionamento para estabelecimentos que lidam com produtos destinados à alimentação animal.</nome>
@@ -39282,6 +40829,478 @@ Lei nº 8.955/94 - Contrato de franquia empresarial</item>
         <legislacoes>
             <item id="799">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=67113
 http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=52818&amp;visao=anotado</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-se-no-programa-de-fomento-as-atividades-produtivas-rurais</id>
+        <dbId>974</dbId>
+        <nome>Cadastrar-se no Programa de Fomento às Atividades Produtivas Rurais</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="757">Fomento BSM, Fomento Brasil Sem Miséria, Fomento Rural</item>
+        </nomes-populares>
+        <descricao>O Programa Fomento Rural (Fomento às Atividades Produtivas Rurais) contribui com a estratégia de inclusão produtiva, apoiando os investimentos produtivos de famílias rurais que se encontram em situação de pobreza.
+
+O programa envolve a combinação de duas ações: a oferta de serviços de assistência técnica e extensão rural (Ater) ou por meio de parcerias com os governos estaduais, e a transferência direta às famílias, por meio do cartão do Programa Bolsa Família, de recursos financeiros não-reembolsáveis.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1162">
+                <tipo>Modalidade Tradicional</tipo>
+                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais que:
+1.       
+
+
+¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 85,00;
+
+2.     
+   
+
+¨Estar apto ao Pronaf ou constar na Relação de Beneficiários do INCRA; e
+
+3.         
+
+
+¨Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
+            </solicitante>
+            <solicitante id="1163">
+                <tipo>Modalidade Semiárido</tipo>
+                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais residentes no semiárido que:
+
+¨Detenham tecnologias sociais de armazenamento de água para produção;    
+
+
+¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 170,00;    
+
+
+¨Estejam aptos ao Pronaf ou constem na Relação de Beneficiários do INCRA; e    
+
+
+¨ Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>O tempo varia de caso a caso, não é possível estabelecer um tempo padrão.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2558">
+                <titulo>Procurar uma entidade Assistência Técnica e Extensão Rural (ATER)</titulo>
+                <descricao>As entidades de Ater são responsáveis por identificar e mobilizar as famílias para participar do programa. Esta seleção é feita a partir dos dados do Cadastro Único e de Busca Ativa realizada por estas entidades. As entidades de Ater são orientadas a, na medida do possível, priorizar a cobertura de famílias que cumprem os requisitos para participar do Fomento Rural dentro de uma mesma comunidade, e a dar prioridade a famílias em situação de insegurança alimentar e nutricional.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3016">NIS</item>
+                        <item id="3017">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3302" tipo="presencial">
+                            <descricao>A mobilização ocorre em comunidades rurais, com suporte da rede de assistência social e de saúde, de sindicatos e de outros parceiros que possam ajudar a identificar comunidades mais vulneráveis. A seleção das famílias ocorre nas comunidades rurais e nas residências das mesmas.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3303" tipo="presencial">
+                            <descricao>Entidades de ATER selecionadas pelo programa e que atuem em sua região. Saiba quais são [aqui](http://www.mds.gov.br/webarquivos/arquivo/seguranca_alimentar/metas_previstas_entidades_respons%C3%A1veis_fomento.pdf)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2559">
+                <titulo>Participar de entrevistas com os técnicos do programa</titulo>
+                <descricao>Os agentes de Ater elaboram um diagnóstico de sua situação socioeconômica levantando informações como a identificação de todos os integrantes de cada família, a descrição de sua rotina de trabalho e de comercialização dos excedentes produzidos, a forma como acessam os serviços públicos e quais são suas expectativas e anseios quanto a atividades geradoras de renda.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3018">NIS</item>
+                        <item id="3019">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3304" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2560">
+                <titulo>Elaborar Projeto Produtivo para organizar e/ou ampliar a produção (em conjunto com os técnicos do programa)</titulo>
+                <descricao>Nesta etapa são definidas uma ou mais atividades produtivas e as etapas necessárias para seu desenvolvimento. Elas podem ser atividades agrícolas, como a criação de pequenos animais e hortas, ou não agrícolas, como artesanato e pesca, desde que sirva para gerar renda para a família beneficiária e, se possível, ampliar e diversificar sua produção de alimentos. A família também assinará o Termo de Adesão, confirmando que está participando do Programa e que conhece as regras para essa participação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3020">NIS</item>
+                        <item id="3021">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                        <item id="3022">Termo de Adesão ao Programa de Fomento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3305" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2561">
+                <titulo>Receber visitas técnicas (Assistência Técnica)</titulo>
+                <descricao>Durante estas visitas o agente técnico irá:
+
+¨Acompanhar o desenvolvimento do projeto e discutir com a família soluções para problemas que surgirem;
+
+¨Auxiliará a família a se inserir em outras políticas sociais e de desenvolvimento rural que estejam disponíveis; e
+
+¨Confirmar o uso satisfatório dos recursos recebidos para o desenvolvimento do projeto, garantindo assim o recebimento das outras parcelas pela família.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3023">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3306" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2562">
+                <titulo>Receber o recurso financeiro do Programa</titulo>
+                <descricao>Na modalidade tradicional, o valor é de R$ 2.400,00, que pode ser dividido em:
+
+a) Duas parcelas, a primeira sendo de R$ 1.400,00 e a segunda de R$ 1.000,00;
+
+b) Três parcelas, a primeira sendo de R$ 1.000,00 e as duas seguintes de R$ 700,00.
+
+Na modalidade Semiárido, o valor é de R$ 3.000,00, recebido em duas parcelas, sendo a primeira de R$ 1.800,00 e a segunda de R$ 1.200,00.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3024">NIS</item>
+                        <item id="3025">Cartão Cidadão ou Cartão do Bolsa Família. Caso o beneficiário não tenha um desses documentos, deve apresentar documento de identificação com foto para saque por guia offline exclusivamente em agências bancárias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3307" tipo="presencial">
+                            <descricao>Para receber informações sobre a liberação das parcelas para saque, na unidade produtiva familiar ou residência.
+Para sacar os recursos, em agência bancária, lotérica ou outro correspondente bancário.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2563">
+                <titulo>Receber avaliação do projeto</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3308" tipo="presencial">
+                            <descricao>Unidade produtiva familiar ou centro comunitário</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2796">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2797">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2722">ATER</item>
+            <item id="2723">assistência técnica</item>
+            <item id="2724">agricultura familiar</item>
+            <item id="2725">fomento rural</item>
+            <item id="2726">cadastro único</item>
+            <item id="2727">bolsa família</item>
+            <item id="2728">projeto produtivo</item>
+            <item id="2729">semiárido</item>
+            <item id="2730">desenvolvimento rural</item>
+            <item id="2731">combate à fome</item>
+            <item id="2732">combate à miséria</item>
+            <item id="2733">rural</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="849">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-tecnologia-social-de-acesso-a-agua-para-consumo-familiar</id>
+        <dbId>976</dbId>
+        <nome>Receber tecnologia social de acesso à água para consumo familiar</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="759">Programa Cisternas</item>
+        </nomes-populares>
+        <descricao>O Programa Nacional de Apoio à Captação de Água de Chuva e Outras Tecnologias Sociais de Acesso à Água - Programa Cisternas tem como finalidade promover o acesso à água para o consumo humano e animal e para a produção de alimentos, por meio de implementação de tecnologias sociais, destinado às famílias rurais de baixa renda atingidas pela seca ou falta regular de água.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1165">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="4" max="120" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2565">
+                <titulo>Cadastrar-se no Programa</titulo>
+                <descricao>A entidade executora do Programa selecionará as famílias participantes</descricao>
+                <documentos>
+                    <default>
+                        <item id="3026">CPF</item>
+                        <item id="3027">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3310" tipo="presencial">
+                            <descricao>Na própria residência do beneficiário ou em algum outro local definido no município pela entidade executora, podendo ser: sede do sindicato rural, secretaria municipal de assistência social, igreja, sede da associação comunitária, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2566">
+                <titulo>Participar das capacitações</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3028">CPF</item>
+                        <item id="3029">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3311" tipo="presencial">
+                            <descricao>Locais definidos pela entidade executora, podendo ser: sede da associação comunitária, escolas da comunidade, igreja, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2567">
+                <titulo>Receber a tecnologia social</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3030">CPF</item>
+                        <item id="3031">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3312" tipo="presencial">
+                            <descricao>A própria residência do beneficiário da tecnologia social.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2800">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2801">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Meio ambiente</item>
+            <item>Proteção Social</item>
+            <item>Saneamento</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2737">acesso à água</item>
+            <item id="2738">tecnologia social</item>
+            <item id="2739">cisterna</item>
+            <item id="2740">família</item>
+            <item id="2741">consumo familiar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="851">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>capacitar-se-como-instrutor-de-formularios-do-cadastro-unico-e-de-gestao-do-cadastro-unico-e-do-pbf</id>
+        <dbId>982</dbId>
+        <nome>Capacitar-se como instrutor de Formulários do Cadastro Único e de Gestão do Cadastro Único e do PBF</nome>
+        <sigla></sigla>
+        <descricao>Capacitações presenciais para técnicos e gestores de Formulário do Cadastro Único e de Gestão do Cadastro Único e do PBF, com duração de 5 dias para cada turma.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1171">
+                <tipo>Órgãos da administração direta</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1172">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2578">
+                <titulo>Enviar inscrição</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3062">Carteira de identidade</item>
+                        <item id="3063">CPF</item>
+                        <item id="3064">e-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3328" tipo="telefone">
+                            <descricao>20301545</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3329" tipo="e-mail">
+                            <descricao>danielle.henderson@mds.gov.br; 
+juliana.milanezzi@mds.gov.br;
+ maria.werlang@mds.gov.br; 
+mariana.ribeiro@mds.gov.br; 
+thais.kawashima@mds.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2579">
+                <titulo>Enviar Declaração de Colaborador Eventual</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3065">Carteira de identidade</item>
+                        <item id="3066">CPF</item>
+                        <item id="3067">E-mail, Declaração de Colaborador Eventual</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3330" tipo="e-mail">
+                            <descricao>danielle.henderson@mds.gov.br;
+ juliana.milanezzi@mds.gov.br; 
+maria.werlang@mds.gov.br;
+mariana.ribeiro@mds.gov.br; 
+thais.kawashima@mds.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2580">
+                <titulo>Receber informações sobre o local e horário do curso</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3068">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3331" tipo="e-mail">
+                            <descricao>As informações serão enviadas para o e-mail previamente cadastrado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2581">
+                <titulo>Participar do curso presencial</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3069">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3332" tipo="presencial">
+                            <descricao>Local informado ao aluno na etapa anterior</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2808">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2766">capacitação</item>
+            <item id="2767">cadastro único</item>
+            <item id="2768">bolsa família</item>
+            <item id="2769">gestor</item>
+            <item id="2770">cadastrador</item>
+            <item id="2771">colaborador eventual</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="860">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40544,6 +42563,127 @@ Programa Nacional de Controle e Erradicação da Brucelose e Tuberculose Animal 
         </legislacoes>
     </servico>
     <servico>
+        <id>receber-de-forma-gratuita-alimentos-produzidos-pela-agricultura-familiar-via-conab</id>
+        <dbId>984</dbId>
+        <nome>Receber de forma gratuita alimentos produzidos pela agricultura familiar via CONAB.</nome>
+        <sigla></sigla>
+        <descricao>O Programa de Aquisição de Alimentos – PAA, modalidade Compra com Doação Simultânea, executada pela CONAB com recursos do MDS, é um programa por meio do qual o Governo Federal compra alimentos de cooperativas ou associações da agricultura familiar e os destina gratuitamente às pessoas em situação de insegurança alimentar e nutricional e àquelas atendidas pela rede socioassistencial e pelos equipamentos de alimentação e nutrição, como os restaurantes populares, bancos de alimentos e cozinhas comunitárias.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1176">
+                <tipo>Centros de Referência de Assistência Social – CRAS</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1177">
+                <tipo>Centros de Referência Especializado em Assistência Social – CREAS</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1178">
+                <tipo>Centros de Referência Especializado para População em Situação de Rua - Centros POP</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1179">
+                <tipo>Outras entidades de acolhimento</tipo>
+                <requisitos>Equipamento que oferte o serviço de acolhimento a famílias e/ou indivíduos com vínculos familiares rompidos ou fragilizados, a fim de garantir proteção integral</requisitos>
+            </solicitante>
+            <solicitante id="1180">
+                <tipo>Entidades e organizações de assistência social</tipo>
+                <requisitos>Entidades e organizações sem fins lucrativos que, isolada ou cumulativamente, prestam atendimento e assessoramento aos beneficiários da Assistência Social, bem como atuam na defesa e garantia de direitos e que, obrigatoriamente, estejam inscritas no conselho municipal de assistência social</requisitos>
+            </solicitante>
+            <solicitante id="1181">
+                <tipo>Restaurantes Populares e cozinhas comunitárias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1182">
+                <tipo>Bancos de Alimentos</tipo>
+                <requisitos>estruturas públicas que produzam e disponibilizem refeições a beneficiários consumidores, no âmbito das redes públicas de educação, conforme regulamento do Programa Nacional de Alimentação Escolar - PNAE, de justiça e de segurança.</requisitos>
+            </solicitante>
+            <solicitante id="1183">
+                <tipo>Redes públicas e serviços públicos de saúde</tipo>
+                <requisitos>Que ofertem serviços de saúde básicos, ambulatoriais e hospitalares por meio do Sistema Único de Saúde - SUS e que produzam e disponibilizem refeições a beneficiários consumidores.</requisitos>
+            </solicitante>
+            <solicitante id="1184">
+                <tipo>Estabelecimentos de saúde de direito privado sem fins lucrativos</tipo>
+                <requisitos>Ter Certificado de Entidade Beneficente da Assistência Social - CEBAS;
+Produzir e disponibilizar refeições a beneficiários consumidores.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2586">
+                <titulo>Elaborar projeto</titulo>
+                <descricao>Participar da elaboração do projeto junto à Cooperativa ou Associação da Agricultura Familiar.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3074">CNPJ</item>
+                        <item id="3075">Cópia de RG e CPF do responsável legal</item>
+                        <item id="3076">Cópia do comprovante de inscrição no Conselho Municipal de Assistência Social, no caso de entidade socioassistencial de direito privado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3337" tipo="presencial">
+                            <descricao>Cooperativa ou Associação da agricultura familiar que esteja elaborando Proposta de Participação do PAA CONAB, modalidade Compra com Doação Simultânea.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2587">
+                <titulo>Recebimento de alimentos do PAA na entidade</titulo>
+                <descricao>O modelo do Termo de Recebimento e Aceitabilidade você encontrará [aqui] (http://www.conab.gov.br/conabweb/moc.php) (Número 30, documento 8)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3077">Termo de Recebimento e Aceitabilidade</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3338" tipo="presencial">
+                            <descricao>Endereço da própria entidade.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2812">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2813">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Abastecimento</item>
+            <item>Combate a desigualdade</item>
+            <item>Proteção Social</item>
+            <item>Alimento</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2778">doação de alimentos</item>
+            <item id="2779">conab</item>
+            <item id="2780">agricultura familiar</item>
+            <item id="2781">segurança alimentar</item>
+            <item id="2782">compra com doação simultânea</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="863">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-beneficios-do-programa-bolsa-familia</id>
         <dbId>954</dbId>
         <nome>Obter Benefícios do Programa Bolsa Família</nome>
@@ -41127,12 +43267,332 @@ https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp
         </legislacoes>
     </servico>
     <servico>
+        <id>solicitar-desenquadramento-do-simei</id>
+        <dbId>85</dbId>
+        <nome>Solicitar Desenquadramento do Simei</nome>
+        <sigla></sigla>
+        <descricao>Comunicar o desenquadramento no SIMEI.</descricao>
+        <contato>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Perguntas/Perguntas.aspx</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1190">
+                <tipo>Pessoa Jurídica</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1073">
+                <titulo>Solicitar Desenquadramento do Simei</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1317" tipo="web">
+                            <descricao>http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Servicos/Grupo.aspx?grp=3</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3352" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/5117</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
+            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="1212">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2797">Desenquadramento</item>
+            <item id="2798">SIMEI</item>
+            <item id="2799">Desenquadramento SIMEI</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="866">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=37007
+http://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>habillitar-instituicao-privada-para-o-programa-nacional-de-acesso-ao-ensino-tecnico-e-emprego</id>
+        <dbId>988</dbId>
+        <nome>Habillitar instituição privada para o Programa Nacional de Acesso ao Ensino Técnico e Emprego</nome>
+        <sigla>PRONATEC</sigla>
+        <nomes-populares>
+            <item id="765">HABILITAÇÃO PRONATEC.</item>
+        </nomes-populares>
+        <descricao>A Habilitação Pronatec é o processo que torna a unidade de ensino (UE) privada apta a ofertar cursos no âmbito do Programa Nacional de Acesso ao Ensino Técnico e Emprego (Pronatec). A UE solicita a habilitação registrando processo no Sistema Nacional de Informações de Educação Profissional e Tecnológica (Sistec), a qual será avaliada por meio do seguinte procedimento:
+1) A Secretaria de Educação Profissional e Tecnológica (Setec) informa, por ofício, o período em que ocorrerá a avaliação;
+2) Dois avaliadores designados pela Setec agendam o dia da avaliação diretamente com a unidade e realizam a avaliação registrando os dados de acordo com instrumento disponibilizado pela Setec;
+3) A comissão designada avalia os dados informados pelos avaliadores e emite parecer conclusivo de “Habilitada" para unidades que preencherem todos os requisitos e “Não Habilitada" para as que não preencherem os requisitos estabelecidos em norma própria.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1196">
+                <tipo>Instituições Privadas de Ensino Profissional Técnico de Nível Médio (IPEPTNM)</tipo>
+                <requisitos>¨ Possuir os atos autorizativos vigentes de funcionamento da unidade de ensino e o de funcionamento dos cursos técnicos que deseja ofertar;
+
+¨ Possuir 50% do corpo docente com tempo de experiência na instituição igual ou superior a um ano;
+
+¨ Apresentar uma relação igual ou superior a 1 metro quadrado por estudante entre a
+área de cada sala de aula e o número máximo de carteiras ou de estudantes desta sala;
+
+¨Possuir laboratório específico e condições de acessibilidade.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="16" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2602">
+                <titulo>Solicitar Habilitação</titulo>
+                <descricao>A UE solicita a habilitação registrando processo no Sistema Nacional de Informações de Educação Profissional e Tecnológica (Sistec)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3106">Fotos digitalizadas da entrada da escola e dos laboratórios existentes;</item>
+                        <item id="3107">Atos autorizativos vigentes de funcionamento da unidade de ensino (emitido pelo órgão validador) e o de funcionamento dos cursos técnicos que deseja ofertar</item>
+                        <item id="3108">Informações sobre as salas de aulas, laboratórios e condições de acessibilidade do local onde serão ministrado os cursos</item>
+                        <item id="3109">Informações sobre o corpo docente</item>
+                        <item id="3110">Informações sobre o número de estudantes ingressantes e concluíntes</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3358" tipo="web">
+                            <descricao>http://sistec.mec.gov.br/login/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2603">
+                <titulo>Ser informado do período de avaliação</titulo>
+                <descricao>A Secretaria de Educação Profissional e Tecnológica (Setec) informa, por ofício, o período em que ocorrerá a avaliação;</descricao>
+                <documentos>
+                    <default>
+                        <item id="3111">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3359" tipo="postal">
+                            <descricao>Endereço da entidade informado no sistema</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2604">
+                <titulo>Passar pela avaliação presencial</titulo>
+                <descricao>Dois avaliadores designados pela Setec agendam o dia da avaliação diretamente com a unidade e realizam a avaliação registrando os dados de acordo com instrumento disponibilizado pela Setec</descricao>
+                <documentos>
+                    <default>
+                        <item id="3112">Carteira de trabalho</item>
+                        <item id="3113">CNPJ</item>
+                        <item id="3114">Contrato Social</item>
+                        <item id="3115">CPF</item>
+                        <item id="3116">Diploma</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3360" tipo="presencial">
+                            <descricao>Local em que serão ministrados os cursos</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2605">
+                <titulo>Receber resultado da avaliação</titulo>
+                <descricao>A comissão designada avalia os dados informados pelos avaliadores e emite parecer conclusivo de “Habilitada" para unidades que preencherem todos os requisitos e “Não Habilitada" para as que não preencherem os requisitos estabelecidos em norma própria.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3117">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3361" tipo="web">
+                            <descricao>http://sistec.mec.gov.br/login/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2820">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação profissionalizante</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2821">Pronatec</item>
+            <item id="2822">Habilitação</item>
+            <item id="2823">instituição privada de ensino</item>
+            <item id="2824">ensino técnico</item>
+            <item id="2825">curso técnico</item>
+            <item id="2826">MEC</item>
+            <item id="2827">Sistec</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="872">[LEI Nº 12.513, DE 26 DE OUTUBRO DE 2011](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12513.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-autorizacao-para-programa-de-residencia-para-estudantes-das-areas-de-saude</id>
+        <dbId>987</dbId>
+        <nome>Obter autorização para programa de residência para estudantes das áreas de saúde</nome>
+        <sigla></sigla>
+        <descricao>Através deste serviço as instituições de ensino poderão obter autorização para seus programas de residência médica para seus cursos da área de saúde.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1194">
+                <tipo>Instituições de Ensino com cursos na área da saúde</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>O tempo médio não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2596">
+                <titulo>Solicitar autorização</titulo>
+                <descricao>Solicitação de autorização de programa de residência em área profissional de saúde.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3091">CNPJ</item>
+                        <item id="3092">Contrato Social</item>
+                        <item id="3093">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3354" tipo="web">
+                            <descricao>siscnrms.mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2597">
+                <titulo>Entregar documentos necessários e receber vistoria do local</titulo>
+                <descricao>Autorização de programa de residência em saúde com a disponibilização do documentos necessário, apresentação in loco (visita) da estrutura que oferecerá o programa</descricao>
+                <documentos>
+                    <default>
+                        <item id="3094">CNPJ</item>
+                        <item id="3095">Contrato Social</item>
+                        <item id="3096">CPF</item>
+                        <item id="3097">Diploma</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3355" tipo="web">
+                            <descricao>siscnrms.mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2598">
+                <titulo>Receber a homologação do programa</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3098">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3356" tipo="web">
+                            <descricao>siscnrms.mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="2817">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2818">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2819">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2809">residência</item>
+            <item id="2810">saúde</item>
+            <item id="2811">universidades</item>
+            <item id="2812">programa de residência</item>
+            <item id="2813">residência em saúde</item>
+            <item id="2814">MEC</item>
+            <item id="2815">medicina</item>
+            <item id="2816">enfermagem</item>
+            <item id="2817">estudante de medicina</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="870">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>optar-pelo-convenio-itr</id>
         <dbId>558</dbId>
         <nome>Optar pelo Convênio ITR</nome>
         <sigla></sigla>
         <descricao>Optar pelo convênio com a União para exercer as atribuições de fiscalização, lançamento de ofício e cobrança do Imposto sobre a Propriedade Territorial Rural (ITR), conforme disposto no art. 10 do Decreto nº6.433, de 15 de abril de 2008. Esta opção poderá ser realizada pelos municípios e pelo Distrito Federal.</descricao>
-        <contato></contato>
+        <contato>http://www.enat.receita.fazenda.gov.br/pt-br/area_nacional/areas_interesse/portal-itr-1/view</contato>
         <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <solicitantes>
@@ -41183,6 +43643,115 @@ https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp
         </palavras-chave>
         <legislacoes>
             <item id="816">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=73816</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-declaracoes-de-regularidade-de-cursos-e-instituicoes-para-apresentacao-no-exterior</id>
+        <dbId>989</dbId>
+        <nome>Obter declarações de regularidade de cursos e instituições para apresentação no exterior</nome>
+        <sigla></sigla>
+        <descricao>O cidadão que precisar de declarações acerca da regularidade de cursos e instituições de ensino para fins de comprovação junto a instituição e/ou empresa estrangeira irá utilizar este serviço para consegui-las.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1197">
+                <tipo>Cidadãos Brasileiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2606">
+                <titulo>Requisitar documento</titulo>
+                <descricao>Cadastro da demanda e entrega do documento via correspondência oficial ou e-mail.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3118">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3362" tipo="presencial">
+                            <descricao>Ministério da Educação
+Secretaria de Regulação e Supervisão da Educação Superior
+Diretoria de Política Regulatória
+Coordenação-Geral de Legislação e Normas de Regulação e Supervisão da Educação Superior
+Esplanada dos Ministérios, Bl L - Sala 103
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3363" tipo="telefone">
+                            <descricao>800616161</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3364" tipo="web">
+                            <descricao>http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw#/MzM1MS1zZQ==</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2607">
+                <titulo>Receber documento requisitado</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3119">Carteira de identidade</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3365" tipo="e-mail">
+                            <descricao>E-mail do usuário informado na requisição</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3366" tipo="presencial">
+                            <descricao>Ministério da Educação
+Secretaria de Regulação e Supervisão da Educação Superior
+Diretoria de Política Regulatória
+Coordenação-Geral de Legislação e Normas de Regulação e Supervisão da Educação Superior
+Esplanada dos Ministérios, Bl L - Sala 103
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2821">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2828">regularidade de curso</item>
+            <item id="2829">regularidade de instituição</item>
+            <item id="2830">comprovação no exterior</item>
+            <item id="2831">validação de diploma</item>
+            <item id="2832">trabalhar no exterior</item>
+            <item id="2833">estudar no exterior</item>
+            <item id="2834">comprovação no exterior</item>
+            <item id="2835">MEC</item>
+            <item id="2836">universidade</item>
+            <item id="2837">validação</item>
+            <item id="2838">comprovação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="873">-</item>
         </legislacoes>
     </servico>
 </servicos>
