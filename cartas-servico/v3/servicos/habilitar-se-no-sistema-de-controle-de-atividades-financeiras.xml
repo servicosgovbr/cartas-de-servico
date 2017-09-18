@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>habilitar-se-no-sistema-de-controle-de-atividades-financeiras</id>
+    <dbId>1006</dbId>
+    <nome>Habilitar-se no Sistema de Controle de Atividades Financeiras</nome>
+    <sigla>SISCOAF</sigla>
+    <nomes-populares>
+        <item id="778">COAF</item>
+    </nomes-populares>
+    <descricao>Cadastro no COAF e habilitação de pessoas físicas e jurídicas, referidas no artigo 9º da Lei nº 9.613/1998, no Sistema de Controle de Atividades Financeiras (SISCOAF)</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1230">
+            <tipo>Pessoas Físicas ou Jurídicas que se enquadrem como Pessoas Obrigadas</tipo>
+            <requisitos>PESSOAS OBRIGADAS são aquelas para as quais a Lei 9.613, de 1998, impõe obrigações de prevenção e combate ao crime de lavagem de dinheiro e financiamento do terrorismo.
+Consulte se você é pessoa obrigada [aqui](https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/consultaPO/consultarPO.jsf)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2651">
+            <titulo>Requisitar habilitação no SISCOAF</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3228">CNPJ</item>
+                    <item id="3229">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3443" tipo="web">
+                        <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/siscoafInicial.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2652">
+            <titulo>Cadastrar informações demandadas por lei</titulo>
+            <descricao>As obrigações estabelecidas pela lei referem-se ao dever de identificar clientes, manter registros e comunicar operações financeiras, entre outros</descricao>
+            <documentos>
+                <default>
+                    <item id="3230">Dados requisitados</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3444" tipo="web">
+                        <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/siscoafInicial.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2845">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2846">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Sistema Financeiro</item>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2957">controle de atividades financeiras</item>
+        <item id="2958">pessoas obrigadas</item>
+        <item id="2959">combate ao terrorismo</item>
+        <item id="2960">lavagem de dinheiro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="898">-</item>
+    </legislacoes>
+</servico>
