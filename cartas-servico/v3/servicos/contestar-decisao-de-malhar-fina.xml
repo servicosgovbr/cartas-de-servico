@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>contestar-decisao-de-malhar-fina</id>
+    <dbId>1003</dbId>
+    <nome>Contestar decisão de Malhar Fina</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="775">Malha Pessoa Física</item>
+    </nomes-populares>
+    <descricao>Possibilita a contribuintes pessoas físicas:
+a)	intimados a apresentar esclarecimentos sobre suas Declarações do Imposto sobre a Renda, em procedimento fiscal, identifiquem a relação de documentos que vão apresentar, organizem melhor essa relação de documentos, tentando evitar esquecimento ou engano;
+b)	cujas Declarações do Imposto sobre a Renda foram objeto de procedimento fiscal que encerrou com lançamento de ofício (por infrações à legislação tributária), apresentem contestação a esse lançamento, por meio de uma impugnação ou uma solicitação de retificação de lançamento. Neste caso, os contribuintes encontram um modelo padrão de impugnação/SRL, orientação e relação de documentos passíveis de apresentação para contestar o lançamento, inclusive selecionando o que vai contestar, se todo o lançamento ou parte dele. O contribuinte pode imprimir os modelos de SRL e/ou Impugnação, conforme o caso e a relação de documentos que vai juntar para fundamentar sua contestação.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1225">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1226">
+            <tipo>Estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="1" max="120" unidade="meses"/>
+        <descricao>Não é possível estabelecer um tempo padrão</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2642">
+            <titulo>Escolher ação desejada</titulo>
+            <descricao>Na primeira tela do serviço, o contribuinte identifica o tipo de ação que deseja realizar: 
+* Consultar Intimações
+* Solicitar Análise
+* Consultar Inconsistências
+* Pedir Antecipação de Análise
+* Entregar Documentos e/ou impugnação
+* Consultar Inconsistências
+Identifica-se informando CPF e número do Documento e caracteres anti-robô
+No segundo passo, seleciona a documentação que vai apresentar, de acordo com a ação indicada no primeiro passo.</descricao>
+            <documentos>
+                <default>
+                    <item id="3211">CPF</item>
+                    <item id="3212">Termo de Intimação para a qual deseja apresentar documento</item>
+                    <item id="3213">Notificação de Lançamento que deseja contestar</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3434" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/cobranca-e-fiscalizacao/malha-fiscal</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2643">
+            <titulo>Enviar documentação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3214">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3435" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/cobranca-e-fiscalizacao/malha-fiscal</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2841">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2941">malha fina</item>
+        <item id="2942">contestação</item>
+        <item id="2943">imposto de renda</item>
+        <item id="2944">retenção</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="895">-</item>
+    </legislacoes>
+</servico>
