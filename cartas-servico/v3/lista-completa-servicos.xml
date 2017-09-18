@@ -197,16 +197,16 @@ Obs2: O serviço dispensa o auxílio de advogado.</descricao>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2236" tipo="web">
-                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                        <canal-de-prestacao id="2238" tipo="postal">
+                            <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
+Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900.</descricao>
                         </canal-de-prestacao>
                         <canal-de-prestacao id="2237" tipo="presencial">
                             <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
 Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF.</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="2238" tipo="postal">
-                            <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
-Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900.</descricao>
+                        <canal-de-prestacao id="2236" tipo="web">
+                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -8241,6 +8241,97 @@ CEP 70064-901   Brasília/DF</descricao>
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>habilitar-se-no-sistema-de-controle-de-atividades-financeiras</id>
+        <dbId>1006</dbId>
+        <nome>Habilitar-se no Sistema de Controle de Atividades Financeiras</nome>
+        <sigla>SISCOAF</sigla>
+        <nomes-populares>
+            <item id="778">COAF</item>
+        </nomes-populares>
+        <descricao>Cadastro no COAF e habilitação de pessoas físicas e jurídicas, referidas no artigo 9º da Lei nº 9.613/1998, no Sistema de Controle de Atividades Financeiras (SISCOAF)</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1230">
+                <tipo>Pessoas Físicas ou Jurídicas que se enquadrem como Pessoas Obrigadas</tipo>
+                <requisitos>PESSOAS OBRIGADAS são aquelas para as quais a Lei 9.613, de 1998, impõe obrigações de prevenção e combate ao crime de lavagem de dinheiro e financiamento do terrorismo.
+Consulte se você é pessoa obrigada [aqui](https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/consultaPO/consultarPO.jsf)</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2651">
+                <titulo>Requisitar habilitação no SISCOAF</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3228">CNPJ</item>
+                        <item id="3229">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3443" tipo="web">
+                            <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/siscoafInicial.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2652">
+                <titulo>Cadastrar informações demandadas por lei</titulo>
+                <descricao>As obrigações estabelecidas pela lei referem-se ao dever de identificar clientes, manter registros e comunicar operações financeiras, entre outros</descricao>
+                <documentos>
+                    <default>
+                        <item id="3230">Dados requisitados</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3444" tipo="web">
+                            <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/siscoafInicial.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2845">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2846">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Sistema Financeiro</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2957">controle de atividades financeiras</item>
+            <item id="2958">pessoas obrigadas</item>
+            <item id="2959">combate ao terrorismo</item>
+            <item id="2960">lavagem de dinheiro</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="898">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>aposentadoria-especial</id>
         <dbId>98</dbId>
         <nome>Aposentadoria Especial</nome>
@@ -10652,6 +10743,114 @@ Portaria 1.949/2015: Segue link: http://pesquisa.in.gov.br/imprensa/jsp/visualiz
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>cadastrar-se-no-sistema-eletronico-de-intercambio-do-coaf</id>
+        <dbId>1007</dbId>
+        <nome>Cadastrar-se no Sistema Eletrônico de Intercâmbio do COAF</nome>
+        <sigla>SEI-C</sigla>
+        <descricao>Cadastro de autoridades competentes no Sistema Eletrônico de Intercâmbio (SEI-C), a fim de que possam solicitar e receber informações sobre inteligência financeira do COAF</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1231">
+                <tipo>Autoridade competente para apuração (investigação) do crime de lavagem de dinheiro ou de qualquer outro ilícito;</tipo>
+                <requisitos>Autoridade responsável pelo procedimento de investigação objeto do pedido</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2653">
+                <titulo>Solicitar cadastramento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3231">CPF</item>
+                        <item id="3232">formulário próprio assinado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3445" tipo="web">
+                            <descricao>http://www.coaf.sei.fazenda.gov.br/web_pedidos/FormularioMain.asp</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3446" tipo="postal">
+                            <descricao>SAUN Qd 5 Lote C  Torre D   2º andar - CEP: 70.040-250 - Asa Norte - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2654">
+                <titulo>Receber senha</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3233">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3447" tipo="e-mail">
+                            <descricao>E-mail cadastrado no momento da inscrição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2655">
+                <titulo>Requisitar informações</titulo>
+                <descricao>Após devidamente cadastrada, a autoridade competente poderá, através do sistema, requisitar as informações de interesse às apurações em questão</descricao>
+                <documentos>
+                    <default>
+                        <item id="3234">Número e natureza do procedimento de investigação instaurado</item>
+                        <item id="3235">Informações sobre os fundados indícios da existência do(s) ilícito(s) sob investigação, com indicação do(s) respectivo(s) tipo(s) penal(is);</item>
+                        <item id="3236">Identificação das pessoas envolvidas na investigação, com indicação do nome e do CPF ou CNPJ, conforme o caso</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3448" tipo="web">
+                            <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2847">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Segurança e Ordem Pública</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2961">inteligência financeira</item>
+            <item id="2962">crimes de ordem financeira</item>
+            <item id="2963">lavagem de dinheiro</item>
+            <item id="2964">intercâmbio de informações</item>
+            <item id="2965">COAF</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="899">[LEI Nº 9.613, DE 3 DE MARÇO DE 1998](http://www.planalto.gov.br/ccivil_03/leis/L9613.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>unidades-basicas-de-saude-ubs</id>
         <dbId>322</dbId>
         <nome>Unidades Básicas de Saúde (UBS)</nome>
@@ -11680,6 +11879,95 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="868">http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=36833</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>habilitar-se-como-interveniente-em-comercio-exterior</id>
+        <dbId>1008</dbId>
+        <nome>Habilitar-se como interveniente em Comércio Exterior</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="779">RADAR</item>
+        </nomes-populares>
+        <descricao>Através deste serviço, as pessoas jurídicas ou físicas que tem intenção de operar no comércio exterior podem se habilitar como intervenientes.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1232">
+                <tipo>Cidadãos Brasileiros e Estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1233">
+                <tipo>Empresas públicas, privadas ou de economia mista</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1234">
+                <tipo>Outras pessoas jurídicas de Direitos Privados</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1235">
+                <tipo>Órgãos, fundações e autarquias de direito público</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1236">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2656">
+                <titulo>Cadastrar-se no sistema e enviar a documentação necessária</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3237">Carteira de identidade</item>
+                        <item id="3238">CNPJ</item>
+                        <item id="3239">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3449" tipo="web">
+                            <descricao>http://portal.siscomex.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2848">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2849">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2850">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2851">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Indústria</item>
+            <item>Relações Internacionais</item>
+            <item>Transportes</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2966">aduana</item>
+            <item id="2967">intervenientes</item>
+            <item id="2968">comércio exterior</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="900">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -33504,6 +33792,303 @@ c) Procuração (cópia autenticada ou original), se for o caso.</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>requerer-alteracoes-na-aplicacao-de-medidas-antidumping-e-compensatorias-por-razoes-de-interesse-publico</id>
+        <dbId>996</dbId>
+        <nome>Requerer alterações na aplicação de medidas antidumping e compensatórias por razões de interesse público.</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="771">Grupo Técnico de Interesse Público - GTIP</item>
+        </nomes-populares>
+        <descricao>Análise de pleitos de suspensão ou alteração de medidas antidumping e compensatórias definitivas, bem como de não aplicação de medidas antidumping e compensatórias provisórias, por razões de interesse público. Os usuários são as empresas pleiteantes ou interessadas, devidamente habilitadas no processo.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1212">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2627">
+                <titulo>Apresentar pleito.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3156">Contrato Social</item>
+                        <item id="3157">Procuração do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3408" tipo="presencial">
+                            <descricao>Secretaria de Assuntos Internacionais do Ministério da Fazenda.
+SAUS Quadra 3 Bloco O 10º andar Ed. Órgãos Regionais CEP 70079-900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3409" tipo="postal">
+                            <descricao>Secretaria de Assuntos Internacionais do Ministério da Fazenda.
+SAUS Quadra 3 Bloco O 10º andar Ed. Órgãos Regionais CEP 70079-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2628">
+                <titulo>Habilitação no processo de empresas interessadas.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3158">Contrato Social</item>
+                        <item id="3159">Procuração do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3410" tipo="presencial">
+                            <descricao>Secretaria de Assuntos Internacionais do Ministério da Fazenda.
+SAUS Quadra 3 Bloco O 10º andar Ed. Órgãos Regionais CEP 70079-900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3411" tipo="postal">
+                            <descricao>Secretaria de Assuntos Internacionais do Ministério da Fazenda.
+SAUS Quadra 3 Bloco O 10º andar Ed. Órgãos Regionais CEP 70079-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2828">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Economia e Finanças</item>
+            <item>Indústria</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2905">antidumping</item>
+            <item id="2906">medidas compensatórias</item>
+            <item id="2907">interesse público</item>
+            <item id="2908">GTIP</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="888">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-ressarcimento-do-ipi-missoes-diplomaticas-reparticoes-consultares-e-organizacoes-internacionais</id>
+        <dbId>998</dbId>
+        <nome>Obter ressarcimento do IPI - Missões Diplomáticas, Repartições Consultares e Organizações Internacionais</nome>
+        <sigla></sigla>
+        <descricao>Ressarcimento às missões diplomáticas e repartições consulares de caráter permanente e às representações de caráter permanente de órgãos internacionais de que o Brasil faça parte, os valores do IPI incidente sobre produtos adquiridos no mercado interno destinados à manutenção, ampliação ou reforma de imóveis de seu uso.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1214">
+                <tipo>Estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1215">
+                <tipo>Missões Diplomáticas, repartições consulares ou organismos internacionais</tipo>
+                <requisitos>Missões diplomáticas e repartições consulares de caráter permanente e representações de caráter permanente de órgãos internacionais de que o Brasil faça parte</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2633">
+                <titulo>Protocolar o  Pedido de Ressarcimento de IPI</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3175">Dados das notas fiscais das aquisições que dão direito ao ressarcimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3418" tipo="presencial">
+                            <descricao>Centro de Atendimento ao Contribuinte
+[Agende seu atendimento aqui](https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3419" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2831">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2832">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2915">isenção</item>
+            <item id="2916">IPI</item>
+            <item id="2917">Organizações internacionais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="890">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>regularizar-o-cpf</id>
+        <dbId>1001</dbId>
+        <nome>Regularizar o CPF</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="773">CPF</item>
+        </nomes-populares>
+        <descricao>Regularizar o CPF na página da RFB na internet ou nos conveniados Banco do Brasil, Caixa Econômica Federal e Correios.  A regularização do CPF na página da RFB será realizada nos casos de complementação de dados cadastrais que não constem na base de dados e quando não houver pendência na entrega de declarações de pessoa física.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1221">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1222">
+                <tipo>Estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2639">
+                <titulo>Realizar as alterações necessárias no cadastro</titulo>
+                <descricao>No caso de atendimento presencial, levar a documentação necessária</descricao>
+                <documentos>
+                    <default>
+                        <item id="3191">Carteira de identidade</item>
+                        <item id="3192">Carteira de identidade de estrangeiro</item>
+                        <item id="3193">Carteira de trabalho</item>
+                        <item id="3194">Certidão de casamento</item>
+                        <item id="3195">Certidão de nascimento</item>
+                        <item id="3196">Comprovante de endereço/residência</item>
+                        <item id="3197">Passaporte</item>
+                        <item id="3198">Registro em Cartório</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="107">
+                            <descricao>Taxa de serviços de CPF (Banco do Brasil, Caixa e Correios)....</descricao>
+                            <moeda>R$</moeda>
+                            <valor>7</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3427" tipo="presencial">
+                            <descricao>* Agências dos Correios, Caixa Econômica Federal e Banco do Brasil        
+
+* [Entidades Públicas Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)       
+
+* [Unidades de Atendimento ao Contribuinte](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3428" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/regularizar/Default.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2640">
+                <titulo>Verificar Situação Cadastral</titulo>
+                <descricao>Após o pedido de regularização, você poderá verificar a situação do seu CPF para comprovar que a operação teve efeito</descricao>
+                <documentos>
+                    <default>
+                        <item id="3199">Carteira de identidade</item>
+                        <item id="3207">Número do CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3433" tipo="presencial">
+                            <descricao>* Agências dos Correios, Caixa Econômica Federal e Banco do Brasil        
+
+* [Entidades Públicas Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)       
+
+* [Unidades de Atendimento ao Contribuinte](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3430" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaSituacao/ConsultaPublica.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2839">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Comércio e Serviços</item>
+            <item>Cultura</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Habitação</item>
+            <item>Previdência Social</item>
+            <item>Proteção Social</item>
+            <item>Saúde</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2930">CPF</item>
+            <item id="2931">regularização</item>
+            <item id="2932">complementação cadastral</item>
+            <item id="2933">regularização cadastral</item>
+            <item id="2934">regularizar cpf</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="893">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-cessao-de-areas-naturais-para-a-realizacao-de-estudos-ambientais</id>
         <dbId>960</dbId>
         <nome>Obter cessão de áreas naturais para a realização de estudos ambientais</nome>
@@ -36627,6 +37212,329 @@ Obs: os modelos dos documentos estão disponíveis no sítio eletrônico da CONA
         </palavras-chave>
         <legislacoes>
             <item id="847">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-apoio-financeiro-para-implementacao-ou-expansao-de-escolas-em-tempo-integral</id>
+        <dbId>994</dbId>
+        <nome>Obter apoio financeiro para implementação ou expansão de escolas em tempo integral</nome>
+        <sigla>EMTI</sigla>
+        <nomes-populares>
+            <item id="768">Programa de Fomento as Escolas de Ensino Médio em Tempo Integral</item>
+        </nomes-populares>
+        <descricao>natureza do serviço: Transferência de Recursos para as SEE - Secretarias estaduais ou distrital de educação - e escolas que aderirem ao Programa EMTI, visando a expansão de escolas em tempo integral no ensino médio, além do aumento do desempenho acadêmico e da melhora dos indicadores de fluxo escolar;
+os(as) usuários(as): Estudantes do Ensino Médio Público por intermédio das SEE;
+e o produto ou benefício recebido: São transferidos R$ 2000,00 por aluno matriculado nas escolas do programa para a SEE melhorar e suplementar os custos e/ou investimentos que são mais altos do que para o ensino médio regular para a implementação do Programa EMTI.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1210">
+                <tipo>Estados e Distrito Federal</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="12" max="120" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2620">
+                <titulo>Aderir ao programa</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3147">Termo de Compromisso</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3389" tipo="telefone">
+                            <descricao>20228303</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3390" tipo="e-mail">
+                            <descricao>escolaemtempointegral@mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3391" tipo="presencial">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3392" tipo="postal">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2621">
+                <titulo>Apresentar Plano de Implementação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3148">Plano de Implementação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3393" tipo="e-mail">
+                            <descricao>escolaemtempointegral@mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3394" tipo="postal">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3395" tipo="presencial">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2622">
+                <titulo>Realizar monitoramento das escolas escolhidas</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3396" tipo="presencial">
+                            <descricao>Escolas escolhidas</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2623">
+                <titulo>Prestar contas</titulo>
+                <descricao>Apresentar os resultados e a prestação de contas</descricao>
+                <documentos>
+                    <default>
+                        <item id="3149">Documentos comprobatórios da utilização do recurso</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3397" tipo="e-mail">
+                            <descricao>escolaemtempointegral@mec.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3398" tipo="presencial">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3399" tipo="postal">
+                            <descricao>Ministério da Educação
+Secretaria de Educação Básica
+Diretoria de Currículos e Educação Integral
+Coordenação-Geral de Ensino Médio
+Esplanada dos Ministérios, Bl. “L” - anexo II – Sala 311
+70047-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2826">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação básica</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2889">Educação em tempo integral</item>
+            <item id="2890">tempo integral</item>
+            <item id="2891">Financiamento</item>
+            <item id="2892">Programa de Fomento as Escolas de Ensino Médi</item>
+            <item id="2893">EMTI</item>
+            <item id="2894">Fomento à educação em tempo integral</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="886">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-o-seguro-de-credito-a-exportacao</id>
+        <dbId>995</dbId>
+        <nome>Obter o Seguro de Crédito à Exportação</nome>
+        <sigla>SCE</sigla>
+        <nomes-populares>
+            <item id="769">Seguro de Crédito</item>
+            <item id="770">FGE</item>
+        </nomes-populares>
+        <descricao>Consiste em uma cobertura (seguro) do Governo Federal para operações de exportação brasileira contra riscos comerciais, políticos e extraordinários.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1211">
+                <tipo>Empresas privadas</tipo>
+                <requisitos>Exportador brasileiro ou instituição financeira</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2624">
+                <titulo>Cadastrar a empresa</titulo>
+                <descricao>Cadastrar o exportador brasileiro ou instituição financeira no Sistema de Garantias Públicas (SGP) da Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A (ABGF).</descricao>
+                <documentos>
+                    <default>
+                        <item id="3150">CNPJ</item>
+                        <item id="3151">Contrato Social</item>
+                        <item id="3152">Registro da Junta Comercial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3400" tipo="presencial">
+                            <descricao>Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - ABGF
+Av. Rio Branco, 1, 9º Andar /B – Rio de Janeiro
+20090-003 – Rio de Janeiro – RJ - Brasil</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3401" tipo="web-inscrever-se">
+                            <descricao>http://mpme.abgf.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3402" tipo="postal">
+                            <descricao>Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - ABGF
+Av. Rio Branco, 1, 9º Andar /B – Rio de Janeiro
+20090-003 – Rio de Janeiro – RJ - Brasil</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2625">
+                <titulo>Cadastrar operação de exportação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3153">contrato comercial entre exportador e importador</item>
+                        <item id="3154">contrato de financiamento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3403" tipo="presencial">
+                            <descricao>Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - ABGF
+Av. Rio Branco, 1, 9º Andar /B – Rio de Janeiro
+20090-003 – Rio de Janeiro – RJ - Brasil</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3404" tipo="web">
+                            <descricao>http://mpme.abgf.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3405" tipo="postal">
+                            <descricao>Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - ABGF
+Av. Rio Branco, 1, 9º Andar /B – Rio de Janeiro
+20090-003 – Rio de Janeiro – RJ - Brasil</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2626">
+                <titulo>Pagar Prêmio e Emitir Certificado</titulo>
+                <descricao>Pagamento do preço de cobertura (prêmio) para emissão do Certificado de Garantia de Cobertura.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3155">comprovante de pagamento da GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="106">
+                            <descricao>Prêmio de Cobertura (variável de acordo com o valor do seguro)</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3406" tipo="presencial">
+                            <descricao>Agência Brasileira Gestora de Fundos Garantidores e Garantias S.A. - ABGF
+Av. Rio Branco, 1, 9º Andar /B – Rio de Janeiro
+20090-003 – Rio de Janeiro – RJ - Brasil</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3407" tipo="web">
+                            <descricao>http://mpme.abgf.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2827">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Economia e Finanças</item>
+            <item>Indústria</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2895">Seguro</item>
+            <item id="2896">Prêmio</item>
+            <item id="2897">exportação</item>
+            <item id="2898">FGE</item>
+            <item id="2899">SCE</item>
+            <item id="2900">SGP</item>
+            <item id="2901">ABGF</item>
+            <item id="2902">Seguro Exportação</item>
+            <item id="2903">Seguro de Crédito</item>
+            <item id="2904">MPME</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="887">=</item>
         </legislacoes>
     </servico>
     <servico>
@@ -41193,6 +42101,299 @@ Brasília, Distrito Federal, CEP 70.054-906</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>candidatar-se-ao-premio-tesouro-nacional</id>
+        <dbId>997</dbId>
+        <nome>Candidatar-se ao Prêmio Tesouro Nacional</nome>
+        <sigla></sigla>
+        <descricao>A Secretaria do Tesouro Nacional (STN) promove o concurso anualmente, tendo a Escola de Administração Fazendária – ESAF como realizadora do evento e a Fundação Getúlio Vargas – FGV/RJ como patrocinadora. O Prêmio tem a finalidade de estimular a pesquisa na área de Finanças Públicas, reconhecendo trabalhos de qualidade técnica e de aplicabilidade na Administração Pública. O Prêmio já existe há mais de 20 anos.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1213">
+                <tipo>Estudantes e acadêmicos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="9" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2629">
+                <titulo>Realizar a inscrição da monografia no site da ESAF.</titulo>
+                <descricao>¨[Ficha Inscrição](https://goo.gl/WMVF6R)
+¨[Comprovante Inscrição](goo.gl/7B1NBs)
+¨[Declaração inexistência plágio](https://goo.gl/HBYViu)
+¨[Autorização Publicação](https://goo.gl/n9nHfb)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3160">Cópia do documento de identidade do autor e/ou de cada integrante do grupo</item>
+                        <item id="3161">Uma via impressa da monografia, preferencialmente em espiral ou grampeada</item>
+                        <item id="3162">Ficha de inscrição (representante do grupo)</item>
+                        <item id="3163">Comprovante de Inscrição (em nome do representante do grupo, enviado junto com o material e depois devolvido pela ESAF)</item>
+                        <item id="3164">Declaração de inexistência de plágio ou autoplágio</item>
+                        <item id="3165">Autorização de publicação</item>
+                        <item id="3166">Currículo atualizado, assinado e com todas as páginas rubricadas, do autor, e, no caso de trabalho em grupo, de cada integrante;</item>
+                        <item id="3167">Cópia do diploma de graduação ou pós-graduação ou comprovante de matrícula no último ano de graduação expedidos por instituições e cursos reconhecidos pelo Ministério da Educação de todos os integrantes do grupo</item>
+                        <item id="3168">Resumo da monografia com um mínimo de 250 (duzentos e cinquenta) e máximo de 500 (quinhentas) palavras, e com até três palavras-chave</item>
+                        <item id="3169">Sumário executivo com 3 a 5 páginas</item>
+                        <item id="3170">Cd-rom ou pendrive com a monografia, resumo e sumário executivo, em arquivo compatível com a versão 2007 do Microsoft Office. Os arquivos magnéticos deverão ser idênticos às versões impressas.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3412" tipo="postal">
+                            <descricao>Escola de Administração Fazendária – Esaf
+Diretoria de Educação – Dired
+XXII Prêmio Tesouro Nacional – 2017
+Rodovia DF-001, km 27,4 – Setor de Habitações Individuais Sul – Bloco B – Lago Sul
+Brasília–DF – CEP 71686-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2630">
+                <titulo>Conferir o resultado do concurso de monografias.</titulo>
+                <descricao>O resultado será divulgado, na data prevista em regulamento, nos sítios da Secretaria de Tesouro Nacional, no sítio da ESAF e no Diário Oficial da União</descricao>
+                <documentos>
+                    <default>
+                        <item id="3171">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3413" tipo="web">
+                            <descricao>http://www.tesouro.fazenda.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3415" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3414" tipo="web">
+                            <descricao>www.esaf.fazenda.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2631">
+                <titulo>Confirmar presença na cerimônia de premiação (apenas trabalhos selecionados)</titulo>
+                <descricao>Após a divulgação do resultado no Diário Oficial da União, o premiado terá o prazo de **2 dias úteis** para confirmar presença na cerimônia de premiação, por meio do endereço eletrônico</descricao>
+                <documentos>
+                    <default>
+                        <item id="3172">Documentos que forem solicitados pelos organizadores do evento.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3416" tipo="e-mail">
+                            <descricao>premio-stn.df.esaf@fazenda.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2632">
+                <titulo>Participar da Cerimônia de Premiação (apenas trabalhos selecionados)</titulo>
+                <descricao>A solenidade de premiação será realizada em Brasília/DF, em data a ser divulgada oportunamente. 
+Para os autores ou representante de grupo dos trabalhos premiados (inclusive com menção honrosa) que morem fora de Brasília/DF, serão fornecidas diárias e passagens para participação da cerimônia. Estes poderão ser solicitados a apresentar seus 
+trabalhos em um workshop no dia posterior a data da cerimônia de premiação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3173">Documentação de identificação pessoal</item>
+                        <item id="3174">Demais documentos requisitados pela organização do evento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3417" tipo="presencial">
+                            <descricao>Local da Cerimônia de Premiação, em Brasília/DF, a ser oportunamente divulgado.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2830">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Educação superior</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2909">Tesouro Nacional</item>
+            <item id="2910">Prêmio</item>
+            <item id="2911">Monografia</item>
+            <item id="2912">ESAF</item>
+            <item id="2913">STN</item>
+            <item id="2914">Premiação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="889">[Portaria nº 31, de 24/02/17](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/03/2017&amp;jornal=1&amp;pagina=54&amp;totalArquivos=132)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certificado-de-operador-economico-autorizado</id>
+        <dbId>1009</dbId>
+        <nome>Obter Certificado de Operador Econômico Autorizado</nome>
+        <sigla>OEA</sigla>
+        <descricao>O Operador Econômico Autorizado (OEA) é o interveniente em operação de comércio exterior envolvido na movimentação internacional de mercadorias a qualquer título que, mediante o cumprimento voluntário dos critérios de segurança aplicados à cadeia logística ou das obrigações tributárias e aduaneiras, conforme a modalidade de certificação, demonstre atendimento aos níveis de conformidade e confiabilidade exigidos pelo Programa Brasileiro de OEA.  Podem ser certificados os seguintes intervenientes da cadeia logística:
+I - o importador;
+II - o exportador;
+III - o transportador;
+IV - o agente de carga;
+V - o depositário de mercadoria sob controle aduaneiro;
+VI - o operador portuário ou aeroportuário; e
+VII - o despachante aduaneiro.
+Aos operadores certificados no Programa OEA, serão concedidos benefícios que se relacionem com a facilitação dos procedimentos aduaneiros, no País ou no exterior.</descricao>
+        <contato>[Portal OEA na internet](http://idg.receita.fazenda.gov.br/orientacao/aduaneira/importacao-e-exportacao/oea/oea)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1237">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="120" max="360" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2657">
+                <titulo>Solicitar abertura de Dossiê Digital de Atendimento</titulo>
+                <descricao>Requerente solicita a abertura do dossiê digital por meio do [Formulário SODEA] (http://idg.receita.fazenda.gov.br/formularios/outros-assuntos/documentos-digitais/sodea.pdf)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3240">Formulário SODEA preenchido.</item>
+                        <item id="3241">Procuração (se procurador)</item>
+                        <item id="3242">documentos de identificação do outorgante e do outorgado (se procurador)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3450" tipo="presencial">
+                            <descricao>[Unidades de atendimento da RFB](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2658">
+                <titulo>Juntar documentação Necessária ao DDA</titulo>
+                <descricao>Após aberto o DDA, o Requerente da certificação OEA tem 30 dias para realizar a juntada da documentação necessária.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3243">Requerimento da Certificação OEA – Anexo I - para todas as modalidades</item>
+                        <item id="3244">Questionário de Autoavaliação (QAA) respondido - Anexo II - para todas as modalidades</item>
+                        <item id="3245">Documentos e evidências que comprovam as informações declaradas no QAA - para todas as modalidades</item>
+                        <item id="3246">Relatório Complementar de Validação – Anexo III - para as modalidades OEA-C Nível 2 e OEA-Pleno</item>
+                        <item id="3247">Mapas de Risco dos Critérios de Conformidade</item>
+                        <item id="3248">Metodologia adotada e papéis de trabalho</item>
+                        <item id="3249">Currículo dos profissionais responsáveis</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3451" tipo="presencial">
+                            <descricao>[Unidades de atendimento da RFB](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3452" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2659">
+                <titulo>Receber Certificado (caso aprovado o pedido)</titulo>
+                <descricao>Análise do pedido de certificação pelo Centro OEA e posterior Certificação como OEA ou indeferimento.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3453" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3454" tipo="e-mail">
+                            <descricao>E-mail do responsável informado no cadastro</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2660">
+                <titulo>Prestar informações sempre que requisitado</titulo>
+                <descricao>Monitoramento dos OEA para acompanhamento das recomendações feitas durante a certificação e também para acompanhamento permanente quanto ao cumprimento das condições de permanência no Programa OEA.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3250">Documentos solicitados nas recomendações feitas durante a certificação</item>
+                        <item id="3251">Documentos exigidos pelo servidor designado para acompanhamento permanente do OEA certificado.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3455" tipo="e-mail">
+                            <descricao>E-mail do responsável informado no cadastro</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2852">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2969">OEA</item>
+            <item id="2970">Operador Econômico</item>
+            <item id="2971">Certificado</item>
+            <item id="2972">DDA</item>
+            <item id="2973">Dossiê Digital de Atendimento</item>
+            <item id="2974">SODEA</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="901">[IN RFB 1598/2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=70204&amp;visao=anotado)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cancelar-registro-de-funcionamento-para-estabelecimentos-que-lidam-com-produtos-destinados-a-alimentacao-animal</id>
         <dbId>935</dbId>
         <nome>Cancelar registro de funcionamento para estabelecimentos que lidam com produtos destinados à alimentação animal.</nome>
@@ -41797,6 +42998,98 @@ thais.kawashima@mds.gov.br</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="860">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>inscrever-se-no-cpf-em-representacao-diplomatica-no-exterior</id>
+        <dbId>1002</dbId>
+        <nome>Inscrever-se no CPF em representação diplomática no exterior</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="774">CPF</item>
+        </nomes-populares>
+        <descricao>Realizar, em Representação Diplomática do Brasil, pedido de inscrição, alteração, regularização ou cancelamento no CPF de residente no exterior.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1223">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1224">
+                <tipo>Estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2641">
+                <titulo>Requerer cadastro</titulo>
+                <descricao>Informar os dados requisitados e receber o comprovante impresso do CPF. Na internet, apenas para pessoas com idade entre 16 e 25 anos que possuam título de eleitor em situação regular</descricao>
+                <documentos>
+                    <default>
+                        <item id="3208">Carteira de identidade de estrangeiro</item>
+                        <item id="3209">Passaporte</item>
+                        <item id="3210">Carteira de Identidade</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="108">
+                            <descricao>Taxa de Serviços de CPF (apenas presencial)....</descricao>
+                            <moeda>R$</moeda>
+                            <valor>7</valor>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3431" tipo="presencial">
+                            <descricao>Representações diplomáticas brasileiras no país de residência</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3432" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2840">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Educação</item>
+            <item>Habitação</item>
+            <item>Indústria</item>
+            <item>Meio ambiente</item>
+            <item>Proteção Social</item>
+            <item>Saúde</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2935">CPF</item>
+            <item id="2936">exterior</item>
+            <item id="2937">estrangeiros</item>
+            <item id="2938">embaixada</item>
+            <item id="2939">representação diplomática</item>
+            <item id="2940">cpf no exterior</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="894">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -43970,6 +45263,229 @@ http://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp123.htm</item>
         </legislacoes>
     </servico>
     <servico>
+        <id>inscrever-imovel-rural</id>
+        <dbId>1000</dbId>
+        <nome>Inscrever imóvel rural</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="772">ITR</item>
+        </nomes-populares>
+        <descricao>Solicitar inscrição, alteração, cancelamento ou reativação do cadastro do imóvel rural, por meio do aplicativo Cafir – Coletor Web.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1220">
+                <tipo>Proprietários de Imóveis Rurais (Pessoa Física ou Jurídica)</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2636">
+                <titulo>Fazer pré-cadastro pela internet</titulo>
+                <descricao>Preencher as informações na internet e imprimir o Decir para levar a uma unidade da RFB</descricao>
+                <documentos>
+                    <default>
+                        <item id="3181">Dados pessoais</item>
+                        <item id="3182">Dados do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3422" tipo="web">
+                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2637">
+                <titulo>Entregar documentação comprobatória</titulo>
+                <descricao>Apresentar a documentação comprobatória em uma unidade da RFB ou enviar por correio.
+Maiores detalhes sobre a documentação necessária [aqui](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/documentacao-necessaria-a-solicitacao-de-atos-cadastrais-no-cafir)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3183">Carteira de identidade</item>
+                        <item id="3184">Certidões de cartório</item>
+                        <item id="3185">Procuração do representante legal</item>
+                        <item id="3186">Registro em Cartório</item>
+                        <item id="3187">Documentação do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3423" tipo="presencial">
+                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3424" tipo="postal">
+                            <descricao>Unidade de jurisdição do contribuinte -[Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2638">
+                <titulo>Consultar o resultado da análise da solicitação pelo Cafir Web</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3188">Documento de Identificação Pessoal</item>
+                        <item id="3189">Número do Recibo</item>
+                        <item id="3190">Número de Identificação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3425" tipo="web">
+                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3426" tipo="presencial">
+                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2837">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2838">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2836">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Habitação Rural</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2923">imóvel rural</item>
+            <item id="2924">receita federal</item>
+            <item id="2925">cadastro</item>
+            <item id="2926">cafir</item>
+            <item id="2927">cadir</item>
+            <item id="2928">coletor web</item>
+            <item id="2929">incra</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="892">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-se-no-registro-especial-de-empresas-que-realizam-operacoes-com-papel-imune</id>
+        <dbId>1004</dbId>
+        <nome>Cadastrar-se no Registro Especial de Empresas que realizam operações com Papel Imune</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="776">Papel Imune</item>
+        </nomes-populares>
+        <descricao>Cadastro dos estabelecimentos que que realizam operações com papel imune, nas operações destinados à impressão de livros, jornais e periódicos.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1227">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2644">
+                <titulo>Requisitar inclusão no cadastro</titulo>
+                <descricao>A concessão do Registro Especial é dada a cada atividade desenvolvida, entre:
+
+I - fabricante de papel (FP); 
+II - usuário: empresa jornalística ou editora que explore a indústria de livro, jornal ou periódicos (UP); 
+III - importador (IP); 
+IV - distribuidor (DP); e 
+V - gráfica: impressor de livros jornais e periódicos, que recebe papel de terceiros ou o adquire com imunidade tributária (GP).</descricao>
+                <documentos>
+                    <default>
+                        <item id="3215">Dados de identificação: nome empresarial, número de inscrição no CNPJ e endereço</item>
+                        <item id="3216">Cópia do estatuto, contrato social ou inscrição de empresário, bem como das alterações posteriores, devidamente registrados e arquivados no órgão competente de registro de comércio ou no Registro Público de Empresas Mercantis, conforme o caso</item>
+                        <item id="3217">Indicação da atividade desenvolvida no estabelecimento. Quando se tratar de empresa jornalística, editora ou gráfica, deverá, ainda, ser informado se as oficinas de impressão são próprias ou de terceiros</item>
+                        <item id="3218">Relação dos diretores, gerentes e administradores da requerente, com indicação do número de inscrição no Cadastro de Pessoas Físicas (CPF) e respectivos endereços</item>
+                        <item id="3219">Relação dos sócios, pessoas físicas ou jurídicas, com indicação do número de inscrição no CPF ou no CNPJ, conforme o caso, e respectivos endereços</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3436" tipo="presencial">
+                            <descricao>[Delegacias da Receita Federal do Brasil](http://idg.receita.fazenda.gov.br/sobre/institucional/quem-e-quem/unidades-regionais-e-locais/delegacias-da-receita-federal-drf)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2645">
+                <titulo>Verificar se o estabelecimento foi registrado</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3220">CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3437" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATPAE/PapelImune/Consulta/PreConRegPapelImune.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2842">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2945">papel imune</item>
+            <item id="2946">empresas</item>
+            <item id="2947">cadastro</item>
+            <item id="2948">fabricante de papel</item>
+            <item id="2949">empresa jornalística</item>
+            <item id="2950">importador</item>
+            <item id="2951">distribuidor</item>
+            <item id="2952">gráfica</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="896">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-autorizacao-para-programa-de-residencia-para-estudantes-das-areas-de-saude</id>
         <dbId>987</dbId>
         <nome>Obter autorização para programa de residência para estudantes das áreas de saúde</nome>
@@ -44310,6 +45826,356 @@ Esplanada dos Ministérios, Bl L - Sala 103
         </palavras-chave>
         <legislacoes>
             <item id="877">N/A</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-restituicao-de-valores-indevidamente-cobrados-inscritos-em-divida-ativa-da-uniao</id>
+        <dbId>999</dbId>
+        <nome>Obter restituição de valores indevidamente cobrados inscritos em Dívida Ativa da União</nome>
+        <sigla></sigla>
+        <descricao>Solicitação de valores pagos indevidamente ou a maior que o devido de débitos inscritos em dívida ativa.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1216">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1217">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1218">
+                <tipo>Empresas públicas ou de economia mista</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1219">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2634">
+                <titulo>Agendar pedido de restituição</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3176">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3420" tipo="web-agendar">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2635">
+                <titulo>Protocolar pedido de restituição</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3177">Carteira de identidade</item>
+                        <item id="3178">Comprovante de pagamento</item>
+                        <item id="3179">Contrato Social</item>
+                        <item id="3180">Documentos comprobatórios da cobrança indevida</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3421" tipo="presencial">
+                            <descricao>Na unidade escolhida no momento de realização do agendamento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2833">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2834">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2835">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2918">PGFN</item>
+            <item id="2919">Procuradoria Geral da Fazenda Nacional</item>
+            <item id="2920">restituição</item>
+            <item id="2921">cobrança indevida</item>
+            <item id="2922">Divida Ativa da União</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="891">=</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>contestar-decisao-de-malhar-fina</id>
+        <dbId>1003</dbId>
+        <nome>Contestar decisão de Malhar Fina</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="775">Malha Pessoa Física</item>
+        </nomes-populares>
+        <descricao>Possibilita a contribuintes pessoas físicas:
+a)	intimados a apresentar esclarecimentos sobre suas Declarações do Imposto sobre a Renda, em procedimento fiscal, identifiquem a relação de documentos que vão apresentar, organizem melhor essa relação de documentos, tentando evitar esquecimento ou engano;
+b)	cujas Declarações do Imposto sobre a Renda foram objeto de procedimento fiscal que encerrou com lançamento de ofício (por infrações à legislação tributária), apresentem contestação a esse lançamento, por meio de uma impugnação ou uma solicitação de retificação de lançamento. Neste caso, os contribuintes encontram um modelo padrão de impugnação/SRL, orientação e relação de documentos passíveis de apresentação para contestar o lançamento, inclusive selecionando o que vai contestar, se todo o lançamento ou parte dele. O contribuinte pode imprimir os modelos de SRL e/ou Impugnação, conforme o caso e a relação de documentos que vai juntar para fundamentar sua contestação.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1225">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1226">
+                <tipo>Estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>Não é possível estabelecer um tempo padrão</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2642">
+                <titulo>Escolher ação desejada</titulo>
+                <descricao>Na primeira tela do serviço, o contribuinte identifica o tipo de ação que deseja realizar: 
+* Consultar Intimações
+* Solicitar Análise
+* Consultar Inconsistências
+* Pedir Antecipação de Análise
+* Entregar Documentos e/ou impugnação
+* Consultar Inconsistências
+Identifica-se informando CPF e número do Documento e caracteres anti-robô
+No segundo passo, seleciona a documentação que vai apresentar, de acordo com a ação indicada no primeiro passo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3211">CPF</item>
+                        <item id="3212">Termo de Intimação para a qual deseja apresentar documento</item>
+                        <item id="3213">Notificação de Lançamento que deseja contestar</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3434" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/cobranca-e-fiscalizacao/malha-fiscal</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2643">
+                <titulo>Enviar documentação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3214">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3435" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/cobranca-e-fiscalizacao/malha-fiscal</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2841">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2941">malha fina</item>
+            <item id="2942">contestação</item>
+            <item id="2943">imposto de renda</item>
+            <item id="2944">retenção</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="895">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>participar-de-cursos-de-capacitacao-na-esaf</id>
+        <dbId>1005</dbId>
+        <nome>Participar de Cursos de Capacitação na ESAF</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="777">ESAF</item>
+        </nomes-populares>
+        <descricao>Cursos em temáticas fazendárias, de gestão e administrativas voltados aos servidores do Ministério da Fazenda, outros órgãos da Administração Pública federal, estadual e municipal e cidadãos.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1228">
+                <tipo>Servidores de órgãos públicos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1229">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2646">
+                <titulo>Cadastrar-se no sistema de inscrições</titulo>
+                <descricao>Você deve preencher os dados e cadastrar-se no Sistema Formulário de Inscrição Eletrônica da ESAF</descricao>
+                <documentos>
+                    <default>
+                        <item id="3221">Dados pessoais</item>
+                        <item id="3222">Dados institucionais</item>
+                        <item id="3223">Dados de Contato</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3438" tipo="web">
+                            <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/pages/externo/primeiroAcesso.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2647">
+                <titulo>Inscrever-se no curso desejado (nem todos os cursos estão abertos para inscrição a todos os usuários)</titulo>
+                <descricao>Você irá escolher o curso desejado e pedir a inscrição no mesmo, preenchendo os dados complementares pedidos</descricao>
+                <documentos>
+                    <default>
+                        <item id="3224">Login e senha</item>
+                        <item id="3225">Dados complementares requisitados</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3439" tipo="web">
+                            <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2648">
+                <titulo>Receber confirmação ou rejeição de inscrição</titulo>
+                <descricao>Você deve confirmar no sistema se o seu pedido de inscrição foi aceito antes do período previsto para início do curso</descricao>
+                <documentos>
+                    <default>
+                        <item id="3226">Login e Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3440" tipo="web">
+                            <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2649">
+                <titulo>Participar do curso para qual você se inscreveu (no caso de aceitação da inscrição)</titulo>
+                <descricao>Você deverá assistir às aulas, assinar a lista de presença e participar das atividades e avaliações aplicadas no curso</descricao>
+                <documentos>
+                    <default>
+                        <item id="3227">Assinatura na lista de presença</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3441" tipo="presencial">
+                            <descricao>* **Em Brasília:** Endereço Esaf/Sede:  Rodovia DF 001, Km 27,4 - SHIS - Lago Sul – CEP: 71.686-900 - Brasília/DF
+
+* **Para cursos nos centros regionais, consulte o endereço [aqui](http://www.esaf.fazenda.gov.br/institucional/centros-regionais)
+
+Ou nas dependências dos órgãos solicitantes</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2650">
+                <titulo>Receber certificado de participação</titulo>
+                <descricao>O certificado de participação será enviado pelos correios</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3442" tipo="postal">
+                            <descricao>Residência do participante</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2843">Órgãos e entidades públicas</item>
+            <item idSegmento="1" idServicoSegmento="2844">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2953">capacitação</item>
+            <item id="2954">ESAF</item>
+            <item id="2955">cursos</item>
+            <item id="2956">certificado</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="897">-</item>
         </legislacoes>
     </servico>
 </servicos>
