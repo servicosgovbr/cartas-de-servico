@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-restituicao-de-valores-indevidamente-cobrados-inscritos-em-divida-ativa-da-uniao</id>
+    <dbId>999</dbId>
+    <nome>Obter restituição de valores indevidamente cobrados inscritos em Dívida Ativa da União</nome>
+    <sigla></sigla>
+    <descricao>Solicitação de valores pagos indevidamente ou a maior que o devido de débitos inscritos em dívida ativa.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1216">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1217">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1218">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1219">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="1" max="120" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2634">
+            <titulo>Agendar pedido de restituição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3176">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3420" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2635">
+            <titulo>Protocolar pedido de restituição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3177">Carteira de identidade</item>
+                    <item id="3178">Comprovante de pagamento</item>
+                    <item id="3179">Contrato Social</item>
+                    <item id="3180">Documentos comprobatórios da cobrança indevida</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3421" tipo="presencial">
+                        <descricao>Na unidade escolhida no momento de realização do agendamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2833">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2834">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2835">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2918">PGFN</item>
+        <item id="2919">Procuradoria Geral da Fazenda Nacional</item>
+        <item id="2920">restituição</item>
+        <item id="2921">cobrança indevida</item>
+        <item id="2922">Divida Ativa da União</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="891">=</item>
+    </legislacoes>
+</servico>
