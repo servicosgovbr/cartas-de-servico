@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-no-registro-especial-de-empresas-que-realizam-operacoes-com-papel-imune</id>
+    <dbId>1004</dbId>
+    <nome>Cadastrar-se no Registro Especial de Empresas que realizam operações com Papel Imune</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="776">Papel Imune</item>
+    </nomes-populares>
+    <descricao>Cadastro dos estabelecimentos que que realizam operações com papel imune, nas operações destinados à impressão de livros, jornais e periódicos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1227">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="1" max="120" unidade="meses"/>
+        <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2644">
+            <titulo>Requisitar inclusão no cadastro</titulo>
+            <descricao>A concessão do Registro Especial é dada a cada atividade desenvolvida, entre:
+
+I - fabricante de papel (FP); 
+II - usuário: empresa jornalística ou editora que explore a indústria de livro, jornal ou periódicos (UP); 
+III - importador (IP); 
+IV - distribuidor (DP); e 
+V - gráfica: impressor de livros jornais e periódicos, que recebe papel de terceiros ou o adquire com imunidade tributária (GP).</descricao>
+            <documentos>
+                <default>
+                    <item id="3215">Dados de identificação: nome empresarial, número de inscrição no CNPJ e endereço</item>
+                    <item id="3216">Cópia do estatuto, contrato social ou inscrição de empresário, bem como das alterações posteriores, devidamente registrados e arquivados no órgão competente de registro de comércio ou no Registro Público de Empresas Mercantis, conforme o caso</item>
+                    <item id="3217">Indicação da atividade desenvolvida no estabelecimento. Quando se tratar de empresa jornalística, editora ou gráfica, deverá, ainda, ser informado se as oficinas de impressão são próprias ou de terceiros</item>
+                    <item id="3218">Relação dos diretores, gerentes e administradores da requerente, com indicação do número de inscrição no Cadastro de Pessoas Físicas (CPF) e respectivos endereços</item>
+                    <item id="3219">Relação dos sócios, pessoas físicas ou jurídicas, com indicação do número de inscrição no CPF ou no CNPJ, conforme o caso, e respectivos endereços</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3436" tipo="presencial">
+                        <descricao>[Delegacias da Receita Federal do Brasil](http://idg.receita.fazenda.gov.br/sobre/institucional/quem-e-quem/unidades-regionais-e-locais/delegacias-da-receita-federal-drf)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2645">
+            <titulo>Verificar se o estabelecimento foi registrado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3220">CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3437" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATPAE/PapelImune/Consulta/PreConRegPapelImune.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2842">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2945">papel imune</item>
+        <item id="2946">empresas</item>
+        <item id="2947">cadastro</item>
+        <item id="2948">fabricante de papel</item>
+        <item id="2949">empresa jornalística</item>
+        <item id="2950">importador</item>
+        <item id="2951">distribuidor</item>
+        <item id="2952">gráfica</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="896">-</item>
+    </legislacoes>
+</servico>
