@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>inscrever-imovel-rural</id>
+    <dbId>1000</dbId>
+    <nome>Inscrever imóvel rural</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="772">ITR</item>
+    </nomes-populares>
+    <descricao>Solicitar inscrição, alteração, cancelamento ou reativação do cadastro do imóvel rural, por meio do aplicativo Cafir – Coletor Web.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1220">
+            <tipo>Proprietários de Imóveis Rurais (Pessoa Física ou Jurídica)</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2636">
+            <titulo>Fazer pré-cadastro pela internet</titulo>
+            <descricao>Preencher as informações na internet e imprimir o Decir para levar a uma unidade da RFB</descricao>
+            <documentos>
+                <default>
+                    <item id="3181">Dados pessoais</item>
+                    <item id="3182">Dados do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3422" tipo="web">
+                        <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2637">
+            <titulo>Entregar documentação comprobatória</titulo>
+            <descricao>Apresentar a documentação comprobatória em uma unidade da RFB ou enviar por correio.
+Maiores detalhes sobre a documentação necessária [aqui](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/documentacao-necessaria-a-solicitacao-de-atos-cadastrais-no-cafir)</descricao>
+            <documentos>
+                <default>
+                    <item id="3183">Carteira de identidade</item>
+                    <item id="3184">Certidões de cartório</item>
+                    <item id="3185">Procuração do representante legal</item>
+                    <item id="3186">Registro em Cartório</item>
+                    <item id="3187">Documentação do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3423" tipo="presencial">
+                        <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3424" tipo="postal">
+                        <descricao>Unidade de jurisdição do contribuinte -[Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2638">
+            <titulo>Consultar o resultado da análise da solicitação pelo Cafir Web</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3188">Documento de Identificação Pessoal</item>
+                    <item id="3189">Número do Recibo</item>
+                    <item id="3190">Número de Identificação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3425" tipo="web">
+                        <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3426" tipo="presencial">
+                        <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2837">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2838">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2836">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Habitação Rural</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2923">imóvel rural</item>
+        <item id="2924">receita federal</item>
+        <item id="2925">cadastro</item>
+        <item id="2926">cafir</item>
+        <item id="2927">cadir</item>
+        <item id="2928">coletor web</item>
+        <item id="2929">incra</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="892">-</item>
+    </legislacoes>
+</servico>
