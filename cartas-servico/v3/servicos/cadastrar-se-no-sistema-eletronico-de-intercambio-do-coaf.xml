@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-no-sistema-eletronico-de-intercambio-do-coaf</id>
+    <dbId>1007</dbId>
+    <nome>Cadastrar-se no Sistema Eletrônico de Intercâmbio do COAF</nome>
+    <sigla>SEI-C</sigla>
+    <descricao>Cadastro de autoridades competentes no Sistema Eletrônico de Intercâmbio (SEI-C), a fim de que possam solicitar e receber informações sobre inteligência financeira do COAF</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1231">
+            <tipo>Autoridade competente para apuração (investigação) do crime de lavagem de dinheiro ou de qualquer outro ilícito;</tipo>
+            <requisitos>Autoridade responsável pelo procedimento de investigação objeto do pedido</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2653">
+            <titulo>Solicitar cadastramento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3231">CPF</item>
+                    <item id="3232">formulário próprio assinado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3445" tipo="web">
+                        <descricao>http://www.coaf.sei.fazenda.gov.br/web_pedidos/FormularioMain.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3446" tipo="postal">
+                        <descricao>SAUN Qd 5 Lote C  Torre D   2º andar - CEP: 70.040-250 - Asa Norte - Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2654">
+            <titulo>Receber senha</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3233">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3447" tipo="e-mail">
+                        <descricao>E-mail cadastrado no momento da inscrição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2655">
+            <titulo>Requisitar informações</titulo>
+            <descricao>Após devidamente cadastrada, a autoridade competente poderá, através do sistema, requisitar as informações de interesse às apurações em questão</descricao>
+            <documentos>
+                <default>
+                    <item id="3234">Número e natureza do procedimento de investigação instaurado</item>
+                    <item id="3235">Informações sobre os fundados indícios da existência do(s) ilícito(s) sob investigação, com indicação do(s) respectivo(s) tipo(s) penal(is);</item>
+                    <item id="3236">Identificação das pessoas envolvidas na investigação, com indicação do nome e do CPF ou CNPJ, conforme o caso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3448" tipo="web">
+                        <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="2847">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2961">inteligência financeira</item>
+        <item id="2962">crimes de ordem financeira</item>
+        <item id="2963">lavagem de dinheiro</item>
+        <item id="2964">intercâmbio de informações</item>
+        <item id="2965">COAF</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="899">[LEI Nº 9.613, DE 3 DE MARÇO DE 1998](http://www.planalto.gov.br/ccivil_03/leis/L9613.htm)</item>
+    </legislacoes>
+</servico>
