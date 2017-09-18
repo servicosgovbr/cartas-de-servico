@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>participar-de-cursos-de-capacitacao-na-esaf</id>
+    <dbId>1005</dbId>
+    <nome>Participar de Cursos de Capacitação na ESAF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="777">ESAF</item>
+    </nomes-populares>
+    <descricao>Cursos em temáticas fazendárias, de gestão e administrativas voltados aos servidores do Ministério da Fazenda, outros órgãos da Administração Pública federal, estadual e municipal e cidadãos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1228">
+            <tipo>Servidores de órgãos públicos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1229">
+            <tipo>Cidadãos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2646">
+            <titulo>Cadastrar-se no sistema de inscrições</titulo>
+            <descricao>Você deve preencher os dados e cadastrar-se no Sistema Formulário de Inscrição Eletrônica da ESAF</descricao>
+            <documentos>
+                <default>
+                    <item id="3221">Dados pessoais</item>
+                    <item id="3222">Dados institucionais</item>
+                    <item id="3223">Dados de Contato</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3438" tipo="web">
+                        <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/pages/externo/primeiroAcesso.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2647">
+            <titulo>Inscrever-se no curso desejado (nem todos os cursos estão abertos para inscrição a todos os usuários)</titulo>
+            <descricao>Você irá escolher o curso desejado e pedir a inscrição no mesmo, preenchendo os dados complementares pedidos</descricao>
+            <documentos>
+                <default>
+                    <item id="3224">Login e senha</item>
+                    <item id="3225">Dados complementares requisitados</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3439" tipo="web">
+                        <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2648">
+            <titulo>Receber confirmação ou rejeição de inscrição</titulo>
+            <descricao>Você deve confirmar no sistema se o seu pedido de inscrição foi aceito antes do período previsto para início do curso</descricao>
+            <documentos>
+                <default>
+                    <item id="3226">Login e Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3440" tipo="web">
+                        <descricao>https://sisfie.esaf.fazenda.gov.br/SISFIE_INSCRICAO/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2649">
+            <titulo>Participar do curso para qual você se inscreveu (no caso de aceitação da inscrição)</titulo>
+            <descricao>Você deverá assistir às aulas, assinar a lista de presença e participar das atividades e avaliações aplicadas no curso</descricao>
+            <documentos>
+                <default>
+                    <item id="3227">Assinatura na lista de presença</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3441" tipo="presencial">
+                        <descricao>* **Em Brasília:** Endereço Esaf/Sede:  Rodovia DF 001, Km 27,4 - SHIS - Lago Sul – CEP: 71.686-900 - Brasília/DF
+
+* **Para cursos nos centros regionais, consulte o endereço [aqui](http://www.esaf.fazenda.gov.br/institucional/centros-regionais)
+
+Ou nas dependências dos órgãos solicitantes</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2650">
+            <titulo>Receber certificado de participação</titulo>
+            <descricao>O certificado de participação será enviado pelos correios</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3442" tipo="postal">
+                        <descricao>Residência do participante</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="2843">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="2844">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2953">capacitação</item>
+        <item id="2954">ESAF</item>
+        <item id="2955">cursos</item>
+        <item id="2956">certificado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="897">-</item>
+    </legislacoes>
+</servico>
