@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>requisitar-investigacao-de-origem-de-produto</id>
+    <dbId>1010</dbId>
+    <nome>Requisitar investigação de origem de produto</nome>
+    <sigla></sigla>
+    <descricao>Procedimento por meio do qual este DEINT afere a veracidade da origem declarada do produto, de forma a coibir a burla a medidas de defesa comercial aplicadas contra determinadas origens.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1238">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2661">
+            <titulo>Apresentar denúncia de falsa declaração de origem</titulo>
+            <descricao>Os interessados, atendendo as disposições do art. 6o da Portaria SECEX no 38/2015, apresentarão denúncia de falsa declaração de origem contra determinados países.</descricao>
+            <documentos>
+                <default>
+                    <item id="3252">CNPJ</item>
+                    <item id="3253">Contrato Social</item>
+                    <item id="3254">Procuração do representante legal</item>
+                    <item id="3255">nome, endereço comercial e representação do interessado</item>
+                    <item id="3256">nome e contato dos funcionários responsáveis pelo acompanhamento do pleito</item>
+                    <item id="3257">classificação do bem na Nomenclatura Comum do Mercosul (NCM)</item>
+                    <item id="3258">descrição pormenorizada do bem, contendo suas características principais e destinação de uso, acompanhada de catálogos, quando for o caso</item>
+                    <item id="3259">descrição pormenorizada dos fatos que fundamentam a denúncia, indicando os países de origem envolvidos</item>
+                    <item id="3260">descrição pormenorizada dos processos produtivos para a fabricação do bem, com destaque para os insumos utilizados e sua classificação na NCM</item>
+                    <item id="3261">alterações nos fluxos de importação brasileira do bem por país de origem, incluindo a aplicação ou a última prorrogação da medida de defesa comercial</item>
+                    <item id="3262">informação sobre a produção mundial, os canais de distribuição e os importadores brasileiros do bem, sempre que possível</item>
+                    <item id="3263">informação sobre os produtores conhecidos, a existência de capacidade instalada e de volume de produção do bem no país de origem declarada, sempre que possível</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3456" tipo="postal">
+                        <descricao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)
+Secretaria de Comércio Exterior - SECEX
+Departamento de Negociações Internacionais - DEINT
+Esplanada dos Ministérios, Bloco "J"
+Zona Cívico-Administrativa, Brasília - DF, 70053-900.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2662">
+            <titulo>Responder ao Pedido de Informações Complementares</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3264">Os documentos solicitados variarão conforme as deficiências da denúncia</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3457" tipo="postal">
+                        <descricao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)
+Secretaria de Comércio Exterior - SECEX
+Departamento de Negociações Internacionais - DEINT
+Esplanada dos Ministérios, Bloco "J"
+Zona Cívico-Administrativa, Brasília - DF, 70053-900.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2663">
+            <titulo>Conferir resultado da investigação</titulo>
+            <descricao>O resultado será divulgado no campo apropriado do Portal do MDIC</descricao>
+            <documentos>
+                <default>
+                    <item id="3265">Nº do processo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3458" tipo="web">
+                        <descricao>http://www.mdic.gov.br/index.php/comercio-exterior/regimes-de-origem/1697-investigacao-de-origem-nao-preferencial</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2853">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Relações Internacionais</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Produção Industrial</item>
+        <item>Produção agropecuária</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2975">investigação de origem não preferencial</item>
+        <item id="2976">produto nacional</item>
+        <item id="2977">importação</item>
+        <item id="2978">medidas compensatórias</item>
+        <item id="2979">empresa estrangeira</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="902">[Portaria SECEX no 38/2015](http://www.mdic.gov.br/images/REPOSITORIO/secex/deint/coreo/inv_nao_preferencial/legislacao/portaria_secex_38_2015_alterada.pdf)</item>
+        <item id="903">[Portaria SECEX no 9/2017](http://www.mdic.gov.br/images/REPOSITORIO/secex/gab/portarias_secex_2017/portaria_secex_09_2017.pdf)</item>
+        <item id="904">[Lei nº 12.546/2011](http://www.mdic.gov.br/arquivos/dwnl_1393448016.pdf)</item>
+        <item id="905">[Demais normativos](http://www.mdic.gov.br/index.php/comercio-exterior/regimes-de-origem/1697-investigacao-de-origem-nao-preferencial)</item>
+    </legislacoes>
+</servico>
