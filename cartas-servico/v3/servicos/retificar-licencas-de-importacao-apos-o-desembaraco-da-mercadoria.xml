@@ -5,134 +5,97 @@
     <nome>Retificar Licenças de Importação após o desembaraço da mercadoria</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="629">Retificação de LI</item>
+        <item id="790">Retificação de LI</item>
     </nomes-populares>
-    <descricao>O importador deverá apresentar o pedido por meio de LI substitutiva registrada no SISCOMEX, com a alteração pretendida. O resultado da anuência na LI substitutiva via sistema corresponderá à manifestação do órgão acerca da retificação. No entanto, este procedimento não se aplica à importação vinculada a Drawback; importação que não esteja mais sujeita a licenciamento; e importação que não foi originalmente objeto de licenciamento, mas a LI é exigida em face da retificação requerida.</descricao>
-    <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
+    <descricao>Para os casos de retificação de Declaração de Importação  amparada por Licença de Importação, após o desembaraço, em situações gerais, o importador deverá apresentar o pedido por meio de LI substitutiva registrada no SISCOMEX, com a alteração pretendida.
+
+Este procedimento não se aplica às seguintes situações, nas quais não é possível o registro de LI substitutiva: i) importação vinculada a ato concessório de Drawback; ii) importação que, no momento da solicitação de retificação, não esteja mais sujeita a licenciamento; e iii) importação que não foi originalmente objeto de licenciamento, mas a LI é exigida em face da retificação requerida.
+
+Nestes casos, o importador deverá encaminhar a solicitação mediante a anexação a um dossiê eletrônico no Portal Siscomex, observadas as instruções do [Manual Visão Integrada e Módulo Anexação] (http://portal.siscomex.gov.br/informativos/manuais)</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante id="784">
-            <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos>Importadores</requisitos>
+        <solicitante id="1250">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
         </solicitante>
-        <solicitante id="785">
-            <tipo>Pessoa jurídica</tipo>
-            <requisitos>Representante legal da empresa importadora</requisitos>
+        <solicitante id="1251">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1252">
+            <tipo>Órgãos, fundações e autarquias de direito público</tipo>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="30" unidade="dias-corridos"/>
+        <entre min="2" max="7" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2127">
-            <titulo>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico.</titulo>
-            <descricao>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico.</descricao>
+        <etapa id="2704">
+            <titulo>Solicitar Retificação</titulo>
+            <descricao>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico, assim como fornecimento de documentos complementares, caso seja requisitado pelo órgão</descricao>
             <documentos>
-                <default/>
-                <caso id="328" descricao="LI Substitutiva">
-                    <documento>
-                        <id>2129</id>
-                        <descricao>Certificado digital</descricao>
-                    </documento>
-                </caso>
-                <caso id="329" descricao="Utilização do Módulo Anexação">
-                    <documento>
-                        <id>2130</id>
-                        <descricao>extrato da Declaração de Importação</descricao>
-                    </documento>
-                    <documento>
-                        <id>2131</id>
-                        <descricao>Demais documentos que amparam a operação.</descricao>
-                    </documento>
-                </caso>
+                <default>
+                    <item id="3309">Certificado Digital, no caso de LI substitutiva</item>
+                    <item id="3310">No caso de utilização do Módulo Anexação, o extrato da Declaração de Importação</item>
+                    <item id="3311">Documentos que amparam a operação.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2627" tipo="web">
-                        <descricao>http://portal.siscomex.gov.br/</descricao>
+                    <canal-de-prestacao id="3523" tipo="web">
+                        <descricao>https://www1.siscomex.receita.fazenda.gov.br/siscomexImpweb-7/login_cert.jsp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2137">
-            <titulo>Análise da LI substitutiva no Siscomex ou análise do pleito anexado ao dossiê eletrônico</titulo>
-            <descricao></descricao>
+        <etapa id="2705">
+            <titulo>Receber resposta</titulo>
+            <descricao>O resultado da anuência na LI substitutiva via sistema corresponderá à manifestação do órgão acerca da retificação.</descricao>
             <documentos>
                 <default/>
-                <caso id="330" descricao="LI substitutiva, somente em caso de exigência">
-                    <documento>
-                        <id>2139</id>
-                        <descricao>O importador deverá apresentar documentação que comprove a operação pleiteada.</descricao>
-                    </documento>
-                </caso>
-                <caso id="331" descricao="Pedido apresentado via dossiê eletrônico">
-                    <documento>
-                        <id>2140</id>
-                        <descricao>O extrato da DI e demais documentos comprobatórios da operação realizada.</descricao>
-                    </documento>
-                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2639" tipo="web">
-                        <descricao>http://portal.siscomex.gov.br/</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2638" tipo="web">
-                        <descricao>https://siscomexc.desenvolvimento.gov.br/AnuenteWeb/</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="2138">
-            <titulo>Resposta ao importador</titulo>
-            <descricao>Resposta ao importador (via sistema ou Ofício).</descricao>
-            <documentos>
-                <default>
-                    <item id="2141">Não há necessidade de apresentar documentação</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2641" tipo="web">
-                        <descricao></descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2640" tipo="postal">
-                        <descricao></descricao>
+                    <canal-de-prestacao id="3524" tipo="web">
+                        <descricao>https://www1.siscomex.receita.fazenda.gov.br/siscomexImpweb-7/login_cert.jsp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2374">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="2864">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2865">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2866">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
-        <item>Indústria</item>
+        <item>Comercio externo</item>
+        <item>Produção Industrial</item>
+        <item>Produção agropecuária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1854">Retificação</item>
-        <item id="1855">Licença</item>
-        <item id="1856">Importação</item>
+        <item id="3020">Licença Importação</item>
+        <item id="3021">Declaração de Importação</item>
+        <item id="3022">Retificar</item>
     </palavras-chave>
     <legislacoes>
-        <item id="625">Portaria SECEX nº 23/2011</item>
-        <item id="626">Decreto nº 8.917/2016</item>
+        <item id="919">[Portaria SECEX nº 23/2011](http://portal.siscomex.gov.br/legislacao/biblioteca-de-arquivos/secex/portaria-no-23-de-14-de-julho-de-2011)</item>
     </legislacoes>
 </servico>
