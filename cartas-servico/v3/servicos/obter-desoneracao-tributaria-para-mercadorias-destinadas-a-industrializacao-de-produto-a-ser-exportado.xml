@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-desoneracao-tributaria-para-mercadorias-destinadas-a-industrializacao-de-produto-a-ser-exportado</id>
+    <dbId>1018</dbId>
+    <nome>Obter desoneração tributária para mercadorias destinadas à industrialização de produto a ser exportado.</nome>
+    <sigla></sigla>
+    <descricao>Regime Aduaneiro Especial que permite a suspensão na aquisição no mercado interno ou na importação, de forma combinada ou não, de mercadoria para emprego ou consumo na industrialização de produto a ser exportado, com suspensão dos tributos exigíveis na importação e na aquisição no mercado interno.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1249">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2702">
+            <titulo>Realizar pedido</titulo>
+            <descricao>Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir, indeferir ou exigir informações complementares.</descricao>
+            <documentos>
+                <default>
+                    <item id="3304">Laudo Técnico</item>
+                    <item id="3305">Documento que demonstre alteração de preço</item>
+                    <item id="3306">Certidão Negativa de Débitos</item>
+                    <item id="3307">Auto de Infração ou documento de natureza análoga emitido por autoridade fiscal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3521" tipo="web">
+                        <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=0</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2703">
+            <titulo>Fornecer informações adicionais (Caso requisitado pelo órgão)</titulo>
+            <descricao>Trata-se de resposta da empresa em função de informações adicionais solicitadas pele órgão responsável.</descricao>
+            <documentos>
+                <default>
+                    <item id="3308">Documentos comprobatórios das informações requisitadas pelo órgão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3522" tipo="web">
+                        <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=0</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2863">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Produção Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3016">drawback</item>
+        <item id="3017">suspensão</item>
+        <item id="3018">desoneração tributária</item>
+        <item id="3019">industrialização de produto a ser exportado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="918">[Portaria SECEX 23/11](http://portal.siscomex.gov.br/legislacao/biblioteca-de-arquivos/secex/portaria-no-23-de-14-de-julho-de-2011)</item>
+    </legislacoes>
+</servico>
