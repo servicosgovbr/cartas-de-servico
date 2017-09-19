@@ -197,16 +197,16 @@ Obs2: O serviço dispensa o auxílio de advogado.</descricao>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2238" tipo="postal">
-                            <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
-Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900.</descricao>
+                        <canal-de-prestacao id="2236" tipo="web">
+                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                         </canal-de-prestacao>
                         <canal-de-prestacao id="2237" tipo="presencial">
                             <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
 Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF.</descricao>
                         </canal-de-prestacao>
-                        <canal-de-prestacao id="2236" tipo="web">
-                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                        <canal-de-prestacao id="2238" tipo="postal">
+                            <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações
+Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900.</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -22216,146 +22216,6 @@ Decreto nº 89.056/83</item>
         </legislacoes>
     </servico>
     <servico>
-        <id>retificar-licencas-de-importacao-apos-o-desembaraco-da-mercadoria</id>
-        <dbId>793</dbId>
-        <nome>Retificar Licenças de Importação após o desembaraço da mercadoria</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="629">Retificação de LI</item>
-        </nomes-populares>
-        <descricao>O importador deverá apresentar o pedido por meio de LI substitutiva registrada no SISCOMEX, com a alteração pretendida. O resultado da anuência na LI substitutiva via sistema corresponderá à manifestação do órgão acerca da retificação. No entanto, este procedimento não se aplica à importação vinculada a Drawback; importação que não esteja mais sujeita a licenciamento; e importação que não foi originalmente objeto de licenciamento, mas a LI é exigida em face da retificação requerida.</descricao>
-        <contato>Secretaria de Comércio Exterior (SECEX)
-Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
-Telefone: (61) 2027-7000
-Endereço Eletrônico: http://www.mdic.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="784">
-                <tipo>Pessoa física ou jurídica</tipo>
-                <requisitos>Importadores</requisitos>
-            </solicitante>
-            <solicitante id="785">
-                <tipo>Pessoa jurídica</tipo>
-                <requisitos>Representante legal da empresa importadora</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="30" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="2127">
-                <titulo>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico.</titulo>
-                <descricao>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico.</descricao>
-                <documentos>
-                    <default/>
-                    <caso id="328" descricao="LI Substitutiva">
-                        <documento>
-                            <id>2129</id>
-                            <descricao>Certificado digital</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="329" descricao="Utilização do Módulo Anexação">
-                        <documento>
-                            <id>2130</id>
-                            <descricao>extrato da Declaração de Importação</descricao>
-                        </documento>
-                        <documento>
-                            <id>2131</id>
-                            <descricao>Demais documentos que amparam a operação.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2627" tipo="web">
-                            <descricao>http://portal.siscomex.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2137">
-                <titulo>Análise da LI substitutiva no Siscomex ou análise do pleito anexado ao dossiê eletrônico</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                    <caso id="330" descricao="LI substitutiva, somente em caso de exigência">
-                        <documento>
-                            <id>2139</id>
-                            <descricao>O importador deverá apresentar documentação que comprove a operação pleiteada.</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="331" descricao="Pedido apresentado via dossiê eletrônico">
-                        <documento>
-                            <id>2140</id>
-                            <descricao>O extrato da DI e demais documentos comprobatórios da operação realizada.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2638" tipo="web">
-                            <descricao>https://siscomexc.desenvolvimento.gov.br/AnuenteWeb/</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2639" tipo="web">
-                            <descricao>http://portal.siscomex.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2138">
-                <titulo>Resposta ao importador</titulo>
-                <descricao>Resposta ao importador (via sistema ou Ofício).</descricao>
-                <documentos>
-                    <default>
-                        <item id="2141">Não há necessidade de apresentar documentação</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2640" tipo="postal">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2641" tipo="web">
-                            <descricao></descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
-            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2374">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Comércio e Serviços</item>
-            <item>Indústria</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1854">Retificação</item>
-            <item id="1855">Licença</item>
-            <item id="1856">Importação</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="625">Portaria SECEX nº 23/2011</item>
-            <item id="626">Decreto nº 8.917/2016</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>outorgar-atos-concessorios-de-drawback-suspensao</id>
         <dbId>791</dbId>
         <nome>Outorgar Atos Concessórios de Drawback Suspensão</nome>
@@ -41565,71 +41425,6 @@ Lei nº 8.955/94 - Contrato de franquia empresarial</item>
         </legislacoes>
     </servico>
     <servico>
-        <id>teste-descricao</id>
-        <dbId>975</dbId>
-        <nome>Teste Descricao</nome>
-        <sigla>Teste</sigla>
-        <nomes-populares>
-            <item id="758">Nome</item>
-        </nomes-populares>
-        <descricao>orem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, per jkdshfjkhdsajghjshgjhfgh jkasdjhfjahfgjfkhghjfkghjkhfjgkhjfkgkhfjkghjkhfjghjafghfgjkfkghjkfghjkfgjkghgfjfkhgj ujkfhjkhfdgjkhfjfgjfhdgjkf jkfhgjkhfjghf fjkhgjhfdjgjkdfhgjkhfdjkshgjkdfshgjkhfjdkshn  njkhbjkfhdjkghfdjkghjkfhdjghjfkd kfgkfghfjkdhgjkhfdjghjfdhgjkhfdjkghjdfhjgkhfjdkhgjk jkfhgjkhfdjkgjfkdhgjkfjdkg kljgjkfdhjksgjkfdshgjkhdfjk
-
-jkasdjhfjahfgjfkhghjfkghjkhfjgkhjfkgkhfjkghjkhfjghjafghfgjkfkghjkfghjkfgjkghgfjfkhgj ujkfhjkhfdgjkhfjfgjfhdgjkf jkfhgjkhfjghf fjkhgjhfdjgjkdfhgjkhfdjkshgjkdfshgjkhfjdkshn  njkhbjkfhdjkghfdjkghjkfhdjghjfkd kfgkfghfjkdhgjkhfdjghjfdhgjkhfdjkghjdfhjgkhfjdkhgjk jkfhgjkhfdjkgjfkdhgjkfjdkg kljgjkfdhjksgjkfdshgjkhdfjd</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1164">
-                <tipo>Solicitante 1</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2564">
-                <titulo>Etapa 1</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3309" tipo="e-mail">
-                            <descricao>sadasddfs</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2798">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2799">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Água</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2734">teste</item>
-            <item id="2735">teste</item>
-            <item id="2736">teste</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="850">teste</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>receber-tecnologia-social-de-acesso-a-agua-para-producao-de-alimentos</id>
         <dbId>979</dbId>
         <nome>Receber tecnologia social de acesso à água para produção de alimentos</nome>
@@ -42394,6 +42189,284 @@ Aos operadores certificados no Programa OEA, serão concedidos benefícios que s
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-prorrogacao-de-medida-compensatoria</id>
+        <dbId>1016</dbId>
+        <nome>Obter prorrogação de medida compensatória</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="784">Revisão de subsídio</item>
+            <item id="785">revisão de medida compensatória</item>
+            <item id="786">prorrogação de medida compensatória.</item>
+        </nomes-populares>
+        <descricao>A revisão consiste no exame da necessidade de continuar a aplicar a medida compensatória após o período originalmente fixado para sua vigência. Caso haja uma determinação positiva a respeito, propõe-se à Câmara de Comércio Exterior (CAMEX) a continuação da aplicação da medida compensatória a fim de contornar prováveis efeitos negativos à indústria doméstica, na forma de alíquotas ad valorem ou específicas, fixas ou variáveis, ou pela combinação de ambas.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1247">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2684">
+                <titulo>Apresentar petição</titulo>
+                <descricao>O usuário do serviço protocola a petição de revisão de medida compensatória ao final do período de sua aplicação. A petição escrita é apresentada pela indústria doméstica ou em seu nome, conforme o disposto no Decreto nº 1.751, de 1995.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3294">Petição com informações detalhadas da(s) empresa(s), conforme o disposto no Decreto nº 1.751, de 1995.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3493" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3494" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2685">
+                <titulo>Fornecer informações complementares</titulo>
+                <descricao>O usuário é demandado a apresentar informações complementares à sua petição. Cabe a ele responder a perguntas encaminhadas pelo analista do serviço e apresentar dados adicionais àqueles constantes da petição. Os prazos para fornecimento das informações complementares ou das novas informações solicitadas será determinado de acordo com a suas naturezas, e comunicados ao peticionário. O DECOM analisa as informações complementares em 20 dias, a contar da data do recebimento dos dados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3295">Documentação e informações requisitadas pelo DECOM</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3495" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3496" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2686">
+                <titulo>Receber informação de início do processo</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do procedimento no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas do início do processo.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3497" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2687">
+                <titulo>Receber confirmações de continuidade do processo</titulo>
+                <descricao>O usuário será notificado em 20 dias a partir da data de entrega das novas informações se a petição está devidamente instruída ou se foi considerada definitivamente inepta; e, tendo em vista a necessidade de realizar consultas com os governos cujos produtos possam vir a ser objeto de revisão, será notificado da determinação, positiva ou negativa, quanto à abertura da investigação no prazo de 50 dias contados da data de expedição da comunicação de que a petição está devidamente instruída</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3498" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2688">
+                <titulo>Aceitar visita de verificação in loco na empresa</titulo>
+                <descricao>Iniciada a investigação, o DECOM solicita anuência para realizar visita de verificação *in loco* nas empresas peticionárias.  O usuário deve manifestar sua anuência expressa à realização da verificação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3296">Ofício de anuência da verificação in loco</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3499" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3500" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2689">
+                <titulo>Receber visita de verificação in loco</titulo>
+                <descricao>A visita consiste em checar a acurácia dos dados apresentados na petição de início da revisão e produzir um relatório dos trabalhos desenvolvidos. Em regra, o procedimento de verificação in loco dura 5 dias; após a visita, o relatório de verificação será disponibilizado ao usuário nos autos do processo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3297">Documentação da empresa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3501" tipo="presencial">
+                            <descricao>Na empresa peticionária</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2690">
+                <titulo>Apresentar elementos de prova</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se manifestar, protocolando documentos com suas alegações e com as informações que julgar necessárias à sua participação na revisão.O usuário pode protocolar elementos de prova durante toda a fase probatória da revisão, que será encerrada em 15 dias contados da realização da audiência final do processo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3298">Documentação e informação comprobatória</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3502" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3503" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2691">
+                <titulo>Participar da audiência</titulo>
+                <descricao>O DECOM divulga para as partes interessadas a nota técnica contendo os fatos essenciais que se encontram em análise e que serão considerados na determinação final da revisão, e realiza audiência final para apresentação desses fatos.A audiência será realizada antes de ser formulado o parecer com vistas à determinação final. O prazo para conclusão desta etapa é estabelecido pelo DECOM, conforme as peculiaridades da investigação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3299">Indicação de representantes legais para participar da audiência até 5 dias antes de sua realização.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3504" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3505" tipo="postal">
+                            <descricao>**Apenas para indicação dos representantes legais**
+Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Defesa Comercial
+Esplanada dos Ministérios, Bloco "J", 4º andar,  Sala 408 - Brasília/DF
+CEP 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2692">
+                <titulo>Receber resultado</titulo>
+                <descricao>A Câmara de Comércio Exterior - CAMEX decidirá pela prorrogação ou não da medida compensatória, e publicará o resultado em Resolução de encerramento da revisão. O peticionário e as demais partes interessadas no processo são então notificadas do resultado.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3506" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3507" tipo="postal">
+                            <descricao>Endereço apontado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2861">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3008">prorrogação</item>
+            <item id="3009">medida compensatória</item>
+            <item id="3010">antidumping</item>
+            <item id="3011">dumping</item>
+            <item id="3012">produto nacional</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="914">[Decreto nº 1.751, de 1995](http://www.planalto.gov.br/ccivil_03/decreto/1995/D1751.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cancelar-registro-de-funcionamento-para-estabelecimentos-que-lidam-com-produtos-destinados-a-alimentacao-animal</id>
         <dbId>935</dbId>
         <nome>Cancelar registro de funcionamento para estabelecimentos que lidam com produtos destinados à alimentação animal.</nome>
@@ -43090,6 +43163,644 @@ thais.kawashima@mds.gov.br</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="894">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>requisitar-investigacao-de-origem-de-produto</id>
+        <dbId>1010</dbId>
+        <nome>Requisitar investigação de origem de produto</nome>
+        <sigla></sigla>
+        <descricao>Procedimento por meio do qual este DEINT afere a veracidade da origem declarada do produto, de forma a coibir a burla a medidas de defesa comercial aplicadas contra determinadas origens.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1238">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2661">
+                <titulo>Apresentar denúncia de falsa declaração de origem</titulo>
+                <descricao>Os interessados, atendendo as disposições do art. 6o da Portaria SECEX no 38/2015, apresentarão denúncia de falsa declaração de origem contra determinados países.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3252">CNPJ</item>
+                        <item id="3253">Contrato Social</item>
+                        <item id="3254">Procuração do representante legal</item>
+                        <item id="3255">nome, endereço comercial e representação do interessado</item>
+                        <item id="3256">nome e contato dos funcionários responsáveis pelo acompanhamento do pleito</item>
+                        <item id="3257">classificação do bem na Nomenclatura Comum do Mercosul (NCM)</item>
+                        <item id="3258">descrição pormenorizada do bem, contendo suas características principais e destinação de uso, acompanhada de catálogos, quando for o caso</item>
+                        <item id="3259">descrição pormenorizada dos fatos que fundamentam a denúncia, indicando os países de origem envolvidos</item>
+                        <item id="3260">descrição pormenorizada dos processos produtivos para a fabricação do bem, com destaque para os insumos utilizados e sua classificação na NCM</item>
+                        <item id="3261">alterações nos fluxos de importação brasileira do bem por país de origem, incluindo a aplicação ou a última prorrogação da medida de defesa comercial</item>
+                        <item id="3262">informação sobre a produção mundial, os canais de distribuição e os importadores brasileiros do bem, sempre que possível</item>
+                        <item id="3263">informação sobre os produtores conhecidos, a existência de capacidade instalada e de volume de produção do bem no país de origem declarada, sempre que possível</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3456" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)
+Secretaria de Comércio Exterior - SECEX
+Departamento de Negociações Internacionais - DEINT
+Esplanada dos Ministérios, Bloco "J"
+Zona Cívico-Administrativa, Brasília - DF, 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2662">
+                <titulo>Responder ao Pedido de Informações Complementares</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3264">Os documentos solicitados variarão conforme as deficiências da denúncia</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3457" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)
+Secretaria de Comércio Exterior - SECEX
+Departamento de Negociações Internacionais - DEINT
+Esplanada dos Ministérios, Bloco "J"
+Zona Cívico-Administrativa, Brasília - DF, 70053-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2663">
+                <titulo>Conferir resultado da investigação</titulo>
+                <descricao>O resultado será divulgado no campo apropriado do Portal do MDIC</descricao>
+                <documentos>
+                    <default>
+                        <item id="3265">Nº do processo</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3458" tipo="web">
+                            <descricao>http://www.mdic.gov.br/index.php/comercio-exterior/regimes-de-origem/1697-investigacao-de-origem-nao-preferencial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2853">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Relações Internacionais</item>
+            <item>Sistema Financeiro</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2975">investigação de origem não preferencial</item>
+            <item id="2976">produto nacional</item>
+            <item id="2977">importação</item>
+            <item id="2978">medidas compensatórias</item>
+            <item id="2979">empresa estrangeira</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="902">[Portaria SECEX no 38/2015](http://www.mdic.gov.br/images/REPOSITORIO/secex/deint/coreo/inv_nao_preferencial/legislacao/portaria_secex_38_2015_alterada.pdf)</item>
+            <item id="903">[Portaria SECEX no 9/2017](http://www.mdic.gov.br/images/REPOSITORIO/secex/gab/portarias_secex_2017/portaria_secex_09_2017.pdf)</item>
+            <item id="904">[Lei nº 12.546/2011](http://www.mdic.gov.br/arquivos/dwnl_1393448016.pdf)</item>
+            <item id="905">[Demais normativos](http://www.mdic.gov.br/index.php/comercio-exterior/regimes-de-origem/1697-investigacao-de-origem-nao-preferencial)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-prorrogacao-de-medida-antidumping</id>
+        <dbId>1017</dbId>
+        <nome>Obter prorrogação de medida antidumping</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="787">Revisão de dumping</item>
+            <item id="788">revisão antidumping</item>
+            <item id="789">prorrogação de medida antidumping.</item>
+        </nomes-populares>
+        <descricao>A revisão consiste no exame da necessidade de continuar a aplicar o direito antidumping após o período originalmente fixado para sua vigência. Caso haja uma determinação positiva a respeito, propõe-se à Câmara de Comércio Exterior (CAMEX) a continuação da aplicação de direito antidumping a fim de contornar prováveis efeitos negativos à indústria doméstica que poderiam decorrer de sua extinção, na forma de alíquotas ad valorem ou específicas, fixas ou variáveis, ou pela conjugação de ambas.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1248">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao>A revisão será concluída no prazo de 10 meses, contado da data do início da investigação, exceto em circunstâncias excepcionais, quando o prazo poderá ser prorrogado por até 2 meses.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2693">
+                <titulo>Apresentar Petição</titulo>
+                <descricao>usuário do serviço protocola, em meio eletrônico, a petição de revisão de direito antidumping ao final do período de sua aplicação. A petição escrita é apresentada pela indústria doméstica ou em seu nome, conforme o disposto na Portaria SECEX nº 44/2013; e protocolada no Sistema DECOM Digital – SDD, em conformidade com o disposto na Portaria SECEX nº 58, de 29 de julho de 2015.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3300">Petição com informações detalhadas da(s) empresa(s),</item>
+                        <item id="3301">Certificação Digital</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3508" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2694">
+                <titulo>Fornecer informações Adicionais</titulo>
+                <descricao>O usuário é demandado a apresentar informações complementares  e responder às perguntas encaminhadas pelo DECOM. A petição é analisada em 15 dias. O usuário tem o prazo de 5 dias para fornecer as informações solicitadas pelo DECOM, contados da data de ciência da comunicação, que é de 5 dias da data de expedição do ofício. O DECOM analisa as informações complementares em 10 dias, a contar da data do recebimento dos dados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3302">Documentação e informações requisitadas.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3509" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2695">
+                <titulo>Manifestar anuência da visita in loco</titulo>
+                <descricao>Antes de iniciada a revisão, o DECOM comunicará ao usuário a intenção de realizar verificação in loco. A comunicação será formalizada por escrito, com uma antecedência mínima da data sugerida para a verificação de 20 dias. No prazo de dois dias, contado da data de ciência da comunicação - que no caso de parte interessada nacional é de 5 dias -, o usuário deve manifestar, por escrito, sua anuência expressa à realização da verificação.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3510" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2696">
+                <titulo>Receber visita de verificação in loco</titulo>
+                <descricao>A visita consiste em checar a acurácia dos dados apresentados na petição de início da revisão e produzir um relatório dos trabalhos desenvolvidos. Em regra, o procedimento de verificação in loco dura 5 dias. Finalmente, o relatório de verificação será disponibilizado ao usuário no prazo de quinze dias. Dessa forma, a etapa leva no mínimo 47 dias para ser finalizada.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3511" tipo="presencial">
+                            <descricao>Instalações da empresa peticionária</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2697">
+                <titulo>Receber comunicação de início da revisão</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do processo no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo. O usuário será notificado em 15 dias a respeito do início da revisão, a contar do final do prazo de análise das informações complementares.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3512" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3513" tipo="postal">
+                            <descricao>Endereço indicado na petição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2698">
+                <titulo>Receber notificação de prazos da revisão</titulo>
+                <descricao>O DECOM publica a Circular SECEX que torna públicos os prazos que servirão de parâmetro para o restante da revisão do direito antidumping no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas na revisão dos prazos para conclusão do processo.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3514" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3515" tipo="postal">
+                            <descricao>Endereço indicado na petição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2699">
+                <titulo>Apresentar elementos de prova</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se manifestar:
+
+¨Revisão, que será encerrada em prazo não superior a 120 dias contados da data de publicação da determinação preliminar;
+¨A fase de manifestações sobre os dados e as informações constantes do processo, que é encerrada em 20 dias contados da data de encerramento da fase probatória da revisão;
+¨Manifestações finais, no prazo de até 20 dias contados da data de divulgação da nota técnica.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3303">Documentos comprobatórios</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3516" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2700">
+                <titulo>Tomar conhecimento da Nota Técnica</titulo>
+                <descricao>O DECOM divulga para as partes interessadas a nota técnica contendo os fatos essenciais que se encontram em análise e que serão considerados na determinação final da revisão. A nota técnica é divulgada no prazo de trinta dias, contado da data de encerramento da fase de manifestações.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3517" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2701">
+                <titulo>Receber resultado</titulo>
+                <descricao>A Câmara de Comércio Exterior julgará o pedido e publicará a decisão na forma de Resolução de encerramento da revisão. O usuário (peticionário)  e as demais partes interessadas no processo são então notificados.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3518" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3519" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3520" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2862">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3013">prorrogação</item>
+            <item id="3014">antidumping</item>
+            <item id="3015">dumping</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="915">[Portaria SECEX nº 44/2013](http://www.mdic.gov.br/arquivos/dwnl_1383230553.pdf)</item>
+            <item id="916">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
+            <item id="917">[Decreto nº 8.058, de 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8058.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>retificar-licencas-de-importacao-apos-o-desembaraco-da-mercadoria</id>
+        <dbId>793</dbId>
+        <nome>Retificar Licenças de Importação após o desembaraço da mercadoria</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="790">Retificação de LI</item>
+        </nomes-populares>
+        <descricao>Para os casos de retificação de Declaração de Importação  amparada por Licença de Importação, após o desembaraço, em situações gerais, o importador deverá apresentar o pedido por meio de LI substitutiva registrada no SISCOMEX, com a alteração pretendida.
+
+Este procedimento não se aplica às seguintes situações, nas quais não é possível o registro de LI substitutiva: i) importação vinculada a ato concessório de Drawback; ii) importação que, no momento da solicitação de retificação, não esteja mais sujeita a licenciamento; e iii) importação que não foi originalmente objeto de licenciamento, mas a LI é exigida em face da retificação requerida.
+
+Nestes casos, o importador deverá encaminhar a solicitação mediante a anexação a um dossiê eletrônico no Portal Siscomex, observadas as instruções do [Manual Visão Integrada e Módulo Anexação] (http://portal.siscomex.gov.br/informativos/manuais)</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1250">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1251">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1252">
+                <tipo>Órgãos, fundações e autarquias de direito público</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2704">
+                <titulo>Solicitar Retificação</titulo>
+                <descricao>Registro da LI substitutiva no Siscomex ou solicitação via anexação a um dossiê eletrônico, assim como fornecimento de documentos complementares, caso seja requisitado pelo órgão</descricao>
+                <documentos>
+                    <default>
+                        <item id="3309">Certificado Digital, no caso de LI substitutiva</item>
+                        <item id="3310">No caso de utilização do Módulo Anexação, o extrato da Declaração de Importação</item>
+                        <item id="3311">Documentos que amparam a operação.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3523" tipo="web">
+                            <descricao>https://www1.siscomex.receita.fazenda.gov.br/siscomexImpweb-7/login_cert.jsp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2705">
+                <titulo>Receber resposta</titulo>
+                <descricao>O resultado da anuência na LI substitutiva via sistema corresponderá à manifestação do órgão acerca da retificação.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3524" tipo="web">
+                            <descricao>https://www1.siscomex.receita.fazenda.gov.br/siscomexImpweb-7/login_cert.jsp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2864">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2865">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2866">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3020">Licença Importação</item>
+            <item id="3021">Declaração de Importação</item>
+            <item id="3022">Retificar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="919">[Portaria SECEX nº 23/2011](http://portal.siscomex.gov.br/legislacao/biblioteca-de-arquivos/secex/portaria-no-23-de-14-de-julho-de-2011)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-alteracao-ou-extincao-de-medida-antidumping</id>
+        <dbId>1020</dbId>
+        <nome>Obter alteração ou extinção de medida antidumping</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="793">Revisão de alteração de circunstâncias</item>
+            <item id="794">revisão por alteração das circunstâncias.</item>
+        </nomes-populares>
+        <descricao>A revisão consiste no exame da necessidade de alterar ou extinguir o direito antidumping vigente, em decorrência de alteração das circunstâncias que justificaram a aplicação do referido direito. Caso haja uma determinação positiva a respeito, propõe-se à Câmara de Comércio Exterior (CAMEX) a alteração ou extinção do direito antidumping.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1254">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao>.A revisão será concluída no prazo de dez meses, contado da data do início da revisão; em circunstâncias excepcionais, esse prazo poderá ser prorrogado por até dois meses.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2711">
+                <titulo>Apresentar Petição</titulo>
+                <descricao>O usuário do serviço protocola, em meio eletrônico, a petição de revisão por alteração das circunstâncias, conforme requisitos do Decreto nº 8.058, de 2013. A petição escrita é protocolada no Sistema DECOM Digital – SDD, em conformidade com o disposto na Portaria SECEX nº 58, de 29 de julho de 2015.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3316">Petição com informações detalhadas da(s) alteração(s)</item>
+                        <item id="3317">Certificado Digital</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3534" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2712">
+                <titulo>Fornecer informações complementares</titulo>
+                <descricao>O usuário é demandado a responder a perguntas encaminhadas pelo DECOM e apresentar dados adicionais àqueles constantes da petição. A petição é analisada em 15 dias. O usuário tem o prazo de 5 dias para fornecer as informações solicitadas pelo DECOM, contados da data de ciência da comunicação, que é de 5 dias da data de expedição do ofício. O DECOM analisa as informações complementares em 10 dias, a contar da data do recebimento dos dados</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3535" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2713">
+                <titulo>Receber notificação de início do processo</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do processo no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo do início da revisão</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3536" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3537" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3538" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2714">
+                <titulo>Apresentar elementos de prova</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se protocolar elementos de prova:
+¨Fase probatória, , que será encerrada em prazo não superior a 120 dias, contado da data de publicação da determinação preliminar. 
+¨Fase de manifestações sobre os dados e as informações constantes do processo,  encerrada em 20 dias contados da data de encerramento da fase probatória da revisão. 
+¨Manifestações Finais, nos 20 dias seguintes à divulgação da nota técnica.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3318">Documentos e informações que sirvam como elementos de prova</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3539" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2715">
+                <titulo>Tomar conhecimento da Nota Técnica</titulo>
+                <descricao>O DECOM divulga para as partes interessadas a nota técnica contendo os fatos essenciais que se encontram em análise e que serão considerados na determinação final da revisão.  A nota técnica é divulgada no prazo de trinta dias, contado da data de encerramento da fase de manifestações.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3540" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2716">
+                <titulo>Receber Decisão</titulo>
+                <descricao>A Câmara de Comércio Exterior - CAMEX toma a decisão e a publica em Resolução de encerramento da revisão. O usuário (peticionário) e as demais partes interessadas no processo são notificados.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3541" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3542" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3543" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2868">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3028">alteração</item>
+            <item id="3029">extinção</item>
+            <item id="3030">medida compensatória</item>
+            <item id="3031">antidumping</item>
+            <item id="3032">dumping</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="923">[Decreto nº 8.058, de 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8058.htm)</item>
+            <item id="924">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -44671,6 +45382,307 @@ https://www.beneficiossociais.caixa.gov.br/consulta/beneficio/04.01.00-00_00.asp
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-ex-tarifario-para-bens-de-capital-e-bens-de-informatica-e-telecomunicacoes</id>
+        <dbId>1011</dbId>
+        <nome>Obter Ex-Tarifário para Bens de Capital e Bens de Informática e Telecomunicações</nome>
+        <sigla>BK e BIT</sigla>
+        <nomes-populares>
+            <item id="780">Ex-Tarifário</item>
+        </nomes-populares>
+        <descricao>O serviço oferece às empresas que importam bens de capital (BK) e/ou bens de informática e de telecomunicações (BIT) a redução, temporária e excepcional, da alíquota do Imposto de Importação, desde que não exista produção nacional equivalente destes bens, e que estejam assinalados na Tarifa Externa Comum (TEC) como BK ou BIT</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1239">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2664">
+                <titulo>Requerer concessão</titulo>
+                <descricao>Apresentação de pleito, em papel, para concessão ou renovação de Ex-tarifário. Havendo erros formais no preenchimento do pleito, solicita-se à empresa pleiteante, por e-mail, as correções necessárias.
+[Modelo do Formulário de Pleito Novo](http://www.mdic.gov.br/images/REPOSITORIO/sdci/cgbc/Pleito_Novo.docx)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3266">CNPJ</item>
+                        <item id="3267">Procuração do representante legal</item>
+                        <item id="3268">Declaração de vínculo empregatício ou procuração registrada em cartório</item>
+                        <item id="3269">Descrição para a identificação do bem</item>
+                        <item id="3270">Catálogo técnico do bem</item>
+                        <item id="3271">Informações da empresa e do projeto de investimento ao qual o bem fará parte</item>
+                        <item id="3272">Formulário de Pleito Novo preenchido</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3459" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Setor de Protocolo
+Esplanada dos Ministérios, Bloco "J", andar térreo, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3460" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Desenvolvimento e Competitividade Industrial - SDCI
+Departamento de Investimentos e Complexos Tecnológicos - DEICT
+Coordenação-Geral de Bens de Capital
+Esplanada dos Ministérios, Bloco "J", 5º andar, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2665">
+                <titulo>Acompanhar Consulta Pública do pedido</titulo>
+                <descricao>Estando o pleito devidamente preenchido, coloca-se a descrição proposta e o catálogo técnico em Consulta Pública, para que a indústria nacional possa se manifestar quanto à existência de produção nacional equivalente.As empresas nacionais que julgarem produzir um bem equivalente ao qual se pretende importar devem apresentar um documento indicando o bem que produz, assim como os documentos que comprovem essa produção.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3273">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3461" tipo="web">
+                            <descricao>http://www.mdic.gov.br/index.php/competitividade-industrial/acoes-e-programas-13/o-que-e-o-ex-tarifario-6</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2666">
+                <titulo>Apresentar defesa do pleito (caso seja contestado na Consulta Pública)</titulo>
+                <descricao>Sendo avaliada como pertinente a manifestação de uma empresa nacional, comunica-se à empresa pleiteante que existe a contestação daquela empresa nacional à concessão do Ex-tarifário, e solicita-se que, não concordando com a avaliação do MDIC, apresente argumentos que desqualifiquem a produção nacional como equivalente ao bem importado. Será realizada então nova análise, podendo, inclusive, envolver a realização de reuniões entre as partes.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3274">Documentos que comprovem os argumentos de desqualificação da equivalência do produto nacional</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3462" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Setor de Protocolo
+Esplanada dos Ministérios, Bloco "J", andar térreo, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3463" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Desenvolvimento e Competitividade Industrial - SDCI
+Departamento de Investimentos e Complexos Tecnológicos - DEICT
+Coordenação-Geral de Bens de Capital
+Esplanada dos Ministérios, Bloco "J", 5º andar, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2667">
+                <titulo>Apresentar recurso à decisão do Comitê de Análise de Ex-tarifários - CAEx (Caso a decisão seja contrária ao pleito)</titulo>
+                <descricao>Havendo a manutenção da indicação de produção nacional por parte do CAEx, é oferecido ao pleiteante um prazo para apresentação de um novo recurso, que voltará a ser analisado pelo CAEx.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3275">Documentos que comprovem os argumentos do recurso apresentado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3464" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Setor de Protocolo
+Esplanada dos Ministérios, Bloco "J", andar térreo, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3465" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Desenvolvimento e Competitividade Industrial - SDCI
+Departamento de Investimentos e Complexos Tecnológicos - DEICT
+Coordenação-Geral de Bens de Capital
+Esplanada dos Ministérios, Bloco "J", 5º andar, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2668">
+                <titulo>Apresentar recurso final à decisão (caso o recurso anterior tenha sido decidido de forma não favorável ao pleito)</titulo>
+                <descricao>Ainda é permitido um último recurso da empresa pleiteante, agora perante a SE/CAMEX. Sendo apresentado novos argumentos pertinentes para uma nova avaliação dos membros do GECEX, o pleito volta a ser discutido.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3276">Documentos que comprovem os argumentos do recurso apresentado</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3466" tipo="presencial">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Setor de Protocolo
+Esplanada dos Ministérios, Bloco "J", andar térreo, Brasília, DF, CEP 70.053.900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3467" tipo="postal">
+                            <descricao>Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria-Executiva da Câmara de Comércio Exterior - CAMEX
+Esplanada dos Ministérios, Bloco "J", Sala T3, Térreo - Brasília – DF, CEP 70.056-900.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2669">
+                <titulo>Verificar resultado em Resolução da CAMEX</titulo>
+                <descricao>Se o pleito for definitivamente indeferido, o pleiteante é comunicado quanto ao fim do processo. Caso seja deferido, a concessão do ex-tarifários será declarada por Portaria da Camex</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3468" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3469" tipo="postal">
+                            <descricao>No endereço informado pelo pleiteante</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2854">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Relações Internacionais</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2980">Ex-Tarifário</item>
+            <item id="2981">bem nacional equivalente</item>
+            <item id="2982">BK</item>
+            <item id="2983">BIT</item>
+            <item id="2984">Tarifa Externa Comum</item>
+            <item id="2985">TEC</item>
+            <item id="2986">Imposto de importação</item>
+            <item id="2987">redução de alíquota</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="906">[Resolução CAMEX nº 66, de 2014](http://www.mdic.gov.br/arquivos/dwnl_1408134862.pdf)</item>
+            <item id="907">[Portaria SDP/MDIC nº 92, de 2015](http://www.mdic.gov.br/arquivos/dwnl_1437419115.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-desoneracao-tributaria-para-mercadorias-destinadas-a-industrializacao-de-produto-a-ser-exportado</id>
+        <dbId>1018</dbId>
+        <nome>Obter desoneração tributária para mercadorias destinadas à industrialização de produto a ser exportado.</nome>
+        <sigla></sigla>
+        <descricao>Regime Aduaneiro Especial que permite a suspensão na aquisição no mercado interno ou na importação, de forma combinada ou não, de mercadoria para emprego ou consumo na industrialização de produto a ser exportado, com suspensão dos tributos exigíveis na importação e na aquisição no mercado interno.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1249">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="16" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2702">
+                <titulo>Realizar pedido</titulo>
+                <descricao>Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir, indeferir ou exigir informações complementares.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3304">Laudo Técnico</item>
+                        <item id="3305">Documento que demonstre alteração de preço</item>
+                        <item id="3306">Certidão Negativa de Débitos</item>
+                        <item id="3307">Auto de Infração ou documento de natureza análoga emitido por autoridade fiscal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3521" tipo="web">
+                            <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=0</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2703">
+                <titulo>Fornecer informações adicionais (Caso requisitado pelo órgão)</titulo>
+                <descricao>Trata-se de resposta da empresa em função de informações adicionais solicitadas pele órgão responsável.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3308">Documentos comprobatórios das informações requisitadas pelo órgão</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3522" tipo="web">
+                            <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=0</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2863">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Produção Industrial</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3016">drawback</item>
+            <item id="3017">suspensão</item>
+            <item id="3018">desoneração tributária</item>
+            <item id="3019">industrialização de produto a ser exportado</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="918">[Portaria SECEX 23/11](http://portal.siscomex.gov.br/legislacao/biblioteca-de-arquivos/secex/portaria-no-23-de-14-de-julho-de-2011)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>estudar-o-ensino-superior-no-brasil</id>
         <dbId>953</dbId>
         <nome>Estudar o Ensino Superior no Brasil</nome>
@@ -45486,6 +46498,366 @@ V - gráfica: impressor de livros jornais e periódicos, que recebe papel de ter
         </legislacoes>
     </servico>
     <servico>
+        <id>aderir-a-vitrine-do-exportador</id>
+        <dbId>1012</dbId>
+        <nome>Aderir à Vitrine do Exportador</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="781">Vitrine do Exportador</item>
+        </nomes-populares>
+        <descricao>A Vitrine do Exportador (VE) tem como objetivo divulgar as empresas brasileiras e seus produtos e serviços no mercado internacional. 
+Atualmente participam da VE cerca de 27 mil exportadores de bens e cerca de 9 mil exportadores de serviços. A base de dados é atualizada mensalmente, tanto em relação a novas empresas quanto às operações e produtos das empresas já cadastradas. São mantidas na VE as empresas que exportaram nos dois ano anterior e no corrente.
+A empresa participante customizar sua página nos idiomas português, inglês e espanhol, mediante inserção de texto de apresentação, além de informações comerciais, imagens, vídeo, geolocalização, principais produtos e regiões de destino. A página da empresa conta ainda com formulário próprio constante na página da empresa.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1240">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2670">
+                <titulo>Inscrever-se no cadastro  preenchendo os campos necessários.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3277">CNPJ</item>
+                        <item id="3278">CPF</item>
+                        <item id="3279">CNPJ e dados comerciais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3470" tipo="telefone">
+                            <descricao>6120279295</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3471" tipo="web">
+                            <descricao>http://www.vitrinedoexportador.gov.br/bens/ve/br/exportador#inicio</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3472" tipo="e-mail">
+                            <descricao>vitrinedoexportador@mdic.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2671">
+                <titulo>Receber senha</titulo>
+                <descricao>Depois de verificadas as informações pela equipe da Vitrine do Exportador, uma senha
+será enviada para o e-mail cadastrado para posterior acesso ao sistema de construção de vitrine virtual</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3473" tipo="e-mail">
+                            <descricao>E-mail da empresa informado no cadastro</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2672">
+                <titulo>Realizar Login e preencher dados da empresa para publicação na Vitrine</titulo>
+                <descricao>A vitrine virtual da empresa será publicada após aprovação pela equipe da VE. O
+representante da empresa perante a Vitrine do Exportador receberá um e-mail informando que a construção/atualização foi realizada com sucesso.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3280">Dados da empresa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3474" tipo="web">
+                            <descricao>http://www.vitrinedoexportador.gov.br/bens/ve/br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3475" tipo="e-mail">
+                            <descricao>E-mail da empresa informado no cadastro</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2855">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Difusão</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2988">Vitrine do Exportador</item>
+            <item id="2989">divulgação no exterior</item>
+            <item id="2990">empresa</item>
+            <item id="2991">cadastro</item>
+            <item id="2992">exportação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="908">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-beneficio-de-reducao-a-zero-do-imposto-de-renda-para-operacoes-de-promocao-comercial-de-produtos-e-servicos</id>
+        <dbId>1013</dbId>
+        <nome>Obter benefício de redução a zero do Imposto de Renda para operações de promoção comercial de produtos e serviços</nome>
+        <sigla>SISPROM</sigla>
+        <descricao>O Sistema de Registro de Informações de Promoção - SISPROM é um instrumento de incentivo fiscal para promoção de produtos e serviços brasileiros no exterior.  Consiste em uma ferramenta on-line pela qual as empresas registram suas operações de promoção comercial de produtos e serviços com o objetivo de obter o benefício de redução a zero do Imposto de Renda - IR, quando do pagamento de despesas para a participação em feiras e eventos semelhantes, bem como na realização de pesquisa de mercado, no exterior.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1241">
+                <tipo>Empresas públicas, privadas ou de economia mista</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1242">
+                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1243">
+                <tipo>Órgãos, fundações e autarquias de direito público</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1244">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2673">
+                <titulo>Cadastrar-se no Sistema</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3281">CPF</item>
+                        <item id="3282">Certificado digital do tipo e CNPJ e e-CPF.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3476" tipo="web">
+                            <descricao>https://sisprom.mdic.gov.br/private/usuario-externo/cadastro-info</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2674">
+                <titulo>Inserir registros de operações de promoção comercial de produtos e serviços</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3283">CPF</item>
+                        <item id="3284">Certificado digital do tipo e CNPJ e e-CPF.</item>
+                        <item id="3285">Informações e documentos de comprovação de operações de promoção comercial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3477" tipo="web">
+                            <descricao>https://sisprom.mdic.gov.br/private/portal#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2856">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2857">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2858">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Difusão</item>
+            <item>Indústria</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2993">promoção comercial</item>
+            <item id="2994">imposto de renda</item>
+            <item id="2995">SISPROM</item>
+            <item id="2996">redução a zero</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="909">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-restituicao-de-direitos-antidumping-recolhidos-em-montante-superior-a-margem-de-dumping</id>
+        <dbId>1014</dbId>
+        <nome>Obter restituição de direitos antidumping recolhidos em montante superior à margem de dumping.</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="782">Revisão de restituição</item>
+        </nomes-populares>
+        <descricao>O procedimento consiste em examinar se a margem de dumping apurada no período de revisão de restituição é inferior ao direito vigente, com vistas a eventual restituição de direitos antidumping recolhidos em montante superior à margem supramencionada.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1245">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="10" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2675">
+                <titulo>Apresentar petição</titulo>
+                <descricao>O usuário do serviço protocola, em meio eletrônico, a petição de revisão de restituição conforme requisitos do Decreto nº 8.058, de 2013. A petição escrita é protocolada no Sistema DECOM Digital – SDD, em conformidade com o disposto naPortaria SECEX nº 58, de 29 de julho de 2015.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3286">Petição com informações detalhadas do direito antidumping recolhido</item>
+                        <item id="3287">Documentação comprobatória</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3478" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2676">
+                <titulo>Receber documentos emitidos pelo Departamento de Defesa Comercial - DECOM</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do procedimento no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo do início da revisão</descricao>
+                <documentos>
+                    <default>
+                        <item id="3288">Nenhuma</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3479" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3480" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3481" tipo="postal">
+                            <descricao>Endereço informado na petição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2677">
+                <titulo>Protocolar elementos de prova (opcional)</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se manifestar, protocolando documentos com suas alegações e com as informações que julgar necessárias à sua participação na revisão.O usuário pode protocolar elementos de prova durante a condução da revisão.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3289">Elementos de prova que o usuário julgar necessários</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3482" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2678">
+                <titulo>Receber decisão</titulo>
+                <descricao>Alcançando a determinação final, o DECOM emite as notificações comunicando o usuário (peticionário) e as demais partes interessadas do resultado da revisão</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3483" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br/peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3484" tipo="postal">
+                            <descricao>Endereço informado na petição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2859">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2997">dumping</item>
+            <item id="2998">antidumping</item>
+            <item id="2999">restituição</item>
+            <item id="3000">cobrança indevida</item>
+            <item id="3001">DECOM</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="910">[Decreto nº 8.058, de 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8058.htm)</item>
+            <item id="911">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-autorizacao-para-programa-de-residencia-para-estudantes-das-areas-de-saude</id>
         <dbId>987</dbId>
         <nome>Obter autorização para programa de residência para estudantes das áreas de saúde</nome>
@@ -46176,6 +47548,320 @@ Ou nas dependências dos órgãos solicitantes</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="897">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-margem-individual-de-dumping</id>
+        <dbId>1015</dbId>
+        <nome>Obter margem individual de dumping</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="783">Revisão de novo exportador.</item>
+        </nomes-populares>
+        <descricao>Atribuição de margem individual de dumping para produtor ou exportador estrangeiro que não tenha exportado para o Brasil durante o período da investigação que culminou com a aplicação, alteração, prorrogação ou extensão do direito antidumping vigente. Ao final da investigação, a Câmara de Comércio Exterior – CAMEX publicará Resolução determinando a cobrança do direito aplicado às importações do produto do produtor ou exportador beneficiado pela revisão no montante do direito individual definitivo determinado na revisão.
+Dessa forma, cabe ressaltar que a entrega do resultado da revisão, ou seja, atribuição de margem individual de dumping, não é realizada pelo DECOM diretamente ao usuário, uma vez que a atividade do DECOM se restringe a conduzir a revisão e a recomendar a cobrança de margem individual à CAMEX.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1246">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="9" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2679">
+                <titulo>Apresentar Petição</titulo>
+                <descricao>O usuário do serviço protocola, em meio eletrônico, a petição de revisão para novos exportadores, conforme requisitos do Decreto nº 8.058, de 2013. A petição escrita é protocolada no Sistema DECOM Digital – SDD, em conformidade com o disposto na Portaria SECEX nº 28, de 29 de julho de 2013.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3290">Petição com informações detalhadas do(s) peticionário(s)</item>
+                        <item id="3291">Certificado Digital</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3485" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2680">
+                <titulo>Fornecer informações complementares</titulo>
+                <descricao>O usuário é demandado a apresentar informações complementares à sua petição. Cabe a ele responder a perguntas encaminhadas pelo Departamento de Defesa Comercial - DECOM e apresentar dados adicionais àqueles constantes da petição. . O usuário tem o prazo de 5 dias para fornecer as informações solicitadas pelo DECOM, contados da data de ciência da comunicação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3292">Documentação e informações requisitadas.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3486" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2681">
+                <titulo>Receber comunicação de início do processo de revisão</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do procedimento no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo do início da revisão.O DECOM disporá de dois meses para analisar se a petição está devidamente instruída e, em caso positivo, a SECEX publicará ato tornando público o início da revisão.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3487" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3488" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3489" tipo="postal">
+                            <descricao>Endereço informado na petição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2682">
+                <titulo>Protocolar documentos e acrescentar informações à petição</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se manifestar, protocolando documentos com suas alegações e com as informações que julgar necessárias à sua participação na revisão. A fase probatória da revisão será encerrada no prazo de noventa dias, contado da data de início da revisão. Os prazos de cada etapa da revisão estão dispostos no Decreto nº 8.058, de 2013.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3293">Documentos e informações comprobatórias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3490" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2683">
+                <titulo>Receber resultado</titulo>
+                <descricao>notificaçõesO DECOM emite seu parecer de determinação final e encaminha para análise da Câmara de Comércio Exterior - CAMEX (órgão responsável pela alteração da aplicação de direito antidumping). Quando a CAMEX publica sua Resolução de encerramento da revisão, o DECOM emite as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo da atribuição de margem de dumping individual</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3491" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3492" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2860">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3002">margem individual</item>
+            <item id="3003">dumping</item>
+            <item id="3004">antidumping</item>
+            <item id="3005">exportação</item>
+            <item id="3006">importação</item>
+            <item id="3007">produto nacional</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="912">[Decreto nº 8.058, de 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8058.htm)</item>
+            <item id="913">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-extensao-de-medida-antidumping-para-neutralizar-praticas-de-circunvencao</id>
+        <dbId>1019</dbId>
+        <nome>Obter extensão de medida antidumping para neutralizar práticas de circunvenção</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="791">Revisão de circunvenção</item>
+            <item id="792">investigação de circunvenção, extensão de medida antidumping.</item>
+        </nomes-populares>
+        <descricao>A revisão consiste no exame de prática comercial que vise a frustrar a eficácia de medida antidumping vigente (circunvenção) por meio de i) importação de partes/peças originárias de país sujeito à medida antidumping destinadas à montagem no Brasil do produto sujeito à medida em questão; ii) importação de produto originário de terceiros países cuja industrialização com partes/peças de país sujeito à medida antidumping vigente resulte no produto sujeito a tal medida; e iii) importação originária do país sujeito à medida antidumping vigente de produto que apresente modificações marginais em relação ao produto sujeito à referida medida.  Caso seja constatada a circunvenção, os direitos antidumping serão estendidos aos produtos e/ou países que deram origem à prática, por meio de decisão da Câmara de Comércio Exterior – CAMEX.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1253">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="9" unidade="meses"/>
+            <descricao>As revisões serão concluídas no prazo de seis meses, contado da data de publicação do ato que deu início à investigação, exceto em circunstâncias excepcionais, quando o prazo poderá ser prorrogado por até três meses.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2706">
+                <titulo>Apresentar petição</titulo>
+                <descricao>O usuário do serviço protocola, em meio eletrônico, a petição de revisão anticircunvenção. A petição escrita é apresentada conforme o disposto na Portaria SECEX nº 42/2013; e protocolada no Sistema DECOM Digital – SDD, em conformidade com o disposto na Portaria SECEX nº 58, de 29 de julho de 2015.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3312">Petição com informações detalhadas da(s) prática(s)</item>
+                        <item id="3313">Certificado Digital</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3525" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2707">
+                <titulo>Fornecer informações complementares</titulo>
+                <descricao>O usuário é demandado a  responder a perguntas encaminhadas pelo Departamento de Defesa Comercial - DECOM e apresentar dados adicionais àqueles constantes da petição. A petição é analisada em 15 dias. O usuário tem o prazo de 5 dias para fornecer as informações solicitadas pelo DECOM, contados da data de ciência da comunicação, que é de 5 dias da data de expedição do ofício. O DECOM analisa as informações complementares em 10 dias, a contar da data do recebimento dos dados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3314">Documentos e informações requeridas</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3526" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2708">
+                <titulo>Receber notificação de início do processo</titulo>
+                <descricao>O DECOM emite seu parecer para iniciar a revisão e publica a Circular SECEX de início do processo no Diário Oficial da União (DOU). Após a publicação da Circular são emitidas as notificações comunicando o usuário (peticionário) e as demais partes interessadas no processo do início da revisão</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3527" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3528" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3529" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2709">
+                <titulo>Apresentar alegações e informações adicionais</titulo>
+                <descricao>Em várias fases do processo o usuário tem a oportunidade de se manifestar, protocolando documentos com suas alegações e com as informações que julgar necessárias à sua participação na revisão.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3315">Documentos e informações comprobatórias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3530" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2710">
+                <titulo>Receber decisão</titulo>
+                <descricao>A Câmara de Comércio Exterior - CAMEX julgará a questão e publicará a decisão na sua Resolução de encerramento da revisão. O usuário (peticionário) e as demais partes interessadas no processo são então notificadas.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3531" tipo="web">
+                            <descricao>https://decomdigital.mdic.gov.br./peticao/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3532" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3533" tipo="postal">
+                            <descricao>Endereço informado na petição inicial</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+            <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2867">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Produção Industrial</item>
+            <item>Produção agropecuária</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3023">Extensão</item>
+            <item id="3024">Revisão</item>
+            <item id="3025">anticircunvenção</item>
+            <item id="3026">circunvenção</item>
+            <item id="3027">medida anticircunvenção</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="920">[Portaria SECEX nº 42/2013](http://www.mdic.gov.br/arquivos/dwnl_1382099909.pdf)</item>
+            <item id="921">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
+            <item id="922">[Decreto nº 8.058, de 2013](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d8058.htm)</item>
         </legislacoes>
     </servico>
 </servicos>
