@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>fazer-a-carteira-de-matricula-consular</id>
+    <dbId>1037</dbId>
+    <nome>Fazer a Carteira de Matrícula Consular</nome>
+    <sigla>CMC</sigla>
+    <nomes-populares>
+        <item id="812">Matrícula Consular</item>
+        <item id="813">Carteira de Matrícula Consular</item>
+    </nomes-populares>
+    <descricao>Trata-se do registro, junto à Repartição Consular brasileira, de brasileiro residente no exterior, com informações pessoais e de contato. Ao realizar o registro da Carteira de Matrícula Consular, o brasileiro recebe uma carteira, como uma identidade, que, em alguns países, serve de documento de identificação. Para solicitar o registro ou a emissão de uma Carteira de Matrícula Consular, é possível fazer o agendamento junto à Repartição Consular responsável pela jurisdição onde reside o cidadão, ou, em alguns casos, basta o comparecimento à Repartição Consular para solicitar o serviço. As interações podem variar nas mais de 195 Repartições Consulares espalhadas pelo mundo, onde o serviço da CMC for solicitado, podendo ser entregue na hora, ou posteriormente, com a retirada ou envio pelos correios.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1277">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1278">
+            <tipo>Cidadãos e famílias no exterior</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="minutos"/>
+        <descricao>Não é possível determinar um tempo padrão, tendo em vista que o tempo varia em função do país, das condições da repartição consular em questão, dos protocolos de atendimento de cada uma e assim por diante.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2780">
+            <titulo>Agendar atendimento (Caso exista na repartição consular desejada)</titulo>
+            <descricao>Agendamento eletrônico ou por outro meio não presencial para atendimento na repartição consular.</descricao>
+            <documentos>
+                <default>
+                    <item id="3432">Carteira de identidade</item>
+                    <item id="3433">CPF</item>
+                    <item id="3434">Passaporte</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3648" tipo="web">
+                        <descricao>http://www.portalconsular.itamaraty.gov.br/rede-consular</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2781">
+            <titulo>Entregar documentação</titulo>
+            <descricao>Comparecimento à Repartição Consular para prestar as informações e entregar os documentos necessários ou, se for o caso,  enviá-los pelo correio</descricao>
+            <documentos>
+                <default>
+                    <item id="3435">Carteira de identidade</item>
+                    <item id="3436">CPF</item>
+                    <item id="3437">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3649" tipo="presencial">
+                        <descricao>Repartição consular brasileira do país em que você reside *(Confira os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/rede-consular))*</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3650" tipo="postal">
+                        <descricao>Repartição consular brasileira do país em que você reside *(Confira os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/rede-consular))*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2782">
+            <titulo>Receber a Carteira de Matrícula Consular</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3651" tipo="postal">
+                        <descricao>Endereço apontado no requerimento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2894">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="2895">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Cooperação Internacional</item>
+        <item>Relações Diplomáticas</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3113">CMC</item>
+        <item id="3114">Carteira de Matrícula Consular</item>
+        <item id="3115">Identificação</item>
+        <item id="3116">residência no exterior</item>
+        <item id="3117">embaixada</item>
+        <item id="3118">consulado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="947">-</item>
+    </legislacoes>
+</servico>
