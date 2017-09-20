@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-desoneracao-tributaria-para-reposicao-de-insumos-utilizados-para-exportacao</id>
+    <dbId>1030</dbId>
+    <nome>Obter desoneração tributária para reposição de insumos utilizados para exportação.</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="807">Drawnback Isenção</item>
+    </nomes-populares>
+    <descricao>Regime Aduaneiro Especial que permite a isenção na aquisição no mercado interno ou na importação, de forma combinada ou não, de mercadoria equivalente à empregada ou consumida na industrialização de produto exportado, com isenção do Imposto de Importação (II) e com redução à zero do Imposto sobre Produtos Industrializados (IPI), da Contribuição para o PIS/PASEP, da Contribuição para o Financiamento da Seguridade Social (COFINS), da Contribuição para o PIS/PASEP-Importação e da COFINS-Importação.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1264">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2763">
+            <titulo>Apresentar pedido</titulo>
+            <descricao>Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir, indeferir ou exigir informações complementares.</descricao>
+            <documentos>
+                <default>
+                    <item id="3360">Laudo Técnico</item>
+                    <item id="3361">Documento que demonstre alteração de preço</item>
+                    <item id="3362">Certidão Negativa de Débitos</item>
+                    <item id="3363">Auto de Infração ou documento de natureza análoga emitido por autoridade fiscal</item>
+                    <item id="3364">Certificado Digital/Token</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3609" tipo="web">
+                        <descricao>https://www.drawbackisencao.mdic.gov.br/drawbackisencao/private/pages/index.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2764">
+            <titulo>Fornecer informações complementares</titulo>
+            <descricao>Trata-se de resposta da empresa em função de informações adicionais solicitadas pele órgão responsável.</descricao>
+            <documentos>
+                <default>
+                    <item id="3365">Certificado Digital</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3610" tipo="web">
+                        <descricao>https://www.drawbackisencao.mdic.gov.br/drawbackisencao/private/pages/index.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2878">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Produção Industrial</item>
+        <item>Produção agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3079">insumos</item>
+        <item id="3080">desoneração tributária</item>
+        <item id="3081">isenção</item>
+        <item id="3082">isenção de impostos</item>
+        <item id="3083">drawnback</item>
+        <item id="3084">IPI</item>
+        <item id="3085">COFINS</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="939">-</item>
+    </legislacoes>
+</servico>
