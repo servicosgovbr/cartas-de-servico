@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-concessao-de-regime-aduaneiro-especial-para-mercadorias-destinadas-a-industrializacao-de-embarcacao</id>
+    <dbId>1027</dbId>
+    <nome>Obter concessão de Regime Aduaneiro Especial para mercadorias destinadas à industrialização de embarcação.</nome>
+    <sigla></sigla>
+    <descricao>Regime Aduaneiro Especial que permite a importação de mercadoria utilizada em processo de industrialização de embarcação, destinada ao mercado interno.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1261">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2755">
+            <titulo>Apresentar pedido inicial</titulo>
+            <descricao>Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir, indeferir ou exigir informações complementares.</descricao>
+            <documentos>
+                <default>
+                    <item id="3343">Laudo Técnico</item>
+                    <item id="3344">Documento que demonstre alteração de preço</item>
+                    <item id="3345">Certidão Negativa de Débitos</item>
+                    <item id="3346">Auto de Infração ou documento de natureza análoga emitido por autoridade fiscal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3601" tipo="web">
+                        <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=1</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2756">
+            <titulo>Fornecer informações complementares</titulo>
+            <descricao>Trata-se de resposta da empresa em função de informações adicionais solicitadas pele órgão responsável.</descricao>
+            <documentos>
+                <default>
+                    <item id="3347">Documentos e informações requeridas pelo analista</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3602" tipo="web">
+                        <descricao>https://siscomex.desenvolvimento.gov.br/g33159Secex/jsp/logon.jsp?ind=1</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2875">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Encargos financeiros</item>
+        <item>Indústria</item>
+        <item>Produção Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3062">embarcação</item>
+        <item id="3063">regime aduaneiro especial</item>
+        <item id="3064">isenção de impostos</item>
+        <item id="3065">incentivo fiscal</item>
+        <item id="3066">drawback embarcação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="936">-</item>
+    </legislacoes>
+</servico>
