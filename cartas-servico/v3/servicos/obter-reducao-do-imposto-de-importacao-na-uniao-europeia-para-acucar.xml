@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-reducao-do-imposto-de-importacao-na-uniao-europeia-para-acucar</id>
+    <dbId>1029</dbId>
+    <nome>Obter redução do imposto de importação na União Europeia para açúcar</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="806">Certificado de Cota de Açúcar</item>
+    </nomes-populares>
+    <descricao>Emissão do documento exigido pelo art. 10 do Regulamento (CE) 891/2009, de 25 de setembro de 2009, alterado pelo Regulamento de Execução (UE) nº 61/2012, de 24 de janeiro de 2012, para exportações de açúcares em bruto para refinação, sem adição de aromatizantes ou de corantes, de cana, classificados nos itens NCM 1701.13.00 e 1701.14.00, quando destinadas a país da União Europeia.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1263">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2760">
+            <titulo>Registrar operação de exportação no SISCOMEX</titulo>
+            <descricao>Confecção do Registro de Exportação no Siscomex, informando todas as características da operação</descricao>
+            <documentos>
+                <default>
+                    <item id="3354">Certificado Digital/Token</item>
+                    <item id="3355">Informações sobre a empresa e a operação de exportação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3606" tipo="web">
+                        <descricao>https://www37.receita.fazenda.gov.br/exportacao/login.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2761">
+            <titulo>Requerer Certificado de Origem</titulo>
+            <descricao>Preenchimento de dados referente ao CO através do sistema de Cotas</descricao>
+            <documentos>
+                <default>
+                    <item id="3356">CNPJ</item>
+                    <item id="3357">Senha</item>
+                    <item id="3358">Informações sobre a empresa, os produtos e a operação de exportação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3607" tipo="web">
+                        <descricao>http://www.mdic.gov.br/sistemas_web/cotasugar/default/seguranca</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2762">
+            <titulo>Receber Certificado</titulo>
+            <descricao>Após a emissão de CO, a retirada do documento é realizada por representante de empresa munida de procuração.</descricao>
+            <documentos>
+                <default>
+                    <item id="3359">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3608" tipo="presencial">
+                        <descricao>¨    
+Ministério da Indústria, Comércio Exterior e Serviços
+Secretaria de Comércio Exterior
+Departamento de Operações de Comércio Exterior
+Esplanada dos Ministérios, Bloco "J", 4º andar - Brasília/DF
+CEP 70053-900.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2877">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Indústria</item>
+        <item>Produção agropecuária</item>
+        <item>Produção Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3073">açúcar</item>
+        <item id="3074">União Européia</item>
+        <item id="3075">exportação</item>
+        <item id="3076">redução fiscal</item>
+        <item id="3077">importação</item>
+        <item id="3078">Certificado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="938">-</item>
+    </legislacoes>
+</servico>
