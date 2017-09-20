@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-passaporte-diplomatico-ou-oficial</id>
+    <dbId>1036</dbId>
+    <nome>Obter passaporte diplomático ou oficial</nome>
+    <sigla></sigla>
+    <descricao>Trata-se da emissão de passaporte diplomático ou oficial às pessoas que fazem jus ao documento, nos termos do Regulamento de Documentos de Viagem anexo ao Decreto 5.978, de 4 de dezembro de 2006.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1275">
+            <tipo>Órgãos, fundações e autarquias públicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1276">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2778">
+            <titulo>Requisitar passaporte</titulo>
+            <descricao>O órgão público apresenta, por meio de representante, a documentação necessária à emissão do passaporte.</descricao>
+            <documentos>
+                <default>
+                    <item id="3423">Carteira de identidade</item>
+                    <item id="3424">Certidão de casamento</item>
+                    <item id="3425">Comprovante de quitação eleitoral</item>
+                    <item id="3426">ofício original da Assessoria Internacional ou do Gabinete da chefia máxima do órgão solicitante</item>
+                    <item id="3427">Recibo de Entrega de Requerimento (RER) do formulário preenchido online com os dados do requerente do passaporte e da missão a ser desempenhada, com assinatura do requerente</item>
+                    <item id="3428">Foto 3x4 ou 5x7, recente, colorida e de fundo branco</item>
+                    <item id="3429">Cópia de documento de identidade com foto e que contenha a naturalidade do requerente</item>
+                    <item id="3430">Cópia de certidão de quitação eleitoral</item>
+                </default>
+                <caso id="371" descricao="Para menores de idade">
+                    <documento>
+                        <id>3422</id>
+                        <descricao>Autorização de emissão de passaporte para menores (a autorização deve ser, para atender a disposições legais, original e com firmas dos genitores ou responsáveis legais reconhecidas por autenticidade).</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3638" tipo="presencial">
+                        <descricao>¨    
+Coordenação-Geral de Documentos de Viagem    
+Ministério das Relações Exteriores    
+Esplanada dos Ministérios - Bloco H    
+CEP 70170-900    
+Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3639" tipo="presencial">
+                        <descricao>¨    
+Escritório de Representação do MRE - Rio de Janeiro (ERERIO)    
+Av. Marechal Floriano, 196     
+20080-002 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3640" tipo="presencial">
+                        <descricao>¨    
+Escritório de Representação do MRE - São Paulo (ERESP)    
+Rua Estados Unidos, 1342      
+01427-001 - Jardim América - São Paulo - SP</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3641" tipo="presencial">
+                        <descricao>[Postos da Rede Consular Brasileira no Exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3642" tipo="web">
+                        <descricao>https://formulário-autoridades.serpro.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3643" tipo="postal">
+                        <descricao>¨    
+Coordenação-Geral de Documentos de Viagem    
+Ministério das Relações Exteriores    
+Esplanada dos Ministérios - Bloco H    
+CEP 70170-900    
+Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2779">
+            <titulo>Retirar passaporte</titulo>
+            <descricao>O representante do órgão retira, depois de 5 dias úteis, os passaportes impressos. O representante do órgão assina recibo de retirada dos documentos.</descricao>
+            <documentos>
+                <default>
+                    <item id="3431">Comprovante do protocolo recebido na entrega dos documentos.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3644" tipo="presencial">
+                        <descricao>¨    
+Coordenação-Geral de Documentos de Viagem    
+Ministério das Relações Exteriores    
+Esplanada dos Ministérios - Bloco H    
+CEP 70170-900    
+Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3645" tipo="presencial">
+                        <descricao>¨    
+Escritório de Representação do MRE - Rio de Janeiro (ERERIO)    
+Av. Marechal Floriano, 196     
+20080-002 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3646" tipo="presencial">
+                        <descricao>¨    
+Escritório de Representação do MRE - São Paulo (ERESP)    
+Rua Estados Unidos, 1342      
+01427-001 - Jardim América - São Paulo - SP</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3647" tipo="presencial">
+                        <descricao>[Postos da Rede Consular Brasileira no Exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2892">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2893">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Relações Diplomáticas</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3109">passaporte diplomático</item>
+        <item id="3110">passaporte oficial</item>
+        <item id="3111">missão internacional</item>
+        <item id="3112">viagem a trabalho</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="946">[Decreto 5.978, de 4 de dezembro de 2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5978.htm)</item>
+    </legislacoes>
+</servico>
