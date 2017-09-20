@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-para-participar-de-processo-de-compras-publicas-pelo-sistema-comprasnet</id>
+    <dbId>1034</dbId>
+    <nome>Cadastrar-se para participar de processo de compras públicas pelo sistema Comprasnet.</nome>
+    <sigla>SICAF</sigla>
+    <nomes-populares>
+        <item id="810">Sistema de Cadastramento Unificado de Fornecedores</item>
+    </nomes-populares>
+    <descricao>Registro cadastral único para a análise da habilitação jurídica, regularidade fiscal e qualificação econômico-financeira dos fornecedores que participam das licitações governamentais. O usuário/fornecedor busca a habilitação no SICAF para participar de compras públicas de órgãos integrantes do Sistema de Serviços Gerais – SISG, bem como de órgãos não SISG que realizam licitações eletrônicas pelo Comprasnet.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1272">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1273">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2772">
+            <titulo>Preencher formulário</titulo>
+            <descricao>Preenchimento do formulário para cadastramento por parte do fornecedor/usuário no SICAF.</descricao>
+            <documentos>
+                <default>
+                    <item id="3376">CPF</item>
+                    <item id="3377">Dados pessoais e da empresa/produtos</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3629" tipo="web">
+                        <descricao>https://www3.comprasnet.gov.br/SICAFWeb/public/pages/security/solicitarSenha.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2773">
+            <titulo>Dirigir-se até uma unidade cadastradora para validar seu cadastramento.</titulo>
+            <descricao>Os Fornecedores deverão preencher os formulários eletrônicos referentes à
+solicitação/cadastro no Sicaf e posteriormente comparecer a sua Unidade Cadastradora
+com toda a documentação necessária para a validação das informações.</descricao>
+            <documentos>
+                <default>
+                    <item id="3378">Ata de fundação</item>
+                    <item id="3379">Carteira de identidade</item>
+                    <item id="3380">Certidão de casamento</item>
+                    <item id="3381">Certidões da Receita Federal</item>
+                    <item id="3382">CNPJ</item>
+                    <item id="3383">Contrato Social</item>
+                    <item id="3384">CPF</item>
+                    <item id="3385">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3630" tipo="presencial">
+                        <descricao>Unidade Cadastradora onde consta seu cadastro</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2774">
+            <titulo>Complementar os dados de Cadastro para futura contratação ou participação em processo licitatório.</titulo>
+            <descricao>Preencher os dados no sistema e levar a documentação à unidade cadastradora</descricao>
+            <documentos>
+                <default>
+                    <item id="3386">Ata de fundação</item>
+                    <item id="3387">Carteira de identidade</item>
+                    <item id="3388">Certidão de casamento</item>
+                    <item id="3389">Certidões da Receita Federal</item>
+                    <item id="3390">CNPJ</item>
+                    <item id="3391">Contrato Social</item>
+                    <item id="3392">CPF</item>
+                    <item id="3393">Registro da Junta Comercial</item>
+                    <item id="3394">Certidão Negativa do FGTS</item>
+                    <item id="3395">Certidão Negativa do INSS</item>
+                    <item id="3396">Prova de inscrição no Cadastro de Contribuintes Estadual ou Municipal, se houver</item>
+                    <item id="3397">Prova de Quitação com a Fazenda Estadual</item>
+                    <item id="3398">Prova de Quitação com a Fazenda Municipal</item>
+                    <item id="3399">Registro ou Inscrição na Entidade de Classe Competente, quando for o caso;</item>
+                    <item id="3400">Balanço Patrimonial e Demonstrações Contábeis com regras específicas</item>
+                    <item id="3401">Certidão Negativa de Pedido de Falência e Concordata;</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3631" tipo="presencial">
+                        <descricao>Unidade Cadastradora a qual está vinculado.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3632" tipo="web">
+                        <descricao>https://www3.comprasnet.gov.br/SICAFWeb/private/credenciamento/efetuarPreCadastro.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2775">
+            <titulo>Atualizar dados no SICAF.</titulo>
+            <descricao>É necessário manter os dados atualizados para participar dos processos do SICAF</descricao>
+            <documentos>
+                <default>
+                    <item id="3402">Ata de fundação</item>
+                    <item id="3403">Carteira de identidade</item>
+                    <item id="3404">Certidão de casamento</item>
+                    <item id="3405">Certidões da Receita Federal</item>
+                    <item id="3406">CNPJ</item>
+                    <item id="3407">Contrato Social</item>
+                    <item id="3408">CPF</item>
+                    <item id="3409">FGTS</item>
+                    <item id="3410">Procuração do representante legal</item>
+                    <item id="3411">Registro da Junta Comercial</item>
+                    <item id="3412">Certidão Negativa do FGTS</item>
+                    <item id="3413">Certidão Negativa do INSS</item>
+                    <item id="3414">Prova de inscrição no Cadastro de Contribuintes Estadual ou Municipal, se houver</item>
+                    <item id="3415">Prova de Quitação com a Fazenda Estadual</item>
+                    <item id="3416">Prova de Quitação com a Fazenda Municipal</item>
+                    <item id="3417">Registro ou Inscrição na Entidade de Classe Competente, quando for o caso</item>
+                    <item id="3418">Balanço Patrimonial e Demonstrações Contábeis com regras específicas</item>
+                    <item id="3419">Certidão Negativa de Pedido de Falência e Concordata</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3633" tipo="presencial">
+                        <descricao>Unidade Cadastradora a qual está vinculado.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2886">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2887">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Economia e Finanças</item>
+        <item>Indústria</item>
+        <item>Compras governamentais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3099">SICAF</item>
+        <item id="3100">Comprasnet</item>
+        <item id="3101">Vender ao governo</item>
+        <item id="3102">pregão eletrônico</item>
+        <item id="3103">SISG</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="943">[INSTRUÇÃO NORMATIVA Nº 05, DE 21 DE JULHO DE 1995](http://www.comprasnet.gov.br/legislacao/in/in05_95.htm)</item>
+        <item id="944">[PORTARIA NORMATIVA Nº 27, DE 10 DE NOVEMBRO DE 2010](http://www.comprasnet.gov.br/legislacao/legislacaoDetalhe.asp?ctdCod=365)</item>
+    </legislacoes>
+</servico>
