@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-reducao-no-imposto-de-importacao-na-colombia-para-produtos-lacteos</id>
+    <dbId>1028</dbId>
+    <nome>Obter redução no imposto de importação na Colômbia para produtos lácteos</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="805">Certificado de Cota Leite</item>
+    </nomes-populares>
+    <descricao>O Certificado de Autorização do Brasil exigido para as exportações de produtos lácteos para a Colômbia, realizadas ao amparo do Acordo de Complementação Econômica nº 59, será emitido pelo DECEX.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1262">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2757">
+            <titulo>Registrar exportação no SISCOMEX</titulo>
+            <descricao>Confecção do Registro de Exportação no Siscomex, informando todas as características da operação.</descricao>
+            <documentos>
+                <default>
+                    <item id="3348">Certificado Digital/Token</item>
+                    <item id="3349">Informações sobre o produto, a operação de exportação e a empresa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3603" tipo="web">
+                        <descricao>https://www37.receita.fazenda.gov.br/exportacao/login.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2758">
+            <titulo>Requisitar Certificado de Origem</titulo>
+            <descricao>Preenchimento de dados referente ao CO através do sistema de Cotas</descricao>
+            <documentos>
+                <default>
+                    <item id="3350">CNPJ</item>
+                    <item id="3351">Senha</item>
+                    <item id="3352">Informações sobre o produto e a empresa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3604" tipo="web">
+                        <descricao>http://www.mdic.gov.br/sistemas_web/cotaleite/default/seguranca</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2759">
+            <titulo>Receber documento</titulo>
+            <descricao>Após a emissão de CO, a retirada do documento é realizada por representante de empresa munida de procuração.</descricao>
+            <documentos>
+                <default>
+                    <item id="3353">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3605" tipo="presencial">
+                        <descricao>¨    
+Ministério da Indústria, Comércio Exterior e Serviços      
+Secretaria de Comércio Exterior     
+Departamento de Operações de Comércio Exterior     
+Esplanada dos Ministérios, Bloco "J", 4º andar - Brasília/DF      
+CEP 70053-900.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2876">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Encargos financeiros</item>
+        <item>Indústria</item>
+        <item>Produção Industrial</item>
+        <item>Produção agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3067">Colômbia</item>
+        <item id="3068">Cota Leite</item>
+        <item id="3069">Leite</item>
+        <item id="3070">Laticínios</item>
+        <item id="3071">Certificado de Origem</item>
+        <item id="3072">Acordo comercial</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="937">[Acordo de Complementação Econômica nº 59](http://www.mdic.gov.br/comercio-exterior/negociacoes-internacionais/132-acordos-dos-quais-o-brasil-e-parte/1826-acordos-mercosul-colombia-equador-e-venezuela-ace-59)</item>
+    </legislacoes>
+</servico>
