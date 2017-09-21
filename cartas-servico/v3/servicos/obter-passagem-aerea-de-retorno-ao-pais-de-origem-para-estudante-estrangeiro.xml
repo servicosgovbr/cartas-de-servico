@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-passagem-aerea-de-retorno-ao-pais-de-origem-para-estudante-estrangeiro</id>
+    <dbId>1039</dbId>
+    <nome>Obter passagem aérea de retorno ao país de origem para estudante estrangeiro</nome>
+    <sigla>PEC-PG</sigla>
+    <nomes-populares>
+        <item id="814">Programa Estudantes-Convênio</item>
+    </nomes-populares>
+    <descricao>Aquisição de passagem aérea de retorno ao país de origem do aluno que concluiu o curso por meio dos Programas e ao aluno que, por motivo de doença grave ou incurável que impeça a continuação dos estudos, não possa continuar nos Programas. O benefício deve ser solicitado pela instituição onde o estudante concluiu o curso, por meio de ofício endereçado à DCE, contendo as informações necessárias para efetuação da reserva de passagem.</descricao>
+    <contato>Telefone: +55 (61) 2030-8561 | E-mail: dce@itamaraty.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1281">
+            <tipo>Estudantes Estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2785">
+            <titulo>Enviar Pedido</titulo>
+            <descricao>O benefício deve ser solicitado pela instituição onde o estudante concluiu ou está fazendo o curso, por meio de ofício endereçado à DCE, contendo as informações necessárias para efetuação da reserva de passagem.</descricao>
+            <documentos>
+                <default>
+                    <item id="3441">Carteira de identidade de estrangeiro</item>
+                    <item id="3442">CPF</item>
+                    <item id="3443">Passaporte</item>
+                    <item id="3444">Ofício da Instituição de Ensino</item>
+                </default>
+                <caso id="372" descricao="Estudante que está retornando por conclusão do curso">
+                    <documento>
+                        <id>3440</id>
+                        <descricao>Certificado de conclusão de curso</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3660" tipo="presencial">
+                        <descricao>**Ministério das Relações Exteriores** - Divisão de Temas Educacionais (DCE) - Esplanada dos Ministérios, Bloco "H", Anexo I, 7º andar, sala 728 - Brasília/DF - CEP 70.170-900</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3661" tipo="postal">
+                        <descricao>**Ministério das Relações Exteriores** - Divisão de Temas Educacionais (DCE) - Esplanada dos Ministérios, Bloco "H", Anexo I, 7º andar, sala 728 - Brasília/DF - CEP 70.170-900</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3662" tipo="e-mail">
+                        <descricao>dce@itamaraty.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2786">
+            <titulo>Confirmar dados da reserva</titulo>
+            <descricao>De posse do pedido, a DCE faz a reserva e a envia ao beneficiário por email, para conferência dos dados e anuência para emissão</descricao>
+            <documentos>
+                <default>
+                    <item id="3445">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3663" tipo="e-mail">
+                        <descricao>E-mail informado ao DCE quando do envio do pedido</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3664" tipo="presencial">
+                        <descricao>**Ministério das Relações Exteriores** - Divisão de Temas Educacionais (DCE) - Esplanada dos Ministérios, Bloco "H", Anexo I, 7º andar, sala 728 - Brasília/DF - CEP 70.170-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2787">
+            <titulo>Receber o bilhete eletrônico da passagem</titulo>
+            <descricao>O serviço é finalizado quando do envio do bilhete eletrônico ao beneficiário.</descricao>
+            <documentos>
+                <default>
+                    <item id="3446">Bilhete eletrônico da passagem</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3665" tipo="e-mail">
+                        <descricao>E-mail informado ao DCE quando do envio do pedido</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3666" tipo="presencial">
+                        <descricao>**Ministério das Relações Exteriores** - Divisão de Temas Educacionais (DCE) - Esplanada dos Ministérios, Bloco "H", Anexo I, 7º andar, sala 728 - Brasília/DF - CEP 70.170-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2897">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Cooperação Internacional</item>
+        <item>Relações Internacionais</item>
+        <item>Relações Diplomáticas</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3126">PEC-PG</item>
+        <item id="3127">passagem aérea</item>
+        <item id="3128">Estudante estrangeiro</item>
+        <item id="3129">volta para casa</item>
+        <item id="3130">conclusão do curso</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="949">-</item>
+    </legislacoes>
+</servico>
