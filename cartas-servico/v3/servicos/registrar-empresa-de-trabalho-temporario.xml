@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>registrar-empresa-de-trabalho-temporario</id>
-    <dbId>381</dbId>
-    <nome>Registrar Empresa de Trabalho Temporário</nome>
+    <dbId>1046</dbId>
+    <nome>Registrar empresa de Trabalho Temporário</nome>
     <sigla>SIRETT</sigla>
     <nomes-populares>
-        <item id="665">Trabalho temporário</item>
+        <item id="821">TRABALHO TEMPORÁRIO</item>
+        <item id="822">SISTEMA DE REGISTRO DE EMPRESAS DE TRABALHO TEMPORÁRIO</item>
     </nomes-populares>
-    <descricao>As empresas que precisam fazer uso de trabalho temporário devem registrar-se junto ao Ministério do Trabalho, através deste serviço.</descricao>
-    <contato>Contato Telefônico: (61) 2031.6886 (08h às 12h e 14h às 18h)
-
-E-mail: sirett.cgrt@mte.gov.br</contato>
+    <descricao>Através deste serviço a empresa poderá registrar-se, na forma da lei, para contratar trabalhadores em regime de trabalho temporário.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante id="857">
-            <tipo>Empresas</tipo>
-            <requisitos>Que precisem atender a necessidade transitória de substituição de seu pessoal regular e permanente ou de acréscimo extraordinário de serviços</requisitos>
+        <solicitante id="1296">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1297">
+            <tipo>Público em geral</tipo>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="1" max="7" unidade="dias-corridos"/>
+        <entre min="2" max="7" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="1445">
-            <titulo>Solicitar registro da empresa</titulo>
-            <descricao>Você deve solicitar o registro da empresa no sistema</descricao>
+        <etapa id="2815">
+            <titulo>Solicitar Registro</titulo>
+            <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="2396">CNPJ</item>
-                    <item id="2397">CPF do representante</item>
-                    <item id="2398">RG do representante</item>
-                    <item id="2399">Certidões da Receita Federal</item>
-                    <item id="2400">Comprovante de endereço</item>
-                    <item id="2401">Contrato Social</item>
-                    <item id="2402">Procuração do representante legal</item>
-                    <item id="2403">Registro na Junta Comercial</item>
+                    <item id="3505">Carteira de identidade</item>
+                    <item id="3506">Certidões da Receita Federal</item>
+                    <item id="3507">CNPJ</item>
+                    <item id="3508">Comprovante de endereço/residência</item>
+                    <item id="3509">Contrato Social</item>
+                    <item id="3510">CPF</item>
+                    <item id="3511">Procuração do representante legal</item>
+                    <item id="3512">Registro da Junta Comercial</item>
                 </default>
             </documentos>
             <custos>
@@ -45,19 +50,22 @@ E-mail: sirett.cgrt@mte.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1788" tipo="web">
-                        <descricao>http://www3.mte.gov.br/internet/sirett/pedidoregistro/autenticarempresa.asp</descricao>
+                    <canal-de-prestacao id="3716" tipo="presencial">
+                        <descricao>**Ministério do Trabalho** - Secretaria de Relações do Trabalho - Coordenação-geral de Relações do Trabalho (CGRT) - Esplanada dos Ministérios, Bloco "F", 4º andar,  Sala 439 - Brasília DF - CEP: 70059-900</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3717" tipo="presencial">
+                        <descricao>Superintendências Regionais de Emprego *(Encontre o endereço da mais próxima a você [aqui](http://trabalho.gov.br/rede-de-atendimento)*</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2241">
-            <titulo>Registrar contratos</titulo>
-            <descricao>Após o cadastro da empresa, você deve cadastrar os contratos temporários realizados pela empresa no mês anterior</descricao>
+        <etapa id="2816">
+            <titulo>Recebimento de Certificado de Autorização</titulo>
+            <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="2404">Contrato temporário de trabalho</item>
-                    <item id="2405">Dados do empregaod</item>
+                    <item id="3513">Carteira de identidade</item>
+                    <item id="3514">CPF</item>
                 </default>
             </documentos>
             <custos>
@@ -65,36 +73,38 @@ E-mail: sirett.cgrt@mte.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2804" tipo="web">
-                        <descricao>http://www3.mte.gov.br/internet/sirett/contratoTrabalho/autenticarEmpresa.asp?acao=incluirEstudoMercado</descricao>
+                    <canal-de-prestacao id="3718" tipo="presencial">
+                        <descricao>**Ministério do Trabalho** - Secretaria de Relações do Trabalho - Coordenação-geral de Relações do Trabalho (CGRT) - Esplanada dos Ministérios, Bloco "F", 4º andar,  Sala 439 - Brasília DF - CEP: 70059-900</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3719" tipo="presencial">
+                        <descricao>Superintendências Regionais de Emprego *(Encontre o endereço da mais próxima a você [aqui](http://trabalho.gov.br/rede-de-atendimento)*</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="1673">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="2909">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2910">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
-        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
         <item>Empregabilidade</item>
         <item>Fomento ao Trabalho</item>
-        <item>Fiscalização do Estado</item>
         <item>Proteção e Benefícios ao Trabalhador</item>
         <item>Relações de Trabalho</item>
-        <item>Recursos humanos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="2002">Contrato temporário</item>
-        <item id="2003">Substituição temporária</item>
-        <item id="2004">ETT</item>
+        <item id="3160">Trabalho temporário</item>
+        <item id="3161">Certificado</item>
+        <item id="3162">Registro</item>
+        <item id="3163">empresa de trabalho temporário</item>
     </palavras-chave>
     <legislacoes>
-        <item id="671">[PORTARIA n° 789 DE 02 de junho de 2014](http://acesso.mte.gov.br/data/files/8A7C816A4643DA0C01468252F52911BE/Portaria_789_TrabalhoTemporario.pdf)</item>
-        <item id="672">[Instrução Normativa 18, de 7 de novembro de 2014](http://acesso.mte.gov.br/data/files/FF80808148EC2E5E0149C965F4A060B1/IN%2018.pdf)</item>
-        <item id="673">[Lei 6.019, de 03 de janeiro de 1974](http://www.planalto.gov.br/ccivil_03/leis/L6019.htm)</item>
-        <item id="674">[Decreto 73.841, de 13 de março de 1974](http://www.planalto.gov.br/ccivil_03/decreto/Antigos/D73841.htm)</item>
+        <item id="961">-</item>
     </legislacoes>
 </servico>
