@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-extrato-do-registro-de-informacoes-no-banco-central</id>
+    <dbId>1048</dbId>
+    <nome>Obter o Extrato do Registro de Informações no Banco Central</nome>
+    <sigla>Registrato</sigla>
+    <nomes-populares>
+        <item id="825">Sistema de Informações de Crédito do Banco Central (SCR)</item>
+        <item id="826">Cadastro de Clientes do Sistema Financeiro Nacional (CCS)</item>
+    </nomes-populares>
+    <descricao>Sistema que permite o usuário acessar gratuitamente pela internet, em ambiente seguro, informações disponíveis em dois cadastros:
+
+- Cadastro de Clientes do Sistema Financeiro - CCS: mostra todos os bancos com as quais o cliente possui algum relacionamento (como conta corrente e poupança). 
+
+- Sistema de Informações de Crédito - SCR: contém informações do conjunto dos empréstimos, financiamentos e outras modalidades de crédito que o cliente tiver obtido em cada instituição financeira, acima de R$ 200,00 (duzentos reais).</descricao>
+    <contato>* Telefônico: Central 145  *(Horário de atendimento: Seg a Sex - 8h às 20h)*
+* [Fale Conosco](https://www3.bcb.gov.br/faleconosco/#/login/registrar?natureza=1&amp;tipo=3)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1299">
+            <tipo>Cidadãos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1300">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao>Para cadastro via internet ou presencial, o cadastro é imediato, salvo problemas no sistema de navegação da internet.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2819">
+            <titulo>Credenciar-se</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3520">CPF ou CNPJ</item>
+                    <item id="3521">Documento de identificação original (para cadastro presencial)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3724" tipo="presencial">
+                        <descricao>Centrais de Atendimento do Banco Central *(confira os endereços [aqui](http://www.bcb.gov.br/pre/bc_atende/port/centaten.asp))*</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3725" tipo="web">
+                        <descricao>http://www.bcb.gov.br/pt-br/#!/p/REGISTRATO</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3726" tipo="postal">
+                        <descricao>**Banco Central do Brasil** - Divisão de Atendimento ao Cidadão - SBS Quadra 3 Bloco B - Edif. Sede,Primeiro Subsolo - CEP 70074-900 - Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2820">
+            <titulo>Consultar relatórios</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3727" tipo="web">
+                        <descricao>http://www.bcb.gov.br/?REGISTRATO</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/89" dbId="4715">
+        <nomeOrgao>Banco Central do Brasil (BACEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2912">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2913">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3172">registrato</item>
+        <item id="3173">consulta de informações</item>
+        <item id="3174">banco central</item>
+        <item id="3175">bacen</item>
+        <item id="3176">serasa</item>
+        <item id="3177">nome negativado</item>
+        <item id="3178">empréstimos</item>
+        <item id="3179">consignados</item>
+        <item id="3180">cadastro positivo</item>
+        <item id="3181">restrições financeiras</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="963">-</item>
+    </legislacoes>
+</servico>
