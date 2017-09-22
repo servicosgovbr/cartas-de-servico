@@ -35524,6 +35524,115 @@ Brasil</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-o-extrato-do-registro-de-informacoes-no-banco-central</id>
+        <dbId>1048</dbId>
+        <nome>Obter o Extrato do Registro de Informações no Banco Central</nome>
+        <sigla>Registrato</sigla>
+        <nomes-populares>
+            <item id="825">Sistema de Informações de Crédito do Banco Central (SCR)</item>
+            <item id="826">Cadastro de Clientes do Sistema Financeiro Nacional (CCS)</item>
+        </nomes-populares>
+        <descricao>Sistema que permite o usuário acessar gratuitamente pela internet, em ambiente seguro, informações disponíveis em dois cadastros:     
+
+a) Cadastro de Clientes do Sistema Financeiro - CCS: mostra todos os bancos com as quais o cliente possui algum relacionamento (como conta corrente e poupança); e      
+
+b) Sistema de Informações de Crédito - SCR: contém informações do conjunto dos empréstimos, financiamentos e outras modalidades de crédito que o cliente tiver obtido em cada instituição financeira, acima de R$ 200,00 (duzentos reais).</descricao>
+        <contato>* Telefônico: Central 145  *(Horário de atendimento: Seg a Sex - 8h às 20h)*
+* [Fale Conosco](https://www3.bcb.gov.br/faleconosco/#/login/registrar?natureza=1&amp;tipo=3)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1299">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1300">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-corridos"/>
+            <descricao>Para cadastro via internet ou presencial, o cadastro é imediato, salvo problemas no sistema de navegação da internet.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2819">
+                <titulo>Credenciar-se</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3520">CPF ou CNPJ</item>
+                        <item id="3521">Documento de identificação original (para cadastro presencial)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3724" tipo="presencial">
+                            <descricao>Centrais de Atendimento do Banco Central *(confira os endereços [aqui](http://www.bcb.gov.br/pre/bc_atende/port/centaten.asp))*</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3725" tipo="web">
+                            <descricao>http://www.bcb.gov.br/pt-br/#!/p/REGISTRATO</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3726" tipo="postal">
+                            <descricao>**Banco Central do Brasil** - Divisão de Atendimento ao Cidadão - SBS Quadra 3 Bloco B - Edif. Sede,Primeiro Subsolo - CEP 70074-900 - Brasília - DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2820">
+                <titulo>Consultar relatórios</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3727" tipo="web">
+                            <descricao>http://www.bcb.gov.br/?REGISTRATO</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/89" dbId="4715">
+            <nomeOrgao>Banco Central do Brasil (BACEN)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2912">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2913">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Sistema Financeiro</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3172">registrato</item>
+            <item id="3173">consulta de informações</item>
+            <item id="3174">banco central</item>
+            <item id="3175">bacen</item>
+            <item id="3176">serasa</item>
+            <item id="3177">nome negativado</item>
+            <item id="3178">empréstimos</item>
+            <item id="3179">consignados</item>
+            <item id="3180">cadastro positivo</item>
+            <item id="3181">restrições financeiras</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="963">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>consultar-interpretacao-da-legislacao-tributaria</id>
         <dbId>225</dbId>
         <nome>Consultar Interpretação da Legislação Tributária.</nome>
@@ -48519,6 +48628,167 @@ Dessa forma, cabe ressaltar que a entrega do resultado da revisão, ou seja, atr
         </legislacoes>
     </servico>
     <servico>
+        <id>examinar-pedra-preciosa</id>
+        <dbId>1049</dbId>
+        <nome>Examinar pedra preciosa</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="827">Serviço de identificação de pedras preciosas</item>
+        </nomes-populares>
+        <descricao>Ser você desejar examinar uma pedra para saber se ela é uma pedra preciosa, esteja ela no estado bruto, lapidada ou até cravada em uma joia, poderá requisitar o serviço. Pode ser pedida a análise de até 10 pedras por vez. O laboratório não analisa rochas, minerais industriais ou minérios de outro tipo, incluindo os metálicos, e também não possui competência na área de meteoritos.
+A análise emprega técnicas básicas de identificação de gemas, incluindo a espectrometria Raman. Caso a identificação de uma amostra não seja possível com estas técnicas, podem ser realizadas análises adicionais, porém com cobrança de taxas pelo serviço. O resultado é informado oralmente pelo técnico e, no caso da existência das análises adicionais, acompanhado de um boletim. Caso haja interesse na emissão de um laudo escrito, será cobrada taxa proporcional ao número de peças analisadas.</descricao>
+        <contato>* [Fale Conosco](http://www.cetem.gov.br/fale-conosco)
+* Telefone: (21) 3865-7222
+* E-mail: E-mail: cetem.info@cetem.gov.br</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1301">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1302">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="2" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2821">
+                <titulo>Agendar atendimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3522">Carteira de identidade</item>
+                        <item id="3523">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3728" tipo="telefone">
+                            <descricao>(21) 3865-7258</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3729" tipo="e-mail">
+                            <descricao>gemologia@cetem.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2822">
+                <titulo>Levar substâncias para análise e receber resultado da análise básica</titulo>
+                <descricao>Identificação das substâncias gemológicas levadas, com resultado informado oralmente ao requisitante.  
+**OBS:** Se o usuário decidir encerrar o serviço nesta fase, o serviço será gratuito para ele.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3524">Carteira de Identidade</item>
+                        <item id="3525">CPF</item>
+                        <item id="3526">Substâncias a serem analisadas</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3730" tipo="presencial">
+                            <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2823">
+                <titulo>Requisitar análise adicional (opcional)</titulo>
+                <descricao>Caso a identificação de uma amostra não seja possível com estas técnicas, podem ser realizadas análises adicionais, porém com cobrança de taxas pelo serviço. O resultado é informado oralmente ao requisitante, acompanhado da entrega de um boletim com detalhamento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3527">Comprovante de pagamento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="109">
+                            <descricao>O custo varia de acordo com a quantidade e características das substâncias testadas</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3731" tipo="presencial">
+                            <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2824">
+                <titulo>Requisitar laudo escrito (opcional)</titulo>
+                <descricao>Caso haja interesse, o requisitante pode pedir, após as análises, um laudo escrito dos resultados, mediante o pagamento de taxas</descricao>
+                <documentos>
+                    <default>
+                        <item id="3528">Comprovante de pagamento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="110">
+                            <descricao>O custo varia de acordo com a quantidade e características das substâncias testadas</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3732" tipo="presencial">
+                            <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+            <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2914">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2915">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Defesa do Consumidor</item>
+            <item>Meio ambiente</item>
+            <item>Mineração</item>
+            <item>Produção Industrial</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3182">pedras preciosas</item>
+            <item id="3183">análise</item>
+            <item id="3184">falsificação</item>
+            <item id="3185">bijuteria</item>
+            <item id="3186">identificação</item>
+            <item id="3187">esmeralda</item>
+            <item id="3188">cristal</item>
+            <item id="3189">diamante</item>
+            <item id="3190">pérola</item>
+            <item id="3191">granada</item>
+            <item id="3192">opala</item>
+            <item id="3193">turmalina</item>
+            <item id="3194">jóia</item>
+            <item id="3195">andalusita</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="964">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-medida-de-salvaguarda-a-exportacoes-brasileiras</id>
         <dbId>1021</dbId>
         <nome>Obter medida de salvaguarda a exportações brasileiras</nome>
@@ -49744,6 +50014,128 @@ CEP 70053-900.</descricao>
         <legislacoes>
             <item id="934">[Portaria SECEX nº 41/2013](http://www.mdic.gov.br/arquivos/dwnl_1381865416.pdf)</item>
             <item id="935">[Portaria SECEX nº 58, de 29 de julho de 2015](http://www.mdic.gov.br/arquivos/dwnl_1438697514.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>habilitar-estabelecimento-na-alta-complexidade-em-neurocirurgia-e-neurologia</id>
+        <dbId>1050</dbId>
+        <nome>Habilitar estabelecimento na Alta Complexidade em Neurocirurgia e Neurologia</nome>
+        <sigla></sigla>
+        <descricao>Trata-se da ação de habilitar estabelecimentos de saúde como Unidade de Assistência de Alta Complexidade em Neurocirurgia ou como Centro de Referência de Alta Complexidade em Neurologia</descricao>
+        <contato>**Postal e Presencial:** Coordenação-Geral de Atenção Especializada / Departamento de Atenção Especializada e Temática / SAS / MS -  SAF Sul, Trecho 2, Bl "F",  2º andar, Sl. 205 - Edifício Premium, Torre II - 70.070-600 - Brasília/DF    
+
+**E-mail:**  altacomplexidade@saude.gov.br      
+
+**Telefone:**  (61) 3315-6176</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1303">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo de atendimento não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2825">
+                <titulo>Solicitar habilitação</titulo>
+                <descricao>Solicitação para habilitação do estabelecimento de saúde como Centro de Atendimento de Urgência aos Pacientes com AVC.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3529">Alvará sanitário</item>
+                        <item id="3530">titulação dos profissionais</item>
+                        <item id="3531">Ofício do gestor Estadual</item>
+                        <item id="3533">Formulário de Vistoria do Gestor (Check-List) preenchido e assinado (Anexo III – A,  PT nº 756/2005)</item>
+                        <item id="3534">CIB aprovando a habilitação</item>
+                        <item id="3535">Ofício do gestor Estadual informando à quem caberá custear a habilitação e o cálculo  do Impacto financeiro conforme parâmetros previstos na Portaria nº 756/2005</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3733" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2826">
+                <titulo>Fornecer informações adicionais (caso requisitado)</titulo>
+                <descricao>Resolução de pendências referentes ao processo de habilitação</descricao>
+                <documentos>
+                    <default>
+                        <item id="3532">documentações e informações requisitadas pelos analistas</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3734" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2827">
+                <titulo>Receber resultado</titulo>
+                <descricao>A habilitação será publicada em portaria específica</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3735" tipo="web">
+                            <descricao>http://portal2.saude.gov.br/saudelegis/LEG_NORMA_PESQ_CONSULTA.CFM</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3736" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3737" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2916">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Assistência Hospitalar e Ambulatorial</item>
+            <item>Fiscalização do Estado</item>
+            <item>Medicamentos e aparelhos</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3196">neurologia</item>
+            <item id="3197">neurocirurgia</item>
+            <item id="3198">cérebro</item>
+            <item id="3199">sistema nervoso</item>
+            <item id="3200">saúde</item>
+            <item id="3201">alta complexidade</item>
+            <item id="3202">especialidade</item>
+            <item id="3203">centro de referência</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="965">[Portaria SAS/MS nº 756, de 27/12/2005](http://sna.saude.gov.br/legislacao/leg_detalhes.cfm?id=1998)</item>
+            <item id="966">[Portaria GM nº 1161 de 07/07/2005](http://bvsms.saude.gov.br/bvs/saudelegis/gm/2005/prt1161_07_07_2005.html)</item>
+            <item id="967">[Portaria SAS nº 433, de 15/05/2012](http://bvsms.saude.gov.br/bvs/saudelegis/sas/2012/prt0433_15_05_2012.html)</item>
         </legislacoes>
     </servico>
     <servico>
