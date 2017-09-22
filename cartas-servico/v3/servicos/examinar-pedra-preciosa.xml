@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>examinar-pedra-preciosa</id>
+    <dbId>1049</dbId>
+    <nome>Examinar pedra preciosa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="827">Serviço de identificação de pedras preciosas</item>
+    </nomes-populares>
+    <descricao>Ser você desejar examinar uma pedra para saber se ela é uma pedra preciosa, esteja ela no estado bruto, lapidada ou até cravada em uma joia, poderá requisitar o serviço. Pode ser pedida a análise de até 10 pedras por vez. O laboratório não analisa rochas, minerais industriais ou minérios de outro tipo, incluindo os metálicos, e também não possui competência na área de meteoritos.
+A análise emprega técnicas básicas de identificação de gemas, incluindo a espectrometria Raman. Caso a identificação de uma amostra não seja possível com estas técnicas, podem ser realizadas análises adicionais, porém com cobrança de taxas pelo serviço. O resultado é informado oralmente pelo técnico e, no caso da existência das análises adicionais, acompanhado de um boletim. Caso haja interesse na emissão de um laudo escrito, será cobrada taxa proporcional ao número de peças analisadas.</descricao>
+    <contato>* [Fale Conosco](http://www.cetem.gov.br/fale-conosco)
+* Telefone: (21) 3865-7222
+* E-mail: E-mail: cetem.info@cetem.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1301">
+            <tipo>Cidadãos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1302">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="2" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2821">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3522">Carteira de identidade</item>
+                    <item id="3523">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3728" tipo="telefone">
+                        <descricao>(21) 3865-7258</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3729" tipo="e-mail">
+                        <descricao>gemologia@cetem.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2822">
+            <titulo>Levar substâncias para análise e receber resultado da análise básica</titulo>
+            <descricao>Identificação das substâncias gemológicas levadas, com resultado informado oralmente ao requisitante.  
+**OBS:** Se o usuário decidir encerrar o serviço nesta fase, o serviço será gratuito para ele.</descricao>
+            <documentos>
+                <default>
+                    <item id="3524">Carteira de Identidade</item>
+                    <item id="3525">CPF</item>
+                    <item id="3526">Substâncias a serem analisadas</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3730" tipo="presencial">
+                        <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2823">
+            <titulo>Requisitar análise adicional (opcional)</titulo>
+            <descricao>Caso a identificação de uma amostra não seja possível com estas técnicas, podem ser realizadas análises adicionais, porém com cobrança de taxas pelo serviço. O resultado é informado oralmente ao requisitante, acompanhado da entrega de um boletim com detalhamento.</descricao>
+            <documentos>
+                <default>
+                    <item id="3527">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="109">
+                        <descricao>O custo varia de acordo com a quantidade e características das substâncias testadas</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3731" tipo="presencial">
+                        <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2824">
+            <titulo>Requisitar laudo escrito (opcional)</titulo>
+            <descricao>Caso haja interesse, o requisitante pode pedir, após as análises, um laudo escrito dos resultados, mediante o pagamento de taxas</descricao>
+            <documentos>
+                <default>
+                    <item id="3528">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="110">
+                        <descricao>O custo varia de acordo com a quantidade e características das substâncias testadas</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3732" tipo="presencial">
+                        <descricao>**Laboratório de Pesquisas Gemológicas** - Centro de Tecnologia Mineral - Ministério da Ciência, Tecnologia, Inovações e Comunicações - Av. Pedro Calmon, 900 - Ilha da Cidade Universitária - CEP: 21.941-908 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2914">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2915">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Defesa do Consumidor</item>
+        <item>Meio ambiente</item>
+        <item>Mineração</item>
+        <item>Produção Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3182">pedras preciosas</item>
+        <item id="3183">análise</item>
+        <item id="3184">falsificação</item>
+        <item id="3185">bijuteria</item>
+        <item id="3186">identificação</item>
+        <item id="3187">esmeralda</item>
+        <item id="3188">cristal</item>
+        <item id="3189">diamante</item>
+        <item id="3190">pérola</item>
+        <item id="3191">granada</item>
+        <item id="3192">opala</item>
+        <item id="3193">turmalina</item>
+        <item id="3194">jóia</item>
+        <item id="3195">andalusita</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="964">-</item>
+    </legislacoes>
+</servico>
