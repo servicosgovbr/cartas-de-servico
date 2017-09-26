@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>inscrever-se-no-cadastro-de-pessoas-fisicas</id>
+    <dbId>1062</dbId>
+    <nome>Inscrever-se no Cadastro de Pessoas Físicas</nome>
+    <sigla>CPF</sigla>
+    <descricao>Inscrição do CPF na internet ou nos conveniados: Banco do Brasil, Caixa Econômica Federal e Correios ou em entidades públicas conveniadas. A inscrição do CPF na internet poderá ser feita para pessoas com idade até 25 anos que possuam Título de Eleitor em situação regular.</descricao>
+    <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-inscricao)       
+Receitafone: 146     
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1319">
+            <tipo>(Obrigatório) Residentes no Brasil que:</tipo>
+            <requisitos>* Integrem o polo passivo de relação tributária principal ou acessória e respectivos representantes;</requisitos>
+        </solicitante>
+        <solicitante id="1320">
+            <tipo>(Obrigatório) Residentes no Brasil ou no exterior que, no Brasil:</tipo>
+            <requisitos>* Praticarem operações imobiliárias;
+* Possuírem contas bancárias, de poupança ou de investimento;
+* Operarem no mercado financeiro de capitais (inclusive bolsa de valores, mercadorias, de futuros ou assemelhados); ou 
+* Possuírem bens e direitos sujeitos a registro público ou cadastro específico.</requisitos>
+        </solicitante>
+        <solicitante id="1321">
+            <tipo>(Obrigatório) Pessoas de qualquer natureza ou residência que:</tipo>
+            <requisitos>* Sejam maiores de 16 anos e que constem como dependentes em Declaração de Ajuste Anual de Imposto de Renda;
+* Precisem se inscrever junto a órgãos ou entidades da Administração Pública Federal, Estadual, Municipal e/ou Distrital;
+* Tenham sido registradas, no nascimento, em ofício de registro civil de pessoas naturais no Brasil; e
+* Sejam filiadas ou requerentes de benefícios de qualquer natureza junto ao INSS.</requisitos>
+        </solicitante>
+        <solicitante id="1322">
+            <tipo>(Opcional) Qualquer pessoa física que não se encaixe nas categorias anteriores</tipo>
+            <requisitos>Havendo como única restrição que cada pessoa pode estar inscrita somente uma vez.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="30" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2858">
+            <titulo>Requisitar inscrição</titulo>
+            <descricao>Apresentação de documentos ou digitação dos dados para inscrever-se no cadastro, conforme o meio utilizado para o serviço.</descricao>
+            <documentos>
+                <default>
+                    <item id="3623">Documento de identificação da pessoa a ser inscrita, que comprove naturalidade, filiação e data de nascimento</item>
+                </default>
+                <caso id="389" descricao="Brasileiros com idade entre 18 e 69 anos">
+                    <documento>
+                        <id>3608</id>
+                        <descricao>Comprovante de quitação das obrigações eleitorais</descricao>
+                    </documento>
+                </caso>
+                <caso id="390" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
+                    <documento>
+                        <id>3609</id>
+                        <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3610</id>
+                        <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito.</descricao>
+                    </documento>
+                </caso>
+                <caso id="391" descricao="Inscrições requisitadas por procurador">
+                    <documento>
+                        <id>3611</id>
+                        <descricao>Documento de identificação do procurador</descricao>
+                    </documento>
+                    <documento>
+                        <id>3612</id>
+                        <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>3613</id>
+                        <descricao>Instrumento público de procuração legal no Brasil e com poderes para realizar o serviço</descricao>
+                    </documento>
+                </caso>
+                <caso id="392" descricao="Solicitações realizadas em representação diplomática brasileira">
+                    <documento>
+                        <id>3614</id>
+                        <descricao>Ficha Cadastral de Pessoa Física</descricao>
+                    </documento>
+                </caso>
+                <caso id="393" descricao="Presos">
+                    <documento>
+                        <id>3615</id>
+                        <descricao>Solicitação do órgão carcerário</descricao>
+                    </documento>
+                </caso>
+                <caso id="394" descricao="Pessoas com documentos em outro idioma que o português">
+                    <documento>
+                        <id>3616</id>
+                        <descricao>Tradução juramentada</descricao>
+                    </documento>
+                </caso>
+                <caso id="395" descricao="Pessoa falecida com bens a inventariar">
+                    <documento>
+                        <id>3617</id>
+                        <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                    </documento>
+                    <documento>
+                        <id>3618</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>3619</id>
+                        <descricao>Documento de identificação do inventariante, cônjuge meeiro, convivente ou do sucessor a qualquer título</descricao>
+                    </documento>
+                </caso>
+                <caso id="396" descricao="Pessoa Falecida sem bens a inventariar">
+                    <documento>
+                        <id>3620</id>
+                        <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                    </documento>
+                    <documento>
+                        <id>3621</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>3622</id>
+                        <descricao>Documento de identificação que comprove o parentesco</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+                <caso id="403" descricao="Para inscrições realizadas no Banco do Brasil, Caixa Econômica Federal e Correios">
+                    <custo id="118">
+                        <descricao>Taxa de serviços de CPF.....</descricao>
+                        <moeda>R$</moeda>
+                        <valor>7</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3793" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3794" tipo="presencial">
+                        <descricao>Representação Diplomática Brasileira *(Consulte os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/representacoes-do-brasil-no-mundo))*</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="398" descricao="Pessoas com idade de até 25 anos que possuam título de eleitor em situação regular">
+                    <canal-de-prestacao id="3790" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="399" descricao="Para todos, exceto pessoas falecidas ou residentes no exterior">
+                    <canal-de-prestacao id="3791" tipo="presencial">
+                        <descricao>Agências dos Correios, Banco do Brasil e Caixa Econômica Federal</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3792" tipo="presencial">
+                        <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2859">
+            <titulo>Confirmar inscrição</titulo>
+            <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de atendimento para acompanhar o pedido</descricao>
+            <documentos>
+                <default>
+                    <item id="3625">CPF</item>
+                    <item id="3626">Senha do eCAC</item>
+                </default>
+                <caso id="400" descricao="Serviço prestado em entidades conveniadas ou representações diplomáticas brasileiras">
+                    <documento>
+                        <id>3624</id>
+                        <descricao>Código de atendimento</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3796" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
+[iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3797" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="401" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                    <canal-de-prestacao id="3795" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2939">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Cidadania</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Finanças</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3262">CPF</item>
+        <item id="3263">conta no banco</item>
+        <item id="3264">pessoa física</item>
+        <item id="3265">inscrição</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="981">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+    </legislacoes>
+</servico>
