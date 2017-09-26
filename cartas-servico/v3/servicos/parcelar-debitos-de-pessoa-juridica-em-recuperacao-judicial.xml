@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>parcelar-debitos-de-pessoa-juridica-em-recuperacao-judicial</id>
+    <dbId>1053</dbId>
+    <nome>Parcelar débitos de Pessoa Jurídica em Recuperação Judicial</nome>
+    <sigla></sigla>
+    <descricao>Débitos inscritos em Dívida Ativa da União e cujo titular tenha pleiteado recuperação judicial podem ser parcelados através deste serviço. As parcelas não podem ser inferiores a R$ 10,00, tendo como valores percentuais mínimos: a) 1ª à 12ª parcelas: 0,666% da dívida; b)13ª à 24ª parcelas: 1% da dívida; c)25ª À 83ª parcelas: 1,333% da dívida, com quitação obrigatória da dívida até a 84ª parcela.
+Só é possível realizar um parcelamento deste tipo por contribuinte, que abranja todos os seus débitos junto à Fazenda Nacional.
+Não podem fazer parte deste parcelamento débitos do: I – Simples nacional; II – CPMF; III – Minha Casa, Minha Vida; IV – créditos tributários referentes ao Regime Especial Tributário do Patrimônio de Afetação; V- Incentivos fiscais devidos ao FINOR, FINAM ou FUNRES; e VI – processo de execução fiscal onde haja prova de tentativa ou fraude à execução.
+O parcelamento não implica a liberação dos bens e direitos que estejam como garantia dos débitos.</descricao>
+    <contato>**Ministério da Fazenda** - **Procuradoria Geral da Fazenda Nacional** - Coordenação-Geral da Dívida Ativa da União - Esplanada dos Ministérios - Bloco "P" -8º andar - CEP: 70048-900 Brasília/DF    
+
+Telefone: (61) 2025-5100    
+E-mail: cda.pgfn@pgfn.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1306">
+            <tipo>Pessoas Físicas e Jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1307">
+            <tipo>Estados e Municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2835">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3748" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3749" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2836">
+            <titulo>Protocolar o requerimento.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3553">Requerimento de parcelamento</item>
+                    <item id="3554">Documentos comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3750" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2837">
+            <titulo>Receber resultado do pedido</titulo>
+            <descricao>Após a análise, o interessado será notificado, via publicação no e-CAC da PGFN, do resultado.</descricao>
+            <documentos>
+                <default>
+                    <item id="3555">CPF</item>
+                    <item id="3556">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3751" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2838">
+            <titulo>Emitir DARF e realizar pagamento das parcelas</titulo>
+            <descricao>O contribuinte deverá acessar o e-CAC para imprimir a DARF da primeira parcela para pagamento</descricao>
+            <documentos>
+                <default>
+                    <item id="3557">CPF</item>
+                    <item id="3558">senha</item>
+                    <item id="3559">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3752" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2919">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2920">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2921">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Finanças</item>
+        <item>Operações de dívida pública</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3215">parcelamento de dívidas</item>
+        <item id="3216">Dívida Ativa da União</item>
+        <item id="3217">recuperação judicial</item>
+        <item id="3218">Fazenda Nacional</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="971">[Lei nº 11.101, de 9 de fevereiro de 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11101.htm)</item>
+        <item id="972">[Portaria Conjunta PGFN/RFB nº 15, de 15 de dezembro de 2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=21106)</item>
+    </legislacoes>
+</servico>
