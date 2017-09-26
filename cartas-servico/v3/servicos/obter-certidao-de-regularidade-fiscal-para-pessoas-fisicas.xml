@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-regularidade-fiscal-para-pessoas-fisicas</id>
+    <dbId>1061</dbId>
+    <nome>Obter Certidão de Regularidade Fiscal para Pessoas Físicas</nome>
+    <sigla>CND-PF</sigla>
+    <nomes-populares>
+        <item id="836">Certidão Negativa de Débitos</item>
+        <item id="837">Nada Consta</item>
+    </nomes-populares>
+    <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-PF), caso o contribuinte Pessoa Física não possua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+    <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)
+Receitafone: 146
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1318">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2857">
+            <titulo>Pedir certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3607">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3789" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2938">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3256">débitos</item>
+        <item id="3257">regularidade</item>
+        <item id="3258">nada consta</item>
+        <item id="3259">certidão negativa da receita</item>
+        <item id="3260">certidão negativa</item>
+        <item id="3261">comprovante de regularidade com a receita</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="980">[Portaria RFB/PGFN nº 1.751, de 02/10/2014](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=56753)</item>
+    </legislacoes>
+</servico>
