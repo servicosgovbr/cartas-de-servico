@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>declarar-bens-de-viajante</id>
+    <dbId>1056</dbId>
+    <nome>Declarar bens de Viajante</nome>
+    <sigla>e-DBV</sigla>
+    <nomes-populares>
+        <item id="831">declaração eletronica de bens de viajantes</item>
+    </nomes-populares>
+    <descricao>Através deste serviço, os viajantes internacionais entrando ou saindo do Brasil podem declarar seus bens de viajantes, conforme demanda a lei.</descricao>
+    <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/viagens-internacionais-e-comercio-exterior/viajantes)    
+Receitafone: 146    
+[Unidades de Atendimento da Receita](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1311">
+            <tipo>Cidadãos brasileiros e estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2847">
+            <titulo>Cadastrar bens</titulo>
+            <descricao>Prestação de informações na declaração eletrônica</descricao>
+            <documentos>
+                <default>
+                    <item id="3574">CPF</item>
+                    <item id="3575">Passaporte</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3763" tipo="web">
+                        <descricao>https://www.edbv.receita.fazenda.gov.br/edbv-viajante/pages/selecionarAcao/selecionarAcao.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2848">
+            <titulo>Entregar recibo</titulo>
+            <descricao>Apresentação do recibo da declaração à RFB</descricao>
+            <documentos>
+                <default>
+                    <item id="3576">Passaporte</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3764" tipo="presencial">
+                        <descricao>Ponto de controle aduaneiro de chegada ao Brasil</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2928">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Turismo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3231">Viagem</item>
+        <item id="3232">Viagem internacional</item>
+        <item id="3233">bagagem</item>
+        <item id="3234">viagem ao exterior</item>
+        <item id="3235">declaração de bagagem</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="975">-</item>
+    </legislacoes>
+</servico>
