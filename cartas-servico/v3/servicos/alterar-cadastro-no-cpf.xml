@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-cadastro-no-cpf</id>
+    <dbId>1060</dbId>
+    <nome>Alterar Cadastro no CPF</nome>
+    <sigla></sigla>
+    <descricao>Alterar dados no CPF, tais como endereço, nome, inclusão de Título de Eleitor, e outros dados pela internet. Pode-se também realizar o pedido de alteração de dados no CPF nos conveniados Banco do Brasil, Caixa Econômica Federal e Correios. Nestas instituições os serviços são tarifados. O serviço de alteração de endereço no CPF pode ser realizado gratuitamente nas entidades públicas conveniadas.</descricao>
+    <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-alteracao-de-nome-endereco-data-de-nascimento-etc)
+Receitafone: 146       
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1316">
+            <tipo>Pessoas físicas com 16 anos ou mais</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1317">
+            <tipo>Pais, tutores, curados ou responsáveis pela guarda judicial de pessoas menores de 16 anos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao>O serviço prestado em entidades conveniadas ou representações diplomáticas pode demorar mais tempo, assim como quando houver necessidade de comparecimento em unidade da receita, após o atendimento inicial, para levar documentação ou resolver problemas específicos</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2855">
+            <titulo>Requisitar alterações</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3601">Documentos que comprovem a alteração solicitada (não é necessário apresentar comprovante para alteração de endereço)</item>
+                    <item id="3602">Documento de identificação do interessado que comprove naturalidade, filiação e data de nascimento (ex: carteira de identidade);</item>
+                    <item id="3603">Número de inscrição no CPF</item>
+                </default>
+                <caso id="375" descricao="Pessoas entre 18 e 69 anos">
+                    <documento>
+                        <id>3592</id>
+                        <descricao>Comprovante de Quitação Eleitoral</descricao>
+                    </documento>
+                </caso>
+                <caso id="376" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
+                    <documento>
+                        <id>3593</id>
+                        <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3594</id>
+                        <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito;</descricao>
+                    </documento>
+                </caso>
+                <caso id="377" descricao="Pedido através de procurador">
+                    <documento>
+                        <id>3595</id>
+                        <descricao>Documento de identificação do procurador</descricao>
+                    </documento>
+                    <documento>
+                        <id>3596</id>
+                        <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>3597</id>
+                        <descricao>Instrumento público de procuração válido para realização do serviço</descricao>
+                    </documento>
+                </caso>
+                <caso id="378" descricao="Pedidos realizados em representação diplomática no exterior">
+                    <documento>
+                        <id>3598</id>
+                        <descricao>Ficha Cadastral de Pessoa Física</descricao>
+                    </documento>
+                </caso>
+                <caso id="379" descricao="Presos">
+                    <documento>
+                        <id>3599</id>
+                        <descricao>Solicitação do órgão carcerário</descricao>
+                    </documento>
+                </caso>
+                <caso id="380" descricao="Documentos em outro idioma que não o português">
+                    <documento>
+                        <id>3600</id>
+                        <descricao>Tradução juramentada</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+                <caso id="388" descricao="Serviços realizado no Banco do Brasil, Caixa Econômica e Correios">
+                    <custo id="115">
+                        <descricao>Taxa de Serviço do CPF.......</descricao>
+                        <moeda>R$</moeda>
+                        <valor>7</valor>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3783" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/alterar/default.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3784" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3785" tipo="presencial">
+                        <descricao>Agências do Banco do Brasil, da Caixa Econômica Federal ou dos Correios</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="382" descricao="Para inclusão/exclusão de nome social (somente para pessoas travestis e transexuais)">
+                    <canal-de-prestacao id="3778" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="383" descricao="Para residentes ou domiciliados no exterior (quando estiverem no Brasil).">
+                    <canal-de-prestacao id="3779" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="384" descricao="Se for somente para mudanças no endereço e título de eleitor">
+                    <canal-de-prestacao id="3780" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3781" tipo="presencial">
+                        <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3782" tipo="presencial">
+                        <descricao>Na Declaração de Ajuste Anual do Imposto de Renda Pessoa Física (DIRPF)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2856">
+            <titulo>Confirmar a realização da alteração</titulo>
+            <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal  um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de  atendimento para acompanhar o pedido</descricao>
+            <documentos>
+                <default>
+                    <item id="3605">CPF</item>
+                    <item id="3606">Senha de acesso ao eCAC</item>
+                </default>
+                <caso id="386" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                    <documento>
+                        <id>3604</id>
+                        <descricao>Código de Atendimento</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3787" tipo="aplicativo-movel">
+                        <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)     
+* [iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3788" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="387" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                    <canal-de-prestacao id="3786" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2937">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Administração financeira</item>
+        <item>Comércio e Serviços</item>
+        <item>Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pessoa</item>
+        <item>Serviços Públicos</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3252">CPF</item>
+        <item id="3253">alteração</item>
+        <item id="3254">correção</item>
+        <item id="3255">cadastro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="979">[IN RFB nº 1.548/2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+    </legislacoes>
+</servico>
