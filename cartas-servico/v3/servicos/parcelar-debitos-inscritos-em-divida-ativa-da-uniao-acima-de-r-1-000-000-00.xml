@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>parcelar-debitos-inscritos-em-divida-ativa-da-uniao-acima-de-r-1-000-000-00</id>
+    <dbId>1054</dbId>
+    <nome>Parcelar débitos inscritos em Dívida Ativa da União - Acima de R$ 1.000.000,00</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="829">Parcelamento Ordinário – Convencional</item>
+    </nomes-populares>
+    <descricao>É o serviço que possibilita o Parcelamento Ordinário, em até 60 (sessenta) parcelas, de débitos inscritos em Dívida Ativa da União, que não tenham sido parcelados anteriormente e cujo saldo devedor a ser parcelado (uma ou mais inscrições) seja superior a R$ 1.000.000,00 (um milhão de reais).
+As parcelas não poderão ser inferiores a R$ 500,00 (quinhentos reais), conforme Portaria Conjunta PGFN/RFB nº 15, de 15 de dezembro de 2009.
+A concessão do Parcelamento Ordinário fica condicionada à apresentação, pelo interessado, de garantia real ou fidejussória, inclusive fiança bancária, idônea e suficiente para o pagamento do débito.</descricao>
+    <contato>Ministério da Fazenda - Procuradoria Geral da Fazenda Nacional - Coordenação-Geral da Dívida Ativa da União - Esplanada dos Ministérios - Bloco "P" -8º andar - CEP: 70048-900 Brasília/DF    
+Telefone: (61) 2025-5100     
+E-mail: cda.pgfn@pgfn.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1308">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1309">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2839">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3753" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3754" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2840">
+            <titulo>Protocolar o requerimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3560">Requerimento de parcelamento</item>
+                    <item id="3561">Documentos comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3755" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2841">
+            <titulo>Formalizar garantia e realizar pagamento da primeira etapa</titulo>
+            <descricao>Na sequência, deverá o interessado emitir o DARF numerado da primeira parcela e efetuar o seu pagamento, bem como promover a formalização da garantia, a fim de aperfeiçoar o parcelamento, sob pena de indeferimento do pedido.</descricao>
+            <documentos>
+                <default>
+                    <item id="3562">Documentação necessária à garantia</item>
+                    <item id="3563">CPF</item>
+                    <item id="3564">senha</item>
+                    <item id="3565">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3756" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2842">
+            <titulo>Realizar pagamento das demais parcelas</titulo>
+            <descricao>As parcelas deverão ser pagas até o último dia útil de cada mês. O contribuinte deverá emitir o DARF para pagamento das parcelas no e-CAC da PGFN, por meio da opção “Emissão de DARF de parcelamento”. O sistema permitirá a emissão do DARF integral para quitação do parcelamento ou do DARF para pagamento das parcelas do parcelamento deferido.
+
+Implica rescisão do parcelamento o não pagamento de três parcelas, consecutivas ou não, bem como o não pagamento de uma ou duas estando pagas as demais.</descricao>
+            <documentos>
+                <default>
+                    <item id="3566">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3757" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2922">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2923">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2924">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Finanças</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3219">parcelamento</item>
+        <item id="3220">dívida ativa da união</item>
+        <item id="3221">um milhão</item>
+        <item id="3222">1.000.000</item>
+        <item id="3223">procuradoria geral da fazenda nacional</item>
+        <item id="3224">fazenda nacional</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="973">-</item>
+    </legislacoes>
+</servico>
