@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-acesso-ao-sistema-cpf</id>
+    <dbId>1067</dbId>
+    <nome>Obter acesso ao sistema CPF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="844">CPF</item>
+    </nomes-populares>
+    <descricao>Acessar o sistema para realização de atos cadastrais no CPF</descricao>
+    <contato>Secretaria da Receita Federal do Brasil - Ministério da Fazenda 
+Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1329">
+            <tipo>Entidades conveniadas com a Receita Federal para prestar serviços de CPF</tipo>
+            <requisitos>Convênio com a Receita Federal</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2863">
+            <titulo>Realizar convênio com a Receita Federal</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3633">Instrumento de convênio</item>
+                    <item id="3634">Termo de Declaração de Concordância e Veracidade original assinado</item>
+                    <item id="3635">cópias de RG e CPF, ou de outro documento de identificação oficial com foto no qual conste CPF (juntamente com o original para fins de autenticação administrativa);</item>
+                    <item id="3636">comprovante de inscrição em Cadastro Nacional de Pessoas Jurídicas (CNPJ), quando for o caso;</item>
+                    <item id="3637">procuração com poderes específicos para representação do interessado, quando for o caso (original ou cópia autenticada).</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3801" tipo="web">
+                        <descricao>http://sei.fazenda.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3802" tipo="presencial">
+                        <descricao>Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3803" tipo="postal">
+                        <descricao>Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2864">
+            <titulo>Obter acesso ao Sistema CPF</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3638">CPF</item>
+                    <item id="3639">Documentações Pessoais</item>
+                    <item id="3640">Documentação do órgão</item>
+                    <item id="3641">Indicação do órgão das pessoas que terão acesso ao sistema</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3804" tipo="web">
+                        <descricao>http://sei.fazenda.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="2951">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="2952">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Comércio e Serviços</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Serviços Públicos</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3286">convênio</item>
+        <item id="3287">Receita Federal</item>
+        <item id="3288">CPF</item>
+        <item id="3289">serviços de CPF</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="986">[PORTARIA SRF Nº 450, DE 28 DE ABRIL DE 2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=27903#251554)</item>
+        <item id="987">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+    </legislacoes>
+</servico>
