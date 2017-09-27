@@ -33236,6 +33236,200 @@ http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&am
         </legislacoes>
     </servico>
     <servico>
+        <id>alterar-cadastro-no-cpf</id>
+        <dbId>1060</dbId>
+        <nome>Alterar Cadastro no CPF</nome>
+        <sigla></sigla>
+        <descricao>Alterar dados no CPF, tais como endereço, nome, inclusão de Título de Eleitor, e outros dados pela internet. Pode-se também realizar o pedido de alteração de dados no CPF nos conveniados Banco do Brasil, Caixa Econômica Federal e Correios. Nestas instituições os serviços são tarifados. O serviço de alteração de endereço no CPF pode ser realizado gratuitamente nas entidades públicas conveniadas.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-alteracao-de-nome-endereco-data-de-nascimento-etc)
+Receitafone: 146       
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1316">
+                <tipo>Pessoas físicas com 16 anos ou mais</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1317">
+                <tipo>Pais, tutores, curados ou responsáveis pela guarda judicial de pessoas menores de 16 anos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao>O serviço prestado em entidades conveniadas ou representações diplomáticas pode demorar mais tempo, assim como quando houver necessidade de comparecimento em unidade da receita, após o atendimento inicial, para levar documentação ou resolver problemas específicos</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2855">
+                <titulo>Requisitar alterações</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3601">Documentos que comprovem a alteração solicitada (não é necessário apresentar comprovante para alteração de endereço)</item>
+                        <item id="3602">Documento de identificação do interessado que comprove naturalidade, filiação e data de nascimento (ex: carteira de identidade);</item>
+                        <item id="3603">Número de inscrição no CPF</item>
+                    </default>
+                    <caso id="375" descricao="Pessoas entre 18 e 69 anos">
+                        <documento>
+                            <id>3592</id>
+                            <descricao>Comprovante de Quitação Eleitoral</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="376" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
+                        <documento>
+                            <id>3593</id>
+                            <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
+                        </documento>
+                        <documento>
+                            <id>3594</id>
+                            <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="377" descricao="Pedido através de procurador">
+                        <documento>
+                            <id>3595</id>
+                            <descricao>Documento de identificação do procurador</descricao>
+                        </documento>
+                        <documento>
+                            <id>3596</id>
+                            <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>3597</id>
+                            <descricao>Instrumento público de procuração válido para realização do serviço</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="378" descricao="Pedidos realizados em representação diplomática no exterior">
+                        <documento>
+                            <id>3598</id>
+                            <descricao>Ficha Cadastral de Pessoa Física</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="379" descricao="Presos">
+                        <documento>
+                            <id>3599</id>
+                            <descricao>Solicitação do órgão carcerário</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="380" descricao="Documentos em outro idioma que não o português">
+                        <documento>
+                            <id>3600</id>
+                            <descricao>Tradução juramentada</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                    <caso id="388" descricao="Serviços realizado no Banco do Brasil, Caixa Econômica e Correios">
+                        <custo id="115">
+                            <descricao>Taxa de Serviço do CPF.......</descricao>
+                            <moeda>R$</moeda>
+                            <valor>7</valor>
+                        </custo>
+                    </caso>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3783" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/alterar/default.asp</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3784" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3785" tipo="presencial">
+                            <descricao>Agências do Banco do Brasil, da Caixa Econômica Federal ou dos Correios</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="382" descricao="Para inclusão/exclusão de nome social (somente para pessoas travestis e transexuais)">
+                        <canal-de-prestacao id="3778" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="383" descricao="Para residentes ou domiciliados no exterior (quando estiverem no Brasil).">
+                        <canal-de-prestacao id="3779" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="384" descricao="Se for somente para mudanças no endereço e título de eleitor">
+                        <canal-de-prestacao id="3780" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3781" tipo="presencial">
+                            <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3782" tipo="presencial">
+                            <descricao>Na Declaração de Ajuste Anual do Imposto de Renda Pessoa Física (DIRPF)</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2856">
+                <titulo>Confirmar a realização da alteração</titulo>
+                <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal  um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de  atendimento para acompanhar o pedido</descricao>
+                <documentos>
+                    <default>
+                        <item id="3605">CPF</item>
+                        <item id="3606">Senha de acesso ao eCAC</item>
+                    </default>
+                    <caso id="386" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                        <documento>
+                            <id>3604</id>
+                            <descricao>Código de Atendimento</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3787" tipo="aplicativo-movel">
+                            <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)     
+* [iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3788" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="387" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                        <canal-de-prestacao id="3786" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2937">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Comércio e Serviços</item>
+            <item>Fiscalização do Estado</item>
+            <item>Serviços Públicos</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Finanças</item>
+            <item>Pessoa</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3252">CPF</item>
+            <item id="3253">alteração</item>
+            <item id="3254">correção</item>
+            <item id="3255">cadastro</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="979">[IN RFB nº 1.548/2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>emitir-das-ate-12-2011</id>
         <dbId>338</dbId>
         <nome>Emitir DAS - Até 12|2011</nome>
@@ -46128,6 +46322,78 @@ Esplanada dos Ministérios, Bloco "J", Sala T3, Térreo - Brasília – DF, CEP 
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-certidao-de-regularidade-fiscal-para-pessoas-fisicas</id>
+        <dbId>1061</dbId>
+        <nome>Obter Certidão de Regularidade Fiscal para Pessoas Físicas</nome>
+        <sigla>CND-PF</sigla>
+        <nomes-populares>
+            <item id="836">Certidão Negativa de Débitos</item>
+            <item id="837">Nada Consta</item>
+        </nomes-populares>
+        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-PF), caso o contribuinte Pessoa Física não possua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)
+Receitafone: 146
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1318">
+                <tipo>Pessoas físicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2857">
+                <titulo>Pedir certidão</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3607">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3789" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2938">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3256">débitos</item>
+            <item id="3257">regularidade</item>
+            <item id="3258">nada consta</item>
+            <item id="3259">certidão negativa da receita</item>
+            <item id="3260">certidão negativa</item>
+            <item id="3261">comprovante de regularidade com a receita</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="980">[Portaria RFB/PGFN nº 1.751, de 02/10/2014](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=56753)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-desoneracao-tributaria-para-mercadorias-destinadas-a-industrializacao-de-produto-a-ser-exportado</id>
         <dbId>1018</dbId>
         <nome>Obter desoneração tributária para mercadorias destinadas à industrialização de produto a ser exportado.</nome>
@@ -50232,6 +50498,120 @@ CEP 70053-900.</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>habilitar-estabelecimento-como-centro-de-atendimento-de-urgencia-aos-pacientes-com-avc</id>
+        <dbId>1051</dbId>
+        <nome>Habilitar estabelecimento como Centro de Atendimento de Urgência aos Pacientes com AVC</nome>
+        <sigla></sigla>
+        <descricao>Trata-se da ação de habilitar estabelecimentos de saúde como Centro de Atendimento de Urgência aos Pacientes com AVC Tipo I, II ou III.</descricao>
+        <contato>Postal e Presencial: Coordenação-Geral de Atenção Especializada / Departamento de Atenção Especializada e Temática / SAS / MS - SAF Sul, Trecho 2, Bl "F", 2º andar, Sl. 205 - Edifício Premium, Torre II - 70.070-600 - Brasília/DF
+E-mail: altacomplexidade@saude.gov.br
+Telefone: (61) 3315-6176</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1304">
+                <tipo>Estados e Municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo de atendimento não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2828">
+                <titulo>Solicitar habilitação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3536">Alvará sanitário, titulação dos profissionais e outros</item>
+                        <item id="3537">Titulação dos Profissionais</item>
+                        <item id="3538">Ofício do gestor Estadual</item>
+                        <item id="3539">Formulário de Vistoria do Gestor (Check-List) preenchido e assinado (Anexo III – A, PT nº 756/2005)</item>
+                        <item id="3540">CIB aprovando a habilitação</item>
+                        <item id="3541">Ofício do gestor Estadual informando à quem caberá custear a habilitação e o cálculo do Impacto financeiro conforme parâmetros previstos na Portaria nº 756/2005</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3738" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2829">
+                <titulo>Fornecer informações adicionais (caso requisitado)</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3542">documentações e informações requisitadas pelos analistas</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3739" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2830">
+                <titulo>Receber resultado</titulo>
+                <descricao>A habilitação será publicada em portaria específica</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3740" tipo="web">
+                            <descricao>http://portal2.saude.gov.br/saudelegis/LEG_NORMA_PESQ_CONSULTA.CFM</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3741" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3742" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2917">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Assistência Hospitalar e Ambulatorial</item>
+            <item>Fiscalização do Estado</item>
+            <item>Saúde</item>
+            <item>Humanização na saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3204">AVC</item>
+            <item id="3205">habilitação</item>
+            <item id="3206">alta complexidade</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="968">[Portaria GM/MS nº 665, de 12/04/2012 ](http://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/PRT0665_12_04_2012.html)</item>
+            <item id="969">[Portaria GM/MS nº 800, de 17/06/2015](http://bvsms.saude.gov.br/bvs/saudelegis/gm/2015/prt0800_17_06_2015.html)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>reclamar-contra-servico-ou-produto-de-empresas-privadas</id>
         <dbId>1032</dbId>
         <nome>Reclamar contra serviço ou produto de empresas privadas</nome>
@@ -51422,6 +51802,379 @@ com toda a documentação necessária para a validação das informações.</des
         </legislacoes>
     </servico>
     <servico>
+        <id>comprar-titulos-publicos-federais</id>
+        <dbId>1052</dbId>
+        <nome>Comprar Títulos Públicos Federais</nome>
+        <sigla>TD</sigla>
+        <nomes-populares>
+            <item id="828">Tesouro Direto</item>
+        </nomes-populares>
+        <descricao>O Tesouro Direto é um Programa do Tesouro Nacional desenvolvido em parceria com a BMF&amp;F Bovespa para venda de títulos públicos federais para pessoas físicas, por meio da internet. Concebido em 2002, esse Programa surgiu com o objetivo de democratizar o acesso aos títulos públicos, ao permitir aplicações com apenas R$ 30,00. Antes do Tesouro Direto, o investimento em títulos públicos por pessoas físicas era possível somente indiretamente, por meio de fundos de renda fixa que, por cobrarem elevadas taxas de administração, especialmente em aplicações de baixo valor, reduziam a atratividade desse tipo de investimento. O Tesouro Direto contribuiu para a diversificação e complementação das alternativas de investimento disponíveis no mercado, ao oferecer títulos com diferentes tipos de rentabilidade (prefixada, ligada à variação da inflação ou à variação da taxa de juros básica da economia - Selic), de prazos de vencimento e de fluxos de remuneração.</descricao>
+        <contato>* [Fale Conosco](http://www.tesouro.gov.br/tesouro-direto-fale-conosco)
+* **Tesouro Nacional** - Esplanada dos Ministérios, Ed. Sede do Ministério da Fazenda, Bloco P - CEP 70.048-900 Brasília - DF
+* Mais informações [aqui](http://www.tesouro.gov.br/tesouro-direto)</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1305">
+                <tipo>Cidadãos brasileiros e estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>Não há como estabelecer um tempo padrão, pois o mesmo varia de acordo com as instituições envolvidas e os interesses do usuário</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2831">
+                <titulo>Escolher instituição financeira</titulo>
+                <descricao>Você deverá escolher uma instituição financeira, que pode ser um banco ou uma corretora, também chamada de agente de custódia, para intermediar suas transações com o Tesouro Direto.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3543">CPF</item>
+                        <item id="3544">Conta corrente</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3743" tipo="web">
+                            <descricao>http://www.tesouro.gov.br/tesouro-direto-instituicoes-financeiras-habilitadas</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2832">
+                <titulo>Cadastrar-se junto ao agente de custódia</titulo>
+                <descricao>Entre em contato com a instituição financeira escolhida e solicite seu cadastramento. Você deverá fornecer a documentação necessária para que essa instituição abra uma conta em seu nome para operar com o Tesouro Direto.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3545">Carteira de Identidade</item>
+                        <item id="3546">CPF</item>
+                        <item id="3547">Comprovante de residência</item>
+                        <item id="3548">Ficha cadastral</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3744" tipo="presencial">
+                            <descricao>Na rede de atendimento da instituição escolhida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2833">
+                <titulo>Obter acesso ao site do Tesouro Direto</titulo>
+                <descricao>A partir disso, você receberá uma senha provisória da BM&amp;FBovespa para o primeiro acesso à área restrita do Tesouro Direto, em que são realizadas as operações de compra e venda, assim como consultas a saldos e extratos.
+roque a senha provisória por uma nova que deverá conter entre 8 e 16 dígitos, composta por letras, números e caracteres especiais. Pronto! Você já será investidor habilitado e poderá começar a investir.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3549">CPF</item>
+                        <item id="3550">Senha provisória (substituída durante a etapa por senha definitiva)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3745" tipo="web">
+                            <descricao>https://tesourodireto.bmfbovespa.com.br/PortalInvestidor/login.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2834">
+                <titulo>Realizar compra</titulo>
+                <descricao>Agora, você precisa descobrir qual título é mais adequado para alcançar o seu objetivo financeiro. Para ajudá-lo nessa escolha, utilize a ferramenta Orientador Financeiro oferecida tanto no site do Tesouro Direto quanto na área restrita ao investidor. Definido o título adequado, basta efetuar a sua compra.
+Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov.br/tesouro-direto-instituicoes-financeiras-habilitadas)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3551">CPF</item>
+                        <item id="3552">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="111">
+                            <descricao>Taxa de custódia devida à BM&amp;FBOVESPA de 0,30% ao ano sobre o valor aplicado</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                        <custo id="112">
+                            <descricao>Taxa de Administração às Instituições Financeiras sobre o valor aplicado: livremente acordado</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3746" tipo="web">
+                            <descricao>https://tesourodireto.bmfbovespa.com.br/PortalInvestidor/login.aspx</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3747" tipo="presencial">
+                            <descricao>Rede de atendimento do agente de custódia escolhido</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2918">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Operações de dívida pública</item>
+            <item>Orçamento</item>
+            <item>Sistema Financeiro</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3207">títulos do tesouro</item>
+            <item id="3208">títulos</item>
+            <item id="3209">tesouro</item>
+            <item id="3210">títulos públicos</item>
+            <item id="3211">investimento</item>
+            <item id="3212">rentabilidade</item>
+            <item id="3213">renda</item>
+            <item id="3214">dívida pública</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="970">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>inscrever-se-no-cadastro-de-pessoas-fisicas</id>
+        <dbId>1062</dbId>
+        <nome>Inscrever-se no Cadastro de Pessoas Físicas</nome>
+        <sigla>CPF</sigla>
+        <descricao>Inscrição do CPF na internet ou nos conveniados: Banco do Brasil, Caixa Econômica Federal e Correios ou em entidades públicas conveniadas. A inscrição do CPF na internet poderá ser feita para pessoas com idade até 25 anos que possuam Título de Eleitor em situação regular.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-inscricao)       
+Receitafone: 146     
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1319">
+                <tipo>(Obrigatório) Residentes no Brasil que:</tipo>
+                <requisitos>* Integrem o polo passivo de relação tributária principal ou acessória e respectivos representantes;</requisitos>
+            </solicitante>
+            <solicitante id="1320">
+                <tipo>(Obrigatório) Residentes no Brasil ou no exterior que, no Brasil:</tipo>
+                <requisitos>* Praticarem operações imobiliárias;
+* Possuírem contas bancárias, de poupança ou de investimento;
+* Operarem no mercado financeiro de capitais (inclusive bolsa de valores, mercadorias, de futuros ou assemelhados); ou 
+* Possuírem bens e direitos sujeitos a registro público ou cadastro específico.</requisitos>
+            </solicitante>
+            <solicitante id="1321">
+                <tipo>(Obrigatório) Pessoas de qualquer natureza ou residência que:</tipo>
+                <requisitos>* Sejam maiores de 16 anos e que constem como dependentes em Declaração de Ajuste Anual de Imposto de Renda;
+* Precisem se inscrever junto a órgãos ou entidades da Administração Pública Federal, Estadual, Municipal e/ou Distrital;
+* Tenham sido registradas, no nascimento, em ofício de registro civil de pessoas naturais no Brasil; e
+* Sejam filiadas ou requerentes de benefícios de qualquer natureza junto ao INSS.</requisitos>
+            </solicitante>
+            <solicitante id="1322">
+                <tipo>(Opcional) Qualquer pessoa física que não se encaixe nas categorias anteriores</tipo>
+                <requisitos>Havendo como única restrição que cada pessoa pode estar inscrita somente uma vez.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="30" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2858">
+                <titulo>Requisitar inscrição</titulo>
+                <descricao>Apresentação de documentos ou digitação dos dados para inscrever-se no cadastro, conforme o meio utilizado para o serviço.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3623">Documento de identificação da pessoa a ser inscrita, que comprove naturalidade, filiação e data de nascimento</item>
+                    </default>
+                    <caso id="389" descricao="Brasileiros com idade entre 18 e 69 anos">
+                        <documento>
+                            <id>3608</id>
+                            <descricao>Comprovante de quitação das obrigações eleitorais</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="390" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
+                        <documento>
+                            <id>3609</id>
+                            <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
+                        </documento>
+                        <documento>
+                            <id>3610</id>
+                            <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="391" descricao="Inscrições requisitadas por procurador">
+                        <documento>
+                            <id>3611</id>
+                            <descricao>Documento de identificação do procurador</descricao>
+                        </documento>
+                        <documento>
+                            <id>3612</id>
+                            <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>3613</id>
+                            <descricao>Instrumento público de procuração legal no Brasil e com poderes para realizar o serviço</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="392" descricao="Solicitações realizadas em representação diplomática brasileira">
+                        <documento>
+                            <id>3614</id>
+                            <descricao>Ficha Cadastral de Pessoa Física</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="393" descricao="Presos">
+                        <documento>
+                            <id>3615</id>
+                            <descricao>Solicitação do órgão carcerário</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="394" descricao="Pessoas com documentos em outro idioma que o português">
+                        <documento>
+                            <id>3616</id>
+                            <descricao>Tradução juramentada</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="395" descricao="Pessoa falecida com bens a inventariar">
+                        <documento>
+                            <id>3617</id>
+                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                        </documento>
+                        <documento>
+                            <id>3618</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>3619</id>
+                            <descricao>Documento de identificação do inventariante, cônjuge meeiro, convivente ou do sucessor a qualquer título</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="396" descricao="Pessoa Falecida sem bens a inventariar">
+                        <documento>
+                            <id>3620</id>
+                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                        </documento>
+                        <documento>
+                            <id>3621</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>3622</id>
+                            <descricao>Documento de identificação que comprove o parentesco</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                    <caso id="403" descricao="Para inscrições realizadas no Banco do Brasil, Caixa Econômica Federal e Correios">
+                        <custo id="118">
+                            <descricao>Taxa de serviços de CPF.....</descricao>
+                            <moeda>R$</moeda>
+                            <valor>7</valor>
+                        </custo>
+                    </caso>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3793" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3794" tipo="presencial">
+                            <descricao>Representação Diplomática Brasileira *(Consulte os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/representacoes-do-brasil-no-mundo))*</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="398" descricao="Pessoas com idade de até 25 anos que possuam título de eleitor em situação regular">
+                        <canal-de-prestacao id="3790" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="399" descricao="Para todos, exceto pessoas falecidas ou residentes no exterior">
+                        <canal-de-prestacao id="3791" tipo="presencial">
+                            <descricao>Agências dos Correios, Banco do Brasil e Caixa Econômica Federal</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3792" tipo="presencial">
+                            <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2859">
+                <titulo>Confirmar inscrição</titulo>
+                <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de atendimento para acompanhar o pedido</descricao>
+                <documentos>
+                    <default>
+                        <item id="3625">CPF</item>
+                        <item id="3626">Senha do eCAC</item>
+                    </default>
+                    <caso id="400" descricao="Serviço prestado em entidades conveniadas ou representações diplomáticas brasileiras">
+                        <documento>
+                            <id>3624</id>
+                            <descricao>Código de atendimento</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3796" tipo="aplicativo-movel">
+                            <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
+[iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3797" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="401" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                        <canal-de-prestacao id="3795" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2939">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3262">CPF</item>
+            <item id="3263">conta no banco</item>
+            <item id="3264">pessoa física</item>
+            <item id="3265">inscrição</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="981">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>legalizar-documento-para-validade-em-paises-que-nao-sao-parte-da-convencao-da-apostila-de-haia</id>
         <dbId>1035</dbId>
         <nome>Legalizar documento para validade em países que não são parte da Convenção da Apostila de Haia.</nome>
@@ -51526,6 +52279,147 @@ Documentos destinados a uso em Países parte da Convenção da Apostila devem se
         </palavras-chave>
         <legislacoes>
             <item id="945">[DECRETO Nº 8.660, DE 29 DE JANEIRO DE 2016](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8660.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>parcelar-debitos-de-pessoa-juridica-em-recuperacao-judicial</id>
+        <dbId>1053</dbId>
+        <nome>Parcelar débitos de Pessoa Jurídica em Recuperação Judicial</nome>
+        <sigla></sigla>
+        <descricao>Débitos inscritos em Dívida Ativa da União e cujo titular tenha pleiteado recuperação judicial podem ser parcelados através deste serviço. As parcelas não podem ser inferiores a R$ 10,00, tendo como valores percentuais mínimos: a) 1ª à 12ª parcelas: 0,666% da dívida; b)13ª à 24ª parcelas: 1% da dívida; c)25ª À 83ª parcelas: 1,333% da dívida, com quitação obrigatória da dívida até a 84ª parcela.
+Só é possível realizar um parcelamento deste tipo por contribuinte, que abranja todos os seus débitos junto à Fazenda Nacional.
+Não podem fazer parte deste parcelamento débitos do: I – Simples nacional; II – CPMF; III – Minha Casa, Minha Vida; IV – créditos tributários referentes ao Regime Especial Tributário do Patrimônio de Afetação; V- Incentivos fiscais devidos ao FINOR, FINAM ou FUNRES; e VI – processo de execução fiscal onde haja prova de tentativa ou fraude à execução.
+O parcelamento não implica a liberação dos bens e direitos que estejam como garantia dos débitos.</descricao>
+        <contato>**Ministério da Fazenda** - **Procuradoria Geral da Fazenda Nacional** - Coordenação-Geral da Dívida Ativa da União - Esplanada dos Ministérios - Bloco "P" -8º andar - CEP: 70048-900 Brasília/DF    
+
+Telefone: (61) 2025-5100    
+E-mail: cda.pgfn@pgfn.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1306">
+                <tipo>Pessoas Físicas e Jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1307">
+                <tipo>Estados e Municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2835">
+                <titulo>Agendar atendimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3748" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3749" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2836">
+                <titulo>Protocolar o requerimento.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3553">Requerimento de parcelamento</item>
+                        <item id="3554">Documentos comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3750" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2837">
+                <titulo>Receber resultado do pedido</titulo>
+                <descricao>Após a análise, o interessado será notificado, via publicação no e-CAC da PGFN, do resultado.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3555">CPF</item>
+                        <item id="3556">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3751" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2838">
+                <titulo>Emitir DARF e realizar pagamento das parcelas</titulo>
+                <descricao>O contribuinte deverá acessar o e-CAC para imprimir a DARF da primeira parcela para pagamento</descricao>
+                <documentos>
+                    <default>
+                        <item id="3557">CPF</item>
+                        <item id="3558">senha</item>
+                        <item id="3559">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3752" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2919">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2920">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2921">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Operações de dívida pública</item>
+            <item>Patrimônio</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3215">parcelamento de dívidas</item>
+            <item id="3216">Dívida Ativa da União</item>
+            <item id="3217">recuperação judicial</item>
+            <item id="3218">Fazenda Nacional</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="971">[Lei nº 11.101, de 9 de fevereiro de 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11101.htm)</item>
+            <item id="972">[Portaria Conjunta PGFN/RFB nº 15, de 15 de dezembro de 2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=21106)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -51799,6 +52693,465 @@ Rua Estados Unidos, 1342
         </legislacoes>
     </servico>
     <servico>
+        <id>parcelar-debitos-inscritos-em-divida-ativa-da-uniao-acima-de-r-1-000-000-00</id>
+        <dbId>1054</dbId>
+        <nome>Parcelar débitos inscritos em Dívida Ativa da União - Acima de R$ 1.000.000,00</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="829">Parcelamento Ordinário – Convencional</item>
+        </nomes-populares>
+        <descricao>É o serviço que possibilita o Parcelamento Ordinário, em até 60 (sessenta) parcelas, de débitos inscritos em Dívida Ativa da União, que não tenham sido parcelados anteriormente e cujo saldo devedor a ser parcelado (uma ou mais inscrições) seja superior a R$ 1.000.000,00 (um milhão de reais).
+As parcelas não poderão ser inferiores a R$ 500,00 (quinhentos reais), conforme Portaria Conjunta PGFN/RFB nº 15, de 15 de dezembro de 2009.
+A concessão do Parcelamento Ordinário fica condicionada à apresentação, pelo interessado, de garantia real ou fidejussória, inclusive fiança bancária, idônea e suficiente para o pagamento do débito.</descricao>
+        <contato>Ministério da Fazenda - Procuradoria Geral da Fazenda Nacional - Coordenação-Geral da Dívida Ativa da União - Esplanada dos Ministérios - Bloco "P" -8º andar - CEP: 70048-900 Brasília/DF    
+Telefone: (61) 2025-5100     
+E-mail: cda.pgfn@pgfn.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1308">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1309">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2839">
+                <titulo>Agendar atendimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3753" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3754" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2840">
+                <titulo>Protocolar o requerimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3560">Requerimento de parcelamento</item>
+                        <item id="3561">Documentos comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3755" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2841">
+                <titulo>Formalizar garantia e realizar pagamento da primeira etapa</titulo>
+                <descricao>Na sequência, deverá o interessado emitir o DARF numerado da primeira parcela e efetuar o seu pagamento, bem como promover a formalização da garantia, a fim de aperfeiçoar o parcelamento, sob pena de indeferimento do pedido.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3562">Documentação necessária à garantia</item>
+                        <item id="3563">CPF</item>
+                        <item id="3564">senha</item>
+                        <item id="3565">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3756" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2842">
+                <titulo>Realizar pagamento das demais parcelas</titulo>
+                <descricao>As parcelas deverão ser pagas até o último dia útil de cada mês. O contribuinte deverá emitir o DARF para pagamento das parcelas no e-CAC da PGFN, por meio da opção “Emissão de DARF de parcelamento”. O sistema permitirá a emissão do DARF integral para quitação do parcelamento ou do DARF para pagamento das parcelas do parcelamento deferido.
+
+Implica rescisão do parcelamento o não pagamento de três parcelas, consecutivas ou não, bem como o não pagamento de uma ou duas estando pagas as demais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3566">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3757" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2922">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2923">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2924">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3219">parcelamento</item>
+            <item id="3220">dívida ativa da união</item>
+            <item id="3221">um milhão</item>
+            <item id="3222">1.000.000</item>
+            <item id="3223">procuradoria geral da fazenda nacional</item>
+            <item id="3224">fazenda nacional</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="973">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>declarar-bens-de-viajante</id>
+        <dbId>1056</dbId>
+        <nome>Declarar bens de Viajante</nome>
+        <sigla>e-DBV</sigla>
+        <nomes-populares>
+            <item id="831">declaração eletronica de bens de viajantes</item>
+        </nomes-populares>
+        <descricao>Através deste serviço, os viajantes internacionais entrando ou saindo do Brasil podem declarar seus bens de viajantes, conforme demanda a lei.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/viagens-internacionais-e-comercio-exterior/viajantes)    
+Receitafone: 146    
+[Unidades de Atendimento da Receita](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1311">
+                <tipo>Cidadãos brasileiros e estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2847">
+                <titulo>Cadastrar bens</titulo>
+                <descricao>Prestação de informações na declaração eletrônica</descricao>
+                <documentos>
+                    <default>
+                        <item id="3574">CPF</item>
+                        <item id="3575">Passaporte</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3763" tipo="web">
+                            <descricao>https://www.edbv.receita.fazenda.gov.br/edbv-viajante/pages/selecionarAcao/selecionarAcao.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2848">
+                <titulo>Entregar recibo</titulo>
+                <descricao>Apresentação do recibo da declaração à RFB</descricao>
+                <documentos>
+                    <default>
+                        <item id="3576">Passaporte</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3764" tipo="presencial">
+                            <descricao>Ponto de controle aduaneiro de chegada ao Brasil</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2928">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Turismo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3231">Viagem</item>
+            <item id="3232">Viagem internacional</item>
+            <item id="3233">bagagem</item>
+            <item id="3234">viagem ao exterior</item>
+            <item id="3235">declaração de bagagem</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="975">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>cadastrar-se-para-utilizar-a-biblioteca-da-esaf</id>
+        <dbId>1057</dbId>
+        <nome>Cadastrar-se para utilizar a biblioteca da ESAF</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="832">Biblioteca da Esaf</item>
+        </nomes-populares>
+        <descricao>Prover infraestrutura bibliotecária com disponibilização do acervo para: alunos regularmente matriculados nos cursos de formação, de desenvolvimento, de aperfeiçoamento e  de extensão, com duração média ou longa de curso realizado na Esaf; docentes, pesquisadores, instrutores, estagiários, colaboradores e funcionários terceirizados da Escola; servidores pertencentes ao quadro de pessoal do Ministério da Fazenda e Esaf e membros da comunidade em geral (previamente cadastrados).
+**A biblioteca funciona de segunda a sexta das 8:00h às 17:45h**</descricao>
+        <contato>Telefone: (61) 3412-6273
+Fax: (61) 3412-6258
+E-mail: biblioteca.df.esaf@fazenda.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1312">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1313">
+                <tipo>Órgãos da Administração Pública</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2849">
+                <titulo>Realizar cadastro na biblioteca</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3578">Carteira de Identidade</item>
+                        <item id="3579">CPF</item>
+                        <item id="3580">Comprovante de Residência</item>
+                    </default>
+                    <caso id="373" descricao="Para servidores públicos federais">
+                        <documento>
+                            <id>3577</id>
+                            <descricao>Matrícula SIAPE</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3765" tipo="presencial">
+                            <descricao>**Escola de Administração Fazendária – Esaf**    
+Biblioteca    
+Rodovia BR 251 – Km 4 –Lago Sul – Bloco E     
+CEP 71.686-900 – Brasília/DF
+[Google Maps](https://www.google.com.br/maps/place/ESAF+-+Escola+de+Administra%C3%A7%C3%A3o+Fazend%C3%A1ria/@-15.8402533,-47.9084725,15681m/data=!3m1!1e3!4m5!3m4!1s0x935a23e833dcb9f5:0xe9aeb80c4b895b!8m2!3d-15.8669868!4d-47.8238085)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3766" tipo="telefone">
+                            <descricao>(61) 3412-6273</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3767" tipo="e-mail">
+                            <descricao>biblioteca.df.esaf@fazenda.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2850">
+                <titulo>Uso da biblioteca e retirada de obras</titulo>
+                <descricao>Para acessar a biblioteca o usuário deverá se identificar na portaria do órgão. Usuários cadastrados podem retirar livros em empréstimo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3581">Documento de identificação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3768" tipo="presencial">
+                            <descricao>**Escola de Administração Fazendária – Esaf**    
+Biblioteca    
+Rodovia BR 251 – Km 4 –Lago Sul – Bloco E     
+CEP 71.686-900 – Brasília/DF
+[Google Maps](https://www.google.com.br/maps/place/ESAF+-+Escola+de+Administra%C3%A7%C3%A3o+Fazend%C3%A1ria/@-15.8402533,-47.9084725,15681m/data=!3m1!1e3!4m5!3m4!1s0x935a23e833dcb9f5:0xe9aeb80c4b895b!8m2!3d-15.8669868!4d-47.8238085)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2929">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2930">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Pesquisa e Desenvolvimento</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3236">biblioteca</item>
+            <item id="3237">esaf</item>
+            <item id="3238">biblioteca pública</item>
+            <item id="3239">administração fazendária</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="976">[Regulamento da Biblioteca da ESAF](http://www.esaf.fazenda.gov.br/assuntos/biblioteca/regulamento-1)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>declarar-operacoes-financeiras</id>
+        <dbId>1059</dbId>
+        <nome>Declarar operações Financeiras</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="835">Comunicação de operações financeiras</item>
+        </nomes-populares>
+        <descricao>Envio de comunicações de operações financeiras e de declaração de não ocorrência de comunicações, de forma a cumprir obrigações legais de comunicação de operações financeiras.</descricao>
+        <contato>Conselho de Controle de Atividades Financeiras - COAF     
+Horário: 8h às 18h     
+Centro Empresarial CNC      
+SAUN Qd 5 Lote C  Torre D  2º andar      
+CEP: 70.040-250 - Asa Norte - Brasília - DF     
+Telefone: +55 (61) 2025-4001 / 2025-4002 - FAX: +55(61) 2025-4000      
+[Fale Conosco](http://www.coaf.fazenda.gov.br/contato-principal/orientacoes)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1315">
+                <tipo>Pessoas Físicas e Jurídicas</tipo>
+                <requisitos>Que tem a obrigação de realizar a comunicação, de acordo com a Lei 9.613/1998 *(Confira [aqui](https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/consultaPO/consultarPO.jsf) se você é pessoa obrigada)*</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2853">
+                <titulo>Realizar cadastro no Sistema SISCOAF</titulo>
+                <descricao>Este é o sistema onde são declaradas as movimentações financeiras</descricao>
+                <documentos>
+                    <default>
+                        <item id="3587">CPF/CNPJ</item>
+                        <item id="3588">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3775" tipo="web">
+                            <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/cadastroPO/tipoPO.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2854">
+                <titulo>Cadastrar as movimentações financeiras</titulo>
+                <descricao>Informar os dados das movimentações e enviá-las pelo sistema</descricao>
+                <documentos>
+                    <default>
+                        <item id="3589">CPF</item>
+                        <item id="3590">Senha</item>
+                        <item id="3591">Dados das movimentações financeiras</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3777" tipo="web">
+                            <descricao>https://siscoaf.fazenda.gov.br/siscoaf-internet/pages/siscoafInicial.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="374" descricao="Comunicação de não ocorrência de movimentações financeiras">
+                        <canal-de-prestacao id="3776" tipo="presencial">
+                            <descricao>Verifique [aqui](http://www.coaf.fazenda.gov.br/menu/comunicacao-de-nao-ocorrencia-declaracao-negativa) onde você deve declarar a inexistência de movimentações financeiras no período.</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2935">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2936">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Comercio externo</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3245">comunicar</item>
+            <item id="3246">operações financeiras</item>
+            <item id="3247">cadastro de operações</item>
+            <item id="3248">lavagem de dinheiro</item>
+            <item id="3249">terrorismo</item>
+            <item id="3250">crimes financeiros</item>
+            <item id="3251">inteligência financeira</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="978">[ Lei 9.613/1998](http://www.planalto.gov.br/ccivil_03/leis/L9613.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>credenciar-centro-de-especialidade-odontologica</id>
         <dbId>1044</dbId>
         <nome>Credenciar Centro de Especialidade Odontológica</nome>
@@ -52027,6 +53380,632 @@ O trabalhador dispensado sem justa causa recebe do empregador o Requerimento do 
         <legislacoes>
             <item id="959">[Constituição Federal](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm)</item>
             <item id="960">[LEI Nº 7.998, DE 11 DE JANEIRO DE 1990](https://www.planalto.gov.br/ccivil_03/Leis/L7998.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>reparcelar-debitos-inscritos-em-divida-ativa-da-uniao-acima-de-r-1-000-000-00</id>
+        <dbId>1055</dbId>
+        <nome>Reparcelar débitos inscritos em Dívida Ativa da União - Acima de R$ 1.000.000,00</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="830">Reparcelamento Ordinário - Convencional</item>
+        </nomes-populares>
+        <descricao>É admitido o reparcelamento ordinário de débitos que já foram objeto de parcelamentos rescindidos anteriormente, em até 60 (sessenta) parcelas, cujo saldo devedor a ser parcelado (uma ou mais inscrições) seja superior a R$ 1.000.000,00 (um milhão de reais).
+Para que seja deferido o reparcelamento, é exigido o pagamento de primeira prestação equivalente a: (i) 10% do total das inscrições consolidadas, caso haja inscrição com histórico de somente um parcelamento anterior rescindido; ou (ii) 20% do total dos débitos consolidados, caso haja débito com histórico de mais de um parcelamento anterior rescindido.</descricao>
+        <contato>**Ministério da Fazenda** - **Procuradoria Geral da Fazenda Nacional** - Coordenação-Geral da Dívida Ativa da União - Esplanada dos Ministérios - Bloco "P" -8º andar - CEP: 70048-900 Brasília/DF    
+Telefone: (61) 2025-5100    
+E-mail: cda.pgfn@pgfn.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1310">
+                <tipo>Pessoas físicas e Jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2843">
+                <titulo>Agendar atendimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3758" tipo="presencial">
+                            <descricao>[Unidades de Atendimento](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3759" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2844">
+                <titulo>Protocolar o requerimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3567">Requerimento de reparcelamento</item>
+                        <item id="3568">Documentos comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3760" tipo="presencial">
+                            <descricao>[Unidades de Atendimento](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2845">
+                <titulo>Formalizar garantia e realizar pagamento da primeira etapa</titulo>
+                <descricao>Na sequência, deverá o interessado emitir o DARF numerado da primeira parcela e efetuar o seu pagamento, bem como promover a formalização da garantia, a fim de aperfeiçoar o parcelamento, sob pena de indeferimento do pedido.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3569">Documentação necessária à garantia</item>
+                        <item id="3570">CPF</item>
+                        <item id="3571">Senha</item>
+                        <item id="3572">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3761" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2846">
+                <titulo>Realizar pagamento das demais parcelas</titulo>
+                <descricao>As parcelas deverão ser pagas até o último dia útil de cada mês. O contribuinte deverá emitir o DARF para pagamento das parcelas no e-CAC da PGFN, por meio da opção “Emissão de DARF de parcelamento”. O sistema permitirá a emissão do DARF integral para quitação do parcelamento ou do DARF para pagamento das parcelas do parcelamento deferido.
+Implica rescisão do parcelamento o não pagamento de três parcelas, consecutivas ou não, bem como o não pagamento de uma ou duas estando pagas as demais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3573">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3762" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2925">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2926">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2927">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3225">Reparcelamento</item>
+            <item id="3226">dívida ativa da união</item>
+            <item id="3227">dívida</item>
+            <item id="3228">um milhão</item>
+            <item id="3229">1.000.000</item>
+            <item id="3230">parcelamento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="974">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>emitir-documento-de-arrecadacao-de-receitas-federais</id>
+        <dbId>1058</dbId>
+        <nome>Emitir Documento de Arrecadação de Receitas Federais</nome>
+        <sigla>DARF</sigla>
+        <nomes-populares>
+            <item id="833">SICALC</item>
+            <item id="834">Sistema de Cálculo</item>
+        </nomes-populares>
+        <descricao>É importante destacar que este serviço e toda a sua descrição referem-se exclusivamente a emissão do Documento de Arrecadação de Receitas Federais (DARF) através do Sistema de Cálculo (SICALC).  
+
+O DARF é o documento hábil para pagamento de tributos administrados pela Secretaria da Receita Federal do Brasil (RFB).  Já o Sistema de Cálculo é um dos meios possíveis para a emissão de DARF. Explicando melhor, o usuário pode acessar o SICALC, disponível no sítio da Secretaria da Receita Federal do Brasil (RFB) na Internet, para cálculo de tributos com acréscimos legais e emissão de DARF.</descricao>
+        <contato>[Fale Conosco Pessoa Física](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/pagamentos-e-parcelamentos/pagamentos/pagamentos-preenchimento-de-darf)
+[Fale Conosco Pessoa Jurídica](https://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/pagamentos-e-parcelamentos/pagamento-preenchimento-de-darf)
+Receitafone: 146
+[Unidades de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1314">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2851">
+                <titulo>Acessar o sistema para cálculo do imposto e inserção dos dados</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3582">Carteira de Identidade</item>
+                        <item id="3583">CPF</item>
+                        <item id="3584">Contrato Social</item>
+                        <item id="3585">Procuração do Representante Legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3769" tipo="presencial">
+                            <descricao>[Unidades de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3770" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/pagamentos-e-parcelamentos/darf-calculo-e-impressao-programa-sicalc-1/programa-para-calculo-e-emissao-de-darf-on-line-de-tributos-e-contribuicoes-federais-exceto-contribuicoes-previdenciarias</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3771" tipo="aplicativo-movel">
+                            <descricao>[Download e instalação do programa SICALC para computadores](http://www.receita.fazenda.gov.br/publico/programas/sicalc/Unico/setup.exe)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2852">
+                <titulo>Emitir DARF para realizar pagamento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3586">DARF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3772" tipo="presencial">
+                            <descricao>* Emissão: [Unidades de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)     
+* Pagamento: Rede bancária</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3773" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/pagamentos-e-parcelamentos/darf-calculo-e-impressao-programa-sicalc-1/programa-para-calculo-e-emissao-de-darf-on-line-de-tributos-e-contribuicoes-federais-exceto-contribuicoes-previdenciarias</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3774" tipo="aplicativo-movel">
+                            <descricao>[Download e instalação do programa SICALC para computadores](http://www.receita.fazenda.gov.br/publico/programas/sicalc/Unico/setup.exe)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2931">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2932">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2933">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2934">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3240">DARF</item>
+            <item id="3241">Pagar impostos</item>
+            <item id="3242">Emitir DARF</item>
+            <item id="3243">tributos</item>
+            <item id="3244">pagar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="977">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certidao-de-regularidade-fiscal-para-pessoas-juridicas</id>
+        <dbId>1064</dbId>
+        <nome>Obter Certidão de Regularidade Fiscal para Pessoas Jurídicas</nome>
+        <sigla>CND-PJ</sigla>
+        <nomes-populares>
+            <item id="838">Certidão de Regularidade Fiscal - Pessoa Jurídica</item>
+            <item id="839">Certidão Negativa de Débitos - PJ</item>
+        </nomes-populares>
+        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-PJ), caso o contribuinte Pessoa Jurídica não posssua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)      
+Receitafone: 146          
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1323">
+                <tipo>Empresas privadas, públicas ou de economia mista</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1324">
+                <tipo>Pessoas jurídicas sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1325">
+                <tipo>Entes federados</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1326">
+                <tipo>Órgãos Públicos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="5" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2860">
+                <titulo>Requerer certidão</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3627">CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3798" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=1</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2940">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2941">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2942">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Indústria</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3266">certidão negativa</item>
+            <item id="3267">pessoa jurídica</item>
+            <item id="3268">receita federal</item>
+            <item id="3269">débitos</item>
+            <item id="3270">nada consta</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="982">[Portaria Conjunta PGFN/RFB 1.751/2014](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=56753)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certidao-de-regularidade-fiscal-para-imoveis-rurais</id>
+        <dbId>1065</dbId>
+        <nome>Obter Certidão de Regularidade Fiscal para Imóveis Rurais</nome>
+        <sigla>CDN-ITR</sigla>
+        <nomes-populares>
+            <item id="840">Certidão de Regularidade Fiscal - Imóvel Rural</item>
+            <item id="841">Certidão Negativa de Débitos - ITR</item>
+        </nomes-populares>
+        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-ITR), caso o Imóvel Rural não posssua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+        <contato>[Fale Conosco Pessoa Física](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)      
+[Fale Conosco Pessoa Jurídica](http://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)      
+Receitafone: 146        
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1327">
+                <tipo>Pessoas físicas ou jurídicas</tipo>
+                <requisitos>Brasileiros</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="5" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2861">
+                <titulo>Requerer certidão</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3628">CNPJ</item>
+                        <item id="3629">CPF</item>
+                        <item id="3630">NIRF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3799" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CertInter/NIITR.asp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="2943">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2944">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2945">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2946">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Habitação Rural</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Pecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3271">certidão negativa</item>
+            <item id="3272">imóvel rural</item>
+            <item id="3273">receita federal</item>
+            <item id="3274">débitos</item>
+            <item id="3275">nada consta</item>
+            <item id="3276">campo</item>
+            <item id="3277">sítio</item>
+            <item id="3278">fazenda</item>
+            <item id="3279">chácara</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="983">[Instrução Normativa SRF Nº 438/2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15341)</item>
+            <item id="984">[Instrução Normativa RFB nº 735, de 02/05/2007](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15678&amp;visao=anotado)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-certidao-de-regularidade-fiscal-para-obras</id>
+        <dbId>1066</dbId>
+        <nome>Obter Certidão de Regularidade Fiscal para Obras</nome>
+        <sigla>CND-OBRAS</sigla>
+        <nomes-populares>
+            <item id="842">Certidão de Regularidade Fiscal - OBRAS</item>
+            <item id="843">Certidão Negativa de Débitos - OBRAS</item>
+        </nomes-populares>
+        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-OBRAS), caso a Obra não possua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+        <contato>[Fale Conosco Pessoa Física](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)        
+
+[Fale Conosco Pessoa Jurídica](https://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)        
+
+Receitafone: 146         
+
+[Unidades de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1328">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos>Brasileiros</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="30" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2862">
+                <titulo>Requerer a certidão</titulo>
+                <descricao>Estando tudo em ordem, a certidão é emitida já durante o atendimento</descricao>
+                <documentos>
+                    <default>
+                        <item id="3631">CNPJ</item>
+                        <item id="3632">CPF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3800" tipo="presencial">
+                            <descricao>[Unidades de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2947">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2948">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2949">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2950">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Habitação</item>
+            <item>Habitação Rural</item>
+            <item>Habitação Urbana</item>
+            <item>Indústria</item>
+            <item>Patrimônio</item>
+            <item>Serviços Urbanos</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3280">obra</item>
+            <item id="3281">nada consta</item>
+            <item id="3282">certidão negativa</item>
+            <item id="3283">receita federal</item>
+            <item id="3284">débitos</item>
+            <item id="3285">construção</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="985">[Instrução Normativa RFB nº 971/2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15937)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-acesso-ao-sistema-cpf</id>
+        <dbId>1067</dbId>
+        <nome>Obter acesso ao sistema CPF</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="844">CPF</item>
+        </nomes-populares>
+        <descricao>Acessar o sistema para realização de atos cadastrais no CPF</descricao>
+        <contato>Secretaria da Receita Federal do Brasil - Ministério da Fazenda 
+Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1329">
+                <tipo>Entidades conveniadas com a Receita Federal para prestar serviços de CPF</tipo>
+                <requisitos>Convênio com a Receita Federal</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2863">
+                <titulo>Realizar convênio com a Receita Federal</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3633">Instrumento de convênio</item>
+                        <item id="3634">Termo de Declaração de Concordância e Veracidade original assinado</item>
+                        <item id="3635">cópias de RG e CPF, ou de outro documento de identificação oficial com foto no qual conste CPF (juntamente com o original para fins de autenticação administrativa);</item>
+                        <item id="3636">comprovante de inscrição em Cadastro Nacional de Pessoas Jurídicas (CNPJ), quando for o caso;</item>
+                        <item id="3637">procuração com poderes específicos para representação do interessado, quando for o caso (original ou cópia autenticada).</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3801" tipo="web">
+                            <descricao>http://sei.fazenda.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3802" tipo="presencial">
+                            <descricao>Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3803" tipo="postal">
+                            <descricao>Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2864">
+                <titulo>Obter acesso ao Sistema CPF</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3638">CPF</item>
+                        <item id="3639">Documentações Pessoais</item>
+                        <item id="3640">Documentação do órgão</item>
+                        <item id="3641">Indicação do órgão das pessoas que terão acesso ao sistema</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3804" tipo="web">
+                            <descricao>http://sei.fazenda.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2951">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2952">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+            <item>Fiscalização do Estado</item>
+            <item>Serviços Públicos</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3286">convênio</item>
+            <item id="3287">Receita Federal</item>
+            <item id="3288">CPF</item>
+            <item id="3289">serviços de CPF</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="986">[PORTARIA SRF Nº 450, DE 28 DE ABRIL DE 2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=27903#251554)</item>
+            <item id="987">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
         </legislacoes>
     </servico>
 </servicos>
