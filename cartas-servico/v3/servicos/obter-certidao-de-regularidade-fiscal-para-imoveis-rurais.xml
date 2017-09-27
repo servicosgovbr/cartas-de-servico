@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-regularidade-fiscal-para-imoveis-rurais</id>
+    <dbId>1065</dbId>
+    <nome>Obter Certidão de Regularidade Fiscal para Imóveis Rurais</nome>
+    <sigla>CDN-ITR</sigla>
+    <nomes-populares>
+        <item id="840">Certidão de Regularidade Fiscal - Imóvel Rural</item>
+        <item id="841">Certidão Negativa de Débitos - ITR</item>
+    </nomes-populares>
+    <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-ITR), caso o Imóvel Rural não posssua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+    <contato>[Fale Conosco Pessoa Física](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)      
+[Fale Conosco Pessoa Jurídica](http://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)      
+Receitafone: 146        
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1327">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos>Brasileiros</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="5" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2861">
+            <titulo>Requerer certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3628">CNPJ</item>
+                    <item id="3629">CPF</item>
+                    <item id="3630">NIRF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3799" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CertInter/NIITR.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2943">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2944">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="2945">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="2946">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Agropecuária</item>
+        <item>Comércio e Serviços</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Habitação Rural</item>
+        <item>Pecuária</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3271">certidão negativa</item>
+        <item id="3272">imóvel rural</item>
+        <item id="3273">receita federal</item>
+        <item id="3274">débitos</item>
+        <item id="3275">nada consta</item>
+        <item id="3276">campo</item>
+        <item id="3277">sítio</item>
+        <item id="3278">fazenda</item>
+        <item id="3279">chácara</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="983">[Instrução Normativa SRF Nº 438/2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15341)</item>
+        <item id="984">[Instrução Normativa RFB nº 735, de 02/05/2007](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15678&amp;visao=anotado)</item>
+    </legislacoes>
+</servico>
