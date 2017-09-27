@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-regularidade-fiscal-para-obras</id>
+    <dbId>1066</dbId>
+    <nome>Obter Certidão de Regularidade Fiscal para Obras</nome>
+    <sigla>CND-OBRAS</sigla>
+    <nomes-populares>
+        <item id="842">Certidão de Regularidade Fiscal - OBRAS</item>
+        <item id="843">Certidão Negativa de Débitos - OBRAS</item>
+    </nomes-populares>
+    <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-OBRAS), caso a Obra não possua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+    <contato>[Fale Conosco Pessoa Física](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)        
+
+[Fale Conosco Pessoa Jurídica](https://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)        
+
+Receitafone: 146         
+
+[Unidades de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1328">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Brasileiros</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="30" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2862">
+            <titulo>Requerer a certidão</titulo>
+            <descricao>Estando tudo em ordem, a certidão é emitida já durante o atendimento</descricao>
+            <documentos>
+                <default>
+                    <item id="3631">CNPJ</item>
+                    <item id="3632">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3800" tipo="presencial">
+                        <descricao>[Unidades de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2947">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2948">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2949">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="2950">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Economia e Finanças</item>
+        <item>Habitação</item>
+        <item>Habitação Urbana</item>
+        <item>Habitação Rural</item>
+        <item>Indústria</item>
+        <item>Comércio e Serviços</item>
+        <item>Patrimônio</item>
+        <item>Serviços Urbanos</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3280">obra</item>
+        <item id="3281">nada consta</item>
+        <item id="3282">certidão negativa</item>
+        <item id="3283">receita federal</item>
+        <item id="3284">débitos</item>
+        <item id="3285">construção</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="985">[Instrução Normativa RFB nº 971/2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15937)</item>
+    </legislacoes>
+</servico>
