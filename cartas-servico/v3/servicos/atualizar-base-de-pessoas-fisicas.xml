@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>atualizar-base-de-pessoas-fisicas</id>
+    <dbId>1068</dbId>
+    <nome>Atualizar base de Pessoas Físicas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="845">CPFs</item>
+        <item id="846">Base CPF</item>
+    </nomes-populares>
+    <descricao>Acessar o sistema para atualização da base de dados de pessoas físicas. Utilização exclusiva por bancos credenciados.</descricao>
+    <contato>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1330">
+            <tipo>Instituições financeiras credenciadas junto a receita</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo não é estimado ainda</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2865">
+            <titulo>Habilitar representante do banco credenciado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3642">CPF do representante</item>
+                    <item id="3643">Documento de identificação do representante</item>
+                    <item id="3644">Apontamento formal do representante</item>
+                    <item id="3645">Instrumento de Convênio</item>
+                    <item id="3646">Termo de responsabilidade</item>
+                    <item id="3647">Certificado digital (pela internet)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3805" tipo="postal">
+                        <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3806" tipo="presencial">
+                        <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3807" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2866">
+            <titulo>Realizar download dos arquivos</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3648">CPF do responsável</item>
+                    <item id="3649">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="119">
+                        <descricao>Ressarcimento dos custos para fornecimento dos dados, o valor é variável</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3808" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/convweb/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2953">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3290">base de dados</item>
+        <item id="3291">base cpf</item>
+        <item id="3292">bancos</item>
+        <item id="3293">cpf</item>
+        <item id="3294">cadastro no banco</item>
+        <item id="3295">serasa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="988">-</item>
+    </legislacoes>
+</servico>
