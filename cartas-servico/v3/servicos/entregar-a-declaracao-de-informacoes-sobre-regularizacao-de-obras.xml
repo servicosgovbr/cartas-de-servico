@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>entregar-a-declaracao-de-informacoes-sobre-regularizacao-de-obras</id>
+    <dbId>1069</dbId>
+    <nome>Entregar a Declaração de Informações sobre Regularização de Obras</nome>
+    <sigla>DISO</sigla>
+    <descricao>Regularizar obra de construção civil mediante prestação de informações à Receita Federal</descricao>
+    <contato>[Orientações para Regularização de Obras de Construção Civil](http://idg.receita.fazenda.gov.br/orientacao/tributaria/declaracoes-e-demonstrativos/diso-declaracao-e-informacoes-sobre-obras/construcao-civil#documentospararegularizacao)      
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)     
+**Secretaria da Receita Federal do Brasil** - Ministério da Fazenda Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1331">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Brasileiros</requisitos>
+        </solicitante>
+        <solicitante id="1332">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2867">
+            <titulo>Preencher a declaração na Internet</titulo>
+            <descricao>Preencher a Declaração e Informação Sobre Obra - DISO Internet, disponível no sítio da RFB</descricao>
+            <documentos>
+                <default>
+                    <item id="3650">CPF</item>
+                    <item id="3651">Senha</item>
+                    <item id="3652">Dados da obra</item>
+                    <item id="3653">Dados dos trabalhadores na obra</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3809" tipo="web">
+                        <descricao>http://diso.receita.fazenda.gov.br/disointernet/login.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2868">
+            <titulo>Apresentar os documentos na unidade da Receita Federal</titulo>
+            <descricao>Apresentar no atendimento presencial a DISO Internet. O atendimento poderá ficar comprometido nos primeiros dias do mês, em razão do prazo legal que os Sindicatos de Construção Civil tem para encaminhar a tabela de Custo Unitário Básico (CUB), necessária para a aferição da obra.</descricao>
+            <documentos>
+                <default>
+                    <item id="3686">Documento de identificação do responsável da obra ou seu representante legal</item>
+                    <item id="3687">Deverá ser apresentado original ou copia autenticada da Certidão de Nascimento do menor e documentos de identidade do declarante (pai ou mãe) quando se tratar de regularização de obra em nome de menor;</item>
+                    <item id="3688">Deverá ser apresentado documento oficial que comprove a condição de inventariante ou arrolante do declarante quando se tratar de regularização de obra em nome de espólio;</item>
+                    <item id="3689">Deverá ser apresentada Procuração pública ou particular quando for o caso de representante legal.</item>
+                </default>
+                <caso id="404" descricao="Para comprovação de Área, Destinação e Categoria deverá ser apresentado no atendimento presencial, um dos seguintes documentos">
+                    <documento>
+                        <id>3654</id>
+                        <descricao>Original ou cópia autenticada do Alvará de concessão de licença para construção; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3655</id>
+                        <descricao>Original ou copia autenticada do Habite-se ou certidão da Prefeitura Municipal; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3656</id>
+                        <descricao>Contrato e a ordem de serviço ou autorização para inicio de execução da obra, na hipótese de obra contratada com Administração Publica não sujeita à fiscalização municipal; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3657</id>
+                        <descricao>Termo de recebimento da obra, na hipótese de obra contratada com Administração Publica; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3658</id>
+                        <descricao>Projeto aprovado ou qualquer documento oficial capaz de comprovar a veracidade das informações prestadas na DISO;</descricao>
+                    </documento>
+                </caso>
+                <caso id="405" descricao="Para comprovar o inicio da obra em período decadencial um dos seguintes documentos com vinculação inequívoca a obra:">
+                    <documento>
+                        <id>3659</id>
+                        <descricao>Comprovante de recolhimento de contribuições sociais na matrícula CEI da obra; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3660</id>
+                        <descricao>Notas fiscais de prestação de serviços; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3661</id>
+                        <descricao>Recibos de pagamento a trabalhadores; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3662</id>
+                        <descricao>Comprovante de ligação, ou conta de água ou de luz; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3663</id>
+                        <descricao>Ordem de serviço ou autorização para o início da obra, quando contratada com órgão público; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3664</id>
+                        <descricao>Notas fiscais de compra de material, nas quais conste o endereço da obra como local de entrega; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3665</id>
+                        <descricao>Alvará de concessão de licença para construção.</descricao>
+                    </documento>
+                </caso>
+                <caso id="406" descricao="Para comprovar o termino da obra em período decadencial um ou mais dos seguintes documentos, com vinculação inequívoca a obra:">
+                    <documento>
+                        <id>3666</id>
+                        <descricao>Habite-se, Certidão de Conclusão de Obra (CCO); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3667</id>
+                        <descricao>Um dos respectivos comprovantes de pagamento de Imposto Predial e Territorial Urbano (IPTU), em que conste a área da edificação; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3668</id>
+                        <descricao>Certidão de lançamento tributário contendo o histórico do respectivo IPTU; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3669</id>
+                        <descricao>Auto de regularização, conclusão ou conservação, cadastro imobiliário da prefeitura ou registro equivalente, numerados, lançados no período de decadência e especificando a área construída; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3670</id>
+                        <descricao>Termo de recebimento de obra, no caso de contratação com órgão público, lavrado em período decadencial; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3671</id>
+                        <descricao>Escritura de compra e venda do imóvel, em que conste a sua área, lavrada em período decadencial; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3672</id>
+                        <descricao>Contrato de locação com reconhecimento de firma em cartório em data compreendida no período decadencial, onde conste a descrição do imóvel e a área construída.</descricao>
+                    </documento>
+                </caso>
+                <caso id="407" descricao="A comprovação dar-se-á também com a apresentação de, no mínimo, 3 (três) dos seguintes documentos:">
+                    <documento>
+                        <id>3673</id>
+                        <descricao>Correspondência bancária para o endereço da edificação, emitida em período decadencial;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3674</id>
+                        <descricao>Contas de telefone ou de luz, de unidades situadas no último pavimento, emitidas em período decadencial;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3675</id>
+                        <descricao>Declaração de Imposto sobre a Renda comprovadamente entregue em época própria à RFB, relativa ao exercício pertinente a período decadencial, na qual conste a discriminação do imóvel, com endereço e área;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3676</id>
+                        <descricao>Vistoria do corpo de bombeiros, na qual conste a área do imóvel, expedida em período decadencial</descricao>
+                    </documento>
+                    <documento>
+                        <id>3677</id>
+                        <descricao>Planta aerofotogramétrica do período abrangido pela decadência, acompanhada de laudo técnico constando a área do imóvel e a respectiva ART no CREA ou RRT no CAU</descricao>
+                    </documento>
+                </caso>
+                <caso id="408" descricao="Empresas Optantes pelo Simples Nacional sem certificação digital ou procurador devem também apresentar os seguintes documentos:">
+                    <documento>
+                        <id>3678</id>
+                        <descricao>Declaração e Informação Sobre Obra (DISO) ,conforme modelo previsto no Anexo V da IN RFB nº 971, de 13/11/2009, devidamente preenchida e assinada pelo responsável pela obra ou representante legal da empresa, em duas vias</descricao>
+                    </documento>
+                    <documento>
+                        <id>3679</id>
+                        <descricao>Deverá ser apresentada a Planilha com Relação de Prestadores de Serviços, Anexo VI da IN RFB nº 971, de 13/11/2009 assinada pelos responsáveis pela empresa, em duas vias, quando for o caso</descricao>
+                    </documento>
+                    <documento>
+                        <id>3680</id>
+                        <descricao>Contrato social ou cópia autenticada e, no caso de sociedade anônima, de sociedade civil ou de cooperativa, apresentar também a ata de eleição dos diretores e cópia dos respectivos documentos de identidade</descricao>
+                    </documento>
+                    <documento>
+                        <id>3681</id>
+                        <descricao>Cópia do último balanço acompanhado da Declaração de Existência de Escrituração Contábil Regular, firmada pelo representante legal e pelo contador responsável, com  registro no CRC  e Escrituração Contábil Digital (ECD) do período da obra</descricao>
+                    </documento>
+                    <documento>
+                        <id>3682</id>
+                        <descricao>Requerimento Padrão para Regularização de Obra por Aferição</descricao>
+                    </documento>
+                    <documento>
+                        <id>3683</id>
+                        <descricao>Declaração de Opção da Sistemática de Recolhimento das Contribuições Previdenciárias para obras matriculadas no período compreendido entre 1º de junho de 2013 e 31 de outubro de 2013</descricao>
+                    </documento>
+                    <documento>
+                        <id>3684</id>
+                        <descricao>Declaração de Opção da Sistemática de Recolhimento das Contribuições Previdenciárias para obras matriculadas a partir de 01/12/2015</descricao>
+                    </documento>
+                </caso>
+                <caso id="409" descricao="Empresas de construção de obras de infraestrutura, enquadradas nos grupos 421, 422, 429 e 431 da CNAE 2.0, também devem apresentar :">
+                    <documento>
+                        <id>3685</id>
+                        <descricao>Declaração de Opção da Sistemática de Recolhimento das contribuições Previdenciárias, com opção relativa a janeiro de cada ano ou a primeira competência subsequente, sendo irretratável para todo o ano calendário</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3810" tipo="presencial">
+                        <descricao>[Unidades de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="2954">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2955">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="2956">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Habitação</item>
+        <item>Habitação Urbana</item>
+        <item>Habitação Rural</item>
+        <item>Relações de Trabalho</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3296">obras</item>
+        <item id="3297">DISO</item>
+        <item id="3298">obra</item>
+        <item id="3299">Declaração de obras</item>
+        <item id="3300">Informar obra</item>
+        <item id="3301">regularizar obra</item>
+        <item id="3302">construção</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="989">[Instrução Normativa RFB nº 971, de 13 de novembro de 2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15937)</item>
+        <item id="990">[IN RFB nº 971, de 13/11/2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15937)</item>
+        <item id="991">[LEI Nº 12.546, DE 14 DE DEZEMBRO DE 2011](http://www.planalto.gov.br/CCIVIL_03/_Ato2011-2014/2011/Lei/L12546.htm)</item>
+        <item id="992">[Lei nº 8.212, de 24 de julho de 1991](http://www.planalto.gov.br/ccivil_03/leis/L8212cons.htm)</item>
+    </legislacoes>
+</servico>
