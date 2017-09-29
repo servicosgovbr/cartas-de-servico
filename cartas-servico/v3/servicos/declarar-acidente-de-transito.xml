@@ -1,44 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>declarar-acidente-de-transito</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao>Consiste no registro de narrativa de acidente de trânsito, mediante declaração do condutor, exclusivamente quando não houver vítimas (feridos e mortos), e diante da impossibilidade de realizar o levantamento das informações, no local da ocorrência, por equipe da Polícia Rodoviária Federal.
-
-Quem pode solicitar: somente o condutor de veículo envolvido no acidente.
-
-* [Localização das unidades](http://www.dprf.gov.br/PortalInternet/enderecosETelefones.faces): Endereços de todas as unidade do Departamento de Polícia Rodoviária Federal.</descricao>
-    <gratuito/>
-    <solicitantes/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>declarar-acidente-de-transito</id>
+    <dbId>117</dbId>
+    <nome>Declarar acidente de trânsito</nome>
+    <sigla></sigla>
+    <descricao>Consiste no registro de narrativa de acidente de trânsito, mediante declaração do condutor, exclusivamente quando não houver vítimas (feridos e mortos), e diante da impossibilidade de realizar o levantamento das informações, no local da ocorrência, por equipe da Polícia Rodoviária Federal.</descricao>
+    <contato>[Unidades de Atendimento da Polícia Rodoviária Federal](https://www.prf.gov.br/portal/unidades-prf/)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1340">
+            <tipo>O condutor de veículo envolvido no acidente.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <em-media max="30" unidade="minutos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1098">
+            <titulo>Realizar relato</titulo>
+            <descricao></descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="3750">Documento de identificação</item>
+                    <item id="3751">Documentos do veículo</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao>Dirigindo-se a qualquer Unidade do Departamento de Polícia Rodoviária Federal, cujos endereços estão disponíveis no site do órgão (vide "Localização das unidades").</descricao>
+                    <canal-de-prestacao id="1344" tipo="presencial">
+                        <descricao>Nas [Unidades da Polícia Rodoviária Federal](https://www.prf.gov.br/portal/unidades-prf)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/704"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1246">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
-        <item>Proteção social</item>
+        <item>Emergências e Urgências</item>
+        <item>Fiscalização do Estado</item>
+        <item>Policiamento</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Serviços Urbanos</item>
+        <item>Serviços Públicos</item>
+        <item>Transportes</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="3346">acidentes</item>
+        <item id="3347">Informar acidentes</item>
+        <item id="3348">polícia rodoviária</item>
+        <item id="3349">sem vítimas</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1001">-</item>
+    </legislacoes>
 </servico>
