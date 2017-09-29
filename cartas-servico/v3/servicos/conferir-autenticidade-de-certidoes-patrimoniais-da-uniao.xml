@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>conferir-autenticidade-de-certidoes-patrimoniais-da-uniao</nome>
+    <sigla/>
+    <nomes-populares/>
+    <descricao><![CDATA[Este serviço permite verificar a autenticidade de Certidão Negativa de Débitos Patrimoniais do Imóvel e do Responsável, Certidão de Situação de Ocupação/Aforamento e Certidão de Inteiro Teor do Imóvel.]]></descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos><![CDATA[Que necessite verificar a autenticidade de certidões emitidas pela SPU.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="0" unidade="minutos"/>
+        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Acesse o portal da SPU e preencha as informações solicitadas</titulo>
+            <descricao><![CDATA[Selecione o tipo de certidão (Negativa de Débitos Patrimoninais do Imóvel, Certidão Negativa de Débitos Patrimoniais do Responsável, Certidão de Situação de Ocupação/Aforamento, Certidão de Inteiro Teor do Imóvel, Certidão de Domínio da União), Número do RIP, CPF/CNPJ, Data de Emissão, Hora de Emissão (hhmmss) e 
+Código de Controle.]]></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/23]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>autenticidade</item>
+        <item>certidão</item>
+        <item>validação</item>
+        <item>certidões</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[...]]></item>
+    </legislacoes>
+</servico>
