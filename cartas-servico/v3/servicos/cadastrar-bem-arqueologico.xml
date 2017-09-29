@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>cadastramento-de-bens-arqueologicos</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-bem-arqueologico</id>
     <dbId>848</dbId>
-    <nome>cadastrar-bem-arqueologico</nome>
-    <sigla/>
+    <nome>Cadastrar bem arqueológico</nome>
+    <sigla></sigla>
     <descricao>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada pode solicitar o reconhecimento de um bem de natureza arqueológica – objetos isolados ou sítios arqueológicos –, em razão de descoberta fortuita (ao acaso), conforme disposto na Lei nº 3.924/1961. Ver item Autorização para Realização de Pesquisas Arqueológicas.</descricao>
-    <contato/>
+    <contato></contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="874">
             <tipo>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada</tipo>
@@ -16,9 +17,11 @@
     </solicitantes>
     <tempo-total-estimado>
         <ate max="90" unidade="dias-corridos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2260">
             <titulo>Solicitação</titulo>
@@ -31,17 +34,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2828" tipo="presencial">
-                        <descricao>Por ofício: Dirigido à Superintendência do IPHAN no estado em que o bem se localiza, ou ao CNA, em Brasília.</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2827" tipo="e-mail">
                         <descricao>cna@iphan.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2828" tipo="presencial">
+                        <descricao>Por ofício: Dirigido à Superintendência do IPHAN no estado em que o bem se localiza, ou ao CNA, em Brasília.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2045"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
+        <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2473">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2474">Empresas</item>
