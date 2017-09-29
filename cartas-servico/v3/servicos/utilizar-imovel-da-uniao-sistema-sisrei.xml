@@ -1,34 +1,40 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>utilizar-imovel-da-uniao-sistema-sisrei</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>utilizar-imovel-da-uniao-sistema-sisrei</id>
+    <dbId>37</dbId>
+    <nome>Utilizar imóvel da União - Sistema SISREI</nome>
     <sigla>SISREI</sigla>
     <nomes-populares>
-        <item>imóveis públicos para entes públicos ou entidas sem fins lucrativos</item>
+        <item id="556">imóveis públicos para entes públicos ou entidas sem fins lucrativos</item>
     </nomes-populares>
-    <descricao><![CDATA[Este serviço permite solicitar a utilização de imóvel vago ou a regularização de um imóvel que já está sendo utilizado por entes públicos (federais, estaduais e municipais) e entidades sem fins lucrativos. O atendimento da demanda observará a legislação vigente e o instrumento de destinação a ser aplicado dependerá de cada caso.]]></descricao>
-    <contato/>
+    <descricao>Este serviço permite solicitar a utilização de imóvel vago ou a regularização de um imóvel que já está sendo utilizado por entes públicos (federais, estaduais e municipais) e entidades sem fins lucrativos. O atendimento da demanda observará a legislação vigente e o instrumento de destinação a ser aplicado dependerá de cada caso.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="679">
             <tipo>Ente público (federal, estadual e municipal) e entidade sem fins lucrativos</tipo>
-            <requisitos><![CDATA[Que tenha regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização.]]></requisitos>
+            <requisitos>Que tenha regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
+        <descricao>Não há prazo estipulado</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1955">
             <titulo>Solicitar utilização ou regularização</titulo>
-            <descricao><![CDATA[O interessado deve acessar o sistema SISREI e preencher os dados solicitados.]]></descricao>
+            <descricao>O interessado deve acessar o sistema SISREI e preencher os dados solicitados.</descricao>
             <documentos>
                 <default>
-                    <item>CPF do responsável legal</item>
-                    <item>Documento comprobatório de responsabilidade legal</item>
-                    <item>RG do responsável legal</item>
-                    <item>CNPJ do órgão ou entidade</item>
-                    <item>RIP do imóvel</item>
+                    <item id="1901">CPF do responsável legal</item>
+                    <item id="1902">Documento comprobatório de responsabilidade legal</item>
+                    <item id="1903">RG do responsável legal</item>
+                    <item id="1904">CNPJ do órgão ou entidade</item>
+                    <item id="1905">RIP do imóvel</item>
                 </default>
             </documentos>
             <custos>
@@ -36,19 +42,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[https://sisrei.spu.planejamento.gov.br/sisrei/]]></descricao>
+                    <canal-de-prestacao id="2434" tipo="web">
+                        <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1956">
             <titulo>Receber resposta da SPU</titulo>
-            <descricao><![CDATA[A SPU responderá à solicitação]]></descricao>
+            <descricao>A SPU responderá à solicitação</descricao>
             <documentos>
                 <default>
-                    <item>CPF do responsável legal</item>
-                    <item>RIP do imóvel</item>
+                    <item id="1906">CPF do responsável legal</item>
+                    <item id="1907">RIP do imóvel</item>
                 </default>
             </documentos>
             <custos>
@@ -56,27 +62,29 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[https://sisrei.spu.planejamento.gov.br/sisrei/]]></descricao>
+                    <canal-de-prestacao id="2435" tipo="web">
+                        <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Órgãos e entidades públicas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="2218">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2219">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>prédio público</item>
-        <item>SISREI</item>
-        <item>terra pública</item>
+        <item id="1628">prédio público</item>
+        <item id="1629">SISREI</item>
+        <item id="1630">terra pública</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[...]]></item>
+        <item id="521">...</item>
     </legislacoes>
 </servico>
