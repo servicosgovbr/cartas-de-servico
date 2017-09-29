@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>conceder-certificado-de-registro-especial-de-empresas-comerciais-exportadoras-trading-companies</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-empresa-no-registro-especial-de-empresas-comerciais-exportadoras</id>
     <dbId>751</dbId>
-    <nome>cadastrar-empresa-no-registro-especial-de-empresas-comerciais-exportadoras</nome>
-    <sigla/>
+    <nome>Cadastrar empresa no Registro Especial de Empresas Comerciais Exportadoras</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="853">Trading Companies</item>
+    </nomes-populares>
     <descricao>As empresas comerciais exportadoras são reconhecidas no Brasil pelo Decreto-Lei nº 1.248 de 1972, que assegura, tanto ao produtor vendedor quanto à empresa comercial, os benefícios fiscais concedidos por lei para incentivo à exportação. É permitido à Empresa Comercial Exportadora adquirir e exportar qualquer mercadoria de produção nacional, importar para comercializar no mercado interno ou reexportar mercadorias estrangeiras, atendidas as normas estabelecidas no Regulamento Aduaneiro Brasileiro.</descricao>
     <contato>Secretaria de Comércio Exterior (SECEX)
 Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
 Telefone: (61) 2027-7000
 Endereço Eletrônico: http://www.mdic.gov.br</contato>
     <gratuito>false</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="728">
             <tipo>Empresas</tipo>
@@ -18,9 +23,11 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="60" unidade="dias-uteis"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2014">
             <titulo>Exame e análise de solicitações de inscrição, atualização e cancelamento do Registro de Empresas Comerciais Exportadoras (Trading Companies)</titulo>
@@ -35,7 +42,7 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
                 <default>
                     <custo id="76">
                         <descricao>Registro</descricao>
-                        <moeda/>
+                        <moeda>R$</moeda>
                         <valor>3,000</valor>
                     </custo>
                 </default>
@@ -52,7 +59,9 @@ Endereço Eletrônico: http://www.mdic.gov.br</descricao>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="2300">Empresas</item>
     </segmentos-da-sociedade>
