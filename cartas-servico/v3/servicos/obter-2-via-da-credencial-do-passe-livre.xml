@@ -1,41 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-2-via-da-credencial-do-passe-livre</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[O beneficiário do Passe Livre pode solicitar a segunda via da sua credencial nos casos de perda, extravio, alteração no documento de identificação ou quando a credencial estiver danificada.]]></descricao>
-    <contato><![CDATA[Para mais informações ou dúvidas sobre este serviço, entre em contato:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-2-via-da-credencial-do-passe-livre</id>
+    <dbId>466</dbId>
+    <nome>Obter 2ª Via da Credencial do Passe Livre</nome>
+    <sigla></sigla>
+    <descricao>O beneficiário do Passe Livre pode solicitar a segunda via da sua credencial nos casos de perda, extravio, alteração no documento de identificação ou quando a credencial estiver danificada.</descricao>
+    <contato>Para mais informações ou dúvidas sobre este serviço, entre em contato:
 Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF
 Telefones: (61) 2029-8035.
 e-mail: passelivre@transportes.gov.br
-Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
+Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="508">
             <tipo>Pessoa com Deficiência física, mental, auditiva, visual ou múltipla comprovadamente carente.</tipo>
-            <requisitos><![CDATA[Para que uma pessoa tenha direito a segunda via do Passe Livre é necessário:
+            <requisitos>Para que uma pessoa tenha direito a segunda via do Passe Livre é necessário:
 
-- Ser beneficiário do Passe Livre]]></requisitos>
+- Ser beneficiário do Passe Livre</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="30" unidade="dias-corridos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1566">
             <titulo>Solicitar Segunda via</titulo>
-            <descricao><![CDATA[Nesta etapa o beneficiário deve informar o motivo que levou a solicitação da segunda via.]]></descricao>
+            <descricao>Nesta etapa o beneficiário deve informar o motivo que levou a solicitação da segunda via.</descricao>
             <documentos>
                 <default/>
-                <caso descricao="Caso seja Perda/Extravio, Roubo/Assalto - Com boletim de Ocorrência">
-                    <item>Enviar ocorrência policial informando o fato que resultou na perda/extravio ou roubo da credencial do Passe Livre.</item>
+                <caso id="241" descricao="Caso seja Perda/Extravio, Roubo/Assalto - Com boletim de Ocorrência">
+                    <documento>
+                        <id>1373</id>
+                        <descricao>Enviar ocorrência policial informando o fato que resultou na perda/extravio ou roubo da credencial do Passe Livre.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Caso seja Perda/Extravio, Roubo/Assalto - Com recusa da delegacia para emissão do boletim de ocorrência">
-                    <item>Enviar declaração informando a ocorrência e se responsabilizando pela veracidade das informações prestadas.</item>
+                <caso id="242" descricao="Caso seja Perda/Extravio, Roubo/Assalto - Com recusa da delegacia para emissão do boletim de ocorrência">
+                    <documento>
+                        <id>1374</id>
+                        <descricao>Enviar declaração informando a ocorrência e se responsabilizando pela veracidade das informações prestadas.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Caso a credencial esteja danificada ou necessite de correção/alteração de nome ou documento de identificação">
-                    <item>Enviar carta informando o motivo da correção, anexando a credencial danificada/errada e cópia do documento de identidade</item>
+                <caso id="243" descricao="Caso a credencial esteja danificada ou necessite de correção/alteração de nome ou documento de identificação">
+                    <documento>
+                        <id>1375</id>
+                        <descricao>Enviar carta informando o motivo da correção, anexando a credencial danificada/errada e cópia do documento de identidade</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -43,21 +57,21 @@ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[passelivre@transportes.gov.br]]></descricao>
+                    <canal-de-prestacao id="1942" tipo="e-mail">
+                        <descricao>passelivre@transportes.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF]]></descricao>
+                    <canal-de-prestacao id="1943" tipo="presencial">
+                        <descricao>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></descricao>
+                    <canal-de-prestacao id="1944" tipo="postal">
+                        <descricao>Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1567">
             <titulo>Aguardar recebimento da Credencial</titulo>
-            <descricao><![CDATA[Será enviado nova credencial via correios.]]></descricao>
+            <descricao>Será enviado nova credencial via correios.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -66,16 +80,18 @@ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Endereço informado pelo requerente no formulário de solicitação do benefício.]]></descricao>
+                    <canal-de-prestacao id="1945" tipo="postal">
+                        <descricao>Endereço informado pelo requerente no formulário de solicitação do benefício.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846" dbId="37548">
+        <nomeOrgao>Ministério dos Transportes Portos e Aviação Civil (MTPA)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1810">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transporte Ferroviário</item>
@@ -83,11 +99,11 @@ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
         <item>Transporte Hidroviário</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Passe-Livre</item>
-        <item>2ª Via</item>
-        <item>Roubo da Credencial</item>
+        <item id="1273">Passe-Livre</item>
+        <item id="1274">2ª Via</item>
+        <item id="1275">Roubo da Credencial</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)]]></item>
+        <item id="382">[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)</item>
     </legislacoes>
 </servico>
