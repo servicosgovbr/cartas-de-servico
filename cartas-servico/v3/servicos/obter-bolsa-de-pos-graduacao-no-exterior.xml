@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>concessao-de-bolsas-de-pos-graduacao-no-exterior</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-bolsa-de-pos-graduacao-no-exterior</id>
     <dbId>809</dbId>
-    <nome>obter-bolsa-de-pos-graduacao-no-exterior</nome>
-    <sigla/>
+    <nome>Obter Bolsa de Pós-Graduação no Exterior</nome>
+    <sigla></sigla>
     <descricao>As bolsas concedidas pela CAPES para o exterior são nas seguintes modalidades: doutorado, estágio de doutorando e estágio pós-doutoral. Informações sobre esses programas estão disponíveis no [site da CAPES.](http://www.capes.gov.br/bolsas/bolsas-no-exterior) Todas as bolsas são concedidas por meio de chamadas públicas, que são amplamente divulgadas na página da Capes. Acesse o link para acesso aos [editais abertos](http://www.capes.gov.br/editais-abertos) no site da Capes.</descricao>
     <contato>*Central de Atendimento
 0800 616161 - opção 7 - para assuntos da CAPES.
@@ -11,6 +11,8 @@ Segunda a sexta das 8h às 20h
 
 *[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
     <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="801">
             <tipo>Estudantes de Pós-Graduação</tipo>
@@ -21,7 +23,9 @@ Segunda a sexta das 8h às 20h
         <em-media max="6" unidade="meses"/>
         <descricao>Cada chamada pública possui um cronograma a ser cumprido para a concessão de bolsas. A bolsa pode ser de curta duração (3 meses) ou plena até 48 meses, a depender da modalidade</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2149">
             <titulo>Seleção de Bolsistas</titulo>
@@ -41,7 +45,9 @@ Segunda a sexta das 8h às 20h
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="250"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/250" dbId="13293">
+        <nomeOrgao>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2407">Cidadãos</item>
     </segmentos-da-sociedade>
