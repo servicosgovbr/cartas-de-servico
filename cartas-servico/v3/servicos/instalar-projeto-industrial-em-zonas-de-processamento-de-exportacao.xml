@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>avaliar-as-propostas-e-acompanhar-a-implantacao-e-a-operacionalizacao-dos-projetos-industriais-aprovados-pelo-czpe</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>instalar-projeto-industrial-em-zonas-de-processamento-de-exportacao</id>
     <dbId>731</dbId>
-    <nome>instalar-projeto-industrial-em-zonas-de-processamento-de-exportacao</nome>
-    <sigla/>
+    <nome>Instalar projeto industrial em Zonas de Processamento de Exportação</nome>
+    <sigla>ZPE</sigla>
+    <nomes-populares>
+        <item id="852">CZPE</item>
+    </nomes-populares>
     <descricao>Examinar a adequação dos projetos industriais a serem implantados em ZPE, bem como acompanhar seu processo de implantação e sua operação, no intuito de assegurar sua adequação às disposições da legislação vigente.</descricao>
     <contato>Email: seczpe@mdic.gov.br
 Telefone: (61)2027-7499</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="696">
             <tipo>Entidades de Governo (União, Estados e Municípios)</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="700">
             <tipo>Empresas Administradoras de ZPE</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="701">
             <tipo>Pessoas Jurídicas</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="702">
             <tipo>Pessoas Físicas</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="60" min="30" unidade="dias-corridos"/>
+        <entre min="30" max="60" unidade="dias-corridos"/>
         <descricao>O prazo para análise de propostas para instalação de projetos industriais será considerado a partir da data  da apresentação do projeto industrial a ser implantado em ZPE. No que tange ao acompanhamento de projetos industriais em instalação em ZPE, o prazo é variável, conforme o caso.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1988">
             <titulo>Apresentação do Projeto Industrial</titulo>
@@ -65,18 +72,18 @@ CEP: 70053-900  Brasília-DF</descricao>
             </custos>
             <canais-de-prestacao>
                 <default>
+                    <canal-de-prestacao id="2476" tipo="e-mail">
+                        <descricao>seczpe@mdic.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2477" tipo="telefone">
+                        <descricao>(61)2027-7499</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="2478" tipo="postal">
                         <descricao>Ministério da Indústria, Comércio Exterior e Serviços - MDIC
 Secretaria Executiva do CZPE
 Esplanada dos Ministérios, Bloco J, sala 101
 CEP: 70053-900
 Brasília-DF</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2477" tipo="telefone">
-                        <descricao>(61)2027-7499</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2476" tipo="e-mail">
-                        <descricao>seczpe@mdic.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -92,6 +99,9 @@ Brasília-DF</descricao>
             </custos>
             <canais-de-prestacao>
                 <default>
+                    <canal-de-prestacao id="2479" tipo="e-mail">
+                        <descricao>seczpe@mdic.gov.br</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="2480" tipo="postal">
                         <descricao>Ministério da Indústria, Comércio Exterior e Serviços - MDIC
 Secretaria Executiva do CZPE
@@ -99,14 +109,13 @@ Esplanada dos Ministérios, Bloco J, sala 101
 CEP: 70053-900
 Brasília-DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2479" tipo="e-mail">
-                        <descricao>seczpe@mdic.gov.br</descricao>
-                    </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2263">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2264">Empresas</item>
