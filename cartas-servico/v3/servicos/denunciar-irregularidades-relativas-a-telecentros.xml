@@ -1,30 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>denunciar-irregularidades-relativas-a-telecentros</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Caso haja constatação de má utilização dos recursos do telecentro, qualquer cidadão pode fazer uma denúncia para que o fato seja apurado e acarrete em providências cabíveis.]]></descricao>
-    <contato><![CDATA[Secretaria de Inclusão Digital - SID
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>denunciar-irregularidades-relativas-a-telecentros</id>
+    <dbId>72</dbId>
+    <nome>Denunciar irregularidades relativas a telecentros</nome>
+    <sigla></sigla>
+    <descricao>Caso haja constatação de má utilização dos recursos do telecentro, qualquer cidadão pode fazer uma denúncia para que o fato seja apurado e acarrete em providências cabíveis.</descricao>
+    <contato>Secretaria de Inclusão Digital - SID
 
-(61) 2027-6403]]></contato>
+(61) 2027-6403</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="500">
             <tipo>Sociedade em geral</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="5" min="1" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="1" max="5" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1516">
             <titulo>Registro da denúncia</titulo>
-            <descricao><![CDATA[Registro da irregularidade identificada contendo endereço do Telecentro; descrição dos fatos ocorridos no Telecentro; anexos (ex: boletim de ocorrência, fotografias, vídeos)]]></descricao>
+            <descricao>Registro da irregularidade identificada contendo endereço do Telecentro; descrição dos fatos ocorridos no Telecentro; anexos (ex: boletim de ocorrência, fotografias, vídeos)</descricao>
             <documentos>
                 <default>
-                    <item>Endereço do Telecentro; descrição dos fatos ocorridos no Telecentro; anexos (ex: boletim de ocorrência, fotografias, vídeos)</item>
+                    <item id="1365">Endereço do Telecentro; descrição dos fatos ocorridos no Telecentro; anexos (ex: boletim de ocorrência, fotografias, vídeos)</item>
                 </default>
             </documentos>
             <custos>
@@ -32,21 +37,23 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[telecentros@comunicacoes.gov.br]]></descricao>
+                    <canal-de-prestacao id="1886" tipo="e-mail">
+                        <descricao>telecentros@comunicacoes.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[(61) 2027-6403]]></descricao>
+                    <canal-de-prestacao id="1887" tipo="telefone">
+                        <descricao>(61) 2027-6403</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item>Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="1751">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="1752">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="1753">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
@@ -64,12 +71,12 @@
         <item>Fiscalização do Estado</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Telecentro</item>
-        <item>Denúncia</item>
-        <item>Não funciona</item>
+        <item id="1255">Telecentro</item>
+        <item id="1256">Denúncia</item>
+        <item id="1257">Não funciona</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Portaria nº 16, de 1º de novembro de 2012 - Estabelece diretrizes e normas para a execução do Programa Nacional de Apoio à Inclusão Digital nas Comunidades – Telecentros.BR. Link: "http://www.mc.gov.br/component/content/article/273-lex/portarias/26041-portaria-n-16-de-1-de-novembro-de-2012"]]></item>
-        <item><![CDATA[Portaria nº 13, de 1º de outubro de 2012 - Estabelece diretrizes para o funcionamento dos telecentros disponibilizados aos Municípios selecionados por meio do Edital de Chamada Pública Nº 1/2006, publicado no Diário Oficial da União de 1º de novembro de 2006, como parte da Política de inclusão Digital do Ministério das Comunicações.. Link: "http://www.mc.gov.br/index.php?option=com_content&view=article&id=26019&catid=273".]]></item>
+        <item id="376">Portaria nº 16, de 1º de novembro de 2012 - Estabelece diretrizes e normas para a execução do Programa Nacional de Apoio à Inclusão Digital nas Comunidades – Telecentros.BR. Link: "http://www.mc.gov.br/component/content/article/273-lex/portarias/26041-portaria-n-16-de-1-de-novembro-de-2012"</item>
+        <item id="377">Portaria nº 13, de 1º de outubro de 2012 - Estabelece diretrizes para o funcionamento dos telecentros disponibilizados aos Municípios selecionados por meio do Edital de Chamada Pública Nº 1/2006, publicado no Diário Oficial da União de 1º de novembro de 2006, como parte da Política de inclusão Digital do Ministério das Comunicações.. Link: "http://www.mc.gov.br/index.php?option=com_content&amp;view=article&amp;id=26019&amp;catid=273".</item>
     </legislacoes>
 </servico>
