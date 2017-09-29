@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>examinar-pleitos-de-empresas-para-fruicao-dos-beneficios-fiscais-da-lei-de-informatica</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-beneficios-fiscais-da-lei-da-informatica</id>
     <dbId>797</dbId>
-    <nome>obter-beneficios-fiscais-da-lei-da-informatica</nome>
-    <sigla/>
+    <nome>Obter benefícios fiscais da Lei da Informática</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="631">Habilitação na Lei de Informática</item>
-        <item id="632"/>
     </nomes-populares>
     <descricao>O serviço busca habilitar empresas para fruição de benefícios fiscais previstos na Lei de Informática.</descricao>
     <contato>Coordenação-Geral do Complexo Eletroeletrônico do Departamento de Investimentos e Complexos Tecnológicos.
 (61) 2027 - 7905</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="788">
             <tipo>Empresas</tipo>
@@ -19,13 +19,16 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="30" min="15" unidade="dias-uteis"/>
+        <entre min="15" max="30" unidade="dias-uteis"/>
         <descricao>O prazo de 15 a 30 dias se refere à concessão para a Habilitação Provisória. Porém, para a concessão de Habilitação Definitiva, o prazo pode ser superior a 60 dias úteis.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2134">
             <titulo>Análise documental da empresa pleiteante e da adequação da estrutura produtiva ao benefício pleiteado.</titulo>
-            <descricao/>
+            <descricao></descricao>
             <documentos>
                 <default>
                     <item id="2137">CNPJ, certidões de cartório, certidões da Receita Federal e CRF FGTS.</item>
@@ -43,7 +46,9 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="2380">Empresas</item>
         <item idSegmento="1" idServicoSegmento="2381">Cidadãos</item>
