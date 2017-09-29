@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>transferir-titularidade-de-imovel</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Este serviço possibilita a realização de todos os procedimentos necessários à transferência de titularidade de imóvel da União sob os regimes de aforamento e de ocupação.]]></descricao>
-    <contato/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-titularidade-de-imovel</id>
+    <dbId>39</dbId>
+    <nome>Transferir Titularidade de Imóvel</nome>
+    <sigla></sigla>
+    <descricao>Este serviço possibilita a realização de todos os procedimentos necessários à transferência de titularidade de imóvel da União sob os regimes de aforamento e de ocupação.</descricao>
+    <contato></contato>
     <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="682">
             <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos><![CDATA[Que pretenda efetuar a transferência de imóvel da União.]]></requisitos>
+            <requisitos>Que pretenda efetuar a transferência de imóvel da União.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
+        <descricao>Não há prazo estipulado</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1971">
             <titulo>Siga as etapas do processo</titulo>
-            <descricao><![CDATA[O procedimento para a transferência de titularidade de imóvel da União, sob regime de ocupação ou aforamento, é realizado da seguinte forma:
+            <descricao>O procedimento para a transferência de titularidade de imóvel da União, sob regime de ocupação ou aforamento, é realizado da seguinte forma:
 
-Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Requerimento de Transferência de Titularidade de Imóvel]]></descricao>
+Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Requerimento de Transferência de Titularidade de Imóvel</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -30,15 +35,15 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/33]]></descricao>
+                    <canal-de-prestacao id="2450" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/33</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1972">
             <titulo>Calcule o Laudêmio</titulo>
-            <descricao><![CDATA[Calcule o laudêmio e emita o DARF para pagamento (1º passo para transferência de titularidade de imóvel).]]></descricao>
+            <descricao>Calcule o laudêmio e emita o DARF para pagamento (1º passo para transferência de titularidade de imóvel).</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -47,15 +52,15 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/1]]></descricao>
+                    <canal-de-prestacao id="2451" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/1</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1973">
             <titulo>Emita a Certidão de Autorização para Transferência (CAT)</titulo>
-            <descricao><![CDATA[Solicite a emissão da Certidão de Autorização para Transferência de Titularidade - CAT (2º passo para transferência de titularidade de imóvel)]]></descricao>
+            <descricao>Solicite a emissão da Certidão de Autorização para Transferência de Titularidade - CAT (2º passo para transferência de titularidade de imóvel)</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -64,15 +69,15 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/17]]></descricao>
+                    <canal-de-prestacao id="2452" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/17</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1974">
             <titulo>Requerer a Transferência de Titularidade de Imóvel</titulo>
-            <descricao><![CDATA[Solicite a alteração do responsável/titular de imóvel da União no cadastro da SPU (3º e último passo para transferência de titularidade de imóvel)]]></descricao>
+            <descricao>Solicite a alteração do responsável/titular de imóvel da União no cadastro da SPU (3º e último passo para transferência de titularidade de imóvel)</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -81,30 +86,32 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoTransferenciaTitular?servico=14]]></descricao>
+                    <canal-de-prestacao id="2453" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoTransferenciaTitular?servico=14</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2222">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2223">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>laudêmio</item>
-        <item>calculo</item>
-        <item>transferência</item>
-        <item>titularidade</item>
-        <item>imóvel</item>
-        <item>CAT</item>
+        <item id="1634">laudêmio</item>
+        <item id="1635">calculo</item>
+        <item id="1636">transferência</item>
+        <item id="1637">titularidade</item>
+        <item id="1638">imóvel</item>
+        <item id="1639">CAT</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Decreto-Lei 2.490/1940, Decreto-Lei 3.438/1941, Lei 5.666/1943, Decreto-Lei 9.760/1946, Lei 5.972/1973, Lei 6.015/1973, Decreto-Lei 2.398/1987, Decreto 95.760/1988, Lei 9.636/1988, ON/SPU/GEARP 001/2000. Decreto 3.725/2001. ON/SPU/GEANE 001/2002 e Portaria/SPU 293/2007.]]></item>
+        <item id="523">Decreto-Lei 2.490/1940, Decreto-Lei 3.438/1941, Lei 5.666/1943, Decreto-Lei 9.760/1946, Lei 5.972/1973, Lei 6.015/1973, Decreto-Lei 2.398/1987, Decreto 95.760/1988, Lei 9.636/1988, ON/SPU/GEARP 001/2000. Decreto 3.725/2001. ON/SPU/GEANE 001/2002 e Portaria/SPU 293/2007.</item>
     </legislacoes>
 </servico>
