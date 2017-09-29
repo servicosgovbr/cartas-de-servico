@@ -1,46 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>registrar-empresa-para-execucao-de-servico-de-microfilmagem</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-empresa-para-execucao-de-servico-de-microfilmagem</id>
+    <dbId>67</dbId>
+    <nome>Registrar empresa para execução de serviço de microfilmagem</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Microfilmagem</item>
+        <item id="377">Microfilmagem</item>
     </nomes-populares>
-    <descricao><![CDATA[Registro das empresas interessadas em atuar com serviços de microfilmagem.
-Todas as entidades, antes de microfilmar documentos, devem solicitar ao  Ministério da Justiça  e Cidadania sua autorização.]]></descricao>
-    <contato><![CDATA[sac.dejus@mj.gov.br]]></contato>
+    <descricao>Registro das empresas interessadas em atuar com serviços de microfilmagem.
+Todas as entidades, antes de microfilmar documentos, devem solicitar ao  Ministério da Justiça  e Cidadania sua autorização.</descricao>
+    <contato>sac.dejus@mj.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="442">
             <tipo>Empresas</tipo>
-            <requisitos><![CDATA[Que possuam em seu contrato social o serviço de microfilmagem.]]></requisitos>
+            <requisitos>Que possuam em seu contrato social o serviço de microfilmagem.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="443">
             <tipo>Cartórios</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="30" unidade="dias-corridos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1291">
             <titulo>Apresentar requerimento</titulo>
-            <descricao><![CDATA[O requerimento deve conter:
+            <descricao>O requerimento deve conter:
 - Solicitação para executar os serviços de microfilmagem;
 - A identificação da empresa, com razão social e CNPJ;
 - A identificação do solicitante;
 - A identificação do (s) responsável (is) pela execução dos serviços de microfilmagem;
-- E-mail para contato.]]></descricao>
+- E-mail para contato.</descricao>
             <documentos>
                 <default>
-                    <item>Cópia autenticada do contrato social;</item>
-                    <item>Cartão de CNPJ;</item>
-                    <item>Cópia autenticada do ato de nomeação do titular, e substituto, responsável pelo serviço notarial ou de registro;</item>
-                    <item>Qualificação completa dos dirigentes da empresa ou do titular do serviço notarial ou de registro e do responsável pela execução da microfilmagem;</item>
-                    <item>Comprovante de endereço da sede da empresa ou do serviço notarial ou de registro e do local da execução da microfilmagem;</item>
-                    <item>Descrição do equipamento a ser utilizado na microfilmagem e prova da sua titularidade;</item>
-                    <item>Declaração expressa do interessado na inscrição de que informará ao Ministério da Justiça e Cidadania eventuais alterações com relação à denominação, mudança de endereço ou substituição do responsável pela da microfilmagem.</item>
+                    <item id="1246">Cópia autenticada do contrato social;</item>
+                    <item id="1247">Cartão de CNPJ;</item>
+                    <item id="1248">Cópia autenticada do ato de nomeação do titular, e substituto, responsável pelo serviço notarial ou de registro;</item>
+                    <item id="1249">Qualificação completa dos dirigentes da empresa ou do titular do serviço notarial ou de registro e do responsável pela execução da microfilmagem;</item>
+                    <item id="1250">Comprovante de endereço da sede da empresa ou do serviço notarial ou de registro e do local da execução da microfilmagem;</item>
+                    <item id="1251">Descrição do equipamento a ser utilizado na microfilmagem e prova da sua titularidade;</item>
+                    <item id="1252">Declaração expressa do interessado na inscrição de que informará ao Ministério da Justiça e Cidadania eventuais alterações com relação à denominação, mudança de endereço ou substituição do responsável pela da microfilmagem.</item>
                 </default>
             </documentos>
             <custos>
@@ -48,37 +54,40 @@ Todas as entidades, antes de microfilmar documentos, devem solicitar ao  Minist�
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    <canal-de-prestacao id="1589" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Ministério da Justiça e Cidadania -
+                    <canal-de-prestacao id="1590" tipo="postal">
+                        <descricao>Ministério da Justiça e Cidadania -
 SNJC/DPJUS/ Divisão de Administração -
-Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.]]></descricao>
+Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Ministério da Justiça e Cidadania -
+                    <canal-de-prestacao id="1591" tipo="presencial">
+                        <descricao>Ministério da Justiça e Cidadania -
 Protocolo Geral -
-Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.]]></descricao>
+Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item idSegmento="3" idServicoSegmento="1491">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
-        <item>Proteção social</item>
+        <item>Fiscalização do Estado</item>
+        <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>microfilmagem</item>
-        <item>serviços de microfilmagem</item>
-        <item>registro de microfilmagem</item>
+        <item id="1107">microfilmagem</item>
+        <item id="1108">serviços de microfilmagem</item>
+        <item id="1109">registro de microfilmagem</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Lei 5.433/68](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1968-05-08;5433);
-[Decreto 1.799/96](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1996-01-30;1799)]]></item>
+        <item id="336">[Lei 5.433/68](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1968-05-08;5433);
+[Decreto 1.799/96](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1996-01-30;1799)</item>
     </legislacoes>
 </servico>
