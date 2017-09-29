@@ -1,38 +1,44 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>solicitar-equipamentos-recondicionados-para-ponto-de-inclusao-digital</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-equipamentos-recondicionados-para-ponto-de-inclusao-digital</id>
+    <dbId>498</dbId>
+    <nome>Solicitar equipamentos recondicionados para Ponto de Inclusão Digital</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Pedido de equipamentos para telecentros</item>
+        <item id="456">Pedido de equipamentos para telecentros</item>
     </nomes-populares>
-    <descricao><![CDATA[Doação de equipamentos recondicionados e em condições de uso para locais propostos por organizações da sociedade civil e/ou equipamentos públicos de governos estaduais ou municipais, tais como telecentros, laboratórios de informática e bibliotecas. 
+    <descricao>Doação de equipamentos recondicionados e em condições de uso para locais propostos por organizações da sociedade civil e/ou equipamentos públicos de governos estaduais ou municipais, tais como telecentros, laboratórios de informática e bibliotecas. 
 
-São destinos preferenciais dos equipamentos: os laboratórios de informática em escolas da rede pública, acesso para usuários de bibliotecas públicas, telecentros comunitários e outros projetos de inclusão digital com impacto estratégico.]]></descricao>
-    <contato><![CDATA[Projeto.ci@comunicacoes.gov.br
+São destinos preferenciais dos equipamentos: os laboratórios de informática em escolas da rede pública, acesso para usuários de bibliotecas públicas, telecentros comunitários e outros projetos de inclusão digital com impacto estratégico.</descricao>
+    <contato>Projeto.ci@comunicacoes.gov.br
 
-Telefone: (61) 2027-5379/6608/6969]]></contato>
+Telefone: (61) 2027-5379/6608/6969</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="522">
             <tipo>Organizações da Sociedade Civil Sem Fins Lucrativos</tipo>
-            <requisitos><![CDATA[Possuir CNPJ válido,  preencher o cadastro disponibilizado pelo Ministério, informando o(s) Ponto(s) de Inclusão Digital (PIDs) onde deseja instalar os equipamentos. Podem ser considerados PIDs os telecentros, centros de inclusão digital, salas e laboratórios de informática, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.]]></requisitos>
+            <requisitos>Possuir CNPJ válido,  preencher o cadastro disponibilizado pelo Ministério, informando o(s) Ponto(s) de Inclusão Digital (PIDs) onde deseja instalar os equipamentos. Podem ser considerados PIDs os telecentros, centros de inclusão digital, salas e laboratórios de informática, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="523">
             <tipo>Secretarias de governos estaduais ou municipais</tipo>
-            <requisitos><![CDATA[Preencher o cadastro disponibilizado pelo Ministério, informando o(s) Ponto(s) de Inclusão Digital (PIDs) onde deseja instalar os equipamentos. Podem ser considerados PIDs os telecentros, centros de inclusão digital, salas e laboratórios de informática, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.]]></requisitos>
+            <requisitos>Preencher o cadastro disponibilizado pelo Ministério, informando o(s) Ponto(s) de Inclusão Digital (PIDs) onde deseja instalar os equipamentos. Podem ser considerados PIDs os telecentros, centros de inclusão digital, salas e laboratórios de informática, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="8" min="3" unidade="meses"/>
-        <descricao><![CDATA[O tempo de atendimento do pedido depende da disponibilidade de equipamentos pelos Centros de Recondicionamentos (CRC) conveniados com o Ministério, bem como da logística do CRC em cada região.]]></descricao>
+        <entre min="3" max="8" unidade="meses"/>
+        <descricao>O tempo de atendimento do pedido depende da disponibilidade de equipamentos pelos Centros de Recondicionamentos (CRC) conveniados com o Ministério, bem como da logística do CRC em cada região.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1621">
             <titulo>Preenchimento do formulário</titulo>
-            <descricao><![CDATA[Cadastro do Ponto de Inclusão Digital onde deseja instalar os equipamentos recondicionados e especificação da demanda por meio do formulário disponibilizado no link: http://simmc.c3sl.ufpr.br/#/pid]]></descricao>
+            <descricao>Cadastro do Ponto de Inclusão Digital onde deseja instalar os equipamentos recondicionados e especificação da demanda por meio do formulário disponibilizado no link: http://simmc.c3sl.ufpr.br/#/pid</descricao>
             <documentos>
                 <default>
-                    <item>Dados do solicitante e do Ponto de Inclusão Digital</item>
+                    <item id="1429">Dados do solicitante e do Ponto de Inclusão Digital</item>
                 </default>
             </documentos>
             <custos>
@@ -40,17 +46,19 @@ Telefone: (61) 2027-5379/6608/6969]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-preencher">
-                        <descricao><![CDATA[http://simmc.c3sl.ufpr.br/#/pid]]></descricao>
+                    <canal-de-prestacao id="2018" tipo="web-preencher">
+                        <descricao>http://simmc.c3sl.ufpr.br/#/pid</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Órgãos e entidades públicas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="1864">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="1865">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
@@ -64,13 +72,13 @@ Telefone: (61) 2027-5379/6608/6969]]></contato>
         <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Inclusão Digital</item>
-        <item>Tecnologias da Informação e Comunicação (TIC)</item>
-        <item>Telecentros</item>
-        <item>Equipamentos de Informática</item>
-        <item>Computadores recondicionados</item>
+        <item id="1314">Inclusão Digital</item>
+        <item id="1315">Tecnologias da Informação e Comunicação (TIC)</item>
+        <item id="1316">Telecentros</item>
+        <item id="1317">Equipamentos de Informática</item>
+        <item id="1318">Computadores recondicionados</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Lei nº 13.249 de 13 de Janeiro de 2016, que institui o Plano Plurianual 2016-2019.]]></item>
+        <item id="396">Lei nº 13.249 de 13 de Janeiro de 2016, que institui o Plano Plurianual 2016-2019.</item>
     </legislacoes>
 </servico>
