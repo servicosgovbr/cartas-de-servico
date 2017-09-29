@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
     <id>pedir-naturalizacao-ordinaria</id>
     <dbId>4</dbId>
-    <nome>Pedir Naturalização Ordinária</nome>
-    <sigla></sigla>
+    <nome>naturalizar-se-brasileiro</nome>
+    <sigla/>
     <nomes-populares>
         <item id="330">Naturalização</item>
     </nomes-populares>
@@ -35,7 +35,7 @@ Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="6" max="12" unidade="meses"/>
+        <entre max="12" min="6" unidade="meses"/>
         <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
     </tempo-total-estimado>
     <validade-documento/>
@@ -60,7 +60,7 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
                     <item id="1130">Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
                     <item id="1131">Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
                 </default>
-                <caso id="174" descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
+                <caso descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:" id="174">
                     <documento>
                         <id>1116</id>
                         <descricao>Além dos documentos listados acima, apresentar:</descricao>
@@ -78,8 +78,8 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             <custos>
                 <default>
                     <custo id="24">
-                        <descricao></descricao>
-                        <moeda></moeda>
+                        <descricao/>
+                        <moeda/>
                         <valor>29,664</valor>
                     </custo>
                 </default>
@@ -171,8 +171,8 @@ http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_ex
             <custos>
                 <default>
                     <custo id="25">
-                        <descricao></descricao>
-                        <moeda></moeda>
+                        <descricao/>
+                        <moeda/>
                         <valor>59,326</valor>
                     </custo>
                 </default>
