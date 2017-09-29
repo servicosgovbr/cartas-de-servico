@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>cadastramento-de-empresa-estrategica-de-defesa</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-empresa-estrategica-de-defesa</id>
     <dbId>263</dbId>
-    <nome>cadastrar-empresa-estrategica-de-defesa</nome>
-    <sigla/>
+    <nome>Cadastrar empresa estratégica de Defesa</nome>
+    <sigla></sigla>
     <descricao>Certificação da empresa como de defesa ou estratégia de defesa.</descricao>
     <contato>http://www.defesa.gov.br/industria-de-defesa</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="444">
             <tipo>Empresas candidatas</tipo>
@@ -16,9 +17,11 @@
     </solicitantes>
     <tempo-total-estimado>
         <ate max="6" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1296">
             <titulo>Busca de Informações</titulo>
@@ -34,7 +37,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="1597" tipo="presencial">
-                        <descricao/>
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -53,7 +56,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="1599" tipo="presencial">
-                        <descricao/>
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -72,7 +75,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="1603" tipo="presencial">
-                        <descricao/>
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -91,13 +94,15 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="1606" tipo="presencial">
-                        <descricao/>
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="41066"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="2" idServicoSegmento="1497">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
