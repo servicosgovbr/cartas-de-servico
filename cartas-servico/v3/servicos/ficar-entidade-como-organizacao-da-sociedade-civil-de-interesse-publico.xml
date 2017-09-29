@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
     <id>ficar-entidade-como-organizacao-da-sociedade-civil-de-interesse-publico</id>
     <dbId>359</dbId>
-    <nome>ficar entidade como Organização da Sociedade Civil de Interesse Público</nome>
+    <nome>qualificar-entidade-como-organizacao-da-sociedade-civil-de-interesse-publico</nome>
     <sigla>OSCIP</sigla>
     <nomes-populares>
         <item id="394">Certificado de qualificação como OSCIP, Lei nº 9.790/99</item>
@@ -24,10 +24,10 @@ NÃO é necessária a certificação como OSCIP para os fins dispostos na Lei n�
     </solicitantes>
     <tempo-total-estimado>
         <ate max="45" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <descricao/>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao/>
     </validade-documento>
     <etapas>
         <etapa id="1414">
@@ -46,7 +46,7 @@ ATENÇÃO: Não se esqueça de informar um endereço de e-mail válido no requer
                     <item id="1307">V - declaração afirmando que possui isenção do imposto de renda, assinada por seu representante legal;</item>
                     <item id="1308">VI - inscrição atualizada no Cadastro Nacional da Pessoa Jurídica.</item>
                 </default>
-                <caso id="216" descricao="Promoção da educação ou da saúde">
+                <caso descricao="Promoção da educação ou da saúde" id="216">
                     <documento>
                         <id>1302</id>
                         <descricao>Obs:  A entidade que tiver como finalidade a promoção da educação ou da saúde, na forma complementar, prevista em Lei, deverá fazer, no estatuto social, menção expressa de que os serviços prestados serão gratuitos.</descricao>
@@ -101,7 +101,7 @@ CEP: 70.064-900</descricao>
                 <default>
                     <item id="1312">Requerimento solicitando a alteração cadastral, com e-mail válido e identificação da entidade social, que deverá estar assinado pelo representante legal.</item>
                 </default>
-                <caso id="217" descricao="Em caso de alteração de endereço ou da razão social:">
+                <caso descricao="Em caso de alteração de endereço ou da razão social:" id="217">
                     <documento>
                         <id>1309</id>
                         <descricao>Cartão de CNPJ devidamente atualizado com o novo endereço e/ ou com a nova razão social; OU</descricao>
@@ -111,7 +111,7 @@ CEP: 70.064-900</descricao>
                         <descricao>Cópia autenticada e registrada em cartório da Ata da Assembleia que realizou a modificação.</descricao>
                     </documento>
                 </caso>
-                <caso id="218" descricao="Em caso de alteração da finalidade ou no estatuto social:">
+                <caso descricao="Em caso de alteração da finalidade ou no estatuto social:" id="218">
                     <documento>
                         <id>1311</id>
                         <descricao>Cópia autenticada do estatuto social consolidado e registrado em cartório.</descricao>
@@ -149,13 +149,13 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
                 <default>
                     <item id="1316">Requerimento solicitando a certidão de qualificação, com e-mail e identificação da entidade social, assinado pelo representante legal.</item>
                 </default>
-                <caso id="219" descricao="Caso o cadastro esteja atualizado:">
+                <caso descricao="Caso o cadastro esteja atualizado:" id="219">
                     <documento>
                         <id>1313</id>
                         <descricao>Declaração de que a Oscip está com seu cadastro atualizado, perante o Ministério da Justiça e Cidadania, relativamente ao seu endereço de sede, razão social, bem como alterações estatutárias que impliquem em mudança do seu regime de funcionamento.</descricao>
                     </documento>
                 </caso>
-                <caso id="220" descricao="Caso o cadastro esteja desatualizado:">
+                <caso descricao="Caso o cadastro esteja desatualizado:" id="220">
                     <documento>
                         <id>1314</id>
                         <descricao>Requerimento informando a alteração;</descricao>
@@ -199,13 +199,13 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
                     <item id="1324">Cópia autenticada da Ata de Eleição da atual diretoria registrada em cartório;</item>
                     <item id="1325">Declaração quanto ao recebimento de recursos públicos.</item>
                 </default>
-                <caso id="221" descricao="Caso não tenha recebido recursos públicos:">
+                <caso descricao="Caso não tenha recebido recursos públicos:" id="221">
                     <documento>
                         <id>1317</id>
                         <descricao>Declaração da entidade informando que não recebeu recursos de natureza pública.</descricao>
                     </documento>
                 </caso>
-                <caso id="222" descricao="Caso tenha recebido recursos públicos:">
+                <caso descricao="Caso tenha recebido recursos públicos:" id="222">
                     <documento>
                         <id>1318</id>
                         <descricao>Declaração da entidade informando que transferiu o acervo patrimonial, adquirido com recursos públicos, a outra OSCIP, conforme art. 4º, inciso V, da Lei 9.790/99;</descricao>
@@ -215,7 +215,7 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
                         <descricao>Declaração da entidade que recebeu a transferência.</descricao>
                     </documento>
                 </caso>
-                <caso id="223" descricao="Em caso de dissolução:">
+                <caso descricao="Em caso de dissolução:" id="223">
                     <documento>
                         <id>1321</id>
                         <descricao>Declaração da entidade, sob as penas da lei, informando que o respectivo patrimônio líquido foi transferido a outra pessoa jurídica qualificada nos termos do art. 4º, inciso IV, da Lei 9.790/99;</descricao>
@@ -255,7 +255,7 @@ CEP: 70.064-900 - Brasília – DF.</descricao>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+    <orgao dbId="37532" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316">
         <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
