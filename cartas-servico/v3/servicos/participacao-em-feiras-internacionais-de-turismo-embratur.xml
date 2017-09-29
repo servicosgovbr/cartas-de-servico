@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
     <id>participacao-em-feiras-internacionais-de-turismo-embratur</id>
     <dbId>418</dbId>
-    <nome>Participação em feiras internacionais de turismo - EMBRATUR</nome>
-    <sigla></sigla>
+    <nome>inscrever-se-para-participar-em-feiras-internacionais-de-turismo</nome>
+    <sigla/>
     <nomes-populares>
         <item id="413">feiras internacionais de turismo</item>
         <item id="414">feiras embratur</item>
@@ -32,11 +32,11 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
     <solicitantes>
         <solicitante id="930">
             <tipo>Entidades públicas e privadas cadastradas no Sistema de Controle de Inscrição em Eventos ( SCIE), conforme as regras estabelecidas na legislação.</tipo>
-            <requisitos></requisitos>
+            <requisitos/>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="30" max="180" unidade="dias-corridos"/>
+        <entre max="180" min="30" unidade="dias-corridos"/>
         <descricao>Tal prazo varia conforme a feira.</descricao>
     </tempo-total-estimado>
     <validade-documento/>
@@ -56,17 +56,17 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
                         <descricao>inscricao.feiras@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="232" descricao="Portal Embratur &gt; AGENDA DE EVENTOS">
+                <caso descricao="Portal Embratur &gt; AGENDA DE EVENTOS" id="232">
                     <canal-de-prestacao id="1854" tipo="web-consultar">
                         <descricao>http://www.embratur.gov.br/piembratur-new/opencms/agenda_eventos/index.html</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="233" descricao="Portal Embratur &gt; SISTEMA DE CONTROLE DE INSCRIÇÕES EM EVENTOS (SCIE)">
+                <caso descricao="Portal Embratur &gt; SISTEMA DE CONTROLE DE INSCRIÇÕES EM EVENTOS (SCIE)" id="233">
                     <canal-de-prestacao id="1855" tipo="web-consultar">
                         <descricao>http://www.scie.embratur.gov.br/scie/inicio.jsf</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="234" descricao="Telefone">
+                <caso descricao="Telefone" id="234">
                     <canal-de-prestacao id="1856" tipo="telefone">
                         <descricao>61 2023 8632</descricao>
                     </canal-de-prestacao>
