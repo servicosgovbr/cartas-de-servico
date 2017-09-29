@@ -1,39 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>readquirir-direitos-politicos</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>readquirir-direitos-politicos</id>
+    <dbId>291</dbId>
+    <nome>Readquirir Direitos Políticos</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Reaquisição</item>
-        <item>Readquiri os direitos políticos</item>
+        <item id="380">Reaquisição</item>
+        <item id="381">Readquiri os direitos políticos</item>
     </nomes-populares>
-    <descricao><![CDATA[É o ato pelo qual uma pessoa readquire voluntariamente os direitos políticos que tinha perdido.]]></descricao>
-    <contato><![CDATA[E-mail:processos.migracoes@mj.gov.br
-Site: http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade]]></contato>
+    <descricao>É o ato pelo qual uma pessoa readquire voluntariamente os direitos políticos que tinha perdido.</descricao>
+    <contato>E-mail:processos.migracoes@mj.gov.br
+Site: http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="446">
             <tipo>Brasileiro nato</tipo>
-            <requisitos><![CDATA[-Sexo masculino
+            <requisitos>-Sexo masculino
 
 -Maior de 45 anos
 
--que tenha perdido seus direitos políticos pela não prestação do serviço militar, em razão de convicção religiosa]]></requisitos>
+-que tenha perdido seus direitos políticos pela não prestação do serviço militar, em razão de convicção religiosa</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="45" min="30" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="30" max="45" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1328">
             <titulo>Apresentar Requerimento</titulo>
-            <descricao><![CDATA[O requerimento deve conter nome completo, nacionalidade, data de nascimento, filiação, data em que perdeu seus direitos políticos.
+            <descricao>O requerimento deve conter nome completo, nacionalidade, data de nascimento, filiação, data em que perdeu seus direitos políticos.
 
-PS: Dispensa o auxílio de advogado.]]></descricao>
+PS: Dispensa o auxílio de advogado.</descricao>
             <documentos>
                 <default>
-                    <item>Atestado de eximido ou Decreto/Portaria que declarou a Perda dos Direitos Políticos;</item>
-                    <item>Cópia autenticada da Carteira de identidade.</item>
+                    <item id="1257">Atestado de eximido ou Decreto/Portaria que declarou a Perda dos Direitos Políticos;</item>
+                    <item id="1258">Cópia autenticada da Carteira de identidade.</item>
                 </default>
             </documentos>
             <custos>
@@ -41,37 +47,39 @@ PS: Dispensa o auxílio de advogado.]]></descricao>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf]]></descricao>
+                    <canal-de-prestacao id="1640" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Ministério da Justiça e Cidadania – Departamento de Migrações, Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900]]></descricao>
+                    <canal-de-prestacao id="1641" tipo="postal">
+                        <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações, Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Ministério da Justiça e Cidadania – Departamento de Migrações, Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900]]></descricao>
+                    <canal-de-prestacao id="1642" tipo="presencial">
+                        <descricao>Ministério da Justiça e Cidadania – Departamento de Migrações, Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF, CEP: 70.064-900</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1536">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Direitos políticos</item>
-        <item>Reaquisição</item>
-        <item>Readquirir</item>
+        <item id="1117">Direitos políticos</item>
+        <item id="1118">Reaquisição</item>
+        <item id="1119">Readquirir</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Lei 818/49, artigo 38 a 46](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1949-09-18;818)
+        <item id="339">[Lei 818/49, artigo 38 a 46](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1949-09-18;818)
 
 [Lei 8.239/91](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1991-10-04;8239)
 [Constituição Federal, artigo 15, IV c/c artigo 5º, VIII](http://www.lexml.gov.br/urn/urn:lex:br:federal:constituicao:1988-10-05;1988)
 
-Portaria 1.949/2015: Segue link: http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/11/2015&jornal=1&pagina=53&totalArquivos=148)]]></item>
+Portaria 1.949/2015: Segue link: http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=26/11/2015&amp;jornal=1&amp;pagina=53&amp;totalArquivos=148)</item>
     </legislacoes>
 </servico>
