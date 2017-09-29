@@ -1,35 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>solicitar-conexao-gesac</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-conexao-gesac</id>
+    <dbId>203</dbId>
+    <nome>Solicitar conexão GESAC</nome>
     <sigla>GESAC</sigla>
     <nomes-populares>
-        <item>Conexão banda larga via satélite</item>
-        <item>Ponto de presença GESAC</item>
-        <item>Governo Eletrônico - Serviço de Atendimento ao Cidadão</item>
+        <item id="361">Conexão banda larga via satélite</item>
+        <item id="362">Ponto de presença GESAC</item>
+        <item id="363">Governo Eletrônico - Serviço de Atendimento ao Cidadão</item>
     </nomes-populares>
-    <descricao><![CDATA[Fornecimento de conexão à internet de telecentros, escolas públicas e demais espaços de uso público localizados em áreas rurais, remotas e de zonas urbanas de periferia com concentração de populações de baixa renda, com dificuldades de acesso aos serviços prestados pelas operadoras atuantes no mercado.
+    <descricao>Fornecimento de conexão à internet de telecentros, escolas públicas e demais espaços de uso público localizados em áreas rurais, remotas e de zonas urbanas de periferia com concentração de populações de baixa renda, com dificuldades de acesso aos serviços prestados pelas operadoras atuantes no mercado.
 
-http://www.mc.gov.br/gesac]]></descricao>
-    <contato><![CDATA[Secretaria de Inclusão Digital - SID
+http://www.mc.gov.br/gesac</descricao>
+    <contato>Secretaria de Inclusão Digital - SID
 
 admpp.gesac@comunicacoes.gov.br
 
-(61) 2027-6292/6391]]></contato>
+(61) 2027-6292/6391</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="429">
             <tipo>Pontos de Inclusão Digital - PID</tipo>
-            <requisitos><![CDATA[Podem ser considerados Pontos de Inclusão Digital (PIDs) os telecentros, infocentros, centros de inclusão digital, salas e laboratórios de informática, bibliotecas híbridas, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.]]></requisitos>
+            <requisitos>Podem ser considerados Pontos de Inclusão Digital (PIDs) os telecentros, infocentros, centros de inclusão digital, salas e laboratórios de informática, bibliotecas híbridas, entre outros pontos de promoção do acesso público e gratuito às tecnologias da informação e comunicação.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="90" min="30" unidade="dias-corridos"/>
-        <descricao><![CDATA[O tempo somente será computado se o local constar na lista para atendimento.]]></descricao>
+        <entre min="30" max="90" unidade="dias-corridos"/>
+        <descricao>O tempo somente será computado se o local constar na lista para atendimento.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1225">
             <titulo>Registro da solicitação</titulo>
-            <descricao><![CDATA[Solicitar conexão para o Ponto de Inclusão Digital - PID]]></descricao>
+            <descricao>Solicitar conexão para o Ponto de Inclusão Digital - PID</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -38,21 +44,23 @@ admpp.gesac@comunicacoes.gov.br
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[admpp.gesac@comunicacoes.gov.br]]></descricao>
+                    <canal-de-prestacao id="1508" tipo="e-mail">
+                        <descricao>admpp.gesac@comunicacoes.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
-                        <descricao><![CDATA[(61) 2027-6292/6391]]></descricao>
+                    <canal-de-prestacao id="1509" tipo="telefone">
+                        <descricao>(61) 2027-6292/6391</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Órgãos e entidades públicas</item>
-        <item>Cidadãos</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="1400">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="1401">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="1402">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Assistência Hospitalar e Ambulatorial</item>
@@ -72,13 +80,13 @@ admpp.gesac@comunicacoes.gov.br
         <item>Telecomunicações</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>GESAC</item>
-        <item>Ponto de Presença</item>
-        <item>Conexão</item>
-        <item>Banda Larga</item>
-        <item>Satélite</item>
+        <item id="1078">GESAC</item>
+        <item id="1079">Ponto de Presença</item>
+        <item id="1080">Conexão</item>
+        <item id="1081">Banda Larga</item>
+        <item id="1082">Satélite</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Portaria nº 2.662, de 13 de novembro de 2014, Art. 2º.]]></item>
+        <item id="328">Portaria nº 2.662, de 13 de novembro de 2014, Art. 2º.</item>
     </legislacoes>
 </servico>
