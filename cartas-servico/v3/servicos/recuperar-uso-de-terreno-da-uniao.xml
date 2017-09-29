@@ -1,31 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>recuperar-uso-de-terreno-da-uniao</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>recuperar-uso-de-terreno-da-uniao</id>
+    <dbId>33</dbId>
+    <nome>Recuperar uso de terreno da União</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Recuperar uso do terreno</item>
+        <item id="555">Recuperar uso do terreno</item>
+        <item id="856">Requerimento de Revigoração de Aforamento</item>
     </nomes-populares>
-    <descricao><![CDATA[Este serviço permite solicitar o restabelecimento do aforamento que perdeu seu efeito em decorrência do não pagamento do foro durante 3 anos consecutivos ou 4 anos intercalados.]]></descricao>
-    <contato/>
+    <descricao>Este serviço permite solicitar o restabelecimento do aforamento que perdeu seu efeito em decorrência do não pagamento do foro durante 3 anos consecutivos ou 4 anos intercalados.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="678">
             <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos><![CDATA[Que seja foreiro ou adquirente de imóvel da União com declaração de caducidade do aforamento]]></requisitos>
+            <requisitos>Que seja foreiro ou adquirente de imóvel da União com declaração de caducidade do aforamento</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
+        <descricao>Não há prazo estipulado</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1951">
             <titulo>Acesse o portal da SPU e insira o RIP e CPF ou CNPJ</titulo>
-            <descricao><![CDATA[Digite o RIP e CPF ou CNPJ, quando exigido, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço]]></descricao>
+            <descricao>Digite o RIP e CPF ou CNPJ, quando exigido, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço</descricao>
             <documentos>
                 <default>
-                    <item>CPF/CNPJ</item>
-                    <item>RIP do imóvel</item>
+                    <item id="1899">CPF/CNPJ</item>
+                    <item id="1900">RIP do imóvel</item>
                 </default>
             </documentos>
             <custos>
@@ -33,15 +40,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29]]></descricao>
+                    <canal-de-prestacao id="2430" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1952">
             <titulo>Preencha as informações solicitadas</titulo>
-            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
+            <descricao>Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -50,15 +57,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29]]></descricao>
+                    <canal-de-prestacao id="2431" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1953">
             <titulo>Confira toda a documentação apresentada</titulo>
-            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <descricao>Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -67,15 +74,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29]]></descricao>
+                    <canal-de-prestacao id="2432" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1954">
             <titulo>Acompanhe o status do seu atendimento</titulo>
-            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <descricao>Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -84,28 +91,30 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29]]></descricao>
+                    <canal-de-prestacao id="2433" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2216">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2217">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>reaforar</item>
-        <item>revigoração</item>
-        <item>aforamento</item>
+        <item id="1625">reaforar</item>
+        <item id="1626">revigoração</item>
+        <item id="1627">aforamento</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Decreto-Lei 2.490/1940,
+        <item id="520">Decreto-Lei 2.490/1940,
 Decreto-Lei 3.438/1941,
 Lei 5.666/1943,
 Decreto-Lei 9.760/1946,
@@ -115,6 +124,6 @@ Decreto-Lei 95.760/1988,
 Lei 9.636/1988,
 Lei 9.821/1999,
 Decreto 3.725/2001,
-ON/SPU/GEANE 001/2002 e ON/SPU/GEANE 002/2002]]></item>
+ON/SPU/GEANE 001/2002 e ON/SPU/GEANE 002/2002</item>
     </legislacoes>
 </servico>
