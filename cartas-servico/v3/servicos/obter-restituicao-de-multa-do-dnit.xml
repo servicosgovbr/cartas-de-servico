@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
     <id>obter-restituicao-de-multa-do-dnit</id>
     <dbId>282</dbId>
-    <nome>Obter restituição de multa do DNIT</nome>
+    <nome>realizar-recurso-contra-multa</nome>
     <sigla>Recurso</sigla>
     <nomes-populares>
         <item id="493">Recurso de Multa</item>
@@ -22,7 +22,7 @@
         <descricao>O prazo para interpor o Recurso será aquele constante na Notificação de Penalidade, não sendo este inferior a 30 (trinta) dias contados da data em que o infrator recebeu a Notificação de Penalidade em seu domicílio.</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao/>
     </validade-documento>
     <etapas>
         <etapa id="1790">
@@ -55,13 +55,13 @@
                     <item id="1530">Fotocópia do CPF/CNPJ</item>
                     <item id="1531">Outros documentos que considerar necessários para apoiar as razões alegadas</item>
                 </default>
-                <caso id="272" descricao="Pessoa Jurídica">
+                <caso descricao="Pessoa Jurídica" id="272">
                     <documento>
                         <id>1525</id>
                         <descricao>Se Pessoa Jurídica: Cópia do Estatuto e/ou da última alteração de Contrato Social</descricao>
                     </documento>
                 </caso>
-                <caso id="273" descricao="Recorrente não proprietário do Veículo">
+                <caso descricao="Recorrente não proprietário do Veículo" id="273">
                     <documento>
                         <id>1526</id>
                         <descricao>Anexar a procuração de poderes para recorrer</descricao>
@@ -121,7 +121,7 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/62068" dbId="27757">
+    <orgao dbId="27757" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/62068">
         <nomeOrgao>Diretoria de Infraestrutura Rodoviária (DET-DNIT)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
