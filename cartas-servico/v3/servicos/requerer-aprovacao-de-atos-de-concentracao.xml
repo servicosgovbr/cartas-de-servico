@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
+    <nome>requerer-aprovacao-de-atos-de-concentracao</nome>
+    <sigla/>
+    <nomes-populares>
+        <item>Peticionamento Eletrônico</item>
+        <item>Notificação de AC</item>
+    </nomes-populares>
+    <descricao><![CDATA[O Cade tem como competência analisar os aspectos concorrenciais de atos de concentração (como, por exemplo, fusões e aquisições entre empresas) cuja notificação à autarquia é obrigatória. Após a assinatura do instrumento formal que vincule as partes envolvidas, os interessados devem submeter pedido de aprovação do ato ao Cade.]]></descricao>
+    <contato><![CDATA[SEPN 515 CONJUNTO D, LOTE 4 ED. CARLOS TAURISANO CEP: 70770-504 - BRASÍLIA/DF Email: cade@cade.gov.br Fone: (61) 3221 8500]]></contato>
+    <gratuito>false</gratuito>
+    <solicitantes>
+        <solicitante>
+            <tipo>Empresas ou Grupos que realizem atos de concentração</tipo>
+            <requisitos><![CDATA[Empresas ou Grupos que realizem atos de concentração que são de notificação obrigatória ao Cade. Os advogados das empresas que estão submetendo o ato de concentração devem ter legitimidade para autuar em nome da requerente. Para tanto, o documento "Procuração" é indispensável.]]></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="40" min="20" unidade="minutos"/>
+        <descricao><![CDATA[Entre 20 e 40 minutos é o tempo estimado para a notificação de um ato de contração ao Cade. Já a análise da operação pelo órgão deve ocorrer em, no máximo, 240 dias, prorrogáveis por mais 90. 
+Por meio do "Guia para Peticionamento Eletrônico no Cade", disponível na página principal do site da autarquia, o usuário pode iniciar o processo em minutos. No entanto, o pagamento de taxa processual é um requisito para sua análise. Após o pagamento, inicia-se a análise da operação.]]></descricao>
+    </tempo-total-estimado>
+    <etapas>
+        <etapa>
+            <titulo>Cadastrar no Sistema Eletrônico de Informações (Sei)</titulo>
+            <descricao><![CDATA[A opção está disponível no site da autarquia (www.cade.gov.br) no ambiente voltado ao usuário externo. Por meio “SEI- usuário externo”, o usuário efetuará pré cadastro e enviará documento autenticado contendo CPF para o email sei@cade.gov.br para liberação do cadastro.]]></descricao>
+            <documentos>
+                <default>
+                    <item>CPF e RG</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao/>
+                        <moeda/>
+                        <valor>0</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[<a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" target="_blank"> Acesse o site</a></br]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Preecher formuário de notificação</titulo>
+            <descricao><![CDATA[Após o cadastro, o usuário deve entrar no ambiente de usuário externo e clicar na aba "notificação de Ato de Concentração" para preencher o formulário. Nessa etapa o guia de peticionamento eletrônico pode ser utilizado para auxiliar no preenchimento correto.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Toda a documentação necessária constante da lei 12.529/2011, como formulário, petição, organograma, procuração, guia de recolhimento da união, entre outros.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-preencher">
+                        <descricao><![CDATA[<a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" target="_blank">]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Pagar taxa processual</titulo>
+            <descricao><![CDATA[O pagamento da taxa processual para processos que têm como fato gerador a apresentação de atos de concentração é um requisito necessário para que a análise da operação seja realizada pelo Cade. O valor da taxa e a emissão do guia de recolhimento estão disponíveis na aba "taxas processuais" do site do Cade.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Guia de Recolhimento da União- GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Taxa Processual]]></descricao>
+                        <moeda/>
+                        <valor>85.000,00</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web-emitir">
+                        <descricao><![CDATA[<a href="http://www.cade.gov.br/servicos/taxas/taxa-processual" target="_blank">]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa>
+            <titulo>Analisar o ato de concentração</titulo>
+            <descricao><![CDATA[Ao analisar um ato de concentração, o Cade observa, por exemplo, a participação de mercado das empresas envolvidas na operação; se há existência ou não de rivalidade por parte dos concorrentes; além de outros aspectos relacionados ao setor em análise. O Cade zela pela preservação da concorrência.
+Após a conclusão da análise, o Cade decide pela aprovação, com restrições ou sem restrições, ou pela reprovação da operação. As decisões do órgão são publicadas no Diário Oficial da União.]]></descricao>
+            <documentos>
+                <default>
+                    <item>Formulário de notificação.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo>
+                        <descricao><![CDATA[Taxa Processual:]]></descricao>
+                        <moeda/>
+                        <valor>85.000,00</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao tipo="web">
+                        <descricao><![CDATA[<a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" target="_blank"> Acesse o site</a></br]]></descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/322"/>
+    <segmentos-da-sociedade>
+        <item>Cidadãos</item>
+        <item>Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Sistema Financeiro</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item>Atos de Concentração</item>
+        <item>Fusão</item>
+        <item>Empresas</item>
+        <item>Peticionamento Eletrônico</item>
+    </palavras-chave>
+    <legislacoes>
+        <item><![CDATA[<a href="http://www.cade.gov.br/upload/Resolu%C3%A7%C3%A3o%202_2012%20-%20An%C3%A1lise%20Atos%20Concentra%C3%A7%C3%A3o.pdf" target="_blank"> Resolução nº 2, de 29 de maio de 2012 - Disciplina a notificação de atos de concentração</a></br>]]></item>
+        <item><![CDATA[<a href="http://www.cade.gov.br/upload/Despacho%20339%20-%20Resolu%C3%A7%C3%A3o%20n%C2%BA%2011%20de%202014.pdf" target="_blank"> Resolução nº 11, de 24 de novembro de 2014 - Institui o Sistema Eletrônico de Informações – SEI como sistema oficial de gestão de documentos eletrônicos do Cade</a></br>]]></item>
+        <item><![CDATA[<a href="http://www.cade.gov.br/upload/CADE%20-%20Resolu%C3%A7%C3%A3o%2014-2015%20(002).pdf" target="_blank"> Resolução nº 14, de 14 de outubro de 2015 - Institui o protocolo eletrônico no âmbito do Cade</a></br>]]></item>
+    </legislacoes>
+</servico>
