@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>solicitar-permanencia</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-visto-de-permanencia-definitiva</id>
     <dbId>712</dbId>
-    <nome>obter-visto-de-permanencia-definitiva</nome>
-    <sigla/>
+    <nome>Obter visto de permanência definitiva</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="538">Permanência</item>
     </nomes-populares>
     <descricao>É o direito de um estrangeiro requerer sua fixação definitiva  no Brasil quando se enquadrar em uma das situações previstas na legislação.</descricao>
     <contato>processos.migracoes@mj.gov.br</contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="631">
             <tipo>Estrangeiro dependente (ou com vinculo familiar) de brasileiro (a) ou de estrangeiro (a) permanente</tipo>
@@ -42,7 +43,7 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="270" min="30" unidade="dias-corridos"/>
+        <entre min="30" max="270" unidade="dias-corridos"/>
         <descricao>O tempo pode variar de acordo com o tipo e a complexidade do pedido.</descricao>
     </tempo-total-estimado>
     <validade-documento>
@@ -65,7 +66,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                     <item id="1868">2 fotos tamanho 3x4 recentes,coloridas e com o fundo branco</item>
                     <item id="1869">Declaração de não condenação penal no Brasil ou no exterior (exceto para menores)</item>
                 </default>
-                <caso descricao="Permanência por ter Filha(o) Brasileira(o)" id="315">
+                <caso id="315" descricao="Permanência por ter Filha(o) Brasileira(o)">
                     <documento>
                         <id>1837</id>
                         <descricao>Cópia da certidão de nascimento do filho brasileiro;</descricao>
@@ -79,7 +80,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Declaração de que o(s) filho(s) vive(m) sob guarda e dependência econômica do interessado;</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Permanência por Casamento com brasileira(o)" id="316">
+                <caso id="316" descricao="Permanência por Casamento com brasileira(o)">
                     <documento>
                         <id>1840</id>
                         <descricao>Cópia da certidão de casamento;</descricao>
@@ -93,7 +94,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Declaração de que os cônjuges não estão separados de fato.</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Permanência por União Estável" id="317">
+                <caso id="317" descricao="Permanência por União Estável">
                     <documento>
                         <id>1843</id>
                         <descricao>Atestado de antecedentes criminais no país de origem;</descricao>
@@ -119,7 +120,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Declaração, sob as penas da lei, do estado civil do chamado (solicitante) no país de origem;</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Permanência pelo Mercosul" id="318">
+                <caso id="318" descricao="Permanência pelo Mercosul">
                     <documento>
                         <id>1850</id>
                         <descricao>Certidão negativa de antecedentes judiciais e/ou penais e/ou policiais, no Brasil (residência permanente)</descricao>
@@ -133,13 +134,13 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Cópia do Registro de Estrangeiro no país ou Certidão de Residência Temporária  (para residência permanente);</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Permanência pelo Acordo Brasil-Argentina (Decreto 6.736/2009)" id="319">
+                <caso id="319" descricao="Permanência pelo Acordo Brasil-Argentina (Decreto 6.736/2009)">
                     <documento>
                         <id>1853</id>
                         <descricao>Certidão negativa de antecedentes judiciais e/ou penais e/ou policiais no país em que tenha residido nos cinco anos anteriores à apresentação do pedido;</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Restabelecimento de Permanência" id="320">
+                <caso id="320" descricao="Restabelecimento de Permanência">
                     <documento>
                         <id>1854</id>
                         <descricao>Cópia do Registro de Estrangeiro no país;</descricao>
@@ -153,7 +154,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Declaração de ausências do Brasil, especificando datas de ingressos e saídas do território nacional, com os respectivos destinos e motivos;</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Transformação de Visto de Missionário ou de Religioso em permanência" id="321">
+                <caso id="321" descricao="Transformação de Visto de Missionário ou de Religioso em permanência">
                     <documento>
                         <id>1857</id>
                         <descricao>Cópia do Registro de Estrangeiro no país;</descricao>
@@ -167,7 +168,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Declaração da entidade religiosa de que não atua em área indígena ou apresentação de autorização da Funai</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Transformação do Visto de Trabalho em permanência" id="323">
+                <caso id="323" descricao="Transformação do Visto de Trabalho em permanência">
                     <documento>
                         <id>1861</id>
                         <descricao>Cópia do contrato de trabalho inicial e do contrato de trabalho vigente;</descricao>
@@ -189,7 +190,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                         <descricao>Justificativa do próprio solicitante sobre sua pretensão de fixar-se definitivamente no Brasil</descricao>
                     </documento>
                 </caso>
-                <caso descricao="Estrangeiro proveniente de país membro da Comunidade dos Países de Língua Portuguesa-CPLP" id="363">
+                <caso id="363" descricao="Estrangeiro proveniente de país membro da Comunidade dos Países de Língua Portuguesa-CPLP">
                     <documento>
                         <id>2507</id>
                         <descricao>Isenção de Taxa de Permanência ou Transformação de Visto</descricao>
@@ -200,7 +201,7 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
                 <default>
                     <custo id="92">
                         <descricao>Taxa de Permanência ou Taxa de Transformação de Visto</descricao>
-                        <moeda/>
+                        <moeda>R$</moeda>
                         <valor>168,130</valor>
                     </custo>
                 </default>
@@ -228,15 +229,15 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
             </documentos>
             <custos>
                 <default>
-                    <custo id="91">
-                        <descricao>Taxa Registro de Estrangeiros/Restabelecimento de Registro</descricao>
-                        <moeda/>
-                        <valor>106,450</valor>
-                    </custo>
                     <custo id="90">
                         <descricao>Taxa de emissão da Carteira de Identidade de Estrangeiro</descricao>
-                        <moeda/>
+                        <moeda>R$</moeda>
                         <valor>204,770</valor>
+                    </custo>
+                    <custo id="91">
+                        <descricao>Taxa Registro de Estrangeiros/Restabelecimento de Registro</descricao>
+                        <moeda>R$</moeda>
+                        <valor>106,450</valor>
                     </custo>
                 </default>
             </custos>
@@ -272,7 +273,9 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="316"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2156">Cidadãos</item>
     </segmentos-da-sociedade>
