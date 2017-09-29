@@ -1,26 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>conferir-autenticidade-de-certidoes-patrimoniais-da-uniao</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Este serviço permite verificar a autenticidade de Certidão Negativa de Débitos Patrimoniais do Imóvel e do Responsável, Certidão de Situação de Ocupação/Aforamento e Certidão de Inteiro Teor do Imóvel.]]></descricao>
-    <contato/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>conferir-autenticidade-de-certidoes-patrimoniais-da-uniao</id>
+    <dbId>22</dbId>
+    <nome>Conferir autenticidade de certidões patrimoniais da União</nome>
+    <sigla></sigla>
+    <descricao>Este serviço permite verificar a autenticidade de Certidão Negativa de Débitos Patrimoniais do Imóvel e do Responsável, Certidão de Situação de Ocupação/Aforamento e Certidão de Inteiro Teor do Imóvel.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="649">
             <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos><![CDATA[Que necessite verificar a autenticidade de certidões emitidas pela SPU.]]></requisitos>
+            <requisitos>Que necessite verificar a autenticidade de certidões emitidas pela SPU.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="minutos"/>
-        <descricao><![CDATA[Não há prazo estipulado.]]></descricao>
+        <descricao>Não há prazo estipulado.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1903">
             <titulo>Acesse o portal da SPU e preencha as informações solicitadas</titulo>
-            <descricao><![CDATA[Selecione o tipo de certidão (Negativa de Débitos Patrimoninais do Imóvel, Certidão Negativa de Débitos Patrimoniais do Responsável, Certidão de Situação de Ocupação/Aforamento, Certidão de Inteiro Teor do Imóvel, Certidão de Domínio da União), Número do RIP, CPF/CNPJ, Data de Emissão, Hora de Emissão (hhmmss) e 
-Código de Controle.]]></descricao>
+            <descricao>Selecione o tipo de certidão (Negativa de Débitos Patrimoninais do Imóvel, Certidão Negativa de Débitos Patrimoniais do Responsável, Certidão de Situação de Ocupação/Aforamento, Certidão de Inteiro Teor do Imóvel, Certidão de Domínio da União), Número do RIP, CPF/CNPJ, Data de Emissão, Hora de Emissão (hhmmss) e 
+Código de Controle.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -29,29 +34,31 @@ Código de Controle.]]></descricao>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/conteudo/23]]></descricao>
+                    <canal-de-prestacao id="2382" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/23</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2170">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2171">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
         <item>Patrimônio</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>autenticidade</item>
-        <item>certidão</item>
-        <item>validação</item>
-        <item>certidões</item>
+        <item id="1564">autenticidade</item>
+        <item id="1565">certidão</item>
+        <item id="1566">validação</item>
+        <item id="1567">certidões</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[...]]></item>
+        <item id="505">...</item>
     </legislacoes>
 </servico>
