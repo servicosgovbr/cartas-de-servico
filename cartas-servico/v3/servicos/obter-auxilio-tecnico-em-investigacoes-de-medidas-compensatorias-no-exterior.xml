@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>apoiar-o-exportador-brasileiro-investigado-no-exterior</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-auxilio-tecnico-em-investigacoes-de-medidas-compensatorias-no-exterior</id>
     <dbId>746</dbId>
-    <nome>obter-auxilio-tecnico-em-investigacoes-de-medidas-compensatorias-no-exterior</nome>
-    <sigla/>
+    <nome>Obter auxílio técnico em investigações de medidas compensatórias no exterior</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="579">Apoio ao exportador</item>
     </nomes-populares>
@@ -13,17 +13,21 @@ Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Bra
 Telefone: (61) 2027-7000
 Endereço Eletrônico: http://www.mdic.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="720">
             <tipo>Empresas</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="18" unidade="meses"/>
         <descricao>O tempo de atuação do DECOM varia conforme as características de cada investigação e as demandas do usuário. O prazo máximo para encerramento de uma investigação de defesa comercial, conforme disposição dos acordos multilaterais da Organização Mundial do Comércio, é de 18 meses.</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2005">
             <titulo>Emissão de notificações das fases do processo e informações relevantes recebidas das autoridades investigadoras estrangeiras</titulo>
@@ -57,11 +61,11 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2502" tipo="e-mail">
-                        <descricao>decom@mdic.gov.br</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2501" tipo="telefone">
                         <descricao>(61) 2027-7770</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2502" tipo="e-mail">
+                        <descricao>decom@mdic.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -79,17 +83,19 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2504" tipo="e-mail">
-                        <descricao>decom@mdic.gov.br</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2503" tipo="telefone">
                         <descricao>(61) 2027-7770</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2504" tipo="e-mail">
+                        <descricao>decom@mdic.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="2292">Empresas</item>
     </segmentos-da-sociedade>
