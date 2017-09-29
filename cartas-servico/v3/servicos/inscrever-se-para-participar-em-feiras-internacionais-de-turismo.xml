@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>participacao-em-feiras-internacionais-de-turismo-embratur</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>inscrever-se-para-participar-em-feiras-internacionais-de-turismo</id>
     <dbId>418</dbId>
-    <nome>inscrever-se-para-participar-em-feiras-internacionais-de-turismo</nome>
-    <sigla/>
+    <nome>Inscrever-se para participar em feiras internacionais de turismo</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="413">feiras internacionais de turismo</item>
         <item id="414">feiras embratur</item>
@@ -28,18 +28,21 @@ Divisão de Feiras (DFE)
 Telefone: 61 2023 8632 
 E-mail: inscricao.feiras@embratur.gov.br</contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="930">
             <tipo>Entidades públicas e privadas cadastradas no Sistema de Controle de Inscrição em Eventos ( SCIE), conforme as regras estabelecidas na legislação.</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="180" min="30" unidade="dias-corridos"/>
+        <entre min="30" max="180" unidade="dias-corridos"/>
         <descricao>Tal prazo varia conforme a feira.</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1499">
             <titulo>Verificar Agenda de Promoção Comercial do Turismo Brasileiro no Exterior</titulo>
@@ -56,17 +59,17 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
                         <descricao>inscricao.feiras@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso descricao="Portal Embratur &gt; AGENDA DE EVENTOS" id="232">
+                <caso id="232" descricao="Portal Embratur &gt; AGENDA DE EVENTOS">
                     <canal-de-prestacao id="1854" tipo="web-consultar">
                         <descricao>http://www.embratur.gov.br/piembratur-new/opencms/agenda_eventos/index.html</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso descricao="Portal Embratur &gt; SISTEMA DE CONTROLE DE INSCRIÇÕES EM EVENTOS (SCIE)" id="233">
+                <caso id="233" descricao="Portal Embratur &gt; SISTEMA DE CONTROLE DE INSCRIÇÕES EM EVENTOS (SCIE)">
                     <canal-de-prestacao id="1855" tipo="web-consultar">
                         <descricao>http://www.scie.embratur.gov.br/scie/inicio.jsf</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso descricao="Telefone" id="234">
+                <caso id="234" descricao="Telefone">
                     <canal-de-prestacao id="1856" tipo="telefone">
                         <descricao>61 2023 8632</descricao>
                     </canal-de-prestacao>
@@ -86,14 +89,14 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1858" tipo="web-preencher">
-                        <descricao>http://scie.embratur.gov.br/scie/inicio.jsf</descricao>
+                    <canal-de-prestacao id="1859" tipo="e-mail">
+                        <descricao>inscricao.ferias@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="1860" tipo="telefone">
                         <descricao>61 2023-8632</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1859" tipo="e-mail">
-                        <descricao>inscricao.ferias@embratur.gov.br</descricao>
+                    <canal-de-prestacao id="1858" tipo="web-preencher">
+                        <descricao>http://scie.embratur.gov.br/scie/inicio.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -111,14 +114,14 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2993" tipo="web-preencher">
-                        <descricao>http://scie.embratur.gov.br/scie/inicio.jsf</descricao>
+                    <canal-de-prestacao id="1867" tipo="e-mail">
+                        <descricao>inscricao.feiras@embratur.gov.br</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="1868" tipo="telefone">
                         <descricao>61 2023 8632</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1867" tipo="e-mail">
-                        <descricao>inscricao.feiras@embratur.gov.br</descricao>
+                    <canal-de-prestacao id="2993" tipo="web-preencher">
+                        <descricao>http://scie.embratur.gov.br/scie/inicio.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -153,11 +156,11 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1871" tipo="presencial">
-                        <descricao>Retirar credencial no balcão da organizadora da feira in loco quando a credencial não for enviada por e-mail.</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="1872" tipo="web-preencher">
                         <descricao>http://scie.embratur.gov.br/scie/inicio.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="1871" tipo="presencial">
+                        <descricao>Retirar credencial no balcão da organizadora da feira in loco quando a credencial não for enviada por e-mail.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -201,7 +204,9 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="241"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241" dbId="36723">
+        <nomeOrgao>Instituto Brasileiro de Turismo (EMBRATUR)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="1734">Empresas</item>
         <item idSegmento="2" idServicoSegmento="1735">Órgãos e entidades públicas</item>
