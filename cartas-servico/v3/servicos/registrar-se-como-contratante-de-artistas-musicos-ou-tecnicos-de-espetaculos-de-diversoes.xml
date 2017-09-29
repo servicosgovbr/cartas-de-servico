@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>registro-de-contratante</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-se-como-contratante-de-artistas-musicos-ou-tecnicos-de-espetaculos-de-diversoes</id>
     <dbId>829</dbId>
-    <nome>registrar-se-como-contratante-de-artistas-musicos-ou-tecnicos-de-espetaculos-de-diversoes</nome>
-    <sigla/>
+    <nome>Registrar-se como contratante de artistas, músicos ou técnicos de espetáculos de diversões</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="656">SIRPWEB</item>
     </nomes-populares>
     <descricao>Se você deseja contratar artistas, músicos e/ou técnicos de espetáculos de diversões, o Ministério do Trabalho fornece a você este serviço, para que você se registre como contratante.</descricao>
     <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="848">
             <tipo>Cidadãos brasileiros ou estrangeiros, empresas e outras entidades de direito privado</tipo>
@@ -18,14 +19,14 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="30" min="15" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <tipo>Sem validade</tipo>
         <quantidade>0</quantidade>
-        <unidade/>
-        <descricao/>
+        <unidade></unidade>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="2212">
@@ -131,7 +132,9 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="2444">Empresas</item>
         <item idSegmento="1" idServicoSegmento="2445">Cidadãos</item>
