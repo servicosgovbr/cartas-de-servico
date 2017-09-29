@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>concessao-de-bolsas-de-pos-graduacao-mestrado-e-doutorado-no-pais</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-bolsa-de-pos-graduacao-no-pais</id>
     <dbId>810</dbId>
-    <nome>obter-bolsa-de-pos-graduacao-no-pais</nome>
-    <sigla/>
+    <nome>Obter Bolsa de Pós-Graduação no País</nome>
+    <sigla></sigla>
     <descricao>As bolsas de pós-graduação stricto sensu (mestrado e doutorado) da CAPES no país são institucionais. Isso significa que todos os cursos de mestrado e doutorado avaliados e recomendados pela Capes com nota igual ou superior a três podem dispor de uma cota de bolsas. 
 
 [Mais informações](http://www.capes.gov.br/bolsas/bolsas-no-pais)</descricao>
@@ -13,6 +13,8 @@ Segunda a sexta das 8h às 20h
 
 *[Formulário Fale Conosco](www.capes.gov.br/faleconosco)</contato>
     <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="802">
             <tipo>Estudantes de cursos de pós-graduação stricto sensu (mestrado e doutorado) no país</tipo>
@@ -23,7 +25,9 @@ Segunda a sexta das 8h às 20h
         <em-media max="6" unidade="meses"/>
         <descricao>As bolsas de estudo são gerenciadas pelas instituições e cursos de pós-graduação, que são responsáveis pela seleção e acompanhamento dos bolsistas. Informações sobre concessão, pagamento, suspensão, cancelamento, implementação ou vigência de bolsa devem ser verificadas junto à Coordenação do Curso e à Pró-Reitoria de Pós-Graduação. As bolsas de mestrado podem durar até 24 meses e as bolsas de doutorado, até 48 meses.</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2150">
             <titulo>Seleção de bolsistas</titulo>
@@ -43,7 +47,9 @@ Segunda a sexta das 8h às 20h
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="250"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/250" dbId="13293">
+        <nomeOrgao>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2408">Cidadãos</item>
     </segmentos-da-sociedade>
