@@ -1,25 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>denunciar-irregularidades-em-servico-de-radiofusao</nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Qualquer cidadão pode encaminhar denúncias sobre irregularidades havidas no serviço de radiodifusão.]]></descricao>
-    <contato><![CDATA[Por internet, por meio do e-mail denuncia@comunicacoes.gov.br]]></contato>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>denunciar-irregularidades-em-servico-de-radiofusao</id>
+    <dbId>539</dbId>
+    <nome>Denunciar irregularidades em serviço de radiofusão</nome>
+    <sigla></sigla>
+    <descricao>Qualquer cidadão pode encaminhar denúncias sobre irregularidades havidas no serviço de radiodifusão.</descricao>
+    <contato>Por internet, por meio do e-mail denuncia@comunicacoes.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="541">
             <tipo>Sociedade em geral</tipo>
-            <requisitos><![CDATA[Não existe qualquer pré-requisito para o exercício do serviço.]]></requisitos>
+            <requisitos>Não existe qualquer pré-requisito para o exercício do serviço.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="1" unidade="dias-corridos"/>
-        <descricao><![CDATA[O protocolo da solicitação é imediato. Entretanto, o tempo empregado para conclusão da análise do processo pode variar devido às peculiaridades de cada processo.]]></descricao>
+        <descricao>O protocolo da solicitação é imediato. Entretanto, o tempo empregado para conclusão da análise do processo pode variar devido às peculiaridades de cada processo.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1691">
             <titulo>Denúncia</titulo>
-            <descricao><![CDATA[Por internet, por meio do e-mail denuncia@comunicacoes.gov.br.]]></descricao>
+            <descricao>Por internet, por meio do e-mail denuncia@comunicacoes.gov.br.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -28,29 +33,31 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
-                        <descricao><![CDATA[denuncia@comunicacoes.gov.br]]></descricao>
+                    <canal-de-prestacao id="2101" tipo="e-mail">
+                        <descricao>denuncia@comunicacoes.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Órgãos e entidades públicas</item>
-        <item>Empresas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="1958">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="1959">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="1960">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="1961">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Combustíveis</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Denúncia</item>
-        <item>Fiscalização</item>
-        <item>Radiodifusão</item>
+        <item id="1364">Denúncia</item>
+        <item id="1365">Fiscalização</item>
+        <item id="1366">Radiodifusão</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[.]]></item>
+        <item id="404">.</item>
     </legislacoes>
 </servico>
