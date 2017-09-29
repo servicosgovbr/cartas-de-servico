@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>conceder-licenca-de-importacao</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-licenca-de-importacao</id>
     <dbId>752</dbId>
-    <nome>obter-licenca-de-importacao</nome>
-    <sigla/>
+    <nome>Obter Licença de Importação</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="583">LI</item>
     </nomes-populares>
@@ -14,29 +14,33 @@ Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Bra
 Telefone: (61) 2027-7000
 Endereço Eletrônico: http://www.mdic.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="729">
             <tipo>Cidadãos</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="730">
             <tipo>Empresas</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="731">
             <tipo>Fundações e organizações internacionais</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
         <solicitante id="732">
             <tipo>Governos estaduais, municipais, órgãos públicos de outros poderes.</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="60" unidade="dias-corridos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2015">
             <titulo>Registro da LI no Siscomex pelo importador</titulo>
@@ -94,7 +98,9 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2301">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2302">Empresas</item>
