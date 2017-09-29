@@ -1,18 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>receber-auxilio-medico-emergencial</nome>
-    <sigla/>
-    <nomes-populares/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-auxilio-medico-emergencial</id>
+    <dbId>392</dbId>
+    <nome>Receber auxílio médico emergencial</nome>
+    <sigla>SAMU</sigla>
     <descricao>O Serviço de Atendimento Móvel de Urgência (SAMU) realiza o atendimento de urgência e emergência em qualquer lugar: residências, locais de trabalho e vias públicas. O socorro começa com a chamada gratuita, feita para o telefone 192. A ligação é atendida por técnicos que identificam a emergência e transferem o telefonema para um médico, que faz o diagnóstico da situação e inicia o atendimento no mesmo instante, orientando o paciente, ou a pessoa que fez a chamada, sobre as primeiras ações.</descricao>
-    <gratuito/>
-    <solicitantes/>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1347">
+            <tipo>Qualquer pessoa</tipo>
+            <requisitos>que esteja passando por emergência médica ou que esteja próxima a alguém sofrendop uma emergência médica</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <atendimento-imediato/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
-            <titulo/>
-            <descricao/>
+        <etapa id="1461">
+            <titulo>Realizar ligação</titulo>
+            <descricao></descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -21,22 +33,73 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>http://sage.saude.gov.br/?link=samu&amp;flt=true&amp;param=null</descricao>
+                    <canal-de-prestacao id="1809" tipo="telefone">
+                        <descricao>Disque 192 (chamada gratuita)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2890">
+            <titulo>Relatar situação ao médico</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3841" tipo="telefone">
+                        <descricao>Disque 192 (chamada gratuita)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2891">
+            <titulo>Seguir orientações do médico</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3842" tipo="telefone">
                         <descricao>Disque 192 (chamada gratuita)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304"/>
-    <segmentos-da-sociedade/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+        <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2966">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="2967">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="2968">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2969">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
-        <item>Emergências e Urgências</item>
         <item>Saúde</item>
+        <item>Atendimento básico</item>
+        <item>Emergências e Urgências</item>
+        <item>Humanização na saúde</item>
     </areas-de-interesse>
-    <palavras-chave/>
-    <legislacoes/>
+    <palavras-chave>
+        <item id="3355">emergência</item>
+        <item id="3356">samu</item>
+        <item id="3357">pessoa passando mal</item>
+        <item id="3358">emergência médica</item>
+        <item id="3359">ambulância</item>
+        <item id="3360">socorro imediato</item>
+        <item id="3361">pronto socorro</item>
+        <item id="3362">sus</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1004">-</item>
+    </legislacoes>
 </servico>
