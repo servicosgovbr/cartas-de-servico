@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>seguro-desemprego-sd</id>
+    <dbId>1045</dbId>
+    <nome>receber-o-seguro-desemprego</nome>
+    <sigla/>
+    <descricao>O Seguro-Desemprego é um benefício integrante da seguridade social, garantido pelo art. 7º dos Direitos Sociais da Constituição Federal e tem por finalidade prover assistência financeira temporária ao trabalhador dispensado involuntariamente.
+O trabalhador dispensado sem justa causa recebe do empregador o Requerimento do Seguro-Desemprego devidamente preenchido, que deve ser levado, junto com o restante da documentação, a um posto de atendimento do Ministério do Trabalho.</descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1295">
+            <tipo>Cidadão dispensado de seu emprego</tipo>
+            <requisitos/>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="60" min="31" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="2812">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Agendar atendimento em um posto do Ministério do Trabalho.</descricao>
+            <documentos>
+                <default>
+                    <item id="3491">CPF</item>
+                    <item id="3492">Data de nascimento e telefone</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3712" tipo="telefone">
+                        <descricao>Central 158 ou Central 156</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3713" tipo="web">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2813">
+            <titulo>Ir ao atendimento</titulo>
+            <descricao>Comparecer ao Posto de Atendimento com os documentos necessários para dar entrada no Seguro-Desemprego.</descricao>
+            <documentos>
+                <default>
+                    <item id="3493">Documentos de Identificação válido com foto</item>
+                    <item id="3494">Carteira de trabalho</item>
+                    <item id="3495">Comprovante de endereço/residência</item>
+                    <item id="3496">Três últimos contracheques, dos três meses anteriores ao mês de demissão</item>
+                    <item id="3497">CPF</item>
+                    <item id="3498">Documento de levantamento dos depósitos do FGTS (CPFGTS) ou extrato comprobatório dos depósitos ou relatório da fiscalização ou documento judicial</item>
+                    <item id="3499">NIT / PIS / PASEP</item>
+                    <item id="3500">Comprovante de escolaridade</item>
+                    <item id="3501">Requerimento do Seguro-Desemprego devidamente preenchido (duas vias)</item>
+                    <item id="3502">Termo de Rescisão do Contrato de Trabalho - TRCT devidamente quitado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3714" tipo="presencial">
+                        <descricao>Posto de Atendimento do Ministério do trabalho para onde foi realizado o agendamento *(consulte os endereços [aqui](http://trabalho.gov.br/rede-de-atendimento))*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2814">
+            <titulo>Receber as parcelas</titulo>
+            <descricao>As parcelas são pagas via Caixa Econômica Federal.</descricao>
+            <documentos>
+                <default>
+                    <item id="3503">Cartão do Cidadão;</item>
+                    <item id="3504">Cartão da Caixa Econômica, caso possua conta no banco.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3715" tipo="presencial">
+                        <descricao>Agência da Caixa Econômica Federal ou Casa Lotérica.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao dbId="37546" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2908">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Proteção Social</item>
+        <item>Trabalho</item>
+        <item>Empregabilidade</item>
+        <item>Emergências e Urgências</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Recursos humanos</item>
+        <item>Relações de Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3155">Seguro</item>
+        <item id="3156">desemprego</item>
+        <item id="3157">demissão</item>
+        <item id="3158">desempregado</item>
+        <item id="3159">dispensado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="959">[Constituição Federal](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm)</item>
+        <item id="960">[LEI Nº 7.998, DE 11 DE JANEIRO DE 1990](https://www.planalto.gov.br/ccivil_03/Leis/L7998.htm)</item>
+    </legislacoes>
+</servico>
