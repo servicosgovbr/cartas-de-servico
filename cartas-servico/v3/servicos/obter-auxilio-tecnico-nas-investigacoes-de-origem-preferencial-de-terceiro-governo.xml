@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>auxiliar-produtores-e-exportadores-brasileiros-nas-investigacoes-de-origem-preferencial-conduzidas-por-terceiros-governos</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-auxilio-tecnico-nas-investigacoes-de-origem-preferencial-de-terceiro-governo</id>
     <dbId>748</dbId>
-    <nome>obter-auxilio-tecnico-nas-investigacoes-de-origem-preferencial-de-terceiro-governo</nome>
-    <sigla/>
+    <nome>Obter auxílio técnico nas investigações de origem preferencial de terceiro governo</nome>
+    <sigla></sigla>
     <descricao>Apoio aos produtores e exportadores brasileiros sujeitos a investigações de origem preferenciais. Estas são iniciadas pelos parceiros comerciais do Brasil que concedem tratamento preferencial no âmbito dos respectivos acordos, a fim de se verificar a origem dos produtos.</descricao>
     <contato>Secretaria de Comércio Exterior (SECEX)
 Endereço: Esplanada dos Ministérios Bloco J - Zona Cívico-Administrativa, Brasília - DF, 70053-900
 Telefone: (61) 2027-7000
 Endereço Eletrônico: http://www.mdic.gov.br</contato>
     <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="723">
             <tipo>Empresas</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="180" unidade="dias-uteis"/>
         <descricao>Os Acordos Preferenciais, inclusive SGP, determinam prazos diferenciados de investigação.</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2009">
             <titulo>Informar se o Certificado de Origem é autêntico e verídico</titulo>
@@ -73,17 +77,19 @@ Endereço Eletrônico: http://www.mdic.gov.br</contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2511" tipo="e-mail">
-                        <descricao/>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2510" tipo="fax">
-                        <descricao/>
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2511" tipo="e-mail">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="3162"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="2295">Empresas</item>
     </segmentos-da-sociedade>
