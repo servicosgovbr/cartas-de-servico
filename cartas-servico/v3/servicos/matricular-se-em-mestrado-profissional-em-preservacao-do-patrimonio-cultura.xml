@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>mestrado-profissional-em-preservacao-do-patrimonio-cultural</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>matricular-se-em-mestrado-profissional-em-preservacao-do-patrimonio-cultura</id>
     <dbId>858</dbId>
-    <nome>matricular-se-em-mestrado-profissional-em-preservacao-do-patrimonio-cultura</nome>
+    <nome>Matricular-se em Mestrado Profissional em Preservação do Patrimônio Cultura</nome>
     <sigla>PEP-MP</sigla>
     <descricao>O IPHAN possui o Mestrado Profissional em Preservação do Patrimônio Cultural, reconhecido pelo Ministério da Educação, por meio da Portaria MEC nº 978/2012. É um curso interdisciplinar, cuja área de concentração é Preservação do Patrimônio Cultural, contando com duas linhas de pesquisa – Patrimônio Cultural: história, política e sociedade e Patrimônio Cultural: instrumentos, informação e desenvolvimento.</descricao>
     <contato>Presencial: Informações na Coordenação do Mestrado. Sede do Mestrado: Palácio Gustavo Capanema - Rua da Imprensa, nº 16, 8º andar, sala 808, Centro, Rio de Janeiro-RJ, CEP: 20.030-120.
 Telefones: (21) 2215-5263/5155.
 Virtual: http://portal.iphan.gov.br | Por e-mail: mestrado.pep@iphan.gov.br</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="884">
             <tipo>Cidadão</tipo>
@@ -20,13 +21,15 @@ Virtual: http://portal.iphan.gov.br | Por e-mail: mestrado.pep@iphan.gov.br</con
     </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2301">
             <titulo>Mestrado Profissional em Preservação do Patrimônio Cultural</titulo>
-            <descricao/>
+            <descricao></descricao>
             <documentos>
                 <default>
                     <item id="2512">Registro de identidade;</item>
@@ -44,23 +47,25 @@ Virtual: http://portal.iphan.gov.br | Por e-mail: mestrado.pep@iphan.gov.br</con
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2925" tipo="e-mail">
-                        <descricao>mestrado.pep@iphan.gov.br</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2924" tipo="web">
-                        <descricao>http://portal.iphan.gov.br</descricao>
+                    <canal-de-prestacao id="2922" tipo="presencial">
+                        <descricao>Informações na Coordenação do Mestrado. Sede do Mestrado: Palácio Gustavo Capanema - Rua da Imprensa, nº 16, 8º andar, sala 808, Centro, Rio de Janeiro-RJ, CEP: 20.030-120.</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="2923" tipo="telefone">
                         <descricao>(21) 2215-5263/5155.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2922" tipo="presencial">
-                        <descricao>Informações na Coordenação do Mestrado. Sede do Mestrado: Palácio Gustavo Capanema - Rua da Imprensa, nº 16, 8º andar, sala 808, Centro, Rio de Janeiro-RJ, CEP: 20.030-120.</descricao>
+                    <canal-de-prestacao id="2924" tipo="web">
+                        <descricao>http://portal.iphan.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2925" tipo="e-mail">
+                        <descricao>mestrado.pep@iphan.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2045"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
+        <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2502">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2503">Empresas</item>
