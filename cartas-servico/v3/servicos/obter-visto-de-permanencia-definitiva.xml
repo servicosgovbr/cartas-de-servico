@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>solicitar-permanencia</id>
+    <dbId>712</dbId>
+    <nome>obter-visto-de-permanencia-definitiva</nome>
+    <sigla/>
+    <nomes-populares>
+        <item id="538">Permanência</item>
+    </nomes-populares>
+    <descricao>É o direito de um estrangeiro requerer sua fixação definitiva  no Brasil quando se enquadrar em uma das situações previstas na legislação.</descricao>
+    <contato>processos.migracoes@mj.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="631">
+            <tipo>Estrangeiro dependente (ou com vinculo familiar) de brasileiro (a) ou de estrangeiro (a) permanente</tipo>
+            <requisitos>Ser dependente de brasileiro ou possuir vínculo familiar ou dependência econômica com estrangeiro permanente e que se enquadre em uma das situações elencadas no Art.2º da Resolução Normativa nº108 do CNIG (Resolução CNIG 108/2014)[http://acesso.mte.gov.br/data/files/8A7C816A43DF98FC014445CEE6085CD6/RESOLU%C3%87%C3%83O%20108%20-%20REUNI%C3%83O%20FAMILIAR.pdf]</requisitos>
+        </solicitante>
+        <solicitante id="809">
+            <tipo>Estrangeiro professor ou pesquisador de alto nível</tipo>
+            <requisitos>Enquadrar-se em uma das condições de permanência descritas na (Resolução Normativa nº 01/97 do CNIG)</requisitos>
+        </solicitante>
+        <solicitante id="628">
+            <tipo>Estrangeiro casado com brasileiro</tipo>
+            <requisitos>Ser casado(a) de fato e de direito com brasileiro(a);</requisitos>
+        </solicitante>
+        <solicitante id="627">
+            <tipo>Estrangeiro com filho brasileiro</tipo>
+            <requisitos>Ter filho(a) brasileiro(a) sob sua guarda e dependência econômica no Brasil;</requisitos>
+        </solicitante>
+        <solicitante id="636">
+            <tipo>Nacionais argentinos</tipo>
+            <requisitos>Ser cidadão argentino e desejar requerer a permanência no Brasil, na forma do Decreto nº 6.736/2009.</requisitos>
+        </solicitante>
+        <solicitante id="634">
+            <tipo>Refugiado (Residente) ou Asilado</tipo>
+            <requisitos>Enquadrar-se em uma das condições de permanência descritas na (Resolução Normativa nº6/97 do CNIG)[http://acesso.mte.gov.br/data/files/8A7C816A2E7311D1012F2C60997101FE/Resolu%C3%A7%C3%A3o%20Normativa%20N%C2%BA%2006%20-%20ALTERADA.pdf]</requisitos>
+        </solicitante>
+        <solicitante id="630">
+            <tipo>Estrangeiro (a) em união estável com brasileiro (a)</tipo>
+            <requisitos>Conviver em união estável com brasileiro (a)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="270" min="30" unidade="dias-corridos"/>
+        <descricao>O tempo pode variar de acordo com o tipo e a complexidade do pedido.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>9</quantidade>
+        <unidade>anos</unidade>
+        <descricao>A permanência não possui prazo de validade. Entretanto, a Carteira de Identidade de Estrangeiro possui validade de 9 anos, exceto nos casos em que o estrangeiro possua mais de 60 anos quando pode obter a carteira com prazo de validade indeterminado.</descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="1892">
+            <titulo>Requerer a Permanência</titulo>
+            <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o formulário para registro devidamente preenchido e impresso, com as taxas recolhidas e com todos os documentos solicitados.
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]
+Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes da CPLP estão isentos da Taxa de Solicitação de Permanência ou Taxa de Transformação de Visto.</descricao>
+            <documentos>
+                <default>
+                    <item id="1865">Formulário:https://servicos.dpf.gov.br/sincreWeb/</item>
+                    <item id="1866">Comprovante de recolhimento de taxas (GRU)</item>
+                    <item id="1867">Passaporte ou documento de viagem válido (exceto refugiados)</item>
+                    <item id="1868">2 fotos tamanho 3x4 recentes,coloridas e com o fundo branco</item>
+                    <item id="1869">Declaração de não condenação penal no Brasil ou no exterior (exceto para menores)</item>
+                </default>
+                <caso descricao="Permanência por ter Filha(o) Brasileira(o)" id="315">
+                    <documento>
+                        <id>1837</id>
+                        <descricao>Cópia da certidão de nascimento do filho brasileiro;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1838</id>
+                        <descricao>Cópia do documento de identidade do outro genitor do filho(a) brasileiro(a) (exceto em caso de mãe solteira)</descricao>
+                    </documento>
+                    <documento>
+                        <id>1839</id>
+                        <descricao>Declaração de que o(s) filho(s) vive(m) sob guarda e dependência econômica do interessado;</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Permanência por Casamento com brasileira(o)" id="316">
+                    <documento>
+                        <id>1840</id>
+                        <descricao>Cópia da certidão de casamento;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1841</id>
+                        <descricao>Cópia da identidade brasileira do cônjuge;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1842</id>
+                        <descricao>Declaração de que os cônjuges não estão separados de fato.</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Permanência por União Estável" id="317">
+                    <documento>
+                        <id>1843</id>
+                        <descricao>Atestado de antecedentes criminais no país de origem;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1844</id>
+                        <descricao>Documento hábil que comprove a existência de união estável (  Art.7º ou 8º da Resolução Normativa 108/2014)</descricao>
+                    </documento>
+                    <documento>
+                        <id>1848</id>
+                        <descricao>Declaração de compromisso de manutenção, subsistência e saída do território nacional, em favor do interessado, com firma reconhecida em cartório ou repartição consular de carreira;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1847</id>
+                        <descricao>Cópia autenticada do documento de identidade (carteira de identidade brasileira ou cédula de identidade de estrangeiro) do chamante (companheiro brasileiro) ;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1845</id>
+                        <descricao>Prova de meio de vida e de capacidade financeira do chamante (companheiro brasileiro) para sustentar o chamado(solicitante);</descricao>
+                    </documento>
+                    <documento>
+                        <id>1846</id>
+                        <descricao>Declaração, sob as penas da lei, do estado civil do chamado (solicitante) no país de origem;</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Permanência pelo Mercosul" id="318">
+                    <documento>
+                        <id>1850</id>
+                        <descricao>Certidão negativa de antecedentes judiciais e/ou penais e/ou policiais, no Brasil (residência permanente)</descricao>
+                    </documento>
+                    <documento>
+                        <id>1852</id>
+                        <descricao>Prova de meio de vida lícito;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1849</id>
+                        <descricao>Cópia do Registro de Estrangeiro no país ou Certidão de Residência Temporária  (para residência permanente);</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Permanência pelo Acordo Brasil-Argentina (Decreto 6.736/2009)" id="319">
+                    <documento>
+                        <id>1853</id>
+                        <descricao>Certidão negativa de antecedentes judiciais e/ou penais e/ou policiais no país em que tenha residido nos cinco anos anteriores à apresentação do pedido;</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Restabelecimento de Permanência" id="320">
+                    <documento>
+                        <id>1854</id>
+                        <descricao>Cópia do Registro de Estrangeiro no país;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1855</id>
+                        <descricao>Preenchimento dos requisitos da Res. Normativa CNIG n.º 06/1997;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1856</id>
+                        <descricao>Declaração de ausências do Brasil, especificando datas de ingressos e saídas do território nacional, com os respectivos destinos e motivos;</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Transformação de Visto de Missionário ou de Religioso em permanência" id="321">
+                    <documento>
+                        <id>1857</id>
+                        <descricao>Cópia do Registro de Estrangeiro no país;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1858</id>
+                        <descricao>Declaração da instituição religiosa responsável pelo imigrante, justificando a necessidade da permanência e comprometendo-se por sua manutenção e saída do território nacional;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1859</id>
+                        <descricao>Declaração da entidade religiosa de que não atua em área indígena ou apresentação de autorização da Funai</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Transformação do Visto de Trabalho em permanência" id="323">
+                    <documento>
+                        <id>1861</id>
+                        <descricao>Cópia do contrato de trabalho inicial e do contrato de trabalho vigente;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1862</id>
+                        <descricao>Cópia da Carteira de Trabalho e Previdência Social;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1863</id>
+                        <descricao>Declaração da empresa quanto à continuidade da necessidade do trabalho do estrangeiro no Brasil;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1864</id>
+                        <descricao>Declaração da empresa contratante sobre a evolução do seu quadro de empregados brasileiros e estrangeiros</descricao>
+                    </documento>
+                    <documento>
+                        <id>2499</id>
+                        <descricao>Justificativa do próprio solicitante sobre sua pretensão de fixar-se definitivamente no Brasil</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Estrangeiro proveniente de país membro da Comunidade dos Países de Língua Portuguesa-CPLP" id="363">
+                    <documento>
+                        <id>2507</id>
+                        <descricao>Isenção de Taxa de Permanência ou Transformação de Visto</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="92">
+                        <descricao>Taxa de Permanência ou Taxa de Transformação de Visto</descricao>
+                        <moeda/>
+                        <valor>168,130</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2820" tipo="presencial">
+                        <descricao>O solicitante deve se dirigir a uma Unidade da Polícia Federal com o formulário para registro devidamente preenchido e impresso, com as taxas recolhidas e com todos os documentos solicitados.
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2274">
+            <titulo>Solicitar Registro de Estrangeiro/ Solicitar Carteira de Estrangeiro</titulo>
+            <descricao>O solicitante deve se dirigir a Unidade da Polícia Federal mais próxima do endereço informado na solicitação
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+            <documentos>
+                <default>
+                    <item id="2500">Formulário de Solicitação;</item>
+                    <item id="2501">Passaporte;</item>
+                    <item id="2502">Página do Diário Oficial da União que comprove a concessão.</item>
+                    <item id="2503">Comprovante de pagamento ou cópia do comprovante de pagamento das Taxas (GRU)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="91">
+                        <descricao>Taxa Registro de Estrangeiros/Restabelecimento de Registro</descricao>
+                        <moeda/>
+                        <valor>106,450</valor>
+                    </custo>
+                    <custo id="90">
+                        <descricao>Taxa de emissão da Carteira de Identidade de Estrangeiro</descricao>
+                        <moeda/>
+                        <valor>204,770</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2855" tipo="presencial">
+                        <descricao>O solicitante deve se dirigir a Unidade da Polícia Federal mais próxima do endereço informado na solicitação
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2277">
+            <titulo>Receber a Carteira de Identidade de Estrangeiro</titulo>
+            <descricao>O solicitante deve se dirigir a Unidade da Polícia Federal mais próxima do endereço de residência informado na solicitação, no prazo máximo de 90 dias, contado a partir da solicitação de emissão da carteira.</descricao>
+            <documentos>
+                <default>
+                    <item id="2504">Protocolo de Solicitação de Emissão da Carteira de Identidade de Estrangeiro</item>
+                    <item id="2505">Documento de Identificação</item>
+                    <item id="2506">Permanência</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2859" tipo="presencial">
+                        <descricao>O solicitante deve se dirigir a Unidade da Polícia Federal mais próxima do endereço informado na solicitação
+(Consulte a Unidade mais próxima de você)[http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias]</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="316"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2156">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="2151">CPLP</item>
+        <item id="2152">Comunidade de Países de Língua Portuguesa</item>
+        <item id="2203">Permanência de estrangeiro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="678">Lei nº 6.815/80; Decreto nº 86.715/81 e Resoluções Normativas do Conselho Nacional de Imigração</item>
+    </legislacoes>
+</servico>
