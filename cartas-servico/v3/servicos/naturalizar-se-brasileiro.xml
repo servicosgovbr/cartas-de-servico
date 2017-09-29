@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>pedir-naturalizacao-ordinaria</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>naturalizar-se-brasileiro</id>
     <dbId>4</dbId>
-    <nome>naturalizar-se-brasileiro</nome>
-    <sigla/>
+    <nome>Naturalizar-se Brasileiro</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="330">Naturalização</item>
     </nomes-populares>
@@ -15,7 +15,8 @@ Para consultar seu processo, acesse: http://www.justica.gov.br/Acesso/sistema-el
 
 Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="398">
             <tipo>Estrangeiro que reside no Brasil</tipo>
@@ -35,10 +36,12 @@ Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="12" min="6" unidade="meses"/>
+        <entre min="6" max="12" unidade="meses"/>
         <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1114">
             <titulo>Apresentar Requerimento</titulo>
@@ -60,7 +63,7 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
                     <item id="1130">Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
                     <item id="1131">Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
                 </default>
-                <caso descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:" id="174">
+                <caso id="174" descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
                     <documento>
                         <id>1116</id>
                         <descricao>Além dos documentos listados acima, apresentar:</descricao>
@@ -78,8 +81,8 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             <custos>
                 <default>
                     <custo id="24">
-                        <descricao/>
-                        <moeda/>
+                        <descricao></descricao>
+                        <moeda>R$</moeda>
                         <valor>29,664</valor>
                     </custo>
                 </default>
@@ -141,18 +144,18 @@ Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/un
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1367" tipo="web-acompanhar">
-                        <descricao>Consulte o seu processo:
-http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei</descricao>
+                    <canal-de-prestacao id="1365" tipo="web">
+                        <descricao>Protocolo eletrônico do Ministério da Justiça e Cidadania
+http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="1366" tipo="postal">
                         <descricao>Ministério da Justiça e Cidadania
 Esplanada dos Ministério, Bloco T, Anexo II, Sala 318
 CEP: 70.064-901</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1365" tipo="web">
-                        <descricao>Protocolo eletrônico do Ministério da Justiça e Cidadania
-http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    <canal-de-prestacao id="1367" tipo="web-acompanhar">
+                        <descricao>Consulte o seu processo:
+http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -171,21 +174,21 @@ http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_ex
             <custos>
                 <default>
                     <custo id="25">
-                        <descricao/>
-                        <moeda/>
+                        <descricao></descricao>
+                        <moeda>R$</moeda>
                         <valor>59,326</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1369" tipo="presencial">
-                        <descricao>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="1368" tipo="web">
                         <descricao>Protocolo eletrônico do Ministério da Justiça e Cidadania
 http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="1369" tipo="presencial">
+                        <descricao>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -227,7 +230,9 @@ http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_ex
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="316"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="1269">Cidadãos</item>
     </segmentos-da-sociedade>
