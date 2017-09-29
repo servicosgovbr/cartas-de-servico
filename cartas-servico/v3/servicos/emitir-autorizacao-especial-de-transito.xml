@@ -1,61 +1,65 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>emitir-autorizacao-especial-de-transito</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-autorizacao-especial-de-transito</id>
+    <dbId>602</dbId>
+    <nome>Emitir Autorização Especial de Trânsito</nome>
     <sigla>AET</sigla>
-    <nomes-populares/>
-    <descricao><![CDATA[Autorização Especial de Trânsito é o documento expedido pelo Departamento Nacional de Infraestrutura de Transportes - DNIT, para veículo ou combinação de veículos utilizados no transporte de carga, que não se enquadre nos limites de peso e dimensões estabelecidos pelo Conselho Nacional de Trânsito - CONTRAN na [Resolução 210/06](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_210.rtf).]]></descricao>
-    <contato><![CDATA[E-mail: siaet@dnit.gov.br
-Central de Atendimento: 0800-61-1535]]></contato>
+    <descricao>Autorização Especial de Trânsito é o documento expedido pelo Departamento Nacional de Infraestrutura de Transportes - DNIT, para veículo ou combinação de veículos utilizados no transporte de carga, que não se enquadre nos limites de peso e dimensões estabelecidos pelo Conselho Nacional de Trânsito - CONTRAN na [Resolução 210/06](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_210.rtf).</descricao>
+    <contato>E-mail: siaet@dnit.gov.br
+Central de Atendimento: 0800-61-1535</contato>
     <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="558">
             <tipo>Empresas Transportadoras</tipo>
-            <requisitos><![CDATA[É necessário que o veículo extrapole os limites de peso e dimensões  estabelecidos pela [Resolução 210/06](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_210.rtf) do CONTRAN e que o solicitante esteja previamente cadastrado junto à Coordenação Geral de Operações Rodoviárias - CGPERT/DIR/DNIT, sendo este cadastro feito no próprio [site](https://siaet.dnit.gov.br)]]></requisitos>
+            <requisitos>É necessário que o veículo extrapole os limites de peso e dimensões  estabelecidos pela [Resolução 210/06](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_210.rtf) do CONTRAN e que o solicitante esteja previamente cadastrado junto à Coordenação Geral de Operações Rodoviárias - CGPERT/DIR/DNIT, sendo este cadastro feito no próprio [site](https://siaet.dnit.gov.br)</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="10" unidade="dias-uteis"/>
-        <descricao><![CDATA[Em caso de cargas indivisíveis o prazo será:
+        <descricao>Em caso de cargas indivisíveis o prazo será:
 De 24h quando a rota não for definida previamente; 
 De 5 dias úteis quando houver rota estabelecida e for necessário consulta da referida por superintendência do DNIT ou concessionária;
-De 30 dias quando houver especificação de rota, porém seja necessário consulta e aferição de laudo.]]></descricao>
+De 30 dias quando houver especificação de rota, porém seja necessário consulta e aferição de laudo.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1763">
             <titulo>Solicitar emissão de AET</titulo>
-            <descricao><![CDATA[O interessado deve acessar o site do DNIT para solicitar a autorização através do Sistema de Gerenciamento de Autorizações Especiais de Trânsito, [SIAET](https://siaet.dnit.gov.br)]]></descricao>
+            <descricao>O interessado deve acessar o site do DNIT para solicitar a autorização através do Sistema de Gerenciamento de Autorizações Especiais de Trânsito, [SIAET](https://siaet.dnit.gov.br)</descricao>
             <documentos>
                 <default>
-                    <item>É necessário estar cadastrado na Coordenação Geral de Operações Rodoviárias - CGPERT/DIR/DNIT</item>
+                    <item id="1505">É necessário estar cadastrado na Coordenação Geral de Operações Rodoviárias - CGPERT/DIR/DNIT</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao><![CDATA[Taxa de Emissão Regular]]></descricao>
-                        <moeda/>
-                        <valor>16,54</valor>
+                    <custo id="43">
+                        <descricao>Taxa de Emissão Regular</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1,654</valor>
                     </custo>
                 </default>
-                <caso descricao="Tarifa de Utilização da Via - TUV - Para configurações veiculares com peso superior a 74 toneladas.">
-                    <custo>
-                        <descricao><![CDATA[Calculada em função da distância a ser percorrida entre pontos de origem e destino da carga com o peso excedente.]]></descricao>
-                        <moeda/>
-                        <valor/>
+                <caso id="411" descricao="Tarifa de Utilização da Via - TUV - Para configurações veiculares com peso superior a 74 toneladas.">
+                    <custo id="122">
+                        <descricao>Calculada em função da distância a ser percorrida entre pontos de origem e destino da carga com o peso excedente.</descricao>
+                        <moeda>R$</moeda>
                     </custo>
                 </caso>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[https://siaet.dnit.gov.br]]></descricao>
+                    <canal-de-prestacao id="2191" tipo="web">
+                        <descricao>https://siaet.dnit.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1764">
             <titulo>Suporte ao processo de liberação de AET</titulo>
-            <descricao><![CDATA[O SIAET oferece suporte de operação e gerenciamento ao processo de liberação de Autorização Especial de Trânsito – AET, bem como orientação aos usuários, envolvendo o levantamento e cadastramento de dimensões de obras-de-arte especiais e elementos relacionados às limitações de largura e peso de veículos em trechos de rodovias federais.]]></descricao>
+            <descricao>O SIAET oferece suporte de operação e gerenciamento ao processo de liberação de Autorização Especial de Trânsito – AET, bem como orientação aos usuários, envolvendo o levantamento e cadastramento de dimensões de obras-de-arte especiais e elementos relacionados às limitações de largura e peso de veículos em trechos de rodovias federais.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -64,28 +68,30 @@ De 30 dias quando houver especificação de rota, porém seja necessário consul
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-acompanhar">
-                        <descricao><![CDATA[https://siaet.dnit.gov.br]]></descricao>
+                    <canal-de-prestacao id="2192" tipo="web-acompanhar">
+                        <descricao>https://siaet.dnit.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844" dbId="23732">
+        <nomeOrgao>Departamento Nacional de Infraestrutura de Transportes (DNIT/MT)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item idSegmento="3" idServicoSegmento="2058">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transportes</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Autorização</item>
-        <item>Trânsito</item>
-        <item>Transporte</item>
-        <item>Carga</item>
-        <item>DNIT</item>
+        <item id="1414">Autorização</item>
+        <item id="1415">Trânsito</item>
+        <item id="1416">Transporte</item>
+        <item id="1417">Carga</item>
+        <item id="1418">DNIT</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Resoluções sobre Autorização Especial de Trânsito](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/sistema-de-gerenciamento-de-autorizacao-especial-de-transito-siaet/resolucao-aet)]]></item>
+        <item id="418">[Resoluções sobre Autorização Especial de Trânsito](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/sistema-de-gerenciamento-de-autorizacao-especial-de-transito-siaet/resolucao-aet)</item>
     </legislacoes>
 </servico>
