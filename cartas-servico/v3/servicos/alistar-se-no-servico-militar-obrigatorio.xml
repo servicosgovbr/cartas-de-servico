@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>servico-militar-obrigatorio-alistamento-militar</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alistar-se-no-servico-militar-obrigatorio</id>
     <dbId>55</dbId>
-    <nome>alistar-se-no-servico-militar-obrigatorio</nome>
+    <nome>Alistar-se no Serviço Militar Obrigatório</nome>
     <sigla>SMO</sigla>
     <nomes-populares>
         <item id="640">Serviço Militar Obrigatório</item>
@@ -17,7 +17,8 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
 * [Força Aérea Brasileira](http://fab.mil.br)
 * [Site alistamento online](http://www.alistamento.eb.mil.br/) #disponível apenas para algumas regiões.</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="419">
             <tipo>Cidadão Brasileiro Nato</tipo>
@@ -27,9 +28,11 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
     </solicitantes>
     <tempo-total-estimado>
         <ate max="12" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1201">
             <titulo>Cadastrar dados pessoais</titulo>
@@ -46,15 +49,15 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </custos>
             <canais-de-prestacao>
                 <default>
+                    <canal-de-prestacao id="1468" tipo="web">
+                        <descricao>[Alistamento Militar](https://www.alistamento.eb.mil.br/)</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="2709" tipo="presencial">
                         <descricao>*O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/).
 
 * [Alistamento Militar](https://www.alistamento.eb.mil.br/)
 
 * O canal web apresentado acima não está disponível para os seguintes estados: Acre, Amazonas, Espírito Santo, Rio de janeiro, Rondônia, Roraima e São Paulo (Interior).</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="1468" tipo="web">
-                        <descricao>[Alistamento Militar](https://www.alistamento.eb.mil.br/)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -123,7 +126,9 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="41066"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="1377">Cidadãos</item>
     </segmentos-da-sociedade>
