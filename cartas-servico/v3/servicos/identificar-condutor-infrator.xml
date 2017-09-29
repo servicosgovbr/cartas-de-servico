@@ -1,30 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>identificar-condutor-infrator</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>identificar-condutor-infrator</id>
+    <dbId>74</dbId>
+    <nome>Identificar Condutor Infrator</nome>
     <sigla>FICI</sigla>
     <nomes-populares>
-        <item>Identificação de condutor</item>
+        <item id="446">Identificação de condutor</item>
     </nomes-populares>
-    <descricao><![CDATA[Possibilidade dada ao proprietário do veículo para que, em caso de não ter praticado o ato infracional autuado, indique o real responsável pela condução do automóvel no momento da infração.]]></descricao>
-    <contato><![CDATA[0800 611 535]]></contato>
+    <descricao>Possibilidade dada ao proprietário do veículo para que, em caso de não ter praticado o ato infracional autuado, indique o real responsável pela condução do automóvel no momento da infração.</descricao>
+    <contato>0800 611 535</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="516">
             <tipo>Qualquer cidadão</tipo>
-            <requisitos><![CDATA[Desde que tenha recebido uma autuação de trânsito do DNIT.]]></requisitos>
+            <requisitos>Desde que tenha recebido uma autuação de trânsito do DNIT.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="dias-corridos"/>
-        <descricao><![CDATA[O prazo para identificar o condutor será aquele constante na própria Notificação de Autuação. Este prazo nunca será inferior a 15 (quinze) dias do recebimento da notificação de autuação, de acordo com o Art. 3º da [Resolução 404/12 do CONTRAN](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_404-12-REPUBLICADA.pdf).]]></descricao>
+        <descricao>O prazo para identificar o condutor será aquele constante na própria Notificação de Autuação. Este prazo nunca será inferior a 15 (quinze) dias do recebimento da notificação de autuação, de acordo com o Art. 3º da [Resolução 404/12 do CONTRAN](http://www.denatran.gov.br/download/Resolucoes/RESOLUCAO_404-12-REPUBLICADA.pdf).</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1600">
             <titulo>Preencher o FICI</titulo>
-            <descricao><![CDATA[Preencher o formulário (FICI) com os dados do condutor infrator, devendo este ser assinado pelo proprietário do veículo e pelo condutor infrator. O cidadão se responsabilizará nas esferas cível, administrativa e penal, pela veracidade das informações e dos documentos fornecidos.]]></descricao>
+            <descricao>Preencher o formulário (FICI) com os dados do condutor infrator, devendo este ser assinado pelo proprietário do veículo e pelo condutor infrator. O cidadão se responsabilizará nas esferas cível, administrativa e penal, pela veracidade das informações e dos documentos fornecidos.</descricao>
             <documentos>
                 <default>
-                    <item>Formulário de Indicação de Condutor Infrator</item>
+                    <item id="1420">Formulário de Indicação de Condutor Infrator</item>
                 </default>
             </documentos>
             <custos>
@@ -32,21 +38,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Formulário disponibilizado na Autuação]]></descricao>
+                    <canal-de-prestacao id="1991" tipo="postal">
+                        <descricao>Formulário disponibilizado na Autuação</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/FORMULARIOFICIV.1.pdf]]></descricao>
+                    <canal-de-prestacao id="1992" tipo="web">
+                        <descricao>http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/multas/FORMULARIOFICIV.1.pdf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1601">
             <titulo>Juntar Documentação</titulo>
-            <descricao><![CDATA[Anexar cópia da CNH (Carteira Nacional de Habilitação) do condutor infrator e do proprietário do veículo.]]></descricao>
+            <descricao>Anexar cópia da CNH (Carteira Nacional de Habilitação) do condutor infrator e do proprietário do veículo.</descricao>
             <documentos>
                 <default>
-                    <item>Carteira Nacional de Habilitação (CNH)</item>
+                    <item id="1421">Carteira Nacional de Habilitação (CNH)</item>
                 </default>
             </documentos>
             <custos>
@@ -54,18 +60,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao/>
+                    <canal-de-prestacao id="1993" tipo="presencial">
+                        <descricao></descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1602">
             <titulo>Enviar Indicação de Condutor</titulo>
-            <descricao><![CDATA[A indicação do condutor infrator poderá ser realizada por meio do site [DNIT CIDADÃO](http://infracoes.dnit.gov.br/dnitcidadao/login) ou via postal]]></descricao>
+            <descricao>A indicação do condutor infrator poderá ser realizada por meio do site [DNIT CIDADÃO](http://infracoes.dnit.gov.br/dnitcidadao/login) ou via postal</descricao>
             <documentos>
                 <default>
-                    <item>Os solicitados nas etapas anteriores</item>
+                    <item id="1422">Os solicitados nas etapas anteriores</item>
                 </default>
             </documentos>
             <custos>
@@ -73,31 +79,33 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://infracoes.dnit.gov.br/dnitcidadao/login]]></descricao>
+                    <canal-de-prestacao id="1994" tipo="web">
+                        <descricao>http://infracoes.dnit.gov.br/dnitcidadao/login</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Setor de Autarquias Norte, Quadra 03, Lote “A”, Edifício Núcleo dos Transportes, 3º Andar, Sala 3269, CEP: 70040.902, Brasília-DF.]]></descricao>
+                    <canal-de-prestacao id="1995" tipo="postal">
+                        <descricao>Setor de Autarquias Norte, Quadra 03, Lote “A”, Edifício Núcleo dos Transportes, 3º Andar, Sala 3269, CEP: 70040.902, Brasília-DF.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844" dbId="23732">
+        <nomeOrgao>Departamento Nacional de Infraestrutura de Transportes (DNIT/MT)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="1840">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transportes</item>
         <item>Transporte Rodoviário</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>DNIT</item>
-        <item>Condutor Infrator</item>
-        <item>Multa</item>
+        <item id="1299">DNIT</item>
+        <item id="1300">Condutor Infrator</item>
+        <item id="1301">Multa</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Código de Trânsito Brasileiro](http://www.planalto.gov.br/ccivil_03/leis/L9503Compilado.htm)
-[Resoluções do Contran](http://www.denatran.gov.br/resolucoes.htm)]]></item>
+        <item id="390">[Código de Trânsito Brasileiro](http://www.planalto.gov.br/ccivil_03/leis/L9503Compilado.htm)
+[Resoluções do Contran](http://www.denatran.gov.br/resolucoes.htm)</item>
     </legislacoes>
 </servico>
