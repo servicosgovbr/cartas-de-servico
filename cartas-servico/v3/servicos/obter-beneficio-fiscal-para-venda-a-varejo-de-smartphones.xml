@@ -1,27 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-beneficio-fiscal-para-venda-a-varejo-de-smartphones</nome>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-beneficio-fiscal-para-venda-a-varejo-de-smartphones</id>
+    <dbId>613</dbId>
+    <nome>Obter benefício fiscal para venda a varejo de Smartphones</nome>
     <sigla>Smartphones</sigla>
     <nomes-populares>
-        <item>Desoneração de Smartphones</item>
+        <item id="492">Desoneração de Smartphones</item>
     </nomes-populares>
-    <descricao><![CDATA[A Lei nº 12.715/2012 incluiu os smartphones no Programa de Inclusão Digital (da Lei do Bem), que reduz a 0% as alíquotas do PIS/Pasep e da Cofins sobre a venda a varejo. Os smartphones devem ser produzidos no Brasil com PPB, cumprir algumas características técnicas mínimas e incluir um pacote de aplicativos desenvolvidos no Brasil.]]></descricao>
-    <contato><![CDATA[Equipe SMARTPHONE +55 (61) 2027-6573]]></contato>
+    <descricao>A Lei nº 12.715/2012 incluiu os smartphones no Programa de Inclusão Digital (da Lei do Bem), que reduz a 0% as alíquotas do PIS/Pasep e da Cofins sobre a venda a varejo. Os smartphones devem ser produzidos no Brasil com PPB, cumprir algumas características técnicas mínimas e incluir um pacote de aplicativos desenvolvidos no Brasil.</descricao>
+    <contato>Equipe SMARTPHONE +55 (61) 2027-6573</contato>
     <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="563">
             <tipo>Empresa fabricante de smartphones ou detentora da marca</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="2" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1774">
             <titulo>Apresentação de proposta</titulo>
-            <descricao/>
+            <descricao></descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -30,16 +36,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sistema.mc.gov.br/CADSEIWeb/pages/externo/SisCADSEI.jsf]]></descricao>
+                    <canal-de-prestacao id="2211" tipo="web">
+                        <descricao>http://sistema.mc.gov.br/CADSEIWeb/pages/externo/SisCADSEI.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
+        <item idSegmento="3" idServicoSegmento="2071">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -47,15 +55,15 @@
         <item>Telecomunicações</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>smartphones</item>
-        <item>telecomunicações</item>
-        <item>PPB</item>
-        <item>tecnologia nacional</item>
-        <item>aplicativos</item>
+        <item id="1424">smartphones</item>
+        <item id="1425">telecomunicações</item>
+        <item id="1426">PPB</item>
+        <item id="1427">tecnologia nacional</item>
+        <item id="1428">aplicativos</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Lei nº 12.715, de 17 de setembro de 2012
+        <item id="420">Lei nº 12.715, de 17 de setembro de 2012
 Decreto nº 7.921, de 15 de fevereiro de 2013
-Portaria STE nº 2, de 26 de agosto de 2013]]></item>
+Portaria STE nº 2, de 26 de agosto de 2013</item>
     </legislacoes>
 </servico>
