@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>registro-profissional</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-se-como-profissional-para-atividades-exigidas-em-lei</id>
     <dbId>830</dbId>
-    <nome>registrar-se-como-profissional-para-atividades-exigidas-em-lei</nome>
-    <sigla/>
+    <nome>Registrar-se como profissional para atividades exigidas em lei</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="658">SIRPWEB</item>
         <item id="657">DRT</item>
@@ -11,7 +11,8 @@
     <descricao>O registro profissional é exigido de trabalhadores de 14 categorias para ingressarem no mercado de trabalho. Se você é um profissional de uma delas, você deve utilizar este serviço para obter o seu Cartão de Registro Profissional.</descricao>
     <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="849">
             <tipo>Profissional das categorias regulamentadas por leis federais</tipo>
@@ -32,14 +33,14 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="30" min="15" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <tipo>Sem validade</tipo>
         <quantidade>0</quantidade>
-        <unidade/>
-        <descricao/>
+        <unidade></unidade>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="2217">
@@ -148,7 +149,9 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2447">Cidadãos</item>
     </segmentos-da-sociedade>
