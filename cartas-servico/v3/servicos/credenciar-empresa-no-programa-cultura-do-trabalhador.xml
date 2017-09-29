@@ -1,43 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>credenciar-empresa-no-programa-cultura-do-trabalhador</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>credenciar-empresa-no-programa-cultura-do-trabalhador</id>
+    <dbId>197</dbId>
+    <nome>Credenciar empresa no Programa Cultura do Trabalhador</nome>
+    <sigla>PCT</sigla>
     <nomes-populares>
-        <item>Vale-Cultura</item>
-        <item>Cartão Cultura</item>
+        <item id="355">Vale-Cultura</item>
+        <item id="356">Cartão Cultura</item>
     </nomes-populares>
     <descricao>Oferecer benefício (solicitado por empregadores e concedido a trabalhadores) por meio de cartão magnético pré-pago, válido em todo o território nacional, na aquisição de produtos culturais selecionados em estabelecimentos previamente cadastrados, no valor de R$ 50,00 mensais, sem prazo de validade, prioritariamente para aqueles que recebem até cinco salários mínimos a ser utilizado na compra de produtos culturais.</descricao>
-    <gratuito>false</gratuito>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="421">
             <tipo>Pessoa Jurídica - Empresa Beneficiária</tipo>
             <requisitos>Pessoa jurídica optante pelo Programa de Cultura do Trabalhador e autorizada a distribuir o vale-cultura a seus trabalhadores com vínculo empregatício</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="422">
             <tipo>Pessoa Jurídica - Empresa Operadora (Bandeira de Cartão de Crédito)</tipo>
             <requisitos>Pessoa jurídica cadastrada no Ministério da Cultura, possuidora do Certificado de Inscrição no Programa de Cultura do Trabalhador e autorizada a produzir e comercializar o vale-cultura</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="423">
             <tipo>Pessoa Jurídica - Empresa Recebedora</tipo>
             <requisitos>Pessoa jurídica habilitada (Conforme documentaçao prevista no Decreto nº 8.084, de 2013) pela empresa operadora para receber o vale-cultura como forma de pagamento de serviço ou produto cultural</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="424">
             <tipo>Pessoa Física</tipo>
             <requisitos>Trabalhador com vínculo empregatício com a empresa beneficiária que recebe o vale-cultura. O trabalhador deve buscar com a empresa informações sobre o benefício.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <descricao/>
+        <atendimento-imediato/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1211">
             <titulo>Habilitação da Empresa Beneficiária.</titulo>
             <descricao>A inscrição da empresa beneficiária será feita no Ministério da Cultura mediante a apresentação de documentação necessária.</descricao>
             <documentos>
                 <default>
-                    <item>inscrição regular no CNPJ</item>
-                    <item>indicação de empresa operadora possuidora de Certificado de Inscrição no Programa de Cultura do Trabalhador</item>
-                    <item>indicação do número de trabalhadores com vínculo empregatício, conforme a faixa de renda mensal</item>
+                    <item id="1222">inscrição regular no CNPJ</item>
+                    <item id="1223">indicação de empresa operadora possuidora de Certificado de Inscrição no Programa de Cultura do Trabalhador</item>
+                    <item id="1224">indicação do número de trabalhadores com vínculo empregatício, conforme a faixa de renda mensal</item>
                 </default>
             </documentos>
             <custos>
@@ -45,19 +53,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
+                    <canal-de-prestacao id="1483" tipo="e-mail">
                         <descricao>valecultura@cultura.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
+                    <canal-de-prestacao id="1484" tipo="telefone">
                         <descricao>(61) 2024-2390</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
+                    <canal-de-prestacao id="1485" tipo="web">
                         <descricao>http://www.cultura.gov.br/valecultura</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1212">
             <titulo>Homologação da autorização.</titulo>
             <descricao>Ministério da Cultura homologa autorização de empresa beneficiária.</descricao>
             <documentos>
@@ -68,22 +76,22 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
+                    <canal-de-prestacao id="1486" tipo="web">
                         <descricao>http://www.cultura.gov.br/valecultura</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="e-mail">
+                    <canal-de-prestacao id="1487" tipo="e-mail">
                         <descricao>valecultura@cultura.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1213">
             <titulo>Credenciamento de Empresa Operadora.</titulo>
             <descricao>A inscrição da empresa Operadora será feita no Ministério da Cultura mediante a apresentação de documentação necessária</descricao>
             <documentos>
                 <default>
-                    <item>inscrição regular no Cadastro Nacional da Pessoa Jurídica - CNPJ</item>
-                    <item>qualificação técnica para produzir e comercializar o vale-cultura</item>
+                    <item id="1225">inscrição regular no Cadastro Nacional da Pessoa Jurídica - CNPJ</item>
+                    <item id="1226">qualificação técnica para produzir e comercializar o vale-cultura</item>
                 </default>
             </documentos>
             <custos>
@@ -91,16 +99,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
+                    <canal-de-prestacao id="1488" tipo="e-mail">
                         <descricao>valecultura@cultura.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
+                    <canal-de-prestacao id="1489" tipo="web">
                         <descricao>http://www.cultura.gov.br/valecultura</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1214">
             <titulo>Ministério da Cultura emite certificado.</titulo>
             <descricao>O Ministério da Cultura avaliará e emitirá o Certificado de Inscrição no Programa de Cultura do Trabalhador à empresa regularmente cadastrada, e autorizará a produção e a comercialização do vale-cultura.</descricao>
             <documentos>
@@ -111,16 +119,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao>www.cultura.gov.br/valecultura</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao tipo="e-mail">
+                    <canal-de-prestacao id="1491" tipo="e-mail">
                         <descricao>valecultura@cultura.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="1490" tipo="web">
+                        <descricao>www.cultura.gov.br/valecultura</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1215">
             <titulo>Monitoramento do benefício pelo Ministério da Cultura</titulo>
             <descricao>Dúvidas, reclamações, solicitações de orientação devem ser dirigidas à Ouvidoria do Ministério da Cultura.</descricao>
             <documentos>
@@ -131,26 +139,28 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="e-mail">
+                    <canal-de-prestacao id="1492" tipo="e-mail">
                         <descricao>ouvidoria@cultura.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
+                    <canal-de-prestacao id="1493" tipo="presencial">
                         <descricao>Ministério da Cultura, Bloco B, 3º andar</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="telefone">
+                    <canal-de-prestacao id="1494" tipo="telefone">
                         <descricao>(61) 2024-2496</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="web">
+                    <canal-de-prestacao id="1495" tipo="web">
                         <descricao>www.cultura.gov.br/valecultura</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1926"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1926" dbId="37526">
+        <nomeOrgao>Ministério da Cultura (MinC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
-        <item>Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="1389">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="1390">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cultura</item>
@@ -161,14 +171,14 @@
         <item>Proteção e Benefícios ao Trabalhador</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Vale-Cultura</item>
-        <item>Cartão Cultura</item>
-        <item>Cultura do Trabalhador</item>
+        <item id="1064">Vale-Cultura</item>
+        <item id="1065">Cartão Cultura</item>
+        <item id="1066">Cultura do Trabalhador</item>
     </palavras-chave>
     <legislacoes>
-        <item>Lei 12.761, de 2012</item>
-        <item>Decreto 8084, de 2013</item>
-        <item>IN 2, de 2013 do Ministério da Cultura</item>
-        <item>IN 3, de 2013 do Ministério da Cultura</item>
+        <item id="323">Lei 12.761, de 2012</item>
+        <item id="324">Decreto 8084, de 2013</item>
+        <item id="325">IN 2, de 2013 do Ministério da Cultura</item>
+        <item id="326">IN 3, de 2013 do Ministério da Cultura</item>
     </legislacoes>
 </servico>
