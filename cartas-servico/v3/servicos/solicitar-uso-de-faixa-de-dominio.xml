@@ -1,55 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>solicitar-uso-de-faixa-de-dominio</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-uso-de-faixa-de-dominio</id>
+    <dbId>2</dbId>
+    <nome>Solicitar uso de Faixa de Domínio</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Faixa de domínio</item>
+        <item id="481">Faixa de domínio</item>
     </nomes-populares>
-    <descricao><![CDATA[É a concessão dada à pessoa física ou jurídica que queira explorar as faixas laterais e áreas adjacentes às estradas e rodovias. A faixa de domínio é a base física sobre a qual se assenta uma rodovia, área esta cujo uso obedecerá às condições de segurança do trânsito estabelecidas pelo DNIT.]]></descricao>
-    <contato><![CDATA[Mais informações no seguinte [link](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio)]]></contato>
+    <descricao>É a concessão dada à pessoa física ou jurídica que queira explorar as faixas laterais e áreas adjacentes às estradas e rodovias. A faixa de domínio é a base física sobre a qual se assenta uma rodovia, área esta cujo uso obedecerá às condições de segurança do trânsito estabelecidas pelo DNIT.</descricao>
+    <contato>Mais informações no seguinte [link](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio)</contato>
     <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="547">
             <tipo>Pessoa Física ou Jurídica</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="1" unidade="minutos"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1721">
             <titulo>Solicitação de Uso</titulo>
-            <descricao><![CDATA[O solicitante deve informar o motivo do pedido de uso da faixa de domínio, apresentar a documentação exigida e aguardar a aprovação ou não para que se assine contrato de permissão especial de uso da área. O pedido é feito à Superintendência Regional do DNIT no estado em que se encontra o trecho.]]></descricao>
+            <descricao>O solicitante deve informar o motivo do pedido de uso da faixa de domínio, apresentar a documentação exigida e aguardar a aprovação ou não para que se assine contrato de permissão especial de uso da área. O pedido é feito à Superintendência Regional do DNIT no estado em que se encontra o trecho.</descricao>
             <documentos>
                 <default>
-                    <item>Especificados no normativo presente no seguinte link: http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio/manual-procedimentos-faixa-de-dominio-atualizacao-cap12-dir-colegiada-26012015-site-fxd.pdf</item>
+                    <item id="1489">Especificados no normativo presente no seguinte link: http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio/manual-procedimentos-faixa-de-dominio-atualizacao-cap12-dir-colegiada-26012015-site-fxd.pdf</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo>
-                        <descricao><![CDATA[O valor será calculado em função da Unidade da Federação, tamanho, valor do m² e custo de manutenção da área solicitada]]></descricao>
-                        <moeda/>
-                        <valor/>
+                    <custo id="41">
+                        <descricao>O valor será calculado em função da Unidade da Federação, tamanho, valor do m² e custo de manutenção da área solicitada</descricao>
+                        <moeda>R$</moeda>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Os endereços das superintendências regionais podem ser encontrados no seguinte [link](http://www.dnit.gov.br/acesso-a-informacao/insitucional/copy_of_quem-e-quem)]]></descricao>
+                    <canal-de-prestacao id="2133" tipo="presencial">
+                        <descricao>Os endereços das superintendências regionais podem ser encontrados no seguinte [link](http://www.dnit.gov.br/acesso-a-informacao/insitucional/copy_of_quem-e-quem)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54844" dbId="23732">
+        <nomeOrgao>Departamento Nacional de Infraestrutura de Transportes (DNIT/MT)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
-        <item>Órgãos e entidades públicas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="2000">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2001">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2002">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Planejamento</item>
@@ -59,12 +66,12 @@
         <item>Normalização e Qualidade</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Faixa de Domínio</item>
-        <item>Rodovia</item>
-        <item>Uso</item>
-        <item>DNIT</item>
+        <item id="1380">Faixa de Domínio</item>
+        <item id="1381">Rodovia</item>
+        <item id="1382">Uso</item>
+        <item id="1383">DNIT</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Normativos do DNIT sobre uso de Faixa de domínio](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio)]]></item>
+        <item id="409">[Normativos do DNIT sobre uso de Faixa de domínio](http://www.dnit.gov.br/rodovias/operacoes-rodoviarias/faixa-de-dominio)</item>
     </legislacoes>
 </servico>
