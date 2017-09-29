@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>registro-profissional</id>
+    <dbId>830</dbId>
+    <nome>registrar-se-como-profissional-para-atividades-exigidas-em-lei</nome>
+    <sigla/>
+    <nomes-populares>
+        <item id="658">SIRPWEB</item>
+        <item id="657">DRT</item>
+    </nomes-populares>
+    <descricao>O registro profissional é exigido de trabalhadores de 14 categorias para ingressarem no mercado de trabalho. Se você é um profissional de uma delas, você deve utilizar este serviço para obter o seu Cartão de Registro Profissional.</descricao>
+    <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-digital>0</porcentagem-digital>
+    <solicitantes>
+        <solicitante id="849">
+            <tipo>Profissional das categorias regulamentadas por leis federais</tipo>
+            <requisitos>* Agenciador de propaganda;
+* Arquivista;
+* Artista;
+* Atuário;
+* Guardador e lavador de veículos;
+* Jornalista;
+* Publicitário;
+* Radialista;
+* Secretário;
+* Sociólogo;
+* Técnico em arquivo;
+* Técnico em espetáculos de diversões;
+* Técnico de segurança do trabalho; e
+* Técnico em secretariado.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="30" min="15" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade/>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="2217">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
+            <documentos>
+                <default>
+                    <item id="2340">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2777" tipo="web-agendar">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2218">
+            <titulo>Preencher Solicitação de Registro</titulo>
+            <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB **antes de comparecer ao seu atendimento presencial**</descricao>
+            <documentos>
+                <default>
+                    <item id="2341">CPF</item>
+                    <item id="2342">Dados pessoais e de escolaridade</item>
+                    <item id="2343">Dados de sua profissão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2778" tipo="web-preencher">
+                        <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/solicitacoes/solicitarRegistro.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2219">
+            <titulo>Comparecer à unidade de atendimento</titulo>
+            <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+            <documentos>
+                <default>
+                    <item id="2344">Requerimento em 2 (duas) vias, devidamente assinado;</item>
+                    <item id="2345">Fotocópia autenticada do documento de identificação que será apresentado ao órgão;</item>
+                    <item id="2346">Fotocópia autenticada do Cadastro de Pessoa Física (CPF);</item>
+                    <item id="2347">Fotocópia autenticada do número, série e qualificação civil da Carteira de Trabalho e Previdência Social (CTPS); e</item>
+                    <item id="2348">Documentos de capacitação específicos da profissão.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2779" tipo="presencial">
+                        <descricao>Unidade do Ministério do Trabalho escolhida no agendamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2220">
+            <titulo>Verificar o andamento da solicitação</titulo>
+            <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
+            <documentos>
+                <default>
+                    <item id="2349">CPF</item>
+                    <item id="2350">Número da solicitação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2780" tipo="web-acompanhar">
+                        <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/consultas/acompanharSolicitacao.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2221">
+            <titulo>Emitir Cartão de Registro Profissional</titulo>
+            <descricao>Quando o processo for finalizado, você deve emitir o seu Cartão de Registro de Contratante no SIRPWEB, que é o documento que irá permitir a contratação dos profissionais.</descricao>
+            <documentos>
+                <default>
+                    <item id="2351">CPF</item>
+                    <item id="2352">Nome</item>
+                    <item id="2353">Nome da Mãe</item>
+                    <item id="2354">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2781" tipo="web-emitir">
+                        <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/impressoes/emitircartao/profissional/main.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="2844"/>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2447">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Empregabilidade</item>
+        <item>Fomento ao Trabalho</item>
+        <item>Recursos humanos</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="1977">Licença para exercer profissão</item>
+        <item id="1978">Cartão profissional</item>
+        <item id="1979">regulamentação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="660">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
+    </legislacoes>
+</servico>
