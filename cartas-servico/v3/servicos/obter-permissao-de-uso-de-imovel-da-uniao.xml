@@ -1,31 +1,37 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>obter-permissao-de-uso-de-imovel-da-uniao</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-permissao-de-uso-de-imovel-da-uniao</id>
+    <dbId>38</dbId>
+    <nome>Obter permissão de Uso de imóvel da União</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Permissão para eventos em área pública</item>
+        <item id="552">Permissão para eventos em área pública</item>
     </nomes-populares>
-    <descricao><![CDATA[Este serviço permite solicitar o uso de área da União para eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional. O prazo máximo de vigência da permissão de uso é de 90 (noventa) dias, podendo ser prorrogado por igual período. A permissão será onerosa quando houver atividade lucrativa.]]></descricao>
-    <contato/>
+    <descricao>Este serviço permite solicitar o uso de área da União para eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional. O prazo máximo de vigência da permissão de uso é de 90 (noventa) dias, podendo ser prorrogado por igual período. A permissão será onerosa quando houver atividade lucrativa.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="664">
             <tipo>Pessoa Física</tipo>
-            <requisitos><![CDATA[Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e tenha qualidade de interessado (art. 9º da Lei nº 9.784, de 1999)]]></requisitos>
+            <requisitos>Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e tenha qualidade de interessado (art. 9º da Lei nº 9.784, de 1999)</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="665">
             <tipo>Pessoa Jurídica</tipo>
-            <requisitos><![CDATA[Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999]]></requisitos>
+            <requisitos>Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao><![CDATA[Não há prazo estipulado]]></descricao>
+        <descricao>Não há prazo estipulado</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1924">
             <titulo>Acesse o portal da SPU e preencha as informações solicitadas</titulo>
-            <descricao><![CDATA[Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)]]></descricao>
+            <descricao>Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -34,15 +40,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21]]></descricao>
+                    <canal-de-prestacao id="2403" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1925">
             <titulo>Confira toda a documentação apresentada</titulo>
-            <descricao><![CDATA[Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento]]></descricao>
+            <descricao>Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -51,15 +57,15 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21]]></descricao>
+                    <canal-de-prestacao id="2404" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="1926">
             <titulo>Acompanhe o status do seu atendimento</titulo>
-            <descricao><![CDATA[Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"]]></descricao>
+            <descricao>Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -68,18 +74,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21]]></descricao>
+                    <canal-de-prestacao id="2405" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
-        <item>Empresas</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="2194">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2195">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2196">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
@@ -90,12 +98,12 @@
         <item>Esporte e Lazer</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Eventos de rua</item>
-        <item>uso de área pública</item>
-        <item>permissão do goveno</item>
+        <item id="1584">Eventos de rua</item>
+        <item id="1585">uso de área pública</item>
+        <item id="1586">permissão do goveno</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[Lei n° 9.636/1988
-Decreto n° 3.725/2001]]></item>
+        <item id="511">Lei n° 9.636/1988
+Decreto n° 3.725/2001</item>
     </legislacoes>
 </servico>
