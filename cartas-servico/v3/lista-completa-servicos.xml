@@ -4699,6 +4699,158 @@ Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</de
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-o-seguro-desemprego</id>
+        <dbId>68</dbId>
+        <nome>Obter o Seguro-Desemprego</nome>
+        <sigla></sigla>
+        <descricao>Este serviço permite que você, caso tenha sido dispensado involuntariamente de seu último trabalho, requisite o seguro-desemprego, um auxílio financeiro temporário para que você possa manter seu sustento enquanto procura por um novo emprego.</descricao>
+        <contato>Central 158</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="833">
+                <tipo>Trabalhador formal e doméstico</tipo>
+                <requisitos>Em virtude da dispensa sem justa causa, inclusive dispensa indireta.</requisitos>
+            </solicitante>
+            <solicitante id="834">
+                <tipo>Trabalhador formal com contrato de trabalho suspenso</tipo>
+                <requisitos>Em virtude de participação em curso ou programa de qualificação profissional oferecido pelo empregador.</requisitos>
+            </solicitante>
+            <solicitante id="835">
+                <tipo>Pescador profissional</tipo>
+                <requisitos>Durante o período do defeso.</requisitos>
+            </solicitante>
+            <solicitante id="836">
+                <tipo>Trabalhador resgatado da condição semelhante à de escravo.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1357">
+                <titulo>Agendar o atendimento</titulo>
+                <descricao>Você deve agendar o atendimento em uma agência do Ministério do Trabalho</descricao>
+                <documentos>
+                    <default>
+                        <item id="2254">CPF</item>
+                        <item id="2255">Data de Nascimento</item>
+                        <item id="2256">Número do Telefone</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1674" tipo="web">
+                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2737" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2187">
+                <titulo>Realizar o pedido do seguro-desemprego</titulo>
+                <descricao>Você deverá se dirigir ao Posto de Atendimento escolhido na etapa anterior, no dia e horário agendados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2257">Carteira de Identidade</item>
+                        <item id="2258">Carteira de Trabalho</item>
+                        <item id="2259">Comprovante de residência</item>
+                        <item id="2260">Comprovante de renda</item>
+                        <item id="2261">CPF</item>
+                        <item id="2262">Comprovantes de depósito do FGTS</item>
+                        <item id="2263">Número de Identificação do Trabalhador (NIT)</item>
+                        <item id="2264">Comprovante de escolaridade</item>
+                        <item id="2265">Termo de Rescisão do Contrato de Trabalho (TRCT)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2738" tipo="presencial">
+                            <descricao>Postos de Atendimento do Ministério do Trabalho ou do SINE</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2188">
+                <titulo>Receber as parcelas do seguro-desemprego</titulo>
+                <descricao>Após a análise e comprovação do seu direito a receber o seguro-desemprego, você receberá as parcelas através da Caixa Econômica Federal.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="348" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                        <documento>
+                            <id>2266</id>
+                            <descricao>Cartão da Caixa Econômica</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="349" descricao="Se você não tem conta corrente ou conta poupança na Caixa">
+                        <documento>
+                            <id>2267</id>
+                            <descricao>Cartão Cidadão ou CPF e documento de identificação oficial com foto.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2742" tipo="presencial">
+                            <descricao></descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="350" descricao="Se você tem conta corrente ou conta poupança na Caixa">
+                        <canal-de-prestacao id="2739" tipo="presencial">
+                            <descricao>Através dos canais web, aplicativos móveis, caixas eletrônicos, agências e postos autorizados da Caixa</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="351" descricao="Se você tem o Cartão Cidadão com senha cadastrada">
+                        <canal-de-prestacao id="2740" tipo="presencial">
+                            <descricao>Caixas Eletrônicos, agências e postos autorizados da Caixa.</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="352" descricao="Se você não tem conta corrente ou conta poupança na Caixa e não tem o Cartão Cidadão com senha cadastrada">
+                        <canal-de-prestacao id="2741" tipo="presencial">
+                            <descricao>Agências da Caixa.</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+            <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Empregabilidade</item>
+            <item>Proteção Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1951">demissão</item>
+            <item id="1952">desemprego</item>
+            <item id="1953">defeso</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="649">[LEI Nº 13.134, DE 16 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13134.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-autorizacao-de-uso-de-imagens-e-videos-da-embratur</id>
         <dbId>69</dbId>
         <nome>Obter autorização de uso de imagens e vídeos da EMBRATUR</nome>
@@ -4854,157 +5006,6 @@ Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</de
         </palavras-chave>
         <legislacoes>
             <item id="362">http://www.planalto.gov.br/ccivil_03/leis/L8181.htm</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>obter-o-seguro-desemprego</id>
-        <dbId>68</dbId>
-        <nome>Obter o Seguro-Desemprego</nome>
-        <sigla></sigla>
-        <descricao>Este serviço permite que você, caso tenha sido dispensado involuntariamente de seu último trabalho, requisite o seguro-desemprego, um auxílio financeiro temporário para que você possa manter seu sustento enquanto procura por um novo emprego.</descricao>
-        <contato>Central 158</contato>
-        <gratuito>true</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="833">
-                <tipo>Trabalhador formal e doméstico</tipo>
-                <requisitos>Em virtude da dispensa sem justa causa, inclusive dispensa indireta.</requisitos>
-            </solicitante>
-            <solicitante id="834">
-                <tipo>Trabalhador formal com contrato de trabalho suspenso</tipo>
-                <requisitos>Em virtude de participação em curso ou programa de qualificação profissional oferecido pelo empregador.</requisitos>
-            </solicitante>
-            <solicitante id="835">
-                <tipo>Pescador profissional</tipo>
-                <requisitos>Durante o período do defeso.</requisitos>
-            </solicitante>
-            <solicitante id="836">
-                <tipo>Trabalhador resgatado da condição semelhante à de escravo.</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="1357">
-                <titulo>Agendar o atendimento</titulo>
-                <descricao>Você deve agendar o atendimento em uma agência do Ministério do Trabalho</descricao>
-                <documentos>
-                    <default>
-                        <item id="2254">CPF</item>
-                        <item id="2255">Data de Nascimento</item>
-                        <item id="2256">Número do Telefone</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1674" tipo="web">
-                            <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2737" tipo="telefone">
-                            <descricao>Central 158</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2187">
-                <titulo>Realizar o pedido do seguro-desemprego</titulo>
-                <descricao>Você deverá se dirigir ao Posto de Atendimento escolhido na etapa anterior, no dia e horário agendados.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2257">Carteira de Identidade</item>
-                        <item id="2258">Carteira de Trabalho</item>
-                        <item id="2259">Comprovante de residência</item>
-                        <item id="2260">Comprovante de renda</item>
-                        <item id="2261">CPF</item>
-                        <item id="2262">Comprovantes de depósito do FGTS</item>
-                        <item id="2263">Número de Identificação do Trabalhador (NIT)</item>
-                        <item id="2264">Comprovante de escolaridade</item>
-                        <item id="2265">Termo de Rescisão do Contrato de Trabalho (TRCT)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2738" tipo="presencial">
-                            <descricao>Postos de Atendimento do Ministério do Trabalho ou do SINE</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2188">
-                <titulo>Receber as parcelas do seguro-desemprego</titulo>
-                <descricao>Após a análise e comprovação do seu direito a receber o seguro-desemprego, você receberá as parcelas através da Caixa Econômica Federal.</descricao>
-                <documentos>
-                    <default/>
-                    <caso id="348" descricao="Se você tem conta corrente ou conta poupança na Caixa">
-                        <documento>
-                            <id>2266</id>
-                            <descricao>Cartão da Caixa Econômica</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="349" descricao="Se você não tem conta corrente ou conta poupança na Caixa">
-                        <documento>
-                            <id>2267</id>
-                            <descricao>Cartão Cidadão ou CPF e documento de identificação oficial com foto.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2742" tipo="presencial">
-                            <descricao>-</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="350" descricao="Se você tem conta corrente ou conta poupança na Caixa">
-                        <canal-de-prestacao id="2739" tipo="presencial">
-                            <descricao>Através dos canais web, aplicativos móveis, caixas eletrônicos, agências e postos autorizados da Caixa</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="351" descricao="Se você tem o Cartão Cidadão com senha cadastrada">
-                        <canal-de-prestacao id="2740" tipo="presencial">
-                            <descricao>Caixas Eletrônicos, agências e postos autorizados da Caixa.</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="352" descricao="Se você não tem conta corrente ou conta poupança na Caixa e não tem o Cartão Cidadão com senha cadastrada">
-                        <canal-de-prestacao id="2741" tipo="presencial">
-                            <descricao>Agências da Caixa.</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
-            <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Empregabilidade</item>
-            <item>Proteção Social</item>
-            <item>Proteção e Benefícios ao Trabalhador</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1951">demissão</item>
-            <item id="1952">desemprego</item>
-            <item id="1953">defeso</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="649">[LEI Nº 13.134, DE 16 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13134.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -8191,47 +8192,6 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         </areas-de-interesse>
     </servico>
     <servico>
-        <id>instituto-nacional-de-meteorologia-inmet</id>
-        <dbId>667</dbId>
-        <nome>Instituto Nacional de Meteorologia (INMET)</nome>
-        <sigla></sigla>
-        <descricao>O Instituto Nacional de Meteorologia (INMET) foi criado em 1909 e é órgão federal da administração direta do Ministério da Agricultura, Pecuária e Abastecimento (MAPA) com a missão de prover informações meteorológicas confiáveis à Sociedade Brasileira e influir construtivamente no processo de tomada de decisão, contribuindo para o desenvolvimento sustentável do País. Esta missão é atingida através do Monitoramento, Análise e Previsão do Tempo e Clima, fundamentados em pesquisa aplicada, no traba</descricao>
-        <gratuito>false</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <tempo-total-estimado/>
-        <etapas>
-            <etapa id="1511">
-                <titulo></titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1880" tipo="web">
-                            <descricao>http://www.inmet.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
-            <nomeOrgao>Ministério da Agricultura Pecuária e Abastecimento (MAPA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1744">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="1745">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Meio ambiente</item>
-            <item>Previdência Social</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
         <id>consulta-restituicao-e-situacao-da-declaracao-irpf-dirpf-declaracao-do-imposto-sobre-a-renda-da-pessoa-fisica-declaracoes-e-demonstrativo</id>
         <dbId>668</dbId>
         <nome>Consulta Restituição e Situação da Declaração IRPF (DIRPF - Declaração do Imposto sobre a Renda da Pessoa
@@ -8269,69 +8229,6 @@ Portaria STE nº 2, de 26 de agosto de 2013</item>
         <areas-de-interesse>
             <item>Economia e Finanças</item>
         </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>incluir-ou-alterar-endereco-de-correspondencia</id>
-        <dbId>3</dbId>
-        <nome>Incluir ou Alterar Endereço de Correspondência</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="548">Mudar Endereço</item>
-        </nomes-populares>
-        <descricao>A função ATUALIZAÇÃO DE ENDEREÇO ESPECIAL permite ao usuário incluir um endereço alternativo (que passa a ser o preferencial) para o recebimento de suas cobranças, notificações e correspondências da SPU.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="650">
-                <tipo>Pessoa Física ou Jurídica</tipo>
-                <requisitos>Que tenha qualquer relacionamento com a SPU</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="0" unidade="minutos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1904">
-                <titulo>Solicitar alteração</titulo>
-                <descricao>O usuário deverá proceder à alteração no site da SPU</descricao>
-                <documentos>
-                    <default>
-                        <item id="1884">CPF/CNPJ</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2383" tipo="web">
-                            <descricao>http://atendimentovirtual.spu.planejamento.gov.br/EnderecoEspecial/EndEsp_Pedido.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1986" dbId="43033">
-            <nomeOrgao>Secretaria do Patrimônio da União (SPU)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2172">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2173">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Habitação</item>
-            <item>Patrimônio</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1568">Endereço</item>
-            <item id="1569">Mudar</item>
-            <item id="1570">Trocar</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="506">...</item>
-        </legislacoes>
     </servico>
     <servico>
         <id>instalar-projeto-industrial-em-zonas-de-processamento-de-exportacao</id>
@@ -12407,152 +12304,6 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         </legislacoes>
     </servico>
     <servico>
-        <id>homologar-rescisao-de-contrato-de-trabalho</id>
-        <dbId>303</dbId>
-        <nome>Homologar Rescisão de Contrato de Trabalho</nome>
-        <sigla>TRCT</sigla>
-        <nomes-populares>
-            <item id="645">Homolognet</item>
-        </nomes-populares>
-        <descricao>Com este serviço você pode homologar a rescisão de seu contrato de trabalho, o que garante o direito de sacar o FGTS e dar entrada no Seguro Desemprego.</descricao>
-        <contato>Central 158</contato>
-        <gratuito>true</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="824">
-                <tipo>Trabalhador</tipo>
-                <requisitos>Cujo contrato de trabalho tenha sido rescindido.</requisitos>
-            </solicitante>
-            <solicitante id="825">
-                <tipo>Empregador</tipo>
-                <requisitos>Pessoa física ou jurídica</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento/>
-        <etapas>
-            <etapa id="1345">
-                <titulo>Emitir o Termo de Rescisão do Contrato de Trabalho (TRCT)</titulo>
-                <descricao>Você deve acessar o sistema Homolognet, digitar os dados da rescisão do contrato e emitir o TRCT.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2232">Dados do contrato de trabalho</item>
-                        <item id="2233">Dados do trabalhador</item>
-                        <item id="2234">Dados do empregador</item>
-                    </default>
-                    <caso id="341" descricao="Empregador">
-                        <documento>
-                            <id>2230</id>
-                            <descricao>CNPJ</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="342" descricao="Trabalhadores">
-                        <documento>
-                            <id>2231</id>
-                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1660" tipo="web">
-                            <descricao>http://trabalho.gov.br/homolognet</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2723" tipo="presencial">
-                            <descricao>Sindicato de sua categoria na sua região</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2724" tipo="telefone">
-                            <descricao>Central 158</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2179">
-                <titulo>Agendar homologação do TRCT</titulo>
-                <descricao>Você deve agendar sua visita à Agência do MTE mais próxima.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2235">Número do TRCT</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2725" tipo="telefone">
-                            <descricao>Central 158</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2180">
-                <titulo>Homologar a Rescisão do Contrato de Trabalho</titulo>
-                <descricao>No dia e horário agendados na etapa anterior, você deverá comparecer, com a documentação necessária, à Agência do MTE.</descricao>
-                <documentos>
-                    <default>
-                        <item id="2239">TRCT</item>
-                    </default>
-                    <caso id="343" descricao="Trabalhador">
-                        <documento>
-                            <id>2236</id>
-                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="344" descricao="Empregador">
-                        <documento>
-                            <id>2237</id>
-                            <descricao>CNPJ/CPF</descricao>
-                        </documento>
-                        <documento>
-                            <id>2238</id>
-                            <descricao>Comprovantes de pagamento do FGTS</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2726" tipo="presencial">
-                            <descricao>Agência do MTE onde a visita foi agendada na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
-            <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1555">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2423">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Previdência Social</item>
-            <item>Recursos humanos</item>
-            <item>Relações de Trabalho</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1941">Rescisão</item>
-            <item id="1942">Demissão</item>
-            <item id="1943">FGTS</item>
-            <item id="1944">Seguro Desemprego</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="646">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>cadastrar-se-no-programa-de-alimentacao-do-trabalhador</id>
         <dbId>820</dbId>
         <nome>Cadastrar-se no Programa de Alimentação do Trabalhador</nome>
@@ -12676,6 +12427,153 @@ Brasília-DF - CEP 70059-900</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>homologar-rescisao-de-contrato-de-trabalho</id>
+        <dbId>303</dbId>
+        <nome>Homologar Rescisão de Contrato de Trabalho</nome>
+        <sigla>TRCT</sigla>
+        <nomes-populares>
+            <item id="645">Homolognet</item>
+        </nomes-populares>
+        <descricao>Com este serviço você pode homologar a rescisão de seu contrato de trabalho, o que garante o direito de sacar o FGTS e dar entrada no Seguro Desemprego.</descricao>
+        <contato>Central 158</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="824">
+                <tipo>Trabalhador</tipo>
+                <requisitos>Cujo contrato de trabalho tenha sido rescindido.</requisitos>
+            </solicitante>
+            <solicitante id="825">
+                <tipo>Empregador</tipo>
+                <requisitos>Pessoa física ou jurídica</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1345">
+                <titulo>Emitir o Termo de Rescisão do Contrato de Trabalho (TRCT)</titulo>
+                <descricao>Você deve acessar o sistema Homolognet, digitar os dados da rescisão do contrato e emitir o TRCT.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2232">Dados do contrato de trabalho</item>
+                        <item id="2233">Dados do trabalhador</item>
+                        <item id="2234">Dados do empregador</item>
+                    </default>
+                    <caso id="341" descricao="Empregador">
+                        <documento>
+                            <id>2230</id>
+                            <descricao>CNPJ</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="342" descricao="Trabalhadores">
+                        <documento>
+                            <id>2231</id>
+                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1660" tipo="web-emitir">
+                            <descricao>http://trabalho.gov.br/homolognet</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2723" tipo="presencial">
+                            <descricao>Sindicato de sua categoria na sua região</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2724" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2179">
+                <titulo>Agendar homologação do TRCT</titulo>
+                <descricao>Você deve agendar sua visita à Agência do MTE mais próxima.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2235">Número do TRCT</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2725" tipo="telefone">
+                            <descricao>Central 158</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2180">
+                <titulo>Homologar a Rescisão do Contrato de Trabalho</titulo>
+                <descricao>No dia e horário agendados na etapa anterior, você deverá comparecer, com a documentação necessária, à Agência do MTE.</descricao>
+                <documentos>
+                    <default>
+                        <item id="2239">TRCT</item>
+                    </default>
+                    <caso id="343" descricao="Trabalhador">
+                        <documento>
+                            <id>2236</id>
+                            <descricao>Carteira de Trabalho e Previdência Social</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="344" descricao="Empregador">
+                        <documento>
+                            <id>2237</id>
+                            <descricao>CNPJ/CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>2238</id>
+                            <descricao>Comprovantes de pagamento do FGTS</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2726" tipo="presencial">
+                            <descricao>Agência do MTE onde a visita foi agendada na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+            <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="1555">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2423">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Previdência Social</item>
+            <item>Recursos humanos</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1941">Rescisão</item>
+            <item id="1942">Demissão</item>
+            <item id="1943">FGTS</item>
+            <item id="1944">Seguro Desemprego</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="646">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>cadastrar-bem-arqueologico</id>
         <dbId>848</dbId>
         <nome>Cadastrar bem arqueológico</nome>
@@ -12752,12 +12650,6 @@ Lei nº 3.924/1961 , Lei nº 4.845/1965 e Lei nº 5.471/1968</descricao>
         <gratuito>true</gratuito>
         <porcentagem>0</porcentagem>
         <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="896">
-                <tipo>Cidadão</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
         <tempo-total-estimado>
             <ate max="15" unidade="dias-uteis"/>
             <descricao></descricao>
@@ -12765,50 +12657,15 @@ Lei nº 3.924/1961 , Lei nº 4.845/1965 e Lei nº 5.471/1968</descricao>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
-        <etapas>
-            <etapa id="2280">
-                <titulo>Autorização pa ra Saída de Obras de Arte do País</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2863" tipo="postal">
-                            <descricao>Por ofício: Dirigido à Superintendência do IPHAN em seu estado.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
+        <etapas/>
         <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
             <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
         </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2592">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2593">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="2594">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2595">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Cultura</item>
             <item>Difusão Cultural</item>
             <item>Patrimônio Cultural</item>
         </areas-de-interesse>
-        <palavras-chave>
-            <item id="2145">Autorização para Saída de Obras de Arte do Pa</item>
-            <item id="2146">IPHAN</item>
-            <item id="2147">IPHAN</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="699">Decreto-Lei nº 25/1937 (http://www.planalto.gov.br/ccivil_
-03/decreto-lei/del0025.htm), Lei nº 3.924/1961 (http://www.planalto.gov.br/ccivil_03/leis/1950-
-1969/L3924.htm), Lei nº 4.845/1965 (http://www.planalto.gov.br/ccivil_03/leis/L4845.htm) e Lei nº
-5.471/1968 (http://www.planalto.gov.br/ccivil_03/leis/L5471.htm).</item>
-        </legislacoes>
     </servico>
     <servico>
         <id>matricular-se-em-mestrado-profissional-em-preservacao-do-patrimonio-cultura</id>
@@ -13564,227 +13421,6 @@ Obs: Os estrangeiros provenientes dos países de língua portuguesa integrantes 
         </palavras-chave>
         <legislacoes>
             <item id="678">Lei nº 6.815/80; Decreto nº 86.715/81 e Resoluções Normativas do Conselho Nacional de Imigração</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>restituir-declaracao-do-imposto-de-renda-pessoa-fisica-irpf</id>
-        <dbId>262</dbId>
-        <nome>Restituir Declaração do Imposto de Renda Pessoa Física - IRPF</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="690">Restituição do Imposto de Renda</item>
-        </nomes-populares>
-        <descricao>O pagamento da restituição do Imposto sobre a Renda da Pessoa Física (IRPF) é efetuado pela Secretaria da Receita Federal do Brasil (RFB) exclusivamente mediante crédito em conta-corrente ou poupança de titularidade do beneficiário, informada na Declaração do Imposto sobre a Renda da Pessoa Física (DIRPF), admitida as exceções no caso de contribuinte falecido, menor de idade, incapaz ou com saída definitiva do país.</descricao>
-        <contato>Acesse o [Fale Conosco](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/dirf)</contato>
-        <gratuito>true</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="919">
-                <tipo>Contribuinte que tenha pago imposto a mais no processo de Declaração de Ajuste Anual do Imposto sobre a Renda da Pessoa Física (DIRPF) no exercício.</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="8" unidade="meses"/>
-            <descricao>* 1º Lote 16/06/2017 
-
-* 2º Lote 17/07/2017
-
-* 3º Lote 15/08/2017 
-
-* 4º Lote 15/09/2017
-
-* 5º Lote 16/10/2017
-
-* 6º Lote 16/11/2017 	
-
-* 7º Lote 15/12/2017</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Sem validade</tipo>
-            <quantidade>5</quantidade>
-            <unidade>anos</unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="1243">
-                <titulo>Consultar Restituições do Imposto de Renda</titulo>
-                <descricao>Para verificar se a restituição foi liberada, faça a consulta online, pelo telefone ou pelo aplicativo da Receita disponível para smartphones.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2951" tipo="telefone">
-                            <descricao>Ligue para 146 e selecione a opção 3</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2952" tipo="aplicativo-movel">
-                            <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
-
-
-* [IOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1529" tipo="web-consultar">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atrjo/ConsRest/Atual.app/paginas/index.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2320">
-                <titulo>Receber restituição</titulo>
-                <descricao>Restituição segue a programação de lotes abaixo. Havendo divergência relacionada aos seus dados bancários para depósito, o contribuinte deverá, caso ainda dentro do prazo de um ano da disponibilização da restituição na rede bancária,  ir pessoalmente em qualquer agência do Banco do Brasil para corrigir as informações e solicitar novo agendamento do crédito ou ligar na Central de Atendimento do Banco: 4004-0001 (capitais), 0800-729-0001 (demais localidades).</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2953" tipo="web-acompanhar">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atrjo/ConsRest/Atual.app/paginas/index.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
-            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1428">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2196">IRPF</item>
-            <item id="2197">Restituição</item>
-            <item id="2198">Imposto</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="735">Instrução Normativa RFB nº 1690, de 20 de fevereiro de 2017</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>loja-virtual-da-fundacao-alexandre-de-gusmao-funag</id>
-        <dbId>894</dbId>
-        <nome>Loja Virtual da Fundação Alexandre de Gusmão (FUNAG)</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="695">Loja virtual</item>
-            <item id="696">Loja de livros</item>
-            <item id="697">Comprar livros sobre o tema de relações internacionais</item>
-        </nomes-populares>
-        <descricao>Loja Virtual onde estão disponíveis para a compra as obras publicadas e editadas pela Fundação Alexandre de Gusmão sobre temas da política externa, das relações internacionais e da história diplomática do Brasil.</descricao>
-        <contato>* Fundação Alexandre de Gusmão
-* Endereço: Esplanada dos Ministérios, Bloco "H" - Anexo II, Térreo
-* CEP: 70170-900       CNPJ: 00662197/0001-24
-* Telefones: (61)2030-6033/6034/6820/6847  /  Fax: (61)2030-9125
-* E-mail: funag@funag.gov.br  /  funag@itamaraty.gov.br
-* Horário de funcionamento: Seg a Sex das 8h às 18h</contato>
-        <gratuito>false</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="921">
-                <tipo>Qualquer cidadão interessado em adquirir publicações sobre o tema de relações internacionais do Brasil</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="7" unidade="dias-corridos"/>
-            <descricao>Após confirmação do pagamento o produto é enviado via PAC pelos correios. A partir desse momento o prazo de entrega estimado é de até 7 dias corridos.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Sem validade</tipo>
-            <quantidade>0</quantidade>
-            <unidade></unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2324">
-                <titulo>Aquisição de uma obra da Loja Virtual da Fundação Alexandre de Gusmão</titulo>
-                <descricao>* Acessar o site da [loja virtual da FUNAG](http://www.funag.gov.br/loja)
-* Clicar em "Acesse" sua conta e preencher os campos de usuário e senha
-* Navegar pela loja, escolhendo os produtos de interesse e clicando em comprar para adicionar ao carrinho de compra
-* Finalizar a compra, informando o CEP para entrega
-* Será gerado um GRU (Guia de Recolhimento da União) para ser pago no Banco do Brasil
-* Aguardar a encomenda chegar pelos Correios no endereço informado</descricao>
-                <documentos>
-                    <default>
-                        <item id="2544">CPF</item>
-                        <item id="2545">RG</item>
-                        <item id="2546">Dados de endereço</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="94">
-                            <descricao>Custo do livro</descricao>
-                            <moeda>R$</moeda>
-                            <valor>31,000</valor>
-                        </custo>
-                        <custo id="95">
-                            <descricao>Custo do livro</descricao>
-                            <moeda>R$</moeda>
-                            <valor>15,000</valor>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2961" tipo="web">
-                            <descricao>http://www.funag.gov.br/loja/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/299" dbId="34299">
-            <nomeOrgao>Fundação Alexandre de Gusmão (FUNAG)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2630">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2631">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="2632">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2633">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Clima</item>
-            <item>Comércio e Serviços</item>
-            <item>Comercio externo</item>
-            <item>Cultura</item>
-            <item>Defesa Nacional</item>
-            <item>Defesa militar</item>
-            <item>Difusão</item>
-            <item>Difusão Cultural</item>
-            <item>Educação</item>
-            <item>Educação básica</item>
-            <item>Educação profissionalizante</item>
-            <item>Educação superior</item>
-            <item>Energia</item>
-            <item>Energia elétrica</item>
-            <item>Meio ambiente</item>
-            <item>Preservação e Conservação Ambiental</item>
-            <item>Relações Diplomáticas</item>
-            <item>Relações Internacionais</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2207">Loja Virtual</item>
-            <item id="2208">Compra de Livros</item>
-            <item id="2209">Publicações sobre Relações Internacionais</item>
-            <item id="2210">Direito internacional</item>
-            <item id="2211">Diplomacia</item>
-            <item id="2212">Política Externa</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="739">http://funag.gov.br/index.php/pt-br/legislacao</item>
         </legislacoes>
     </servico>
     <servico>
@@ -14988,189 +14624,6 @@ SAUS Quadra 3 Bloco O 10º andar Ed. Órgãos Regionais CEP 70079-900</descricao
         </palavras-chave>
         <legislacoes>
             <item id="828">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>obter-carta-de-aprovacao-no-ambito-do-mdl</id>
-        <dbId>956</dbId>
-        <nome>Obter Carta de Aprovação no âmbito do MDL</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="739">MDL</item>
-        </nomes-populares>
-        <descricao>A Comissão Interministerial de Mudança Global do Clima – CIMGC,  é a Autoridade Nacional Designada – AND, ponto focal, no Brasil, do Mecanismo de Desenvolvimento Limpo do Protocolo de Quioto. A Autoridade Nacional Designada deve atestar a participação voluntária dos participantes da atividade de projeto no âmbito do Mecanismo de Desenvolvimento Limpo - MDL, atestar que a atividade de projeto contribui para o desenvolvimento sustentável e, finalmente, emitir a Carta de Aprovação do projeto para os participantes nacionais de atividades de projeto MDL.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1115">
-                <tipo>Empresas privadas</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1116">
-                <tipo>Empresas públicas ou de economia mista</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1117">
-                <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1118">
-                <tipo>Estados e municípios</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="60" max="90" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2493">
-                <titulo>Submeter Projeto</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2881">CNPJ</item>
-                        <item id="2882">Comprovante de endereço/residência</item>
-                        <item id="2883">Contrato Social</item>
-                        <item id="2884">Registro da Junta Comercial</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3194" tipo="postal">
-                            <descricao>A/C Comissão Interministerial de Mudança Global de Clima
-Ministério da Ciência, Tecnologia, Inovações e Comunicações
-Esplanada dos Ministérios, Bloco E, Sala 258
-CEP: 70.067-900</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2494">
-                <titulo>Pedir Revisões no Projeto (Opcional)</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2885">Documentos Complementares.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3195" tipo="postal">
-                            <descricao>Endereço do Proponente.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2495">
-                <titulo>Enviar documentos complementares</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="2886">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3196" tipo="postal">
-                            <descricao>Ministério da Ciência, Tecnologia, Inovação e Comunicações</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
-            <nomeOrgao>Ministério da Ciência Tecnologia e Inovação e Comunicações (MCTIC)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2755">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="2756">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2757">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Meio ambiente</item>
-            <item>Pesquisa e Desenvolvimento</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2610">Protocolo de Quioto</item>
-            <item id="2611">MDL</item>
-            <item id="2612">Mecanismo de Desenvolvimento Limpo</item>
-            <item id="2613">Carta de Aprovação</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="836">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>optar-pelo-sistema-de-informacoes-juridico-tributarias-sijut</id>
-        <dbId>170</dbId>
-        <nome>Optar pelo Sistema de Informações Jurídico-Tributárias - Sijut</nome>
-        <sigla></sigla>
-        <descricao>Optar pelo recebimento, na Caixa Postal do e-CAC, da legislação diária do Sijut - Sistema de Informações Jurídico-Tributárias.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="979">
-                <tipo>Pessoa Física e Pessoa Jurídica</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="1172">
-                <titulo>Optar pelo Sistema de Informações Jurídico-Tributárias - Sijut</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1434" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx?sistema=05034</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/77" dbId="42526">
-            <nomeOrgao>Secretaria da Receita Federal do Brasil (RFB)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="1337">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2292">Sistema de Informações</item>
-            <item id="2293">Jurídico-Tributarias</item>
-            <item id="2294">Sijut</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="758">N/A</item>
         </legislacoes>
     </servico>
     <servico>
@@ -20912,140 +20365,6 @@ Brasília, Distrito Federal, CEP 70.054-906</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>capacitar-se-em-temas-relativos-ao-desenvolvimento-social</id>
-        <dbId>983</dbId>
-        <nome>Capacitar-se em temas relativos ao Desenvolvimento Social</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="763">Portal EaD/MDS</item>
-        </nomes-populares>
-        <descricao>O Portal EaD/MDS é um espaço virtual de aprendizagem onde são oferecidos cursos e tutoriais a distância, voltados especialmente para técnicos, gestores e profissionais das diversas áreas de atuação do Ministério do Desenvolvimento Social. Atualmente, nossos cursos e tutoriais são abertos para qualquer cidadão interessado, mas podem existir turmas e salas com restrição de público.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1173">
-                <tipo>Cidadãos e Famílias</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1174">
-                <tipo>Órgãos da administração direta</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1175">
-                <tipo>Estados e municípios</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2582">
-                <titulo>Cadastrar-se no Portal EaD/MDS.</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3070">CPF</item>
-                        <item id="3071">E-mail</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3333" tipo="web">
-                            <descricao>www.mds.gov.br/ead</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2583">
-                <titulo>Inscrever-se em um curso ou escolher o tutorial desejado</titulo>
-                <descricao>Realizar o login no Portal, escolher os cursos ou tutoriais desejados e confirmar a inscrição.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3072">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3334" tipo="web">
-                            <descricao>www.mds.gov.br/ead</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2584">
-                <titulo>Complementar dados (apenas para matrícula em cursos)</titulo>
-                <descricao>Complementação do cadastro com dados adicionais</descricao>
-                <documentos>
-                    <default>
-                        <item id="3073">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3335" tipo="web">
-                            <descricao>http://www.mds.gov.br/ead</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2585">
-                <titulo>Receber certificado de conclusão (apenas para matrícula em cursos)</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3336" tipo="web">
-                            <descricao>http://www.mds.gov.br/ead</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2809">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="2810">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2811">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Educação</item>
-            <item>Proteção Social</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2772">capacitação</item>
-            <item id="2773">curso a distância</item>
-            <item id="2774">Portal EAD</item>
-            <item id="2775">MDS</item>
-            <item id="2776">tutoriais</item>
-            <item id="2777">Desenvolvimento Social</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="861">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>candidatar-se-ao-premio-tesouro-nacional</id>
         <dbId>997</dbId>
         <nome>Candidatar-se ao Prêmio Tesouro Nacional</nome>
@@ -21193,6 +20512,140 @@ trabalhos em um workshop no dia posterior a data da cerimônia de premiação.</
         </palavras-chave>
         <legislacoes>
             <item id="889">[Portaria nº 31, de 24/02/17](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=03/03/2017&amp;jornal=1&amp;pagina=54&amp;totalArquivos=132)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>capacitar-se-em-temas-relativos-ao-desenvolvimento-social</id>
+        <dbId>983</dbId>
+        <nome>Capacitar-se em temas relativos ao Desenvolvimento Social</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="763">Portal EaD/MDS</item>
+        </nomes-populares>
+        <descricao>O Portal EaD/MDS é um espaço virtual de aprendizagem onde são oferecidos cursos e tutoriais a distância, voltados especialmente para técnicos, gestores e profissionais das diversas áreas de atuação do Ministério do Desenvolvimento Social. Atualmente, nossos cursos e tutoriais são abertos para qualquer cidadão interessado, mas podem existir turmas e salas com restrição de público.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1173">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1174">
+                <tipo>Órgãos da administração direta</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1175">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2582">
+                <titulo>Cadastrar-se no Portal EaD/MDS.</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3070">CPF</item>
+                        <item id="3071">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3333" tipo="web">
+                            <descricao>www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2583">
+                <titulo>Inscrever-se em um curso ou escolher o tutorial desejado</titulo>
+                <descricao>Realizar o login no Portal, escolher os cursos ou tutoriais desejados e confirmar a inscrição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3072">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3334" tipo="web">
+                            <descricao>www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2584">
+                <titulo>Complementar dados (apenas para matrícula em cursos)</titulo>
+                <descricao>Complementação do cadastro com dados adicionais</descricao>
+                <documentos>
+                    <default>
+                        <item id="3073">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3335" tipo="web">
+                            <descricao>http://www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2585">
+                <titulo>Receber certificado de conclusão (apenas para matrícula em cursos)</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3336" tipo="web">
+                            <descricao>http://www.mds.gov.br/ead</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2809">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="2810">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2811">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2772">capacitação</item>
+            <item id="2773">curso a distância</item>
+            <item id="2774">Portal EAD</item>
+            <item id="2775">MDS</item>
+            <item id="2776">tutoriais</item>
+            <item id="2777">Desenvolvimento Social</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="861">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -21784,226 +21237,6 @@ CEP 70053-900.</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>cadastrar-se-no-programa-de-fomento-as-atividades-produtivas-rurais</id>
-        <dbId>974</dbId>
-        <nome>Cadastrar-se no Programa de Fomento às Atividades Produtivas Rurais</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="757">Fomento BSM, Fomento Brasil Sem Miséria, Fomento Rural</item>
-        </nomes-populares>
-        <descricao>O Programa Fomento Rural (Fomento às Atividades Produtivas Rurais) contribui com a estratégia de inclusão produtiva, apoiando os investimentos produtivos de famílias rurais que se encontram em situação de pobreza.
-
-O programa envolve a combinação de duas ações: a oferta de serviços de assistência técnica e extensão rural (Ater) ou por meio de parcerias com os governos estaduais, e a transferência direta às famílias, por meio do cartão do Programa Bolsa Família, de recursos financeiros não-reembolsáveis.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1162">
-                <tipo>Modalidade Tradicional</tipo>
-                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais que:
-1.       
-
-
-¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 85,00;
-
-2.     
-   
-
-¨Estar apto ao Pronaf ou constar na Relação de Beneficiários do INCRA; e
-
-3.         
-
-
-¨Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
-            </solicitante>
-            <solicitante id="1163">
-                <tipo>Modalidade Semiárido</tipo>
-                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais residentes no semiárido que:
-
-¨Detenham tecnologias sociais de armazenamento de água para produção;    
-
-
-¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 170,00;    
-
-
-¨Estejam aptos ao Pronaf ou constem na Relação de Beneficiários do INCRA; e    
-
-
-¨ Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="1" max="120" unidade="meses"/>
-            <descricao>O tempo varia de caso a caso, não é possível estabelecer um tempo padrão.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2558">
-                <titulo>Procurar uma entidade Assistência Técnica e Extensão Rural (ATER)</titulo>
-                <descricao>As entidades de Ater são responsáveis por identificar e mobilizar as famílias para participar do programa. Esta seleção é feita a partir dos dados do Cadastro Único e de Busca Ativa realizada por estas entidades. As entidades de Ater são orientadas a, na medida do possível, priorizar a cobertura de famílias que cumprem os requisitos para participar do Fomento Rural dentro de uma mesma comunidade, e a dar prioridade a famílias em situação de insegurança alimentar e nutricional.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3016">NIS</item>
-                        <item id="3017">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3302" tipo="presencial">
-                            <descricao>A mobilização ocorre em comunidades rurais, com suporte da rede de assistência social e de saúde, de sindicatos e de outros parceiros que possam ajudar a identificar comunidades mais vulneráveis. A seleção das famílias ocorre nas comunidades rurais e nas residências das mesmas.</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3303" tipo="presencial">
-                            <descricao>Entidades de ATER selecionadas pelo programa e que atuem em sua região. Saiba quais são [aqui](http://www.mds.gov.br/webarquivos/arquivo/seguranca_alimentar/metas_previstas_entidades_respons%C3%A1veis_fomento.pdf)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2559">
-                <titulo>Participar de entrevistas com os técnicos do programa</titulo>
-                <descricao>Os agentes de Ater elaboram um diagnóstico de sua situação socioeconômica levantando informações como a identificação de todos os integrantes de cada família, a descrição de sua rotina de trabalho e de comercialização dos excedentes produzidos, a forma como acessam os serviços públicos e quais são suas expectativas e anseios quanto a atividades geradoras de renda.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3018">NIS</item>
-                        <item id="3019">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3304" tipo="presencial">
-                            <descricao>Residência da família atendida</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2560">
-                <titulo>Elaborar Projeto Produtivo para organizar e/ou ampliar a produção (em conjunto com os técnicos do programa)</titulo>
-                <descricao>Nesta etapa são definidas uma ou mais atividades produtivas e as etapas necessárias para seu desenvolvimento. Elas podem ser atividades agrícolas, como a criação de pequenos animais e hortas, ou não agrícolas, como artesanato e pesca, desde que sirva para gerar renda para a família beneficiária e, se possível, ampliar e diversificar sua produção de alimentos. A família também assinará o Termo de Adesão, confirmando que está participando do Programa e que conhece as regras para essa participação.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3020">NIS</item>
-                        <item id="3021">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
-                        <item id="3022">Termo de Adesão ao Programa de Fomento</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3305" tipo="presencial">
-                            <descricao>Residência da família atendida</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2561">
-                <titulo>Receber visitas técnicas (Assistência Técnica)</titulo>
-                <descricao>Durante estas visitas o agente técnico irá:
-
-¨Acompanhar o desenvolvimento do projeto e discutir com a família soluções para problemas que surgirem;
-
-¨Auxiliará a família a se inserir em outras políticas sociais e de desenvolvimento rural que estejam disponíveis; e
-
-¨Confirmar o uso satisfatório dos recursos recebidos para o desenvolvimento do projeto, garantindo assim o recebimento das outras parcelas pela família.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3023">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3306" tipo="presencial">
-                            <descricao>Residência da família atendida</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2562">
-                <titulo>Receber o recurso financeiro do Programa</titulo>
-                <descricao>Na modalidade tradicional, o valor é de R$ 2.400,00, que pode ser dividido em:
-
-a) Duas parcelas, a primeira sendo de R$ 1.400,00 e a segunda de R$ 1.000,00;
-
-b) Três parcelas, a primeira sendo de R$ 1.000,00 e as duas seguintes de R$ 700,00.
-
-Na modalidade Semiárido, o valor é de R$ 3.000,00, recebido em duas parcelas, sendo a primeira de R$ 1.800,00 e a segunda de R$ 1.200,00.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3024">NIS</item>
-                        <item id="3025">Cartão Cidadão ou Cartão do Bolsa Família. Caso o beneficiário não tenha um desses documentos, deve apresentar documento de identificação com foto para saque por guia offline exclusivamente em agências bancárias</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3307" tipo="presencial">
-                            <descricao>Para receber informações sobre a liberação das parcelas para saque, na unidade produtiva familiar ou residência.
-Para sacar os recursos, em agência bancária, lotérica ou outro correspondente bancário.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2563">
-                <titulo>Receber avaliação do projeto</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3308" tipo="presencial">
-                            <descricao>Unidade produtiva familiar ou centro comunitário</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2796">Cidadãos</item>
-            <item idSegmento="4" idServicoSegmento="2797">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Proteção Social</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2722">ATER</item>
-            <item id="2723">assistência técnica</item>
-            <item id="2724">agricultura familiar</item>
-            <item id="2725">fomento rural</item>
-            <item id="2726">cadastro único</item>
-            <item id="2727">bolsa família</item>
-            <item id="2728">projeto produtivo</item>
-            <item id="2729">semiárido</item>
-            <item id="2730">desenvolvimento rural</item>
-            <item id="2731">combate à fome</item>
-            <item id="2732">combate à miséria</item>
-            <item id="2733">rural</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="849">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>receber-tecnologia-social-de-acesso-a-agua-para-consumo-familiar</id>
         <dbId>976</dbId>
         <nome>Receber tecnologia social de acesso à água para consumo familiar</nome>
@@ -22253,98 +21486,6 @@ thais.kawashima@mds.gov.br</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="860">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>inscrever-se-no-cpf-em-representacao-diplomatica-no-exterior</id>
-        <dbId>1002</dbId>
-        <nome>Inscrever-se no CPF em representação diplomática no exterior</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="774">CPF</item>
-        </nomes-populares>
-        <descricao>Realizar, em Representação Diplomática do Brasil, pedido de inscrição, alteração, regularização ou cancelamento no CPF de residente no exterior.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1223">
-                <tipo>Cidadãos e Famílias</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1224">
-                <tipo>Estrangeiros</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="2" max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2641">
-                <titulo>Requerer cadastro</titulo>
-                <descricao>Informar os dados requisitados e receber o comprovante impresso do CPF. Na internet, apenas para pessoas com idade entre 16 e 25 anos que possuam título de eleitor em situação regular</descricao>
-                <documentos>
-                    <default>
-                        <item id="3208">Carteira de identidade de estrangeiro</item>
-                        <item id="3209">Passaporte</item>
-                        <item id="3210">Carteira de Identidade</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="108">
-                            <descricao>Taxa de Serviços de CPF (apenas presencial)....</descricao>
-                            <moeda>R$</moeda>
-                            <valor>7</valor>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3431" tipo="presencial">
-                            <descricao>Representações diplomáticas brasileiras no país de residência</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3432" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
-            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2840">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Comércio e Serviços</item>
-            <item>Economia e Finanças</item>
-            <item>Educação</item>
-            <item>Habitação</item>
-            <item>Indústria</item>
-            <item>Meio ambiente</item>
-            <item>Proteção Social</item>
-            <item>Saúde</item>
-            <item>Segurança e Ordem Pública</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2935">CPF</item>
-            <item id="2936">exterior</item>
-            <item id="2937">estrangeiros</item>
-            <item id="2938">embaixada</item>
-            <item id="2939">representação diplomática</item>
-            <item id="2940">cpf no exterior</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="894">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -30162,227 +29303,6 @@ Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov
         </legislacoes>
     </servico>
     <servico>
-        <id>inscrever-se-no-cadastro-de-pessoas-fisicas</id>
-        <dbId>1062</dbId>
-        <nome>Inscrever-se no Cadastro de Pessoas Físicas</nome>
-        <sigla>CPF</sigla>
-        <descricao>Inscrição do CPF na internet ou nos conveniados: Banco do Brasil, Caixa Econômica Federal e Correios ou em entidades públicas conveniadas. A inscrição do CPF na internet poderá ser feita para pessoas com idade até 25 anos que possuam Título de Eleitor em situação regular.</descricao>
-        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-inscricao)       
-Receitafone: 146     
-[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
-        <gratuito>false</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1319">
-                <tipo>(Obrigatório) Residentes no Brasil que:</tipo>
-                <requisitos>* Integrem o polo passivo de relação tributária principal ou acessória e respectivos representantes;</requisitos>
-            </solicitante>
-            <solicitante id="1320">
-                <tipo>(Obrigatório) Residentes no Brasil ou no exterior que, no Brasil:</tipo>
-                <requisitos>* Praticarem operações imobiliárias;
-* Possuírem contas bancárias, de poupança ou de investimento;
-* Operarem no mercado financeiro de capitais (inclusive bolsa de valores, mercadorias, de futuros ou assemelhados); ou 
-* Possuírem bens e direitos sujeitos a registro público ou cadastro específico.</requisitos>
-            </solicitante>
-            <solicitante id="1321">
-                <tipo>(Obrigatório) Pessoas de qualquer natureza ou residência que:</tipo>
-                <requisitos>* Sejam maiores de 16 anos e que constem como dependentes em Declaração de Ajuste Anual de Imposto de Renda;
-* Precisem se inscrever junto a órgãos ou entidades da Administração Pública Federal, Estadual, Municipal e/ou Distrital;
-* Tenham sido registradas, no nascimento, em ofício de registro civil de pessoas naturais no Brasil; e
-* Sejam filiadas ou requerentes de benefícios de qualquer natureza junto ao INSS.</requisitos>
-            </solicitante>
-            <solicitante id="1322">
-                <tipo>(Opcional) Qualquer pessoa física que não se encaixe nas categorias anteriores</tipo>
-                <requisitos>Havendo como única restrição que cada pessoa pode estar inscrita somente uma vez.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="30" unidade="minutos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2858">
-                <titulo>Requisitar inscrição</titulo>
-                <descricao>Apresentação de documentos ou digitação dos dados para inscrever-se no cadastro, conforme o meio utilizado para o serviço.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3623">Documento de identificação da pessoa a ser inscrita, que comprove naturalidade, filiação e data de nascimento</item>
-                    </default>
-                    <caso id="389" descricao="Brasileiros com idade entre 18 e 69 anos">
-                        <documento>
-                            <id>3608</id>
-                            <descricao>Comprovante de quitação das obrigações eleitorais</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="390" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
-                        <documento>
-                            <id>3609</id>
-                            <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
-                        </documento>
-                        <documento>
-                            <id>3610</id>
-                            <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito.</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="391" descricao="Inscrições requisitadas por procurador">
-                        <documento>
-                            <id>3611</id>
-                            <descricao>Documento de identificação do procurador</descricao>
-                        </documento>
-                        <documento>
-                            <id>3612</id>
-                            <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
-                        </documento>
-                        <documento>
-                            <id>3613</id>
-                            <descricao>Instrumento público de procuração legal no Brasil e com poderes para realizar o serviço</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="392" descricao="Solicitações realizadas em representação diplomática brasileira">
-                        <documento>
-                            <id>3614</id>
-                            <descricao>Ficha Cadastral de Pessoa Física</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="393" descricao="Presos">
-                        <documento>
-                            <id>3615</id>
-                            <descricao>Solicitação do órgão carcerário</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="394" descricao="Pessoas com documentos em outro idioma que o português">
-                        <documento>
-                            <id>3616</id>
-                            <descricao>Tradução juramentada</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="395" descricao="Pessoa falecida com bens a inventariar">
-                        <documento>
-                            <id>3617</id>
-                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
-                        </documento>
-                        <documento>
-                            <id>3618</id>
-                            <descricao>Certidão de óbito</descricao>
-                        </documento>
-                        <documento>
-                            <id>3619</id>
-                            <descricao>Documento de identificação do inventariante, cônjuge meeiro, convivente ou do sucessor a qualquer título</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="396" descricao="Pessoa Falecida sem bens a inventariar">
-                        <documento>
-                            <id>3620</id>
-                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
-                        </documento>
-                        <documento>
-                            <id>3621</id>
-                            <descricao>Certidão de óbito</descricao>
-                        </documento>
-                        <documento>
-                            <id>3622</id>
-                            <descricao>Documento de identificação que comprove o parentesco</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                    <caso id="403" descricao="Para inscrições realizadas no Banco do Brasil, Caixa Econômica Federal e Correios">
-                        <custo id="118">
-                            <descricao>Taxa de serviços de CPF.....</descricao>
-                            <moeda>R$</moeda>
-                            <valor>7</valor>
-                        </custo>
-                    </caso>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3793" tipo="presencial">
-                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3794" tipo="presencial">
-                            <descricao>Representação Diplomática Brasileira *(Consulte os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/representacoes-do-brasil-no-mundo))*</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="398" descricao="Pessoas com idade de até 25 anos que possuam título de eleitor em situação regular">
-                        <canal-de-prestacao id="3790" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                    <caso id="399" descricao="Para todos, exceto pessoas falecidas ou residentes no exterior">
-                        <canal-de-prestacao id="3791" tipo="presencial">
-                            <descricao>Agências dos Correios, Banco do Brasil e Caixa Econômica Federal</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3792" tipo="presencial">
-                            <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2859">
-                <titulo>Confirmar inscrição</titulo>
-                <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de atendimento para acompanhar o pedido</descricao>
-                <documentos>
-                    <default>
-                        <item id="3625">CPF</item>
-                        <item id="3626">Senha do eCAC</item>
-                    </default>
-                    <caso id="400" descricao="Serviço prestado em entidades conveniadas ou representações diplomáticas brasileiras">
-                        <documento>
-                            <id>3624</id>
-                            <descricao>Código de atendimento</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3796" tipo="aplicativo-movel">
-                            <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
-[iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3797" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="401" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
-                        <canal-de-prestacao id="3795" tipo="web">
-                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
-            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2939">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Fiscalização do Estado</item>
-            <item>Sistema Financeiro</item>
-            <item>Administração financeira</item>
-            <item>Encargos financeiros</item>
-            <item>Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3262">CPF</item>
-            <item id="3263">conta no banco</item>
-            <item id="3264">pessoa física</item>
-            <item id="3265">inscrição</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="981">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>legalizar-documento-para-validade-em-paises-que-nao-sao-parte-da-convencao-da-apostila-de-haia</id>
         <dbId>1035</dbId>
         <nome>Legalizar documento para validade em países que não são parte da Convenção da Apostila de Haia.</nome>
@@ -31810,43 +30730,43 @@ Receitafone: 146
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-certidao-de-regularidade-fiscal-para-imoveis-rurais</id>
-        <dbId>1065</dbId>
-        <nome>Obter Certidão de Regularidade Fiscal para Imóveis Rurais</nome>
-        <sigla>CDN-ITR</sigla>
+        <id>atualizar-base-de-pessoas-fisicas</id>
+        <dbId>1068</dbId>
+        <nome>Atualizar base de Pessoas Físicas</nome>
+        <sigla></sigla>
         <nomes-populares>
-            <item id="840">Certidão de Regularidade Fiscal - Imóvel Rural</item>
-            <item id="841">Certidão Negativa de Débitos - ITR</item>
+            <item id="845">CPFs</item>
+            <item id="846">Base CPF</item>
         </nomes-populares>
-        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-ITR), caso o Imóvel Rural não posssua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
-        <contato>[Fale Conosco Pessoa Física](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)      
-[Fale Conosco Pessoa Jurídica](http://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)      
-Receitafone: 146        
-[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
-        <gratuito>true</gratuito>
+        <descricao>Acessar o sistema para atualização da base de dados de pessoas físicas. Utilização exclusiva por bancos credenciados.</descricao>
+        <contato>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</contato>
+        <gratuito>false</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <solicitantes>
-            <solicitante id="1327">
-                <tipo>Pessoas físicas ou jurídicas</tipo>
-                <requisitos>Brasileiros</requisitos>
+            <solicitante id="1330">
+                <tipo>Instituições financeiras credenciadas junto a receita</tipo>
+                <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <em-media max="5" unidade="minutos"/>
-            <descricao></descricao>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda</descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="2861">
-                <titulo>Requerer certidão</titulo>
+            <etapa id="2865">
+                <titulo>Habilitar representante do banco credenciado</titulo>
                 <descricao></descricao>
                 <documentos>
                     <default>
-                        <item id="3628">CNPJ</item>
-                        <item id="3629">CPF</item>
-                        <item id="3630">NIRF</item>
+                        <item id="3642">CPF do representante</item>
+                        <item id="3643">Documento de identificação do representante</item>
+                        <item id="3644">Apontamento formal do representante</item>
+                        <item id="3645">Instrumento de Convênio</item>
+                        <item id="3646">Termo de responsabilidade</item>
+                        <item id="3647">Certificado digital (pela internet)</item>
                     </default>
                 </documentos>
                 <custos>
@@ -31854,8 +30774,39 @@ Receitafone: 146
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3799" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CertInter/NIITR.asp</descricao>
+                        <canal-de-prestacao id="3805" tipo="postal">
+                            <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3806" tipo="presencial">
+                            <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3807" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2866">
+                <titulo>Realizar download dos arquivos</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3648">CPF do responsável</item>
+                        <item id="3649">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="119">
+                            <descricao>Ressarcimento dos custos para fornecimento dos dados, o valor é variável</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3808" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/convweb/</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -31865,36 +30816,24 @@ Receitafone: 146
             <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2943">Empresas</item>
-            <item idSegmento="1" idServicoSegmento="2944">Cidadãos</item>
-            <item idSegmento="4" idServicoSegmento="2945">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="2946">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="2953">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Comércio e Serviços</item>
             <item>Economia e Finanças</item>
             <item>Fiscalização do Estado</item>
-            <item>Habitação Rural</item>
             <item>Sistema Financeiro</item>
             <item>Administração financeira</item>
-            <item>Encargos financeiros</item>
-            <item>Pecuária</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="3271">certidão negativa</item>
-            <item id="3272">imóvel rural</item>
-            <item id="3273">receita federal</item>
-            <item id="3274">débitos</item>
-            <item id="3275">nada consta</item>
-            <item id="3276">campo</item>
-            <item id="3277">sítio</item>
-            <item id="3278">fazenda</item>
-            <item id="3279">chácara</item>
+            <item id="3290">base de dados</item>
+            <item id="3291">base cpf</item>
+            <item id="3292">bancos</item>
+            <item id="3293">cpf</item>
+            <item id="3294">cadastro no banco</item>
+            <item id="3295">serasa</item>
         </palavras-chave>
         <legislacoes>
-            <item id="983">[Instrução Normativa SRF Nº 438/2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15341)</item>
-            <item id="984">[Instrução Normativa RFB nº 735, de 02/05/2007](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15678&amp;visao=anotado)</item>
+            <item id="988">--</item>
         </legislacoes>
     </servico>
     <servico>
@@ -32093,43 +31032,43 @@ Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>atualizar-base-de-pessoas-fisicas</id>
-        <dbId>1068</dbId>
-        <nome>Atualizar base de Pessoas Físicas</nome>
-        <sigla></sigla>
+        <id>obter-certidao-de-regularidade-fiscal-para-imoveis-rurais</id>
+        <dbId>1065</dbId>
+        <nome>Obter Certidão de Regularidade Fiscal para Imóveis Rurais</nome>
+        <sigla>CDN-ITR</sigla>
         <nomes-populares>
-            <item id="845">CPFs</item>
-            <item id="846">Base CPF</item>
+            <item id="840">Certidão de Regularidade Fiscal - Imóvel Rural</item>
+            <item id="841">Certidão Negativa de Débitos - ITR</item>
         </nomes-populares>
-        <descricao>Acessar o sistema para atualização da base de dados de pessoas físicas. Utilização exclusiva por bancos credenciados.</descricao>
-        <contato>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</contato>
-        <gratuito>false</gratuito>
+        <descricao>O serviço permite emitir a Certidão de Regularidade Fiscal (CND-ITR), caso o Imóvel Rural não posssua pendências cadastrais, ou omissões de declaração, ou de pendências de débitos.</descricao>
+        <contato>[Fale Conosco Pessoa Física](http://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cnd)      
+[Fale Conosco Pessoa Jurídica](http://idg.receita.fazenda.gov.br/contato/fale-conosco/empresa/cnd)      
+Receitafone: 146        
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <solicitantes>
-            <solicitante id="1330">
-                <tipo>Instituições financeiras credenciadas junto a receita</tipo>
-                <requisitos></requisitos>
+            <solicitante id="1327">
+                <tipo>Pessoas físicas ou jurídicas</tipo>
+                <requisitos>Brasileiros</requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <entre min="0" max="0" unidade="meses"/>
-            <descricao>O tempo não é estimado ainda</descricao>
+            <em-media max="5" unidade="minutos"/>
+            <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="2865">
-                <titulo>Habilitar representante do banco credenciado</titulo>
+            <etapa id="2861">
+                <titulo>Requerer certidão</titulo>
                 <descricao></descricao>
                 <documentos>
                     <default>
-                        <item id="3642">CPF do representante</item>
-                        <item id="3643">Documento de identificação do representante</item>
-                        <item id="3644">Apontamento formal do representante</item>
-                        <item id="3645">Instrumento de Convênio</item>
-                        <item id="3646">Termo de responsabilidade</item>
-                        <item id="3647">Certificado digital (pela internet)</item>
+                        <item id="3628">CNPJ</item>
+                        <item id="3629">CPF</item>
+                        <item id="3630">NIRF</item>
                     </default>
                 </documentos>
                 <custos>
@@ -32137,39 +31076,8 @@ Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3805" tipo="postal">
-                            <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3806" tipo="presencial">
-                            <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3807" tipo="web">
-                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2866">
-                <titulo>Realizar download dos arquivos</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3648">CPF do responsável</item>
-                        <item id="3649">Senha</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="119">
-                            <descricao>Ressarcimento dos custos para fornecimento dos dados, o valor é variável</descricao>
-                            <moeda>R$</moeda>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3808" tipo="web">
-                            <descricao>http://www.receita.fazenda.gov.br/aplicacoes/atbhe/convweb/</descricao>
+                        <canal-de-prestacao id="3799" tipo="web">
+                            <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CertInter/NIITR.asp</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -32179,24 +31087,36 @@ Esplanada dos Ministérios - Bloco P- CEP 70048-900 - Brasília - DF</contato>
             <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="2953">Empresas</item>
+            <item idSegmento="3" idServicoSegmento="2943">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="2944">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2945">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="2946">Órgãos e entidades públicas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
             <item>Economia e Finanças</item>
             <item>Fiscalização do Estado</item>
+            <item>Habitação Rural</item>
             <item>Sistema Financeiro</item>
             <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Pecuária</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="3290">base de dados</item>
-            <item id="3291">base cpf</item>
-            <item id="3292">bancos</item>
-            <item id="3293">cpf</item>
-            <item id="3294">cadastro no banco</item>
-            <item id="3295">serasa</item>
+            <item id="3271">certidão negativa</item>
+            <item id="3272">imóvel rural</item>
+            <item id="3273">receita federal</item>
+            <item id="3274">débitos</item>
+            <item id="3275">nada consta</item>
+            <item id="3276">campo</item>
+            <item id="3277">sítio</item>
+            <item id="3278">fazenda</item>
+            <item id="3279">chácara</item>
         </palavras-chave>
         <legislacoes>
-            <item id="988">-</item>
+            <item id="983">[Instrução Normativa SRF Nº 438/2004](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=15341)</item>
+            <item id="984">[Instrução Normativa RFB nº 735, de 02/05/2007](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15678&amp;visao=anotado)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -33225,6 +32145,226 @@ E-mail: hanseniase@sdh.gov.br</contato>
         </legislacoes>
     </servico>
     <servico>
+        <id>cadastrar-se-no-programa-de-fomento-as-atividades-produtivas-rurais</id>
+        <dbId>974</dbId>
+        <nome>Cadastrar-se no Programa de Fomento às Atividades Produtivas Rurais</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="757">Fomento BSM, Fomento Brasil Sem Miséria, Fomento Rural</item>
+        </nomes-populares>
+        <descricao>O Programa Fomento Rural (Fomento às Atividades Produtivas Rurais) contribui com a estratégia de inclusão produtiva, apoiando os investimentos produtivos de famílias rurais que se encontram em situação de pobreza.
+
+O programa envolve a combinação de duas ações: a oferta de serviços de assistência técnica e extensão rural (Ater) ou por meio de parcerias com os governos estaduais, e a transferência direta às famílias, por meio do cartão do Programa Bolsa Família, de recursos financeiros não-reembolsáveis.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1162">
+                <tipo>Modalidade Tradicional</tipo>
+                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais que:
+1.       
+
+
+¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 85,00;
+
+2.     
+   
+
+¨Estar apto ao Pronaf ou constar na Relação de Beneficiários do INCRA; e
+
+3.         
+
+
+¨Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
+            </solicitante>
+            <solicitante id="1163">
+                <tipo>Modalidade Semiárido</tipo>
+                <requisitos>Agricultores familiares, assentados rurais ou pertencentes a povos e comunidades tradicionais residentes no semiárido que:
+
+¨Detenham tecnologias sociais de armazenamento de água para produção;    
+
+
+¨Estejam inscritos no Cadastro Único, tendo renda mensal, por pessoa, de R$ 170,00;    
+
+
+¨Estejam aptos ao Pronaf ou constem na Relação de Beneficiários do INCRA; e    
+
+
+¨ Terem sido selecionados para recebimento dos serviços de ATER pelas entidades parceiras.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="120" unidade="meses"/>
+            <descricao>O tempo varia de caso a caso, não é possível estabelecer um tempo padrão.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2558">
+                <titulo>Procurar uma entidade Assistência Técnica e Extensão Rural (ATER)</titulo>
+                <descricao>As entidades de Ater são responsáveis por identificar e mobilizar as famílias para participar do programa. Esta seleção é feita a partir dos dados do Cadastro Único e de Busca Ativa realizada por estas entidades. As entidades de Ater são orientadas a, na medida do possível, priorizar a cobertura de famílias que cumprem os requisitos para participar do Fomento Rural dentro de uma mesma comunidade, e a dar prioridade a famílias em situação de insegurança alimentar e nutricional.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3016">NIS</item>
+                        <item id="3017">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3302" tipo="presencial">
+                            <descricao>A mobilização ocorre em comunidades rurais, com suporte da rede de assistência social e de saúde, de sindicatos e de outros parceiros que possam ajudar a identificar comunidades mais vulneráveis. A seleção das famílias ocorre nas comunidades rurais e nas residências das mesmas.</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3303" tipo="presencial">
+                            <descricao>Entidades de ATER selecionadas pelo programa e que atuem em sua região. Saiba quais são [aqui](http://www.mds.gov.br/webarquivos/arquivo/seguranca_alimentar/metas_previstas_entidades_respons%C3%A1veis_fomento.pdf)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2559">
+                <titulo>Participar de entrevistas com os técnicos do programa</titulo>
+                <descricao>Os agentes de Ater elaboram um diagnóstico de sua situação socioeconômica levantando informações como a identificação de todos os integrantes de cada família, a descrição de sua rotina de trabalho e de comercialização dos excedentes produzidos, a forma como acessam os serviços públicos e quais são suas expectativas e anseios quanto a atividades geradoras de renda.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3018">NIS</item>
+                        <item id="3019">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3304" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2560">
+                <titulo>Elaborar Projeto Produtivo para organizar e/ou ampliar a produção (em conjunto com os técnicos do programa)</titulo>
+                <descricao>Nesta etapa são definidas uma ou mais atividades produtivas e as etapas necessárias para seu desenvolvimento. Elas podem ser atividades agrícolas, como a criação de pequenos animais e hortas, ou não agrícolas, como artesanato e pesca, desde que sirva para gerar renda para a família beneficiária e, se possível, ampliar e diversificar sua produção de alimentos. A família também assinará o Termo de Adesão, confirmando que está participando do Programa e que conhece as regras para essa participação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3020">NIS</item>
+                        <item id="3021">DECLARAÇÃO DE APTIDÃO AO PRONAF (DAP)</item>
+                        <item id="3022">Termo de Adesão ao Programa de Fomento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3305" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2561">
+                <titulo>Receber visitas técnicas (Assistência Técnica)</titulo>
+                <descricao>Durante estas visitas o agente técnico irá:
+
+¨Acompanhar o desenvolvimento do projeto e discutir com a família soluções para problemas que surgirem;
+
+¨Auxiliará a família a se inserir em outras políticas sociais e de desenvolvimento rural que estejam disponíveis; e
+
+¨Confirmar o uso satisfatório dos recursos recebidos para o desenvolvimento do projeto, garantindo assim o recebimento das outras parcelas pela família.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3023">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3306" tipo="presencial">
+                            <descricao>Residência da família atendida</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2562">
+                <titulo>Receber o recurso financeiro do Programa</titulo>
+                <descricao>Na modalidade tradicional, o valor é de R$ 2.400,00, que pode ser dividido em:
+
+a) Duas parcelas, a primeira sendo de R$ 1.400,00 e a segunda de R$ 1.000,00;
+
+b) Três parcelas, a primeira sendo de R$ 1.000,00 e as duas seguintes de R$ 700,00.
+
+Na modalidade Semiárido, o valor é de R$ 3.000,00, recebido em duas parcelas, sendo a primeira de R$ 1.800,00 e a segunda de R$ 1.200,00.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3024">NIS</item>
+                        <item id="3025">Cartão Cidadão ou Cartão do Bolsa Família. Caso o beneficiário não tenha um desses documentos, deve apresentar documento de identificação com foto para saque por guia offline exclusivamente em agências bancárias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3307" tipo="presencial">
+                            <descricao>Para receber informações sobre a liberação das parcelas para saque, na unidade produtiva familiar ou residência.
+Para sacar os recursos, em agência bancária, lotérica ou outro correspondente bancário.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2563">
+                <titulo>Receber avaliação do projeto</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3308" tipo="presencial">
+                            <descricao>Unidade produtiva familiar ou centro comunitário</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social e Agrário (MDSA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2796">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2797">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Proteção Social</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2722">ATER</item>
+            <item id="2723">assistência técnica</item>
+            <item id="2724">agricultura familiar</item>
+            <item id="2725">fomento rural</item>
+            <item id="2726">cadastro único</item>
+            <item id="2727">bolsa família</item>
+            <item id="2728">projeto produtivo</item>
+            <item id="2729">semiárido</item>
+            <item id="2730">desenvolvimento rural</item>
+            <item id="2731">combate à fome</item>
+            <item id="2732">combate à miséria</item>
+            <item id="2733">rural</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="849">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-bolsa-de-pos-graduacao-no-pais</id>
         <dbId>810</dbId>
         <nome>Obter Bolsa de Pós-Graduação no País</nome>
@@ -34092,6 +33232,232 @@ De 30 dias quando houver especificação de rota, porém seja necessário consul
         </legislacoes>
     </servico>
     <servico>
+        <id>inscrever-se-no-cadastro-de-pessoas-fisicas</id>
+        <dbId>1062</dbId>
+        <nome>Inscrever-se no Cadastro de Pessoas Físicas</nome>
+        <sigla>CPF</sigla>
+        <descricao>Inscrição do CPF na internet ou nos conveniados: Banco do Brasil, Caixa Econômica Federal e Correios ou em entidades públicas conveniadas. A inscrição do CPF na internet poderá ser feita para pessoas com idade até 25 anos que possuam Título de Eleitor em situação regular.</descricao>
+        <contato>[Fale Conosco](https://idg.receita.fazenda.gov.br/contato/fale-conosco/cidadao/cpf/cpf-inscricao)       
+Receitafone: 146     
+[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1319">
+                <tipo>(Obrigatório) Residentes no Brasil que:</tipo>
+                <requisitos>* Integrem o polo passivo de relação tributária principal ou acessória e respectivos representantes;</requisitos>
+            </solicitante>
+            <solicitante id="1320">
+                <tipo>(Obrigatório) Residentes no Brasil ou no exterior que, no Brasil:</tipo>
+                <requisitos>* Praticarem operações imobiliárias;
+* Possuírem contas bancárias, de poupança ou de investimento;
+* Operarem no mercado financeiro de capitais (inclusive bolsa de valores, mercadorias, de futuros ou assemelhados); ou 
+* Possuírem bens e direitos sujeitos a registro público ou cadastro específico.</requisitos>
+            </solicitante>
+            <solicitante id="1321">
+                <tipo>(Obrigatório) Pessoas de qualquer natureza ou residência que:</tipo>
+                <requisitos>* Sejam maiores de 16 anos e que constem como dependentes em Declaração de Ajuste Anual de Imposto de Renda;
+* Precisem se inscrever junto a órgãos ou entidades da Administração Pública Federal, Estadual, Municipal e/ou Distrital;
+* Tenham sido registradas, no nascimento, em ofício de registro civil de pessoas naturais no Brasil; e
+* Sejam filiadas ou requerentes de benefícios de qualquer natureza junto ao INSS.</requisitos>
+            </solicitante>
+            <solicitante id="1322">
+                <tipo>(Opcional) Qualquer pessoa física que não se encaixe nas categorias anteriores</tipo>
+                <requisitos>Havendo como única restrição que cada pessoa pode estar inscrita somente uma vez.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="30" unidade="minutos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2858">
+                <titulo>Requisitar inscrição</titulo>
+                <descricao>Apresentação de documentos ou digitação dos dados para inscrever-se no cadastro, conforme o meio utilizado para o serviço.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3623">Documento de identificação da pessoa a ser inscrita, que comprove naturalidade, filiação e data de nascimento</item>
+                    </default>
+                    <caso id="389" descricao="Brasileiros com idade entre 18 e 69 anos">
+                        <documento>
+                            <id>3608</id>
+                            <descricao>Comprovante de quitação das obrigações eleitorais</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="390" descricao="Menores de 16 anos, tutelados, curatelados e outras pessoas sujeitas à guarda judicial">
+                        <documento>
+                            <id>3609</id>
+                            <descricao>Documento de identificação de um dos pais, tutor, curador ou responsável pela guarda em virtude de decisão judicial;</descricao>
+                        </documento>
+                        <documento>
+                            <id>3610</id>
+                            <descricao>Documento que comprove a tutela, curatela ou responsabilidade pela guarda, conforme o caso, de incapaz ou interdito.</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="391" descricao="Inscrições requisitadas por procurador">
+                        <documento>
+                            <id>3611</id>
+                            <descricao>Documento de identificação do procurador</descricao>
+                        </documento>
+                        <documento>
+                            <id>3612</id>
+                            <descricao>Documento do procurador que comprove sua inscrição no CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>3613</id>
+                            <descricao>Instrumento público de procuração legal no Brasil e com poderes para realizar o serviço</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="392" descricao="Solicitações realizadas em representação diplomática brasileira">
+                        <documento>
+                            <id>3614</id>
+                            <descricao>Ficha Cadastral de Pessoa Física</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="393" descricao="Presos">
+                        <documento>
+                            <id>3615</id>
+                            <descricao>Solicitação do órgão carcerário</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="394" descricao="Pessoas com documentos em outro idioma que o português">
+                        <documento>
+                            <id>3616</id>
+                            <descricao>Tradução juramentada</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="395" descricao="Pessoa falecida com bens a inventariar">
+                        <documento>
+                            <id>3617</id>
+                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                        </documento>
+                        <documento>
+                            <id>3618</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>3619</id>
+                            <descricao>Documento de identificação do inventariante, cônjuge meeiro, convivente ou do sucessor a qualquer título</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="396" descricao="Pessoa Falecida sem bens a inventariar">
+                        <documento>
+                            <id>3620</id>
+                            <descricao>Documento que comprove a necessidade da inscrição</descricao>
+                        </documento>
+                        <documento>
+                            <id>3621</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>3622</id>
+                            <descricao>Documento de identificação que comprove o parentesco</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                    <caso id="415" descricao="Para inscrições realizadas no Banco do Brasil, Caixa Econômica Federal e Correios">
+                        <custo id="126">
+                            <descricao>Taxa de serviços de CPF.....</descricao>
+                            <moeda>R$</moeda>
+                            <valor>7</valor>
+                        </custo>
+                    </caso>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3793" tipo="presencial">
+                            <descricao>[Unidades de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3794" tipo="presencial">
+                            <descricao>Representação Diplomática Brasileira *(Consulte os endereços [aqui](http://www.portalconsular.itamaraty.gov.br/representacoes-do-brasil-no-mundo))*</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="398" descricao="Pessoas com idade de até 25 anos que possuam título de eleitor em situação regular">
+                        <canal-de-prestacao id="3790" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/InscricaoPublica/inscricao.asp</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                    <caso id="399" descricao="Para todos, exceto pessoas falecidas ou residentes no exterior">
+                        <canal-de-prestacao id="3791" tipo="presencial">
+                            <descricao>Agências dos Correios, Banco do Brasil e Caixa Econômica Federal</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3792" tipo="presencial">
+                            <descricao>[Entidades Conveniadas](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-pessoas-fisicas-cpf/conveniados-e-parceiros/entidades-publicas-conveniadas)</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2859">
+                <titulo>Confirmar inscrição</titulo>
+                <descricao>Para os serviços realizados pelo serviço online específico da Receita, no Banco do Brasil, Caixa Econômica Federal, Correios ou Unidades da Receita Federal um comprovante será entregue ao término do atendimento ao contribuinte. No caso de serviço prestado por representação diplomática brasileira no exterior, o contribuinte receberá um código de atendimento para acompanhar o pedido</descricao>
+                <documentos>
+                    <default>
+                        <item id="3625">CPF</item>
+                        <item id="3626">Senha do eCAC</item>
+                    </default>
+                    <caso id="400" descricao="Serviço prestado em entidades conveniadas ou representações diplomáticas brasileiras">
+                        <documento>
+                            <id>3624</id>
+                            <descricao>Código de atendimento</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3796" tipo="aplicativo-movel">
+                            <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)
+[iOS](https://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3797" tipo="web">
+                            <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="401" descricao="Serviço prestado em Entidades Conveniadas ou Representações Diplomáticas Brasileiras">
+                        <canal-de-prestacao id="3795" tipo="web">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaAndamento/ConsultaAndamento.asp</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2939">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Fiscalização do Estado</item>
+            <item>Serviços Públicos</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+            <item>Pessoa</item>
+            <item>Documentação Pessoal</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3262">CPF</item>
+            <item id="3263">conta no banco</item>
+            <item id="3264">pessoa física</item>
+            <item id="3265">inscrição</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="981">[INSTRUÇÃO NORMATIVA RFB Nº 1548, DE 13 DE FEVEREIRO DE 2015](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=61197)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-apoio-para-captacao-e-promocao-de-eventos-internacionais</id>
         <dbId>236</dbId>
         <nome>Obter apoio para captação e promoção de eventos internacionais</nome>
@@ -34548,6 +33914,75 @@ E-mail: inscricao.feiras@embratur.gov.br</contato>
             <item id="374">http://www.planalto.gov.br/ccivil_03/leis/L8181.htm
 Portaria nº 72 - 19-07-2017 – Sistema de Controle de Inscrições em Eventos (SCIE); e 
 Portaria nº 76 - 21-07-2017 – Critérios de Avaliação.</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>receber-autorizacao-para-saida-de-obras-de-artes-do-pais</id>
+        <dbId>1075</dbId>
+        <nome>Receber autorização para Saída de Obras de Artes do País</nome>
+        <sigla></sigla>
+        <descricao>O cidadão interessado em retirar obra de arte do país para fins de mudança domiciliar, exposição, doação ou comércio, deverá pedir autorização ao IPHAN, a fim de que se verifique se o bem integra o patrimônio cultural brasileiro, conforme Decreto-Lei nº 25/1937,
+Lei nº 3.924/1961 , Lei nº 4.845/1965 e Lei nº 5.471/1968</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem>0</porcentagem>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="896">
+                <tipo>Cidadão</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="15" unidade="dias-uteis"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2280">
+                <titulo>Autorização pa ra Saída de Obras de Arte do País</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2863" tipo="postal">
+                            <descricao>Por ofício: Dirigido à Superintendência do IPHAN em seu estado.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
+            <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2592">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2593">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="2594">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2595">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cultura</item>
+            <item>Difusão Cultural</item>
+            <item>Patrimônio Cultural</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2145">Autorização para Saída de Obras de Arte do Pa</item>
+            <item id="2146">IPHAN</item>
+            <item id="2147">IPHAN</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="699">Decreto-Lei nº 25/1937 (http://www.planalto.gov.br/ccivil_
+03/decreto-lei/del0025.htm), Lei nº 3.924/1961 (http://www.planalto.gov.br/ccivil_03/leis/1950-
+1969/L3924.htm), Lei nº 4.845/1965 (http://www.planalto.gov.br/ccivil_03/leis/L4845.htm) e Lei nº
+5.471/1968 (http://www.planalto.gov.br/ccivil_03/leis/L5471.htm).</item>
         </legislacoes>
     </servico>
     <servico>
