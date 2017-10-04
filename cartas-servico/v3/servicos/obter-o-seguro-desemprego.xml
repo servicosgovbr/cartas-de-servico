@@ -7,7 +7,7 @@
     <descricao>Este serviço permite que você, caso tenha sido dispensado involuntariamente de seu último trabalho, requisite o seguro-desemprego, um auxílio financeiro temporário para que você possa manter seu sustento enquanto procura por um novo emprego.</descricao>
     <contato>Central 158</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="833">
             <tipo>Trabalhador formal e doméstico</tipo>
@@ -30,7 +30,9 @@
         <entre min="30" max="60" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1357">
             <titulo>Agendar o atendimento</titulo>
@@ -47,11 +49,11 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2737" tipo="telefone">
-                        <descricao>Central 158</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="1674" tipo="web">
                         <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2737" tipo="telefone">
+                        <descricao>Central 158</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -128,7 +130,9 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="1574">Cidadãos</item>
     </segmentos-da-sociedade>
