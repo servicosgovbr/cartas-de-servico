@@ -10,7 +10,7 @@
     <descricao>Com este serviço você pode homologar a rescisão de seu contrato de trabalho, o que garante o direito de sacar o FGTS e dar entrada no Seguro Desemprego.</descricao>
     <contato>Central 158</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="824">
             <tipo>Trabalhador</tipo>
@@ -25,7 +25,9 @@
         <em-media max="7" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="1345">
             <titulo>Emitir o Termo de Rescisão do Contrato de Trabalho (TRCT)</titulo>
@@ -54,14 +56,14 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2724" tipo="telefone">
-                        <descricao>Central 158</descricao>
+                    <canal-de-prestacao id="1660" tipo="web-emitir">
+                        <descricao>http://trabalho.gov.br/homolognet</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="2723" tipo="presencial">
                         <descricao>Sindicato de sua categoria na sua região</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1660" tipo="web-emitir">
-                        <descricao>http://trabalho.gov.br/homolognet</descricao>
+                    <canal-de-prestacao id="2724" tipo="telefone">
+                        <descricao>Central 158</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -121,7 +123,9 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="1555">Cidadãos</item>
         <item idSegmento="3" idServicoSegmento="2423">Empresas</item>
