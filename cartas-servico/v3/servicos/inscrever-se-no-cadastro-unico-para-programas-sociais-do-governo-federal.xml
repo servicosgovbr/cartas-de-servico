@@ -18,8 +18,8 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <atendimento-imediato/>
-        <descricao>Não se aplica \ Não é estimado ainda.</descricao>
+        <ate max="1" unidade="horas"/>
+        <descricao>Este é o tempo de atendimento para cada uma das etapas do serviço.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
@@ -29,14 +29,85 @@
             <titulo>Cadastrar informações</titulo>
             <descricao>Ir até o posto de atendimento e prestar informações ao entrevistador.</descricao>
             <documentos>
-                <default>
-                    <item id="2976">Carteira de identidade</item>
-                    <item id="2977">Carteira de trabalho</item>
-                    <item id="2978">Certidão de casamento</item>
-                    <item id="2979">Certidão de nascimento</item>
-                    <item id="2980">CPF</item>
-                    <item id="2981">Título de Eleitor</item>
-                </default>
+                <default/>
+                <caso id="418" descricao="Responsável pela Unidade Familiar">
+                    <documento>
+                        <id>3755</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3756</id>
+                        <descricao>Título de Eleitor.</descricao>
+                    </documento>
+                </caso>
+                <caso id="419" descricao="Responsável pela Família Indígena">
+                    <documento>
+                        <id>3757</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3758</id>
+                        <descricao>Título de Eleitor; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3759</id>
+                        <descricao>Registro Administrativo de Nascimento Indígena (RANI); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3760</id>
+                        <descricao>Outros documentos de identificação, como Certidão de Casamento, Carteira de Identidade (RG) e Carteira de Trabalho;</descricao>
+                    </documento>
+                </caso>
+                <caso id="420" descricao="Responsável pela Família  Quilombola">
+                    <documento>
+                        <id>3761</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3762</id>
+                        <descricao>Título de Eleitor; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3763</id>
+                        <descricao>Outros documentos de identificação, como Certidão de Casamento, Carteira de Identidade (RG) e Carteira de Trabalho;</descricao>
+                    </documento>
+                </caso>
+                <caso id="421" descricao="Demais pessoas da família">
+                    <documento>
+                        <id>3764</id>
+                        <descricao>Certidão de Nascimento; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3765</id>
+                        <descricao>Certidão de Casamento; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3766</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3767</id>
+                        <descricao>Carteira de Identidade (RG); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3768</id>
+                        <descricao>Carteira de Trabalho; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3769</id>
+                        <descricao>Título de Eleitor.</descricao>
+                    </documento>
+                </caso>
+                <caso id="423" descricao="Documentos não obrigatórios mas que ajudam no cadastramento:">
+                    <documento>
+                        <id>3770</id>
+                        <descricao>Comprovante de endereço, de preferência a conta de luz;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3772</id>
+                        <descricao>Comprovante de matrícula escolar das crianças e jovens até 17 anos. Se não tiver comprovante, leve o nome da escola de cada criança ou jovem;</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -44,23 +115,102 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="3285" tipo="presencial">
-                        <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único</descricao>
+                        <descricao>Centro de Referência da Assistência Social - CRAS, Posto de Atendimento do Cadastro Único</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="2545">
             <titulo>Atualizar informações</titulo>
-            <descricao>Ir até o posto de atendimento e prestar informações ao entrevistador para atualizar os dados do Cadastro Único.</descricao>
+            <descricao>**Sempre que houver alguma mudança na situação da família cadastrada é necessário atualizar as informações, como por exemplo:**         
+¨             
+* nascimento ou morte de alguém na família;
+* saída de um integrante para outra casa;
+* mudança de endereço;
+* entrada das crianças na escola ou transferência de escola; 
+* aumento ou diminuição da renda, entre outros. 
+ 
+Mesmo sem mudança na família, o cadastro deve ser atualizado a cada dois anos, obrigatoriamente.</descricao>
             <documentos>
-                <default>
-                    <item id="2982">Carteira de identidade</item>
-                    <item id="2983">Carteira de trabalho</item>
-                    <item id="2984">Certidão de casamento</item>
-                    <item id="2985">Certidão de nascimento</item>
-                    <item id="2986">CPF</item>
-                    <item id="2987">Título de Eleitor</item>
-                </default>
+                <default/>
+                <caso id="424" descricao="Responsável pela Unidade Familiar">
+                    <documento>
+                        <id>3773</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3774</id>
+                        <descricao>Título de Eleitor.</descricao>
+                    </documento>
+                </caso>
+                <caso id="425" descricao="Responsável pela Família Indígena">
+                    <documento>
+                        <id>3775</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3776</id>
+                        <descricao>Título de Eleitor; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3777</id>
+                        <descricao>Registro Administrativo de Nascimento Indígena (RANI); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3778</id>
+                        <descricao>Outros documentos de identificação, como Certidão de Casamento, Carteira de Identidade (RG) e Carteira de Trabalho;</descricao>
+                    </documento>
+                </caso>
+                <caso id="426" descricao="Responsável pela Família Quilombola">
+                    <documento>
+                        <id>3779</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3780</id>
+                        <descricao>Título de Eleitor; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3781</id>
+                        <descricao>Outros documentos de identificação, como Certidão de Casamento, Carteira de Identidade (RG) e Carteira de Trabalho;</descricao>
+                    </documento>
+                </caso>
+                <caso id="427" descricao="Demais pessoas da família">
+                    <documento>
+                        <id>3782</id>
+                        <descricao>Certidão de Nascimento; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3783</id>
+                        <descricao>Certidão de Casamento; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3784</id>
+                        <descricao>CPF; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3785</id>
+                        <descricao>Carteira de Identidade (RG); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3786</id>
+                        <descricao>Carteira de Trabalho; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>3787</id>
+                        <descricao>Título de Eleitor</descricao>
+                    </documento>
+                </caso>
+                <caso id="428" descricao="Documentos não obrigatórios mas que ajudam no cadastramento:">
+                    <documento>
+                        <id>3788</id>
+                        <descricao>Comprovante de endereço, de preferência a conta de luz;</descricao>
+                    </documento>
+                    <documento>
+                        <id>3789</id>
+                        <descricao>Comprovante de matrícula escolar das crianças e jovens até 17 anos. Se não tiver comprovante, leve o nome da escola de cada criança ou jovem;</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -68,7 +218,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="3286" tipo="presencial">
-                        <descricao>Centro de Referência da Assistência Social, Posto de Atendimento do Cadastro Único</descricao>
+                        <descricao>Centro de Referência da Assistência Social - CRAS, Posto de Atendimento do Cadastro Único</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -93,6 +243,9 @@
         <item id="2687">bolsa família</item>
     </palavras-chave>
     <legislacoes>
-        <item id="838">-</item>
+        <item id="1005">[Portaria  n° 177, de 16 de junho de 2011](http://www.mds.gov.br/webarquivos/legislacao/bolsa_familia/portarias/2011/portaria_177_consolidada.pdf)</item>
+        <item id="1006">[Portaria nº 10, de 30 de janeiro de 2012](http://www.mds.gov.br/webarquivos/legislacao/bolsa_familia/portarias/2012/Portaria%20no%2010-%20de%2030%20de%20Janeiro%20de%202012.pdf)</item>
+        <item id="1007">[Instrução Normativa nº 002/SENARC/MDS, de 26 de Agosto de 2011](http://www.mds.gov.br/webarquivos/legislacao/bolsa_familia/instrucoes_normativas/Instrucao%20Normativa%20002%20Senarc%20MDS%20-%2026%20agosto%202011.pdf)</item>
+        <item id="838">[Decreto nº 6.135, de 26 de junho de 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6135.htm)</item>
     </legislacoes>
 </servico>
