@@ -1,32 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome>registrar-furto-ou-roubo-de-veiculos-no-sistema-alerta-do-sinarf</nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-furto-ou-roubo-de-veiculos-no-sistema-alerta-do-sinarf</id>
+    <dbId>64</dbId>
+    <nome>Registrar furto ou roubo de veículos no Sistema Alerta do SINARF</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Sistema Alerta</item>
+        <item id="535">Sistema Alerta</item>
     </nomes-populares>
-    <descricao><![CDATA[O sistema alerta serve para registrar roubos e furtos  de veículos no sistema de Alerta do SINARF. O Sistema Alerta tem por objetivo divulgar, imediatamente após o registro, informações de ocorrências de furto/roubo de veículos nas últimas 72 horas. A probabilidade de recuperação de um veículo é maior nas primeiras horas após a ocorrência do fato, assim, o Sistema Alerta supre uma importante necessidade como uma eficiente ferramenta no combate ao roubo e furto de veículos.]]></descricao>
-    <contato/>
+    <descricao>O sistema alerta serve para registrar roubos e furtos  de veículos no sistema de Alerta do SINARF. O Sistema Alerta tem por objetivo divulgar, imediatamente após o registro, informações de ocorrências de furto/roubo de veículos nas últimas 72 horas. A probabilidade de recuperação de um veículo é maior nas primeiras horas após a ocorrência do fato, assim, o Sistema Alerta supre uma importante necessidade como uma eficiente ferramenta no combate ao roubo e furto de veículos.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
-        <solicitante>
+        <solicitante id="622">
             <tipo>Qualquer pessoa que tenha sofrido roubo ou furto de veículos dentro do Brasil.</tipo>
-            <requisitos/>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="minutos"/>
-        <descricao><![CDATA[Este serviço é imediato]]></descricao>
+        <descricao>Este serviço é imediato</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="1881">
             <titulo>Registrar a ocorrência no sistema Alerta</titulo>
-            <descricao><![CDATA[Você deve registrar a ocorrência de roubo ou furto de veículo em até 72 horas após o ocorrido. A informação será então divulgada no sistema imediatamente após seu registro.]]></descricao>
+            <descricao>Você deve registrar a ocorrência de roubo ou furto de veículo em até 72 horas após o ocorrido. A informação será então divulgada no sistema imediatamente após seu registro.</descricao>
             <documentos>
                 <default>
-                    <item>Documento do veículo roubado;</item>
-                    <item>CPF ou RG do notificante;</item>
-                    <item>Dados da ocorrência de furto ou roubo (onde aconteceu, hora aproximada, etc.)</item>
+                    <item id="1822">Documento do veículo roubado;</item>
+                    <item id="1823">CPF ou RG do notificante;</item>
+                    <item id="1824">Dados da ocorrência de furto ou roubo (onde aconteceu, hora aproximada, etc.)</item>
                 </default>
             </documentos>
             <custos>
@@ -34,33 +40,34 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[https://www.prf.gov.br/alerta/solicitacao/Alerta.seam]]></descricao>
+                    <canal-de-prestacao id="2341" tipo="web">
+                        <descricao>https://www.prf.gov.br/alerta/solicitacao/Alerta.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/704"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/704" dbId="26268">
+        <nomeOrgao>Departamento de Polícia Rodoviária Federal (DPRF)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item>Empresas</item>
-        <item>Cidadãos</item>
-        <item>Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2145">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="2146">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="2147">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="2148">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
-        <item>Defesa Civil</item>
         <item>Policiamento</item>
         <item>Segurança e Ordem Pública</item>
         <item>Transporte Rodoviário</item>
         <item>Transportes</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>crime</item>
-        <item>veículo roubado</item>
-        <item>ocorrência</item>
+        <item id="1536">crime</item>
+        <item id="1537">veículo roubado</item>
+        <item id="1538">ocorrência</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[DECRETO Nº 8.614, DE 22 DE DEZEMBRO DE 2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8614.htm)]]></item>
+        <item id="497">[DECRETO Nº 8.614, DE 22 DE DEZEMBRO DE 2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8614.htm)</item>
     </legislacoes>
 </servico>
