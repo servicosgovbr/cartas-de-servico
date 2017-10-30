@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>averbacao-de-contratos</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>averbar-contratos-no-inpi</id>
     <dbId>1081</dbId>
-    <nome>averbar-contratos-no-inpi</nome>
-    <sigla/>
+    <nome>Averbar Contratos no INPI</nome>
+    <sigla></sigla>
     <nomes-populares>
         <item id="859">Propriedade Industrial</item>
         <item id="860">Fornecimento de tecnologia</item>
@@ -21,10 +21,10 @@
     </solicitantes>
     <tempo-total-estimado>
         <em-media max="1" unidade="meses"/>
-        <descricao/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao/>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="2903">
@@ -44,7 +44,7 @@
                         <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados" id="438">
+                <caso id="438" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
                     <canal-de-prestacao id="3888" tipo="web">
                         <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
                     </canal-de-prestacao>
@@ -119,7 +119,7 @@ Para maiores detalhes sobre a documentação, [clique aqui](http://www.inpi.gov.
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao dbId="36783" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382">
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
         <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
