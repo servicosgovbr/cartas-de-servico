@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-programa-de-computador</id>
+    <dbId>1084</dbId>
+    <nome>Registrar programa de computador</nome>
+    <sigla></sigla>
+    <descricao>O registro de programa de computador assegura a autoria do software perante terceiros. Assim, garante maior segurança jurídica ao seu titular, caso haja demanda judicial para comprovar a autoria ou titularidade do programa.</descricao>
+    <contato>Veja o [Manual do Usuário](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/copy_of_ManualdousurioRPCeletrnicaV7.2.pdf) para o registro eletrônico de programa de computador.         
+
+Para mais informações ou dúvidas sobre este serviço, entre em contato pelo [Fale Conosco](http://faleconosco.inpi.gov.br/faleconosco/)</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1360">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos>Que desenvolveram um programa de computador ou sua versão mais atualizada.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="10" unidade="dias-corridos"/>
+        <descricao>Após o pagamento da GRU</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>50</quantidade>
+        <unidade>anos</unidade>
+        <descricao>A partir da sua criação ou de 1º de janeiro do ano subsequente à sua publicação. A proteção não é territorial, isto é, sua abrangência é internacional, compreendendo os 175 países signatários da Convenção de Berna (1886).</descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2920">
+            <titulo>Criar resumo digital hash</titulo>
+            <descricao>Antes de solicitar o registro de seu programa de computador, realize a criptografia do texto ou do arquivo que contenha o código-fonte, utilizando um algoritmo apropriado para transformá-lo em um resumo digital hash. Esse resumo será inserido no formulário eletrônico de depósito.</descricao>
+            <documentos>
+                <default>
+                    <item id="3832">código fonte do programa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3909" tipo="presencial">
+                        <descricao>Residência ou sede da pessoa física ou jurídica criadora.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2921">
+            <titulo>Cadastrar-se no Portal do INPI</titulo>
+            <descricao>Após realizar o cadastro, guarde seu login e senha.</descricao>
+            <documentos>
+                <default>
+                    <item id="3833">Dados de identificação e contato da pessoa física ou jurídica, conforme o caso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3911" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="442" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
+                    <canal-de-prestacao id="3910" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2922">
+            <titulo>Pagar a Guia de Recolhimento da União</titulo>
+            <descricao>Para solicitar o registro, você deve emitir a Guia de Recolhimento da União no Portal do INPI. Pague o documento antes de dar entrada no pedido e guarde o número, pois ele será necessário para o início do processo.       
+Ainda no sistema, faça o download da Declaração de Veracidade (DV) e assine-a digitalmente, para incluí-la depois no seu pedido.      
+
+Verifique as taxas [aqui](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/TabelaProgramadecomputador12092017.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="3834">Guia de Recolhimento da União (GRU)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="135">
+                        <descricao>Taxas variáveis, link na descrição da etapa</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3912" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2923">
+            <titulo>Preencher formulário</titulo>
+            <descricao>Apenas comece o processo após pagar a GRU. Acesse o e-RPC e preencha o formulário on-line.</descricao>
+            <documentos>
+                <default>
+                    <item id="3835">Resumo Hash</item>
+                    <item id="3836">Declaração de Veracidade (DV) assinada digitalmente</item>
+                    <item id="3837">Formulário eletrônico</item>
+                    <item id="3838">comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3913" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2924">
+            <titulo>Receber resultado</titulo>
+            <descricao>Após realizar a solicitação, acompanhe as publicações do INPI relativas ao seu pedido na Revista da Propriedade Industrial (RPI).</descricao>
+            <documentos>
+                <default>
+                    <item id="3839">Nº do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3914" tipo="web">
+                        <descricao>http://revistas.inpi.gov.br/rpi/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2991">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2992">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2993">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3397">registro</item>
+        <item id="3398">programa de computador</item>
+        <item id="3399">software</item>
+        <item id="3400">propriedade intelectual</item>
+        <item id="3401">propriedade industrial</item>
+        <item id="3402">direitos autorais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1025">[Lei de Programa de Computador nº 9.609/98](http://www.planalto.gov.br/ccivil_03/leis/L9609.htm)</item>
+        <item id="1026">[Lei de Direitos Autorais nº 9.610/98](http://www.planalto.gov.br/ccivil_03/leis/L9610.htm)</item>
+        <item id="1027">[Instrução Normativa nº 074/2017](http://www.inpi.gov.br/sobre/legislacao-1/IN742017.pdf)</item>
+    </legislacoes>
+</servico>
