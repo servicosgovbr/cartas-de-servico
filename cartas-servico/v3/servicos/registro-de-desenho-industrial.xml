@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registro-de-desenho-industrial</id>
+    <dbId>1083</dbId>
+    <nome>Registro de desenho industrial</nome>
+    <sigla></sigla>
+    <descricao>O registro de desenho industrial protege aspectos ornamentais de um objeto, garantindo ao titular exclusividade de exploração comercial.</descricao>
+    <contato>Para obter mais informações ou tirar dúvidas, entre em contato pelo sistema [Fale Conosco](http://faleconosco.inpi.gov.br/faleconosco/)</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1358">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que tenha criado, por exemplo, um novo formato de relógio, brinquedo, veículo, mobiliário ou até uma estampa têxtil. Porém, o registro não se aplica à função de um objeto, nem a uma marca.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>10</quantidade>
+        <unidade>anos</unidade>
+        <descricao>Você precisará pagar uma taxa no quinto ano a partir do pedido. Esta taxa deverá ser paga a cada cinco anos. O período pode ser prorrogado por três períodos de cinco anos, totalizando 25 anos no total.</descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2912">
+            <titulo>Cadastrar-se no Portal do INPI</titulo>
+            <descricao>Após realizar o cadastro, guarde seu login e senha.</descricao>
+            <documentos>
+                <default>
+                    <item id="3821">Dados de identificação e contato da pessoa física ou jurídica, conforme o caso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3900" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="440" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
+                    <canal-de-prestacao id="3899" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2913">
+            <titulo>Pagar a Guia de Recolhimento da União</titulo>
+            <descricao>Para solicitar o registro do desenho industrial, você deve emitir a Guia de Recolhimento da União no Portal do INPI. Pague o documento antes de dar entrada no pedido e guarde o número, pois ele será necessário para o início do processo. Verifique as taxas [aqui](http://www.inpi.gov.br/menu-servicos/transferencia/arquivos/tabela-de-retribuicao-de-servicos-de-transferencia-de-tecnologia-inpi-20170606.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="3822">Guia de Recolhimento da União (GRU)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="133">
+                        <descricao>Taxas variáveis, link na descrição da etapa</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3901" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2914">
+            <titulo>Preencher o formulário</titulo>
+            <descricao>Apenas comece o processo após o pagamento da GRU. Acesse o sistema on-line para pedido de desenho industrial e preencha o formulário.</descricao>
+            <documentos>
+                <default>
+                    <item id="3823">Documentos com a descrição técnica do objeto</item>
+                    <item id="3824">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3902" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2915">
+            <titulo>Receber Resultado</titulo>
+            <descricao>Após realizar a solicitação, acompanhe as publicações do INPI relativas ao seu pedido na Revista da Propriedade Industrial (RPI).</descricao>
+            <documentos>
+                <default>
+                    <item id="3825">Nº do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3903" tipo="web">
+                        <descricao>http://revistas.inpi.gov.br/rpi/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2985">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2986">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="2987">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Empreendedorismo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3388">desenho industrial</item>
+        <item id="3389">propriedade industrial</item>
+        <item id="3390">propriedade intelectual</item>
+        <item id="3391">registro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1020">[Lei 9.279, de 14 de maio de 1996](http://www.planalto.gov.br/ccivil_03/leis/L9279.htm)</item>
+        <item id="1021">[Instrução Normativa n° 44/2015](http://www.inpi.gov.br/menu-servicos/arquivos-dicig/InstruoNormativa0442015.pdf)</item>
+        <item id="1022">[Resolução PR nº 159, de 28/01/2016](http://www.inpi.gov.br/menu-servicos/desenho/arquivos/resoluo159_16_certificadoeletrnico2.pdf)</item>
+    </legislacoes>
+</servico>
