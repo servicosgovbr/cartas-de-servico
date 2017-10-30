@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>averbacao-de-contratos</id>
+    <dbId>1081</dbId>
+    <nome>Averbação de Contratos</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="859">Propriedade Industrial</item>
+        <item id="860">Fornecimento de tecnologia</item>
+        <item id="861">Assistência técnica e franquia</item>
+    </nomes-populares>
+    <descricao>Você pode averbar no INPI contratos que envolvam licenciamento de direitos de Propriedade Industrial (patentes, desenhos industriais e marcas), fornecimento de tecnologia, serviços de assistência técnica e franquia.</descricao>
+    <contato>Acesse o [Fale Conosco](http://faleconosco.inpi.gov.br/faleconosco/) do INPI</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1356">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Que realizem os contratos citados na descrição.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2903">
+            <titulo>Cadastrar-se no Portal do INPI</titulo>
+            <descricao>Após realizar o cadastro, guarde seu login e senha.</descricao>
+            <documentos>
+                <default>
+                    <item id="3808">Dados de identificação e contato da pessoa física ou jurídica, conforme o caso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3889" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="438" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
+                    <canal-de-prestacao id="3888" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2904">
+            <titulo>Pagar a GRU</titulo>
+            <descricao>Para solicitar a averbação de contratos, você deve emitir a Guia de Recolhimento da União (GRU) no Portal do INPI. Pague o documento antes de dar entrada no pedido e guarde o número, pois ele será necessário para o início do processo.
+Verifique as taxas [aqui](http://www.inpi.gov.br/menu-servicos/transferencia/arquivos/tabela-de-retribuicao-de-servicos-de-transferencia-de-tecnologia-inpi-20170606.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="3809">Guia de Recolhimento da União (GRU)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="131">
+                        <descricao>Taxas variáveis, link na descrição da etapa</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3890" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2905">
+            <titulo>Preencher o formulário</titulo>
+            <descricao>Acesse o sistema e-Contratos para preencher o formulário on-line. 
+Para maiores detalhes sobre a documentação, [clique aqui](http://www.inpi.gov.br/menu-servicos/transferencia/documentacao-necessaria)</descricao>
+            <documentos>
+                <default>
+                    <item id="3810">Carta explicativa datada e assinada</item>
+                    <item id="3811">Procuração (se for o caso)</item>
+                    <item id="3812">Contratos, aditivos ou faturas</item>
+                    <item id="3813">Ficha cadastro</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3891" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/contrato/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2906">
+            <titulo>Receber resultado</titulo>
+            <descricao>Após realizar a solicitação, acompanhe as publicações do INPI relativas ao seu pedido na Revista da Propriedade Industrial (RPI).</descricao>
+            <documentos>
+                <default>
+                    <item id="3814">Nº do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3892" tipo="web">
+                        <descricao>http://revistas.inpi.gov.br/rpi/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2978">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="2979">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="2980">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="2981">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Empreendedorismo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3380">Contrato</item>
+        <item id="3381">Propriedade Industrial</item>
+        <item id="3382">Averbação</item>
+        <item id="3383">Tecnologia</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1015">[Instrução Normativa nº 70/2017](http://www.inpi.gov.br/menu-servicos/transferencia/IN702017.pdf)</item>
+        <item id="1016">[Manual de Contratos de Tecnologia](http://www.inpi.gov.br/menu-servicos/transferencia/arquivos/20170719ManualdoFormulrioEletrnicorev.pdf)</item>
+    </legislacoes>
+</servico>
