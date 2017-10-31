@@ -15,7 +15,8 @@
 * Auxiliar o participante na decisão sobre como continuar sua formação e se inserir no mercado de trabalho.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="861">
             <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
@@ -39,7 +40,9 @@
         <ate max="8" unidade="meses"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
         <etapa id="2245">
             <titulo>Preencher o formulário de inscrição</titulo>
@@ -57,11 +60,12 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2809" tipo="aplicativo-movel">
-                        <descricao>[Em breve](http://enem.inep.gov.br/aplicativo.html)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2810" tipo="web">
                         <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2809" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)
+[iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -82,12 +86,12 @@
                 </caso>
                 <caso id="357" descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)">
                     <documento>
-                        <id>2419</id>
-                        <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
-                    </documento>
-                    <documento>
                         <id>2420</id>
                         <descricao>Enviar documentações que comprovem esta situação.</descricao>
+                    </documento>
+                    <documento>
+                        <id>2419</id>
+                        <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
                     </documento>
                 </caso>
                 <caso id="358" descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)">
@@ -102,11 +106,12 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2812" tipo="aplicativo-movel">
-                        <descricao>[Em breve](http://enem.inep.gov.br/aplicativo.html)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2811" tipo="web">
                         <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2812" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)
+[iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -123,18 +128,19 @@
                 <default>
                     <custo id="87">
                         <descricao>Taxa de Inscrição</descricao>
-                        <moeda></moeda>
+                        <moeda>R$</moeda>
                         <valor>6,800</valor>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2814" tipo="aplicativo-movel">
-                        <descricao>[Em breve](http://enem.inep.gov.br/aplicativo.html)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2813" tipo="web">
                         <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2814" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)
+[iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -160,11 +166,12 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2816" tipo="aplicativo-movel">
-                        <descricao>[Em breve](http://enem.inep.gov.br/aplicativo.html)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2815" tipo="web">
                         <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2816" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)
+[iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -205,17 +212,20 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2819" tipo="aplicativo-movel">
-                        <descricao>[Em breve](http://enem.inep.gov.br/aplicativo.html)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2818" tipo="web">
                         <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2819" tipo="aplicativo-movel">
+                        <descricao>[Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)
+[iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="249"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/249" dbId="36790">
+        <nomeOrgao>Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2462">Cidadãos</item>
     </segmentos-da-sociedade>
