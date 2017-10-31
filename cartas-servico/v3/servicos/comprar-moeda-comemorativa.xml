@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>comprar-moeda-comemorativa</id>
+    <dbId>1085</dbId>
+    <nome>Comprar moeda comemorativa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="862">Moedas comemorativas</item>
+    </nomes-populares>
+    <descricao>Emissão de moedas comemorativas de circulação e venda de moedas comemorativas de coleção (metais nobres).      
+
+Essas moedas tem como objetivo a divulgação/comemoração de eventos relevantes e a preservação da cultura nacional.     
+
+O usuário das moedas comemorativas de circulação é toda a sociedade, que as utilizam no dia-a-dia como meio de pagamento.     
+
+As moedas comemorativas de coleção são vendidas, os principais compradores são colecionadores (numismatas).</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1361">
+            <tipo>Qualquer cidadão brasileiro ou estrangeiro</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-uteis"/>
+        <descricao>No caso de compra nas agências, normalmente a operação dura menos de uma hora.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2925">
+            <titulo>Realizar a compra</titulo>
+            <descricao>Compra de moeda comemorativa pela Internet (sites do Banco do Brasil ou Casa da Moeda) ou nas agências credenciadas do Banco do Brasil.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="136">
+                        <descricao>O valor da moeda depende do tipo de embalagem e do metal (prata, ouro, cuproníquel, etc).</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3915" tipo="web">
+                        <descricao>https://moedas.bb.com.br/moedas/produtomercadoriacomemorativo/listarDisponiveis.action</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3916" tipo="web">
+                        <descricao>https://www.clubedamedalha.com.br/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3917" tipo="presencial">
+                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2926">
+            <titulo>Receber a moeda (apenas em compras pela internet)</titulo>
+            <descricao>Receber a moeda comprada em sua residência</descricao>
+            <documentos>
+                <default>
+                    <item id="3840">Documento de identificação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3918" tipo="presencial">
+                        <descricao>Na sua residência</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/89" dbId="4715">
+        <nomeOrgao>Banco Central do Brasil (BACEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="2994">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Lazer</item>
+        <item>Patrimônio Cultural</item>
+        <item>Patrimônio</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3403">numismática</item>
+        <item id="3404">colecionismo</item>
+        <item id="3405">moedas de coleção</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1028">[LEI Nº 5.895, DE 19 DE JUNHO DE 1973](http://www.planalto.gov.br/ccivil_03/leis/L5895.htm)</item>
+    </legislacoes>
+</servico>
