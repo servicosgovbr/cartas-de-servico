@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>lavrar-atos-de-registro-civil-no-exterior</id>
+    <dbId>1095</dbId>
+    <nome>Lavrar atos de registro civil no exterior</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="872">Lavratura de atos de registro civil</item>
+        <item id="873">Registros consulares de nascimento, casamento e óbito</item>
+    </nomes-populares>
+    <descricao>Através deste serviço é possível requerer registros de nascimento de filhos, casamento e óbito  de brasileiros ocorridos no exterior.</descricao>
+    <contato>Veja [aqui](http://www.portalconsular.itamaraty.gov.br/fale-conosco) as opções de contato com o serviço consular.</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1374">
+            <tipo>Cidadãos brasileiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2951">
+            <titulo>Requerer a lavratura</titulo>
+            <descricao>Apresentação de documentos, conferência e assinatura de termos de registro.</descricao>
+            <documentos>
+                <default>
+                    <item id="3883">Documento de identificação</item>
+                    <item id="3884">Passaporte</item>
+                    <item id="3885">Documentos relativos ao ato que se deseja lavrar (nascimento, casamento ou óbito)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3951" tipo="presencial">
+                        <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2952">
+            <titulo>Realizar pagamento</titulo>
+            <descricao>Veja a tabela de preços [aqui](https://sistemas.mre.gov.br/kitweb/datafiles/CgBruxelas/pt-br/file/Tabela%20de%20emolumentos%20-%20portugu%C3%AAs%20v4(1).pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="3886">Guia de recolhimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="139">
+                        <descricao>Emolumentos consulares (valor variável)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3952" tipo="presencial">
+                        <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular) ou rede bancária, de acordo com as rotinas da repartição em questão</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2953">
+            <titulo>Receber comprovante de lavratura e cópia do documento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3887">Comprovante de pagamento</item>
+                    <item id="3888">Documento de identificação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3953" tipo="presencial">
+                        <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3007">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Documentação Pessoal</item>
+        <item>Emigrações e Imigrações</item>
+        <item>Relações Diplomáticas</item>
+        <item>Relações Internacionais</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3448">atos civis</item>
+        <item id="3449">nascimento no exterior</item>
+        <item id="3450">casamento no exterior</item>
+        <item id="3451">morte no exterior</item>
+        <item id="3452">consulado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1039">[DECRETO-LEI Nº 4.657, DE 4 DE SETEMBRO DE 1942](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del4657.htm)</item>
+        <item id="1040">[LEI Nº 6.015, DE 31 DE DEZEMBRO DE 1973](http://www.planalto.gov.br/ccivil_03/leis/L6015original.htm)</item>
+    </legislacoes>
+</servico>
