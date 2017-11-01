@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-exportar-produtos-de-defesa</id>
+    <dbId>1092</dbId>
+    <nome>Obter autorização para exportar produtos de defesa</nome>
+    <sigla>EXPRODEF</sigla>
+    <nomes-populares>
+        <item id="869">Sistema de Exportação de Produtos de Defesa</item>
+    </nomes-populares>
+    <descricao>O Departamento de Promoção Comercial e Investimentos (DPR) do Ministério de Relações Exteriores recebe de  exportadoras brasileiras de material de defesa pedidos de abertura de negociações preliminares e de autorização para exportação de material daquela natureza e é responsável por encaminhá-los à avaliação sobre sua conveniência política.
+A autorização é obrigatória para realizar este tipo de negociação.</descricao>
+    <contato>**Ministério de Relações Exteriores - Departamento de Promoção Comercial e Investimentos** -         
+
+* E-mail: dpr@itamaraty.gov.br      
+
+* Fone: +55 61 2030-8794</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1371">
+            <tipo>Empresas que pretendam exportar produtos de defesa</tipo>
+            <requisitos>Ter login e senha cadastrados no sistema Extranet DPR</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2943">
+            <titulo>Requisitar autorização para iniciar as negociações</titulo>
+            <descricao>Envio de solicitação para entabular negociações preliminares para venda de produtos de defesa.</descricao>
+            <documentos>
+                <default>
+                    <item id="3862">CNPJ</item>
+                    <item id="3863">Login e Senha no sistema Extranet DPR</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3938" tipo="web">
+                        <descricao>https://extranet.dpr.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2944">
+            <titulo>Requisitar autorização para exportar</titulo>
+            <descricao>Envio de solicitação para exportar produtos de defesa.</descricao>
+            <documentos>
+                <default>
+                    <item id="3864">CNPJ</item>
+                    <item id="3865">Login e Senha no sistema Extranet DPR</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3939" tipo="web">
+                        <descricao>https://extranet.dpr.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3004">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Cooperação Internacional</item>
+        <item>Defesa militar</item>
+        <item>Defesa Nacional</item>
+        <item>Fiscalização do Estado</item>
+        <item>Indústria</item>
+        <item>Relações Internacionais</item>
+        <item>Relações Diplomáticas</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3433">Defesa</item>
+        <item id="3434">material militar</item>
+        <item id="3435">exportação de armas</item>
+        <item id="3436">armamento</item>
+        <item id="3437">autorização</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1035">-</item>
+    </legislacoes>
+</servico>
