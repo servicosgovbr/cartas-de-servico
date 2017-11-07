@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>participar-nos-cursos-do-programa-nacional-de-acesso-ao-ensino-tecnico-e-emprego</id>
+    <dbId>1107</dbId>
+    <nome>Participar nos cursos do Programa Nacional de Acesso ao Ensino Técnico e Emprego</nome>
+    <sigla>PRONATEC</sigla>
+    <descricao>Oferta de cursos de formação inicial e continuada e cursos técnicos de nível médio no âmbito da educação profissional e tecnológica para jovens e trabalhadores de todas as regiões do país. Os cursos são ofertados por instituições públicas ou privadas habilitadas . Órgãos parceiros, como demais Ministérios, contribuem na definição da distribuição das vagas, de acordo com as demandas advindas do mundo do trabalho e renda.</descricao>
+    <contato>**Telefone:** 0800 61 61 61, Opção 5; ou      
+Através do [Fale Conosco](http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F2829%2C17929%2C17931&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1388">
+            <tipo>Estudantes do ensino médio</tipo>
+            <requisitos>¨Que estudem na rede pública de ensino; ou    
+¨Que sejam bolsistas integrais na rede particular de ensino.</requisitos>
+        </solicitante>
+        <solicitante id="1389">
+            <tipo>Trabalhadores</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1390">
+            <tipo>Beneficiários dos programas federais de transferência de renda</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1391">
+            <tipo>Pessoas que tenham estudado o ensino médio</tipo>
+            <requisitos>¨Na rede pública de ensino; ou    
+¨Como bolsistas integrais na rede particular de ensino.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="1" max="12" unidade="meses"/>
+        <descricao>O tempo varia de acordo com o curso e a instituição que o disponibilizará</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2975">
+            <titulo>Realizar pré-matrícula online</titulo>
+            <descricao>No site do Pronatec você poderá pesquisar os cursos e turmas disponíveis por estado, município e instituição. Após identificar sua turma, você deve proceder com o preenchimento do formulário de inscrição (clicando em "inscreva-se" ao lado do nome da turma escolhida)</descricao>
+            <documentos>
+                <default>
+                    <item id="3928">CPF</item>
+                    <item id="3929">Dados pessoais</item>
+                    <item id="3930">Dados de contato</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3983" tipo="web">
+                        <descricao>http://pronatec.mec.gov.br/inscricao/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2976">
+            <titulo>Confirmar matrícula</titulo>
+            <descricao>Após a pré-matrícula, e antes do início do curso, você deverá ir à instituição ofertante para confirmar sua matrícula</descricao>
+            <documentos>
+                <default>
+                    <item id="3931">Documento de identificação original e válido</item>
+                    <item id="3932">CPF</item>
+                    <item id="3933">Comprovante de escolaridade</item>
+                    <item id="3934">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3984" tipo="presencial">
+                        <descricao>Instituição ofertante do curso</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2977">
+            <titulo>Estudar</titulo>
+            <descricao>É necessário que o estudante, para que o curso seja validado, tenha o mínimo de frequência e aproveitamento exigidos</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3985" tipo="presencial">
+                        <descricao>Instituição ofertante do curso</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2978">
+            <titulo>Confirmar frequência</titulo>
+            <descricao>Conforme a Portaria MEC n° 817/2015, todos os alunos da Bolsa-Formação/Pronatec devem confirmar sua frequência nos cursos, após o registro de frequência pela instituição ofertante, por meio de senha pessoal, confidencial e intransferível.</descricao>
+            <documentos>
+                <default>
+                    <item id="3935">Login e senha no SISTEC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3986" tipo="web">
+                        <descricao>sistec.mec.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3032">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação profissionalizante</item>
+        <item>Empregabilidade</item>
+        <item>Fomento ao Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3500">curso profissionalizante</item>
+        <item id="3501">pronatec</item>
+        <item id="3502">capacitação</item>
+        <item id="3503">estudar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1054">[Lei nº 12.513, de 26 de outubro de 2011](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12513.htm)</item>
+        <item id="1055">[Portaria nº 817, de 13 de agosto de 2015](http://pronatec.mec.gov.br/images/stories/pdf/portaria_mec_817_13082015.pdf)</item>
+    </legislacoes>
+</servico>
