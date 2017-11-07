@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-no-sistema-integrado-de-registro-do-ceis-e-cnep</id>
+    <dbId>1099</dbId>
+    <nome>Cadastrar-se no Sistema Integrado de Registro do CEIS e CNEP</nome>
+    <sigla>SIRCAD</sigla>
+    <descricao>O Sistema Integrado de Registro do CEIS/CNEP foi desenvolvido para publicar, no Portal da Transparência, os dados do Cadastro Nacional de Empresas Inidôneas e Suspensas (CEIS) e do Cadastro Nacional das Empresas Punidas (CNEP), atendendo as determinações da Lei 12.846/2013 (Lei Anticorrupção). O acesso ao Sistema é permitido aos entes públicos, de todas as esferas federativas (municipais, estaduais e federais), de todos os poderes. Atualmente, na esfera federal, o CEIS e no CNEP é alimentado diretamente pela CGU, a partir de pesquisa às sanções publicadas no Diário Oficial da União e da importação de bancos de dados institucionais. Com o lançamento do Sistema CGU-PJ, os órgãos federais cadastrarão diretamente ali as sanções aplicadas, com integração automática aos cadastros.</descricao>
+    <contato>Veja o [material de apoio](http://www.cgu.gov.br/assuntos/responsabilizacao-de-empresas/sistema-integrado-de-registro-do-ceis-cnep/material-de-apoio)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1379">
+            <tipo>Órgãos públicos dos três poderes e das três esferas da União</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1380">
+            <tipo>Empresas públicas e de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2960">
+            <titulo>Fazer pré-cadastro</titulo>
+            <descricao>Aqui você irá inserir os dados do órgão público para realizar o cadastro e irá solicitar a aprovação do mesmo</descricao>
+            <documentos>
+                <default>
+                    <item id="3905">e-CNPJ do órgão ou e-CPF do responsável pela Unidade registrado junto à Secretaria da Receita Federal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3968" tipo="web">
+                        <descricao>https://www.ceiscadastro.cgu.gov.br/publico/PreCadastro/PreCadastro_Orientacoes.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2961">
+            <titulo>Recebimento da senha de acesso</titulo>
+            <descricao>Após receber a senha você poderá acessar o perfil do órgão no sistema</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3969" tipo="e-mail">
+                        <descricao>Endereço de e-mail informado no pré-cadastro</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/214460" dbId="37535">
+        <nomeOrgao>Ministério da Transparência e Controladoria-Geral da União (CGU)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="3012">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Compras governamentais</item>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Finanças</item>
+        <item>Patrimônio da União</item>
+        <item>Transparência</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3464">transparência</item>
+        <item id="3465">empresas punidas</item>
+        <item id="3466">nome sujo com o governo</item>
+        <item id="3467">cadastro de empresas</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1044">[Lei nº 12.846, de 1º de agosto de 2013 (Lei Anticorrupção)](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm)</item>
+    </legislacoes>
+</servico>
