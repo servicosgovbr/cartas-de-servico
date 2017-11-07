@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-atos-notariais-no-exterior</id>
+    <dbId>1097</dbId>
+    <nome>Realizar atos notariais no exterior</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="874">Procurações, Escrituras e Declarações</item>
+    </nomes-populares>
+    <descricao>Cidadãos brasileiros ou estrangeiros, assim como representantes de empresas privadas, que se encontram no exterior e precisam realizar atos notariais, como lavrar uma procuração ou escritura, podem utilizar este serviço nos consulados brasileiros.</descricao>
+    <contato>Veja [aqui](http://www.portalconsular.itamaraty.gov.br/fale-conosco) as opções de contato com o serviço consular.</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1376">
+            <tipo>Cidadãos brasileiros e estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1377">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2955">
+            <titulo>Ir ao  consulado</titulo>
+            <descricao>Você levará ao consulado a documentação necessária para realizar o ato desejado.</descricao>
+            <documentos>
+                <default>
+                    <item id="3898">Documento de identificação válido</item>
+                    <item id="3899">CPF</item>
+                    <item id="3900">CNPJ</item>
+                    <item id="3901">Documentação comprobatória necessária para o ato a ser lavrado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3957" tipo="presencial">
+                        <descricao>Consulte [aqui](http://www.portalconsular.itamaraty.gov.br/rede-consular) o consulado mais perto de você</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2956">
+            <titulo>Pagamento da taxa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="3902">Guia de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="140">
+                        <descricao>Procurações (reais ouro)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2,000</valor>
+                    </custo>
+                    <custo id="141">
+                        <descricao>Escrituras (reais ouro)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2,000</valor>
+                    </custo>
+                    <custo id="142">
+                        <descricao>Segundas vias (reais ouro)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1,000</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3958" tipo="presencial">
+                        <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular) ou rede bancária, de acordo com as rotinas da repartição em questão</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2957">
+            <titulo>Receber documento</titulo>
+            <descricao>Após paga a taxa respectiva, você receberá o documento assinado e validado</descricao>
+            <documentos>
+                <default>
+                    <item id="3903">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3959" tipo="presencial">
+                        <descricao>O consulado brasileiro escolhido na etapa 1</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+        <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3009">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3010">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Comércio e Serviços</item>
+        <item>Documentação Pessoal</item>
+        <item>Economia e Finanças</item>
+        <item>Relações Diplomáticas</item>
+        <item>Relações Internacionais</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3457">cartório</item>
+        <item id="3458">exterior</item>
+        <item id="3459">procuração</item>
+        <item id="3460">escritura</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1042">[DECRETO-LEI Nº 4.657, DE 4 DE SETEMBRO DE 1942](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del4657.htm)</item>
+    </legislacoes>
+</servico>
