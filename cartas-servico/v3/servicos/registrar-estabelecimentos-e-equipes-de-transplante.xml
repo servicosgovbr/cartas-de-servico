@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-estabelecimentos-e-equipes-de-transplante</id>
+    <dbId>1112</dbId>
+    <nome>Registrar estabelecimentos e equipes de transplante</nome>
+    <sigla>Credenciamento</sigla>
+    <descricao>Realizar autorização e renovação solicitados por estabelecimentos e equipes</descricao>
+    <contato>**Telefones:** (61) 3315-8953 ou (61) 3315-9212       
+**Email:** snt@saude.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1396">
+            <tipo>Estabelecimentos de saúde públicos ou privados</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="2990">
+            <titulo>Realizar o pedido de registro</titulo>
+            <descricao>Dar entrada do pedido na Central de Notificação Captação e Distribuição de Órgãos e Tecidos (CNCDOT) estadual</descricao>
+            <documentos>
+                <default>
+                    <item id="3953">CNPJ</item>
+                    <item id="3954">Contrato Social</item>
+                    <item id="3955">CPF e documentação comprobatória de capacidades dos médicos</item>
+                    <item id="3956">Registro na junta comercial (se for o caso)</item>
+                    <item id="3957">Certidão de regularidade da Receita Federal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4000" tipo="presencial">
+                        <descricao>Na [CNCDOT do seu estado](http://www.inca.gov.br/conteudo_view.asp?id=489)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2991">
+            <titulo>Receber a vistoria</titulo>
+            <descricao>Após o pedido ser feito, a equipe de credenciamento entrará em contato, através dos telefones e outras formas de contato informadas na requisição, para agendar a vistoria do local a ser registrado</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4001" tipo="presencial">
+                        <descricao>Local a ser registrado</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="2992">
+            <titulo>Receber resultado</titulo>
+            <descricao>O resultado do credenciamento será publicado no Diário Oficial da União (DOU)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4002" tipo="web">
+                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+        <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3040">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3041">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3042">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Assistência Hospitalar e Ambulatorial</item>
+        <item>Fiscalização do Estado</item>
+        <item>Saúde</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3519">transplante</item>
+        <item id="3520">credenciamento</item>
+        <item id="3521">registro</item>
+        <item id="3522">equipe de transplante</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1060">[DECRETO Nº 9.175, DE 18 DE OUTUBRO DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9175.htm#art56)</item>
+    </legislacoes>
+</servico>
