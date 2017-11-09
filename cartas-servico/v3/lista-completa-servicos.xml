@@ -8777,132 +8777,6 @@ Endereço Eletrônico: http://www.mdic.gov.br</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>inscrever-imovel-rural</id>
-        <dbId>1000</dbId>
-        <nome>Inscrever imóvel rural</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="772">ITR</item>
-        </nomes-populares>
-        <descricao>Solicitar inscrição, alteração, cancelamento ou reativação do cadastro do imóvel rural, por meio do aplicativo Cafir – Coletor Web.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="1220">
-                <tipo>Proprietários de Imóveis Rurais (Pessoa Física ou Jurídica)</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="2" max="7" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2636">
-                <titulo>Fazer pré-cadastro pela internet</titulo>
-                <descricao>Preencher as informações na internet e imprimir o Decir para levar a uma unidade da RFB</descricao>
-                <documentos>
-                    <default>
-                        <item id="3181">Dados pessoais</item>
-                        <item id="3182">Dados do imóvel</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3422" tipo="web">
-                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2637">
-                <titulo>Entregar documentação comprobatória</titulo>
-                <descricao>Apresentar a documentação comprobatória em uma unidade da RFB ou enviar por correio.
-Maiores detalhes sobre a documentação necessária [aqui](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/documentacao-necessaria-a-solicitacao-de-atos-cadastrais-no-cafir)</descricao>
-                <documentos>
-                    <default>
-                        <item id="3183">Carteira de identidade</item>
-                        <item id="3184">Certidões de cartório</item>
-                        <item id="3185">Procuração do representante legal</item>
-                        <item id="3186">Registro em Cartório</item>
-                        <item id="3187">Documentação do imóvel</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3423" tipo="presencial">
-                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3424" tipo="postal">
-                            <descricao>Unidade de jurisdição do contribuinte -[Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2638">
-                <titulo>Consultar o resultado da análise da solicitação pelo Cafir Web</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3188">Documento de Identificação Pessoal</item>
-                        <item id="3189">Número do Recibo</item>
-                        <item id="3190">Número de Identificação</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3425" tipo="web">
-                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3426" tipo="presencial">
-                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
-            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2837">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2838">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2836">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Fiscalização do Estado</item>
-            <item>Habitação Rural</item>
-            <item>Encargos financeiros</item>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2923">imóvel rural</item>
-            <item id="2924">receita federal</item>
-            <item id="2925">cadastro</item>
-            <item id="2926">cafir</item>
-            <item id="2927">cadir</item>
-            <item id="2928">coletor web</item>
-            <item id="2929">incra</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="892">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-licenca-de-importacao</id>
         <dbId>752</dbId>
         <nome>Obter Licença de Importação</nome>
@@ -11967,11 +11841,40 @@ Brasília-DF - CEP 70059-900</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-autorizacao-para-saida-de-obras-de-artes-do-pais</id>
+        <dbId>884</dbId>
+        <nome>Obter autorização para Saída de Obras de Artes do País</nome>
+        <sigla></sigla>
+        <descricao>O cidadão interessado em retirar obra de arte do país para fins de mudança domiciliar, exposição, doação ou comércio, deverá pedir autorização ao IPHAN, a fim de que se verifique se o bem integra o patrimônio cultural brasileiro, conforme Decreto-Lei nº 25/1937,
+Lei nº 3.924/1961 , Lei nº 4.845/1965 e Lei nº 5.471/1968</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem>0</porcentagem>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <tempo-total-estimado>
+            <ate max="15" unidade="dias-uteis"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas/>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
+            <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
+        </orgao>
+        <areas-de-interesse>
+            <item>Cultura</item>
+            <item>Difusão Cultural</item>
+            <item>Patrimônio Cultural</item>
+        </areas-de-interesse>
+    </servico>
+    <servico>
         <id>cadastrar-bem-arqueologico</id>
         <dbId>848</dbId>
         <nome>Cadastrar bem arqueológico</nome>
         <sigla></sigla>
-        <descricao>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada pode solicitar o reconhecimento de um bem de natureza arqueológica – objetos isolados ou sítios arqueológicos –, em razão de descoberta fortuita (ao acaso), conforme disposto na Lei nº 3.924/1961. Ver item Autorização para Realização de Pesquisas Arqueológicas.</descricao>
+        <descricao>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada pode solicitar o reconhecimento de um bem de natureza arqueológica – objetos isolados ou sítios arqueológicos –, em razão de descoberta fortuita (ao acaso), conforme disposto na Lei nº 3.924/1961. Ver item Autorização para Realização de Pesquisas Arqueológicas..</descricao>
         <contato></contato>
         <gratuito>true</gratuito>
         <porcentagem>0</porcentagem>
@@ -12032,35 +11935,6 @@ Brasília-DF - CEP 70059-900</descricao>
         <legislacoes>
             <item id="685">[Lei nº 3.924/1961](http://www.planalto.gov.br/ccivil_03/leis/1950-1969/L3924.htm)</item>
         </legislacoes>
-    </servico>
-    <servico>
-        <id>obter-autorizacao-para-saida-de-obras-de-artes-do-pais</id>
-        <dbId>884</dbId>
-        <nome>Obter autorização para Saída de Obras de Artes do País</nome>
-        <sigla></sigla>
-        <descricao>O cidadão interessado em retirar obra de arte do país para fins de mudança domiciliar, exposição, doação ou comércio, deverá pedir autorização ao IPHAN, a fim de que se verifique se o bem integra o patrimônio cultural brasileiro, conforme Decreto-Lei nº 25/1937,
-Lei nº 3.924/1961 , Lei nº 4.845/1965 e Lei nº 5.471/1968</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <tempo-total-estimado>
-            <ate max="15" unidade="dias-uteis"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas/>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
-            <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
-        </orgao>
-        <areas-de-interesse>
-            <item>Cultura</item>
-            <item>Difusão Cultural</item>
-            <item>Patrimônio Cultural</item>
-        </areas-de-interesse>
     </servico>
     <servico>
         <id>matricular-se-em-mestrado-profissional-em-preservacao-do-patrimonio-cultura</id>
@@ -17997,6 +17871,148 @@ Mesmo sem mudança na família, o cadastro deve ser atualizado a cada dois anos,
         </legislacoes>
     </servico>
     <servico>
+        <id>capacitar-se-como-instrutor-de-formularios-do-cadastro-unico-e-de-gestao-do-cadastro-unico-e-do-pbf</id>
+        <dbId>982</dbId>
+        <nome>Capacitar-se como instrutor de Formulários do Cadastro Único e de Gestão do Cadastro Único e do PBF</nome>
+        <sigla></sigla>
+        <descricao>Capacitações presenciais para técnicos e gestores de Formulário do Cadastro Único e de Gestão do Cadastro Único e do PBF, com duração de 5 dias para cada turma.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1171">
+                <tipo>Órgãos da administração direta</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1172">
+                <tipo>Estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="31" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2578">
+                <titulo>Enviar inscrição</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3062">Carteira de identidade</item>
+                        <item id="3063">CPF</item>
+                        <item id="3064">e-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3328" tipo="telefone">
+                            <descricao>20301545</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3329" tipo="e-mail">
+                            <descricao>danielle.henderson@mds.gov.br; 
+juliana.milanezzi@mds.gov.br;
+ maria.werlang@mds.gov.br; 
+mariana.ribeiro@mds.gov.br; 
+thais.kawashima@mds.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2579">
+                <titulo>Enviar Declaração de Colaborador Eventual</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3065">Carteira de identidade</item>
+                        <item id="3066">CPF</item>
+                        <item id="3067">E-mail, Declaração de Colaborador Eventual</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3330" tipo="e-mail">
+                            <descricao>danielle.henderson@mds.gov.br;
+ juliana.milanezzi@mds.gov.br; 
+maria.werlang@mds.gov.br;
+mariana.ribeiro@mds.gov.br; 
+thais.kawashima@mds.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2580">
+                <titulo>Receber informações sobre o local e horário do curso</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3068">E-mail</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3331" tipo="e-mail">
+                            <descricao>As informações serão enviadas para o e-mail previamente cadastrado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2581">
+                <titulo>Participar do curso presencial</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3069">Nenhum</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3332" tipo="presencial">
+                            <descricao>Local informado ao aluno na etapa anterior</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social  (MDS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2808">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Proteção Social</item>
+            <item>Educação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2766">capacitação</item>
+            <item id="2767">cadastro único</item>
+            <item id="2768">bolsa família</item>
+            <item id="2769">gestor</item>
+            <item id="2770">cadastrador</item>
+            <item id="2771">colaborador eventual</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="860">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>celebrar-convenio-para-promocao-do-cafe-brasileiro</id>
         <dbId>922</dbId>
         <nome>Celebrar convênio para promoção do café brasileiro</nome>
@@ -19410,6 +19426,118 @@ Mesmo sem mudança na família, o cadastro deve ser atualizado a cada dois anos,
         </legislacoes>
     </servico>
     <servico>
+        <id>receber-tecnologia-social-de-acesso-a-agua-para-consumo-familiar</id>
+        <dbId>976</dbId>
+        <nome>Receber tecnologia social de acesso à água para consumo familiar</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="759">Programa Cisternas</item>
+        </nomes-populares>
+        <descricao>O Programa Nacional de Apoio à Captação de Água de Chuva e Outras Tecnologias Sociais de Acesso à Água - Programa Cisternas tem como finalidade promover o acesso à água para o consumo humano e animal e para a produção de alimentos, por meio de implementação de tecnologias sociais, destinado às famílias rurais de baixa renda atingidas pela seca ou falta regular de água.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1165">
+                <tipo>Cidadãos e Famílias</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="4" max="120" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2565">
+                <titulo>Cadastrar-se no Programa</titulo>
+                <descricao>A entidade executora do Programa selecionará as famílias participantes</descricao>
+                <documentos>
+                    <default>
+                        <item id="3026">CPF</item>
+                        <item id="3027">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3310" tipo="presencial">
+                            <descricao>Na própria residência do beneficiário ou em algum outro local definido no município pela entidade executora, podendo ser: sede do sindicato rural, secretaria municipal de assistência social, igreja, sede da associação comunitária, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2566">
+                <titulo>Participar das capacitações</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3028">CPF</item>
+                        <item id="3029">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3311" tipo="presencial">
+                            <descricao>Locais definidos pela entidade executora, podendo ser: sede da associação comunitária, escolas da comunidade, igreja, dentre outros.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2567">
+                <titulo>Receber a tecnologia social</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3030">CPF</item>
+                        <item id="3031">NIS</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3312" tipo="presencial">
+                            <descricao>A própria residência do beneficiário da tecnologia social.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+            <nomeOrgao>Ministério do Desenvolvimento Social  (MDS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2800">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="2801">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Meio ambiente</item>
+            <item>Proteção Social</item>
+            <item>Saneamento</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2737">acesso à água</item>
+            <item id="2738">tecnologia social</item>
+            <item id="2739">cisterna</item>
+            <item id="2740">família</item>
+            <item id="2741">consumo familiar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="851">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>receber-tecnologia-social-de-acesso-a-agua-para-producao-de-alimentos</id>
         <dbId>979</dbId>
         <nome>Receber tecnologia social de acesso à água para produção de alimentos</nome>
@@ -20625,260 +20753,6 @@ CEP 70053-900.</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="795">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>receber-tecnologia-social-de-acesso-a-agua-para-consumo-familiar</id>
-        <dbId>976</dbId>
-        <nome>Receber tecnologia social de acesso à água para consumo familiar</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="759">Programa Cisternas</item>
-        </nomes-populares>
-        <descricao>O Programa Nacional de Apoio à Captação de Água de Chuva e Outras Tecnologias Sociais de Acesso à Água - Programa Cisternas tem como finalidade promover o acesso à água para o consumo humano e animal e para a produção de alimentos, por meio de implementação de tecnologias sociais, destinado às famílias rurais de baixa renda atingidas pela seca ou falta regular de água.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="1165">
-                <tipo>Cidadãos e Famílias</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="4" max="120" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2565">
-                <titulo>Cadastrar-se no Programa</titulo>
-                <descricao>A entidade executora do Programa selecionará as famílias participantes</descricao>
-                <documentos>
-                    <default>
-                        <item id="3026">CPF</item>
-                        <item id="3027">NIS</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3310" tipo="presencial">
-                            <descricao>Na própria residência do beneficiário ou em algum outro local definido no município pela entidade executora, podendo ser: sede do sindicato rural, secretaria municipal de assistência social, igreja, sede da associação comunitária, dentre outros.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2566">
-                <titulo>Participar das capacitações</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3028">CPF</item>
-                        <item id="3029">NIS</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3311" tipo="presencial">
-                            <descricao>Locais definidos pela entidade executora, podendo ser: sede da associação comunitária, escolas da comunidade, igreja, dentre outros.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2567">
-                <titulo>Receber a tecnologia social</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3030">CPF</item>
-                        <item id="3031">NIS</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3312" tipo="presencial">
-                            <descricao>A própria residência do beneficiário da tecnologia social.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social  (MDS)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2800">Cidadãos</item>
-            <item idSegmento="4" idServicoSegmento="2801">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Meio ambiente</item>
-            <item>Proteção Social</item>
-            <item>Saneamento</item>
-            <item>Saúde</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2737">acesso à água</item>
-            <item id="2738">tecnologia social</item>
-            <item id="2739">cisterna</item>
-            <item id="2740">família</item>
-            <item id="2741">consumo familiar</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="851">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>capacitar-se-como-instrutor-de-formularios-do-cadastro-unico-e-de-gestao-do-cadastro-unico-e-do-pbf</id>
-        <dbId>982</dbId>
-        <nome>Capacitar-se como instrutor de Formulários do Cadastro Único e de Gestão do Cadastro Único e do PBF</nome>
-        <sigla></sigla>
-        <descricao>Capacitações presenciais para técnicos e gestores de Formulário do Cadastro Único e de Gestão do Cadastro Único e do PBF, com duração de 5 dias para cada turma.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="1171">
-                <tipo>Órgãos da administração direta</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1172">
-                <tipo>Estados e municípios</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="31" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2578">
-                <titulo>Enviar inscrição</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3062">Carteira de identidade</item>
-                        <item id="3063">CPF</item>
-                        <item id="3064">e-mail</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3328" tipo="telefone">
-                            <descricao>20301545</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="3329" tipo="e-mail">
-                            <descricao>danielle.henderson@mds.gov.br; 
-juliana.milanezzi@mds.gov.br;
- maria.werlang@mds.gov.br; 
-mariana.ribeiro@mds.gov.br; 
-thais.kawashima@mds.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2579">
-                <titulo>Enviar Declaração de Colaborador Eventual</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3065">Carteira de identidade</item>
-                        <item id="3066">CPF</item>
-                        <item id="3067">E-mail, Declaração de Colaborador Eventual</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3330" tipo="e-mail">
-                            <descricao>danielle.henderson@mds.gov.br;
- juliana.milanezzi@mds.gov.br; 
-maria.werlang@mds.gov.br;
-mariana.ribeiro@mds.gov.br; 
-thais.kawashima@mds.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2580">
-                <titulo>Receber informações sobre o local e horário do curso</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3068">E-mail</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3331" tipo="e-mail">
-                            <descricao>As informações serão enviadas para o e-mail previamente cadastrado</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2581">
-                <titulo>Participar do curso presencial</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3069">Nenhum</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3332" tipo="presencial">
-                            <descricao>Local informado ao aluno na etapa anterior</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
-            <nomeOrgao>Ministério do Desenvolvimento Social  (MDS)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="2808">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Proteção Social</item>
-            <item>Educação</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="2766">capacitação</item>
-            <item id="2767">cadastro único</item>
-            <item id="2768">bolsa família</item>
-            <item id="2769">gestor</item>
-            <item id="2770">cadastrador</item>
-            <item id="2771">colaborador eventual</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="860">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -24071,6 +23945,132 @@ CEP 70.053.900</descricao>
         </palavras-chave>
         <legislacoes>
             <item id="872">[LEI Nº 12.513, DE 26 DE OUTUBRO DE 2011](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12513.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>inscrever-imovel-rural</id>
+        <dbId>1000</dbId>
+        <nome>Inscrever imóvel rural</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="772">ITR</item>
+        </nomes-populares>
+        <descricao>Solicitar inscrição, alteração, cancelamento ou reativação do cadastro do imóvel rural, por meio do aplicativo Cafir – Coletor Web.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1220">
+                <tipo>Proprietários de Imóveis Rurais (Pessoa Física ou Jurídica)</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="2" max="7" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2636">
+                <titulo>Fazer pré-cadastro pela internet</titulo>
+                <descricao>Preencher as informações na internet e imprimir o Decir para levar a uma unidade da RFB</descricao>
+                <documentos>
+                    <default>
+                        <item id="3181">Dados pessoais</item>
+                        <item id="3182">Dados do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3422" tipo="web">
+                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2637">
+                <titulo>Entregar documentação comprobatória</titulo>
+                <descricao>Apresentar a documentação comprobatória em uma unidade da RFB ou enviar por correio.
+Maiores detalhes sobre a documentação necessária [aqui](http://idg.receita.fazenda.gov.br/orientacao/tributaria/cadastros/cadastro-de-imoveis-rurais-cafir/documentacao-necessaria-a-solicitacao-de-atos-cadastrais-no-cafir)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3183">Carteira de identidade</item>
+                        <item id="3184">Certidões de cartório</item>
+                        <item id="3185">Procuração do representante legal</item>
+                        <item id="3186">Registro em Cartório</item>
+                        <item id="3187">Documentação do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3423" tipo="presencial">
+                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3424" tipo="postal">
+                            <descricao>Unidade de jurisdição do contribuinte -[Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2638">
+                <titulo>Consultar o resultado da análise da solicitação pelo Cafir Web</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3188">Documento de Identificação Pessoal</item>
+                        <item id="3189">Número do Recibo</item>
+                        <item id="3190">Número de Identificação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3425" tipo="web">
+                            <descricao>https://coletorcafir.receita.fazenda.gov.br/coletor/index.jsf</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3426" tipo="presencial">
+                            <descricao>Unidades de Atendimento da Receita Federal - [Encontre a sua unidade aqui](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2837">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2838">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2836">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Habitação Rural</item>
+            <item>Encargos financeiros</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="2923">imóvel rural</item>
+            <item id="2924">receita federal</item>
+            <item id="2925">cadastro</item>
+            <item id="2926">cafir</item>
+            <item id="2927">cadir</item>
+            <item id="2928">coletor web</item>
+            <item id="2929">incra</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="892">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -35337,44 +35337,45 @@ Assistência Técnica e Extensão Rural – ATER promove processos de gestão, p
         </legislacoes>
     </servico>
     <servico>
-        <id>implantar-salas-de-recursos-multifuncionais</id>
-        <dbId>1105</dbId>
-        <nome>Implantar Salas de Recursos Multifuncionais</nome>
-        <sigla>SRM</sigla>
+        <id>realizar-atos-notariais-no-exterior</id>
+        <dbId>1097</dbId>
+        <nome>Realizar atos notariais no exterior</nome>
+        <sigla></sigla>
         <nomes-populares>
-            <item id="880">Programa Implantação Salas de Recursos Multifuncionais - SRM</item>
-            <item id="881">Salas de Recursos Multifuncionais - SRM</item>
+            <item id="874">Procurações, Escrituras e Declarações</item>
         </nomes-populares>
-        <descricao>O Programa disponibiliza às escolas públicas de ensino regular, conjunto de equipamentos de informática, mobiliários, materiais pedagógicos e de acessibilidade para a organização do espaço de atendimento educacional especializado</descricao>
-        <contato>**Telefone:** (61) 2022-7662     
-
-**E-mail:** acessibilidade@mec.gov.br</contato>
-        <gratuito>true</gratuito>
+        <descricao>Cidadãos brasileiros ou estrangeiros, assim como representantes de empresas privadas, que se encontram no exterior e precisam realizar atos notariais, como lavrar uma procuração ou escritura, podem utilizar este serviço nos consulados brasileiros.</descricao>
+        <contato>Veja [aqui](http://www.portalconsular.itamaraty.gov.br/fale-conosco) as opções de contato com o serviço consular.</contato>
+        <gratuito>false</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <servico-digital>false</servico-digital>
         <solicitantes>
-            <solicitante id="1386">
-                <tipo>Estados e Municípios</tipo>
+            <solicitante id="1376">
+                <tipo>Cidadãos brasileiros e estrangeiros</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1377">
+                <tipo>Empresas privadas</tipo>
                 <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <entre min="0" max="0" unidade="meses"/>
-            <descricao>O tempo não é estimado ainda.</descricao>
+            <em-media max="1" unidade="dias-corridos"/>
+            <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="2969">
-                <titulo>Apresentar demanda</titulo>
-                <descricao>A Secretaria de Educação deve apresentar a demanda no Plano de Ações Articuladas - PAR.</descricao>
+            <etapa id="2955">
+                <titulo>Ir ao  consulado</titulo>
+                <descricao>Você levará ao consulado a documentação necessária para realizar o ato desejado.</descricao>
                 <documentos>
                     <default>
-                        <item id="3915">CPF</item>
-                        <item id="3916">PAR</item>
-                        <item id="3917">Demanda por salas multifuncionais</item>
-                        <item id="3918">Senha do SIMEC</item>
+                        <item id="3898">Documento de identificação válido</item>
+                        <item id="3899">CPF</item>
+                        <item id="3900">CNPJ</item>
+                        <item id="3901">Documentação comprobatória necessária para o ato a ser lavrado.</item>
                     </default>
                 </documentos>
                 <custos>
@@ -35382,42 +35383,53 @@ Assistência Técnica e Extensão Rural – ATER promove processos de gestão, p
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3977" tipo="web">
-                            <descricao>http://simec.mec.gov.br/</descricao>
+                        <canal-de-prestacao id="3957" tipo="presencial">
+                            <descricao>Consulte [aqui](http://www.portalconsular.itamaraty.gov.br/rede-consular) o consulado mais perto de você</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
-            <etapa id="2970">
-                <titulo>Indicar escolas a serem contempladas</titulo>
-                <descricao>A escola deve indicar as escolas a serem contempladas por meio do Sistema de Gestão Tecnológica (SIGETEC)</descricao>
+            <etapa id="2956">
+                <titulo>Pagamento da taxa</titulo>
+                <descricao></descricao>
                 <documentos>
                     <default>
-                        <item id="3919">Usuário e senha no SIGETEC</item>
-                        <item id="3920">Dados das escolas contempladas</item>
+                        <item id="3902">Guia de pagamento</item>
                     </default>
                 </documentos>
                 <custos>
-                    <default/>
+                    <default>
+                        <custo id="140">
+                            <descricao>Procurações (reais ouro)</descricao>
+                            <moeda>R$</moeda>
+                            <valor>2,000</valor>
+                        </custo>
+                        <custo id="141">
+                            <descricao>Escrituras (reais ouro)</descricao>
+                            <moeda>R$</moeda>
+                            <valor>2,000</valor>
+                        </custo>
+                        <custo id="142">
+                            <descricao>Segundas vias (reais ouro)</descricao>
+                            <moeda>R$</moeda>
+                            <valor>1,000</valor>
+                        </custo>
+                    </default>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3978" tipo="web">
-                            <descricao>https://www.fnde.gov.br/sigetec/sisseed_fra.php</descricao>
+                        <canal-de-prestacao id="3958" tipo="presencial">
+                            <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular) ou rede bancária, de acordo com as rotinas da repartição em questão</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
-            <etapa id="2971">
-                <titulo>Receber as SRM (Se aprovado)</titulo>
-                <descricao>A entrega dos itens que compõem as salas de recursos multifuncionais é feita
-diretamente, na escola, no endereço registrado no Censo Escolar.     
-
-O responsável pela escola, no momento da entrega deve conferir os itens especificados na nota fiscal e assinar o TERMO DE RECEBIMENTO e, posteriormente, no ato da instalação dos equipamentos de informática, o TERMO DE ACEITAÇÃO</descricao>
+            <etapa id="2957">
+                <titulo>Receber documento</titulo>
+                <descricao>Após paga a taxa respectiva, você receberá o documento assinado e validado</descricao>
                 <documentos>
                     <default>
-                        <item id="3921">Termo de Recebimento</item>
-                        <item id="3922">Termo de Aceitação</item>
+                        <item id="3903">Comprovante de pagamento</item>
                     </default>
                 </documentos>
                 <custos>
@@ -35425,39 +35437,37 @@ O responsável pela escola, no momento da entrega deve conferir os itens especif
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3979" tipo="presencial">
-                            <descricao>Escolas contempladas</descricao>
+                        <canal-de-prestacao id="3959" tipo="presencial">
+                            <descricao>O consulado brasileiro escolhido na etapa 1</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
         </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
-            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+            <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="3030">Órgãos e entidades públicas</item>
+            <item idSegmento="1" idServicoSegmento="3009">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3010">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Administração</item>
-            <item>Assistência à Criança e ao Adolescente</item>
-            <item>Assistência ao Portador de Deficiência</item>
-            <item>Educação básica</item>
-            <item>Direitos Humanos</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Mobilidade</item>
-            <item>Educação</item>
-            <item>Cidadania</item>
+            <item>Comercio externo</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+            <item>Serviços Públicos</item>
+            <item>Documentação Pessoal</item>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="3492">acessibilidade</item>
-            <item id="3493">acessibilidade na escola</item>
-            <item id="3494">SRM</item>
-            <item id="3495">Salas multifuncionais</item>
+            <item id="3457">cartório</item>
+            <item id="3458">exterior</item>
+            <item id="3459">procuração</item>
+            <item id="3460">escritura</item>
         </palavras-chave>
         <legislacoes>
-            <item id="1051">[Decreto nº 5.296 de 2 de dezembro de 2004](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm)</item>
-            <item id="1052">[Decreto nº 7.611, de 17 de novembro de 2011](http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7611.htm#art11)</item>
+            <item id="1042">[DECRETO-LEI Nº 4.657, DE 4 DE SETEMBRO DE 1942](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del4657.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -36627,6 +36637,104 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
         </legislacoes>
     </servico>
     <servico>
+        <id>obter-servico-de-mediacao-para-contenda-por-acao-ou-omissao-de-empresa-multinacional</id>
+        <dbId>1115</dbId>
+        <nome>Obter serviço de mediação para contenda por ação ou omissão de empresa multinacional</nome>
+        <sigla>PCN</sigla>
+        <nomes-populares>
+            <item id="888">Ponto de Contato Nacional</item>
+        </nomes-populares>
+        <descricao>Mecanismo de mediação e conciliação oferecido às pessoas ou organizações que se sintam prejudicadas por alguma ação ou omissão de empresa multinacional, que denote a não observância das  Diretrizes da OCDE para Empresas Multinacionais.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1399">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1400">
+                <tipo>Pessoas jurídicas sem fins lucrativos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3000">
+                <titulo>Entrar com a reclamação</titulo>
+                <descricao>Apresentação de Alegações de Inobservância.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3970">Documentação pertinente ao pleito, se houver</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4018" tipo="postal">
+                            <descricao>SAUS Quadra 03 Bloco ‘O’ – Edifício Órgãos Regionais – 10º andar – sala 1004 – CEP 70079-900 – Brasília – DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3001">
+                <titulo>Ir à audiência de mediação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3971">Documento de identificação pessoal</item>
+                        <item id="3972">SAUS Quadra 03 Bloco ‘O’ – Edifício Órgãos Regionais – 10º andar – sala 1004 – CEP 70079-900 – Brasília – DF</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4019" tipo="presencial">
+                            <descricao>SAUS Quadra 03 Bloco ‘O’ – Edifício Órgãos Regionais – 10º andar – sala 1004 – CEP 70079-900 – Brasília – DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3048">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="3049">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Comercio externo</item>
+            <item>Defesa do Consumidor</item>
+            <item>Fiscalização do Estado</item>
+            <item>Proteção Social</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3530">mediação</item>
+            <item id="3531">empresa multinacional</item>
+            <item id="3532">conflito</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1063">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-informacoes-do-cadastro-nacional-de-empresas-inidoneas-e-suspensas</id>
         <dbId>1101</dbId>
         <nome>Obter informações do Cadastro Nacional de Empresas Inidôneas e Suspensas</nome>
@@ -37300,40 +37408,37 @@ Leia atentamente as instruções e **clique no botão *iniciar novo requerimento
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-informacoes-do-cadastro-de-expulsoes-da-administracao-federal</id>
-        <dbId>1100</dbId>
-        <nome>Obter informações do Cadastro de Expulsões da Administração Federal</nome>
-        <sigla>CEAF</sigla>
-        <nomes-populares>
-            <item id="877">Banco de Punidos</item>
-        </nomes-populares>
-        <descricao>Banco de dados, aberto a qualquer usuário e hospedado no [Portal da Transparência](http://portaldatransparencia.gov.br) que reúne as penalidades expulsivas aplicadas (demissão, cassação de aposentadoria e destituição de cargo em comissão ou função comissionada), no âmbito do Poder Executivo Federal e da Câmara dos Deputados, a servidores civis, efetivos ou não, desde o ano de 2003.
-As informações do Cadastro são obtidas pela CGU a partir de pesquisa às sanções publicadas no Diário Oficial da União. Os dados dos servidores apenados são mantidos no CEAF durante o tempo em que a sanção aplicada gera efeitos, a exemplo dos casos em que os apenados ficam inelegíveis ou são impedidos de retornar ao serviço público federal.</descricao>
-        <contato>Caso você tenha dúvidas ou queira encaminhar alguma crítica ou sugestão sobre servidores punidos, encaminhe sua mensagem para o seguinte e-mail: **gabcrg@cgu.gov.br**       
-Para mais informações ou contatos sobre outras áreas do Portal de Transparência, clique [aqui](http://portaldatransparencia.gov.br/faleConosco/)</contato>
+        <id>registrar-manifestacao-no-sistema-de-ouvidorias-do-poder-executivo-federal</id>
+        <dbId>1108</dbId>
+        <nome>Registrar manifestação no Sistema de Ouvidorias do Poder Executivo Federal</nome>
+        <sigla>e-Ouv</sigla>
+        <descricao>O Sistema de Ouvidorias do Poder Executivo Federal (e-Ouv) é solução tecnológica desenvolvida pela Ouvidoria-Geral da União (OGU/CGU) para facilitar o contato entre o cidadão e a Administração Pública Federal para o recebimento, tramitação e oferecimento de resposta a manifestações de ouvidoria encaminhadas pelos cidadãos: denúncias, reclamações, sugestões, elogios e solicitações.</descricao>
+        <contato>Para mais informações, acesse a página de [perguntas frequentes](http://www.ouvidorias.gov.br/cidadao/perguntas-frequentes)      
+Por carta ou atendimento presencial:  Setor de Autarquias Sul (SAS), Quadra 01, Bloco A, Edifício Darcy Ribeiro, Brasília, DF, CEP: 70070-905.</contato>
         <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <servico-digital>false</servico-digital>
         <solicitantes>
-            <solicitante id="1381">
-                <tipo>Qualquer pessoa pode utilizar o serviço</tipo>
+            <solicitante id="1392">
+                <tipo>Cidadãos e empresas</tipo>
                 <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <atendimento-imediato/>
+            <entre min="15" max="30" unidade="dias-corridos"/>
             <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="2962">
-                <titulo>Realizar consulta</titulo>
-                <descricao>Você pode ver a lista corrida ordenada por CPF (parcialmente oculto), nome do servidor, Órgão de lotação, punição aplicada e data de publicação da punição no Diário Oficial da União, ou pode realizar uma busca especifica através de qualquer uma destas mesmas informações.</descricao>
+            <etapa id="2979">
+                <titulo>Iniciar a manifestação</titulo>
+                <descricao>Ao acessar o sistema, você escolherá qual o tipo de manifestação quer fazer (denúncia, reclamação, solicitação, sugestão ou elogio), e em seguida irá informar para qual órgão deseja enviar a manifestação, sobre que assunto e sobre que órgão deseja se manifestar.     
+**OBS:** Caso o órgão para o qual você quer **enviar sua manifestação** tenha um sistema próprio de manifestações de ouvidoria, você será automaticamente redirecionado ao mesmo.</descricao>
                 <documentos>
                     <default>
-                        <item id="3906">Dado que se deseja pesquisar</item>
+                        <item id="3936">Nenhuma documentação é necessária</item>
                     </default>
                 </documentos>
                 <custos>
@@ -37341,8 +37446,89 @@ Para mais informações ou contatos sobre outras áreas do Portal de Transparên
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3970" tipo="web">
-                            <descricao>http://portaldatransparencia.gov.br/expulsoes/</descricao>
+                        <canal-de-prestacao id="3987" tipo="web">
+                            <descricao>https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2980">
+                <titulo>Identificar-se (opcional)</titulo>
+                <descricao>Você será enviado para uma página onde poderá escolher se quer ou não se identificar (e se quiser se identificar, se quer ou não que seus dados sejam divulgados ao órgão que você está direcionando a reclamação) e, caso deseje, você poderá escolher salvar seus dados, e então será solicitado a você criar uma senha para cadastro no sistema.    
+ 
+**Atenção: Somente usuários identificados podem acompanhar no sistema, e receber resposta, da sua manifestação.**</descricao>
+                <documentos>
+                    <default>
+                        <item id="3937">Os dados pedidos são nome completo, gênero, tipo e número de documento de identificação a sua escolha, faixa etária, cor/raça,  telefone, email e endereço</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3988" tipo="web">
+                            <descricao>https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2981">
+                <titulo>Descrever manifestação</titulo>
+                <descricao>Na mesma página, logo após a área de identificação, você irá detalhar sua manifestação, podendo inclusive incluir, caso deseje, anexos que ajudem a fundamentá-la. Além disso, irá identificar a UF e município onde ocorreu o fato.      
+**Você deve marcar o *captcha* confirmando que você não é um robô ao final da página (canto esquerdo, abaixo da identificação da UF) antes de apertar o botão concluir.**</descricao>
+                <documentos>
+                    <default>
+                        <item id="3938">Documentação que fundamente a manifestação, caso desejar.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3989" tipo="web">
+                            <descricao>https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2982">
+                <titulo>Receber protocolo e acompanhar a manifestação (somente usuários identificados)</titulo>
+                <descricao>Após clicar no botão concluir na etapa anterior, você receberá um número de protocolo com o qual, junto com o email informado, você poderá acompanhar o andamento da sua manifestação (usuários que escolherem salvar os dados poderão fazê-lo somente informando o login e senha).</descricao>
+                <documentos>
+                    <default>
+                        <item id="3939">Número do protocolo e email informado; ou</item>
+                        <item id="3940">login e senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3990" tipo="web">
+                            <descricao>https://sistema.ouvidorias.gov.br/publico/Manifestacao/ConsultarManifestacaoLogin.aspxx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2983">
+                <titulo>Receber resposta</titulo>
+                <descricao>Após a análise da manifestação o órgão em questão irá encaminhar a resposta, com os procedimentos que foram tomados, ao sistema, onde você poderá consultá-la</descricao>
+                <documentos>
+                    <default>
+                        <item id="3941">Nº do protocolo e email informado; ou</item>
+                        <item id="3942">Login e senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3991" tipo="web">
+                            <descricao>https://sistema.ouvidorias.gov.br/publico/Manifestacao/ConsultarManifestacaoLogin.aspxx</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -37352,29 +37538,231 @@ Para mais informações ou contatos sobre outras áreas do Portal de Transparên
             <nomeOrgao>Ministério da Transparência e Controladoria-Geral da União (CGU)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3013">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3014">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="3015">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="3016">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="1" idServicoSegmento="3033">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3034">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Administração</item>
             <item>Fiscalização do Estado</item>
             <item>Serviços Públicos</item>
+            <item>Serviços Urbanos</item>
             <item>Administração e Gestão Pública</item>
-            <item>Justiça e Segurança Pública</item>
-            <item>Patrimônio da União</item>
+            <item>Transparência</item>
+            <item>Cidadania</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="3468">transparência</item>
-            <item id="3469">servidor público</item>
-            <item id="3470">expulsos</item>
-            <item id="3471">exonerados</item>
-            <item id="3472">demissões</item>
-            <item id="3473">demitidos</item>
+            <item id="3504">reclamação</item>
+            <item id="3505">denúncia</item>
+            <item id="3506">mal tratado</item>
+            <item id="3507">desrespeito</item>
+            <item id="3508">servidor público</item>
         </palavras-chave>
         <legislacoes>
-            <item id="1045">[Lei nº 12.846, de 1º de agosto de 2013 (Lei Anticorrupção)](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm)</item>
+            <item id="1056">[LEI No 10.180, DE 6 DE FEVEREIRO DE 2001](http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10180.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-autorizacao-para-execucao-dos-servicos-de-retransmissao-e-repeticao-de-televisao</id>
+        <dbId>1109</dbId>
+        <nome>Obter autorização para execução dos serviços de retransmissão e repetição de televisão</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="882">Outorga de RTV</item>
+            <item id="883">Outorga de Retransmissora de TV</item>
+        </nomes-populares>
+        <descricao>O Serviço de RTV é aquele que se destina a retransmitir, de forma simultânea ou não, os sinais de estação geradora de televisão, para a recepção livre e gratuita pelo público em geral, e tem por finalidade possibilitar que os sinais das estações geradoras sejam recebidos em locais por eles não atingidos diretamente ou atingidos em condições técnicas inadequadas.      
+
+Processos envolvidos: Outorga de Radiodifusão Ancilar, Aprovação de Local e Equipamentos.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1393">
+                <tipo>Entidades executantes de serviços de radiodifusão de sons e imagens (RTV e RpTV)</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2984">
+                <titulo>Protocolizar requerimento de consignação de canal digital (RTV).</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3943">CNPJ</item>
+                        <item id="3944">Comprovante de endereço</item>
+                        <item id="3945">Procuração do representante legal</item>
+                        <item id="3946">Nada consta em relação às Taxas do Fundo de Fiscalização das Telecomunicações (Fistel)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3992" tipo="web">
+                            <descricao>http://sistema.mc.gov.br/CADSEIWeb/pages/externo/SisCADSEI.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2985">
+                <titulo>Receber resposta</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3947">CNPJ</item>
+                        <item id="3948">Procuração do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3993" tipo="web">
+                            <descricao>http://sistema.mc.gov.br/CADSEIWeb/pages/externo/SisCADSEI.jsf</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+            <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3035">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3036">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3037">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Telecomunicações</item>
+            <item>Comunicações</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3509">canal digital</item>
+            <item id="3510">tv universitária</item>
+            <item id="3511">tv comunitária</item>
+            <item id="3512">tv pública</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1057">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registrar-estabelecimentos-e-equipes-de-transplante</id>
+        <dbId>1112</dbId>
+        <nome>Registrar estabelecimentos e equipes de transplante</nome>
+        <sigla>Credenciamento</sigla>
+        <descricao>Realizar autorização e renovação solicitados por estabelecimentos e equipes</descricao>
+        <contato>**Telefones:** (61) 3315-8953 ou (61) 3315-9212       
+**Email:** snt@saude.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1396">
+                <tipo>Estabelecimentos de saúde públicos ou privados</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2990">
+                <titulo>Realizar o pedido de registro</titulo>
+                <descricao>Dar entrada do pedido na Central de Notificação Captação e Distribuição de Órgãos e Tecidos (CNCDOT) estadual</descricao>
+                <documentos>
+                    <default>
+                        <item id="3953">CNPJ</item>
+                        <item id="3954">Contrato Social</item>
+                        <item id="3955">CPF e documentação comprobatória de capacidades dos médicos</item>
+                        <item id="3956">Registro na junta comercial (se for o caso)</item>
+                        <item id="3957">Certidão de regularidade da Receita Federal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4000" tipo="presencial">
+                            <descricao>Na [CNCDOT do seu estado](http://www.inca.gov.br/conteudo_view.asp?id=489)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2991">
+                <titulo>Receber a vistoria</titulo>
+                <descricao>Após o pedido ser feito, a equipe de credenciamento entrará em contato, através dos telefones e outras formas de contato informadas na requisição, para agendar a vistoria do local a ser registrado</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4001" tipo="presencial">
+                            <descricao>Local a ser registrado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2992">
+                <titulo>Receber resultado</titulo>
+                <descricao>O resultado do credenciamento será publicado no Diário Oficial da União (DOU)</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4002" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3040">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3041">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3042">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Assistência Hospitalar e Ambulatorial</item>
+            <item>Fiscalização do Estado</item>
+            <item>Serviços Públicos</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3519">transplante</item>
+            <item id="3520">credenciamento</item>
+            <item id="3521">registro</item>
+            <item id="3522">equipe de transplante</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1060">[DECRETO Nº 9.175, DE 18 DE OUTUBRO DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9175.htm#art56)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -38558,45 +38946,40 @@ Receitafone: 146
         </legislacoes>
     </servico>
     <servico>
-        <id>realizar-atos-notariais-no-exterior</id>
-        <dbId>1097</dbId>
-        <nome>Realizar atos notariais no exterior</nome>
-        <sigla></sigla>
+        <id>obter-informacoes-do-cadastro-de-expulsoes-da-administracao-federal</id>
+        <dbId>1100</dbId>
+        <nome>Obter informações do Cadastro de Expulsões da Administração Federal</nome>
+        <sigla>CEAF</sigla>
         <nomes-populares>
-            <item id="874">Procurações, Escrituras e Declarações</item>
+            <item id="877">Banco de Punidos</item>
         </nomes-populares>
-        <descricao>Cidadãos brasileiros ou estrangeiros, assim como representantes de empresas privadas, que se encontram no exterior e precisam realizar atos notariais, como lavrar uma procuração ou escritura, podem utilizar este serviço nos consulados brasileiros.</descricao>
-        <contato>Veja [aqui](http://www.portalconsular.itamaraty.gov.br/fale-conosco) as opções de contato com o serviço consular.</contato>
-        <gratuito>false</gratuito>
+        <descricao>Banco de dados, aberto a qualquer usuário e hospedado no [Portal da Transparência](http://portaldatransparencia.gov.br) que reúne as penalidades expulsivas aplicadas (demissão, cassação de aposentadoria e destituição de cargo em comissão ou função comissionada), no âmbito do Poder Executivo Federal e da Câmara dos Deputados, a servidores civis, efetivos ou não, desde o ano de 2003.
+As informações do Cadastro são obtidas pela CGU a partir de pesquisa às sanções publicadas no Diário Oficial da União. Os dados dos servidores apenados são mantidos no CEAF durante o tempo em que a sanção aplicada gera efeitos, a exemplo dos casos em que os apenados ficam inelegíveis ou são impedidos de retornar ao serviço público federal.</descricao>
+        <contato>Caso você tenha dúvidas ou queira encaminhar alguma crítica ou sugestão sobre servidores punidos, encaminhe sua mensagem para o seguinte e-mail: **gabcrg@cgu.gov.br**       
+Para mais informações ou contatos sobre outras áreas do Portal de Transparência, clique [aqui](http://portaldatransparencia.gov.br/faleConosco/)</contato>
+        <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <servico-digital>false</servico-digital>
         <solicitantes>
-            <solicitante id="1376">
-                <tipo>Cidadãos brasileiros e estrangeiros</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="1377">
-                <tipo>Empresas privadas</tipo>
+            <solicitante id="1381">
+                <tipo>Qualquer pessoa pode utilizar o serviço</tipo>
                 <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <em-media max="1" unidade="dias-corridos"/>
+            <atendimento-imediato/>
             <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="2955">
-                <titulo>Ir ao  consulado</titulo>
-                <descricao>Você levará ao consulado a documentação necessária para realizar o ato desejado.</descricao>
+            <etapa id="2962">
+                <titulo>Realizar consulta</titulo>
+                <descricao>Você pode ver a lista corrida ordenada por CPF (parcialmente oculto), nome do servidor, Órgão de lotação, punição aplicada e data de publicação da punição no Diário Oficial da União, ou pode realizar uma busca especifica através de qualquer uma destas mesmas informações.</descricao>
                 <documentos>
                     <default>
-                        <item id="3898">Documento de identificação válido</item>
-                        <item id="3899">CPF</item>
-                        <item id="3900">CNPJ</item>
-                        <item id="3901">Documentação comprobatória necessária para o ato a ser lavrado.</item>
+                        <item id="3906">Dado que se deseja pesquisar</item>
                     </default>
                 </documentos>
                 <custos>
@@ -38604,91 +38987,40 @@ Receitafone: 146
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="3957" tipo="presencial">
-                            <descricao>Consulte [aqui](http://www.portalconsular.itamaraty.gov.br/rede-consular) o consulado mais perto de você</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2956">
-                <titulo>Pagamento da taxa</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="3902">Guia de pagamento</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="140">
-                            <descricao>Procurações (reais ouro)</descricao>
-                            <moeda>R$</moeda>
-                            <valor>2,000</valor>
-                        </custo>
-                        <custo id="141">
-                            <descricao>Escrituras (reais ouro)</descricao>
-                            <moeda>R$</moeda>
-                            <valor>2,000</valor>
-                        </custo>
-                        <custo id="142">
-                            <descricao>Segundas vias (reais ouro)</descricao>
-                            <moeda>R$</moeda>
-                            <valor>1,000</valor>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3958" tipo="presencial">
-                            <descricao>[Repartições consulares do Brasil no exterior](http://www.portalconsular.itamaraty.gov.br/rede-consular) ou rede bancária, de acordo com as rotinas da repartição em questão</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2957">
-                <titulo>Receber documento</titulo>
-                <descricao>Após paga a taxa respectiva, você receberá o documento assinado e validado</descricao>
-                <documentos>
-                    <default>
-                        <item id="3903">Comprovante de pagamento</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3959" tipo="presencial">
-                            <descricao>O consulado brasileiro escolhido na etapa 1</descricao>
+                        <canal-de-prestacao id="3970" tipo="web">
+                            <descricao>http://portaldatransparencia.gov.br/expulsoes/</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
         </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
-            <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/214460" dbId="37535">
+            <nomeOrgao>Ministério da Transparência e Controladoria-Geral da União (CGU)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3009">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3010">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3013">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3014">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3015">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3016">Demais segmentos (ONGs, organizações sociais, etc)</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Comercio externo</item>
-            <item>Relações Diplomáticas</item>
-            <item>Relações Internacionais</item>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
             <item>Serviços Públicos</item>
-            <item>Documentação Pessoal</item>
-            <item>Comércio e Serviços</item>
-            <item>Economia e Finanças</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Justiça e Segurança Pública</item>
+            <item>Patrimônio da União</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="3457">cartório</item>
-            <item id="3458">exterior</item>
-            <item id="3459">procuração</item>
-            <item id="3460">escritura</item>
+            <item id="3468">transparência</item>
+            <item id="3469">servidor público</item>
+            <item id="3470">expulsos</item>
+            <item id="3471">exonerados</item>
+            <item id="3472">demissões</item>
+            <item id="3473">demitidos</item>
         </palavras-chave>
         <legislacoes>
-            <item id="1042">[DECRETO-LEI Nº 4.657, DE 4 DE SETEMBRO DE 1942](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del4657.htm)</item>
+            <item id="1045">[Lei nº 12.846, de 1º de agosto de 2013 (Lei Anticorrupção)](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -38779,6 +39111,815 @@ Receitafone: 146
         </palavras-chave>
         <legislacoes>
             <item id="1048">[Lei nº 12.846, de 1º de agosto de 2013 (Lei Anticorrupção)](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>implantar-salas-de-recursos-multifuncionais</id>
+        <dbId>1105</dbId>
+        <nome>Implantar Salas de Recursos Multifuncionais</nome>
+        <sigla>SRM</sigla>
+        <nomes-populares>
+            <item id="880">Programa Implantação Salas de Recursos Multifuncionais - SRM</item>
+            <item id="881">Salas de Recursos Multifuncionais - SRM</item>
+        </nomes-populares>
+        <descricao>O Programa disponibiliza às escolas públicas de ensino regular, conjunto de equipamentos de informática, mobiliários, materiais pedagógicos e de acessibilidade para a organização do espaço de atendimento educacional especializado</descricao>
+        <contato>**Telefone:** (61) 2022-7662     
+
+**E-mail:** acessibilidade@mec.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1386">
+                <tipo>Estados e Municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2969">
+                <titulo>Apresentar demanda</titulo>
+                <descricao>A Secretaria de Educação deve apresentar a demanda no Plano de Ações Articuladas - PAR.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3915">CPF</item>
+                        <item id="3916">PAR</item>
+                        <item id="3917">Demanda por salas multifuncionais</item>
+                        <item id="3918">Senha do SIMEC</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3977" tipo="web">
+                            <descricao>http://simec.mec.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2970">
+                <titulo>Indicar escolas a serem contempladas</titulo>
+                <descricao>A escola deve indicar as escolas a serem contempladas por meio do Sistema de Gestão Tecnológica (SIGETEC)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3919">Usuário e senha no SIGETEC</item>
+                        <item id="3920">Dados das escolas contempladas</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3978" tipo="web">
+                            <descricao>https://www.fnde.gov.br/sigetec/sisseed_fra.php</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2971">
+                <titulo>Receber as SRM (Se aprovado)</titulo>
+                <descricao>A entrega dos itens que compõem as salas de recursos multifuncionais é feita
+diretamente, na escola, no endereço registrado no Censo Escolar.     
+
+O responsável pela escola, no momento da entrega deve conferir os itens especificados na nota fiscal e assinar o TERMO DE RECEBIMENTO e, posteriormente, no ato da instalação dos equipamentos de informática, o TERMO DE ACEITAÇÃO</descricao>
+                <documentos>
+                    <default>
+                        <item id="3921">Termo de Recebimento</item>
+                        <item id="3922">Termo de Aceitação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3979" tipo="presencial">
+                            <descricao>Escolas contempladas</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+            <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="3030">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Assistência à Criança e ao Adolescente</item>
+            <item>Assistência ao Portador de Deficiência</item>
+            <item>Educação básica</item>
+            <item>Direitos Humanos</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Mobilidade</item>
+            <item>Educação</item>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3492">acessibilidade</item>
+            <item id="3493">acessibilidade na escola</item>
+            <item id="3494">SRM</item>
+            <item id="3495">Salas multifuncionais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1051">[Decreto nº 5.296 de 2 de dezembro de 2004](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm)</item>
+            <item id="1052">[Decreto nº 7.611, de 17 de novembro de 2011](http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7611.htm#art11)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-incentivo-financeiro-para-financiamento-de-servico-de-atendimento-movel-de-urgencia-samu-192</id>
+        <dbId>1110</dbId>
+        <nome>Obter incentivo financeiro para financiamento de Serviço de Atendimento Móvel de Urgência - SAMU 192</nome>
+        <sigla>SAMU 192</sigla>
+        <nomes-populares>
+            <item id="884">SAMU</item>
+        </nomes-populares>
+        <descricao>Liberação de incentivo financeiro de investimento para construção, compra de unidades móveis, aquisição de equipamentos permanentes de saúde, de tecnologia de informação e mobiliário do Serviço de Atendimento Móvel de Urgência - SAMU 192</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1394">
+                <tipo>Estados e Municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2986">
+                <titulo>Cadastrar-se no sistema</titulo>
+                <descricao>Inserção de documentos e preenchimento de cadastros no sistema eletrônico.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3949">CNPJ ou CPF</item>
+                        <item id="3950">Documentações relativas às necessidades</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3994" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2987">
+                <titulo>Receber resposta</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3951">CPF ou CNPJ</item>
+                        <item id="3952">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3995" tipo="web">
+                            <descricao>http://saips.saude.gov.br/autenticacao</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="3038">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Compras governamentais</item>
+            <item>Medicamentos e aparelhos</item>
+            <item>Serviços Públicos</item>
+            <item>Administração financeira</item>
+            <item>Construções e obras</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3513">financiamento</item>
+            <item id="3514">ambulância</item>
+            <item id="3515">hospitais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1058">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-apoio-tecnico-e-capacitacao-para-atencao-a-pessoas-com-doenca-falciforme</id>
+        <dbId>1111</dbId>
+        <nome>Obter apoio técnico e capacitação para atenção a pessoas com doença Falciforme</nome>
+        <sigla>PNAIPDF</sigla>
+        <nomes-populares>
+            <item id="885">Anemia Falciforme</item>
+            <item id="886">Drepanocitose</item>
+        </nomes-populares>
+        <descricao>A PNAIPDF foi instituída para assegurar o cuidado das pessoas com uma enfermidade genética e hereditária, de incidência significativa entre os afrodescendentes. Seus sinais e sintomas causam repercussão em vários aspectos da vida dessa população e, podem ser prevenidas e tratadas, garantindo longevidade com qualidade. Assim, foi instituída no âmbito do Sistema Único de Saúde – SUS, as diretrizes para a Política Nacional de Atenção Integral às pessoas com Doença Falciforme e outras Hemoglobinopatias, por meio da portaria nº 1.391 MS/GM, de 16 de agosto de 2005.</descricao>
+        <contato>**Ministério da saúde - Coordenação-Geral de Sangue e Hemoderivados/DAET/SAS/MS**     
+
+SAF SUL Trecho 2 - Lote 5/6 - Edifício Premium - Torre II - Sala 202    
+
+Brasília/DF       
+CEP: 70.070-600     
+
+
+**Telefone:** 61 - 33156152</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1395">
+                <tipo>Órgãos públicos, estados e municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo não é estimado ainda</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2988">
+                <titulo>Agendar apoio ou capacitação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3996" tipo="presencial">
+                            <descricao>**Ministério da Saúde - Coordenação-Geral de Sangue e Hemoderivados/DAET/SAS/MS**    
+
+SAF SUL Trecho 2 - Lote 5/6 - Edifício Premium - Torre II - Sala 202
+Brasília/DF – CEP: 70.070-600</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3997" tipo="telefone">
+                            <descricao>(61) 3315-6152</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="3998" tipo="postal">
+                            <descricao>**Ministério da Saúde - Coordenação-Geral de Sangue e Hemoderivados/DAET/SAS/MS**    
+
+SAF SUL Trecho 2 - Lote 5/6 - Edifício Premium - Torre II - Sala 202
+Brasília/DF – CEP: 70.070-600</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2989">
+                <titulo>Receber apoio ou capacitação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3999" tipo="presencial">
+                            <descricao>Local escolhido pelo requisitante</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="3039">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Assistência Hospitalar e Ambulatorial</item>
+            <item>Atendimento básico</item>
+            <item>Humanização na saúde</item>
+            <item>Direitos Humanos</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3516">falciforme</item>
+            <item id="3517">Atenção integral</item>
+            <item id="3518">SUS</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1059">[Portaria nº 1391 GM/MS](http://bvsms.saude.gov.br/bvs/saudelegis/gm/2005/prt1391_16_08_2005.html)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-assessoria-tecnica-e-capacitacoes-para-estabelecimento-da-hemorrede</id>
+        <dbId>1113</dbId>
+        <nome>Obter assessoria técnica e capacitações para estabelecimento da hemorrede</nome>
+        <sigla>PNQH</sigla>
+        <nomes-populares>
+            <item id="887">Programa Nacional de Qualificação da Hemorrede</item>
+        </nomes-populares>
+        <descricao>O Programa Nacional de Qualificação da Hemorrede (PNQH), implementado desde 2008 visa o alcance de melhorias contínuas nos serviços de hematologia e hemoterapia (SHH). Além da ênfase em qualificação técnica e gerencial, o PNQH caracteriza-se como  Programa que promove o aperfeiçomento das atividades dos SHH, com foco na garantia da segurança transfusional por meio da colaboração mútua da Hemorrede.
+	Para atender o escopo das atividades, o PNQH possui os seguintes objetivos:
+•	Promover a qualificação técnica e gerencial da Hemorrede Pública Nacional;
+•	Identificar áreas críticas/estratégicas para priorizar investimento de recursos na Hemorrede;
+•	Implantar e implementar o processo de melhoria contínua nos serviços de hematologia e hemoterapia , por meio da avaliação permanente dos processos de trabalho;
+•	Apoiar a elaboração e monitorar a evolução de Planos de Ação (PA) dos serviços de hematologia e hemoterapia, para as não conformidades e/ou recomendações apontadas no relatório de visita;
+•	Cooperação e integração entre serviços públicos de hematologia e hemoterapia do país;
+•	Prestar consultorias técnicas e realizar capacitações conforme necessidades apontadas nas visitas;
+•	Motivar mudanças internas nos serviços de hematologia e hemoterapia, como a implantação e/ou implementação do sistema de gestão da qualidade, a certificação e/ou acreditação da unidade, capacitação dos profissionais, enfim a busca pela excelência da qualidade dos serviços e produtos hemoterápicos e hematológicos.
+Como desdobramento do PNQH, considerando a estrutura da Hemorrede Pública Nacional e a complexidade que envolve a segurança transfusional, o Programa foi ampliado, por meio da estadualização (PEQH), e implantado o Programa Estadual de Qualificação da Hemorrede (PEQH), a fim de proporcionar que avaliações técnicas e gerenciais sejam realizadas entre os serviços de hemoterapia, conforme a organização da hemorrede estadual.</descricao>
+        <contato>**Ministério da Saúde - Coordenação-Geral de Sangue e Hemoderivados**        
+
+Esplanada dos Ministérios Bloco G
+Brasília-DF / CEP: 70058-900      
+**E-mail:** pnqh@saude.gov.br      
+**Telefone:** (61) 3315-6159</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1397">
+                <tipo>Serviços de Hemoterapia</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="60" max="90" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2993">
+                <titulo>Agendar visita de avaliação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4003" tipo="telefone">
+                            <descricao>(61) 3315-6159</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4004" tipo="e-mail">
+                            <descricao>pnqh@saude.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2994">
+                <titulo>Receber a visita de avaliação</titulo>
+                <descricao>O responsável deve acompanhar os avaliadores durante a visita</descricao>
+                <documentos>
+                    <default>
+                        <item id="3958">Atas de treinamentos</item>
+                        <item id="3959">Procedimentos Operacional Padrão (POP)</item>
+                        <item id="3960">Atas de reuniões de análise crítica</item>
+                        <item id="3961">registros de controle de estoque, temperatura</item>
+                        <item id="3962">registros de manutenção/calibração de equipamentos</item>
+                        <item id="3963">Programa Estadual de Qualificação da Hemorrede</item>
+                        <item id="3964">Planejamento de ações na área de hematologia e hemoterapia, registrados, divulgados para os profissionais da instituição, com definição orçamentária e financeira (receita x despesa)</item>
+                        <item id="3965">Plano diretor adequado as Diretrizes da Política Nacional de Sangue, Componentes e Hemoderivados e elaborado com participação das áreas envolvidas e divulgado na instituição.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4005" tipo="presencial">
+                            <descricao>Estabelecimento solicitante</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2995">
+                <titulo>Receber relatório da visita</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4006" tipo="e-mail">
+                            <descricao>E-mail cadastrado no agendamento</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4007" tipo="postal">
+                            <descricao>Endereço do estabelecimento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2996">
+                <titulo>Enviar Plano de Ação</titulo>
+                <descricao>Após o recebimento do relatório da visita, os responsáveis deverão preparar, com base neste, o Plano de Ação e enviá-lo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3966">Ofício encaminhando o Plano de Ação</item>
+                        <item id="3967">Plano de Ação</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4008" tipo="e-mail">
+                            <descricao>pnqh@saude.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4009" tipo="postal">
+                            <descricao>**Ministério da Saúde - Coordenação-Geral de Sangue e Hemoderivados**        
+
+Esplanada dos Ministérios Bloco G
+Brasília-DF / CEP: 70058-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="3043">Órgãos e entidades públicas</item>
+            <item idSegmento="3" idServicoSegmento="3044">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3045">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3523">hemocentro</item>
+            <item id="3524">doação de sangue</item>
+            <item id="3525">assessoria técnica</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1061">[DECRETO Nº 3.990, DE 30 DE OUTUBRO  DE 2001])(http://www.planalto.gov.br/ccivil_03/decreto/2001/d3990.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-reducao-tarifaria-por-desabastecimento</id>
+        <dbId>1114</dbId>
+        <nome>Obter redução tarifária por desabastecimento</nome>
+        <sigla>GTAR-08</sigla>
+        <descricao>O serviço possibilita aos importadores brasileiros a redução da tarifa do Imposto de Importação por meio da aplicação do disposto na Resolução do Grupo Mercado Comum do Mercosul – GMC nº 08/08, que tem por objetivo tornar possível a adoção de ações pontuais de caráter excepcional, no campo tarifário, para garantir o abastecimento normal e fluido de produtos no Mercosul. 
+Ele consiste na apresentação de pleito pelo setor privado e análise pela Coordenação de Integração Comercial (COINT), vinculada a Secretaria de Assuntos Internacionais do Ministério da Fazenda. A COINT prepara uma nota técnica apresentando o pleito ao GTAR-08, grupo interministerial vinculado à Câmara de Comércio Exterior (CAMEX), que recomenda ao GECEX o deferimento ou não do pleito. Caso seja deferido pelo GECEX, o pleito segue para análise no Mercosul que, por sua vez, analisa e aprova o pleito por meio de uma Diretriz ou não. No caso de aprovação, a Diretriz e internalizada no ordenamento jurídico brasileiro por meio de uma Resolução da CAMEX e entra em vigor.</descricao>
+        <contato>¨[Contato da SAIN](http://www.sain.fazenda.gov.br/contato)      
+¨</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1398">
+                <tipo>Empresas privadas e entidades associativas de setores produtivos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao>O tempo pode variar muito devido à quantidade de entidades envolvidas e suas agendas.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2997">
+                <titulo>Realizar o pedido</titulo>
+                <descricao>Protocolar o pleito de redução tarifária no Protocolo da Secretaria de Assuntos Internacionais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3968">Formulários padrões para apresentação dos pleitos, em formato digital e físico, com versões pública e confidencial</item>
+                        <item id="3969">Termo de Confidencialidade</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4010" tipo="e-mail">
+                            <descricao>sain.gtar@fazenda.gov.br</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4011" tipo="presencial">
+                            <descricao>**Protocolo da Secretaria de Assuntos Internacioinais do Ministério da Fazenda**        
+
+SAUS, Quadra 03, Bloco O, 10º andar, Sala 1011, Ed. Órgãos Regionais, Asa Sul, Brasília-DF        
+CEP: 70.079-900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4012" tipo="postal">
+                            <descricao>**Protocolo da Secretaria de Assuntos Internacioinais do Ministério da Fazenda**        
+
+SAUS, Quadra 03, Bloco O, 10º andar, Sala 1011, Ed. Órgãos Regionais, Asa Sul, Brasília-DF        
+CEP: 70.079-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2998">
+                <titulo>Responder questionamentos</titulo>
+                <descricao>Resposta a questionamentos elaborados pela COINT/MF ou por outros órgãos ministeriais envolvidos no processo de análise do pleito</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4013" tipo="postal">
+                            <descricao>Endereço informado na requisição</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4014" tipo="e-mail">
+                            <descricao>Endereço de email informado na requisição</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4015" tipo="telefone">
+                            <descricao>Número de telefone informado na requisição</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2999">
+                <titulo>Receber resposta</titulo>
+                <descricao>Caso seja aprovada pelo Mercosul, a medida será oficializada no Brasil por uma resolução da Camex</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4016" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4017" tipo="web">
+                            <descricao>http://www.camex.gov.br/resolucoes-camex</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3046">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3047">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cooperação Internacional</item>
+            <item>Fiscalização do Estado</item>
+            <item>Politica econômica</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Tributação</item>
+            <item>Comércio e Serviços</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3526">tarifas</item>
+            <item id="3527">impostos</item>
+            <item id="3528">redução tarifária</item>
+            <item id="3529">desabastecimento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1062">[Resolução do Grupo Mercado Comum do Mercosul nº 08/08](http://www.sain.fazenda.gov.br/assuntos/integracao-regional-e-comercio-exterior/gtar/arquivos/resolucao-gmc-08-08)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>renovar-registro-de-estabelecimento-fabricante-importador-ou-fracionador-da-alimentos-para-animais</id>
+        <dbId>1116</dbId>
+        <nome>Renovar registro de estabelecimento fabricante, importador ou fracionador da alimentos para animais</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="889">Serviço de Fiscalização da Alimentação Animal das Superintendências Federais da Agricultura</item>
+        </nomes-populares>
+        <descricao>A renovação de registro concedida pelo Mapa autoriza o estabelecimento fabricante, fracionador ou importador a continuar desenvolvendo suas atividades, tendo em vista o prazo de validade de cinco anos do registro.</descricao>
+        <contato>Consulte os contatos das SFAs [aqui](http://www.agricultura.gov.br/sfa/lista-sfas)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1401">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1402">
+                <tipo>Empresas privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3002">
+                <titulo>Apresentar requerimento</titulo>
+                <descricao>Apresentar o requerimento de renovação de registro de estabelecimento junto ao MAPA.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3973">CNPJ</item>
+                        <item id="3974">Registro na Junta Comercial</item>
+                        <item id="3975">Licença Ambiental</item>
+                        <item id="3976">Alvará de Funcionamento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4020" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4021" tipo="postal">
+                            <descricao>Enviar para a [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3003">
+                <titulo>Receber licença renovada</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3977">CNPJ</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4022" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4023" tipo="postal">
+                            <descricao>Endereço informado do estabelecimento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3050">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3051">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Defesa agropecuária</item>
+            <item>Fiscalização do Estado</item>
+            <item>Produção agropecuária</item>
+            <item>Pecuária</item>
+            <item>Agropecuária, extrativismo e pesca</item>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3533">registro</item>
+            <item id="3534">licença</item>
+            <item id="3535">alimentos para animais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1064">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>renovar-registro-de-produto-destinado-a-alimentacao-animal</id>
+        <dbId>1117</dbId>
+        <nome>Renovar registro de produto destinado à alimentação animal.</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="890">Serviço de Fiscalização da Alimentação Animal das Superintendências Federais da Agricultura</item>
+        </nomes-populares>
+        <descricao>Renovar o registro de produtos destinados à alimentação animal registrados junto ao MAPA.</descricao>
+        <contato>Consulte os contatos das SFAs [aqui](http://www.agricultura.gov.br/sfa/lista-sfas)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1403">
+                <tipo>Cidadãos</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1404">
+                <tipo>Empresas Privadas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="15" max="30" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3004">
+                <titulo>Apresentar requerimento</titulo>
+                <descricao>Apresentação do requerimento de renovação de registro de produto.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3978">Requerimento de Renovação de Registro</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4024" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4025" tipo="postal">
+                            <descricao>Enviar para a [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3005">
+                <titulo>Receber registro renovado</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="3979">Documento de identificação pessoal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4026" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura](http://www.agricultura.gov.br/sfa/lista-sfas)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4027" tipo="postal">
+                            <descricao>Endereço informado do estabelecimento</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3052">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3053">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Produção agropecuária</item>
+            <item>Agropecuária, extrativismo e pesca</item>
+            <item>Agropecuária</item>
+            <item>Comércio e Serviços</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3536">registro</item>
+            <item id="3537">produto</item>
+            <item id="3538">alimentação animal</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1065">-</item>
         </legislacoes>
     </servico>
 </servicos>
