@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-obras-em-imovel-da-uniao</id>
+    <dbId>1125</dbId>
+    <nome>Obter Autorização de Obras em Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="895">Autorização de Obras</item>
+    </nomes-populares>
+    <descricao>Este serviço permite solicitar autorização para execução de obras e intervenções em imóveis da União, desde que não alterem a natureza do bem.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1412">
+            <tipo>Pessoa Física</tipo>
+            <requisitos>Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e tenha qualidade de interessado (art. 9º da Lei nº 9.784, de 1999)</requisitos>
+        </solicitante>
+        <solicitante id="1413">
+            <tipo>Pessoa Jurídica</tipo>
+            <requisitos>Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3019">
+            <titulo>Preencher requerimento</titulo>
+            <descricao>Preencher os campos solicitados no Portal de Atendimento.     
+O requerente pode acrescentar outros documentos que julgar necessário além dos especificados abaixo, assim como a SPU pode requerer documentação complementar caso julgue necessário.</descricao>
+            <documentos>
+                <default>
+                    <item id="4024">CPF ou CNPJ</item>
+                    <item id="4025">Razão Social</item>
+                    <item id="4026">Dados do endereço</item>
+                    <item id="4027">Dados do endereço de correspondência (caso diferente do acima)</item>
+                    <item id="4028">Dados de contato</item>
+                    <item id="4029">Dados do imóvel</item>
+                    <item id="4030">Dados da obra pretendida (inclusive início e término)</item>
+                    <item id="4031">Memorial descritivo da poligonal da área a ser utilizada</item>
+                    <item id="4032">Planta do terreno com a indicação dos equipamentos/estruturas que serão instalados</item>
+                    <item id="4033">Comprovação da prévia autorização dos órgãos federais, estaduais e municipais competentes para a realização da obra (não obrigatório)</item>
+                    <item id="4034">Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente) (não obrigatório)</item>
+                </default>
+                <caso id="447" descricao="Pessoa física">
+                    <documento>
+                        <id>4020</id>
+                        <descricao>Documento de identificação do requerente com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                </caso>
+                <caso id="448" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4023</id>
+                        <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
+                    </documento>
+                    <documento>
+                        <id>4022</id>
+                        <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4021</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4044" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoAutorizacaoObras?servico=30</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3020">
+            <titulo>Receber resposta</titulo>
+            <descricao>Área "acompanhe seu pedido"</descricao>
+            <documentos>
+                <default>
+                    <item id="4035">CPF ou CNPJ</item>
+                    <item id="4036">Número do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4045" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3074">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3075">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3076">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3077">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Construções e obras</item>
+        <item>Fiscalização do Estado</item>
+        <item>Patrimônio da União</item>
+        <item>Patrimônio</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3564">Obras</item>
+        <item id="3565">obra em terreno da união</item>
+        <item id="3566">reforma em imóvel da união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1073">[LEI Nº 9.784 , DE 29 DE JANEIRO DE 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+    </legislacoes>
+</servico>
