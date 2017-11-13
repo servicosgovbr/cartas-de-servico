@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-e-emitir-darf-de-parcelamento-de-debitos-sobre-imovel-da-uniao-concedidos-ate-julho-de-2009</id>
+    <dbId>1123</dbId>
+    <nome>Consultar e Emitir DARF de Parcelamento de Débitos sobre Imóvel da União Concedidos até julho de 2009</nome>
+    <sigla></sigla>
+    <descricao>Os usuários de Imóveis da União que foram beneficiados pelo parcelamento de dívidas até julho de 2009 encontrarão aqui o lugar para emissão de seus DARF, bem como outras informações dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1410">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Que possua débitos objeto de parcelamento junto à SPU</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3014">
+            <titulo>Inserir dados</titulo>
+            <descricao>Escolha entre consulta e emissão de DARF e informe o número do parcelamento, CPF ou CNPJ</descricao>
+            <documentos>
+                <default>
+                    <item id="4011">Número do parcelamento; ou</item>
+                    <item id="4012">CPF; ou</item>
+                    <item id="4013">CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4039" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/39</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3015">
+            <titulo>Pagar a DARF (para emissão de DARF)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4014">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4040" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3066">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3067">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3068">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3069">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração financeira</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3556">DARF</item>
+        <item id="3557">parcelamento</item>
+        <item id="3558">imóvel da União</item>
+        <item id="3559">SIAPA</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1071">-</item>
+    </legislacoes>
+</servico>
