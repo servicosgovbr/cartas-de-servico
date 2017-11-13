@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cancelar-inscricao-de-ocupacao-de-imovel-da-uniao</id>
+    <dbId>1126</dbId>
+    <nome>Cancelar Inscrição de Ocupação de Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="896">Cancelamento de RIP</item>
+    </nomes-populares>
+    <descricao>Este serviço permite solicitar o cancelamento da utilização vigente no imóvel, conforme regras estabelecidas nos contratos ou termos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1414">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que tenha vínculo regular de utilização de imóvel da União</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3021">
+            <titulo>Acessar o sistema</titulo>
+            <descricao>Usuário informa nº do Registro Imobiliário Patrimonial - RIP para prosseguir com o preenchimento dos demais campos solicitados no Portal de Atendimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="4037">CPF ou CNPJ</item>
+                    <item id="4038">Número do Registro Imobiliário Patrimonial (RIP)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4046" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCancelamentoUtilizacao?servico=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3022">
+            <titulo>Preencher formulário</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4039">Documentação pessoal ou da pessoa jurídica</item>
+                    <item id="4040">Documentação relativa ao imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4047" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCancelamentoUtilizacao?servico=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3023">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4041">CPF ou CNPJ</item>
+                    <item id="4042">Nº de atendimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4048" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="3078">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3079">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="3080">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3081">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Patrimônio da União</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3567">RIP</item>
+        <item id="3568">cancelar</item>
+        <item id="3569">imóvel da união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1074">-</item>
+    </legislacoes>
+</servico>
