@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>revisar-ou-cancelar-cobranca-de-taxas-sobre-imovel-da-uniao</id>
+    <dbId>1122</dbId>
+    <nome>Revisar ou Cancelar Cobrança de Taxas sobre Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="893">Cancelamento de Cobrança</item>
+    </nomes-populares>
+    <descricao>Este serviço permite solicitar a revisão ou cancelamento de cobrança de débitos, que pode ser motivada por: eventual pagamento efetuado e não baixado, decisão judicial, prescrição, decadência, cálculo de laudêmio, diferença de laudêmio, multa de transferência, duplicidade de inscrição, pedido de transferência de imóvel ou isenção solicitado e não efetivado antes do processamento da cobrança ou outros motivos que ensejem a revisão financeira. Este requerimento ainda pode ser utilizado para solicitar o cancelamento de inscrição em Dívida Ativa - DAU ou no Cadastro de Inadimplentes – CADIN, no caso de inscrição indevida.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1409">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que seja alvo de cobrança de taxas sobre imóvel da União e que tenha documentação comprobatória que ampare o pedido de revisão ou cancelamento.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3012">
+            <titulo>Solicitar revisão ou cancelamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4006">Documentação comprobatória que ampare o pedido</item>
+                    <item id="4007">CPF ou CNPJ</item>
+                    <item id="4008">Número RIP do imóvel</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4037" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCancelamentoCobranca?servico=15</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3013">
+            <titulo>Receber o resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4009">Número do pedido</item>
+                    <item id="4010">CPF ou CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4038" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3062">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3063">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3064">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3065">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração financeira</item>
+        <item>Fiscalização do Estado</item>
+        <item>Patrimônio da União</item>
+        <item>Patrimônio</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3552">Revisar</item>
+        <item id="3553">Cancelar cobrança</item>
+        <item id="3554">taxa de uso</item>
+        <item id="3555">imóvel da união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1070">-</item>
+    </legislacoes>
+</servico>
