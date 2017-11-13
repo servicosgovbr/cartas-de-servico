@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-creditos-e-debitos-oriundos-de-utilizacao-de-imovel-da-uniao</id>
+    <dbId>1121</dbId>
+    <nome>Consultar Créditos e Débitos oriundos de Utilização de Imóvel da União</nome>
+    <sigla></sigla>
+    <descricao>Este serviço permite consultar a relação dos débitos lançados para o imóvel dominial, classificados por exercício e por tipo de rubrica, as datas em que os mesmos foram pagos e os valores dos respectivos pagamentos. Permite também a emissão de DARF individualizado por exercício e por tipo de rubrica, que poderá ser utilizado para recolhimento dos valores nele lançados na rede bancária autorizada.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1408">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que necessite verificar a situação de débitos de um determinado imóvel.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3011">
+            <titulo>Realizar busca</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4005">Número do RIP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4036" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/34</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3058">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3059">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3060">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3061">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Compras governamentais</item>
+        <item>Fiscalização do Estado</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3549">Débitos</item>
+        <item id="3550">créditos</item>
+        <item id="3551">imóvel da união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1069">-</item>
+    </legislacoes>
+</servico>
