@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-dados-cadastrais-de-imovel-da-uniao</id>
+    <dbId>1127</dbId>
+    <nome>Consultar dados cadastrais de imóvel da União</nome>
+    <sigla></sigla>
+    <descricao>Este serviço permite consultar os dados cadastrais do imóvel, suas benfeitorias e utilizações ativas, bem como as informações do seu responsável atual. Serão apresentadas informações gerais e técnicas de endereço, das testadas e do local de endereçamento das correspondências.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1415">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que necessite verificar os dados cadastrais de um determinado imóvel.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3024">
+            <titulo>Realizar consulta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4043">Número do Registro Imobiliário Patrimonial (RIP SIAPA); ou</item>
+                    <item id="4044">CPF ou CNPJ do responsável pelo imóvel; ou</item>
+                    <item id="4045">Nome do responsável pelo imóvel (Ao menos duas primeiras palavras)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4049" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3082">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3083">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3084">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3085">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3570">Imóvel da união</item>
+        <item id="3571">siapa</item>
+        <item id="3572">dados cadastrais</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1075">-</item>
+    </legislacoes>
+</servico>
