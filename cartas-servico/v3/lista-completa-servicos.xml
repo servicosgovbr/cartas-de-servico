@@ -35167,136 +35167,6 @@ CEP 70070-030 - Brasília (DF)</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-autorizacao-de-obras-em-imovel-da-uniao</id>
-        <dbId>1125</dbId>
-        <nome>Obter Autorização de Obras em Imóvel da União</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="895">Autorização de Obras</item>
-        </nomes-populares>
-        <descricao>Este serviço permite solicitar autorização para execução de obras e intervenções em imóveis da União, desde que não alterem a natureza do bem.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="1412">
-                <tipo>Pessoa Física</tipo>
-                <requisitos>Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e tenha qualidade de interessado (art. 9º da Lei nº 9.784, de 1999)</requisitos>
-            </solicitante>
-            <solicitante id="1413">
-                <tipo>Pessoa Jurídica</tipo>
-                <requisitos>Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3019">
-                <titulo>Preencher requerimento</titulo>
-                <descricao>Preencher os campos solicitados no Portal de Atendimento.     
-O requerente pode acrescentar outros documentos que julgar necessário além dos especificados abaixo, assim como a SPU pode requerer documentação complementar caso julgue necessário.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4024">CPF ou CNPJ</item>
-                        <item id="4025">Razão Social</item>
-                        <item id="4026">Dados do endereço</item>
-                        <item id="4027">Dados do endereço de correspondência (caso diferente do acima)</item>
-                        <item id="4028">Dados de contato</item>
-                        <item id="4029">Dados do imóvel</item>
-                        <item id="4030">Dados da obra pretendida (inclusive início e término)</item>
-                        <item id="4031">Memorial descritivo da poligonal da área a ser utilizada</item>
-                        <item id="4032">Planta do terreno com a indicação dos equipamentos/estruturas que serão instalados</item>
-                        <item id="4033">Comprovação da prévia autorização dos órgãos federais, estaduais e municipais competentes para a realização da obra (não obrigatório)</item>
-                        <item id="4034">Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente) (não obrigatório)</item>
-                    </default>
-                    <caso id="447" descricao="Pessoa física">
-                        <documento>
-                            <id>4020</id>
-                            <descricao>Documento de identificação do requerente com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="448" descricao="Pessoa Jurídica">
-                        <documento>
-                            <id>4023</id>
-                            <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
-                        </documento>
-                        <documento>
-                            <id>4022</id>
-                            <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                        </documento>
-                        <documento>
-                            <id>4021</id>
-                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4044" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoAutorizacaoObras?servico=30</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3020">
-                <titulo>Receber resposta</titulo>
-                <descricao>Área "acompanhe seu pedido"</descricao>
-                <documentos>
-                    <default>
-                        <item id="4035">CPF ou CNPJ</item>
-                        <item id="4036">Número do pedido</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4045" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3074">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3075">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="3076">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="3077">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Fiscalização do Estado</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Construções e obras</item>
-            <item>Transparência</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3564">Obras</item>
-            <item id="3565">obra em terreno da união</item>
-            <item id="3566">reforma em imóvel da união</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1073">[LEI Nº 9.784 , DE 29 DE JANEIRO DE 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-restituicao-e-retificacao-de-receita-recolhida-indevidamente</id>
         <dbId>914</dbId>
         <nome>Obter restituição e retificação de receita recolhida indevidamente</nome>
@@ -41341,130 +41211,6 @@ Consulte se você é pessoa obrigada [aqui](https://siscoaf.fazenda.gov.br/sisco
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-permissao-de-uso-para-eventos-em-imovel-da-uniao</id>
-        <dbId>38</dbId>
-        <nome>Obter Permissão de Uso para Eventos em Imóvel da União</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="552">Permissão para eventos em área pública</item>
-        </nomes-populares>
-        <descricao>Obter permissão da Secretaria do Patrimônio da União para realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional em áreas públicas.</descricao>
-        <contato>COORDENAÇÃO-GERAL DE DESENVOLVIMENTO DE INFRAESTRUTURA
-VALÉRIA SOARES
-Esplanada dos Ministérios - Bloco C - 2º andar
-Brasília-DF - CEP: 70.046-900
-E-mail: valeria.soares@planejamento.gov.br 
-Tel: 55 (61) 2020-1944</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="664">
-                <tipo>Pessoa Física ou Pessoa Jurídica</tipo>
-                <requisitos>Que tenha interesse na utilização de área pública sob gestão da Secretaria do Patrimônio da União, para realização de eventos.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="0" unidade="meses"/>
-            <descricao>Não há prazo estipulado</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Válido por</tipo>
-            <quantidade>90</quantidade>
-            <unidade>dias</unidade>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="1924">
-                <titulo>Preencher o requerimento</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2403" tipo="web">
-                            <descricao>http://patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1925">
-                <titulo>Enviar o requerimento</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2404" tipo="web">
-                            <descricao>http://patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1926">
-                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
-                <descricao>Na aba Acompanhe seu pedido, informe o nº do CPF ou CNPJ do requerente e o nº do atendimento, para verificar a etapa do requerimento.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2405" tipo="web">
-                            <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2194">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2195">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2196">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cultura</item>
-            <item>Esporte comunitário</item>
-            <item>Esporte e Lazer</item>
-            <item>Esporte profissional</item>
-            <item>Lazer</item>
-            <item>Patrimônio</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1585">uso de área pública</item>
-            <item id="1586">permissão do goveno</item>
-            <item id="3598">convenção</item>
-            <item id="3599">uso</item>
-            <item id="3600">praia</item>
-            <item id="3601">espaço público</item>
-            <item id="3602">autorização</item>
-            <item id="3603">festa</item>
-            <item id="3604">show</item>
-            <item id="3605">esportivo</item>
-            <item id="3606">recreação</item>
-            <item id="3607">religioso</item>
-            <item id="1584">eventos de rua</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="511">Lei n° 9.636/1988,
-Decreto n° 3.725/2001 e
-Portaria SPU nº 01/2014</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>naturalizar-se-brasileiro</id>
         <dbId>4</dbId>
         <nome>Naturalizar-se Brasileiro</nome>
@@ -41916,6 +41662,204 @@ O protocolo deverá ser acompanhado dos documentos que comprovam os fatos que fu
             <item id="1096">[Lei nº 11.457, de 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11457.htm)</item>
             <item id="1097">[Portaria PGFN nº 876/2010](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/portarias/Portaria_876_29_jul_2010.pdf)</item>
             <item id="1098">[Portaria PGFN nº 721, de 11 de outubro de 2012](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/informacoes-e-servicos-para-pessoa-juridica/lista-de-devedores/arquivos/Portaria%20PGFN%20721%2011-10-2012-%20Lista%20de%20Devedores.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-autorizacao-de-obras-em-imovel-da-uniao</id>
+        <dbId>1125</dbId>
+        <nome>Obter Autorização de Obras em Imóvel da União</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="895">Autorização de Obras</item>
+        </nomes-populares>
+        <descricao>Obter autorização da Secretaria do Patrimônio da União para obras em imóvel da União.</descricao>
+        <contato>Coordenação-Geral de Desenvolvimento de Infraestrutura &gt; Responsável: Valéria Soares &gt; Endereço: Esplanada dos Ministérios - Bloco C - 2º andar Brasília-DF - CEP: 70.046-900 &gt; E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1412">
+                <tipo>Pessoa Física ou Pessoa Jurídica</tipo>
+                <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9 e 10 da Lei nº 9.784 , de 29 de janeiro de 1999.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="0" unidade="meses"/>
+            <descricao>A definir</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3019">
+                <titulo>Preencher requerimento</titulo>
+                <descricao>Preencher os campos do requerimento no Portal da SPU (patrimoniodetodos.gov.br), anexar os documentos solicitados e enviar.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4044" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoAutorizacaoObras?servico=30</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3020">
+                <titulo>Receber resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obter o resultado da solicitação pelo e-mail informado no requerimento ou pela consulta do pedido no portal patrimoniodetodos.gov.br, informando o nº do CPF ou CNPJ do requerente e o nº do atendimento.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4045" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3074">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3075">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3076">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3077">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Construções e obras</item>
+            <item>Transparência</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3564">Obras</item>
+            <item id="3565">obra em terreno da união</item>
+            <item id="3566">reforma em imóvel da união</item>
+            <item id="3623">melhorias</item>
+            <item id="3624">reforma</item>
+            <item id="3625">instalação</item>
+            <item id="3626">equipamentos</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1073">[LEI Nº 9.784 , DE 29 DE JANEIRO DE 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-permissao-de-uso-para-eventos-em-imovel-da-uniao</id>
+        <dbId>38</dbId>
+        <nome>Obter Permissão de Uso para Eventos em Imóvel da União</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="552">Permissão para eventos em área pública</item>
+        </nomes-populares>
+        <descricao>Obter permissão da Secretaria do Patrimônio da União para realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional em áreas públicas.</descricao>
+        <contato>Coordenação-Geral de Desenvolvimento de Infraestrutura &gt; Responsável: Valéria Soares &gt;
+Endereço: Esplanada dos Ministérios - Bloco C - 2º andar Brasília-DF - CEP: 70.046-900 &gt;
+E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="664">
+                <tipo>Pessoa Física ou Pessoa Jurídica</tipo>
+                <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9 e 10 da Lei nº 9.784, de 1999.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="0" unidade="meses"/>
+            <descricao>A definir</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>90</quantidade>
+            <unidade>dias</unidade>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1924">
+                <titulo>Preencher o requerimento</titulo>
+                <descricao>Preencher os campos solicitados no Portal da SPU (patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2403" tipo="web">
+                            <descricao>http://patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1926">
+                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obter o resultado da solicitação pelo e-mail informado no requerimento ou pela consulta do pedido no portal patrimoniodetodos.gov.br, informando o nº do CPF ou CNPJ do requerente e o nº do atendimento.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2405" tipo="web">
+                            <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2194">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2195">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2196">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cultura</item>
+            <item>Esporte comunitário</item>
+            <item>Esporte e Lazer</item>
+            <item>Esporte profissional</item>
+            <item>Lazer</item>
+            <item>Patrimônio</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1585">uso de área pública</item>
+            <item id="1586">permissão do goveno</item>
+            <item id="3598">convenção</item>
+            <item id="3599">uso</item>
+            <item id="3600">praia</item>
+            <item id="3601">espaço público</item>
+            <item id="3602">autorização</item>
+            <item id="3603">festa</item>
+            <item id="3604">show</item>
+            <item id="3605">esportivo</item>
+            <item id="3606">recreação</item>
+            <item id="3607">religioso</item>
+            <item id="1584">eventos de rua</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="511">[Lei 9.636/1998] (http://www.planalto.gov.br/ccivil_03/leis/L9636.htm)
+Decreto n° 3.725/2001 e
+Portaria SPU nº 01/2014</item>
         </legislacoes>
     </servico>
 </servicos>
