@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>transferir-titularidade-de-imovel</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-titular-de-imovel-da-uniao</id>
     <dbId>39</dbId>
-    <nome>transferir-titular-de-imovel-da-uniao</nome>
-    <sigla/>
-    <descricao>Este serviço possibilita a realização de todos os procedimentos necessários à transferência de titularidade de imóvel da União sob os regimes de aforamento e de ocupação.</descricao>
-    <contato/>
+    <nome>Transferir Titular de Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="908">Averbação</item>
+    </nomes-populares>
+    <descricao>Realizar os procedimentos para alteração do responsável ou titular de imóvel da União, sob os regimes de aforamento ou de ocupação, no cadastro da Secretaria do Patrimônio da União. A transferência de titularidade envolve os seguintes procedimentos:&lt;p&gt; a) cálculo de laudêmio e pagamento do DARF correspondente, no caso de transação onerosa;&lt;/p&gt;&lt;p&gt;b) emissão da Certidão de Autorização para Transferência - CAT; &lt;/p&gt;&lt;p&gt;c) transmissão do imóvel no cartório competente, com o devido registro no caso de aforamento; e &lt;/p&gt;&lt;p&gt;d) transferência do imóvel no cadastro da Secretaria do Patrimônio da União - SPU.&lt;/p&gt;</descricao>
+    <contato>&lt;p&gt;Coordenação-Geral de Cobrança&lt;/p&gt; &lt;p&gt;Responsável: Hilton Ramalho Filho &lt;/p&gt;&lt;p&gt;E-mail: hilton.ramalho@planejamento.gov.br&lt;/p&gt;&lt;p&gt; Endereço: Esplanada dos Ministérios&lt;/p&gt; &lt;p&gt; Bloco C, 2º andar, Brasília-DF &lt;/p&gt;&lt;p&gt;CEP: 70.046-900 &lt;/p&gt; &lt;p&gt;Tel: 55 (61) 2020-1750&lt;/p&gt;</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="682">
-            <tipo>Pessoa física ou jurídica</tipo>
+            <tipo>Pessoa Física ou Jurídica</tipo>
             <requisitos>Que pretenda efetuar a transferência de imóvel da União.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao>Não há prazo estipulado</descricao>
+        <descricao>A definir</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao/>
+        <tipo>Válido por</tipo>
+        <quantidade>0</quantidade>
+        <unidade>dias</unidade>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="1971">
-            <titulo>Siga as etapas do processo</titulo>
-            <descricao>O procedimento para a transferência de titularidade de imóvel da União, sob regime de ocupação ou aforamento, é realizado da seguinte forma:
-
-Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Requerimento de Transferência de Titularidade de Imóvel</descricao>
+            <titulo>Calcular o laudêmio</titulo>
+            <descricao>Calcular o valor a ser recolhido para a transferência de titularidade de imóvel da União (5% do valor atualizado do terreno da União), quando envolver transações onerosas (compra e venda, promessa de compra e venda, permuta, dação em pagamento, fusão de  empresas, integralização de capital social e outros), a partir da informação do nº do RIP do Imóvel, o valor declarado da transação e o percentual de transferência. Após esse procedimento, é gerada a Ficha de Cálculo de Laudêmio - FCL e o DARF.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -36,14 +40,14 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2450" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/33</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/1</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="1972">
-            <titulo>Calcule o Laudêmio</titulo>
-            <descricao>Calcule o laudêmio e emita o DARF para pagamento (1º passo para transferência de titularidade de imóvel).</descricao>
+            <titulo>Pagar o DARF de Laudêmio</titulo>
+            <descricao>Efetue o pagamento do DARF de laudêmio, gerado conforme etapa 1, ou obtenha 2ª via, informando o nº da Ficha de Cálculo de Laudêmio - FCL no serviço DARF de Laudêmio.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -53,14 +57,14 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2451" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/1</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/16</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="1973">
-            <titulo>Emita a Certidão de Autorização para Transferência (CAT)</titulo>
-            <descricao>Solicite a emissão da Certidão de Autorização para Transferência de Titularidade - CAT (2º passo para transferência de titularidade de imóvel)</descricao>
+            <titulo>Emitir a Certidão de Autorização para Transferência- CAT</titulo>
+            <descricao>Solicite a emissão da Certidão de Autorização para Transferência de Titularidade - CAT, que será emitida em nome do atual responsável pelo imóvel na Secretaria do Patrimônio da União, preenchendo o tipo de transação, número do RIP e número da FCL.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -70,16 +74,44 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2452" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/17</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/17</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="1974">
             <titulo>Requerer a Transferência de Titularidade de Imóvel</titulo>
-            <descricao>Solicite a alteração do responsável/titular de imóvel da União no cadastro da SPU (3º e último passo para transferência de titularidade de imóvel)</descricao>
+            <descricao>Solicite a alteração do responsável/titular de imóvel da União no cadastro da SPU, preenchendo os dados do requerimento e anexando os documentos solicitados no portal patrimoniodetodos.gov.br.</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="4178">Título Aquisitivo/Documento de Transferência (ex. Escritura Pública, Formal de Partilha, Instrumento Particular com Força de Escritura etc.). No caso de aforamento, o documento deve estar registrado no Cartório de Registro de Imóveis</item>
+                </default>
+                <caso id="463" descricao="Pessoa Física Adquirente">
+                    <documento>
+                        <id>4174</id>
+                        <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                </caso>
+                <caso id="464" descricao="Pessoa Jurídica Adquirente">
+                    <documento>
+                        <id>4177</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4176</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4175</id>
+                        <descricao>Ato Constitutivo, estatuto ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
+                    </documento>
+                </caso>
+                <caso id="465" descricao="Pessoa Física ou Jurídica Transmitentes">
+                    <documento>
+                        <id>4179</id>
+                        <descricao>Título Aquisitivo/Documento de Transferência (ex. Escritura Pública, Formal de Partilha, Instrumento Particular com Força de Escritura etc.). No caso de aforamento, o documento deve estar registrado no Cartório de Registro de Imóveis</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -87,14 +119,14 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2453" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoTransferenciaTitular?servico=14</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/requerimentoTransferenciaTitular?servico=14#documentos</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
-        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2222">Cidadãos</item>
@@ -110,8 +142,22 @@ Calcule o laudêmio, Certidão de Autorização para Transferência (CAT), Reque
         <item id="1637">titularidade</item>
         <item id="1638">imóvel</item>
         <item id="1639">CAT</item>
+        <item id="3686">averbação</item>
+        <item id="3687">mudança</item>
     </palavras-chave>
     <legislacoes>
-        <item id="523">Decreto-Lei 2.490/1940, Decreto-Lei 3.438/1941, Lei 5.666/1943, Decreto-Lei 9.760/1946, Lei 5.972/1973, Lei 6.015/1973, Decreto-Lei 2.398/1987, Decreto 95.760/1988, Lei 9.636/1988, ON/SPU/GEARP 001/2000. Decreto 3.725/2001. ON/SPU/GEANE 001/2002 e Portaria/SPU 293/2007.</item>
+        <item id="1115">Decreto-Lei 3.438/1941</item>
+        <item id="1116">Lei 5.666/1943</item>
+        <item id="1117">Decreto-Lei 9.760/1946</item>
+        <item id="1118">Lei 5.972/1973</item>
+        <item id="1119">Lei 6.015/1973, ,</item>
+        <item id="1120">Decreto-Lei 2.398/1987</item>
+        <item id="1121">Decreto 95.760/1988</item>
+        <item id="1122">, Lei 9.636/1988,</item>
+        <item id="1123">ON/SPU/GEARP 001/2000</item>
+        <item id="1124">Decreto 3.725/2001</item>
+        <item id="1125">ON/SPU/GEANE 001/2002</item>
+        <item id="1126">Portaria/SPU 293/2007.</item>
+        <item id="523">Decreto-Lei 2.490/1940</item>
     </legislacoes>
 </servico>
