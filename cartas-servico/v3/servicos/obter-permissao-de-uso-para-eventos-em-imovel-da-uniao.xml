@@ -7,7 +7,7 @@
     <nomes-populares>
         <item id="552">Permissão para eventos em área pública</item>
     </nomes-populares>
-    <descricao>Obter permissão da Secretaria do Patrimônio da União para realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional em áreas públicas.</descricao>
+    <descricao>Obter permissão da Secretaria do Patrimônio da União - SPU para realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional em áreas públicas.</descricao>
     <contato>Coordenação-Geral de Desenvolvimento de Infraestrutura &gt; Responsável: Valéria Soares &gt;
 Endereço: Esplanada dos Ministérios - Bloco C - 2º andar Brasília-DF - CEP: 70.046-900 &gt;
 E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
@@ -36,11 +36,27 @@ E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
             <documentos>
                 <default>
                     <item id="4124">Planta ou croqui da área com a indicação dos equipamentos que serão instalados, especificando as áreas de exploração econômica, se for o caso</item>
-                    <item id="4125">Documento de identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
-                    <item id="4126">Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</item>
-                    <item id="4127">Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</item>
-                    <item id="4128">Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
                 </default>
+                <caso id="458" descricao="Pessoa Física">
+                    <documento>
+                        <id>4164</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
+                <caso id="459" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4167</id>
+                        <descricao>Documento de identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4166</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4165</id>
+                        <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -103,8 +119,8 @@ E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
         <item id="1584">eventos de rua</item>
     </palavras-chave>
     <legislacoes>
-        <item id="511">[Lei 9.636/1998] (http://www.planalto.gov.br/ccivil_03/leis/L9636.htm)
-Decreto n° 3.725/2001 e
-Portaria SPU nº 01/2014</item>
+        <item id="511">[Lei nº 9.636 , de 15 de maio de 1998](http://www.planalto.gov.br/ccivil_03/leis/L9636.htm)</item>
+        <item id="1114">[Portaria SPU nº 01/2014, de 03 de janeiro de 2014](file:///C:/Users/47298545191/Downloads/Portaria%2001-2014%20-%20Permissao%20de%20Uso.pdf)</item>
+        <item id="1113">[Decreto nº 3.725, de 10 de janeiro de 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3725.htm)</item>
     </legislacoes>
 </servico>
