@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
     <id>obter-remicao-de-aforamento-de-imovel-da-uniao</id>
     <dbId>1130</dbId>
-    <nome>Obter remição de aforamento de imóvel da União</nome>
-    <sigla></sigla>
+    <nome>adquirir-imovel-aforado-da-uniao-por-remicao</nome>
+    <sigla/>
     <nomes-populares>
         <item id="897">Remição</item>
     </nomes-populares>
     <descricao>Este serviço permite ao foreiro solicitar o resgate referente a 17% do domínio pleno do imóvel, excluídas as benfeitorias, consolidando a propriedade do imóvel. No caso de alegação de carência, será considerado carente ou de baixa renda, o responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.</descricao>
-    <contato></contato>
+    <contato/>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
@@ -22,11 +22,11 @@
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="30" max="60" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <entre max="60" min="30" unidade="dias-corridos"/>
+        <descricao/>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao/>
     </validade-documento>
     <etapas>
         <etapa id="3027">
@@ -57,7 +57,7 @@
                     <item id="4067">Dados de contato do requerente</item>
                     <item id="4068">Dados do representante legal (se pessoa jurídica)</item>
                 </default>
-                <caso id="449" descricao="Foreiro Pessoa física">
+                <caso descricao="Foreiro Pessoa física" id="449">
                     <documento>
                         <id>4059</id>
                         <descricao>Comprovante de pagamento dos valores inadimplidos (se for o caso)</descricao>
@@ -71,7 +71,7 @@
                         <descricao>Documento de identificação com foto</descricao>
                     </documento>
                 </caso>
-                <caso id="450" descricao="Foreiro baixa renda">
+                <caso descricao="Foreiro baixa renda" id="450">
                     <documento>
                         <id>4063</id>
                         <descricao>Declaração da situação econômica firmada pelo próprio requerente, em caso de impossibilidade de apresentação dos documentos listados anteriores</descricao>
@@ -89,7 +89,7 @@
                         <descricao>Cópia do recibo de entrega da declaração anual do imposto de renda e cópia da declaração de bens e direitos; ou</descricao>
                     </documento>
                 </caso>
-                <caso id="451" descricao="Foreiro pessoa jurídica">
+                <caso descricao="Foreiro pessoa jurídica" id="451">
                     <documento>
                         <id>4066</id>
                         <descricao>Comprovante de pagamento dos valores inadimplidos (se for o caso)</descricao>
@@ -117,7 +117,7 @@
         </etapa>
         <etapa id="3029">
             <titulo>Receber resultado</titulo>
-            <descricao></descricao>
+            <descricao/>
             <documentos>
                 <default>
                     <item id="4069">CPF ou CNPJ</item>
@@ -160,7 +160,7 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
