@@ -7,33 +7,41 @@
     <nomes-populares>
         <item id="893">Cancelamento de Cobrança</item>
     </nomes-populares>
-    <descricao>Este serviço permite solicitar a revisão ou cancelamento de cobrança de débitos, que pode ser motivada por: eventual pagamento efetuado e não baixado, decisão judicial, prescrição, decadência, cálculo de laudêmio, diferença de laudêmio, multa de transferência, duplicidade de inscrição, pedido de transferência de imóvel ou isenção solicitado e não efetivado antes do processamento da cobrança ou outros motivos que ensejem a revisão financeira. Este requerimento ainda pode ser utilizado para solicitar o cancelamento de inscrição em Dívida Ativa - DAU ou no Cadastro de Inadimplentes – CADIN, no caso de inscrição indevida.</descricao>
-    <contato></contato>
+    <descricao>Solicitar a revisão ou cancelamento de cobrança de taxas sobre imóvel administrado pela Secretaria do Patrimônio da União - SPU, inclusive cancelamento de inscrição em Dívida Ativa - DAU e Cadastro de Inadimplentes – CADIN.</descricao>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;gilberto.rezende@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1802&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="1409">
-            <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos>Que seja alvo de cobrança de taxas sobre imóvel da União e que tenha documentação comprobatória que ampare o pedido de revisão ou cancelamento.</requisitos>
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos>Que possua débitos exigidos sobre imóvel da União e deseja a revisão ou o cancelamento das taxas.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="15" max="30" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <entre min="0" max="0" unidade="dias-corridos"/>
+        <descricao>A definir</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="3012">
-            <titulo>Solicitar revisão ou cancelamento</titulo>
-            <descricao></descricao>
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Preencha os campos solicitados no [Portal da SPU](patrimoniodetodos.gov.br), insira o RIP e CPF ou CNPJ, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço.</descricao>
             <documentos>
                 <default>
-                    <item id="4006">Documentação comprobatória que ampare o pedido</item>
-                    <item id="4007">CPF ou CNPJ</item>
-                    <item id="4008">Número RIP do imóvel</item>
+                    <item id="4006">Documento que fundamente o pedido de revisão/cancelamento (cópia de comprovante de pagamento, protocolo do pedido de transferência ou do pedido de isenção de pagamento etc.)</item>
                 </default>
+                <caso id="471" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4195</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4194</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -47,13 +55,10 @@
             </canais-de-prestacao>
         </etapa>
         <etapa id="3013">
-            <titulo>Receber o resultado</titulo>
-            <descricao></descricao>
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
             <documentos>
-                <default>
-                    <item id="4009">Número do pedido</item>
-                    <item id="4010">CPF ou CNPJ</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
@@ -90,8 +95,20 @@
         <item id="3553">Cancelar cobrança</item>
         <item id="3554">taxa de uso</item>
         <item id="3555">imóvel da união</item>
+        <item id="3732">prescrição</item>
+        <item id="3733">decadência</item>
+        <item id="3734">dívida ativa da união</item>
+        <item id="3735">inadimplentes</item>
+        <item id="3736">corrigir</item>
+        <item id="3737">cobrança</item>
+        <item id="3738">cadin</item>
+        <item id="3739">suspender</item>
+        <item id="3740">duplicidade</item>
+        <item id="3741">pagamento</item>
+        <item id="3742">cobrança</item>
+        <item id="3743">dívida</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1070">-</item>
+        <item id="1070">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
     </legislacoes>
 </servico>
