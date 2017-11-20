@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>mudar-regime-ou-contrato-de-imovel-da-uniao</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-regime-ou-contrato-de-utilizacao-de-imovel-da-uniao</id>
     <dbId>31</dbId>
-    <nome>alterar-regime-ou-contrato-de-utilizacao-de-imovel-da-uniao</nome>
-    <sigla/>
-    <descricao>Este serviço permite mudar o regime de destinação de um imóvel, quando o requerente já possui vínculo com a SPU. A mudança de regime solicitada observará a legislação vigente. O instrumento de destinação a ser aplicado dependerá de cada caso.</descricao>
-    <contato/>
+    <nome>Alterar Regime ou Contrato de Utilização de Imóvel da União</nome>
+    <sigla></sigla>
+    <descricao>Possibilita requerer alteração de regime (inscrição de ocupação, aforamento, cessão) ou tipo de contrato de utilização de imóvel da União administrado pela Secretaria do Patrimônio da União - SPU. O instrumento de destinação a ser aplicado dependerá de cada caso e observará a legislação vigente.</descricao>
+    <contato>&lt;p&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/p&gt; &lt;p&gt;Responsável: Valéria Soares &lt;/p&gt;&lt;p&gt;E-mail: valeria.soares@planejamento.gov.br&lt;/p&gt;&lt;p&gt; Endereço: Esplanada dos Ministérios&lt;/p&gt; &lt;p&gt; Bloco C, 2º andar, Brasília-DF &lt;/p&gt;&lt;p&gt;CEP: 70.046-900 &lt;/p&gt; &lt;p&gt;Tel: 55 (61) 2020-1944&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="676">
-            <tipo>Pessoa física</tipo>
-            <requisitos>Que tenha capacidade para fins de processo administrativo nos termos do art. 10 da Lei nº 9.784, de 1999 (maiores de 18 anos) e qualidade de interessado (art. 9º da Lei nº 9.784, de 1999), bem como outros requisitos a depender do instrumento de destinação ou regularização</requisitos>
-        </solicitante>
-        <solicitante id="677">
-            <tipo>Pessoa jurídica</tipo>
-            <requisitos>Que tenha qualidade de interessado nos termos do art. 9º da Lei nº 9.784, de 1999; regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização</requisitos>
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos>Que utilize imóvel da SPU e tenha capacidade para fins de processo administrativo e que tenha qualidade de interessado, nos termos dos artigos 9º e 10, da Lei nº 9.784, de 1999.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
-        <descricao>Não há prazo estipulado</descricao>
+        <descricao>A definir</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao/>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="1947">
-            <titulo>Acesse o portal da SPU e insira o RIP e CPF ou CNPJ</titulo>
-            <descricao>Digite o RIP e CPF ou CNPJ, quando exigido, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço</descricao>
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Preencha os campos solicitados no Portal da SPU (patrimoniodetodos.gov.br), insira o RIP e CPF ou CNPJ, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço.</descricao>
             <documentos>
-                <default>
-                    <item id="1897">CPF/CNPJ</item>
-                    <item id="1898">RIP do imóvel</item>
-                </default>
+                <default/>
+                <caso id="469" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4191</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4190</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
@@ -41,14 +44,14 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2426" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="1948">
-            <titulo>Preencha as informações solicitadas</titulo>
-            <descricao>Preencha o formulário, clique no campo “Documentos” e informe o tipo de solicitante para verificar a documentação obrigatória exigida pelo sistema. Avalie se a condição do requerente exige a apresentação de documentos complementares (Ex: espólio, pessoa física ou jurídica estrangeira, viúvo etc.)</descricao>
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no portal da SPU (patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -58,48 +61,14 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2427" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="1949">
-            <titulo>Confira toda a documentação apresentada</titulo>
-            <descricao>Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2428" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="1950">
-            <titulo>Acompanhe o status do seu atendimento</titulo>
-            <descricao>Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2429" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
-        <nomeOrgao>Ministério do Planejamento Desenvolvimento e Gestão (MP)</nomeOrgao>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="1" idServicoSegmento="2213">Cidadãos</item>
@@ -109,13 +78,26 @@
     <areas-de-interesse>
         <item>Habitação</item>
         <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Desenvolvimento Urbano</item>
+        <item>Desenvolvimento Rural</item>
     </areas-de-interesse>
     <palavras-chave>
         <item id="1622">trocar regime</item>
         <item id="1623">mudar contrato</item>
         <item id="1624">usar imóvel para outro fim</item>
+        <item id="3713">uso</item>
+        <item id="3714">destinação</item>
+        <item id="3715">utilização</item>
+        <item id="3716">taus</item>
+        <item id="3717">cuem</item>
+        <item id="3718">cdru</item>
+        <item id="3719">alterar</item>
+        <item id="3720">mudar</item>
+        <item id="3721">permuta</item>
+        <item id="3722">regime</item>
     </palavras-chave>
     <legislacoes>
-        <item id="519">Lei nº 9.784, de 1999</item>
+        <item id="1127">[Lei nº 9.784 , de 29 de janeiro de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
     </legislacoes>
 </servico>
