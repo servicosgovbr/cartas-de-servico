@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>obter-remicao-de-aforamento-de-imovel-da-uniao</id>
+    <dbId>1130</dbId>
+    <nome>adquirir-imovel-aforado-da-uniao-por-remicao</nome>
+    <sigla/>
+    <nomes-populares>
+        <item id="897">Remição</item>
+    </nomes-populares>
+    <descricao>Este serviço permite ao foreiro solicitar o resgate referente a 17% do domínio pleno do imóvel, excluídas as benfeitorias, consolidando a propriedade do imóvel. No caso de alegação de carência, será considerado carente ou de baixa renda, o responsável por imóvel cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos ou que esteja devidamente inscrito no Cadastro Único para Programas Sociais do Governo Federal.</descricao>
+    <contato/>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1418">
+            <tipo>Foreiros</tipo>
+            <requisitos>tanto pessoa física quanto jurídica</requisitos>
+        </solicitante>
+        <solicitante id="1419">
+            <tipo>Foreiro baixa renda</tipo>
+            <requisitos>Pessoa física com renda familiar mensal igual ou inferior a cinco salários mínimos e que esteja inscrito no [Cadastro Único de Programas Sociais do Governo Federal](https://servicos.gov.br/servico/inscrever-se-no-cadastro-unico-para-programas-sociais-do-governo-federal)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="60" min="30" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="3027">
+            <titulo>Acessar o sistema</titulo>
+            <descricao>Acessar o Portal de Atendimento da SPU, informa nº Registro Imobiliário Patrimonial - RIP, CPF/CNPJ</descricao>
+            <documentos>
+                <default>
+                    <item id="4055">CPF ou CNPJ</item>
+                    <item id="4056">Número de Registro Imobiliário Patrimonial (RIP)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4052" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCertidaoAforamento?servico=27</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3028">
+            <titulo>Preencher requerimento</titulo>
+            <descricao>Prosseguir com o preenchimento dos demais campos e documentos solicitados no Portal.</descricao>
+            <documentos>
+                <default>
+                    <item id="4067">Dados de contato do requerente</item>
+                    <item id="4068">Dados do representante legal (se pessoa jurídica)</item>
+                </default>
+                <caso descricao="Foreiro Pessoa física" id="449">
+                    <documento>
+                        <id>4059</id>
+                        <descricao>Comprovante de pagamento dos valores inadimplidos (se for o caso)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4058</id>
+                        <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>4057</id>
+                        <descricao>Documento de identificação com foto</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Foreiro baixa renda" id="450">
+                    <documento>
+                        <id>4063</id>
+                        <descricao>Declaração da situação econômica firmada pelo próprio requerente, em caso de impossibilidade de apresentação dos documentos listados anteriores</descricao>
+                    </documento>
+                    <documento>
+                        <id>4062</id>
+                        <descricao>Comprovante de inscrição no Cadastro Único para Programas Sociais do Governo Federal; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>4061</id>
+                        <descricao>Comprovante de rendimentos de qualquer natureza (declaração do INSS, carteira de trabalho etc); ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>4060</id>
+                        <descricao>Cópia do recibo de entrega da declaração anual do imposto de renda e cópia da declaração de bens e direitos; ou</descricao>
+                    </documento>
+                </caso>
+                <caso descricao="Foreiro pessoa jurídica" id="451">
+                    <documento>
+                        <id>4066</id>
+                        <descricao>Comprovante de pagamento dos valores inadimplidos (se for o caso)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4065</id>
+                        <descricao>Documento de identificação com foto do representante legal</descricao>
+                    </documento>
+                    <documento>
+                        <id>4064</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4053" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCertidaoAforamento?servico=27</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3029">
+            <titulo>Receber resultado</titulo>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item id="4069">CPF ou CNPJ</item>
+                    <item id="4070">Nº do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4054" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3030">
+            <titulo>Realizar pagamento (exceto foreiros baixa renda reconhecidos como tal pela SPU)</titulo>
+            <descricao>O foreiro irá realizar o pagamento de acordo com a forma que escolheu no preenchimento do formulário</descricao>
+            <documentos>
+                <default>
+                    <item id="4071">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="143">
+                        <descricao>Pagamento referente a 17% do domínio pleno do imóvel</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4055" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="3094">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3095">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="3096">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3097">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Patrimônio da União</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3579">remição</item>
+        <item id="3580">aforamento</item>
+        <item id="3581">consolidar domínio</item>
+        <item id="3582">17%</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1079">-</item>
+    </legislacoes>
+</servico>
