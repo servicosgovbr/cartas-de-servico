@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>capacitar-se-em-temas-de-saude</id>
+    <dbId>1158</dbId>
+    <nome>Capacitar-se em temas de saúde</nome>
+    <sigla>AVASUS</sigla>
+    <descricao>O Ambiente Virtual de Aprendizagem do SUS (AVASUS) que é uma plataforma do Ministério da Saúde, de Educação à Distância que oferece cursos de qualificação e atualização para os trabalhadores e profissionais de Saúde. As inscrições aos cursos são gratuitas e podem ser feitas por profissionais e técnicos, estudantes e gestores da área da saúde, bem como pelo público em geral.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1457">
+            <tipo>Profissionais da área da saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1458">
+            <tipo>Estudantes da área da saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1459">
+            <tipo>Público em geral</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="1" max="1000" unidade="dias-corridos"/>
+        <descricao>Não é possível estabelecer um tempo padrão, este varia de acordo com o curso escolhido</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3131">
+            <titulo>Cadastrar-se no AVASUS</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4355">CPF</item>
+                    <item id="4356">Dados pessoais</item>
+                    <item id="4357">Dados de contato</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4132" tipo="web">
+                        <descricao>https://perfil.sabia.ufrn.br/cadastrar/?url_autorizacao=/oauth/authorize/?response_type=token&amp;grant_type=implict&amp;client_id=2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk&amp;redirect_uri=https://avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3132">
+            <titulo>Inscrever-se em um curso</titulo>
+            <descricao>Ao acessar o sistema, você deve clicar no menu "Cursos" e, a partir daí, escolher o curso que deseja fazer (nem todos os cursos estão disponíveis a todos os cadastrados. Alguns cursos são destinados  a perfis específicos, como trabalhadores do SUS).</descricao>
+            <documentos>
+                <default>
+                    <item id="4358">CPF</item>
+                    <item id="4359">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4133" tipo="web">
+                        <descricao>https://login.sabia.ufrn.br/entrar/?next=/oauth/authorize/%3Fresponse_type%3Dcode%26client_id%3D2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk%26redirect_uri%3Dhttps%3A//avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3133">
+            <titulo>Realizar as atividades e responder às avaliações do curso</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4360">CPF</item>
+                    <item id="4361">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4134" tipo="web">
+                        <descricao>https://login.sabia.ufrn.br/entrar/?next=/oauth/authorize/%3Fresponse_type%3Dcode%26client_id%3D2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk%26redirect_uri%3Dhttps%3A//avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+        <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3201">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="3202">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Ambiente e saúde</item>
+        <item>Saúde</item>
+        <item>Educação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3804">capacitação</item>
+        <item id="3805">AVASUS</item>
+        <item id="3806">extensão</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1142">-</item>
+    </legislacoes>
+</servico>
