@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-informacoes-de-inteligencia-financeira-para-investigacoes</id>
+    <dbId>1157</dbId>
+    <nome>Obter informações de inteligência financeira para investigações</nome>
+    <sigla>SEI-C</sigla>
+    <nomes-populares>
+        <item id="912">Sistema Eletrônico de Intercâmbio</item>
+    </nomes-populares>
+    <descricao>Intercâmbio de informações de inteligência financeira para autoridades competentes, seja por ofício ou por meio do Sistema Eletrônico de Intercâmbio (SEI-C).</descricao>
+    <contato>¨ **Telefones:** +55 (61) 2025-4001 / 2025-4002       
+¨ **[Fale Conosco](http://www.coaf.fazenda.gov.br/contato-principal/fale-conosco/)**</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1456">
+            <tipo>Promotores, juízes e delegados de polícia</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3129">
+            <titulo>Solicitar informações</titulo>
+            <descricao>Para uso do canal WEB, a autoridade deve estar previamente [cadastrada no sistema](https://servicos.gov.br/servico/cadastrar-se-no-sistema-eletronico-de-intercambio-do-coaf)</descricao>
+            <documentos>
+                <default>
+                    <item id="4351">Número e natureza do procedimento de investigação instaurado</item>
+                    <item id="4352">Informações sobre os fundados indícios da existência do(s) ilícito(s) sob investigação, com indicação do(s) respectivo(s) tipo(s) penal(is)</item>
+                    <item id="4353">Identificação das pessoas envolvidas na investigação, com indicação do nome e do CPF ou CNPJ, conforme o caso</item>
+                </default>
+                <caso id="501" descricao="Se via Sistema (Web)">
+                    <documento>
+                        <id>4349</id>
+                        <descricao>Senha</descricao>
+                    </documento>
+                    <documento>
+                        <id>4348</id>
+                        <descricao>CPF</descricao>
+                    </documento>
+                </caso>
+                <caso id="502" descricao="Se via postal">
+                    <documento>
+                        <id>4350</id>
+                        <descricao>Ofício</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4128" tipo="web">
+                        <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4129" tipo="postal">
+                        <descricao>**Conselho de Controle de Atividades Financeiras - COAF**         
+SAUN Qd 5 Lote C Torre D 2º andar -
+CEP: 70.040-250 - Asa Norte
+Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3130">
+            <titulo>Receber relatório de inteligência financeira</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4354">CPF e Senha (se utilizando o sistema eletrônico)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4131" tipo="postal">
+                        <descricao>Endereço de trabalho da autoridade requerente</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4130" tipo="web">
+                        <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="3200">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Policiamento</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Sistema Financeiro</item>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Justiça e Segurança Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3788">inteligência</item>
+        <item id="3789">inteligência financeira</item>
+        <item id="3790">investigações</item>
+        <item id="3791">dados financeiros</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1140">-</item>
+    </legislacoes>
+</servico>
