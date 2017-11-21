@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>corrigir-dimensoes-de-imovel-da-uniao</id>
+    <dbId>1124</dbId>
+    <nome>rever-area-e-valor-de-avaliacao-de-imovel-da-uniao</nome>
+    <sigla/>
+    <nomes-populares>
+        <item id="894">Requerimento de Revisão de Área e Valor da Avaliação</item>
+    </nomes-populares>
+    <descricao>Este serviço permite solicitar a revisão do valor do metro quadrado, número de testadas, dimensão, fração ideal, localização (urbana/rural), unificação ou desmembramento de imóvel da União cadastrado na SPU.</descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1411">
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos>Que seja titular de imóvel da União</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="60" min="30" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="3016">
+            <titulo>Acessar o sistema</titulo>
+            <descricao>Você deve informar o CPF ou CNPJ, o número de RIP do imóvel e marcar o *"capcha"* confirmando não ser um robô.</descricao>
+            <documentos>
+                <default>
+                    <item id="4015">CPF ou CPNJ</item>
+                    <item id="4016">Número de Registro Imobiliário Patrimonial (RIP)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4041" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/revisaoValorArea?servico=36</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3017">
+            <titulo>Preencher dados do pedido</titulo>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item id="4017">Documentação comprobatória que ampare o pedido de correção</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4042" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/revisaoValorArea?servico=36</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3018">
+            <titulo>Receber resultado</titulo>
+            <descricao/>
+            <documentos>
+                <default>
+                    <item id="4018">CPF ou CNPJ</item>
+                    <item id="4019">Número do pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4043" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3070">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3071">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3072">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3073">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Administração</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3560">Corrigir área</item>
+        <item id="3561">dimensões</item>
+        <item id="3562">imóvel da união</item>
+        <item id="3563">siapa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1072">-</item>
+    </legislacoes>
+</servico>
