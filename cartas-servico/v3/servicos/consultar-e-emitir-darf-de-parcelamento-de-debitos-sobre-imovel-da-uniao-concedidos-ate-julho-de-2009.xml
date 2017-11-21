@@ -4,14 +4,14 @@
     <dbId>1123</dbId>
     <nome>Consultar e Emitir DARF de Parcelamento de Débitos sobre Imóvel da União Concedidos até julho de 2009</nome>
     <sigla></sigla>
-    <descricao>Consultar e emitir DARF de parcelamento de débitos sobre imóvel administrado pela Secretaria do Patrimônio da União concedido até julho de 2009.</descricao>
-    <contato></contato>
+    <descricao>Consultar e emitir DARF de parcelamento relativo a débitos sobre imóvel administrado pela Secretaria do Patrimônio da União parcelados até julho de 2009.</descricao>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt;Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;hilton.ramalho@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1750&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="1410">
-            <tipo>Pessoas Físicas e Jurídicas</tipo>
-            <requisitos>Que possua débitos na Secretaria do Patrimônio da União - SPU, com parcelamento efetuado até julho de 2009.</requisitos>
+            <tipo>Pessoas Física e Jurídica</tipo>
+            <requisitos>Que possua parcelamento de débitos na Secretaria do Patrimônio da União - SPU efetuado até julho de 2009.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -23,41 +23,35 @@
     </validade-documento>
     <etapas>
         <etapa id="3014">
-            <titulo>Preencher os dados para a consulta</titulo>
+            <titulo>Preencher os dados para a consulta ou emissão de DARF</titulo>
             <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/39), escolha a opção Consulta ou Emissão de DARF, informe o nº do parcelamento, CPF ou CNPJ do responsável pelo imóvel e clique em OK.</descricao>
             <documentos>
-                <default>
-                    <item id="4011">Número do parcelamento; ou</item>
-                    <item id="4012">CPF; ou</item>
-                    <item id="4013">CNPJ</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4039" tipo="web">
+                    <canal-de-prestacao id="4039" tipo="web-consultar">
                         <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/39</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="3015">
-            <titulo>Pagar a DARF (para emissão de DARF)</titulo>
-            <descricao></descricao>
+            <titulo>Verificar os dados do parcelamento ou emitir o DARF para pagamento</titulo>
+            <descricao>Verifique os dados sobre o parcelamento e, se necessário, imprima o DARF para pagamento.</descricao>
             <documentos>
-                <default>
-                    <item id="4014">DARF</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4040" tipo="presencial">
-                        <descricao>Rede bancária</descricao>
+                    <canal-de-prestacao id="4040" tipo="web-consultar">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/39</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -83,9 +77,10 @@
         <item id="3556">DARF</item>
         <item id="3557">parcelamento</item>
         <item id="3558">imóvel da União</item>
-        <item id="3559">SIAPA</item>
+        <item id="3559">deferido</item>
+        <item id="3787">renegociado</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1071">-</item>
+        <item id="1141">[Lei nº 10.522, de 19 de julho de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
     </legislacoes>
 </servico>
