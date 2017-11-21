@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
+    <id>renegociar-dividas-junto-a-extinta-rffsa</id>
+    <dbId>1129</dbId>
+    <nome>regularizar-dividas-de-imovel-da-uniao-oriundo-da-rffsa</nome>
+    <sigla/>
+    <descricao>Este serviço permite solicitar Renegociação das dívidas e/ou saldos devedores com fundamento no art. 28 da Lei nº 11.483, de 31 de maio de 2007; Extinção das dívidas e/ou saldos devedores do contrato com fundamento no art. 7º da Lei nº 12.348, de 15 de dezembro de julho de 2010; Termo de quitação do contrato; Emissão de contrato definitivo de compra e venda ou cessão de direitos; Substituição do beneficiário do contrato de compra e venda ou cessão de direitos; Liquidação da dívida e/ou saldo devedor; Regularização do imóvel em favor de ocupante sem vínculo com a extinta RFFSA e outros serviços.</descricao>
+    <contato/>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1417">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Que tenham débitos junto à extinta RFFSA</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre max="60" min="30" unidade="dias-corridos"/>
+        <descricao/>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao/>
+    </validade-documento>
+    <etapas>
+        <etapa id="3026">
+            <titulo>Requerer renegociação</titulo>
+            <descricao>O interessado entrega o formulário [RECADASTRAMENTO E REQUERIMENTO CARTEIRA IMOBILIÁRIA DA EXTINTA RFFSA](http://www.planejamento.gov.br/assuntos/gestao/patrimonio-da-uniao/isencao/formulario-de-recadastramento-e-requerimento.pdf), acompanhado da documentação na Secretaria do Patrimônio da União de jurisdição do imóvel.</descricao>
+            <documentos>
+                <default>
+                    <item id="4050">Formulário Recadastramento e Requerimento Carteira Imobiliária da Extinta RFFSA</item>
+                    <item id="4051">Carteira de Identidade (RG)</item>
+                    <item id="4052">CPF ou CNPJ</item>
+                    <item id="4053">Procuração do representante legal</item>
+                    <item id="4054">Registro na Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4051" tipo="presencial">
+                        <descricao>Secretaria do Patrimônio da União de jurisdição do imóvel. Encontre [aqui](http://www.planejamento.gov.br/assuntos/patrimonio-da-uniao/regionais) o endereço.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3090">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3091">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3092">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3093">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3576">renegociação de dívidas</item>
+        <item id="3577">RFFSA</item>
+        <item id="3578">imóvel da união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1077">[LEI Nº 11.483, DE 31 DE MAIO DE 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11483.htm)</item>
+        <item id="1078">[LEI Nº 12.348, DE 15 DE DEZEMBRO DE 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
+    </legislacoes>
+</servico>
