@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>requerer-reinclusao-em-parcelamento-especial</id>
+    <dbId>1152</dbId>
+    <nome>Requerer reinclusão em parcelamento especial</nome>
+    <sigla></sigla>
+    <descricao>O serviço que permite, ao contribuinte, apresentação de petição fundamentada demonstrando ilegalidade ou erro quanto à sua exclusão de parcelamento especial, nos termos da legislação aplicável ao respectivo parcelamento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1451">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>O contribuinte que foi excluído do parcelamento especial e que, nos termos da legislação aplicável ao mesmo, possui fundamentos de fato ou de direito para opor-se à exclusão.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="360" unidade="dias-corridos"/>
+        <descricao>Prazo máximo previsto no art. 24 da Lei nº 11.457 de 2007.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3115">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>O serviço Recurso Administrativo em Razão da Exclusão de Parcelamento Especial deverá ser protocolizado na unidade de atendimento integrado PGFN/RFB (Receita Federal) do domicílio fiscal do requerente, por meio de petição constando os fundamentos de fato e de direito contra o ato de exclusão.</descricao>
+            <documentos>
+                <default>
+                    <item id="4248">CPF</item>
+                    <item id="4249">CNPJ (se for o caso)</item>
+                    <item id="4250">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4110" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3116">
+            <titulo>Protocolar pedido</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4262">Documento oficial de identificação</item>
+                    <item id="4263">CPF</item>
+                    <item id="4264">Documentos Comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento" (caso não seja o próprio interessado)</item>
+                    <item id="4265">Petição na qual conste com os fundamentos de fato ou de direito para opor-se ao ato de exclusão, acompanhada, se for o caso, dos documentos necessários para provar os fatos alegados.</item>
+                </default>
+                <caso id="487" descricao="Se espólio antes do compromisso do inventariante">
+                    <documento>
+                        <id>4253</id>
+                        <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil</descricao>
+                    </documento>
+                    <documento>
+                        <id>4252</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4251</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+                <caso id="488" descricao="Se espólio com inventariante compromissado">
+                    <documento>
+                        <id>4257</id>
+                        <descricao>Documento oficial de identificação do inventariante</descricao>
+                    </documento>
+                    <documento>
+                        <id>4256</id>
+                        <descricao>Termo de compromisso do inventariante</descricao>
+                    </documento>
+                    <documento>
+                        <id>4255</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4254</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+                <caso id="489" descricao="Se espólio após a partilha">
+                    <documento>
+                        <id>4261</id>
+                        <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                    </documento>
+                    <documento>
+                        <id>4260</id>
+                        <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4259</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4258</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4111" tipo="presencial">
+                        <descricao>Na [Unidade de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa passada</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3117">
+            <titulo>Receber resultado</titulo>
+            <descricao>O contribuinte deverá acompanhar a informação sobre seu requerimento/recurso pelo e-CAC da PGFN, no serviço de “Consulta de Requerimentos”.</descricao>
+            <documentos>
+                <default>
+                    <item id="4266">CPF ou CNPJ</item>
+                    <item id="4267">Senha do e-CAC da PGFN</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4112" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3183">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3184">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3185">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3186">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Sistema Financeiro</item>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças pessoais</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3772">Reinclusão em parcelamento</item>
+        <item id="3773">parcelamento especial</item>
+        <item id="3774">recurso administrativo</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1135">[Lei nº 9.964, de 10 de abril de 2000](http://www.planalto.gov.br/ccivil_03/leis/L9964.htm)</item>
+    </legislacoes>
+</servico>
