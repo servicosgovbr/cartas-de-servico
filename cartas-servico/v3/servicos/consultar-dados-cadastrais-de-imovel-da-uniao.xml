@@ -4,14 +4,14 @@
     <dbId>1127</dbId>
     <nome>Consultar dados cadastrais de imóvel da União</nome>
     <sigla></sigla>
-    <descricao>Este serviço permite consultar os dados cadastrais do imóvel, suas benfeitorias e utilizações ativas, bem como as informações do seu responsável atual. Serão apresentadas informações gerais e técnicas de endereço, das testadas e do local de endereçamento das correspondências.</descricao>
-    <contato></contato>
+    <descricao>Verificar os dados cadastrais de imóvel administrado pela Secretaria do Patrimônio da União - SPU, suas benfeitorias e utilizações ativas, bem como as informações do responsável.</descricao>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Incorporação de Patrimônio&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel da Silva Cardoso&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;samuel.cardoso@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1022&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="1415">
-            <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos>Que necessite verificar os dados cadastrais de um determinado imóvel.</requisitos>
+            <tipo>Pessoa física ou Jurídica</tipo>
+            <requisitos>Que necessite verificar os dados cadastrais de imóvel sob gestão da Secretaria do Patrimônio da União.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -23,22 +23,35 @@
     </validade-documento>
     <etapas>
         <etapa id="3024">
-            <titulo>Realizar consulta</titulo>
-            <descricao></descricao>
+            <titulo>Preencher os dados para a consulta</titulo>
+            <descricao>Informe o RIP, CPF, CNPJ ou nome do responsável pelo imóvel no [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/38), marque OK.</descricao>
             <documentos>
-                <default>
-                    <item id="4043">Número do Registro Imobiliário Patrimonial (RIP SIAPA); ou</item>
-                    <item id="4044">CPF ou CNPJ do responsável pelo imóvel; ou</item>
-                    <item id="4045">Nome do responsável pelo imóvel (Ao menos duas primeiras palavras)</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4049" tipo="web">
+                    <canal-de-prestacao id="4049" tipo="web-consultar">
                         <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3107">
+            <titulo>Verificar os dados da consulta</titulo>
+            <descricao>Verifique os dados cadastrais apresentados na consulta. Se necessário, explore as informações sobre benfeitorias ou utilizações.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4102" tipo="web-consultar">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/38</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -60,13 +73,21 @@
         <item>Patrimônio</item>
         <item>Patrimônio da União</item>
         <item>Transparência</item>
+        <item>Habitação</item>
+        <item>Habitação Urbana</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3570">Imóvel da união</item>
-        <item id="3571">siapa</item>
-        <item id="3572">dados cadastrais</item>
+        <item id="3570">consulta</item>
+        <item id="3571">dados</item>
+        <item id="3572">cadastrais</item>
+        <item id="3745">benfeitorias</item>
+        <item id="3746">responsável</item>
+        <item id="3747">endereço</item>
+        <item id="3748">endereçamento</item>
+        <item id="3749">cadastro</item>
+        <item id="3750">situação do imóvel</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1075">-</item>
+        <item id="1129">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
     </legislacoes>
 </servico>
