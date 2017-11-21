@@ -1,51 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd">
-    <id>convalidar-ou-realizar-acordo-em-acoes-de-desapropriacao-de-imoveis-da-extinta-rffsa</id>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>atualizar-cadastro-de-ocupante-de-imovel-da-uniao-oriundo-da-rffsa</id>
     <dbId>1128</dbId>
-    <nome>atualizar-cadastro-de-ocupante-de-imovel-da-uniao-oriundo-da-rffsa</nome>
-    <sigla/>
-    <descricao>Este serviço permite solicitar convalidação da desapropriação; acordo com renúncia total dos valores devidos referentes a área desapropriada e acordo com renúncia dos valores devidos referentes a parcela da área desapropriada, nos termos do § 2º do art. 8º da Lei nº 12.348, de 2010.</descricao>
-    <contato/>
+    <nome>Atualizar cadastro de ocupante de imóvel da União oriundo da RFFSA</nome>
+    <sigla></sigla>
+    <descricao>Atualizar o cadastro do atual ocupante de imóvel da União oriundo da RFFSA.</descricao>
+    <contato>&lt;p&gt;&lt;b&gt;Departamento de Destinação Patrimonial&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Dinarte Vaz&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;dinarte.vaz@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1077&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="1416">
             <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos>Envolvidas em ações de desapropriação de imóveis da antiga RFFSA</requisitos>
+            <requisitos>Que possua contrato de Compra e Venda ou de Locação com a extinta RFFSA ou sucessor autorizado/ocupante atual do imóvel.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="60" min="30" unidade="dias-corridos"/>
-        <descricao/>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao/>
+        <descricao></descricao>
     </validade-documento>
     <etapas>
         <etapa id="3025">
-            <titulo>Fazer o requerimento</titulo>
-            <descricao>Interessado entrega [MODELO DE REQUERIMENTO DE CONVALIDAÇÃO E ACORDO EM AÇÕES DE DESAPROPRIAÇÃO DE IMÓVEIS DA EXTINTA RFFSA](http://www.planejamento.gov.br/assuntos/gestao/patrimonio-da-uniao/isencao/formulario-convalidacao-atual.doc) preenchido e com a documentação exigida.</descricao>
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
             <documentos>
-                <default>
-                    <item id="4046">Requerimento de Convalidação e Acordo em Ações de Desapropriação de Imóveis da Extinta RFFSA</item>
-                    <item id="4047">Planta do imóvel</item>
-                    <item id="4048">Certidões do imóvel</item>
-                    <item id="4049">Fotos do imóvel</item>
-                </default>
+                <default/>
+                <caso id="485" descricao="Pessoa Física">
+                    <documento>
+                        <id>4245</id>
+                        <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4244</id>
+                        <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
+                <caso id="486" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4247</id>
+                        <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4246</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4050" tipo="presencial">
-                        <descricao>Secretaria do Patrimônio da União de jurisdição do imóvel. Encontre [aqui](http://www.planejamento.gov.br/assuntos/patrimonio-da-uniao/regionais) o endereço.</descricao>
+                    <canal-de-prestacao id="4050" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=113#dados-documentos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3114">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](www.patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4109" tipo="web">
+                        <descricao>www.patrimoniodetodos.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao dbId="37545" id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981">
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
@@ -63,10 +95,21 @@
     </areas-de-interesse>
     <palavras-chave>
         <item id="3573">RFFSA</item>
-        <item id="3574">acordo</item>
-        <item id="3575">convalidar</item>
+        <item id="3574">rffsa</item>
+        <item id="3575">ex-rffsa</item>
+        <item id="3761">contrato</item>
+        <item id="3762">ocupante</item>
+        <item id="3763">rede</item>
+        <item id="3764">dados</item>
+        <item id="3765">ferroviária</item>
+        <item id="3766">contribuinte</item>
+        <item id="3767">atualização</item>
+        <item id="3768">regularização</item>
+        <item id="3769">cadastro</item>
+        <item id="3770">atualização</item>
+        <item id="3771">atualizar</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1076">[LEI Nº 12.348, DE 15 DE DEZEMBRO DE 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
+        <item id="1076">[Lei nº 12.348, de 15 de dezembro de 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
     </legislacoes>
 </servico>
