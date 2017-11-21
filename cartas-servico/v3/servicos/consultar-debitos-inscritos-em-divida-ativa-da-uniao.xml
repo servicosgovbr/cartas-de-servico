@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-debitos-inscritos-em-divida-ativa-da-uniao</id>
+    <dbId>1147</dbId>
+    <nome>Consultar débitos inscritos em dívida ativa da União</nome>
+    <sigla></sigla>
+    <descricao>É o serviço que possibilita ao contribuinte obter o extrato dos créditos previdenciários e dos não previdenciários que estão inscritos em Dívida Ativa da União e informações sobre os mesmos.
+
+IMPORTANTE:
+
+I. Dentre estes débitos estão incluídos aqueles referentes ao Simples Nacional, nos termos do § 2º do artigo 41 da Lei Complementar n.º 123, de 2006, inscritos em Dívida Ativa da União (DAU) e cobrados judicialmente pela Procuradoria-Geral da Fazenda Nacional – PGFN, independentemente de serem referentes a tributos federais, estaduais ou municipais. Portanto, estão sendo inscritos e cobrados débitos de ICMS e ISS, além dos demais tributos federais englobados no regime de arrecadação do Simples Nacional (IRPJ, IPI, CSLL, COFINS, PIS/PASEP, CPP).           
+
+
+II. Os débitos do Simples Nacional inscrito em DAU não foram incluídos aqueles que:      
+
+a) os débitos de contribuintes que optaram pelo parcelamento;          
+
+b) os débitos de ICMS e ISS dos Estados e Municípios, respectivamente, que realizaram convênios com a PGFN ;          
+
+c) os débitos de contribuintes com DASN retificadoras por possuírem CNPJ matriz diferente de 0001;          
+
+d) e os débitos que foram submetidos a tratamento por processo pela RFB.       
+
+
+III. O detalhamento dos débitos do Simples Nacional não constam no Sistema da Dívida Ativa não previdenciária (SIDA), mas sim do processo administrativo fiscal, onde poderá ser identificado cada um dos tributos que compõem do débito. Isto porque nessas inscrições, um mesmo período  de apuração pode ser composto por de um tributo (assim, um período de apuração poderá corresponder, por exemplo, a débitos de IPI, ICMS, ISS, etc., ou ainda, à soma desses tributos). Os tributos que compõem o período de apuração, todavia, serão visíveis na consulta ao Processo Administrativo Fiscal.         
+
+
+**ATENÇÃO:**  a consulta aos débitos previdenciários apresenta todos os débitos do CPF/CNPJ. Porém, no caso da pessoa jurídica, não estão incluídos os débitos das empresas incorporadas. Neste caso, a consulta deve ser realizada em relação a cada um dos CNPJ, ainda que o CNPJ da incorporada tenha sido baixado.</descricao>
+    <contato>¨ [Perguntas e Respostas sobre consulta a dívidas previdenciárias](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/perguntas-e-respostas/divida-previdenciaria/i-para-informacoes-sobre-consulta-de-debito)          
+¨[Perguntas e Respostas sobre consulta a dívidas não-previdenciárias](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/perguntas-e-respostas/divida-nao-previdenciaria/i-para-informacoes-sobre-consulta-de-debito)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1445">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3091">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4152">CPF</item>
+                    <item id="4153">Data do Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4099" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3092">
+            <titulo>Requerer consulta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4154">Documento de identificação pessoal válido</item>
+                    <item id="4155">CPF ou CNPJ</item>
+                    <item id="4156">Procuração (se for o caso) acompanhada de cópia do documento de identificação do procurador.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4100" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3093">
+            <titulo>Receber extrato</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4157">Documento de identificação pessoal válido</item>
+                    <item id="4158">CPF ou CNPJ</item>
+                    <item id="4159">Procuração (se for o caso) acompanhada de cópia do documento de identificação do procurador.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4101" tipo="presencial">
+                        <descricao>Na mesma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento) da etapa anterior</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3159">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3160">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3161">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3162">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Administração financeira</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Fiscalização do Estado</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3668">consultar</item>
+        <item id="3669">DAU</item>
+        <item id="3670">divida ativa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1109">[Lei Complementar n.º 123, de 2006](http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp123.htm)</item>
+    </legislacoes>
+</servico>
