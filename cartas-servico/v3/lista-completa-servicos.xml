@@ -459,6 +459,120 @@ Brasília/DF</descricao>
         </legislacoes>
     </servico>
     <servico>
+        <id>capacitar-se-em-temas-de-saude</id>
+        <dbId>1158</dbId>
+        <nome>Capacitar-se em temas de saúde</nome>
+        <sigla>AVASUS</sigla>
+        <descricao>O Ambiente Virtual de Aprendizagem do SUS (AVASUS) que é uma plataforma do Ministério da Saúde, de Educação à Distância que oferece cursos de qualificação e atualização para os trabalhadores e profissionais de Saúde. As inscrições aos cursos são gratuitas e podem ser feitas por profissionais e técnicos, estudantes e gestores da área da saúde, bem como pelo público em geral.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1457">
+                <tipo>Profissionais da área da saúde</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1458">
+                <tipo>Estudantes da área da saúde</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="1459">
+                <tipo>Público em geral</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="1" max="1000" unidade="dias-corridos"/>
+            <descricao>Não é possível estabelecer um tempo padrão, este varia de acordo com o curso escolhido</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3131">
+                <titulo>Cadastrar-se no AVASUS</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4355">CPF</item>
+                        <item id="4356">Dados pessoais</item>
+                        <item id="4357">Dados de contato</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4132" tipo="web">
+                            <descricao>https://perfil.sabia.ufrn.br/cadastrar/?url_autorizacao=/oauth/authorize/?response_type=token&amp;grant_type=implict&amp;client_id=2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk&amp;redirect_uri=https://avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3132">
+                <titulo>Inscrever-se em um curso</titulo>
+                <descricao>Ao acessar o sistema, você deve clicar no menu "Cursos" e, a partir daí, escolher o curso que deseja fazer (nem todos os cursos estão disponíveis a todos os cadastrados. Alguns cursos são destinados  a perfis específicos, como trabalhadores do SUS).</descricao>
+                <documentos>
+                    <default>
+                        <item id="4358">CPF</item>
+                        <item id="4359">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4133" tipo="web">
+                            <descricao>https://login.sabia.ufrn.br/entrar/?next=/oauth/authorize/%3Fresponse_type%3Dcode%26client_id%3D2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk%26redirect_uri%3Dhttps%3A//avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3133">
+                <titulo>Realizar as atividades e responder às avaliações do curso</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4360">CPF</item>
+                        <item id="4361">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4134" tipo="web">
+                            <descricao>https://login.sabia.ufrn.br/entrar/?next=/oauth/authorize/%3Fresponse_type%3Dcode%26client_id%3D2kT74w6jrQGuin1F0V83HBsGQC1PZRZvWb5sOAnk%26redirect_uri%3Dhttps%3A//avasus.ufrn.br/auth/oauth_avasus/callback.php</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/304" dbId="37534">
+            <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3201">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="3202">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Ambiente e saúde</item>
+            <item>Educação</item>
+            <item>Saúde</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3804">capacitação</item>
+            <item id="3805">AVASUS</item>
+            <item id="3806">extensão</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1142">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>solicitar-uso-de-faixa-de-dominio</id>
         <dbId>2</dbId>
         <nome>Solicitar uso de Faixa de Domínio</nome>
@@ -868,18 +982,18 @@ CEP 70610-460 – Brasília – DF</descricao>
             <item idSegmento="3" idServicoSegmento="2152">Empresas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Educação</item>
-            <item>Patrimônio</item>
-            <item>Patrimônio Cultural</item>
-            <item>Pesquisa e Desenvolvimento</item>
-            <item>Serviços Públicos</item>
             <item>Administração</item>
             <item>Cultura</item>
             <item>Difusão</item>
             <item>Difusão Cultural</item>
             <item>Educação básica</item>
             <item>Educação superior</item>
+            <item>Patrimônio</item>
+            <item>Patrimônio Cultural</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Serviços Públicos</item>
+            <item>Educação</item>
+            <item>Cidadania</item>
         </areas-de-interesse>
         <palavras-chave>
             <item id="1539">Documentação e Informação</item>
@@ -2092,95 +2206,6 @@ Este caminho é destinado aos dependentes de segurado que não recebia benefíci
         </legislacoes>
     </servico>
     <servico>
-        <id>utilizar-imovel-da-uniao-sistema-sisrei</id>
-        <dbId>37</dbId>
-        <nome>Utilizar imóvel da União - Sistema SISREI</nome>
-        <sigla>SISREI</sigla>
-        <nomes-populares>
-            <item id="556">imóveis públicos para entes públicos ou entidas sem fins lucrativos</item>
-        </nomes-populares>
-        <descricao>Este serviço permite solicitar a utilização de imóvel vago ou a regularização de um imóvel que já está sendo utilizado por entes públicos (federais, estaduais e municipais) e entidades sem fins lucrativos. O atendimento da demanda observará a legislação vigente e o instrumento de destinação a ser aplicado dependerá de cada caso.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="679">
-                <tipo>Ente público (federal, estadual e municipal) e entidade sem fins lucrativos</tipo>
-                <requisitos>Que tenha regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="0" unidade="meses"/>
-            <descricao>Não há prazo estipulado</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="1955">
-                <titulo>Solicitar utilização ou regularização</titulo>
-                <descricao>O interessado deve acessar o sistema SISREI e preencher os dados solicitados.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1901">CPF do responsável legal</item>
-                        <item id="1902">Documento comprobatório de responsabilidade legal</item>
-                        <item id="1903">RG do responsável legal</item>
-                        <item id="1904">CNPJ do órgão ou entidade</item>
-                        <item id="1905">RIP do imóvel</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2434" tipo="web">
-                            <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1956">
-                <titulo>Receber resposta da SPU</titulo>
-                <descricao>A SPU responderá à solicitação</descricao>
-                <documentos>
-                    <default>
-                        <item id="1906">CPF do responsável legal</item>
-                        <item id="1907">RIP do imóvel</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2435" tipo="web">
-                            <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="2218">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="2219">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Patrimônio</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1628">prédio público</item>
-            <item id="1629">SISREI</item>
-            <item id="1630">terra pública</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="521">...</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-pensao-por-morte-para-dependentes-de-trabalhador-que-recebia-beneficio-anterior-do-inss</id>
         <dbId>51</dbId>
         <nome>Obter pensão por morte para dependentes de trabalhador que recebia benefício anterior do INSS</nome>
@@ -2777,6 +2802,113 @@ Este caminho é para os dependentes de segurado que já recebia algum benefício
         <legislacoes>
             <item id="485">[Portaria Normativa de 20 de fevereiro de 2014](http://siteprouni.mec.gov.br/doc/Portaria%20normativa%206%20de%2026%20de%20fevereiro%202014%20-%20atualizada.pdf)</item>
             <item id="486">[LEI No 11.096, DE 13 DE JANEIRO DE 2005.](https://www.planalto.gov.br/ccivil_03/_Ato2004-2006/2005/Lei/L11096.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-imovel-da-uniao-para-uso-da-administracao-publica-federal-e-entidades-sem-fins-lucrativos</id>
+        <dbId>37</dbId>
+        <nome>Obter Imóvel da União para Uso da Administração Pública Federal e Entidades sem Fins Lucrativos</nome>
+        <sigla>SISREI</sigla>
+        <nomes-populares>
+            <item id="556">imóveis públicos para entes públicos ou entidas sem fins lucrativos</item>
+        </nomes-populares>
+        <descricao>Obter a utilização de imóvel administrado pela Secretaria do Patrimônio da União.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Bens de Uso da Administração Pública&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Anna Cristina de Moura Cruz&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;anna.cruz@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1967&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="679">
+                <tipo>Ente público (federal, estadual e municipal) e entidade sem fins lucrativos</tipo>
+                <requisitos>Que tenha regularidade fiscal, trabalhista e previdênciária, bem como outros requisitos a depender do instrumento de destinação ou regularização.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="0" unidade="meses"/>
+            <descricao>A definir</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1955">
+                <titulo>Solicitar utilização ou regularização</titulo>
+                <descricao>O interessado deve acessar o sistema SISREI e preencher os dados solicitados.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1901">CPF do responsável legal</item>
+                        <item id="1902">Documento comprobatório de responsabilidade legal</item>
+                        <item id="1903">RG do responsável legal</item>
+                        <item id="1904">CNPJ do órgão ou entidade</item>
+                        <item id="1905">RIP do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2434" tipo="web">
+                            <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1956">
+                <titulo>Receber resposta da SPU</titulo>
+                <descricao>A SPU responderá à solicitação</descricao>
+                <documentos>
+                    <default>
+                        <item id="1906">CPF do responsável legal</item>
+                        <item id="1907">RIP do imóvel</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2435" tipo="web">
+                            <descricao>https://sisrei.spu.planejamento.gov.br/sisrei/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="2218">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="2219">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Patrimônio</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3816">utilizar</item>
+            <item id="3817">ocupar</item>
+            <item id="3818">disponibilidade</item>
+            <item id="3819">uso</item>
+            <item id="3820">imóvel</item>
+            <item id="3821">solicitar</item>
+            <item id="3822">autorização</item>
+            <item id="3823">união</item>
+            <item id="3824">cessão</item>
+            <item id="3825">entrega</item>
+            <item id="3826">destinação</item>
+            <item id="3827">solicitação</item>
+            <item id="3828">área</item>
+            <item id="3829">terreno</item>
+            <item id="3830">prédio</item>
+            <item id="3831">sisrei</item>
+            <item id="3832">vago</item>
+            <item id="1628">regularização</item>
+            <item id="1629">utilização</item>
+            <item id="1630">regularização</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1143">[Decreto nº 3.725, de 10 de janeiro de 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3725.htm)</item>
+            <item id="1144">[Portaria SPU nº 318, 18/12/2014](http://www.planejamento.gov.br/assuntos/patrimonio-da-uniao/legislacao/portarias/portarias-arquivos-pdf/portaria-318-2014-regulamenta-sisrei.pdf)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -35843,150 +35975,6 @@ Através do [Fale Conosco](http://mec.cube.call.inf.br/auth-web/login?redirect_u
         </legislacoes>
     </servico>
     <servico>
-        <id>atualizar-cadastro-de-ocupante-de-imovel-da-uniao-oriundo-da-rffsa</id>
-        <dbId>1128</dbId>
-        <nome>Atualizar cadastro de ocupante de imóvel da União oriundo da RFFSA</nome>
-        <sigla></sigla>
-        <descricao>Este serviço permite solicitar convalidação da desapropriação; acordo com renúncia total dos valores devidos referentes a área desapropriada e acordo com renúncia dos valores devidos referentes a parcela da área desapropriada, nos termos do § 2º do art. 8º da Lei nº 12.348, de 2010.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1416">
-                <tipo>Pessoa física ou jurídica</tipo>
-                <requisitos>Envolvidas em ações de desapropriação de imóveis da antiga RFFSA</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3025">
-                <titulo>Fazer o requerimento</titulo>
-                <descricao>Interessado entrega [MODELO DE REQUERIMENTO DE CONVALIDAÇÃO E ACORDO EM AÇÕES DE DESAPROPRIAÇÃO DE IMÓVEIS DA EXTINTA RFFSA](http://www.planejamento.gov.br/assuntos/gestao/patrimonio-da-uniao/isencao/formulario-convalidacao-atual.doc) preenchido e com a documentação exigida.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4046">Requerimento de Convalidação e Acordo em Ações de Desapropriação de Imóveis da Extinta RFFSA</item>
-                        <item id="4047">Planta do imóvel</item>
-                        <item id="4048">Certidões do imóvel</item>
-                        <item id="4049">Fotos do imóvel</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4050" tipo="presencial">
-                            <descricao>Secretaria do Patrimônio da União de jurisdição do imóvel. Encontre [aqui](http://www.planejamento.gov.br/assuntos/patrimonio-da-uniao/regionais) o endereço.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3086">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3087">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="3088">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3089">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3573">RFFSA</item>
-            <item id="3574">acordo</item>
-            <item id="3575">convalidar</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1076">[LEI Nº 12.348, DE 15 DE DEZEMBRO DE 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>renegociar-dividas-junto-a-extinta-rffsa</id>
-        <dbId>1129</dbId>
-        <nome>Renegociar dívidas junto à extinta RFFSA</nome>
-        <sigla></sigla>
-        <descricao>Este serviço permite solicitar Renegociação das dívidas e/ou saldos devedores com fundamento no art. 28 da Lei nº 11.483, de 31 de maio de 2007; Extinção das dívidas e/ou saldos devedores do contrato com fundamento no art. 7º da Lei nº 12.348, de 15 de dezembro de julho de 2010; Termo de quitação do contrato; Emissão de contrato definitivo de compra e venda ou cessão de direitos; Substituição do beneficiário do contrato de compra e venda ou cessão de direitos; Liquidação da dívida e/ou saldo devedor; Regularização do imóvel em favor de ocupante sem vínculo com a extinta RFFSA e outros serviços.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1417">
-                <tipo>Pessoas físicas e jurídicas</tipo>
-                <requisitos>Que tenham débitos junto à extinta RFFSA</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3026">
-                <titulo>Requerer renegociação</titulo>
-                <descricao>O interessado entrega o formulário [RECADASTRAMENTO E REQUERIMENTO CARTEIRA IMOBILIÁRIA DA EXTINTA RFFSA](http://www.planejamento.gov.br/assuntos/gestao/patrimonio-da-uniao/isencao/formulario-de-recadastramento-e-requerimento.pdf), acompanhado da documentação na Secretaria do Patrimônio da União de jurisdição do imóvel.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4050">Formulário Recadastramento e Requerimento Carteira Imobiliária da Extinta RFFSA</item>
-                        <item id="4051">Carteira de Identidade (RG)</item>
-                        <item id="4052">CPF ou CNPJ</item>
-                        <item id="4053">Procuração do representante legal</item>
-                        <item id="4054">Registro na Junta Comercial</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4051" tipo="presencial">
-                            <descricao>Secretaria do Patrimônio da União de jurisdição do imóvel. Encontre [aqui](http://www.planejamento.gov.br/assuntos/patrimonio-da-uniao/regionais) o endereço.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="3090">Empresas</item>
-            <item idSegmento="1" idServicoSegmento="3091">Cidadãos</item>
-            <item idSegmento="4" idServicoSegmento="3092">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3093">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3576">renegociação de dívidas</item>
-            <item id="3577">RFFSA</item>
-            <item id="3578">imóvel da união</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1077">[LEI Nº 11.483, DE 31 DE MAIO DE 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11483.htm)</item>
-            <item id="1078">[LEI Nº 12.348, DE 15 DE DEZEMBRO DE 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-apoio-e-assistencia-tecnica-do-plano-de-acoes-articuladas</id>
         <dbId>1132</dbId>
         <nome>Obter apoio e assistência técnica do Plano de Ações Articuladas</nome>
@@ -36335,6 +36323,243 @@ Estrutura-se em quatro dimensões de análise:
         </legislacoes>
     </servico>
     <servico>
+        <id>atualizar-cadastro-de-ocupante-de-imovel-da-uniao-oriundo-da-rffsa</id>
+        <dbId>1128</dbId>
+        <nome>Atualizar cadastro de ocupante de imóvel da União oriundo da RFFSA</nome>
+        <sigla></sigla>
+        <descricao>Atualizar o cadastro do atual ocupante de imóvel da União oriundo da RFFSA.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Departamento de Destinação Patrimonial&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Dinarte Vaz&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;dinarte.vaz@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1077&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1416">
+                <tipo>Pessoa física ou jurídica</tipo>
+                <requisitos>Que possua contrato de Compra e Venda ou de Locação com a extinta RFFSA ou sucessor autorizado/ocupante atual do imóvel.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3025">
+                <titulo>Preencher o requerimento</titulo>
+                <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="485" descricao="Pessoa Física">
+                        <documento>
+                            <id>4245</id>
+                            <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4244</id>
+                            <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="486" descricao="Pessoa Jurídica">
+                        <documento>
+                            <id>4247</id>
+                            <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4246</id>
+                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4050" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=113#dados-documentos</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3114">
+                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](www.patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4109" tipo="web">
+                            <descricao>www.patrimoniodetodos.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3086">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3087">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3088">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3089">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3573">RFFSA</item>
+            <item id="3574">rffsa</item>
+            <item id="3575">ex-rffsa</item>
+            <item id="3761">contrato</item>
+            <item id="3762">ocupante</item>
+            <item id="3763">rede</item>
+            <item id="3764">dados</item>
+            <item id="3765">ferroviária</item>
+            <item id="3766">contribuinte</item>
+            <item id="3767">atualização</item>
+            <item id="3768">regularização</item>
+            <item id="3769">cadastro</item>
+            <item id="3770">atualização</item>
+            <item id="3771">atualizar</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1076">[Lei nº 12.348, de 15 de dezembro de 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>regularizar-dividas-de-imovel-da-uniao-oriundo-da-rffsa</id>
+        <dbId>1129</dbId>
+        <nome>Regularizar dívidas de imóvel da União oriundo da RFFSA</nome>
+        <sigla></sigla>
+        <descricao>Regularizar dívidas relativas à utilização de imóvel da União oriundos da RFFSA.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;hilton.ramalho@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1750&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1417">
+                <tipo>Pessoa física ou jurídica</tipo>
+                <requisitos>Que tenha vínculo regular de utilização de imóvel da União.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="30" max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3026">
+                <titulo>Preencher o requerimento</titulo>
+                <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="490" descricao="Pessoa Física">
+                        <documento>
+                            <id>4271</id>
+                            <descricao>Certidão negativa de imóveis retirada em Cartório de Registro de Imóveis</descricao>
+                        </documento>
+                        <documento>
+                            <id>4270</id>
+                            <descricao>Documento de comprovação da situação de carência ou baixa renda do responsável e, quando for o caso, dos familiares que com ele residam.</descricao>
+                        </documento>
+                        <documento>
+                            <id>4269</id>
+                            <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4268</id>
+                            <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="491" descricao="Pessoa Jurídica">
+                        <documento>
+                            <id>4273</id>
+                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4272</id>
+                            <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4051" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=112#dados-documentos</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3118">
+                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](www.patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4113" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3090">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3091">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="3092">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3093">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Patrimônio</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3576">renegociação</item>
+            <item id="3577">liquidação</item>
+            <item id="3578">extinção</item>
+            <item id="3792">saldo</item>
+            <item id="3793">devedor</item>
+            <item id="3794">rffsa</item>
+            <item id="3795">ex-rffsa</item>
+            <item id="3796">rede</item>
+            <item id="3797">ferroviária</item>
+            <item id="3798">operacionais</item>
+            <item id="3799">locação</item>
+            <item id="3800">alienação</item>
+            <item id="3801">dívida</item>
+            <item id="3802">quitar</item>
+            <item id="3803">quitação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1078">[Lei nº 12.348, de 15 de dezembro de 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
+            <item id="1077">[Lei nº 11.483, de 31 de maio de 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11483.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
         <id>obter-vistos-de-entrada-no-brasil</id>
         <dbId>1094</dbId>
         <nome>Obter vistos de entrada no Brasil</nome>
@@ -36484,6 +36709,115 @@ Leia atentamente as instruções e **clique no botão *iniciar novo requerimento
         </palavras-chave>
         <legislacoes>
             <item id="1038">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980](http://www.planalto.gov.br/ccivil_03/leis/L6815.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>rever-area-e-valor-de-avaliacao-de-imovel-da-uniao</id>
+        <dbId>1124</dbId>
+        <nome>Rever Área e Valor de Avaliação de Imóvel da União</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="894">Requerimento de Revisão de Área e Valor da Avaliação</item>
+        </nomes-populares>
+        <descricao>Corrigir o valor do metro quadrado, número de testadas, dimensão, fração ideal, localização (urbana/rural), unificação ou desmembramento de imóvel da União cadastrado na Secretaria do Patrimônio da União, bem como o valor de avaliação.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Incorporação de Patrimônio&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel Carsoso &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;samuel.cardoso@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1022&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1411">
+                <tipo>Pessoa Física ou Jurídica</tipo>
+                <requisitos>Que seja titular de imóvel da União e tenha capacidade para fins de processo administrativo e que tenha qualidade de interessado, nos termos dos artigos 9º e 10, da Lei nº 9.784, de 1999.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="dias-corridos"/>
+            <descricao>A definir</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3016">
+                <titulo>Preencher o requerimento</titulo>
+                <descricao>Acesse o [Portal da SPU](patrimoniodetodos.gov.br), insira o nº de RIP e CPF ou CNPJ, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento. Preencha as informações do requerimento e anexe os documentos solicitados.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="503" descricao="Pessoa Jurídica">
+                        <documento>
+                            <id>4363</id>
+                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc.)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4362</id>
+                            <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4041" tipo="web">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/revisaoValorArea?servico=36</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3017">
+                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](patrimoniodetodos.gov.br), a partir da informação do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4042" tipo="web">
+                            <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3070">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3071">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="3072">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3073">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Transparência</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3561">dimensões</item>
+            <item id="3560">corrigir</item>
+            <item id="3562">valor</item>
+            <item id="3563">revisão</item>
+            <item id="3807">cálculo</item>
+            <item id="3808">ocupação</item>
+            <item id="3809">foro</item>
+            <item id="3810">diferença</item>
+            <item id="3811">área</item>
+            <item id="3812">unificação</item>
+            <item id="3813">testadas</item>
+            <item id="3814">fracionamento</item>
+            <item id="3815">encravada</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1072">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+            <item id="1145">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -36842,281 +37176,6 @@ Processos envolvidos: Outorga de Radiodifusão Ancilar, Aprovação de Local e E
         </legislacoes>
     </servico>
     <servico>
-        <id>consultar-e-emitir-darf-de-parcelamento-de-debitos-sobre-imovel-da-uniao-concedidos-ate-julho-de-2009</id>
-        <dbId>1123</dbId>
-        <nome>Consultar e Emitir DARF de Parcelamento de Débitos sobre Imóvel da União Concedidos até julho de 2009</nome>
-        <sigla></sigla>
-        <descricao>Os usuários de Imóveis da União que foram beneficiados pelo parcelamento de dívidas até julho de 2009 encontrarão aqui o lugar para emissão de seus DARF, bem como outras informações dos débitos, dos créditos e dos imóveis envolvidos no referido parcelamento.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1410">
-                <tipo>Pessoas físicas e jurídicas</tipo>
-                <requisitos>Que possua débitos objeto de parcelamento junto à SPU</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3014">
-                <titulo>Inserir dados</titulo>
-                <descricao>Escolha entre consulta e emissão de DARF e informe o número do parcelamento, CPF ou CNPJ</descricao>
-                <documentos>
-                    <default>
-                        <item id="4011">Número do parcelamento; ou</item>
-                        <item id="4012">CPF; ou</item>
-                        <item id="4013">CNPJ</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4039" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/39</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3015">
-                <titulo>Pagar a DARF (para emissão de DARF)</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4014">DARF</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4040" tipo="presencial">
-                            <descricao>Rede bancária</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3066">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3067">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="3068">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3069">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3556">DARF</item>
-            <item id="3557">parcelamento</item>
-            <item id="3558">imóvel da União</item>
-            <item id="3559">SIAPA</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1071">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>corrigir-dimensoes-de-imovel-da-uniao</id>
-        <dbId>1124</dbId>
-        <nome>Corrigir Dimensões de Imóvel da União</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="894">Requerimento de Revisão de Área e Valor da Avaliação</item>
-        </nomes-populares>
-        <descricao>Este serviço permite solicitar a revisão do valor do metro quadrado, número de testadas, dimensão, fração ideal, localização (urbana/rural), unificação ou desmembramento de imóvel da União cadastrado na SPU.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1411">
-                <tipo>Pessoa Física ou Jurídica</tipo>
-                <requisitos>Que seja titular de imóvel da União</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="30" max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3016">
-                <titulo>Acessar o sistema</titulo>
-                <descricao>Você deve informar o CPF ou CNPJ, o número de RIP do imóvel e marcar o *"capcha"* confirmando não ser um robô.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4015">CPF ou CPNJ</item>
-                        <item id="4016">Número de Registro Imobiliário Patrimonial (RIP)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4041" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/revisaoValorArea?servico=36</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3017">
-                <titulo>Preencher dados do pedido</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4017">Documentação comprobatória que ampare o pedido de correção</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4042" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/revisaoValorArea?servico=36</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3018">
-                <titulo>Receber resultado</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4018">CPF ou CNPJ</item>
-                        <item id="4019">Número do pedido</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4043" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="3070">Empresas</item>
-            <item idSegmento="1" idServicoSegmento="3071">Cidadãos</item>
-            <item idSegmento="4" idServicoSegmento="3072">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3073">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Fiscalização do Estado</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Transparência</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3560">Corrigir área</item>
-            <item id="3561">dimensões</item>
-            <item id="3562">imóvel da união</item>
-            <item id="3563">siapa</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1072">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>consultar-dados-cadastrais-de-imovel-da-uniao</id>
-        <dbId>1127</dbId>
-        <nome>Consultar dados cadastrais de imóvel da União</nome>
-        <sigla></sigla>
-        <descricao>Este serviço permite consultar os dados cadastrais do imóvel, suas benfeitorias e utilizações ativas, bem como as informações do seu responsável atual. Serão apresentadas informações gerais e técnicas de endereço, das testadas e do local de endereçamento das correspondências.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1415">
-                <tipo>Pessoa física ou jurídica</tipo>
-                <requisitos>Que necessite verificar os dados cadastrais de um determinado imóvel.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3024">
-                <titulo>Realizar consulta</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4043">Número do Registro Imobiliário Patrimonial (RIP SIAPA); ou</item>
-                        <item id="4044">CPF ou CNPJ do responsável pelo imóvel; ou</item>
-                        <item id="4045">Nome do responsável pelo imóvel (Ao menos duas primeiras palavras)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4049" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/38</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3082">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3083">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="3084">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="3085">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Transparência</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3570">Imóvel da união</item>
-            <item id="3571">siapa</item>
-            <item id="3572">dados cadastrais</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1075">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-autorizacao-de-uso-de-imovel-da-uniao-por-entes-publicos-ou-entidades-sem-fins-lucrativos</id>
         <dbId>1131</dbId>
         <nome>Obter autorização de uso de imóvel da União por entes públicos ou entidades sem fins lucrativos</nome>
@@ -37452,6 +37511,98 @@ Ou nas [Secretarias da Fazenda](https://www.confaz.fazenda.gov.br/menu-de-apoio/
         </palavras-chave>
         <legislacoes>
             <item id="1070">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-dados-cadastrais-de-imovel-da-uniao</id>
+        <dbId>1127</dbId>
+        <nome>Consultar dados cadastrais de imóvel da União</nome>
+        <sigla></sigla>
+        <descricao>Verificar os dados cadastrais de imóvel administrado pela Secretaria do Patrimônio da União - SPU, suas benfeitorias e utilizações ativas, bem como as informações do responsável.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Incorporação de Patrimônio&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel da Silva Cardoso&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;samuel.cardoso@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1022&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1415">
+                <tipo>Pessoa física ou Jurídica</tipo>
+                <requisitos>Que necessite verificar os dados cadastrais de imóvel sob gestão da Secretaria do Patrimônio da União.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3024">
+                <titulo>Preencher os dados para a consulta</titulo>
+                <descricao>Informe o RIP, CPF, CNPJ ou nome do responsável pelo imóvel no [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/38), marque OK.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4049" tipo="web-consultar">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3107">
+                <titulo>Verificar os dados da consulta</titulo>
+                <descricao>Verifique os dados cadastrais apresentados na consulta. Se necessário, explore as informações sobre benfeitorias ou utilizações.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4102" tipo="web-consultar">
+                            <descricao>http://patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3082">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3083">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3084">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3085">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Habitação</item>
+            <item>Habitação Urbana</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Transparência</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3570">consulta</item>
+            <item id="3571">dados</item>
+            <item id="3572">cadastrais</item>
+            <item id="3745">benfeitorias</item>
+            <item id="3746">responsável</item>
+            <item id="3747">endereço</item>
+            <item id="3748">endereçamento</item>
+            <item id="3749">cadastro</item>
+            <item id="3750">situação do imóvel</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1129">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -40194,77 +40345,6 @@ Fone: (61) 3221 8500</contato>
         </legislacoes>
     </servico>
     <servico>
-        <id>consultar-creditos-e-debitos-oriundos-de-utilizacao-de-imovel-da-uniao</id>
-        <dbId>1121</dbId>
-        <nome>Consultar Créditos e Débitos oriundos de Utilização de Imóvel da União</nome>
-        <sigla></sigla>
-        <descricao>Este serviço permite consultar a relação dos débitos lançados para o imóvel dominial, classificados por exercício e por tipo de rubrica, as datas em que os mesmos foram pagos e os valores dos respectivos pagamentos. Permite também a emissão de DARF individualizado por exercício e por tipo de rubrica, que poderá ser utilizado para recolhimento dos valores nele lançados na rede bancária autorizada.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1408">
-                <tipo>Pessoa física ou jurídica</tipo>
-                <requisitos>Que necessite verificar a situação de débitos de um determinado imóvel.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3011">
-                <titulo>Realizar busca</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4005">Número do RIP</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4036" tipo="web">
-                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/34</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
-            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="3058">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3059">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="3060">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3061">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Compras governamentais</item>
-            <item>Fiscalização do Estado</item>
-            <item>Patrimônio</item>
-            <item>Administração financeira</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Transparência</item>
-            <item>Patrimônio da União</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3549">Débitos</item>
-            <item id="3550">créditos</item>
-            <item id="3551">imóvel da união</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1069">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>habilitar-se-no-sistema-de-controle-de-atividades-financeiras</id>
         <dbId>1006</dbId>
         <nome>Habilitar-se no Sistema de Controle de Atividades Financeiras</nome>
@@ -41662,6 +41742,39 @@ Na prestação desse serviço público (julgar recursos), há diversas interaç�
         </areas-de-interesse>
     </servico>
     <servico>
+        <id>apresentar-recurso-em-julgamento-na-aplicacao-de-legislacao-tributaria-em-segunda-instancia</id>
+        <dbId>1148</dbId>
+        <nome>Apresentar recurso em julgamento na aplicação de legislação tributária em segunda instância</nome>
+        <sigla></sigla>
+        <descricao>O Conselho Administrativo de Recursos Fiscais (CARF) julga os recursos de ofício e voluntário de decisão de primeira instância, bem como os recursos de natureza especial, que tratem sobre a aplicação da legislação referente a tributos administrados pela Secretaria da Receita Federal do Brasil.
+Na prestação desse serviço público (julgar recursos), há diversas interações possíveis, que surgem a partir de possíveis demandas dos recorrentes durante a tramitação do processo e estão disciplinadas na [carta de serviços do CARF](https://idg.carf.fazenda.gov.br/acesso-a-informacao/institucional/carta-de-servicos/carta-de-servicos)</descricao>
+        <contato>[Fale Conosco](http://idg.carf.fazenda.gov.br/servicos/contato)</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas/>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+    </servico>
+    <servico>
         <id>consultar-debitos-inscritos-em-divida-ativa-da-uniao</id>
         <dbId>1147</dbId>
         <nome>Consultar débitos inscritos em dívida ativa da União</nome>
@@ -41799,39 +41912,6 @@ III. O detalhamento dos débitos do Simples Nacional não constam no Sistema da 
     </servico>
     <servico>
         <id>apresentar-recurso-em-julgamento-na-aplicacao-de-legislacao-tributaria-em-segunda-instancia</id>
-        <dbId>1148</dbId>
-        <nome>Apresentar recurso em julgamento na aplicação de legislação tributária em segunda instância</nome>
-        <sigla></sigla>
-        <descricao>O Conselho Administrativo de Recursos Fiscais (CARF) julga os recursos de ofício e voluntário de decisão de primeira instância, bem como os recursos de natureza especial, que tratem sobre a aplicação da legislação referente a tributos administrados pela Secretaria da Receita Federal do Brasil.
-Na prestação desse serviço público (julgar recursos), há diversas interações possíveis, que surgem a partir de possíveis demandas dos recorrentes durante a tramitação do processo e estão disciplinadas na [carta de serviços do CARF](https://idg.carf.fazenda.gov.br/acesso-a-informacao/institucional/carta-de-servicos/carta-de-servicos)</descricao>
-        <contato>[Fale Conosco](http://idg.carf.fazenda.gov.br/servicos/contato)</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <tempo-total-estimado>
-            <ate max="12" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas/>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
-            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
-        </orgao>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Fiscalização do Estado</item>
-            <item>Administração financeira</item>
-            <item>Encargos financeiros</item>
-            <item>Finanças</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Finanças pessoais</item>
-            <item>Tributação</item>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-    </servico>
-    <servico>
-        <id>apresentar-recurso-em-julgamento-na-aplicacao-de-legislacao-tributaria-em-segunda-instancia</id>
         <dbId>1142</dbId>
         <nome>Apresentar recurso em julgamento na aplicação de legislação tributária em segunda instância</nome>
         <sigla></sigla>
@@ -41936,150 +42016,6 @@ Na prestação desse serviço público (julgar recursos), há diversas interaç�
         </palavras-chave>
         <legislacoes>
             <item id="1111">-</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>apresentar-recurso-em-julgamento-na-aplicacao-de-legislacao-tributaria-em-segunda-instancia</id>
-        <dbId>1149</dbId>
-        <nome>Apresentar recurso em julgamento na aplicação de legislação tributária em segunda instância</nome>
-        <sigla></sigla>
-        <descricao>O Conselho Administrativo de Recursos Fiscais (CARF) julga os recursos de ofício e voluntário de decisão de primeira instância, bem como os recursos de natureza especial, que tratem sobre a aplicação da legislação referente a tributos administrados pela Secretaria da Receita Federal do Brasil.
-Na prestação desse serviço público (julgar recursos), há diversas interações possíveis, que surgem a partir de possíveis demandas dos recorrentes durante a tramitação do processo e estão disciplinadas na [carta de serviços do CARF](https://idg.carf.fazenda.gov.br/acesso-a-informacao/institucional/carta-de-servicos/carta-de-servicos)</descricao>
-        <contato>[Fale Conosco](http://idg.carf.fazenda.gov.br/servicos/contato)</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <solicitantes>
-            <solicitante id="1448">
-                <tipo>Pessoas físicas e jurídicas</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="12" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3102">
-                <titulo>Pedir vista dos autos</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4139">Carteira de identidade (RG)</item>
-                        <item id="4140">Documento comprobatório de que é representante legal, responsável legal ou patrono (se for o caso)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4090" tipo="presencial">
-                            <descricao>Setor Comercial Sul - Quadra 01, Bloco 'J', Ed. Alvorada.       
-
-CEP: 70.396-900       
-
-Brasília - DF       
-(Dias úteis, de 09h às 18h)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4091" tipo="e-mail">
-                            <descricao>atendimento.carf@carf.fazenda.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3103">
-                <titulo>Verificar pautas</titulo>
-                <descricao>Tomar conhecimento da "Publicação de Pautas"</descricao>
-                <documentos>
-                    <default>
-                        <item id="4141">Diário Oficial</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4092" tipo="web">
-                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3104">
-                <titulo>Protocolar sustentação oral</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4142">Procuração do representante legal</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4093" tipo="web">
-                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4094" tipo="presencial">
-                            <descricao>Em uma [Unidade de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3105">
-                <titulo>Receber resultado</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4143">Diário Oficial</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4095" tipo="web">
-                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
-            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="4" idServicoSegmento="3171">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="2" idServicoSegmento="3172">Órgãos e entidades públicas</item>
-            <item idSegmento="1" idServicoSegmento="3173">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="3174">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração</item>
-            <item>Fiscalização do Estado</item>
-            <item>Administração financeira</item>
-            <item>Encargos financeiros</item>
-            <item>Finanças</item>
-            <item>Administração e Gestão Pública</item>
-            <item>Finanças pessoais</item>
-            <item>Tributação</item>
-            <item>Economia e Finanças</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3681">recurso</item>
-            <item id="3682">tributo</item>
-            <item id="3683">imposto</item>
-            <item id="3684">malha fina</item>
-            <item id="3685">julgamento</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1112">-</item>
         </legislacoes>
     </servico>
     <servico>
@@ -42324,58 +42260,175 @@ Brasília - DF
         </legislacoes>
     </servico>
     <servico>
-        <id>alterar-regime-ou-contrato-de-utilizacao-de-imovel-da-uniao</id>
-        <dbId>31</dbId>
-        <nome>Alterar Regime ou Contrato de Utilização de Imóvel da União</nome>
+        <id>apresentar-recurso-em-julgamento-na-aplicacao-de-legislacao-tributaria-em-segunda-instancia</id>
+        <dbId>1149</dbId>
+        <nome>Apresentar recurso em julgamento na aplicação de legislação tributária em segunda instância</nome>
         <sigla></sigla>
-        <descricao>Possibilita requerer alteração de regime (inscrição de ocupação, aforamento, cessão) ou tipo de contrato de utilização de imóvel da União administrado pela Secretaria do Patrimônio da União - SPU. O instrumento de destinação a ser aplicado dependerá de cada caso e observará a legislação vigente.</descricao>
-        <contato>&lt;p&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/p&gt; &lt;p&gt;Responsável: Valéria Soares &lt;/p&gt;&lt;p&gt;E-mail: valeria.soares@planejamento.gov.br&lt;/p&gt;&lt;p&gt; Endereço: Esplanada dos Ministérios&lt;/p&gt; &lt;p&gt; Bloco C, 2º andar, Brasília-DF &lt;/p&gt;&lt;p&gt;CEP: 70.046-900 &lt;/p&gt; &lt;p&gt;Tel: 55 (61) 2020-1944&lt;/p&gt;</contato>
+        <descricao>O Conselho Administrativo de Recursos Fiscais (CARF) julga os recursos de ofício e voluntário de decisão de primeira instância, bem como os recursos de natureza especial, que tratem sobre a aplicação da legislação referente a tributos administrados pela Secretaria da Receita Federal do Brasil.
+Na prestação desse serviço público (julgar recursos), há diversas interações possíveis, que surgem a partir de possíveis demandas dos recorrentes durante a tramitação do processo e estão disciplinadas na [carta de serviços do CARF](https://idg.carf.fazenda.gov.br/acesso-a-informacao/institucional/carta-de-servicos/carta-de-servicos)</descricao>
+        <contato>[Fale Conosco](http://idg.carf.fazenda.gov.br/servicos/contato)</contato>
         <gratuito>true</gratuito>
         <porcentagem-manual>false</porcentagem-manual>
         <solicitantes>
-            <solicitante id="676">
-                <tipo>Pessoa Física ou Jurídica</tipo>
-                <requisitos>Que utilize imóvel da SPU e tenha capacidade para fins de processo administrativo e que tenha qualidade de interessado, nos termos dos artigos 9º e 10, da Lei nº 9.784, de 1999.</requisitos>
+            <solicitante id="1448">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <ate max="0" unidade="meses"/>
-            <descricao>A definir</descricao>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="1947">
-                <titulo>Preencher o requerimento</titulo>
-                <descricao>Preencha os campos solicitados no Portal da SPU (patrimoniodetodos.gov.br), insira o RIP e CPF ou CNPJ, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço.</descricao>
+            <etapa id="3102">
+                <titulo>Pedir vista dos autos</titulo>
+                <descricao></descricao>
                 <documentos>
-                    <default/>
-                    <caso id="469" descricao="Pessoa Jurídica">
-                        <documento>
-                            <id>4191</id>
-                            <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                        </documento>
-                        <documento>
-                            <id>4190</id>
-                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
-                        </documento>
-                    </caso>
+                    <default>
+                        <item id="4139">Carteira de identidade (RG)</item>
+                        <item id="4140">Documento comprobatório de que é representante legal, responsável legal ou patrono (se for o caso)</item>
+                    </default>
                 </documentos>
                 <custos>
                     <default/>
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2426" tipo="web">
-                            <descricao>http://patrimoniodetodos.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
+                        <canal-de-prestacao id="4090" tipo="presencial">
+                            <descricao>Setor Comercial Sul - Quadra 01, Bloco 'J', Ed. Alvorada.       
+
+CEP: 70.396-900       
+
+Brasília - DF       
+(Dias úteis, de 09h às 18h)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4091" tipo="e-mail">
+                            <descricao>atendimento.carf@carf.fazenda.gov.br</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
             </etapa>
-            <etapa id="1948">
-                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
-                <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no portal da SPU (patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <etapa id="3103">
+                <titulo>Verificar pautas</titulo>
+                <descricao>Tomar conhecimento da "Publicação de Pautas"</descricao>
+                <documentos>
+                    <default>
+                        <item id="4141">Diário Oficial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4092" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3104">
+                <titulo>Protocolar sustentação oral</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4142">Procuração do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4093" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4094" tipo="presencial">
+                            <descricao>Em uma [Unidade de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3105">
+                <titulo>Receber resultado</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4143">Diário Oficial</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4095" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="4" idServicoSegmento="3171">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3172">Órgãos e entidades públicas</item>
+            <item idSegmento="1" idServicoSegmento="3173">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3174">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Fiscalização do Estado</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3681">recurso</item>
+            <item id="3682">tributo</item>
+            <item id="3683">imposto</item>
+            <item id="3684">malha fina</item>
+            <item id="3685">julgamento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1112">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-historico-financeiro-de-imovel-da-uniao</id>
+        <dbId>1121</dbId>
+        <nome>Consultar Histórico Financeiro de Imóvel da União</nome>
+        <sigla></sigla>
+        <descricao>Verificar o histórico de débitos lançados para imóvel administrado pela Secretaria do Patrimônio da União - SPU, classificados por exercício e por tipo de rubrica, as datas em que os mesmos foram pagos e os valores dos respectivos pagamentos, bem como os valores em cobrança.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;gilberto.rezende@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1802&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1408">
+                <tipo>Pessoa Física ou Jurídica</tipo>
+                <requisitos>Que necessite verificar a situação de débitos de imóvel administrado pela Secretaria do Patrimônio da União - SPU.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3011">
+                <titulo>Preencher os dados para consulta</titulo>
+                <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/34), informe o RIP e clique em OK.</descricao>
                 <documentos>
                     <default/>
                 </documentos>
@@ -42384,8 +42437,25 @@ Brasília - DF
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="2427" tipo="web">
-                            <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                        <canal-de-prestacao id="4036" tipo="web-consultar">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/34</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3108">
+                <titulo>Verificar a relação de débitos</titulo>
+                <descricao>Verifique a relação de débitos e a respectiva situação. Se necessário, detalhe as cotas para verificar a composição do débito.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4103" tipo="web-consultar">
+                            <descricao>http://patrimoniodetodos.gov.br/#/conteudo/34</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -42395,34 +42465,632 @@ Brasília - DF
             <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2213">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2214">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2215">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="1" idServicoSegmento="3058">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3059">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3060">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3061">Órgãos e entidades públicas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
-            <item>Habitação</item>
+            <item>Administração</item>
+            <item>Compras governamentais</item>
+            <item>Fiscalização do Estado</item>
             <item>Patrimônio</item>
+            <item>Urbanismo</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Transparência</item>
             <item>Patrimônio da União</item>
-            <item>Desenvolvimento Rural</item>
-            <item>Desenvolvimento Urbano</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="1622">trocar regime</item>
-            <item id="1623">mudar contrato</item>
-            <item id="1624">usar imóvel para outro fim</item>
-            <item id="3713">uso</item>
-            <item id="3714">destinação</item>
-            <item id="3715">utilização</item>
-            <item id="3716">taus</item>
-            <item id="3717">cuem</item>
-            <item id="3718">cdru</item>
-            <item id="3719">alterar</item>
-            <item id="3720">mudar</item>
-            <item id="3721">permuta</item>
-            <item id="3722">regime</item>
+            <item id="3549">Débitos</item>
+            <item id="3550">financeiros</item>
+            <item id="3551">darf</item>
+            <item id="3751">pagamento</item>
+            <item id="3752">regularização</item>
+            <item id="3753">pendências</item>
+            <item id="3754">histórico</item>
         </palavras-chave>
         <legislacoes>
-            <item id="1127">[Lei nº 9.784 , de 29 de janeiro de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+            <item id="1130">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+            <item id="1131">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>excluir-ou-suspender-nome-do-cadastro-informativo-de-creditos-nao-quitados-do-setor-publico-federal</id>
+        <dbId>1150</dbId>
+        <nome>Excluir ou suspender nome do Cadastro Informativo de créditos não quitados do setor público federal</nome>
+        <sigla>CADIN</sigla>
+        <descricao>É o serviço que permite ao contribuinte requerer a suspensão ou exclusão de seu nome do CADIN, com fundamento em:
+
+a) suspensão da exigibilidade da inscrição em Dívida Ativa que motivou o registro no CADIN, devidamente averbada no registro da respectiva dívida;
+
+b) garantia integral e discussão judicial, simultâneas, da inscrição em Dívida Ativa que motivou o registro no CADIN, devidamente averbadas no registro da respectiva dívida.
+
+CADIN - Cadastro Informativo de créditos não quitados do setor público federal – é um banco de dados onde são registrados os nomes dos contribuintes responsáveis por débitos perante órgãos e entidades federais.
+
+A PGFN registra o contribuinte no CADIN quando existam dívidas inscritas, sem garantia integral ou exigibilidade suspensa. A inclusão ocorre 75 dias após a notificação do devedor sobre o possível registro.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1449">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="7" unidade="dias-uteis"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3109">
+                <titulo>Agendar atendimento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4196">CPF</item>
+                        <item id="4197">CNPJ (se for o caso)</item>
+                        <item id="4198">Data de Nascimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4104" tipo="web-agendar">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3110">
+                <titulo>Protocolar requerimento</titulo>
+                <descricao>Para obter o modelo do formulário que deve ser apresentado, clique [aqui](https://view.officeapps.live.com/op/view.aspx?src=http://www.pgfn.fazenda.gov.br/formularios/Requerimento%20_%20Portaria%20PGFN%20454_2010%20_%20Averbacao__...__Anexo_I__versao_1_7_2010.doc)</descricao>
+                <documentos>
+                    <default>
+                        <item id="4232">Requerimento preenchido, em formulário específico, e assinado pela pessoa legitimada</item>
+                        <item id="4233">Comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”</item>
+                        <item id="4234">CPF</item>
+                        <item id="4235">Documento oficial de identificação</item>
+                        <item id="4236">Regularidade no pagamento dos parcelamentos controlados pelos respectivos sistemas informatizados</item>
+                        <item id="4237">Averbação de causa(s) suspensiva(s) da exigibilidade e/ou garantia(s) no cadastro da(s) respectiva(s) dívida(s) inscrita(s)</item>
+                    </default>
+                    <caso id="472" descricao="Pessoa Jurídica">
+                        <documento>
+                            <id>4199</id>
+                            <descricao>CNPJ</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="473" descricao="Espólio antes do compromisso do inventariante">
+                        <documento>
+                            <id>4202</id>
+                            <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil</descricao>
+                        </documento>
+                        <documento>
+                            <id>4201</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4200</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="474" descricao="Espólio com inventariante compromissado">
+                        <documento>
+                            <id>4206</id>
+                            <descricao>Documento oficial de identificação do inventariante</descricao>
+                        </documento>
+                        <documento>
+                            <id>4205</id>
+                            <descricao>Termo de compromisso do inventariante</descricao>
+                        </documento>
+                        <documento>
+                            <id>4204</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4203</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="475" descricao="Espólio após a partilha">
+                        <documento>
+                            <id>4210</id>
+                            <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                        </documento>
+                        <documento>
+                            <id>4209</id>
+                            <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4208</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4207</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="476" descricao="Renegociação do Crédito Rural (Lei n° 11.775, de 2008)">
+                        <documento>
+                            <id>4212</id>
+                            <descricao>Comprovantes de pagamento dos boletos emitidos pelo Banco do Brasil S/A</descricao>
+                        </documento>
+                        <documento>
+                            <id>4211</id>
+                            <descricao>Termo de renegociação</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="477" descricao="Simples Nacional 2007 (Lei Complementar n° 123, de 2006)">
+                        <documento>
+                            <id>4213</id>
+                            <descricao>Cópia do extrato da conta Simples Nacional 2007 ou outro documento que comprove a opção por tal parcelamento</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="478" descricao="Simples Nacional 2009 (Lei Complementar n° 123, de 2006)">
+                        <documento>
+                            <id>4215</id>
+                            <descricao>Cópia dos comprovantes de pagamento das parcelas (DARF – Código de Receita 0970).</descricao>
+                        </documento>
+                        <documento>
+                            <id>4214</id>
+                            <descricao>Cópia do pedido do parcelamento</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="479" descricao="IES (Lei n° 10.260, de 2001)">
+                        <documento>
+                            <id>4216</id>
+                            <descricao>Cópia do extrato da conta IES ou outro documento que comprove a opção por tal parcelamento</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="480" descricao="PAES ITR (Lei n° 10.684, de 2003)">
+                        <documento>
+                            <id>4218</id>
+                            <descricao>Cópia dos comprovantes de pagamento das parcelas (DARFs – Código de Receita 7317).</descricao>
+                        </documento>
+                        <documento>
+                            <id>4217</id>
+                            <descricao>Cópia do pedido do parcelamento e anexos com a discriminação dos débitos, nos termos do art. 12 da Portaria Conjunta PGFN/SRF n° 1, de 25 de junho de 2003;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="481" descricao="Art. 3° da MP n° 470, de 2009">
+                        <documento>
+                            <id>4221</id>
+                            <descricao>Declaração de utilização de prejuízos fiscais ou base de cálculo negativa da CSLL (quando for o caso)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4220</id>
+                            <descricao>Cópia dos comprovantes de pagamento à vista ou das parcelas (DARFs – Código de Receita 1480)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4219</id>
+                            <descricao>Cópia do pedido de pagamento/parcelamento, nos termos da Portaria Conjunta PGFN/RFB n° 9, de 30 de outubro de 2009</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="482" descricao="Lei n° 11.941, de 2009">
+                        <documento>
+                            <id>4224</id>
+                            <descricao>Comprovantes de pagamento das parcelas</descricao>
+                        </documento>
+                        <documento>
+                            <id>4223</id>
+                            <descricao>Cópia da indicação dos débitos realizada na negociação</descricao>
+                        </documento>
+                        <documento>
+                            <id>4222</id>
+                            <descricao>Cópia do requerimento de parcelamento</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="483" descricao="Interposição de embargos por ente público">
+                        <documento>
+                            <id>4226</id>
+                            <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa a ação judicial está vinculada, conforme modelo de declaração</descricao>
+                        </documento>
+                        <documento>
+                            <id>4225</id>
+                            <descricao>Cópia da petição inicial dos Embargos devidamente protocolada ou cópia do despacho que ordenou a expedição do precatório</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="484" descricao="Benefícios da Lei nº 11.941, de 27 de maio de 2009 e reabertura (Lei nº 12.973, de 13 de maio de 2014) e Lei n° 12.996, de 18 de junho de 2014">
+                        <documento>
+                            <id>4231</id>
+                            <descricao>Declaração, assinada pelo representante legal ou seu procurador, de que os valores recolhidos correspondem ao devido, nos termos da Portaria Conjunta PGFN/RFB nº 07 de 2013 ou  da Portaria Conjunta PGFN/RFB n° 13 de 2014.</descricao>
+                        </documento>
+                        <documento>
+                            <id>4230</id>
+                            <descricao>Memória de cálculo dos recolhimento do parcelamento com os benefícios da Lei 12.996/2014, indicando claramente as inscrições que se pretende parcelar, o valor da antecipação, seu percentual, a quantidade e o valor das parcelas.</descricao>
+                        </documento>
+                        <documento>
+                            <id>4229</id>
+                            <descricao>Memória de cálculo dos recolhimentos do parcelamento com os benefícios da Lei 11.941/2009, indicando claramente as inscrições que se pretende parcelar</descricao>
+                        </documento>
+                        <documento>
+                            <id>4228</id>
+                            <descricao>Comprovação do pagamento da antecipação/entrada e das demais parcelas eventualmente vencidas até a data do pedido</descricao>
+                        </documento>
+                        <documento>
+                            <id>4227</id>
+                            <descricao>Comprovação da adesão (informação disponível no sistema PAEX – “PAEX, CONSULTA, CONSPEDIDO”)</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4105" tipo="presencial">
+                            <descricao>Na [Unidade de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa anterior</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3111">
+                <titulo>Receber resultado</titulo>
+                <descricao>No Centro Virtual de Atendimento da PGFN, opção "Consulta de protocolo/requerimento"</descricao>
+                <documentos>
+                    <default>
+                        <item id="4238">CPF ou CNPJ</item>
+                        <item id="4239">Senha</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4106" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3175">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3176">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3177">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3178">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3755">CADIN</item>
+            <item id="3756">dívida com o governo</item>
+            <item id="3757">dívida pública</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1132">[Lei n. 10.522, de 19 de julho de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
+            <item id="1133">[Portaria PGFN n. 810, de 13 de maio de 2009](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/portarias/Portaria_810_2009.doc)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>emitir-guia-de-previdencia-social-atraves-do-sistema-de-acrecimos-legais</id>
+        <dbId>1155</dbId>
+        <nome>Emitir Guia de Previdência Social através do Sistema de Acrécimos Legais</nome>
+        <sigla>GPS SAL</sigla>
+        <descricao>A Guia da Previdência Social (GPS) é o documento hábil para o recolhimento das contribuições sociais da empresa, do contribuintes individual, do facultativo, do segurado especial e do empregador doméstico, este último para contribuições referentes às competências 09/2015 e anteriores.  
+Para cálculo das contribuições e emissão da GPS, o usuário pode acessar o Sistema de Acréscimos Legais (SAL) disponível no sítio da Secretaria da Receita Federal do Brasil (RFB) na Internet.
+Após a emissão, a guia poderá ser paga diretamente nos bancos conveniados, casas lotéricas, correspondentes bancários, ou mediante débito em conta comandado por meio da rede internet ou aplicativos eletrônicos disponibilizados pelos bancos."</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1454">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos>Todo trabalhador e todas as empresas que possuem trabalhadores vinculados ao Regime Geral de Previdência Social (RGPS) precisam pagar contribuições sociais.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3124">
+                <titulo>Realizar o cálculo da contribuição devida</titulo>
+                <descricao>Acessar o Sistema de Acréscimos Legais (SAL) disponível no sítio da Secretaria da Receita Federal do Brasil na internet e realizar o cálculo da contribuição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4334">NIT/PIS/PASEP (pessoa física)</item>
+                        <item id="4335">CNPJ ou CEI (pessoa física)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4121" tipo="web-calcular-taxas">
+                            <descricao>http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/index.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3125">
+                <titulo>Emitir Guia da Previdência Social</titulo>
+                <descricao>Após a realização do cálculo será dada ao contribuinte a opção de gerar e imprimir a Guia da Previência Social</descricao>
+                <documentos>
+                    <default>
+                        <item id="4336">NIT/PIS/PASEP (pessoa física)</item>
+                        <item id="4337">CNPJ ou CEI (pessoa física)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4122" tipo="web">
+                            <descricao>http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/index.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3126">
+                <titulo>Realizar pagamento</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4338">Guia da Previdência Social</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4123" tipo="presencial">
+                            <descricao>Rede bancária</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3194">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3195">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="3196">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3197">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Previdência Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Administração financeira</item>
+            <item>Finanças</item>
+            <item>Previdência</item>
+            <item>Tributação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3781">previdência social</item>
+            <item id="3782">cálculo de taxas</item>
+            <item id="3783">guia da previdência</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1138">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-informacoes-de-inteligencia-financeira-para-investigacoes</id>
+        <dbId>1157</dbId>
+        <nome>Obter informações de inteligência financeira para investigações</nome>
+        <sigla>SEI-C</sigla>
+        <nomes-populares>
+            <item id="912">Sistema Eletrônico de Intercâmbio</item>
+        </nomes-populares>
+        <descricao>Intercâmbio de informações de inteligência financeira para autoridades competentes, seja por ofício ou por meio do Sistema Eletrônico de Intercâmbio (SEI-C).</descricao>
+        <contato>¨ **Telefones:** +55 (61) 2025-4001 / 2025-4002       
+¨ **[Fale Conosco](http://www.coaf.fazenda.gov.br/contato-principal/fale-conosco/)**</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1456">
+                <tipo>Promotores, juízes e delegados de polícia</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="8" max="15" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3129">
+                <titulo>Solicitar informações</titulo>
+                <descricao>Para uso do canal WEB, a autoridade deve estar previamente [cadastrada no sistema](https://servicos.gov.br/servico/cadastrar-se-no-sistema-eletronico-de-intercambio-do-coaf)</descricao>
+                <documentos>
+                    <default>
+                        <item id="4351">Número e natureza do procedimento de investigação instaurado</item>
+                        <item id="4352">Informações sobre os fundados indícios da existência do(s) ilícito(s) sob investigação, com indicação do(s) respectivo(s) tipo(s) penal(is)</item>
+                        <item id="4353">Identificação das pessoas envolvidas na investigação, com indicação do nome e do CPF ou CNPJ, conforme o caso</item>
+                    </default>
+                    <caso id="501" descricao="Se via Sistema (Web)">
+                        <documento>
+                            <id>4349</id>
+                            <descricao>Senha</descricao>
+                        </documento>
+                        <documento>
+                            <id>4348</id>
+                            <descricao>CPF</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="502" descricao="Se via postal">
+                        <documento>
+                            <id>4350</id>
+                            <descricao>Ofício</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4128" tipo="web">
+                            <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4129" tipo="postal">
+                            <descricao>**Conselho de Controle de Atividades Financeiras - COAF**         
+SAUN Qd 5 Lote C Torre D 2º andar -
+CEP: 70.040-250 - Asa Norte
+Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3130">
+                <titulo>Receber relatório de inteligência financeira</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4354">CPF e Senha (se utilizando o sistema eletrônico)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4131" tipo="postal">
+                            <descricao>Endereço de trabalho da autoridade requerente</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4130" tipo="web">
+                            <descricao>https://www.coaf.sei.fazenda.gov.br/web_pedidos/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="3200">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Policiamento</item>
+            <item>Segurança e Ordem Pública</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Finanças</item>
+            <item>Justiça e Segurança Pública</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3788">inteligência</item>
+            <item id="3789">inteligência financeira</item>
+            <item id="3790">investigações</item>
+            <item id="3791">dados financeiros</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1140">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>consultar-e-emitir-darf-de-parcelamento-de-debitos-sobre-imovel-da-uniao-concedidos-ate-julho-de-2009</id>
+        <dbId>1123</dbId>
+        <nome>Consultar e Emitir DARF de Parcelamento de Débitos sobre Imóvel da União Concedidos até julho de 2009</nome>
+        <sigla></sigla>
+        <descricao>Consultar e emitir DARF de parcelamento relativo a débitos sobre imóvel administrado pela Secretaria do Patrimônio da União parcelados até julho de 2009.</descricao>
+        <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt;Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;hilton.ramalho@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1750&lt;/b&gt;&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1410">
+                <tipo>Pessoas Física e Jurídica</tipo>
+                <requisitos>Que possua parcelamento de débitos na Secretaria do Patrimônio da União - SPU efetuado até julho de 2009.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3014">
+                <titulo>Preencher os dados para a consulta ou emissão de DARF</titulo>
+                <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/39), escolha a opção Consulta ou Emissão de DARF, informe o nº do parcelamento, CPF ou CNPJ do responsável pelo imóvel e clique em OK.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4039" tipo="web-consultar">
+                            <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/39</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3015">
+                <titulo>Verificar os dados do parcelamento ou emitir o DARF para pagamento</titulo>
+                <descricao>Verifique os dados sobre o parcelamento e, se necessário, imprima o DARF para pagamento.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4040" tipo="web-consultar">
+                            <descricao>http://patrimoniodetodos.gov.br/#/conteudo/39</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3066">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3067">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3068">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3069">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração</item>
+            <item>Patrimônio</item>
+            <item>Administração financeira</item>
+            <item>Administração e Gestão Pública</item>
+            <item>Patrimônio da União</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3556">DARF</item>
+            <item id="3557">parcelamento</item>
+            <item id="3558">imóvel da União</item>
+            <item id="3559">deferido</item>
+            <item id="3787">renegociado</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1141">[Lei nº 10.522, de 19 de julho de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -42607,6 +43275,863 @@ Brasília - DF
             <item id="1124">[Decreto nº 3.725, de 10 de janeiro de 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3725.htm)</item>
             <item id="1126">[Portaria nº 293, de 4 de outubro de 2007](file:///C:/Users/47298545191/Downloads/Portaria%20293-2007%20Manual%20de%20Transferencia.pdf)</item>
             <item id="1115">[Decreto-Lei nº 3.438, de 17 de julho de 1941](http://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/Del3438.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>alterar-regime-ou-contrato-de-utilizacao-de-imovel-da-uniao</id>
+        <dbId>31</dbId>
+        <nome>Alterar Regime ou Contrato de Utilização de Imóvel da União</nome>
+        <sigla></sigla>
+        <descricao>Possibilita requerer alteração de regime (inscrição de ocupação, aforamento, cessão) ou tipo de contrato de utilização de imóvel da União administrado pela Secretaria do Patrimônio da União - SPU. O instrumento de destinação a ser aplicado dependerá de cada caso e observará a legislação vigente.</descricao>
+        <contato>&lt;p&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/p&gt; &lt;p&gt;Responsável: Valéria Soares &lt;/p&gt;&lt;p&gt;E-mail: valeria.soares@planejamento.gov.br&lt;/p&gt;&lt;p&gt; Endereço: Esplanada dos Ministérios&lt;/p&gt; &lt;p&gt; Bloco C, 2º andar, Brasília-DF &lt;/p&gt;&lt;p&gt;CEP: 70.046-900 &lt;/p&gt; &lt;p&gt;Tel: 55 (61) 2020-1944&lt;/p&gt;</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="676">
+                <tipo>Pessoa Física ou Jurídica</tipo>
+                <requisitos>Que utilize imóvel da SPU e tenha capacidade para fins de processo administrativo e  qualidade de interessado, nos termos dos artigos 9º e 10, da Lei nº 9.784, de 1999.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="0" unidade="meses"/>
+            <descricao>A definir</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="1947">
+                <titulo>Preencher o requerimento</titulo>
+                <descricao>Preencha os campos solicitados no Portal da SPU (patrimoniodetodos.gov.br), insira o RIP e CPF ou CNPJ, marque a caixa de validação “Não sou robô” e clique no botão “Iniciar” para prosseguir com requerimento do serviço.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="469" descricao="Pessoa Jurídica">
+                        <documento>
+                            <id>4191</id>
+                            <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4190</id>
+                            <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2426" tipo="web">
+                            <descricao>http://patrimoniodetodos.gov.br/#/requerimentoMudancaRegime?servico=31</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1948">
+                <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+                <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no portal da SPU (patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2427" tipo="web">
+                            <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+            <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2213">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2214">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2215">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Habitação</item>
+            <item>Patrimônio</item>
+            <item>Patrimônio da União</item>
+            <item>Desenvolvimento Rural</item>
+            <item>Desenvolvimento Urbano</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1622">trocar regime</item>
+            <item id="1623">mudar contrato</item>
+            <item id="1624">usar imóvel para outro fim</item>
+            <item id="3713">uso</item>
+            <item id="3714">destinação</item>
+            <item id="3715">utilização</item>
+            <item id="3716">taus</item>
+            <item id="3717">cuem</item>
+            <item id="3718">cdru</item>
+            <item id="3719">alterar</item>
+            <item id="3720">mudar</item>
+            <item id="3721">permuta</item>
+            <item id="3722">regime</item>
+            <item id="3744">mudança</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1127">[Lei nº 9.784 , de 29 de janeiro de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>parcelar-debitos-do-simples-nacional-inscritos-em-divida-ativa-da-uniao</id>
+        <dbId>1151</dbId>
+        <nome>Parcelar débitos do Simples Nacional inscritos em Dívida Ativa da União</nome>
+        <sigla></sigla>
+        <descricao>O parcelamento das inscrições da dívida ativa de débitos apurados na forma do Simples Nacional, de que trata o artigo 130-A da Resolução CGSN nº 94, de 29 de novembro de 2011, e disciplinado na Portaria PGFN nº 802, de 9 de novembro de 2012, pode ser realizado em até 60 (sessenta) parcelas, condicionada a que o valor mínimo da prestação não seja inferior a R$ 300,00 (trezentos reais).
+O parcelamento de débitos de Simples Nacional era controlado pelo módulo de parcelamento do sistema SIDA e as parcelas eram pagas mediante a emissão e geração de DAS-DAU no Portal do Simples Nacional.  Contudo, desde 1º de dezembro de 2016, o parcelamento e o reparcelamento das inscrições do Simples Nacional (código de receita 1507 – Lei Complementar 123/2006) são operacionalizados como uma das modalidades de parcelamento simplificado e, assim, controlado pelo Sistema de Parcelamento da PGFN (SISPAR) e realizados pela internet.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1450">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3112">
+                <titulo>Solicitar parcelamento</titulo>
+                <descricao>O parcelamento deve ser solicitado exclusivamente por meio do e-CAC PGFN, através da opção “Adesão a parcelamento”, modalidade "Parcelamento Simplificado – Simples Nacional". Neste, o contribuinte poderá escolher o número de parcelas desejado, respeitado o valor de parcela mínima, requerer o parcelamento e emitir o DAS para pagamento das parcelas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4240">CPF ou CNPJ</item>
+                        <item id="4241">Senha do e-cac PGFN</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4107" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3113">
+                <titulo>Imprimir mensalmente os boletos das parcelas para pagamento</titulo>
+                <descricao>O contribuinte deverá acessar o e-CAC PGFN mensalmente para emitir as parcelas subseqüentes e para acompanhar a situação de seu parcelamento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4242">CPF ou CNPJ</item>
+                        <item id="4243">Senha do e-cac PGFN</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4108" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3179">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3180">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="3181">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="3182">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3758">parcelamento</item>
+            <item id="3759">simples nacional</item>
+            <item id="3760">negociação</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1134">[Lei nº 10.522, de 19 de julho, de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>requerer-reinclusao-em-parcelamento-especial</id>
+        <dbId>1152</dbId>
+        <nome>Requerer reinclusão em parcelamento especial</nome>
+        <sigla></sigla>
+        <descricao>O serviço que permite, ao contribuinte, apresentação de petição fundamentada demonstrando ilegalidade ou erro quanto à sua exclusão de parcelamento especial, nos termos da legislação aplicável ao respectivo parcelamento.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1451">
+                <tipo>Pessoas físicas e jurídicas</tipo>
+                <requisitos>O contribuinte que foi excluído do parcelamento especial e que, nos termos da legislação aplicável ao mesmo, possui fundamentos de fato ou de direito para opor-se à exclusão.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="360" unidade="dias-corridos"/>
+            <descricao>Prazo máximo previsto no art. 24 da Lei nº 11.457 de 2007.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3115">
+                <titulo>Agendar atendimento</titulo>
+                <descricao>O serviço Recurso Administrativo em Razão da Exclusão de Parcelamento Especial deverá ser protocolizado na unidade de atendimento integrado PGFN/RFB (Receita Federal) do domicílio fiscal do requerente, por meio de petição constando os fundamentos de fato e de direito contra o ato de exclusão.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4248">CPF</item>
+                        <item id="4249">CNPJ (se for o caso)</item>
+                        <item id="4250">Data de Nascimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4110" tipo="web-agendar">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3116">
+                <titulo>Protocolar pedido</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4262">Documento oficial de identificação</item>
+                        <item id="4263">CPF</item>
+                        <item id="4264">Documentos Comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento" (caso não seja o próprio interessado)</item>
+                        <item id="4265">Petição na qual conste com os fundamentos de fato ou de direito para opor-se ao ato de exclusão, acompanhada, se for o caso, dos documentos necessários para provar os fatos alegados.</item>
+                    </default>
+                    <caso id="487" descricao="Se espólio antes do compromisso do inventariante">
+                        <documento>
+                            <id>4253</id>
+                            <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil</descricao>
+                        </documento>
+                        <documento>
+                            <id>4252</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4251</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="488" descricao="Se espólio com inventariante compromissado">
+                        <documento>
+                            <id>4257</id>
+                            <descricao>Documento oficial de identificação do inventariante</descricao>
+                        </documento>
+                        <documento>
+                            <id>4256</id>
+                            <descricao>Termo de compromisso do inventariante</descricao>
+                        </documento>
+                        <documento>
+                            <id>4255</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4254</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="489" descricao="Se espólio após a partilha">
+                        <documento>
+                            <id>4261</id>
+                            <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                        </documento>
+                        <documento>
+                            <id>4260</id>
+                            <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4259</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4258</id>
+                            <descricao>CPF do falecido</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4111" tipo="presencial">
+                            <descricao>Na [Unidade de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa passada</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3117">
+                <titulo>Receber resultado</titulo>
+                <descricao>O contribuinte deverá acompanhar a informação sobre seu requerimento/recurso pelo e-CAC da PGFN, no serviço de “Consulta de Requerimentos”.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4266">CPF ou CNPJ</item>
+                        <item id="4267">Senha do e-CAC da PGFN</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4112" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3183">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3184">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="3185">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3186">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3772">Reinclusão em parcelamento</item>
+            <item id="3773">parcelamento especial</item>
+            <item id="3774">recurso administrativo</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1135">[Lei nº 9.964, de 10 de abril de 2000](http://www.planalto.gov.br/ccivil_03/leis/L9964.htm)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>substituir-ou-cancelar-garantia-extrajudicial-de-debito-inscrito-em-divida-ativa-da-uniao</id>
+        <dbId>1153</dbId>
+        <nome>Substituir ou cancelar garantia extrajudicial de débito inscrito em Dívida Ativa da União</nome>
+        <sigla></sigla>
+        <descricao>É o serviço por meio do qual o contribuinte ou terceiro garantidor poderá requerer a substituição ou o levantamento de garantia(s) prestada(s) administrativamente em relação a débito(s) inscrito(s) em Dívida Ativa ou a processos de arrolamento encaminhados à Procuradoria da Fazenda Nacional.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1452">
+                <tipo>Pessoas físicas ou jurídicas</tipo>
+                <requisitos>Que tenha prestado garantia em processo administrativo ou tenha bens arrolados em processo de arrolamento administrativo sob administração da Procuradoria-Geral da Fazenda Nacional e deseje substituir a garantia ou o bem arrolado ou promover a liberação do gravame.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="360" unidade="dias-corridos"/>
+            <descricao>Este é o prazo máximo previsto no art. 24 da Lei nº 11.457 de 2007.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3119">
+                <titulo>Agendar atendimento</titulo>
+                <descricao>O serviço deverá ser protocolizado na unidade de atendimento integrado PGFN/RFB  (Receita Federal) do domicílio fiscal do requerente</descricao>
+                <documentos>
+                    <default>
+                        <item id="4274">CPF</item>
+                        <item id="4275">CNPJ (se for o caso)</item>
+                        <item id="4276">Data de Nascimento</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4114" tipo="web-agendar">
+                            <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3120">
+                <titulo>Protocolar pedido</titulo>
+                <descricao>Obtenha o modelo do formulário [aqui](http://www.pgfn.fazenda.gov.br/formularios/Requerimento%20_%20Portaria%20PGFN%20%20454_2010%20%20__%20%20Substituicao_Garantia_Extrajudicial__Anexo_VIII____versao_1_7_2010.doc)</descricao>
+                <documentos>
+                    <default>
+                        <item id="4310">Requerimento preenchido, em formulário específico, e assinado pela pessoa legitimada</item>
+                        <item id="4311">Documento oficial de identificação</item>
+                        <item id="4312">CPF</item>
+                        <item id="4313">Procuração e documento oficial de identificação do procurador (se for o caso)</item>
+                        <item id="4314">Declaração firmada pelo devedor, sob as penas da lei, de que a garantia apresentada não foi oferecida e aceita em outro parcelamento eventualmente existente e, em se tratando de bem imóvel, de que detém o domínio pleno do mesmo</item>
+                    </default>
+                    <caso id="492" descricao="Se espólio antes do compromisso do inventariante">
+                        <documento>
+                            <id>4279</id>
+                            <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4278</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4277</id>
+                            <descricao>CPF da pessoa falecida</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="493" descricao="Se espólio com inventariante compromissado">
+                        <documento>
+                            <id>4283</id>
+                            <descricao>Documento oficial de identificação do inventariant</descricao>
+                        </documento>
+                        <documento>
+                            <id>4282</id>
+                            <descricao>Termo de compromisso do inventariante</descricao>
+                        </documento>
+                        <documento>
+                            <id>4281</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4280</id>
+                            <descricao>CPF da pessoa falecida</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="494" descricao="Se espólio após a partilha">
+                        <documento>
+                            <id>4287</id>
+                            <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                        </documento>
+                        <documento>
+                            <id>4286</id>
+                            <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4285</id>
+                            <descricao>Certidão de óbito</descricao>
+                        </documento>
+                        <documento>
+                            <id>4284</id>
+                            <descricao>CPF da pessoa falecida</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="495" descricao="Hipoteca">
+                        <documento>
+                            <id>4289</id>
+                            <descricao>Documento de notificação ou cobrança do imposto predial territorial urbano (IPTU) ou do imposto territorial rural (ITR)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4288</id>
+                            <descricao>cópia autenticada e atualizada da matrícula do imóvel</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="496" descricao="Penhor e Anticrese">
+                        <documento>
+                            <id>4297</id>
+                            <descricao>Se o bem for de natureza industrial (maquinário, etc), mercantil (mercadorias em estoque ou outros bens empregados na atividade comercial) ou se tratar de veículo, exigir-se-á prova da propriedade dos bens</descricao>
+                        </documento>
+                        <documento>
+                            <id>4296</id>
+                            <descricao>Na hipótese do art. 8º da Lei nº 7.713/88, a apresentação do comprovante dos 3 (três) últimos recolhimentos do carnê-leão, e, se for o caso, o comprovante de pagamento da complementação mensal do Imposto de Renda</descricao>
+                        </documento>
+                        <documento>
+                            <id>4295</id>
+                            <descricao>Tratando-se de rendimentos do devedor, a última DIPJ, a prova das fontes de renda e a declaração de vínculo empregatício</descricao>
+                        </documento>
+                        <documento>
+                            <id>4294</id>
+                            <descricao>Se faturamento do devedor, comprovante do faturamento ou da receita mensal por meio de balancete ou DCTF ou pela apresentação do livro de apuração do IPI, ICMS ou ISS, ou por qualquer outro meio idôneo</descricao>
+                        </documento>
+                        <documento>
+                            <id>4293</id>
+                            <descricao>Se o penhor rural recair sobre maquinário agrícola (as chamadas pertenças), deverá ser juntada prova de propriedade do bem e laudo de avaliação do profissional legalmente habilitado</descricao>
+                        </documento>
+                        <documento>
+                            <id>4292</id>
+                            <descricao>Tratando-se de frutos e rendimentos de bem imóvel, laudo circunstanciado relativo à produtividade, elaborado por empresa ou profissional legalmente habilitado</descricao>
+                        </documento>
+                        <documento>
+                            <id>4291</id>
+                            <descricao>Declaração do garantidor de que sobre o bem ofertado não recai ônus reais de qualquer espécie</descricao>
+                        </documento>
+                        <documento>
+                            <id>4290</id>
+                            <descricao>Prova da propriedade dos bens</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="497" descricao="Fiança bancária">
+                        <documento>
+                            <id>4300</id>
+                            <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e a qual ação judicial a carta de fiança bancária está vinculada, conforme modelo de declaração</descricao>
+                        </documento>
+                        <documento>
+                            <id>4299</id>
+                            <descricao>Decisão judicial que deferiu a garantia por meio de carta de fiança bancária, se houver</descricao>
+                        </documento>
+                        <documento>
+                            <id>4298</id>
+                            <descricao>Carta de fiança bancária, emitida nos moldes das Portarias PGFN n° 644, de 2009, e n° 1.378, de 2009</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="498" descricao="Outras fianças">
+                        <documento>
+                            <id>4302</id>
+                            <descricao>Comprovante de residência do fiador</descricao>
+                        </documento>
+                        <documento>
+                            <id>4301</id>
+                            <descricao>Relação de bens do fiador, acompanhada de certidões negativas dos cartórios de protesto e dos cartórios judiciais de distribuição informando as ações cíveis no âmbito da Justiça Estadual e Federal com jurisdição sobre o domicílio do fiador</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="499" descricao="Bens Penhorados">
+                        <documento>
+                            <id>4306</id>
+                            <descricao>em se tratando de penhora de dinheiro: além da documentação acima, extrato da conta judicial (expedida no prazo de, no máximo, trinta dias anteriores ao protocolo do requerimento)</descricao>
+                        </documento>
+                        <documento>
+                            <id>4305</id>
+                            <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa o termo/auto de penhora e laudos de avaliação judicial apresentados estão vinculados, conforme modelo de declaração</descricao>
+                        </documento>
+                        <documento>
+                            <id>4304</id>
+                            <descricao>Laudo de avaliação judicial, atualizado conforme a espécie do bem e eventuais reavaliações</descricao>
+                        </documento>
+                        <documento>
+                            <id>4303</id>
+                            <descricao>No caso de penhora, ao requerimento deverá ser juntado o termo/auto de penhora e eventuais reforços, ou comprovante de bloqueio na hipótese de BACENJUD</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="500" descricao="Seguro-garantia">
+                        <documento>
+                            <id>4309</id>
+                            <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e a qual ação judicial o seguro-garantia está vinculado, conforme modelo de declaração</descricao>
+                        </documento>
+                        <documento>
+                            <id>4308</id>
+                            <descricao>Decisão judicial que deferiu a garantia por meio de seguro-garantia, se houver</descricao>
+                        </documento>
+                        <documento>
+                            <id>4307</id>
+                            <descricao>Apólice de seguro-garantia, emitida nos moldes da Portaria PGFN n° 164, de 27 de fevereiro de  2014</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4115" tipo="presencial">
+                            <descricao>Na [Unidade de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa passada</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3121">
+                <titulo>Receber resposta</titulo>
+                <descricao>No e-CAC da PGFN, a partir da página da PGFN, o requerente poderá acompanhar o andamento de seu Protocolo/Requerimento e a decisão da PGFN, em “Consulta de Requerimentos”.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4315">CPF ou CNPJ</item>
+                        <item id="4316">Senha do e-CAC da PGFN</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4116" tipo="web">
+                            <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3187">Empresas</item>
+            <item idSegmento="1" idServicoSegmento="3188">Cidadãos</item>
+            <item idSegmento="4" idServicoSegmento="3189">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3190">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Finanças pessoais</item>
+            <item>Tributação</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3775">garantia de dívida</item>
+            <item id="3776">substituir</item>
+            <item id="3777">Dívida Ativa da União</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1136">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>habilitar-recinto-para-movimentacao-armazenagem-e-despacho-aduaneiro</id>
+        <dbId>1154</dbId>
+        <nome>Habilitar recinto para movimentação, armazenagem e despacho aduaneiro</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="910">Alfandegamento</item>
+        </nomes-populares>
+        <descricao>Autorização, por parte da Secretaria da Receita Federal do Brasil (RFB), para estacionamento ou trânsito de veículos procedentes do exterior ou a ele destinados, embarque, desembarque ou trânsito de viajantes procedentes do exterior ou a ele destinados, movimentação, armazenagem e submissão a despacho aduaneiro de mercadorias procedentes do exterior, ou a ele destinadas, inclusive sob regime aduaneiro especial, bens de viajantes procedentes do exterior, ou a ele destinados e remessas postais internacionais, nos locais e recintos onde tais atividades ocorram sob controle aduaneiro.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1453">
+                <tipo>Intervenientes do comércio internacional</tipo>
+                <requisitos>Podem ser importadores, exportadores, transportadores, depositários, dentre outros.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="0" max="0" unidade="meses"/>
+            <descricao>O tempo de prestação deste serviço não é estimado ainda.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3122">
+                <titulo>Protocolar solicitação</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4317">Carteira de Identidade (RG)</item>
+                        <item id="4318">CPF</item>
+                        <item id="4319">CNPJ</item>
+                        <item id="4320">Comprovante de endereço</item>
+                        <item id="4321">Certidões da Receita Federal</item>
+                        <item id="4322">Contrato Social</item>
+                        <item id="4323">Registro na Junta Comercial</item>
+                        <item id="4324">Procuração do representante legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4117" tipo="presencial">
+                            <descricao>Endereço do recinto alfandegado</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4118" tipo="web">
+                            <descricao>http://idg.receita.fazenda.gov.br/</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4119" tipo="postal">
+                            <descricao>Depende do local de instalação do recinto</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3123">
+                <titulo>Registrar declaração</titulo>
+                <descricao>Registro da Declaração de Importação, Exportação ou Transito Aduaneiro de mercadorias</descricao>
+                <documentos>
+                    <default>
+                        <item id="4325">Carteira de Identidade (RG)</item>
+                        <item id="4326">CPF</item>
+                        <item id="4327">CNPJ</item>
+                        <item id="4328">Comprovante de endereço</item>
+                        <item id="4329">Certidões da Receita Federal</item>
+                        <item id="4330">Contrato Social</item>
+                        <item id="4331">Registro na Junta Comercial</item>
+                        <item id="4332">Procuração do representante legal</item>
+                        <item id="4333">Declaração de importação, exportação ou trânsito aduaneiro de mercadorias</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="144">
+                            <descricao>As tarifas variam de acordo com o tipo de instalação</descricao>
+                            <moeda>R$</moeda>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4120" tipo="presencial">
+                            <descricao>Endereço do recinto alfandegado</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="3191">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="3192">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="2" idServicoSegmento="3193">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Comercio externo</item>
+            <item>Fiscalização do Estado</item>
+            <item>Relações Internacionais</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Encargos financeiros</item>
+            <item>Tributação</item>
+            <item>Comércio e Serviços</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3778">recinto aduaneiro</item>
+            <item id="3779">alfandegamento</item>
+            <item id="3780">movimentação aduaneira</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1137">-</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>acompanhar-processo-administrativo-punitivo</id>
+        <dbId>1156</dbId>
+        <nome>Acompanhar Processo Administrativo Punitivo</nome>
+        <sigla>PAP</sigla>
+        <nomes-populares>
+            <item id="911">PAP - Processo Administrativo Punitivo</item>
+        </nomes-populares>
+        <descricao>O Conselho de Controle de Atividades Financeiras - COAF foi criado com a finalidade de disciplinar, aplicar penas administrativas, receber, examinar e identificar as ocorrências suspeitas de atividades ilícitas previstas na legislação. Assim, pessoas jurídicas e seus administradores, cumulativamente ou não, poderão sofrer sanções que incluem advertências, multas, inabilitação e temporária e até mesmo cassação ou suspensão da autorização para o exercício de atividade, operação ou funcionamento. As pessoas físicas ou jurídicas que estiverem respondendo a um PAP poderão utilizar este serviço para apresentar sua defesa e recursos</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <solicitantes>
+            <solicitante id="1455">
+                <tipo>Pessoas obrigadas respondendo a Processo Administrativo Punitivo</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="12" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="3127">
+                <titulo>Responder à intimação inicial</titulo>
+                <descricao>Ser Intimado quando da instauração do processo administrativo punitivo e tomar conhecimento do processo, podendo apresentar defesa e documentos adicionais.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4339">CPF</item>
+                        <item id="4340">CNPJ</item>
+                        <item id="4341">Contrato Social</item>
+                        <item id="4342">Procuração do representante legal</item>
+                        <item id="4343">Documentos comprobatórios de atendimento aos preceitos legais</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4124" tipo="presencial">
+                            <descricao>**Conselho de Controle de Atividades Financeiras - COAF**       
+
+SAUN Qd 5 Lote C  Torre D   2º andar -         
+CEP: 70.040-250 - Asa Norte       
+Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4125" tipo="postal">
+                            <descricao>**Conselho de Controle de Atividades Financeiras - COAF**       
+
+SAUN Qd 5 Lote C  Torre D   2º andar -         
+CEP: 70.040-250 - Asa Norte       
+Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="3128">
+                <titulo>Responder à intimação para informação das penalidades</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4344">Carteira de Identidade (RG)</item>
+                        <item id="4345">CPF</item>
+                        <item id="4346">CNPJ</item>
+                        <item id="4347">Procuração do Representante Legal</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4126" tipo="presencial">
+                            <descricao>**Conselho de Controle de Atividades Financeiras - COAF**       
+
+SAUN Qd 5 Lote C  Torre D   2º andar -         
+CEP: 70.040-250 - Asa Norte       
+Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4127" tipo="postal">
+                            <descricao>**Conselho de Controle de Atividades Financeiras - COAF**       
+
+SAUN Qd 5 Lote C  Torre D   2º andar -         
+CEP: 70.040-250 - Asa Norte       
+Brasília/DF</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+            <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="3198">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="3199">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Sistema Financeiro</item>
+            <item>Administração financeira</item>
+            <item>Economia e Finanças</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3784">COAF</item>
+            <item id="3785">PAP</item>
+            <item id="3786">processo administrativo</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1139">[LEI Nº 9.613, DE 3 DE MARÇO DE 1998](http://www.planalto.gov.br/ccivil_03/leis/L9613.htm)</item>
         </legislacoes>
     </servico>
 </servicos>
