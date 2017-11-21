@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-guia-de-previdencia-social-atraves-do-sistema-de-acrecimos-legais</id>
+    <dbId>1155</dbId>
+    <nome>Emitir Guia de Previdência Social através do Sistema de Acrécimos Legais</nome>
+    <sigla>GPS SAL</sigla>
+    <descricao>A Guia da Previdência Social (GPS) é o documento hábil para o recolhimento das contribuições sociais da empresa, do contribuintes individual, do facultativo, do segurado especial e do empregador doméstico, este último para contribuições referentes às competências 09/2015 e anteriores.  
+Para cálculo das contribuições e emissão da GPS, o usuário pode acessar o Sistema de Acréscimos Legais (SAL) disponível no sítio da Secretaria da Receita Federal do Brasil (RFB) na Internet.
+Após a emissão, a guia poderá ser paga diretamente nos bancos conveniados, casas lotéricas, correspondentes bancários, ou mediante débito em conta comandado por meio da rede internet ou aplicativos eletrônicos disponibilizados pelos bancos."</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1454">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Todo trabalhador e todas as empresas que possuem trabalhadores vinculados ao Regime Geral de Previdência Social (RGPS) precisam pagar contribuições sociais.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3124">
+            <titulo>Realizar o cálculo da contribuição devida</titulo>
+            <descricao>Acessar o Sistema de Acréscimos Legais (SAL) disponível no sítio da Secretaria da Receita Federal do Brasil na internet e realizar o cálculo da contribuição.</descricao>
+            <documentos>
+                <default>
+                    <item id="4334">NIT/PIS/PASEP (pessoa física)</item>
+                    <item id="4335">CNPJ ou CEI (pessoa física)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4121" tipo="web-calcular-taxas">
+                        <descricao>http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/index.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3125">
+            <titulo>Emitir Guia da Previdência Social</titulo>
+            <descricao>Após a realização do cálculo será dada ao contribuinte a opção de gerar e imprimir a Guia da Previência Social</descricao>
+            <documentos>
+                <default>
+                    <item id="4336">NIT/PIS/PASEP (pessoa física)</item>
+                    <item id="4337">CNPJ ou CEI (pessoa física)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4122" tipo="web">
+                        <descricao>http://sal.receita.fazenda.gov.br/PortalSalInternet/faces/pages/index.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3126">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4338">Guia da Previdência Social</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4123" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3194">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3195">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="3196">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3197">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Tributação</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Relações de Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3781">previdência social</item>
+        <item id="3782">cálculo de taxas</item>
+        <item id="3783">guia da previdência</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1138">-</item>
+    </legislacoes>
+</servico>
