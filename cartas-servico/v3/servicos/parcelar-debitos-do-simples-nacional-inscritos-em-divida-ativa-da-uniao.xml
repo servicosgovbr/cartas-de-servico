@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>parcelar-debitos-do-simples-nacional-inscritos-em-divida-ativa-da-uniao</id>
+    <dbId>1151</dbId>
+    <nome>Parcelar débitos do Simples Nacional inscritos em Dívida Ativa da União</nome>
+    <sigla></sigla>
+    <descricao>O parcelamento das inscrições da dívida ativa de débitos apurados na forma do Simples Nacional, de que trata o artigo 130-A da Resolução CGSN nº 94, de 29 de novembro de 2011, e disciplinado na Portaria PGFN nº 802, de 9 de novembro de 2012, pode ser realizado em até 60 (sessenta) parcelas, condicionada a que o valor mínimo da prestação não seja inferior a R$ 300,00 (trezentos reais).
+O parcelamento de débitos de Simples Nacional era controlado pelo módulo de parcelamento do sistema SIDA e as parcelas eram pagas mediante a emissão e geração de DAS-DAU no Portal do Simples Nacional.  Contudo, desde 1º de dezembro de 2016, o parcelamento e o reparcelamento das inscrições do Simples Nacional (código de receita 1507 – Lei Complementar 123/2006) são operacionalizados como uma das modalidades de parcelamento simplificado e, assim, controlado pelo Sistema de Parcelamento da PGFN (SISPAR) e realizados pela internet.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1450">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3112">
+            <titulo>Solicitar parcelamento</titulo>
+            <descricao>O parcelamento deve ser solicitado exclusivamente por meio do e-CAC PGFN, através da opção “Adesão a parcelamento”, modalidade "Parcelamento Simplificado – Simples Nacional". Neste, o contribuinte poderá escolher o número de parcelas desejado, respeitado o valor de parcela mínima, requerer o parcelamento e emitir o DAS para pagamento das parcelas.</descricao>
+            <documentos>
+                <default>
+                    <item id="4240">CPF ou CNPJ</item>
+                    <item id="4241">Senha do e-cac PGFN</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4107" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3113">
+            <titulo>Imprimir mensalmente os boletos das parcelas para pagamento</titulo>
+            <descricao>O contribuinte deverá acessar o e-CAC PGFN mensalmente para emitir as parcelas subseqüentes e para acompanhar a situação de seu parcelamento.</descricao>
+            <documentos>
+                <default>
+                    <item id="4242">CPF ou CNPJ</item>
+                    <item id="4243">Senha do e-cac PGFN</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4108" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3179">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3180">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3181">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3182">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Finanças pessoais</item>
+        <item>Finanças</item>
+        <item>Sistema Financeiro</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3758">parcelamento</item>
+        <item id="3759">simples nacional</item>
+        <item id="3760">negociação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1134">[Lei nº 10.522, de 19 de julho, de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
+    </legislacoes>
+</servico>
