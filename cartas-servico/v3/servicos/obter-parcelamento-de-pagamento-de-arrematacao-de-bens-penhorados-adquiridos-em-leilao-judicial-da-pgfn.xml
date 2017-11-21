@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-parcelamento-de-pagamento-de-arrematacao-de-bens-penhorados-adquiridos-em-leilao-judicial-da-pgfn</id>
+    <dbId>1146</dbId>
+    <nome>Obter parcelamento de pagamento de arrematação de bens penhorados adquiridos em leilão judicial da PGFN</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="909">Parcelamento de arrematação.</item>
+    </nomes-populares>
+    <descricao>É o serviço que permite, ao arrematante, solicitar a formalização do parcelamento da arrematação ocorrida em leilão judicial de bens penhorados em ações promovidas pela Procuradoria-Geral da Fazenda Nacional.
+São condições mínimas para o parcelamento da arrematação, além daquelas definidas no edital do respectivo leilão, consoante petição apresentada pela União (Fazenda Nacional)."</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1444">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3088">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4144">CPF</item>
+                    <item id="4145">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4096" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3089">
+            <titulo>Protocolar requerimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4146">Formulário específico e assinado pela pessoa legitimada</item>
+                    <item id="4147">Documentos comprobatórios da legitimidade da pessoa assinante do formulário de requerimento</item>
+                    <item id="4148">Documentos relativos ao parcelamento</item>
+                    <item id="4149">Comprovação da lavratura da hipoteca do bem arrematado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4097" tipo="presencial">
+                        <descricao>Em uma [Unidade de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3090">
+            <titulo>Emitir DARF</titulo>
+            <descricao>Emitir DARF para pagamento da parcela no sistema e-CAC PGFN.</descricao>
+            <documentos>
+                <default>
+                    <item id="4150">CPF ou CNPJ</item>
+                    <item id="4151">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4098" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3155">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3156">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3157">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3158">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Politica econômica</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3665">Leilão</item>
+        <item id="3666">parcelamento</item>
+        <item id="3667">PGFN</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1108">-</item>
+    </legislacoes>
+</servico>
