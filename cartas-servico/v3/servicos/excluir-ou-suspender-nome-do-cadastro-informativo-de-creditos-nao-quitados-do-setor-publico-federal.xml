@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>excluir-ou-suspender-nome-do-cadastro-informativo-de-creditos-nao-quitados-do-setor-publico-federal</id>
+    <dbId>1150</dbId>
+    <nome>Excluir ou suspender nome do Cadastro Informativo de créditos não quitados do setor público federal</nome>
+    <sigla>CADIN</sigla>
+    <descricao>É o serviço que permite ao contribuinte requerer a suspensão ou exclusão de seu nome do CADIN, com fundamento em:
+
+a) suspensão da exigibilidade da inscrição em Dívida Ativa que motivou o registro no CADIN, devidamente averbada no registro da respectiva dívida;
+
+b) garantia integral e discussão judicial, simultâneas, da inscrição em Dívida Ativa que motivou o registro no CADIN, devidamente averbadas no registro da respectiva dívida.
+
+CADIN - Cadastro Informativo de créditos não quitados do setor público federal – é um banco de dados onde são registrados os nomes dos contribuintes responsáveis por débitos perante órgãos e entidades federais.
+
+A PGFN registra o contribuinte no CADIN quando existam dívidas inscritas, sem garantia integral ou exigibilidade suspensa. A inclusão ocorre 75 dias após a notificação do devedor sobre o possível registro.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1449">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-uteis"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3109">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4196">CPF</item>
+                    <item id="4197">CNPJ (se for o caso)</item>
+                    <item id="4198">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4104" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3110">
+            <titulo>Protocolar requerimento</titulo>
+            <descricao>Para obter o modelo do formulário que deve ser apresentado, clique [aqui](https://view.officeapps.live.com/op/view.aspx?src=http://www.pgfn.fazenda.gov.br/formularios/Requerimento%20_%20Portaria%20PGFN%20454_2010%20_%20Averbacao__...__Anexo_I__versao_1_7_2010.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="4232">Requerimento preenchido, em formulário específico, e assinado pela pessoa legitimada</item>
+                    <item id="4233">Comprobatórios da legitimidade da pessoa que poderá assinar o “formulário de requerimento”</item>
+                    <item id="4234">CPF</item>
+                    <item id="4235">Documento oficial de identificação</item>
+                    <item id="4236">Regularidade no pagamento dos parcelamentos controlados pelos respectivos sistemas informatizados</item>
+                    <item id="4237">Averbação de causa(s) suspensiva(s) da exigibilidade e/ou garantia(s) no cadastro da(s) respectiva(s) dívida(s) inscrita(s)</item>
+                </default>
+                <caso id="472" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4199</id>
+                        <descricao>CNPJ</descricao>
+                    </documento>
+                </caso>
+                <caso id="473" descricao="Espólio antes do compromisso do inventariante">
+                    <documento>
+                        <id>4202</id>
+                        <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil</descricao>
+                    </documento>
+                    <documento>
+                        <id>4201</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4200</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+                <caso id="474" descricao="Espólio com inventariante compromissado">
+                    <documento>
+                        <id>4206</id>
+                        <descricao>Documento oficial de identificação do inventariante</descricao>
+                    </documento>
+                    <documento>
+                        <id>4205</id>
+                        <descricao>Termo de compromisso do inventariante</descricao>
+                    </documento>
+                    <documento>
+                        <id>4204</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4203</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+                <caso id="475" descricao="Espólio após a partilha">
+                    <documento>
+                        <id>4210</id>
+                        <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                    </documento>
+                    <documento>
+                        <id>4209</id>
+                        <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4208</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4207</id>
+                        <descricao>CPF do falecido</descricao>
+                    </documento>
+                </caso>
+                <caso id="476" descricao="Renegociação do Crédito Rural (Lei n° 11.775, de 2008)">
+                    <documento>
+                        <id>4212</id>
+                        <descricao>Comprovantes de pagamento dos boletos emitidos pelo Banco do Brasil S/A</descricao>
+                    </documento>
+                    <documento>
+                        <id>4211</id>
+                        <descricao>Termo de renegociação</descricao>
+                    </documento>
+                </caso>
+                <caso id="477" descricao="Simples Nacional 2007 (Lei Complementar n° 123, de 2006)">
+                    <documento>
+                        <id>4213</id>
+                        <descricao>Cópia do extrato da conta Simples Nacional 2007 ou outro documento que comprove a opção por tal parcelamento</descricao>
+                    </documento>
+                </caso>
+                <caso id="478" descricao="Simples Nacional 2009 (Lei Complementar n° 123, de 2006)">
+                    <documento>
+                        <id>4215</id>
+                        <descricao>Cópia dos comprovantes de pagamento das parcelas (DARF – Código de Receita 0970).</descricao>
+                    </documento>
+                    <documento>
+                        <id>4214</id>
+                        <descricao>Cópia do pedido do parcelamento</descricao>
+                    </documento>
+                </caso>
+                <caso id="479" descricao="IES (Lei n° 10.260, de 2001)">
+                    <documento>
+                        <id>4216</id>
+                        <descricao>Cópia do extrato da conta IES ou outro documento que comprove a opção por tal parcelamento</descricao>
+                    </documento>
+                </caso>
+                <caso id="480" descricao="PAES ITR (Lei n° 10.684, de 2003)">
+                    <documento>
+                        <id>4218</id>
+                        <descricao>Cópia dos comprovantes de pagamento das parcelas (DARFs – Código de Receita 7317).</descricao>
+                    </documento>
+                    <documento>
+                        <id>4217</id>
+                        <descricao>Cópia do pedido do parcelamento e anexos com a discriminação dos débitos, nos termos do art. 12 da Portaria Conjunta PGFN/SRF n° 1, de 25 de junho de 2003;</descricao>
+                    </documento>
+                </caso>
+                <caso id="481" descricao="Art. 3° da MP n° 470, de 2009">
+                    <documento>
+                        <id>4221</id>
+                        <descricao>Declaração de utilização de prejuízos fiscais ou base de cálculo negativa da CSLL (quando for o caso)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4220</id>
+                        <descricao>Cópia dos comprovantes de pagamento à vista ou das parcelas (DARFs – Código de Receita 1480)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4219</id>
+                        <descricao>Cópia do pedido de pagamento/parcelamento, nos termos da Portaria Conjunta PGFN/RFB n° 9, de 30 de outubro de 2009</descricao>
+                    </documento>
+                </caso>
+                <caso id="482" descricao="Lei n° 11.941, de 2009">
+                    <documento>
+                        <id>4224</id>
+                        <descricao>Comprovantes de pagamento das parcelas</descricao>
+                    </documento>
+                    <documento>
+                        <id>4223</id>
+                        <descricao>Cópia da indicação dos débitos realizada na negociação</descricao>
+                    </documento>
+                    <documento>
+                        <id>4222</id>
+                        <descricao>Cópia do requerimento de parcelamento</descricao>
+                    </documento>
+                </caso>
+                <caso id="483" descricao="Interposição de embargos por ente público">
+                    <documento>
+                        <id>4226</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa a ação judicial está vinculada, conforme modelo de declaração</descricao>
+                    </documento>
+                    <documento>
+                        <id>4225</id>
+                        <descricao>Cópia da petição inicial dos Embargos devidamente protocolada ou cópia do despacho que ordenou a expedição do precatório</descricao>
+                    </documento>
+                </caso>
+                <caso id="484" descricao="Benefícios da Lei nº 11.941, de 27 de maio de 2009 e reabertura (Lei nº 12.973, de 13 de maio de 2014) e Lei n° 12.996, de 18 de junho de 2014">
+                    <documento>
+                        <id>4231</id>
+                        <descricao>Declaração, assinada pelo representante legal ou seu procurador, de que os valores recolhidos correspondem ao devido, nos termos da Portaria Conjunta PGFN/RFB nº 07 de 2013 ou  da Portaria Conjunta PGFN/RFB n° 13 de 2014.</descricao>
+                    </documento>
+                    <documento>
+                        <id>4230</id>
+                        <descricao>Memória de cálculo dos recolhimento do parcelamento com os benefícios da Lei 12.996/2014, indicando claramente as inscrições que se pretende parcelar, o valor da antecipação, seu percentual, a quantidade e o valor das parcelas.</descricao>
+                    </documento>
+                    <documento>
+                        <id>4229</id>
+                        <descricao>Memória de cálculo dos recolhimentos do parcelamento com os benefícios da Lei 11.941/2009, indicando claramente as inscrições que se pretende parcelar</descricao>
+                    </documento>
+                    <documento>
+                        <id>4228</id>
+                        <descricao>Comprovação do pagamento da antecipação/entrada e das demais parcelas eventualmente vencidas até a data do pedido</descricao>
+                    </documento>
+                    <documento>
+                        <id>4227</id>
+                        <descricao>Comprovação da adesão (informação disponível no sistema PAEX – “PAEX, CONSULTA, CONSPEDIDO”)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4105" tipo="presencial">
+                        <descricao>Na [Unidade de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa anterior</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3111">
+            <titulo>Receber resultado</titulo>
+            <descricao>No Centro Virtual de Atendimento da PGFN, opção "Consulta de protocolo/requerimento"</descricao>
+            <documentos>
+                <default>
+                    <item id="4238">CPF ou CNPJ</item>
+                    <item id="4239">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4106" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3175">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3176">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3177">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3178">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3755">CADIN</item>
+        <item id="3756">dívida com o governo</item>
+        <item id="3757">dívida pública</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1132">[Lei n. 10.522, de 19 de julho de 2002](http://www.planalto.gov.br/ccivil_03/leis/2002/L10522.htm)</item>
+        <item id="1133">[Portaria PGFN n. 810, de 13 de maio de 2009](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/portarias/Portaria_810_2009.doc)</item>
+    </legislacoes>
+</servico>
