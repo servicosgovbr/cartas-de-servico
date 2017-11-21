@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>substituir-ou-cancelar-garantia-extrajudicial-de-debito-inscrito-em-divida-ativa-da-uniao</id>
+    <dbId>1153</dbId>
+    <nome>Substituir ou cancelar garantia extrajudicial de débito inscrito em Dívida Ativa da União</nome>
+    <sigla></sigla>
+    <descricao>É o serviço por meio do qual o contribuinte ou terceiro garantidor poderá requerer a substituição ou o levantamento de garantia(s) prestada(s) administrativamente em relação a débito(s) inscrito(s) em Dívida Ativa ou a processos de arrolamento encaminhados à Procuradoria da Fazenda Nacional.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1452">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos>Que tenha prestado garantia em processo administrativo ou tenha bens arrolados em processo de arrolamento administrativo sob administração da Procuradoria-Geral da Fazenda Nacional e deseje substituir a garantia ou o bem arrolado ou promover a liberação do gravame.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="360" unidade="dias-corridos"/>
+        <descricao>Este é o prazo máximo previsto no art. 24 da Lei nº 11.457 de 2007.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3119">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>O serviço deverá ser protocolizado na unidade de atendimento integrado PGFN/RFB  (Receita Federal) do domicílio fiscal do requerente</descricao>
+            <documentos>
+                <default>
+                    <item id="4274">CPF</item>
+                    <item id="4275">CNPJ (se for o caso)</item>
+                    <item id="4276">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4114" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3120">
+            <titulo>Protocolar pedido</titulo>
+            <descricao>Obtenha o modelo do formulário [aqui](http://www.pgfn.fazenda.gov.br/formularios/Requerimento%20_%20Portaria%20PGFN%20%20454_2010%20%20__%20%20Substituicao_Garantia_Extrajudicial__Anexo_VIII____versao_1_7_2010.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="4310">Requerimento preenchido, em formulário específico, e assinado pela pessoa legitimada</item>
+                    <item id="4311">Documento oficial de identificação</item>
+                    <item id="4312">CPF</item>
+                    <item id="4313">Procuração e documento oficial de identificação do procurador (se for o caso)</item>
+                    <item id="4314">Declaração firmada pelo devedor, sob as penas da lei, de que a garantia apresentada não foi oferecida e aceita em outro parcelamento eventualmente existente e, em se tratando de bem imóvel, de que detém o domínio pleno do mesmo</item>
+                </default>
+                <caso id="492" descricao="Se espólio antes do compromisso do inventariante">
+                    <documento>
+                        <id>4279</id>
+                        <descricao>Documento oficial de identificação do contribuinte (uma das pessoas designadas no artigo 1.797 do Código Civil)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4278</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4277</id>
+                        <descricao>CPF da pessoa falecida</descricao>
+                    </documento>
+                </caso>
+                <caso id="493" descricao="Se espólio com inventariante compromissado">
+                    <documento>
+                        <id>4283</id>
+                        <descricao>Documento oficial de identificação do inventariant</descricao>
+                    </documento>
+                    <documento>
+                        <id>4282</id>
+                        <descricao>Termo de compromisso do inventariante</descricao>
+                    </documento>
+                    <documento>
+                        <id>4281</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4280</id>
+                        <descricao>CPF da pessoa falecida</descricao>
+                    </documento>
+                </caso>
+                <caso id="494" descricao="Se espólio após a partilha">
+                    <documento>
+                        <id>4287</id>
+                        <descricao>Documento oficial de identificação do cônjuge sobrevivente ou de qualquer herdeiro</descricao>
+                    </documento>
+                    <documento>
+                        <id>4286</id>
+                        <descricao>Formal de partilha (documento extraído dos autos do inventário)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4285</id>
+                        <descricao>Certidão de óbito</descricao>
+                    </documento>
+                    <documento>
+                        <id>4284</id>
+                        <descricao>CPF da pessoa falecida</descricao>
+                    </documento>
+                </caso>
+                <caso id="495" descricao="Hipoteca">
+                    <documento>
+                        <id>4289</id>
+                        <descricao>Documento de notificação ou cobrança do imposto predial territorial urbano (IPTU) ou do imposto territorial rural (ITR)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4288</id>
+                        <descricao>cópia autenticada e atualizada da matrícula do imóvel</descricao>
+                    </documento>
+                </caso>
+                <caso id="496" descricao="Penhor e Anticrese">
+                    <documento>
+                        <id>4297</id>
+                        <descricao>Se o bem for de natureza industrial (maquinário, etc), mercantil (mercadorias em estoque ou outros bens empregados na atividade comercial) ou se tratar de veículo, exigir-se-á prova da propriedade dos bens</descricao>
+                    </documento>
+                    <documento>
+                        <id>4296</id>
+                        <descricao>Na hipótese do art. 8º da Lei nº 7.713/88, a apresentação do comprovante dos 3 (três) últimos recolhimentos do carnê-leão, e, se for o caso, o comprovante de pagamento da complementação mensal do Imposto de Renda</descricao>
+                    </documento>
+                    <documento>
+                        <id>4295</id>
+                        <descricao>Tratando-se de rendimentos do devedor, a última DIPJ, a prova das fontes de renda e a declaração de vínculo empregatício</descricao>
+                    </documento>
+                    <documento>
+                        <id>4294</id>
+                        <descricao>Se faturamento do devedor, comprovante do faturamento ou da receita mensal por meio de balancete ou DCTF ou pela apresentação do livro de apuração do IPI, ICMS ou ISS, ou por qualquer outro meio idôneo</descricao>
+                    </documento>
+                    <documento>
+                        <id>4293</id>
+                        <descricao>Se o penhor rural recair sobre maquinário agrícola (as chamadas pertenças), deverá ser juntada prova de propriedade do bem e laudo de avaliação do profissional legalmente habilitado</descricao>
+                    </documento>
+                    <documento>
+                        <id>4292</id>
+                        <descricao>Tratando-se de frutos e rendimentos de bem imóvel, laudo circunstanciado relativo à produtividade, elaborado por empresa ou profissional legalmente habilitado</descricao>
+                    </documento>
+                    <documento>
+                        <id>4291</id>
+                        <descricao>Declaração do garantidor de que sobre o bem ofertado não recai ônus reais de qualquer espécie</descricao>
+                    </documento>
+                    <documento>
+                        <id>4290</id>
+                        <descricao>Prova da propriedade dos bens</descricao>
+                    </documento>
+                </caso>
+                <caso id="497" descricao="Fiança bancária">
+                    <documento>
+                        <id>4300</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e a qual ação judicial a carta de fiança bancária está vinculada, conforme modelo de declaração</descricao>
+                    </documento>
+                    <documento>
+                        <id>4299</id>
+                        <descricao>Decisão judicial que deferiu a garantia por meio de carta de fiança bancária, se houver</descricao>
+                    </documento>
+                    <documento>
+                        <id>4298</id>
+                        <descricao>Carta de fiança bancária, emitida nos moldes das Portarias PGFN n° 644, de 2009, e n° 1.378, de 2009</descricao>
+                    </documento>
+                </caso>
+                <caso id="498" descricao="Outras fianças">
+                    <documento>
+                        <id>4302</id>
+                        <descricao>Comprovante de residência do fiador</descricao>
+                    </documento>
+                    <documento>
+                        <id>4301</id>
+                        <descricao>Relação de bens do fiador, acompanhada de certidões negativas dos cartórios de protesto e dos cartórios judiciais de distribuição informando as ações cíveis no âmbito da Justiça Estadual e Federal com jurisdição sobre o domicílio do fiador</descricao>
+                    </documento>
+                </caso>
+                <caso id="499" descricao="Bens Penhorados">
+                    <documento>
+                        <id>4306</id>
+                        <descricao>em se tratando de penhora de dinheiro: além da documentação acima, extrato da conta judicial (expedida no prazo de, no máximo, trinta dias anteriores ao protocolo do requerimento)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4305</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa o termo/auto de penhora e laudos de avaliação judicial apresentados estão vinculados, conforme modelo de declaração</descricao>
+                    </documento>
+                    <documento>
+                        <id>4304</id>
+                        <descricao>Laudo de avaliação judicial, atualizado conforme a espécie do bem e eventuais reavaliações</descricao>
+                    </documento>
+                    <documento>
+                        <id>4303</id>
+                        <descricao>No caso de penhora, ao requerimento deverá ser juntado o termo/auto de penhora e eventuais reforços, ou comprovante de bloqueio na hipótese de BACENJUD</descricao>
+                    </documento>
+                </caso>
+                <caso id="500" descricao="Seguro-garantia">
+                    <documento>
+                        <id>4309</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e a qual ação judicial o seguro-garantia está vinculado, conforme modelo de declaração</descricao>
+                    </documento>
+                    <documento>
+                        <id>4308</id>
+                        <descricao>Decisão judicial que deferiu a garantia por meio de seguro-garantia, se houver</descricao>
+                    </documento>
+                    <documento>
+                        <id>4307</id>
+                        <descricao>Apólice de seguro-garantia, emitida nos moldes da Portaria PGFN n° 164, de 27 de fevereiro de  2014</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4115" tipo="presencial">
+                        <descricao>Na [Unidade de atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o atendimento foi agendado na etapa passada</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3121">
+            <titulo>Receber resposta</titulo>
+            <descricao>No e-CAC da PGFN, a partir da página da PGFN, o requerente poderá acompanhar o andamento de seu Protocolo/Requerimento e a decisão da PGFN, em “Consulta de Requerimentos”.</descricao>
+            <documentos>
+                <default>
+                    <item id="4315">CPF ou CNPJ</item>
+                    <item id="4316">Senha do e-CAC da PGFN</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4116" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3187">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3188">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3189">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3190">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças pessoais</item>
+        <item>Fiscalização do Estado</item>
+        <item>Tributação</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3775">garantia de dívida</item>
+        <item id="3776">substituir</item>
+        <item id="3777">Dívida Ativa da União</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1136">-</item>
+    </legislacoes>
+</servico>
