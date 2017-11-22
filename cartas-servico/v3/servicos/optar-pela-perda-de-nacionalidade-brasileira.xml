@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>optar-pela-perda-de-nacionalidade-brasileira</id>
+    <dbId>1164</dbId>
+    <nome>Optar pela perda de nacionalidade brasileira</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="920">Perda da Nacionalidade Brasileira</item>
+    </nomes-populares>
+    <descricao>É o ato pelo qual uma pessoa perde voluntariamente a sua nacionalidade brasileira. Só é possível perder a nacionalidade brasileira caso a pessoa já tenha adquirido outra nacionalidade.</descricao>
+    <contato>Caso tenha dúvidas, preencha este [questionário](https://docs.google.com/forms/d/e/1FAIpQLScaKxNdutP22pF7FEX4aMgdIQjF2eWLyiao_X54y-hbfhshLA/viewform?c=0&amp;w=1)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1469">
+            <tipo>Cidadão brasileiro</tipo>
+            <requisitos>Nato ou naturalizado que adquiriu outra nacionalidade e desejar perder a brasileira.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3149">
+            <titulo>Apresentar requerimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4414">Certidão de nascimento</item>
+                    <item id="4415">Cópia do certificado de naturalização da outra nacionalidade, legalizado junto às autoridades consulares brasileiras no exterior e traduzido oficialmente</item>
+                </default>
+                <caso id="508" descricao="Brasileiro naturalizado">
+                    <documento>
+                        <id>4413</id>
+                        <descricao>Certificado de naturalização brasileira</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4161" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4162" tipo="presencial">
+                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4163" tipo="postal">
+                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3150">
+            <titulo>Acompanhar processo e receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4416">CPF</item>
+                    <item id="4417">Número do processo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4164" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4165" tipo="web-acompanhar">
+                        <descricao>http://formularios.mj.gov.br/limesurvey/index.php/998625/lang/pt-BR/newtest/Y</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4166" tipo="e-mail">
+                        <descricao>processos.migracoes@mj.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4167" tipo="web">
+                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3214">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Emigrações e Imigrações</item>
+        <item>Justiça e Segurança Pública</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3851">perda de nacionalidade brasileira</item>
+        <item id="3852">deixar de ser brasileiro</item>
+        <item id="3853">desisitir da nacionalidade brasileira</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1156">-</item>
+    </legislacoes>
+</servico>
