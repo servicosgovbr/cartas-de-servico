@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>declarar-exportacao</id>
+    <dbId>1166</dbId>
+    <nome>Declarar exportação</nome>
+    <sigla>DE</sigla>
+    <nomes-populares>
+        <item id="922">Declaração de exportação</item>
+    </nomes-populares>
+    <descricao>Declaração prestada pelo exportador ou seu representante legal registrada no Sistema Integrado de Comércio Exterior (Siscomex) ou no Portal Único do Comércio Exterior visando o despacho de exportação, procedimento mediante o qual é verificada a exatidão dos dados declarados pelo exportador em relação à mercadoria, aos documentos apresentados e à legislação específica, com vistas a seu desembaraço aduaneiro e a sua saída para o exterior.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1471">
+            <tipo>Qualquer pessoa física ou jurídica</tipo>
+            <requisitos>Que deseje exportar bens</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3153">
+            <titulo>Preencher declaração</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4423">Certificado digital</item>
+                    <item id="4424">CPF</item>
+                    <item id="4425">CNPJ (Se houver)</item>
+                    <item id="4426">Procuração do representante legal (Se houver)</item>
+                    <item id="4427">Nota Fiscal</item>
+                    <item id="4428">Certificados</item>
+                    <item id="4429">Dados do bem e da operação de exportação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4175" tipo="web">
+                        <descricao>https://www37.receita.fazenda.gov.br/exportacao/login.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3154">
+            <titulo>Receber informação sobre o imposto de exportação a ser pago</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4430">Certificado digital</item>
+                    <item id="4431">CPF ou CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4176" tipo="web">
+                        <descricao>https://www37.receita.fazenda.gov.br/exportacao/login.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3216">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3217">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3218">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3219">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Comércio e Serviços</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3857">exportação</item>
+        <item id="3858">declaração de exportação</item>
+        <item id="3859">siscomex</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1158">-</item>
+    </legislacoes>
+</servico>
