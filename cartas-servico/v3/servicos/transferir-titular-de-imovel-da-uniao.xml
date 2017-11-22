@@ -80,8 +80,8 @@
             </canais-de-prestacao>
         </etapa>
         <etapa id="1974">
-            <titulo>Requerer a Transferência de Titularidade de Imóvel</titulo>
-            <descricao>Solicite a alteração do responsável/titular de imóvel da União no cadastro da SPU, preenchendo os dados do requerimento e anexando os documentos solicitados no portal patrimoniodetodos.gov.br.</descricao>
+            <titulo>Alterar o responsável pelo imóvel no cadastro da SPU</titulo>
+            <descricao>Preencher os campos solicitados no [Portal da SPU](patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
             <documentos>
                 <default/>
                 <caso id="463" descricao="Pessoa Física Adquirente">
@@ -126,6 +126,23 @@
                 <default>
                     <canal-de-prestacao id="2453" tipo="web">
                         <descricao>http://patrimoniodetodos.gov.br/#/requerimentoTransferenciaTitular?servico=14#documentos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3106">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4135" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
