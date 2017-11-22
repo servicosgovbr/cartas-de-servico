@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>credenciar-instituicao-ou-curso-superior</id>
+    <dbId>1161</dbId>
+    <nome>Credenciar instituição ou curso superior</nome>
+    <sigla></sigla>
+    <descricao>1)Credenciamento e Recredenciamento de Instituições de Educação Superior: Expedição de ato regulatório pelo Ministério da Educação, necessário para que uma Instituição de Educação Superior oferte cursos de graduação. Conforme previsto na legislação, os atos devem passar por renovações periódicas após avaliação.
+
+2)Autorização e Reconhecimento de Curso: Expedição de ato regulatório pelo Ministério da Educação, necessário para que uma Instituição de Educação Superior regularmente credenciada possa ofertar curso de graduação e posteriormente emitir diplomas dos concluintes de um curso superior de graduação. Os atos são expedidos após protocolo de processo específico pela Instituição de Educação Superior interessada, no Sistema e-MEC (Sistema Eletrônico de tramitação dos processos regulatórios). Sua expedição requer prévia avaliação e está condicionada ao atingimento, pela Instituição/curso, dos padrões de qualidade estabelecidos na legislação vigente.
+
+3)	Renovação de Reconhecimento de Curso: Expedição de ato regulatório pelo Ministério da Educação que renova o ato de reconhecimento do curso após processo de avaliação (o ato de reconhecimento deve passar por renovações periódicas, conforme disposto na Lei de Diretrizes e Bases – LDB). Aplica-se a mesma descrição do reconhecimento de cursos.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1464">
+            <tipo>Empresas, Associações, Autarquias e Fundações</tipo>
+            <requisitos>mantenedoras de Educação Superior</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3140">
+            <titulo>Requerer credenciamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4380">Ata de fundação</item>
+                    <item id="4381">Certidão de regularidade fiscal da Receita Federal</item>
+                    <item id="4382">CNPJ</item>
+                    <item id="4383">Contrato Social</item>
+                    <item id="4384">Plano de Desenvolvimento Institucional</item>
+                    <item id="4385">Projeto Pedagógico de Curso</item>
+                    <item id="4386">CPF</item>
+                    <item id="4387">Senha do sistema eletrônico e-MEC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4146" tipo="web">
+                        <descricao>http://emec.mec.gov.br/modulos/visao_comum/php/login/comum_login.php?691ba69561e311dd66adaae89947c631=YWJhX21hbnRpZGE=</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3141">
+            <titulo>Preencher formulário eletrônico de avaliação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4388">Projeto Pedagógigo do Curso</item>
+                    <item id="4389">Lista de docentes do curso (com titulação e regime de trabalho)</item>
+                    <item id="4390">Instalações e equipamentos disponíveis para oferta do curso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4147" tipo="web">
+                        <descricao>http://emec.mec.gov.br/modulos/visao_comum/php/login/comum_login.php?691ba69561e311dd66adaae89947c631=YWJhX21hbnRpZGE=</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3142">
+            <titulo>Realizar pagamento da taxa de avaliação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4391">Guia de Recolhimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="145">
+                        <descricao>Taxa de avaliação</descricao>
+                        <moeda>R$</moeda>
+                        <valor>6,960</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4148" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3143">
+            <titulo>Receber resultado da análise do relatório de avaliação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4392">CPF</item>
+                    <item id="4393">Senha do sistema eletrônico e-MEC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4149" tipo="web">
+                        <descricao>http://emec.mec.gov.br/modulos/visao_comum/php/login/comum_login.php?691ba69561e311dd66adaae89947c631=YWJhX21hbnRpZGE=</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3207">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3208">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3209">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Fiscalização do Estado</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3841">IES</item>
+        <item id="3842">credenciar universidade</item>
+        <item id="3843">credenciar curso</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1152">-</item>
+    </legislacoes>
+</servico>
