@@ -32,11 +32,16 @@ Todas as entidades, antes de microfilmar documentos, devem solicitar ao  Minist�
     <etapas>
         <etapa id="1291">
             <titulo>Apresentar requerimento</titulo>
-            <descricao>O requerimento deve conter:
-- Solicitação para executar os serviços de microfilmagem;
-- A identificação da empresa, com razão social e CNPJ;
-- A identificação do solicitante;
-- A identificação do (s) responsável (is) pela execução dos serviços de microfilmagem;
+            <descricao>O requerimento deve conter:       
+
+- Solicitação para executar os serviços de microfilmagem;       
+
+- A identificação da empresa, com razão social e CNPJ;          
+
+- A identificação do solicitante;        
+
+- A identificação do (s) responsável (is) pela execução dos serviços de microfilmagem;        
+
 - E-mail para contato.</descricao>
             <documentos>
                 <default>
@@ -70,9 +75,35 @@ Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</de
                 </default>
             </canais-de-prestacao>
         </etapa>
+        <etapa id="3159">
+            <titulo>Acompanhar processo e receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4440">CNPJ</item>
+                    <item id="4441">Número do Pedido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4184" tipo="web-acompanhar">
+                        <descricao>http://formularios.mj.gov.br/limesurvey/index.php/998625/lang/pt-BR/newtest/Y</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4185" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4186" tipo="web">
+                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
-        <nomeOrgao>Ministério da Justiça e Cidadania (MJC)</nomeOrgao>
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
         <item idSegmento="3" idServicoSegmento="1491">Empresas</item>
@@ -87,7 +118,7 @@ Esplanada dos Ministérios, Bloco T, Anexo II - CEP 70064-900. Brasília/DF.</de
         <item id="1109">registro de microfilmagem</item>
     </palavras-chave>
     <legislacoes>
-        <item id="336">[Lei 5.433/68](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1968-05-08;5433);
-[Decreto 1.799/96](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1996-01-30;1799)</item>
+        <item id="336">[Lei 5.433/68](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1968-05-08;5433);</item>
+        <item id="1165">[Decreto 1.799/96](http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1996-01-30;1799)</item>
     </legislacoes>
 </servico>
