@@ -8,11 +8,14 @@
         <item id="357">Edital de intercâmbio</item>
         <item id="358">Bolsa-estudo</item>
         <item id="359">Apoio financeiro ao estudo</item>
+        <item id="931">Programa #MeLevaCultura - Edital de Intercâmbio no Exterior.</item>
     </nomes-populares>
     <descricao>Ação do Ministério da Cultura que visa a concessão de recursos financeiros a título de ajuda de custo (mediante edital) para passagens e diárias, possibilitando o envio de agentes para participar de eventos e cursos no Brasil e no exterior.
 
 Poderão participar de apresentações e residências artísticas, atividades de formação técnica, artística ou acadêmica, intercâmbios e estágios de até 12 meses, e participar de eventos de arte e negócios na área cultural.</descricao>
-    <contato></contato>
+    <contato>**Coordenação-Geral de Projetos Apoiados pelo Fundo Nacional da Cultura**      
+¨ **Email:** intercambio@cultura.gov.br       
+¨ **Telefone:** (61) 2024-2170</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
@@ -26,7 +29,7 @@ Poderão participar de apresentações e residências artísticas, atividades de
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <atendimento-imediato/>
+        <entre min="30" max="60" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
@@ -50,27 +53,58 @@ Poderão participar de apresentações e residências artísticas, atividades de
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="1498" tipo="web-inscrever-se">
-                        <descricao>http://novosalic.cultura.gov.br/login/cadastrarusuario</descricao>
+                        <descricao>http://salic.cultura.gov.br/autenticacao/index/cadastrarusuario</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4208" tipo="aplicativo-movel">
+                        <descricao>¨ [Android](https://play.google.com/store/apps/details?id=com.ionicframework.salicmobile804600)        
+¨ [iOS](https://itunes.apple.com/us/app/salic/id1224617502)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
         <etapa id="1219">
             <titulo>Encontrar proposta no SALIC</titulo>
-            <descricao>O candidato interessado deve listar as propostas disponíveis no SALIC, e ...</descricao>
+            <descricao>O candidato interessado deve listar as propostas disponíveis no SALIC, e escolher a qual quer se candidatar</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="4474">Email e senha</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1499" tipo="web-consultar">
-                        <descricao>http://novosalic.cultura.gov.br/manterpropostaincentivofiscal/listarproposta</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="1500" tipo="telefone">
                         <descricao>Coordenação Geral de Projetos Apoiados pelo Fundo Nacional da Cultura: (61) 2024-2170</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="1499" tipo="web">
+                        <descricao>http://sistemas.cultura.gov.br/propostaweb/ctrLogin/ctrLogin.php</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4209" tipo="aplicativo-movel">
+                        <descricao>¨ [Android](https://play.google.com/store/apps/details?id=com.ionicframework.salicmobile804600)        
+¨ [iOS](https://itunes.apple.com/us/app/salic/id1224617502)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3173">
+            <titulo>Inscrever proposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4475">Dados do evento</item>
+                    <item id="4476">Justificativa para participação</item>
+                    <item id="4477">Email e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4210" tipo="web">
+                        <descricao>http://sistemas.cultura.gov.br/propostaweb/ctrLogin/ctrLogin.php</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -92,6 +126,7 @@ Poderão participar de apresentações e residências artísticas, atividades de
         <item id="1072">Estudo</item>
         <item id="1073">SALIC</item>
         <item id="1074">Edital</item>
+        <item id="3902">Me leva cultura</item>
     </palavras-chave>
     <legislacoes>
         <item id="1002">-</item>
