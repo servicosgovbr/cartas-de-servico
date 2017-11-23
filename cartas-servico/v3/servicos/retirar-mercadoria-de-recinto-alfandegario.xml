@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>retirar-mercadoria-de-recinto-alfandegario</id>
+    <dbId>1171</dbId>
+    <nome>Retirar mercadoria de recinto alfandegário</nome>
+    <sigla>DI</sigla>
+    <nomes-populares>
+        <item id="926">Declaração de importação</item>
+    </nomes-populares>
+    <descricao>Declaração prestada pelo importador ou seu representante legal, para o pagamento do imposto e retirada da mercadoria do recinto alfandegado. Despacho de importação é o procedimento por meio do qual o fiscal verifica se a mercadoria descrita na Declaração de Importação (DI) é efetivamente aquela que está sendo examinada fisicamente e se os tributos foram corretamente recolhidos.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1477">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3164">
+            <titulo>Registro da declaração de importação</titulo>
+            <descricao>Para a utilização do Siscomex, no registro de uma Declaração de Importação, é pago a taxa de utilização do Siscomex que obedece a seguinte regra de cálculo:
+- R$ 185,00 – por declaração de importação – DI;       
+
+- R$ 29,50 – para cada adição de mercadoria à DI, observados os seguintes limites:      
+
+- até a 2ª adição – R$ 29,50;     
+
+- da 3ª à 5ª – R$ 23,60;      
+
+- da 6ª à 10ª – R$ 17,70;     
+
+- da 11ª à 20ª – R$ 11,80;     
+
+- da 21ª à 50 – R$ 5,90;   
+
+- a partir da 51ª – R$ 2,95.</descricao>
+            <documentos>
+                <default>
+                    <item id="4457">CPF ou CNPJ</item>
+                    <item id="4458">Passaporte</item>
+                    <item id="4459">Procuração do representante legal</item>
+                    <item id="4460">Fatura Comercial</item>
+                    <item id="4461">Conhecimento de carga</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="147">
+                        <descricao>Taxa de Utilização do Siscomex (detalhes na descrição da etapa)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4195" tipo="web">
+                        <descricao>https://www1.siscomex.receita.fazenda.gov.br/siscomexImpweb-7/login_cert.jsp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3165">
+            <titulo>Pagar o imposto devido</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4462">Guia de recolhimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="148">
+                        <descricao>Variável de acordo com os produtos importados</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4196" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3166">
+            <titulo>Retirar produto</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4463">Declaração de importação</item>
+                    <item id="4464">Documento de identificação oficial</item>
+                    <item id="4465">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4197" tipo="presencial">
+                        <descricao>Recinto alfandegário onde estão as mercadorias</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3229">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3230">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3231">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3232">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3878">declarar importação</item>
+        <item id="3879">importação</item>
+        <item id="3880">imposto de importação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1168">-</item>
+    </legislacoes>
+</servico>
