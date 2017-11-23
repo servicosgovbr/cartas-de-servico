@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>habilitar-recinto-para-realizacao-de-operacoes-de-regimes-especiais</id>
+    <dbId>1169</dbId>
+    <nome>Habilitar recinto para realização de operações de regimes especiais</nome>
+    <sigla></sigla>
+    <descricao>Para alguns Regimes Especiais é necessária a habilitação prévia de recinto por onde poderão ser realizados os despachos de mercadorias ao amparo dos Regimes Especiais. Dessa forma, o interessado apresenta requerimento de habilitação ao regime juntamente com os documentos exigidos em legislação específica. Após a análise do requerimento, em regra, a Receita Federal edita um Ato Declaratório Executivo para a concessão da habilitação.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1475">
+            <tipo>Empresas públicas, privadas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo não é estimado ainda</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3160">
+            <titulo>Apresentar requerimento</titulo>
+            <descricao>Apresentação do requerimento para habilitação do recinto juntamente com documentação instrutiva.</descricao>
+            <documentos>
+                <default>
+                    <item id="4444">CNPJ</item>
+                    <item id="4445">Contrato Social</item>
+                    <item id="4446">Certidão de Regularidade Fiscal da Receita Federal</item>
+                    <item id="4447">Planta de locação, baixa e de corte da área, delimitação do recinto.</item>
+                    <item id="4448">Documentação técnica relativa a sistema informatizado</item>
+                </default>
+                <caso id="509" descricao="Se acesso via web">
+                    <documento>
+                        <id>4442</id>
+                        <descricao>Certificado Digital; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>4443</id>
+                        <descricao>Código de acesso e senha</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4187" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/interface/atendimento-virtual</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4188" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3161">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4451">CNPJ</item>
+                </default>
+                <caso id="510" descricao="Se via web">
+                    <documento>
+                        <id>4449</id>
+                        <descricao>Certificado Digital; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>4450</id>
+                        <descricao>Código de Acesso e Senha</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4189" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/interface/atendimento-virtual</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4190" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3225">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Comercio externo</item>
+        <item>Encargos financeiros</item>
+        <item>Relações Internacionais</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3868">Regimes especiais</item>
+        <item id="3869">habilitação</item>
+        <item id="3870">comércio exterior</item>
+        <item id="3871">aduana</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1166">-</item>
+    </legislacoes>
+</servico>
