@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>requerer-isencao-de-pagamento-relativo-a-imovel-da-uniao</id>
+    <dbId>1167</dbId>
+    <nome>Requerer Isenção de Pagamento relativo a Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="923">Pedido de Isenção</item>
+    </nomes-populares>
+    <descricao>Este serviço permite a solicitação de isenção do pagamento de foros, taxas de ocupação e laudêmios para pessoas físicas cuja renda familiar mensal seja igual ou inferior ao valor correspondente a 5 (cinco) salários mínimos, ou para pessoas jurídicas enquadradas como entidades beneficentes ou de salvaguarda para bens culturais, conforme Lei nº 13.139, de 2015.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <solicitantes>
+        <solicitante id="1472">
+            <tipo>Pessoa física</tipo>
+            <requisitos>Com renda familiar mensal igual ou inferior a cinco salários mínimos e desde que o imóvel seja utilizado para residência do responsável e dos demais familiares</requisitos>
+        </solicitante>
+        <solicitante id="1473">
+            <tipo>Pessoa jurídica</tipo>
+            <requisitos>Que desenvolva ações de salvaguarda para bens culturais registrados pelo (Iphan) ou reconhecida como entidade beneficente, com prestação de serviços nas áreas de assistência social, saúde ou educação.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3155">
+            <titulo>Realizar o pedido</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4432">CPF ou CNPJ</item>
+                    <item id="4433">RIP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4177" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoIsencao?servico=13</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3156">
+            <titulo>Acompanhar pedido e receber resultado</titulo>
+            <descricao>Entre na página e preencha os dados na área "Acompanhe seu pedido".</descricao>
+            <documentos>
+                <default>
+                    <item id="4434">CPF ou CNPJ</item>
+                    <item id="4435">Número de Atendimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4178" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3220">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Finanças pessoais</item>
+        <item>Patrimônio da União</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3860">Isenção</item>
+        <item id="3861">Imóvel da União</item>
+        <item id="3862">SPU</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1159">[Decreto-Lei n° 1.876, de 1981](DECRETO-LEI Nº 1.876, DE 15 DE JULHO DE 1981)</item>
+        <item id="1160">[Lei nº 13.139, de 2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/Lei/L13139.htm)</item>
+    </legislacoes>
+</servico>
