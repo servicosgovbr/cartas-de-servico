@@ -4,19 +4,19 @@
     <dbId>1129</dbId>
     <nome>Regularizar dívidas de imóvel da União oriundo da RFFSA</nome>
     <sigla></sigla>
-    <descricao>Regularizar dívidas relativas à utilização de imóvel da União oriundos da RFFSA.</descricao>
+    <descricao>Regularizar dívidas relativas à utilização de imóvel da União oriundo da RFFSA.</descricao>
     <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;hilton.ramalho@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1750&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <solicitantes>
         <solicitante id="1417">
             <tipo>Pessoa física ou jurídica</tipo>
-            <requisitos>Que tenha vínculo regular de utilização de imóvel da União.</requisitos>
+            <requisitos>Que tenha vínculo regular de utilização de imóvel da União oriundo da RFFSA.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="30" max="60" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <entre min="0" max="0" unidade="dias-corridos"/>
+        <descricao>A definir</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
@@ -24,35 +24,35 @@
     <etapas>
         <etapa id="3026">
             <titulo>Preencher o requerimento</titulo>
-            <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=112), preencha o requerimento, anexe os documentos, marque a caixa de validação “Não sou robô” e clique no botão “Enviar”  para encaminhar a solicitação do serviço.</descricao>
             <documentos>
                 <default/>
                 <caso id="490" descricao="Pessoa Física">
                     <documento>
-                        <id>4271</id>
-                        <descricao>Certidão negativa de imóveis retirada em Cartório de Registro de Imóveis</descricao>
-                    </documento>
-                    <documento>
-                        <id>4270</id>
-                        <descricao>Documento de comprovação da situação de carência ou baixa renda do responsável e, quando for o caso, dos familiares que com ele residam.</descricao>
+                        <id>4268</id>
+                        <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
                     </documento>
                     <documento>
                         <id>4269</id>
                         <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
                     </documento>
                     <documento>
-                        <id>4268</id>
-                        <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
+                        <id>4270</id>
+                        <descricao>Documento de comprovação da situação de carência ou baixa renda do responsável e, quando for o caso, dos familiares que com ele residam.</descricao>
+                    </documento>
+                    <documento>
+                        <id>4271</id>
+                        <descricao>Certidão negativa de imóveis retirada em Cartório de Registro de Imóveis</descricao>
                     </documento>
                 </caso>
                 <caso id="491" descricao="Pessoa Jurídica">
                     <documento>
-                        <id>4273</id>
-                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
-                    </documento>
-                    <documento>
                         <id>4272</id>
                         <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4273</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
                     </documento>
                 </caso>
             </documentos>
@@ -62,7 +62,7 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="4051" tipo="web">
-                        <descricao>http://www.patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=112#dados-documentos</descricao>
+                        <descricao>http://patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=112.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
