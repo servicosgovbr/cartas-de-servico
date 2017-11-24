@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>credenciar-responsavel-tecnico-no-registro-nacional-de-sementes-e-mudas</id>
+    <dbId>1190</dbId>
+    <nome>Credenciar responsável técnico no Registro Nacional de Sementes e Mudas</nome>
+    <sigla>RENASEM</sigla>
+    <nomes-populares>
+        <item id="948">Credenciamento no Registro Nacional de Sementes e Mudas</item>
+    </nomes-populares>
+    <descricao>Credenciamento de responsável técnico que efetue atividades no Sistema Nacional de Sementes e Mudas - SNSM</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1508">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3216">
+            <titulo>Obter e preencher formulário</titulo>
+            <descricao>Entre na página do RENASEM, clique em menu (campo superior esquerdo), escolha "credenciamento", então escolha "Responsável Técnico" e por fim "Novo".</descricao>
+            <documentos>
+                <default>
+                    <item id="4545">Formulário</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4254" tipo="web">
+                        <descricao>http://sistemasweb.agricultura.gov.br/renasem/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4255" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/acesso-a-informacao/institucional/quem-e-quem/secretaria-executiva-superintendencias-federais-de-agricultura-sfa-se-mapa)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3218">
+            <titulo>Gerar e pagar GRU</titulo>
+            <descricao>O pagamento das taxas do RENASEM deve ser efetuado por meio de Guia de Recolhimento da União – GRU. A guia deve ser preenchida conforme [estas instruções](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/sementes-e-mudas/registro-nacional-de-sementes-e-mudas-2013-renasem/taxas-e-instrucoes-para-preenchimento-da-gru)</descricao>
+            <documentos>
+                <default>
+                    <item id="4547">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="151">
+                        <descricao>Taxa de credenciamento........</descricao>
+                        <moeda>R$</moeda>
+                        <valor>75</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4256" tipo="web">
+                        <descricao>https://consulta.tesouro.fazenda.gov.br/gru_novosite/gru_simples.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3219">
+            <titulo>Solicitar Credenciamento</titulo>
+            <descricao>O formulário e o comprovante de pagamento devem ser entregues, junto com o restante da documentação necessária, em uma SFA.</descricao>
+            <documentos>
+                <default>
+                    <item id="4548">Formulário de requerimento preenchido e assinado</item>
+                    <item id="4549">Comprovante de pagamento da GRU</item>
+                    <item id="4550">Cópia do CPF</item>
+                    <item id="4551">Comprovante de registro profissional no CREA</item>
+                    <item id="4552">Declaração do interessado de que está adimplente junto ao MAPA</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4257" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/acesso-a-informacao/institucional/quem-e-quem/secretaria-executiva-superintendencias-federais-de-agricultura-sfa-se-mapa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4258" tipo="postal">
+                        <descricao>Para uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/acesso-a-informacao/institucional/quem-e-quem/secretaria-executiva-superintendencias-federais-de-agricultura-sfa-se-mapa)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3220">
+            <titulo>Acompanhar processo e receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4553">Número de protocolo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4259" tipo="web">
+                        <descricao>http://sistemas.agricultura.gov.br/consultapublica/#/processo</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4260" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/acesso-a-informacao/institucional/quem-e-quem/secretaria-executiva-superintendencias-federais-de-agricultura-sfa-se-mapa)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3281">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Defesa agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4009">RENASEM</item>
+        <item id="4010">agricultura</item>
+        <item id="4011">credenciamento</item>
+        <item id="4012">responsável técnico</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1206">-</item>
+    </legislacoes>
+</servico>
