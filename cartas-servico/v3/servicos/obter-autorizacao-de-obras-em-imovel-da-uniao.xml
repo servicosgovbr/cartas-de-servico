@@ -4,19 +4,12 @@
     <dbId>1125</dbId>
     <nome>Obter Autorização de Obras em Imóvel da União</nome>
     <sigla></sigla>
-    <nomes-populares>
-        <item id="895">Autorização de Obras</item>
-    </nomes-populares>
     <descricao>Obter autorização da Secretaria do Patrimônio da União para realização de obras em imóvel da União.</descricao>
-    <contato>Coordenação-Geral de Desenvolvimento de Infraestrutura &gt; Responsável: Valéria Soares &gt; Endereço: Esplanada dos Ministérios - Bloco C - 2º andar Brasília-DF - CEP: 70.046-900 &gt; E-mail: valeria.soares@planejamento.gov.br &gt; Tel: 55 (61) 2020-1944</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Valéria Soares&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;valeria.soares@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1944&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <solicitantes>
-        <solicitante id="1412">
-            <tipo>Pessoa Física ou Pessoa Jurídica</tipo>
-            <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9º e 10 da Lei nº 9.784 , de 29 de janeiro de 1999.</requisitos>
-        </solicitante>
-    </solicitantes>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
         <descricao>A definir</descricao>
@@ -24,74 +17,10 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="3019">
-            <titulo>Preencher requerimento</titulo>
-            <descricao>Preencher os campos do requerimento no Portal da SPU (patrimoniodetodos.gov.br), anexar os documentos solicitados e enviar.</descricao>
-            <documentos>
-                <default>
-                    <item id="4129">Memorial descritivo da poligonal da área a ser utilizada</item>
-                    <item id="4130">Planta do terreno com a indicação dos equipamentos/estruturas que serão instalados</item>
-                </default>
-                <caso id="460" descricao="Pessoa Física">
-                    <documento>
-                        <id>4168</id>
-                        <descricao>Documento de identificação do requerente com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
-                    </documento>
-                </caso>
-                <caso id="461" descricao="Pessoa Jurídica">
-                    <documento>
-                        <id>4171</id>
-                        <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídica</descricao>
-                    </documento>
-                    <documento>
-                        <id>4170</id>
-                        <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                    </documento>
-                    <documento>
-                        <id>4169</id>
-                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
-                    </documento>
-                </caso>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4044" tipo="web">
-                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoAutorizacaoObras?servico=30</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3020">
-            <titulo>Receber resposta da Secretaria do Patrimônio da União</titulo>
-            <descricao>Obter o resultado da solicitação pelo e-mail informado no requerimento ou pela consulta do pedido no portal patrimoniodetodos.gov.br, informando o nº do CPF ou CNPJ do requerente e o nº do atendimento.</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4045" tipo="web">
-                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3074">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="3075">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="3076">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="3077">Demais segmentos (ONGs, organizações sociais, etc)</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
         <item>Construções e obras</item>
@@ -102,16 +31,8 @@
         <item>Administração e Gestão Pública</item>
         <item>Administração</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="3564">Obras</item>
-        <item id="3565">obra em terreno da união</item>
-        <item id="3566">reforma em imóvel da união</item>
-        <item id="3623">melhorias</item>
-        <item id="3624">reforma</item>
-        <item id="3625">instalação</item>
-        <item id="3626">equipamentos</item>
-    </palavras-chave>
     <legislacoes>
-        <item id="1073">[Lei nº 9.784, de 29 de janeiro de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+        <item id="1230">[Lei nº 9.784, de 29 de janeiro de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
+        <item id="1231">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
     </legislacoes>
 </servico>
