@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-funcionamento-de-organizacao-estrangeira-no-brasil</id>
+    <dbId>1177</dbId>
+    <nome>Obter autorização para funcionamento de Organização Estrangeira no Brasil</nome>
+    <sigla>OE</sigla>
+    <nomes-populares>
+        <item id="933">ONG estrangeira</item>
+        <item id="934">Autorização de organização estrangeira sem fins lucrativos</item>
+        <item id="935">Atualização cadastral de Organização Estrangeira</item>
+        <item id="936">Entidades Sociais</item>
+        <item id="937">Políticas de Justiça</item>
+    </nomes-populares>
+    <descricao>Autorização de funcionamento no território brasileiro de organizações civis estrangeiras, sem fins lucrativos, que tenham sido regularmente constituídas de acordo com a legislação do seu país de origem e que pretendam funcionar no Brasil.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1483">
+            <tipo>Organizações estrangeiras sem fins lucrativos</tipo>
+            <requisitos>Que visem funcionar no Brasil</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3181">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Para realizar a solicitação via web é necessário possuir cadastro no Sistema Eletrônico de Informações (SEI) do Ministério da Justiça e Cidadania. Caso você deseje realizar o serviço pela internet e ainda não possua cadastro, clique [aqui](http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/cadastro-proponente.jsf)</descricao>
+            <documentos>
+                <default>
+                    <item id="4486">Documentação do representante legal da organização no Brasil (brasileiro) ou documentação de regularidade do estrangeiro em território brasileiro</item>
+                    <item id="4487">Procuração que demonstre que a entidade possui representante permanente no Brasil, que este possui poderes expressos para resolver quaisquer questões, receber citação judicial e poderes especiais para atuar no Brasil</item>
+                    <item id="4488">CNPJ</item>
+                    <item id="4489">Ata de fundação</item>
+                    <item id="4490">Estatuto registrado em cartório, no idioma de origem, devidamente legalizado pelo consulado brasileiro e acompanhado de tradução juramentada</item>
+                    <item id="4491">Certidão do serviço notarial e de registro no exterior, que comprove estar a organização constituída conforme a legislação do país de origem</item>
+                    <item id="4492">Ata de deliberação que autorizou o funcionamento da organização estrangeira no Brasil</item>
+                    <item id="4493">Relatório com descrição das atividades que pretende desenvolver e o local em que atuará no território brasileiro, com especificação qualitativa das finalidades</item>
+                    <item id="4494">Lista com qualificação completa (nome, nacionalidade, profissão e domicílio) dos diretores, administradores e representantes legais no exterior</item>
+                    <item id="4495">Relatório com indicação das fontes de recursos para a sua manutenção e dos respectivos bens a ela destinados</item>
+                </default>
+                <caso id="516" descricao="Para requerimento via web">
+                    <documento>
+                        <id>4484</id>
+                        <descricao>Número do CPF ou do Passaporte</descricao>
+                    </documento>
+                    <documento>
+                        <id>4485</id>
+                        <descricao>Senha do protocolo eletrônico do Ministério da Justiça</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4230" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4231" tipo="presencial">
+                        <descricao>Protocolo Geral do Ministério da Justiça e Cidadania, Esplanada dos Ministérios, Bloco T, Anexo II, CEP: 70.064-900 - Brasília – DF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4232" tipo="postal">
+                        <descricao>Ministério da Justiça e Cidadania, Secretaria Nacional de Justiça e Cidadania, Departamento de Políticas de Justiça, Divisão de Administração, Esplanada dos Ministérios, Bloco T, Anexo II, CEP: 70.064-900 – Brasília – DF.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3182">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+                <caso id="517" descricao="Se receber o resultado por via presencial">
+                    <documento>
+                        <id>4496</id>
+                        <descricao>Documento original e válido de identificação</descricao>
+                    </documento>
+                </caso>
+                <caso id="518" descricao="Se receber o resultado através da web">
+                    <documento>
+                        <id>4497</id>
+                        <descricao>Número do CPF ou do Passaporte</descricao>
+                    </documento>
+                    <documento>
+                        <id>4498</id>
+                        <descricao>Senha do protocolo eletrônico do Ministério da Justiça</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4233" tipo="web">
+                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4234" tipo="presencial">
+                        <descricao>Protocolo Geral do Ministério da Justiça e Cidadania, Esplanada dos Ministérios, Bloco T, Anexo II, CEP: 70.064-900 - Brasília – DF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4235" tipo="postal">
+                        <descricao>Endereço informado no requerimento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="3241">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Cooperação Internacional</item>
+        <item>Fiscalização do Estado</item>
+        <item>Justiça e Segurança Pública</item>
+        <item>Relações Internacionais</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="3909">organização estrangeira</item>
+        <item id="3910">ONG</item>
+        <item id="3911">autorização de funcionamento</item>
+        <item id="3912">Foreign NGO</item>
+        <item id="3913">NGO</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1177">-</item>
+    </legislacoes>
+</servico>
