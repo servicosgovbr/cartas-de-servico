@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-estadia-de-embarcacoes-em-portos-brasileiros</id>
+    <dbId>1211</dbId>
+    <nome>Obter autorização para estadia de embarcações em portos brasileiros</nome>
+    <sigla>PSP</sigla>
+    <nomes-populares>
+        <item id="964">Porto sem Papel</item>
+    </nomes-populares>
+    <descricao>Recepção centralizada de informação dos Armadores/Agências Marítimas relativas a estadias de embarcações em Portos brasileiros; repasse dessas informações para os anuentes da estadia (Policia Federal, Marinha, ANVISA, VIGIAGRO e Autoridades Portuárias); concessão de anuência para a estadia pelos anuentes; disponibilização das informações de anuência para Armadores/Agências Marítimas e Autoridades Portuárias.</descricao>
+    <contato>[Clique aqui](http://www.serpro.gov.br/menu/suporte1/especificos/porto-sem-papel)</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1534">
+            <tipo>Embarcações que pretendam atracar em Portos brasileiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3253">
+            <titulo>Criar Documento Virtual Único</titulo>
+            <descricao>O usuário irá criar o DVU e aguardar a ratificação do mesmo pelas autoridades.</descricao>
+            <documentos>
+                <default>
+                    <item id="4578">CPF</item>
+                    <item id="4579">CNPJ</item>
+                    <item id="4580">Certificado de Livre Prática</item>
+                    <item id="4581">Passe de Saída</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4283" tipo="web">
+                        <descricao>https://concentrador.portosempapel.gov.br/PSP-CDP/private/comum/pages/home.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3254">
+            <titulo>Solicitar atracação</titulo>
+            <descricao>O usuário irá realizar a solicitação e aguardar a resposta</descricao>
+            <documentos>
+                <default>
+                    <item id="4582">CPF</item>
+                    <item id="4583">CNPJ</item>
+                    <item id="4584">Certificado de Livre Prática</item>
+                    <item id="4585">Passe de saída</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4284" tipo="web">
+                        <descricao>https://concentrador.portosempapel.gov.br/PSP-CDP/private/comum/pages/home.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3255">
+            <titulo>Realizar atracação</titulo>
+            <descricao>Após receber autorização, a embarcação poderá realizar a atracação</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4285" tipo="presencial">
+                        <descricao>Porto onde a embarcação requisitou autorização para atracar</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3256">
+            <titulo>Solicitar desatracação</titulo>
+            <descricao>O usuário irá solicitar autorização para desatracar e aguardar a autorização</descricao>
+            <documentos>
+                <default>
+                    <item id="4586">CPF</item>
+                    <item id="4587">CNPJ</item>
+                    <item id="4588">Certificado de Livre Prática</item>
+                    <item id="4589">Passe de Saída</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4286" tipo="web">
+                        <descricao>https://concentrador.portosempapel.gov.br/PSP-CDP/private/comum/pages/home.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3257">
+            <titulo>Realizar desatracação</titulo>
+            <descricao>Após receber a autorização ao pedido de desatracação, a embarcação poderá desatracar do Porto</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4287" tipo="presencial">
+                        <descricao>Porto onde a embarcação está atracada</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846" dbId="37548">
+        <nomeOrgao>Ministério dos Transportes, Portos e Aviação Civil (MTPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3311">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Mobilidade</item>
+        <item>Serviços Públicos</item>
+        <item>Transporte Hidroviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4121">atracar</item>
+        <item id="4122">desatracar</item>
+        <item id="4123">porto sem papel</item>
+        <item id="4124">navio</item>
+        <item id="4125">barco</item>
+        <item id="4126">estadia no porto</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1245">[Portarias relacionadas](https://concentrador.portosempapel.gov.br/PSP-CDP/public/pages/informacoesPortuarias.jsp?info=portarias)</item>
+    </legislacoes>
+</servico>
