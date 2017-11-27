@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-revisao-de-divida-inscrita</id>
+    <dbId>1210</dbId>
+    <nome>Obter revisão de dívida inscrita</nome>
+    <sigla></sigla>
+    <descricao>É o serviço que possibilita a revisão de dívida inscrita  de natureza tributária quando o fato que ensejar a revisão houver ocorrido em momento anterior à inscrição em Dívida Ativa da União. Nestes casos, a revisão da dívida inscrita é realizada pela RFB.
+
+São exemplos de fatos que ensejam a revisão da dívida inscrita: o pagamento do débito inscrito antes de sua inscrição em Dívida Ativa; o parcelamento dos débitos na Receita Federal formalizado antes da inscrição em Dívida Ativa; a compensação; a retificação de declaração (DIRPJ/DCTF/DIRPF) antes da inscrição em Dívida ou preenchimento de declaração com erro de fato.
+
+O protocolo do pedido de revisão de dívida inscrita não suspende a exigibilidade do débito e nem possibilita a liberação da Certidão de Regularidade Fiscal, por ausência de previsão legal.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1533">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="360" unidade="dias-corridos"/>
+        <descricao>Prazo máximo previsto no art. 24 da Lei nº 11.457, de 2007</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3250">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4568">CPF</item>
+                    <item id="4569">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4279" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4280" tipo="presencial">
+                        <descricao>Em uma [Unidade da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3251">
+            <titulo>Protocolar requerimento</titulo>
+            <descricao>Para revisão de dívidas por fato anterior à data da inscrição use os seguintes modelos:     
+
+ ¨ [Para dívidas tributárias](https://goo.gl/UStUZH)        
+¨ [Para dívidas não tributárias](https://goo.gl/aeh4Af);       
+Para o modelo de formulário para revisão por fatos posteriores à inscrição, clique [aqui](http://www.pgfn.fazenda.gov.br/formularios/Requerimento___Portaria_PGFN__454_2010___Revisao_...___Anexo_III___versao_1_7_2010.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="4570">Carteira de Identidade (RG)</item>
+                    <item id="4571">CPF</item>
+                    <item id="4572">CNPJ</item>
+                    <item id="4573">Contrato Social</item>
+                    <item id="4574">Formulário de requerimento de revisão</item>
+                    <item id="4575">Documentos comprobatórios que justifiquem a revisão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4281" tipo="presencial">
+                        <descricao>[Unidade da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) para a qual foi agendado o atendimento na etapa anterior.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3252">
+            <titulo>Acompanhar pedido e receber resultado</titulo>
+            <descricao>Para realizar esta etapa, você deve ter cadastro no sistema eCAC da Procuradoria Geral da Fazenda Nacional. Caso você não tenha cadastro, clique [aqui](https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/primeiroAcesso/primeiroAcesso.jsf)
+Para consultar a situação do requerimento, você deve clicar no link "Consultar Protocolo/Requerimento"</descricao>
+            <documentos>
+                <default>
+                    <item id="4576">CPF ou CNPJ</item>
+                    <item id="4577">Senha do e-CAC da PGFN</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4282" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3307">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3308">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3309">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3310">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Encargos financeiros</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4118">DAU</item>
+        <item id="4119">Dívida Ativa</item>
+        <item id="4120">Revisão</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1244">[Lei nº 13.340/2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13340.htm)</item>
+    </legislacoes>
+    <servicos-relacionados>
+        <item>1147</item>
+        <item>999</item>
+        <item>1135</item>
+    </servicos-relacionados>
+</servico>
