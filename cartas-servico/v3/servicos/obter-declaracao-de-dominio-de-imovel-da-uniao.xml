@@ -2,34 +2,14 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-declaracao-de-dominio-de-imovel-da-uniao</id>
     <dbId>14</dbId>
-    <nome>Obter Declaração de Domínio de Imóvel da União</nome>
+    <nome>Obter declaração de domínio de imóvel da União</nome>
     <sigla></sigla>
-    <nomes-populares>
-        <item id="550">Declaração de Domínio da União</item>
-        <item id="854">Consulta de dominialidade</item>
-    </nomes-populares>
     <descricao>Obter declaração positiva ou negativa da Secretaria do Patrimônio da União quanto à propriedade de imóvel, para fins de registro cartorial, regularização ou comprovação de domínio pelo ocupante.</descricao>
     <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel da Silva Cardoso&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;samuel.cardoso@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1022&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <solicitantes>
-        <solicitante id="659">
-            <tipo>Advocacia-Geral da União</tipo>
-            <requisitos>Que tenha necessidade de manifestar-se sobre o domínio de determinado imóvel em processo judicial</requisitos>
-        </solicitante>
-        <solicitante id="656">
-            <tipo>Cartório de Registro de Imóveis/Cartório de Registro de Títulos e Documentos</tipo>
-            <requisitos>Que vise o reconhecimento extrajudicial de usucapião, nos termos do art. 216-A da [Lei nº 6.015, de 1973](http://www.planalto.gov.br/ccivil_03/leis/L6015original.htm)</requisitos>
-        </solicitante>
-        <solicitante id="657">
-            <tipo>Pessoa física ou Pessoa Jurídica</tipo>
-            <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9º e 10 da [Lei nº 9.784, de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm).</requisitos>
-        </solicitante>
-        <solicitante id="660">
-            <tipo>Órgão ou entidade pública</tipo>
-            <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9º e 10 da [Lei nº 9.784, de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm).</requisitos>
-        </solicitante>
-    </solicitantes>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <tempo-total-estimado>
         <ate max="0" unidade="meses"/>
         <descricao>A definir</descricao>
@@ -37,96 +17,12 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="1913">
-            <titulo>Preencher o requerimento</titulo>
-            <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
-            <documentos>
-                <default>
-                    <item id="4187">Planta do imóvel</item>
-                    <item id="4188">Formulário de requerimento preenchido e assinado pelo interessado (exclusivamente no atendimento presencial, devendo ser marcada a opção "Não possuo" quando preenchido diretamente no Portal pelo requerente)</item>
-                    <item id="4189">Memorial descritivo da poligonal do imóvel</item>
-                </default>
-                <caso id="466" descricao="Pessoa Jurídica">
-                    <documento>
-                        <id>4184</id>
-                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
-                    </documento>
-                    <documento>
-                        <id>4183</id>
-                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                    </documento>
-                    <documento>
-                        <id>4182</id>
-                        <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
-                    </documento>
-                </caso>
-                <caso id="467" descricao="Cartório de Registro de Imóveis/Cartório de Registro de Títulos e Documentos">
-                    <documento>
-                        <id>4185</id>
-                        <descricao>Matrícula do imóvel</descricao>
-                    </documento>
-                </caso>
-                <caso id="468" descricao="Pessoa Física">
-                    <documento>
-                        <id>4186</id>
-                        <descricao>Documento de identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
-                    </documento>
-                </caso>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2392" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoConsultaDominialidade?servico=35</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="1914">
-            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
-            <descricao>Obter o resultado da solicitação pelo e-mail informado no requerimento ou pela consulta do pedido no [Portal](patrimoniodetodos.gov.br), informando o nº do CPF ou CNPJ do requerente e o nº do atendimento.</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2393" tipo="web">
-                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoConsultaDominialidade?servico=35</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2184">Cidadãos</item>
-        <item idSegmento="4" idServicoSegmento="2185">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="3" idServicoSegmento="2186">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="2187">Órgãos e entidades públicas</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
         <item>Patrimônio</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="1576">dominialidade</item>
-        <item id="1575">domínio</item>
-        <item id="3707">certidão</item>
-        <item id="3708">usucapião</item>
-        <item id="3709">extrajudicial</item>
-        <item id="3710">propriedade</item>
-        <item id="3711">declaração</item>
-        <item id="1577">união</item>
-    </palavras-chave>
-    <legislacoes>
-        <item id="508">[Lei nº 6.015, de 1973](http://www.planalto.gov.br/ccivil_03/leis/L6015original.htm) e [Lei nº 9.784, de 1999](http://www.planalto.gov.br/ccivil_03/leis/L9784.htm)</item>
-    </legislacoes>
 </servico>
