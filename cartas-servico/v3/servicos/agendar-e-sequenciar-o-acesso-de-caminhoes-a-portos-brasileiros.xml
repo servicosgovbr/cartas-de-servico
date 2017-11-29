@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>agendar-e-sequenciar-o-acesso-de-caminhoes-a-portos-brasileiros</id>
+    <dbId>1231</dbId>
+    <nome>Agendar e sequenciar o acesso de caminhões a portos brasileiros</nome>
+    <sigla>PORTOLOG</sigla>
+    <nomes-populares>
+        <item id="996">Porto sem Papel - PsP/Portolog</item>
+    </nomes-populares>
+    <descricao>Agendamento e sequenciamento de caminhões para chegada ao Porto</descricao>
+    <contato>**Secretaria de Portos**      
+
+SCN Quadra 04, Pétala C, Mezanino - Sala 1403, Centro Empresarial VARIG - Asa Norte - Brasília – DF - CEP 70714-900     
+
+¨ **Telefones:** (61) 3771-0900 / 3771-0509</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1559">
+            <tipo>Empresas públicas, privadas e de economia mista</tipo>
+            <requisitos>Que usam caminhões para transportar bens aos portos.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3327">
+            <titulo>Criar o Documento Logístico eletrônico (DL-e)</titulo>
+            <descricao>Para realizar esta operação você precisa estar cadastrado no Porto sem Papel. Caso ainda não tenha o cadastro, [clique aqui](https://concentrador.portosempapel.gov.br/PSP-CDP/public/pages/formularios/Habilitacao_ResponsavelLegalPsP.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="4732">Dados do veículo</item>
+                    <item id="4733">Dados da carga</item>
+                    <item id="4734">Dados do trajeto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4352" tipo="web">
+                        <descricao>https://concentrador.portosempapel.gov.br/PSP-CDP/private/comum/pages/j_security_check</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3328">
+            <titulo>Se dirigir ao porto na hora agendada</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4735">Comprovante do DL-e</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4353" tipo="presencial">
+                        <descricao>Porto para o qual se destina a carga</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846" dbId="37548">
+        <nomeOrgao>Ministério dos Transportes, Portos e Aviação Civil (MTPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3347">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração</item>
+        <item>Transportes</item>
+        <item>Transporte Hidroviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4240">agendamento</item>
+        <item id="4241">porto</item>
+        <item id="4242">Porto de Santos</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1278">-</item>
+    </legislacoes>
+</servico>
