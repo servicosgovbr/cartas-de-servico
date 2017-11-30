@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>utilizar-credito-para-pagamento-de-taxas-sobre-imovel-da-uniao</id>
+    <dbId>1247</dbId>
+    <nome>Utilizar Crédito para pagamento de Taxas sobre Imóvel da União</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1012">Compensar crédito patrimonial</item>
+    </nomes-populares>
+    <descricao>Este serviço destina-se à compensação de créditos oriundos de receitas patrimoniais pagas por maior, em duplicidade ou indevidamente à Secretaria do Patrimônio da União.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1583">
+            <tipo>Pessoas físicas e Pessoas jurídicas de direito privado</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3373">
+            <titulo>Realizar o requerimento</titulo>
+            <descricao>Preencher o requerimento e anexar os documentos requisitados no Portal de Atendimento da SPU.</descricao>
+            <documentos>
+                <default>
+                    <item id="4778">Documento oficial de identificação</item>
+                    <item id="4779">Carteira de trabalho</item>
+                    <item id="4780">CPF ou CNPJ</item>
+                    <item id="4781">NIT</item>
+                    <item id="4782">Cópia do DARF pago</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4373" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/servicoGenericoComRip?servico=116#dados-documentos-valor</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3374">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4783">CPF ou CNPJ</item>
+                    <item id="4784">Número de atendimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4374" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4375" tipo="e-mail">
+                        <descricao>O email informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3388">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3389">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3390">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração financeira</item>
+        <item>Encargos financeiros</item>
+        <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4421">DARF</item>
+        <item id="4422">devolução</item>
+        <item id="4423">ressarcimento</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1320">-</item>
+    </legislacoes>
+</servico>
