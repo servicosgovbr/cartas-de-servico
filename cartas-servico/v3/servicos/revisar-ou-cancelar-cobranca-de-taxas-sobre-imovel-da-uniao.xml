@@ -2,85 +2,25 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>revisar-ou-cancelar-cobranca-de-taxas-sobre-imovel-da-uniao</id>
     <dbId>1122</dbId>
-    <nome>Revisar ou Cancelar Cobrança de Taxas sobre Imóvel da União</nome>
+    <nome>Revisar ou cancelar cobrança de taxas sobre imóvel da União</nome>
     <sigla></sigla>
-    <nomes-populares>
-        <item id="893">Cancelamento de Cobrança</item>
-    </nomes-populares>
-    <descricao>Solicitar a revisão ou cancelamento de cobrança de taxas sobre imóvel administrado pela Secretaria do Patrimônio da União - SPU, inclusive cancelamento de inscrição em Dívida Ativa - DAU e Cadastro de Inadimplentes – CADIN.</descricao>
+    <descricao>Solicitar a revisão ou cancelamento de cobrança de taxas sobre imóvel administrado pela Secretaria do Patrimônio da União - SPU, inclusive cancelamento de inscrição em Dívida Ativa da União – DAU e Cadastro de Inadimplentes – CADIN.</descricao>
     <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;gilberto.rezende@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1802&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <solicitantes>
-        <solicitante id="1409">
-            <tipo>Pessoa Física ou Jurídica</tipo>
-            <requisitos>Que possua débitos exigidos sobre imóvel da União e deseja a revisão ou o cancelamento das taxas.</requisitos>
-        </solicitante>
-    </solicitantes>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <tempo-total-estimado>
         <entre min="0" max="0" unidade="dias-corridos"/>
         <descricao>A definir</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao>A definir.</descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="3012">
-            <titulo>Preencher o requerimento</titulo>
-            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/requerimentoCancelamentoCobranca?servico=15), preencha o requerimento, anexe os documentos, marque a caixa de validação “Não sou robô” e clique no botão “Enviar”  para encaminhar a solicitação do serviço.</descricao>
-            <documentos>
-                <default>
-                    <item id="4006">Documento que fundamente o pedido de revisão/cancelamento (cópia de comprovante de pagamento, protocolo do pedido de transferência ou do pedido de isenção de pagamento etc.)</item>
-                </default>
-                <caso id="471" descricao="Pessoa Jurídica">
-                    <documento>
-                        <id>4194</id>
-                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
-                    </documento>
-                    <documento>
-                        <id>4195</id>
-                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc.)</descricao>
-                    </documento>
-                </caso>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4037" tipo="web">
-                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoCancelamentoCobranca?servico=15</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3013">
-            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
-            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4038" tipo="web">
-                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3062">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="3063">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="3064">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="3065">Órgãos e entidades públicas</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração</item>
         <item>Administração e Gestão Pública</item>
@@ -90,25 +30,4 @@
         <item>Patrimônio</item>
         <item>Transparência</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="3552">Revisar</item>
-        <item id="3553">Cancelar cobrança</item>
-        <item id="3554">taxa de uso</item>
-        <item id="3555">imóvel da união</item>
-        <item id="3732">prescrição</item>
-        <item id="3733">decadência</item>
-        <item id="3734">dívida ativa da união</item>
-        <item id="3735">inadimplentes</item>
-        <item id="3736">corrigir</item>
-        <item id="3737">cobrança</item>
-        <item id="3738">cadin</item>
-        <item id="3739">suspender</item>
-        <item id="3740">duplicidade</item>
-        <item id="3741">pagamento</item>
-        <item id="3742">cobrança</item>
-        <item id="3743">dívida</item>
-    </palavras-chave>
-    <legislacoes>
-        <item id="1070">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
-    </legislacoes>
 </servico>
