@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>reconhecer-ou-revalidar-diploma-de-curso-superior-obtido-no-exterior</id>
+    <dbId>1255</dbId>
+    <nome>Reconhecer ou revalidar diploma de curso superior obtido no exterior</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1021">Plataforma Carolina Bori</item>
+    </nomes-populares>
+    <descricao>Através deste serviço quem tiver diploma de graduação ou pós-graduação em universidade no exterior poderá obter o reconhecimento ou a revalidação do mesmo, garantindo assim sua validade no país.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1592">
+            <tipo>Possuidores de diplomas estrangeiros de graduação ou de pós-graduação</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="6" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3402">
+            <titulo>Cadastrar-se na Plataforma online</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4859">CPF</item>
+                    <item id="4860">Dados pessoais</item>
+                    <item id="4861">Dados de formação</item>
+                    <item id="4862">Dados de contato</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4419" tipo="web">
+                        <descricao>http://ssd.mec.gov.br/adm/usr/informacaoUsuario.seam?cid=22387</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="539" descricao="Para requerente estrangeiro sem CPF">
+                    <canal-de-prestacao id="4418" tipo="web">
+                        <descricao>http://plataformacarolinabori.mec.gov.br/usuario/solicitarAcessoEstrangeiro</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3403">
+            <titulo>Dar entrada ao pedido de validação</titulo>
+            <descricao>Ao acessar o sistema, você irá informar os dados necessários, fazer upload das documentações exigidas e selecionar a universidade brasileira para qual deseja enviar sua solicitação de revalidação ou reconhecimento</descricao>
+            <documentos>
+                <default>
+                    <item id="4864">Diploma estrangeiro</item>
+                    <item id="4865">Documento de identificação pessoal</item>
+                    <item id="4866">CPF</item>
+                    <item id="4867">Documentações relativas à instituição que expediu o diploma</item>
+                    <item id="4868">Outras documentações que a instituição possa achar necessário, variando de caso a caso</item>
+                    <item id="4869">Senha da Plataforma</item>
+                </default>
+                <caso id="540" descricao="Requerente estrangeiro sem CPF">
+                    <documento>
+                        <id>4863</id>
+                        <descricao>RNE</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4421" tipo="web">
+                        <descricao>https://ssd.mec.gov.br/ssd-server/servlet/InitAuthenticationByIdentifierAndPassword?t=pH59TJd7H0rzCia7sOe_4o_BOdxY5mW5cPVf9cjB9CF5MwWSlPiLsJ1XCADIwKE5Og8.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="541" descricao="Para requerente estrangeiro sem CPF">
+                    <canal-de-prestacao id="4420" tipo="web">
+                        <descricao>http://plataformacarolinabori.mec.gov.br/index/acesso-estrangeiro</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3404">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="4870">CPF</item>
+                    <item id="4871">Senha da Plataforma</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4423" tipo="web">
+                        <descricao>https://ssd.mec.gov.br/ssd-server/servlet/InitAuthenticationByIdentifierAndPassword?t=pH59TJd7H0rzCia7sOe_4o_BOdxY5mW5cPVf9cjB9CF5MwWSlPiLsJ1XCADIwKE5Og8.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="542" descricao="Para requerente estrangeiro sem CPF">
+                    <canal-de-prestacao id="4422" tipo="web">
+                        <descricao>http://plataformacarolinabori.mec.gov.br/index/acesso-estrangeiro</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3404">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cooperação Internacional</item>
+        <item>Fiscalização do Estado</item>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Relações Internacionais</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4445">diploma estrangeiro</item>
+        <item id="4446">universidade estrangeira</item>
+        <item id="4447">revalidação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1334">-</item>
+    </legislacoes>
+</servico>
