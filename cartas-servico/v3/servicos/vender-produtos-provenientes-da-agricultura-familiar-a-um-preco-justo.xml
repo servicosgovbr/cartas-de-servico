@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>vender-produtos-provenientes-da-agricultura-familiar-a-um-preco-justo</id>
+    <dbId>1296</dbId>
+    <nome>Vender produtos provenientes da agricultura familiar a um preço justo</nome>
+    <sigla>PAA</sigla>
+    <nomes-populares>
+        <item id="1059">Programa de Aquisição de Alimentos – PAA Modalidade Compra Direta, executada pela Companhia Nacional de Abastecimento – CONAB.</item>
+    </nomes-populares>
+    <descricao>A modalidade Compra Direta do PAA tem como finalidade a sustentação de preços de determinados produtos definidos pelo Grupo Gestor do Programa (ex: arroz, feijão, milho, trigo, sorgo, farinha de mandioca, farinha de trigo, leite em pó integral, e etc.)
+Quando o preço de mercado de algum dos produtos amparados pela Modalidade está abaixo do seu preço de referência, ou seja, não cobre os custos de produção, o Grupo Gestor pode aprovar a intervenção. 
+Nesta modalidade, o MDS repassa recursos para CONAB e a Companhia fica responsável por adquirir os produtos junto às Cooperativas e Associações da agricultura familiar, bem como junto aos agricultores familiares de forma individual.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1635">
+            <tipo>Agricultores familiares (pessoa física)</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="1636">
+            <tipo>Cooperativas e Associações da agricultura familiar (pessoa jurídica)</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3490">
+            <titulo>Tomar conhecimento da intervenção da CONAB no mercado do produto</titulo>
+            <descricao>Com a aprovação do Grupo Gestor da intervenção, a Conab divulga amplamente na região afetada que instalará um Polo de Compra dos produtos para os quais a intervenção foi aprovada.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4472" tipo="presencial">
+                        <descricao>Meios de comunicação, avisos públicos e outras formas de divulgação</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4473" tipo="web">
+                        <descricao>http://www.conab.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3491">
+            <titulo>Realizar a venda</titulo>
+            <descricao>Os agricultores familiares interessados se dirigem ao Polo de Compras estabelecido, de posse de seus produtos bem como da documentação exigida, para vender seus produtos a preço justo, estabelecido por análise técnica da CONAB.     
+**Obs:** os modelos dos documentos estão disponíveis no [Manual de Operações CONAB – MOC](http://www.conab.gov.br/conabweb/moc.php)  *(aqueles com o número 27 na frente do título.)*</descricao>
+            <documentos>
+                <default/>
+                <caso id="554" descricao="Agricultor familiar">
+                    <documento>
+                        <id>4970</id>
+                        <descricao>indicação da instituição bancária e número de conta corrente para pagamento</descricao>
+                    </documento>
+                    <documento>
+                        <id>4969</id>
+                        <descricao>Declaração de regularidade junto à Secretaria de Receita Federal</descricao>
+                    </documento>
+                    <documento>
+                        <id>4968</id>
+                        <descricao>Declaração de produção própria do produto</descricao>
+                    </documento>
+                    <documento>
+                        <id>4967</id>
+                        <descricao>Declaração de Aptidão ao Pronaf – DAP Pessoa Física válida</descricao>
+                    </documento>
+                </caso>
+                <caso id="555" descricao="Cooperativas ou associações da agricultura familiar">
+                    <documento>
+                        <id>4975</id>
+                        <descricao>Indicação da instituição bancária e número de conta corrente para pagamento</descricao>
+                    </documento>
+                    <documento>
+                        <id>4974</id>
+                        <descricao>Certidões negativas junto ao INSS, FGTS, Dívida ativa da União e Receita Federal, CADIN e CNDT</descricao>
+                    </documento>
+                    <documento>
+                        <id>4973</id>
+                        <descricao>Nota fiscal de venda</descricao>
+                    </documento>
+                    <documento>
+                        <id>4972</id>
+                        <descricao>Declaração de produto in natura ou processado/beneficiado</descricao>
+                    </documento>
+                    <documento>
+                        <id>4971</id>
+                        <descricao>Declaração de Aptidão ao Pronaf – DAP Pessoa Jurídica válida</descricao>
+                    </documento>
+                </caso>
+                <caso id="556" descricao="Produto processado/beneficiado">
+                    <documento>
+                        <id>4978</id>
+                        <descricao>Contrato de prestação de serviço da agroindústria</descricao>
+                    </documento>
+                    <documento>
+                        <id>4977</id>
+                        <descricao>Nota fiscal de remessa à agroindústria</descricao>
+                    </documento>
+                    <documento>
+                        <id>4976</id>
+                        <descricao>Notas fiscais de aquisição junto aos fornecedores</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4474" tipo="presencial">
+                        <descricao>Polo de Compras estabelecido pela CONAB</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1945" dbId="37542">
+        <nomeOrgao>Ministério do Desenvolvimento Social  (MDS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3493">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3494">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Abastecimento</item>
+        <item>Administração financeira</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Agropecuária</item>
+        <item>Combate a desigualdade</item>
+        <item>Comércio e Serviços</item>
+        <item>Compras governamentais</item>
+        <item>Desenvolvimento Rural</item>
+        <item>Emergências e Urgências</item>
+        <item>Produção agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4807">preço justo</item>
+        <item id="4808">polo de compra</item>
+        <item id="4809">conab</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1411">-</item>
+    </legislacoes>
+</servico>
