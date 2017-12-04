@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-regularidade-fiscal</id>
+    <dbId>1314</dbId>
+    <nome>Obter certidão de regularidade fiscal</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1084">Certidão negativa de débitos</item>
+        <item id="1085">Certidão Positiva com efeito de negativa</item>
+        <item id="1086">Certidão Positiva de Débitos</item>
+    </nomes-populares>
+    <descricao>É o documento, expedido em conjunto pela Procuradoria-Geral da Fazenda Nacional - PGFN  e pela Receita Federal do Brasil - RFB, que certifica a situação fiscal do contribuinte, pessoa física ou jurídica, perante a Fazenda Nacional, em relação aos débitos previdenciários e aos não previdenciários inscritos em Dívida Ativa da União (DAU) pela Procuradoria-Geral da Fazenda Nacional e aos débitos previdenciários e aos não previdenciários administrados pela Receita Federal do Brasil. A certidão de regularidade fiscal poderá ser Negativa (CND), Positiva com efeitos de negativa (CPEN) ou Positiva (CP).
+
+A certificação de regularidade quanto à Dívida Ativa da União (DAU) é emitida nos termos da Portaria MF nº  358, de 5 de setembro de 2014.
+
+O produtor rural pessoa física e o segurado especial que possuir matrícula atribuída pela RFB e não estiver inscrito no CNPJ, a regularidade fiscal da matrícula será comprovada por meio de certidão emitida no CPF do sujeito passivo.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2</link-servico-digital>
+    <solicitantes>
+        <solicitante id="1654">
+            <tipo>Para Certidão Negativa de Débitos (CND)</tipo>
+            <requisitos>Pessoas físicas e jurídicas que:      
+
+¨  Estar em regularidade fiscal em relação aos débitos administrados pela PGFN e inscritos em Dívida Ativa da União (DAU);     
+
+¨ Estar em regularidade fiscal em relação aos débitos administrados pela Receita Federal; e     
+
+¨ Não tenha outras pendências perante a Receita Federal.</requisitos>
+        </solicitante>
+        <solicitante id="1655">
+            <tipo>Para Certidão Positiva com Efeito de Negativa (CPEN)</tipo>
+            <requisitos>Pessoas físicas e jurídicas que:       
+
+¨ Possuírem inscrições na Dívida Ativa da União que tenham averbadas causas suspensivas de sua exigibilidade ou garantia (penhora, caução, seguro-garantia, depósito e carta de fiança).</requisitos>
+        </solicitante>
+        <solicitante id="1656">
+            <tipo>Para Certidão Positiva (CP)</tipo>
+            <requisitos>Pessoas físicas e jurídicas que não se encaixarem nos dois tipos anteriores de solicitantes (tenham dívida ou pendência junto à Receita Federal ou inscrição na Dívida Ativa da União sem causa suspensiva de sua exigibilidade ou garantia averbada)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="10" unidade="dias-corridos"/>
+        <descricao>Nos casos de CND e CPEN emitidas pela internet o atendimento é imediato.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3536">
+            <titulo>Verificar situação (emitir certidão para CND e CPEN)</titulo>
+            <descricao>O contribuinte que não tenha certeza da sua situação junto à Receita Federal ou à PGFN, ou o contribuinte que tenha certeza e se enquadre nos dois primeiros tipos de solicitante, devem pedir a emissão da certidão pela Internet.</descricao>
+            <documentos>
+                <default>
+                    <item id="5079">CPF ou CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4518" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3537">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Caso o contribuinte não consiga emitir a certidão pela internet por ter pendências junto à Receita Federa ou à PGFN (tipo de solicitante 3) ele deverá solicitá-la de forma presencial em uma Unidade de Atendimento da Receita Federal, primeiramente agendando tal atendimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="5080">CPF</item>
+                    <item id="5081">CNPJ (se for o caso)</item>
+                    <item id="5082">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4519" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3538">
+            <titulo>Protocolar pedido</titulo>
+            <descricao>¨ Pessoa Física: [Formulários](https://goo.gl/vLL64i) e [Explicações mais detalhadas sobre a documentação](goo.gl/skKZBR)     
+
+¨ Pessoa Jurídica: [Formulários](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/informacoes-e-servicos-para-pessoa-juridica/certidoes-de-regularidade-fiscal/formularios) e [Explicações mais detalhadas sobre a documentação](https://goo.gl/ncxFsz)</descricao>
+            <documentos>
+                <default>
+                    <item id="5088">Formulário devidamente preenchido e assinado</item>
+                    <item id="5089">ermo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e à qual ação judicial o depósito está vinculado</item>
+                    <item id="5090">Documentação relativa às dívidas e pendências existentes junto à Receita Federal e à PGFN</item>
+                </default>
+                <caso id="567" descricao="Pessoa física">
+                    <documento>
+                        <id>5083</id>
+                        <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>5084</id>
+                        <descricao>Documento Oficial de Identificação</descricao>
+                    </documento>
+                </caso>
+                <caso id="568" descricao="Pessoa jurídica">
+                    <documento>
+                        <id>5085</id>
+                        <descricao>CNPJ</descricao>
+                    </documento>
+                    <documento>
+                        <id>5086</id>
+                        <descricao>Procuração do representante legal</descricao>
+                    </documento>
+                    <documento>
+                        <id>5087</id>
+                        <descricao>Documento oficial de identificação do representante legal</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4520" tipo="presencial">
+                        <descricao>Na [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde foi agendado o atendimento na etapa anterior.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3539">
+            <titulo>Receber certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5091">Documento oficial de identificação</item>
+                    <item id="5092">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4521" tipo="presencial">
+                        <descricao>Na [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde foi feita a requisição.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3520">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3521">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3522">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3523">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Sistema Financeiro</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4880">regularidade fiscal</item>
+        <item id="4881">nada consta</item>
+        <item id="4882">receita federal</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1433">[Legislação específica](http://www.pgfn.fazenda.gov.br/divida-ativa-da-uniao/todos-os-servicos/informacoes-e-servicos-para-pessoa-juridica/divida-ativa-da-uniao/todos-os-servicos/informacoes-e-servicos-para-pessoa-juridica/certidoes-de-regularidade-fiscal/legislacao-especifica)</item>
+    </legislacoes>
+</servico>
