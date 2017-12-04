@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>averbar-causa-suspensiva-de-exigibilidade-ou-garantia</id>
+    <dbId>1313</dbId>
+    <nome>Averbar causa suspensiva de exigibilidade ou garantia</nome>
+    <sigla></sigla>
+    <descricao>Este serviço permite que o contribuinte pleiteie o registro, no Sistema da Dívida Ativa da União, de causa suspensiva de
+exigibilidade da dívida inscrita ou sua garantia integral, observados, quando se tratar de registro de causa suspensiva de
+exigibilidade, os termos do art. 151 do Código Tributário Nacional (CTN); ou, quando se tratar da existência de garantia integral
+da dívida, os termos dos art. 206 CTN e art. 9º da Lei nº 6.830, de 1980, no que concerne à prova da regularidade fiscal do
+contribuinte.
+A averbação de causa suspensiva e de garantia é condição para a liberação, pela Internet, da Certidão Conjunta, positiva com
+efeito de negativa, exceto quando essa causa suspensiva seja parcelamento, porque, neste caso, a averbação é automática.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1653">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="360" unidade="dias-corridos"/>
+        <descricao>Prazo máximo previsto no art. 24 da Lei nº 11.457, de 2007.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3533">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>O serviço deverá ser protocolizado na unidade de atendimento integrado PGFN/RFB  (Receita Federal) do domicílio fiscal do requerente.</descricao>
+            <documentos>
+                <default>
+                    <item id="5047">CPF</item>
+                    <item id="5048">CNPJ (se for o caso)</item>
+                    <item id="5049">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4515" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3534">
+            <titulo>Protocolar pedido</titulo>
+            <descricao>O pedido deve indicar as dívidas nas quais se pretende registrar causa suspensiva de exigibilidade ou garantia integral. O modelo de formulário pode ser encontrado [aqui](http://www.pgfn.fazenda.gov.br/formularios/Requerimento%20_%20Portaria%20PGFN%20454_2010%20_%20Averbacao__...__Anexo_I__versao_1_7_2010.doc)
+O protocolo deverá ser acompanhado dos documentos que comprovam os fatos que fundamentam o pedido.</descricao>
+            <documentos>
+                <default>
+                    <item id="5075">Formulário preenchido e assinado</item>
+                    <item id="5076">CPF e documento oficial de identificação</item>
+                </default>
+                <caso id="559" descricao="Se via procurador">
+                    <documento>
+                        <id>5051</id>
+                        <descricao>Documento de identificação do procurador</descricao>
+                    </documento>
+                    <documento>
+                        <id>5050</id>
+                        <descricao>Procuração dando poderes para a ação requerida</descricao>
+                    </documento>
+                </caso>
+                <caso id="560" descricao="Inscrição garantida por penhora em execução fiscal:">
+                    <documento>
+                        <id>5054</id>
+                        <descricao>termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa o termo/auto de penhora e laudos de avaliação judicial apresentados estão vinculados</descricao>
+                    </documento>
+                    <documento>
+                        <id>5053</id>
+                        <descricao>Laudo de avaliação, atualizado conforme a espécie do bem</descricao>
+                    </documento>
+                    <documento>
+                        <id>5052</id>
+                        <descricao>Termo/auto de penhora e de eventuais reforços de garantia, ou comprovante de bloqueio na hipótese de BACENJUD</descricao>
+                    </documento>
+                </caso>
+                <caso id="561" descricao="Inscrição garantida por depósito judicial em execução fiscal">
+                    <documento>
+                        <id>5057</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e à qual ação judicial o depósito está vinculado</descricao>
+                    </documento>
+                    <documento>
+                        <id>5056</id>
+                        <descricao>Extrato atualizado da conta de depósito</descricao>
+                    </documento>
+                    <documento>
+                        <id>5055</id>
+                        <descricao>Guia de depósito (para o caso de depósito havido antes à vigência da Lei n° 9.703, de 1998) ou DJE – (nos casos de depósitos efetuados após a Lei n° 9.703, de 1998)</descricao>
+                    </documento>
+                </caso>
+                <caso id="562" descricao="Inscrição garantida por depósito judicial em ação diversa da execução fiscal">
+                    <documento>
+                        <id>5062</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e à qual ação judicial o depósito está vinculado</descricao>
+                    </documento>
+                    <documento>
+                        <id>5061</id>
+                        <descricao>Extrato atualizado da conta de depósito</descricao>
+                    </documento>
+                    <documento>
+                        <id>5060</id>
+                        <descricao>Decisão judicial que deferiu o depósito</descricao>
+                    </documento>
+                    <documento>
+                        <id>5059</id>
+                        <descricao>Petição inicial</descricao>
+                    </documento>
+                    <documento>
+                        <id>5058</id>
+                        <descricao>Guia de depósito (para o caso de depósito havido antes à vigência da Lei n° 9.703, de 1998) ou DJE – (nos casos de depósitos efetuados após a Lei n° 9.703, de 1998);</descricao>
+                    </documento>
+                </caso>
+                <caso id="563" descricao="Inscrição garantida por Caução (deferida por decisão judicial)">
+                    <documento>
+                        <id>5065</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e à qual ação judicial o depósito está vinculado</descricao>
+                    </documento>
+                    <documento>
+                        <id>5064</id>
+                        <descricao>Decisão judicial que deferiu a caução</descricao>
+                    </documento>
+                    <documento>
+                        <id>5063</id>
+                        <descricao>Termo de caução contendo avaliação dos bens caucionados</descricao>
+                    </documento>
+                </caso>
+                <caso id="564" descricao="Fiança bancária como Caução (deferida por decisão judicial)">
+                    <documento>
+                        <id>5068</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e à qual ação judicial a carta de fiança bancária está vinculada,</descricao>
+                    </documento>
+                    <documento>
+                        <id>5067</id>
+                        <descricao>Decisão judicial que deferiu a garantia por meio de carta de fiança bancária, se houver</descricao>
+                    </documento>
+                    <documento>
+                        <id>5066</id>
+                        <descricao>Carta de fiança bancária, emitida nos moldes das Portarias PGFN n° 644, de 2009, e n° 1.378, de 2009</descricao>
+                    </documento>
+                </caso>
+                <caso id="565" descricao="Decisão judicial">
+                    <documento>
+                        <id>5071</id>
+                        <descricao>Havendo recurso, deverá ser apresentada a decisão que o recebeu, especificando os efeitos em que foi recebido</descricao>
+                    </documento>
+                    <documento>
+                        <id>5070</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa a ação judicial está vinculada</descricao>
+                    </documento>
+                    <documento>
+                        <id>5069</id>
+                        <descricao>Decisão judicial de interesse do devedor</descricao>
+                    </documento>
+                </caso>
+                <caso id="566" descricao="Seguro Garantia">
+                    <documento>
+                        <id>5074</id>
+                        <descricao>Termo assinado pelo advogado do interessado, acompanhado do instrumento de procuração, declarando a quais inscrições em Dívida Ativa e a qual ação judicial o seguro-garantia está vinculado</descricao>
+                    </documento>
+                    <documento>
+                        <id>5073</id>
+                        <descricao>Decisão judicial que deferiu a garantia por meio de seguro-garantia, se houver</descricao>
+                    </documento>
+                    <documento>
+                        <id>5072</id>
+                        <descricao>Apólice de seguro-garantia, emitida nos moldes da Portaria PGFN n° 164, de 27 de fevereiro de 2014</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4516" tipo="presencial">
+                        <descricao>Na [Unidade de Atendimento da Receita Federal](https://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento) onde o serviço foi agendado na etapa anterior.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3535">
+            <titulo>Acompanhar processo e receber resultado</titulo>
+            <descricao>No e-CAC da PGFN o requerente poderá acompanhar o andamento de seu requerimento e saber o resultado, clicando em “Consulta de Requerimentos”.</descricao>
+            <documentos>
+                <default>
+                    <item id="5077">CPF ou CNPJ</item>
+                    <item id="5078">Senha no e-CAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4517" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3516">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3517">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3518">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3519">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4877">causa suspensiva</item>
+        <item id="4878">dívida ativa</item>
+        <item id="4879">DAU</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1430">[Código Tributário Nacional](http://www.planalto.gov.br/ccivil_03/leis/l5172.htm)</item>
+        <item id="1431">[Lei nº 6.830, de 1980](http://www.planalto.gov.br/ccivil_03/leis/L6830.htm)</item>
+        <item id="1432">[Lei nº 11.457, de 2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11457.htm)</item>
+    </legislacoes>
+</servico>
