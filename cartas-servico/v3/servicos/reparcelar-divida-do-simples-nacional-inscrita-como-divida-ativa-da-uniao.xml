@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>reparcelar-divida-do-simples-nacional-inscrita-como-divida-ativa-da-uniao</id>
+    <dbId>1319</dbId>
+    <nome>Reparcelar dívida do Simples Nacional inscrita como Dívida Ativa da União</nome>
+    <sigla></sigla>
+    <descricao>O Reparcelamento do Simples Nacional é o serviço que possibilita que os débitos do simples nacional que foram objeto do parcelamento previsto no artigo 130-A da Resolução CGSN nº 94, de 29 de novembro de 2011 e que foram rescindidos, sejam reparcelados nos termos do artigo 13 da Portaria PGFN nº 802, de 9 de novembro de 2012.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1661">
+            <tipo>Pessoas jurídicas que optaram pelo simples nacional</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3546">
+            <titulo>Requerer reparcelamento</titulo>
+            <descricao>Adesão ao reparcelamento pelo sistema de forma online. Clicar no meu "Adesão a Parcelamento e Outros Benefícios Fiscais" e, dentro dele, novamente em "Adesão a Parcelamento e Outros Benefícios Fiscais".</descricao>
+            <documentos>
+                <default>
+                    <item id="5098">CPF ou CNPJ</item>
+                    <item id="5099">Senha do e-CAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4528" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3547">
+            <titulo>Realizar pagamento das parcelas</titulo>
+            <descricao>Imprimir mensalmente o boleto do parcelamento para pagamento.</descricao>
+            <documentos>
+                <default>
+                    <item id="5100">DARF</item>
+                    <item id="5101">CPF ou CNPJ</item>
+                    <item id="5102">Senha do e-CAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4529" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3537">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3538">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Tributação</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4907">simples nacional</item>
+        <item id="4908">reparcelamento</item>
+        <item id="4909">parcelamento</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1440">[Resolução CGSN nº 94, de 29 de novembro de 2011](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=36833&amp;visao=anotado)</item>
+        <item id="1441">[Portaria PGFN nº 802, de 9 de novembro de 2012](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=38959)</item>
+    </legislacoes>
+</servico>
