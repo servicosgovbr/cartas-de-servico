@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>optar-pelo-desenquadramento-ou-exclusao-do-simples-nacional</id>
+    <dbId>1329</dbId>
+    <nome>Optar pelo desenquadramento ou exclusão do Simples Nacional</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1099">Desenquadramento / Exclusão do SIMEI / Simples Nacional</item>
+    </nomes-populares>
+    <descricao>Permite o desenquadramento ou Exclusão pelo Regime de tributação do Simples Nacional</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1675">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3569">
+            <titulo>Solicitar desenquadramento/exclusão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5128">CNPJ</item>
+                    <item id="5129">CPF do responsável</item>
+                    <item id="5130">Código de Acesso ou Certificado Digital</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4564" tipo="presencial">
+                        <descricao>Acesse um dos links abaixo, de acordo com a forma de acesso que preferir.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="579" descricao="Com código de acesso">
+                    <canal-de-prestacao id="4562" tipo="web">
+                        <descricao>https://www8.receita.fazenda.gov.br/SimplesNacional/controleAcesso/Autentica.aspx?id=39</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="580" descricao="Com certificado Digital">
+                    <canal-de-prestacao id="4563" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/ecac/publico/login/certificado.aspx?Sistema=00031</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3553">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Tributação</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4939">desenquadrar</item>
+        <item id="4940">simples nacional</item>
+        <item id="4941">sair do simples nacional</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1452">-</item>
+    </legislacoes>
+</servico>
