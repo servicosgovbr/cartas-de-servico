@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>optar-pelo-simples-nacional</id>
+    <dbId>1327</dbId>
+    <nome>Optar pelo Simples Nacional</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1096">Enquadramento</item>
+        <item id="1098">Simples Nacional</item>
+    </nomes-populares>
+    <descricao>Permite o enquadramento ou Opção pelo Regime de tributação do Simples Nacional</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1673">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3565">
+            <titulo>Obter acesso</titulo>
+            <descricao>O acesso ao sistema é feito via código de acesso ou certificado digital (e-CNPJ)</descricao>
+            <documentos>
+                <default>
+                    <item id="5119">CNPJ</item>
+                    <item id="5120">CPF do responsável</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4556" tipo="web">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="573" descricao="Código de Acesso">
+                    <canal-de-prestacao id="4552" tipo="web">
+                        <descricao>https://www8.receita.fazenda.gov.br/SimplesNacional/controleAcesso/GeraCodigo.aspx</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="574" descricao="Orientações acerca do Certificado Digital">
+                    <canal-de-prestacao id="4553" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/orientacao/tributaria/senhas-e-procuracoes/senhas/certificados-digitais/orientacoes-sobre-emissao-renovacao-e-revogacao-de-certificados-digitais-e-cpf-ou-e-cnpj</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3566">
+            <titulo>Realizar a opção</titulo>
+            <descricao>Solicitar a opção ou enquadramento</descricao>
+            <documentos>
+                <default>
+                    <item id="5121">CNPJ</item>
+                    <item id="5122">CPF do Responsável</item>
+                    <item id="5123">Código de Acesso ou Certificado Digital</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4557" tipo="web">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="575" descricao="Com código de Acesso">
+                    <canal-de-prestacao id="4554" tipo="web">
+                        <descricao>https://www8.receita.fazenda.gov.br/SimplesNacional/controleAcesso/Autentica.aspx?id=39</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="576" descricao="Com certificado Digital">
+                    <canal-de-prestacao id="4555" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/ecac/publico/login/certificado.aspx?Sistema=00031</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3551">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Tributação</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4932">Simples Nacional</item>
+        <item id="4933">SIMEI</item>
+        <item id="4934">opção</item>
+        <item id="4935">enquadramento</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1450">[LEI COMPLEMENTAR No 123, DE 14 DE DEZEMBRO DE 2006](https://view.officeapps.live.com/op/view.aspx?src=https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/legislacao/LC_123_2006_CONSOLIDADA_CGSN_04.2016.doc)</item>
+    </legislacoes>
+</servico>
