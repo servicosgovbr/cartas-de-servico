@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-informacoes-dos-regimes-de-previdencia-social</id>
+    <dbId>1324</dbId>
+    <nome>Cadastrar Informações dos Regimes de Previdência Social</nome>
+    <sigla>CADPREV</sigla>
+    <descricao>Os órgãos e entidades públicas dos três poderes, sejam eles municipais, estaduais ou federais, devem cadastrar as informações de seus regimes de previdência através do CADPREV</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1668">
+            <tipo>Órgãos e entidades públicas dos três poderes e das três esferas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3558">
+            <titulo>Realizar download do programa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4545" tipo="web">
+                        <descricao>http://cadprev.previdencia.gov.br/Cadprev/desktop/cadprev.jnlp;jsessionid=1D874314C9D93422150F6B406126AA33.node01</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3559">
+            <titulo>Realizar cadastro das informações</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5115">Documentação referente ao regime de previdência do órgão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4546" tipo="presencial">
+                        <descricao>Programa obtido na etapa anterior</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3560">
+            <titulo>Enviar informações</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4547" tipo="presencial">
+                        <descricao>Programa obtido na etapa anterior</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="3548">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Previdência</item>
+        <item>Previdência Social</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4923">cadastrar regime de previdência</item>
+        <item id="4924">ministério da previdência</item>
+        <item id="4925">previdência social</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1447">-</item>
+    </legislacoes>
+</servico>
