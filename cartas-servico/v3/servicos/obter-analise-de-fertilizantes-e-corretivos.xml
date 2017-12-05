@@ -4,9 +4,6 @@
     <dbId>1347</dbId>
     <nome>Obter análise de fertilizantes e corretivos</nome>
     <sigla></sigla>
-    <nomes-populares>
-        <item id="1123">Fisiologia</item>
-    </nomes-populares>
     <descricao>Análise do princípio ativo de insumos e teor de nutrientes que tem como objetivo o controle
 da qualidade dos insumos.
 As amostras são coletadas nas fazendas e enviadas ao laboratório, onde recebem um tratamento de lavagem. Secagem e moagem. As analises de macro e micro nutrientes são feitas com extração dos elementos  com ácidos fortes.</descricao>
@@ -15,12 +12,6 @@ As amostras são coletadas nas fazendas e enviadas ao laboratório, onde recebem
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
-    <solicitantes>
-        <solicitante id="1694">
-            <tipo>Pessoas físicas e jurídicas</tipo>
-            <requisitos></requisitos>
-        </solicitante>
-    </solicitantes>
     <tempo-total-estimado>
         <ate max="15" unidade="dias-uteis"/>
         <descricao>Após o cadastro no laboratório</descricao>
@@ -28,124 +19,10 @@ As amostras são coletadas nas fazendas e enviadas ao laboratório, onde recebem
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="3606">
-            <titulo>Requisitar análise</titulo>
-            <descricao>O cidadão deverá entrar em contato, pessoalmente, por telefone ou por e-mail para requisitar a coleta da amostra</descricao>
-            <documentos>
-                <default>
-                    <item id="5205">Endereço da propriedade</item>
-                    <item id="5206">Dados pessoais</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4604" tipo="presencial">
-                        <descricao>**CEPLAC - Superintendência de Desenvolvimento da Região Cacaueira do Estado da Bahia - Seção de Fisiologia (SEFIS)** - Bahia Rod. Ilhéus/Itabuna, Km 22, Ilhéus/BA    
-*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="4605" tipo="e-mail">
-                        <descricao>waldemar@cepec.gov.br</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="4606" tipo="telefone">
-                        <descricao>(73) 3214-3237     
-*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3607">
-            <titulo>Receber técnico</titulo>
-            <descricao>A coleta da amostra será realizada por técnicos da Ceplac e será registrada em formulário próprio, com dados cadastrais da propriedade, em seguida, encaminhada ao laboratório para cadastro e análise.</descricao>
-            <documentos>
-                <default>
-                    <item id="5207">Dados da propriedade</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4607" tipo="presencial">
-                        <descricao>Na propriedade do usuário</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3608">
-            <titulo>Realizar pagamento</titulo>
-            <descricao>**Preço(R$) por Unidade**    
-
-¨ Calcário (Ca + Mg) ... 10,00/amostra    
-
-¨ Adubo Nitrogenado (N) ... 10,00/amostra    
-
-¨ Adubo químico (NPK) ... 20,00/amostra    
-
-¨ Adubo orgânico (P2O5 + K2O + Ca + Mg + micros) ... 50,00/amostra    
-
-¨ Suplemento mineral (Ca + Mg + P + micros) ... 35,00/amostra     
-
-
-¨ Farinha de ossos (P e Ca) + P(Ac 2%) ... 15,00/amostra</descricao>
-            <documentos>
-                <default>
-                    <item id="5208">Guia de recolhimento</item>
-                </default>
-            </documentos>
-            <custos>
-                <default>
-                    <custo id="158">
-                        <descricao>Custo variável (segundo tabela descrição)</descricao>
-                        <moeda>R$</moeda>
-                    </custo>
-                </default>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4608" tipo="presencial">
-                        <descricao>Rede bancária</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3609">
-            <titulo>Receber laudo</titulo>
-            <descricao></descricao>
-            <documentos>
-                <default>
-                    <item id="5209">Documento de identificação oficial</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4609" tipo="presencial">
-                        <descricao>**CEPLAC - Superintendência de Desenvolvimento da Região Cacaueira do Estado da Bahia - Seção de Fisiologia (SEFIS)** - Bahia Rod. Ilhéus/Itabuna, Km 22, Ilhéus/BA    
-*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="4610" tipo="postal">
-                        <descricao>Endereço da propriedade informado no pedido</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
         <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3580">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="3581">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="3582">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="3583">Demais segmentos (ONGs, organizações sociais, etc)</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
         <item>Agropecuária, extrativismo e pesca</item>
@@ -153,12 +30,4 @@ As amostras são coletadas nas fazendas e enviadas ao laboratório, onde recebem
         <item>Defesa agropecuária</item>
         <item>Saúde</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="5006">fertilizantes</item>
-        <item id="5007">análise</item>
-        <item id="5008">ceplac</item>
-    </palavras-chave>
-    <legislacoes>
-        <item id="1487">-</item>
-    </legislacoes>
 </servico>
