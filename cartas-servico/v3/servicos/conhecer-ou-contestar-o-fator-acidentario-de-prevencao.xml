@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>conhecer-ou-contestar-o-fator-acidentario-de-prevencao</id>
+    <dbId>1321</dbId>
+    <nome>Conhecer ou contestar o Fator Acidentário de Prevenção</nome>
+    <sigla>FAP</sigla>
+    <descricao>Permite ao Empregador, a cada empresa, conhecer o cálculo anual de seu Fator Acidentário de Prevenção – FAP, mediante publicação e acesso restrito (com senha) e demais informações sobre o referido fator; preencher e enviar contestações eletronicamente ao processamento anual, em 1ª e 2ª instâncias administrativas, conforme prazos definidos pelo Ministério da Fazenda.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1663">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo de prestação deste serviço não é estimado ainda.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3551">
+            <titulo>Cadastrar-se no sistema</titulo>
+            <descricao>O modelo para o formulário pode ser obtido [aqui](https://view.officeapps.live.com/op/view.aspx?src=http://www.receita.fazenda.gov.br/publico/formularios/ReceitaPrevidenciaria/Solicitacaosenhaeletronica.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="5109">Guias de recolhimento das 20(vinte) últimas competências recolhidas</item>
+                    <item id="5110">GFIPs a partir da competência 10/2001</item>
+                    <item id="5111">CNPJ ou CEI</item>
+                </default>
+                <caso id="572" descricao="Se presencial">
+                    <documento>
+                        <id>5108</id>
+                        <descricao>Formulário de solicitação da senha eletrônica</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4533" tipo="web">
+                        <descricao>http://www2.dataprev.gov.br/pls/pradar/pkg_baixa_empr_Senha.pr_BewSenha?wOndeVeio=2</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4534" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3552">
+            <titulo>Conhecer FAP</titulo>
+            <descricao>Acessando o sistema</descricao>
+            <documentos>
+                <default>
+                    <item id="5112">CNPJ</item>
+                    <item id="5113">Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4535" tipo="web">
+                        <descricao>https://www2.dataprev.gov.br/FapWeb/pages/login.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3553">
+            <titulo>Apresentar recurso</titulo>
+            <descricao>Recurso de 1ª e 2ª Instância.</descricao>
+            <documentos>
+                <default>
+                    <item id="5114">CNPJ ou CEI</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4536" tipo="web">
+                        <descricao>https://www2.dataprev.gov.br/FapWeb/pages/login.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3543">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4913">fator acidentário</item>
+        <item id="4914">prevenção</item>
+        <item id="4915">consultar</item>
+        <item id="4916">contestar</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1443">[Lei 10.666, de 8 de maio de 2003](http://www.planalto.gov.br/ccivil_03/leis/2003/L10.666.htm)</item>
+        <item id="1444">[Decreto 7.126, de 3 de março de 2010](http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2010/Decreto/D7126.htm)</item>
+    </legislacoes>
+</servico>
