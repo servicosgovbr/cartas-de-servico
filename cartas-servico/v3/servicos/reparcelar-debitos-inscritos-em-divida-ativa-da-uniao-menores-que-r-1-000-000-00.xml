@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>reparcelar-debitos-inscritos-em-divida-ativa-da-uniao-menores-que-r-1-000-000-00</id>
+    <dbId>1320</dbId>
+    <nome>Reparcelar débitos inscritos em Dívida Ativa da União - Menores que  R$ 1.000.000,00</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1094">Reparcelamento Simplificado.</item>
+    </nomes-populares>
+    <descricao>É admitido o reparcelamento simplificado de débitos que já foram objeto de parcelamentos rescindidos anteriormente, em até 60 (sessenta) parcelas, cujo saldo devedor a ser parcelado (uma ou mais inscrições) seja igual ou inferior a R$ 1.000.000,00 (um milhão de reais).
+ 
+Para que seja deferido o reparcelamento, é exigido o pagamento de primeira prestação equivalente a: (i) 10% do total das inscrições consolidadas, caso haja inscrição com histórico de somente um parcelamento anterior rescindido; ou (ii) 20% do total dos débitos consolidados, caso haja débito com histórico de mais de um parcelamento anterior rescindido.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1662">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3548">
+            <titulo>Requerer reparcelamento</titulo>
+            <descricao>Adesão ao reparcelamento de forma online. Clique no menu "Adesão a parcelamento e outros benefícios fiscais" e, dentro deste, novamente em "Adesão a parcelamento e outros benefícios fiscais".</descricao>
+            <documentos>
+                <default>
+                    <item id="5103">CPF ou CNPJ</item>
+                    <item id="5104">Senha do e-CAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4530" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3549">
+            <titulo>Pagar pedágio</titulo>
+            <descricao>O próprio sistema gerará o DARF no valor correspondente ao pedágio (10 ou 20% do saldo a ser parcelado). Após o pagamento do DARF, o parcelamento será automaticamente deferido no sistema e a situação de parcelamento será automaticamente registrada</descricao>
+            <documentos>
+                <default>
+                    <item id="5105">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4531" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3550">
+            <titulo>Emitir DARF para pagamto das demais parcelas</titulo>
+            <descricao>O contribuinte deverá emitir o DARF para pagamento das parcelas por meio da opção “Emissão de DARF de parcelamento”, no ambiente e-CAC da PGFN.</descricao>
+            <documentos>
+                <default>
+                    <item id="5106">CPF ou CNPJ</item>
+                    <item id="5107">Senha do e-CAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4532" tipo="web">
+                        <descricao>https://www2.pgfn.fazenda.gov.br/ecac/contribuinte/login.jsf#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3539">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="3540">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3541">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="3542">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Fiscalização do Estado</item>
+        <item>Tributação</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="4910">reparcelamento</item>
+        <item id="4911">parcelamento</item>
+        <item id="4912">dívida ativa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1442">[PORTARIA CONJUNTA PGFN / RFB Nº 15, DE 15 DE DEZEMBRO DE 2009](http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?visao=anotado&amp;idAto=21106)</item>
+    </legislacoes>
+</servico>
