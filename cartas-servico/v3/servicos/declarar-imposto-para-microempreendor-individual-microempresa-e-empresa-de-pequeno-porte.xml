@@ -10,12 +10,6 @@
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
-    <solicitantes>
-        <solicitante id="1674">
-            <tipo>Empresas privadas</tipo>
-            <requisitos></requisitos>
-        </solicitante>
-    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao></descricao>
@@ -23,64 +17,10 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="3567">
-            <titulo>Preencher a declaração</titulo>
-            <descricao></descricao>
-            <documentos>
-                <default>
-                    <item id="5124">CNPJ</item>
-                    <item id="5125">CPF do responsável</item>
-                    <item id="5126">Código de Acesso ou Certificado Digital</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4560" tipo="web">
-                        <descricao></descricao>
-                    </canal-de-prestacao>
-                </default>
-                <caso id="577" descricao="Com Código de Acesso">
-                    <canal-de-prestacao id="4558" tipo="web">
-                        <descricao>https://www8.receita.fazenda.gov.br/SimplesNacional/controleAcesso/Autentica.aspx?id=6</descricao>
-                    </canal-de-prestacao>
-                </caso>
-                <caso id="578" descricao="Com Certificado Digital">
-                    <canal-de-prestacao id="4559" tipo="web">
-                        <descricao>https://cav.receita.fazenda.gov.br/ecac/publico/login/certificado.aspx?Sistema=00079</descricao>
-                    </canal-de-prestacao>
-                </caso>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3568">
-            <titulo>Pagar imposto</titulo>
-            <descricao></descricao>
-            <documentos>
-                <default>
-                    <item id="5127">Documento de Arrecadação do Simples Nacional (DAS)</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4561" tipo="presencial">
-                        <descricao>Rede Bancária</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="3552">Empresas</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
         <item>Economia e Finanças</item>
@@ -88,12 +28,4 @@
         <item>Tributação</item>
         <item>Sistema Financeiro</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="4936">simples nacional</item>
-        <item id="4937">MEI</item>
-        <item id="4938">declaração</item>
-    </palavras-chave>
-    <legislacoes>
-        <item id="1451">-</item>
-    </legislacoes>
 </servico>
