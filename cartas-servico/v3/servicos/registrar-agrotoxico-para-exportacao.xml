@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-agrotoxico-para-exportacao</id>
+    <dbId>1365</dbId>
+    <nome>Registrar agrotóxico para exportação</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1147">Registro de agrotóxicos exclusivamente para exportação</item>
+        <item id="1148">REX</item>
+    </nomes-populares>
+    <descricao>Registro de agrotóxico exclusivamente com a finalidade de exportação. Esse registro é requerido pelas empresas exportadoras de agrotóxico que necessitam exportar uma marca comercial não registrada no Brasil.</descricao>
+    <contato>¨ **Telefones:** (61) 3218-2537 / 3218-2448 / 3218-2601 / 3218-2417     
+
+*Funcionamento das 8h às 12h e das 14h às 18h, de segunda a sexta-feira. O cidadão terá o seu telefonema atendido em até 5 minutos*
+
+¨ **Fax:** (61) 3223-5350      
+
+*Funcionamento todos os dias da semana, ininterruptamente. O cidadão terá resposta a seu questionamento em até 24 horas, em dias úteis*</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1712">
+            <tipo>Empresas exportadoras de agrotóxicos</tipo>
+            <requisitos>Que precisem exportar um produto registrado no Brasil com outra marca comercial ou exportar um produto ainda não registrado no Brasil.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3654">
+            <titulo>Requerer o registro</titulo>
+            <descricao>Obtenha o modelo do formulário de requerimento [aqui](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao/arquivos-de-legislacao/inc-01-2006-rex)</descricao>
+            <documentos>
+                <default>
+                    <item id="5307">Requerimento</item>
+                    <item id="5308">Cópia do certificado de registro do produto já registrado no Brasil</item>
+                    <item id="5309">Indicação do(s) país(es) de destino final do produto</item>
+                    <item id="5310">Marca comercial no(s) país(es) de destino</item>
+                    <item id="5311">Comprovante de que a empresa requerente está devidamente registrada nessa modalidade em órgão competente do Estado, do Distrito Federal ou do Município</item>
+                    <item id="5312">Comprovante de que o fabricante está devidamente registrada nessa modalidade em órgão competente do Estado, do Distrito Federal ou do Município</item>
+                    <item id="5313">Comprovante de que o formulador está devidamente registrada nessa modalidade em órgão competente do Estado, do Distrito Federal ou do Município</item>
+                    <item id="5314">Documento comprobatório da condição de representante legal da empresa requerente</item>
+                    <item id="5315">Certificado de análise física do produto</item>
+                    <item id="5316">Quando existentes, informações sobre a situação do produto, registro, usos autorizados, restrições e seus motivos, relativamente ao País de origem</item>
+                    <item id="5317">Informações sobre a existência de restrições ou proibições a produtos à base do mesmo ingrediente ativo e seus motivos, em outros países</item>
+                    <item id="5318">Descrição detalhada do(s) método(s) de desativação do produto, acompanhada de laudo técnico que indique o poder de redução dos componentes, com a identificação dos resíduos remanescentes e a entidade instalada no País apta a realização do processo.</item>
+                </default>
+                <caso id="588" descricao="Produtos Técnicos">
+                    <documento>
+                        <id>5290</id>
+                        <descricao>Declaração e laudo laboratorial com análise de cinco bateladas de cada fabricante com composição qualitativa e quantitativa do produto, com variações máxima e mínima de cada componente, impurezas em concentrações iguais ou superiores a 0,1%.</descricao>
+                    </documento>
+                    <documento>
+                        <id>5291</id>
+                        <descricao>Declaração e laudo laboratorial com análise de cinco bateladas, de cada fabricante, com identificação e quantificação de subprodutos ou impurezas significativas, toxicológico ou ambientalmente, presentes no produto em concentrações inferiores a 0,1%.</descricao>
+                    </documento>
+                    <documento>
+                        <id>5292</id>
+                        <descricao>Identificação de isômeros e suas proporções</descricao>
+                    </documento>
+                    <documento>
+                        <id>5293</id>
+                        <descricao>Descrição da metodologia analítica de determinação qualitativa e quantitativa do ingrediente ativo, dos seus principais produtos de degradação e, quando pertinente, para determinação das impurezas toxicológico ou ambientalmente significativas.</descricao>
+                    </documento>
+                    <documento>
+                        <id>5294</id>
+                        <descricao>Descrição do processo de produção do produto técnico, contemplando suas etapas de síntese, seus subprodutos e impurezas, fornecida pelo(s) fabricante(s)</descricao>
+                    </documento>
+                </caso>
+                <caso id="589" descricao="Produtos formulados ou pré-misturas de natureza química ou bioquímica">
+                    <documento>
+                        <id>5295</id>
+                        <descricao>Declaração do registrante, sobre a composição qualitativa e quantitativa do produto, indicando os limites máximo e mínimo da variação de cada componente e sua função específica, acompanhada de laudo laboratorial de cada formulador</descricao>
+                    </documento>
+                    <documento>
+                        <id>5296</id>
+                        <descricao>Inclusão dos Componentes no SIC</descricao>
+                    </documento>
+                </caso>
+                <caso id="590" descricao="Produtos a base de agentes biológicos de controle de praga">
+                    <documento>
+                        <id>5297</id>
+                        <descricao>Nome e endereço completo do fornecedor do agente biológico</descricao>
+                    </documento>
+                    <documento>
+                        <id>5298</id>
+                        <descricao>Classificação taxonômica completa do agente biológico e nome comum</descricao>
+                    </documento>
+                    <documento>
+                        <id>5299</id>
+                        <descricao>Indicação completa do local e referência da cultura depositada em coleção</descricao>
+                    </documento>
+                    <documento>
+                        <id>5300</id>
+                        <descricao>Declaração de composição qualitativa e quantitativa do produto, com concentração mínima do ingrediente ativo biológico e os limites máximos e mínimos e funções específicas dos demais componente, acompanhada de laudo laboratorial de cada formulador</descricao>
+                    </documento>
+                    <documento>
+                        <id>5301</id>
+                        <descricao>Informações sobre a possível presença de toxinas microbianas e outros metabólitos, estirpes mutantes, substância alergênica etc</descricao>
+                    </documento>
+                    <documento>
+                        <id>5302</id>
+                        <descricao>Descrição de testes ou procedimentos para identificação do agente biológico (morfologia, bioquímica, sorologia, molecular)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5303</id>
+                        <descricao>Informações sobre a ocorrência, distribuição geográfica, local de isolamento, ciclo de vida do organismo e demais dados que caracterizem o agente biológico</descricao>
+                    </documento>
+                    <documento>
+                        <id>5304</id>
+                        <descricao>Informações sobre a relação filogenética do agente biológico com patógenos de organismos não-alvos (humanos, plantas e animais)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5305</id>
+                        <descricao>Informações sobre a estabilidade genética do agente biológico</descricao>
+                    </documento>
+                    <documento>
+                        <id>5306</id>
+                        <descricao>Descrição do processo de produção do produto, fornecida pelo(s) formulador(es)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4636" tipo="presencial">
+                        <descricao>**Protocolo Geral do Ministério da Agricultura, Pecuária e Abastecimento (Mapa)** -  Esplanada dos Ministérios, bloco D, Edifício Sede, Térreo - Brasília (DF), CEP: 70043-900    
+*Horário de atendimento presencial de segunda a sexta-feira, das 8h às 18h*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3655">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5319">Documento de identificação oficial</item>
+                    <item id="5320">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4637" tipo="presencial">
+                        <descricao>**Protocolo Geral do Ministério da Agricultura, Pecuária e Abastecimento (Mapa)** -  Esplanada dos Ministérios, bloco D, Edifício Sede, Térreo - Brasília (DF), CEP: 70043-900    
+*Horário de atendimento presencial de segunda a sexta-feira, das 8h às 18h*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3628">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Comercio externo</item>
+        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5089">agrotóxicos</item>
+        <item id="5090">exportação</item>
+        <item id="5091">registro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1509">[INSTRUÇÃO NORMATIVA CONJUNTA Nº 1, DE 27 DE SETEMBRO DE 2006](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/agrotoxicos/legislacao/arquivos-de-legislacao/inc-01-2006-rex)</item>
+    </legislacoes>
+</servico>
