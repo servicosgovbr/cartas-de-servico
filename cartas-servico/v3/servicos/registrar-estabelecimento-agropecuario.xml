@@ -4,22 +4,12 @@
     <dbId>1353</dbId>
     <nome>Registrar  estabelecimento agropecuário</nome>
     <sigla>SIPEAGRO</sigla>
-    <nomes-populares>
-        <item id="1130">Sistema Integrado de Produtos e Estabelecimentos Agropecuários - Módulo Registro de Estabelecimento</item>
-    </nomes-populares>
     <descricao>Através deste serviço o estabelecimento agropecuário faz o registro, obrigatório por lei, junto ao Ministério da Agricultura, Pecuária e Abastecimento.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
-    <solicitantes>
-        <solicitante id="1700">
-            <tipo>Estabelecimentos agropecuários</tipo>
-            <requisitos>Que fabricam, manipulam, fracionam, envasam, controlam a qualidade, comercializam, 
-armazenam,  distribuem, importam ou exportam produtos de uso veterinário que fabricam, manipulam, fracionam, envasam, controlam a qualidade, comercializam, armazenam, distribuem, importam ou exportam produtos de uso veterinário</requisitos>
-        </solicitante>
-    </solicitantes>
     <tempo-total-estimado>
         <entre min="8" max="15" unidade="dias-corridos"/>
         <descricao></descricao>
@@ -27,137 +17,14 @@ armazenam,  distribuem, importam ou exportam produtos de uso veterinário que fa
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas>
-        <etapa id="3626">
-            <titulo>Solicitar cadastro no sistema</titulo>
-            <descricao>Para que o Responsável Legal da empresa possa acessar o SIPEAGRO ele precisa fazer o pré-cadastro para obter o seu login e sua senha de acesso.</descricao>
-            <documentos>
-                <default>
-                    <item id="5212">Dados pessoais</item>
-                    <item id="5213">Dados de contato</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4614" tipo="web">
-                        <descricao>https://sistemasweb.agricultura.gov.br/solicita/manterUsuarioExt.action</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3627">
-            <titulo>Registrar estabelecimento</titulo>
-            <descricao>Após fazer o login no sistema, clique em SIPEAGRO para abrir o sistema, e proceda à complementação do cadastro escolhendo a opção "estabelecimento". Após colocar os dados e confirmar, o sistema irá realizar logoff. Entre novamente, e então clique no menu "estabelecimento", "solicitação" e então em "novo registro". Cadastre as informações pedidas, faça upload do arquivo com a documentação e clique em enviar.</descricao>
-            <documentos>
-                <default>
-                    <item id="5225">Login e senha de acesso ao SIPEAGRO</item>
-                </default>
-                <caso id="583" descricao="Reunidos em um único arquivo para upload (todos)">
-                    <documento>
-                        <id>5218</id>
-                        <descricao>Cópia do comprovante de  inscrição no Conselho de Classe e cópia de declaração  assumindo a responsabilidade pelo(a)  estabelecimento/atividade de cada responsável técnico</descricao>
-                    </documento>
-                    <documento>
-                        <id>5217</id>
-                        <descricao>Cópia do documento de identidade e do CPF dos  representantes legal e técnico</descricao>
-                    </documento>
-                    <documento>
-                        <id>5216</id>
-                        <descricao>Cópia do CNPJ</descricao>
-                    </documento>
-                    <documento>
-                        <id>5215</id>
-                        <descricao>Cópia do Contrato Social vigente</descricao>
-                    </documento>
-                    <documento>
-                        <id>5214</id>
-                        <descricao>Licença vigente (no caso de estabelecimento já licenciado)</descricao>
-                    </documento>
-                </caso>
-                <caso id="584" descricao="Fabricante, manipulador, envasador ou fracionador">
-                    <documento>
-                        <id>5223</id>
-                        <descricao>Descrição do sistema de controle preventivo, conforme exige o  inciso IV do parágrafo 2º do artigo 6º do Decreto 5053/2004</descricao>
-                    </documento>
-                    <documento>
-                        <id>5222</id>
-                        <descricao>Relação das formas farmacêuticas a serem fabricadas ou  manipulada</descricao>
-                    </documento>
-                    <documento>
-                        <id>5221</id>
-                        <descricao>Detalhe da rede de esgoto na escala mínima de 1:50</descricao>
-                    </documento>
-                    <documento>
-                        <id>5220</id>
-                        <descricao>Planta baixa e cortes transversal e longitudinal na escala  mínima de 1:200</descricao>
-                    </documento>
-                    <documento>
-                        <id>5219</id>
-                        <descricao>Cópia do memorial descritivo das instalações e equipamentos</descricao>
-                    </documento>
-                </caso>
-                <caso id="585" descricao="Controle de qualidade, adicionar ao primeiro caso:">
-                    <documento>
-                        <id>5224</id>
-                        <descricao>Relação dos ensaios físico - químicos que o laboratório está apto  a realizar</descricao>
-                    </documento>
-                </caso>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4615" tipo="web">
-                        <descricao>https://sistemasweb.agricultura.gov.br/segaut/login.jsp?sgAplicacaoRedirecionada=%2Fsipe%2Frestringe.action</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="3628">
-            <titulo>Receber resultado</titulo>
-            <descricao>Faça login, clique no menu "estabelecimento", no item "acompanhar" e "consultar"</descricao>
-            <documentos>
-                <default>
-                    <item id="5226">Login e senha de acesso ao SIPEAGRO</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="4616" tipo="web">
-                        <descricao>https://sistemasweb.agricultura.gov.br/segaut/login.jsp?sgAplicacaoRedirecionada=%2Fsipe%2Frestringe.action</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-    </etapas>
+    <etapas/>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
         <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
     </orgao>
-    <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3598">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="3599">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="3600">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="3601">Órgãos e entidades públicas</item>
-    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
         <item>Agropecuária, extrativismo e pesca</item>
         <item>Fiscalização do Estado</item>
         <item>Pecuária</item>
     </areas-de-interesse>
-    <palavras-chave>
-        <item id="5040">estabelecimento agropecuário</item>
-        <item id="5041">sipeagro</item>
-        <item id="5042">registro</item>
-    </palavras-chave>
-    <legislacoes>
-        <item id="1494">-</item>
-    </legislacoes>
 </servico>
