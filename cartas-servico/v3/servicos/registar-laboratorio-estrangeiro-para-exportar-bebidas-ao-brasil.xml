@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registar-laboratorio-estrangeiro-para-exportar-bebidas-ao-brasil</id>
+    <dbId>1358</dbId>
+    <nome>Registar labóratório estrangeiro para exportar bebidas ao Brasil</nome>
+    <sigla>SISCOLE</sigla>
+    <nomes-populares>
+        <item id="1135">Sistema de Cadastro de Organismos e Laboratórios Estrangeiros</item>
+    </nomes-populares>
+    <descricao>Cadastro de laboratórios estrangeiros junto ao Ministério da Agricultura para que os mesmos possam exportar bebidas para o Brasil, através da solicitação por um órgão competente do país de origem.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1705">
+            <tipo>Laboratórios estrangeiros</tipo>
+            <requisitos>Que certificam vinhos, derivados da uva e do vinho e bebidas em geral</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3639">
+            <titulo>Solicitar cadastramento</titulo>
+            <descricao>A solicitação de cadastramento de laboratório no Sistema de Cadastro de Organismos e Laboratórios Estrangeiros (SISCOLE) deve ser encaminhada ao Ministério da Agricultura, Pecuária e Abastecimento por meio da Embaixada do país produtor.</descricao>
+            <documentos>
+                <default>
+                    <item id="5247">Solicitação de cadastramento original assinada, em papel timbrado, por representante da embaixada</item>
+                </default>
+                <caso id="587" descricao="A solicitação deve conter as seguintes informações">
+                    <documento>
+                        <id>5246</id>
+                        <descricao>Informações sobre envelhecimento (se houver)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5245</id>
+                        <descricao>Tipo de certificação (origem / análise)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5244</id>
+                        <descricao>Produto a ser exportado para o Brasil</descricao>
+                    </documento>
+                    <documento>
+                        <id>5243</id>
+                        <descricao>Email (se houver)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5242</id>
+                        <descricao>Página na internet (se houver)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5241</id>
+                        <descricao>Endereço completo do laboratório</descricao>
+                    </documento>
+                    <documento>
+                        <id>5240</id>
+                        <descricao>Nome do organismo ou laboratório a ser cadastrado</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4619" tipo="postal">
+                        <descricao>Ministério da Agricultura, Pecuária e Abastecimento
+Departamento de Inspeção de Produtos de Origem Vegetal 
+Esplanada dos Ministérios, Bloco D, Anexo B, sala 333
+
+Destinado à **Coordenação Geral de Vinhos e Bebidas** ou **Coordenação Geral de Qualidade Vegetal**</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4620" tipo="presencial">
+                        <descricao>Ministério da Agricultura, Pecuária e Abastecimento
+Departamento de Inspeção de Produtos de Origem Vegetal 
+Esplanada dos Ministérios, Bloco D, Anexo B, sala 333
+
+Destinado à **Coordenação Geral de Vinhos e Bebidas** ou **Coordenação Geral de Qualidade Vegetal**</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4621" tipo="e-mail">
+                        <descricao>Para agilizar o processo de cadastramento uma cópia em arquivo PDF ou DOC da solicitação pode ser enviada por e-mail ao Serviço de Informações Gerenciais e Estratégicas-SIGE (sige-cgvb@agricultura.gov.br).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3640">
+            <titulo>Consultar cadastro</titulo>
+            <descricao>Para confirmar o cadastro, o usuário poderá consultar o SISCOLE e procurar pelo laboratório para qual a solicitação foi feita</descricao>
+            <documentos>
+                <default>
+                    <item id="5248">Dados do laboratório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4622" tipo="web">
+                        <descricao>http://sistemasweb.agricultura.gov.br/siscole/consultaPublicaCadastro.action</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3618">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3619">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Comércio e Serviços</item>
+        <item>Cooperação Internacional</item>
+        <item>Fiscalização do Estado</item>
+        <item>Normalização e Qualidade</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5055">registro de laboratório estrangeiro</item>
+        <item id="5056">bebidas</item>
+        <item id="5057">vinho</item>
+        <item id="5058">derivados da uva</item>
+        <item id="5059">derivados do vinho</item>
+        <item id="5060">wine</item>
+        <item id="5061">drinks</item>
+        <item id="5062">alcohol</item>
+        <item id="5063">grape derivatives</item>
+        <item id="5064">lab</item>
+        <item id="5065">certification</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1499">-</item>
+    </legislacoes>
+</servico>
