@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>renovar-registro-de-produto-veterinario</id>
+    <dbId>1396</dbId>
+    <nome>Renovar registro de produto veterinário</nome>
+    <sigla></sigla>
+    <descricao>O registro do produto veterinário permite ao Ministério da Agricultura avaliar a qualidade, estabilidade, eficácia e segurança desse produto para a espécie para a qual ele é indicado.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1747">
+            <tipo>Empresas fabricantes e importadoras de produtos veterinários</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo de prestação deste serviço não é estimado ainda.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>10</quantidade>
+        <unidade>anos</unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3716">
+            <titulo>Solicitar renovação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5398">CPF</item>
+                    <item id="5399">Senha do SIPEAGRO</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4662" tipo="web">
+                        <descricao>https://sistemasweb.agricultura.gov.br/segaut/login.jsp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3717">
+            <titulo>Receber Certificado renovado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5400">Documento de identificação oficial (para recebimento presencial)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4663" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado ou Distrito Federal</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4664" tipo="postal">
+                        <descricao>No endereço informado no sistema SIPEAGRO</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3702">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Pecuária</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5649">registro</item>
+        <item id="5650">produto veterinário</item>
+        <item id="5651">sipeagro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1567">-</item>
+    </legislacoes>
+</servico>
