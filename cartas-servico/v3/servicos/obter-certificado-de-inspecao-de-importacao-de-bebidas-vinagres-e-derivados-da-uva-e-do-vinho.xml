@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-inspecao-de-importacao-de-bebidas-vinagres-e-derivados-da-uva-e-do-vinho</id>
+    <dbId>1362</dbId>
+    <nome>Obter certificado de inspeção de importação de bebidas, vinagres e derivados da uva e do vinho</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1141">Serviço de Inspeção de Produtos de Origem Vegetal - SIPOV</item>
+        <item id="1142">Serviço de Fiscalização, Inspeção e Sanidade Vegetal - SIFISV</item>
+    </nomes-populares>
+    <descricao>Emissão de certificado de inspeção de importação de produtos (bebidas, vinagres e derivados da uva e do vinho)</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1709">
+            <tipo>Importador de vinhos e bebidas para fins comerciais</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3647">
+            <titulo>Cadastrar requerimento de importação</titulo>
+            <descricao>É becessário que o estabelecimento possua [registro no SIPEAGRO](https://servicos.gov.br/servico/registrar-estabelecimento-agropecuario) contendo a atividade de IMPORTADOR da bebida que deseja importar. Será necessário ainda que ele tenha cadastro no SIGVIG para cadastrar o requerimento. Caso o Representante Legal não tenha ainda acesso ao sistema, solicite [aqui](http://sistemasweb.agricultura.gov.br/sigiev_cons/!sigiev.ap_primeiro_acesso_rl)</descricao>
+            <documentos>
+                <default>
+                    <item id="5268">Nome de usuário e senha do SIGVIG</item>
+                    <item id="5269">Dados sobre a importação e o produto importado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4629" tipo="web">
+                        <descricao>http://sistemasweb.agricultura.gov.br/sigiev</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3648">
+            <titulo>Apresentar documentação à VIGIAGRO</titulo>
+            <descricao>A liberação do produto importado somente será efetivada após o cumprimento de toda a legislação específica, e com a apresentação da documentação à unidade do VIGIAGRO no local de desembaraço do produto.</descricao>
+            <documentos>
+                <default>
+                    <item id="5270">Certificado de registro do estabelecimento importador</item>
+                    <item id="5271">Certificado de origem e de análise do produto</item>
+                    <item id="5272">Certificado de tempo de envelhecimento, quando for o caso</item>
+                    <item id="5273">Certificado de inspeção de importação que autorizou a comercialização do produto dentro do período que o dispense de coleta de amostra, quando for o caso</item>
+                    <item id="5274">Termo de responsabilidade, quando dispensada a coleta de amostra</item>
+                    <item id="5275">Requerimento para importação sem fins comerciais, homologado pelo órgão fiscalizador, quando for o caso</item>
+                    <item id="5276">Comprovante de tipicidade e regionalidade do produto, quando for o caso</item>
+                    <item id="5277">Comprovante da indicação geográfica do produto, quando for o caso</item>
+                    <item id="5278">Demais documentos para despacho aduaneiro</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4630" tipo="presencial">
+                        <descricao>Na [Unidade da VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades) do local de desembaraço da mercadoria.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3649">
+            <titulo>Receber certificado</titulo>
+            <descricao>O serviço de inspeção do MAPA no estado emitirá o Certificado Inspeção. Somente em posse do Certificado de Inspeção, constando que o produto é apto, o estabelecimento poderá comercializar no território nocional o produto importado.</descricao>
+            <documentos>
+                <default>
+                    <item id="5279">Documento de identificação oficial</item>
+                    <item id="5280">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4631" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3623">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="3624">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3625">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Comercio externo</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Comércio e Serviços</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5077">importação</item>
+        <item id="5078">inspeção</item>
+        <item id="5079">vinhos</item>
+        <item id="5080">bebidas</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1505">[Instrução Normativa MAPA nº 54/2009](http://www.agricultura.gov.br/assuntos/inspecao/produtos-vegetal/arquivos/IN54de2009.pdf)</item>
+        <item id="1506">[Instrução Normativa MAPA nº 55/2009](http://www.agricultura.gov.br/assuntos/inspecao/produtos-vegetal/arquivos/INSTRUONORMATIVAN55DE18DENOVEMBRODE2009.pdf)</item>
+    </legislacoes>
+    <servicos-relacionados>
+        <item>1353</item>
+    </servicos-relacionados>
+</servico>
