@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-embarque-de-produto-veterinario-para-uso-individual</id>
+    <dbId>1399</dbId>
+    <nome>Obter autorização de embarque de produto veterinário para uso individual</nome>
+    <sigla></sigla>
+    <descricao>Concessão de autorização prévia para embarque de produto de uso veterinário em quantidade para uso individual, não destinado à comercialização.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1750">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos>Que possuam animal comprovadamente com necessidade de uso do produto importado</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3722">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5407">Requerimento para importação</item>
+                    <item id="5408">Receita do médico veterinário, contendo a identificação do animal, a indicação de uso e a posologia</item>
+                    <item id="5409">Carteira de identidade (RG)</item>
+                    <item id="5410">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4671" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4672" tipo="postal">
+                        <descricao>Para uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3723">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5411">Carteira de identidade (RG)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4673" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4674" tipo="postal">
+                        <descricao>No endereço informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3705">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Comercio externo</item>
+        <item>Defesa agropecuária</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pecuária</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5659">autorização</item>
+        <item id="5660">importação de remédio veterinário</item>
+        <item id="5661">animal de estimação</item>
+        <item id="5662">animal doente</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1570">[Instrução Normativa nº 29/2010](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=visualizarAtoPortalMapa&amp;chave=419570576)</item>
+    </legislacoes>
+</servico>
