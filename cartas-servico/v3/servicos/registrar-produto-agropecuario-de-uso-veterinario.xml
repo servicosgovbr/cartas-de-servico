@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-produto-agropecuario-de-uso-veterinario</id>
+    <dbId>1356</dbId>
+    <nome>Registrar produto agropecuário de uso veterinário</nome>
+    <sigla>SIPEAGRO</sigla>
+    <nomes-populares>
+        <item id="1133">Sistema Integrado de Produtos e Estabelecimentos Agropecuários - Módulo Registro de Produto</item>
+    </nomes-populares>
+    <descricao>Através deste serviço o estabelecimento agropecuário faz o registro, junto ao Ministério da Agricultura, Pecuária e Abastecimento, do produto comercializado. Este registro é obrigatório por lei.
+Somente estabelecimentos que possuem [registro **deferido** no SIPEAGRO](https://servicos.gov.br/servico/registrar-estabelecimento-agropecuario) poderão solicitar registro de produto de uso veterinário</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1703">
+            <tipo>Estabelecimentos agropecuários</tipo>
+            <requisitos>Que fabricam, manipulam, fracionam, envasam, controlam a qualidade, comercializam, 
+armazenam,  distribuem, importam ou exportam produtos de uso veterinário.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3635">
+            <titulo>Registrar produto</titulo>
+            <descricao>A empresa deve solicitar o registro apenas de produtos cuja classificação está prevista na licença do estabelecimento . Ex : Se a licença do estabelecimento não contempla as características PENICILÂNICO ou HORMÔNIOS, não poderá solicitar registro de produto à base desse grupo de substâncias ativas . 
+Entre, clique em SIPEAGRO, então no menu "produto", "solicitação" e em seguida "novo registro". Preencha todas as abas, anexe os documentos e envie.</descricao>
+            <documentos>
+                <default>
+                    <item id="5236">CPF</item>
+                    <item id="5237">Senha no SIPEAGRO</item>
+                </default>
+                <caso id="586" descricao="Em arquivo eletrônico para upload">
+                    <documento>
+                        <id>5235</id>
+                        <descricao>Contrato(s) de terceirização (se houver)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5234</id>
+                        <descricao>Modelos de rotulagem</descricao>
+                    </documento>
+                    <documento>
+                        <id>5233</id>
+                        <descricao>Relatórios de estudos que comprovem o período de carência (se o produto  for destinado a animal produtor de alimento para o homem)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5232</id>
+                        <descricao>Relatórios de estudos que comprovem a segurança do produto</descricao>
+                    </documento>
+                    <documento>
+                        <id>5231</id>
+                        <descricao>Relatório de estudos que comprovem a eficácia do produto</descricao>
+                    </documento>
+                    <documento>
+                        <id>5230</id>
+                        <descricao>Relatório de estudos de estabilidade, comprovando o prazo de validade do  produto em sua embalagem fechada e no período de utilização</descricao>
+                    </documento>
+                    <documento>
+                        <id>5229</id>
+                        <descricao>Relatório de fabricação da Partida Piloto (ou três partidas comerciais  consecutivas), demonstrando a reprodutibilidade do processo fabril em todas  as apresentações do produto</descricao>
+                    </documento>
+                    <documento>
+                        <id>5228</id>
+                        <descricao>Relatório técnico, conforme roteiro da Portaria nº 74/1996</descricao>
+                    </documento>
+                    <documento>
+                        <id>5227</id>
+                        <descricao>Licença vigente, caso o produto já possua registro no MAPA</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4617" tipo="web">
+                        <descricao>https://sistemasweb.agricultura.gov.br/segaut/login.jsp?sgAplicacaoRedirecionada=%2Fsipe%2Frestringe.action</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3636">
+            <titulo>Receber resultado</titulo>
+            <descricao>Faça login, clique no menu "produto", no item "solicitação" e "acompanhar"</descricao>
+            <documentos>
+                <default>
+                    <item id="5238">CPF</item>
+                    <item id="5239">Senha no SIPEAGRO</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4618" tipo="web">
+                        <descricao>https://sistemasweb.agricultura.gov.br/segaut/login.jsp?sgAplicacaoRedirecionada=%2Fsipe%2Frestringe.action</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3610">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3611">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3612">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3613">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5049">produto veterinário</item>
+        <item id="5050">registro</item>
+        <item id="5051">autorização</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1497">-</item>
+    </legislacoes>
+</servico>
