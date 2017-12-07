@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-financiamento-para-melhorias-na-sua-casa</id>
+    <dbId>1417</dbId>
+    <nome>Obter financiamento para melhorias na sua casa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1173">Cartão Reforma</item>
+    </nomes-populares>
+    <descricao>Através deste serviço os cidadãos ou famílias de baixa renda podem obter financiamento para realização de melhorias habitacionais com a ampliação de mais um quarto, construção ou reforma de banheiro, substituição total ou parcial dos telhado,, construção de fossa-sumidouro, reboco e pintura, instalações elétricas, instalações hidrossanitárias, entre outros.     
+**Atenção:** É responsabilidade do beneficiário fornecer a mão de obra, equipamentos e ferramentas para a execução dos serviços;</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1769">
+            <tipo>Cidadãos</tipo>
+            <requisitos>¨ Ser maior de 18 anos ou emancipado e com renda familiar bruta de até R$2.811,00;    
+¨ Ser morador E proprietário, possuidor ou detentor de um único imóvel residencial em todo o território nacional, localizado em área indicada por  [município participante do programa](http://capacitacao.cartaoreforma.cidades.gov.br/ente-federativo/#/relatorio), e aprovada pelo Ministério das Cidades     
+¨ Possuir celular habilitado para receber SMS;</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3768">
+            <titulo>Cadastrar-se no programa</titulo>
+            <descricao>Os modelos dos das declarações do MCIDADES podem ser obtidos na Parte 3 [deste documento](http://www.cartaoreforma.cidades.gov.br/wp-content/uploads/2017/12/Manual-para-Cadastramento-de-Interessados_vs3.pdf)</descricao>
+            <documentos>
+                <default/>
+                <caso id="594" descricao="Para todos moradores permanentes:">
+                    <documento>
+                        <id>5533</id>
+                        <descricao>Comprovante de renda (de cada morador)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5532</id>
+                        <descricao>Comprovante de cadastro no CADÚNICO  – (folha resumo único)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5531</id>
+                        <descricao>Número de Identificação  Social (NIS)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5530</id>
+                        <descricao>Carteira de identidade (RG), Carteira Nacional de Habilitação (CNH) ou  Certidão de nascimento (menores de 18 anos)</descricao>
+                    </documento>
+                </caso>
+                <caso id="595" descricao="Somente para o  INTERESSADO (a) e companheiro(a):">
+                    <documento>
+                        <id>5536</id>
+                        <descricao>Escritura pública de emancipação, quando menor de 18 anos.</descricao>
+                    </documento>
+                    <documento>
+                        <id>5535</id>
+                        <descricao>Comprovante de estado civil (casamento, declaração de união estável,  óbito ou separação)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5534</id>
+                        <descricao>Cadastro de Pessoa Física (CPF)</descricao>
+                    </documento>
+                </caso>
+                <caso id="596" descricao="Para grupo familiar com Pessoa com Deficiência (PcD)">
+                    <documento>
+                        <id>5538</id>
+                        <descricao>Atestado da equipe multiprofissional do Sistema Único de Saúde  – SUS (modelo MCIDADES)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5537</id>
+                        <descricao>Credencial do Passe Livre Federal; ou</descricao>
+                    </documento>
+                </caso>
+                <caso id="597" descricao="Comprovantes de renda para renda comprovada">
+                    <documento>
+                        <id>5542</id>
+                        <descricao>Declaração do Imposto de Renda</descricao>
+                    </documento>
+                    <documento>
+                        <id>5541</id>
+                        <descricao>Comprovante Instituto Nacional do Seguro Social (INSS) – para  aposentados e pensionistas</descricao>
+                    </documento>
+                    <documento>
+                        <id>5540</id>
+                        <descricao>DECORE  – para trabalhadores autônomos  (pagam carnê do INSS e  prefeituras ) .</descricao>
+                    </documento>
+                    <documento>
+                        <id>5539</id>
+                        <descricao>Contracheque ou carteira de trabalho para trabalhadores com emprego  formal</descricao>
+                    </documento>
+                </caso>
+                <caso id="598" descricao="Comprovantes de renda para renda NÃO comprovada">
+                    <documento>
+                        <id>5543</id>
+                        <descricao>Declaração de renda do grupo familiar (modelo MCIDADES)</descricao>
+                    </documento>
+                </caso>
+                <caso id="599" descricao="Comprovantes de renda para quem recebe benefícios sociais">
+                    <documento>
+                        <id>5544</id>
+                        <descricao>Extrato  ou comprovante do benefício</descricao>
+                    </documento>
+                </caso>
+                <caso id="600" descricao="Documentação propriedade ou posse do imóvel  (apresentar um dos seguintes documentos)">
+                    <documento>
+                        <id>5550</id>
+                        <descricao>**ATENÇÃO: QUALQUER DESTES DOCUMENTOS DEVEM SER INSTRUMENTO PÚBLICO OU PARTICULAR COM RECONHECIMENTO EM CARTÓRIO, E DEVEM TER PELO MENOS UM ANO E UM DIA NA DATA DE INÍCIO DE CADASTRO NO SERVIÇO</descricao>
+                    </documento>
+                    <documento>
+                        <id>5549</id>
+                        <descricao>Contrato de Transferência (doação, contrato ou promessa de compra e venda (com cadeia dominial), contrato de direito de laje ou de superfície ou contrato de usufruto)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5548</id>
+                        <descricao>Sentença judicial de Usucapião especial de imóvel urbano ou formal de partilha</descricao>
+                    </documento>
+                    <documento>
+                        <id>5547</id>
+                        <descricao>3. Concessão Pública (Concessão do Direito Real de Uso (CDRU), Concessão de Uso Especial para fins de Moradia (CUEM), Cessão de Direito emitida pelo poder público ou Cessão de Posse emita pelo poder público)</descricao>
+                    </documento>
+                    <documento>
+                        <id>5546</id>
+                        <descricao>Certidão de matrícula, emitida pelo cartório de registro de imóveis ,  com validade de 30 dias</descricao>
+                    </documento>
+                    <documento>
+                        <id>5545</id>
+                        <descricao>Escritura Pública</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4738" tipo="presencial">
+                        <descricao>Prefeitura, Governo do Distrito Federal ou Governo Estadual de onde o usuário mora.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3769">
+            <titulo>Receber vistoria do imóvel</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4739" tipo="presencial">
+                        <descricao>Residência do usuário</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/42672" dbId="37536">
+        <nomeOrgao>Ministério das Cidades (MCIDADES)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3742">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Construções e obras</item>
+        <item>Assistência Social</item>
+        <item>Habitação Urbana</item>
+        <item>Habitação Rural</item>
+        <item>Patrimônio</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5718">reforma</item>
+        <item id="5719">financiamento para reforma</item>
+        <item id="5720">cartão reforma</item>
+        <item id="5721">minha casa minha vida</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1589">[LEI Nº 13.439, DE 27 DE ABRIL DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Lei/L13439.htm)</item>
+    </legislacoes>
+</servico>
