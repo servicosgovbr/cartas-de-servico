@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-importacao-de-produto-de-uso-veterinario-destinado-a-pesquisas</id>
+    <dbId>1400</dbId>
+    <nome>Obter autorização de importação de produto de uso veterinário destinado a pesquisas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1169">Autorização de Importação</item>
+    </nomes-populares>
+    <descricao>Concessão de autorização prévia para embarque de produto veterinário de natureza farmacêutica para fins de pesquisa ou experimentação científica.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1751">
+            <tipo>Empresas fabricantes e laboratório de análise química  ou biológica.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3724">
+            <titulo>Requisitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5415">Requerimento de importação</item>
+                    <item id="5416">Extrato da Licença de Importação (LI)</item>
+                    <item id="5417">Descritivo</item>
+                </default>
+                <caso id="592" descricao="No descritivo deve constar:">
+                    <documento>
+                        <id>5414</id>
+                        <descricao>Delineamento experimental compreendendo objetivo, local de realização, metodologia e critérios de avaliação e cronograma de execução.</descricao>
+                    </documento>
+                    <documento>
+                        <id>5413</id>
+                        <descricao>Órgão e técnicos responsáveis pela pesquisa, experimentação ou pelo programa sanitário</descricao>
+                    </documento>
+                    <documento>
+                        <id>5412</id>
+                        <descricao>Nome, forma farmacêutica e apresentação, fórmula ou composição, características, indicações de uso e espécies animais a que se destina, origem, procedência e quantidade do produto a ser importado</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4675" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4676" tipo="postal">
+                        <descricao>Para uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4677" tipo="e-mail">
+                        <descricao>DFPV.CPV@AGRICULTURA.GOV.BR</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3725">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5418">Documento de identificação oficial</item>
+                    <item id="5419">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4678" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4679" tipo="postal">
+                        <descricao>No endereço informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4680" tipo="e-mail">
+                        <descricao>No e-mail informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3706">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3707">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3708">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Defesa agropecuária</item>
+        <item>Comercio externo</item>
+        <item>Pecuária</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Fiscalização do Estado</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5663">importação</item>
+        <item id="5664">produto veterinário</item>
+        <item id="5665">pesquisa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1571">[Instrução Normativa nº 29/2010](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=visualizarAtoPortalMapa&amp;chave=419570576)</item>
+    </legislacoes>
+</servico>
