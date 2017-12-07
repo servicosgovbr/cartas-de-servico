@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-financiamento-para-aquisicao-de-casa-propria-via-alienacao-fiduciaria</id>
+    <dbId>1419</dbId>
+    <nome>Obter financiamento para aquisição de casa própria via alienação fiduciária</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1175">Minha Casa Minha Vida – Faixa 1 FAR</item>
+        <item id="1176">PMCMV FAR</item>
+        <item id="1177">PMCMV Empresas</item>
+    </nomes-populares>
+    <descricao>Acesso à casa própria de famílias que necessitam de moradia, por intermédio de alienação fiduciária, com subsídio da maior parte do valor do imóvel, variando de acordo com a renda familiar do beneficiário.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1771">
+            <tipo>Famílias de Baixa Renda</tipo>
+            <requisitos>Famílias com renda até R$ 1.600,00, que não possuam imóvel residencial; não tenham recebido benefício de outro programa habitacional do governo federal; não estejam cadastrados no Sistema Integrado de Administração de Carteiras Imobiliárias (SIACI) ou no Cadastro Nacional de Mutuários (CADMUT).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3772">
+            <titulo>Se inscrever no programa</titulo>
+            <descricao>O modelo de declaração de beneficiário pode ser obtido [aqui](http://www.caixa.gov.br/downloads/habitacao-minha-casa-minha-vida/Declaracao_beneficiario.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="5553">Declaração de beneficiário</item>
+                    <item id="5554">Carteira de identidade (RG)</item>
+                    <item id="5555">CPF</item>
+                    <item id="5556">Demais documentação pedida pela CEF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4742" tipo="presencial">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3773">
+            <titulo>Pagar contrapartida</titulo>
+            <descricao>O valor das prestações mensais será estabelecido em conformidade com a renda familiar bruta mensal, nos termos da tabela abaixo:
+Renda Familiar Bruta Mensal (RFBM) ---------------------- Prestação mensal
+Até R$ 800,00 --------------------------------------------------- R$ 80,00
+de R$ 800,01 a R$ 1.200,00 ---------------------------------- 10% da RFBM
+de R$ 1.200,01 a R$ 1.800,00 -------------------------------- 25% da RFBM – R$ 180,00"</descricao>
+            <documentos>
+                <default>
+                    <item id="5557">Boleto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="165">
+                        <descricao>O beneficiário pagará pela alienação fiduciária da unidade habitacional durante 10 (dez) anos em conformidade com sua renda familiar mensal.</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4743" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/42672" dbId="37536">
+        <nomeOrgao>Ministério das Cidades (MCIDADES)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3745">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Construções e obras</item>
+        <item>Habitação Rural</item>
+        <item>Habitação Urbana</item>
+        <item>Habitação</item>
+        <item>Assistência Social</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5725">minha casa minha vida</item>
+        <item id="5726">alienação fiduciária</item>
+        <item id="5727">financiamento de casa própria</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1591">-</item>
+    </legislacoes>
+</servico>
