@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-analises-tecnicas-especializadas</id>
+    <dbId>1431</dbId>
+    <nome>Obter análises técnicas especializadas</nome>
+    <sigla>SSTE</sigla>
+    <nomes-populares>
+        <item id="1190">INT - Instituto Nacional de Tecnologia.</item>
+        <item id="1191">Setor de Serviços Técnicos Especializados.</item>
+    </nomes-populares>
+    <descricao>Os laboratórios do Instituto realizam análises técnicas de diversas especialidades. Veja [aqui](http://www.int.gov.br/ensaios-analises-e-servicos) a lista completa</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1783">
+            <tipo>Público em geral</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3790">
+            <titulo>Solicitar serviço</titulo>
+            <descricao>Solicitação de serviço via e-mail.</descricao>
+            <documentos>
+                <default>
+                    <item id="5595">CNPJ ou CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4769" tipo="e-mail">
+                        <descricao>servicos@int.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3791">
+            <titulo>Envio do aceite do orçamento solicitado.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5596">Aceite do Serviço em Papel Timbrado e Assinado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4770" tipo="e-mail">
+                        <descricao>servicos@int.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3792">
+            <titulo>Realizar o pagamento do serviço solicitado.</titulo>
+            <descricao>O preço varia de acordo com o homem Hora e o tipo do serviço a ser ensaiado.</descricao>
+            <documentos>
+                <default>
+                    <item id="5597">Boleto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="170">
+                        <descricao>Valor cobrado para realização de ensaios (variável)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4771" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3759">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3760">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3761">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3762">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5763">INT</item>
+        <item id="5764">tecnologia</item>
+        <item id="5765">análises</item>
+    </palavras-chave>
+</servico>
