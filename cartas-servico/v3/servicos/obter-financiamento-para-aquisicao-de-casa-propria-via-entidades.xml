@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-financiamento-para-aquisicao-de-casa-propria-via-entidades</id>
+    <dbId>1418</dbId>
+    <nome>Obter financiamento para aquisição de casa própria via entidades</nome>
+    <sigla>PMCMV Entidades</sigla>
+    <nomes-populares>
+        <item id="1174">Minha Casa Minha Vida – Faixa 1 Entidades</item>
+    </nomes-populares>
+    <descricao>Acesso à casa própria de famílias que necessitam de moradia, organizadas em cooperativas habitacionais ou mistas, associações e demais entidades privadas sem fins lucrativos, com subsídio da maior parte do valor do imóvel, variando de acordo com a renda familiar do beneficiário.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1770">
+            <tipo>Famílias de baixa renda</tipo>
+            <requisitos>Famílias com renda até R$ 1.800,00 (podendo até 10% das unidades serem para famílias com renda até R$ 2.350,00), que não possuam financiamento de imóvel residencial; não tenham recebido benefício de outro programa habitacional do governo federal; não estejam cadastrados no Sistema Integrado de Administração de Carteiras Imobiliárias (SIACI) e/ou Cadastro Nacional de Mutuários (CADMUT); e não tenham débitos com o governo federal.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3770">
+            <titulo>Filiar-se a uma entidade habilitada</titulo>
+            <descricao>Para participar do Programa você deve estar filiado a uma [entidade habilitada pelo Ministério das Cidades](http://www.minhacasaminhavida.gov.br/)</descricao>
+            <documentos>
+                <default>
+                    <item id="5551">As requeridas pela entidade</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4740" tipo="presencial">
+                        <descricao>Na entidade escolhida</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3771">
+            <titulo>Pagar contrapartida</titulo>
+            <descricao>O beneficiário pagará pelo financiamento da unidade habitacional durante 10 anos, nos seguintes termos:
+Renda Familiar Bruta Mensal (RFBM) ---------------------- Prestação mensal
+Até R$ 800,00 --------------------------------------------------- R$ 80,00
+de R$ 800,01 a R$ 1.200,00 ---------------------------------- 10% da RFBM
+de R$ 1.200,01 a R$ 1.800,00 -------------------------------- 25% da RFBM – R$ 180,00
+de R$ 1.800,01 a R$ 2.350,00 -------------------------------- 36% da RFBM – R$ 378,00</descricao>
+            <documentos>
+                <default>
+                    <item id="5552">Boleto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="164">
+                        <descricao>Contrapartida do financiamento (variável)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4741" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/42672" dbId="37536">
+        <nomeOrgao>Ministério das Cidades (MCIDADES)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3743">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="3744">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Assistência Social</item>
+        <item>Habitação</item>
+        <item>Habitação Urbana</item>
+        <item>Habitação Rural</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5722">minha casa minha vida</item>
+        <item id="5723">cooperativas habitacionais</item>
+        <item id="5724">caixa econômica</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1590">-</item>
+    </legislacoes>
+</servico>
