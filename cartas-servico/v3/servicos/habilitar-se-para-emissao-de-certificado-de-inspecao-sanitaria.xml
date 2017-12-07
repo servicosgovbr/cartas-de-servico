@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>habilitar-se-para-emissao-de-certificado-de-inspecao-sanitaria</id>
+    <dbId>1407</dbId>
+    <nome>Habilitar-se para emissão de Certificado de Inspeção Sanitária</nome>
+    <sigla>CIS-E</sigla>
+    <descricao>Procedimento pelo qual o Ministério da Agricultura, Pecuária e Abastecimento (MAPA) credencia médicos veterinários não vinculados à administração pública para a emissão de Certificado de Inspeção Sanitária - CIS-E para o trânsito de subprodutos de origem animal, desde que atendidas as seguintes exigências:
+1.  A unidade administrativa onde ele irá atuar não apresentar número suficiente de médicos veterinários ou funcionários autorizados dos órgãos oficiais de Defesa Sanitária Animal;
+2. Ele preste assistência veterinária aos estabelecimentos de onde se originam os subprodutos;
+3. Ele participe em treinamentos especializados, quando convocado pelo MAPA.      
+
+O médico veterinário credenciado só poderá emitir CIS-E nos municípios especificados em sua habilitação pelo MAPA.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1759">
+            <tipo>Médicos veterinários</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3738">
+            <titulo>Requerer habilitação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5454">Carteira de Identidade (RG)</item>
+                    <item id="5455">CPF</item>
+                    <item id="5456">CRMV</item>
+                    <item id="5457">Solicitação de credenciamento dirigida ao Superintendente Federal de Agricultura da respectiva Unidade Federativa (UF)</item>
+                    <item id="5458">Ficha cadastral (adquirida no órgão de Defesa Sanitária Animal da UF)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4699" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado ou Distrito Federal, ou no órgão de Defesa Sanitária Animal da UF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4700" tipo="postal">
+                        <descricao>Para a [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado ou Distrito Federal.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3739">
+            <titulo>Receber habilitação</titulo>
+            <descricao>O credenciamento será publicado em Portaria do Ministério da Agricultura, Pecuária e Abastecimento no Diário Oficial da União (DOU)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4701" tipo="web">
+                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3740">
+            <titulo>Participar de treinamento inicial</titulo>
+            <descricao>Comparecer à SFA para treinamento após a publicação da Portaria de credenciamento</descricao>
+            <documentos>
+                <default>
+                    <item id="5459">Documento de identificação oficial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4702" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado ou Distrito Federal</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3741">
+            <titulo>Participar de treinamentos adicionais</titulo>
+            <descricao>Comparecer à SFA sempre que convocado para treinamentos</descricao>
+            <documentos>
+                <default>
+                    <item id="5460">Documento de identificação oficial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4703" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado ou Distrito Federal</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3718">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Defesa agropecuária</item>
+        <item>Pecuária</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5684">habilitação</item>
+        <item id="5685">veterinário</item>
+        <item id="5686">inspeção animal</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1578">-</item>
+    </legislacoes>
+</servico>
