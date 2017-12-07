@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-embarque-de-insumos-destinados-a-experimentacao-ou-fabricacao-de-partida-piloto-de-produto-veterinario-de-natureza-biologica</id>
+    <dbId>1401</dbId>
+    <nome>Obter autorização de embarque de insumos destinados à experimentação ou fabricação de partida piloto de produto veterinário de natureza biológica</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1170">Autorização de embarque</item>
+    </nomes-populares>
+    <descricao>Concessão de autorização prévia para embarque de material biológico, agente infeccioso ou semente, destinado à experimentação ou fabricação de partida piloto ou de produtos de uso veterinário de natureza biológica.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1752">
+            <tipo>Fabricante de produto veterinário de natureza biológica</tipo>
+            <requisitos>Registrada junto ao Ministério da Agricultura</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3726">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5423">Requerimento de importação</item>
+                    <item id="5424">Extrato da Licença de Importação (LI)</item>
+                    <item id="5425">Descritivo</item>
+                </default>
+                <caso id="593" descricao="No descritivo deve constar:">
+                    <documento>
+                        <id>5422</id>
+                        <descricao>Nome, forma farmacêutica e apresentação, fórmula ou composição, características, indicações de uso e espécies animais a que se destina, origem, procedência e quantidade do produto a ser importado</descricao>
+                    </documento>
+                    <documento>
+                        <id>5421</id>
+                        <descricao>Órgão e técnicos responsáveis pela pesquisa, experimentação ou pelo programa sanitário</descricao>
+                    </documento>
+                    <documento>
+                        <id>5420</id>
+                        <descricao>Delineamento experimental compreendendo objetivo, local de realização, metodologia e critérios de avaliação e cronograma de execução.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4681" tipo="presencial">
+                        <descricao>Em uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4682" tipo="postal">
+                        <descricao>Para uma [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4683" tipo="e-mail">
+                        <descricao>DFPV.CPV@AGRICULTURA.GOV.BR</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3727">
+            <titulo>Receber autorização</titulo>
+            <descricao>Estando tudo conforme a legislação, será dado uma autorização por meio do Siscomex.  e o usuário também será comunicado por email.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4684" tipo="e-mail">
+                        <descricao>E-mail informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4685" tipo="web">
+                        <descricao>https://portalunico.siscomex.gov.br/portal/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3709">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3710">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Defesa agropecuária</item>
+        <item>Comercio externo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pecuária</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5666">autorização de importação</item>
+        <item id="5667">material biológico</item>
+        <item id="5668">agente infeccioso</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1572">[Instrução Normativa nº 29/2010](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=visualizarAtoPortalMapa&amp;chave=419570576)</item>
+    </legislacoes>
+</servico>
