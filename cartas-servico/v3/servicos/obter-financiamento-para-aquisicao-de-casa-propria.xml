@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-financiamento-para-aquisicao-de-casa-propria</id>
+    <dbId>1424</dbId>
+    <nome>Obter financiamento para aquisição de casa própria</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1183">Minha Casa Minha Vida - Financiamento FGTS</item>
+    </nomes-populares>
+    <descricao>Acesso à casa própria de famílias que necessitam de moradia, por intermédio de financiamento habitacional, com subsídio dos juros ou do valor de complemento do imóvel, considerando sua localização e valor, e a renda familiar do adquirente.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1776">
+            <tipo>Famílias sem casa própria</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3781">
+            <titulo>Se inscrever no programa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5569">Declaração de beneficiário</item>
+                    <item id="5570">Carteira de identidade (RG)</item>
+                    <item id="5571">CPF</item>
+                    <item id="5572">Demais documentação pedida pela CEF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4757" tipo="presencial">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3782">
+            <titulo>Pagar parcelas</titulo>
+            <descricao>A parcela é calculada de acordo com a renda e o valor financiado, nas condições do SFH.</descricao>
+            <documentos>
+                <default>
+                    <item id="5573">Boleto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="167">
+                        <descricao>Parcela de financiamento (variável)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4758" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/42672" dbId="37536">
+        <nomeOrgao>Ministério das Cidades (MCIDADES)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3750">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5740">minha casa minha vida</item>
+        <item id="5741">habitação</item>
+        <item id="5742">financiamento</item>
+    </palavras-chave>
+</servico>
