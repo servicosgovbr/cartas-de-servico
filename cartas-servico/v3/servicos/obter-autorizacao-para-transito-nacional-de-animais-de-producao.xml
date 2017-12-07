@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-transito-nacional-de-animais-de-producao</id>
+    <dbId>1408</dbId>
+    <nome>Obter autorização para trânsito nacional de animais de produção</nome>
+    <sigla>GTA</sigla>
+    <descricao>É o serviço pelo qual o Ministério da Agricultura, Pecuária e Abastecimento (MAPA) autoriza o trânsito intra e interestadual de ovos férteis e embrionados e de animais destinados a cria, recria, engorda, reprodução, abate e para participação em eventos de concentração.     
+Cada espécie animal possui uma norma específica para a emissão da guia de trânsito.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1760">
+            <tipo>Cidadãos e empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3742">
+            <titulo>Solicitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5461">Documento oficial de identificação</item>
+                    <item id="5462">Procuração do representante legal (se for o caso)</item>
+                    <item id="5463">CPF</item>
+                    <item id="5464">CNPJ (se for o caso)</item>
+                    <item id="5465">Informações sobre origem, destino, condições sanitárias e a finalidade do transporte animal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4704" tipo="presencial">
+                        <descricao>O cidadão deverá solicitar a Guia de Trânsito Animal (GTA) nos escritórios locais dos órgãos estaduais de defesa sanitária animal.      
+*Se você não sabe quais são estes órgãos, entre em contato com a [Superintendência Federal de Agricultura do seu estado](http://www.agricultura.gov.br/sfa) para obter a informação*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3743">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5466">Guia de recolhimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="160">
+                        <descricao>Taxa de emissão do GTA (variável de acordo com a UF, espécie, quantidade, destinação e veículo)</descricao>
+                        <moeda>R$</moeda>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4705" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3744">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5467">Documento oficial de identificação</item>
+                    <item id="5468">Procuração do representante legal (se for o caso)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4706" tipo="presencial">
+                        <descricao>Escritórios locais dos órgãos estaduais de defesa sanitária animal.      
+*Se você não sabe quais são estes órgãos, entre em contato com a [Superintendência Federal de Agricultura do seu estado](http://www.agricultura.gov.br/sfa) para obter a informação*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+        <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3719">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3720">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Agropecuária</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+        <item>Defesa agropecuária</item>
+        <item>Fiscalização do Estado</item>
+        <item>Mobilidade</item>
+        <item>Pecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5687">transporte animal</item>
+        <item id="5688">defesa sanitária animal</item>
+        <item id="5689">autorização</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1579">-</item>
+    </legislacoes>
+</servico>
