@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-comprovante-de-situacao-cadastral-no-cnpj</id>
+    <dbId>1475</dbId>
+    <nome>Emitir comprovante de situação cadastral no CNPJ</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1221">CNPJ</item>
+    </nomes-populares>
+    <descricao>Consultar e emitir o comprovante de inscrição e de situação cadastral do CNPJ.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1830">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3861">
+            <titulo>Gerar comprovante</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5704">Número do CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4862" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3841">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="3842">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="3843">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Documentação Pessoal</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5905">pj</item>
+        <item id="5906">situação cadastral</item>
+        <item id="5907">pessoa jurídica</item>
+    </palavras-chave>
+</servico>
