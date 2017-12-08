@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-aviso-de-cobranca</id>
+    <dbId>1456</dbId>
+    <nome>Receber aviso de cobrança</nome>
+    <sigla>AC-PF</sigla>
+    <nomes-populares>
+        <item id="1208">Aviso de Cobrança com Darf para pagamento - PF</item>
+    </nomes-populares>
+    <descricao>Gera Aviso de Cobrança para o contribuinte Pessoa Física com Darf para pagamento do débito.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1811">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo dependerá da natureza da dívida, dos prazos postais e eventualidades na entrega, o que torna impossível estabelecer um tempo padrão</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3838">
+            <titulo>Receber aviso</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5676">Documento oficial de identidade</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4839" tipo="postal">
+                        <descricao>Residência do contribuinte</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3839">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5677">DARF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4840" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3795">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5840">cobrança</item>
+        <item id="5841">DARF</item>
+        <item id="5842">dívida</item>
+        <item id="5843">aviso de cobrança</item>
+        <item id="5844">impostos</item>
+    </palavras-chave>
+</servico>
