@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-comprovante-de-situacao-cadastral-no-cpf</id>
+    <dbId>1480</dbId>
+    <nome>Emitir comprovante de situação cadastral no CPF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1228">CPF</item>
+    </nomes-populares>
+    <descricao>Emitir o comprovante de situação cadastral. Situações cadastrais: regular, pendente de regularização, suspensa, cancelada ou nula.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1835">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3867">
+            <titulo>Gerar comprovante</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5721">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4870" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/CPF/ConsultaSituacao/ConsultaPublica.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4871" tipo="aplicativo-movel">
+                        <descricao>¨ [Android](http://play.google.com/store/apps/details?id=br.gov.fazenda.receita.pessoafisica)     
+¨ [iOS](http://itunes.apple.com/br/app/pessoa-fisica/id529883041?mt=8)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3853">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Documentação Pessoal</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5920">CPF</item>
+        <item id="5921">pessoa física</item>
+        <item id="5922">validade</item>
+    </palavras-chave>
+</servico>
