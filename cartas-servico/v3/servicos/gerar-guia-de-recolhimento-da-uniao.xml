@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>gerar-guia-de-recolhimento-da-uniao</id>
+    <dbId>1465</dbId>
+    <nome>Gerar Guia de Recolhimento da União</nome>
+    <sigla>GRU</sigla>
+    <descricao>Documento instituído pelo Ministério da Fazenda para recolhimento das receitas de órgãos, fundos, autarquias, fundações e demais entidades integrantes dos orçamentos fiscal e da seguridade social, tais como taxas (custas judiciais, emissão de passaporte etc.), aluguéis de imóveis públicos, serviços administrativos e educacionais (inscrição de vestibular/concursos, expedição de certificados pelas Universidades Públicas Federais), multas (da Polícia Rodoviária Federal, do Código Eleitoral, do Serviço Militar etc.), entre outras.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1820">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3850">
+            <titulo>Emitir GRU</titulo>
+            <descricao>Preencher os dados e imprimir</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4849" tipo="web">
+                        <descricao>http://consulta.tesouro.fazenda.gov.br/gru_novosite/gru_simples.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3817">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="3818">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="3819">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="3820">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Encargos financeiros</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5871">GRU</item>
+        <item id="5872">boleto</item>
+        <item id="5873">darf</item>
+    </palavras-chave>
+</servico>
