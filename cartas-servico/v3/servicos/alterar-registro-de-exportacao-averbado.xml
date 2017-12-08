@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-registro-de-exportacao-averbado</id>
+    <dbId>1504</dbId>
+    <nome>Alterar Registro de Exportação averbado</nome>
+    <sigla>RE</sigla>
+    <descricao>A exportação com embarque já realizado pode necessitar de correção nos dados do RE. Dependendo do campo alterado, pode ser necessária a anuência do DECEX.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1859">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3894">
+            <titulo>Requerer alteração</titulo>
+            <descricao>Pedido inicial da empresa: Realizado, por meio do sistema, para ser submetido à análise do órgão responsável, que poderá deferir ou indeferir o pedido.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4902" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3904">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Fiscalização do Estado</item>
+        <item>Encargos financeiros</item>
+        <item>Relações Diplomáticas</item>
+        <item>Relações Internacionais</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5992">exportação</item>
+        <item id="5993">registro</item>
+        <item id="5994">alteração</item>
+    </palavras-chave>
+</servico>
