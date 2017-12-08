@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>complementar-dados-no-cpf</id>
+    <dbId>1478</dbId>
+    <nome>Complementar dados no CPF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1225">Complementação de Informações Cadastrais no CPF</item>
+        <item id="1226">CPF</item>
+    </nomes-populares>
+    <descricao>Incluir dados cadastrais não constantes no CPF</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1833">
+            <tipo>Pessoas físicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3865">
+            <titulo>Informar dados</titulo>
+            <descricao>Informar todos os dados, inclusive os complementares.</descricao>
+            <documentos>
+                <default>
+                    <item id="5717">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4866" tipo="web">
+                        <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login/index/16</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4867" tipo="presencial">
+                        <descricao>Em uma [Unidade de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3851">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração financeira</item>
+        <item>Cidadania</item>
+        <item>Documentação Pessoal</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5914">CPF</item>
+        <item id="5915">pessoa física</item>
+        <item id="5916">informar dados</item>
+    </palavras-chave>
+</servico>
