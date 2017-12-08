@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-certificado-de-proeficiencia-em-libras</id>
+    <dbId>1446</dbId>
+    <nome>Obter o certificado de proeficiência em libras</nome>
+    <sigla>PROLIBRAS</sigla>
+    <descricao>Exame estabelecido pelo Decreto nº 5.626/2005, para ser realizado no prazo de dez anos após a publicação do Decreto, de 2006 a 2016, com o objetivo de certificar a proficiência em Língua Brasileira de Sinais - Libras de profissionais para o ensino, tradução e interpretação da Libras. Segundo o Decreto, o exame de proficiência em Libras deve ser promovido, anualmente, pelo Ministério da Educação e instituições de educação superior por ele credenciadas, para certificação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1801">
+            <tipo>Cidadãos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3820">
+            <titulo>Inscrever-se</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5639">Carteira de identidade (RG)</item>
+                    <item id="5640">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4816" tipo="web">
+                        <descricao>http://www.prolibras.ufsc.br/inscricao/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3821">
+            <titulo>Pagar taxa ou requerer isenção</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5644">Boleto de Pagamento</item>
+                </default>
+                <caso id="601" descricao="Para pedido de isenção">
+                    <documento>
+                        <id>5643</id>
+                        <descricao>Formulário próprio</descricao>
+                    </documento>
+                    <documento>
+                        <id>5642</id>
+                        <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>5641</id>
+                        <descricao>Comprovante de cadastro no CadÚnico</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="173">
+                        <descricao>Taxa de inscrição</descricao>
+                        <moeda>R$</moeda>
+                        <valor>4,000</valor>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4818" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="602" descricao="Para pedido de isenção">
+                    <canal-de-prestacao id="4817" tipo="web">
+                        <descricao>http://www.prolibras.ufsc.br/isencao/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3822">
+            <titulo>Obter confimação preliminar de inscrição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5645">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4819" tipo="web">
+                        <descricao>http://www.prolibras.ufsc.br/inscricao/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3823">
+            <titulo>Obter confirmação definitiva de inscrição</titulo>
+            <descricao>Confirmação  de  Inscrição  Definitiva  contendo  os  dados  do  participante  e  o  local 
+onde  realizará  as  provas</descricao>
+            <documentos>
+                <default>
+                    <item id="5646">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4820" tipo="web">
+                        <descricao>http://www.prolibras.ufsc.br/inscricao/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3824">
+            <titulo>Realizar prova</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5647">Documento oficial de identificação informado na inscrição</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4821" tipo="presencial">
+                        <descricao>Local informado na confirmação definitiva de inscrição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3825">
+            <titulo>Obter certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5648">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4822" tipo="web">
+                        <descricao>http://www.prolibras.ufsc.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="3784">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Educação</item>
+        <item>Educação básica</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="5808">libras</item>
+        <item id="5809">proeficiência em libras</item>
+        <item id="5810">educação em libras</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1597">[DECRETO Nº 5.626, DE 22 DE DEZEMBRO DE 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm)</item>
+    </legislacoes>
+</servico>
