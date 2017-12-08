@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-registro-de-credito</id>
+    <dbId>1509</dbId>
+    <nome>Obter Registro de Crédito</nome>
+    <sigla>RC</sigla>
+    <descricao>A exportação financiada com recursos próprios ou de terceiros, sem PROEX, pode estar sujeita à necessidade de emissão de Registro de Crédito (RC), se exigido pela instituição financiadora, sendo o DECEX o órgão que analisa e autoriza a emissão do documento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="1864">
+            <tipo>Empresas exportadoras</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="3901">
+            <titulo>Realizar pedido</titulo>
+            <descricao>Pedido inicial da empresa: Realizado, por meio do sistema, para ser submetido à análise do órgão responsável</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4910" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="3902">
+            <titulo>Responder às exigências</titulo>
+            <descricao>Resposta de exigência: Trata-se de resposta da empresa em função de informações adicionais solicitadas pelo órgão responsável</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4911" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="3909">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="6007">exportação</item>
+        <item id="6008">registro</item>
+        <item id="6009">siscomex</item>
+    </palavras-chave>
+</servico>
