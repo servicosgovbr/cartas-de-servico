@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-servicos-de-cpf-para-residentes-no-exterior</id>
+    <dbId>1683</dbId>
+    <nome>Realizar serviços de CPF para residentes no exterior</nome>
+    <sigla>CPF</sigla>
+    <descricao>Realizar, em Representação Diplomática do Brasil, pedido de inscrição, alteração, regularização ou cancelamento no CPF de residente no exterior.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.receita.fazenda.gov.br/Aplicacoes/Atcta/cpfEstrangeiro/Fcpf.asp</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2071">
+            <tipo>Cidadãos brasileiros e estrangeiros no exterior</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4230">
+            <titulo>Preencher formulário</titulo>
+            <descricao>Selecione o país de seu domicílio. No caso de pessoa física residente no Brasil que se encontre no exterior, selecione o país onde será entregue o formulário. Clique no botão para gerar um formulário. Preencha o formulário, digitando as informações. Clique no botão Enviar.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4967" tipo="web">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atcta/cpfEstrangeiro/Fcpf.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4231">
+            <titulo>Entregar documentação</titulo>
+            <descricao>Imprima o Formulário preenchido utilizando o botão Imprimir. Entregue-o em uma representação diplomática brasileira em até 15 dias, juntamente com o restante da documentação.</descricao>
+            <documentos>
+                <default>
+                    <item id="5760">Formuilário impresso</item>
+                    <item id="5761">Documento de identidade aceito no país de residência, que comprove a filiação da pessoa física</item>
+                </default>
+                <caso id="607" descricao="Se menor de 16 anos">
+                    <documento>
+                        <id>5758</id>
+                        <descricao>Documento de identidade de um dos pais, tutor, curador ou responsável pela guarda e documento que comprove a filiação, tutela, curatela ou responsabilidade pela guarda quando o pedido se referir a inscrição, conforme o caso.</descricao>
+                    </documento>
+                </caso>
+                <caso id="608" descricao="Se através de procurador">
+                    <documento>
+                        <id>5759</id>
+                        <descricao>Documento de identidade do procurador e instrumento público de procuração, quando o pedido for efetuado por procurador</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4968" tipo="presencial">
+                        <descricao>Em uma [representação diplomática brasileira](http://www.portalconsular.itamaraty.gov.br/representacoes-do-brasil-no-mundo)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4232">
+            <titulo>Acompanhar pedido</titulo>
+            <descricao>Cada formulário gerado possui um código de atendimento próprio, vinculado a um único solicitante. Esse código permite o acompanhamento da solicitação via Internet.</descricao>
+            <documentos>
+                <default>
+                    <item id="5762">Código de atendimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4969" tipo="web-acompanhar">
+                        <descricao>http://www.receita.fazenda.gov.br/Aplicacoes/Atcta/cpfEstrangeiro/Fcpf.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4345">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Documentação Pessoal</item>
+        <item>Finanças pessoais</item>
+        <item>Finanças</item>
+        <item>Sistema Financeiro</item>
+        <item>Serviços Públicos</item>
+        <item>Emigrações e Imigrações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7603">cpf</item>
+        <item id="7604">exterior</item>
+        <item id="7605">embaixadas</item>
+        <item id="7606">consulados</item>
+    </palavras-chave>
+</servico>
