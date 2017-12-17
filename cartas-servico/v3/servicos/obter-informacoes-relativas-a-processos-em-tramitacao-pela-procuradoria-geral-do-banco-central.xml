@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-informacoes-relativas-a-processos-em-tramitacao-pela-procuradoria-geral-do-banco-central</id>
+    <dbId>1690</dbId>
+    <nome>Obter informações relativas a processos em tramitação pela Procuradoria-Geral do Banco Central</nome>
+    <sigla></sigla>
+    <descricao>Obter informação relacionada a processos e débitos acompanhados pela PROCURADORIA-GERAL DO BANCO CENTRAL.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2078">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4242">
+            <titulo>Requerer informação</titulo>
+            <descricao>Preenchimento do formulário e envio por e-mail</descricao>
+            <documentos>
+                <default>
+                    <item id="5778">Formulário específico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4979" tipo="e-mail">
+                        <descricao>atende.pgbc@bcb.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4243">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4980" tipo="e-mail">
+                        <descricao>E-mail informado no pedido.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/89" dbId="4715">
+        <nomeOrgao>Banco Central do Brasil (BACEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4356">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4357">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4358">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Sistema Financeiro</item>
+        <item>Economia e Finanças</item>
+        <item>Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7626">procuradoria geral</item>
+        <item id="7627">banco central</item>
+        <item id="7628">informações</item>
+    </palavras-chave>
+</servico>
