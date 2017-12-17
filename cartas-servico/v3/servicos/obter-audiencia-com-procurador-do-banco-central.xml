@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-audiencia-com-procurador-do-banco-central</id>
+    <dbId>1693</dbId>
+    <nome>Obter audiência com procurador do Banco Central</nome>
+    <sigla></sigla>
+    <descricao>Informações sobre Processos na Procuradoria-Geral do BC</descricao>
+    <contato>(61)  3414-1220</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2081">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4247">
+            <titulo>Solicitar agendamento</titulo>
+            <descricao>Envio de formulário por e-mail, solicitando a marcação de audiência.</descricao>
+            <documentos>
+                <default>
+                    <item id="5780">Formulário específico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4985" tipo="e-mail">
+                        <descricao>atende.pgbc@bcb.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4248">
+            <titulo>Receber resposta</titulo>
+            <descricao>Recebe a informação da data da audiência.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4986" tipo="e-mail">
+                        <descricao>E-mail informado no pedido.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4249">
+            <titulo>Comparecer à audiência</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5781">Carteira de identidade (RG)</item>
+                    <item id="5782">CPF</item>
+                    <item id="5783">Contrato Social</item>
+                    <item id="5784">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4987" tipo="presencial">
+                        <descricao>SBS Quadra 3, Bloco B - Edifício-Sede, 11º andar - Setor Bancário Sul - Brasília - DF - Cep. 70074-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/89" dbId="4715">
+        <nomeOrgao>Banco Central do Brasil (BACEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4367">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="4368">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Sistema Financeiro</item>
+        <item>Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7635">procuradoria geral</item>
+        <item id="7636">banco central</item>
+        <item id="7637">bacen</item>
+        <item id="7638">bcb</item>
+        <item id="7639">bc</item>
+    </palavras-chave>
+</servico>
