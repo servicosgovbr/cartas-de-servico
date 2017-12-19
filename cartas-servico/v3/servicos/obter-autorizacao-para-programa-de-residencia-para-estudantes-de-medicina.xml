@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-programa-de-residencia-para-estudantes-de-medicina</id>
+    <dbId>1709</dbId>
+    <nome>Obter autorização para programa de residência para estudantes de medicina</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1382">Residência Médica</item>
+    </nomes-populares>
+    <descricao>Autorizar, supervisionar e avaliar os programas e instituições que ofertam residência médica credenciados pelo MEC.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2097">
+            <tipo>Instituições de Ensino com cursos de medicina</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="0" max="0" unidade="meses"/>
+        <descricao>O tempo de prestação deste serviço não é estimado ainda</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4270">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Solicitação de autorização de programa</descricao>
+            <documentos>
+                <default>
+                    <item id="5795">CNPJ</item>
+                    <item id="5796">Contrato Social</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5026" tipo="web">
+                        <descricao>http://siscnrm.mec.gov.br/login/login#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4271">
+            <titulo>Receber vistoria</titulo>
+            <descricao>Disponibilização dos documentos necessários ao ato autorizativo e apresentação in loco ( visita) da estrutura que oferecerá o programa.</descricao>
+            <documentos>
+                <default>
+                    <item id="5797">CNPJ</item>
+                    <item id="5798">Contrato Social</item>
+                    <item id="5799">Diploma</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5027" tipo="presencial">
+                        <descricao>Estabelecimento que oferecerá o programa</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4272">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5028" tipo="web">
+                        <descricao>http://siscnrm.mec.gov.br/login/login#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="4407">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="4408">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4409">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7687">residência</item>
+        <item id="7688">medicina</item>
+        <item id="7689">graduação</item>
+    </palavras-chave>
+</servico>
