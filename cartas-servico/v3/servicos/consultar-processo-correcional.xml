@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-processo-correcional</id>
+    <dbId>1714</dbId>
+    <nome>Consultar Processo Correcional</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1386">Consulta PAD</item>
+    </nomes-populares>
+    <descricao>Consulta on-line, aberta a qualquer usuário e hospedada no Portal da CGU, usa como chave de busca o número do processo e apresenta como resultado a fase de apuração, assunto e local do fato. Os resultados são extraídos do Sistema CGU-PAD, base de dados de processos disciplinares mantida pela CGU e alimentada pelos órgãos e entidades do Poder Executivo Federal.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2102">
+            <tipo>Qualquer pessoa pode utilizar este serviço</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4279">
+            <titulo>Realizar consulta</titulo>
+            <descricao>Consulta ao Portal da CGU usando como chave de busca o número do processo de interesse.</descricao>
+            <documentos>
+                <default>
+                    <item id="5802">Número do processo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5034" tipo="web-consultar">
+                        <descricao>http://www.cgu.gov.br/assuntos/atividade-disciplinar/cgu-pad/consulta-de-processos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/214460" dbId="37535">
+        <nomeOrgao>Ministério da Transparência e Controladoria-Geral da União (CGU)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4417">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4418">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4419">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="4420">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Transparência</item>
+        <item>Tributação</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7708">consulta</item>
+        <item id="7709">processo</item>
+        <item id="7710">PAD</item>
+    </palavras-chave>
+</servico>
