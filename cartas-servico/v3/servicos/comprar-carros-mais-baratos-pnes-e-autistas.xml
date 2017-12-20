@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>comprar-carros-mais-baratos-pnes-e-autistas</id>
+    <dbId>1723</dbId>
+    <nome>Comprar carros mais baratos - PNEs e autistas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1392">Autorização de Aquisição de Veículo para Deficiente e Autista</item>
+        <item id="1393">Solicitar Isenção do IPI/IOF</item>
+    </nomes-populares>
+    <descricao>As pessoas portadoras de deficiência física, visual, mental severa ou profunda, ou autistas, ainda que menores de 18 (dezoito) anos, poderão adquirir, diretamente ou por intermédio de seu representante legal, com isenção do IPI, automóvel de passageiros ou veículo de uso misto, de fabricação nacional, classificado na posição 87.03 da Tabela de Incidência do Imposto sobre Produtos Industrializados (TIPI).     
+Segundo a Lei 8.383/91, estão isentas do IOF as operações de financiamento para a aquisição de automóveis de passageiros de fabricação nacional de até 127 HP de potência bruta (SAE), quando adquiridos por pessoas portadoras de deficiência física, atestada pelo Departamento de Trânsito do Estado onde residirem em caráter permanente, cujo laudo de perícia médica especifique:
+
+a) o tipo de defeito físico e a total incapacidade do requerente para dirigir automóveis convencionais;
+
+b) a habilitação do requerente para dirigir veículo com adaptações especiais, descritas no referido laudo.     
+A isenção do IOF não alcança os portadores de deficiência visual, mental severa ou profunda, ou autistas por falta de previsão legal.
+
+O benefício só poderá ser utilizado uma única vez.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2112">
+            <tipo>Cidadãos portadores de deficiência física</tipo>
+            <requisitos>Aqueles que apresentam alteração completa ou parcial de um ou mais segmentos do corpo humano, acarretando o comprometimento da função física, apresentando-se sob a forma de paraplegia, paraparesia, monoplegia, monoparesia, tetraplegia, tetraparesia, triplegia, triparesia, hemiplegia, hemiparesia, amputação ou ausência de membro, paralisia cerebral, membros com deformidade congênita ou adquirida, exceto as deformidades estéticas e as que não produzam dificuldades para o desempenho de funções.</requisitos>
+        </solicitante>
+        <solicitante id="2113">
+            <tipo>Cidadãos portadores de deficiência visual</tipo>
+            <requisitos>Aqueles que apresentam acuidade visual igual ou menor que 20/200 (tabela de Snellen) no melhor olho, após a melhor correção, ou campo visual inferior a 20°, ou ocorrência simultânea de ambas as situações.</requisitos>
+        </solicitante>
+        <solicitante id="2114">
+            <tipo>Cidadãos portadores de deficiência Mental severa ou profunda, ou a condição de autista</tipo>
+            <requisitos>Aqueles que se enquadrem na definição apresentada pelo CID-10 nos níveis severo/grave ou profundo e apresentarem funcionamento intelectual significativamente inferior à média, com manifestação anterior aos dezoito anos e limitações associadas a duas ou mais áreas de habilidades adaptativas, tais como: a) comunicação; b) cuidado pessoal; c) habilidades sociais; d) utilização da comunidade; e) saúde e segurança; f) habilidades acadêmicas; g) lazer; e h) trabalho.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="3" unidade="meses"/>
+        <descricao>O sistema via web foi recentemente implantado, portanto este tempo é o do processo por meio presencial. Análise preliminar indica a possibilidade de se diminuir este prazo para 72 horas com o novo sistema.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>270</quantidade>
+        <unidade>dias</unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4288">
+            <titulo>Agendar atendimento (atendimento presencial)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5810">CPF</item>
+                    <item id="5811">Data de nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5048" tipo="web-agendar">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATBHE/SAGA/RegrasAgendamento.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4289">
+            <titulo>Requisitar isenção</titulo>
+            <descricao>Solicitar isenção de IPI (Imposto sobre Produtos Industrializados) e/ou IOF (Imposto sobre Operações Financeiras) na aquisição de automóvel para deficiente e autista.      
+Para obter os modelos dos formulários necessários, [clique aqui](http://idg.receita.fazenda.gov.br/formularios/isencoes-e-suspensoes/deficientes)</descricao>
+            <documentos>
+                <default>
+                    <item id="5813">Requerimento de Isenção de IPI</item>
+                    <item id="5814">Documento de identificação oficial com foto do beneficiário</item>
+                    <item id="5815">Laudo de Avaliação emitido por prestador de: serviço público de saúde ou serviço privado de saúde, contratado ou conveniado, que integre o Sistema Único de Saúde (SUS)</item>
+                    <item id="5816">Declaração de Disponibilidade Financeira ou Patrimonial da pessoa portadora de deficiência ou do autista, apresentada diretamente ou por intermédio de seu representante legal, disponibilidade esta compatível com o valor do veículo a ser adquirido;</item>
+                    <item id="5817">Carteira Nacional de Habilitação (CNH) do beneficiário da isenção, caso seja ele o condutor do veículo</item>
+                    <item id="5818">CNH de todos os condutores autorizados</item>
+                    <item id="5819">Declaração do credenciamento do serviço médico privado junto ao SUS ou Detran</item>
+                    <item id="5820">Documento que comprove a representação legal, se for o caso</item>
+                    <item id="5821">Cópia da Nota Fiscal relativa à última aquisição de veículo com isenção do IPI ou a via da autorização anteriormente concedida e Não utilizada</item>
+                    <item id="5822">Declaração de regularidade quanto à contribuição previdenciária</item>
+                    <item id="5823">Identificação do condutor autorizado, se for o caso</item>
+                </default>
+                <caso id="610" descricao="Para acesso via Web">
+                    <documento>
+                        <id>5812</id>
+                        <descricao>Certificado Digital ou Código de Acesso cadastrado no Sistema</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5049" tipo="web">
+                        <descricao>https://www.sisen.receita.fazenda.gov.br/sisen/inicio.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5050" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4290">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5825">Documento de identificação oficial com foto</item>
+                    <item id="5826">CPF</item>
+                </default>
+                <caso id="611" descricao="Para acesso via Web">
+                    <documento>
+                        <id>5824</id>
+                        <descricao>Certificado Digital ou Código de Acesso cadastrado no Sistema</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5051" tipo="web">
+                        <descricao>https://www.sisen.receita.fazenda.gov.br/sisen/inicio.jsf</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5052" tipo="presencial">
+                        <descricao>Em uma [Unidade de Atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1929" dbId="37529">
+        <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4430">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Tributação</item>
+        <item>Economia e Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Finanças</item>
+        <item>Finanças pessoais</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Mobilidade</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7735">deficientes</item>
+        <item id="7736">deficiência</item>
+        <item id="7737">isenção de impostos</item>
+        <item id="7738">passe livre</item>
+        <item id="7739">carro adaptado</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1840">Para consultar a legislação pertinente, clique [aqui](http://idg.receita.fazenda.gov.br/acesso-rapido/legislacao/legislacao-por-assunto/isencao-do-ipi)</item>
+    </legislacoes>
+    <servicos-relacionados>
+        <item>406</item>
+        <item>78</item>
+        <item>466</item>
+    </servicos-relacionados>
+</servico>
