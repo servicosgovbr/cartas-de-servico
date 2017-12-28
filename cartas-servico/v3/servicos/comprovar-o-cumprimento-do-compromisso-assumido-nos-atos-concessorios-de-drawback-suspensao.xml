@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>comprovar-o-cumprimento-do-compromisso-assumido-nos-atos-concessorios-de-drawback-suspensao</id>
+    <dbId>1768</dbId>
+    <nome>Comprovar o cumprimento do compromisso assumido nos Atos Concessórios de Drawback Suspensão.</nome>
+    <sigla></sigla>
+    <descricao>Competem ao DECEX, além da concessão do regime de drawback, os procedimentos que tenham por finalidade sua formalização, bem como o acompanhamento e a verificação do adimplemento do compromisso de exportar.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2172">
+            <tipo>Empresas que obtivem concessão de regime de drawback</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="4376">
+            <titulo>Enviar AC para baixa</titulo>
+            <descricao>Após o vencimento do Ato Concessório de drawback (AC), a empresa tem até 60 dias para enviar o AC para baixa.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5111" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4377">
+            <titulo>Responder a exigências (se necessário)</titulo>
+            <descricao>Trata-se de resposta da empresa em função de informações adicionais solicitadas pele órgão responsável. Dependendo do caso, podem ser pedidos os documentos mencionados no artigo 94 da Portaria SECEX 23/11.</descricao>
+            <documentos>
+                <default>
+                    <item id="5894">Laudo Técnico</item>
+                    <item id="5895">Documento que demonstre alteração de preço</item>
+                    <item id="5896">Auto de Infração ou documento de natureza análoga emitido por autoridade fiscal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5112" tipo="web">
+                        <descricao>http://www.mdic.gov.br/AcessoALinksExternos/siscomex/siscmx.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="4506">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="7950">Drawback</item>
+        <item id="7951">baixa</item>
+        <item id="7952">Ato concessório</item>
+    </palavras-chave>
+</servico>
