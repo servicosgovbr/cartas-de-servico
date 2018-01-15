@@ -4,12 +4,21 @@
     <dbId>1194</dbId>
     <nome>Reativar contrato de aforamento de imóvel da União</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1467">Revigoração de Aforamento</item>
+    </nomes-populares>
     <descricao>Reativar contrato de aforamento anulado em virtude de inadimplência do foro, com retomada de todos os direitos de utilização do imóvel administrado pela Secretaria do Patrimônio da União - SPU.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Lúcio Melchiades&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1944&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Lúcio Melchiades&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://patrimoniodetodos.gov.br/#/requerimentoRevigoracaoAforamento?servico=29&amp;</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2221">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que seja foreiro ou adquirente de imóvel da União, administrado pela Secretaria do Patrimônio da União - SPU, com declaração de caducidade do aforamento.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao>O prazo para a prestação deste serviço ainda não foi estimado.</descricao>
@@ -17,10 +26,58 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4458">
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/requerimentoRevigoracaoAforamento?servico=29), preencha o requerimento, anexe os documentos, marque a caixa de validação “Não sou robô” e clique no botão “Enviar”  para encaminhar a solicitação do serviço.</descricao>
+            <documentos>
+                <default/>
+                <caso id="522" descricao="Pessoa jurídica">
+                    <documento>
+                        <id>4559</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4558</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4261" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4459">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU]( http://patrimoniodetodos.gov.br/#/), a partir da informação do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4271" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4605">Cidadãos</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
         <item>Patrimônio da União</item>
@@ -28,6 +85,24 @@
         <item>Administração</item>
         <item>Desenvolvimento Urbano</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8282">revigorar</item>
+        <item id="8283">revigoração</item>
+        <item id="8284">aforamento</item>
+        <item id="8285">caducidade</item>
+        <item id="8286">não pagamento</item>
+        <item id="8287">reativar</item>
+        <item id="8288">caducar</item>
+        <item id="8289">renovar</item>
+        <item id="8290">renovação</item>
+        <item id="8291">reativação</item>
+        <item id="8292">inadimplente</item>
+        <item id="8293">spu</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1989">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+        <item id="1990">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+    </legislacoes>
     <servicos-relacionados>
         <item>36</item>
     </servicos-relacionados>
