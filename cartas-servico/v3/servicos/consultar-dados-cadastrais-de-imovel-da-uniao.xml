@@ -5,11 +5,17 @@
     <nome>Consultar dados cadastrais de imóvel da União</nome>
     <sigla></sigla>
     <descricao>Verificar os dados cadastrais de imóvel administrado pela Secretaria do Patrimônio da União - SPU, suas benfeitorias e utilizações ativas, bem como as informações do responsável.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Incorporação de Patrimônio&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel da Silva Cardoso&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1022&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Incorporação de Patrimônio&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Samuel da Silva Cardoso&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://patrimoniodetodos.gov.br/#/conteudo/38</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2201">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que necessite verificar os dados cadastrais de imóvel sob gestão da Secretaria do Patrimônio da União - SPU.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao></descricao>
@@ -17,10 +23,51 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4435">
+            <titulo>Preencher os dados para a consulta</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/38), informe o RIP, CPF, CNPJ ou nome do responsável pelo imóvel e clique em OK.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4049" tipo="web-consultar">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4436">
+            <titulo>Verificar os dados da consulta</titulo>
+            <descricao>Verifique os dados cadastrais apresentados na consulta. Se necessário, explore as informações sobre benfeitorias ou utilizações.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4102" tipo="web-consultar">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/38</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="4564">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="4565">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4566">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="4567">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração</item>
         <item>Administração financeira</item>
@@ -31,4 +78,18 @@
         <item>Habitação</item>
         <item>Habitação Urbana</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8172">consulta</item>
+        <item id="8173">dados</item>
+        <item id="8174">cadastrais</item>
+        <item id="8175">benfeitorias</item>
+        <item id="8176">responsável</item>
+        <item id="8177">endereço</item>
+        <item id="8178">endereçamento</item>
+        <item id="8179">cadastro</item>
+        <item id="8180">situação do imóvel</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1970">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+    </legislacoes>
 </servico>
