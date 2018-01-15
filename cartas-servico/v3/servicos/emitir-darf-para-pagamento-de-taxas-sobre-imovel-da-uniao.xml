@@ -4,12 +4,21 @@
     <dbId>1168</dbId>
     <nome>Emitir DARF para pagamento de taxas sobre imóvel da União</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1458">Emissão de DARF</item>
+    </nomes-populares>
     <descricao>Emitir DARF para pagamento de taxa de ocupação ou foro, multas de transferências de imóvel, diferenças de laudêmios e outros débitos, relacionado a imóvel administrado pela Secretaria do Patrimônio da União - SPU.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1802&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://patrimoniodetodos.gov.br/#/conteudo/32</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2207">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Com débitos a pagar relativos a imóveis da União, administrado pela Secretaria do Patrimônio da União - SPU.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao></descricao>
@@ -17,10 +26,51 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4445">
+            <titulo>Preencher  os dados para a emissão do DARF</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/32), informe o nº do RIP, CPF ou CNPJ e clique em OK, para gerar o DARF correspondente.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4179" tipo="web-consultar">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/32</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4446">
+            <titulo>Visualizar os DARFs para impressão</titulo>
+            <descricao>Selecione, na Opção de Pagamento, Valor Integral ou Cota a Vencer, para identificar os débitos. Clique em Avançar e, em seguida, em Imprimir para gerar o DARF.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4253" tipo="web-emitir">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/32</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4584">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4585">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="4586">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="4587">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
         <item>Encargos financeiros</item>
@@ -34,4 +84,17 @@
         <item>Habitação</item>
         <item>Administração e Gestão Pública</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8219">DARF</item>
+        <item id="8220">DARF da SPU</item>
+        <item id="8221">Dívidas patrimoniais</item>
+        <item id="8222">Imóvel da União</item>
+        <item id="8223">emissão</item>
+        <item id="8224">pagar</item>
+        <item id="8225">taxa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1978">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+        <item id="1979">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+    </legislacoes>
 </servico>
