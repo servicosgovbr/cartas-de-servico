@@ -4,12 +4,22 @@
     <dbId>33</dbId>
     <nome>Recuperar uso de terreno da União</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1447">Recuperar uso do terreno</item>
+        <item id="1448">Requerimento de Revigoração de Aforamento</item>
+    </nomes-populares>
     <descricao>Este serviço permite solicitar o restabelecimento do aforamento que perdeu seu efeito em decorrência do não pagamento do foro durante 3 anos consecutivos ou 4 anos intercalados.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://www.patrimoniodetodos.gov.br/#/requerimentoRevigoracaoAforamento?servico=29&amp;</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2189">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que seja foreiro ou adquirente de imóvel da União com declaração de caducidade do aforamento</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <em-media max="30" unidade="dias-corridos"/>
         <descricao>Não há prazo estipulado</descricao>
@@ -17,11 +27,115 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4414">
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Preencher os campos solicitados no [Portal da SPU](www.patrimoniodetodos.gov.br), anexar os documentos e enviar o requerimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="1899">Certidão de inteiro teor da matrícula do imóvel</item>
+                    <item id="1900">RIP do imóvel</item>
+                    <item id="5911">Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</item>
+                    <item id="5912">Certidão de casamento ou de união estável</item>
+                    <item id="5913">CPF do cônjuge</item>
+                    <item id="5914">Comprovante de pagamento dos valores inadimplidos</item>
+                    <item id="5915">Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2430" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4415">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou pela consulta do pedido no [Portal](www.patrimoniodetodos.gov.br), informando o nº do CPF ou CNPJ do requerente e o nº do atendimento.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2431" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4416">
+            <titulo>Confira toda a documentação apresentada</titulo>
+            <descricao>Confira toda a documentação apresentada, certificando-se que esteja legível e que atenda ao requerimento a ser preenchido e providencie a digitalização em formato “PDF”. Após a digitalização, confirme no arquivo gerado a qualidade visual do documento</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2432" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4417">
+            <titulo>Acompanhe o status do seu atendimento</titulo>
+            <descricao>Acompanhe o status do atendimento e resultado do seu requerimento no Portal da SPU, na sessão "Acompanhe o seu pedido", inserindo o seu CPF/CNPJ e Nº de Atendimento, marcando a caixa de validação "Não sou robô" e Clicando no botão "BUSCAR"</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2433" tipo="web">
+                        <descricao>http://e-spu.planejamento.gov.br/#/requerimentoRevigoracaoAforamento?servico=29</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4536">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4537">Empresas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
+        <item>Patrimônio da União</item>
+        <item>Administração</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8069">reaforar</item>
+        <item id="8070">revigoração</item>
+        <item id="8071">aforamento</item>
+        <item id="8072">reativar</item>
+        <item id="8073">contrato</item>
+        <item id="8074">foro</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1917">[Decreto-Lei nº 3.438/1941](http://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/Del3438.htm);</item>
+        <item id="1918">[Decreto-Lei nº 2.490/1940]()</item>
+        <item id="1919">Lei 5.666/1943,</item>
+        <item id="1920">[Decreto-Lei nº 9.760/1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm);</item>
+        <item id="1921">[Lei nº 6.015/1973](http://www.planalto.gov.br/ccivil_03/Leis/L6015original.htm);</item>
+        <item id="1922">[Decreto-Lei nº 2.398/1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398compilado.htm)</item>
+        <item id="1923">[Decreto-Lei nº 95.760/1988](http://www.planalto.gov.br/ccivil_03/decreto/1980-1989/D95760.htm);</item>
+        <item id="1924">[Lei nº 9.636/1988](http://www.planalto.gov.br/ccivil_03/leis/L9636.htm);</item>
+        <item id="1925">[Lei nº 9.821/1999](http://www.planalto.gov.br/ccivil_03/leis/L9821.htm);</item>
+        <item id="1926">[Decreto nº 3.725/2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3725.htm);</item>
+        <item id="1927">ON/SPU/GEANE 001/2002 e ON/SPU/GEANE 002/2002</item>
+    </legislacoes>
 </servico>
