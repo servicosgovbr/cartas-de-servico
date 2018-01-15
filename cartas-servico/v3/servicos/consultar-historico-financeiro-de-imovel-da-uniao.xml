@@ -5,11 +5,17 @@
     <nome>Consultar histórico financeiro de imóvel da União</nome>
     <sigla></sigla>
     <descricao>Verificar o histórico de débitos lançados para imóvel administrado pela Secretaria do Patrimônio da União - SPU, classificados por exercício e por tipo de rubrica, as datas em que os mesmos foram pagos e os valores dos respectivos pagamentos, bem como os valores em cobrança.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1802&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Arrecadação&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Gilberto Vilela de Rezende&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://patrimoniodetodos.gov.br/#/conteudo/34</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2205">
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos>Que necessite verificar a situação de débitos de imóvel administrado pela Secretaria do Patrimônio da União - SPU.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao></descricao>
@@ -17,10 +23,51 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4442">
+            <titulo>Preencher os dados para consulta</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/34), informe o RIP e clique em OK.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4036" tipo="web-consultar">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/conteudo/34</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4443">
+            <titulo>Verificar a relação de débitos</titulo>
+            <descricao>Verifique a relação de débitos e a respectiva situação. Se necessário, detalhe as cotas para verificar a composição do débito.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4103" tipo="web-consultar">
+                        <descricao>http://patrimoniodetodos.gov.br/#/conteudo/34</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4579">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4580">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4581">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="4582">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio</item>
         <item>Patrimônio da União</item>
@@ -32,4 +79,19 @@
         <item>Compras governamentais</item>
         <item>Fiscalização do Estado</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8207">Débitos</item>
+        <item id="8208">financeiros</item>
+        <item id="8209">darf</item>
+        <item id="8210">pagamento</item>
+        <item id="8211">regularização</item>
+        <item id="8212">pendências</item>
+        <item id="8213">histórico</item>
+        <item id="8214">spu</item>
+        <item id="8215">relação</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1975">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+        <item id="1976">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+    </legislacoes>
 </servico>
