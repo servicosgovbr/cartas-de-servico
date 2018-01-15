@@ -4,15 +4,24 @@
     <dbId>38</dbId>
     <nome>Obter permissão de uso para eventos em imóvel da União</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1445">Permissão para eventos em área pública</item>
+    </nomes-populares>
     <descricao>Obter permissão da Secretaria do Patrimônio da União - SPU para realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional em áreas públicas.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Lúcio Melchiades Gomes &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1944&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Desenvolvimento de Infraestrutura&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Lúcio Melchiades Gomes &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://www.patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21&amp;</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2184">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que tenha capacidade para fins de processo administrativo, nos termos dos artigos 9º e 10 da [Lei nº 9.784, de 1999](http://www.planalto.gov.br/ccivil_03/leis/l9784.htm).</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <em-media max="30" unidade="dias-corridos"/>
-        <descricao>O prazo para a prestação deste serviço ainda não foi estimado.</descricao>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <tipo>Válido por</tipo>
@@ -20,10 +29,72 @@
         <unidade>dias</unidade>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4405">
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21), preencha o requerimento, anexe os documentos, marque a caixa de validação “Não sou robô” e clique no botão “Enviar”  para encaminhar a solicitação do serviço.</descricao>
+            <documentos>
+                <default>
+                    <item id="4124">Planta ou croqui da área com a indicação dos equipamentos que serão instalados, especificando as áreas de exploração econômica, se for o caso</item>
+                </default>
+                <caso id="458" descricao="Pessoa Física">
+                    <documento>
+                        <id>4164</id>
+                        <descricao>Documento de identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
+                <caso id="459" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4167</id>
+                        <descricao>Documento de identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4166</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4165</id>
+                        <descricao>Ato Constitutivo, estatuto social ou contrato social registrado na Junta Comercial ou no Cartório de pessoas jurídicas</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2403" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/solicitarPermissaoUso?servico=21</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4406">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU]( http://patrimoniodetodos.gov.br/#/), a partir da informação do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2405" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4523">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4524">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4525">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Esporte comunitário</item>
         <item>Esporte e Lazer</item>
@@ -32,4 +103,25 @@
         <item>Cultura</item>
         <item>Esporte profissional</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8012">espaço público</item>
+        <item id="8013">autorização</item>
+        <item id="8014">festa</item>
+        <item id="8015">show</item>
+        <item id="8016">esportivo</item>
+        <item id="8017">recreação</item>
+        <item id="8007">uso de área pública</item>
+        <item id="8008">permissão do goveno</item>
+        <item id="8009">convenção</item>
+        <item id="8010">uso</item>
+        <item id="8011">praia</item>
+        <item id="8018">religioso</item>
+        <item id="8019">eventos de rua</item>
+        <item id="8020">spu</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1881">[Lei nº 9.636 , de 15 de maio de 1998](http://www.planalto.gov.br/ccivil_03/leis/L9636.htm)</item>
+        <item id="1882">[Portaria SPU nº 01/2014, de 03 de janeiro de 2014](file:///C:/Users/47298545191/Downloads/Portaria%2001-2014%20-%20Permissao%20de%20Uso.pdf)</item>
+        <item id="1883">[Decreto nº 3.725, de 10 de janeiro de 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3725.htm)</item>
+    </legislacoes>
 </servico>
