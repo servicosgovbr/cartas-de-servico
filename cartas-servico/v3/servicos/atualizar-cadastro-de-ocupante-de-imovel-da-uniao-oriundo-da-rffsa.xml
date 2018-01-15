@@ -5,11 +5,17 @@
     <nome>Atualizar cadastro de ocupante de imóvel da União oriundo da RFFSA</nome>
     <sigla></sigla>
     <descricao>Atualizar o cadastro do atual ocupante de imóvel da União oriundo da Rede Ferroviária Federal S.A - RFFSA.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Departamento de Destinação Patrimonial&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1077&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Departamento de Destinação Patrimonial&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt; E-mail:&lt;/b&gt;&lt;p&gt;faleconosco.spu@planejamento.gov.br&lt;/p&gt;&lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1077&lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://www.patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=113&amp;</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2185">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que possua contrato de compra e venda ou de locação com a extinta RFFSA ou sucessor autorizado que esteja ocupando o imóvel atualmente.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <em-media max="30" unidade="dias-corridos"/>
         <descricao>O prazo para a prestação deste serviço ainda não foi estimado.</descricao>
@@ -17,10 +23,71 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4407">
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=113), preencha o requerimento, anexe os documentos, marque a caixa de validação “Não sou robô” e clique no botão “Enviar”  para encaminhar a solicitação do serviço.</descricao>
+            <documentos>
+                <default/>
+                <caso id="485" descricao="Pessoa Física">
+                    <documento>
+                        <id>4244</id>
+                        <descricao>Documento de Identificação com foto (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4245</id>
+                        <descricao>Comprovante de residência em nome do requerente (conta de água, energia elétrica ou carnê do IPTU)</descricao>
+                    </documento>
+                </caso>
+                <caso id="486" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4246</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4247</id>
+                        <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc.)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4050" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/servicoGenericoSemRip?servico=113</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4408">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](www.patrimoniodetodos.gov.br), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4109" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="4526">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="4527">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="4528">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4529">Empresas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração</item>
         <item>Administração financeira</item>
@@ -28,4 +95,24 @@
         <item>Patrimônio da União</item>
         <item>Patrimônio</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8021">RFFSA</item>
+        <item id="8022">rffsa</item>
+        <item id="8023">ex-rffsa</item>
+        <item id="8024">contrato</item>
+        <item id="8025">ocupante</item>
+        <item id="8026">rede</item>
+        <item id="8027">dados</item>
+        <item id="8028">ferroviária</item>
+        <item id="8029">contribuinte</item>
+        <item id="8030">atualização</item>
+        <item id="8031">regularização</item>
+        <item id="8032">cadastro</item>
+        <item id="8033">atualização</item>
+        <item id="8034">atualizar</item>
+        <item id="8035">spu</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1884">[Lei nº 12.348, de 15 de dezembro de 2010](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/Lei/L12348.htm)</item>
+    </legislacoes>
 </servico>
