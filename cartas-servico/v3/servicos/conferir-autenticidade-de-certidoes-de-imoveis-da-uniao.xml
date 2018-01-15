@@ -4,12 +4,21 @@
     <dbId>22</dbId>
     <nome>Conferir autenticidade de certidões de imóveis da União</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1453">Certidões da SPU</item>
+    </nomes-populares>
     <descricao>Confirmar a autenticidade de Certidão Negativa de Débitos Patrimoniais do Imóvel e do Responsável, Certidão de Situação de Ocupação/Aforamento e Certidão de Inteiro Teor do Imóvel, relativas a imóveis administrados pela Secretaria do Patrimônio da União - SPU.</descricao>
-    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tel: &lt;b&gt;55 (61) 2020-1750&lt;/b&gt;&lt;/p&gt;</contato>
+    <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Cobrança&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Responsável:&lt;b&gt; Hilton Ramalho Filho&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://e-spu.planejamento.gov.br/#/conteudo/23</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2196">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos>Que necessite verificar a autenticidade de certidões emitidas pela Secretaria do Patrimônio da União - SPU.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <atendimento-imediato/>
         <descricao></descricao>
@@ -17,10 +26,34 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4430">
+            <titulo>Preencher os dados para a consulta da autenticidade da certidão</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/conteudo/23), selecione o tipo de certidão desejada - Negativa de Débitos Patrimoninais do Imóvel, Certidão 
+Negativa de Débitos Patrimoniais do Responsável, Certidão de Situação de Ocupação/Aforamento, Certidão de Inteiro Teor do Imóvel, Certidão de Domínio da União - informe nº do RIP, CPF/CNPJ, Data de Emissão, Hora de Emissão (hhmmss) e 
+Código de Controle informados na Certidão objeto de verificação.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="2382" tipo="web-consultar">
+                        <descricao>http://e-spu.planejamento.gov.br/#/conteudo/23</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="4558">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4559">Empresas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Habitação</item>
         <item>Patrimônio</item>
@@ -28,4 +61,14 @@
         <item>Administração e Gestão Pública</item>
         <item>Administração</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8156">certidão</item>
+        <item id="8157">validação</item>
+        <item id="8158">certidões</item>
+        <item id="8159">autenticidade</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="1948">[Decreto-Lei nº 2.398, de 21 de dezembro de 1987](http://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/Del2398.htm)</item>
+        <item id="1949">[Decreto-Lei nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm)</item>
+    </legislacoes>
 </servico>
