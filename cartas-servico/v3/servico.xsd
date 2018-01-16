@@ -9,12 +9,17 @@
     <xs:element name="servico" type="Servico"/>
     <xs:complexType name="Servico">
         <xs:choice maxOccurs="unbounded">
+	    <xs:element name="id" type="Id" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="dbID" type="DbId" minOccurs="1" maxOccurs="1"/>		
             <xs:element name="nome" type="NomeDoServico" minOccurs="1" maxOccurs="1"/>
             <xs:element name="sigla" type="Sigla" minOccurs="0" maxOccurs="1"/>
             <xs:element name="contato" type="Contato" minOccurs="0" maxOccurs="1"/>
             <xs:element name="nomes-populares" type="NomesPopulares" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="descricao" type="DescricaoDoServico" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="gratuito" type="Gratuito" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="descricao" type="DescricaoDoServico" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="gratuito" type="Gratuito" minOccurs="1" maxOccurs="1"/>
+	    <xs:element name="porcentagem-manual" type="PorcentagemManual" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="servico-digital" type="ServicoDigital" minOccurs="0" maxOccurs="1"/>
+	    <xs:element name="link-servico-digital" type="LinkServicoDigital" minOccurs="0" maxOccurs="1"/>
             <xs:element name="solicitantes" type="Solicitantes" minOccurs="0" maxOccurs="1"/>
             <xs:element name="tempo-total-estimado" type="TempoTotalEstimado" minOccurs="0" maxOccurs="1"/>
 	    <xs:element name="validade-documento" type="ValidadeDocumento" minOccurs="0" maxOccurs="1"/>
@@ -24,15 +29,19 @@
             <xs:element name="areas-de-interesse" type="AreasDeInteresse" minOccurs="0" maxOccurs="1"/>
             <xs:element name="palavras-chave" type="PalavrasChave" minOccurs="0" maxOccurs="1"/>
             <xs:element name="legislacoes" type="Legislacoes" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="id-aplicacao" type="IDAplicacao" minOccurs="0" maxOccurs="1"/>
+	    <xs:element name="servicos-relacionados" type="ServicosRelacionados" minOccurs="0" maxOccurs="1"/> 
         </xs:choice>
     </xs:complexType>
 
-    <xs:simpleType name="NomeDoServico">
+    <xs:simpleType name="Id">
         <xs:restriction base="xs:string"/>
-    </xs:simpleType>
-
-    <xs:simpleType name="IDAplicacao">
+    </xs:simpleType>	
+	
+    <xs:simpleType name="DbId">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>	
+	
+    <xs:simpleType name="NomeDoServico">
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
 
@@ -58,7 +67,10 @@
     </xs:simpleType>
 
     <xs:simpleType name="DescricaoDoServico">
-        <xs:restriction base="xs:string"/>
+        <xs:restriction base="xs:string">
+	    <xs:minLength value="0"/>
+	    <xs:maxLength value="3000"/>
+	</xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="Gratuito">
@@ -67,6 +79,26 @@
             <xs:enumeration value="true"/>
             <xs:enumeration value="false"/>
         </xs:restriction>
+    </xs:simpleType>
+	
+    <xs:simpleType name="PorcentagemManual">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
+    </xs:simpleType>
+	
+   <xs:simpleType name="ServicoDigital">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+        </xs:restriction>
+    </xs:simpleType>
+	
+    <xs:simpleType name="LinkServicoDigital">
+        <xs:restriction base="xs:string"/>
     </xs:simpleType>
 
     <xs:complexType name="Solicitantes">
@@ -435,6 +467,16 @@
 
     <xs:simpleType name="Legislacao">
         <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+	
+    <xs:complexType name="ServicosRelacionados">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="item" type="ServicoRelacionado"/>
+        </xs:sequence>
+    </xs:complexType>
+	
+    <xs:simpleType name="ServicoRelacionado">
+        <xs:restriction base="xs:integer"/>
     </xs:simpleType>
 
 </xs:schema>
