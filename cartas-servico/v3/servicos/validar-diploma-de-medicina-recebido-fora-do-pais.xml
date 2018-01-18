@@ -5,7 +5,7 @@
     <nome>Validar diploma de medicina recebido fora do país</nome>
     <sigla>Revalida</sigla>
     <nomes-populares>
-        <item id="707">Revalida medicina</item>
+        <item id="1499">Revalida medicina</item>
     </nomes-populares>
     <descricao>É o processo pelo qual um cidadão brasileiro ou um estrangeiro que tenha se formado em medicina em outro país possam requerer a validação de seu diploma, o que permite a ele exercer a atividade médica no país.
 
@@ -13,15 +13,18 @@ O Revalida é composto por um rigoroso processo avaliativo, dividido em duas eta
     <contato>* Central de Atendimentos - 0800 61 61 61;
 * [Fale Conosco](http://mec.cube.call.inf.br/auth-web/login?redirect_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fauth%2Fcallback&amp;requested_uri=http%3A%2F%2Ffale-conosco.mec.call.inf.br%2Fsecoes%2F&amp;token_aplicacao=e3lhqm5iVYbcOEfxMMvpBw#/0);</contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="926">
+        <solicitante id="2254">
             <tipo>Cidadãos brasileiros que tenham se formado em medicina por universidade estrangeira</tipo>
             <requisitos>Ter registro no Cadastro de Pessoas Físicas (CPF) emitido pela Receita Federal do Brasil;
 
 Ser portador de diploma médico expedido por instituição de ensino superior estrangeira, reconhecida no país de origem pelo seu ministério da educação ou órgão equivalente, e autenticado pela autoridade consular brasileira.</requisitos>
         </solicitante>
-        <solicitante id="927">
+        <solicitante id="2255">
             <tipo>Estrangeiros que tenham se formado em medicina por universidade estrangeira</tipo>
             <requisitos>Ser estrangeiro em situação legal de residência no Brasil;
 
@@ -41,7 +44,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2328">
+        <etapa id="4540">
             <titulo>Cadastrar-se no site do Revalida</titulo>
             <descricao>O usuário interessado em participar do processo deve se cadastrar no site do serviço no INEP. Após colocar todas as informações, uma senha temporária será encaminhada para o e-mail informado.</descricao>
             <documentos>
@@ -63,7 +66,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2329">
+        <etapa id="4541">
             <titulo>Cadastrar senha definitiva</titulo>
             <descricao>Após o recebimento da senha provisória, você irá trocar sua senha provisória por uma senha definitiva.</descricao>
             <documentos>
@@ -83,7 +86,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2330">
+        <etapa id="4542">
             <titulo>Realizar inscrição para a 1ª etapa</titulo>
             <descricao>Após a troca de senha, você deverá entrar com seu login e senha na área de inscrição do site, confirmar os seus dados de cadastro e informar os dados sobre a instituição e curso feito fora do país, enviar imagem digital do seu diploma e escolher o dia e instituição que revalidará seu diploma.</descricao>
             <documentos>
@@ -105,7 +108,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2331">
+        <etapa id="4543">
             <titulo>Pagar GRU relativa à 1ª etapa</titulo>
             <descricao>Após o preenchimento dos dados necessários, o sistema irá gerar uma Guia de Recolhimento da União com o valor da taxa de inscrição, que você deverá imprimir e pagar na rede bancária.</descricao>
             <documentos>
@@ -117,8 +120,10 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 <default>
                     <custo id="96">
                         <descricao>Taxa de Inscrição na 1ª etapa</descricao>
-                        <moeda></moeda>
-                        <valor>150,000</valor>
+                        <moeda>R$</moeda>
+                        <valor>150.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -130,7 +135,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2332">
+        <etapa id="4544">
             <titulo>Obter o Cartão de Confirmação de Inscrição</titulo>
             <descricao>Em período a ser divulgado pelo INEP, após o término da inscrição para a primeira etapa, será disponibilizado o Cartão de Confirmação de Inscrição, onde será informado o local onde o participante realizará a prova</descricao>
             <documentos>
@@ -150,7 +155,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2333">
+        <etapa id="4545">
             <titulo>Fazer as provas da 1ª etapa - Prova escrita</titulo>
             <descricao>No dia estabelecido pelo edital, e no local informado no Cartão de Confirmação de Inscrição, o candidato irá se apresentar para fazer a etapa de avaliação escrita do processo.</descricao>
             <documentos>
@@ -171,7 +176,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2334">
+        <etapa id="4546">
             <titulo>Verificar resultado da primeira etapa</titulo>
             <descricao>Os resultados individuais da primeira etapa serão disponibilizado pelo INEP, em data divulgada posteriormente à realização das provas, no Portal do Revalida.</descricao>
             <documentos>
@@ -191,7 +196,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2335">
+        <etapa id="4547">
             <titulo>Inscrever-se na 2ª etapa - Prova de Habilidades Clínicas (somente para os aprovados na 1ª etapa)</titulo>
             <descricao>Somente aqueles candidatos que obtiverem , no mínimo, 85 pontos na soma das provas objetivas e discursivas poderão participar da segunda etapa do exame (e assim dar continuidade ao processo de validação do diploma). Àqueles que cumprirem este requisito, estará disponível no sistema a inscrição para a segunda etapa.</descricao>
             <documentos>
@@ -211,7 +216,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2336">
+        <etapa id="4548">
             <titulo>Pagar GRU da 2ª etapa</titulo>
             <descricao>Após a confirmação dos dados o sistema irá gerar uma Guia de Recolhimento da União com o valor da taxa de inscrição, que você deverá imprimir e pagar na rede bancária.</descricao>
             <documentos>
@@ -223,8 +228,10 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 <default>
                     <custo id="97">
                         <descricao>Taxa de inscrição na 2ª etapa</descricao>
-                        <moeda></moeda>
-                        <valor>450,000</valor>
+                        <moeda>R$</moeda>
+                        <valor>450.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -236,7 +243,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2337">
+        <etapa id="4549">
             <titulo>Participar da Avaliação de Habilidades Clínicas</titulo>
             <descricao>No dia a ser divulgado pelo INEP na página do participante, após o término das inscrições da 2ª etapa, o candidato irá participar do processo de avaliação de suas habilidades clínicas, composta de dez estações com cada uma valendo 10 pontos. Toda a avaliação será filmada para o caso de esclarecimentos de dúvidas serem necessários.</descricao>
             <documentos>
@@ -257,7 +264,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2338">
+        <etapa id="4550">
             <titulo>Obter o resultado</titulo>
             <descricao>Em data a ser divulgada pelo INEP, o participante poderá verificar o seu resultado individual na 2ª etapa. Só serão considerados  aprovados  na  prova  de  habilidades  clínicas  o  participante  que  obtiver,  no mínimo,  62  dos 100 pontos possíveis.</descricao>
             <documentos>
@@ -277,7 +284,7 @@ Ser portador de diploma médico expedido por instituição de ensino superior es
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2339">
+        <etapa id="4551">
             <titulo>Apresentar-se à Universidade para concluir processo de validação do diploma (somente para aprovados na 2ª etapa)</titulo>
             <descricao>O participante aprovado na 2ª etapa  será  convocado a comparecer  à  Universidade
 escolhida, de posse da documentação necessária, para concluir o processo de revalidação do diploma.
@@ -302,9 +309,11 @@ escolhida, de posse da documentação necessária, para concluir o processo de r
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="244"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/244" dbId="37528">
+        <nomeOrgao>Ministério da Educação (MEC)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2648">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4659">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação</item>
@@ -312,24 +321,24 @@ escolhida, de posse da documentação necessária, para concluir o processo de r
         <item>Saúde</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="2252">diploma</item>
-        <item id="2253">estrangeiro</item>
-        <item id="2254">universidade</item>
-        <item id="2255">validação</item>
-        <item id="2256">exercer a profissão</item>
-        <item id="2257">medicina</item>
-        <item id="2258">habilidades clínicas</item>
-        <item id="2259">emigrante</item>
-        <item id="2260">refugiado</item>
-        <item id="2261">habilitação profissional</item>
+        <item id="8477">diploma</item>
+        <item id="8478">estrangeiro</item>
+        <item id="8479">universidade</item>
+        <item id="8480">validação</item>
+        <item id="8481">exercer a profissão</item>
+        <item id="8482">medicina</item>
+        <item id="8483">habilidades clínicas</item>
+        <item id="8484">emigrante</item>
+        <item id="8485">refugiado</item>
+        <item id="8486">habilitação profissional</item>
     </palavras-chave>
     <legislacoes>
-        <item id="746">[Edital 2017](http://download.inep.gov.br/educacao_superior/revalida/edital/2017/edital_n42_de_14072017_revalida.pdf);</item>
-        <item id="747">[Portaria nº 278,  de  17  de  março  de  2011](http://download.inep.gov.br/educacao_superior/revalida/portaria/2011/portaria_n278_17032011_revalida.pdf)</item>
-        <item id="748">[Matriz de Correspondência Curricular](http://download.inep.gov.br/educacao_superior/revalida/matriz/2009/matriz_correspondencia_curricular_revalida_sem_logo.pdf)</item>
-        <item id="749">[Resolução CNE/CES nº1, de 28 de janeiro de 2002](http://portal.mec.gov.br/cne/arquivos/pdf/CES012002.pdf)</item>
-        <item id="750">[Resolução CNE nº 8, de 4 de outubro de 2007](http://portal.mec.gov.br/cne/arquivos/pdf/2007/rces008_07.pdf)</item>
-        <item id="751">[Resolução CNE nº 7, de 25 de setembro de 2009](http://portal.mec.gov.br/dmdocuments/rces007_09.pdf)</item>
-        <item id="752">[Resolução CNE nº 3, de 22 de junho de 2016](http://portal.mec.gov.br/index.php?option=com_docman&amp;view=download&amp;alias=44661-rces003-16-pdf&amp;category_slug=junho-2016-pdf&amp;Itemid=30192)</item>
+        <item id="2035">[Edital 2017](http://download.inep.gov.br/educacao_superior/revalida/edital/2017/edital_n42_de_14072017_revalida.pdf);</item>
+        <item id="2036">[Portaria nº 278,  de  17  de  março  de  2011](http://download.inep.gov.br/educacao_superior/revalida/portaria/2011/portaria_n278_17032011_revalida.pdf)</item>
+        <item id="2037">[Matriz de Correspondência Curricular](http://download.inep.gov.br/educacao_superior/revalida/matriz/2009/matriz_correspondencia_curricular_revalida_sem_logo.pdf)</item>
+        <item id="2038">[Resolução CNE/CES nº1, de 28 de janeiro de 2002](http://portal.mec.gov.br/cne/arquivos/pdf/CES012002.pdf)</item>
+        <item id="2039">[Resolução CNE nº 8, de 4 de outubro de 2007](http://portal.mec.gov.br/cne/arquivos/pdf/2007/rces008_07.pdf)</item>
+        <item id="2040">[Resolução CNE nº 7, de 25 de setembro de 2009](http://portal.mec.gov.br/dmdocuments/rces007_09.pdf)</item>
+        <item id="2041">[Resolução CNE nº 3, de 22 de junho de 2016](http://portal.mec.gov.br/index.php?option=com_docman&amp;view=download&amp;alias=44661-rces003-16-pdf&amp;category_slug=junho-2016-pdf&amp;Itemid=30192)</item>
     </legislacoes>
 </servico>
