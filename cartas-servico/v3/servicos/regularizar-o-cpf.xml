@@ -5,18 +5,20 @@
     <nome>Regularizar o CPF</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="773">CPF</item>
+        <item id="1476">CPF</item>
     </nomes-populares>
     <descricao>Regularizar o CPF na página da RFB na internet ou nos conveniados Banco do Brasil, Caixa Econômica Federal e Correios.  A regularização do CPF na página da RFB será realizada nos casos de complementação de dados cadastrais que não constem na base de dados e quando não houver pendência na entrega de declarações de pessoa física.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1221">
+        <solicitante id="2230">
             <tipo>Cidadãos e Famílias</tipo>
             <requisitos></requisitos>
         </solicitante>
-        <solicitante id="1222">
+        <solicitante id="2231">
             <tipo>Estrangeiros</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -29,7 +31,7 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2639">
+        <etapa id="4477">
             <titulo>Realizar as alterações necessárias no cadastro</titulo>
             <descricao>No caso de atendimento presencial, levar a documentação necessária</descricao>
             <documentos>
@@ -49,12 +51,17 @@
                     <custo id="107">
                         <descricao>Taxa de serviços de CPF (Banco do Brasil, Caixa e Correios)....</descricao>
                         <moeda>R$</moeda>
-                        <valor>7</valor>
+                        <valor>7,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
             <canais-de-prestacao>
                 <default>
+                    <canal-de-prestacao id="3428" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/regularizar/Default.asp</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="3427" tipo="presencial">
                         <descricao>* Agências dos Correios, Caixa Econômica Federal e Banco do Brasil        
 
@@ -62,13 +69,10 @@
 
 * [Unidades de Atendimento ao Contribuinte](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="3428" tipo="web">
-                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/regularizar/Default.asp</descricao>
-                    </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2640">
+        <etapa id="4478">
             <titulo>Verificar Situação Cadastral</titulo>
             <descricao>Após o pedido de regularização, você poderá verificar a situação do seu CPF para comprovar que a operação teve efeito</descricao>
             <documentos>
@@ -100,7 +104,7 @@
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2839">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4626">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Proteção Social</item>
@@ -116,13 +120,13 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="2930">CPF</item>
-        <item id="2931">regularização</item>
-        <item id="2932">complementação cadastral</item>
-        <item id="2933">regularização cadastral</item>
-        <item id="2934">regularizar cpf</item>
+        <item id="8401">CPF</item>
+        <item id="8402">regularização</item>
+        <item id="8403">complementação cadastral</item>
+        <item id="8404">regularização cadastral</item>
+        <item id="8405">regularizar cpf</item>
     </palavras-chave>
     <legislacoes>
-        <item id="893">-</item>
+        <item id="2014">-</item>
     </legislacoes>
 </servico>
