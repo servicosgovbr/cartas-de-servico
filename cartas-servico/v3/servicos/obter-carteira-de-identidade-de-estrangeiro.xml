@@ -12,7 +12,7 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="2246">
+        <solicitante id="2247">
             <tipo>Estrangeiros</tipo>
             <requisitos>Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.</requisitos>
         </solicitante>
@@ -25,7 +25,7 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4506">
+        <etapa id="4511">
             <titulo>Preencher o formulário de solicitação</titulo>
             <descricao>Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.</descricao>
             <documentos>
@@ -47,7 +47,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4507">
+        <etapa id="4512">
             <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
             <descricao>Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.</descricao>
             <documentos>
@@ -65,13 +65,12 @@
                         <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
-                <caso id="621" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
-                    <custo id="176">
+                <caso id="623" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
+                    <custo id="177">
                         <descricao>Estes usuários são isentos do pagamento desta taxa.</descricao>
                         <moeda>R$</moeda>
-                        <valor>0,00</valor>
                         <valorVariavel></valorVariavel>
-                        <statusCustoVariavel>0</statusCustoVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                 </caso>
             </custos>
@@ -83,7 +82,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4508">
+        <etapa id="4513">
             <titulo>Agendar atendimento presencial</titulo>
             <descricao>Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.</descricao>
             <documentos>
@@ -102,7 +101,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4509">
+        <etapa id="4514">
             <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
             <descricao>Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.</descricao>
             <documentos>
@@ -163,7 +162,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4510">
+        <etapa id="4515">
             <titulo>Retirar a CIE</titulo>
             <descricao>A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.</descricao>
             <documentos>
@@ -187,7 +186,7 @@
         <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="4643">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4644">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
@@ -196,11 +195,11 @@
         <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="8453">documento</item>
-        <item id="8454">identificação</item>
-        <item id="8455">estrangeiro</item>
+        <item id="8456">documento</item>
+        <item id="8457">identificação</item>
+        <item id="8458">estrangeiro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2027">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
+        <item id="2028">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
     </legislacoes>
 </servico>
