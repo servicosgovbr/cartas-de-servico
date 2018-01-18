@@ -7,9 +7,12 @@
     <descricao>A CIE é o documento de identificação fornecido pelo Departamento de Polícia Federal aos estrangeiros residentes no Brasil.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="618">
+        <solicitante id="2246">
             <tipo>Estrangeiros</tipo>
             <requisitos>Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.</requisitos>
         </solicitante>
@@ -18,9 +21,11 @@
         <ate max="60" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="1870">
+        <etapa id="4506">
             <titulo>Preencher o formulário de solicitação</titulo>
             <descricao>Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.</descricao>
             <documentos>
@@ -42,7 +47,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1871">
+        <etapa id="4507">
             <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
             <descricao>Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.</descricao>
             <documentos>
@@ -54,15 +59,19 @@
                 <default>
                     <custo id="63">
                         <descricao>Taxa de emissão</descricao>
-                        <moeda></moeda>
-                        <valor>20,477</valor>
+                        <moeda>R$</moeda>
+                        <valor>204,77</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
-                <caso id="360" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
-                    <custo id="89">
+                <caso id="621" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
+                    <custo id="176">
                         <descricao>Estes usuários são isentos do pagamento desta taxa.</descricao>
-                        <moeda></moeda>
-                        <valor>0</valor>
+                        <moeda>R$</moeda>
+                        <valor>0,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </caso>
             </custos>
@@ -74,7 +83,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1872">
+        <etapa id="4508">
             <titulo>Agendar atendimento presencial</titulo>
             <descricao>Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.</descricao>
             <documentos>
@@ -93,7 +102,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1873">
+        <etapa id="4509">
             <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
             <descricao>Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.</descricao>
             <documentos>
@@ -104,42 +113,42 @@
                 </default>
                 <caso id="309" descricao="Estrangeiros com visto permanente da da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
                     <documento>
-                        <id>1803</id>
-                        <descricao>Carteira de identidade;</descricao>
-                    </documento>
-                    <documento>
                         <id>1804</id>
                         <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1803</id>
+                        <descricao>Carteira de identidade;</descricao>
                     </documento>
                 </caso>
                 <caso id="310" descricao="Estrangeiros com visto permanente de demais países">
                     <documento>
-                        <id>1805</id>
-                        <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
-                    </documento>
-                    <documento>
                         <id>1806</id>
                         <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1805</id>
+                        <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
                     </documento>
                 </caso>
                 <caso id="311" descricao="Estrangeiros sem o visto permanente da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
                     <documento>
-                        <id>1807</id>
-                        <descricao>Carteira de identidade;</descricao>
-                    </documento>
-                    <documento>
                         <id>1808</id>
                         <descricao>Visto consular e formulário original do pedido.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1807</id>
+                        <descricao>Carteira de identidade;</descricao>
                     </documento>
                 </caso>
                 <caso id="312" descricao="Estrangeiros sem o visto permanente de demais países">
                     <documento>
-                        <id>1809</id>
-                        <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
-                    </documento>
-                    <documento>
                         <id>1810</id>
                         <descricao>Visto consular e formulário original do pedido.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1809</id>
+                        <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
                     </documento>
                 </caso>
             </documentos>
@@ -154,7 +163,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1874">
+        <etapa id="4510">
             <titulo>Retirar a CIE</titulo>
             <descricao>A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.</descricao>
             <documentos>
@@ -174,9 +183,11 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="324"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324" dbId="26267">
+        <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2141">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4643">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
@@ -185,11 +196,11 @@
         <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1527">documento</item>
-        <item id="1528">identificação</item>
-        <item id="1529">estrangeiro</item>
+        <item id="8453">documento</item>
+        <item id="8454">identificação</item>
+        <item id="8455">estrangeiro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="494">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
+        <item id="2027">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
     </legislacoes>
 </servico>
