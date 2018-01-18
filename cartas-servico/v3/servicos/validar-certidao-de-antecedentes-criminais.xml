@@ -5,27 +5,33 @@
     <nome>Validar Certidão de Antecedentes Criminais</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="625">Antecedentes</item>
-        <item id="626">Criminais</item>
-        <item id="627">Validação</item>
+        <item id="1484">Antecedentes</item>
+        <item id="1485">Criminais</item>
+        <item id="1486">Validação</item>
     </nomes-populares>
     <descricao>Conferência da veracidade (validação) da Certidão de Antecedentes Criminais emitida pela Políca Federal- PF.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="781">
+        <solicitante id="2239">
             <tipo>Qualquer cidadão</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="1" unidade="minutos"/>
+        <atendimento-imediato/>
         <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2118">
+        <etapa id="4493">
             <titulo>Acesse o Portal PF</titulo>
-            <descricao>Acessar o Portal PF para validação</descricao>
+            <descricao>Acesse o link, preencha o formulário com os dados solicitados (Nome, Número da Certidão, Hora de Emissão e Data da Emissão) e clique no botão "Validar".</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -35,62 +41,28 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2613" tipo="web">
-                        <descricao>https://servicos.dpf.gov.br/sinic-certidao/validarAutenticidade.html</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="2119">
-            <titulo>Preencha o Formulário</titulo>
-            <descricao>Preencha o formulário com os dados solicitados (Nome, Número da Certidão, Hora de Emissão e Data da Emissão)</descricao>
-            <documentos>
-                <default>
-                    <item id="2119">Original ou Cópia da Certidão de Antecedentes Criminais Emitida</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2625" tipo="web-preencher">
-                        <descricao></descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="2120">
-            <titulo>Validar</titulo>
-            <descricao>Clique no botão "Validar"</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2626" tipo="web-consultar">
-                        <descricao></descricao>
+                        <descricao>https://servicos.dpf.gov.br/sinic-certidao/validarAutenticidade.jsp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="324"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324" dbId="26267">
+        <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2369">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4634">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1844">Certidão</item>
-        <item id="1845">Antecedentes</item>
-        <item id="1846">Criminais</item>
-        <item id="1847">Validação</item>
+        <item id="8422">Certidão</item>
+        <item id="8423">Antecedentes</item>
+        <item id="8424">Criminais</item>
+        <item id="8425">Validação</item>
     </palavras-chave>
     <legislacoes>
-        <item id="621">Lei 9051/95.</item>
+        <item id="2019">Lei 9051/95.</item>
     </legislacoes>
 </servico>
