@@ -4,23 +4,83 @@
     <dbId>1130</dbId>
     <nome>Adquirir imóvel aforado da União por remição</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1505">Remição de Aforamento</item>
+    </nomes-populares>
     <descricao>Adquirir parcela correspondente a 17% do valor do terreno da União, consolidando a propriedade do imóvel.</descricao>
     <contato>&lt;p&gt;&lt;b&gt;Coordenação-Geral de Gestão Econômica de Ativos&lt;/b&gt;&lt;/p&gt; &lt;/p&gt;&lt;p&gt;&lt;em&gt;E-mail&lt;/em&gt;: &lt;b&gt;&lt;a&gt;faleconosco.spu@planejamento.gov.br&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt; Endereço: &lt;b&gt;Esplanada dos Ministérios&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Bloco C, 2º andar, Brasília-DF&lt;/b&gt;&lt;/p&gt;&lt;p&gt;CEP: &lt;b&gt;70.046-900 &lt;/b&gt;&lt;/p&gt;&lt;p&gt;</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://patrimoniodetodos.gov.br/#/requerimentoCertidaoAforamento?servico=27&amp;</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2267">
+            <tipo>Pessoa Física ou Jurídica</tipo>
+            <requisitos>Que seja foreiro.</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
-        <em-media max="30" unidade="dias-corridos"/>
-        <descricao>O prazo para a prestação deste serviço ainda não foi estimado.</descricao>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4578">
+            <titulo>Preencher o requerimento</titulo>
+            <descricao>Acesse o [Portal da SPU](http://patrimoniodetodos.gov.br/#/requerimentoCertidaoAforamento?servico=27), preencha o requerimento, anexe os documentos e envie o requerimento, após marcar a caixa de validação “Não sou robô” e clicar no botão “Iniciar”.</descricao>
+            <documentos>
+                <default/>
+                <caso id="470" descricao="Pessoa Jurídica">
+                    <documento>
+                        <id>4193</id>
+                        <descricao>Documento de Identificação com foto do representante legal (RG, CNH, Carteira de Trabalho, Carteira de Identidade de Estrangeiro, Cartão de Cidadão etc)</descricao>
+                    </documento>
+                    <documento>
+                        <id>4192</id>
+                        <descricao>Documento de designação do representante legal (ato constitutivo, contrato social, estatuto social, ata, termo de posse etc)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4052" tipo="web">
+                        <descricao>http://patrimoniodetodos.gov.br/#/requerimentoCertidaoAforamento?servico=27</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4579">
+            <titulo>Receber a resposta da Secretaria do Patrimônio da União</titulo>
+            <descricao>Obtenha o resultado da solicitação pelo e-mail informado no requerimento ou consulte o pedido no [Portal da SPU](http://patrimoniodetodos.gov.br/#/), a partir do CPF ou CNPJ do requerente e o nº do atendimento e, sem seguida, marque a caixa de validação "Não sou robô" e clique no botão "BUSCAR".</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4053" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="4668">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="4669">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="4670">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4671">Empresas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
         <item>Patrimônio da União</item>
@@ -28,4 +88,24 @@
         <item>Administração e Gestão Pública</item>
         <item>Administração</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8523">17%</item>
+        <item id="8524">comprar</item>
+        <item id="8525">domínio</item>
+        <item id="8526">direito</item>
+        <item id="8527">remir</item>
+        <item id="8528">remição</item>
+        <item id="8529">aforamento</item>
+        <item id="8530">comprar</item>
+        <item id="8531">foro</item>
+        <item id="8532">spu</item>
+        <item id="8533">resgate</item>
+        <item id="8534">resgatar</item>
+        <item id="8535">adquirir</item>
+        <item id="8536">aquisição</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="2052">[Lei nº 9.636, de 15 de maio de 1998](http://www.planalto.gov.br/ccivil_03/leis/L9636.htm)</item>
+        <item id="2053">[Decreto nº 9.760, de 5 de setembro de 1946](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del9760.htm) e</item>
+    </legislacoes>
 </servico>
