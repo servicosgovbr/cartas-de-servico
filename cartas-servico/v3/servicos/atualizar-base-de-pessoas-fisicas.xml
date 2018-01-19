@@ -5,28 +5,30 @@
     <nome>Atualizar base de Pessoas Físicas</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="845">CPFs</item>
-        <item id="846">Base CPF</item>
+        <item id="1527">CPFs</item>
+        <item id="1528">Base CPF</item>
     </nomes-populares>
     <descricao>Acessar o sistema para atualização da base de dados de pessoas físicas. Utilização exclusiva por bancos credenciados.</descricao>
     <contato>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1330">
+        <solicitante id="2287">
             <tipo>Instituições financeiras credenciadas junto a receita</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="0" max="0" unidade="meses"/>
-        <descricao>O tempo não é estimado ainda</descricao>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2865">
+        <etapa id="4626">
             <titulo>Habilitar representante do banco credenciado</titulo>
             <descricao></descricao>
             <documentos>
@@ -44,19 +46,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3805" tipo="postal">
-                        <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="3806" tipo="presencial">
                         <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="3807" tipo="web">
                         <descricao>https://cav.receita.fazenda.gov.br/autenticacao/login</descricao>
                     </canal-de-prestacao>
+                    <canal-de-prestacao id="3805" tipo="postal">
+                        <descricao>**Ministério da Fazenda** - Secretaria da Receita Federal - Esplanada dos Ministérios, Bloco P, Térreo, CEP 70048-900, Brasília/DF</descricao>
+                    </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2866">
+        <etapa id="4627">
             <titulo>Realizar download dos arquivos</titulo>
             <descricao></descricao>
             <documentos>
@@ -70,6 +72,8 @@
                     <custo id="119">
                         <descricao>Ressarcimento dos custos para fornecimento dos dados, o valor é variável</descricao>
                         <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -86,7 +90,7 @@
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2953">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="4696">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
@@ -95,14 +99,14 @@
         <item>Sistema Financeiro</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3290">base de dados</item>
-        <item id="3291">base cpf</item>
-        <item id="3292">bancos</item>
-        <item id="3293">cpf</item>
-        <item id="3294">cadastro no banco</item>
-        <item id="3295">serasa</item>
+        <item id="8606">base de dados</item>
+        <item id="8607">base cpf</item>
+        <item id="8608">bancos</item>
+        <item id="8609">cpf</item>
+        <item id="8610">cadastro no banco</item>
+        <item id="8611">serasa</item>
     </palavras-chave>
-    <legislacoes>
-        <item id="988">--</item>
-    </legislacoes>
+    <servicos-relacionados>
+        <item>1070</item>
+    </servicos-relacionados>
 </servico>
