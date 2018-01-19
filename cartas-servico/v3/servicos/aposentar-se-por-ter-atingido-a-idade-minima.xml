@@ -1,45 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Aposentar-se por ter atingido a idade mínima.]]></nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>aposentar-se-por-ter-atingido-a-idade-minima</id>
+    <dbId>47</dbId>
+    <nome>Aposentar-se por ter atingido a idade mínima.</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Aposentadoria por idade.</item>
-        <item>Encostar</item>
+        <item id="1514">Aposentadoria por idade.</item>
+        <item id="1515">Encostar</item>
     </nomes-populares>
-    <descricao><![CDATA[A aposentadoria por idade é o benefício financeiro mensal a que tem direito o trabalhador que atinge a idade mínima para se aposentar e que tenha cumprido alguns outros requisitos.]]></descricao>
-    <contato><![CDATA[Central de Atendimento do INSS – Telefone 135]]></contato>
+    <descricao>A aposentadoria por idade é o benefício financeiro mensal a que tem direito o trabalhador que atinge a idade mínima para se aposentar e que tenha cumprido alguns outros requisitos.</descricao>
+    <contato>Central de Atendimento do INSS – Telefone 135</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="2276">
             <tipo>Segurado Especial</tipo>
-            <requisitos><![CDATA[Trabalhador rural que exerce sua atividade de forma individual ou com a ajuda da família, assim como trabalhadores com atividades afins à atividade rural, como pescadores artesanais e indígenas, que tenham:
+            <requisitos>&amp;nbsp;        
+Trabalhador rural que exerce sua atividade de forma individual ou com a ajuda da família, assim como trabalhadores com atividades afins à atividade rural, como pescadores artesanais e indígenas, que tenham:
 
 •	No mínimo 180 meses de trabalho efetivo;
 •	Se for homem, 60 anos de idade;
-•	Se for mulher, 55 anos de idade.]]></requisitos>
+•	Se for mulher, 55 anos de idade.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="2277">
             <tipo>Segurado Regular</tipo>
-            <requisitos><![CDATA[Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que tenha:
+            <requisitos>&amp;nbsp;        
+Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que tenha:     
+
+&amp;nbsp;        
+
 
 •	No mínimo 180 meses de trabalho efetivo;
 •	Se for homem, 65 anos de idade;
-•	Se for mulher, 60 anos de idade.]]></requisitos>
+•	Se for mulher, 60 anos de idade.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="3" unidade="meses"/>
-        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
+        <em-media max="3" unidade="meses"/>
+        <descricao>Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="4598">
             <titulo>Agendar atendimento em agência do INSS</titulo>
-            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
+            <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Data do Nascimento</item>
-                    <item>Informações de Contato.</item>
+                    <item id="1635">Número do CPF;</item>
+                    <item id="1636">Data do Nascimento</item>
+                    <item id="1637">Informações de Contato.</item>
                 </default>
             </documentos>
             <custos>
@@ -47,27 +60,39 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-agendar">
-                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    <canal-de-prestacao id="2286" tipo="web-agendar">
+                        <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="4599">
             <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
-            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de identificação válido, original e com foto; e</item>
+                    <item id="1642">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1643">Documento de identificação válido, original e com foto; e</item>
                 </default>
-                <caso descricao="Segurado Especial (solicitante 1)">
-                    <item>Documentos que comprovem esta situação, como a declaração do sindicato, contratos de arrendamento, documentos da época em que conste a sua ocupação e similares;</item>
+                <caso id="282" descricao="Segurado Especial (solicitante 1)">
+                    <documento>
+                        <id>1638</id>
+                        <descricao>Documentos que comprovem esta situação, como a declaração do sindicato, contratos de arrendamento, documentos da época em que conste a sua ocupação e similares;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Segurado Regular">
-                    <item>Carteiras de trabalho;</item>
-                    <item>Carnês de contribuição;</item>
-                    <item>Outros documentos que comprovem pagamento ao INSS</item>
+                <caso id="283" descricao="Segurado Regular">
+                    <documento>
+                        <id>1641</id>
+                        <descricao>Outros documentos que comprovem pagamento ao INSS</descricao>
+                    </documento>
+                    <documento>
+                        <id>1640</id>
+                        <descricao>Carnês de contribuição;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1639</id>
+                        <descricao>Carteiras de trabalho;</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -75,21 +100,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2287" tipo="presencial">
+                        <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="4600">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item>Número do benefício;</item>
-                    <item>Data de Nascimento;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de Identificação válido, original e com foto.</item>
+                    <item id="1644">Número do benefício;</item>
+                    <item id="1645">Data de Nascimento;</item>
+                    <item id="1646">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1647">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -97,19 +122,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    <canal-de-prestacao id="2288" tipo="web">
+                        <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2289" tipo="presencial">
+                        <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4683">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -118,11 +145,15 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>aposentadoria</item>
-        <item>velhice</item>
-        <item>idade mínima</item>
+        <item id="8573">aposentadoria</item>
+        <item id="8574">velhice</item>
+        <item id="8575">idade mínima</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+        <item id="2061">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
     </legislacoes>
+    <servicos-relacionados>
+        <item>46</item>
+        <item>48</item>
+    </servicos-relacionados>
 </servico>
