@@ -2,14 +2,23 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>acessar-a-informacao-publica-a-orgaos-e-entidades-do-poder-executivo-federal</id>
     <dbId>919</dbId>
-    <nome>Acessar à informação pública a órgãos e entidades do Poder Executivo Federal.</nome>
+    <nome>Acessar à informação pública a órgãos e entidades do Poder Executivo Federal</nome>
     <sigla>e-SIC</sigla>
+    <nomes-populares>
+        <item id="1503">Sistema Eletrônico do Serviço de Informações ao Cidadão</item>
+    </nomes-populares>
     <descricao>O Sistema Eletrônico do Serviço de Informações ao Cidadão (e-SIC) permite que qualquer pessoa, física ou jurídica, encaminhe pedidos de acesso à informação, acompanhe o prazo e receba a resposta da solicitação realizada para órgãos e entidades do Executivo Federal. Por meio do e-SIC, o cidadão ainda pode impetrar recursos e apresentar reclamações sem burocracia.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2262">
+            <tipo>Todas as pessoas físicas e jurídicas, independente de idade ou nacionalidade.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <entre min="8" max="15" unidade="dias-corridos"/>
         <descricao></descricao>
@@ -17,10 +26,75 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="4570">
+            <titulo>Registrar-se no e-SIC.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2701">Procuração do representante legal</item>
+                    <item id="2702">Qualquer documento de identificação válido.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3071" tipo="web">
+                        <descricao>https://esic.cgu.gov.br/sistema/site/index.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4571">
+            <titulo>Realizar pedido de informação.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2703">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3072" tipo="web">
+                        <descricao>https://esic.cgu.gov.br/sistema/site/index.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="4572">
+            <titulo>Acessar a resposta.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="2704">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="3073" tipo="presencial">
+                        <descricao>Serviços de Informação ao Cidadão - SIC do órgão a que foi feito o pedido de informação.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3074" tipo="web">
+                        <descricao>https://esic.cgu.gov.br/sistema/site/index.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/214460" dbId="37535">
         <nomeOrgao>Ministério da Transparência e Controladoria-Geral da União (CGU)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="4662">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração</item>
         <item>Cidadania</item>
@@ -29,4 +103,19 @@
         <item>Planejamento</item>
         <item>Pesquisa e Desenvolvimento</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="8504">Acesso à Informação</item>
+        <item id="8505">Transparência</item>
+        <item id="8506">Dados de órgãos públicos</item>
+        <item id="8507">SIC</item>
+        <item id="8508">Pedir informação</item>
+        <item id="8509">Fiscalização pública</item>
+        <item id="8510">Informação não-confidencial</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="2050">-</item>
+    </legislacoes>
+    <servicos-relacionados>
+        <item>1103</item>
+    </servicos-relacionados>
 </servico>
