@@ -9,10 +9,10 @@
     <gratuito>false</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://servicos.dpf.gov.br/sincreWeb/</link-servico-digital>
     <solicitantes>
-        <solicitante id="2247">
+        <solicitante id="2248">
             <tipo>Estrangeiros</tipo>
             <requisitos>Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.</requisitos>
         </solicitante>
@@ -25,7 +25,7 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4511">
+        <etapa id="4516">
             <titulo>Preencher o formulário de solicitação</titulo>
             <descricao>Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.</descricao>
             <documentos>
@@ -47,7 +47,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4512">
+        <etapa id="4517">
             <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
             <descricao>Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.</descricao>
             <documentos>
@@ -65,8 +65,8 @@
                         <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
-                <caso id="623" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
-                    <custo id="177">
+                <caso id="629" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
+                    <custo id="181">
                         <descricao>Estes usuários são isentos do pagamento desta taxa.</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel></valorVariavel>
@@ -77,12 +77,12 @@
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="2326" tipo="web">
-                        <descricao>http://www.pf.gov.br/servicos-pf/gru/imigracao-estrangeiros</descricao>
+                        <descricao>https://servicos.dpf.gov.br/gru2/gru?nac=1&amp;rec=2</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4513">
+        <etapa id="4518">
             <titulo>Agendar atendimento presencial</titulo>
             <descricao>Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.</descricao>
             <documentos>
@@ -101,7 +101,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4514">
+        <etapa id="4519">
             <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
             <descricao>Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.</descricao>
             <documentos>
@@ -162,7 +162,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4515">
+        <etapa id="4520">
             <titulo>Retirar a CIE</titulo>
             <descricao>A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.</descricao>
             <documentos>
@@ -186,7 +186,7 @@
         <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="4644">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4645">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
@@ -195,11 +195,15 @@
         <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="8456">documento</item>
-        <item id="8457">identificação</item>
-        <item id="8458">estrangeiro</item>
+        <item id="8459">documento</item>
+        <item id="8460">identificação</item>
+        <item id="8461">estrangeiro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2028">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
+        <item id="2029">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
     </legislacoes>
+    <servicos-relacionados>
+        <item>1094</item>
+        <item>712</item>
+    </servicos-relacionados>
 </servico>
