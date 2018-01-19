@@ -1,39 +1,47 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Aposentar-se por ter atingido o tempo de contribuição necessário.]]></nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>aposentar-se-por-ter-atingido-o-tempo-de-contribuicao-necessario</id>
+    <dbId>46</dbId>
+    <nome>Aposentar-se por ter atingido o tempo de contribuição necessário.</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Aposentadoria por tempo de contribuição.</item>
-        <item>Encostar</item>
+        <item id="1518">Aposentadoria por tempo de contribuição.</item>
+        <item id="1519">Encostar</item>
     </nomes-populares>
-    <descricao><![CDATA[A aposentadoria integral por tempo de contribuição é o benefício financeiro mensal a que tem direito o trabalhador que atinge a quantidade mínima de anos de contribuição para a Previdência.]]></descricao>
-    <contato><![CDATA[Central de Atendimento do INSS, através do telefone 135.]]></contato>
+    <descricao>A aposentadoria integral por tempo de contribuição é o benefício financeiro mensal a que tem direito o trabalhador que atinge a quantidade mínima de anos de contribuição para a Previdência.</descricao>
+    <contato>Central de Atendimento do INSS, através do telefone 135.</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="2280">
             <tipo>Trabalhadores com um mínimo de 180 meses efetivamente trabalhados para efeito de carência</tipo>
-            <requisitos><![CDATA[Se for homem
+            <requisitos>Se for homem
 * Ter 35 de tempo total de contribuição; ou 
 * Alcançar 95 anos na soma de sua idade com o seu tempo de contribuição.
 
 Se for mulher
 * Ter 30 de tempo total de contribuição; ou 
-* Alcançar 85 anos na soma de sua idade com o seu tempo de contribuição]]></requisitos>
+* Alcançar 85 anos na soma de sua idade com o seu tempo de contribuição</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="3" unidade="meses"/>
-        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
+        <em-media max="3" unidade="meses"/>
+        <descricao>Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="4604">
             <titulo>Agendar atendimento em agência do INSS</titulo>
-            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
+            <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Data de Nascimento;</item>
-                    <item>Informações de Contato.</item>
+                    <item id="1623">Número do CPF;</item>
+                    <item id="1624">Data de Nascimento;</item>
+                    <item id="1625">Informações de Contato.</item>
                 </default>
             </documentos>
             <custos>
@@ -41,22 +49,22 @@ Se for mulher
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-agendar">
-                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    <canal-de-prestacao id="2282" tipo="web-agendar">
+                        <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="4605">
             <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
-            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
             <documentos>
                 <default>
-                    <item>Documento de identificação válido e oficial com foto;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Carteira(s) de Trabalho e Previdência Social - CTPS</item>
-                    <item>Carnês de contribuição;</item>
-                    <item>Outros documentos que comprovem pagamento ao INSS.</item>
+                    <item id="1626">Documento de identificação válido e oficial com foto;</item>
+                    <item id="1627">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1628">Carteira(s) de Trabalho e Previdência Social - CTPS</item>
+                    <item id="1629">Carnês de contribuição;</item>
+                    <item id="1630">Outros documentos que comprovem pagamento ao INSS.</item>
                 </default>
             </documentos>
             <custos>
@@ -64,21 +72,21 @@ Se for mulher
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2283" tipo="presencial">
+                        <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="4606">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item>Número do benefício;</item>
-                    <item>Data de Nascimento;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de Identificação válido, original e com foto.</item>
+                    <item id="1631">Número do benefício;</item>
+                    <item id="1632">Data de Nascimento;</item>
+                    <item id="1633">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1634">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -86,19 +94,21 @@ Se for mulher
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    <canal-de-prestacao id="2284" tipo="web">
+                        <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2285" tipo="presencial">
+                        <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4685">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -107,11 +117,15 @@ Se for mulher
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>aposentadoria</item>
-        <item>velhice</item>
-        <item>fator previdênciário</item>
+        <item id="8579">aposentadoria</item>
+        <item id="8580">velhice</item>
+        <item id="8581">fator previdênciário</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+        <item id="2063">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
     </legislacoes>
+    <servicos-relacionados>
+        <item>47</item>
+        <item>48</item>
+    </servicos-relacionados>
 </servico>
