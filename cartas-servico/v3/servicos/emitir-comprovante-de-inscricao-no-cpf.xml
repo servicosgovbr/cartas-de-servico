@@ -5,16 +5,16 @@
     <nome>Emitir comprovante de inscrição no CPF</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="1227">CPF</item>
+        <item id="1641">CPF</item>
     </nomes-populares>
     <descricao>Emitir o comprovante de inscrição no CPF e consultar os dados cadastrais. Para contribuintes que não apresentaram Declaração de Imposto de Renda Pessoa Física em nenhum dos últimos dois exercícios é possível a emissão do comprovante por acesso direto ou com senha específica. Para contribuintes que apresentaram Declaração de Imposto de Renda Pessoa Física em pelo menos um dos últimos dois exercícios a emissão do comprovante é, necessariamente, por meio do Portal e-CAC.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/ImpressaoComprovante/ConsultaImpressao.asp</link-servico-digital>
     <solicitantes>
-        <solicitante id="1834">
+        <solicitante id="2484">
             <tipo>Pessoas físicas</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -27,7 +27,7 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3866">
+        <etapa id="4951">
             <titulo>Gerar comprovante</titulo>
             <descricao></descricao>
             <documentos>
@@ -42,11 +42,11 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4868" tipo="web">
-                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/ImpressaoComprovante/ConsultaImpressao.asp</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="4869" tipo="presencial">
                         <descricao>Em uma [Unidade de atendimento da Receita Federal](http://idg.receita.fazenda.gov.br/contato/unidades-de-atendimento)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4868" tipo="web">
+                        <descricao>https://www.receita.fazenda.gov.br/Aplicacoes/SSL/ATCTA/cpf/ImpressaoComprovante/ConsultaImpressao.asp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -56,7 +56,7 @@
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3852">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4999">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração e Gestão Pública</item>
@@ -65,8 +65,17 @@
         <item>Tributação</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="5917">pessoa física</item>
-        <item id="5918">cpf</item>
-        <item id="5919">comprovante</item>
+        <item id="9248">pessoa física</item>
+        <item id="9249">cpf</item>
+        <item id="9250">comprovante</item>
     </palavras-chave>
+    <servicos-relacionados>
+        <item>1062</item>
+        <item>1060</item>
+        <item>1478</item>
+        <item>1477</item>
+        <item>1480</item>
+        <item>1001</item>
+        <item>1683</item>
+    </servicos-relacionados>
 </servico>
