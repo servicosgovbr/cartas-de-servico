@@ -5,15 +5,18 @@
     <nome>Encontrar emprego no Serviço de Intermediação de Mão de Obra do SINE</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="663">SINE</item>
-        <item id="664">Mais Emprego</item>
+        <item id="1652">SINE</item>
+        <item id="1653">Mais Emprego</item>
     </nomes-populares>
     <descricao>Este serviço permite que você busque um trabalho entre as vagas cadastradas no sistema.</descricao>
     <contato>Você pode tirar dúvidas sobre o serviço na [rede de atendimento do Ministério do Trabalho](http://trabalho.gov.br/rede-de-atendimento) ou nos [Postos do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://imo.maisemprego.mte.gov.br/imoweb/login.xhtml</link-servico-digital>
     <solicitantes>
-        <solicitante id="856">
+        <solicitante id="2493">
             <tipo>Todo cidadão.</tipo>
             <requisitos>Que tenha a Carteira de Trabalho e Previdência Social.</requisitos>
         </solicitante>
@@ -22,9 +25,11 @@
         <em-media max="15" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2237">
+        <etapa id="4959">
             <titulo>Cadastrar-se no sistema</titulo>
             <descricao>Você deve se cadastrar no serviço de Intermediação de Mão de Obra para poder encontrar e concorrer às vagas oferecidas.</descricao>
             <documentos>
@@ -40,16 +45,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2798" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2797" tipo="web">
                         <descricao>https://imo.maisemprego.mte.gov.br/imoweb/login.xhtml</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2798" tipo="presencial">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2238">
+        <etapa id="4960">
             <titulo>Consultar vagas</titulo>
             <descricao>Você deve consultar as vagas disponíveis de emprego ou estágio no sistema</descricao>
             <documentos>
@@ -66,16 +71,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2800" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2799" tipo="web">
                         <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2800" tipo="presencial">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2239">
+        <etapa id="4961">
             <titulo>Se candidatar</titulo>
             <descricao>Escolhida a vaga desejada, você pode se candidatar para participar do processo de intermediação</descricao>
             <documentos>
@@ -91,16 +96,16 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2802" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="2801" tipo="web">
                         <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="2802" tipo="presencial">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2240">
+        <etapa id="4962">
             <titulo>Participar de entrevista</titulo>
             <descricao>Sendo selecionado pelo empregador disponibilizando a vaga, você participará de entrevista com ele, onde será decidido se você ocupará a vaga.</descricao>
             <documentos>
@@ -123,9 +128,11 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2460">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="5013">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Empregabilidade</item>
@@ -135,12 +142,15 @@
         <item>Recursos humanos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1998">SINE</item>
-        <item id="1999">Emprego</item>
-        <item id="2000">Estágio</item>
-        <item id="2001">Vagas de trabalho</item>
+        <item id="9272">SINE</item>
+        <item id="9273">Emprego</item>
+        <item id="9274">Estágio</item>
+        <item id="9275">Vagas de trabalho</item>
     </palavras-chave>
     <legislacoes>
-        <item id="670">[Decreto Nº 76.403 de 08/10/1975](http://portalfat.mte.gov.br/programas-e-acoes-2/sistema-nacional-de-emprego-sine/rede-sine/legislacao-sine/decreto-no-76-403-de-08101975-cria-o-sistema-nacional-de-emprego-sine-e-da-outras-providencias/)</item>
+        <item id="2159">[Decreto Nº 76.403 de 08/10/1975](http://portalfat.mte.gov.br/programas-e-acoes-2/sistema-nacional-de-emprego-sine/rede-sine/legislacao-sine/decreto-no-76-403-de-08101975-cria-o-sistema-nacional-de-emprego-sine-e-da-outras-providencias/)</item>
     </legislacoes>
+    <servicos-relacionados>
+        <item>60</item>
+    </servicos-relacionados>
 </servico>
