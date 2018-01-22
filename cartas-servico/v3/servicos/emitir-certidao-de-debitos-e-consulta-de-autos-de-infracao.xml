@@ -5,15 +5,18 @@
     <nome>Emitir Certidão de débitos e Consulta de autos de infração</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="662">Certidão de débito</item>
+        <item id="1633">Certidão de débito</item>
     </nomes-populares>
     <descricao>Através deste serviço você pode emitir a certidão de débitos trabalhistas de empresas, assim como consultar seus autos de infração e andamento do processo. A certidão de débito é requerida para participação de licitações e outras interações da empresa com o Estado.</descricao>
     <contato>Secretaria de Inspeção do Trabalho
 * Fone: (61) 2031-6909 (de 08h às 12h e de 14h às 18h)</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://consultacpmr.mte.gov.br/ConsultaCPMR/</link-servico-digital>
     <solicitantes>
-        <solicitante id="854">
+        <solicitante id="2475">
             <tipo>Pessoas Físicas e Jurídicas</tipo>
             <requisitos>A certidão é um documento público, toda pessoa que tenha os dados necessários pode emiti-la</requisitos>
         </solicitante>
@@ -22,9 +25,11 @@
         <atendimento-imediato/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2233">
+        <etapa id="4934">
             <titulo>Emitir a Certidão</titulo>
             <descricao>Você deve visitar a página e informar os dados pedidos</descricao>
             <documentos>
@@ -43,7 +48,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2234">
+        <etapa id="4935">
             <titulo>Verificar autenticidade da Certidão</titulo>
             <descricao>Caso você deseje verificar a autenticidade de uma certidão apresentada, você pode fazê-lo na página do serviço</descricao>
             <documentos>
@@ -63,12 +68,14 @@
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2454">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="2455">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="2456">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="2457">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="4972">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="4973">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="4974">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="4975">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
@@ -76,11 +83,11 @@
         <item>Relações de Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1992">Débitos trabalhistas</item>
-        <item id="1993">infrações trabalhistas</item>
-        <item id="1994">CPMR</item>
+        <item id="9215">Débitos trabalhistas</item>
+        <item id="9216">infrações trabalhistas</item>
+        <item id="9217">CPMR</item>
     </palavras-chave>
     <legislacoes>
-        <item id="667">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        <item id="2158">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
     </legislacoes>
 </servico>
