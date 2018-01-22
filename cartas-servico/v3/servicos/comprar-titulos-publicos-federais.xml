@@ -5,7 +5,7 @@
     <nome>Comprar Títulos Públicos Federais</nome>
     <sigla>TD</sigla>
     <nomes-populares>
-        <item id="828">Tesouro Direto</item>
+        <item id="1574">Tesouro Direto</item>
     </nomes-populares>
     <descricao>O Tesouro Direto é um Programa do Tesouro Nacional desenvolvido em parceria com a BMF&amp;F Bovespa para venda de títulos públicos federais para pessoas físicas, por meio da internet. Concebido em 2002, esse Programa surgiu com o objetivo de democratizar o acesso aos títulos públicos, ao permitir aplicações com apenas R$ 30,00. Antes do Tesouro Direto, o investimento em títulos públicos por pessoas físicas era possível somente indiretamente, por meio de fundos de renda fixa que, por cobrarem elevadas taxas de administração, especialmente em aplicações de baixo valor, reduziam a atratividade desse tipo de investimento. O Tesouro Direto contribuiu para a diversificação e complementação das alternativas de investimento disponíveis no mercado, ao oferecer títulos com diferentes tipos de rentabilidade (prefixada, ligada à variação da inflação ou à variação da taxa de juros básica da economia - Selic), de prazos de vencimento e de fluxos de remuneração.</descricao>
     <contato>* [Fale Conosco](http://www.tesouro.gov.br/tesouro-direto-fale-conosco)
@@ -13,21 +13,23 @@
 * Mais informações [aqui](http://www.tesouro.gov.br/tesouro-direto)</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1305">
+        <solicitante id="2374">
             <tipo>Cidadãos brasileiros e estrangeiros</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="0" max="0" unidade="meses"/>
+        <nao-estimado-ainda/>
         <descricao>Não há como estabelecer um tempo padrão, pois o mesmo varia de acordo com as instituições envolvidas e os interesses do usuário</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2831">
+        <etapa id="4779">
             <titulo>Escolher instituição financeira</titulo>
             <descricao>Você deverá escolher uma instituição financeira, que pode ser um banco ou uma corretora, também chamada de agente de custódia, para intermediar suas transações com o Tesouro Direto.</descricao>
             <documentos>
@@ -47,7 +49,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2832">
+        <etapa id="4780">
             <titulo>Cadastrar-se junto ao agente de custódia</titulo>
             <descricao>Entre em contato com a instituição financeira escolhida e solicite seu cadastramento. Você deverá fornecer a documentação necessária para que essa instituição abra uma conta em seu nome para operar com o Tesouro Direto.</descricao>
             <documentos>
@@ -69,7 +71,7 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2833">
+        <etapa id="4781">
             <titulo>Obter acesso ao site do Tesouro Direto</titulo>
             <descricao>A partir disso, você receberá uma senha provisória da BM&amp;FBovespa para o primeiro acesso à área restrita do Tesouro Direto, em que são realizadas as operações de compra e venda, assim como consultas a saldos e extratos.
 roque a senha provisória por uma nova que deverá conter entre 8 e 16 dígitos, composta por letras, números e caracteres especiais. Pronto! Você já será investidor habilitado e poderá começar a investir.</descricao>
@@ -90,7 +92,7 @@ roque a senha provisória por uma nova que deverá conter entre 8 e 16 dígitos,
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2834">
+        <etapa id="4782">
             <titulo>Realizar compra</titulo>
             <descricao>Agora, você precisa descobrir qual título é mais adequado para alcançar o seu objetivo financeiro. Para ajudá-lo nessa escolha, utilize a ferramenta Orientador Financeiro oferecida tanto no site do Tesouro Direto quanto na área restrita ao investidor. Definido o título adequado, basta efetuar a sua compra.
 Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov.br/tesouro-direto-instituicoes-financeiras-habilitadas)</descricao>
@@ -103,12 +105,16 @@ Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov
             <custos>
                 <default>
                     <custo id="111">
-                        <descricao>Taxa de custódia devida à BM&amp;FBOVESPA de 0,30% ao ano sobre o valor aplicado</descricao>
+                        <descricao>Taxa de custódia devida à BM&amp;FBOVESPA:</descricao>
                         <moeda>R$</moeda>
+                        <valorVariavel>0,30% ao ano sobre o valor aplicado</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                     <custo id="112">
-                        <descricao>Taxa de Administração às Instituições Financeiras sobre o valor aplicado: livremente acordado</descricao>
+                        <descricao>Taxa de Administração às Instituições Financeiras sobre o valor aplicado:</descricao>
                         <moeda>R$</moeda>
+                        <valorVariavel>Valor livremente acordado</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -128,7 +134,7 @@ Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2918">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="4795">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Economia e Finanças</item>
@@ -138,16 +144,13 @@ Veja o valor das taxas de cada agente de custódia [aqui](http://www.tesouro.gov
         <item>Sistema Financeiro</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3207">títulos do tesouro</item>
-        <item id="3208">títulos</item>
-        <item id="3209">tesouro</item>
-        <item id="3210">títulos públicos</item>
-        <item id="3211">investimento</item>
-        <item id="3212">rentabilidade</item>
-        <item id="3213">renda</item>
-        <item id="3214">dívida pública</item>
+        <item id="8917">títulos do tesouro</item>
+        <item id="8918">títulos</item>
+        <item id="8919">tesouro</item>
+        <item id="8920">títulos públicos</item>
+        <item id="8921">investimento</item>
+        <item id="8922">rentabilidade</item>
+        <item id="8923">renda</item>
+        <item id="8924">dívida pública</item>
     </palavras-chave>
-    <legislacoes>
-        <item id="970">-</item>
-    </legislacoes>
 </servico>
