@@ -1244,146 +1244,6 @@ Neste caso, o Estado/Município aderido ao PAA executa as etapas do Programa con
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-auxilio-doenca</id>
-        <dbId>49</dbId>
-        <nome>Obter auxílio-doença</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="510">Auxílio-doença</item>
-            <item id="511">Benefício por incapacidade.</item>
-        </nomes-populares>
-        <descricao>O auxílio-doença é um benefício financeiro mensal recebido pelo segurado do INSS que estiver temporariamente incapaz de trabalhar devido a doença ou acidente.</descricao>
-        <contato>Central de Atendimento do INSS, através do telefone 135.</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="595">
-                <tipo>Segurado Especial</tipo>
-                <requisitos>Trabalhador rural que exerce sua atividade individualmente ou com a ajuda da família, assim como trabalhadores com atividades afins, como pescadores artesanais e indígenas, que:
-•	Tenha feito ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
-•	Comprove ter doença ou outro impedimento físico que o torne incapaz de trabalhar;
-•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.</requisitos>
-            </solicitante>
-            <solicitante id="596">
-                <tipo>Segurado Regular</tipo>
-                <requisitos>Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que:
-•	Tenha realizado ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
-•	Comprove ter doença ou outro impedimento físico por motivo de saúde que o torne incapaz de trabalhar;
-•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="30" unidade="dias-corridos"/>
-            <descricao>Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até seis meses.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1835">
-                <titulo>Agendar perícia médica e entrega dos documentos em agência do INSS</titulo>
-                <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar sua perícia para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1607">Número do PIS/PASEP;</item>
-                        <item id="1608">Nome completo de sua mãe;</item>
-                        <item id="1609">Sua data de nascimento;</item>
-                        <item id="1610">Dados funcionais;</item>
-                        <item id="1611">CID, se souber.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2278" tipo="web-agendar">
-                            <descricao>http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view#sabiweb</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1836">
-                <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
-                <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior, para realizar a perícia e entregar os documentos necessários ao pedido.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1614">Documento de identificação válido e oficial com foto;</item>
-                        <item id="1615">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1616">Carteira de trabalho, carnês de contribuição e outros documentos que comprovem pagamento ao INSS;</item>
-                        <item id="1617">Documentos médicos que comprovem a causa do problema de saúde, o tratamento médico indicado e a incapacidade de trabalhar;</item>
-                        <item id="1618">Caso o motivo da incapacitação for acidente de trabalho, a Comunicação de Acidente de Trabalho (CAT); e</item>
-                    </default>
-                    <caso id="280" descricao="Segurado Especial (Solicitante 1)">
-                        <documento>
-                            <id>1612</id>
-                            <descricao>Documentos que comprovem sua situação (declaração de sindicato, contratos de arrendamento, documentos onde conste a ocupação, etc.)</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="281" descricao="Segurado Regular (solicitante 2)">
-                        <documento>
-                            <id>1613</id>
-                            <descricao>Declaração carimbada e assinada do empregador, informando último dia trabalhado (se precisar, imprima o requerimento no site do INSS).</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2279" tipo="presencial">
-                            <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1837">
-                <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-                <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1619">Número do benefício ou do requerimento;</item>
-                        <item id="1620">Data de Nascimento;</item>
-                        <item id="1621">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1622">Documento de Identificação válido, original e com foto.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2280" tipo="web">
-                            <descricao>http://www2.dataprev.gov.br/sabiweb/relatorio/imprimirCRER.view?acao=imprimir_CRER</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2281" tipo="presencial">
-                            <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
-            <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2123">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Previdência Social</item>
-            <item>Proteção e Benefícios ao Trabalhador</item>
-            <item>Relações de Trabalho</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1484">doença</item>
-            <item id="1485">benefício</item>
-            <item id="1486">saúde</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="481">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943.</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>aderir-ao-programa-empresa-cidada</id>
         <dbId>1469</dbId>
         <nome>Aderir ao Programa Empresa Cidadã</nome>
@@ -38200,127 +38060,6 @@ Brasília/DF</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>cadastrar-se-no-site-turismo-acessivel</id>
-        <dbId>83</dbId>
-        <nome>Cadastrar-se no Site Turismo Acessível</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="1548">Turismo Acessível</item>
-            <item id="1549">Guia Turismo Acessível</item>
-        </nomes-populares>
-        <descricao>O site Turismo Acessível é colaborativo e você pode cadastrar, avaliar e consultar a acessibilidade de pontos turísticos, hotéis, restaurantes e atrações diversas. A ferramenta permite ao cidadão inserir novos estabelecimentos ou atrações, ajudando as pessoas com deficiência ou mobilidade reduzida a viajarem pelo Brasil com mais autonomia. Está disponível na internet e para download para aplicativos móveis.
-
-Neste espaço você aprenderá a avaliar um estabelecimento ou atrativo turístico.</descricao>
-        <contato>Departamento de Marketing e Apoio à Comercialização  
-Coordenação de Produtos Turísticos   
-Anexo ID - SCN, Quadra 06, Bloco A, 10º andar - Brasília - DF
-Telefone: 61 2023-8165   
-Email - incentivo.viagens@turismo.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>true</servico-digital>
-        <link-servico-digital>http://www.turismoacessivel.gov.br/ta/cadastroUsuario/cadastrarUsuario.mtur</link-servico-digital>
-        <solicitantes>
-            <solicitante id="2319">
-                <tipo>Pessoas com deficiência ou mobilidade reduzida.</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-            <solicitante id="2320">
-                <tipo>Público em geral</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="24" unidade="horas"/>
-            <descricao>As avaliações cadastradas no portal são submetidas a moderação do Ministério do Turismo, podendo levar algumas horas para serem publicadas.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="4694">
-                <titulo>Cadastramento do Usuário no Portal</titulo>
-                <descricao>O cadastramento do usuário o habilita a utilizar o Portal e ter acesso às informações e funcionalidades básicas do site.  Após o cadastramento, o usuário estará habilitado a utilizar os recursos do Turismo Acessível, desde que haja aceitação prévia aos termos e condições de estabelecidos.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4535">Dados pessoais e de contato</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2189" tipo="aplicativo-movel">
-                            <descricao>[App Store](https://itunes.apple.com/br/app/turismo-acessivel/id924446289);       
-[Windows Phone](https://www.microsoft.com/pt-br/store/apps/turismo-acessivel/9nblgggzjgqg);       
-[Google Play](https://play.google.com/store/apps/details?id=br.gov.mtur.ta)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2188" tipo="web">
-                            <descricao>http://www.turismoacessivel.gov.br/ta/cadastroUsuario/cadastrarUsuario.mtur</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4695">
-                <titulo>Avaliação dos serviços cadastrados</titulo>
-                <descricao>1- Pesquisar nome da cidade onde se encontra o estabelecimento ou atrativo que você quer avaliar;  
-2- Pesquisar nome do estabelecimento ou atrativo que desejar avaliar;  
-3- Selecionar estabelecimento ou atrativo listado;  
-4- Selecionar a perspectiva de Acessibilidade que você quer avaliar;  
-5- Responder as questões sobre local, infraestrutura de acesso, sinalização, equipamentos e equipe de atendimento;  
-6- Indicar nota, data da visita e avaliação sobre o empreendimento ou atrativo.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2190" tipo="web">
-                            <descricao>http://www.turismoacessivel.gov.br/ta/login.mtur</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/72084" dbId="37547">
-            <nomeOrgao>Ministério do Turismo (MTur)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="4733">Cidadãos</item>
-            <item idSegmento="2" idServicoSegmento="4734">Órgãos e entidades públicas</item>
-            <item idSegmento="4" idServicoSegmento="4735">Demais segmentos (ONGs, organizações sociais, etc)</item>
-            <item idSegmento="3" idServicoSegmento="4736">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Esporte e Lazer</item>
-            <item>Turismo</item>
-            <item>Cultura</item>
-            <item>Cidadania</item>
-            <item>Assistência ao Portador de Deficiência</item>
-            <item>Lazer</item>
-            <item>Infraestrutura Urbana</item>
-            <item>Patrimônio</item>
-            <item>Normalização e Qualidade</item>
-            <item>Difusão Cultural</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="8742">Acessibilidade</item>
-            <item id="8743">Turismo</item>
-            <item id="8744">Pessoa com deficiência</item>
-            <item id="8745">Viagens</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2086">[Lei Brasileira da Inclusão - Lei nº 13.146, de 06 de julho de 2015](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2015-07-06;13146)</item>
-            <item id="2087">[Norma Brasileira ABNT NBR 9050](http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf)</item>
-        </legislacoes>
-        <servicos-relacionados>
-            <item>73</item>
-        </servicos-relacionados>
-    </servico>
-    <servico>
         <id>realizar-venda-direta-ao-poder-publico-de-alimentos-provenientes-de-agricultura-familiar</id>
         <dbId>971</dbId>
         <nome>Realizar venda direta ao poder público de alimentos provenientes de agricultura familiar</nome>
@@ -50719,159 +50458,6 @@ Para que seja deferido o reparcelamento, é exigido o pagamento de primeira pres
         </palavras-chave>
         <legislacoes>
             <item id="1457">[Lei 9.613/98](http://www.planalto.gov.br/ccivil_03/leis/L9613compilado.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>credenciar-laboratorio-na-rede-nacional-de-laboratorios-agropecuarios-do-mapa</id>
-        <dbId>1337</dbId>
-        <nome>Credenciar Laboratório na Rede Nacional de Laboratórios Agropecuários do MAPA</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="1601">Rede MAPA de laboratórios.</item>
-        </nomes-populares>
-        <descricao>O credenciamento de laboratórios junto ao MAPA se destina a atender, de forma complementar,  aos programas e controles oficias do MAPA, suprindo demandas por ensaios laboratoriais excedentes, não atendidas pelos laboratórios do próprio MAPA.</descricao>
-        <contato>¨ **Telefone:** (61) 3218-2041      
-¨ **Email:** credenciamento.cgal@agricultura.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <link-servico-digital></link-servico-digital>
-        <solicitantes>
-            <solicitante id="2410">
-                <tipo>Laboratórios</tipo>
-                <requisitos>Públicos ou privados, que realizam ensaios laboratoriais para os programas e controles oficiais do MAPA.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="3" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="4841">
-                <titulo>Requerer credenciamento</titulo>
-                <descricao>Os modelos dos formulários, relações e termos podem ser obtidos [aqui](http://www.agricultura.gov.br/assuntos/laboratorios/credenciamento).</descricao>
-                <documentos>
-                    <default>
-                        <item id="5157">Formulário de solicitação de credenciamento, preenchido e assinado pelo representante legal do laboratório</item>
-                        <item id="5158">Cópia do contrato social do laboratório ou documento equivalente, válido e atualizado</item>
-                        <item id="5159">Cópia do Cadastro Nacional de Pessoa Jurídica – CNPJ do laboratório, válido e atualizado</item>
-                        <item id="5160">Cópia do alvará de funcionamento do laboratório ou documento equivalente, expedido pelo órgão competente, válido e atualizado</item>
-                        <item id="5161">Croqui das instalações do laboratório, assinado por profissional com registro válido junto ao Conselho Regional de Engenharia e Agronomia - CREA, indicando a finalidade de cada ambiente</item>
-                        <item id="5162">Memorial descritivo das instalações do laboratório, assinado por profissional com registro válido junto ao CREA</item>
-                        <item id="5163">Descrição do fluxo das amostras no laboratório, indicando as áreas percorridas desde a sua recepção até a finalização dos ensaios, seu armazenamento e descarte</item>
-                        <item id="5164">Relação de equipamentos, indicando marca, modelo e código de identificação no laboratório</item>
-                        <item id="5165">Termo de compromisso com o credenciamento, assinado pelo representante legal do laboratório, com firma reconhecida em cartório</item>
-                        <item id="5166">Termo de compromisso de responsabilidade técnica, de cada um dos responsáveis técnicos e dos responsáveis técnicos substitutos, com firma reconhecida em cartório</item>
-                        <item id="5167">Cópia da carteira de habilitação profissional, válida e atualizada, emitida pelo respectivo conselho de classe, de cada um dos Responsáveis Técnicos e dos Responsáveis Técnicos Substitutos</item>
-                        <item id="5168">Cópia da lista mestra de documentos do Sistema de Gestão da Qualidade do laboratório</item>
-                        <item id="5169">Cópias do certificado e do escopo de acreditação na ABNT NBR ISO/IEC 17025 – Requisitos Gerais para a Competência de Laboratórios de Ensaio e Calibração, emitidos pelo INMETRO, contemplando os ensaios constantes na solicitação de credenciamento</item>
-                        <item id="5170">Indicação deum de seus representantes legais, denominado Responsável pela Direção do Laboratório no âmbito do credenciamento junto ao MAPA, que será responsável pela interlocução entre o laboratório e a CGAL/SDA.</item>
-                        <item id="5171">Nomeação formal de um profissional de nível superior, do seu quadro efetivo de funcionários, que será o Responsável pelo Sistema de Gestão da Qualidade no âmbito do credenciamento junto ao MAPA</item>
-                    </default>
-                    <caso id="582" descricao="Para cada ensaio a ser credenciado, deverão ser informados:">
-                        <documento>
-                            <id>5153</id>
-                            <descricao>Código do procedimento referente à execução do método no laboratório, com o seu respectivo número de revisão</descricao>
-                        </documento>
-                        <documento>
-                            <id>5152</id>
-                            <descricao>Técnica aplicada na realização do ensaio</descricao>
-                        </documento>
-                        <documento>
-                            <id>5151</id>
-                            <descricao>Determinação analítica a ser obtida</descricao>
-                        </documento>
-                        <documento>
-                            <id>5156</id>
-                            <descricao>A referência bibliográfica do método, quando pertinente</descricao>
-                        </documento>
-                        <documento>
-                            <id>5155</id>
-                            <descricao>A espécie, a cultura ou o hospedeiro, quando pertinente</descricao>
-                        </documento>
-                        <documento>
-                            <id>5154</id>
-                            <descricao>Matriz à qual o método será aplicado</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4574" tipo="postal">
-                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento - Coordenação-Geral de Apoio Laboratorial - CGAL/SDA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4573" tipo="presencial">
-                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento - Coordenação-Geral de Apoio Laboratorial - CGAL/SDA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4842">
-                <titulo>Receber resultado</titulo>
-                <descricao>O credenciamento do laboratório será publicado no Diário Oficial da União</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4575" tipo="web">
-                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4843">
-                <titulo>Ser autorizado a realizar ensaios</titulo>
-                <descricao>O laboratório credenciado somente poderá realizar ensaios para os programas e
-controles oficiais do MAPA após ter seus dados e escopo publicados no sítio eletrônico do MAPA</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4576" tipo="web">
-                            <descricao>http://www.agricultura.gov.br/assuntos/laboratorios/rede-nacional-de-laboratorios-agropecuarios/rede-nacional-de-laboratorios-agropecuarios</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
-            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="4875">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="4876">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Agropecuária, extrativismo e pesca</item>
-            <item>Defesa agropecuária</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="9036">laboratórios</item>
-            <item id="9037">LANAGRO</item>
-            <item id="9038">ensaio laboratorial</item>
-            <item id="9039">laboratório agropecuário</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2129">[DECRETO Nº 5.741, DE 30 DE MARÇO DE 2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
-            <item id="2132">[INSTRUÇÃO NORMATIVA No - 41, DE 29 DE OUTUBRO DE 2015](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/IN412015.pdf)</item>
-            <item id="2128">[INSTRUÇÃO NORMATIVA No 57, DE 11 DE DEZEMBRO DE 2013](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/InstruoNormativan57de11.12.2013versoPDFdowordNovaRedaoNRsegundoIN19e41.pdf)</item>
-            <item id="2130">[DECRETO Nº 8.471, DE 22 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/D8471.htm)</item>
-            <item id="2131">[INSTRUÇÃO NORMATIVA Nº 19, DE 25 DE JUNHO DE 2014](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/instrucao-normativa-no-19-de-25-06-2014-alteracao-de-artigos-da-in57-2013.pdf)</item>
         </legislacoes>
     </servico>
     <servico>
@@ -64902,327 +64488,6 @@ Alternativamente, o cadastro poderá também ser feito em uma Junta de Serviço 
         </servicos-relacionados>
     </servico>
     <servico>
-        <id>registrar-programa-de-computador</id>
-        <dbId>1084</dbId>
-        <nome>Registrar programa de computador</nome>
-        <sigla></sigla>
-        <descricao>O registro de programa de computador assegura a autoria do software perante terceiros. Assim, garante maior segurança jurídica ao seu titular, caso haja demanda judicial para comprovar a autoria ou titularidade do programa.</descricao>
-        <contato>Mande uma mensagem pelo sistema [Fale Conosco](http://faleconosco.inpi.gov.br/faleconosco/)
-
-Veja o [Manual do Usuário](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/copy_of_ManualdousurioRPCeletrnicaV7.2.pdf) para o registro eletrônico de programa de computador.</contato>
-        <gratuito>false</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="1360">
-                <tipo>Pessoas físicas ou jurídicas</tipo>
-                <requisitos>Que desenvolveram um programa de computador ou sua versão mais atualizada.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="10" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <tipo>Válido por</tipo>
-            <quantidade>50</quantidade>
-            <unidade>anos</unidade>
-            <descricao>O prazo é contado a partir da criação do programa de computador ou de 1º de janeiro do ano subsequente à sua publicação. A proteção não é territorial, isto é, sua abrangência é internacional, compreendendo os 175 países signatários da Convenção de Berna (1886).</descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="2920">
-                <titulo>Criar resumo digital hash</titulo>
-                <descricao>Antes de solicitar o registro de seu programa de computador, realize a criptografia do texto ou do arquivo que contenha o código-fonte, utilizando um algoritmo apropriado para transformá-lo em um resumo digital hash. Esse resumo será inserido no formulário eletrônico de depósito.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3832">código-fonte do programa</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3909" tipo="presencial">
-                            <descricao>Residência ou sede da pessoa física ou jurídica criadora.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2921">
-                <titulo>Cadastrar-se no Portal do INPI</titulo>
-                <descricao>Após realizar o cadastro, guarde seu login e senha.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3833">Dados de identificação e contato da pessoa física ou jurídica, conforme o caso</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3911" tipo="web">
-                            <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                    <caso id="442" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
-                        <canal-de-prestacao id="3910" tipo="web">
-                            <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
-                        </canal-de-prestacao>
-                    </caso>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2922">
-                <titulo>Pagar a Guia de Recolhimento da União</titulo>
-                <descricao>Para solicitar o registro, você deve emitir a Guia de Recolhimento da União no Portal do INPI. Pague o documento antes de dar entrada no pedido e guarde o número, pois ele será necessário para o início do processo.       
-Ainda no sistema, faça o download da Declaração de Veracidade (DV) e assine-a digitalmente, para incluí-la depois no seu pedido.      
-
-Verifique as taxas [aqui](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/TabelaProgramadecomputador12092017.pdf)</descricao>
-                <documentos>
-                    <default>
-                        <item id="3834">Guia de Recolhimento da União (GRU)</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="135">
-                            <descricao>Taxas variáveis, link na descrição da etapa</descricao>
-                            <moeda>R$</moeda>
-                            <statusCustoVariavel>0</statusCustoVariavel>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3912" tipo="web">
-                            <descricao>https://gru.inpi.gov.br/pag/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2923">
-                <titulo>Preencher formulário</titulo>
-                <descricao>Apenas comece o processo após pagar a GRU. Acesse o e-RPC e preencha o formulário on-line.</descricao>
-                <documentos>
-                    <default>
-                        <item id="3835">Resumo Hash</item>
-                        <item id="3836">Declaração de Veracidade (DV) assinada digitalmente</item>
-                        <item id="3837">Formulário eletrônico</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3913" tipo="web">
-                            <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="2924">
-                <titulo>Receber resultado</titulo>
-                <descricao>Após realizar a solicitação, acompanhe as publicações do INPI relativas ao seu pedido na Revista da Propriedade Industrial (RPI).</descricao>
-                <documentos>
-                    <default>
-                        <item id="3839">Nº do pedido</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="3914" tipo="web">
-                            <descricao>http://revistas.inpi.gov.br/rpi/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
-            <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2991">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="2992">Empresas</item>
-            <item idSegmento="4" idServicoSegmento="2993">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Fiscalização do Estado</item>
-            <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
-            <item>Pesquisa e Desenvolvimento</item>
-            <item>Propriedade Industrial</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="3397">registro</item>
-            <item id="3398">programa de computador</item>
-            <item id="3399">software</item>
-            <item id="3400">propriedade intelectual</item>
-            <item id="3401">propriedade industrial</item>
-            <item id="3402">direitos autorais</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1025">[Lei de Programa de Computador nº 9.609/98](http://www.planalto.gov.br/ccivil_03/leis/L9609.htm)</item>
-            <item id="1026">[Lei de Direitos Autorais nº 9.610/98](http://www.planalto.gov.br/ccivil_03/leis/L9610.htm)</item>
-            <item id="1027">[Instrução Normativa nº 074/2017](http://www.inpi.gov.br/sobre/legislacao-1/IN742017.pdf)</item>
-        </legislacoes>
-    </servico>
-    <servico>
-        <id>obter-salario-maternidade</id>
-        <dbId>53</dbId>
-        <nome>Obter Salário-Maternidade</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="532">licença maternidade.</item>
-        </nomes-populares>
-        <descricao>O salário-maternidade é um benefício pago às seguradas que acabaram de ter um filho, seja por parto ou adoção, ou aos segurados que adotem uma criança.</descricao>
-        <contato>Central de Atendimento do INSS, número 135.</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <solicitantes>
-            <solicitante id="616">
-                <tipo>Mulheres</tipo>
-                <requisitos>•	Que estejam grávidas, passaram por trabalho de parto recente, tenham sofrido aborto não-criminoso ou adotem um filho;
-•	Sejam seguradas do INSS;
-•	Tenham 10 meses trabalhados de carência.</requisitos>
-            </solicitante>
-            <solicitante id="617">
-                <tipo>Homens</tipo>
-                <requisitos>•	Que adotem um filho ou que a cônjuge/companheira veio a falecer logo após o parto;
-•	Sejam seguradas do INSS;
-•	Tenham 10 meses trabalhados de carência.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="30" unidade="dias-corridos"/>
-            <descricao>Dependendo da região onde você mora e da procura por serviços do INSS na data do seu pedido, pode haver uma demora de até três meses.</descricao>
-        </tempo-total-estimado>
-        <etapas>
-            <etapa id="1867">
-                <titulo>Agendar atendimento em agência do INSS</titulo>
-                <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.
-OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de parto, assim como aquelas que sofreram aborto não-criminoso, esta etapa será cumprida na própria empresa, conforme procedimento próprio das mesma.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1781">Número do CPF;</item>
-                        <item id="1782">Data de nascimento;</item>
-                        <item id="1783">Informações de contato.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2321" tipo="web-agendar">
-                            <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1868">
-                <titulo>Comparecer à Agência do INSS do dia e horário agendados Descrição da Etapa 2 O que o usuário precisa fazer nesta etapa</titulo>
-                <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1789">Documento de identificação válido e oficial com foto;</item>
-                        <item id="1790">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1791">Carteiras de Trabalho e Previdência Social;</item>
-                        <item id="1792">Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
-                    </default>
-                    <caso id="304" descricao="Por nascimento">
-                        <documento>
-                            <id>1785</id>
-                            <descricao>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1784</id>
-                            <descricao>Certidão de nascimento (vivo ou morto) do dependente;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="305" descricao="Por guarda">
-                        <documento>
-                            <id>1786</id>
-                            <descricao>Termo de guarda com indicação de que a guarda se destina à adoção;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="306" descricao="Por adoção">
-                        <documento>
-                            <id>1787</id>
-                            <descricao>Nova certidão de nascimento expedida após o processo de adoção;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="307" descricao="Por aborto não-criminoso">
-                        <documento>
-                            <id>1788</id>
-                            <descricao>Atestado médico comprovando a situação.</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2322" tipo="presencial">
-                            <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="1869">
-                <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-                <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1793">Número do benefício;</item>
-                        <item id="1794">Data de nascimento;</item>
-                        <item id="1795">Cadastro de Pessoa Física - CPF;</item>
-                        <item id="1796">Documento de Identificação válido, original e com foto.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2323" tipo="web">
-                            <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="2324" tipo="presencial">
-                            <descricao>Na agência do INSS onde foi atendido.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
-            <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="2140">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Previdência Social</item>
-            <item>Proteção e Benefícios ao Trabalhador</item>
-            <item>Relações de Trabalho</item>
-            <item>Saúde</item>
-            <item>Trabalho</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="1524">nascimento</item>
-            <item id="1525">filho</item>
-            <item id="1526">adoção</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="493">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>inscrever-se-no-cadastro-unico-para-programas-sociais-do-governo-federal</id>
         <dbId>969</dbId>
         <nome>Inscrever-se no Cadastro Único para Programas Sociais do Governo Federal</nome>
@@ -65742,6 +65007,327 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
         </palavras-chave>
         <legislacoes>
             <item id="2049">[Edital](http://download.inep.gov.br/educacao_basica/enem/edital/2017/edital_enem_2017.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>registrar-programa-de-computador</id>
+        <dbId>1084</dbId>
+        <nome>Registrar programa de computador</nome>
+        <sigla></sigla>
+        <descricao>O registro de programa de computador assegura a autoria do software perante terceiros. Assim, garante maior segurança jurídica ao seu titular, caso haja demanda judicial para comprovar a autoria ou titularidade do programa.</descricao>
+        <contato>Mande uma mensagem pelo sistema [Fale Conosco](http://faleconosco.inpi.gov.br/faleconosco/)
+
+Veja o [Manual do Usuário](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/copy_of_ManualdousurioRPCeletrnicaV7.2.pdf) para o registro eletrônico de programa de computador.</contato>
+        <gratuito>false</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="1360">
+                <tipo>Pessoas físicas ou jurídicas</tipo>
+                <requisitos>Que desenvolveram um programa de computador ou sua versão mais atualizada.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="10" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <tipo>Válido por</tipo>
+            <quantidade>50</quantidade>
+            <unidade>anos</unidade>
+            <descricao>O prazo é contado a partir da criação do programa de computador ou de 1º de janeiro do ano subsequente à sua publicação. A proteção não é territorial, isto é, sua abrangência é internacional, compreendendo os 175 países signatários da Convenção de Berna (1886).</descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="2920">
+                <titulo>Criar resumo digital hash</titulo>
+                <descricao>Antes de solicitar o registro de seu programa de computador, realize a criptografia do texto ou do arquivo que contenha o código-fonte, utilizando um algoritmo apropriado para transformá-lo em um resumo digital hash. Esse resumo será inserido no formulário eletrônico de depósito.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3832">código-fonte do programa</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3909" tipo="presencial">
+                            <descricao>Residência ou sede da pessoa física ou jurídica criadora.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2921">
+                <titulo>Cadastrar-se no Portal do INPI</titulo>
+                <descricao>Após realizar o cadastro, guarde seu login e senha.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3833">Dados de identificação e contato da pessoa física ou jurídica, conforme o caso</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3911" tipo="web">
+                            <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                    <caso id="442" descricao="Advogado ou Pessoa física com o instrumento de procuração para representar um cliente nos serviços solicitados">
+                        <canal-de-prestacao id="3910" tipo="web">
+                            <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=29</descricao>
+                        </canal-de-prestacao>
+                    </caso>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2922">
+                <titulo>Pagar a Guia de Recolhimento da União</titulo>
+                <descricao>Para solicitar o registro, você deve emitir a Guia de Recolhimento da União no Portal do INPI. Pague o documento antes de dar entrada no pedido e guarde o número, pois ele será necessário para o início do processo.       
+Ainda no sistema, faça o download da Declaração de Veracidade (DV) e assine-a digitalmente, para incluí-la depois no seu pedido.      
+
+Verifique as taxas [aqui](http://www.inpi.gov.br/menu-servicos/programa-de-computador/arquivos/TabelaProgramadecomputador12092017.pdf)</descricao>
+                <documentos>
+                    <default>
+                        <item id="3834">Guia de Recolhimento da União (GRU)</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="135">
+                            <descricao>Taxas variáveis, link na descrição da etapa</descricao>
+                            <moeda>R$</moeda>
+                            <statusCustoVariavel>0</statusCustoVariavel>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3912" tipo="web">
+                            <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2923">
+                <titulo>Preencher formulário</titulo>
+                <descricao>Apenas comece o processo após pagar a GRU. Acesse o e-RPC e preencha o formulário on-line.</descricao>
+                <documentos>
+                    <default>
+                        <item id="3835">Resumo Hash</item>
+                        <item id="3836">Declaração de Veracidade (DV) assinada digitalmente</item>
+                        <item id="3837">Formulário eletrônico</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3913" tipo="web">
+                            <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="2924">
+                <titulo>Receber resultado</titulo>
+                <descricao>Após realizar a solicitação, acompanhe as publicações do INPI relativas ao seu pedido na Revista da Propriedade Industrial (RPI).</descricao>
+                <documentos>
+                    <default>
+                        <item id="3839">Nº do pedido</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="3914" tipo="web">
+                            <descricao>http://revistas.inpi.gov.br/rpi/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+            <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2991">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="2992">Empresas</item>
+            <item idSegmento="4" idServicoSegmento="2993">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Fiscalização do Estado</item>
+            <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+            <item>Pesquisa e Desenvolvimento</item>
+            <item>Propriedade Industrial</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="3397">registro</item>
+            <item id="3398">programa de computador</item>
+            <item id="3399">software</item>
+            <item id="3400">propriedade intelectual</item>
+            <item id="3401">propriedade industrial</item>
+            <item id="3402">direitos autorais</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="1025">[Lei de Programa de Computador nº 9.609/98](http://www.planalto.gov.br/ccivil_03/leis/L9609.htm)</item>
+            <item id="1026">[Lei de Direitos Autorais nº 9.610/98](http://www.planalto.gov.br/ccivil_03/leis/L9610.htm)</item>
+            <item id="1027">[Instrução Normativa nº 074/2017](http://www.inpi.gov.br/sobre/legislacao-1/IN742017.pdf)</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-salario-maternidade</id>
+        <dbId>53</dbId>
+        <nome>Obter Salário-Maternidade</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="532">licença maternidade.</item>
+        </nomes-populares>
+        <descricao>O salário-maternidade é um benefício pago às seguradas que acabaram de ter um filho, seja por parto ou adoção, ou aos segurados que adotem uma criança.</descricao>
+        <contato>Central de Atendimento do INSS, número 135.</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="616">
+                <tipo>Mulheres</tipo>
+                <requisitos>•	Que estejam grávidas, passaram por trabalho de parto recente, tenham sofrido aborto não-criminoso ou adotem um filho;
+•	Sejam seguradas do INSS;
+•	Tenham 10 meses trabalhados de carência.</requisitos>
+            </solicitante>
+            <solicitante id="617">
+                <tipo>Homens</tipo>
+                <requisitos>•	Que adotem um filho ou que a cônjuge/companheira veio a falecer logo após o parto;
+•	Sejam seguradas do INSS;
+•	Tenham 10 meses trabalhados de carência.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="30" unidade="dias-corridos"/>
+            <descricao>Dependendo da região onde você mora e da procura por serviços do INSS na data do seu pedido, pode haver uma demora de até três meses.</descricao>
+        </tempo-total-estimado>
+        <etapas>
+            <etapa id="1867">
+                <titulo>Agendar atendimento em agência do INSS</titulo>
+                <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.
+OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de parto, assim como aquelas que sofreram aborto não-criminoso, esta etapa será cumprida na própria empresa, conforme procedimento próprio das mesma.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1781">Número do CPF;</item>
+                        <item id="1782">Data de nascimento;</item>
+                        <item id="1783">Informações de contato.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2321" tipo="web-agendar">
+                            <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1868">
+                <titulo>Comparecer à Agência do INSS do dia e horário agendados Descrição da Etapa 2 O que o usuário precisa fazer nesta etapa</titulo>
+                <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1789">Documento de identificação válido e oficial com foto;</item>
+                        <item id="1790">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="1791">Carteiras de Trabalho e Previdência Social;</item>
+                        <item id="1792">Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
+                    </default>
+                    <caso id="304" descricao="Por nascimento">
+                        <documento>
+                            <id>1785</id>
+                            <descricao>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1784</id>
+                            <descricao>Certidão de nascimento (vivo ou morto) do dependente;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="305" descricao="Por guarda">
+                        <documento>
+                            <id>1786</id>
+                            <descricao>Termo de guarda com indicação de que a guarda se destina à adoção;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="306" descricao="Por adoção">
+                        <documento>
+                            <id>1787</id>
+                            <descricao>Nova certidão de nascimento expedida após o processo de adoção;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="307" descricao="Por aborto não-criminoso">
+                        <documento>
+                            <id>1788</id>
+                            <descricao>Atestado médico comprovando a situação.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2322" tipo="presencial">
+                            <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1869">
+                <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+                <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1793">Número do benefício;</item>
+                        <item id="1794">Data de nascimento;</item>
+                        <item id="1795">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="1796">Documento de Identificação válido, original e com foto.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2323" tipo="web">
+                            <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2324" tipo="presencial">
+                            <descricao>Na agência do INSS onde foi atendido.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+            <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2140">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Previdência Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Saúde</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1524">nascimento</item>
+            <item id="1525">filho</item>
+            <item id="1526">adoção</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="493">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
         </legislacoes>
     </servico>
     <servico>
@@ -71378,256 +70964,6 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
         </legislacoes>
     </servico>
     <servico>
-        <id>naturalizar-se-brasileiro</id>
-        <dbId>4</dbId>
-        <nome>Naturalizar-se Brasileiro</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="1498">Naturalização</item>
-        </nomes-populares>
-        <descricao>É o ato pelo qual uma pessoa adquire voluntariamente a nacionalidade brasileira, desde que atenda os requisitos estabelecidos em lei.</descricao>
-        <contato>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
-Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.
-
-Para consultar seu processo, acesse: http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei.
-
-Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
-        <gratuito>false</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <link-servico-digital></link-servico-digital>
-        <solicitantes>
-            <solicitante id="2250">
-                <tipo>Estrangeiro(a) casado(a) com brasileiro(a), ou que seja filho(a) de brasileiro(a) ou tenha filho(a) brasileiro(a)</tipo>
-                <requisitos>Morar no Brasil há um ano, saber ler e escrever português e ser registrado como permanente;
--Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
-- Ter boa conduta;
-- Cumprir demais requisitos do art. 112 da Lei 6.815/80
--Ser permanente.</requisitos>
-            </solicitante>
-            <solicitante id="2249">
-                <tipo>Estrangeiro que reside no Brasil</tipo>
-                <requisitos>Morar no Brasil há quatro anos, saber ler e escrever português e ser registrado como permanente;
-- Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
-- Ter boa conduta;
-- Cumprir demais requisitos do art. 112 da Lei 6.815/80;
--Ser permanente.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="6" max="12" unidade="meses"/>
-            <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="4521">
-                <titulo>Apresentar Requerimento</titulo>
-                <descricao>O estrangeiro deverá solicitar, preencher e entregar o formulário de naturalização na Delegacia de Polícia Federal mais próxima de sua residência.
-[Consulte a unidade mais próxima de você](http://www.pf.gov.br/institucional/unidades)</descricao>
-                <documentos>
-                    <default>
-                        <item id="1119">Requerimento devidamente assinado pelo naturalizando;</item>
-                        <item id="1120">Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa;</item>
-                        <item id="1121">Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores;</item>
-                        <item id="1122">Cópia da cédula de identidade para estrangeiro permanente atualizada;</item>
-                        <item id="1123">Cópia do CPF ou cópia do recibo de entrega da última declaração de imposto de renda (pessoa física);</item>
-                        <item id="1124">Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização;</item>
-                        <item id="1125">Atestado de antecedentes criminais expedido pela Polícia Civil dos Estados onde residiu nos últimos cinco anos;</item>
-                        <item id="1126">Certidão negativa de ações criminais da Justiça Federal dos Estados onde residiu nos últimos cinco anos;</item>
-                        <item id="1127">Certidão dos cartórios de distribuição de ações criminais das comarcas onde residiu nos últimos cinco anos;</item>
-                        <item id="1128">Atestado de antecedentes criminais expedido pelo país de origem, legalizado junto à repartição consular brasileira e traduzido, no Brasil, por tradutor público Juramentado ou devidamente inscrito na Junta Comercial;</item>
-                        <item id="1129">Comprovante de residência, tais como os descritos no art. 11 da Portaria MJ nº 1.949/2015</item>
-                        <item id="1130">Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
-                        <item id="1131">Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
-                    </default>
-                    <caso id="174" descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
-                        <documento>
-                            <id>1116</id>
-                            <descricao>Além dos documentos listados acima, apresentar:</descricao>
-                        </documento>
-                        <documento>
-                            <id>1118</id>
-                            <descricao>Cópia da certidão de casamento ou união estável com brasileiro, se for o caso;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1117</id>
-                            <descricao>Cópia da certidão de nascimento comprovando o vínculo de parentesco, se for o caso;</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="24">
-                            <descricao>Taxa de naturalização.......</descricao>
-                            <moeda>R$</moeda>
-                            <valor>296,64</valor>
-                            <valorVariavel></valorVariavel>
-                            <statusCustoVariavel>0</statusCustoVariavel>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1362" tipo="presencial">
-                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4522">
-                <titulo>Realizar teste de português, se necessário.</titulo>
-                <descricao>O requerente poderá realizar o teste de português em momento a ser agendado pelos servidores da Polícia Federal, conforme a disponibilidade do órgão.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1363" tipo="presencial">
-                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4523">
-                <titulo>Participar de entrevista com agente de Polícia Federal, se necessário.</titulo>
-                <descricao>Caso sejam necessários maiores esclarecimentos, os servidores da Polícia Federal poderão agendar entrevista com o naturalizando, a ser realizada na unidade onde foi protocolado o pedido de Naturalização.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1132">Documento complementar pode solicitado pelo servidor da Polícia Federal.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1364" tipo="presencial">
-                            <descricao>O estrangeiro deve se dirigir à Unidade da Polícia Federal onde foi protocolado seu pedido de naturalização, podendo ser alterada em caso de mudança de endereço do requerente.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4524">
-                <titulo>Complementar documentação, caso seja necessário.</titulo>
-                <descricao>Nesta fase, o Departamento de Migrações do Ministério da Justiça e Cidadania poderá solicitar ao naturalizando que apresente documentos para complementar as informações do processo.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1366" tipo="postal">
-                            <descricao>Ministério da Justiça e Cidadania
-Esplanada dos Ministério, Bloco T, Anexo II, Sala 318
-CEP: 70.064-901</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1365" tipo="web">
-                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1367" tipo="web-acompanhar">
-                            <descricao>http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4525">
-                <titulo>Apresentar pedido de reconsideração (desarquivamento), se o pedido de naturalização for indeferido.</titulo>
-                <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de naturalização, o requerente poderá apresentar um pedido de reconsideração, solicitando o desarquivamento do processo.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1133">Requerimento solicitando desarquivamento</item>
-                        <item id="1134">Comprovante de pagamento da GRU (Pedido de Desarquivamento de Naturalização) https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2;</item>
-                        <item id="1135">Documentos que demonstrem a alteração de uma situação anterior (como, por exemplo, o cumprimento do prazo legal para obter a naturalização), se for o caso;</item>
-                        <item id="1136">Documentos que complementem o processo, se for o caso;</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="25">
-                            <descricao>Taxa de desarquivamento.........</descricao>
-                            <moeda>R$</moeda>
-                            <valor>59.326,00</valor>
-                            <valorVariavel></valorVariavel>
-                            <statusCustoVariavel>0</statusCustoVariavel>
-                        </custo>
-                    </default>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1368" tipo="web">
-                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="1369" tipo="presencial">
-                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4526">
-                <titulo>Apresentar recurso, se o pedido de reconsideração for indeferido.</titulo>
-                <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de reconsideração, o requerente poderá apresentar recurso.</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1370" tipo="e-mail">
-                            <descricao>processos.migracoes@mj.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4527">
-                <titulo>Emitir Certificado de Naturalização, quando necessário.</titulo>
-                <descricao>O certificado é expedida gratuitamente e sua autenticidade poderá ser conferida no próprio endereço eletrônico. Qualquer pessoa pode acessar o site e solicitar uma certidão ou conferir sua autenticidade.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1137">Não há.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="1371" tipo="web">
-                            <descricao>http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
-            <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="4646">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="8462">Estrangeiro</item>
-            <item id="8463">Pedir naturalização</item>
-            <item id="8464">Naturalização Ordinária</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2030">(Decreto nº 86.715/81)[http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1981-12-10;86715]</item>
-            <item id="2031">(Lei 6.815/80)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815]</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>acessar-a-informacao-publica-a-orgaos-e-entidades-do-poder-executivo-federal</id>
         <dbId>919</dbId>
         <nome>Acessar à informação pública a órgãos e entidades do Poder Executivo Federal</nome>
@@ -77107,167 +76443,6 @@ A solicitação deve ser feita com o mínimo de cinco dias úteis da data preten
         </palavras-chave>
     </servico>
     <servico>
-        <id>viajar-para-outro-pais-com-seu-cao-ou-gato</id>
-        <dbId>1159</dbId>
-        <nome>Viajar para outro país com seu cão ou gato</nome>
-        <sigla>CVI</sigla>
-        <nomes-populares>
-            <item id="1665">Certificado Veterinário Internacional</item>
-        </nomes-populares>
-        <descricao>O trânsito de cães e gatos entre países exige documento emitido pela autoridade veterinária do país de origem e aceito pelos países de destino que ateste as condições e o histórico de saúde do animal de estimação, bem como o atendimento às exigências sanitárias do país de destino. No Brasil, o documento utilizadopara essa finalidade é o CVI (Certificado Veterinário Internacional), que é expedido por Auditores Fiscais Federais Agropecuários – Médicos Veterinários - das unidades de Vigilância Agropecuária Internacional (Vigiagro), vinculadas à Secretaria de Defesa Agropecuária (SDA) do Ministério da Agricultura, Pecuária e Abastecimento (MAPA). Cada país tem requisitos específicos para autorizar o ingresso de cães e gatos no seu território. Com a automação desse processo, agora é possívela emissão online do Certificado Veterinário Internacional, com assinatura digital do Auditor Fiscal Federal Agropecuário, ou seja, sem a necessidade de deslocamento para solicitar e receber o documento. De início, a solicitação pode ser feita por meio digital se a viagem for para os Estados Unidos e em breve será expandida para outros países.
-Cada país tem requisitos específicos para autorizar o ingresso de cães e gatos no seu território.
-Com a automação desse processo o objetivo é a geração digital do Certificado Veterinário Internacional, com assinatura digital pelo Auditor Fiscal Federal responsável.
-A solicitação pode ser feita por meio digital se a viagem for para os Estados Unidos, países do Mercosul e da União Europeia.</descricao>
-        <contato>**Email:** vigiagro@agricultura.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>true</servico-digital>
-        <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
-        <solicitantes>
-            <solicitante id="2509">
-                <tipo>Qualquer cidadão</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <em-media max="2" unidade="dias-uteis"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="5003">
-                <titulo>Cadastrar a solicitação</titulo>
-                <descricao>Etapa destinada ao cidadão que vai abrir sua solicitação de Certificado Veterinário Internacional. Nessa etapa o cidadão deve preencher o destino para o qual ele deseja enviar o animal e as informações específicas conforme exigências do país de destino.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4366">Documentos que comprovem o atendimento aos requisitos sanitários específicos do país de destino</item>
-                        <item id="4367">Carteira de vacinação do animal</item>
-                    </default>
-                    <caso id="504" descricao="Se realizado pela Web">
-                        <documento>
-                            <id>4364</id>
-                            <descricao>CPF</descricao>
-                        </documento>
-                        <documento>
-                            <id>4365</id>
-                            <descricao>Senha do Brasil Cidadão</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="5129" tipo="web">
-                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4137" tipo="presencial">
-                            <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4138" tipo="presencial">
-                            <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="5004">
-                <titulo>Acompanhar o processo</titulo>
-                <descricao>Após a solicitação feita pelo cidadão, o processo é destinado a um Auditor Fiscal Federal Agropecuário que é responsável por analisar a solicitação e todos os documentos obrigatórios. Esse profissional emite seu parecer informando se a solicitação está aprovada ou indicando as adequações necessárias. O Auditor pode nessa etapa devolver ao cidadão solicitando mais informações ou correções.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4368">CPF</item>
-                        <item id="4369">Senha do Brasil Cidadão</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="5134" tipo="telefone">
-                            <descricao>No telefone informado no momento da requisição</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="5132" tipo="web">
-                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="5005">
-                <titulo>Receber o CVI</titulo>
-                <descricao>Após aprovação da solicitação, o Auditor Fiscal Federal Agropecuário emite o Certificado Veterinário Internacional gerando um PDF que vai ser assinado digitalmente por ele. Após emissão no sistema, o cidadão deverá imprimir o documento e apresenta-lo à Autoridade Veterinária Oficial no país de destino, o qual poderá conferir a autencidade do CVI através de um código de verificação.</descricao>
-                <documentos>
-                    <default>
-                        <item id="4372">Documento de identificação oficial</item>
-                    </default>
-                    <caso id="505" descricao="Se emitido via web">
-                        <documento>
-                            <id>4371</id>
-                            <descricao>Senha do Brasil Cidadão</descricao>
-                        </documento>
-                        <documento>
-                            <id>4370</id>
-                            <descricao>CPF</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="5135" tipo="presencial">
-                            <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="5133" tipo="web">
-                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4142" tipo="presencial">
-                            <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
-            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="5042">Cidadãos</item>
-            <item idSegmento="3" idServicoSegmento="5043">Empresas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Agropecuária, extrativismo e pesca</item>
-            <item>Defesa agropecuária</item>
-            <item>Emigrações e Imigrações</item>
-            <item>Fiscalização do Estado</item>
-            <item>Vigilância Sanitária</item>
-            <item>Turismo</item>
-            <item>Transporte Aéreo</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="9344">CVI</item>
-            <item id="9345">CZI</item>
-            <item id="9346">viajar com cachorro</item>
-            <item id="9347">viajar com gato</item>
-            <item id="9348">viagem</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2196">[Instrução Normativa nº 54, de 18 de novembro de 2013](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/animais-estimacao/arquivos/in-542013.pdf)</item>
-            <item id="2197">[Decreto 24.548/1934 ](http://www.planalto.gov.br/ccivil_03/decreto/1930-1949/d24548.htm)</item>
-            <item id="2198">[Instrução Normativa nº 36, de 14 de novembro de 2006](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=recuperarTextoAtoTematicaPortal&amp;codigoTematica=1265040)</item>
-            <item id="2199">[Decreto 5.741/2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
-            <item id="2200">[Instrução Normativa nº 5, de 7 de fevereiro de 2013](http://www.agricultura.gov.br/assuntos/sanidade-animal-e-vegetal/saude-animal/transito-animal/arquivos-transito-internacional/RequisitossanitriosparaingressaraoBrasilINMAPAN5de7defevereirode2013.pdf)</item>
-        </legislacoes>
-        <servicos-relacionados>
-            <item>62</item>
-        </servicos-relacionados>
-    </servico>
-    <servico>
         <id>consultar-situacao-cadastral-de-cpf</id>
         <dbId>1477</dbId>
         <nome>Consultar situação cadastral de CPF</nome>
@@ -77345,6 +76520,162 @@ A solicitação pode ser feita por meio digital se a viagem for para os Estados 
             <item>1683</item>
             <item>1062</item>
         </servicos-relacionados>
+    </servico>
+    <servico>
+        <id>credenciar-laboratorio-na-rede-nacional-de-laboratorios-agropecuarios-do-mapa</id>
+        <dbId>1337</dbId>
+        <nome>Credenciar Laboratório na Rede Nacional de Laboratórios Agropecuários do MAPA</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="1667">Rede MAPA de laboratórios.</item>
+        </nomes-populares>
+        <descricao>O credenciamento de laboratórios junto ao MAPA se destina a atender, de forma complementar,  aos programas e controles oficias do MAPA, suprindo demandas por ensaios laboratoriais excedentes, não atendidas pelos laboratórios do próprio MAPA.</descricao>
+        <contato>¨ **Telefone:** (61) 3218-2041      
+¨ **Email:** credenciamento.cgal@agricultura.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>true</servico-digital>
+        <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
+        <solicitantes>
+            <solicitante id="2511">
+                <tipo>Laboratórios</tipo>
+                <requisitos>Públicos ou privados, que realizam ensaios laboratoriais para os programas e controles oficiais do MAPA.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="3" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5009">
+                <titulo>Requerer credenciamento</titulo>
+                <descricao>Os modelos dos formulários, relações e termos podem ser obtidos [aqui](http://www.agricultura.gov.br/assuntos/laboratorios/credenciamento).</descricao>
+                <documentos>
+                    <default>
+                        <item id="5157">Formulário de solicitação de credenciamento, preenchido e assinado pelo representante legal do laboratório;</item>
+                        <item id="5158">Cópia do contrato social do laboratório ou documento equivalente, válido e atualizado;</item>
+                        <item id="5159">Cópia do Cadastro Nacional de Pessoa Jurídica – CNPJ do laboratório, válido e atualizado;</item>
+                        <item id="5160">Cópia do alvará de funcionamento do laboratório ou documento equivalente, expedido pelo órgão competente, válido e atualizado;</item>
+                        <item id="5161">Croqui das instalações do laboratório, assinado por profissional com registro válido junto ao Conselho Regional de Engenharia e Agronomia - CREA ou no Conselho de Arquitetura e Urbanisbo -  CAU, indicando a finalidade de cada ambiente;</item>
+                        <item id="5162">Memorial descritivo das instalações do laboratório, assinado por profissional com registro válido junto ao CREA ou CAU;</item>
+                        <item id="5163">Descrição do fluxo das amostras no laboratório, indicando as áreas percorridas desde a sua recepção até a finalização dos ensaios, seu armazenamento e descarte;</item>
+                        <item id="5164">Relação de equipamentos, indicando marca, modelo e código de identificação no laboratório;</item>
+                        <item id="5165">Termo de compromisso com o credenciamento, assinado pelo representante legal do laboratório, com firma reconhecida em cartório;</item>
+                        <item id="5166">Termo de compromisso de responsabilidade técnica, de cada um dos responsáveis técnicos e dos responsáveis técnicos substitutos, com firma reconhecida em cartório;</item>
+                        <item id="5167">Cópia da carteira de habilitação profissional, válida e atualizada, emitida pelo respectivo conselho de classe, de cada um dos Responsáveis Técnicos e dos Responsáveis Técnicos Substitutos;</item>
+                        <item id="5168">Cópia da lista mestra de documentos do Sistema de Gestão da Qualidade do laboratório;</item>
+                        <item id="5169">Cópias do certificado e do escopo de acreditação na ABNT NBR ISO/IEC 17025 – Requisitos Gerais para a Competência de Laboratórios de Ensaio e Calibração, emitidos pelo INMETRO, contemplando os ensaios constantes na solicitação de credenciamento;</item>
+                        <item id="5170">Indicação deum de seus representantes legais, denominado Responsável pela Direção do Laboratório no âmbito do credenciamento junto ao MAPA, que será responsável pela interlocução entre o laboratório e a CGAL/SDA;</item>
+                        <item id="5171">Nomeação formal de um profissional de nível superior, do seu quadro efetivo de funcionários, que será o Responsável pelo Sistema de Gestão da Qualidade no âmbito do credenciamento junto ao MAPA.</item>
+                    </default>
+                    <caso id="582" descricao="Para cada ensaio a ser credenciado, deverão ser informados:">
+                        <documento>
+                            <id>5152</id>
+                            <descricao>Técnica aplicada na realização do ensaio;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5151</id>
+                            <descricao>Código do procedimento referente à execução do método no laboratório, com o seu respectivo número de revisão;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5156</id>
+                            <descricao>A referência bibliográfica do método, quando pertinente;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5155</id>
+                            <descricao>Matriz à qual o método será aplicado; e</descricao>
+                        </documento>
+                        <documento>
+                            <id>5154</id>
+                            <descricao>A espécie, a cultura ou o hospedeiro, quando pertinente.</descricao>
+                        </documento>
+                        <documento>
+                            <id>5153</id>
+                            <descricao>Determinação analítica a ser obtida;</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5136" tipo="web">
+                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1337</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4574" tipo="postal">
+                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento -Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4573" tipo="presencial">
+                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento - Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5010">
+                <titulo>Receber resultado</titulo>
+                <descricao>O credenciamento do laboratório será publicado no Diário Oficial da União</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4575" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5011">
+                <titulo>Ser autorizado a realizar ensaios</titulo>
+                <descricao>O laboratório credenciado somente poderá realizar ensaios para os programas e
+controles oficiais do MAPA após ter seus dados e escopo publicados no sítio eletrônico do MAPA</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4576" tipo="web">
+                            <descricao>http://www.agricultura.gov.br/assuntos/laboratorios/rede-nacional-de-laboratorios-agropecuarios/rede-nacional-de-laboratorios-agropecuarios</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="5046">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="5047">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Agropecuária, extrativismo e pesca</item>
+            <item>Defesa agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9353">laboratórios</item>
+            <item id="9354">LANAGRO</item>
+            <item id="9355">ensaio laboratorial</item>
+            <item id="9356">laboratório agropecuário</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2206">[DECRETO Nº 5.741, DE 30 DE MARÇO DE 2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
+            <item id="2207">[INSTRUÇÃO NORMATIVA No - 41, DE 29 DE OUTUBRO DE 2015](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/IN412015.pdf)</item>
+            <item id="2210">[INSTRUÇÃO NORMATIVA Nº 19, DE 25 DE JUNHO DE 2014](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/instrucao-normativa-no-19-de-25-06-2014-alteracao-de-artigos-da-in57-2013.pdf)</item>
+            <item id="2208">[INSTRUÇÃO NORMATIVA No 57, DE 11 DE DEZEMBRO DE 2013](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/InstruoNormativan57de11.12.2013versoPDFdowordNovaRedaoNRsegundoIN19e41.pdf)</item>
+            <item id="2209">[DECRETO Nº 8.471, DE 22 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/D8471.htm)</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>consultar-debitos-inscritos-em-divida-ativa-da-uniao</id>
@@ -77533,6 +76864,167 @@ III. O detalhamento dos débitos do Simples Nacional não constam no Sistema da 
         </servicos-relacionados>
     </servico>
     <servico>
+        <id>viajar-para-outro-pais-com-seu-cao-ou-gato</id>
+        <dbId>1159</dbId>
+        <nome>Viajar para outro país com seu cão ou gato</nome>
+        <sigla>CVI</sigla>
+        <nomes-populares>
+            <item id="1665">Certificado Veterinário Internacional</item>
+        </nomes-populares>
+        <descricao>O trânsito de cães e gatos entre países exige documento emitido pela autoridade veterinária do país de origem e aceito pelos países de destino que ateste as condições e o histórico de saúde do animal de estimação, bem como o atendimento às exigências sanitárias do país de destino. No Brasil, o documento utilizadopara essa finalidade é o CVI (Certificado Veterinário Internacional), que é expedido por Auditores Fiscais Federais Agropecuários – Médicos Veterinários - das unidades de Vigilância Agropecuária Internacional (Vigiagro), vinculadas à Secretaria de Defesa Agropecuária (SDA) do Ministério da Agricultura, Pecuária e Abastecimento (MAPA). Cada país tem requisitos específicos para autorizar o ingresso de cães e gatos no seu território. Com a automação desse processo, agora é possívela emissão online do Certificado Veterinário Internacional, com assinatura digital do Auditor Fiscal Federal Agropecuário, ou seja, sem a necessidade de deslocamento para solicitar e receber o documento. De início, a solicitação pode ser feita por meio digital se a viagem for para os Estados Unidos e em breve será expandida para outros países.
+Cada país tem requisitos específicos para autorizar o ingresso de cães e gatos no seu território.
+Com a automação desse processo o objetivo é a geração digital do Certificado Veterinário Internacional, com assinatura digital pelo Auditor Fiscal Federal responsável.
+A solicitação pode ser feita por meio digital se a viagem for para os Estados Unidos, países do Mercosul e da União Europeia.</descricao>
+        <contato>**Email:** vigiagro@agricultura.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>true</servico-digital>
+        <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
+        <solicitantes>
+            <solicitante id="2509">
+                <tipo>Qualquer cidadão</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <em-media max="2" unidade="dias-uteis"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5003">
+                <titulo>Cadastrar a solicitação</titulo>
+                <descricao>Etapa destinada ao cidadão que vai abrir sua solicitação de Certificado Veterinário Internacional. Nessa etapa o cidadão deve preencher o destino para o qual ele deseja enviar o animal e as informações específicas conforme exigências do país de destino.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4366">Documentos que comprovem o atendimento aos requisitos sanitários específicos do país de destino</item>
+                        <item id="4367">Carteira de vacinação do animal</item>
+                    </default>
+                    <caso id="504" descricao="Se realizado pela Web">
+                        <documento>
+                            <id>4364</id>
+                            <descricao>CPF</descricao>
+                        </documento>
+                        <documento>
+                            <id>4365</id>
+                            <descricao>Senha do Brasil Cidadão</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5129" tipo="web">
+                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4137" tipo="presencial">
+                            <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4138" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5004">
+                <titulo>Acompanhar o processo</titulo>
+                <descricao>Após a solicitação feita pelo cidadão, o processo é destinado a um Auditor Fiscal Federal Agropecuário que é responsável por analisar a solicitação e todos os documentos obrigatórios. Esse profissional emite seu parecer informando se a solicitação está aprovada ou indicando as adequações necessárias. O Auditor pode nessa etapa devolver ao cidadão solicitando mais informações ou correções.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4368">CPF</item>
+                        <item id="4369">Senha do Brasil Cidadão</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5134" tipo="telefone">
+                            <descricao>No telefone informado no momento da requisição</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="5132" tipo="web">
+                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5005">
+                <titulo>Receber o CVI</titulo>
+                <descricao>Após aprovação da solicitação, o Auditor Fiscal Federal Agropecuário emite o Certificado Veterinário Internacional gerando um PDF que vai ser assinado digitalmente por ele. Após emissão no sistema, o cidadão deverá imprimir o documento e apresenta-lo à Autoridade Veterinária Oficial no país de destino, o qual poderá conferir a autencidade do CVI através de um código de verificação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4372">Documento de identificação oficial</item>
+                    </default>
+                    <caso id="505" descricao="Se emitido via web">
+                        <documento>
+                            <id>4371</id>
+                            <descricao>Senha do Brasil Cidadão</descricao>
+                        </documento>
+                        <documento>
+                            <id>4370</id>
+                            <descricao>CPF</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5135" tipo="presencial">
+                            <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="5133" tipo="web">
+                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4142" tipo="presencial">
+                            <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="5042">Cidadãos</item>
+            <item idSegmento="3" idServicoSegmento="5043">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Agropecuária, extrativismo e pesca</item>
+            <item>Defesa agropecuária</item>
+            <item>Emigrações e Imigrações</item>
+            <item>Fiscalização do Estado</item>
+            <item>Vigilância Sanitária</item>
+            <item>Turismo</item>
+            <item>Transporte Aéreo</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9344">CVI</item>
+            <item id="9345">CZI</item>
+            <item id="9346">viajar com cachorro</item>
+            <item id="9347">viajar com gato</item>
+            <item id="9348">viagem</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2196">[Instrução Normativa nº 54, de 18 de novembro de 2013](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/animais-estimacao/arquivos/in-542013.pdf)</item>
+            <item id="2197">[Decreto 24.548/1934 ](http://www.planalto.gov.br/ccivil_03/decreto/1930-1949/d24548.htm)</item>
+            <item id="2198">[Instrução Normativa nº 36, de 14 de novembro de 2006](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=recuperarTextoAtoTematicaPortal&amp;codigoTematica=1265040)</item>
+            <item id="2199">[Decreto 5.741/2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
+            <item id="2200">[Instrução Normativa nº 5, de 7 de fevereiro de 2013](http://www.agricultura.gov.br/assuntos/sanidade-animal-e-vegetal/saude-animal/transito-animal/arquivos-transito-internacional/RequisitossanitriosparaingressaraoBrasilINMAPAN5de7defevereirode2013.pdf)</item>
+        </legislacoes>
+        <servicos-relacionados>
+            <item>62</item>
+        </servicos-relacionados>
+    </servico>
+    <servico>
         <id>credenciar-centro-de-especialidade-odontologica</id>
         <dbId>1044</dbId>
         <nome>Credenciar Centro de Especialidade Odontológica</nome>
@@ -77655,6 +77147,517 @@ O CEO deve realizar uma produção mínima mensal em cada especialidade, definid
         <servicos-relacionados>
             <item>1549</item>
         </servicos-relacionados>
+    </servico>
+    <servico>
+        <id>cadastrar-se-no-site-turismo-acessivel</id>
+        <dbId>83</dbId>
+        <nome>Cadastrar-se no Site Turismo Acessível</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="1548">Turismo Acessível</item>
+            <item id="1549">Guia Turismo Acessível</item>
+        </nomes-populares>
+        <descricao>O site Turismo Acessível é colaborativo e você pode cadastrar, avaliar e consultar a acessibilidade de pontos turísticos, hotéis, restaurantes e atrações diversas. A ferramenta permite ao cidadão inserir novos estabelecimentos ou atrações, ajudando as pessoas com deficiência ou mobilidade reduzida a viajarem pelo Brasil com mais autonomia. Está disponível na internet e para download para aplicativos móveis.
+
+Neste espaço você aprenderá a avaliar um estabelecimento ou atrativo turístico.</descricao>
+        <contato>Departamento de Marketing e Apoio à Comercialização  
+Coordenação de Produtos Turísticos   
+Anexo ID - SCN, Quadra 06, Bloco A, 10º andar - Brasília - DF
+Telefone: 61 2023-8165   
+Email - incentivo.viagens@turismo.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>true</servico-digital>
+        <link-servico-digital>http://www.turismoacessivel.gov.br/ta/cadastroUsuario/cadastrarUsuario.mtur</link-servico-digital>
+        <solicitantes>
+            <solicitante id="2319">
+                <tipo>Pessoas com deficiência ou mobilidade reduzida.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="2320">
+                <tipo>Público em geral</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="24" unidade="horas"/>
+            <descricao>As avaliações cadastradas no portal são submetidas a moderação do Ministério do Turismo, podendo levar algumas horas para serem publicadas.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="4694">
+                <titulo>Cadastramento do Usuário no Portal</titulo>
+                <descricao>O cadastramento do usuário o habilita a utilizar o Portal e ter acesso às informações e funcionalidades básicas do site.  Após o cadastramento, o usuário estará habilitado a utilizar os recursos do Turismo Acessível, desde que haja aceitação prévia aos termos e condições de estabelecidos.</descricao>
+                <documentos>
+                    <default>
+                        <item id="4535">Dados pessoais e de contato</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2189" tipo="aplicativo-movel">
+                            <descricao>[App Store](https://itunes.apple.com/br/app/turismo-acessivel/id924446289);       
+[Windows Phone](https://www.microsoft.com/pt-br/store/apps/turismo-acessivel/9nblgggzjgqg);       
+[Google Play](https://play.google.com/store/apps/details?id=br.gov.mtur.ta)</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2188" tipo="web">
+                            <descricao>http://www.turismoacessivel.gov.br/ta/cadastroUsuario/cadastrarUsuario.mtur</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4695">
+                <titulo>Avaliação dos serviços cadastrados</titulo>
+                <descricao>1- Pesquisar nome da cidade onde se encontra o estabelecimento ou atrativo que você quer avaliar;  
+2- Pesquisar nome do estabelecimento ou atrativo que desejar avaliar;  
+3- Selecionar estabelecimento ou atrativo listado;  
+4- Selecionar a perspectiva de Acessibilidade que você quer avaliar;  
+5- Responder as questões sobre local, infraestrutura de acesso, sinalização, equipamentos e equipe de atendimento;  
+6- Indicar nota, data da visita e avaliação sobre o empreendimento ou atrativo.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2190" tipo="web">
+                            <descricao>http://www.turismoacessivel.gov.br/ta/login.mtur</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/72084" dbId="37547">
+            <nomeOrgao>Ministério do Turismo (MTur)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="4733">Cidadãos</item>
+            <item idSegmento="2" idServicoSegmento="4734">Órgãos e entidades públicas</item>
+            <item idSegmento="4" idServicoSegmento="4735">Demais segmentos (ONGs, organizações sociais, etc)</item>
+            <item idSegmento="3" idServicoSegmento="4736">Empresas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Esporte e Lazer</item>
+            <item>Turismo</item>
+            <item>Cultura</item>
+            <item>Cidadania</item>
+            <item>Assistência ao Portador de Deficiência</item>
+            <item>Lazer</item>
+            <item>Infraestrutura Urbana</item>
+            <item>Patrimônio</item>
+            <item>Normalização e Qualidade</item>
+            <item>Difusão Cultural</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="8742">Acessibilidade</item>
+            <item id="8743">Turismo</item>
+            <item id="8744">Pessoa com deficiência</item>
+            <item id="8745">Viagens</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2086">[Lei Brasileira da Inclusão - Lei nº 13.146, de 06 de julho de 2015](http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:2015-07-06;13146)</item>
+            <item id="2087">[Norma Brasileira ABNT NBR 9050](http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf)</item>
+        </legislacoes>
+        <servicos-relacionados>
+            <item>73</item>
+        </servicos-relacionados>
+    </servico>
+    <servico>
+        <id>naturalizar-se-brasileiro</id>
+        <dbId>4</dbId>
+        <nome>Naturalizar-se Brasileiro</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="1498">Naturalização</item>
+        </nomes-populares>
+        <descricao>É o ato pelo qual uma pessoa adquire voluntariamente a nacionalidade brasileira, desde que atenda os requisitos estabelecidos em lei.</descricao>
+        <contato>O estrangeiro deve se dirigir à Delegacia de Polícia Federal mais próximo de sua residência.
+Consulte a unidade mais próxima de você: http://www.pf.gov.br/institucional/unidades.
+
+Para consultar seu processo, acesse: http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei.
+
+Divisão de Naturalizaçâo: processos.migracoes@mj.gov.br.</contato>
+        <gratuito>false</gratuito>
+        <porcentagem>0</porcentagem>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <link-servico-digital></link-servico-digital>
+        <solicitantes>
+            <solicitante id="2250">
+                <tipo>Estrangeiro(a) casado(a) com brasileiro(a), ou que seja filho(a) de brasileiro(a) ou tenha filho(a) brasileiro(a)</tipo>
+                <requisitos>Morar no Brasil há um ano, saber ler e escrever português e ser registrado como permanente;
+-Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
+- Ter boa conduta;
+- Cumprir demais requisitos do art. 112 da Lei 6.815/80
+-Ser permanente.</requisitos>
+            </solicitante>
+            <solicitante id="2249">
+                <tipo>Estrangeiro que reside no Brasil</tipo>
+                <requisitos>Morar no Brasil há quatro anos, saber ler e escrever português e ser registrado como permanente;
+- Exercer profissão ou possuir bens suficientes à manutenção própria e da família;
+- Ter boa conduta;
+- Cumprir demais requisitos do art. 112 da Lei 6.815/80;
+-Ser permanente.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <entre min="6" max="12" unidade="meses"/>
+            <descricao>A previsão do tempo de conclusão depende também de que o solicitante apresente todos os documentos necessários.</descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="4521">
+                <titulo>Apresentar Requerimento</titulo>
+                <descricao>O estrangeiro deverá solicitar, preencher e entregar o formulário de naturalização na Delegacia de Polícia Federal mais próxima de sua residência.
+[Consulte a unidade mais próxima de você](http://www.pf.gov.br/institucional/unidades)</descricao>
+                <documentos>
+                    <default>
+                        <item id="1119">Requerimento devidamente assinado pelo naturalizando;</item>
+                        <item id="1120">Declaração de interesse em traduzir ou adaptar o nome à língua portuguesa;</item>
+                        <item id="1121">Certidão ou inscrição consular, emitida pela Embaixada ou Consulado no Brasil, comprovando a correta grafia do nome do interessado e de seus genitores;</item>
+                        <item id="1122">Cópia da cédula de identidade para estrangeiro permanente atualizada;</item>
+                        <item id="1123">Cópia do CPF ou cópia do recibo de entrega da última declaração de imposto de renda (pessoa física);</item>
+                        <item id="1124">Comprovante de recolhimento da taxa (guia GRU) referente ao pedido de naturalização;</item>
+                        <item id="1125">Atestado de antecedentes criminais expedido pela Polícia Civil dos Estados onde residiu nos últimos cinco anos;</item>
+                        <item id="1126">Certidão negativa de ações criminais da Justiça Federal dos Estados onde residiu nos últimos cinco anos;</item>
+                        <item id="1127">Certidão dos cartórios de distribuição de ações criminais das comarcas onde residiu nos últimos cinco anos;</item>
+                        <item id="1128">Atestado de antecedentes criminais expedido pelo país de origem, legalizado junto à repartição consular brasileira e traduzido, no Brasil, por tradutor público Juramentado ou devidamente inscrito na Junta Comercial;</item>
+                        <item id="1129">Comprovante de residência, tais como os descritos no art. 11 da Portaria MJ nº 1.949/2015</item>
+                        <item id="1130">Cópia na íntegra do passaporte, observando as normas que regem o Mercosul;</item>
+                        <item id="1131">Documento comprobatório de renda, tais como os descritos no item 15 do Anexo I da Portaria MJ nº 1.949/2015</item>
+                    </default>
+                    <caso id="174" descricao="Se o estrangeiro for casado com brasileiro ou tiver filho brasileiro ou for filho de brasileiro:">
+                        <documento>
+                            <id>1116</id>
+                            <descricao>Além dos documentos listados acima, apresentar:</descricao>
+                        </documento>
+                        <documento>
+                            <id>1118</id>
+                            <descricao>Cópia da certidão de casamento ou união estável com brasileiro, se for o caso;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1117</id>
+                            <descricao>Cópia da certidão de nascimento comprovando o vínculo de parentesco, se for o caso;</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="24">
+                            <descricao>Taxa de naturalização.......</descricao>
+                            <moeda>R$</moeda>
+                            <valor>296,64</valor>
+                            <valorVariavel></valorVariavel>
+                            <statusCustoVariavel>0</statusCustoVariavel>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1362" tipo="presencial">
+                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4522">
+                <titulo>Realizar teste de português, se necessário.</titulo>
+                <descricao>O requerente poderá realizar o teste de português em momento a ser agendado pelos servidores da Polícia Federal, conforme a disponibilidade do órgão.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1363" tipo="presencial">
+                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4523">
+                <titulo>Participar de entrevista com agente de Polícia Federal, se necessário.</titulo>
+                <descricao>Caso sejam necessários maiores esclarecimentos, os servidores da Polícia Federal poderão agendar entrevista com o naturalizando, a ser realizada na unidade onde foi protocolado o pedido de Naturalização.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1132">Documento complementar pode solicitado pelo servidor da Polícia Federal.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1364" tipo="presencial">
+                            <descricao>O estrangeiro deve se dirigir à Unidade da Polícia Federal onde foi protocolado seu pedido de naturalização, podendo ser alterada em caso de mudança de endereço do requerente.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4524">
+                <titulo>Complementar documentação, caso seja necessário.</titulo>
+                <descricao>Nesta fase, o Departamento de Migrações do Ministério da Justiça e Cidadania poderá solicitar ao naturalizando que apresente documentos para complementar as informações do processo.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1366" tipo="postal">
+                            <descricao>Ministério da Justiça e Cidadania
+Esplanada dos Ministério, Bloco T, Anexo II, Sala 318
+CEP: 70.064-901</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1365" tipo="web">
+                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1367" tipo="web-acompanhar">
+                            <descricao>http://www.justica.gov.br/Acesso/sistema-eletronico-de-informacoes-sei</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4525">
+                <titulo>Apresentar pedido de reconsideração (desarquivamento), se o pedido de naturalização for indeferido.</titulo>
+                <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de naturalização, o requerente poderá apresentar um pedido de reconsideração, solicitando o desarquivamento do processo.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1133">Requerimento solicitando desarquivamento</item>
+                        <item id="1134">Comprovante de pagamento da GRU (Pedido de Desarquivamento de Naturalização) https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec=2;</item>
+                        <item id="1135">Documentos que demonstrem a alteração de uma situação anterior (como, por exemplo, o cumprimento do prazo legal para obter a naturalização), se for o caso;</item>
+                        <item id="1136">Documentos que complementem o processo, se for o caso;</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="25">
+                            <descricao>Taxa de desarquivamento.........</descricao>
+                            <moeda>R$</moeda>
+                            <valor>59.326,00</valor>
+                            <valorVariavel></valorVariavel>
+                            <statusCustoVariavel>0</statusCustoVariavel>
+                        </custo>
+                    </default>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1368" tipo="web">
+                            <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="1369" tipo="presencial">
+                            <descricao>O estrangeiro deve se dirigir à [Delegacia de Polícia Federal mais próximo de sua residência](http://www.pf.gov.br/institucional/unidades)</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4526">
+                <titulo>Apresentar recurso, se o pedido de reconsideração for indeferido.</titulo>
+                <descricao>No prazo de 30 (trinta) dias contados da publicação da decisão que indeferir o pedido de reconsideração, o requerente poderá apresentar recurso.</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1370" tipo="e-mail">
+                            <descricao>processos.migracoes@mj.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="4527">
+                <titulo>Emitir Certificado de Naturalização, quando necessário.</titulo>
+                <descricao>O certificado é expedida gratuitamente e sua autenticidade poderá ser conferida no próprio endereço eletrônico. Qualquer pessoa pode acessar o site e solicitar uma certidão ou conferir sua autenticidade.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1137">Não há.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="1371" tipo="web">
+                            <descricao>http://www.justica.gov.br/central-de-atendimento/estrangeiros/nacionalidade</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+            <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="4646">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="8462">Estrangeiro</item>
+            <item id="8463">Pedir naturalização</item>
+            <item id="8464">Naturalização Ordinária</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2030">(Decreto nº 86.715/81)[http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:1981-12-10;86715]</item>
+            <item id="2031">(Lei 6.815/80)[http://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1980-08-19;6815]</item>
+        </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-auxilio-doenca</id>
+        <dbId>49</dbId>
+        <nome>Obter auxílio-doença</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="510">Auxílio-doença</item>
+            <item id="511">Benefício por incapacidade.</item>
+        </nomes-populares>
+        <descricao>O auxílio-doença é um benefício financeiro mensal recebido pelo segurado do INSS que estiver temporariamente incapaz de trabalhar devido a doença ou acidente.</descricao>
+        <contato>Central de Atendimento do INSS, através do telefone 135.</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <solicitantes>
+            <solicitante id="595">
+                <tipo>Segurado Especial</tipo>
+                <requisitos>Trabalhador rural que exerce sua atividade individualmente ou com a ajuda da família, assim como trabalhadores com atividades afins, como pescadores artesanais e indígenas, que:
+•	Tenha feito ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
+•	Comprove ter doença ou outro impedimento físico que o torne incapaz de trabalhar;
+•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.</requisitos>
+            </solicitante>
+            <solicitante id="596">
+                <tipo>Segurado Regular</tipo>
+                <requisitos>Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que:
+•	Tenha realizado ao menos 12 contribuições mensais (exceto em casos de acidente de trabalho ou doenças previstas em lei);
+•	Comprove ter doença ou outro impedimento físico por motivo de saúde que o torne incapaz de trabalhar;
+•	Estar afastado do trabalho há pelo menos 15 dias corridos, ou 15 dias intercalados em um espaço de 60 dias.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="30" unidade="dias-corridos"/>
+            <descricao>Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até seis meses.</descricao>
+        </tempo-total-estimado>
+        <etapas>
+            <etapa id="1835">
+                <titulo>Agendar perícia médica e entrega dos documentos em agência do INSS</titulo>
+                <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar sua perícia para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1607">Número do PIS/PASEP;</item>
+                        <item id="1608">Nome completo de sua mãe;</item>
+                        <item id="1609">Sua data de nascimento;</item>
+                        <item id="1610">Dados funcionais;</item>
+                        <item id="1611">CID, se souber.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2278" tipo="web-agendar">
+                            <descricao>http://www2.dataprev.gov.br/sabiweb/agendamento/inicio.view#sabiweb</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1836">
+                <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
+                <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior, para realizar a perícia e entregar os documentos necessários ao pedido.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1614">Documento de identificação válido e oficial com foto;</item>
+                        <item id="1615">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="1616">Carteira de trabalho, carnês de contribuição e outros documentos que comprovem pagamento ao INSS;</item>
+                        <item id="1617">Documentos médicos que comprovem a causa do problema de saúde, o tratamento médico indicado e a incapacidade de trabalhar;</item>
+                        <item id="1618">Caso o motivo da incapacitação for acidente de trabalho, a Comunicação de Acidente de Trabalho (CAT); e</item>
+                    </default>
+                    <caso id="280" descricao="Segurado Especial (Solicitante 1)">
+                        <documento>
+                            <id>1612</id>
+                            <descricao>Documentos que comprovem sua situação (declaração de sindicato, contratos de arrendamento, documentos onde conste a ocupação, etc.)</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="281" descricao="Segurado Regular (solicitante 2)">
+                        <documento>
+                            <id>1613</id>
+                            <descricao>Declaração carimbada e assinada do empregador, informando último dia trabalhado (se precisar, imprima o requerimento no site do INSS).</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2279" tipo="presencial">
+                            <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="1837">
+                <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
+                <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1619">Número do benefício ou do requerimento;</item>
+                        <item id="1620">Data de Nascimento;</item>
+                        <item id="1621">Cadastro de Pessoa Física - CPF;</item>
+                        <item id="1622">Documento de Identificação válido, original e com foto.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2280" tipo="web">
+                            <descricao>http://www2.dataprev.gov.br/sabiweb/relatorio/imprimirCRER.view?acao=imprimir_CRER</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="2281" tipo="presencial">
+                            <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+            <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="2123">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Previdência Social</item>
+            <item>Proteção e Benefícios ao Trabalhador</item>
+            <item>Relações de Trabalho</item>
+            <item>Trabalho</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="1484">doença</item>
+            <item id="1485">benefício</item>
+            <item id="1486">saúde</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="481">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943.</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>criar-zonas-de-processamento-de-exportacao</id>
