@@ -11,7 +11,7 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1763">
+        <solicitante id="2558">
             <tipo>Pessoas físicas e jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -24,17 +24,9 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3751">
+        <etapa id="5099">
             <titulo>Requerer inscrição</titulo>
-            <descricao>Modelo do formulário para sementes pode ser obtido [aqui](https://goo.gl/1VR4vb) *(anexos XXIX e XXX)* e para mudas pode ser obtido [aqui](https://goo.gl/4jUdLv) *(Anexo XVI)*     
-**Valores das Taxas**     
-Para campo de sementes: 3,00/ha ou fração, limitado a um mínimo de 150,00     
-
-Para viveiros com área menos que 10 ha: 150,00      
-
-Para viveiros com área maior que 10 ha: 150,00 + 3,00/ha ou fração que ultrapassar 10 ha      
-
-Para unidade de propagação in vitro: 150,00"</descricao>
+            <descricao>Modelo do formulário para sementes pode ser obtido [aqui](https://goo.gl/1VR4vb) *(anexos XXIX e XXX)* e para mudas pode ser obtido [aqui](https://goo.gl/4jUdLv)</descricao>
             <documentos>
                 <default>
                     <item id="5485">Requerimento de inscrição</item>
@@ -51,8 +43,36 @@ Para unidade de propagação in vitro: 150,00"</descricao>
             <custos>
                 <default>
                     <custo id="162">
-                        <descricao>Taxa de Inscrição de Campo ou Taxa de Inscrição de Viveiro (valor variável)</descricao>
+                        <descricao>Taxa de Inscrição de Campo ou Taxa de Inscrição de Viveiro</descricao>
                         <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                    <custo id="186">
+                        <descricao>Para campo de sementes</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>R$ 3,00/ha ou fração, limitado a um mínimo de 150,00</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                    <custo id="187">
+                        <descricao>Para viveiros com área menos que 10 ha</descricao>
+                        <moeda>R$</moeda>
+                        <valor>150,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="188">
+                        <descricao>Para viveiros com área maior que 10 ha</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>R$ 150,00 + R$ 3,00/ha ou fração que ultrapassar 10 ha</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                    <custo id="189">
+                        <descricao>Para unidade de propagação in vitro</descricao>
+                        <moeda>R$</moeda>
+                        <valor>150,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -67,7 +87,7 @@ Para unidade de propagação in vitro: 150,00"</descricao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="3752">
+        <etapa id="5100">
             <titulo>Receber resposta</titulo>
             <descricao></descricao>
             <documentos>
@@ -80,11 +100,11 @@ Para unidade de propagação in vitro: 150,00"</descricao>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4718" tipo="presencial">
-                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado onde se encontra o estabelecimento.</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="4719" tipo="postal">
                         <descricao>Para a  [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado onde se encontra o estabelecimento.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4718" tipo="presencial">
+                        <descricao>Na [Superintendência Federal de Agricultura](http://www.agricultura.gov.br/sfa) do estado onde se encontra o estabelecimento.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -94,10 +114,10 @@ Para unidade de propagação in vitro: 150,00"</descricao>
         <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="3729">Empresas</item>
-        <item idSegmento="1" idServicoSegmento="3730">Cidadãos</item>
-        <item idSegmento="4" idServicoSegmento="3731">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="3732">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="5098">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="5099">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="5100">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="5101">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
@@ -105,13 +125,13 @@ Para unidade de propagação in vitro: 150,00"</descricao>
         <item>Produção agropecuária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="5697">sementes</item>
-        <item id="5698">mudas</item>
-        <item id="5699">campo</item>
-        <item id="5700">viveiro</item>
+        <item id="9530">sementes</item>
+        <item id="9531">mudas</item>
+        <item id="9532">campo</item>
+        <item id="9533">viveiro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1582">[INSTRUÇÃO NORMATIVA Nº 9, DE 2 DE JUNHO DE 2005](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/sementes-e-mudas/publicacoes-sementes-e-mudas/INN9de2dejunhode2005.pdf)</item>
-        <item id="1583">[INSTRUÇÃO NORMATIVA Nº 24, DE 16 DE DEZEMBRO DE 2005](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/sementes-e-mudas/publicacoes-sementes-e-mudas/INN24de16dedezembrode2005.pdf)</item>
+        <item id="2224">[INSTRUÇÃO NORMATIVA Nº 9, DE 2 DE JUNHO DE 2005](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/sementes-e-mudas/publicacoes-sementes-e-mudas/INN9de2dejunhode2005.pdf)</item>
+        <item id="2225">[INSTRUÇÃO NORMATIVA Nº 24, DE 16 DE DEZEMBRO DE 2005](http://www.agricultura.gov.br/assuntos/insumos-agropecuarios/insumos-agricolas/sementes-e-mudas/publicacoes-sementes-e-mudas/INN24de16dedezembrode2005.pdf)</item>
     </legislacoes>
 </servico>
