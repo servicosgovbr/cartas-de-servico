@@ -3455,214 +3455,6 @@ armazenam,  distribuem, importam ou exportam produtos de uso veterinário.</requ
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-carteira-de-identidade-de-estrangeiro</id>
-        <dbId>63</dbId>
-        <nome>Obter Carteira de Identidade de Estrangeiro</nome>
-        <sigla>CIE</sigla>
-        <descricao>A CIE é o documento de identificação fornecido pelo Departamento de Polícia Federal aos estrangeiros residentes no Brasil.</descricao>
-        <contato></contato>
-        <gratuito>false</gratuito>
-        <porcentagem>0</porcentagem>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>true</servico-digital>
-        <link-servico-digital>https://servicos.dpf.gov.br/sincreWeb/</link-servico-digital>
-        <solicitantes>
-            <solicitante id="2248">
-                <tipo>Estrangeiros</tipo>
-                <requisitos>Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="60" unidade="dias-corridos"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="4516">
-                <titulo>Preencher o formulário de solicitação</titulo>
-                <descricao>Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1797">RNE;</item>
-                        <item id="1798">Dados pessoais;</item>
-                        <item id="1799">Dados de residência no Brasil;</item>
-                        <item id="1800">Cadastro de Pessoa Física - CPF.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2325" tipo="web">
-                            <descricao>https://servicos.dpf.gov.br/sincreWeb/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4517">
-                <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
-                <descricao>Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1801">GRU</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default>
-                        <custo id="63">
-                            <descricao>Taxa de emissão</descricao>
-                            <moeda>R$</moeda>
-                            <valor>204,77</valor>
-                            <valorVariavel></valorVariavel>
-                            <statusCustoVariavel>0</statusCustoVariavel>
-                        </custo>
-                    </default>
-                    <caso id="629" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
-                        <custo id="181">
-                            <descricao>Estes usuários são isentos do pagamento desta taxa.</descricao>
-                            <moeda>R$</moeda>
-                            <valorVariavel></valorVariavel>
-                            <statusCustoVariavel>1</statusCustoVariavel>
-                        </custo>
-                    </caso>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2326" tipo="web">
-                            <descricao>https://servicos.dpf.gov.br/gru2/gru?nac=1&amp;rec=2</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4518">
-                <titulo>Agendar atendimento presencial</titulo>
-                <descricao>Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1802">Código dado no formulário preenchido na primeira etapa.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2327" tipo="web">
-                            <descricao>https://servicos.dpf.gov.br/sincreWeb/pesquisaAgendamento.jsp</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4519">
-                <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
-                <descricao>Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1811">RNE;</item>
-                        <item id="1812">Comprovante bancário de pagamento da taxa (exceto para refugiados e asilados assim reconhecidos pelo Governo Brasileiro);</item>
-                        <item id="1813">Duas fotos 3x4 recentes, coloridas, com fundo branco;</item>
-                    </default>
-                    <caso id="309" descricao="Estrangeiros com visto permanente da da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
-                        <documento>
-                            <id>1804</id>
-                            <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência.</descricao>
-                        </documento>
-                        <documento>
-                            <id>1803</id>
-                            <descricao>Carteira de identidade;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="310" descricao="Estrangeiros com visto permanente de demais países">
-                        <documento>
-                            <id>1806</id>
-                            <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência;</descricao>
-                        </documento>
-                        <documento>
-                            <id>1805</id>
-                            <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="311" descricao="Estrangeiros sem o visto permanente da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
-                        <documento>
-                            <id>1808</id>
-                            <descricao>Visto consular e formulário original do pedido.</descricao>
-                        </documento>
-                        <documento>
-                            <id>1807</id>
-                            <descricao>Carteira de identidade;</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="312" descricao="Estrangeiros sem o visto permanente de demais países">
-                        <documento>
-                            <id>1810</id>
-                            <descricao>Visto consular e formulário original do pedido.</descricao>
-                        </documento>
-                        <documento>
-                            <id>1809</id>
-                            <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2328" tipo="presencial">
-                            <descricao>Unidade da Polícia Federal indicada no agendamento.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="4520">
-                <titulo>Retirar a CIE</titulo>
-                <descricao>A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.</descricao>
-                <documentos>
-                    <default>
-                        <item id="1814">Documento de identificação.</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="2329" tipo="presencial">
-                            <descricao>Deverá comparecer no local e horário especificado na etapa anterior.</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324" dbId="26267">
-            <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="4645">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Cidadania</item>
-            <item>Relações Internacionais</item>
-            <item>Relações Diplomáticas</item>
-            <item>Serviços Públicos</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="8459">documento</item>
-            <item id="8460">identificação</item>
-            <item id="8461">estrangeiro</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2029">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
-        </legislacoes>
-        <servicos-relacionados>
-            <item>1094</item>
-            <item>712</item>
-        </servicos-relacionados>
-    </servico>
-    <servico>
         <id>renovar-passe-livre</id>
         <dbId>78</dbId>
         <nome>Renovar Passe Livre</nome>
@@ -41465,112 +41257,6 @@ CEP 70049-900</descricao>
         </legislacoes>
     </servico>
     <servico>
-        <id>obter-canal-da-cidadania</id>
-        <dbId>1244</dbId>
-        <nome>Obter Canal da Cidadania</nome>
-        <sigla></sigla>
-        <descricao>O Canal da Cidadania é o serviço de televisão digital aberta, de abrangência municipal, outorgado pelo Ministério da Ciência, Tecnologia, Inovações e Comunicação e executado pelo Poder Público Municipal e Estadual. A principal característica do Canal da Cidadania é o uso da multiprogramação, recurso que permite dividir um canal de televisão em quatro faixas de programação simultâneas. Na prática, é como se quatro emissoras de tv pudessem ocupar o mesmo canal, ao mesmo tempo, e o espectador pudesse, então, escolher a qual delas prefere assistir. Essas faixas de programação serão ocupadas da seguinte forma: (i) uma faixa para veiculação de programação institucional do Poder Público do município onde o canal está instalado; (ii) uma faixa de mesma finalidade para o Poder Público do Estado onde o município está situado; e (iii)  duas faixas para associações comunitárias, com programação local de interesse da população beneficiada. Os objetivos do canal da cidadania são ampliar a interface entre o Estado e o Cidadão, dar mais transparência à gestão pública, estimular a produção de conteúdo audiovisual local, além de oferecer uma plataforma interativa ao cidadão, pois a tecnologia digital permite que o espectador interaja em tempo real com os responsáveis pela estação geradora.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <link-servico-digital></link-servico-digital>
-        <solicitantes>
-            <solicitante id="1579">
-                <tipo>Estados e Municípios</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <entre min="0" max="0" unidade="meses"/>
-            <descricao>O tempo para este serviço não é estimado ainda</descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="3367">
-                <titulo>Solicitar Canal de Cidadania (estados e municípios)</titulo>
-                <descricao>Os Estados poderão solicitar as faixas destinadas a municípios que não manifestaram interesse pelas mesmas, mantendo-se, no entanto, sempre a prioridade ao município em questão.</descricao>
-                <documentos>
-                    <default/>
-                    <caso id="530" descricao="Quanto às pessoas de direito público ou às fundações vinculadas aos Municípios, aos Estados ou ao Distrito Federal">
-                        <documento>
-                            <id>4758</id>
-                            <descricao>projeto técnico para a instalação do sistema irradiante, conforme norma técnica específica para a TV Digital</descricao>
-                        </documento>
-                        <documento>
-                            <id>4757</id>
-                            <descricao>documento devidamente registrado comprovando a constituição do Conselho de Comunicação Social local ou declaração de comprometimento com a criação deste Conselho em até sessenta dias depois de outorgada a autorização</descricao>
-                        </documento>
-                        <documento>
-                            <id>4756</id>
-                            <descricao>ato de nomeação e/ou eleição de dirigentes, devidamente formalizado</descricao>
-                        </documento>
-                    </caso>
-                    <caso id="531" descricao="Quanto aos dirigentes das pessoas de direito público ou das fundações vinculadas aos Municípios, Estados ou ao Distrito Federal">
-                        <documento>
-                            <id>4759</id>
-                            <descricao>prova da condição de brasileiro nato ou naturalizado há mais de dez anos</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4365" tipo="web">
-                            <descricao>http://www.mc.gov.br/sei/cadsei</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="3368">
-                <titulo>Receber a outorga</titulo>
-                <descricao></descricao>
-                <documentos>
-                    <default>
-                        <item id="4760">CPF e senha do CADSEI</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4366" tipo="web">
-                            <descricao>http://www.mc.gov.br/sei/cadsei</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4367" tipo="web">
-                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
-            <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="3382">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Administração e Gestão Pública</item>
-            <item>Administração</item>
-            <item>Difusão</item>
-            <item>Comunicações</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="4409">canal público</item>
-            <item id="4410">tv digital</item>
-            <item id="4411">canal digital</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="1317">[PORTARIA Nº 489, DE 18 DE DEZEMBRO DE 2012](http://www.mctic.gov.br/mctic/export/sites/institucional/arquivos/RadiodifusaoEducativaCanalCidadania/Legislacao/portaria-489-canal-da-cidadania.pdf)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>obter-o-direito-de-praticar-manejo-sustentavel-de-florestas-publicas-da-uniao</id>
         <dbId>1215</dbId>
         <nome>Obter o direito de praticar manejo sustentável de florestas públicas da União</nome>
@@ -56733,7 +56419,7 @@ III - Grupo 3: renda familiar anual bruta seja superior a R$ 33.000,00  e inferi
         <nome>Obter Carta Geotécnica de aptidão à urbanização</nome>
         <sigla></sigla>
         <nomes-populares>
-            <item id="1181">Carta Geotécnica</item>
+            <item id="1709">Carta Geotécnica</item>
         </nomes-populares>
         <descricao>A  Carta Geotécnica de aptidão à urbanização tem como objeto evitar o surgimento de novas áreas de risco no País, garantindo a ocupação e o parcelamento urbano em regiões seguras e orientando intervenções estruturais para mitigar e prevenir desastres. Este produto relaciona-se com diversos outros ordenamentos territorias e projetos de obras de engenharia.</descricao>
         <contato></contato>
@@ -56742,20 +56428,20 @@ III - Grupo 3: renda familiar anual bruta seja superior a R$ 33.000,00  e inferi
         <servico-digital>false</servico-digital>
         <link-servico-digital></link-servico-digital>
         <solicitantes>
-            <solicitante id="1774">
+            <solicitante id="2595">
                 <tipo>Estados e municípios</tipo>
                 <requisitos></requisitos>
             </solicitante>
         </solicitantes>
         <tempo-total-estimado>
-            <entre min="0" max="0" unidade="meses"/>
-            <descricao>O tempo de prestação deste serviço não é estimado ainda</descricao>
+            <nao-estimado-ainda/>
+            <descricao></descricao>
         </tempo-total-estimado>
         <validade-documento>
             <descricao></descricao>
         </validade-documento>
         <etapas>
-            <etapa id="3777">
+            <etapa id="5166">
                 <titulo>Requerer dados</titulo>
                 <descricao></descricao>
                 <documentos>
@@ -56766,13 +56452,13 @@ III - Grupo 3: renda familiar anual bruta seja superior a R$ 33.000,00  e inferi
                 </custos>
                 <canais-de-prestacao>
                     <default>
-                        <canal-de-prestacao id="4747" tipo="e-mail">
-                            <descricao>cartageotecnica@cidades.gov.br</descricao>
-                        </canal-de-prestacao>
                         <canal-de-prestacao id="4748" tipo="postal">
                             <descricao>SAUS, Quadra 01, Lt. 1/6, Bl. H,
 Ed. Telemundi II, 7º Andar, Sala 707
 Brasília/DF, CEP 70.070-010</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4747" tipo="e-mail">
+                            <descricao>cartageotecnica@cidades.gov.br</descricao>
                         </canal-de-prestacao>
                     </default>
                 </canais-de-prestacao>
@@ -56782,7 +56468,7 @@ Brasília/DF, CEP 70.070-010</descricao>
             <nomeOrgao>Ministério das Cidades (MCIDADES)</nomeOrgao>
         </orgao>
         <segmentos-da-sociedade>
-            <item idSegmento="2" idServicoSegmento="3748">Órgãos e entidades públicas</item>
+            <item idSegmento="2" idServicoSegmento="5157">Órgãos e entidades públicas</item>
         </segmentos-da-sociedade>
         <areas-de-interesse>
             <item>Defesa Civil</item>
@@ -56790,13 +56476,13 @@ Brasília/DF, CEP 70.070-010</descricao>
             <item>Infraestrutura Urbana</item>
         </areas-de-interesse>
         <palavras-chave>
-            <item id="5734">carta geotécnica</item>
-            <item id="5735">risco de desastres</item>
-            <item id="5736">informações geotécnicas</item>
+            <item id="9630">carta geotécnica</item>
+            <item id="9631">risco de desastres</item>
+            <item id="9632">informações geotécnicas</item>
         </palavras-chave>
-        <legislacoes>
-            <item id="1594">-</item>
-        </legislacoes>
+        <servicos-relacionados>
+            <item>1421</item>
+        </servicos-relacionados>
     </servico>
     <servico>
         <id>declarar-rendimentos-pagos-a-consultores-por-organismos-internacionais</id>
@@ -59260,6 +58946,79 @@ Para ingressar no PBV, o órgão parceiro deve indicar o beneficiário da área 
         </legislacoes>
     </servico>
     <servico>
+        <id>consultar-acervo-da-biblioteca-embaixador-joao-guimaraes-rosa</id>
+        <dbId>1711</dbId>
+        <nome>Consultar acervo da Biblioteca Embaixador João Guimarães Rosa</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="1707">Biblioteca do Instituto Rio Branco</item>
+        </nomes-populares>
+        <descricao>Trata-se de biblioteca especializada nas áreas de relações internacionais, relações econômicas internacionais, história diplomática, economia, direito, geografia, história mundial, história do Brasil, cultura brasileira, comércio exterior e finanças internacionais  dispondo de mais de 22 mil volumes entre livros e periódicos. Para consulta ao acervo da Biblioteca do Instituto Rio Branco, clique [aqui](http://www.biblioteca.itamaraty.gov.br)</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <link-servico-digital></link-servico-digital>
+        <solicitantes>
+            <solicitante id="2591">
+                <tipo>Alunos do Instituto Rio Branco e funcionários do Ministério das Relações Exteriores.</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+            <solicitante id="2592">
+                <tipo>Público Externo</tipo>
+                <requisitos>Somente para consulta do material dentro da Biblioteca.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <atendimento-imediato/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5162">
+                <titulo>Solicitar o serviço</titulo>
+                <descricao>O usuário solicita empréstimo de livros, periódicos, artigos de periódico ou pesquisas bibliográficas.</descricao>
+                <documentos>
+                    <default>
+                        <item id="5800">Documento de identificação oficial com foto</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5029" tipo="presencial">
+                            <descricao>**Biblioteca Embaixador João Guimarães Rosa do Instituto Rio Branco** -  Lote 02/03, St. de Administração Federal Sul, Brasília - DF, 70070-600</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="5030" tipo="e-mail">
+                            <descricao>lista.biblio.irbr@itamaraty.gov.br</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
+            <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="5154">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Educação</item>
+            <item>Educação superior</item>
+            <item>Relações Diplomáticas</item>
+            <item>Relações Internacionais</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9621">biblioteca</item>
+            <item id="9622">instituto rio branco</item>
+            <item id="9623">diplomacia</item>
+        </palavras-chave>
+    </servico>
+    <servico>
         <id>denunciar-violacao-de-direitos-humanos</id>
         <dbId>1512</dbId>
         <nome>Denunciar violação de direitos humanos</nome>
@@ -59405,75 +59164,6 @@ Ainda como forma de ampliação do diálogo com a sociedade, desde 2015 a Ouvido
             <item id="6019">segurança</item>
             <item id="6020">banco</item>
             <item id="6021">plano</item>
-        </palavras-chave>
-    </servico>
-    <servico>
-        <id>consultar-acervo-da-biblioteca-embaixador-joao-guimaraes-rosa</id>
-        <dbId>1711</dbId>
-        <nome>Consultar acervo da Biblioteca Embaixador João Guimarães Rosa</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="1383">Biblioteca do Instituto Rio Branco</item>
-        </nomes-populares>
-        <descricao>Trata-se de uma biblioteca especializada voltada para os alunos do Instituto Rio Branco do Ministério das  Relações Exteriores,  os funcionários do Ministério das Relações Exteriores e público externo.  A biblioteca realiza empréstimos de livros, periódicos, pesquisas bibliográficas, dispõe de bases de dados e orienta os usuários.</descricao>
-        <contato></contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>false</servico-digital>
-        <link-servico-digital></link-servico-digital>
-        <solicitantes>
-            <solicitante id="2099">
-                <tipo>Qualquer pessoa pode utilizar este serviço</tipo>
-                <requisitos></requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <atendimento-imediato/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="4276">
-                <titulo>Solicitar o serviço</titulo>
-                <descricao>O usuário solicita empréstimo de livros, periódicos, artigos de periódico ou pesquisas bibliográficas.</descricao>
-                <documentos>
-                    <default>
-                        <item id="5800">Documento de identificação oficial com foto</item>
-                    </default>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="5029" tipo="presencial">
-                            <descricao>**Biblioteca Embaixador João Guimarães Rosa do Instituto Rio Branco** -  Lote 02/03, St. de Administração Federal Sul, Brasília - DF, 70070-600</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="5030" tipo="e-mail">
-                            <descricao>lista.biblio.irbr@itamaraty.gov.br</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/263" dbId="37539">
-            <nomeOrgao>Ministério das Relações Exteriores (MRE)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="1" idServicoSegmento="4413">Cidadãos</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Educação</item>
-            <item>Educação superior</item>
-            <item>Relações Diplomáticas</item>
-            <item>Relações Internacionais</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="7699">biblioteca</item>
-            <item id="7700">instituto rio branco</item>
-            <item id="7701">diplomacia</item>
         </palavras-chave>
     </servico>
     <servico>
@@ -76109,162 +75799,6 @@ Brasília-DF</descricao>
         </servicos-relacionados>
     </servico>
     <servico>
-        <id>credenciar-laboratorio-na-rede-nacional-de-laboratorios-agropecuarios-do-mapa</id>
-        <dbId>1337</dbId>
-        <nome>Credenciar Laboratório na Rede Nacional de Laboratórios Agropecuários do MAPA</nome>
-        <sigla></sigla>
-        <nomes-populares>
-            <item id="1667">Rede MAPA de laboratórios.</item>
-        </nomes-populares>
-        <descricao>O credenciamento de laboratórios junto ao MAPA se destina a atender, de forma complementar,  aos programas e controles oficias do MAPA, suprindo demandas por ensaios laboratoriais excedentes, não atendidas pelos laboratórios do próprio MAPA.</descricao>
-        <contato>¨ **Telefone:** (61) 3218-2041      
-¨ **Email:** credenciamento.cgal@agricultura.gov.br</contato>
-        <gratuito>true</gratuito>
-        <porcentagem-manual>false</porcentagem-manual>
-        <servico-digital>true</servico-digital>
-        <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
-        <solicitantes>
-            <solicitante id="2511">
-                <tipo>Laboratórios</tipo>
-                <requisitos>Públicos ou privados, que realizam ensaios laboratoriais para os programas e controles oficiais do MAPA.</requisitos>
-            </solicitante>
-        </solicitantes>
-        <tempo-total-estimado>
-            <ate max="3" unidade="meses"/>
-            <descricao></descricao>
-        </tempo-total-estimado>
-        <validade-documento>
-            <descricao></descricao>
-        </validade-documento>
-        <etapas>
-            <etapa id="5009">
-                <titulo>Requerer credenciamento</titulo>
-                <descricao>Os modelos dos formulários, relações e termos podem ser obtidos [aqui](http://www.agricultura.gov.br/assuntos/laboratorios/credenciamento).</descricao>
-                <documentos>
-                    <default>
-                        <item id="5157">Formulário de solicitação de credenciamento, preenchido e assinado pelo representante legal do laboratório;</item>
-                        <item id="5158">Cópia do contrato social do laboratório ou documento equivalente, válido e atualizado;</item>
-                        <item id="5159">Cópia do Cadastro Nacional de Pessoa Jurídica – CNPJ do laboratório, válido e atualizado;</item>
-                        <item id="5160">Cópia do alvará de funcionamento do laboratório ou documento equivalente, expedido pelo órgão competente, válido e atualizado;</item>
-                        <item id="5161">Croqui das instalações do laboratório, assinado por profissional com registro válido junto ao Conselho Regional de Engenharia e Agronomia - CREA ou no Conselho de Arquitetura e Urbanisbo -  CAU, indicando a finalidade de cada ambiente;</item>
-                        <item id="5162">Memorial descritivo das instalações do laboratório, assinado por profissional com registro válido junto ao CREA ou CAU;</item>
-                        <item id="5163">Descrição do fluxo das amostras no laboratório, indicando as áreas percorridas desde a sua recepção até a finalização dos ensaios, seu armazenamento e descarte;</item>
-                        <item id="5164">Relação de equipamentos, indicando marca, modelo e código de identificação no laboratório;</item>
-                        <item id="5165">Termo de compromisso com o credenciamento, assinado pelo representante legal do laboratório, com firma reconhecida em cartório;</item>
-                        <item id="5166">Termo de compromisso de responsabilidade técnica, de cada um dos responsáveis técnicos e dos responsáveis técnicos substitutos, com firma reconhecida em cartório;</item>
-                        <item id="5167">Cópia da carteira de habilitação profissional, válida e atualizada, emitida pelo respectivo conselho de classe, de cada um dos Responsáveis Técnicos e dos Responsáveis Técnicos Substitutos;</item>
-                        <item id="5168">Cópia da lista mestra de documentos do Sistema de Gestão da Qualidade do laboratório;</item>
-                        <item id="5169">Cópias do certificado e do escopo de acreditação na ABNT NBR ISO/IEC 17025 – Requisitos Gerais para a Competência de Laboratórios de Ensaio e Calibração, emitidos pelo INMETRO, contemplando os ensaios constantes na solicitação de credenciamento;</item>
-                        <item id="5170">Indicação deum de seus representantes legais, denominado Responsável pela Direção do Laboratório no âmbito do credenciamento junto ao MAPA, que será responsável pela interlocução entre o laboratório e a CGAL/SDA;</item>
-                        <item id="5171">Nomeação formal de um profissional de nível superior, do seu quadro efetivo de funcionários, que será o Responsável pelo Sistema de Gestão da Qualidade no âmbito do credenciamento junto ao MAPA.</item>
-                    </default>
-                    <caso id="582" descricao="Para cada ensaio a ser credenciado, deverão ser informados:">
-                        <documento>
-                            <id>5152</id>
-                            <descricao>Técnica aplicada na realização do ensaio;</descricao>
-                        </documento>
-                        <documento>
-                            <id>5151</id>
-                            <descricao>Código do procedimento referente à execução do método no laboratório, com o seu respectivo número de revisão;</descricao>
-                        </documento>
-                        <documento>
-                            <id>5156</id>
-                            <descricao>A referência bibliográfica do método, quando pertinente;</descricao>
-                        </documento>
-                        <documento>
-                            <id>5155</id>
-                            <descricao>Matriz à qual o método será aplicado; e</descricao>
-                        </documento>
-                        <documento>
-                            <id>5154</id>
-                            <descricao>A espécie, a cultura ou o hospedeiro, quando pertinente.</descricao>
-                        </documento>
-                        <documento>
-                            <id>5153</id>
-                            <descricao>Determinação analítica a ser obtida;</descricao>
-                        </documento>
-                    </caso>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="5136" tipo="web">
-                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1337</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4574" tipo="postal">
-                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento -Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
-                        </canal-de-prestacao>
-                        <canal-de-prestacao id="4573" tipo="presencial">
-                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento - Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="5010">
-                <titulo>Receber resultado</titulo>
-                <descricao>O credenciamento do laboratório será publicado no Diário Oficial da União</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4575" tipo="web">
-                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-            <etapa id="5011">
-                <titulo>Ser autorizado a realizar ensaios</titulo>
-                <descricao>O laboratório credenciado somente poderá realizar ensaios para os programas e
-controles oficiais do MAPA após ter seus dados e escopo publicados no sítio eletrônico do MAPA</descricao>
-                <documentos>
-                    <default/>
-                </documentos>
-                <custos>
-                    <default/>
-                </custos>
-                <canais-de-prestacao>
-                    <default>
-                        <canal-de-prestacao id="4576" tipo="web">
-                            <descricao>http://www.agricultura.gov.br/assuntos/laboratorios/rede-nacional-de-laboratorios-agropecuarios/rede-nacional-de-laboratorios-agropecuarios</descricao>
-                        </canal-de-prestacao>
-                    </default>
-                </canais-de-prestacao>
-            </etapa>
-        </etapas>
-        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
-            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
-        </orgao>
-        <segmentos-da-sociedade>
-            <item idSegmento="3" idServicoSegmento="5046">Empresas</item>
-            <item idSegmento="2" idServicoSegmento="5047">Órgãos e entidades públicas</item>
-        </segmentos-da-sociedade>
-        <areas-de-interesse>
-            <item>Agropecuária</item>
-            <item>Agropecuária, extrativismo e pesca</item>
-            <item>Defesa agropecuária</item>
-        </areas-de-interesse>
-        <palavras-chave>
-            <item id="9353">laboratórios</item>
-            <item id="9354">LANAGRO</item>
-            <item id="9355">ensaio laboratorial</item>
-            <item id="9356">laboratório agropecuário</item>
-        </palavras-chave>
-        <legislacoes>
-            <item id="2206">[DECRETO Nº 5.741, DE 30 DE MARÇO DE 2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
-            <item id="2207">[INSTRUÇÃO NORMATIVA No - 41, DE 29 DE OUTUBRO DE 2015](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/IN412015.pdf)</item>
-            <item id="2210">[INSTRUÇÃO NORMATIVA Nº 19, DE 25 DE JUNHO DE 2014](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/instrucao-normativa-no-19-de-25-06-2014-alteracao-de-artigos-da-in57-2013.pdf)</item>
-            <item id="2208">[INSTRUÇÃO NORMATIVA No 57, DE 11 DE DEZEMBRO DE 2013](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/InstruoNormativan57de11.12.2013versoPDFdowordNovaRedaoNRsegundoIN19e41.pdf)</item>
-            <item id="2209">[DECRETO Nº 8.471, DE 22 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/D8471.htm)</item>
-        </legislacoes>
-    </servico>
-    <servico>
         <id>naturalizar-se-brasileiro</id>
         <dbId>4</dbId>
         <nome>Naturalizar-se Brasileiro</nome>
@@ -76536,6 +76070,162 @@ Para gerar a GRU clique [aqui](https://servicos.dpf.gov.br/gru/gru?nac=1&amp;rec
             <item>142</item>
             <item>63</item>
         </servicos-relacionados>
+    </servico>
+    <servico>
+        <id>credenciar-laboratorio-na-rede-nacional-de-laboratorios-agropecuarios-do-mapa</id>
+        <dbId>1337</dbId>
+        <nome>Credenciar Laboratório na Rede Nacional de Laboratórios Agropecuários do MAPA</nome>
+        <sigla></sigla>
+        <nomes-populares>
+            <item id="1705">Rede MAPA de laboratórios.</item>
+        </nomes-populares>
+        <descricao>O credenciamento de laboratórios junto ao MAPA se destina a atender, de forma complementar,  aos programas e controles oficias do MAPA, suprindo demandas por ensaios laboratoriais excedentes, não atendidas pelos laboratórios do próprio MAPA.</descricao>
+        <contato>¨ **Telefone:** (61) 3218-2041      
+¨ **Email:** credenciamento.cgal@agricultura.gov.br</contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>true</servico-digital>
+        <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
+        <solicitantes>
+            <solicitante id="2586">
+                <tipo>Laboratórios</tipo>
+                <requisitos>Públicos ou privados, que realizam ensaios laboratoriais para os programas e controles oficiais do MAPA.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="3" unidade="meses"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5158">
+                <titulo>Requerer credenciamento</titulo>
+                <descricao>Os modelos dos formulários, relações e termos podem ser obtidos [aqui](http://www.agricultura.gov.br/assuntos/laboratorios/credenciamento).</descricao>
+                <documentos>
+                    <default>
+                        <item id="5157">Formulário de solicitação de credenciamento, preenchido e assinado pelo representante legal do laboratório;</item>
+                        <item id="5158">Cópia do contrato social do laboratório ou documento equivalente, válido e atualizado;</item>
+                        <item id="5159">Cópia do Cadastro Nacional de Pessoa Jurídica – CNPJ do laboratório, válido e atualizado;</item>
+                        <item id="5160">Cópia do alvará de funcionamento do laboratório ou documento equivalente, expedido pelo órgão competente, válido e atualizado;</item>
+                        <item id="5161">Croqui das instalações do laboratório, assinado por profissional com registro válido junto ao Conselho Regional de Engenharia e Agronomia - CREA ou no Conselho de Arquitetura e Urbanisbo -  CAU, indicando a finalidade de cada ambiente;</item>
+                        <item id="5162">Memorial descritivo das instalações do laboratório, assinado por profissional com registro válido junto ao CREA ou CAU;</item>
+                        <item id="5163">Descrição do fluxo das amostras no laboratório, indicando as áreas percorridas desde a sua recepção até a finalização dos ensaios, seu armazenamento e descarte;</item>
+                        <item id="5164">Relação de equipamentos, indicando marca, modelo e código de identificação no laboratório;</item>
+                        <item id="5165">Termo de compromisso com o credenciamento, assinado pelo representante legal do laboratório, com firma reconhecida em cartório;</item>
+                        <item id="5166">Termo de compromisso de responsabilidade técnica, de cada um dos responsáveis técnicos e dos responsáveis técnicos substitutos, com firma reconhecida em cartório;</item>
+                        <item id="5167">Cópia da carteira de habilitação profissional, válida e atualizada, emitida pelo respectivo conselho de classe, de cada um dos Responsáveis Técnicos e dos Responsáveis Técnicos Substitutos;</item>
+                        <item id="5168">Cópia da lista mestra de documentos do Sistema de Gestão da Qualidade do laboratório;</item>
+                        <item id="5169">Cópias do certificado e do escopo de acreditação na ABNT NBR ISO/IEC 17025 – Requisitos Gerais para a Competência de Laboratórios de Ensaio e Calibração, emitidos pelo INMETRO, contemplando os ensaios constantes na solicitação de credenciamento;</item>
+                        <item id="5170">Indicação deum de seus representantes legais, denominado Responsável pela Direção do Laboratório no âmbito do credenciamento junto ao MAPA, que será responsável pela interlocução entre o laboratório e a CGAL/SDA;</item>
+                        <item id="5171">Nomeação formal de um profissional de nível superior, do seu quadro efetivo de funcionários, que será o Responsável pelo Sistema de Gestão da Qualidade no âmbito do credenciamento junto ao MAPA.</item>
+                    </default>
+                    <caso id="582" descricao="Para cada ensaio a ser credenciado, deverão ser informados:">
+                        <documento>
+                            <id>5152</id>
+                            <descricao>Determinação analítica a ser obtida;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5151</id>
+                            <descricao>Técnica aplicada na realização do ensaio;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5156</id>
+                            <descricao>Código do procedimento referente à execução do método no laboratório, com o seu respectivo número de revisão;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5155</id>
+                            <descricao>A referência bibliográfica do método, quando pertinente;</descricao>
+                        </documento>
+                        <documento>
+                            <id>5154</id>
+                            <descricao>Matriz à qual o método será aplicado; e</descricao>
+                        </documento>
+                        <documento>
+                            <id>5153</id>
+                            <descricao>A espécie, a cultura ou o hospedeiro, quando pertinente.</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="5136" tipo="web">
+                            <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1337</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4573" tipo="presencial">
+                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento - Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4574" tipo="postal">
+                            <descricao>**Ministério da Agricultura, Pecuária e Abastecimento -Coordenação-Geral de Laboratórios Agropecuários – CGAL/SDA/MAPA** - Esplanada dos Ministérios Bloco D Anexo B - Sala 433 - Brasília/DF - CEP 70043-900</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5159">
+                <titulo>Receber resultado</titulo>
+                <descricao>O credenciamento do laboratório será publicado no Diário Oficial da União</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4575" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5160">
+                <titulo>Ser autorizado a realizar ensaios</titulo>
+                <descricao>O laboratório credenciado somente poderá realizar ensaios para os programas e
+controles oficiais do MAPA após ter seus dados e escopo publicados no sítio eletrônico do MAPA</descricao>
+                <documentos>
+                    <default/>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4576" tipo="web">
+                            <descricao>http://www.agricultura.gov.br/assuntos/laboratorios/rede-nacional-de-laboratorios-agropecuarios/rede-nacional-de-laboratorios-agropecuarios</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
+            <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="3" idServicoSegmento="5151">Empresas</item>
+            <item idSegmento="2" idServicoSegmento="5152">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Agropecuária</item>
+            <item>Agropecuária, extrativismo e pesca</item>
+            <item>Defesa agropecuária</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9614">laboratórios</item>
+            <item id="9615">LANAGRO</item>
+            <item id="9616">ensaio laboratorial</item>
+            <item id="9617">laboratório agropecuário</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2251">[DECRETO Nº 5.741, DE 30 DE MARÇO DE 2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
+            <item id="2252">[INSTRUÇÃO NORMATIVA No - 41, DE 29 DE OUTUBRO DE 2015](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/IN412015.pdf)</item>
+            <item id="2253">[INSTRUÇÃO NORMATIVA Nº 19, DE 25 DE JUNHO DE 2014](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/instrucao-normativa-no-19-de-25-06-2014-alteracao-de-artigos-da-in57-2013.pdf)</item>
+            <item id="2254">[INSTRUÇÃO NORMATIVA No 57, DE 11 DE DEZEMBRO DE 2013](http://www.agricultura.gov.br/assuntos/laboratorios/arquivos-credenciamento/InstruoNormativan57de11.12.2013versoPDFdowordNovaRedaoNRsegundoIN19e41.pdf)</item>
+            <item id="2255">[DECRETO Nº 8.471, DE 22 DE JUNHO DE 2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/D8471.htm)</item>
+        </legislacoes>
     </servico>
     <servico>
         <id>consultar-debitos-inscritos-em-divida-ativa-da-uniao</id>
@@ -77268,6 +76958,214 @@ Email - incentivo.viagens@turismo.gov.br</contato>
         <legislacoes>
             <item id="481">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943.</item>
         </legislacoes>
+    </servico>
+    <servico>
+        <id>obter-carteira-de-identidade-de-estrangeiro</id>
+        <dbId>63</dbId>
+        <nome>Obter Carteira de Identidade de Estrangeiro</nome>
+        <sigla>CIE</sigla>
+        <descricao>A CIE é o documento de identificação fornecido pelo Departamento de Polícia Federal aos estrangeiros residentes no Brasil.</descricao>
+        <contato></contato>
+        <gratuito>false</gratuito>
+        <porcentagem>0</porcentagem>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>true</servico-digital>
+        <link-servico-digital>https://servicos.dpf.gov.br/sincreWeb/</link-servico-digital>
+        <solicitantes>
+            <solicitante id="2602">
+                <tipo>Estrangeiros</tipo>
+                <requisitos>Estrangeiros com residência permanente ou temporária, asilados ou refugiados no Brasil e que estejam devidamente cadastrados junto ao DPF.</requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <ate max="60" unidade="dias-corridos"/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5197">
+                <titulo>Preencher o formulário de solicitação</titulo>
+                <descricao>Você deve entrar no site do Departamento de Polícia Federal e preencher o formulário de requisição.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1797">RNE;</item>
+                        <item id="1798">Dados pessoais;</item>
+                        <item id="1799">Dados de residência no Brasil;</item>
+                        <item id="1800">Cadastro de Pessoa Física - CPF.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2325" tipo="web">
+                            <descricao>https://servicos.dpf.gov.br/sincreWeb/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5198">
+                <titulo>Gerar a GRU e pagar a taxa de emissão (exceto refugiados e asilados assim reconhecidos pelo Governo Brasileiro)</titulo>
+                <descricao>Após o preenchimento do formulário, você irá gerar e imprimir a GRU e pagá-la na rede bancária (exceto refugiados e asilados assim reconhecidos pelo governo brasileiro, que deverão proceder imediatamente à etapa 3 após a conclusão da etapa 1.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1801">GRU</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default>
+                        <custo id="63">
+                            <descricao>Taxa de emissão</descricao>
+                            <moeda>R$</moeda>
+                            <valor>204,77</valor>
+                            <valorVariavel></valorVariavel>
+                            <statusCustoVariavel>0</statusCustoVariavel>
+                        </custo>
+                    </default>
+                    <caso id="644" descricao="Refugiados e asilados assim reconhecidos pelo governo brasileiro">
+                        <custo id="196">
+                            <descricao>Estes usuários são isentos do pagamento desta taxa.</descricao>
+                            <moeda>R$</moeda>
+                            <valorVariavel></valorVariavel>
+                            <statusCustoVariavel>1</statusCustoVariavel>
+                        </custo>
+                    </caso>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2326" tipo="web">
+                            <descricao>https://servicos.dpf.gov.br/gru2/gru?nac=1&amp;rec=2</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5199">
+                <titulo>Agendar atendimento presencial</titulo>
+                <descricao>Feito o pagamento, você irá agendar atendimento presencial junto à PF na página do departamento.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1802">Código dado no formulário preenchido na primeira etapa.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2327" tipo="web">
+                            <descricao>https://servicos.dpf.gov.br/sincreWeb/pesquisaAgendamento.jsp</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5200">
+                <titulo>Comparecer na Unidade da Policia Federal com a documentação pedida, para entrevista, análise e colhimento de digitais.</titulo>
+                <descricao>Você deverá comparecer na Unidade de Polícia Federal com os documentos necessários.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1811">RNE;</item>
+                        <item id="1812">Comprovante bancário de pagamento da taxa (exceto para refugiados e asilados assim reconhecidos pelo Governo Brasileiro);</item>
+                        <item id="1813">Duas fotos 3x4 recentes, coloridas, com fundo branco;</item>
+                    </default>
+                    <caso id="309" descricao="Estrangeiros com visto permanente da da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
+                        <documento>
+                            <id>1804</id>
+                            <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência.</descricao>
+                        </documento>
+                        <documento>
+                            <id>1803</id>
+                            <descricao>Carteira de identidade;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="310" descricao="Estrangeiros com visto permanente de demais países">
+                        <documento>
+                            <id>1806</id>
+                            <descricao>Documento pessoal onde conste filiação e cópia do DOU onde foi publicado o deferimento de permanência;</descricao>
+                        </documento>
+                        <documento>
+                            <id>1805</id>
+                            <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="311" descricao="Estrangeiros sem o visto permanente da Argentina, Bolívia, Chile, Colômbia, Equador, Paraguai, Perú e Uruguai">
+                        <documento>
+                            <id>1808</id>
+                            <descricao>Visto consular e formulário original do pedido.</descricao>
+                        </documento>
+                        <documento>
+                            <id>1807</id>
+                            <descricao>Carteira de identidade;</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="312" descricao="Estrangeiros sem o visto permanente de demais países">
+                        <documento>
+                            <id>1810</id>
+                            <descricao>Visto consular e formulário original do pedido.</descricao>
+                        </documento>
+                        <documento>
+                            <id>1809</id>
+                            <descricao>Documento de viagem válido e original e fotocópia das páginas utilizadas do passaporte (poderão ser autenticadas pelo Cartório ou funcionário do DPF);</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2328" tipo="presencial">
+                            <descricao>Unidade da Polícia Federal indicada no agendamento.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5201">
+                <titulo>Retirar a CIE</titulo>
+                <descricao>A CIE será entregue pessoalmente a seu titular, mediante apresentação de documento de identificação.</descricao>
+                <documentos>
+                    <default>
+                        <item id="1814">Documento de identificação.</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="2329" tipo="presencial">
+                            <descricao>Deverá comparecer no local e horário especificado na etapa anterior.</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/324" dbId="26267">
+            <nomeOrgao>Departamento de Polícia Federal (DPF)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="1" idServicoSegmento="5164">Cidadãos</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Cidadania</item>
+            <item>Relações Internacionais</item>
+            <item>Relações Diplomáticas</item>
+            <item>Serviços Públicos</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9651">identificação</item>
+            <item id="9652">estrangeiro</item>
+            <item id="9653">documento</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2263">[LEI Nº 6.815, DE 19 DE AGOSTO DE 1980.](https://www.planalto.gov.br/ccivil_03/leis/l6815.htm)</item>
+        </legislacoes>
+        <servicos-relacionados>
+            <item>1094</item>
+            <item>712</item>
+        </servicos-relacionados>
     </servico>
     <servico>
         <id>criar-zonas-de-processamento-de-exportacao</id>
@@ -78293,5 +78191,129 @@ CEP: 70.070-600 - Brasília/DF</descricao>
             <item id="9130">ações</item>
             <item id="9131">declaração</item>
         </palavras-chave>
+    </servico>
+    <servico>
+        <id>obter-canal-da-cidadania</id>
+        <dbId>1244</dbId>
+        <nome>Obter Canal da Cidadania</nome>
+        <sigla></sigla>
+        <descricao>O Canal da Cidadania é o serviço de televisão digital aberta, de abrangência municipal, outorgado pelo Ministério da Ciência, Tecnologia, Inovações e Comunicação e executado pelo Poder Público Municipal e Estadual. A principal característica do Canal da Cidadania é o uso da multiprogramação, recurso que permite dividir um canal de televisão em quatro faixas de programação simultâneas. Na prática, é como se quatro emissoras de tv pudessem ocupar o mesmo canal, ao mesmo tempo, e o espectador pudesse, então, escolher a qual delas prefere assistir.     
+
+&amp;nbsp;        
+Essas faixas de programação serão ocupadas da seguinte forma:     
+
+&amp;nbsp;         
+(i) uma faixa para veiculação de programação institucional do Poder Público do município onde o canal está instalado;      
+
+&amp;nbsp;        
+(ii) uma faixa de mesma finalidade para o Poder Público do Estado onde o município está situado; e      
+
+&amp;nbsp;        
+(iii)  duas faixas para associações comunitárias, com programação local de interesse da população beneficiada.      
+
+&amp;nbsp;        
+Os objetivos do canal da cidadania são ampliar a interface entre o Estado e o Cidadão, dar mais transparência à gestão pública, estimular a produção de conteúdo audiovisual local, além de oferecer uma plataforma interativa ao cidadão, pois a tecnologia digital permite que o espectador interaja em tempo real com os responsáveis pela estação geradora.</descricao>
+        <contato></contato>
+        <gratuito>true</gratuito>
+        <porcentagem-manual>false</porcentagem-manual>
+        <servico-digital>false</servico-digital>
+        <link-servico-digital></link-servico-digital>
+        <solicitantes>
+            <solicitante id="2593">
+                <tipo>Estados e Municípios</tipo>
+                <requisitos></requisitos>
+            </solicitante>
+        </solicitantes>
+        <tempo-total-estimado>
+            <nao-estimado-ainda/>
+            <descricao></descricao>
+        </tempo-total-estimado>
+        <validade-documento>
+            <descricao></descricao>
+        </validade-documento>
+        <etapas>
+            <etapa id="5163">
+                <titulo>Solicitar Canal de Cidadania (estados e municípios)</titulo>
+                <descricao>Os Estados poderão solicitar as faixas destinadas a municípios que não manifestaram interesse pelas mesmas, mantendo-se, no entanto, sempre a prioridade ao município em questão.</descricao>
+                <documentos>
+                    <default/>
+                    <caso id="530" descricao="Quanto às pessoas de direito público ou às fundações vinculadas aos Municípios, aos Estados ou ao Distrito Federal">
+                        <documento>
+                            <id>4758</id>
+                            <descricao>projeto técnico para a instalação do sistema irradiante, conforme norma técnica específica para a TV Digital</descricao>
+                        </documento>
+                        <documento>
+                            <id>4757</id>
+                            <descricao>documento devidamente registrado comprovando a constituição do Conselho de Comunicação Social local ou declaração de comprometimento com a criação deste Conselho em até sessenta dias depois de outorgada a autorização</descricao>
+                        </documento>
+                        <documento>
+                            <id>4756</id>
+                            <descricao>ato de nomeação e/ou eleição de dirigentes, devidamente formalizado</descricao>
+                        </documento>
+                    </caso>
+                    <caso id="531" descricao="Quanto aos dirigentes das pessoas de direito público ou das fundações vinculadas aos Municípios, Estados ou ao Distrito Federal">
+                        <documento>
+                            <id>4759</id>
+                            <descricao>prova da condição de brasileiro nato ou naturalizado há mais de dez anos</descricao>
+                        </documento>
+                    </caso>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4365" tipo="web">
+                            <descricao>http://www.mc.gov.br/sei/cadsei</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+            <etapa id="5164">
+                <titulo>Receber a outorga</titulo>
+                <descricao></descricao>
+                <documentos>
+                    <default>
+                        <item id="4760">CPF e senha do CADSEI</item>
+                    </default>
+                </documentos>
+                <custos>
+                    <default/>
+                </custos>
+                <canais-de-prestacao>
+                    <default>
+                        <canal-de-prestacao id="4366" tipo="web">
+                            <descricao>http://www.mc.gov.br/sei/cadsei</descricao>
+                        </canal-de-prestacao>
+                        <canal-de-prestacao id="4367" tipo="web">
+                            <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                        </canal-de-prestacao>
+                    </default>
+                </canais-de-prestacao>
+            </etapa>
+        </etapas>
+        <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+            <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
+        </orgao>
+        <segmentos-da-sociedade>
+            <item idSegmento="2" idServicoSegmento="5155">Órgãos e entidades públicas</item>
+        </segmentos-da-sociedade>
+        <areas-de-interesse>
+            <item>Administração e Gestão Pública</item>
+            <item>Administração</item>
+            <item>Difusão</item>
+            <item>Comunicações</item>
+        </areas-de-interesse>
+        <palavras-chave>
+            <item id="9624">canal público</item>
+            <item id="9625">tv digital</item>
+            <item id="9626">canal digital</item>
+        </palavras-chave>
+        <legislacoes>
+            <item id="2256">[PORTARIA Nº 489, DE 18 DE DEZEMBRO DE 2012](http://www.mctic.gov.br/mctic/export/sites/institucional/arquivos/RadiodifusaoEducativaCanalCidadania/Legislacao/portaria-489-canal-da-cidadania.pdf)</item>
+        </legislacoes>
+        <servicos-relacionados>
+            <item>1232</item>
+        </servicos-relacionados>
     </servico>
 </servicos>
