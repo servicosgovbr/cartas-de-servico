@@ -11,21 +11,21 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="2626">
+        <solicitante id="2627">
             <tipo>Cidadãos e Famílias</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <atendimento-imediato/>
+        <nao-estimado-ainda/>
         <descricao>Mais de 120 dias.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="5230">
-            <titulo>Inscrição no Garantia Safra</titulo>
+        <etapa id="5234">
+            <titulo>Inscrever-se no Garantia Safra</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
@@ -45,8 +45,8 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="5231">
-            <titulo>Realizar a adesão ao programa (pagamento da taxa de adesão).</titulo>
+        <etapa id="5235">
+            <titulo>Realizar a adesão ao programa</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
@@ -55,19 +55,27 @@
                 </default>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo id="197">
+                        <descricao>Taxa de Adesão</descricao>
+                        <moeda>R$</moeda>
+                        <valor>8,50</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="3063" tipo="presencial">
                         <descricao>Prefeituras municipais para buscar o boleto da taxa de adesão;
- CEF ou lotéricas para pagamento.</descricao>
+CEF ou lotéricas para pagamento.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="5232">
-            <titulo>Acompanhamento das vistorias in locu para verificação da perda de produção.</titulo>
+        <etapa id="5236">
+            <titulo>Acompanhar vistorias *in loco* para verificação da perda de produção.</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
@@ -86,9 +94,9 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="5233">
-            <titulo>Recebimento do benefício - pagamento das parcelas pela CEF.</titulo>
-            <descricao></descricao>
+        <etapa id="5237">
+            <titulo>Receber benefício</titulo>
+            <descricao>Pagamento das parcelas pela CEF.</descricao>
             <documentos>
                 <default>
                     <item id="2667">Carteira de identidade</item>
@@ -112,22 +120,22 @@
         <nomeOrgao>Casa Civil da Presidência da República (CC-PR)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="5194">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="5195">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="9720">seca</item>
-        <item id="9721">estiagem</item>
-        <item id="9722">enchente</item>
-        <item id="9723">perda de safra</item>
-        <item id="9724">seguro para o agricultor</item>
-        <item id="9725">SUDENE</item>
-        <item id="9726">Nordeste</item>
-        <item id="9727">Sertão</item>
-        <item id="9728">lavoura</item>
-        <item id="9729">plantação</item>
+        <item id="9730">seca</item>
+        <item id="9731">estiagem</item>
+        <item id="9732">enchente</item>
+        <item id="9733">perda de safra</item>
+        <item id="9734">seguro para o agricultor</item>
+        <item id="9735">SUDENE</item>
+        <item id="9736">Nordeste</item>
+        <item id="9737">Sertão</item>
+        <item id="9738">lavoura</item>
+        <item id="9739">plantação</item>
     </palavras-chave>
     <servicos-relacionados>
         <item>930</item>
