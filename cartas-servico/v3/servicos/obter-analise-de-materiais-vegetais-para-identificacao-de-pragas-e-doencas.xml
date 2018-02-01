@@ -4,12 +4,22 @@
     <dbId>1344</dbId>
     <nome>Obter análise de materiais vegetais para identificação de pragas e doenças</nome>
     <sigla></sigla>
+    <nomes-populares>
+        <item id="1737">Análises Fitopatológicas de materiais vegetais</item>
+        <item id="1738">Clínica Fitopatológica</item>
+    </nomes-populares>
     <descricao>Amostras são examinadas em laboratório visando a identificação de agentes fitopatológicos. Fungo e Bactérias são isolados em meios de cultura (BDA) para serem identificados ao microscópio ótico, visando a diagnose dos problemas fitossanitários de interesse econômico. Entre as culturas normalmente contempladas e trabalhadas citam-se: cacaueiro, coqueiro, seringueira, cupuaçu, mamoeiro, pupunheira, craveiro da índia, graviola, jambo vermelho, etc.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2634">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos>Que necessitem identificar doenças ou pragas em plantas</requisitos>
+        </solicitante>
+    </solicitantes>
     <tempo-total-estimado>
         <entre min="10" max="30" unidade="dias-corridos"/>
         <descricao></descricao>
@@ -17,10 +27,91 @@
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
-    <etapas/>
+    <etapas>
+        <etapa id="5256">
+            <titulo>Enviar amostra</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5200">Amostra da planta</item>
+                    <item id="5201">Pedido da análise</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4598" tipo="presencial">
+                        <descricao>**CEPLAC - Superintendência de Desenvolvimento da Região Cacaueira do Estado da Bahia** - Bahia Rod. Ilhéus/Itabuna, Km 22, Ilhéus/BA
+*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4599" tipo="postal">
+                        <descricao>**CEPLAC - Superintendência de Desenvolvimento da Região Cacaueira do Estado da Bahia** - Bahia Rod. Ilhéus/Itabuna, Km 22, Ilhéus/BA
+*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5257">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5202">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="157">
+                        <descricao>Preço por amostra ou diagnóstico</descricao>
+                        <moeda>R$</moeda>
+                        <valor>10,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4600" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5258">
+            <titulo>Receber laudo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5203">Documento de identificação oficial</item>
+                    <item id="5204">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="4602" tipo="presencial">
+                        <descricao>**CEPLAC - Superintendência de Desenvolvimento da Região Cacaueira do Estado da Bahia** - Bahia Rod. Ilhéus/Itabuna, Km 22, Ilhéus/BA
+*segunda a sexta-feira, das 8h às 12h e das 14h às 18h, exceto feriados*</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="4603" tipo="postal">
+                        <descricao>Endereço informado no pedido</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/14" dbId="37524">
         <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
     </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5205">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5206">Empresas</item>
+    </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
         <item>Agropecuária, extrativismo e pesca</item>
@@ -28,4 +119,16 @@
         <item>Combate a epidemias</item>
         <item>Meio ambiente</item>
     </areas-de-interesse>
+    <palavras-chave>
+        <item id="9767">análise</item>
+        <item id="9768">praga</item>
+        <item id="9769">doença</item>
+        <item id="9770">vegetal</item>
+    </palavras-chave>
+    <servicos-relacionados>
+        <item>923</item>
+        <item>1347</item>
+        <item>925</item>
+        <item>924</item>
+    </servicos-relacionados>
 </servico>
