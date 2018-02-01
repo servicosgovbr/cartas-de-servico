@@ -1,41 +1,49 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Obter Salário-Maternidade]]></nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-salario-maternidade</id>
+    <dbId>53</dbId>
+    <nome>Obter Salário-Maternidade</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>licença maternidade.</item>
+        <item id="1726">licença maternidade.</item>
     </nomes-populares>
-    <descricao><![CDATA[O salário-maternidade é um benefício pago às seguradas que acabaram de ter um filho, seja por parto ou adoção, ou aos segurados que adotem uma criança.]]></descricao>
-    <contato><![CDATA[Central de Atendimento do INSS, número 135.]]></contato>
+    <descricao>O salário-maternidade é um benefício pago às seguradas que acabaram de ter um filho, seja por parto ou adoção, ou aos segurados que adotem uma criança.</descricao>
+    <contato>Central de Atendimento do INSS, número 135.</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="2624">
             <tipo>Mulheres</tipo>
-            <requisitos><![CDATA[•	Que estejam grávidas, passaram por trabalho de parto recente, tenham sofrido aborto não-criminoso ou adotem um filho;
+            <requisitos>•	Que estejam grávidas, passaram por trabalho de parto recente, tenham sofrido aborto não-criminoso ou adotem um filho;
 •	Sejam seguradas do INSS;
-•	Tenham 10 meses trabalhados de carência.]]></requisitos>
+•	Tenham 10 meses trabalhados de carência.</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="2625">
             <tipo>Homens</tipo>
-            <requisitos><![CDATA[•	Que adotem um filho ou que a cônjuge/companheira veio a falecer logo após o parto;
+            <requisitos>•	Que adotem um filho ou que a cônjuge/companheira veio a falecer logo após o parto;
 •	Sejam seguradas do INSS;
-•	Tenham 10 meses trabalhados de carência.]]></requisitos>
+•	Tenham 10 meses trabalhados de carência.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="30" unidade="dias-corridos"/>
-        <descricao><![CDATA[Dependendo da região onde você mora e da procura por serviços do INSS na data do seu pedido, pode haver uma demora de até três meses.]]></descricao>
+        <descricao>Dependendo da região onde você mora e da procura por serviços do INSS na data do seu pedido, pode haver uma demora de até três meses.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="5227">
             <titulo>Agendar atendimento em agência do INSS</titulo>
-            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.
-OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de parto, assim como aquelas que sofreram aborto não-criminoso, esta etapa será cumprida na própria empresa, conforme procedimento próprio das mesma.]]></descricao>
+            <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.
+OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de parto, assim como aquelas que sofreram aborto não-criminoso, esta etapa será cumprida na própria empresa, conforme procedimento próprio das mesma.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Data de nascimento;</item>
-                    <item>Informações de contato.</item>
+                    <item id="1781">Número do CPF;</item>
+                    <item id="1782">Data de nascimento;</item>
+                    <item id="1783">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
@@ -43,34 +51,49 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-agendar">
-                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    <canal-de-prestacao id="2321" tipo="web-agendar">
+                        <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="5228">
             <titulo>Comparecer à Agência do INSS do dia e horário agendados Descrição da Etapa 2 O que o usuário precisa fazer nesta etapa</titulo>
-            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
             <documentos>
                 <default>
-                    <item>Documento de identificação válido e oficial com foto;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Carteiras de Trabalho e Previdência Social;</item>
-                    <item>Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
+                    <item id="1789">Documento de identificação válido e oficial com foto;</item>
+                    <item id="1790">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1791">Carteiras de Trabalho e Previdência Social;</item>
+                    <item id="1792">Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
                 </default>
-                <caso descricao="Por nascimento">
-                    <item>Certidão de nascimento (vivo ou morto) do dependente;</item>
-                    <item>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</item>
+                <caso id="304" descricao="Por nascimento">
+                    <documento>
+                        <id>1785</id>
+                        <descricao>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1784</id>
+                        <descricao>Certidão de nascimento (vivo ou morto) do dependente;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Por guarda">
-                    <item>Termo de guarda com indicação de que a guarda se destina à adoção;</item>
+                <caso id="305" descricao="Por guarda">
+                    <documento>
+                        <id>1786</id>
+                        <descricao>Termo de guarda com indicação de que a guarda se destina à adoção;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Por adoção">
-                    <item>Nova certidão de nascimento expedida após o processo de adoção;</item>
+                <caso id="306" descricao="Por adoção">
+                    <documento>
+                        <id>1787</id>
+                        <descricao>Nova certidão de nascimento expedida após o processo de adoção;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Por aborto não-criminoso">
-                    <item>Atestado médico comprovando a situação.</item>
+                <caso id="307" descricao="Por aborto não-criminoso">
+                    <documento>
+                        <id>1788</id>
+                        <descricao>Atestado médico comprovando a situação.</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -78,21 +101,21 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2322" tipo="presencial">
+                        <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="5229">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item>Número do benefício;</item>
-                    <item>Data de nascimento;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de Identificação válido, original e com foto.</item>
+                    <item id="1793">Número do benefício;</item>
+                    <item id="1794">Data de nascimento;</item>
+                    <item id="1795">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1796">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -100,19 +123,21 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    <canal-de-prestacao id="2323" tipo="web">
+                        <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Na agência do INSS onde foi atendido.]]></descricao>
+                    <canal-de-prestacao id="2324" tipo="presencial">
+                        <descricao>Na agência do INSS onde foi atendido.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="5193">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -122,11 +147,11 @@ OBS: Quando a requerente for empregada de empresa que teve ou terá trabalho de 
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>nascimento</item>
-        <item>filho</item>
-        <item>adoção</item>
+        <item id="9717">nascimento</item>
+        <item id="9718">filho</item>
+        <item id="9719">adoção</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+        <item id="2275">[Decreto-Lei nº 5.452, de 1º de maio de 1943](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
     </legislacoes>
 </servico>
