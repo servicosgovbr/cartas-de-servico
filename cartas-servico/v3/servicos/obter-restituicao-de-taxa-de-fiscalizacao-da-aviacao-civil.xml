@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-restituicao-de-taxa-de-fiscalizacao-da-aviacao-civil</id>
+    <dbId>2191</dbId>
+    <nome>Obter restituição de Taxa de Fiscalização da Aviação Civil</nome>
+    <sigla>TFAC</sigla>
+    <descricao>Consiste na restituição de taxa de fiscalização da aviação civil paga indevidamente ou em valor acima do devido.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2721">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2722">
+            <tipo>Estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2723">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2724">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5405">
+            <titulo>Requerer restituição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5931">Carteira de identidade</item>
+                    <item id="5932">Carteira de trabalho</item>
+                    <item id="5933">CNPJ</item>
+                    <item id="5934">Comprovante de endereço/residência</item>
+                    <item id="5935">Comprovante de pagamento</item>
+                    <item id="5936">CPF</item>
+                    <item id="5937">Procuração do representante legal</item>
+                    <item id="5938">Fromulário próprio</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5149" tipo="e-mail">
+                        <descricao>tfac@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5406">
+            <titulo>Receber resultado da análise</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5150" tipo="e-mail">
+                        <descricao>E-mail informado na realização do pedido.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5343">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5344">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5345">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10255">devolução</item>
+        <item id="10256">taxa</item>
+        <item id="10257">anac</item>
+    </palavras-chave>
+</servico>
