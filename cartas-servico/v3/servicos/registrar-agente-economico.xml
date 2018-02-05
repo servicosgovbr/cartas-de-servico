@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-agente-economico</id>
+    <dbId>2199</dbId>
+    <nome>Registrar Agente Econômico</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1813">Registro de empresa</item>
+    </nomes-populares>
+    <descricao>O requerimento de registro de agentes econômicos inicia-se por meio eletrônico, através do Portal Ancine;
+Em seguida, o requerente deve encaminhar à ANCINE a documentação pertinente, de acordo a legislação vigente, no prazo máximo de 30 dias.
+A análise da documentação pelo setor responsável se dá em até 30 dias corridos, contados a partir da data do recebimento da documentação exigida.
+Após a análise pela área competente, o requerimento pode ser indeferido, se verificado o não envio dos documentos dentro do prazo ou o não atendimento aos requisitos normativos, ou deferido, em caso de envio de todos os documentos e cumprimento de todas as obrigações normativas.
+O usuário é informado sobre o resultado de seu requerimento de registro, deferimento ou indeferimento,  no endereço eletrônico informado.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://sad.ancine.gov.br/controleacesso/menuSistema/menuSistema.seam</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2733">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2734">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5419">
+            <titulo>Requerer registro</titulo>
+            <descricao>Requerimento eletrônico no sistema do órgão</descricao>
+            <documentos>
+                <default>
+                    <item id="5956">Carteira de identidade</item>
+                    <item id="5957">Carteira de identidade de estrangeiro</item>
+                    <item id="5958">Carteira de trabalho</item>
+                    <item id="5959">Comprovante de endereço/residência</item>
+                    <item id="5960">Contrato Social</item>
+                    <item id="5961">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5167" tipo="web">
+                        <descricao>http://sad.ancine.gov.br/controleacesso/menuSistema/menuSistema.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5420">
+            <titulo>Enviar documentação</titulo>
+            <descricao>Envio da documentação exigida para a ANCINE</descricao>
+            <documentos>
+                <default>
+                    <item id="5962">Carteira de identidade</item>
+                    <item id="5963">Carteira de identidade de estrangeiro</item>
+                    <item id="5964">Carteira de trabalho</item>
+                    <item id="5965">Comprovante de endereço/residência</item>
+                    <item id="5966">Contrato Social</item>
+                    <item id="5967">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5168" tipo="presencial">
+                        <descricao>Escritório Central - Rio de Janeiro - Avenida Graça Aranha, 35 – Centro - 20030-002 - Rio de Janeiro/RJ
+Escritório Regional - São Paulo - Rua Formosa 367, conjunto 2160, Centro, Vale do Anhangabaú - 01049-911 - São Paulo/SP
+Escritório Regional - Brasília – Sede - SRTV Sul Conjunto E, Edifício Palácio do Rádio, Bloco I, Cobertura - 70340-901 – Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5169" tipo="e-mail">
+                        <descricao>registro.documentos@ancine.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5170" tipo="postal">
+                        <descricao>Escritório Central - Rio de Janeiro - Avenida Graça Aranha, 35 – Centro - 20030-002 - Rio de Janeiro/RJ
+Escritório Regional - São Paulo - Rua Formosa 367, conjunto 2160, Centro, Vale do Anhangabaú - 01049-911 - São Paulo/SP
+Escritório Regional - Brasília – Sede - SRTV Sul Conjunto E, Edifício Palácio do Rádio, Bloco I, Cobertura - 70340-901 – Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/57682" dbId="916">
+        <nomeOrgao>Agência Nacional do Cinema (ANCINE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5354">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5355">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10282">registro</item>
+        <item id="10283">empresa</item>
+        <item id="10284">audivisual</item>
+    </palavras-chave>
+</servico>
