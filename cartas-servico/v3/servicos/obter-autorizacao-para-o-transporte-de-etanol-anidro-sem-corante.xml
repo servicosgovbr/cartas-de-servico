@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-o-transporte-de-etanol-anidro-sem-corante</id>
+    <dbId>2210</dbId>
+    <nome>Obter autorização para o transporte de etanol anidro sem corante</nome>
+    <sigla></sigla>
+    <descricao>Consiste em receber solicitação por parte dos interessados para dispensar a adição de corante ao etanol anidro e, quando atendidos os requisitos, o ato é concedido por meio de ofício da Superintendência de Biocombustíveis e Qualidade de Produtos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2746">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5439">
+            <titulo>Solicitar dispensa</titulo>
+            <descricao>Solicitação da dispensa de adição de corante no etanol anidro e decisão da ANP em referência a dispensa.</descricao>
+            <documentos>
+                <default>
+                    <item id="6017">Solicitação de dispensa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5204" tipo="telefone">
+                        <descricao>(21) 2112-8644</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5205" tipo="e-mail">
+                        <descricao>contatoqualidade@anp.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5440">
+            <titulo>Receber resposta</titulo>
+            <descricao>Encaminhamento de Fax com a decisão da ANP em referência a dispensa.</descricao>
+            <documentos>
+                <default>
+                    <item id="6018">Decisão da ANP</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5206" tipo="e-mail">
+                        <descricao>E-mail informado na ocasião do pedido de dispensa.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25281" dbId="917">
+        <nomeOrgao>Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5367">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10309">petróleo</item>
+        <item id="10310">etanol</item>
+        <item id="10311">transporte de combustíveis</item>
+    </palavras-chave>
+</servico>
