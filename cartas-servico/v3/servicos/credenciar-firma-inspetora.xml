@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>credenciar-firma-inspetora</id>
+    <dbId>2212</dbId>
+    <nome>Credenciar firma inspetora.</nome>
+    <sigla></sigla>
+    <descricao>Consiste em receber solicitação por parte dos interessados para credenciar laboratórios interessados em atuar como firmas inspetoras para realização dos serviços de controle da qualidade de produtos importados e de adição de marcador aos solventes, publicando o ato quando atendidos os requisitos, no Diário Oficial da União.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2748">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5444">
+            <titulo>Solicitar credenciamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6025">Certidões de cartório</item>
+                    <item id="6026">Certidões da Receita Federal</item>
+                    <item id="6027">CNPJ</item>
+                    <item id="6028">Contrato Social</item>
+                    <item id="6029">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5210" tipo="postal">
+                        <descricao>**ANP** - Avenida Rio Branco, 65 - 17º andar - Centro - Rio de Janeiro/RJ - CEP: 20090-003</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5445">
+            <titulo>Agendar vistoria técnica.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5211" tipo="telefone">
+                        <descricao>(21) 2112-8640</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5446">
+            <titulo>Receber vistoria laboratorial.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6030">Eventuais certificados de calibração de equipamentos, registros de treinamento de pessoal, certificados de reconhecimento de competência técnica na realização de serviços laboratoriais etc.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5212" tipo="presencial">
+                        <descricao>Nesta interação o atendimento é no laboratório do próprio usuário.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25281" dbId="917">
+        <nomeOrgao>Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5369">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Combustíveis</item>
+        <item>Defesa do Consumidor</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10315">fiscalização</item>
+        <item id="10316">controle de qualidade</item>
+        <item id="10317">solventes</item>
+    </palavras-chave>
+</servico>
