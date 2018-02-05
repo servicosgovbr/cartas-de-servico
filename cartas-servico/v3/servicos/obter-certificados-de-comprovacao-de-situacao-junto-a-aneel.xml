@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificados-de-comprovacao-de-situacao-junto-a-aneel</id>
+    <dbId>2208</dbId>
+    <nome>Obter Certificados de Comprovação de Situação junto à ANEEL</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1818">Certificado de Adimplemento</item>
+        <item id="1819">Certificado Positivo com Efeito Negativo</item>
+        <item id="1820">Certificado de Inadimplemento</item>
+    </nomes-populares>
+    <descricao>Conceder aos agentes setoriais, mediante requerimento de login e senha, autorização para solicitar e acessar online o Certificado de Adimplemento, Certificado Positivo com Efeito Negativo e Certificado de Inadimplemento com relação às obrigações intrassetoriais previstas na Resolução Normativa ANEEL nº 538/2013.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2744">
+            <tipo>Empresas de energia elétrica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5436">
+            <titulo>Requisitar login e senha</titulo>
+            <descricao>Enviar documentação e requerimento para liberação de login e senha.</descricao>
+            <documentos>
+                <default>
+                    <item id="6013">Contrato social</item>
+                    <item id="6014">Procuração do representante legal</item>
+                    <item id="6015">Requerimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5200" tipo="e-mail">
+                        <descricao>inadimplentes.saf@aneel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5201" tipo="postal">
+                        <descricao>Agência Nacional de Energia Elétrica – ANEEL
+SGAN 603 módulos I e J - Brasília/DF 
+CEP: 70830-110"</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5437">
+            <titulo>Emitir Certificado</titulo>
+            <descricao>Acessar a página da ANEEL para emissão do certificado.</descricao>
+            <documentos>
+                <default>
+                    <item id="6016">Login e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5202" tipo="web">
+                        <descricao>https://sistemas.aneel.gov.br/certificado</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/21089" dbId="909">
+        <nomeOrgao>Agência Nacional de Energia Elétrica (ANEEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5365">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Fiscalização do Estado</item>
+        <item>Energia elétrica</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10303">nada consta</item>
+        <item id="10304">certificado</item>
+        <item id="10305">inadimplência</item>
+    </palavras-chave>
+</servico>
