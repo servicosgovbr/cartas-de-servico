@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-produto-brasileiro</id>
+    <dbId>2198</dbId>
+    <nome>Obter Certificado de Produto Brasileiro</nome>
+    <sigla>CPB</sigla>
+    <descricao>O requerimento para emissão do CPB inicia-se por meio eletrônico, através do Portal Ancine;
+Em seguida, o requerente deve encaminhar à ANCINE a documentação pertinente, de acordo a legislação vigente, no prazo máximo de 30 dias.
+A análise da documentação pelo setor responsável se dá em até 30 dias corridos, contados a partir da data do recebimento da documentação exigida.
+Após a análise pela área competente, o requerimento pode ser indeferido, se verificado o não envio dos documentos dentro do prazo ou o não atendimento aos requisitos normativos, ou deferido, em caso de envio de todos os documentos e cumprimento de todas as obrigações normativas.
+O certificado emitido é encaminhado de forma automática ao endereço eletrônico do requerente.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://sad.ancine.gov.br/controleacesso/menuSistema/menuSistema.seam</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2731">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2732">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5417">
+            <titulo>Requerer certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5954">Contratos diversos relacionados à produção e aos direitos sobre a obra audiovisual</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5164" tipo="web">
+                        <descricao>http://sad.ancine.gov.br/controleacesso/menuSistema/menuSistema.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5418">
+            <titulo>Enviar cópia da obra</titulo>
+            <descricao>Envio da cópia da obra audiovisual em DVD para a ANCINE</descricao>
+            <documentos>
+                <default>
+                    <item id="5955">Cópia da obra em DVD</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5165" tipo="presencial">
+                        <descricao>Escritório Central - Rio de Janeiro - Avenida Graça Aranha, 35 – Centro - 20030-002 - Rio de Janeiro/RJ
+Escritório Regional - São Paulo - Rua Formosa 367, conjunto 2160, Centro, Vale do Anhangabaú - 01049-911 - São Paulo/SP
+Escritório Regional - Brasília – Sede - SRTV Sul Conjunto E, Edifício Palácio do Rádio, Bloco I, Cobertura - 70340-901 – Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5166" tipo="postal">
+                        <descricao>Escritório Central - Rio de Janeiro - Avenida Graça Aranha, 35 – Centro - 20030-002 - Rio de Janeiro/RJ
+Escritório Regional - São Paulo - Rua Formosa 367, conjunto 2160, Centro, Vale do Anhangabaú - 01049-911 - São Paulo/SP
+Escritório Regional - Brasília – Sede - SRTV Sul Conjunto E, Edifício Palácio do Rádio, Bloco I, Cobertura - 70340-901 – Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/57682" dbId="916">
+        <nomeOrgao>Agência Nacional do Cinema (ANCINE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5352">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5353">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10278">certificado</item>
+        <item id="10279">produto nacional</item>
+        <item id="10280">filme nacional</item>
+        <item id="10281">cinema brasileiro</item>
+    </palavras-chave>
+</servico>
