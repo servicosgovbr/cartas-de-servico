@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>parcelar-multas-em-divida-corrente</id>
+    <dbId>2189</dbId>
+    <nome>Parcelar multas em dívida corrente</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1807">Parcelamento de multas</item>
+    </nomes-populares>
+    <descricao>As multas em dívida corrente, isto é, aquelas que se encontram em processamento administrativo na Agência, podem ser parceladas diretamente na ANAC. Os valores podem ser divididos em até 24 vezes, com parcelas mínimas mensais de R$ 1.000,00 (mil reais).</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2715">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2716">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2717">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5401">
+            <titulo>Solicitar parcelamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5923">Carteira de identidade</item>
+                    <item id="5924">Carteira de trabalho</item>
+                    <item id="5925">CNPJ</item>
+                    <item id="5926">Comprovante de endereço/residência</item>
+                    <item id="5927">Contrato Social</item>
+                    <item id="5928">CPF</item>
+                    <item id="5929">Termo e solcitação de Parcelamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5146" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/parcelamento/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5147" tipo="e-mail">
+                        <descricao>cobranca@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5402">
+            <titulo>Assinar Termo de Parcelamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="5930">Termo de Parcelamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5148" tipo="e-mail">
+                        <descricao>cobranca@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5337">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5338">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5339">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Transportes</item>
+        <item>Urbanismo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10249">parcelamento</item>
+        <item id="10250">dívida</item>
+        <item id="10251">pagamento</item>
+    </palavras-chave>
+</servico>
