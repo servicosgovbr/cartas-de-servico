@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>pagar-ou-parcelar-debitos-junto-a-ans</id>
+    <dbId>2239</dbId>
+    <nome>Pagar ou parcelar débitos junto à ANS</nome>
+    <sigla></sigla>
+    <descricao>A operadora ou ex-operadora (representante legal) deverá solicitar o parcelamento de débitos existentes junto a ANS. Os débitos podem ser relativos a: Taxa de Saúde Suplementar, Multas Pecuniárias, Ressarcimento ao SUS.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2785">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2786">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2787">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5480">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Acessar o site da ANS e escolher o tipo de ação a ser efetuada, pagamento ou parcelamento de debito ou encaminhar e-mails.</descricao>
+            <documentos>
+                <default>
+                    <item id="6083">Carteira de identidade</item>
+                    <item id="6084">Carteira de trabalho</item>
+                    <item id="6085">Comprovante de pagamento</item>
+                    <item id="6086">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5260" tipo="web">
+                        <descricao>http://www.ans.gov.br/planos-de-saude-e-operadoras/espaco-da-operadora/compromissos-e-interacoes-com-ans/pagamentos-e-parcelamentos-e-taxas</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5261" tipo="e-mail">
+                        <descricao>gefin.ans@ans.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5262" tipo="postal">
+                        <descricao>**ANS** - Av Augusto Severo, 84 -7º andar - Glória - Cep 20021040 - RJ - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5408">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5409">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10400">débitos</item>
+        <item id="10401">pagamento</item>
+        <item id="10402">ANS</item>
+    </palavras-chave>
+</servico>
