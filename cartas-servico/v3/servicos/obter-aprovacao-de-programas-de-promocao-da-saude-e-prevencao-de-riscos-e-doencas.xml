@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-aprovacao-de-programas-de-promocao-da-saude-e-prevencao-de-riscos-e-doencas</id>
+    <dbId>2236</dbId>
+    <nome>Obter aprovação de programas de promoção da saúde e prevenção de riscos e doenças</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1836">PROMOPREV</item>
+    </nomes-populares>
+    <descricao>As operadoras de planos de saúde solicitam à ANS que analise os programas de promoção e prevenção que elas cadastram eletronicamente. Caso todos os requisitos sejam cumpridos, a ANS aprova os programas e eles passam a ser monitorados anualmente. Os programas de promoção e prevenção de riscos e doenças que as operadoras elaboram e submetem à ANS para análise e aprovação são de caráter voluntário e foram criados como forma de estimular a promoção de um modelo de atenção que tenha foco na gestão da saúde dos beneficiários dos planos de saúde.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.ans.gov.br/externo/site/perfil_operadoras/promoprev/FI/login.asp</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2781">
+            <tipo>Operadoras de planos de saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5475">
+            <titulo>Cadastrar o programa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6076">Dados do programa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5255" tipo="web">
+                        <descricao>http://www.ans.gov.br/externo/site/perfil_operadoras/promoprev/FI/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5476">
+            <titulo>Realizar correções (se necessário)</titulo>
+            <descricao>Recadastrar o programa, caso ele seja devolvido para correções</descricao>
+            <documentos>
+                <default>
+                    <item id="6077">Dados do programa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5256" tipo="web">
+                        <descricao>http://www.ans.gov.br/externo/site/perfil_operadoras/promoprev/FI/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5477">
+            <titulo>Prestar informações anuais</titulo>
+            <descricao>Preencher o formulário de monitoramento anual, caso o programa cadastrado seja aprovado</descricao>
+            <documentos>
+                <default>
+                    <item id="6078">Informações e dados do programa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5257" tipo="web">
+                        <descricao>http://www.ans.gov.br/externo/site/perfil_operadoras/promoprev/FC/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5402">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10391">Operadora</item>
+        <item id="10392">prevenção</item>
+        <item id="10393">plano de saúde</item>
+    </palavras-chave>
+</servico>
