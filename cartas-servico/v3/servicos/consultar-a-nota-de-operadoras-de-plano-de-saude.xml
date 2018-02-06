@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>consultar-a-nota-de-operadoras-de-plano-de-saude</id>
+    <dbId>2233</dbId>
+    <nome>Consultar a nota de operadoras de plano de saúde</nome>
+    <sigla>IDSS</sigla>
+    <nomes-populares>
+        <item id="1832">Índice de Desempenho de Saúde Suplementar</item>
+        <item id="1833">Programa de Qualificação de Operadoras</item>
+    </nomes-populares>
+    <descricao>Consultar a nota da operadora (Índice de Desempenho da Saúde Suplementar - IDSS), o que reflete o desempenho anual das operadoras de planos de saúde. O IDSS varia de zero a 1, sendo 1 o melhor desempenho e tem como objetivo comparar uma operadora com outra, dando subsídios para a escolha de um plano de saúde.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.ans.gov.br/planos-de-saude-e-operadoras/informacoes-e-avaliacoes-de-operadoras/qualificacao-ans</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2778">
+            <tipo>Qualquer pessoa pode utilizar este serviço</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5470">
+            <titulo>Realizar consulta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+                <caso id="645" descricao="Para consulta de uma operadora em específico">
+                    <documento>
+                        <id>6071</id>
+                        <descricao>CNPJ da operadora.</descricao>
+                    </documento>
+                    <documento>
+                        <id>6070</id>
+                        <descricao>Nome da  Operadora; ou</descricao>
+                    </documento>
+                    <documento>
+                        <id>6069</id>
+                        <descricao>Número de registro da operadora na ANS; ou</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5240" tipo="web">
+                        <descricao>http://www.ans.gov.br/planos-de-saude-e-operadoras/informacoes-e-avaliacoes-de-operadoras/qualificacao-ans</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5391">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5392">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5393">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5394">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10382">plano de saúde</item>
+        <item id="10383">avaliação</item>
+        <item id="10384">nota</item>
+    </palavras-chave>
+</servico>
