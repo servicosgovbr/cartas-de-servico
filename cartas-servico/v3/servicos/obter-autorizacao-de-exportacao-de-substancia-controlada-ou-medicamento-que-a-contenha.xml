@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-exportacao-de-substancia-controlada-ou-medicamento-que-a-contenha</id>
+    <dbId>2260</dbId>
+    <nome>Obter autorização de exportação de substância controlada ou medicamento que a contenha</nome>
+    <sigla>AEX</sigla>
+    <descricao>Autorização de Exportação (AEX) é o documento expedido pela Anvisa que autoriza a exportação de substâncias das listas "A1" e "A2" (entorpecentes de uso permitido), "A3", "B1" e "B2" (psicotrópicos de uso permitido), “C3” (substâncias imunossupressoras), "D1" (precursores de uso permitido), "F1" (entorpecentes de uso proscrito), "F2"(psicotrópicos de uso proscrito), "F3" (precursores de uso proscrito), “F4” (outras substâncias) e de plantas da lista E ou plantas que possam originar substâncias sujeitas a controle especial da Portaria SVS/MS nº 344/98 e de suas atualizações, bem como os medicamentos que as contenham.
+Não será necessária a solicitação de Autorização de Exportação para as substâncias constantes das listas "C1" (outras substâncias sujeitas a controle especial), "C2" (retinóicas) e "C5" (anabolizantes), constantes da Portaria SVS/MS nº 344/98 e de suas atualizações, bem como dos medicamentos que as contenham.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2808">
+            <tipo>Pessoas jurídicas que comercializem ou realizem pesquisas com medicamentos,</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5509">
+            <titulo>Requerer autorização</titulo>
+            <descricao>Realizar peticionamento inicial no sistema da ANVISA.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5305" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5510">
+            <titulo>Solicitar autorização do National Drug System</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5306" tipo="web">
+                        <descricao>https://nds.anvisa.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5511">
+            <titulo>Enviar autorização de importação</titulo>
+            <descricao>Protocolização do original da autorização de importação ou documento similar emitido pela autoridade competente do país importador.</descricao>
+            <documentos>
+                <default>
+                    <item id="6155">Original da autorização de importação ou documento similar emitido pela autoridade competente do país importador</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5307" tipo="presencial">
+                        <descricao>**ANVISA** - SIA Trecho 5/Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5308" tipo="postal">
+                        <descricao>**ANVISA** - SIA Trecho 5/Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5439">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5440">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Medicamentos e aparelhos</item>
+        <item>Relações Internacionais</item>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10469">Exportação de medicamento</item>
+        <item id="10470">psicotrópicos</item>
+        <item id="10471">entorpecentes</item>
+    </palavras-chave>
+</servico>
