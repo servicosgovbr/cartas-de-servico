@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-certidao-de-situacao-cadastral-de-plano-de-saude</id>
+    <dbId>2237</dbId>
+    <nome>Emitir certidão de situação cadastral de plano de saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1837">Certidão de Produtos</item>
+    </nomes-populares>
+    <descricao>Emissão de certidão da situação cadastral de um plano de assistência à saúde, verificando a atual situação dos seus registros. Ele aponta a regularidade cadastral e o status de operação dos  produtos (ativo, ativo com comercialização suspensa ou cancelado). É fornecido em situações como demandas jurídicas, ou para utilização em licitações, tanto pela operadora quanto pelo órgão público demandante.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2782">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="2783">
+            <tipo>Órgãos Públicos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5478">
+            <titulo>Solicitar certidão</titulo>
+            <descricao>Solicitação de certidão através do preenchimento de formulário</descricao>
+            <documentos>
+                <default>
+                    <item id="6079">Carteira de identidade</item>
+                    <item id="6080">Carteira de trabalho</item>
+                    <item id="6081">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5258" tipo="postal">
+                        <descricao>**ANS** - Av.  Augusto Severo, 84 - Glória - Rio de Janeiro (RJ) - CEP: 221031-072</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5403">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5404">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10394">plano de saúde</item>
+        <item id="10395">certidão</item>
+        <item id="10396">situação</item>
+    </palavras-chave>
+</servico>
