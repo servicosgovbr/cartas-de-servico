@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-exclusao-do-encargo-de-responsavel-tecnico-no-rntrc</id>
+    <dbId>2256</dbId>
+    <nome>Solicitar exclusão do encargo de Responsável Técnico no RNTRC</nome>
+    <sigla></sigla>
+    <descricao>Em atendimento à lei 11.442/2007, é obrigatória a inscrição de todos os transportadores rodoviários de cargas no registro nacional de transportadores rodoviários de cargas – RNTRC. Faz parte dos dados cadastrais a identificação do responsável técnico em transporte para as empresas e cooperativas de transporte de cargas.ão.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2804">
+            <tipo>Cidadãos e empresas que prestam o serviço de transporte rodoviário de cargas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5503">
+            <titulo>Solicitar exclusão</titulo>
+            <descricao>Solicitação via correios do desligamento da função de responsável técnico.</descricao>
+            <documentos>
+                <default>
+                    <item id="6143">Carteira de identidade</item>
+                    <item id="6144">Carteira de trabalho</item>
+                    <item id="6145">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5295" tipo="postal">
+                        <descricao>**Agência Nacional de Transportes Terrestres** - Endereço: Setor de Clubes Esportivos Sul - SCES, Lote 10, Trecho 3, Projeto Orla Polo 8, Bloco A, Térreo - Brasília / DF - CEP: 70.200-003</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5504">
+            <titulo>Receber ofício de desligamento</titulo>
+            <descricao>O usuário recebe um ofício da antt/suroc/gerar/cotrc informando do desligamento da função de responsável tecnico de uma dada empresa ou cooperativa de transporte rodoviário de cargas.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5296" tipo="postal">
+                        <descricao>Endereço informado na solicitação inicial.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5432">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5433">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5434">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10455">cadastro</item>
+        <item id="10456">transporte rodoviário</item>
+        <item id="10457">cargas</item>
+        <item id="10458">caminhão</item>
+        <item id="10459">caminhoneiro</item>
+    </palavras-chave>
+</servico>
