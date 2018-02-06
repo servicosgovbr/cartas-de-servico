@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-autorizacao-para-dispensacao-excepcional-de-medicamento-a-base-de-talidomida</id>
+    <dbId>2258</dbId>
+    <nome>Solicitar Autorização para dispensação excepcional de medicamento a base de Talidomida</nome>
+    <sigla></sigla>
+    <descricao>O uso do medicamento Talidomida está sujeito a normas especiais de controle e fiscalização dispostas nas Portarias SVS/MS nº 344/98 e a RDC n° 11/2011.      
+ 
+Para a prescrição do medicamento à base dessa substância em indicações não contempladas no Anexo III da RDC n° 11/2011, como última alternativa terapêutica, e sendo indispensável a utilização do medicamento, o prescritor deverá solicitar autorização prévia da Anvisa, em caráter excepcional.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2806">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5507">
+            <titulo>Requerer autorização</titulo>
+            <descricao>**Obtenha os modelos dos formulários necessários aqui:**     
+
+&amp;nbsp;        
+
+¨ [Formulário de Justificativa de Uso do Medicamento à Base de Talidomida](http://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2011/res0011_21_03_2011.html) (Anexo VII);       
+¨ [Relatório de Evolução do Caso ](http://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2011/res0011_21_03_2011.html) (Anexo VIII);</descricao>
+            <documentos>
+                <default>
+                    <item id="6150">Formulário de Justificativa de Uso do Medicamento à Base de Talidomida</item>
+                    <item id="6151">Cópia da Notificação de Receita de Talidomida</item>
+                    <item id="6152">Cópia da literatura que comprove a eficácia e segurança, por meio de estudos publicados em revistas indexadas.</item>
+                </default>
+                <caso id="646" descricao="Para autorizações posteriores à inicial">
+                    <documento>
+                        <id>6149</id>
+                        <descricao>Relatório de Evolução do Caso</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5300" tipo="presencial">
+                        <descricao>**ANVISA - Protocolo** - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5301" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5302" tipo="e-mail">
+                        <descricao>med.controlados@anvisa.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5303" tipo="postal">
+                        <descricao>**ANVISA** - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5437">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Medicamentos e aparelhos</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10463">talidomina</item>
+        <item id="10464">avaliação</item>
+        <item id="10465">medicamento</item>
+    </palavras-chave>
+</servico>
