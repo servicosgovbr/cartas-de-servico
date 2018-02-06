@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-uso-de-embarcacao-estrangeira-em-transporte-privativo-de-embarcacoes-brasileiras</id>
+    <dbId>2241</dbId>
+    <nome>Obter autorização para uso de embarcação estrangeira em transporte privativo de embarcações brasileiras</nome>
+    <sigla>CLCP</sigla>
+    <nomes-populares>
+        <item id="1840">Certificado de Liberação de Carga Prescrita</item>
+        <item id="1841">Liberação de Carga Prescrita à Bandeira Brasileira</item>
+    </nomes-populares>
+    <descricao>O serviço permite que pessoas jurídicas, previamente autorizada pela Antaq a explorar o serviço de transporte aquaviário de cargas em águas jurisdicionadas possam utilizar embarcações estrangeiras para o transporte de cargas prescritas à bandeira brasileira na navegação de longo curso.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://web.antaq.gov.br/SAMA/CLCP/Solicitacao.aspx</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2789">
+            <tipo>Pessoas jurídicas previamente autorizadas pela ANTAQ a explorar o serviço de transporte aquaviário de cargas em águas jurisdicionadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5483">
+            <titulo>Requerer autorização</titulo>
+            <descricao>Solicitação inicial para liberação de carga.</descricao>
+            <documentos>
+                <default>
+                    <item id="6089">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5265" tipo="web">
+                        <descricao>http://web.antaq.gov.br/SAMA/CLCP/Solicitacao.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5484">
+            <titulo>Receber autorização</titulo>
+            <descricao>Comunicação final da liberação .</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5266" tipo="web">
+                        <descricao>http://web.antaq.gov.br/SAMA/CLCP/Solicitacao.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54843" dbId="912">
+        <nomeOrgao>Agência Nacional de Transportes Aquaviários (ANTAQ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5411">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Hidroviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10406">carga prescrita</item>
+        <item id="10407">embarcação estrangeira</item>
+        <item id="10408">CLCP</item>
+    </palavras-chave>
+</servico>
