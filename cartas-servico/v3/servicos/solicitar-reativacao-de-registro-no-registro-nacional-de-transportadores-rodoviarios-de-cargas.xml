@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-reativacao-de-registro-no-registro-nacional-de-transportadores-rodoviarios-de-cargas</id>
+    <dbId>2255</dbId>
+    <nome>Solicitar reativação de registro no Registro Nacional de Transportadores Rodoviários de Cargas</nome>
+    <sigla>RNTRC</sigla>
+    <descricao>Em cumprimento à lei 11.442/2007, este registro é obrigatório para todos os transportadores rodoviários de cargas que prestam o serviço mediante frete. Os contratantes estão sujeitos a multas no caso de contratação de transportador não registrado.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2803">
+            <tipo>Cidadãos ou empresas que prestem o serviço de transporte rodoviário de cargas.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5501">
+            <titulo>Solicitar reativação</titulo>
+            <descricao>Enviar a solicitação de reativação do RNTRC pelo correio.</descricao>
+            <documentos>
+                <default>
+                    <item id="6139">Carteira de identidade</item>
+                    <item id="6140">Carteira de trabalho</item>
+                    <item id="6141">CNPJ</item>
+                    <item id="6142">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5293" tipo="postal">
+                        <descricao>**Agência Nacional de Transportes Terrestres** - Endereço: Setor de Clubes Esportivos Sul - SCES, Lote 10, Trecho 3, Projeto Orla Polo 8, Bloco A, Térreo - Brasília / DF - CEP: 70.200-003</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5502">
+            <titulo>Receber aviso de reativação</titulo>
+            <descricao>A ANTT envia o aviso de reativação pelos correios para o endereço informado na petição.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5294" tipo="postal">
+                        <descricao>O endereço informado na solicitação inicial.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5429">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5430">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5431">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10451">cargas</item>
+        <item id="10452">registro</item>
+        <item id="10453">caminhoneiro</item>
+        <item id="10454">caminhão</item>
+    </palavras-chave>
+</servico>
