@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-parcelamento-de-debitos-junto-a-antt-nao-inscritos-em-divida-ativa-da-uniao</id>
+    <dbId>2246</dbId>
+    <nome>Solicitar parcelamento de débitos junto à ANTT não inscritos em Divida Ativa da União</nome>
+    <sigla></sigla>
+    <descricao>PARCELAMENTO CONCEDIDO NOS TERMOS DA RES. ANTT 3.561/2010.
+Principais Etapas do Serviço
+1.  RECEBER REQUERIMENTO;
+4. APÓS OS PROCEDIMENTOS CITADOS, O PARCELAMENTO É CONCEDIDO;
+5. DISPONIBILIZAÇÃO DOS BOLETOS NA ÁREA DO AUTUADO;
+6. ENVIO DO OFÍCIO DE CONCESSÃO, VIA E-MAIL, INFORMANDO AS ESPECIFICAÇÕES DO PARCELAMENTO.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2794">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5489">
+            <titulo>Requerer parcelamento</titulo>
+            <descricao>Apresentação de requerimento de parcelamento, o qual pode ser encaminhado via correios, dispensando a apresentação presencial.</descricao>
+            <documentos>
+                <default>
+                    <item id="6100">Carteira de identidade</item>
+                    <item id="6101">Carteira de trabalho</item>
+                    <item id="6102">Contrato Social</item>
+                    <item id="6103">Procuração do representante legal</item>
+                    <item id="6104">Requerimento de Parcelamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5276" tipo="presencial">
+                        <descricao>**Agência Nacional de Transportes Terrestres - ANTT** - Setor de Clubes Esportivos Sul - SCES, lote 10, trecho 03, Projeto Orla Polo 8 - CEP: 70200-003 - Brasília / DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5277" tipo="postal">
+                        <descricao>**Agência Nacional de Transportes Terrestres - ANTT** - Setor de Clubes Esportivos Sul - SCES, lote 10, trecho 03, Projeto Orla Polo 8 - CEP: 70200-003 - Brasília / DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5490">
+            <titulo>Receber resposta</titulo>
+            <descricao>Você receberá o ofício de concessão informando os detalhes do parcelamento.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5278" tipo="e-mail">
+                        <descricao>E-mail informado na requisição de parcelamento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5491">
+            <titulo>Emitir boletos</titulo>
+            <descricao>Caso você não seja cadastrado no sistema, poderá fazer seu cadastro [aqui](https://appweb1.antt.gov.br/spmi/Site/Login.aspx?ReturnUrl=%2fspmi)</descricao>
+            <documentos>
+                <default>
+                    <item id="6105">Login e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5279" tipo="web">
+                        <descricao>https://appweb1.antt.gov.br/spmi/Site/Login.aspx?ReturnUrl=%2fspmi</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5416">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5417">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5418">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5419">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+        <item>Fiscalização do Estado</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10421">parcelamento</item>
+        <item id="10422">multa</item>
+        <item id="10423">DAU</item>
+    </palavras-chave>
+</servico>
