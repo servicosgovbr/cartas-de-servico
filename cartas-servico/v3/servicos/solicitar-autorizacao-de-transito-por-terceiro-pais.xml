@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-autorizacao-de-transito-por-terceiro-pais</id>
+    <dbId>2257</dbId>
+    <nome>Solicitar autorização de trânsito por terceiro país</nome>
+    <sigla>TRIC</sigla>
+    <nomes-populares>
+        <item id="1849">AUTORIZAÇÃO DE TRÂNSITO  DO TRIC</item>
+    </nomes-populares>
+    <descricao>Autorização de trânsito por território brasileiro para veículos de cargas originários de outro país e com destino a um terceiro país.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2805">
+            <tipo>Transportadora de cargas internacionais</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5505">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Solicitação via correio ou por representante da empresa estrangeira diretamente no protocolo da ANTT</descricao>
+            <documentos>
+                <default>
+                    <item id="6146">Carteira de identidade</item>
+                    <item id="6147">Carteira de trabalho</item>
+                    <item id="6148">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5297" tipo="presencial">
+                        <descricao>**Agência Nacional de Transportes Terrestres (ANTT) - Coordenação de transporte rodoviário nacional de cargas** - Setor de Clubes Esportivos Sul - SCES, lote 10, trecho 03, Projeto Orla Polo 8 - CEP: 70200-003 - Brasília / DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5298" tipo="postal">
+                        <descricao>**Agência Nacional de Transportes Terrestres (ANTT) - Coordenação de transporte rodoviário nacional de cargas** - Setor de Clubes Esportivos Sul - SCES, lote 10, trecho 03, Projeto Orla Polo 8 - CEP: 70200-003 - Brasília / DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5506">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5299" tipo="e-mail">
+                        <descricao>Endereço informado na solicitação inicial</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5435">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5436">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+        <item>Cooperação Internacional</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10460">cargas</item>
+        <item id="10461">transportadora estrangeira</item>
+        <item id="10462">Caminhão estrangeiro</item>
+    </palavras-chave>
+</servico>
