@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-guia-de-trafego-para-produtos-controlados</id>
+    <dbId>2308</dbId>
+    <nome>Emitir Guia de Tráfego para produtos controlados</nome>
+    <sigla></sigla>
+    <descricao>Visa a autorização para trafego de produtos controlados.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2858">
+            <tipo>Empresas que lidam com produtos controlados pelo Exército</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5584">
+            <titulo>Solicitar emissão</titulo>
+            <descricao>Comprovante de Pagamento</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5400" tipo="presencial">
+                        <descricao>[SFPC da Região Militar a que estiver vinculado](http://www.dfpc.eb.mil.br/mapa/)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5401" tipo="postal">
+                        <descricao>[SFPC da Região Militar a que estiver vinculado](http://www.dfpc.eb.mil.br/mapa/)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5585">
+            <titulo>Receber Guia</titulo>
+            <descricao>Recebimento da GTE</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5402" tipo="postal">
+                        <descricao>Endereço informado no requerimento inicial</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5522">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Defesa militar</item>
+        <item>Comércio e Serviços</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Fiscalização do Estado</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10613">transporte de cargas</item>
+        <item id="10614">Comando do Exército</item>
+        <item id="10615">Região militar</item>
+    </palavras-chave>
+</servico>
