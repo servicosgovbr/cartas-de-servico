@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-textos-tecnicos-cientificos-do-campo-da-engenharia-nuclear-ou-areas-correlatas</id>
+    <dbId>2320</dbId>
+    <nome>Obter textos técnicos científicos do campo da engenharia nuclear ou áreas correlatas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1889">SERVIR</item>
+        <item id="1890">Texto completo de documento técnico científico</item>
+    </nomes-populares>
+    <descricao>O serviço de atendimento a texto completo destina-se a atender aos pedidos de pesquisadores da área nuclear e de alunos da pós-graduação de programas de engenharia nuclear que não conseguem obter um determinado documento técnico cientifico quer seja por não encontra-lo ou por não ter recursos financeiros suficientes para obtê-lo. Através da página da CNEN, o usuário preenche um formulário com a descrição do documento que está procurando, e o CIN, através de consultas no seu próprio acervo ou nos das redes de bibliotecas das quais é membro, tenta localizar o documento e disponibilizá-lo para o solicitante.</descricao>
+    <contato>servir@cnen.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.cnen.gov.br/index.php/centro-de-informacoes-nucleares/solicitacao-de-texto-completo</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2870">
+            <tipo>Qualquer pessoa que busque um documento técnico-científico e não tenha encontrado na internet ou não possua acesso ao mesmo.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5610">
+            <titulo>Preencher formulário de requisição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5422" tipo="web">
+                        <descricao>http://www.cnen.gov.br/index.php/centro-de-informacoes-nucleares/solicitacao-de-texto-completo</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5611">
+            <titulo>Comprovar direito a isenção ou pagar cópias</titulo>
+            <descricao>São isentos deste pagamento:
+
+¨ Servidor ativo ou aposentado, estagiário ou bolsista da CNEN e seus institutos;      
+¨ Servidor ativo ou aposentado de instituições nacionais de pesquisa em C&amp;T;       
+¨ Funcionário ativo ou aposentado de empresas nucleares;      
+¨ Alunos ou professores de cursos de graduação ou pós-graduação na área nuclear;      
+
+Aqueles que não se enquadram nestas categorias receberão por email a GRU para pagamento no início do mês seguinte.</descricao>
+            <documentos>
+                <default/>
+                <caso id="647" descricao="Para requerentes de isenção">
+                    <documento>
+                        <id>6460</id>
+                        <descricao>Documentos comprobatórios da condição que lhe dá direito à isenção.</descricao>
+                    </documento>
+                </caso>
+                <caso id="648" descricao="Para não isentos">
+                    <documento>
+                        <id>6461</id>
+                        <descricao>GRU</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="205">
+                        <descricao>10 primeiras páginas</descricao>
+                        <moeda>R$</moeda>
+                        <valor>6,86</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="206">
+                        <descricao>Cada faixa de 10 páginas adicionais</descricao>
+                        <moeda>R$</moeda>
+                        <valor>3,55</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="651" descricao="Documentos obtidos no Exterior">
+                    <custo id="207">
+                        <descricao>10 primeiras páginas</descricao>
+                        <moeda>R$</moeda>
+                        <valor>22,41</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="208">
+                        <descricao>Cada faixa de 10 páginas adicionais</descricao>
+                        <moeda>R$</moeda>
+                        <valor>19,83</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5424" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="650" descricao="Para requerentes de isenção">
+                    <canal-de-prestacao id="5423" tipo="e-mail">
+                        <descricao>servir@cnen.gov.br</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5555">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Energia</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10659">nuclear</item>
+        <item id="10660">pesquisa</item>
+        <item id="10661">texto acadêmico</item>
+        <item id="10662">texto de pesquisa</item>
+        <item id="10663">texto difícil</item>
+    </palavras-chave>
+</servico>
