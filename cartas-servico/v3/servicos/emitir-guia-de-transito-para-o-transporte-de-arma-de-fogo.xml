@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-guia-de-transito-para-o-transporte-de-arma-de-fogo</id>
+    <dbId>2349</dbId>
+    <nome>Emitir Guia de Trânsito para o Transporte de Arma de Fogo</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1909">SINARM</item>
+    </nomes-populares>
+    <descricao>É o documento que autoriza o proprietário de arma de fogo a alterar o lugar aonde guarda o armamento. Para obter a guia, o proprietário da arma deve se dirigir a uma unidade da PF e apresentar a documentação necessária.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2902">
+            <tipo>Proprietários de armas de fogo</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5653">
+            <titulo>Preencher e imprimir formulário</titulo>
+            <descricao>Você deve preencher as informações pedidas e, ao final, imprimir o formulário</descricao>
+            <documentos>
+                <default>
+                    <item id="6610">Dados pessoais e dados da arma de fogo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5488" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/armas/form-sinarm</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5654">
+            <titulo>Requerer emissão da guia</titulo>
+            <descricao>De posse da documentação, o usuário deve então se dirigir a uma superintendência regional da PF para realizar a requisição.</descricao>
+            <documentos>
+                <default>
+                    <item id="6611">Carteira de identidade (RG)</item>
+                    <item id="6612">CPF</item>
+                    <item id="6613">Comprovante de residência</item>
+                    <item id="6614">Certificado de Registro da arma de Arma de Fogo</item>
+                    <item id="6615">Formulário preenchido impresso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5489" tipo="presencial">
+                        <descricao>Uma das [Superintendências Regionais da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5617">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5618">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Defesa Civil</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10750">transporte de armas</item>
+        <item id="10751">clube de tiro</item>
+        <item id="10752">armamento</item>
+    </palavras-chave>
+</servico>
