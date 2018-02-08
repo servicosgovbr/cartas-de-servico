@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>verificar-autenticidade-de-boletim-de-acidente</id>
+    <dbId>2355</dbId>
+    <nome>Verificar Autenticidade de Boletim de Acidente</nome>
+    <sigla>BAT</sigla>
+    <descricao>Serviço oferecido à população que queira verificar a autenticidade do Boletim de Acidente de Trânsito emitido pela Polícia Rodoviária Federal.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www.prf.gov.br/novobat/autenticar</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2908">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5673">
+            <titulo>Verificar autenticidade</titulo>
+            <descricao>Colocar o protocolo do Boletim de Acidente de Trânsito,   o número  de autenticação e clicar "confirmar autenticidade".</descricao>
+            <documentos>
+                <default>
+                    <item id="6666">Número do protocolo</item>
+                    <item id="6667">Número de autenticação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5504" tipo="web-consultar">
+                        <descricao>https://www.prf.gov.br/novobat/autenticar</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5632">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="5633">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="5634">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="5635">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Justiça e Segurança Pública</item>
+        <item>Mobilidade</item>
+        <item>Transportes</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Policiamento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10769">trânsito</item>
+        <item id="10770">acidente</item>
+        <item id="10771">BR</item>
+        <item id="10772">rodovia</item>
+    </palavras-chave>
+</servico>
