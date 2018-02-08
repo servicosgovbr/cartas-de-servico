@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-boletim-de-acidente-de-transito</id>
+    <dbId>2354</dbId>
+    <nome>Obter boletim de acidente de trânsito</nome>
+    <sigla>Bat</sigla>
+    <descricao>Consiste no fornecimento, para fins legais, do documento oficial intitulado “Boletim de Acidente de Trânsito – BAT”.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www.prf.gov.br/novobat/consultar</link-servico-digital>
+    <solicitantes>
+        <solicitante id="2907">
+            <tipo>Qualquer pessoa pode utilizar este serviço, quando necessário.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5672">
+            <titulo>Emitir BAT</titulo>
+            <descricao>Digitar o protocolo de atendimento e o cpf do envolvido.</descricao>
+            <documentos>
+                <default>
+                    <item id="6664">Número do protocolo</item>
+                    <item id="6665">Número do CPF ou CNPJ do envolvido</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5503" tipo="web-emitir">
+                        <descricao>https://www.prf.gov.br/novobat/consultar</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5628">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="5629">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="5630">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="5631">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Transporte Rodoviário</item>
+        <item>Policiamento</item>
+        <item>Mobilidade</item>
+        <item>Justiça e Segurança Pública</item>
+        <item>Defesa Civil</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10765">acidente</item>
+        <item id="10766">vias federais</item>
+        <item id="10767">BR</item>
+        <item id="10768">interestadual</item>
+    </palavras-chave>
+</servico>
