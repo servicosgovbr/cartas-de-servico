@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-tratamento-em-ginecologia-cirurgica</id>
+    <dbId>2371</dbId>
+    <nome>Obter tratamento em Ginecologia Cirúrgica</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1920">Instituto Nacional de Saúde da Mulher, da Criança e do Adolescente Fernandes Figueira</item>
+    </nomes-populares>
+    <descricao>Avaliar com base em multicritérios a necessidade de intervenção cirúrgica .  Para ser atendido o usuário precisa ser atendido anteriormente em um Centro Municipal de Saúde (SMS) e/ou Clínica da Família (CF) de sua referência; Caso haja necessidade, um profissional solicitará encaminhamento via Central de Regulação para atendimento. O encaminhamento deverá ser realizado de acordo com as necessidades do usuário e os critérios pré-definidos pela instituição.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2924">
+            <tipo>Pacientes referenciados</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5714">
+            <titulo>Fornecer informações para Prontuário</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6721">Cartão do SUS</item>
+                    <item id="6722">Carteira de identidade</item>
+                    <item id="6723">Carteira de trabalho</item>
+                    <item id="6724">Comprovante de endereço/residência</item>
+                    <item id="6725">Guia de encaminhamento do SISREG</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5562" tipo="presencial">
+                        <descricao>**Arquivo Médico do Departamento de Informação e Documentação** - Avenida Rui Barbosa 716 – Flamengo, Rio de Janeiro (RJ), CEP: 22.250-020</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5715">
+            <titulo>Entregar documentos na recepção</titulo>
+            <descricao>Entrega do Cartão e da Guia de Encaminhamento na Recepção do Ambulatório.</descricao>
+            <documentos>
+                <default>
+                    <item id="6726">Carteira de identidade</item>
+                    <item id="6727">Carteira de trabalho</item>
+                    <item id="6728">Cartão de Identificação do Paciente</item>
+                    <item id="6729">Guia de Encaminhamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5563" tipo="presencial">
+                        <descricao>**Recepção do Ambulatório de Ginecologia** - Avenida Rui Barbosa 716 – Flamengo, Rio de Janeiro (RJ), CEP: 22.250-020</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5716">
+            <titulo>Receber Acolhimento da Enfermagem</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5564" tipo="presencial">
+                        <descricao>**Consultório do Ambulatório de Ginecologia** - Avenida Rui Barbosa 716 – Flamengo, Rio de Janeiro (RJ), CEP: 22.250-020</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5717">
+            <titulo>Realizar a Avaliação dos Critérios Médicos.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6730">Guia de Encaminhamento</item>
+                    <item id="6731">Exames específicos</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5565" tipo="presencial">
+                        <descricao>**Consultório do Ambulatório de Ginecologia** - Avenida Rui Barbosa 716 – Flamengo, Rio de Janeiro (RJ), CEP: 22.250-020</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5718">
+            <titulo>Realizar o Agendamento da Próxima Consulta de Seguimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6732">Cartão de Identificação da Paciente</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5566" tipo="presencial">
+                        <descricao>**Recepção do Ambulatório de Ginecologia** - Avenida Rui Barbosa 716 – Flamengo, Rio de Janeiro (RJ), CEP: 22.250-020</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/315" dbId="34312">
+        <nomeOrgao>Fundação Oswaldo Cruz (FIOCRUZ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5663">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10825">ginecologia</item>
+        <item id="10826">mulher</item>
+        <item id="10827">saúde da mulher</item>
+        <item id="10828">cirurgia</item>
+    </palavras-chave>
+</servico>
