@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-vista-e-copia-de-processo-nao-sancionador</id>
+    <dbId>2332</dbId>
+    <nome>Obter vista e cópia de processo não sancionador</nome>
+    <sigla></sigla>
+    <descricao>O Centro de Consultas envia um email ao requerente da vista informando sobre a disponibilidade do processo/documento para vista/cópia informando o telefone e o prazo para agendamento.
+O requerente pode efetuar o agendamento por telefone, por email ou mesmo presencialmente.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2882">
+            <tipo>Qualquer pessoa pode utilizar este serviço</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5632">
+            <titulo>Agendar atendimento (para serviço presencial)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5448" tipo="presencial">
+                        <descricao>**CVM Sede** - Rua Sete de Setembro 111, 2° andar, Centro - CEP 20.050-901, Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5449" tipo="presencial">
+                        <descricao>**Superintendência Regional da CVM em São Paulo** - Rua Cincinato Braga, 340, 2º andar, Bela Vista - CEP 01.333-010, São Paulo/SP</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5450" tipo="telefone">
+                        <descricao>(21) 3554-8460</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5633">
+            <titulo>Consultar documento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6497">Documento de identificação oficial com foto (para serviço presencial)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5451" tipo="web">
+                        <descricao>http://sistemas.cvm.gov.br/?SAC</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5452" tipo="presencial">
+                        <descricao>**CVM Sede** - Rua Sete de Setembro 111, 2° andar, Centro - CEP 20.050-901, Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5453" tipo="presencial">
+                        <descricao>**Superintendência Regional da CVM em São Paulo** - Rua Cincinato Braga, 340, 2º andar, Bela Vista - CEP 01.333-010, São Paulo/SP</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/478" dbId="7907">
+        <nomeOrgao>Comissão de Valores Mobiliários (CVM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5582">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5583">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5584">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5585">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Habitação Rural</item>
+        <item>Habitação Urbana</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10697">CVM</item>
+        <item id="10698">valores mobiliários</item>
+        <item id="10699">processo</item>
+    </palavras-chave>
+</servico>
