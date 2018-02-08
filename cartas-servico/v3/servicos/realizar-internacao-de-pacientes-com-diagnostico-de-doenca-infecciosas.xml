@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-internacao-de-pacientes-com-diagnostico-de-doenca-infecciosas</id>
+    <dbId>2373</dbId>
+    <nome>Realizar internação de pacientes com diagnóstico de doença infecciosas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1922">Internação no Instituto Nacional de Infectologia Evandro Chagas</item>
+    </nomes-populares>
+    <descricao>Internar pacientes com diagnóstico de doença infecciosa acompanhados nos ambulatórios do INI e indivíduos com malária ou leptospirose encaminhados pela Central de Regulação de Vagas. O cuidado aos pacientes hospitalizados é prestado 24 horas por dia, todos os dias da semana, incluindo feriados.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2926">
+            <tipo>Pacientes referenciados</tipo>
+            <requisitos>Pacientes com diagnóstico de doença infecciosa acompanhados nos ambulatórios do INI e indivíduos com malária ou leptospirose encaminhados pela Central de Regulação de Vagas.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5722">
+            <titulo>Passar por avaliação médica</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6737">Cartão do Sus</item>
+                    <item id="6738">Carteira de Identidade (RG)</item>
+                    <item id="6739">CPF</item>
+                    <item id="6740">Comprovante de Residência</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5570" tipo="presencial">
+                        <descricao>**Unidade de internação do INI** - Avenida Brasil 4.365, Manguinhos, Rio de Janeiro - RJ, CEP 21.040-900, Pavilhão Gaspar Vianna</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5723">
+            <titulo>Ser internado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5571" tipo="presencial">
+                        <descricao>**Unidade de internação do INI** - Avenida Brasil 4.365, Manguinhos, Rio de Janeiro - RJ, CEP 21.040-900, Pavilhão Gaspar Vianna</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/315" dbId="34312">
+        <nomeOrgao>Fundação Oswaldo Cruz (FIOCRUZ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5665">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Emergências e Urgências</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10833">infecção</item>
+        <item id="10834">infecção grave</item>
+        <item id="10835">emergência</item>
+    </palavras-chave>
+</servico>
