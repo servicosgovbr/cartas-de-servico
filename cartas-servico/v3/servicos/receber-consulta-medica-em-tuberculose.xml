@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-consulta-medica-em-tuberculose</id>
+    <dbId>2368</dbId>
+    <nome>Receber consulta médica em Tuberculose.</nome>
+    <sigla></sigla>
+    <descricao>Atendimento multidisciplinar (médico, enfermagem, serviço social e farmácia) a pacientes referenciados, são aqueles que receberam diagnóstico na Rede de Atenção Básica, e em função do resultado de exame, foram encaminhados para a consulta médica de tuberculose.
+ São pré-requisitos para o atendimento:   apresentar o exame de teste de sensibilidade com resistência a medicamentos; ou  apresentar exame de diagnostico para cultura com identificação de outra microbactéria.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2921">
+            <tipo>Pacientes referenciados pela Rede de Atenção Básica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5705">
+            <titulo>Ir a atendimento inicial</titulo>
+            <descricao>Ser atendimento por equipe multidisciplinar para a confirmação do diagnóstico e início do tratamento adequado.</descricao>
+            <documentos>
+                <default>
+                    <item id="6697">Cartão do SUS</item>
+                    <item id="6698">Carteira de identidade</item>
+                    <item id="6699">Carteira de trabalho</item>
+                    <item id="6700">Comprovante de endereço/residência</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5552" tipo="presencial">
+                        <descricao>**Ambulatório do Centro de Referência Professor Hélio Fraga.** - Estrada de Curicica nº 2000 - Jacarepaguá - CEP: 22780-194 - Rio de Janeiro, RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5706">
+            <titulo>Continuar tratamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6701">Carteira de identidade</item>
+                    <item id="6702">Carteira de trabalho</item>
+                    <item id="6703">Crachá personalizado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5553" tipo="presencial">
+                        <descricao>**Ambulatório do Centro de Referência Professor Hélio Fraga.** - Estrada de Curicica nº 2000 - Jacarepaguá - CEP: 22780-194 - Rio de Janeiro, RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5707">
+            <titulo>Receber acompanhamento médico após a cura.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6704">Crachá personalizado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5554" tipo="presencial">
+                        <descricao>**Ambulatório do Centro de Referência Professor Hélio Fraga.** - Estrada de Curicica nº 2000 - Jacarepaguá - CEP: 22780-194 - Rio de Janeiro, RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/315" dbId="34312">
+        <nomeOrgao>Fundação Oswaldo Cruz (FIOCRUZ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5659">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Emergências e Urgências</item>
+        <item>Atendimento básico</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10814">tuberculose</item>
+        <item id="10815">acompanhamento médico</item>
+        <item id="10816">tratamento especializado</item>
+    </palavras-chave>
+</servico>
