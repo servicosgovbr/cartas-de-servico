@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-emprestimo-de-item-do-acervo-do-cedoc-funarte</id>
+    <dbId>2420</dbId>
+    <nome>Solicitar empréstimo de item do acervo do Cedoc - Funarte</nome>
+    <sigla></sigla>
+    <descricao>"O Cedoc-Funarte possui vasto acervo de livros que podem ser emprestados somente para funcionários ou para instituições que possuam bibliotecas.
+O processo se inicia com a consulta ao banco de dados da plataforma digital de pesquisa e atendimento (Sophia) em um dos terminais de atendimento da biblioteca ou remotamente através do endereço http://cedoc.funarte.gov.br/sophia_web/, passa por reserva por telefone ou e-mail, em seguida é agendado o atendimento presencial para buscar o documento e entrega da documentação necessária., e se conclui com a devolução do item emprestado.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2977">
+            <tipo>Instituições com biblioteca</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5824">
+            <titulo>Requisitar empréstimo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5699" tipo="presencial">
+                        <descricao>**Centro de Documentação e Pesquisa - CEDOC/FUNARTE** -  R. São José, 50 - Centro, Rio de Janeiro - RJ, 20010-020</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5700" tipo="telefone">
+                        <descricao>(21) 2279-8291</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5701" tipo="web">
+                        <descricao>http://cedoc.funarte.gov.br/sophia_web/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5702" tipo="e-mail">
+                        <descricao>bibli-cedoc@funarte.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2330" dbId="34309">
+        <nomeOrgao>Fundação Nacional de Artes (FUNARTE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="5738">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5739">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Difusão Cultural</item>
+        <item>Cultura</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10997">biblioteca</item>
+        <item id="10998">livro</item>
+        <item id="10999">empréstimo</item>
+    </palavras-chave>
+</servico>
