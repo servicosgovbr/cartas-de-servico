@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-ensaios-analiticos-pela-rede-de-plataformas-tecnologicas</id>
+    <dbId>2383</dbId>
+    <nome>Realizar ensaios analíticos pela rede de plataformas tecnológicas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1941">Rede de Plataforma Tecnológica da Fiocruz</item>
+    </nomes-populares>
+    <descricao>A rede é atualmente constituída por 10 plataformas tecnológicas: bioensaios, bioinformática, bioprospecção, citometria, genômica, métodos analíticos, microscopia, nanotecnologia e microarranjos, PCR em Tempo Real, proteômica, que possuem equipamentos de alto desempenho e recursos humanos com excelente capacitação técnica para realizar ensaios/análises em diferentes métodos/tecnologias.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="2939">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5749">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Realizar agendamento eletrônico para atendimento</descricao>
+            <documentos>
+                <default>
+                    <item id="6771">cadastro do grupo de pesquisa no sistema</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5601" tipo="e-mail">
+                        <descricao>plataformas@fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="653" descricao="Para cadastro prévio do grupo de pesquisa">
+                    <canal-de-prestacao id="5600" tipo="web">
+                        <descricao>http://www.plataformas.fiocruz.br/site/candidatar_grupo</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5750">
+            <titulo>Entregar material para análise</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6772">protocolo de entrada de material</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5602" tipo="presencial">
+                        <descricao>Laboratórios onde as plataformas estão localizadas (veja [aqui](http://plataformas.fiocruz.br/))</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5603" tipo="e-mail">
+                        <descricao>plataformas@fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5604" tipo="postal">
+                        <descricao>Laboratório onde a Plataforma específica está localizada, seguindo a Norma de Utilização de cada plataforma, disponível no site. (veja [aqui](http://plataformas.fiocruz.br/))</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5751">
+            <titulo>Receber resultado/laudo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="6773">nº da solicitação gerado pelo sistema no agendamento.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5605" tipo="presencial">
+                        <descricao>Laboratório onde a Plataforma específica está localizada, seguindo a Norma de Utilização de cada Plataforma, disponível no site.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5606" tipo="web">
+                        <descricao>www.plataformas.fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5607" tipo="e-mail">
+                        <descricao>plataformas@fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/315" dbId="34312">
+        <nomeOrgao>Fundação Oswaldo Cruz (FIOCRUZ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5683">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5684">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5685">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="10865">laboratórios</item>
+        <item id="10866">plataforma</item>
+        <item id="10867">análise</item>
+    </palavras-chave>
+</servico>
