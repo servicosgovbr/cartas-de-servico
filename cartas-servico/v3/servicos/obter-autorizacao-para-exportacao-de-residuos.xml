@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-exportacao-de-residuos</id>
+    <dbId>2456</dbId>
+    <nome>Obter autorização para exportação de resíduos</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="1983">Convenção de Basileia</item>
+    </nomes-populares>
+    <descricao>Autorizar a exportação de resíduos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3015">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5881">
+            <titulo>Requerer autorização</titulo>
+            <descricao>Envio do documento Notificação de Basileia</descricao>
+            <documentos>
+                <default>
+                    <item id="7021">Laudo de periculosidade;</item>
+                    <item id="7022">Documentos de exportação;</item>
+                    <item id="7023">Notificação de Basileia.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5763" tipo="e-mail">
+                        <descricao>residuos.sede@ibama.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="5818">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="5819">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="5820">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="5821">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Preservação e Conservação Ambiental</item>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11118">Basiléia</item>
+        <item id="11119">resíduos sólidos</item>
+        <item id="11120">poluição</item>
+    </palavras-chave>
+</servico>
