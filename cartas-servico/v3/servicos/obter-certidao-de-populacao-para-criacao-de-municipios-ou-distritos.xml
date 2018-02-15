@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-populacao-para-criacao-de-municipios-ou-distritos</id>
+    <dbId>2461</dbId>
+    <nome>Obter certidão de população para criação de municípios ou distritos</nome>
+    <sigla></sigla>
+    <descricao>Consiste em receber solicitação para fornecimento de dados de população com finalidade de criação de municípios ou distritos.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3019">
+            <tipo>Cidadãos e Famílias</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="3020">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="3021">
+            <tipo>Estados e municípios</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5885">
+            <titulo>Solicitar o serviço</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7025">Carteira de identidade</item>
+                    <item id="7026">Carteira de trabalho</item>
+                    <item id="7027">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5767" tipo="e-mail">
+                        <descricao>ibge@ibge.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3" dbId="34305">
+        <nomeOrgao>Fundação Instituto Brasileiro de Geografia e Estatística (IBGE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5831">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5832">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5833">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Desenvolvimento Urbano</item>
+        <item>Desenvolvimento Rural</item>
+        <item>Desenvolvimento Social</item>
+        <item>Infraestrutura Urbana</item>
+        <item>Serviços Públicos</item>
+        <item>Serviços Urbanos</item>
+        <item>Urbanismo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11130">densidade populacional</item>
+        <item id="11131">território</item>
+        <item id="11132">município</item>
+    </palavras-chave>
+</servico>
