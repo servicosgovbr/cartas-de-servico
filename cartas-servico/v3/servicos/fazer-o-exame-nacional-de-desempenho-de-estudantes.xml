@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>fazer-o-exame-nacional-de-desempenho-de-estudantes</id>
+    <dbId>2484</dbId>
+    <nome>Fazer o Exame Nacional de Desempenho de Estudantes</nome>
+    <sigla>ENADE</sigla>
+    <descricao>O Enade é um dos pilares do Sistema Nacional de Avaliação da Educação Superior (Sinaes), criado pela Lei nº 10.861, de 14 de abril de 2004. O Sinaes é composto ainda pelos processos de Avaliação de Cursos de Graduação e de Avaliação Institucional que, junto com o Enade, formam um ‘tripé’ avaliativo que permite analisar as condições de oferta, o modo de funcionamento e a qualidade dos cursos de graduação e das instituições de educação superior (IES) de todo o Brasil. Seus resultados são fundamentais, especialmente a partir da criação dos Indicadores de Qualidade da Educação Superior (conforme Portaria 40/2007), para os processos de Supervisão e Regulação da Educação Superior no país.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3053">
+            <tipo>Estudantes do ensino superior.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="3054">
+            <tipo>Instituições de Ensino Superior.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="12" unidade="meses"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5954">
+            <titulo>Enquadrar cursos (IES)</titulo>
+            <descricao>Enquadramento de cursos pela Instituição de Educação Superior. Caso sua instituição ainda não tenha cadastro no sistema, clique [aqui](http://enade.inep.gov.br/enade/#!/cadastrarCoordenador)</descricao>
+            <documentos>
+                <default>
+                    <item id="7128">Login e Senha no sistema do ENADE</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5836" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5955">
+            <titulo>Inscrever estudantes (IES)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7129">Carteira de identidade</item>
+                    <item id="7130">Carteira de trabalho</item>
+                    <item id="7131">CPF</item>
+                    <item id="7132">Login e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5837" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5956">
+            <titulo>Completar cadastro (estudantes)</titulo>
+            <descricao>Preenchimento do Questionário do Estudante</descricao>
+            <documentos>
+                <default>
+                    <item id="7133">Dados pessoais e de formação.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5838" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/cadastrarEstudante</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5957">
+            <titulo>Consultar o local da prova (estudante)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7134">Login e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5839" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5958">
+            <titulo>Fazer a prova (estudante)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7135">Carteira de identidade</item>
+                    <item id="7136">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5840" tipo="presencial">
+                        <descricao>Local definido pela organização do exame.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5959">
+            <titulo>Preenchimento do Questionário do Coordenador de Curso (IES)</titulo>
+            <descricao>Login e senha</descricao>
+            <documentos>
+                <default>
+                    <item id="7137">Dados do curso e dados profissionais.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5841" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5960">
+            <titulo>Obter Boletim de Desempenho Individual (estudante)</titulo>
+            <descricao>Acesso ao Boletim de Desempenho Individual do Estudante.</descricao>
+            <documentos>
+                <default>
+                    <item id="7138">Login e senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5842" tipo="web">
+                        <descricao>http://enade.inep.gov.br/enade/#!/login</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/249" dbId="36790">
+        <nomeOrgao>Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5881">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5882">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="5883">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="5884">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Fiscalização do Estado</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11207">exame obrigatório</item>
+        <item id="11208">educação superior</item>
+        <item id="11209">nota do curso</item>
+    </palavras-chave>
+</servico>
