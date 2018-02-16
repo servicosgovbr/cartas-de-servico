@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-copia-de-processo-no-inss</id>
+    <dbId>2515</dbId>
+    <nome>Obter Cópia de Processo no INSS</nome>
+    <sigla></sigla>
+    <descricao>Trata-se de serviço que possibilita a retirada de cópias do processo pelo segurado ou seu representante legal</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3086">
+            <tipo>Segurado ou seu representante legal</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6019">
+            <titulo>Requisitar cópia do processo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7242">Carteira de identidade</item>
+                    <item id="7243">Carteira de trabalho</item>
+                    <item id="7244">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5913" tipo="presencial">
+                        <descricao>Nas [Unidades de atendimento do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5954">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Administração e Gestão Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11302">cópia</item>
+        <item id="11303">vistas</item>
+        <item id="11304">previdência</item>
+    </palavras-chave>
+</servico>
