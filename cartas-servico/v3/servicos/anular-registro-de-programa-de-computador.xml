@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>anular-registro-de-programa-de-computador</id>
+    <dbId>2508</dbId>
+    <nome>Anular registro de programa de computador</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2032">Solicitar a nulidade administrativa</item>
+    </nomes-populares>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que entender que a decisão de concessão ou indeferimento de pedido de registro de programa de computador deva ser considerada nula total ou parcialmente por infração à Lei nº 9.609, de 19 de fevereiro de 1998. O serviço consiste, basicamente, na instauração do processo administrativo de nulidade, na sua instrução técnica, na emissão de parecer sobre a matéria suscitada e na decisão da Presidência do INPI.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3078">
+            <tipo>Pessoas físicas ou jurídicas de direito privado.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6008">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7226">CPF</item>
+                    <item id="7227">CNPJ</item>
+                    <item id="7228">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5902" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6009">
+            <titulo>Pagar taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU).</descricao>
+            <documentos>
+                <default>
+                    <item id="7229">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="210">
+                        <descricao>Taxa de requerimento de nulidade</descricao>
+                        <moeda>R$</moeda>
+                        <valor>185,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5905" tipo="presencial">
+                        <descricao></descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="660" descricao="Para emissão da GRU">
+                    <canal-de-prestacao id="5903" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="661" descricao="Para pagar a GRU">
+                    <canal-de-prestacao id="5904" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6010">
+            <titulo>Requerer anulação</titulo>
+            <descricao>Preencher o formulário de peticionamento eletrônico no Sistema e-RPC.</descricao>
+            <documentos>
+                <default>
+                    <item id="7230">CNPJ</item>
+                    <item id="7231">CPF</item>
+                    <item id="7232">Comprovante de pagamento da taxa</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5906" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5942">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5943">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="5944">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fiscalização do Estado</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11281">anulação</item>
+        <item id="11282">nulidade</item>
+        <item id="11283">software</item>
+    </palavras-chave>
+</servico>
