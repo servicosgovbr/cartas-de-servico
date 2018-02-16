@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-matricula-no-curso-de-libras</id>
+    <dbId>2491</dbId>
+    <nome>Realizar matrícula no curso de Libras</nome>
+    <sigla></sigla>
+    <descricao>Proceder a matrícula dos contemplados no sorteio eletrônico.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3061">
+            <tipo>Qualquer pessoa pode utilizar este serviço</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="5974">
+            <titulo>Inscrever-se para o sorteio</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7153">Formulário Eletrônico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5862" tipo="web">
+                        <descricao>http://www.ines.gov.br/curso-de-libras</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="5975">
+            <titulo>Realizar matrícula (para contemplados no sorteio)</titulo>
+            <descricao>¨ **Nível 1** - apresentação de documentos para efetivação da matrícula;      
+¨ **Níveis 2 a 5** - preenchimento do formulário disponibilizado aos alunos por meio de link encaminhado por e-mail ou pelos grupos fechados do face book.</descricao>
+            <documentos>
+                <default>
+                    <item id="7154">Carteira de identidade</item>
+                    <item id="7155">Carteira de trabalho</item>
+                    <item id="7156">Comprovante de endereço/residência</item>
+                    <item id="7157">CPF</item>
+                    <item id="7158">duas fotos</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5864" tipo="presencial">
+                        <descricao>**Divisão de Formação e Capacitação de Recursos Humanos do Instituto Nacional de Educação de Surdos** - Rua das Laranjeiras, 232, 3º andar, Laranjeiras. Rio de Janeiro/RJ - CEP 22240-003</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="657" descricao="Nível 2 a 5">
+                    <canal-de-prestacao id="5863" tipo="e-mail">
+                        <descricao>E-mail informado no cadastro do aluno</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/252" dbId="36789">
+        <nomeOrgao>Instituto Nacional de Educação de Surdos (INES)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5905">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Educação profissionalizante</item>
+        <item>Assistência ao Portador de Deficiência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11230">libras</item>
+        <item id="11231">linguagem dos sinais</item>
+        <item id="11232">surdos</item>
+    </palavras-chave>
+</servico>
