@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-peculio</id>
+    <dbId>2529</dbId>
+    <nome>Receber Pecúlio</nome>
+    <sigla></sigla>
+    <descricao>Consiste na devolução de contribuições efetuadas para o INSS pelo cidadão que permaneceu em atividade após ser aposentado, até 15/04/1994.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3100">
+            <tipo>Cidadão que permaneceu em atividade e contribuiu para o INSS após ser aposentado, para aposentadorias ocorridas até 15/04/1994.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6034">
+            <titulo>Requisitar devolução</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7263">Carteira de identidade</item>
+                    <item id="7264">Carteira de trabalho</item>
+                    <item id="7265">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5941" tipo="presencial">
+                        <descricao>Em uma [Agência do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5968">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11344">devolução</item>
+        <item id="11345">pagamento em excesso</item>
+        <item id="11346">receber devolução</item>
+    </palavras-chave>
+</servico>
