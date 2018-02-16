@@ -1,38 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Registrar Comunicação de Acidente de Trabalho]]></nome>
-    <sigla>CAT.</sigla>
-    <nomes-populares/>
-    <descricao><![CDATA[A Comunicação de Acidente de Trabalho é um documento emitido para reconhecer tanto um acidente de trabalho ou de trajeto bem como uma doença ocupacional. Este documento é necessário para diversos processos relacionados ao acidentado.]]></descricao>
-    <contato><![CDATA[Central de Atendimento do INSS, no telefone 135.]]></contato>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-comunicacao-de-acidente-de-trabalho</id>
+    <dbId>52</dbId>
+    <nome>Registrar Comunicação de Acidente de Trabalho</nome>
+    <sigla>CAT</sigla>
+    <descricao>A Comunicação de Acidente de Trabalho é um documento emitido para reconhecer tanto um acidente de trabalho ou de trajeto bem como uma doença ocupacional. Este documento é necessário para diversos processos relacionados ao acidentado.</descricao>
+    <contato>Central de Atendimento do INSS, no telefone 135.</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="3084">
             <tipo>Empresa onde trabalha a vítima do acidente de trabalho</tipo>
-            <requisitos><![CDATA[A empresa onde trabalha o empregado vítima do acidente é obrigada a informar o acidente de trabalho até o dia útil seguinte ao de sua ocorrência (caso o acidente resulte em morte, a comunicação deve ser imediata).]]></requisitos>
+            <requisitos>A empresa onde trabalha o empregado vítima do acidente é obrigada a informar o acidente de trabalho até o dia útil seguinte ao de sua ocorrência (caso o acidente resulte em morte, a comunicação deve ser imediata).</requisitos>
         </solicitante>
-        <solicitante>
+        <solicitante id="3085">
             <tipo>Vítima da CAT ou pessoas o auxiliando</tipo>
-            <requisitos><![CDATA[Caso a empresa não cumpra com esta obrigação, podem registrar a CAT:
+            <requisitos>Caso a empresa não cumpra com esta obrigação, podem registrar a CAT:
  
 •	O próprio empregado;
 •	Dependentes do empregado;
 •	Entidades sindicais;
 •	Médicos;
-•	Autoridades Públicas.]]></requisitos>
+•	Autoridades Públicas.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="0" unidade="minutos"/>
-        <descricao><![CDATA[Este serviço é imediato.]]></descricao>
+        <atendimento-imediato/>
+        <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="6016">
             <titulo>Baixar e instalar aplicativo para registro da CAT</titulo>
-            <descricao><![CDATA[Você irá acessar o portal do INSS e baixar o aplicativo necessário para realizar o registro.]]></descricao>
+            <descricao>Você irá acessar o portal do INSS e baixar o aplicativo necessário para realizar o registro.</descricao>
             <documentos>
                 <default>
-                    <item>Não é necessária documentação nesta etapa</item>
+                    <item id="1648">Não é necessária documentação nesta etapa</item>
                 </default>
             </documentos>
             <custos>
@@ -40,23 +47,23 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://cat.inss.gov.br/servicos/cat/cat.shtm]]></descricao>
+                    <canal-de-prestacao id="2290" tipo="web">
+                        <descricao>http://cat.inss.gov.br/servicos/cat/cat.shtm</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="6017">
             <titulo>Preencher o formulário e enviar para o INSS via aplicativo</titulo>
-            <descricao><![CDATA[Você deve preencher toda a informação pedida (caso contrário o aplicativo não enviará o formulário).]]></descricao>
+            <descricao>Você deve preencher toda a informação pedida (caso contrário o aplicativo não enviará o formulário).</descricao>
             <documentos>
                 <default>
-                    <item>Informações do emitente (nome, filiação e email)</item>
-                    <item>informações do empregador (Razão social ou nome, tipo e número do documento, CNAE, Endereço, CEP e Telefone);</item>
-                    <item>Informações do acidentado (dados pessoais, remuneração, número da Carteira de Trabalho, Identidade, NIT/PIS/PASEP, Endereço, CEP, Telefone, CBO e área);</item>
-                    <item>Dados sobre o acidente;</item>
-                    <item>Dados sobre o atendimento emergencial e médico recebido;</item>
-                    <item>Dados sobre ocorrência policial, se for o caso.</item>
+                    <item id="1649">Informações do emitente (nome, filiação e email)</item>
+                    <item id="1650">informações do empregador (Razão social ou nome, tipo e número do documento, CNAE, Endereço, CEP e Telefone);</item>
+                    <item id="1651">Informações do acidentado (dados pessoais, remuneração, número da Carteira de Trabalho, Identidade, NIT/PIS/PASEP, Endereço, CEP, Telefone, CBO e área);</item>
+                    <item id="1652">Dados sobre o acidente;</item>
+                    <item id="1653">Dados sobre o atendimento emergencial e médico recebido;</item>
+                    <item id="1654">Dados sobre ocorrência policial, se for o caso.</item>
                 </default>
             </documentos>
             <custos>
@@ -64,20 +71,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[Aplicativo obtido na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="2291" tipo="web">
+                        <descricao>Aplicativo obtido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="6018">
             <titulo>Entregar CAT preenchida na Agência do INSS (Somente quando não for possível enviar pela Internet no prazo devido)</titulo>
-            <descricao><![CDATA[Em último caso, quando por qualquer problema não for possível registrar a CAT de forma online e para que sua empresa não sofra multas, você pode imprimir, preencher e assinar o formulário no aplicativo e, posteriormente, entregá-lo em uma agência do INSS.]]></descricao>
+            <descricao>Em último caso, quando por qualquer problema não for possível registrar a CAT de forma online e para que sua empresa não sofra multas, você pode imprimir, preencher e assinar o formulário no aplicativo e, posteriormente, entregá-lo em uma agência do INSS.</descricao>
             <documentos>
                 <default>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de Identificação válido, original e com foto;</item>
-                    <item>Formulário da CAT devidamente preenchido e assinado.</item>
+                    <item id="1655">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="1656">Documento de Identificação válido, original e com foto;</item>
+                    <item id="1657">Formulário da CAT devidamente preenchido e assinado.</item>
                 </default>
             </documentos>
             <custos>
@@ -85,19 +92,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Em qualquer agência do INSS.]]></descricao>
+                    <canal-de-prestacao id="2292" tipo="presencial">
+                        <descricao>Em qualquer [Agência do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
-        <item>Cidadãos</item>
-        <item>Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item>Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="5950">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="5951">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="5952">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="5953">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -106,11 +115,11 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>imprevisto</item>
-        <item>ferimento</item>
-        <item>vítima</item>
+        <item id="11299">imprevisto</item>
+        <item id="11300">ferimento</item>
+        <item id="11301">vítima</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+        <item id="2387">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
     </legislacoes>
 </servico>
