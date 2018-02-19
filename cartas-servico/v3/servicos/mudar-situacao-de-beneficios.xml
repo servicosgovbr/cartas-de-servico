@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>mudar-situacao-de-beneficios</id>
+    <dbId>2541</dbId>
+    <nome>Mudar situação de benefícios</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2050">Solicitar cessação de benefício</item>
+        <item id="2051">Solicitar reativação de benefício</item>
+    </nomes-populares>
+    <descricao>Solicitação de mudança de situação de benefício para os casos em que há impedimento da manutenção do pagamento ou para o seu reestabelecimento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3113">
+            <tipo>Beneficiários do INSS</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6048">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Para cessação: verificação da documentação apresentada que motiva a cessação e atualização do status do benefício.Para reativação: identificação do titular, verificação da manutenção das condicionantes e atualização do status do benefício.</descricao>
+            <documentos>
+                <default>
+                    <item id="7304">Carteira de identidade</item>
+                    <item id="7305">Carteira de trabalho</item>
+                    <item id="7306">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5961" tipo="presencial">
+                        <descricao>Em uma {Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5980">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11386">mudança</item>
+        <item id="11387">cancelamento</item>
+        <item id="11388">voltar a receber</item>
+    </palavras-chave>
+</servico>
