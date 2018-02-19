@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-vista-ou-carga-de-processos</id>
+    <dbId>2542</dbId>
+    <nome>Obter Vista ou Carga de Processos</nome>
+    <sigla></sigla>
+    <descricao>Trata-se de serviço que possibilita vistas do processo ao interessado ou a seu representante legal.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3114">
+            <tipo>Cidadãos com processos em curso no INSS ou seus representantes legais.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6049">
+            <titulo>Requerer serviço</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7308">Documento de identificação oficial com foto</item>
+                    <item id="7309">CPF</item>
+                </default>
+                <caso id="662" descricao="No caso de representante legal">
+                    <documento>
+                        <id>7307</id>
+                        <descricao>Procuração</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5962" tipo="presencial">
+                        <descricao>Em uma {Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5981">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência</item>
+        <item>Previdência Social</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11389">processo</item>
+        <item id="11390">contestação</item>
+        <item id="11391">ver processo</item>
+    </palavras-chave>
+</servico>
