@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-declaracao-de-carcere</id>
+    <dbId>2550</dbId>
+    <nome>Cadastrar Declaração de Cárcere</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2058">Declaração de cárcere</item>
+    </nomes-populares>
+    <descricao>A declaração de cárcere é um documento emitido por unidades prisionais, centros de detenção provisória, unidades educacionais ou congêneres (para o menor de 18 anos). Este documento informa se o cidadão está recluso em regime fechado ou semi-aberto.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3122">
+            <tipo>Beneficiários do INSS e seus dependentes.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6058">
+            <titulo>Agendar atendimento.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5969" tipo="telefone">
+                        <descricao>135</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5970" tipo="web">
+                        <descricao>www.inss.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5971" tipo="web">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/agenda</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="5972" tipo="aplicativo-movel">
+                        <descricao>¨ [Google Store - Android](https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&amp;hl=pt_BR);        
+¨ [Apple App Store - iOS](https://itunes.apple.com/br/app/meu-inss/id1243048358?mt=8)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6059">
+            <titulo>Ir ao atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7329">Carteira de identidade</item>
+                    <item id="7330">Carteira de trabalho</item>
+                    <item id="7331">Certidão de cárcere</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5973" tipo="presencial">
+                        <descricao>Em uma {Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5989">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Policiamento</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11415">preso</item>
+        <item id="11416">cadeia</item>
+        <item id="11417">prisioneiro</item>
+        <item id="11418">condenação</item>
+    </palavras-chave>
+</servico>
