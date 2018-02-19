@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-ou-incluir-nova-conta-cancaria-para-recebimento-de-beneficio-da-previdencia</id>
+    <dbId>2549</dbId>
+    <nome>Alterar ou incluir nova conta cancária para recebimento de benefício da previdência</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2057">Alteração de conta bancária</item>
+    </nomes-populares>
+    <descricao>Trata-se de serviço que possibilita ao cidadão a opção de informar ou alterar conta bancária. O cidadão pode optar por receber o seu benefício em uma conta-corrente ou poupança, desde que seja ele próprio, o titular da conta.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3121">
+            <tipo>Beneficiários do INSS.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6056">
+            <titulo>Agendar o atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7325">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5967" tipo="telefone">
+                        <descricao>135</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6057">
+            <titulo>Comparecer ao atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7326">Carteira de identidade</item>
+                    <item id="7327">Carteira de trabalho</item>
+                    <item id="7328">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5968" tipo="presencial">
+                        <descricao>Em uma {Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5988">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Sistema Financeiro</item>
+        <item>Finanças pessoais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11412">trocar conta</item>
+        <item id="11413">recebimento de benefício</item>
+        <item id="11414">conta do salário</item>
+    </palavras-chave>
+</servico>
