@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-emprestimo-do-acervo-da-biblioteca-do-int</id>
+    <dbId>2557</dbId>
+    <nome>Obter empréstimo do acervo da Biblioteca do INT</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2066">Empréstimo entre Bibliotecas</item>
+    </nomes-populares>
+    <descricao>O usuário externo deverá estar vinculado a uma biblioteca conveniada à Biblioteca do INT para solicitar o documento de interesse ao bibliotecário responsável de sua instituição. A Biblioteca do INT emprestará o documento à biblioteca solicitante, que disponibilizará o material ao usuário</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3129">
+            <tipo>Biblioteca conveniada à biblioteca do INT e seus respectivos associados.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6072">
+            <titulo>Requerer o empréstimo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7336">Carta de empréstimo assinada pelo Bibliotecário Chefe da instituição solicitada</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5980" tipo="presencial">
+                        <descricao>**Instituto Nacional de Tecnologia** - Av. Venezuela, 82 – Praça Mauá | Rio de Janeiro/RJ - CEP: 20081-312</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6073">
+            <titulo>Devolver material emprestado</titulo>
+            <descricao>Controlar a devolução da publicação solicitada.</descricao>
+            <documentos>
+                <default>
+                    <item id="7337">Carta com a baixa do empréstimo  solicitado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5981" tipo="presencial">
+                        <descricao>**Instituto Nacional de Tecnologia** - Av. Venezuela, 82 – Praça Mauá | Rio de Janeiro/RJ - CEP: 20081-312</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="5998">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="5999">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6000">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6001">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11440">biblioteca</item>
+        <item id="11441">empréstimo</item>
+        <item id="11442">acervo</item>
+    </palavras-chave>
+</servico>
