@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-representante-de-organizacao-da-sociedade-civil</id>
+    <dbId>2564</dbId>
+    <nome>Cadastrar representante de organização da sociedade civil</nome>
+    <sigla></sigla>
+    <descricao>Cadastramento de representante de organização da sociedade civil no Mapa das Organizações da Sociedade Civil (OSC), portal de dados instituído pelo Ipea com os objetivos de: (i) dar transparência à atuação das OSC, principalmente ações executadas em parceria com a administração pública; (ii) informar mais e melhor sobre a importância e diversidade de projetos e atividades conduzidas por essas organizações; (iii) disponibilizar dados e fomentar pesquisas sobre OSC; (iv) apoiar os gestores públicos a tomarem decisões sobre políticas públicas que já têm ou possam ter interface com OSC.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://mapaosc.ipea.gov.br/cadastro-representante.html</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3136">
+            <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6088">
+            <titulo>Cadastrar informações</titulo>
+            <descricao>Cadastrar informações de representante de organização da sociedade civil</descricao>
+            <documentos>
+                <default>
+                    <item id="7373">CNPJ</item>
+                    <item id="7374">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="5999" tipo="web">
+                        <descricao>https://mapaosc.ipea.gov.br/cadastro-representante.html</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6089">
+            <titulo>Obter confirmação do cadastramento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6000" tipo="e-mail">
+                        <descricao>E-mail informado no cadastro.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/7" dbId="34306">
+        <nomeOrgao>Fundação Instituto de Pesquisa Econômica Aplicada (IPEA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="6013">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11461">ong</item>
+        <item id="11462">oscip</item>
+        <item id="11463">ipea</item>
+    </palavras-chave>
+</servico>
