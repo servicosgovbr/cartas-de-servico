@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-funcionamento</id>
+    <dbId>2610</dbId>
+    <nome>Obter autorização de funcionamento</nome>
+    <sigla>AFE</sigla>
+    <nomes-populares>
+        <item id="2095">AFE/AE</item>
+    </nomes-populares>
+    <descricao>A anuência em pesquisa clínica expressa a autorização da ANVISA para a realização de uma pesquisa em seres humanos envolvendo um dispositivo médico de médio ou alto risco (classes III ou IV) e sem registro no Brasil, como stents ou válvulas cardíacas por exemplo. Cabe salientar que para submeter uma anuência em pesquisa clínica o cidadão deve possuir “personalidade jurídica”, ou seja, apresentar um CNPJ vinculando-o a uma empresa que se responsabilizará pelo processo junto à ANVISA.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3183">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6175">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7598">CNPJ</item>
+                    <item id="7599">Comprovante de pagamento</item>
+                    <item id="7600">Comprovação da capacidade técnica para realizar as atividades pretendidas</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="279">
+                        <descricao>Taxa de Fiscalização em Vigilância Sanitária - TFVS</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>De acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6139" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6140" tipo="presencial">
+                        <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6141" tipo="postal">
+                        <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6176">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6142" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6143" tipo="presencial">
+                        <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6144" tipo="postal">
+                        <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6116">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6117">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6118">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11600">Autorização de funcionamento</item>
+        <item id="11601">Autorização especial de empresa</item>
+        <item id="11602">ANVISA</item>
+    </palavras-chave>
+</servico>
