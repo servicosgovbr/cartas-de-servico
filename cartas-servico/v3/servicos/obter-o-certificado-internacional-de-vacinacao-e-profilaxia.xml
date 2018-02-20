@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-certificado-internacional-de-vacinacao-e-profilaxia</id>
+    <dbId>2622</dbId>
+    <nome>Obter o Certificado Internacional de Vacinação e Profilaxia</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2100">CIVP</item>
+    </nomes-populares>
+    <descricao>O CIVP é emitido para viajantes que se deslocam a países que cobram a comprovação de vacinação contra a doença para ingresso em seu território.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3196">
+            <tipo>Cidadãos brasileiros ou estrangeiros que irão viajar para fora do país</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6193">
+            <titulo>Requerer Certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7646">Carteira de identidade</item>
+                    <item id="7647">Carteira de identidade de estrangeiro</item>
+                    <item id="7648">Carteira de trabalho</item>
+                    <item id="7649">Certidão de casamento</item>
+                    <item id="7650">Certidão de nascimento</item>
+                    <item id="7651">CPF</item>
+                    <item id="7652">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6177" tipo="web">
+                        <descricao>https://viajante.anvisa.gov.br/viajante/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6194">
+            <titulo>Receber certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7653">Mesma documentação da etapa anterior.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6178" tipo="presencial">
+                        <descricao>Em um dos [Centros de Orientação à Saúde do Viajante](http://portal.anvisa.gov.br/centros-de-orientacao-do-viajante)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6138">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Saúde</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Transporte Hidroviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11636">vacinação</item>
+        <item id="11637">profilaxia</item>
+        <item id="11638">viagem</item>
+    </palavras-chave>
+</servico>
