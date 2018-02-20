@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-aerodromo</id>
+    <dbId>2594</dbId>
+    <nome>Cadastrar Aeródromo</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2080">Homologação</item>
+    </nomes-populares>
+    <descricao>Finalizada a construção do aeródromo, o interessado deve ingressar na ANAC com o pedido para Inscrição Cadastral do Aeródromo. Somente após o cadastramento, o aeródromo será inserido nas publicações aeronáuticas pertinentes e aberto ao tráfego aéreo.       
+Após a publicação, a ANAC enviará cópia da Portaria ao Instituto de Cartografia Aeronáutica – ICA (órgão integrante da estrutura do COMAER) para a divulgação  das respectivas informações em serviço de informação aeronáutica disponível na internet – AIS WEB, ou outro serviço de informações que vier a substituí-lo ou complementá-lo. A abertura ao tráfego somente passará a ter vigência e aplicabilidade às operações de aeronaves civis após essa divulgação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3167">
+            <tipo>Pessoas físicas ou jurídicas que possuam aeródromos.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>10</quantidade>
+        <unidade>anos</unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6138">
+            <titulo>Requerer cadastro</titulo>
+            <descricao>Encaminhar documentação solicitando inscrição no cadastro.</descricao>
+            <documentos>
+                <default>
+                    <item id="7489">Comprovante de pagamento</item>
+                    <item id="7490">Contrato Social</item>
+                    <item id="7491">Registro em Cartório</item>
+                    <item id="7492">Procuração do Representante Legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+                <caso id="737" descricao="Registro de Aeródromo de uso PRIVADO">
+                    <custo id="259">
+                        <descricao>Taxa de Fiscalização da Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.364,20</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="738" descricao="Homologação de Aeroporto PÚBLICO Não Categorizado">
+                    <custo id="260">
+                        <descricao>Taxa de Fiscalização da Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>4.911,12</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6074" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6075" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6076" tipo="postal">
+                        <descricao>**ANAC** - Avenida Presidente Vargas, nº 850 - 6º Andar - CEP: 20071-001 Centro - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6139">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6077" tipo="web">
+                        <descricao>http://www.anac.gov.br/assuntos/legislacao/legislacao-1/portarias</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6078" tipo="e-mail">
+                        <descricao>Endereço informado na requisição</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6079" tipo="postal">
+                        <descricao>Endereço informado na requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6083">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6084">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6085">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6086">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11552">aeródromo</item>
+        <item id="11553">aviação</item>
+        <item id="11554">ANAC</item>
+    </palavras-chave>
+</servico>
