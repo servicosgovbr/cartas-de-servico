@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-nao-objecao-para-importacao</id>
+    <dbId>2628</dbId>
+    <nome>Obter Certificado de não-objeção para importação</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2106">CNI</item>
+    </nomes-populares>
+    <descricao>Certificado de Não-Objeção para Importação (CNI) é o documento expedido pela Anvisa, destinado à importação de padrões de referência e reagentes analíticos à base de substâncias inseridas nas listas "C1" (outras substâncias sujeitas a controle especial), "C2" (retinóides)e "C5" (anabolizantes) do Anexo I da Portaria SVS/MS nº 344/1998 e de suas atualizações.
+
+Só se faz necessário caso o país exportador solicite. Quando exigida pela autoridade do país exportador, a empresa importadora dessas substâncias, deverá solicitar à Anvisa a emissão de Certificado de Não Objeção para Importação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3202">
+            <tipo>Importadores de produtos controlados pela ANVISA</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6201">
+            <titulo>Requerer certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7672">Formulário de petição preenchido, no que couber, (ANEXO I);</item>
+                    <item id="7673">Via Original do Comprovante de pagamento da taxa de Fiscalização de Vigilância Sanitária ou Guia da Vigilância Sanitária (GRU) Isenta;</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="294">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6187" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6188" tipo="postal">
+                        <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6144">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6145">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6146">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Comercio externo</item>
+        <item>Comércio e Serviços</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Vigilância Sanitária</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11654">importação</item>
+        <item id="11655">autorização</item>
+        <item id="11656">ANVISA</item>
+    </palavras-chave>
+</servico>
