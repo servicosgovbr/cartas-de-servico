@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-marca-experimental</id>
+    <dbId>2599</dbId>
+    <nome>Obter Certificado de Marca Experimental</nome>
+    <sigla>CME</sigla>
+    <descricao>O Certificado de Marca Experimental (CME) é o documento que comprova elementos de nacionalidade e propriedade. A emissão pode decorrer de diversos pedidos, e não somente do de matrícula – ele é expedido, por exemplo, em casos de transferência de propriedade, inscrição de direitos reais, mudança de configuração ou modelo etc.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3172">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6153">
+            <titulo>Requerer certificado</titulo>
+            <descricao>Requerimento em protocolo.</descricao>
+            <documentos>
+                <default>
+                    <item id="7530">Carteira de identidade</item>
+                    <item id="7531">Carteira de trabalho</item>
+                    <item id="7532">Certidões da Receita Federal</item>
+                    <item id="7533">CNPJ</item>
+                    <item id="7534">Comprovante de endereço/residência</item>
+                    <item id="7535">Comprovante de pagamento</item>
+                    <item id="7536">CPF</item>
+                    <item id="7537">Procuração do representante legal</item>
+                    <item id="7538">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="265">
+                        <descricao>Taxa de Fiscalização da Aviação Civil - TFAC</descricao>
+                        <moeda>R$</moeda>
+                        <valor>76,70</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6103" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANAC](Em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6104" tipo="e-mail">
+                        <descricao>rab@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6091">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6092">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6093">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6094">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11567">ANAC</item>
+        <item id="11568">nacionalidade</item>
+        <item id="11569">propriedade</item>
+    </palavras-chave>
+</servico>
