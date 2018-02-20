@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-funcionamento-para-operadoras-de-planos-privados-de-saude</id>
+    <dbId>2607</dbId>
+    <nome>Obter autorização de funcionamento para operadoras de planos privados de saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2092">Registro de Operadora</item>
+    </nomes-populares>
+    <descricao>A autorização de funcionamento é o processo que habilita uma empresa a atuar como operadora de planos privados de saúde. A ANS, após análise e aprovação da documentação encaminhada, concede o registro da operadora, o registro dos produtos a serem comercializados e, após a regularização desses dois itens, publica a Autorização de Funcionamento no Diário Oficial da União. Somente após a publicação da Autorização de Funcionamento no Diário Oficial da União é que a empresa está habilitada a iniciar suas atividades no mercado de planos privados de saúde.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3180">
+            <tipo>Operadoras de plano de saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6170">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Encaminhar pedido de registro de operadora conforme estabelecido em regulamentação.</descricao>
+            <documentos>
+                <default>
+                    <item id="7570">Carteira de identidade</item>
+                    <item id="7571">Carteira de trabalho</item>
+                    <item id="7572">CNPJ</item>
+                    <item id="7573">Contrato Social</item>
+                    <item id="7574">CPF</item>
+                    <item id="7575">Registro da Junta Comercial</item>
+                    <item id="7576">Registro em Cartório</item>
+                    <item id="7577">Registros em CRMs e CROs conforme o caso</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="276">
+                        <descricao>Taxa de Registro de Operadora - TRO</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6130" tipo="postal">
+                        <descricao>**ANS - Agência Nacional de Saúde Suplementar** - Av. Augusto Severo, 84 - Glória Rio de Janeiro/RJ - CEP: 20021-040</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6171">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6131" tipo="postal">
+                        <descricao>Endereço informado no registro</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6132" tipo="web">
+                        <descricao>http://www.imprensanacional.gov.br/web/guest</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6111">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6112">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11591">Plano de saúde</item>
+        <item id="11592">Operadora de planos de saúde</item>
+        <item id="11593">ANS</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="2394">Resolução Normativa ANS nº 85, de 2004 [http://www.ans.gov.br/component/legislacao/?view=legislacao&amp;task=TextoLei&amp;format=raw&amp;id=ODgx]</item>
+    </legislacoes>
+</servico>
