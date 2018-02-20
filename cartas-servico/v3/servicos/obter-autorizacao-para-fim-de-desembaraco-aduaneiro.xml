@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-fim-de-desembaraco-aduaneiro</id>
+    <dbId>2612</dbId>
+    <nome>Obter Autorização para fim de desembaraço aduaneiro</nome>
+    <sigla>ADA</sigla>
+    <descricao>A Autorização para fim de Desembaraço Aduaneiro (ADA) é emitida pela ANVISA aos importadores nos casos em que a liberação da mercadoria importada necessite de alteração nos quantitativos determinados na Autorização de Importação (AI). Ela somente será emitida quando o quantitativo efetivamente autorizado no exterior for inferior ao autorizado pela ANVISA, desde que comprovada a eventual alteração pela Autoridade Sanitária do país exportador e pela Fatura Comercial (Invoice). Sua data de validade coincide com a da AI.
+Para realizar a solicitação da ADA, o interessado deve realizar o procedimento de peticionamento. É necessário que o estabelecimento / instituição esteja cadastrado para ter acesso ao peticionamento eletrônico. Para efetuar o cadastramento, seguir as orientações descritas no portal da ANVISA (http://portal.anvisa.gov.br/cadastramento-de-empresa).</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3185">
+            <tipo>Empresas importadoras de produtos fiscalizados pela ANVISA</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6178">
+            <titulo>Requisitar ADA</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7604">Formulário de petição preenchido;</item>
+                    <item id="7605">Comprovante de pagamento, ou de isenção, da Taxa de Fiscalização de Vigilância Sanitária (TFVS), mediante Guia de Recolhimento da União (GRU) específica;</item>
+                    <item id="7606">Justificativa técnica do pedido;</item>
+                    <item id="7607">Cópia da Autorização de Exportação emitida pela Autoridade Sanitária do país exportador constando o(s) dado(s) alterado(s);</item>
+                    <item id="7608">Cópia do mantra ou do documento de atracação quando couber;</item>
+                    <item id="7609">Cópia da fatura comercial.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="281">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6149" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6150" tipo="postal">
+                        <descricao>SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6122">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6123">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6124">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11606">Importação de medicamentos</item>
+        <item id="11607">Anuência</item>
+        <item id="11608">ANVISA</item>
+    </palavras-chave>
+</servico>
