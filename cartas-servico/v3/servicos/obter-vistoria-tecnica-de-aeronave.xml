@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-vistoria-tecnica-de-aeronave</id>
+    <dbId>2600</dbId>
+    <nome>Obter vistoria técnica de aeronave</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2085">Vistoria</item>
+        <item id="2086">VTE</item>
+        <item id="2087">VTI</item>
+    </nomes-populares>
+    <descricao>A Vistoria é um procedimento técnico de inspeção física e análise detalhada dos registros de manutenção e operação da aeronave, no qual se verifica se o modo como ela foi fabricada e mantida correspondem ao que foi certificado para aquele modelo de aeronave e se todas as atividades de manutenção necessárias foram realizadas apenas pelas pessoas e empresas certificadas para realizá-las.       
+
+
+Atualmente, vistorias podem ser realizadas tanto pelos Inspetores de Aviação Civil da ANAC quanto por [Profissionais Credenciados de Aeronavegabilidade - PCA](http://www2.anac.gov.br/certificacao/ReprCredenc/ReprCredenc.asp), autônomos ou vinculados a empresas.        
+
+
+A Vistoria de uma aeronave nova é necessária para que ela receba seu primeiro Certificado de Aeronavegabilidade.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/index.asp#</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3173">
+            <tipo>Responsáveis por aeronaves</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6154">
+            <titulo>Agendar vistoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7539">Carteira de identidade</item>
+                    <item id="7540">Carteira de trabalho</item>
+                    <item id="7541">CNPJ</item>
+                    <item id="7542">Contrato Social</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="266">
+                        <descricao>TFAC - Taxa de Fiscalização da Aviação Civil</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Valor varia de acordo com características da aeronave</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6105" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/index.asp#</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6095">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6096">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6097">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6098">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11570">avião</item>
+        <item id="11571">vistoria</item>
+        <item id="11572">aeronaves</item>
+    </palavras-chave>
+</servico>
