@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-corretor-de-seguros</id>
+    <dbId>2587</dbId>
+    <nome>Registrar corretor de seguros</nome>
+    <sigla></sigla>
+    <descricao>Conceder registro para atuação como corretor de seguros, capitalização ou previdência complementar aberta.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www2.susep.gov.br/safe/menumercado/CadastroCorretores/inicioPesFis.asp</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3160">
+            <tipo>Corretores de seguros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6126">
+            <titulo>Solicitar cadastramento</titulo>
+            <descricao>Solicita o cadastramento de corretor de seguros encaminhando os documentos pertinentes.</descricao>
+            <documentos>
+                <default>
+                    <item id="7428">Carteira de identidade</item>
+                    <item id="7429">Carteira de trabalho</item>
+                    <item id="7430">Certificado de conclusão de curso</item>
+                    <item id="7431">Comprovante de endereço/residência</item>
+                    <item id="7432">Comprovante de quitação eleitoral</item>
+                    <item id="7433">CPF</item>
+                    <item id="7434">Diploma</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6058" tipo="web">
+                        <descricao>https://www2.susep.gov.br/safe/menumercado/CadastroCorretores/inicioPesFis.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6127">
+            <titulo>Receber autorização</titulo>
+            <descricao>Recebe a autorização para intermediar seguros entre a sociedade e as seguradoras autorizadas.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6059" tipo="web">
+                        <descricao>https://www2.susep.gov.br/safe/menumercado/CadastroCorretores/inicioPesFis.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/235" dbId="55943">
+        <nomeOrgao>Superintendência de Seguros Privados (SUSEP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6068">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6069">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11531">corretor de seguros</item>
+        <item id="11532">seguro de vida</item>
+        <item id="11533">seguro de carro</item>
+    </palavras-chave>
+</servico>
