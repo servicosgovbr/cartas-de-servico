@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-aquisicao-de-medicamentos-sujeitos-a-controle-especial</id>
+    <dbId>2614</dbId>
+    <nome>Obter Autorização para aquisição de medicamentos sujeitos a controle especial</nome>
+    <sigla>AMC</sigla>
+    <descricao>A Autorização para Aquisição de Medicamentos Sujeitos a Controle Especial (AMC) é o documento que possibilita a aquisição dos medicamentos que contenham substâncias sujeitas ao controle especial da Portaria SVS/MS n. 344, de 1998, ou a que vier substituí-la, em drogarias e farmácias, por centros de equivalência farmacêutica habilitados ou pelos centros de bio    disponibilidade/bioequivalência certificados pela Anvisa.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3187">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6180">
+            <titulo>Requisitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7617">Formulário de petição preenchido, no que couber (ANEXO I);</item>
+                    <item id="7618">Resumo do(s) estudo(s) a ser(em) realizado(s); e</item>
+                    <item id="7619">Justificativa técnica detalhada com o objetivo do(s) estudo(s).</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="283">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6153" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6154" tipo="postal">
+                        <descricao>SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6128">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11612">ANVISA</item>
+        <item id="11613">Substituição</item>
+        <item id="11614">medicamentos controlados</item>
+    </palavras-chave>
+</servico>
