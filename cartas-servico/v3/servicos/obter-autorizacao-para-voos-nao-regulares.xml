@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-voos-nao-regulares</id>
+    <dbId>2601</dbId>
+    <nome>Obter autorização para vôos não regulares</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2088">Autorização de voo</item>
+    </nomes-populares>
+    <descricao>A exploração de serviços de transporte aéreo não regulares domésticos e internacionais de passageiros e/ou carga e da Rede Postal pelas empresas de transporte aéreo com os respectivos itinerários, horários, números de voos, tipos de aeronaves e oferta de assentos dependem de prévia aprovação da ANAC. 
+
+Ao encaminhar a solicitação de autorização para a exploração de um serviço de transporte aéreo não regular para a ANAC, são avaliadas as condicionantes de infraestrutura aeronáutica necessárias à realização da operação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3174">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6155">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Solicitar autorização para prestação de serviço de transporte aéreo não regular específico.</descricao>
+            <documentos>
+                <default>
+                    <item id="7543">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="267">
+                        <descricao>Taxa de Fiscalização de Aviação Civil - TFAC</descricao>
+                        <moeda>R$</moeda>
+                        <valor>35,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6106" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/saci/Login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6099">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11573">autorização</item>
+        <item id="11574">serviço eventual</item>
+        <item id="11575">vôo eventual</item>
+    </palavras-chave>
+</servico>
