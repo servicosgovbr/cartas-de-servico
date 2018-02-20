@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-plano-de-saude</id>
+    <dbId>2606</dbId>
+    <nome>Registrar plano de saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2091">Registro de produtos</item>
+    </nomes-populares>
+    <descricao>Para que a operadora de planos de saúde possa comercializar um produto, é obrigatório seu registro  junto ao órgão regulador, no caso ANS. Este registro se dá através de solicitação de registro de acordo com os normativos vigentes.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3179">
+            <tipo>Operadoras de plano de saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6169">
+            <titulo>Solicitar registro</titulo>
+            <descricao>Para calcular a taxa e obter o boleto de pagamento, cliique [aqui](http://www.ans.gov.br/externo/site/siar/pardal/default.asp?f=nb). Para incorporar os dados, baixe o software [aqui](https://goo.gl/ZEjHAb). Para obter o modelo do requerimento, clique [aqui](http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/Area_da_Operadora/Registro_de_produto/modelo_de_solicitacao_de_registro.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="7567">Comprovante de pagamento</item>
+                    <item id="7568">Comprovante de incorporação de dados</item>
+                    <item id="7569">Requerimento de registro</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="275">
+                        <descricao>Taxa de Registro de Produtos</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da operadora</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6128" tipo="web">
+                        <descricao>http://www.ans.gov.br/portal/site/perfil_operadoras/rps_web/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6129" tipo="postal">
+                        <descricao>Av.  Augusto Severo, 84 - Glória - Rio de Janeiro (RJ) - CEP: 221031-072</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6109">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6110">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11588">plano de saúde</item>
+        <item id="11589">saúde suplementar</item>
+        <item id="11590">registro</item>
+    </palavras-chave>
+</servico>
