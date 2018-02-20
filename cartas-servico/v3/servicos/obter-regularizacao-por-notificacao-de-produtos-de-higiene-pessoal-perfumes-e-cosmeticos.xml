@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-regularizacao-por-notificacao-de-produtos-de-higiene-pessoal-perfumes-e-cosmeticos</id>
+    <dbId>2623</dbId>
+    <nome>Obter regularização por notificação de produtos de higiene pessoal, perfumes e cosméticos</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2101">Notificação de produtos de higiene pessoal, perfumes e cosméticos</item>
+    </nomes-populares>
+    <descricao>O detentor de um produto de higiene pessoal, perfume ou cosmético isento de registro pode comercializá-lo no País após sua notificação no sistema eletrônico SGAS da Anvisa.
+Nesse serviço a empresa previamente cadastrada na Anvisa acessa o Sistema SGAS, gera uma petição de notificação, submete as informações técnicas previstas nos regulamentos específicos, gera uma Guia de Recolhimento – GRU, paga essa guia, após a internalização do pagamento as informações do produto são disponibilizadas no portal eletrônico da Anvisa e a partir desse momento o mesmo pode ser comercializado.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3197">
+            <tipo>Fabricantes e comerciantes de produtos de higiene pessoal, perfumes e cosméticos.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6195">
+            <titulo>Requisiar notificação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7654">CNPJ</item>
+                    <item id="7655">Comprovante de pagamento</item>
+                    <item id="7656">Procuração do representante legal</item>
+                    <item id="7657">Informações sobre o produto previstas em regulamentos específicos</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="291">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6179" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6139">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11639">notificação</item>
+        <item id="11640">saneantes</item>
+        <item id="11641">cosméticos</item>
+    </palavras-chave>
+</servico>
