@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-atividade-de-organismo-de-certificacao-de-conteudo-local</id>
+    <dbId>2603</dbId>
+    <nome>Obter autorização para atividade de Organismo de Certificação de Conteúdo Local</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2090">Certificação de Conteúdo Local</item>
+    </nomes-populares>
+    <descricao>Consiste em receber solicitação por parte dos interessados para autorizar empresas a serem Organismos de Certificação, acreditados pela ANP, para conduzirem processos de certificação e emissão de certificados de conteúdo local com base no regulamento de certificação de conteúdo local. O solicitante após o pagamento das custas por GRU e o cumprimento de todos os requisitos terá sua autorização publicada no DOU.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3176">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6158">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Preenchimento de Formulário de Solicitação com envio de documentos exigidos.</descricao>
+            <documentos>
+                <default>
+                    <item id="7553">Certidões da Receita Federal</item>
+                    <item id="7554">CNPJ</item>
+                    <item id="7555">Comprovante de endereço/residência</item>
+                    <item id="7556">Comprovante de pagamento</item>
+                    <item id="7557">Contrato Social</item>
+                    <item id="7558">FGTS</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6110" tipo="e-mail">
+                        <descricao>auditoria_CCL@anp.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6111" tipo="web">
+                        <descricao>https://app.anp.gov.br/anp-sga-sso/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6159">
+            <titulo>Realizar pagamento</titulo>
+            <descricao>Pagamento de GRU pela análise da complete da documentação</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="271">
+                        <descricao>Preço da acreditação</descricao>
+                        <moeda>R$</moeda>
+                        <valor>270,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6112" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25281" dbId="917">
+        <nomeOrgao>Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6104">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Normalização e Qualidade</item>
+        <item>Combustíveis</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11579">ANP</item>
+        <item id="11580">creditação</item>
+        <item id="11581">conteúdo local</item>
+    </palavras-chave>
+</servico>
