@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-viagem-de-carater-ocasional</id>
+    <dbId>2609</dbId>
+    <nome>Obter autorização de viagem de caráter ocasional</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2094">Viagem ocasional - empresa brasileira</item>
+    </nomes-populares>
+    <descricao>Obter autorização de viagem de caráter ocasional para Empresa Brasileira.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3182">
+            <tipo>Empresas brasileiras</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6173">
+            <titulo>Requerer autorização</titulo>
+            <descricao>Dar entrada nos documentos via correio ou no protocolo da ANTT sede</descricao>
+            <documentos>
+                <default>
+                    <item id="7582">Carteira de identidade</item>
+                    <item id="7583">Carteira de trabalho</item>
+                    <item id="7584">CNPJ</item>
+                    <item id="7585">Comprovante de endereço/residência</item>
+                    <item id="7586">Comprovante de pagamento</item>
+                    <item id="7587">CPF</item>
+                    <item id="7588">Procuração do representante legal</item>
+                    <item id="7589">Registro da Junta Comercial</item>
+                    <item id="7590">requerimento da empresa ou procurador, este último mediante apresentação do respectivo instrumento de mandato, com as seguintes informações: 1.1 – nome ou razão social da empresa responsável pela viagem ocasional; 1.2 – origem e destino da viagem; 1.3 – pontos de fronteira a serem utilizados durante o percurso; 1.4 – tipo de carga a ser transportada, tanto na ida quanto no regresso; 1.5 - vigência pretendida para a autorização.</item>
+                    <item id="7591">Comprovante de pagamento de emolumentos</item>
+                    <item id="7592">Relação dos veículos a serem utilizados e cópia autenticada dos respectivos Certificados de Registro e Licenciamento de Veículo (CRLV) e da Apólice de Seguros de Responsabilidade Civil por lesões ou danos a terceiros</item>
+                    <item id="7593">Cópia autenticada do Certificado de Inspeção Técnica Veicular Periódica (CITV)</item>
+                    <item id="7594">Número de inscrição do transportador no RNTRC, nos termos da Resolução nº 4.799/2015 (no caso de transporte de carga própria, este item não é exigido). Solicitei alteração da descrição para o ponto focal do órgão.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="278">
+                        <descricao>Emolumento administrativo</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>R$ 10,00 por solicitação mais R$ 5,00 por veículo.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6135" tipo="presencial">
+                        <descricao>**ANTT* - Setor de Clubes Esportivos Sul - SCES, Lote 10, Trecho 3, Projeto Orla Polo 8, Bloco A, Térreo - Brasília / DF - CEP: 70.200-003</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6136" tipo="postal">
+                        <descricao>**ANTT* - Setor de Clubes Esportivos Sul - SCES, Lote 10, Trecho 3, Projeto Orla Polo 8, Bloco A, Térreo - Brasília / DF - CEP: 70.200-003</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6174">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7595">Carteira de identidade</item>
+                    <item id="7596">Carteira de trabalho</item>
+                    <item id="7597">Comprovante de endereço/residência</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6137" tipo="presencial">
+                        <descricao>**ANTT* - Setor de Clubes Esportivos Sul - SCES, Lote 10, Trecho 3, Projeto Orla Polo 8, Bloco A, Térreo - Brasília / DF - CEP: 70.200-003</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6138" tipo="postal">
+                        <descricao>No endereço informado no pedido.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6114">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6115">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11597">viagem</item>
+        <item id="11598">ocasional</item>
+        <item id="11599">ANTT</item>
+    </palavras-chave>
+</servico>
