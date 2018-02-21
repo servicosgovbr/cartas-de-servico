@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-posicionamento-do-tribunal-administrativo-do-cade-sobre-questao-concorrencial</id>
+    <dbId>2630</dbId>
+    <nome>Obter posicionamento do Tribunal Administrativo do CADE sobre questão concorrencial</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2113">Formular consulta ao Tribunal Administrativo do Cade</item>
+    </nomes-populares>
+    <descricao>O serviço refere-se ao encaminhamento, por qualquer interessado, de consulta ao Tribunal Administrativo do Cade sobre a aplicação da legislação concorrencial. A decisão do Tribunal Administrativo do Cade sobre a consulta proposta será publicada no Diário Oficial da União por meio da Ata da Sessão de Julgamento.</descricao>
+    <contato>¨ **Endereço:** SEPN 515 CONJUNTO D, LOTE 4 ED. CARLOS TAURISANO CEP: 70770-504 - BRASÍLIA/DF;      
+¨ **Email:** cade@cade.gov.br;         
+¨ **Fone:** (61) 3221 8500</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3204">
+            <tipo>Pessoas físicas e jurídicas de direito privado.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6205">
+            <titulo>Requerer consulta</titulo>
+            <descricao>Entrega do requerimento de consulta sobre questão concorrencial ao Tribunal Administrativo do Cade, assim como de documentos necessários.</descricao>
+            <documentos>
+                <default>
+                    <item id="7679">Carteira de Identidade (RG)</item>
+                    <item id="7680">CPF</item>
+                    <item id="7681">CNPJ</item>
+                    <item id="7682">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6193" tipo="web">
+                        <descricao>https://sei.cade.gov.br/sei/modulos/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6194" tipo="e-mail">
+                        <descricao>protocolo@cade.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6195" tipo="presencial">
+                        <descricao>**Sede do Conselho Administrativo de Defesa Econômica** - Setor de Edifícios de Utilidade Pública Norte – SEPN, Entrequadra 515, Conjunto D, Lote 4, Edifício Carlos Taurisano. Cep: 70770-504 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6196" tipo="postal">
+                        <descricao>**Sede do Conselho Administrativo de Defesa Econômica** - Setor de Edifícios de Utilidade Pública Norte – SEPN, Entrequadra 515, Conjunto D, Lote 4, Edifício Carlos Taurisano. Cep: 70770-504 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6206">
+            <titulo>Pagar taxa processual</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7683">Guia de recolhimento da União (GRU)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="295">
+                        <descricao>Taxa processual para apresentar consulta sobre questão concorrencial</descricao>
+                        <moeda>R$</moeda>
+                        <valor>15.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6198" tipo="presencial">
+                        <descricao>Rede bancária.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="740" descricao="Para obter a GRU">
+                    <canal-de-prestacao id="6197" tipo="web">
+                        <descricao>http://www.cade.gov.br/servicos/taxas/taxaconsulta.pdf</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6207">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6199" tipo="web">
+                        <descricao>http://www.imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/322" dbId="8382">
+        <nomeOrgao>Conselho Administrativo de Defesa Econômica (CADE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6149">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6150">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6151">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Defesa do Consumidor</item>
+        <item>Economia e Finanças</item>
+        <item>Fiscalização do Estado</item>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11661">Consultar</item>
+        <item id="11662">CADE</item>
+        <item id="11663">Tribunal administrativo</item>
+    </palavras-chave>
+</servico>
