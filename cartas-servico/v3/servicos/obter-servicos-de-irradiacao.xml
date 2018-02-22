@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-servicos-de-irradiacao</id>
+    <dbId>2668</dbId>
+    <nome>Obter serviços de irradiação</nome>
+    <sigla></sigla>
+    <descricao>Prestar serviços de Irradiação por elétrons, por neutrons, por prótons e por raios gama. Aquisição de serviços de uso exclusivo para pesquisadores e para a indústria. Prestar serviços que alteram as características físicas ou químicas dos produtos submetidos a esses tipos de irradiação. Serviços adquiridos mediante solicitação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3239">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6278">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Realizar o pedido do tipo de irradiação que necessita.</descricao>
+            <documentos>
+                <default>
+                    <item id="7912">CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="336">
+                        <descricao>Pagamento do serviço</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Depende do tipo de irradiação, tipo de material a ser irradiado, quantidade, volume e tempo de irradiação.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6310" tipo="telefone">
+                        <descricao>(11) 3133-9161</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6311" tipo="e-mail">
+                        <descricao>sac@ipen.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6198">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6199">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saneamento</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11768">irradiação</item>
+        <item id="11769">elétrons</item>
+        <item id="11770">neutrons</item>
+        <item id="11771">prótons</item>
+        <item id="11772">raios gama</item>
+    </palavras-chave>
+</servico>
