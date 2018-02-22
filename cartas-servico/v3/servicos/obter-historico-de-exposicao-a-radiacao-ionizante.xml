@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-historico-de-exposicao-a-radiacao-ionizante</id>
+    <dbId>2677</dbId>
+    <nome>Obter histórico de exposição à radiação ionizante</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2135">Histórico Radiológico</item>
+        <item id="2136">Histórico de Doses</item>
+        <item id="2137">Histórico de Dose Ocupacional</item>
+    </nomes-populares>
+    <descricao>Fornecer o histórico de exposição à radiação ionizante de indivíduos submetidos a monitoração individual. O serviço deve ser solicitado pelo interessado. É fornecido um relatório com as informações solicitadas.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3248">
+            <tipo>Indivíduos submetidos a monitoração individual de radiação.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6288">
+            <titulo>Preencher questionário online</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6322" tipo="web">
+                        <descricao>http://appasp.cnen.gov.br/produtos/gdose/historico/solicitacao1_entrada.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6323" tipo="e-mail">
+                        <descricao>gdoe@ird.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6289">
+            <titulo>Enviar documentação</titulo>
+            <descricao>A solicitação somente será atendida se o trabalhador encaminhar toda a documentação especificada. Se a documentação não for recebida em um prazo de 30 dias a mesma será cancelada.</descricao>
+            <documentos>
+                <default>
+                    <item id="7926">Documento de identificação oficial com foto</item>
+                    <item id="7927">Carteira de Trabalho</item>
+                    <item id="7928">Comprovante de endereço</item>
+                    <item id="7929">CPF</item>
+                    <item id="7930">Formulário impresso, preenchido e assinado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6324" tipo="postal">
+                        <descricao>** Comissão Nacional de Energia Nuclear** - Rua Gal. Severiano, nº 90 - Botafogo - CEP: 22290-901 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6325" tipo="presencial">
+                        <descricao>** Comissão Nacional de Energia Nuclear** - Rua Gal. Severiano, nº 90 - Botafogo - CEP: 22290-901 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6290">
+            <titulo>Receber histórico e GRU</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6326" tipo="postal">
+                        <descricao>Endereço informado no requerimento</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6327" tipo="presencial">
+                        <descricao>** Comissão Nacional de Energia Nuclear** - Rua Gal. Severiano, nº 90 - Botafogo - CEP: 22290-901 - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6291">
+            <titulo>Pagar GRU</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7931">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="345">
+                        <descricao>Taxa do serviço</descricao>
+                        <moeda>R$</moeda>
+                        <valor>33,88</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6328" tipo="presencial">
+                        <descricao>Rede bancária.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6222">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Previdência Social</item>
+        <item>Trabalho</item>
+        <item>Energia</item>
+        <item>Fiscalização do Estado</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11797">radiação</item>
+        <item id="11798">monitoramento</item>
+        <item id="11799">histórico</item>
+    </palavras-chave>
+</servico>
