@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-estimativa-de-dose-absorvida-em-individuos-expostos-a-radiacao-ionizante</id>
+    <dbId>2652</dbId>
+    <nome>Obter estimativa de dose absorvida em indivíduos expostos à radiação ionizante</nome>
+    <sigla></sigla>
+    <descricao>Estimar a dose de radiação ionizante a que foram expostos, ou supostamente expostos, ondivíduos por meio da técnica de dosimetria citogenética em células sanguíneas (linfócitos). Este método é aplicado para doses absorvidas acima de 150mGy. As solicitações de análise podem ser encaminhadas por empresas públicas ou privadas, para as quais serão enviados laudos nos quais constarão a estimativa da dose absovidas nos indivíduos analisados.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3226">
+            <tipo>Empresas públicas, privadas ou de economia mista.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6256">
+            <titulo>Requisitar serviço</titulo>
+            <descricao>Especificar o caso para o serviço; Receber a orientação para a coleta e transporte do material (sangue), além do preenchimento do formulário.</descricao>
+            <documentos>
+                <default>
+                    <item id="7878">CNPJ</item>
+                    <item id="7879">Comprovante de endereço/residência</item>
+                    <item id="7880">Formulário</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="318">
+                        <descricao>Taxa de Dosimetria Citogenética</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com as características do serviço.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6271" tipo="telefone">
+                        <descricao>(81) 3797-8000</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6272" tipo="e-mail">
+                        <descricao>fflima@cnen.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6273" tipo="postal">
+                        <descricao>Rua Professor Luiz freire, 200, Cidade Universitária
+Recife-PE
+CEP: 50.740-545</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6257">
+            <titulo>Receber o relatório de dose</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6274" tipo="e-mail">
+                        <descricao>Endereço de e-mail informado na requisição</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6275" tipo="postal">
+                        <descricao>Endereço informado na requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6175">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Energia</item>
+        <item>Fiscalização do Estado</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11729">radioatividade</item>
+        <item id="11730">radiatividade</item>
+        <item id="11731">nuclear</item>
+    </palavras-chave>
+</servico>
