@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-operacao-de-instalacao-radiativa</id>
+    <dbId>2672</dbId>
+    <nome>Obter autorização para operação de instalação radiativa</nome>
+    <sigla></sigla>
+    <descricao>Como parte do processo de licenciamento de instalações radiativas é necessário que, para algumas instalações, seja requerido o Ato Administrativo de Autorização para Operação. Este Ato deve ser requerido pelo titular (diretor) da instalação radiativa, através de submissão de requerimento eletrônico próprio, no sítio da CNEN.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3243">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6282">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Obtenha acesso à tabela de taxas [aqui](http://appasp.cnen.gov.br/seguranca/lfc/listas/lst-valtlc.asp)</descricao>
+            <documentos>
+                <default>
+                    <item id="7916">documentos descritos nas normas da cnen</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="340">
+                        <descricao>taxa de licenciamento e controle</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>de acordo com a complexidade e área da instalação</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6316" tipo="web">
+                        <descricao>http://www.cnen.gov.br/requerimentos-referente-a-licenciamentos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6209">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6210">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="6211">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Indústria</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11782">nuclear</item>
+        <item id="11783">radioatividade</item>
+        <item id="11784">radiação</item>
+    </palavras-chave>
+</servico>
