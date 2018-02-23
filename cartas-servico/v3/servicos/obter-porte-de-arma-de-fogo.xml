@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-porte-de-arma-de-fogo</id>
+    <dbId>2763</dbId>
+    <nome>Obter Porte de Arma de Fogo</nome>
+    <sigla></sigla>
+    <descricao>É o documento, com validade de 5 anos, que autoriza o cidadão a portar, transportar e trazer consigo uma arma de fogo. Para solicitar o porte, o cidadão deve dirigir-se a uma unidade da PF, munido dos documentos necessários.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3334">
+            <tipo>Cidadãos brasileiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6425">
+            <titulo>Requisitar porte</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8312">Carteira de identidade</item>
+                    <item id="8313">Carteira de trabalho</item>
+                    <item id="8314">Certificado de antecedentes criminais</item>
+                    <item id="8315">Comprovante de endereço/residência</item>
+                    <item id="8316">Comprovante de pagamento</item>
+                    <item id="8317">COMPROVAÇÃO  DE CAPACIDADE TÉCNICA  E DE APTIDÃO PSICOLÓGICA;</item>
+                    <item id="8318">CÓPIA DO REGISTRO DE ARMA DE FOGO;</item>
+                    <item id="8319">COMPROVAÇÃO DE OCUPAÇÃO LÍCITA E DE RESIDÊNCIA CERTA;</item>
+                    <item id="8320">Formulário preenchido, impresso e assinado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="462">
+                        <descricao>Taxa de expedição de porte federal de arma</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.466,68</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="746" descricao="Segunda Via">
+                    <custo id="463">
+                        <descricao>Taxa de expedição de porte federal de arma</descricao>
+                        <moeda>R$</moeda>
+                        <valor>88,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6488" tipo="presencial">
+                        <descricao>Em uma [Delegacia da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias)</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="744" descricao="Para preencher e imprimir o formulário">
+                    <canal-de-prestacao id="6486" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/armas/form-sinarm</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="745" descricao="Para geração da GRU para pagamento da taxa">
+                    <canal-de-prestacao id="6487" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/gru/armas</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6314">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Justiça e Segurança Pública</item>
+        <item>Fiscalização do Estado</item>
+        <item>Policiamento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12057">porte</item>
+        <item id="12058">arma de fogo</item>
+        <item id="12059">sinarm</item>
+    </palavras-chave>
+</servico>
