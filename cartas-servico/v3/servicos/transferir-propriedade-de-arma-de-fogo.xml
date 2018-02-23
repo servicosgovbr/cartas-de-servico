@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-propriedade-de-arma-de-fogo</id>
+    <dbId>2762</dbId>
+    <nome>Transferir Propriedade de Arma de Fogo</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2174">Transferência de arma de fogo</item>
+    </nomes-populares>
+    <descricao>É a aquisição de arma de fogo de uso permitido, por meio de transferência oriunda de outro proprietário. Para efetuar a aquisição/transferência, o cidadão deve dirigir-se a uma unidade da PF, munido dos documentos necessários.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3333">
+            <tipo>Cidadãos brasileiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6423">
+            <titulo>Requerer transferência</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8301">Carteira de identidade</item>
+                    <item id="8302">Carteira de trabalho</item>
+                    <item id="8303">Certificado de antecedentes criminais</item>
+                    <item id="8304">Comprovante de endereço/residência</item>
+                    <item id="8305">Comprovante de pagamento</item>
+                    <item id="8306">Comprovante de quitação eleitoral</item>
+                    <item id="8307">CPF</item>
+                    <item id="8308">Formulário preenchido e assinado</item>
+                    <item id="8309">Comprovante de Pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="460">
+                        <descricao>Taxa de emissão de registro</descricao>
+                        <moeda>R$</moeda>
+                        <valor>88,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6484" tipo="presencial">
+                        <descricao>Em uma [Unidade da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias)</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="741" descricao="Para preenchimento e impressão do formulário">
+                    <canal-de-prestacao id="6482" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/armas/form-sinarm</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="742" descricao="Para emissão da GRU para pagamento da taxa">
+                    <canal-de-prestacao id="6483" tipo="web">
+                        <descricao>http://www.pf.gov.br/servicos-pf/gru/armas</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6424">
+            <titulo>Receber comprovante de transferência</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8310">Carteira de identidade</item>
+                    <item id="8311">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6485" tipo="presencial">
+                        <descricao>A mesma [Unidade da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias) onde foi feito o requerimento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6313">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Policiamento</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12054">sinarm</item>
+        <item id="12055">tranferência</item>
+        <item id="12056">armas de fogo</item>
+    </palavras-chave>
+</servico>
