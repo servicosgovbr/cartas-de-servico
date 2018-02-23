@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-se-como-estrangeiro-no-brasil</id>
+    <dbId>2764</dbId>
+    <nome>Registrar-se como Estrangeiro no Brasil</nome>
+    <sigla></sigla>
+    <descricao>Para emitir a Carteira de Identidade de Estrangeiro, o mesmo precisa antes se registrar junto à Polícia Federal.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3335">
+            <tipo>Estrangeiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6426">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6489" tipo="web">
+                        <descricao>https://servicos.dpf.gov.br/sincreWeb/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6427">
+            <titulo>Ir ao atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8321">Carteira de identidade</item>
+                    <item id="8322">Carteira de trabalho</item>
+                    <item id="8323">Passaporte</item>
+                    <item id="8324">Outros documentos pertinentes à situação do estrangeiro no país.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6490" tipo="presencial">
+                        <descricao>Local de atendimento agendado na etapa anterior</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6428">
+            <titulo>Gerar e pagar GRU</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8325">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="464">
+                        <descricao>Taxa de Registro</descricao>
+                        <moeda>R$</moeda>
+                        <valor>106,45</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6492" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="747" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6491" tipo="web">
+                        <descricao>https://servicos.dpf.gov.br/gru2/gru?nac=1&amp;rec=2</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6315">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cooperação Internacional</item>
+        <item>Emigrações e Imigrações</item>
+        <item>Direitos Humanos</item>
+        <item>Empregabilidade</item>
+        <item>Fiscalização do Estado</item>
+        <item>Pessoa</item>
+        <item>Relações Internacionais</item>
+        <item>Trabalho</item>
+        <item>Turismo</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12060">visto</item>
+        <item id="12061">refugiado</item>
+        <item id="12062">imigrante</item>
+    </palavras-chave>
+</servico>
