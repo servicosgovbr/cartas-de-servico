@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-arrendamento-parcial</id>
+    <dbId>2756</dbId>
+    <nome>Obter Arrendamento Parcial</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2168">Arrendamento Parcial</item>
+    </nomes-populares>
+    <descricao>Arrendamento por tempo determinado</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3327">
+            <tipo>Empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6416">
+            <titulo>Preencher pré-requerimento online</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8228">Ata de fundação</item>
+                    <item id="8229">Carteira de identidade</item>
+                    <item id="8230">Carteira de identidade de estrangeiro</item>
+                    <item id="8231">Carteira de trabalho</item>
+                    <item id="8232">Certidão de casamento</item>
+                    <item id="8233">Certidão de nascimento</item>
+                    <item id="8234">Certidões de cartório</item>
+                    <item id="8235">Certidões da Receita Federal</item>
+                    <item id="8236">Certificado de conclusão de curso</item>
+                    <item id="8237">CNPJ</item>
+                    <item id="8238">Comprovante de endereço/residência</item>
+                    <item id="8239">Comprovante de quitação eleitoral</item>
+                    <item id="8240">Contrato Social</item>
+                    <item id="8241">CPF</item>
+                    <item id="8242">FGTS</item>
+                    <item id="8243">Procuração do representante legal</item>
+                    <item id="8244">Registro da Junta Comercial</item>
+                    <item id="8245">Registro em Cartório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6473" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=18</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6417">
+            <titulo>Protocolar requerimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8246">Formulário de pré-requerimento impresso e assinado</item>
+                    <item id="8247">Documentos requeridos na etapa anterior</item>
+                    <item id="8248">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="454">
+                        <descricao>Emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.040,05</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6474" tipo="presencial">
+                        <descricao>**Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6475" tipo="postal">
+                        <descricao>**Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6305">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12036">arrendatário</item>
+        <item id="12037">temporário</item>
+        <item id="12038">prazo fixo</item>
+    </palavras-chave>
+</servico>
