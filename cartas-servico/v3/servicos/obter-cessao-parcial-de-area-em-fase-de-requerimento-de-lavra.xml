@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-cessao-parcial-de-area-em-fase-de-requerimento-de-lavra</id>
+    <dbId>2752</dbId>
+    <nome>Obter Cessão Parcial de área em fase de Requerimento de Lavra</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2164">Cessão Parcial em fase de Requerimeno de Lavra</item>
+    </nomes-populares>
+    <descricao>A cessão parcial de direitos minerários é a transferência negocial de parte da área de um título, de modo que o adquirente (cessionário) exerça posição jurídica idêntica à do antecessor (cedente), assumindo todos os seus direitos e deveres relativos à parte negociada.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3323">
+            <tipo>Empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6408">
+            <titulo>Preencher pré-requerimento online</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8149">Ata de fundação</item>
+                    <item id="8150">Carteira de identidade de estrangeiro</item>
+                    <item id="8151">Certidão de casamento</item>
+                    <item id="8152">Certidão de nascimento</item>
+                    <item id="8153">Certidões da Receita Federal</item>
+                    <item id="8154">CNPJ</item>
+                    <item id="8155">Comprovante de endereço/residência</item>
+                    <item id="8156">Comprovante de quitação eleitoral</item>
+                    <item id="8157">Contrato Social</item>
+                    <item id="8158">CPF</item>
+                    <item id="8159">FGTS</item>
+                    <item id="8160">Registro da Junta Comercial</item>
+                    <item id="8161">Registro em Cartório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6461" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=15</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6409">
+            <titulo>Protocolar requerimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8162">Formulário de pré-requerimento impresso e assinado</item>
+                    <item id="8163">Documentos requeridos na etapa anterior</item>
+                    <item id="8164">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="450">
+                        <descricao>Emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.200,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6462" tipo="presencial">
+                        <descricao>**Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6463" tipo="postal">
+                        <descricao>**Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6301">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12024">dnpm</item>
+        <item id="12025">mineração</item>
+        <item id="12026">cessionário</item>
+    </palavras-chave>
+</servico>
