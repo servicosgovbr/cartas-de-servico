@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-utilizacao-de-material-nuclear-em-instalacoes-de-reconversao</id>
+    <dbId>2715</dbId>
+    <nome>Obter autorização para utilização de material nuclear em instalações de reconversão</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2146">Autorização para Utilização de Material Nuclear</item>
+        <item id="2147">AUMAN</item>
+    </nomes-populares>
+    <descricao>Fornecer autorização para utilização de material nuclear para instalações de reconversão</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3286">
+            <tipo>Empresas públicas ou de economia mista</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6343">
+            <titulo>Solicitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="7994">Questionário Técnico para a instalação de Beneficiamento</item>
+                    <item id="7995">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="403">
+                        <descricao>Taxa de Licenciamento e Controle (Piloto)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>840,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="404">
+                        <descricao>Taxa de Licenciamento e Controle (Industrial)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.700,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6410" tipo="e-mail">
+                        <descricao>cosap@cnen.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6411" tipo="postal">
+                        <descricao>**Comissão Nacional de Energia Nuclear** - Rua Gal. Severiano, nº 90, Botafogo - CEP: 22290-901 - Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6412" tipo="presencial">
+                        <descricao>**Comissão Nacional de Energia Nuclear** - Rua Gal. Severiano, nº 90, Botafogo - CEP: 22290-901 - Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6344">
+            <titulo>Receber vistoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6413" tipo="presencial">
+                        <descricao>Local da instalação para onde a autorização está sendo requisitada.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6260">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Fiscalização do Estado</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="11911">energia atômica</item>
+        <item id="11912">reação nuclear</item>
+        <item id="11913">radiação</item>
+    </palavras-chave>
+</servico>
