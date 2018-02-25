@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>visitar-as-dependencias-da-fundacao-casa-de-rui-barbosa</id>
+    <dbId>2770</dbId>
+    <nome>Visitar as dependências da Fundação Casa de Rui Barbosa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2184">Visitação ao Museu</item>
+    </nomes-populares>
+    <descricao>Visitas às dependências da FCRB, incluindo o Museu Casa de Rui Barbosa, o Jardim Histórico e demais dependências abertas ao público.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3347">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6439">
+            <titulo>Realizar visita</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+                <caso id="748" descricao="Maiores de 65 anos que desejem usufruir da gratuidade do ingresso">
+                    <documento>
+                        <id>8342</id>
+                        <descricao>Carteira de identidade</descricao>
+                    </documento>
+                </caso>
+                <caso id="749" descricao="Estudantes de escola pública que desejem usufruir a gratuidade do ingresso">
+                    <documento>
+                        <id>8343</id>
+                        <descricao>Carteira escolar ou outro comprovante de matrícula em escola da rede pública de ensino.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="472">
+                        <descricao>Ingresso</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="753" descricao="Maiores de 65 anos">
+                    <custo id="473">
+                        <descricao>Ingresso</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Gratuito</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="754" descricao="Estudantes de escola pública">
+                    <custo id="474">
+                        <descricao>Ingresso</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Gratuito</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="755" descricao="Todos os viisitantes aos domingos">
+                    <custo id="475">
+                        <descricao>Ingresso</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Gratuito</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6503" tipo="presencial">
+                        <descricao>**Museu Casa de Rui Barbosa** - Rua São Clemente 134, Botafogo - CEP: 22260-000, Rio de Janeiro, RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/261" dbId="34301">
+        <nomeOrgao>Fundação Casa de Rui Barbosa (FCRB)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6327">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6328">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6329">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6330">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Educação</item>
+        <item>Difusão Cultural</item>
+        <item>Lazer</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12078">museu</item>
+        <item id="12079">rui barbosa</item>
+        <item id="12080">escritor</item>
+    </palavras-chave>
+</servico>
