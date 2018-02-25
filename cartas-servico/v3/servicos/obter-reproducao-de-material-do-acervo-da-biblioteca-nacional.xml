@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-reproducao-de-material-do-acervo-da-biblioteca-nacional</id>
+    <dbId>2769</dbId>
+    <nome>Obter reprodução de material do acervo da Biblioteca Nacional</nome>
+    <sigla></sigla>
+    <descricao>Os usuários podem reproduzir com equipamento próprio materiais em domínio público e em bom estado de conservação, de forma gratuita, de acordo com as normas vigentes na instituição.
+As cópias que necessitem ser produzidas pelos Laboratórios da FBN (Digitalização/Microfilmagem) deverão ser solicitadas através do preenchimento de formulários específicos para este fim, e do pagamento de emolumentos para custeio dos trabalhos de reprodução.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3346">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6436">
+            <titulo>Solicitar reprodução</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8338">Carteira de identidade</item>
+                    <item id="8339">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6499" tipo="presencial">
+                        <descricao>**Fundação Biblioteca Nacional** - Av. Pres. Vargas, 3131 - Sala 702 - Cidade Nova, Rio de Janeiro - RJ, 20030-120</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6500" tipo="e-mail">
+                        <descricao>dinf@bn.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6437">
+            <titulo>Pagar taxa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8340">Boleto de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="468">
+                        <descricao>Emolumentos para Reprodução do Acervo</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Valor varia de acordo com o tipo de reprodução solicitado e com a quantidade de itens a serem reproduzidos</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6501" tipo="presencial">
+                        <descricao>**Fundação Biblioteca Nacional** - Av. Pres. Vargas, 3131 - Sala 702 - Cidade Nova, Rio de Janeiro - RJ, 20030-120</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6438">
+            <titulo>Receber cópias</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8341">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6502" tipo="presencial">
+                        <descricao>**Fundação Biblioteca Nacional** - Av. Pres. Vargas, 3131 - Sala 702 - Cidade Nova, Rio de Janeiro - RJ, 20030-120</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/984" dbId="34300">
+        <nomeOrgao>Fundação Biblioteca Nacional (FBN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6323">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6324">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6325">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6326">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Educação</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Difusão Cultural</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12075">xerox</item>
+        <item id="12076">FBN</item>
+        <item id="12077">cópia</item>
+    </palavras-chave>
+</servico>
