@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>fornecer-microrganismos-de-referencia</id>
+    <dbId>2771</dbId>
+    <nome>Fornecer Microrganismos de Referência</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2185">Obter Cepa Padrão, Bactérias ou Fungos</item>
+    </nomes-populares>
+    <descricao>Obter microrganismos de referência para utilização em análises laboratoriais, pesquisa e desenvolvimento tecnológico.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3348">
+            <tipo>Pessoas Jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6440">
+            <titulo>Solicitar o serviço</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8344">CNPJ</item>
+                    <item id="8345">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6504" tipo="presencial">
+                        <descricao>**Instituto Nacional de Controle de Qualidade em Saúde** - Av. Brasil, 4365 - Manguinhos, Rio de Janeiro - RJ - Brasil - CEP: 21.040-900</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6505" tipo="telefone">
+                        <descricao>(21) 3865-5236</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6506" tipo="e-mail">
+                        <descricao>colecao@incqs.fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6507" tipo="postal">
+                        <descricao>**Instituto Nacional de Controle de Qualidade em Saúde** - Av. Brasil, 4365 - Manguinhos, Rio de Janeiro - RJ - Brasil - CEP: 21.040-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6441">
+            <titulo>Receber a informação da disponibilidade do serviço</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8346">CNPJ</item>
+                    <item id="8347">Informações sobre o uso pretendido e dados para emissão de nota fiscal (setor privado)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6508" tipo="e-mail">
+                        <descricao>E-mail informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6442">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8348">Boleto para pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="477">
+                        <descricao>Preço por ampola (da 1ª até a 10ª)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>380,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="478">
+                        <descricao>Preço por ampola (da 11ª até a 100ª)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>3.800,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="757" descricao="Pessoas jurídicas de direito público">
+                    <custo id="479">
+                        <descricao>Preço do serviço</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>gratuito</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6509" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6443">
+            <titulo>Agendar a retirada do material</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8349">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6510" tipo="e-mail">
+                        <descricao>colecao@incqs.fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6444">
+            <titulo>Receber o material</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8350">CPF</item>
+                    <item id="8351">Identificação do portador</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6511" tipo="presencial">
+                        <descricao>**Instituto Nacional de Controle de Qualidade em Saúde** - Av. Brasil, 4365 - Manguinhos, Rio de Janeiro - RJ - Brasil - CEP: 21.040-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6445">
+            <titulo>Preencher o formulário de avaliação do serviço (facultativo)</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8352">Formulário de avaliação de cliente</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6512" tipo="e-mail">
+                        <descricao>colecao@incqs.fiocruz.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/315" dbId="34312">
+        <nomeOrgao>Fundação Oswaldo Cruz (FIOCRUZ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6331">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6332">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6333">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Educação</item>
+        <item>Educação superior</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12081">micro-organismos</item>
+        <item id="12082">bactérias</item>
+        <item id="12083">vírus</item>
+        <item id="12084">fungos</item>
+        <item id="12085">cepa</item>
+        <item id="12086">ampola</item>
+    </palavras-chave>
+</servico>
