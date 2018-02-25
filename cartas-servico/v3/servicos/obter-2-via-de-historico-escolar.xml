@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-2-via-de-historico-escolar</id>
+    <dbId>2776</dbId>
+    <nome>Obter 2ª via de Histórico Escolar</nome>
+    <sigla></sigla>
+    <descricao>O responsável ou o próprio aluno solicita a 2ª via de Histórico Escolar para a secretaria escolar de forma presencial.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3352">
+            <tipo>Alunos, ex-alunos  da Fundação Osório, assim como seus responsáveis legais.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6456">
+            <titulo>Solicitar 2ª via</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8364">Carteira de identidade</item>
+                    <item id="8365">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6530" tipo="presencial">
+                        <descricao>**Secretaria da Fundação Osório** - Rua Paula Ramos, 52 - Rio Comprido - Rio de Janeiro/RJ - CEP: 20261-210</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6457">
+            <titulo>Efetuar o pagamento da GRU</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8366">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="483">
+                        <descricao>Taxa de emissão da 2ª via</descricao>
+                        <moeda>R$</moeda>
+                        <valor>25,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6531" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6458">
+            <titulo>Receber documento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8367">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6532" tipo="presencial">
+                        <descricao>**Secretaria da Fundação Osório** - Rua Paula Ramos, 52 - Rio Comprido - Rio de Janeiro/RJ - CEP: 20261-210</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/8406" dbId="34313">
+        <nomeOrgao>Fundação Osório (FOSORIO)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6341">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Documentação Pessoal</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12096">histórico</item>
+        <item id="12097">fundação osório</item>
+        <item id="12098">2ª via</item>
+    </palavras-chave>
+</servico>
