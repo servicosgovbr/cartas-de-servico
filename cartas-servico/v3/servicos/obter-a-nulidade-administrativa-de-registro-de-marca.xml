@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-a-nulidade-administrativa-de-registro-de-marca</id>
+    <dbId>2847</dbId>
+    <nome>Obter a nulidade administrativa de registro de marca</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que entender que a decisão de concessão ou indeferimento de pedido de registro de marca deva ser considerada nula total ou parcialmente por infração à Lei nº 9.279, de 14 de maio de 1996. O serviço consiste, basicamente, na instauração do processo administrativo de nulidade, na sua instrução técnica, na emissão de parecer sobre a matéria suscitada e na decisão da Presidência do INPI.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3428">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6613">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8672">CPF</item>
+                    <item id="8673">CNPJ</item>
+                    <item id="8674">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6773" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6614">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8675">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="554">
+                        <descricao>Nulidade administrativa de registro de marca (Código 336 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>590,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6775" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="777" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6774" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6615">
+            <titulo>Solicitar Nulidade</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Marcas.</descricao>
+            <documentos>
+                <default>
+                    <item id="8676">CPF</item>
+                    <item id="8677">CNPJ</item>
+                    <item id="8678">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6776" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6777" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6778" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6498">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="6499">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12313">inpi</item>
+        <item id="12314">nulidade</item>
+        <item id="12315">marca</item>
+    </palavras-chave>
+</servico>
