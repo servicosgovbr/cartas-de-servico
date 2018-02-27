@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-reconhecimento-de-indicacao-de-procedencia</id>
+    <dbId>2869</dbId>
+    <nome>Obter reconhecimento de indicação de procedência</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa jurídica representativa de produtores ou prestadores de serviços devidamente organizados que pretenda obter o reconhecimento do nome geográfico de país, cidade, região ou localidade de seu território como centro de extração, produção ou fabricação de determinado produto ou de prestação de determinado serviço.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3450">
+            <tipo>Pessoa jurídica representativa de produtores ou prestadores de serviços devidamente organizados</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6679">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8798">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="572">
+                        <descricao>Pedido de registro de reconhecimento de indicação de procedência (Código 600 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>590,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6882" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="795" descricao="Para emissão da GRU">
+                    <canal-de-prestacao id="6881" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6680">
+            <titulo>Requerer reconhecimento</titulo>
+            <descricao>Apresentar o requerimento em formulário físico.</descricao>
+            <documentos>
+                <default>
+                    <item id="8799">CNPJ</item>
+                    <item id="8800">Comprovante de endereço</item>
+                    <item id="8801">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6883" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6884" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6554">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6555">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12370">inpi</item>
+        <item id="12371">reconhecimento</item>
+        <item id="12372">procedência</item>
+    </palavras-chave>
+</servico>
