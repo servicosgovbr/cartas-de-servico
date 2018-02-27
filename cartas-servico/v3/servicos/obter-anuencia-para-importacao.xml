@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-anuencia-para-importacao</id>
+    <dbId>2817</dbId>
+    <nome>Obter Anuência para Importação</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2215">Anuência para Licença de Importação</item>
+    </nomes-populares>
+    <descricao>A Lei n.º 9.933/99, que dispõe sobre as competências do Inmetro, teve alguns de seus artigos alterados pela Lei nº. 12.545/2011. Dentre as alterações, foi estabelecido que o Inmetro é o responsável pela anuência das mercadorias sujeitas ao licenciamento não automático por ele regulamentadas compulsoriamente. Ao registrar uma Licença de Importação no Sistema Integrado de Comércio Exterior (Siscomex), o importador deve solicitar ao Inmetro a análise da Licença de Importação. através do sistema Orquestra, cujos procedimentos e prazos estão descritos na Portaria Inmetro nº 18/2016. O importador deve cadastrar login e senha no Orquestra; Preencher os dados no formulário do sistema e anexar o extrato da Licença de Importação registrada no Sistema Integrado de Comércio Exterior (Siscomex) e catálogo com foto da mercadoria; Clicar em “Enviar Requisição”, ao final do processo; Após enviar requisição, será gerada, automaticamente, a tarefa de Imprimir e pagar GRU; Dois dias após o reconhecimento do pagamento da GRU, o processo segue para análise da equipe de anuência.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3398">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6533">
+            <titulo>Solicitar anuência</titulo>
+            <descricao>Solicitar análise de licença de importação.</descricao>
+            <documentos>
+                <default>
+                    <item id="8494">Licença de importação</item>
+                    <item id="8495">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="526">
+                        <descricao>Taxa de anuência</descricao>
+                        <moeda>R$</moeda>
+                        <valor>53,53</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6633" tipo="web">
+                        <descricao>https://orquestra.inmetro.gov.br/workbase/wlogin.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/240" dbId="36793">
+        <nomeOrgao>Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6422">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6423">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6424">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Normalização e Qualidade</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12223">anuência</item>
+        <item id="12224">importação</item>
+        <item id="12225">inmetro</item>
+    </palavras-chave>
+</servico>
