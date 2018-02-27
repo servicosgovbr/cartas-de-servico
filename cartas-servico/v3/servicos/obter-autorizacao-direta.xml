@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-direta</id>
+    <dbId>2805</dbId>
+    <nome>Obter Autorização Direta</nome>
+    <sigla>AD</sigla>
+    <nomes-populares>
+        <item id="2204">Autorização para o Licenciamento Ambiental - ALA</item>
+        <item id="2205">Autorização ou Anuência para Supressão de Vegetação - ASV</item>
+        <item id="2206">Autorização para Coleta, Captura e Transporte de Material Biológico - ABio</item>
+    </nomes-populares>
+    <descricao>Para a obtenção de autorização direta é necessário encaminhar um requerimento para o ICMBio (entrega em qualquer unidade organizacional), com a descrição da atividade e da área afetada. Após análise técnica, é emitida uma comunicação oficial ao interessado informando o deferimento ou o indeferimento do pleito.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3383">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6502">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Envio do termo de referencia ou Estudo de impacto ambiental oriundo do órgão licenciador.</descricao>
+            <documentos>
+                <default>
+                    <item id="8430">EIA RIMA</item>
+                    <item id="8431">Termo de Referencia</item>
+                    <item id="8432">FCA</item>
+                    <item id="8433">Documentação do Interessado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="514">
+                        <descricao>Taxa de análise e Autorização</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>conforme Portaria MMA-ICMBio 366/2009</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6591" tipo="postal">
+                        <descricao>**DIRETORIA DE PESQUISA, AVALIAÇÃO E MONITORAMENTO DA BIODIVERSIDADE - Instituto Chico Mendes de Conservação da Biodiversidade** - Caixa Postal: 7993 CEP: 70673-970</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/91842" dbId="36726">
+        <nomeOrgao>Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6392">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6393">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6394">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12183">icmbio</item>
+        <item id="12184">autorização</item>
+        <item id="12185">permissão</item>
+    </palavras-chave>
+</servico>
