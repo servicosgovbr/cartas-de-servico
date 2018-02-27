@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-titular-de-registro-de-marca</id>
+    <dbId>2849</dbId>
+    <nome>Transferir titular de registro de marca.</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica solicitante de pedido ou titular de registro de marca que pretenda transferi-lo por cessão, cisão, incorporação ou fusão, sucessão legítima ou testamentária, ou falência, fazendo constar a qualificação completa do cessionário.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3430">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6619">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8686">CNPJ</item>
+                    <item id="8687">CPF</item>
+                    <item id="8688">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6785" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6620">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8689">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="556">
+                        <descricao>Anotação de transferência de titular (Código 349 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>180,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6787" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="779" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6786" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6621">
+            <titulo>Solicitar tranferência</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Marcas</descricao>
+            <documentos>
+                <default>
+                    <item id="8690">CPF</item>
+                    <item id="8691">CNPJ</item>
+                    <item id="8692">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6788" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6789" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6790" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6503">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="6504">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="6505">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12319">transferência</item>
+        <item id="12320">marca</item>
+        <item id="12321">inpi</item>
+    </palavras-chave>
+</servico>
