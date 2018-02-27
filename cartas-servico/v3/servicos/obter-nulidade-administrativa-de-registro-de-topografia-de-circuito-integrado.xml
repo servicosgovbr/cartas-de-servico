@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-nulidade-administrativa-de-registro-de-topografia-de-circuito-integrado</id>
+    <dbId>2877</dbId>
+    <nome>Obter nulidade administrativa de registro de topografia de circuito integrado</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que entender que a decisão de concessão ou indeferimento de pedido de registro de topografia de circuito integrado deva ser considerada nula total ou parcialmente por infração à Lei nº 11.484, de 31 de maio de 2007. O serviço consiste, basicamente, na instauração do processo administrativo de nulidade, na sua instrução técnica, na emissão de parecer sobre a matéria suscitada e na decisão da Presidência do INPI.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3458">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6695">
+            <titulo>Pagar taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU).</descricao>
+            <documentos>
+                <default>
+                    <item id="8828">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="579">
+                        <descricao>Outras petições (Código 663 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>60,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6914" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="803" descricao="Para emissão da GRU">
+                    <canal-de-prestacao id="6913" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6696">
+            <titulo>Solicitar nulidade</titulo>
+            <descricao>Apresentar o requerimento em formulário físico.</descricao>
+            <documentos>
+                <default>
+                    <item id="8829">CPF ou CNPJ</item>
+                    <item id="8830">Comprovante de endereço</item>
+                    <item id="8831">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6915" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6916" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6577">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6578">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6579">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12394">nulidade</item>
+        <item id="12395">inpi</item>
+        <item id="12396">circuito integrado</item>
+    </palavras-chave>
+</servico>
