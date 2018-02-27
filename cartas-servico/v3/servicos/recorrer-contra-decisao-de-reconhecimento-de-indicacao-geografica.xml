@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>recorrer-contra-decisao-de-reconhecimento-de-indicacao-geografica</id>
+    <dbId>2872</dbId>
+    <nome>Recorrer contra decisão de reconhecimento de indicação geográfica</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que entender que a decisão de deferimento ou indeferimento de pedido de reconhecimento de indicação geográfica deva ser reformada ou invalidada total ou parcialmente. O serviço consiste, basicamente, no recebimento do recurso, no seu exame e instrução técnica, na emissão de parecer sobre a matéria suscitada e na decisão da Presidência do INPI.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3453">
+            <tipo>Pessoa física e jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6685">
+            <titulo>Pagar taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU).</descricao>
+            <documentos>
+                <default>
+                    <item id="8808">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="574">
+                        <descricao>Recurso de indicação geográfica (Código 622 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>275,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6894" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="798" descricao="Para emissão da GRU">
+                    <canal-de-prestacao id="6893" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6686">
+            <titulo>Apresentar recurso</titulo>
+            <descricao>Apresentar o requerimento em formulário físico.</descricao>
+            <documentos>
+                <default>
+                    <item id="8809">CPF ou CNPJ</item>
+                    <item id="8810">Comprovante de endereço</item>
+                    <item id="8811">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6895" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6896" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6562">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6563">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6564">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12379">inpi</item>
+        <item id="12380">recurso</item>
+        <item id="12381">reconhecimento</item>
+    </palavras-chave>
+</servico>
