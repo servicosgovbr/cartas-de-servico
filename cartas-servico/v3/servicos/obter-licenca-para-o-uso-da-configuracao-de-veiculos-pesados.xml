@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-licenca-para-o-uso-da-configuracao-de-veiculos-pesados</id>
+    <dbId>2800</dbId>
+    <nome>Obter licença para o uso da configuração de veículos pesados</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2200">PROCONVE</item>
+    </nomes-populares>
+    <descricao>Emitir licença para o uso da configuração de veículos pesados (caminhões e ônibus).</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3378">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6493">
+            <titulo>Requerer licença</titulo>
+            <descricao>Preenchimento de formulários com as informações necessárias via INFOSERV. Emissão, via INFOSERV, do boleto para pagamento. Impressão da LCVM via INFOSERV.</descricao>
+            <documentos>
+                <default>
+                    <item id="8420">Upload de documentos necessários via INFOSERV.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="509">
+                        <descricao>Taxa de emissão de LCVM</descricao>
+                        <moeda>R$</moeda>
+                        <valor>721,77</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6578" tipo="web">
+                        <descricao>https://servicos.ibama.gov.br/ctf/sistema.php?modulo=aplicacao/modulo&amp;moduloId=360</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6579" tipo="e-mail">
+                        <descricao>proconve.sede@ibama.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6381">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6382">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Transporte Rodoviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12168">ônibus</item>
+        <item id="12169">caminhão</item>
+        <item id="12170">ibama</item>
+    </palavras-chave>
+</servico>
