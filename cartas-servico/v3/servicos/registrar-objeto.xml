@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-objeto</id>
+    <dbId>2826</dbId>
+    <nome>Registrar Objeto</nome>
+    <sigla></sigla>
+    <descricao>Registro é o ato pelo qual o Inmetro, na condição de órgão regulamentador ou em decorrência de competência que lhe seja delegada, autoriza, condicionado à existência do Atestado de Conformidade, a utilização do Selo de Identificação da Conformidade e a comercialização do objeto, conforme previsto na Resolução Conmetro nº 05, de 06 de maio de 2008, que dispõe sobre a aprovação do Regulamento para o Registro de Objeto com Conformidade Avaliada Compulsória.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3407">
+            <tipo>Empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6552">
+            <titulo>Solicitar registro</titulo>
+            <descricao>Solicitar análise para concessão do registro</descricao>
+            <documentos>
+                <default>
+                    <item id="8535">Carteira de identidade de estrangeiro</item>
+                    <item id="8536">Certidões da Receita Federal</item>
+                    <item id="8537">CNPJ</item>
+                    <item id="8538">Contrato Social</item>
+                    <item id="8539">CPF</item>
+                    <item id="8540">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="534">
+                        <descricao>Taxa de registro</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Valor varia de acordo com o objeto</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6657" tipo="web">
+                        <descricao>https://orquestra.inmetro.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6658" tipo="e-mail">
+                        <descricao>regobjeto@inmetro.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/240" dbId="36793">
+        <nomeOrgao>Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6436">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Normalização e Qualidade</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12250">selo de conformidade</item>
+        <item id="12251">inmetro</item>
+        <item id="12252">iso</item>
+    </palavras-chave>
+</servico>
