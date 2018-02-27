@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>ofertar-patente-para-fins-de-exploracao</id>
+    <dbId>2836</dbId>
+    <nome>Ofertar patente para fins de exploração</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2219">licença de patente para fins de exploração</item>
+    </nomes-populares>
+    <descricao>Destina-se à pessoa física ou jurídica titular de patente que pretenda ofertá-la para fins de exploração, mediante publicação promovida pelo INPI.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3417">
+            <tipo>Pessoa física e jurídica titular de patente</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6580">
+            <titulo>Cadastrar-se no Sistema e-INPI.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8602">CNPJ</item>
+                    <item id="8603">CPF</item>
+                    <item id="8604">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6713" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6581">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8605">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="544">
+                        <descricao>Oferta de licença da patente para fins de exploração ou renovação de oferta (Código 218 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>115,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6715" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="767" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6714" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6582">
+            <titulo>Solicitar licença de oferta</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Patentes.</descricao>
+            <documentos>
+                <default>
+                    <item id="8606">CNPJ</item>
+                    <item id="8607">CPF</item>
+                    <item id="8608">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6716" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6464">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="6465">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="6466">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12280">oferta</item>
+        <item id="12281">patente</item>
+        <item id="12282">inpi</item>
+    </palavras-chave>
+</servico>
