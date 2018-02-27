@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-a-anotacao-de-gravame-limitacao-ou-onus-sobre-pedido-ou-registro-de-marca</id>
+    <dbId>2850</dbId>
+    <nome>Obter a anotação de gravame, limitação ou ônus sobre pedido ou registro de marca</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que pretenda fazer recair gravame, limitação ou ônus sobre pedido ou registro de marca.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3431">
+            <tipo>Pessoas físicas ou jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6622">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8693">CNPJ</item>
+                    <item id="8694">CPF</item>
+                    <item id="8695">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6791" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6623">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8696">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="557">
+                        <descricao>Anotação de limitação ou ônus (Código 380 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>70,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6793" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="780" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6792" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6624">
+            <titulo>Solicitar anotação</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Marcas</descricao>
+            <documentos>
+                <default>
+                    <item id="8697">CPF</item>
+                    <item id="8698">CNPJ</item>
+                    <item id="8699">Comprovante de Pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6794" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6795" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6796" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6506">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="6507">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="6508">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12322">inpi</item>
+        <item id="12323">anotação</item>
+        <item id="12324">marca</item>
+    </palavras-chave>
+</servico>
