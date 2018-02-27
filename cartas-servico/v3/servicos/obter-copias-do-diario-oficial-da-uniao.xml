@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-copias-do-diario-oficial-da-uniao</id>
+    <dbId>2809</dbId>
+    <nome>Obter cópias do Diário Oficial da União</nome>
+    <sigla></sigla>
+    <descricao>Solicitar presencialmente,  telefone, e-mail, correspondência ou pelo sistema da Central de Atendimento disponível no Portal www.in.gov.br, informando a data exata e os termos para pesquisa - matéria específica, instituição, tipo de publicação (exemplo: Portarias, Leis, Decretos), número da página , além dos dados para envio e forma de recebimento das cópias solicitadas.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3387">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6512">
+            <titulo>Solicitar cópias</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6611" tipo="presencial">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6612" tipo="telefone">
+                        <descricao>(61) 3441-9450</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6613" tipo="web">
+                        <descricao>www.in.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6614" tipo="e-mail">
+                        <descricao>geate@in.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6513">
+            <titulo>Realizar o pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8457">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="518">
+                        <descricao>Taxa de ressarcimento</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com o número de cópias solicitadas</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6615" tipo="presencial">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6616" tipo="postal">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6514">
+            <titulo>Receber cópias</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8458">Carteira de identidade</item>
+                    <item id="8459">Carteira de trabalho</item>
+                    <item id="8460">comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6617" tipo="presencial">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6618" tipo="postal">
+                        <descricao>No endereço informado na solicitação.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2837" dbId="6041">
+        <nomeOrgao>Casa Civil da Presidência da República (CC-PR)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6403">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6404">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6405">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6406">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Difusão</item>
+        <item>Transparência</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12195">DOU</item>
+        <item id="12196">cópia</item>
+        <item id="12197">xerox</item>
+    </palavras-chave>
+</servico>
