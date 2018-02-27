@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-o-registro-de-marca-de-certificacao</id>
+    <dbId>2842</dbId>
+    <nome>Solicitar o registro de marca de certificação</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica que pretenda atestar a conformidade de um produto ou serviço com determinadas normas ou especificações técnicas, notadamente quanto à qualidade, natureza, material utilizado e metodologia empregada. O serviço consiste, basicamente, no recebimento do pedido de registro de marca e no seu exame.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3423">
+            <tipo>Pessoa física e jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6598">
+            <titulo>Cadastrar-se no Sistema e-INPI.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8637">CNPJ</item>
+                    <item id="8638">CPF</item>
+                    <item id="8639">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6743" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6599">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8640">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="549">
+                        <descricao>Pedido de registro de marca (Código 389 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>355,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6745" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="772" descricao="Para gerar GRU">
+                    <canal-de-prestacao id="6744" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6600">
+            <titulo>Solicitar registro</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Marcas.</descricao>
+            <documentos>
+                <default>
+                    <item id="8641">CNPJ</item>
+                    <item id="8642">CPF</item>
+                    <item id="8643">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6746" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6747" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6748" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6483">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6484">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6485">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12298">marca</item>
+        <item id="12299">inpi</item>
+        <item id="12300">certificação</item>
+    </palavras-chave>
+</servico>
