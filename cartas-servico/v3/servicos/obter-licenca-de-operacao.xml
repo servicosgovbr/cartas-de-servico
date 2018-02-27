@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-licenca-de-operacao</id>
+    <dbId>2786</dbId>
+    <nome>Obter Licença de Operação</nome>
+    <sigla>LO</sigla>
+    <descricao>Autorizar a operação da atividade ou empreendimento, com as medidas de controle
+ambiental e as condições determinadas para a operação. A regularização de
+empreendimentos que entraram em operação sem passar por processo de licenciamento
+ambiental é feita por esse instrumento.
+Para as atividades de exploração de petróleo e gás pode ser emitida autorização
+para inclusão da unidade marítima de perfuração na licença de operação</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3364">
+            <tipo>Empresas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6477">
+            <titulo>Receber vistoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8405">relatório de acompanhamento de programas e condicionantes ambientais</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="492">
+                        <descricao>Taxa de Controle e Fiscalização Ambiental</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>-  Varia de acordo com o porte do empreendimento em licenciamento, tipologia e porte da empresa solicitante</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6555" tipo="presencial">
+                        <descricao>Área de Influência do Empreendimento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6358">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12126">licença</item>
+        <item id="12127">operação</item>
+        <item id="12128">ibama</item>
+    </palavras-chave>
+</servico>
