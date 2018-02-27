@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-consulta-a-comissao-de-classificacao-de-elementos-figurativos-de-marca</id>
+    <dbId>2851</dbId>
+    <nome>Realizar consulta à comissão de classificação de elementos figurativos de marca</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica que tenha interesse no registro de marca de produto ou serviço e encontre dificuldades em classificar o elemento figurativo da marca de acordo com a Classificação de Viena.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3432">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6625">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8700">CPF</item>
+                    <item id="8701">CNPJ</item>
+                    <item id="8702">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6797" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6626">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8703">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="558">
+                        <descricao>Consulta à comissão de classificação de elementos figurativos de marca (Código 358 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>170,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6799" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="781" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6798" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6627">
+            <titulo>Solicitar consulta</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Marcas</descricao>
+            <documentos>
+                <default>
+                    <item id="8704">CPF</item>
+                    <item id="8705">CNPJ</item>
+                    <item id="8706">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6800" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6801" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6802" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6509">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6510">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6511">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12326">marca</item>
+        <item id="12327">inpi</item>
+        <item id="12325">consulta</item>
+    </palavras-chave>
+</servico>
