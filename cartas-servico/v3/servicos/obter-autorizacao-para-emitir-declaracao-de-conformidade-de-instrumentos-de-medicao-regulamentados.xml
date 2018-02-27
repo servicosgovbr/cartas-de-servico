@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-emitir-declaracao-de-conformidade-de-instrumentos-de-medicao-regulamentados</id>
+    <dbId>2822</dbId>
+    <nome>Obter Autorização para emitir Declaração de Conformidade de Instrumentos de Medição Regulamentados</nome>
+    <sigla></sigla>
+    <descricao>Processo de Concessão e manutenção de autorização de empresas que estejam interessadas em emitir Declaração de Conformidade de instrumentos de medição regulamentados, sob a supervisão metrológica da Diretoria de Metrologia Legal do Inmetro, como alternativa às verificações iniciais e após reparos. A empresa interessada em obter a concessão de autorização deve atender aos requisitos estabelecidos na Portaria Inmetro n° 400/2013. A solicitação deve ser feita por meio do preenchimento do formulário FOR-Dimel-202, disponível no sitio do Inmetro ou obtido através da Disme. Para a manutenção da autorização a empresa autorizada fica submetida a visitas de supervisão periódica conforme requisitos estabelecidos na Portaria Inmetro 400/2013. A Dimel disponibiliza também os documentos DOQ-Dimel-002 e 004 que orientam às empresas sobre o processo de concessão e de manutenção da autorização, assim como apresenta os custos relacionados. A Portaria Inmetro n° 400/13 pode ser consultada no seguinte endereço: http://inmetro.gov.br/legislacao/, enquanto que o formulário e os documentos no endereço www.inmetro.gov.br/metlegal/docDisponiveis.asp</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3403">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6540">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Envio do formulário de solicitação</descricao>
+            <documentos>
+                <default>
+                    <item id="8513">CNPJ</item>
+                    <item id="8514">Contrato Social</item>
+                    <item id="8515">Procuração do representante legal</item>
+                    <item id="8516">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6641" tipo="telefone">
+                        <descricao>(21) 2679-9156</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6642" tipo="e-mail">
+                        <descricao>dicol@inmetro.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6541">
+            <titulo>Aceitar plano de auditoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8517">Plano de Auditoria</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6643" tipo="e-mail">
+                        <descricao>E-mail informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6542">
+            <titulo>Receber auditoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6644" tipo="presencial">
+                        <descricao>Endereço informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6543">
+            <titulo>Enviar plano de ações</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8518">Plano de ações</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6645" tipo="e-mail">
+                        <descricao>dicol@inmetro.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6544">
+            <titulo>Pagar custos</titulo>
+            <descricao>Recebimento e aceite dos custos de autorização de concessão</descricao>
+            <documentos>
+                <default>
+                    <item id="8519">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="530">
+                        <descricao>Taxa de Serviços Metrológicos</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Soma dos valores da taxa de supervisão, custos com diárias, passagens e deslocamentos e custo dos ensaios.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6646" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6545">
+            <titulo>Receber Portaria de Autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6647" tipo="e-mail">
+                        <descricao>E-mail informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6648" tipo="web">
+                        <descricao>http://imprensanacional.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/240" dbId="36793">
+        <nomeOrgao>Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6429">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6430">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Normalização e Qualidade</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12238">permissão</item>
+        <item id="12239">conformidade</item>
+        <item id="12240">selo</item>
+    </palavras-chave>
+</servico>
