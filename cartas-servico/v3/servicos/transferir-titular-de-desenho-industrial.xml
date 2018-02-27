@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-titular-de-desenho-industrial</id>
+    <dbId>2861</dbId>
+    <nome>Transferir titular de desenho industrial</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica solicitante de pedido ou titular de registro de desenho industrial que pretenda transferi-lo por cessão, cisão, incorporação ou fusão, sucessão legítima ou testamentária, ou falência, fazendo constar a qualificação completa do cessionário.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3442">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6655">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8749">CPF</item>
+                    <item id="8750">CNPJ</item>
+                    <item id="8751">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6839" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6656">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8752">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="565">
+                        <descricao>Anotação de transferência de titular (Código 114 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>120,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6841" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="788" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6840" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6657">
+            <titulo>Solicitar transferência</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Desenho Industrial.</descricao>
+            <documentos>
+                <default>
+                    <item id="8753">CPF</item>
+                    <item id="8754">CNPJ</item>
+                    <item id="8755">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6842" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6843" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6844" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6539">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6540">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6541">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Propriedade Industrial</item>
+        <item>Produção Industrial</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12355">inpi</item>
+        <item id="12356">transferência</item>
+        <item id="12357">desenho industrial</item>
+    </palavras-chave>
+</servico>
