@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>apresentar-oposicao-a-pedido-de-registro-de-marca</id>
+    <dbId>2844</dbId>
+    <nome>Apresentar oposição a pedido de registro de marca</nome>
+    <sigla></sigla>
+    <descricao>Destina-se à pessoa física ou jurídica com legítimo interesse que pretenda manifestar-se contra a publicação de pedido de registro de marca.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3425">
+            <tipo>Pessoa física ou jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6604">
+            <titulo>Cadastrar-se no Sistema e-INPI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8651">CNPJ</item>
+                    <item id="8652">CPF</item>
+                    <item id="8653">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6755" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6605">
+            <titulo>Pagar Taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8654">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="551">
+                        <descricao>Oposição (Código 332 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>355,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6757" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="774" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6756" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6606">
+            <titulo>Apresentar oposição</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8655">CNPJ</item>
+                    <item id="8656">CPF</item>
+                    <item id="8657">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6758" tipo="web">
+                        <descricao>https://marcas.inpi.gov.br/emarcas/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6759" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6760" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6489">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6490">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6491">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12304">inpi</item>
+        <item id="12305">oposição</item>
+        <item id="12306">marca</item>
+    </palavras-chave>
+</servico>
