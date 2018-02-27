@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>assinar-o-diario-oficial-da-uniao</id>
+    <dbId>2806</dbId>
+    <nome>Assinar o Diário Oficial da União</nome>
+    <sigla>DOU</sigla>
+    <nomes-populares>
+        <item id="2207">DOU eletrônico</item>
+    </nomes-populares>
+    <descricao>Consiste na realização de assinatura do Diário Oficial da União, em periodicidades trimestral, semestral ou anual, das Seções 1, 2 ou 3. A disponibilização ocorre em formato digital e valor a ser pago é variável, conforme a periodicidade e a seção escolhida pelo assinante.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3384">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6503">
+            <titulo>Solicitar assinatura</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8434">CNPJ</item>
+                    <item id="8435">Comprovante de endereço/residência</item>
+                    <item id="8436">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6592" tipo="telefone">
+                        <descricao>(61) 3441-9450</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6593" tipo="e-mail">
+                        <descricao>geass@in.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6594" tipo="postal">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6504">
+            <titulo>Realizar pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8437">Boleto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="515">
+                        <descricao>Assinatura</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>O valor varia conforme a periodicidade e a seção escolhida</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6595" tipo="presencial">
+                        <descricao>**Imprensa Nacional** - Setor de Indústrias Gráficas, Quadra 6, lote 800, térreo, CEP: 70610-460, Brasília/DF.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6505">
+            <titulo>Receber assinatura</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8438">e-mail</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6596" tipo="e-mail">
+                        <descricao>E-mail informado na solicitação.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2837" dbId="6041">
+        <nomeOrgao>Casa Civil da Presidência da República (CC-PR)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6395">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6396">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6397">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6398">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Administração</item>
+        <item>Fiscalização do Estado</item>
+        <item>Transparência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12186">DOU</item>
+        <item id="12187">diário oficial</item>
+        <item id="12188">assinatura</item>
+    </palavras-chave>
+</servico>
