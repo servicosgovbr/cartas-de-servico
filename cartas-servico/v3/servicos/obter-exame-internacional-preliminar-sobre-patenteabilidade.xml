@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-exame-internacional-preliminar-sobre-patenteabilidade</id>
+    <dbId>2841</dbId>
+    <nome>Obter exame internacional preliminar sobre patenteabilidade</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2223">Tratado de Cooperação em Matéria de Patentes</item>
+    </nomes-populares>
+    <descricao>Destina-se à pessoa física ou jurídica que pretenda submeter pedido de patente a avaliação preliminar de patenteabilidade de acordo com as normas do Tratado de Cooperação em Matéria de Patentes.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3422">
+            <tipo>Pessoa física e jurídica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6595">
+            <titulo>Cadastrar-se no Sistema e-INPI.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8630">CPF</item>
+                    <item id="8631">CNPJ</item>
+                    <item id="8632">Comprovante de endereço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6737" tipo="web">
+                        <descricao>http://formulario.inpi.gov.br/e-inpi/termo/Termo.jsp?action=28</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6596">
+            <titulo>Pagar taxa</titulo>
+            <descricao>Emitir e pagar a Guia de Recolhimento da União (GRU)</descricao>
+            <documentos>
+                <default>
+                    <item id="8633">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="548">
+                        <descricao>Exame internacional nos termos do PCT (regra 58 - PCT) (Código 268 da GRU)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>630,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6739" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="771" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="6738" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/pag/</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6597">
+            <titulo>Solicitar pequisa</titulo>
+            <descricao>Apresentar o requerimento em formulário físico ou preencher o formulário de peticionamento eletrônico no Sistema e-Patentes.</descricao>
+            <documentos>
+                <default>
+                    <item id="8634">CNPJ</item>
+                    <item id="8635">CPF</item>
+                    <item id="8636">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6740" tipo="web">
+                        <descricao>https://gru.inpi.gov.br/peticionamentoeletronico/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6741" tipo="presencial">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6742" tipo="postal">
+                        <descricao>Serviço de Protocolo e Expedição (SEPEX): Rua Mayrink Veiga, 9, térreo, Centro, Rio de Janeiro – RJ (CEP 20090-910).</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/382" dbId="36783">
+        <nomeOrgao>Instituto Nacional da Propriedade Industrial (INPI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6480">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6481">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6482">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Propriedade Industrial</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12295">patente</item>
+        <item id="12296">internacional</item>
+        <item id="12297">inpi</item>
+    </palavras-chave>
+</servico>
