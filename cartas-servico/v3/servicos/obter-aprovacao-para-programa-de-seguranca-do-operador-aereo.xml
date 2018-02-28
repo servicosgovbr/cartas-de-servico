@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-aprovacao-para-programa-de-seguranca-do-operador-aereo</id>
+    <dbId>2889</dbId>
+    <nome>Obter aprovação para Programa de Segurança do Operador Aéreo</nome>
+    <sigla>PSOA</sigla>
+    <descricao>Os operadores aéreos (empresas aéreas) encaminham seus Programas de Segurança do Operador Aéreo (PSOA) à ANAC para fins de avaliação. Caso o Programa esteja de acordo com a regulamentação aplicável, o Programa é aprovado por meio de uma Portaria da Superintendência de Infraestrutura Aeroportuária.     
+      
+
+&amp;nbsp;        
+**Obs:** Você precisa estar cadastrado no Sistema Eletrônico de Informações da ANAC para utilizar este serviço. Caso você ainda não tenha cadastro, clique [aqui](https://sistemas.anac.gov.br/sei/controlador_externo.php?acao=usuario_externo_avisar_cadastro&amp;id_orgao_acesso_externo=0)</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3470">
+            <tipo>Empresas aéreas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="15" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6718">
+            <titulo>Requerer aprovação</titulo>
+            <descricao>Encaminhar o "Formulário de Apresentação de Medida Adicional de Segurança ou Procedimento Alternativo" à ANAC</descricao>
+            <documentos>
+                <default>
+                    <item id="8897">CNPJ</item>
+                    <item id="8898">Formulário de Apresentação de Medida Adicional de Segurança ou Procedimento Alternativo</item>
+                    <item id="8899">Programa de Segurança do Operador Aéreo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6945" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6605">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12430">operadoras aéreas</item>
+        <item id="12431">empresas áereas</item>
+        <item id="12432">segurança</item>
+    </palavras-chave>
+</servico>
