@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-regime-especial-de-direcao-tecnica</id>
+    <dbId>2919</dbId>
+    <nome>Obter certidão de Regime Especial de Direção Técnica</nome>
+    <sigla></sigla>
+    <descricao>Emissão de certidão informando se a operadora está em regime especial de Direção Técnica. É fornecida diante da necessidade em  situações como demandas jurídicas, ou para utilização em licitações; é solicitada tanto pela operadora quanto pelo órgão público demandante.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3500">
+            <tipo>Operadoras de Plano de Saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="3501">
+            <tipo>Órgãos do poder judiciário</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="3502">
+            <tipo>Órgãos e entidades da Administração Pública</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6751">
+            <titulo>Solicitar certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9035">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6985" tipo="postal">
+                        <descricao>**Agência Nacional de Saúde Suplementar** - Av.  Augusto Severo, 84 - Glória - Rio de Janeiro (RJ) - CEP: 221031-072</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6648">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6649">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12521">certidão negativa da ans</item>
+        <item id="12522">direção técnica</item>
+        <item id="12523">regime especial</item>
+    </palavras-chave>
+</servico>
