@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-mudanca-de-categoria-de-registro-de-aeronave</id>
+    <dbId>2894</dbId>
+    <nome>Obter mudança de categoria de registro de aeronave</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2242">Mudança de categoria</item>
+    </nomes-populares>
+    <descricao>A mudança de categoria de registro de aeronave tem por objetivo o cadastro, nos sistemas e nos Certificados da aeronave, de alteração do tipo de serviço a ser prestado pela aeronave. O serviço depende do pedido, efetuado pelo operador, juntamente às devidas aprovações.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3475">
+            <tipo>Operador aéreo</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6724">
+            <titulo>Requisitar mudança</titulo>
+            <descricao>Protocolar pedido de mudança de categoria. Para gerar o boleto de pagamento da vistoria, clique [aqui](https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/geraBoleto.asp)</descricao>
+            <documentos>
+                <default>
+                    <item id="8915">Documento de identificação oficial com foto</item>
+                    <item id="8916">CNPJ</item>
+                    <item id="8917">CPF</item>
+                    <item id="8918">Comprovante de endereço</item>
+                    <item id="8919">Comprovante de pagamento</item>
+                    <item id="8920">Contrato Social</item>
+                    <item id="8921">Registro na Junta Comercial</item>
+                    <item id="8922">Procuração do representante legal</item>
+                    <item id="8923">Formulário específico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="591">
+                        <descricao>Taxa de Fiscalização da Aviação Civil</descricao>
+                        <moeda>R$</moeda>
+                        <valor>4.194,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6953" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6954" tipo="e-mail">
+                        <descricao>rab@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6955" tipo="presencial">
+                        <descricao>**Protocolo da ANAC** - Setor Comercial Sul Quadra 09 Torre A Ed. Parque Cidade Corporate Lote C - Brasília, DF, 70297-400</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6956" tipo="postal">
+                        <descricao>**Protocolo da ANAC** - Setor Comercial Sul Quadra 09 Torre A Ed. Parque Cidade Corporate Lote C - Brasília, DF, 70297-400</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6618">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6619">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6620">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="6621">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12445">anac</item>
+        <item id="12446">categoria</item>
+        <item id="12447">serviço</item>
+    </palavras-chave>
+</servico>
