@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>credenciar-se-na-icp-brasil</id>
+    <dbId>2884</dbId>
+    <nome>Credenciar-se na ICP-Brasil</nome>
+    <sigla></sigla>
+    <descricao>Serviço de solicitação de credenciamento de agentes do setor regulado - autoridades de registro (AR) e autoridades certificadoras (AC),  por meio de um representante legal da empresa.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3465">
+            <tipo>Autoridades de registro e autoridades certificadoras</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6712">
+            <titulo>Requerer credenciamento</titulo>
+            <descricao>Enviar a solicitação do credenciamento acompanhado dos documentos necessários.</descricao>
+            <documentos>
+                <default>
+                    <item id="8867">Ata de fundação</item>
+                    <item id="8868">Carteira de identidade</item>
+                    <item id="8869">Carteira de identidade de estrangeiro</item>
+                    <item id="8870">Carteira de trabalho</item>
+                    <item id="8871">Certidões da Receita Federal</item>
+                    <item id="8872">CNPJ</item>
+                    <item id="8873">Comprovante de endereço/residência</item>
+                    <item id="8874">Comprovante de pagamento</item>
+                    <item id="8875">Contrato Social</item>
+                    <item id="8876">CPF</item>
+                    <item id="8877">NIT / PIS / PASEP</item>
+                    <item id="8878">Procuração do representante legal</item>
+                    <item id="8879">Registro da Junta Comercial</item>
+                    <item id="8880">Registro em Cartório</item>
+                    <item id="8881">Certidões do Poder Judiciário e das Secretarias de Fazenda Estadual e Municipal.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="587">
+                        <descricao>Primeiro credenciamento de Autoridade Certificadora diretamente vinculada à AC Raiz</descricao>
+                        <moeda>R$</moeda>
+                        <valor>500.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="588">
+                        <descricao>Certificados posteriores</descricao>
+                        <moeda>R$</moeda>
+                        <valor>100.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="806" descricao="Administração Direta da União, dos Estados, do Distrito Federal e dos Municípios">
+                    <custo id="589">
+                        <descricao>Todas as certificações</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Gratuitas</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6934" tipo="e-mail">
+                        <descricao>protocolo@iti.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/47388" dbId="36799">
+        <nomeOrgao>Instituto Nacional de Tecnologia da Informação (ITI)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6595">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6596">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6597">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6598">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Economia e Finanças</item>
+        <item>Normalização e Qualidade</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12415">icp</item>
+        <item id="12416">certificado digital</item>
+        <item id="12417">tecnologia da informação</item>
+    </palavras-chave>
+</servico>
