@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-nada-consta-de-multas-de-transito-da-prf</id>
+    <dbId>2945</dbId>
+    <nome>Obter Nada Consta de Multas de Trânsito da PRF</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2256">Emissão de Nada Consta de Multas da PRF</item>
+        <item id="2257">Emissão de Boletos de Multas da PRF</item>
+    </nomes-populares>
+    <descricao>Emissão de boletos para pagamento de multas de trânsito aplicadas pela PRF  ou 
+Emissão de certidão negativa de multas da PRF pendentes de pagamento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www.prf.gov.br/nada_consta/index.jsf</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3528">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6785">
+            <titulo>Requerer documento</titulo>
+            <descricao>Fornecer dados do veículo para obtenção dos resultados do serviço.</descricao>
+            <documentos>
+                <default>
+                    <item id="9145">Informar Placa e Renavam do Veículo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7031" tipo="web">
+                        <descricao>https://www.prf.gov.br/nada_consta/index.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6696">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6697">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="6698">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="6699">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Encargos financeiros</item>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Serviços Públicos</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12601">multa</item>
+        <item id="12602">nada consta</item>
+        <item id="12603">rodovias federais</item>
+    </palavras-chave>
+</servico>
