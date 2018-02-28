@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-restituicao-de-valores-de-multas</id>
+    <dbId>2946</dbId>
+    <nome>Obter restituição de Valores de Multas</nome>
+    <sigla></sigla>
+    <descricao>Restituição de valores de multas pagas em valor superior ao devido.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3529">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6786">
+            <titulo>Requerer restituição</titulo>
+            <descricao>Protocolo do requerimento</descricao>
+            <documentos>
+                <default>
+                    <item id="9146">Carteira de identidade</item>
+                    <item id="9147">Carteira de trabalho</item>
+                    <item id="9148">Comprovante de pagamento</item>
+                    <item id="9149">Contrato Social</item>
+                    <item id="9150">CPF</item>
+                    <item id="9151">Requerimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7032" tipo="presencial">
+                        <descricao>[Sede das Superintendências Regionais da PRF e Unidades Administrativas](https://www.prf.gov.br/portal/unidades-prf)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7033" tipo="postal">
+                        <descricao>[Superintendências Regionais da PRF](https://www.prf.gov.br/portal/unidades-prf)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6700">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6701">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6702">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6703">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Rodoviário</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12604">restituição</item>
+        <item id="12605">multa</item>
+        <item id="12606">cobrança errada</item>
+    </palavras-chave>
+</servico>
