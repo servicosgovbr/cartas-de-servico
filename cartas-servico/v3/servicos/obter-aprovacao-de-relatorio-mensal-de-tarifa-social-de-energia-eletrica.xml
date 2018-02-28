@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-aprovacao-de-relatorio-mensal-de-tarifa-social-de-energia-eletrica</id>
+    <dbId>2896</dbId>
+    <nome>Obter aprovação de relatório mensal de Tarifa Social de Energia Elétrica</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2244">Baixa Renda</item>
+    </nomes-populares>
+    <descricao>As distribuidoras de energia elétrica devem mensalmente encaminhar relatório solicitando a aprovação dos valores de Diferença Mensal de Receita - DMR referentes aos descontos na tarifa de energia elétrica concedidos aos consumidores da subclasse residencial baixa renda.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3477">
+            <tipo>Distribuidoras de energia elétrica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6726">
+            <titulo>Entregar relatório</titulo>
+            <descricao>O usuário faz o login no sistema e envia um arquivo com as informações necessárias.</descricao>
+            <documentos>
+                <default>
+                    <item id="8925">Relatório mensal de Tarifa Social de Energia Elétrica</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6958" tipo="web">
+                        <descricao>http://sistemas.aneel.gov.br/scs/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/21089" dbId="909">
+        <nomeOrgao>Agência Nacional de Energia Elétrica (ANEEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6623">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Energia elétrica</item>
+        <item>Fiscalização do Estado</item>
+        <item>Assistência Social</item>
+        <item>Proteção Social</item>
+        <item>Combate a desigualdade</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12451">tarifa social</item>
+        <item id="12452">homologação</item>
+        <item id="12453">relatório</item>
+    </palavras-chave>
+</servico>
