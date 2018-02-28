@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>expurgar-indisponibilidade-de-usinas-de-geracao-de-energia-eletrica</id>
+    <dbId>2898</dbId>
+    <nome>Expurgar indisponibilidade de usinas de geração de energia elétrica.</nome>
+    <sigla></sigla>
+    <descricao>No caso de usinas despachadas centralizadamente, o Operador Nacional do Sistema - ONS avalia os pedidos de expurgo e apenas os casos de discordância são encaminhados à ANEEL. No caso das demais usinas, a ANEEL avalia os pedidos de expurgo.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3479">
+            <tipo>Usinas geradoras de energia elétrica</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6728">
+            <titulo>Requerer expurgo</titulo>
+            <descricao>Formalização do pedido na Agência.</descricao>
+            <documentos>
+                <default>
+                    <item id="8927">Procuração do representante legal</item>
+                    <item id="8928">Informações da empresa e usina</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6962" tipo="e-mail">
+                        <descricao>master.srg@aneel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6963" tipo="postal">
+                        <descricao>**Agência Nacional de Energia Elétrica** - SGAN 603 módulo J - Brasília-DF - CEP: 70.830-110</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6729">
+            <titulo>Apresentar recurso (se necessário)</titulo>
+            <descricao>Protocolar eventual pedido de recurso administrativo na SRG.</descricao>
+            <documentos>
+                <default>
+                    <item id="8929">Procuração do representante legal</item>
+                    <item id="8930">Informações da empresa e da usina</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6964" tipo="e-mail">
+                        <descricao>master.srg@aneel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6965" tipo="postal">
+                        <descricao>**Agência Nacional de Energia Elétrica** - SGAN 603 módulo J - Brasília-DF - CEP: 70.830-110</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/21089" dbId="909">
+        <nomeOrgao>Agência Nacional de Energia Elétrica (ANEEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6625">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Energia elétrica</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12457">expurgo</item>
+        <item id="12458">indisponível</item>
+        <item id="12459">aneel</item>
+    </palavras-chave>
+</servico>
