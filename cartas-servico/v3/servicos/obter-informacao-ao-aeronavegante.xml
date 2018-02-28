@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-informacao-ao-aeronavegante</id>
+    <dbId>2890</dbId>
+    <nome>Obter Informação ao Aeronavegante</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2238">NOTAM</item>
+        <item id="2239">Emissão da NOTAM</item>
+    </nomes-populares>
+    <descricao>NOTAM significa “informação ao aeronavegante” (do inglês Notice to Airman). O documento contém todas as informações necessárias para que as operações de transporte aéreo ocorram com segurança e eficiência, e é disponibilizado pelo Comando da Aeronáutica na página AISWEB, disponível no endereço http://www.aisweb.aer.mil.br/
+
+No âmbito dos aeroportos, devem solicitar o serviço todos os operadores de aeródromo que tenham suas operações, facilidades ou equipamentos alterados temporariamente.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3471">
+            <tipo>Operadores de aeródromo e responsáveis por transporte aéreo de passageiros ou cargas.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6719">
+            <titulo>Solicitar Emissão de NOTAM</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8900">Solicitação, datada e assinada pelo operador do aeródromo, em formato digital “.xls” disponibilizado pelo setor de informações aeronáuticas da Gerência de Controle e Fiscalização (GFIC)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6946" tipo="e-mail">
+                        <descricao>prenotam@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6720">
+            <titulo>Receber NOTAM</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8901">NOTAM</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6947" tipo="e-mail">
+                        <descricao>E-mail informado no pedido.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6606">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6607">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6608">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12433">instrução</item>
+        <item id="12434">espaço aéreo</item>
+        <item id="12435">segurança</item>
+    </palavras-chave>
+</servico>
