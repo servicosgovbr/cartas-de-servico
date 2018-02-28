@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cancelar-registro-de-plano-de-saude</id>
+    <dbId>2918</dbId>
+    <nome>Cancelar registro de plano de saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2245">cancelamento de produto</item>
+    </nomes-populares>
+    <descricao>Os produtos registrados junto a ANS pelas operadoras de plano de saúde podem ser cancelados, por solicitação das mesmas, quando estas não desejarem mais comercializa-los e desde que não existam mais beneficiários vinculados a este.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3499">
+            <tipo>Operadoras de plano de saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6749">
+            <titulo>Solicitar cancelamento</titulo>
+            <descricao>Para modelo da solicitação, clique [aqui](http://www.ans.gov.br/images/stories/Plano_de_saude_e_Operadoras/Area_da_Operadora/Registro_de_produto/modelo_de_solicitacao_de_cancelamento_de_produtos.pdf)</descricao>
+            <documentos>
+                <default>
+                    <item id="9034">solicitação por escrito</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6983" tipo="postal">
+                        <descricao>**Agência Nacional de Saúde Suplementar** - Av.  Augusto Severo, 84 - Glória - Rio de Janeiro (RJ) - CEP: 221031-072</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6750">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6984" tipo="postal">
+                        <descricao>Endereço informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6647">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12518">plano de saúde</item>
+        <item id="12519">cancelamento</item>
+        <item id="12520">ans</item>
+    </palavras-chave>
+</servico>
