@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-programa-de-seguranca-aeroportuaria</id>
+    <dbId>2888</dbId>
+    <nome>Obter autorização para Programa de Segurança Aeroportuária</nome>
+    <sigla>PSA</sigla>
+    <descricao>A ANAC analisa os Programas de Segurança Aeroportuários (PSA) produzidos pelos operadores de aeródromos brasileiros buscando garantir que esses aeródromos contem com medidas de segurança suficientes para proteger a aviação civil contra atos de interferência ilícita no que diz respeito à sua prevenção e contingência.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3469">
+            <tipo>Operadores de aeródromos</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6717">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="8894">CNPJ</item>
+                    <item id="8895">CPF</item>
+                    <item id="8896">Plano de Segurança Aeroportuária</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6943" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sip/login.php?sigla_orgao_sistema=ANAC&amp;sigla_sistema=SEI&amp;infra_url=L3NlaS8=</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6944" tipo="postal">
+                        <descricao>**Agência Nacional de Aviação Civil** - Setor Comercial Sul ‐ Quadra 09 ‐ Lote C  Edifício Parque Cidade Corporate ‐ Torre A (4º andar) Brasília ‐ DF ‐ CEP: 70.308‐200</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="6603">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="6604">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transporte Aéreo</item>
+        <item>Transportes</item>
+        <item>Fiscalização do Estado</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Defesa Civil</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12427">segurança</item>
+        <item id="12428">aeroporto</item>
+        <item id="12429">operador</item>
+    </palavras-chave>
+</servico>
