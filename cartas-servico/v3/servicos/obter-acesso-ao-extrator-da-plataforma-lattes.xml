@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-acesso-ao-extrator-da-plataforma-lattes</id>
+    <dbId>2935</dbId>
+    <nome>Obter acesso ao extrator da Plataforma Lattes</nome>
+    <sigla></sigla>
+    <descricao>Auxiliar as instituições a integrar os dados da Plataforma Lattes, incluíndo o Currículo Lattes, Diretório de Grupo de Pesquisa e Diretório de Instituições, aos seus sistemas de informação, com objetivo de gerar indicadores internos de produção científica e tecnológica, realizar estudos através da aplicação de ferramentas de mineração de dados e apoiar a implementação de políticas de gestão. (ainda não disponível para cidadão)</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3518">
+            <tipo>Instituições inscritas na Plataforma Lattes</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6771">
+            <titulo>Solicitar acesso</titulo>
+            <descricao>Enviar documentação.</descricao>
+            <documentos>
+                <default>
+                    <item id="9113">Termo de Responsabilidade</item>
+                    <item id="9114">Indicação do Ponto Focal da Instituição</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7014" tipo="e-mail">
+                        <descricao>sic@cnpq.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6772">
+            <titulo>Harmonizar sistemas</titulo>
+            <descricao>Confirmar dados dos sistema de TI junto à nossa área de informática (contato do CNPq com o ponto focal na Instituição demandante).</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7015" tipo="e-mail">
+                        <descricao>csti@cnpq.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/8" dbId="8720">
+        <nomeOrgao>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="2" idServicoSegmento="6669">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6670">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="6671">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12570">plataforma lattes</item>
+        <item id="12571">cnpq</item>
+        <item id="12572">extrator</item>
+    </palavras-chave>
+</servico>
