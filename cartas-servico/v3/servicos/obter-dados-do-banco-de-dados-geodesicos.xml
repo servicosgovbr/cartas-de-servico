@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-dados-do-banco-de-dados-geodesicos</id>
+    <dbId>2977</dbId>
+    <nome>Obter dados do Banco de Dados Geodésicos</nome>
+    <sigla>BDG</sigla>
+    <nomes-populares>
+        <item id="2273">Banco de Dados Geodésicos</item>
+    </nomes-populares>
+    <descricao>Conjunto de informações sobre as estações de referência, que constituem o Sistema Geodésico Brasileiro (SGB), implantadas desde 1939. Estas estações geodésicas são materializadas, em sua grande maioria, como monumentos de concreto que recebem uma chapa de metal no seu topo identificando a respectiva matrícula, o IBGE e o tipo de estação. As coordenadas, altitudes e/ou gravidade destas estações são determinadas por meio da aplicação de procedimentos e modelos geodésicos de alta precisão, compatíveis com as finalidades a que se destinam, e estão disponíveis através do Relatório de Estação Geodésica (REG) gerado pela aplicação.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.bdg.ibge.gov.br/appbdg/</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3560">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6840">
+            <titulo>Requisitar dados</titulo>
+            <descricao>Usuário realiza solicita uma pesquisa e recebe a resposta do sistema</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7098" tipo="web">
+                        <descricao>http://www.bdg.ibge.gov.br/appbdg/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3" dbId="34305">
+        <nomeOrgao>Fundação Instituto Brasileiro de Geografia e Estatística (IBGE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6766">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6767">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6768">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6769">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12698">dados</item>
+        <item id="12699">geografia</item>
+        <item id="12700">geodésico</item>
+    </palavras-chave>
+</servico>
