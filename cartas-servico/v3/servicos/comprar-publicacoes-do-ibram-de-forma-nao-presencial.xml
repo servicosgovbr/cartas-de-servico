@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>comprar-publicacoes-do-ibram-de-forma-nao-presencial</id>
+    <dbId>2980</dbId>
+    <nome>Comprar publicações do IBRAM de forma não-presencial</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2277">Livraria OnLine</item>
+    </nomes-populares>
+    <descricao>Comercialização das publicações impressas do Ibram pelo portal da Instituição.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3563">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6843">
+            <titulo>Requerer publicação</titulo>
+            <descricao>Usuário entra em contato informando a sua solicitação.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7101" tipo="e-mail">
+                        <descricao>ccp@museus.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6844">
+            <titulo>Receber instruções</titulo>
+            <descricao>Órgão responde explicando o procedimento e solicitando o CPF e endereço de envio para cálculo do frete.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7102" tipo="e-mail">
+                        <descricao>E-mail usado para fazer a requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6845">
+            <titulo>Enviar dados</titulo>
+            <descricao>Usuário responde as informações solicitadas.</descricao>
+            <documentos>
+                <default>
+                    <item id="9234">CPF</item>
+                    <item id="9235">Endereço de envio</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7103" tipo="e-mail">
+                        <descricao>ccp@museus.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6846">
+            <titulo>Receber valor final</titulo>
+            <descricao>Órgão informa o valor total da remessa.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7104" tipo="e-mail">
+                        <descricao>E-mail usado para fazer a requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6847">
+            <titulo>Confirmar compra</titulo>
+            <descricao>Usuário confirma desejo de aquisição da(s) publicação(ões) no valor informado, incluindo o frete.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7105" tipo="e-mail">
+                        <descricao>ccp@museus.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6848">
+            <titulo>Pagar compra</titulo>
+            <descricao>É enviado ao usuário a Guia de Recolhimento da União preenchida com o valor informado para pagamento.</descricao>
+            <documentos>
+                <default>
+                    <item id="9236">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7106" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6849">
+            <titulo>Receber código de rastreamento</titulo>
+            <descricao>Após verificado o pagamento, é informado ao usuário o código de rastreamento dos Correios e a data de envio da remessa.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7107" tipo="e-mail">
+                        <descricao>E-mail usado para fazer a requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/100584" dbId="36722">
+        <nomeOrgao>Instituto Brasileiro de Museus (IBRAM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6772">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Cultura</item>
+        <item>Educação</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12707">comprar</item>
+        <item id="12708">livros</item>
+        <item id="12709">museologia</item>
+    </palavras-chave>
+</servico>
