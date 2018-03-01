@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-coordenadas-referenciadas-ao-sirgas2000</id>
+    <dbId>2976</dbId>
+    <nome>Obter coordenadas referenciadas ao SIRGAS2000</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2272">IBGE-PPP</item>
+    </nomes-populares>
+    <descricao>O IBGE-PPP (Posicionamento por Ponto Preciso) é um serviço online gratuito para o pós-processamento de dados GNSS (Global Navigation Satellite System). Ele permite aos usuários com receptores GPS e/ou GLONASS, obterem coordenadas referenciadas ao SIRGAS2000 (Sistema de Referência Geocêntrico para as Américas) através de um processamento preciso</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3559">
+            <tipo>Qualquer pessoa que possua um receptor GPS ou GLONASS</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6839">
+            <titulo>Requisitar coordenadas</titulo>
+            <descricao>Envio do dados através de um arquivo e recebimento dos resultados em outro arquivo fornecido pelo sistema IBGE-PPP</descricao>
+            <documentos>
+                <default>
+                    <item id="9232">Arquivo com os resultados resumidos contendo as coordenadas do ponto levantado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7097" tipo="web">
+                        <descricao>http://www.ppp.ibge.gov.br/ppp.htm</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3" dbId="34305">
+        <nomeOrgao>Fundação Instituto Brasileiro de Geografia e Estatística (IBGE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6762">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6763">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6764">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6765">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Serviços Públicos</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12695">coordenadas</item>
+        <item id="12696">conversão</item>
+        <item id="12697">precisão</item>
+    </palavras-chave>
+</servico>
