@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-populacao</id>
+    <dbId>2973</dbId>
+    <nome>Obter certidão de população</nome>
+    <sigla></sigla>
+    <descricao>Consiste em receber solicitação sobre número de habitantes de Municípios, Estados ou Brasil e preparar a certidão de população.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3556">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6836">
+            <titulo>Solicitar certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7093" tipo="presencial">
+                        <descricao>Em uma [Unidade do IBGE](https://www.ibge.gov.br/novoportal-atendimento.html)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7094" tipo="e-mail">
+                        <descricao>ibge@ibge.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3" dbId="34305">
+        <nomeOrgao>Fundação Instituto Brasileiro de Geografia e Estatística (IBGE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6750">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6751">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6752">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6753">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cidadania</item>
+        <item>Administração e Gestão Pública</item>
+        <item>Educação</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12686">população</item>
+        <item id="12687">ibge</item>
+        <item id="12688">estatística</item>
+    </palavras-chave>
+</servico>
