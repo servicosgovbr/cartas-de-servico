@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-emprestimo-de-acervo-da-biblioteca-da-enap</id>
+    <dbId>2954</dbId>
+    <nome>Obter empréstimo de acervo da Biblioteca da ENAP</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2260">Serviço de Atendimento</item>
+        <item id="2261">Biblioteca da ENAP</item>
+    </nomes-populares>
+    <descricao>1 - Empréstimo domiciliar, renovação e reserva de publicações: serviço oferecido pela Biblioteca a usuários cadastrados. O usuário poderá retirar, por empréstimo, até cinco publicações simultaneamente, pelo prazo máximo de 10 dias úteis. As publicações podem ser renovadas por igual período, desde que não haja pedido de reserva por outro usuário. A reserva de publicações pode ser feita diretamente pelo usuário no setor de empréstimo, via e-mail ou pela base de dados, por meio de senha pessoal, desde que a obra não esteja disponível no acervo. 2 – Empréstimo entre Bibliotecas: permite às bibliotecas cooperantes, sediadas no Distrito Federal, cadastradas na Biblioteca Graciliano Ramos, obter empréstimos de obras constantes do acervo da Biblioteca e permitir o acesso dessas obras aos seus próprios usuários. 3 - Atendimento à Distância: permite que qualquer usuário, cadastrado ou não, tenha acesso a partes de documentos (artigos de periódicos ou capítulos de livros) através de solicitação de cópia impressa ou digital, além de auxílio referente à pesquisa documental realizada no acervo e bases de dados disponibilizados e gerenciados pela Biblioteca. 4 – Pesquisa Bibliográfica: pesquisas bibliográficas e legislativas necessárias ao desempenho das atividades dos técnicos, professores e colaboradores da Enap.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3537">
+            <tipo>Qualquer pessoa pode utilizar este serviço (mediante cadastro)</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6797">
+            <titulo>Solicitar empréstimo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9169">Documento de identificação oficial com foto</item>
+                    <item id="9170">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7045" tipo="e-mail">
+                        <descricao>biblioteca@enap.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7046" tipo="telefone">
+                        <descricao>(61) 2020-3139</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7047" tipo="presencial">
+                        <descricao>**Biblioteca da Enap** - SAIS Área 2A - Brasília/DF - CEP: 70610-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6798">
+            <titulo>Receber empréstimo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9171">Documento de identificação oficial com foto (se presencial)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7049" tipo="presencial">
+                        <descricao>**Biblioteca da Enap** - SAIS Área 2A - Brasília/DF - CEP: 70610-900</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="807" descricao="Se a obra for digital">
+                    <canal-de-prestacao id="7048" tipo="e-mail">
+                        <descricao>biblioteca@enap.gov.br</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/956" dbId="34303">
+        <nomeOrgao>Fundação Escola Nacional de Administração Pública (ENAP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6725">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="6726">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6727">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Difusão Cultural</item>
+        <item>Difusão</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12629">livro</item>
+        <item id="12630">empréstimo</item>
+        <item id="12631">biblioteca</item>
+    </palavras-chave>
+</servico>
