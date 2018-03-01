@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>identificar-condutor-infrator-em-multas-da-prf</id>
+    <dbId>2947</dbId>
+    <nome>Identificar Condutor Infrator em multas da PRF</nome>
+    <sigla></sigla>
+    <descricao>Identificação do Condutor Infrator,  responsável pela infração, para autuações de trânsito da PRF sem abordagem.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3530">
+            <tipo>Condutores infratores e donos dos veículos com multas da Polícia Rodoviária Federal</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6787">
+            <titulo>Requisitar serviço</titulo>
+            <descricao>Protocolo de formulário e documentação.</descricao>
+            <documentos>
+                <default>
+                    <item id="9152">Carteira de identidade</item>
+                    <item id="9153">Carteira de trabalho</item>
+                    <item id="9154">Contrato Social</item>
+                    <item id="9155">CPF</item>
+                    <item id="9156">CNH</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7034" tipo="presencial">
+                        <descricao>[Superintendências Regionais da PRF e Unidades Administrativas](https://www.prf.gov.br/portal/unidades-prf)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7035" tipo="postal">
+                        <descricao>Para a [sede da Superintendência da Polícia Rodoviária Federal no estado](https://www.prf.gov.br/portal/unidades-prf)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6704">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6705">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6706">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6707">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Transportes</item>
+        <item>Policiamento</item>
+        <item>Transporte Rodoviário</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12607">multa</item>
+        <item id="12608">transferência</item>
+        <item id="12609">veículo</item>
+    </palavras-chave>
+</servico>
