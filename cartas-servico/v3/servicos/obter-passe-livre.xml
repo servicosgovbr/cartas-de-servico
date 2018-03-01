@@ -5,7 +5,7 @@
     <nome>Obter Passe livre</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2156">Carteirinha do Passe Livre</item>
+        <item id="2264">Carteirinha do Passe Livre</item>
     </nomes-populares>
     <descricao>O Passe Livre é um programa do Governo Federal que proporciona a pessoas que possuem deficiência e são carentes gratuidade nas passagens para viajar entre os estados brasileiros.</descricao>
     <contato>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF
@@ -17,10 +17,10 @@
  Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital>https://passelivre.transportes.gov.br/spl/login.html</link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://passelivre.transportes.gov.br/spl/login.html#</link-servico-digital>
     <solicitantes>
-        <solicitante id="3308">
+        <solicitante id="3539">
             <tipo>Pessoa com deficiência física, mental, auditiva, visual ou múltipla comprovadamente carente.</tipo>
             <requisitos>Para que uma pessoa tenha direito ao passe livre é necessário:
 
@@ -38,7 +38,7 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6383">
+        <etapa id="6802">
             <titulo>Preencher formulários</titulo>
             <descricao>O beneficiário preenche os formulários disponíveis no site do Ministério dos Transportes, Portos e Aviação Civil ou presencialmente,</descricao>
             <documentos>
@@ -49,8 +49,8 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1951" tipo="presencial">
-                        <descricao>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF</descricao>
+                    <canal-de-prestacao id="1953" tipo="e-mail">
+                        <descricao>passelivre@transportes.gov.br</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="1952" tipo="postal">
                         <descricao>Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</descricao>
@@ -61,50 +61,18 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
                     <canal-de-prestacao id="6430" tipo="web">
                         <descricao>http://portal.transportes.gov.br/passelivre/o-programa/index.html?como-pedir</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1953" tipo="e-mail">
-                        <descricao>passelivre@transportes.gov.br</descricao>
+                    <canal-de-prestacao id="1951" tipo="presencial">
+                        <descricao>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6384">
+        <etapa id="6803">
             <titulo>Enviar formulários e documentação</titulo>
             <descricao>Os formulários da etapa 1 e a documentação devem ser encaminhados via correio ou entregues pessoalmente.</descricao>
             <documentos>
                 <default/>
                 <caso id="244" descricao="Benefício sem a necessidade de acompanhante">
-                    <documento>
-                        <id>1377</id>
-                        <descricao>Certidão de Nascimento;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1385</id>
-                        <descricao>Requerimento, acompanhado da Declaração da Composição e Renda Familiar</descricao>
-                    </documento>
-                    <documento>
-                        <id>1384</id>
-                        <descricao>Atestado (laudo) da Equipe Multiprofissional do Sistema Único de Saúde (SUS), comprovando a deficiência ou incapacidade do interessado.</descricao>
-                    </documento>
-                    <documento>
-                        <id>1382</id>
-                        <descricao>Título de Eleitor;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1381</id>
-                        <descricao>Carteira de Trabalho e Previdência Social;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1380</id>
-                        <descricao>Carteira de Identidade;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1379</id>
-                        <descricao>Certificado de Reservista;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1378</id>
-                        <descricao>Certidão de Casamento;</descricao>
-                    </documento>
                     <documento>
                         <id>1383</id>
                         <descricao>Carteira Nacional de Habilitação.</descricao>
@@ -113,47 +81,79 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
                         <id>1376</id>
                         <descricao>Cópia de um documento de identificação. Pode ser um dos seguintes:</descricao>
                     </documento>
-                </caso>
-                <caso id="245" descricao="Benefício com necessidade de acompanhante">
                     <documento>
-                        <id>1395</id>
-                        <descricao>Requerimento específico preenchido com os dados do Acompanhante, onde deverá constar além de outras informações, a renda familiar mensal. As regras para calculo da renda per capita do Acompanhante são as mesmas da Pessoa com Deficiência</descricao>
+                        <id>1378</id>
+                        <descricao>Certidão de Casamento;</descricao>
                     </documento>
                     <documento>
-                        <id>1394</id>
-                        <descricao>Deve constar no Laudo Médico da Pessoa com Deficiência, declaração do mesmo médico que atestou a deficiência, caso seja imprescindível à presença de Acompanhante durante a locomoção em viagem.</descricao>
-                    </documento>
-                    <documento>
-                        <id>1393</id>
-                        <descricao>Carteira Nacional de Habilitação.</descricao>
-                    </documento>
-                    <documento>
-                        <id>1392</id>
-                        <descricao>Título de Eleitor;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1391</id>
-                        <descricao>Carteira de Trabalho e Previdência Social;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1390</id>
-                        <descricao>Carteira de Identidade;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1389</id>
+                        <id>1379</id>
                         <descricao>Certificado de Reservista;</descricao>
                     </documento>
                     <documento>
-                        <id>1388</id>
-                        <descricao>Certidão de Casamento;</descricao>
+                        <id>1380</id>
+                        <descricao>Carteira de Identidade;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1381</id>
+                        <descricao>Carteira de Trabalho e Previdência Social;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1382</id>
+                        <descricao>Título de Eleitor;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1384</id>
+                        <descricao>Atestado (laudo) da Equipe Multiprofissional do Sistema Único de Saúde (SUS), comprovando a deficiência ou incapacidade do interessado.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1385</id>
+                        <descricao>Requerimento, acompanhado da Declaração da Composição e Renda Familiar</descricao>
+                    </documento>
+                    <documento>
+                        <id>1377</id>
+                        <descricao>Certidão de Nascimento;</descricao>
+                    </documento>
+                </caso>
+                <caso id="245" descricao="Benefício com necessidade de acompanhante">
+                    <documento>
+                        <id>1386</id>
+                        <descricao>Cópia de um documento de identificação do Acompanhante. Pode ser um dos seguintes:</descricao>
                     </documento>
                     <documento>
                         <id>1387</id>
                         <descricao>Certidão de Nascimento;</descricao>
                     </documento>
                     <documento>
-                        <id>1386</id>
-                        <descricao>Cópia de um documento de identificação do Acompanhante. Pode ser um dos seguintes:</descricao>
+                        <id>1388</id>
+                        <descricao>Certidão de Casamento;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1389</id>
+                        <descricao>Certificado de Reservista;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1390</id>
+                        <descricao>Carteira de Identidade;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1391</id>
+                        <descricao>Carteira de Trabalho e Previdência Social;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1392</id>
+                        <descricao>Título de Eleitor;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1393</id>
+                        <descricao>Carteira Nacional de Habilitação.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1394</id>
+                        <descricao>Deve constar no Laudo Médico da Pessoa com Deficiência, declaração do mesmo médico que atestou a deficiência, caso seja imprescindível à presença de Acompanhante durante a locomoção em viagem.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1395</id>
+                        <descricao>Requerimento específico preenchido com os dados do Acompanhante, onde deverá constar além de outras informações, a renda familiar mensal. As regras para calculo da renda per capita do Acompanhante são as mesmas da Pessoa com Deficiência</descricao>
                     </documento>
                 </caso>
             </documentos>
@@ -171,7 +171,7 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6385">
+        <etapa id="6804">
             <titulo>Aguardar análise do processo</titulo>
             <descricao>Nesta etapa o solicitante aguarda a análise dos formulários e da documentação enviada ao Passe Livre.
 
@@ -201,7 +201,7 @@ Serão resultados desta etapa:
         <nomeOrgao>Ministério dos Transportes, Portos e Aviação Civil (MTPA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6284">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="6729">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transporte Rodoviário</item>
@@ -211,12 +211,12 @@ Serão resultados desta etapa:
         <item>Transportes</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11979">Carteira</item>
-        <item id="11980">Credencial</item>
-        <item id="11981">Passe Livre</item>
+        <item id="12635">Carteira</item>
+        <item id="12636">Credencial</item>
+        <item id="12637">Passe Livre</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2414">[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)</item>
+        <item id="2417">[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)</item>
     </legislacoes>
     <servicos-relacionados>
         <item>78</item>
