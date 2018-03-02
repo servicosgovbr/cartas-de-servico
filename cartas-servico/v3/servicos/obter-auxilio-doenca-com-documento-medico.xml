@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-auxilio-doenca-com-documento-medico</id>
+    <dbId>2996</dbId>
+    <nome>Obter Auxílio Doença com Documento Médico</nome>
+    <sigla></sigla>
+    <descricao>É um benefício por incapacidade para o segurado do INSS acometido por uma doença ou acidente que o torne temporariamente incapaz para o trabalho, com documentos médicos que comprovam a causa do problema de saúde, o tratamento médico indicado e o período.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3581">
+            <tipo>Segurado do INSS.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6887">
+            <titulo>Solicitar Auxílio-Doença</titulo>
+            <descricao>Verificação de documentação e cadastramento do documento médico para concessão do benefício.</descricao>
+            <documentos>
+                <default>
+                    <item id="9332">Carteira de identidade</item>
+                    <item id="9333">Carteira de trabalho</item>
+                    <item id="9334">Atestado Médico</item>
+                    <item id="9335">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7159" tipo="presencial">
+                        <descricao>Em uma [Unidade do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6807">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12756">doença</item>
+        <item id="12757">benefício</item>
+        <item id="12758">saúde</item>
+    </palavras-chave>
+</servico>
