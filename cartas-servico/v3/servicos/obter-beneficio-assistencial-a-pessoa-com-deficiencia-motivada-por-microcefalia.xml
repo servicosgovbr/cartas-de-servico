@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-beneficio-assistencial-a-pessoa-com-deficiencia-motivada-por-microcefalia</id>
+    <dbId>2998</dbId>
+    <nome>Obter Benefício Assistencial a Pessoa com Deficiência motivada por Microcefalia</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2293">Não há</item>
+    </nomes-populares>
+    <descricao>Requerimento de benefício de prestação continuada no valor de um salário mínimo a pessoa com deficiência motivada pela microcefalia.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3583">
+            <tipo>Pessoa com deficiência motivada pela microcefalia ou seu responsável legal.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6890">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7162" tipo="web-agendar">
+                        <descricao>https://requerimento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6891">
+            <titulo>Solicitar benefício</titulo>
+            <descricao>Cadastramento e avaliação técnica da condição alegada para concessão do benefício.</descricao>
+            <documentos>
+                <default>
+                    <item id="9340">Carteira de identidade</item>
+                    <item id="9341">Carteira de trabalho</item>
+                    <item id="9342">CPF</item>
+                    <item id="9343">Documentação Médica</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7163" tipo="presencial">
+                        <descricao>Na [Unidade do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps) onde o atendimento foi agendado.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6809">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Proteção Social</item>
+        <item>Assistência ao Portador de Deficiência</item>
+        <item>Saúde dos portadores de deficiências</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12762">microcefalia</item>
+        <item id="12763">benefício</item>
+        <item id="12764">independência</item>
+    </palavras-chave>
+</servico>
