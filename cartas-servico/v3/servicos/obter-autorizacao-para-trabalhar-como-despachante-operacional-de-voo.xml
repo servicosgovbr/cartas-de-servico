@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-trabalhar-como-despachante-operacional-de-voo</id>
+    <dbId>3060</dbId>
+    <nome>Obter autorização para trabalhar como Despachante Operacional de Voo</nome>
+    <sigla></sigla>
+    <descricao>Consiste na realização, junto à ANAC, de exame teórico de Despachante Operacional de Voo, após a conclusão do curso de Despachante Operacional de Voo em escola de aviação homologada pela ANAC.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3645">
+            <tipo>Alunos que tenham sido aprovados no curso de Despachante Operacional de Voo em escola de aviação homologada pela ANAC.</tipo>
+            <requisitos>Para pesquisas as escolas homologadas pela ANAC e os cursos que elas estão autorizadas a ministrar, clique [aqui](https://sistemas.anac.gov.br/educator/)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6981">
+            <titulo>Agendar prova</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9494">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="599">
+                        <descricao>Taxa de Fiscalização e Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>68,21</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7262" tipo="e-mail">
+                        <descricao>agendamento.exame@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="811" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="7261" tipo="web">
+                        <descricao>http://www.anac.gov.br/assuntos/setor-regulado/empresas/acesso-rapido/guia-de-recolhimento-da-uniao</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6982">
+            <titulo>Fazer prova</titulo>
+            <descricao>Para obter o modelo do formulário a ser preenchido, clique [aqui](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/processo-de-licencas-e-habilitacoes/exame-teorico)</descricao>
+            <documentos>
+                <default>
+                    <item id="9495">Formulário para realização de exames preenchido e assinado;</item>
+                    <item id="9496">Cédula de identidade ou outro documento oficial de identificação válido, com foto recente;</item>
+                    <item id="9497">CPF;</item>
+                    <item id="9498">Original ou cópia autenticada de conclusão de curso homologado pela ANAC;</item>
+                    <item id="9499">1 (uma) foto 3x4 colorida, recente e com fundo claro; e</item>
+                    <item id="9500">Comprovante de pagamento da GRU.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7263" tipo="presencial">
+                        <descricao>Em uma das [salas de prova da ANAC](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/arquivos/enderecos-telefones-uteis)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6888">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12883">despachante</item>
+        <item id="12884">tripulação</item>
+        <item id="12885">avião</item>
+    </palavras-chave>
+</servico>
