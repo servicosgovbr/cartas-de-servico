@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-servico-especial-para-fins-cientificos-e-experimentais</id>
+    <dbId>3074</dbId>
+    <nome>Obter Serviço Especial Para Fins Científicos e Experimentais</nome>
+    <sigla></sigla>
+    <descricao>O Serviço Especial para Fins Científicos e Experimentais é por definição uma modalidade de serviço fixo ou móvel, explorado em regime privado, de interesse restrito, para uso próprio, utilizada para efetuar experiências que possam contribuir para o progresso da ciência e da técnica em geral.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3660">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7008">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Entrega de Documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="9588">Comprovante de pagamento</item>
+                    <item id="9589">Inscrição Estadual</item>
+                    <item id="9590">Declarações</item>
+                    <item id="9591">ART</item>
+                    <item id="9592">Certidão de Registro no CREA</item>
+                    <item id="9593">Projeto Técnico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="617">
+                        <descricao>Taxas da ANATEL</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com as especificações do serviço.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7308" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6920">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6921">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6922">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comunicações</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12925">anatel</item>
+        <item id="12926">pesquisa</item>
+        <item id="12927">científico</item>
+    </palavras-chave>
+</servico>
