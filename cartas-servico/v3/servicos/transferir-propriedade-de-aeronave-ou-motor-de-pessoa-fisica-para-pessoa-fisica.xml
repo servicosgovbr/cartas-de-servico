@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-propriedade-de-aeronave-ou-motor-de-pessoa-fisica-para-pessoa-fisica</id>
+    <dbId>3067</dbId>
+    <nome>Transferir propriedade de aeronave ou  motor de Pessoa Física para Pessoa Física</nome>
+    <sigla></sigla>
+    <descricao>O usuário protocola os documentos necessários ao registro da transferência de propriedade, os quais estão discriminados no Requerimento Padronizado disponível em: http://www.anac.gov.br/assuntos/setor-regulado/aeronaves/rab/RAB.doc. O número do serviço é o 6 (seis), e o Rol de documentos está mapeado no Anexo A do requerimento. Os documentos são digitalizados e é aberto um processo no SEI, o qual é distribuído para análise. Se todos os documentos estiverem corretos, o processo segue para registro e cadastramento dos dados, com a alteração do proprietário da aeronave/motor, para a emissão do Certificado de Matrícula Digital (com posterior envio para o usuário), e para registro na Certidão de Propriedade da aeronave/motor. Não há contato direto entre usuário e o Poder Público, exceto no protocolo dos documentos.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3652">
+            <tipo>Pessoas físicas proprietárias de aeronaves ou motores</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6998">
+            <titulo>Requerer transferência</titulo>
+            <descricao>Protocolo de documentos físicos. Para obter o modelo do formulário, clique [aqui](http://www.anac.gov.br/assuntos/setor-regulado/aeronaves/rab/RAB.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="9542">Carteira de identidade</item>
+                    <item id="9543">Carteira de trabalho</item>
+                    <item id="9544">Certidões da Receita Federal</item>
+                    <item id="9545">CNPJ</item>
+                    <item id="9546">Comprovante de endereço/residência</item>
+                    <item id="9547">Comprovante de pagamento</item>
+                    <item id="9548">Contrato Social</item>
+                    <item id="9549">CPF</item>
+                    <item id="9550">Procuração do representante legal</item>
+                    <item id="9551">Registro da Junta Comercial</item>
+                    <item id="9552">Formulário próprio preenchido e assinado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="606">
+                        <descricao>TFAC 5189 - Transferência para Pessoa Natural, avião com PMD menor ou igual a 5.700kg/ helicóptero com PMD menor ou igual a 2.730kg</descricao>
+                        <moeda>R$</moeda>
+                        <valor>77,45</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="607">
+                        <descricao>TFAC 5191 - Transferência para Pessoa Natural, avião com PMD maior que 5.700kg/ helicóptero com PMD maior que 2.730kg</descricao>
+                        <moeda>R$</moeda>
+                        <valor>154,89</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="608">
+                        <descricao>TFAC 5181 - Emissão de Certificado de Matrícula</descricao>
+                        <moeda>R$</moeda>
+                        <valor>76,40</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7285" tipo="presencial">
+                        <descricao>Em uma [Unidade de Protocolo da ANAC](http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7286" tipo="web">
+                        <descricao>http://www.anac.gov.br/acesso-a-informacao/protocolo-eletronico</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7287" tipo="e-mail">
+                        <descricao>rab@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7288" tipo="postal">
+                        <descricao>**ANAC** - Setor Comercial Sul, Quadra 09, Lote C, Edifício Parque Cidade Corporate – Torre A , Brasília - DF, CEP: 70308-200 ou **ANAC** - Av. Presidente Vargas, 850 – Centro, Rio de Janeiro – RJ, CEP: 20071-001</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6904">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12904">PF</item>
+        <item id="12905">pessoa natural</item>
+        <item id="12906">avião</item>
+    </palavras-chave>
+</servico>
