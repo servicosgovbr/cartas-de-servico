@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificacao-medica-para-pilotos-comissarios-e-despachantes-operacionais-de-voo</id>
+    <dbId>3055</dbId>
+    <nome>Obter certificação médica para pilotos, comissários e despachantes operacionais de vôo</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2336">CMA</item>
+        <item id="2337">GTFH</item>
+    </nomes-populares>
+    <descricao>Certificação médica para pilotos, comissários e dovs</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3640">
+            <tipo>Pilotos, Comissários e Despachantes Operacionais de Vôo</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6969">
+            <titulo>Realizar o exame</titulo>
+            <descricao>O agendamento dos exames deve ser feito em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+            <documentos>
+                <default>
+                    <item id="9464">Carteira de identidade</item>
+                    <item id="9465">Carteira de trabalho</item>
+                    <item id="9466">CPF</item>
+                    <item id="9467">CANAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="594">
+                        <descricao>Valor de Exames Médicos</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Valor de mercado</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7244" tipo="presencial">
+                        <descricao>Clínicas ou médicos credenciados</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6970">
+            <titulo>Receber resultado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9468">CPF</item>
+                    <item id="9469">CANAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7245" tipo="e-mail">
+                        <descricao>E-mail informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6883">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12868">exame médico</item>
+        <item id="12869">tripulação</item>
+        <item id="12870">exame admissional</item>
+    </palavras-chave>
+</servico>
