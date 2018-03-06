@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>prestar-servico-de-tv-por-assinatura</id>
+    <dbId>3081</dbId>
+    <nome>Prestar serviço de TV por Assinatura</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2349">Serviço de Acesso Condicionado (SeAC)</item>
+    </nomes-populares>
+    <descricao>É o serviço de telecomunicações de interesse coletivo prestado no regime privado, destinado à distribuição de conteúdos audiovisuais na forma de pacotes de canais de programação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3667">
+            <tipo>Operadoras de TV por assinatura</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7020">
+            <titulo>Requisitar autorização</titulo>
+            <descricao>Entrega da documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="9649">CNPJ</item>
+                    <item id="9650">Contrato Social</item>
+                    <item id="9651">Procuração do representante legal</item>
+                    <item id="9652">Registro da Junta Comercial</item>
+                    <item id="9653">Comprovante de inscrição estadual e municipal</item>
+                    <item id="9654">Declarações</item>
+                    <item id="9655">ART</item>
+                    <item id="9656">Certidão de registro no CREA</item>
+                    <item id="9657">Projeto Técnico</item>
+                    <item id="9658">Demonstrações contábeis do último exercício</item>
+                    <item id="9659">Certidão negativa de falência/concordada/recuperação judicial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7324" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7021">
+            <titulo>Pagar taxa do serviço</titulo>
+            <descricao>Realizar pagamento na rede bancária e enviar comprovante pelos canais abaixo apontados.</descricao>
+            <documentos>
+                <default>
+                    <item id="9660">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="624">
+                        <descricao>Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite</descricao>
+                        <moeda>R$</moeda>
+                        <valor>400,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7326" tipo="e-mail">
+                        <descricao>orle@anatel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7325" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7022">
+            <titulo>Assinar termo de autorização</titulo>
+            <descricao>Assinatura do Termo de autorização e comprovação da regularidade fiscal</descricao>
+            <documentos>
+                <default>
+                    <item id="9661">Certidões da Receita Federal</item>
+                    <item id="9662">Certidões de regularidade perante as receitas estadual e municipal</item>
+                    <item id="9663">Certificado de Regularidade do FGTS - CRF</item>
+                    <item id="9664">Certidão referente a débitos trabalhistas.</item>
+                    <item id="9665">Termo de autorização</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7327" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANATEL](http://www.anatel.gov.br/institucional/institucional-menu/estrutura-organizacional/87-lei-de-acesso-a-informacao/institucional/145-superintendencia-de-fiscalizacao)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7328" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7329" tipo="e-mail">
+                        <descricao>orle@anatel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7330" tipo="postal">
+                        <descricao>Para uma [Unidade da ANATEL](http://www.anatel.gov.br/institucional/institucional-menu/estrutura-organizacional/87-lei-de-acesso-a-informacao/institucional/145-superintendencia-de-fiscalizacao)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6935">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comunicações</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12946">tv a cabo</item>
+        <item id="12947">tv paga</item>
+        <item id="12948">canais pagos</item>
+    </palavras-chave>
+</servico>
