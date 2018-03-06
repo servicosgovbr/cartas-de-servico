@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-servico-limitado-especializado</id>
+    <dbId>3076</dbId>
+    <nome>Obter Serviço Limitado Especializado</nome>
+    <sigla>SLE</sigla>
+    <descricao>O Serviço Limitado Especializado é o serviço limitado, telefônico, telegráfico, de transmissão de dados ou qualquer outra forma de telecomunicações, destinado à prestação a terceiros, desde que sejam estes uma mesma pessoa ou grupo de pessoas naturais ou jurídicas, caracterizado pela realização de atividade específica.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3662">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7011">
+            <titulo>Solicitar serviço</titulo>
+            <descricao>Entrega de documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="9603">CNPJ</item>
+                    <item id="9604">Contrato Social</item>
+                    <item id="9605">Inscrição Estadual</item>
+                    <item id="9606">Inscrição Municipal</item>
+                    <item id="9607">Declarações</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7311" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7012">
+            <titulo>Comprovar regularidade fiscal e pagamento de taxa</titulo>
+            <descricao>Pagamento PPDESS</descricao>
+            <documentos>
+                <default>
+                    <item id="9608">Certidões da Receita Federal</item>
+                    <item id="9609">Comprovante de pagamento</item>
+                    <item id="9610">Certidão Negativa Estadual</item>
+                    <item id="9611">Certidão Negativa Municipal</item>
+                    <item id="9612">Certificado de Regularidade do FGTS</item>
+                    <item id="9613">Certidão referente a Débitos Trabalhistas</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="619">
+                        <descricao>Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélites</descricao>
+                        <moeda>R$</moeda>
+                        <valor>9.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7312" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6927">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comunicações</item>
+        <item>Indústria</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12931">anatel</item>
+        <item id="12932">serviço limitado</item>
+        <item id="12933">rede interna</item>
+    </palavras-chave>
+</servico>
