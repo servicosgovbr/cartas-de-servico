@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-previa-para-construcao-inicial-eou-modificacao-de-caracteristicas-de-aerodromos</id>
+    <dbId>3054</dbId>
+    <nome>Obter Autorização Prévia para Construção Inicial eou Modificação de Características de Aeródromos</nome>
+    <sigla></sigla>
+    <descricao>Aeródromo é toda área destinada a pouso, decolagem e movimentação de aeronaves. E sua construção ou modificação de características físicas necessita de autorização prévia da ANAC.    
+Os aeródromos podem ser classificados em militares ou civis. E estes últimos são subdivididos em:      
+
+- Públicos: possuem destinação específica e só podem ser fechados mediante ato administrativo da Autoridade de Aviação Civil (a ANAC). Propriedades vizinhas aos aeródromos públicos estão sujeitas a restrições especiais, relacionadas ao plano básico de zona de proteção de aeródromos e ao plano de zoneamento de ruídos. São abertos ao tráfego por meio de processo de homologação.       
+
+
+- Privados: só podem ser utilizados com a permissão de seu proprietário, sendo vedada sua exploração comercial - o proprietário não pode sujeitar os usuários de seu aeródromo ao pagamento de tarifas. São abertos ao tráfego por meio de processo de registro e podem ser fechados a qualquer tempo pelo proprietário ou pela Autoridade de Aviação Civil.     
+
+
+Aeroportos são os aeródromos públicos dotados de instalações e facilidades para apoio de operações de aeronaves e de embarque e desembarque de pessoas e cargas.     
+
+
+Helipontos são os aeródromos destinados exclusivamente a helicópteros. Heliportos são helipontos públicos dotados de instalações e facilidades para apoio de operações a helicópteros e de embarque e desembarque de pessoas e cargas.     
+
+
+O interessado, ou seu representante, deve protocolar junto a ANAC, documentação nos termos do Portaria Nº 1.227/SIA, de 30 de julho de 2010, em conformidade com a Resolução ANAC Nº 158, de 13 de julho de 2010. Caso o pedido seja aprovado, a ANAC expede a Autorização de Construção Inicial de Aeródromo ou Autorização de Modificação de Características de Aeródromo, documento que tem validade indeterminada.     
+
+A análise do processo de autorização será realizada em até 90 dias. A contagem desse prazo é interrompida toda vez que for necessário consultar o interessado (devido a problemas na documentação) ou algum órgão externo à ANAC.
+
+A autorização prévia expedida pela ANAC não supre a deliberação de outras entidades da administração pública sobre a observância dos requisitos de licenciamento ambiental, de uso do solo e de zoneamento urbano, ou da observância dos condicionantes impostos pelo órgão responsável pelo controle do espaço aéreo.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3639">
+            <tipo>Donos de aeródromos ou seus representantes legais.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6967">
+            <titulo>Solicitar Autorização Prévia</titulo>
+            <descricao>Encaminhar documentação solicitando autorização prévia</descricao>
+            <documentos>
+                <default>
+                    <item id="9459">Documentação nos termos do Portaria Nº 1.227/SIA, de 30 de julho de 2010, em conformidade com a Resolução ANAC Nº 158, de 13 de julho de 2010</item>
+                    <item id="9460">Comprovante de Pagamento</item>
+                    <item id="9461">Contrato Social</item>
+                    <item id="9462">Procuração do  Representante Legal</item>
+                    <item id="9463">Registro em Cartório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="593">
+                        <descricao>Taxa de Fiscalização da Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>341,20</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7239" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7240" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7241" tipo="postal">
+                        <descricao>**ANAC** - Avenida Presidente Vargas, nº 850 - 6º Andar - CEP: 20071-001 Centro - Rio de Janeiro - RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6968">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7242" tipo="e-mail">
+                        <descricao>Endereço de e-mail informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7243" tipo="postal">
+                        <descricao>Endereço informado na solicitação</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6881">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6882">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Construções e obras</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12865">aeródromo</item>
+        <item id="12866">aeroporto</item>
+        <item id="12867">construção</item>
+    </palavras-chave>
+</servico>
