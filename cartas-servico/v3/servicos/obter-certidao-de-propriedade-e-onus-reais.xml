@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-de-propriedade-e-onus-reais</id>
+    <dbId>3065</dbId>
+    <nome>Obter Certidão de Propriedade e Ônus Reais.</nome>
+    <sigla></sigla>
+    <descricao>A ANAC fornece certidões sobre a propriedade de aeronaves. Essas informações se referem a aeronaves que já foram registradas no Registro Aeronáutico Brasileiro, podendo ser aeronaves que ainda são brasileiras ou aquelas que tiveram sua matrícula nacional cancelada e se registraram no exterior, tornando-se aeronaves estrangeiras.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3650">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6996">
+            <titulo>Requerer certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9525">Carteira de identidade</item>
+                    <item id="9526">Carteira de trabalho</item>
+                    <item id="9527">CNPJ</item>
+                    <item id="9528">Comprovante de pagamento da TFAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="604">
+                        <descricao>Taxa de Fiscalização e Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>21,83</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7281" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7282" tipo="e-mail">
+                        <descricao>rab@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6896">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6897">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6898">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6899">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12898">certidão</item>
+        <item id="12899">avião</item>
+        <item id="12900">identiificação</item>
+    </palavras-chave>
+</servico>
