@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-propriedade-de-aeronave-para-pessoa-juridica</id>
+    <dbId>3068</dbId>
+    <nome>Transferir propriedade de aeronave para pessoa jurídica</nome>
+    <sigla></sigla>
+    <descricao>O interessado (pessoa jurídica) faz o requerimento de transferência de propriedade via protocolo, com apresentação de documentação física, pois para registro de transferência de propriedade a legislação exige a apresentação de documentos originais, no caso do título de transferência, ou cópias autenticadas. A documentação é analisada para verificação do enquadramento à legislação, à completude de informações e à adequação ao instituto jurídico pleiteado. Havendo exigências, o interessado é comunicado de forma direta, via mensagem eletrônica, e também de forma indireta, via sistema institucional (Sistema Integrado de Informações da Aviação Civil - SACI). O retorno de cumprimento das exigências pode se dar via entrega física de documentos, ou em formato digital via peticionamento eletrônico no SEI! ou via comunicação eletrônica, respeitadas as exigências legais. Estando as documentações de acordo, o pedido é processado e é feita a averbação da transferência de propriedade no livro da aeronave e emitida e enviada, quando solicitada, Certidão de Propriedade e Ônus Reais. A Certidão pode ser enviada ao interessado em formato digital, com código de verificação de autenticidade, ou impressa via Correios.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3653">
+            <tipo>Pessoas jurídicas proprietárias de aeronave</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6999">
+            <titulo>Requerer transferência</titulo>
+            <descricao>Entrega de requerimento e documentos para instrução do processo administrativo.</descricao>
+            <documentos>
+                <default>
+                    <item id="9553">Carteira de identidade</item>
+                    <item id="9554">Carteira de identidade de estrangeiro</item>
+                    <item id="9555">Carteira de trabalho</item>
+                    <item id="9556">Certidões de cartório</item>
+                    <item id="9557">Certidões da Receita Federal</item>
+                    <item id="9558">CNPJ</item>
+                    <item id="9559">Comprovante de endereço/residência</item>
+                    <item id="9560">Comprovante de pagamento</item>
+                    <item id="9561">Contrato Social</item>
+                    <item id="9562">CPF</item>
+                    <item id="9563">Passaporte</item>
+                    <item id="9564">Procuração do representante legal</item>
+                    <item id="9565">Registro da Junta Comercial</item>
+                    <item id="9566">Registro em Cartório</item>
+                    <item id="9567">Título de transferência de propriedade original.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="609">
+                        <descricao>TFAC código 5190 - avião de peso máximo de decolagem - PMD menor ou igual a 5.700 kg e helicóptero com PMD menor ou igual a 2.730 kg</descricao>
+                        <moeda>R$</moeda>
+                        <valor>204,63</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="610">
+                        <descricao>- TFAC código 5192 - avião de peso máximo de decolagem - PMD maior que 5.700 kg e helicóptero com PMD maior que 2.730 kg</descricao>
+                        <moeda>R$</moeda>
+                        <valor>409,26</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="611">
+                        <descricao>TFAC código 5188 - emissão de Certidão de Propriedade e Ônus Reais</descricao>
+                        <moeda>R$</moeda>
+                        <valor>21,83</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7289" tipo="presencial">
+                        <descricao>Em uma [Unidade de Protocolo da ANAC](http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6905">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6906">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6907">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6908">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12907">transferência</item>
+        <item id="12908">pj</item>
+        <item id="12909">avião</item>
+    </palavras-chave>
+</servico>
