@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>matricular-aeronave</id>
+    <dbId>3064</dbId>
+    <nome>Matricular aeronave</nome>
+    <sigla></sigla>
+    <descricao>A matrícula é o primeiro registro de uma aeronave no Brasil e consiste na atribuição de uma marca a esta aeronave. Cada aeronave tem uma única matrícula própria e cada combinação de marcas pode ser atribuída apenas a uma única aeronave.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3649">
+            <tipo>Proprietários ou exploradores de Aeronave</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6992">
+            <titulo>Reservar Marca no site da ANAC</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7276" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/reservamarca/frmVerificarDisponibilidade.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6993">
+            <titulo>Pagar TFAC</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9524">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="603">
+                        <descricao>Taxa de Fiscalização e Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>76,40</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7278" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="815" descricao="Para emitir a GRU">
+                    <canal-de-prestacao id="7277" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/gruinternet/ControladorGru?cmd=ApresentarDadosServico&amp;idServico=2103</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6994">
+            <titulo>Informar Pagamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7279" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/ReservaMarca/frmInformarPagamento.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6995">
+            <titulo>Receber Certidão de Matrícula</titulo>
+            <descricao>A certidão será enviada ao e-mail informado na solicitação. O usuário pode, também, imprimi-la no link abaixo.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7280" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/ReservaMarca/frmValidaDRM.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6892">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6893">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6894">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6895">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12895">avião</item>
+        <item id="12896">matrícula</item>
+        <item id="12897">identificação</item>
+    </palavras-chave>
+</servico>
