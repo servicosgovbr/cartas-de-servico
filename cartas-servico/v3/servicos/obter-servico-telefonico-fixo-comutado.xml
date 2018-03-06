@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-servico-telefonico-fixo-comutado</id>
+    <dbId>3079</dbId>
+    <nome>Obter Serviço Telefônico Fixo Comutado</nome>
+    <sigla>STFC</sigla>
+    <nomes-populares>
+        <item id="2346">Prestação de telefonia fixa</item>
+    </nomes-populares>
+    <descricao>O Serviço Telefônico Fixo Comutado destinado ao uso do público em geral (STFC) é um serviço de telecomunicações que, por meio de transmissão de voz e de outros sinais, destina-se à comunicação entre pontos fixos determinados, utilizando processos de telefonia.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3665">
+            <tipo>Empresas de Telefonia</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7016">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Entrega da documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="9625">CNPJ</item>
+                    <item id="9626">Contrato Social</item>
+                    <item id="9627">Inscrição Estadual</item>
+                    <item id="9628">Certidão de Registro e Quitação perante o  CREA do local de sua sede</item>
+                    <item id="9629">ART</item>
+                    <item id="9630">Projeto Técnico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7320" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7017">
+            <titulo>Comprovar regularidade fiscal e pagamento de taxa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9631">Certidões da Receita Federal</item>
+                    <item id="9632">Comprovante de pagamento</item>
+                    <item id="9633">Procuração do representante legal</item>
+                    <item id="9634">Certidão de regularidade estadual e municipal</item>
+                    <item id="9635">Certificado de Regularidade do FGTS - CRF</item>
+                    <item id="9636">Certidão referente aos Débitos Trabalhistas</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="622">
+                        <descricao>Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélites</descricao>
+                        <moeda>R$</moeda>
+                        <valor>9.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7321" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6933">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comunicações</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12940">telefone</item>
+        <item id="12941">anatel</item>
+        <item id="12942">fixo</item>
+    </palavras-chave>
+</servico>
