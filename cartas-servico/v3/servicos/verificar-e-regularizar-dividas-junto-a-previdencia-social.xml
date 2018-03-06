@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>verificar-e-regularizar-dividas-junto-a-previdencia-social</id>
+    <dbId>3044</dbId>
+    <nome>Verificar e regularizar dívidas junto à Previdência Social</nome>
+    <sigla></sigla>
+    <descricao>Serviço destinado para o cálculo de contribuições em atraso para períodos de débito.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3629">
+            <tipo>Segurados e Empregadores.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6949">
+            <titulo>Requerer consulta</titulo>
+            <descricao>Apresentação de documentos, reconhecer exercício de atividade e gerar cálculo/gps.</descricao>
+            <documentos>
+                <default>
+                    <item id="9418">Carteira de identidade</item>
+                    <item id="9419">Carteira de trabalho</item>
+                    <item id="9420">CPF</item>
+                    <item id="9421">Comprovação de atividade quando necessário.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7212" tipo="presencial">
+                        <descricao>Nas [Agências do Instituto Nacional do Seguro Social - INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6862">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Tributação</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12835">cálculo</item>
+        <item id="12836">inss</item>
+        <item id="12837">dívidas</item>
+    </palavras-chave>
+</servico>
