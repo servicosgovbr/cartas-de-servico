@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>atualizar-cadastro-junto-ao-inss</id>
+    <dbId>3041</dbId>
+    <nome>Atualizar cadastro junto ao INSS</nome>
+    <sigla></sigla>
+    <descricao>É o serviço pelo qual o cidadão pode solicitar ao INSS a atualização de seus dados cadastrais, além da atividade nos casos de Empregado Doméstico, Contribuinte Individual, Facultativo ou Segurado Especial.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3626">
+            <tipo>Qualquer pessoa inscrita no INSS.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6946">
+            <titulo>Requerer atualização</titulo>
+            <descricao>Apresentação de documentos e atualização dos dados.</descricao>
+            <documentos>
+                <default>
+                    <item id="9402">Carteira de identidade</item>
+                    <item id="9403">Carteira de trabalho</item>
+                    <item id="9404">Certidão de casamento</item>
+                    <item id="9405">Certidão de nascimento</item>
+                    <item id="9406">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7209" tipo="presencial">
+                        <descricao>Em uma [unidade de atendimento do Instituto Nacional do Seguro Social - INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6859">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12826">cadastro</item>
+        <item id="12827">atualização</item>
+        <item id="12828">inss</item>
+    </palavras-chave>
+</servico>
