@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-auxilio-acidente</id>
+    <dbId>3039</dbId>
+    <nome>Obter Auxílio-Acidente.</nome>
+    <sigla></sigla>
+    <descricao>Perícia Auxílio Acidente: avaliação pericial deverá identificar a data do acidente e evidenciar a existência de sequela que reduza a capacidade para o trabalho que o segurado habitualmente exercia, exigindo maior esforço para o desempenho da mesma atividade da época do acidente ou impossibilidade do desempenho da atividade que exercia a época do acidente, ainda que permita o desempenho de outra. 
+Após a sugestão do auxílio acidente pelo perito haverá a análise do perito médico supervisor para homologação ou não da  sugestão.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3624">
+            <tipo>Segurado do INSS que tenha sofrido acidente com sequela que reduza sua capacidade para o trabalho que exerce.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6943">
+            <titulo>Agendar perícia</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7205" tipo="telefone">
+                        <descricao>135</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7206" tipo="web">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/agende-pericia</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6944">
+            <titulo>Passar por perícia médica.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9393">Carteira de identidade</item>
+                    <item id="9394">Carteira de trabalho</item>
+                    <item id="9395">Documentação relacionada ao acidente e a atendimento posterior</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7207" tipo="presencial">
+                        <descricao>Na [Agência do Instituto Nacional do Seguro Social - INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps) onde foi agendado o atendimento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6857">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Saúde</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12820">acidente</item>
+        <item id="12821">impedimento</item>
+        <item id="12822">recuperação</item>
+    </palavras-chave>
+</servico>
