@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-prestar-servico-de-acesso-a-internet-fixa</id>
+    <dbId>3080</dbId>
+    <nome>Obter autorização para prestar serviço de acesso à internet fixa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2347">Serviço de  Comunicação Multimídia</item>
+        <item id="2348">SCM</item>
+    </nomes-populares>
+    <descricao>O Serviço de Comunicação Multimídia é um serviço fixo de telecomunicações de interesse coletivo, prestado em âmbito nacional e internacional, no regime privado, que possibilita a oferta de capacidade de transmissão, emissão e recepção de informações multimídia, permitindo inclusive o provimento de conexão à internet, utilizando quaisquer meios, a Assinantes dentro de uma Área de Prestação de Serviço.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3666">
+            <tipo>Provedores de internet</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7018">
+            <titulo>Requisitar autorização</titulo>
+            <descricao>Entrega da documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="9637">CNPJ</item>
+                    <item id="9638">Contrato Social</item>
+                    <item id="9639">Procuração do representante legal</item>
+                    <item id="9640">Comprovante de Inscrição Estadual</item>
+                    <item id="9641">Certidão de Registro e Quitação perante o CREA do local de sede da empresa</item>
+                    <item id="9642">ART</item>
+                    <item id="9643">Projeto Técnico</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7322" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7019">
+            <titulo>Comprovar regularidade fiscal e pagamento de taxa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9644">Certidões da Receita Federal</item>
+                    <item id="9645">Certidão de Regularidade perante as Receitas Estadual e Municipal</item>
+                    <item id="9646">Certificado de Regularidade do FGTS - CRF</item>
+                    <item id="9647">Certidão referente a débitos Trabalhistas</item>
+                    <item id="9648">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="623">
+                        <descricao>Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite</descricao>
+                        <moeda>R$</moeda>
+                        <valor>400,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7323" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6934">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comunicações</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12943">Internet</item>
+        <item id="12944">provedor</item>
+        <item id="12945">anatel</item>
+    </palavras-chave>
+</servico>
