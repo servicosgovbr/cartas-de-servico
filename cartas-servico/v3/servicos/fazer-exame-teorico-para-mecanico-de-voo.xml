@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>fazer-exame-teorico-para-mecanico-de-voo</id>
+    <dbId>3058</dbId>
+    <nome>Fazer Exame Teórico para Mecânico de Vôo</nome>
+    <sigla></sigla>
+    <descricao>Consiste na realização, junto à ANAC, de exame teórico de mecânico de voo, após a obtenção do Certificado Médico Aeronáutico e a conclusão do curso de mecânico de voo em escola de aviação homologada pela ANAC.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3643">
+            <tipo>Alunos que tenham concluído o curso de mecânico de vôo em escola de aviação homologada pela ANAC e que tenham o Certificado Médico Aeronáutico.</tipo>
+            <requisitos>Para pesquisas as escolas homologadas pela ANAC e os cursos que elas estão autorizadas a ministrar, clique [aqui](https://sistemas.anac.gov.br/educator/)</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="6977">
+            <titulo>Agendar prova</titulo>
+            <descricao>Para a realização do exame teórico para Mecânico de Voo, deve ser recolhida taxa via GRU - código 4119. A quantidade de serviços no Boleto (GRU) para pagamento deve  ser preenchido com 3 (um por matéria a ser avaliada) e os dados pessoais do candidato. Em seguida, basta imprimir o formulário gerado e pagar numa agência do Banco do Brasil.</descricao>
+            <documentos>
+                <default>
+                    <item id="9480">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="597">
+                        <descricao>Taxa de Fiscalização da Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>68,21</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7256" tipo="e-mail">
+                        <descricao>agendamento.exame@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="809" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="7255" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/gruinternet/ControladorGru?cmd=ApresentarDadosServico&amp;idServico=1158</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="6978">
+            <titulo>Fazer prova</titulo>
+            <descricao>Para obter o modelo do formulário a ser preenchido, clique [aqui](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/processo-de-licencas-e-habilitacoes/exame-teorico)</descricao>
+            <documentos>
+                <default>
+                    <item id="9481">Formulário para realização de exames preenchido e assinado;</item>
+                    <item id="9482">Cédula de identidade ou outro documento oficial de identificação válido, com foto recente;</item>
+                    <item id="9483">CPF;</item>
+                    <item id="9484">Original ou cópia autenticada de conclusão de curso homologado pela ANAC;</item>
+                    <item id="9485">1 (uma) foto 3x4 colorida, recente e com fundo claro; e</item>
+                    <item id="9486">Comprovante de pagamento da GRU.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7257" tipo="presencial">
+                        <descricao>Em uma das [salas de prova da ANAC](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/arquivos/enderecos-telefones-uteis)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6886">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12877">mecânico de võo</item>
+        <item id="12878">tripulação</item>
+        <item id="12879">autorização</item>
+    </palavras-chave>
+</servico>
