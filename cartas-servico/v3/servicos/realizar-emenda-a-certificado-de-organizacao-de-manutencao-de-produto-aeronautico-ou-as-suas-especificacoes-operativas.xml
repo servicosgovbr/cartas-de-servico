@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-emenda-a-certificado-de-organizacao-de-manutencao-de-produto-aeronautico-ou-as-suas-especificacoes-operativas</id>
+    <dbId>3069</dbId>
+    <nome>Realizar Emenda a Certificado de Organização de Manutenção de Produto Aeronáutico ou às suas Especificações Operativas</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2339">Alteração do COM/EO</item>
+        <item id="2340">Emenda ao COM/EO</item>
+    </nomes-populares>
+    <descricao>Uma emenda ao certificado é necessária se o detentor do certificado: 
+(1) mudar a localização da organização de manutenção; 
+(2) requerer adição ou alteração de sua capacidade ou categoria/classe; ou 
+(3) mudar de razão social ou denominação social da organização.
+Se o detentor do certificado vender ou transferir seus ativos, o novo proprietário deve requerer uma emenda ao certificado.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3654">
+            <tipo>Organizações de Manutenção de Produto Aeronáutico</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7000">
+            <titulo>Requerer alteração</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9568">CNPJ</item>
+                    <item id="9569">Contrato Social</item>
+                    <item id="9570">Documentos previstos na IS 145-001</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="612">
+                        <descricao>Taxa de Fiscalização da Aviação Civil - TFAC</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com a atividade da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7290" tipo="web">
+                        <descricao>http://www.anac.gov.br/acesso-a-informacao/protocolo-eletronico/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7001">
+            <titulo>Receber vistoria</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7291" tipo="presencial">
+                        <descricao>Instalações da organização</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6909">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12910">aviação</item>
+        <item id="12911">oficina</item>
+        <item id="12912">manutenção</item>
+    </palavras-chave>
+</servico>
