@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>retificar-registro-de-direitos-autorais</id>
+    <dbId>3114</dbId>
+    <nome>Retificar Registro de Direitos Autorais</nome>
+    <sigla></sigla>
+    <descricao>O titular de direitos de uma obra registrada no EDA encaminha um requerimento de serviço de retificação de dados de registro, apresentando justificativa presencialmente ou via Correios, apresentando documento de identificação e comprovante de pagamento. O resultado é a emissão de nova certidão de registro retificada. A retificação é isenta de pagamento quando ocorre por erro da administração.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3700">
+            <tipo>Titulares de direitos de obra registrada</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7093">
+            <titulo>Requerer retificação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9895">Documento de identificação oficial com foto</item>
+                    <item id="9896">Justificativa</item>
+                    <item id="9897">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="655">
+                        <descricao>Retribuição para Retificação de Registro de Direitos Autorais</descricao>
+                        <moeda>R$</moeda>
+                        <valor>20,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7427" tipo="presencial">
+                        <descricao>**Escritório de Direitos Autorais (EDA)** - Centro Empresarial Cidade Nova - Teleporto
+Av. Presidente Vargas, 3131 - sala 702 - Cidade Nova - Rio de Janeiro, RJ - CEP: 20210-911</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7428" tipo="postal">
+                        <descricao>**Escritório de Direitos Autorais (EDA)** - Centro Empresarial Cidade Nova - Teleporto
+Av. Presidente Vargas, 3131 - sala 702 - Cidade Nova - Rio de Janeiro, RJ - CEP: 20210-911</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/984" dbId="34300">
+        <nomeOrgao>Fundação Biblioteca Nacional (FBN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6990">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6991">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6992">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6993">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Difusão Cultural</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13045">direito autoral</item>
+        <item id="13046">retificação</item>
+        <item id="13047">biblioteca nacional</item>
+    </palavras-chave>
+</servico>
