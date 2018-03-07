@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-registro-de-titulo-para-obras-publicitarias</id>
+    <dbId>3147</dbId>
+    <nome>Obter Certificado de Registro de Título para Obras Publicitárias</nome>
+    <sigla>CRT</sigla>
+    <descricao>Este serviço permite o registro de título de obras audiovisuais com caráter publicitário.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3733">
+            <tipo>Proprietários de obras audiovisuais de caráter publicitário.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7147">
+            <titulo>Requerer Certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9999">Documentação Pertinente</item>
+                    <item id="10000">Requerimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7506" tipo="web">
+                        <descricao>http://sad.ancine.gov.br/controleacesso/menuSistema/menuSistema.seam</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7148">
+            <titulo>Pagar CONDECINE</titulo>
+            <descricao>Para conferir o valor da taxa, clique [aqui](https://www.ancine.gov.br/sites/default/files/CONDECINE%20Obras%20Publicit%C3%A1rias.pdff)</descricao>
+            <documentos>
+                <default>
+                    <item id="10001">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="687">
+                        <descricao>CONDECINE</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>De acordo com a tabela na descrição da etapa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7507" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7149">
+            <titulo>Receber Certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7508" tipo="e-mail">
+                        <descricao>Endereço de E-mail informado no requerimento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/57682" dbId="916">
+        <nomeOrgao>Agência Nacional do Cinema (ANCINE)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7067">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7068">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Comércio e Serviços</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13144">propaganda</item>
+        <item id="13145">promocional</item>
+        <item id="13146">ancine</item>
+    </palavras-chave>
+</servico>
