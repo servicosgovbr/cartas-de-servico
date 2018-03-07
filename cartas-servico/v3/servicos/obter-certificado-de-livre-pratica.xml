@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-livre-pratica</id>
+    <dbId>3091</dbId>
+    <nome>Obter Certificado de Livre Prática</nome>
+    <sigla>CLP</sigla>
+    <descricao>A livre prática é a permissão emitida pela Anvisa para uma embarcação operar embarque e desembarque de viajantes, cargas ou suprimentos, de acordo com a RDC nº 72/2009 e está prevista no Regulamento Sanitário Internacional 2005 (RSI).
+O Certificado de Livre Prática (CLP) é um documento de caráter intransferível, emitido mediante análise das condições operacionais e higiênico-sanitárias da embarcação e do estado de saúde dos seus viajantes, a partir da análise documental das informações apresentadas quando da sua solicitação e/ou de uma inspeção sanitária realizada a bordo da embarcação. 
+Devem solicitar Certificado de Livre Prática (CLP) as embarcações que se destinam a um porto de controle sanitário.  A embarcação deve solicitar Livre Prática à autoridade sanitária em exercício no porto de controle sanitário ao qual se destina, quando não estiver portando CLP válido, por meio da Solicitação de Certificado.
+O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máxima de 48 horas e mínima de 24 horas do horário estimado de chegada da embarcação ao Porto. Nos portos onde os postos da Anvisa têm atendimento somente em dias úteis o CLP pode ser solicitado com antecedência máxima de 72 horas.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3677">
+            <tipo>Embarcações de transporte de viajantes, cargas ou suprimentos.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7043">
+            <titulo>Solicitar Certificado</titulo>
+            <descricao>Entrega dos documentos para solicitação do certificado.</descricao>
+            <documentos>
+                <default>
+                    <item id="9702">Declaração Marítima de saúde assinada por representante da embarcação</item>
+                    <item id="9703">Lista de viajantes</item>
+                    <item id="9704">Certificado de Controle Sanitário de Bordo válido.</item>
+                    <item id="9705">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="636">
+                        <descricao>Taxa de Fiscalização em Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variam de acordo com arqueação líquida (AL)  das embarcações e tipo de navegação</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7351" tipo="presencial">
+                        <descricao>[Postos da Vigilância Sanitária](http://portal.anvisa.gov.br/documents/375992/0/Lista+de+endere%C3%A7os+GGPAF+20-12/c5efd32b-688d-423e-91da-c025ce2bf318)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7352" tipo="web">
+                        <descricao>concentrador.portosempapel.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7044">
+            <titulo>Receber inspeção sanitária</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9706">Lista de documentos conforme RDC 72/09, Art. 8º</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7353" tipo="presencial">
+                        <descricao>Embarcação solicitante</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7045">
+            <titulo>Receber Certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7354" tipo="presencial">
+                        <descricao>[Postos da Vigilância Sanitária](http://portal.anvisa.gov.br/documents/375992/0/Lista+de+endere%C3%A7os+GGPAF+20-12/c5efd32b-688d-423e-91da-c025ce2bf318)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6954">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6955">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6956">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Transportes</item>
+        <item>Vigilância Sanitária</item>
+        <item>Transporte Hidroviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12976">embarcação</item>
+        <item id="12977">vigilância sanitária</item>
+        <item id="12978">embarque e desembarque</item>
+    </palavras-chave>
+</servico>
