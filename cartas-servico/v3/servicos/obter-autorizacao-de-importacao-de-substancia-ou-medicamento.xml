@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-importacao-de-substancia-ou-medicamento</id>
+    <dbId>3088</dbId>
+    <nome>Obter Autorização de Importação de Substância ou Medicamento</nome>
+    <sigla>AI</sigla>
+    <descricao>Através deste serviço pessoas jurídicas podem requisitar autorização para importação de produtos ou substâncias controladas pela ANVISA.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3674">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7037">
+            <titulo>Realizar peticionamento eletrônico</titulo>
+            <descricao>Opção “Peticionamento Eletrônico e Pagamento de Taxas” e escolher código (produtos controlados): 7657 - Substâncias ou medicamentos destinados exclusivamente para fins de ensino, pesquisa, análise e padrão de referência; 7690 - Autorização específica para órgãos de repressão a drogas, entidade importadora de controle de dopagem, laboratório de referência analítica, instituição de ensino ou pesquisa; 7694 -Substância sujeita a controle especial (Portaria 344/98); 7656 - Demais casos.</descricao>
+            <documentos>
+                <default>
+                    <item id="9694">Documentos constantes das listas A1, A2, A3, B1, B2, C3, D1, E, F1, F2, F3, F4 da Portaria 344/1998.</item>
+                    <item id="9695">GRU (gerada pelo sistema)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="631">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7345" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7038">
+            <titulo>Solicitar AI</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9696">Justificativa técnica detalhada assinada pelo responsável técnico, para o caso de importação de amostras para fins de análise ou fabricação de lotes-piloto;</item>
+                    <item id="9697">Declaração do importador prevista no §2º do art. 17 da RDC nº 11/2013; e</item>
+                    <item id="9698">Declaração do destinatário final, prevista no §3º do art. 16 da RDC nº 11/2013.</item>
+                    <item id="9699">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7346" tipo="web">
+                        <descricao>https://nds.anvisa.gov.br/Login.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6947">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6948">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6949">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Vigilância Sanitária</item>
+        <item>Comercio externo</item>
+        <item>Relações Internacionais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12967">importação</item>
+        <item id="12968">medicamentos</item>
+        <item id="12969">drogas</item>
+    </palavras-chave>
+</servico>
