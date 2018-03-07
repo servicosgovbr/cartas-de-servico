@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-certificado-do-processo-kimberley</id>
+    <dbId>3112</dbId>
+    <nome>Obter o Certificado do Processo Kimberley</nome>
+    <sigla>CPK</sigla>
+    <descricao>Análise e emissão do Certificado do Processo Kimberley-CPK e vistorias de áreas produtoras de Diamantes Brutos.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3698">
+            <tipo>Empresas privadas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7089">
+            <titulo>Requerer certificado</titulo>
+            <descricao>Protocolização de documentos no requerimento do CPK,</descricao>
+            <documentos>
+                <default>
+                    <item id="9879">Carteira de identidade</item>
+                    <item id="9880">Carteira de trabalho</item>
+                    <item id="9881">Certidões de cartório</item>
+                    <item id="9882">Certidões da Receita Federal</item>
+                    <item id="9883">CNPJ</item>
+                    <item id="9884">Comprovante de endereço/residência</item>
+                    <item id="9885">Comprovante de pagamento</item>
+                    <item id="9886">Contrato Social</item>
+                    <item id="9887">CPF</item>
+                    <item id="9888">Procuração do representante legal</item>
+                    <item id="9889">Registro da Junta Comercial</item>
+                    <item id="9890">Registro em Cartório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="653">
+                        <descricao>Emolumento para requerimento de CPK</descricao>
+                        <moeda>R$</moeda>
+                        <valor>746,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7421" tipo="presencial">
+                        <descricao>Nos [Protocolos das Unidades Regionais da ANM](http://www.anm.gov.br/acesso-a-informacao/institucional/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7422" tipo="e-mail">
+                        <descricao>cncd@dnpm.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="823" descricao="Para emissão do boleto">
+                    <canal-de-prestacao id="7420" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/dipar_externo/cobranca/emolumentos.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7090">
+            <titulo>Realizar pré-lacre</titulo>
+            <descricao>Apresentação do produto a ser exportado para realização de pesagem e pré-lacre.</descricao>
+            <documentos>
+                <default>
+                    <item id="9891">Mercadoria a ser exportada.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7423" tipo="presencial">
+                        <descricao>Nos [Protocolos das Unidades Regionais da ANM](http://www.anm.gov.br/acesso-a-informacao/institucional/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados) ou em empresa de segurança de valores.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7091">
+            <titulo>Realizar lacre final</titulo>
+            <descricao>Apresentação do material a ser exportado para realização de lacre final e recebimento do CPK, após assinatura de compromisso de registro da mercadoria no SISCOMEX.</descricao>
+            <documentos>
+                <default>
+                    <item id="9892">Mercadoria a ser exportada.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7424" tipo="presencial">
+                        <descricao>Nos [Protocolos das Unidades Regionais da ANM](http://www.anm.gov.br/acesso-a-informacao/institucional/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados) ou em empresa de segurança de valores.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6985">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Relações Internacionais</item>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13039">diamantes</item>
+        <item id="13040">exportação</item>
+        <item id="13041">kimberely</item>
+    </palavras-chave>
+</servico>
