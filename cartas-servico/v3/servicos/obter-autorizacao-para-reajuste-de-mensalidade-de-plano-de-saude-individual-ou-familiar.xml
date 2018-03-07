@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-reajuste-de-mensalidade-de-plano-de-saude-individual-ou-familiar</id>
+    <dbId>3087</dbId>
+    <nome>Obter Autorização para Reajuste de mensalidade de plano de saúde individual ou familiar</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2355">GEAR - Gestão Eletrônica de Autorização de Reajuste</item>
+    </nomes-populares>
+    <descricao>Natureza: Serviço público propriamente estatal. É competência da ANS autorizar reajustes e revisões das contraprestações pecuniárias dos planos privados de assistência à saúde, conforme o inciso XVII, do artigo 4º, da Lei nº 9961 de 28 de janeiro de 2000 (Cria a Agência Nacional de Saúde Suplementar – ANS e dá outras providências)
+Portanto, os usuários são as operadoras de planos privados de saúde que atuam na segmentação “Assistência Médica”, tipo de contratação “individual” que precisam solicitar autorização a ANS para aplicar reajuste nas mensalidades. 
+A partir de março de 2017, esse processo de autorização passou a ser realizado de forma eletrônica, com o desenvolvimento do sistema de Gestão Eletrônica de Autorização de Reajuste – GEAR, regulamentado pela Instrução Normativa nº 51, de 27 de janeiro de 2017, da Diretoria de Normas e Habilitação dos Produtos.
+Interação com usuário: O GEAR é uma interface interativa com o usuário, totalmente integrada aos demais sistemas da ANS e, ao SEI – Sistema Eletrônico de Informações. Todas as etapas são realizadas em meio digital, desde a solicitação de autorização e encaminhamento de documentos, por parte das operadoras, até a comunicação da decisão administrativa, por parte da ANS.
+As operadoras acessam o GEAR, no site da ANS, mediante senha individualizada e o procedimento de solicitação de autorização é realizado em pouquíssimos minutos.
+A confirmação da solicitação é enviada para o e-mail indicado pela operadora e as informações sobre o andamento do processo são disponibilizadas e atualizadas no site da ANS, acessíveis a operadoras, beneficiários e sociedade em geral.
+Após a análise da área técnica da ANS, a decisão é formalizada em ofício, disponibilizado à operadora, digitalmente, via Programa de Transmissão de Arquivos – PTA, programa utilizado para comunicação eletrônica entre a Agência e as operadoras de planos privados de saúde. Portanto, a comunicação é totalmente eletrônica, sendo tempestiva, célere e eficaz.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://www2.ans.gov.br/ans-idp/</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3673">
+            <tipo>Operadoras de Plano de Saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7034">
+            <titulo>Solicitar autorização</titulo>
+            <descricao>Solicitação de Autorização no GEAR</descricao>
+            <documentos>
+                <default>
+                    <item id="9693">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="629">
+                        <descricao>Taxa por Pedido de Reajuste de Contraprestação Pecuniária (operadoras com até 20.000 beneficiários)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.348,37</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="630">
+                        <descricao>Taxa por Pedido de Reajuste de Contraprestação Pecuniária (operadoras com mais de 20.000 beneficiários)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2.696,73</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7342" tipo="web">
+                        <descricao>https://www2.ans.gov.br/ans-idp/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7035">
+            <titulo>Acompanhar andamento do processo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7343" tipo="web">
+                        <descricao>http://www.ans.gov.br/planos-de-saude-e-operadoras/espaco-da-operadora/compromissos-e-interacoes-com-ans/solicitacoes-e-consultas/solicitacao-de-autorizacao-de-reajuste/processos-de-reajustes-de-precos-de-planos-de-saude</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7036">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7344" tipo="web">
+                        <descricao>https://www2.ans.gov.br/ans-idp/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6946">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Comércio e Serviços</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12964">plano de saúde</item>
+        <item id="12965">reajuste de mensalidade</item>
+        <item id="12966">autorização</item>
+    </palavras-chave>
+</servico>
