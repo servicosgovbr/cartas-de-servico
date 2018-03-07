@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>transferir-titularidade-de-alvara-de-pesquisa</id>
+    <dbId>3109</dbId>
+    <nome>Transferir Titularidade de Alvará de Pesquisa</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2374">Cessão Total de Área de Alvará de Pesquisa</item>
+    </nomes-populares>
+    <descricao>Mudança de titularidade do direito minerário finalisando com a anotação a margem do titulo minerário.</descricao>
+    <contato>dgtm.atendimento@dnpm.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3695">
+            <tipo>Titulares de Alvará de Pesquisa</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="90" max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7086">
+            <titulo>Requerer mudança</titulo>
+            <descricao>Preencher o Cadastro e protocolizar o documento.</descricao>
+            <documentos>
+                <default>
+                    <item id="9855">Ata de fundação</item>
+                    <item id="9856">Carteira de identidade</item>
+                    <item id="9857">Carteira de trabalho</item>
+                    <item id="9858">Certidão de casamento</item>
+                    <item id="9859">Certidão de nascimento</item>
+                    <item id="9860">Certidões da Receita Federal</item>
+                    <item id="9861">Certificado de antecedentes criminais</item>
+                    <item id="9862">CNPJ</item>
+                    <item id="9863">Comprovante de endereço/residência</item>
+                    <item id="9864">Comprovante de pagamento</item>
+                    <item id="9865">Comprovante de quitação eleitoral</item>
+                    <item id="9866">Contrato Social</item>
+                    <item id="9867">CPF</item>
+                    <item id="9868">FGTS</item>
+                    <item id="9869">Procuração do representante legal</item>
+                    <item id="9870">Registro da Junta Comercial</item>
+                    <item id="9871">Registro em Cartório</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="651">
+                        <descricao>Taxa de Emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>520,25</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7414" tipo="presencial">
+                        <descricao>**DNPM - Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7415" tipo="postal">
+                        <descricao>**DNPM - Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="819" descricao="Para preenchimento do requerimento eletrônico">
+                    <canal-de-prestacao id="7412" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=14</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="820" descricao="Para geração do boleto">
+                    <canal-de-prestacao id="7413" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/dipar_externo/cobranca/emolumentos.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6982">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13030">mudança</item>
+        <item id="13031">transferência</item>
+        <item id="13032">direito minerário</item>
+    </palavras-chave>
+</servico>
