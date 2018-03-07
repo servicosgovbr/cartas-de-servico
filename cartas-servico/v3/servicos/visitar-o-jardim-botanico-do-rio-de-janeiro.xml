@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>visitar-o-jardim-botanico-do-rio-de-janeiro</id>
+    <dbId>3126</dbId>
+    <nome>Visitar o Jardim Botânico do Rio de Janeiro</nome>
+    <sigla></sigla>
+    <descricao>O serviço consiste na visitação ao Jardim Botânico do Rio de Janeiro, considerado 3º ponto turístico mais visitado do Rio de Janeiro. O  usuário é o cidadão  de qualquer nacionalidade que deseja visitar o Jardim Botânico e dirige-se à Bilheteria para compra do ingresso. Obtido o cartão de acesso (produto) o cidadão tem acesso ao Arboreto do JBRJ</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3712">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao>Não há tempo limite para a visita, mas o Jardim Botânico fica aberto às segundas-feiras de 12 às 19 horas e de terça a domingo de 08 às 19 horas. *Sócios da AAJB podem entrar, de terça a domingo, com duas horas de antecedência em relação ao restante do público.*</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7117">
+            <titulo>Comprar ingresso</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9950">Documento de identificação oficial com foto</item>
+                    <item id="9951">Carteira estudantil ou demais documentos que comprovam o direito ao desconto de 50% no ingresso.</item>
+                </default>
+                <caso id="824" descricao="Estudantes com ingresso de meia entrada">
+                    <documento>
+                        <id>9945</id>
+                        <descricao>Carteira estudantil ou outro documento que comprove a matrícula</descricao>
+                    </documento>
+                </caso>
+                <caso id="825" descricao="Jovens com até 29 anos que pertençam a família com renda mensal de até 2 salários mínimos inscritas no CadÚnico com ingresso de meia entrada">
+                    <documento>
+                        <id>9946</id>
+                        <descricao>Identidade Jovem.</descricao>
+                    </documento>
+                </caso>
+                <caso id="826" descricao="Sócios da AAJB com entrada gratuita">
+                    <documento>
+                        <id>9947</id>
+                        <descricao>Carteira de Sócio</descricao>
+                    </documento>
+                </caso>
+                <caso id="827" descricao="Estudante de Universidade Pública para realização de trabalho técnico-científico com entrada gratuita">
+                    <documento>
+                        <id>9948</id>
+                        <descricao>Encaminhamento da Universidade</descricao>
+                    </documento>
+                </caso>
+                <caso id="828" descricao="Guias de turismo em exercício da profissão">
+                    <documento>
+                        <id>9949</id>
+                        <descricao>Cadastro na EMBRATUR e Carteira Profissional</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="679">
+                        <descricao>Ingresso</descricao>
+                        <moeda>R$</moeda>
+                        <valor>15,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="833" descricao="Estudantes, jovens de até 21 anos (ou 29 se de família com renda de até 2 salários mínimos e inscrita no CadÚnico)">
+                    <custo id="680">
+                        <descricao>Meia Entrada</descricao>
+                        <moeda>R$</moeda>
+                        <valor>7,50</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="834" descricao="Pessoas com deficiência ou com mais de 60 anos">
+                    <custo id="681">
+                        <descricao>Meia Entrada</descricao>
+                        <moeda>R$</moeda>
+                        <valor>7,50</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="835" descricao="Crianças de até 5 anos, Sócios da AAJB com anuidade em dia, Servidores do MMA e suas vinculadas, Servidores do JBRJ e prestadores de serviço">
+                    <custo id="682">
+                        <descricao>Entrada Gratuita</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+                <caso id="836" descricao="Guia de Turismo no exercício de suas atividades e Estudantes de Universidades públicas com a finalidade de realizar trabalhos técnico-científicos">
+                    <custo id="683">
+                        <descricao>Entrada Gratuita</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7468" tipo="presencial">
+                        <descricao>**Bilheterias do Jardim Botânico** - Rua Jardim Botânico, 1008 - Jardim Botânico - CEP 22470-180 - Rio de Janeiro/RJ *Veja aqui [como chegar](http://www.jbrj.gov.br/visitacao/comochegar)*</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7118">
+            <titulo>Realizar visita</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7469" tipo="presencial">
+                        <descricao>**Jardim Botânico do Rio de Janeiro** - Rua Jardim Botânico, 1008 - Jardim Botânico - CEP 22470-180 - Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1913" dbId="37021">
+        <nomeOrgao>Instituto de Pesquisas Jardim Botânico do Rio de Janeiro (JBRJ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7023">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Meio ambiente</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Lazer</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Preservação e Conservação Ambiental</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13081">passeio</item>
+        <item id="13082">fauna</item>
+        <item id="13083">mata atlântica</item>
+    </palavras-chave>
+</servico>
