@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-titulo-de-inscricao-de-embarcacao-e-titulo-de-inscricao-de-embarcacao-miuda</id>
+    <dbId>3104</dbId>
+    <nome>Obter Título de Inscrição de Embarcação e Título de Inscrição de Embarcação Miúda</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2369">TIE e TIEM</item>
+    </nomes-populares>
+    <descricao>Inclusão de embarcação no sistema de gerenciamento de embarcações (SISGEMB) da Marinha. É realizada uma análise da documentação apresentada pelo usuário, conforme os requisitos descritos nas Normas da Autoridade Marítima - NORMAM 01, 02 e 03, disponíveis na página da DPC na internet. Se a documentação estiver em conformidade, é emitido o respectivo Título de Inscrição de Embarcação (TIE/TIEM) para o proprietário. Os TIE/TIEM têm validade de 5 (cinco) anos e precisam ser renovados. Esse serviço é prestado pelas Capitanias dos Portos, Delegacias e Agências (CP/DL/AG), as quais totalizam 63 organizações militares em todo o território nacional. As embarcações com Arqueação Bruta (AB) superior a 100 deverão ser registradas no Tribunal Marítimo (TM), cujo processo tem entrada nas CP/DL/AG.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3690">
+            <tipo>Proprietários de embarcações</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7080">
+            <titulo>Requerer título</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9813">Documento de identificação oficial com foto</item>
+                    <item id="9814">Carteira de trabalho</item>
+                    <item id="9815">CNPJ</item>
+                    <item id="9816">Comprovante de endereço/residência</item>
+                    <item id="9817">Comprovante de pagamento</item>
+                    <item id="9818">Contrato Social</item>
+                    <item id="9819">CPF</item>
+                    <item id="9820">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="647">
+                        <descricao>Taxa de emissão do Título</descricao>
+                        <moeda>R$</moeda>
+                        <valor>30,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7404" tipo="presencial">
+                        <descricao>Nas [Capitanias dos Portos, Delegacias e Agências Subordinadas](https://www.dpc.mar.mil.br/pt-br/cda/localize)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7081">
+            <titulo>Receber Título</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9821">Documento de identificação oficial com foto</item>
+                    <item id="9822">Carteira de trabalho</item>
+                    <item id="9823">Procuração do representante legal</item>
+                    <item id="9824">Protocolo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7405" tipo="presencial">
+                        <descricao>Nas [Capitanias dos Portos, Delegacias e Agências Subordinadas](https://www.dpc.mar.mil.br/pt-br/cda/localize)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6972">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transportes</item>
+        <item>Fiscalização do Estado</item>
+        <item>Transporte Hidroviário</item>
+        <item>Defesa Nacional</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13015">embarcação</item>
+        <item id="13016">inscrição</item>
+        <item id="13017">marinha</item>
+    </palavras-chave>
+</servico>
