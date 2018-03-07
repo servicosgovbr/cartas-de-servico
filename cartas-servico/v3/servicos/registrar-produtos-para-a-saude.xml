@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-produtos-para-a-saude</id>
+    <dbId>3090</dbId>
+    <nome>Registrar Produtos para a Saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2356">Registro de produto para saúde</item>
+        <item id="2357">Registro de dispositivo médico</item>
+    </nomes-populares>
+    <descricao>Produtos para saúde são equipamentos, materiais e produtos para diagnóstico in vitro destinados à prevenção, diagnóstico, tratamento, reabilitação ou anticoncepção, não enquadrados como medicamentos. A Gerência Geral de Tecnologia de Produtos para Saúde da ANVISA é a unidade organizacional responsável pela concessão dos registros desses produtos para acesso à população e aos serviços de saúde, bem como pela anuência para realização de pesquisas clínicas envolvendo tais produtos em território brasileiro.
+Todo produto enquadrado como produto para saúde quando regularizado recebe um número de registro que deve estar disponível em sua rotulagem, de forma que o usuário pode usar esta referência para consultar sua regularidade.
+As empresas que solicitam as autorizações para o mercado de produtos para saúde devem seguir as orientações previstas nos regulamentos, manuais e guias disponíveis no Portal da ANVISA. Os principais regulamentos relativos à autorização para o mercado de produtos para saúde que devem ser atendidos por empresas fabricantes ou importadoras são a RDC 185/2001, a RDC 40/2015 e a RDC 36/2015.
+No Portal da Anvisa estão apresentados os serviços necessários à regularização de empresas e de produtos para saúde junto à Anvisa, tais como: procedimentos para solicitação de Autorização de Funcionamento e de Certificado de Boas Práticas de Fabricação (menu Empresas); registro e cadastro de materiais, implantes ortopédicos, equipamentos médicos e produtos para diagnóstico in vitro, informações sobre pesquisa clínica e certificados (menu Produtos), entre outros.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3676">
+            <tipo>Empresas fabricantes e comercializadoras de produtos para a saúde.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7041">
+            <titulo>Solicitar registro</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9700">Certificado de Livre venda do produto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7348" tipo="postal">
+                        <descricao>**Sede ANVISA** - SIA tr. 5 (Sia, Área Especial 57), Brasília, DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7347" tipo="presencial">
+                        <descricao>**Sede ANVISA** - SIA tr. 5 (Sia, Área Especial 57), Brasília, DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7042">
+            <titulo>Pagar taxa</titulo>
+            <descricao>Para verificar o código de assunto a ser informado, clique [aqui](https://www9.anvisa.gov.br/peticionamento/sat/Consultas/ConsultaAssunto.asp)</descricao>
+            <documentos>
+                <default>
+                    <item id="9701">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="632">
+                        <descricao>Equipamentos de grande porte para diagnóstico ou terapia)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>50.918,79</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="633">
+                        <descricao>Outros equipamentos para diagnóstico ou terapia, artigos, materiais, produtos para diagnóstico de uso “in-vitro” e demais produtos para saúde</descricao>
+                        <moeda>R$</moeda>
+                        <valor>23.239,60</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="634">
+                        <descricao>Família de Equipamentos de grande porte para diagnóstico ou terapia)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>71.692,64</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="635">
+                        <descricao>Família de equipamentos para diagnóstico ou terapia, artigos, materiais, produtos para diagnóstico de uso “in-vitro” e demais produtos para saúde</descricao>
+                        <moeda>R$</moeda>
+                        <valor>30.725,42</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7350" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="816" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="7349" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6953">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+        <item>Comércio e Serviços</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12973">registro</item>
+        <item id="12974">produtos</item>
+        <item id="12975">anvisa</item>
+    </palavras-chave>
+</servico>
