@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-utilizacao-de-materia-prima-florestal</id>
+    <dbId>3120</dbId>
+    <nome>Obter Autorização para Utilização de Matéria-Prima Florestal</nome>
+    <sigla>AUMPF</sigla>
+    <descricao>Autorizar a utilização de matéria-prima florestal.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3706">
+            <tipo>Empresas e órgãos públicos.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7107">
+            <titulo>Requerer autorização</titulo>
+            <descricao>Apresentar documentação para análise da solicitação</descricao>
+            <documentos>
+                <default>
+                    <item id="9918">Registro em Cartório</item>
+                    <item id="9919">Requerimento conforme Anexo I da IN Ibama 06/2009</item>
+                    <item id="9920">Romaneio da referida matéria-prima, conforme Anexo II da IN Ibama 06/2009</item>
+                    <item id="9921">Anotação de Responsabilidade Técnica emitida pelo CREA do Engenheiro Responsável pelas informações</item>
+                    <item id="9922">Informações sobre o local em que se encontra a matéria prima florestal: nome, endereço (se for o caso) e Coordenadas Geográficas da sua localização</item>
+                    <item id="9923">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="664">
+                        <descricao>Taxa de Vistoria Técnica Florestal (até 250 ha/ano)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>784,18</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="665">
+                        <descricao>Acréscimo por ha excedente aos 250 ha/ano</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1,49</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7451" tipo="presencial">
+                        <descricao>Em uma das [Superintendências do Ibama nos Estados](http://www.ibama.gov.br/institucional/unidades-do-ibama)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7004">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7005">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Preservação e Conservação Ambiental</item>
+        <item>Agropecuária, extrativismo e pesca</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13063">madeira</item>
+        <item id="13064">extrativismo</item>
+        <item id="13065">floresta</item>
+    </palavras-chave>
+</servico>
