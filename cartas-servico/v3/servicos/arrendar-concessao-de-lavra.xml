@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>arrendar-concessao-de-lavra</id>
+    <dbId>3111</dbId>
+    <nome>Arrendar Concessão de Lavra</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2376">Arrendamento Total de Concessão de Lavra</item>
+    </nomes-populares>
+    <descricao>Análise de Arrendamento</descricao>
+    <contato>(61) 3312-6813</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3697">
+            <tipo>Titulares de Concessão de Lavra</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7088">
+            <titulo>Requerer arrendamento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9873">Ata de fundação</item>
+                    <item id="9874">Comprovante de endereço/residência</item>
+                    <item id="9875">Contrato Social</item>
+                    <item id="9876">Procuração do representante legal</item>
+                    <item id="9877">Registro da Junta Comercial</item>
+                    <item id="9878">Requerimento eletrônico impresso e assinado</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="652">
+                        <descricao>Taxa de Emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>520,25</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7418" tipo="presencial">
+                        <descricao>**DNPM - Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7419" tipo="postal">
+                        <descricao>**DNPM - Departamento Nacional de Produção Mineral (Edifício Sede)** - S.A.N. Quadra 01 Bloco B - CEP: 70041-903 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="821" descricao="Para preenchimento do requerimento eletrônico">
+                    <canal-de-prestacao id="7416" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=17</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="822" descricao="Para geração do boleto">
+                    <canal-de-prestacao id="7417" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/dipar_externo/cobranca/emolumentos.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6984">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13036">arrendamento</item>
+        <item id="13037">direito minerário</item>
+        <item id="13038">anm</item>
+    </palavras-chave>
+</servico>
