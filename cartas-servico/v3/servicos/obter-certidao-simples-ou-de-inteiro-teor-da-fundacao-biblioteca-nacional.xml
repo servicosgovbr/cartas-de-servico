@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certidao-simples-ou-de-inteiro-teor-da-fundacao-biblioteca-nacional</id>
+    <dbId>3113</dbId>
+    <nome>Obter Certidão Simples ou de Inteiro Teor da Fundação Biblioteca Nacional</nome>
+    <sigla></sigla>
+    <descricao>O titular de direitos de uma obra registrada no EDA encaminha um requerimento de serviço de emissão de certidão simples ou de inteiro teor, presencialmente ou via Correios, apresentando documento de identificação e comprovante de pagamento.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3699">
+            <tipo>Titular de direitos de obra registrada junto à Biblioteca Nacional.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7092">
+            <titulo>Requerer certidão</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9893">Documento de identificação oficial com foto</item>
+                    <item id="9894">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="654">
+                        <descricao>Retribuição para Emissão de Via Avulsa de Certidão</descricao>
+                        <moeda>R$</moeda>
+                        <valor>22,30</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7425" tipo="presencial">
+                        <descricao>**Escritório de Direitos Autorais (EDA)** - Centro Empresarial Cidade Nova - Teleporto
+Av. Presidente Vargas, 3131 - sala 702 - Cidade Nova - Rio de Janeiro, RJ - CEP: 20210-911</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7426" tipo="postal">
+                        <descricao>**Escritório de Direitos Autorais (EDA)** - Centro Empresarial Cidade Nova - Teleporto
+Av. Presidente Vargas, 3131 - sala 702 - Cidade Nova - Rio de Janeiro, RJ - CEP: 20210-911</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/984" dbId="34300">
+        <nomeOrgao>Fundação Biblioteca Nacional (FBN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="6986">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="6987">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="6988">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="6989">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Difusão Cultural</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13042">biblioteca nacional</item>
+        <item id="13043">autor</item>
+        <item id="13044">certidão</item>
+    </palavras-chave>
+</servico>
