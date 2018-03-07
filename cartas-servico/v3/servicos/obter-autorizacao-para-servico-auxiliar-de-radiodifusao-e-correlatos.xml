@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-servico-auxiliar-de-radiodifusao-e-correlatos</id>
+    <dbId>3084</dbId>
+    <nome>Obter Autorização para Serviço Auxiliar de Radiodifusão e Correlatos</nome>
+    <sigla>SARC</sigla>
+    <descricao>Serviços Auxiliares de Radiodifusão e Correlatos (SARC) - são aqueles executados pelas concessionárias ou permissionárias de serviços de radiodifusão para realizar reportagens externas, ligações entre estúdios e transmissores das estações, utilizando inclusive transceptores portáteis. São considerados correlatos ao serviço auxiliar de radiodifusão os enlaces-rádio destinados a apoiar a execução dos serviços de radiodifusão tais como comunicação de ordens internas, telecomando e telemedição.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3670">
+            <tipo>Concessionárias e Permissionárias de serviços de radiodifusão.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7028">
+            <titulo>Requisitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="9683">CNPJ</item>
+                    <item id="9684">Contrato Social</item>
+                    <item id="9685">Procuração do Representante Legal</item>
+                    <item id="9686">Comprovante de Pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="626">
+                        <descricao>Preço Público pela Exploração de Serviço de Telecomunicações - PPDESS</descricao>
+                        <moeda>R$</moeda>
+                        <valor>400,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7335" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7029">
+            <titulo>Cadastrar Estações</titulo>
+            <descricao>Cadastramento de dados técnicos sobre estações de telecomunicações</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7336" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/stel</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7337" tipo="web">
+                        <descricao>https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&amp;acao_origem_externa=protocolo_pesquisar&amp;id_orgao_acesso_externo=0</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="6938">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comunicações</item>
+        <item>Comércio e Serviços</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="12955">estações</item>
+        <item id="12956">transmissão</item>
+        <item id="12957">retransmissão</item>
+    </palavras-chave>
+</servico>
