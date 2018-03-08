@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>registrar-pessoa-juridica-para-uso-ou-realizacao-de-atividades-comerciais-com-produtos-controlados-pelo-exercito</id>
+    <dbId>3194</dbId>
+    <nome>Registrar pessoa jurídica para uso ou realização de atividades comerciais com Produtos Controlados pelo Exército</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2406">Título de Registro</item>
+    </nomes-populares>
+    <descricao>Visa autorizar a pessoa jurídica a realizar atividades de comércio, utilização, exportação, importação, transporte, armazenamento entre outras atividades relativas a Produtos Controlados pelo Exército</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3780">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7201">
+            <titulo>Requerer registro</titulo>
+            <descricao>Para obter o arquivo do requerimento para preenchimento, clique [aqui](http://www.dfpc.eb.mil.br/images/REQUERIMENTO_FABRICACAO.doc)</descricao>
+            <documentos>
+                <default>
+                    <item id="10105">Requerimento preenchido, impresso e assinado e dirigido ao Diretor de Fiscalização de Produtos Controlados;</item>
+                    <item id="10106">Comprovante de Pagamento da Taxa de Concessão;</item>
+                    <item id="10107">Contrato Social registrado em cartório (original e cópia ou cópia autenticada do documento), no caso de firma limitada;</item>
+                    <item id="10108">Ato de Constituição com nome, CNPJ e endereço conforme requerimento (original e cópia ou cópia autenticada do documento)</item>
+                    <item id="10109">Publicação da ata que elegeu a diretoria, no caso de sociedade anônima e outras empresas (original e cópia ou cópia autenticada do documento)</item>
+                    <item id="10110">Registro da firma na junta comercial, no caso de firma individual. (original e cópia ou cópia autenticada do documento)</item>
+                    <item id="10111">Contrato Social foi registrado na Junta Comercial (LEI Nº 8.934, de 18 de novembro de 1994)</item>
+                    <item id="10112">CNPJ (Comprovante emitido pela Receita Federal do Brasil pela internet, emitido há menos de noventa dias da data do protocolo do processo)</item>
+                    <item id="10113">Conta de água, luz, telefone fixo, gás, escritura de imóvel, contrato de aluguel ou declaração de endereço própria com firma reconhecida.</item>
+                    <item id="10114">Certidões negativas de antecedentes criminais das Justiças federal, estadual, militar e eleitoral. (As certidões poderão ser fornecidas por meio eletrônico. Certidões do responsável legal e do seu substituto imediato)</item>
+                    <item id="10115">Declaração escrita de não estar respondendo a inquérito policial ou a processo criminal. Documento original ou cópia autenticada.</item>
+                    <item id="10116">Nomeação de representante legal e do substituto imediato. Cópia autenticada do documento. (ver Contrato Social, Procuração, e/ou Ato de Nomeação)</item>
+                    <item id="10117">Termo de Compromisso (Anexo VI do R-105)</item>
+                    <item id="10118">Plano de Segurança de PCE</item>
+                    <item id="10119">Anotação de Responsabilidade Técnica (ART) de cargo ou função ou certidão de pessoa jurídica do CREA ou CRQ, conforme o caso</item>
+                    <item id="10120">Relação de PCE a ser fabricado (descrição quantitativa e qualitativa do produto)</item>
+                    <item id="10121">Relação das unidades de produção/maquinário</item>
+                </default>
+                <caso id="841" descricao="No caso fábrica de explosivos:">
+                    <documento>
+                        <id>10104</id>
+                        <descricao>O capital social integralizado no mínimo de R$ 500.000,00 (quinhentos mil reais)</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="690">
+                        <descricao>Taxa de Concessão</descricao>
+                        <moeda>R$</moeda>
+                        <valor>2.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7604" tipo="presencial">
+                        <descricao>Entregar na recepção da DIRETORIA DE FISCALIZAÇÃO DE PRODUTOS CONTROLADOS (DFPC) na Portaria Norte, no Quartel General do Exercito – Bloco H - 4º andar - DFPC – BRASÍLIA/DF CEP 70.630-901</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7605" tipo="postal">
+                        <descricao>DIRETORIA DE FISCALIZAÇÃO DE PRODUTOS CONTROLADOS (DFPC), no Quartel General do Exercito - Bloco H - 4º andar - DFPC – BRASÍLIA/DF CEP 70.630-901</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="842" descricao="Para gerar a GRU - O Código de Recolhimento é 11300-0 (fundo do Exército)">
+                    <canal-de-prestacao id="7603" tipo="web">
+                        <descricao>https://consulta.tesouro.fazenda.gov.br/gru_novosite/gru_simples.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7122">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Comércio e Serviços</item>
+        <item>Segurança e Ordem Pública</item>
+        <item>Defesa militar</item>
+        <item>Defesa Nacional</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13285">registrar</item>
+        <item id="13286">exército</item>
+        <item id="13287">controlado</item>
+    </palavras-chave>
+</servico>
