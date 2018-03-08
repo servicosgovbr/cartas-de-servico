@@ -1,33 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Celebrar Termo de Compromisso de Cessação com o Cade (TCC)]]></nome>
-    <sigla>TCC</sigla>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>celebrar-termo-de-compromisso-de-cessacao-com-o-cade-tcc</id>
+    <dbId>8</dbId>
+    <nome>Celebrar Termo de Compromisso de Cessação com o Cade (TCC)</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Requerimento de TCC</item>
+        <item id="2401">Requerimento de TCC</item>
     </nomes-populares>
-    <descricao><![CDATA[O Termo de Cessação de Prática -TCC é celebrado entre o Cade e a parte investigada por suposta infração à ordem econômica determinando o fim da conduta e de seus efeitos lesivos à concorrência. A Lei 12.529/2011 permite que  o Cade suspenda o prosseguimento das investigações em relação a empresas e pessoas físicas investigadas por infração à ordem econômica enquanto estiverem sendo cumpridos os termos do TCC.]]></descricao>
-    <contato><![CDATA[SEPN 515 CONJUNTO D, LOTE 4 ED. CARLOS TAURISANO CEP: 70770-504 - BRASÍLIA/DF 
-Email: cade@cade.gov.br Fone: (61) 3221 8500]]></contato>
+    <descricao>O Termo de Cessação de Prática -TCC é celebrado entre o Cade e a parte investigada por suposta infração à ordem econômica determinando o fim da conduta e de seus efeitos lesivos à concorrência. A Lei 12.529/2011 permite que  o Cade suspenda o prosseguimento das investigações em relação a empresas e pessoas físicas investigadas por infração à ordem econômica enquanto estiverem sendo cumpridos os termos do TCC.</descricao>
+    <contato>SEPN 515 CONJUNTO D, LOTE 4 ED. CARLOS TAURISANO CEP: 70770-504 - BRASÍLIA/DF 
+Email: cade@cade.gov.br Fone: (61) 3221 8500</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="3774">
             <tipo>Empresas e pessoas físicas, nacionais ou estrangeiras.</tipo>
-            <requisitos><![CDATA[(i) reconhecimento da participação na conduta investigada, nos casos de cartel.
+            <requisitos>(i) reconhecimento da participação na conduta investigada, nos casos de cartel.
 (ii) obrigação de não voltar a praticar a conduta investigada; e 
-(iii) outras medidas possíveis, como medidas estruturais e/ou comportamentais que estimulem e/ou reestabeleçam a concorrência no mercado, ou ainda que reparem os efeitos negativos da conduta.]]></requisitos>
+(iii) outras medidas possíveis, como medidas estruturais e/ou comportamentais que estimulem e/ou reestabeleçam a concorrência no mercado, ou ainda que reparem os efeitos negativos da conduta.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre max="20" min="10" unidade="minutos"/>
-        <descricao><![CDATA[Esse é o tempo estimado para a solicitação desse serviço. Por meio do <a href="http://http://www.cade.gov.br/assuntos/processos-1/guia-peticionamento-eletronico.pdf" target="_blank"> , disponível na página principal do site da autarquia, o usuário terá acesso a informações que podem dar celeridade a este procedimento. Protocolado perante a Superintendência Geral, o prazo para negociações é em torno de 60 dias, prorrogáveis. Se o TCC for protocolado perante o Tribunal, o prazo é de 30 dias.]]></descricao>
+        <entre min="10" max="20" unidade="minutos"/>
+        <descricao>Esse é o tempo estimado para a solicitação desse serviço. Por meio do &lt;a href="http://http://www.cade.gov.br/assuntos/processos-1/guia-peticionamento-eletronico.pdf" target="_blank"&gt; , disponível na página principal do site da autarquia, o usuário terá acesso a informações que podem dar celeridade a este procedimento. Protocolado perante a Superintendência Geral, o prazo para negociações é em torno de 60 dias, prorrogáveis. Se o TCC for protocolado perante o Tribunal, o prazo é de 30 dias.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="7191">
             <titulo>Realizar Credenciamento</titulo>
-            <descricao><![CDATA[A opção está disponível na página principal do o site da autarquia (www.cade.gov.br) por meio do botão “SEI - usuário externo. No ambiente voltado ao usuário externo, o usuário efetuará pré- cadastro e enviará documento autenticado, contendo seu CPF, para o email sei@cade.gov.br para liberação do cadastro.]]></descricao>
+            <descricao>A opção está disponível na página principal do o site da autarquia (www.cade.gov.br) por meio do botão “SEI - usuário externo. No ambiente voltado ao usuário externo, o usuário efetuará pré- cadastro e enviará documento autenticado, contendo seu CPF, para o email sei@cade.gov.br para liberação do cadastro.</descricao>
             <documentos>
                 <default>
-                    <item>CPF e RG.</item>
+                    <item id="1164">CPF e RG.</item>
                 </default>
             </documentos>
             <custos>
@@ -35,19 +43,19 @@ Email: cade@cade.gov.br Fone: (61) 3221 8500]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[<a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" target="_blank"> Acesse o site</a></br]]></descricao>
+                    <canal-de-prestacao id="1429" tipo="web">
+                        <descricao>&lt;a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0" target="_blank"&gt; Acesse o site&lt;/a&gt;&lt;/br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="7192">
             <titulo>Preencher formulário de TCC</titulo>
-            <descricao><![CDATA[Após o cadastro, o usuário deve entrar no ambiente de usuário externo e clicar na aba "Requerimento de TCC" para preencher o formulário. Nessa etapa o guia de peticionamento eletrônico pode ser utilizado para auxiliar no preenchimento correto.
-<a href="http://http://www.cade.gov.br/assuntos/processos-1/guia-peticionamento-eletronico.pdf" target="_blank">]]></descricao>
+            <descricao>Após o cadastro, o usuário deve entrar no ambiente de usuário externo e clicar na aba "Requerimento de TCC" para preencher o formulário. Nessa etapa o guia de peticionamento eletrônico pode ser utilizado para auxiliar no preenchimento correto.
+&lt;a href="http://http://www.cade.gov.br/assuntos/processos-1/guia-peticionamento-eletronico.pdf" target="_blank"&gt;</descricao>
             <documentos>
                 <default>
-                    <item>Caso  se  trate  se  pessoa  física ou jurídica brasileira,  número de seu CPF ou CNPJ, conforme o caso, Razão Social e Forma Legal.Para as pessoas estrangeiras, os campos CPF, CNPJ e Forma Legal não são de  preenchimento obrigatório.</item>
+                    <item id="1165">Caso  se  trate  se  pessoa  física ou jurídica brasileira,  número de seu CPF ou CNPJ, conforme o caso, Razão Social e Forma Legal.Para as pessoas estrangeiras, os campos CPF, CNPJ e Forma Legal não são de  preenchimento obrigatório.</item>
                 </default>
             </documentos>
             <custos>
@@ -55,17 +63,19 @@ Email: cade@cade.gov.br Fone: (61) 3221 8500]]></contato>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-preencher">
-                        <descricao><![CDATA[<a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" target="_blank">]]></descricao>
+                    <canal-de-prestacao id="1430" tipo="web-preencher">
+                        <descricao>&lt;a href="http://sei.cade.gov.br/sei/institucional/usuarioexterno/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0" target="_blank"&gt;</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/322"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/322" dbId="8382">
+        <nomeOrgao>Conselho Administrativo de Defesa Econômica (CADE)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Empresas</item>
-        <item>Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7110">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="7111">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Defesa do Consumidor</item>
@@ -73,12 +83,12 @@ Email: cade@cade.gov.br Fone: (61) 3221 8500]]></contato>
         <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>TCC</item>
-        <item>Peticionamento</item>
-        <item>Formulário Eletrônico</item>
+        <item id="13267">TCC</item>
+        <item id="13268">Peticionamento</item>
+        <item id="13269">Formulário Eletrônico</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[<a href="http://www.cade.gov.br/Default.aspx?a09362b749de35fe0b38102f02" target="_blank"> Lei nº 12.529, de 30 de novembro de 2011 - Estrutura o Sistema Brasileiro de Defesa da Concorrência; dispõe sobre a prevenção e repressão às infrações</a>]]></item>
-        <item><![CDATA[<a href="http://www.cade.gov.br/upload/RICADE%20-%20com%20marcas_01_out_2014_Resolu%C3%A7ao%2008.pdf" target="_blank"> Regimento Interno do Cade</a>]]></item>
+        <item id="2429">&lt;a href="http://www.cade.gov.br/Default.aspx?a09362b749de35fe0b38102f02" target="_blank"&gt; Lei nº 12.529, de 30 de novembro de 2011 - Estrutura o Sistema Brasileiro de Defesa da Concorrência; dispõe sobre a prevenção e repressão às infrações&lt;/a&gt;</item>
+        <item id="2430">&lt;a href="http://www.cade.gov.br/upload/RICADE%20-%20com%20marcas_01_out_2014_Resolu%C3%A7ao%2008.pdf" target="_blank"&gt; Regimento Interno do Cade&lt;/a&gt;</item>
     </legislacoes>
 </servico>
