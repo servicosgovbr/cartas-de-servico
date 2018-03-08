@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-a-carteira-nacional-de-vigilante</id>
+    <dbId>3204</dbId>
+    <nome>Emitir a Carteira Nacional de Vigilante</nome>
+    <sigla>CNV</sigla>
+    <descricao>Documento de identificação funcional do vigilante. Emitido pela internet através do sistema GESP, e de uso obrigatório em serviço.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3790">
+            <tipo>Empresas de vigilantes</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>5</quantidade>
+        <unidade>anos</unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7212">
+            <titulo>Emitir a Carteira</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10142">Certificado Digital</item>
+                    <item id="10143">Dados do Vigilante</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7623" tipo="web">
+                        <descricao>https://servicos.dpf.gov.br/gesp/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
+        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7139">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Documentação Pessoal</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13315">vigilante</item>
+        <item id="13316">identificação funcional</item>
+        <item id="13317">carteirinha de vigilante</item>
+    </palavras-chave>
+</servico>
