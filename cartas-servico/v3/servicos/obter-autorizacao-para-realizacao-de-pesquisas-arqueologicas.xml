@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-realizacao-de-pesquisas-arqueologicas</id>
+    <dbId>3229</dbId>
+    <nome>Obter autorização para Realização de Pesquisas Arqueológicas</nome>
+    <sigla></sigla>
+    <descricao>Tem como objetivo avaliar os projetos de pesquisa arqueológica, em cumprimento à Lei nº 3.924/1961.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3815">
+            <tipo>Pessoa física com formação acadêmica em Arqueologia.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7266">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10225">Comprovante de endereço/residência</item>
+                    <item id="10226">CPF</item>
+                    <item id="10227">Projeto de pesquisa nos moldes da Portaria SPHAN nº 07</item>
+                    <item id="10228">Ofício de requisição</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7680" tipo="postal">
+                        <descricao>Para a [Superintendência do IPHAN](http://portal.iphan.gov.br/uploads/ckfinder/arquivos/Chamada%20P%C3%BAblica_%20Superintendencias_%20Anexo%204.pdf) do estado onde será realizada a pesquisa.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7681" tipo="presencial">
+                        <descricao>Na [Superintendência do IPHAN](http://portal.iphan.gov.br/uploads/ckfinder/arquivos/Chamada%20P%C3%BAblica_%20Superintendencias_%20Anexo%204.pdf) do estado onde será realizada a pesquisa.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="845" descricao="Em caso de pesquisas em mais de um estado">
+                    <canal-de-prestacao id="7678" tipo="postal">
+                        <descricao>**Centro Nacional de Arqueologia (CNA)** - Quadra SEPS, 713/913 Bloco D - 3º andar - Asa Sul - CEP: 70390-135 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7679" tipo="presencial">
+                        <descricao>**Centro Nacional de Arqueologia (CNA)** - Quadra SEPS, 713/913 Bloco D - 3º andar - Asa Sul - CEP: 70390-135 - Brasília/DF</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2045" dbId="37065">
+        <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7195">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7196">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7197">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7198">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Educação</item>
+        <item>Educação superior</item>
+        <item>Fiscalização do Estado</item>
+        <item>Trabalho</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13398">arqueologia</item>
+        <item id="13399">escavação</item>
+        <item id="13400">autorização</item>
+    </palavras-chave>
+</servico>
