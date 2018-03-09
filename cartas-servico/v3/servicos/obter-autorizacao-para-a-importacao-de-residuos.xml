@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-a-importacao-de-residuos</id>
+    <dbId>3223</dbId>
+    <nome>Obter autorização para a importação de resíduos</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2436">Convenção de Basileia</item>
+    </nomes-populares>
+    <descricao>Autorizar a importação de resíduos para pessoas física ou jurídica.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3809">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7255">
+            <titulo>Requerer autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10214">Laudo de periculosidade do resíduo</item>
+                    <item id="10215">Notificação do país de origem</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7662" tipo="presencial">
+                        <descricao>Em uma [Unidade do IBAMA](http://www.ibama.gov.br/institucional/unidades-do-ibama)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7180">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="7181">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Comercio externo</item>
+        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
+        <item>Preservação e Conservação Ambiental</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13380">importação</item>
+        <item id="13381">resíduos</item>
+        <item id="13382">ibama</item>
+    </palavras-chave>
+</servico>
