@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-licenca-para-exercer-a-atividade-de-piloto-privado-de-aviao</id>
+    <dbId>3246</dbId>
+    <nome>Obter Licença para exercer a atividade de Piloto Privado de Avião</nome>
+    <sigla></sigla>
+    <descricao>Consiste na realização, junto à ANAC, de exame teórico de Piloto , após a obtenção do Certificado Médico Aeronáutico e a conclusão do curso teórico em escola de aviação homologada pela ANAC.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3833">
+            <tipo>Pessoas físicas que tenham concluído curso em escola homologada pela ANAC;.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7304">
+            <titulo>Agendar prova teórica</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="694">
+                        <descricao>Taxa de Fiscalização de Aviação Civil - TFAC</descricao>
+                        <moeda>R$</moeda>
+                        <valor>68,21</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7729" tipo="e-mail">
+                        <descricao>agendamento.exame@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7305">
+            <titulo>Fazer prova teórica</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10311">Documento de identificação oficial com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7730" tipo="presencial">
+                        <descricao>Nas [salas de prova da ANAC](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/arquivos/enderecos-telefones-uteis)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7306">
+            <titulo>Solicitar exame prático</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10312">CANAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7731" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/spo/escala/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7307">
+            <titulo>Realizar exame prático</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10313">CANAC</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7732" tipo="presencial">
+                        <descricao>Local e data escolhida na solicitação do exame.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7240">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Educação</item>
+        <item>Transportes</item>
+        <item>Transporte Aéreo</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13449">piloto</item>
+        <item id="13450">brevê</item>
+        <item id="13451">licença</item>
+    </palavras-chave>
+</servico>
