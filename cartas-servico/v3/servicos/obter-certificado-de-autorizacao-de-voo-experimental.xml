@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-autorizacao-de-voo-experimental</id>
+    <dbId>3243</dbId>
+    <nome>Obter Certificado de Autorização de Voo Experimental</nome>
+    <sigla>CAVE</sigla>
+    <descricao>Obter avaliação de aeronave experimental: construção amadora; exibição; competição aérea e aeronave leve esportiva. Consiste numa avaliação inicial da documentação enviada para verificar se a aeronave a ser construída é passível de enquadramento no propósito de operação específico pretendido pelo requerente e se a aeronave cumpre com os requisitos aplicáveis.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3830">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7298">
+            <titulo>Solicitar certificado</titulo>
+            <descricao>Solicitação do CAVE para o propósito pretendido com a documentação prevista para o processo.</descricao>
+            <documentos>
+                <default>
+                    <item id="10298">Formulário ou carta requisitando o serviço</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="691">
+                        <descricao>Taxa de Fiscalização de Aviação Civil - TFAC</descricao>
+                        <moeda>R$</moeda>
+                        <valor>76,85</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7721" tipo="presencial">
+                        <descricao>Em qualquer [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7722" tipo="e-mail">
+                        <descricao>ggcpdoc.sjc@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7299">
+            <titulo>Entregar formulário de vstoria</titulo>
+            <descricao>Apresentar formulário de vistoria realizada por profissional credenciado na aeronave.</descricao>
+            <documentos>
+                <default>
+                    <item id="10299">Formulário de vistoria</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7723" tipo="presencial">
+                        <descricao>Em qualquer [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7724" tipo="e-mail">
+                        <descricao>ggcpdoc.sjc@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7235">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7236">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Transportes</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13440">aeronave</item>
+        <item id="13441">experimental</item>
+        <item id="13442">projeto</item>
+    </palavras-chave>
+</servico>
