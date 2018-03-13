@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-fotografias-digitalizadas-do-acervo-fotografico-do-jardim-botanico-do-rio-de-janeiro</id>
+    <dbId>3279</dbId>
+    <nome>Obter fotografias digitalizadas do acervo fotográfico do Jardim Botânico do Rio de Janeiro</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2481">Acervo Fotográfico</item>
+    </nomes-populares>
+    <descricao>Acesso ao banco de dados de fotografias digitalizadas do acervo do JBRJ, com possibilidade de obtenção de arquivos em alta resolução.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://acervo.jbrj.gov.br/fotoweb/</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3866">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7374">
+            <titulo>Escolher fotografia</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7799" tipo="web">
+                        <descricao>http://acervo.jbrj.gov.br/fotoweb/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7375">
+            <titulo>Requisitar fotografia</titulo>
+            <descricao>Imagens  para  uso acadêmico são gratuitas, as demais custam R$60,00 (sessenta reais) por imagem em alta resolução.</descricao>
+            <documentos>
+                <default>
+                    <item id="10466">Requisição</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="726">
+                        <descricao>Taxa de cobrança por foto disponibilizada para uso não acadêmico</descricao>
+                        <moeda>R$</moeda>
+                        <valor>60,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7800" tipo="presencial">
+                        <descricao>**Jardim Botânico do Rio de Janeiro** - Rua Jardim Botânico, 1008 - Jardim Botânico - CEP 22470-180</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7376">
+            <titulo>Receber Fotografias</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7801" tipo="postal">
+                        <descricao>Endereço informado na requisição</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1913" dbId="37021">
+        <nomeOrgao>Instituto de Pesquisas Jardim Botânico do Rio de Janeiro (JBRJ)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7288">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7289">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7290">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7291">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13550">imagem</item>
+        <item id="13551">cópia</item>
+        <item id="13552">jardim botânico</item>
+    </palavras-chave>
+</servico>
