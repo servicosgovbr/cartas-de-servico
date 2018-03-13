@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-utilizacao-de-material-nuclear-em-instalacoes-de-reprocessamento</id>
+    <dbId>3260</dbId>
+    <nome>Obter autorização para utilização de material nuclear em instalações de reprocessamento</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2458">Autorização para Utilização de Material Nuclear</item>
+        <item id="2459">AUMAN</item>
+    </nomes-populares>
+    <descricao>Fornecer autorização para utilização de material nuclear para instalações de fabricação de reprocessamento</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3847">
+            <tipo>Instalações de fabricação de reprocessamento.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7338">
+            <titulo>Requisitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10353">Questionário Técnico para a instalação de Reprocessamento - QT</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="708">
+                        <descricao>Taxa de Licenciamento, Controle e Fiscalização de Materiais Nucleares e Radioativos e Suas Instalações - TLC (Industrial)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.700,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="709">
+                        <descricao>Taxa de Licenciamento, Controle e Fiscalização de Materiais Nucleares e Radioativos e Suas Instalações - TLC (Piloto ou laboratório)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>840,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7764" tipo="presencial">
+                        <descricao>**Comissão Nacional de Energia Nuclear** - Rua General Severiano 90, 4º andar, Rio de Janeiro/RJ, CEP: 22.290-901</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7765" tipo="postal">
+                        <descricao>**Comissão Nacional de Energia Nuclear** - Rua General Severiano 90, 4º andar, Rio de Janeiro/RJ, CEP: 22.290-901</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7339">
+            <titulo>Receber inspeção</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7766" tipo="presencial">
+                        <descricao>Local das instalações para qual se requer a autorização.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7254">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13491">material nuclear</item>
+        <item id="13492">energia nuclear</item>
+        <item id="13493">autorização</item>
+    </palavras-chave>
+</servico>
