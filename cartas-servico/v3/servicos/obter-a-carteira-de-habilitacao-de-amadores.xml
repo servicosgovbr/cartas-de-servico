@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-a-carteira-de-habilitacao-de-amadores</id>
+    <dbId>3258</dbId>
+    <nome>Obter a Carteira de Habilitação de Amadores</nome>
+    <sigla>CHA</sigla>
+    <descricao>Para a navegação em embarcações de esporte e recreio é necessário que o condutor realize um exame escrito nas capitanias dos portos e suas delegacias e agências (CP/DL/AG). Esse exame escrito é realizado após o interessado realizar um treinamento em estabelecimento de treinamento náutico cadastrado pelas CP/DL/AG.      
+Caso aprovado no exame escrito será emitida uma carteira de habilitação de amadores- (CHA) em uma das seguintes categorias: VLE- Veleiro; MTA – Motonauta; ARA- Arrais Amador; MSA- Mestre amador; ou CPA - Capitão Amador.     
+ Os dados do amador farão ainda parte do sistema informatizado SISAMA.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3845">
+            <tipo>Pessoas físicas que tenham realizado treinamento e sido aprovados em estabelecimento de treinamento náutico cadastrado pelas CP/DL/AG.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7333">
+            <titulo>Requisitar Carteira</titulo>
+            <descricao>Para preenchimento e impressão do formulário eletrônico, clique [aqui](http://www.dpc.mar.mil.br/pt-br/sisama)      
+Para gerar a GRU, clique [aqui](http://www.dpc.mar.mil.br/emissao-de-guia-de-recolhimento)</descricao>
+            <documentos>
+                <default>
+                    <item id="10341">Formulário eletrônico preenchido, impresso e assinado.</item>
+                    <item id="10342">Cópia autenticada da carteira de identidade (a autenticação poderá ser feita no próprio local de inscrição, mediante a apresentação do documento original)</item>
+                    <item id="10343">Cópia autenticada do CPF (a autenticação poderá ser feita no próprio local de inscrição, mediante a apresentação do documento original)</item>
+                    <item id="10344">Atestado médico, emitido há menos de 01 ano, que comprove bom estado psicofísico, incluindo limitações, caso existam. *O atestado médico é dispensável para os candidatos que apresentarem sua Carteira Nacional de Habilitação (CNH) dentro da validade.*</item>
+                    <item id="10345">Recibo de taxa da inscrição- GRU cobrança</item>
+                    <item id="10346">Cópia do comprovante de residência (conta de água, luz ou telefone)</item>
+                    <item id="10347">Para motonauta (MTA): declaração comprovando a realização de 3 horas de aulas práticas emitida por empresa cadastrada na capitania, delegacia ou agência de sua jurisdição.</item>
+                    <item id="10348">Para arrais-amador (ARA): atestado, com firma reconhecida, comprovando 06 horas de embarque em embarcações de esporte/recreio.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="706">
+                        <descricao>Taxa do serviço</descricao>
+                        <moeda>R$</moeda>
+                        <valor>40,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7758" tipo="presencial">
+                        <descricao>Na [Capitania, Delegacia ou Agência da Capitania dos Portos](https://www.dpc.mar.mil.br/pt-br/cda/localize) mais próxima de você.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7334">
+            <titulo>Fazer exame escrito</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10349">Documento de identificação oficial com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7759" tipo="presencial">
+                        <descricao>Na [Capitania, Delegacia ou Agência da Capitania dos Portos](https://www.dpc.mar.mil.br/pt-br/cda/localize) mais próxima de você.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7335">
+            <titulo>Receber a CHA</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10350">Documento de identificação oficial com foto.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7760" tipo="presencial">
+                        <descricao>Na [Capitania, Delegacia ou Agência da Capitania dos Portos](https://www.dpc.mar.mil.br/pt-br/cda/localize) mais próxima de você.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7252">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Esporte e Lazer</item>
+        <item>Transportes</item>
+        <item>Transporte Hidroviário</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13485">navegador amador</item>
+        <item id="13486">capitania dos portos</item>
+        <item id="13487">marinha</item>
+    </palavras-chave>
+</servico>
