@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-licenciamento-mineral</id>
+    <dbId>3262</dbId>
+    <nome>Obter Licenciamento Mineral</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2462">DNPM</item>
+    </nomes-populares>
+    <descricao>Requerimento que pleiteia a licença de aproveitamento mineral pelo regime de licenciamento, voltado para substâncias minerais destinadas ao emprego imediato na construção civil, no preparo de agregados e argamassas, desde que não sejam submetidos a processo industrial de beneficiamento, nem se destinem como matéria-prima à indústria de transformação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3849">
+            <tipo>O licenciamento pode ser requerido por brasileiros, pessoa natural, firma individual ou empresas legalmente habilitadas.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7343">
+            <titulo>Cadastrar-se</titulo>
+            <descricao>Cadastramento no Sistema CTDM</descricao>
+            <documentos>
+                <default>
+                    <item id="10365">Certidões de cartório</item>
+                    <item id="10366">Certidões da Receita Federal</item>
+                    <item id="10367">CNPJ</item>
+                    <item id="10368">Comprovante de endereço/residência</item>
+                    <item id="10369">Comprovante de pagamento</item>
+                    <item id="10370">Comprovante de quitação eleitoral</item>
+                    <item id="10371">Contrato Social</item>
+                    <item id="10372">Procuração do representante legal</item>
+                    <item id="10373">Registro da Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7770" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherFichaCadastral.aspx</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7344">
+            <titulo>Preencher formulário eletrônico</titulo>
+            <descricao>Preenchimento de Formulário Eletrônico de Requerimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="10374">Dados técnicos e informações sobre a atividade e localidade</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7771" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=5</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7345">
+            <titulo>Requerer licenciamento</titulo>
+            <descricao>Entrega de documentos no Setor de Protocolo.</descricao>
+            <documentos>
+                <default>
+                    <item id="10375">Formulário Eletrônico preenchido, impresso e assinado.</item>
+                    <item id="10376">Comprovante de nacionalidade brasileira (pessoa física);</item>
+                    <item id="10377">Comprovante do número de inscrição no CNPJ, do Ministério da Fazenda (pessoa jurídica)</item>
+                    <item id="10378">Comprovar o número de registro no Órgão de Registro do Comércio de sua sede (pessoa jurídica)</item>
+                    <item id="10379">Memorial descritivo: área pretendida, formada por uma única poligonal delimitada por vértices definidos por coordenadas geodésicas e Datum Sirgas 2000.Cada vértice deverá formar com o vértice seguinte um segmento de reta Norte-Sul ou Leste-Oeste verdadeiros, vedado o cruzamento entre os segmentos de reta que formam os lados da poligonal. Os vértices deverão ser numerados sequencialmente e o ponto de amarração (PA) será o primeiro vértice da poligonal da área objeto do requerimento</item>
+                    <item id="10380">Nos requerimentos de registro de licença de área situada em leito de rio, o memorial descritivo deverá ter os vértices definidos por coordenadas geodésicas, podendo configurar um polígono com rumos diversos;</item>
+                    <item id="10381">Prova de recolhimento de emolumentos</item>
+                    <item id="10382">Licença(s) Municipal(is)</item>
+                    <item id="10383">Instrumento de autorização do proprietário do solo ou declaração de ser o requerente proprietário  de parte ou da totalidade do solo</item>
+                    <item id="10384">Assentimento prévio pessoa jurídica de direito público, se for o caso</item>
+                    <item id="10385">Plano de aproveitamento econômico ou memorial explicativo das atividades de produção mineral, dependendo do caso. Ambos os documentos devem ser assinados por profissional legalmente habilitado</item>
+                    <item id="10386">Planta de situação da área georreferenciada, assinada por profissional legalmente habilitado e apresentada em escala adequada, contendo, além da configuração gráfica da área, os principais elementos cartográficos, tais como ferrovias, rodovias, dutovias e outras obras civis, rios, córregos, lagos, áreas urbanas, denominação das propriedades, ressaltando limites municipais e divisas estaduais, quando houver</item>
+                    <item id="10387">Anotação de Responsabilidade Técnica, na forma original do profissional responsável pela elaboração do memorial descritivo e da planta de situação</item>
+                    <item id="10388">Procuração pública ou particular com firma reconhecida, se o requerimento não for assinado pelo requerente.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="712">
+                        <descricao>Taxa de emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>176,29</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7772" tipo="presencial">
+                        <descricao>Na [Superintendência do DNPM](http://www.anm.gov.br/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados) de um dos estados de abrangência da área requerida.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7256">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7257">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Mineração</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13497">licença</item>
+        <item id="13498">mineração</item>
+        <item id="13499">dnpm</item>
+    </palavras-chave>
+</servico>
