@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alojar-se-na-enap</id>
+    <dbId>3272</dbId>
+    <nome>Alojar-se na ENAP</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2476">Hospedagem</item>
+        <item id="2477">Serviço de alojamento</item>
+    </nomes-populares>
+    <descricao>O alojamento da Enap possui capacidade para 188 hóspedes e destina-se prioritariamente a servidores públicos que estejam participando de cursos e eventos promovidos pela Enap. Mediante disponibilidade, também podem ser atendidos servidores públicos durante o período de participação em cursos, seminários e encontros promovidos por outros órgãos públicos.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://hospedagem.enap.gov.br/login/#/alojamento/autenticacao</link-servico-digital>
+    <solicitantes>
+        <solicitante id="3859">
+            <tipo>Servidores públicos que estejam participando de cursos e eventos promovidos pela ENAP.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7360">
+            <titulo>Requerer reserva</titulo>
+            <descricao>Os interessados terão que acessar o link de acesso externo e preencher a requisição de reserva com os seus dados, período de estada, evento que vai participar na Enap, bem como escolher o leito.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7783" tipo="web">
+                        <descricao>https://hospedagem.enap.gov.br/login/#/alojamento/autenticacao</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7361">
+            <titulo>Pagar taxa</titulo>
+            <descricao>O setor de alojamento fará as verificações necessárias, informará por e-mail ao hóspede como fazer o pagamento e confirmará a reserva no Sistema de Hospedagem.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="721">
+                        <descricao>Diária de leito em quarto coletivo</descricao>
+                        <moeda>R$</moeda>
+                        <valor>72,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7784" tipo="e-mail">
+                        <descricao>E-mail informado no pedido de reserva</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7362">
+            <titulo>Realizar check in</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10445">Documento de identificação oficial com foto</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7785" tipo="presencial">
+                        <descricao>**Escola Nacional de Administração Pública** - SAIS - Área 02-A - Setor de Hospedagem e Esportes - CEP 70610-900 - Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7363">
+            <titulo>Fazer Check out</titulo>
+            <descricao>Ao final do período de hospedagem, o hóspede devolve  a chave à recepcionista (Check out)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7786" tipo="presencial">
+                        <descricao>**Escola Nacional de Administração Pública** - SAIS - Área 02-A - Setor de Hospedagem e Esportes - CEP 70610-900 - Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/956" dbId="34303">
+        <nomeOrgao>Fundação Escola Nacional de Administração Pública (ENAP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7269">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Administração e Gestão Pública</item>
+        <item>Educação</item>
+        <item>Educação profissionalizante</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13529">enap</item>
+        <item id="13530">quarto</item>
+        <item id="13531">alojamento</item>
+    </palavras-chave>
+</servico>
