@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-certificado-comprobatorio-de-situacao-militar</id>
+    <dbId>3257</dbId>
+    <nome>Obter o certificado comprobatório de situação militar</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2451">Certificado Militar Único (CMU)</item>
+        <item id="2452">Certificado de Isenção (CI)</item>
+        <item id="2453">Certificado de Dispensa de Incorporação (CDI)</item>
+        <item id="2454">Certidão de Situação Militar (C Sit Mil)</item>
+        <item id="2455">Certidão de Dispensa de Prestação do Serviço Alternativo (CDSA)</item>
+        <item id="2456">Certificado de Reservista (CR)</item>
+        <item id="2457">Certificado de Alistamento Militar (CAM)</item>
+    </nomes-populares>
+    <descricao>O serviço consta na oportunidade do cidadão poder realizar o requerimento do certificado por meio da Internet. 
+O cidadão terá a oportunidade de se identificar com a situação em que se encontra, seja dispensado do serviço militar, possuir dependentes, ser portador de necessidades especiais ou possuir convicção religiosa, ideológica ou filosófica contrária à atividade militar.
+O serviço tem como objetivo a geração de um certificado que atenda as peculiaridades do cidadão, o usuário.
+O produto é o certificado militar do cidadão, o qual lhe dará comprovação de sua situação militar.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3844">
+            <tipo>Cidadãos brasileiros</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7332">
+            <titulo>Requisitar certificado</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10339">Carteira de identidade</item>
+                    <item id="10340">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="703">
+                        <descricao>Taxa de Serviço Militar</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1,38</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+                <caso id="847" descricao="Em casos onde há débito do cidadão com o serviço militar">
+                    <custo id="704">
+                        <descricao>Multa Militar (1º ano)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>4,06</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="705">
+                        <descricao>Multa Militar (por ano subsequente)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>20,30</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </caso>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7757" tipo="presencial">
+                        <descricao>Junta de Serviço Militar ou Organização Militar das Forças Armadas.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/41066" dbId="37527">
+        <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7251">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Defesa Nacional</item>
+        <item>Defesa militar</item>
+        <item>Documentação Pessoal</item>
+        <item>Cidadania</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13482">serviço militar</item>
+        <item id="13483">situação militar</item>
+        <item id="13484">exército</item>
+    </palavras-chave>
+</servico>
