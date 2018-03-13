@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-pesquisa-mineral</id>
+    <dbId>3261</dbId>
+    <nome>Obter Autorização de Pesquisa Mineral</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2460">Requerimento de Autorização de Pesquisa</item>
+        <item id="2461">Requerimento de Pesquisa</item>
+    </nomes-populares>
+    <descricao>Requerimento que pleiteia a autorização para pesquisa mineral, que é um regime de aproveitamento mineral em que são executados os trabalhos voltados à definição da jazida, sua avaliação e a determinação da exequibilidade de seu aproveitamento econômico.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3848">
+            <tipo>A pesquisa e a lavra de recursos minerais somente poderão ser efetuadas por brasileiros, pessoa natural, firma individual ou empresas legalmente habilitadas. Os mesmos devem estar devidamente cadastrados no CTDM.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7340">
+            <titulo>Preencher pré-requerimento eletrônico</titulo>
+            <descricao>Caso você ainda não seja cadastrado no CTDM, clique [aqui](https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherFichaCadastral.aspx)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7767" tipo="web">
+                        <descricao>https://sistemas.dnpm.gov.br/SCM/Extra/site/requerimento/preencherRequerimento.aspx?codigoTipoRequerimento=1</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7341">
+            <titulo>Requisitar autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10354">Formulário de pré-requerimento online preenchido, impresso e assinado.</item>
+                    <item id="10355">CPF ou CNPJ</item>
+                    <item id="10356">Comprovante de pagamento da taxa</item>
+                    <item id="10357">Designação das substâncias a pesquisar</item>
+                    <item id="10358">Indicação da extensão superficial da área objetivada, em hectares, Município e Estado em que se situa.</item>
+                    <item id="10359">Memorial descritivo da área pretendida: Poligonal única, delimitada por vértices definidos por coordenadas geodésicas e datum South American Datum (SAD-69). Cada vértice deverá formar com o vértice seguinte um segmento de reta Norte-Sul ou Leste-Oeste verdadeiros, vedado o cruzamento entre os segmentos de reta que formam os lados da poligonal. Os vértices deverão ser numerados sequencialmente e o ponto de amarração (PA) será o primeiro vértice da poligonal da área objeto do requerimento.</item>
+                    <item id="10360">Planta de situação georreferenciada, apresentada em escala adequada, contendo, além da configuração gráfica da área, os principais elementos cartográficos, tais como ferrovias, rodovias, dutovias e outras obras civis, rios, córregos, lagos, áreas urbanas, denominação das propriedades, ressaltando limites municipais e divisas estaduais, quando houver.</item>
+                    <item id="10361">Plano dos trabalhos de pesquisa, acompanhado do orçamento e cronograma previstos para sua execução.</item>
+                    <item id="10362">Anotação de Responsabilidade Técnica - ART</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="710">
+                        <descricao>Taxa de emolumentos</descricao>
+                        <moeda>R$</moeda>
+                        <valor>874,62</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                    <custo id="711">
+                        <descricao>Taxa Anual por Hectare (TAH)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>3,21</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7768" tipo="presencial">
+                        <descricao>Na [Superintendência do DNPM](http://www.anm.gov.br/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados) de um dos estados de abrangência da área requerida.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7342">
+            <titulo>Receber autorização</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10363">Documento de identificação oficial com foto</item>
+                    <item id="10364">Procuração do representante legal (se couber)</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7769" tipo="presencial">
+                        <descricao>Na [Superintendência do DNPM](http://www.anm.gov.br/dnpm/paginas/institucional/superintendencias-do-dnpm-nos-estados) onde foi realizada a etapa anterior.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1918" dbId="23734">
+        <nomeOrgao>Departamento Nacional de Produção Mineral (DNPM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7255">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Mineração</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13494">mineração</item>
+        <item id="13495">pesquisa</item>
+        <item id="13496">alvará</item>
+    </palavras-chave>
+</servico>
