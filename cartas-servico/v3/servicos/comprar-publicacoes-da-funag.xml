@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>comprar-publicacoes-da-funag</id>
+    <dbId>3273</dbId>
+    <nome>Comprar publicações da FUNAG</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2478">Comprar publicações da Fundação Alexandre de Gusmão</item>
+    </nomes-populares>
+    <descricao>Loja Virtual onde estão disponíveis para a compra as obras publicadas e editadas pela Fundação Alexandre de Gusmão sobre temas da política externa, das relações internacionais e da história diplomática do Brasil.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3860">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="8" max="15" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7364">
+            <titulo>Realizar Cadastro no site da Loja Virtual da FUNAG</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10446">Carteira de identidade</item>
+                    <item id="10447">Carteira de trabalho</item>
+                    <item id="10448">Comprovante de endereço/residência</item>
+                    <item id="10449">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7787" tipo="web">
+                        <descricao>http://funag.gov.br/loja/index.php?route=account/register</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7365">
+            <titulo>Realizar compra</titulo>
+            <descricao>Efetuar a compra e pagar o boleto referente às taxas do valor do custo do livro físico e de frete.</descricao>
+            <documentos>
+                <default>
+                    <item id="10450">Boleto de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="722">
+                        <descricao>Valor da publicação + frete</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com a publicação e com a distância de entrega</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7788" tipo="web">
+                        <descricao>http://funag.gov.br/loja/index.php?route=common/home</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7366">
+            <titulo>Receber a publicação</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7789" tipo="postal">
+                        <descricao>Endereço informado no cadastro.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/299" dbId="34299">
+        <nomeOrgao>Fundação Alexandre de Gusmão (FUNAG)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7270">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7271">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7272">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7273">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Cultura</item>
+        <item>Educação</item>
+        <item>Difusão Cultural</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13532">livro</item>
+        <item id="13533">compra</item>
+        <item id="13534">virtual</item>
+    </palavras-chave>
+</servico>
