@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-suplementar-de-tipo</id>
+    <dbId>3306</dbId>
+    <nome>Obter Certificado Suplementar de Tipo</nome>
+    <sigla></sigla>
+    <descricao>Obter validação de certificado suplementar de tipo estrangeiro</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3893">
+            <tipo>Titulares de Certificados de Tipo estrangeiros.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7422">
+            <titulo>Solicitar validação</titulo>
+            <descricao>Solcitação de validação suplementar de tipo e submissão de dados técnicos</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="741">
+                        <descricao>TFAC - Taxa de Fiscalização de Aviação Civil</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Depende da função e do tamanho do produto</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7860" tipo="presencial">
+                        <descricao>Em uma [Unidade de Protocolo da ANAC}(http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/86144" dbId="908">
+        <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7344">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7345">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Relações Internacionais</item>
+        <item>Transportes</item>
+        <item>Cooperação Internacional</item>
+        <item>Comércio e Serviços</item>
+        <item>Transporte Aéreo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13631">certificado</item>
+        <item id="13632">validação</item>
+        <item id="13633">anac</item>
+    </palavras-chave>
+</servico>
