@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-servicos-de-ensaios</id>
+    <dbId>3289</dbId>
+    <nome>Obter serviços de ensaios.</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2491">SESTE</item>
+    </nomes-populares>
+    <descricao>O usuário deverá proceder com o agendamento do serviço de ensaio desejado.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3876">
+            <tipo>Pessoas físicas e jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7389">
+            <titulo>Agendar atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10500">Carteira de identidade</item>
+                    <item id="10501">Carteira de trabalho</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="730">
+                        <descricao>Valor do ensaio</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Varia de acordo com cada ensaio</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7818" tipo="presencial">
+                        <descricao>**Instituto Nacional de Tecnologia - Setor de Serviço Técnico Especializado** - 
+Av. Venezuela, 82 – Praça Mauá – Rio de Janeiro – RJ CEP: 20081-312</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7819" tipo="telefone">
+                        <descricao>(21) 2123-1079</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7820" tipo="e-mail">
+                        <descricao>servicos@int.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1988" dbId="37525">
+        <nomeOrgao>Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7316">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7317">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7318">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7319">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13580">ensaio</item>
+        <item id="13581">serviço</item>
+        <item id="13582">int</item>
+    </palavras-chave>
+</servico>
