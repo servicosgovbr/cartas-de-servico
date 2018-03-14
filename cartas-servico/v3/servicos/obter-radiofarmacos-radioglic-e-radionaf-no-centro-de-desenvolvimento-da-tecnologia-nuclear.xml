@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-radiofarmacos-radioglic-e-radionaf-no-centro-de-desenvolvimento-da-tecnologia-nuclear</id>
+    <dbId>3353</dbId>
+    <nome>Obter radiofármacos Radioglic® e Radionaf® no Centro de Desenvolvimento da Tecnologia Nuclear</nome>
+    <sigla></sigla>
+    <descricao>Consiste na fabricação sob demanda dos radiofármacos Radioglic®, marca registrada para o medicamento radioativo Fluordeoxiglicose (FDG) produzido pelo CDTN/CNEN, e Radionaf®, marca registrada para o medicamento Fluoreto de Sódio, ambos marcados com o isótopo radioativo Flúor-18. A produção é feita rotineiramente de 3a-feira a 6a-feiras e precisa ser agendada previamente.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3940">
+            <tipo>Empresas de medicamento</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7476">
+            <titulo>Solicitar doses</titulo>
+            <descricao>Solictiação de doses pelo preenchimento de formulário próprio e envio via email.</descricao>
+            <documentos>
+                <default>
+                    <item id="10595">Formulário próprio</item>
+                    <item id="10596">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="751">
+                        <descricao>Faturamento de doses ( apresentações)  solicitadas do radiofármaco via GRU</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7921" tipo="e-mail">
+                        <descricao>radiofarmacoscdtn@cdtn.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7408">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13776">radiofármaco</item>
+        <item id="13777">medicina nuclear</item>
+        <item id="13778">cnen</item>
+    </palavras-chave>
+</servico>
