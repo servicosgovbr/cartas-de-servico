@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>monitorar-trabalhadores-expostos-a-radiacoes-ionizantes-via-instituto-de-radioprotecao-e-dosimetria</id>
+    <dbId>3359</dbId>
+    <nome>Monitorar trabalhadores expostos a radiações ionizantes via Instituto de Radioproteção e Dosimetria</nome>
+    <sigla>IRD/CNEN</sigla>
+    <nomes-populares>
+        <item id="2506">Dosimetria individual</item>
+        <item id="2507">Dosimetria externa</item>
+    </nomes-populares>
+    <descricao>Envio de dosímetro individual ao trabalhador ocupacionalmente exposto a radiações ionizantes, uso deste dosímetro pelo trabalhador durante um mês, devolução e avaliação dos dosímetros. Após isto, é emitido um relatório de doses que é enviado ao contratante do serviço, seja empresa ou profissional. O processo se repete mensalmente.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3946">
+            <tipo>Pessoas jurídicas cujas atividades impliquem na exposição de trabalhadores a radiação ionizante.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7484">
+            <titulo>Requisitar serviço</titulo>
+            <descricao>Solicitação de início da prestação do serviço. A partir deste momento, o serviço passa a ser prestado continuamente em uma base mensal, sem interação com o usuário dos dosímetros, até que seu cancelamento seja solicitado.</descricao>
+            <documentos>
+                <default>
+                    <item id="10604">Solicitação de Dosímetro Pessoal assinada pelo responável pela proteção radiológica da instituição da que solicita.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7931" tipo="e-mail">
+                        <descricao>ldf@ird.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7418">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Segurança e Ordem Pública</item>
+        <item>Previdência Social</item>
+        <item>Saúde</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13794">rio de janeiro</item>
+        <item id="13795">dosímetro</item>
+        <item id="13796">radiação</item>
+    </palavras-chave>
+</servico>
