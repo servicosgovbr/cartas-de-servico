@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>descartar-rejeitos-e-fontes-radioativas-para-recebimento-e-armazenamento-pelo-instituto-de-pesquisas-energeticas-e-nucleares</id>
+    <dbId>3356</dbId>
+    <nome>Descartar Rejeitos e Fontes radioativas para recebimento e armazenamento pelo Instituto de Pesquisas Energéticas e Nucleares</nome>
+    <sigla>IPEN/CNEN</sigla>
+    <descricao>Receber e armazenar rejeitos radioativos e fontes radioativas em desuso. Recebimento de material radioativo inservível, para ser encaminhado para órgão competente da Comissão Nacional de Energia Nuclear que irá receber e acondicionar de maneira a evitar a contaminação de pessoas e do meio ambiente. Serviço prestado mediante solicitação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3943">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7481">
+            <titulo>Requerer serviço</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10599">CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="752">
+                        <descricao>Taxa de recolhimento, acondicionamento e armazenamento de rejeitos radioativos</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>A taxa é calculada observando-se o tipo do rejeito radioativo, a atividade, o volume e se o rejeito é sólido, úmido ou liquido.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7925" tipo="e-mail">
+                        <descricao>sac@ipen.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7926" tipo="telefone">
+                        <descricao>(11) 3133-9161</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7411">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Energia</item>
+        <item>Saúde</item>
+        <item>Comércio e Serviços</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13785">fontes</item>
+        <item id="13786">radiação</item>
+        <item id="13787">cnen</item>
+    </palavras-chave>
+</servico>
