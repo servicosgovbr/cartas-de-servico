@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>requerer-ao-inss</id>
+    <dbId>3385</dbId>
+    <nome>Requerer ao INSS</nome>
+    <sigla></sigla>
+    <descricao>Atendimento no qual o cidadão tem seu requerimento protocolado pelo INSS independente da espécie do pedido. Modalidade utilizada nas unidades em que o atendimento foi alterado para o fluxo do projeto INSS Digital. Nesse cenário, o protocolo é simplificado e o atendimento não requer um servidor especializado na matéria do requerimento.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3972">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="16" max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7518">
+            <titulo>Realizar requerimento</titulo>
+            <descricao>Recepção e digitalização de documentos e formalização do requerimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="10657">Carteira de identidade</item>
+                    <item id="10658">Carteira de trabalho</item>
+                    <item id="10659">Certidão de casamento</item>
+                    <item id="10660">Certidão de nascimento</item>
+                    <item id="10661">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7977" tipo="presencial">
+                        <descricao>Em uma [Agência do Instituto Nacional do Seguro Social - INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7483">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13872">protocolo</item>
+        <item id="13873">atendimento</item>
+        <item id="13874">requerimento</item>
+    </palavras-chave>
+</servico>
