@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>pagar-taxas-e-debitos-junto-ao-cnpq</id>
+    <dbId>3361</dbId>
+    <nome>Pagar taxas e débitos junto ao CNPq</nome>
+    <sigla>GRU</sigla>
+    <nomes-populares>
+        <item id="2508">Gerador de Guia de Recolhimento da União</item>
+    </nomes-populares>
+    <descricao>A Gru é a forma pela qual o nosso usuario pode devolver alguma recurso publico.
+O Usuario entre na nossa pagina no CNPq chamada GERADOR GRU, onde lhe é solicitado o numero do processo e o valor do recolhimento bem como o mes de referencia e é gerada uma GRU COBRANÇA para ser paga no Banco do Brasil</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3948">
+            <tipo>Qualquer pessoa pode utilizar este serviço.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7486">
+            <titulo>Gerar GRU</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10606">Nº do processo</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7933" tipo="web">
+                        <descricao>http://plsql1.cnpq.br/guia_recolhimento/sigef01</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/8" dbId="8720">
+        <nomeOrgao>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7422">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7423">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7424">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7425">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13800">cnpq</item>
+        <item id="13801">gru</item>
+        <item id="13802">pagamento</item>
+    </palavras-chave>
+</servico>
