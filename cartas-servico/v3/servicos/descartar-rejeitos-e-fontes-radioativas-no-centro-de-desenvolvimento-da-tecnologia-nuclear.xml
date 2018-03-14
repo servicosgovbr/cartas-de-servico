@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>descartar-rejeitos-e-fontes-radioativas-no-centro-de-desenvolvimento-da-tecnologia-nuclear</id>
+    <dbId>3352</dbId>
+    <nome>Descartar Rejeitos e Fontes radioativas no Centro de Desenvolvimento da Tecnologia Nuclear</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2504">Recebimento de rejeitos radioativos</item>
+    </nomes-populares>
+    <descricao>O Centro de Desenvolvimento da Tecnologia Nuclear - CDTN  - recebe fontes radioativas de uso industrial ou médico quando não mais servem ao dono atual. Também são recebidos outros tipos de rejeitos radioativos, como para-raios radioativos e detectores de fumaça. O primeiro passo é o cliente submeter à Comissão Nacional de Energia Nuclear o requerimento de transferência do material (RTR) e, após sua aprovação, contatar o CDTN para obtenção de proposta comercial e agendamento da entrega.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3939">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7473">
+            <titulo>Requerer serviço</titulo>
+            <descricao>Solicitar orçamento e enviar RTR para assinatura do CDTN.</descricao>
+            <documentos>
+                <default>
+                    <item id="10590">CNPJ</item>
+                    <item id="10591">Dados da fonte que serão entregues, além do próprio RTR.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7918" tipo="e-mail">
+                        <descricao>vc@cdtn.br; seless@cdtn.br, pinhomg@cdtn.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7474">
+            <titulo>Agendar entrega</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10592">RTR deferido pela CNEN.</item>
+                    <item id="10593">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="750">
+                        <descricao>Taxa de prestação de serviço de deposição intermediária de rejeitos radioativos</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o material e quantidade.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7919" tipo="e-mail">
+                        <descricao>vc@cdtn.br; seless@cdtn.br, pinhomg@cdtn.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7475">
+            <titulo>Entregar as fontes radioativas.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10594">Documentação de transporte de material perigoso.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7920" tipo="presencial">
+                        <descricao>**Centro de Desenvolvimento da Tecnologia Nuclear - CDTN** - Avenida Presidente Antônio Carlos, 6.627, Campus da UFMG - Pampulha - CEP 31270-901
+Belo Horizonte - MG, Brasil</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7407">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Meio ambiente</item>
+        <item>Segurança e Ordem Pública</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13773">descarte</item>
+        <item id="13774">rejeito</item>
+        <item id="13775">belo horizonte</item>
+    </palavras-chave>
+</servico>
