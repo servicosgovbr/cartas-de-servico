@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-vistas-e-copias-de-processos-na-comissao-de-valores-mobiliarios</id>
+    <dbId>3363</dbId>
+    <nome>Obter vistas e cópias de processos na Comissão de Valores Mobiliários</nome>
+    <sigla></sigla>
+    <descricao>A solicitação de cópias de processos sancionadores pode ser realizada através de diferentes canais de atendimento, são eles: e-SIC, SAC, mensagem eletrônica e solicitação presencial. Realizado o pedido, os servidores identificam que o solicitante é parte ou não no processo. 
+
+Em sendo parte, são extraídos os arquivos do SEI - Sistema Eletrônico de Informações, em caso de processo eletrônico, ou compilados no caso dos processos físicos previamente digitalizados arquivados em diretórios específicos.  Os arquivos com o inteiro teor do processo são gravados em disco e disponibilizados aos demandantes na sede da CVM no Rio de Janeiro ou na CVM de São Paulo ou Brasília. Também é possível o envio via Correios das cópias caso seja de interesse da parte. Nesse caso são cobradas as custas de envio.
+
+No caso do solicitante não ser parte no processo, o pedido é direcionado às áreas técnicas responsáveis pela instauração para que seja feita análise  dos documentos que podem ser disponibilizados. Feito isso, a Coordenação de Controle de Processos prepara os arquivos e disponibiliza aos demandantes da mesma forma descrita anteriormente.
+
+Vale destacar que as comunicações entre a Administração e os administrados nos casos em questão se dá por meio de correio eletrônico ou pelas ferramentas de acesso à informção.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3950">
+            <tipo>Partes interessadas nos processos da CVM</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7488">
+            <titulo>Requerer vistas ou cópias</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10607">Carteira de identidade</item>
+                    <item id="10608">Carteira de trabalho</item>
+                    <item id="10609">Procuração do representante legal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7937" tipo="presencial">
+                        <descricao>**Comissão de Valores Mobiliários** - Rua Sete de Setembro, 111, 24º andar - Centro - Rio de Janeiro/RJ - CEP: 20050-901</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7938" tipo="postal">
+                        <descricao>**Comissão de Valores Mobiliários** - Rua Sete de Setembro, 111, 24º andar - Centro - Rio de Janeiro/RJ - CEP: 20050-901</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/478" dbId="7907">
+        <nomeOrgao>Comissão de Valores Mobiliários (CVM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7430">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7431">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7432">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7433">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Finanças</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13806">cvm</item>
+        <item id="13807">processos</item>
+        <item id="13808">xerox</item>
+    </palavras-chave>
+</servico>
