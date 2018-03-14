@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-o-radiofarmaco-fluordeoxiglicose-fdg-no-instituto-de-engenharia-nuclear</id>
+    <dbId>3351</dbId>
+    <nome>Obter o radiofármaco Fluordeoxiglicose (FDG) no Instituto de Engenharia Nuclear</nome>
+    <sigla></sigla>
+    <descricao>Produzir e fornecer o radiofármaco Fluordeoxiglicose (FDG) marcada com flúor 18, para diagnóstico em medicina nuclear. A produção é feita diariamente com entrega prevista para às 11hs na cidade do Rio de Janeiro e arredores. A encomenda pode ser feita com uma semana de antecedência diretamente junto ao IEN/CNEN. O transporte do produto deve ser encomendado pelo cliente junto a empresas credenciadas pela CNEN.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3938">
+            <tipo>Hospitais e clínicas que prestam serviço de diagnóstico em medicina nuclear</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7472">
+            <titulo>Agendar o atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10587">CNPJ</item>
+                    <item id="10588">Autorização de Utilização de material radioativo junto a CNEN</item>
+                    <item id="10589">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="749">
+                        <descricao>Preço</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o radiofármaco requisitado.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7916" tipo="telefone">
+                        <descricao>(21) 2173-3715</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="7917" tipo="e-mail">
+                        <descricao>secom@ien.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/223" dbId="7581">
+        <nomeOrgao>Comissão Nacional de Energia Nuclear (CNEN)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7406">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13770">diagnóstico</item>
+        <item id="13771">cnen</item>
+        <item id="13772">rio de janeiro</item>
+    </palavras-chave>
+</servico>
