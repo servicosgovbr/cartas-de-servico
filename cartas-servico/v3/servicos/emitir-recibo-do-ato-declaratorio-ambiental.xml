@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>emitir-recibo-do-ato-declaratorio-ambiental</id>
+    <dbId>3375</dbId>
+    <nome>Emitir recibo do Ato Declaratório Ambiental</nome>
+    <sigla>ADA</sigla>
+    <descricao>Cadastrar, em especial, áreas de interesse ambiental de imóveis rurais e fornecer recibo declaratório correspondente aos cidadãos e às empresas proprietárias rurais para fins de isenção do Imposto sobre a Propriedade Territorial Rural.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="3962">
+            <tipo>Proprietários rurais</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="1" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7503">
+            <titulo>Solicitar emissão de recibo</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="10640">CPF ou CNPJ e Senha</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="7956" tipo="web">
+                        <descricao>https://servicos.ibama.gov.br/ctf/sistema.php</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1812" dbId="36724">
+        <nomeOrgao>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7459">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7460">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="7461">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="7462">Órgãos e entidades públicas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Habitação Rural</item>
+        <item>Meio ambiente</item>
+        <item>Preservação e Conservação Ambiental</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="13842">rural</item>
+        <item id="13843">recibo</item>
+        <item id="13844">ibama</item>
+    </palavras-chave>
+</servico>
