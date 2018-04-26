@@ -5,53 +5,43 @@
     <nome>Obter autorização de funcionamento</nome>
     <sigla>AFE</sigla>
     <nomes-populares>
-        <item id="2095">AFE/AE</item>
+        <item id="2602">AFE/AE</item>
     </nomes-populares>
-    <descricao>A anuência em pesquisa clínica expressa a autorização da ANVISA para a realização de uma pesquisa em seres humanos envolvendo um dispositivo médico de médio ou alto risco (classes III ou IV) e sem registro no Brasil, como stents ou válvulas cardíacas por exemplo. Cabe salientar que para submeter uma anuência em pesquisa clínica o cidadão deve possuir “personalidade jurídica”, ou seja, apresentar um CNPJ vinculando-o a uma empresa que se responsabilizará pelo processo junto à ANVISA.</descricao>
-    <contato></contato>
+    <descricao>Antes da empresa peticionar a AFE/AE na Anvisa, a mesma precisa contatar primeiramente a vigilância sanitária local para saber quais os procedimentos para obter o Relatório de Inspeção, o qual subsidiará o peticionamento de concessão de AFE/AE. A empresa após obter o Relatório de Inspeção, emitido pela autoridade sanitária local, para solicitar a concessão de AFE/AE será necessário que o estabelecimento realize uma petição na Anvisa por meio do Sistema de Peticionamento da Anvisa. Antes de acessar o Sistema de Peticionamento é recomendável que o interessado identifique o Código de Assunto relacionado à sua petição de AFE/AE, pois é a partir desse código que toda a transação do pedido irá se desenvolver.</descricao>
+    <contato>Responsável: FRANCISCO LUCIANO RODRIGUES DA SILVA (Coordenador)
+Email: coafe@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3183">
+        <solicitante id="4064">
             <tipo>Pessoas jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="31" max="60" unidade="dias-corridos"/>
+        <ate max="45" unidade="dias-uteis"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6175">
-            <titulo>Requerer autorização</titulo>
-            <descricao></descricao>
+        <etapa id="7702">
+            <titulo>Cadastramento da Empresa</titulo>
+            <descricao>É o primeiro passo para se ter acesso ao Sistema de Peticionamento da Anvisa e deve ser utilizado para cadastrar empresas privadas que fornecem produtos ou serviços regulados pela Anvisa e para cadastrar os usuários com vínculo de representação com essas empresas.</descricao>
             <documentos>
                 <default>
-                    <item id="7598">CNPJ</item>
-                    <item id="7599">Comprovante de pagamento</item>
-                    <item id="7600">Comprovação da capacidade técnica para realizar as atividades pretendidas</item>
+                    <item id="7598">Documentos técnicos constam na RDC 17/2013 (Art. 6º e 7º) e RDC 16/2014 (Art. 15) ou normas que as substituam e documentos administrativos: Formulário de Petição – FP e Taxa de Fiscalização Sanitária – TFV.</item>
                 </default>
             </documentos>
             <custos>
-                <default>
-                    <custo id="279">
-                        <descricao>Taxa de Fiscalização em Vigilância Sanitária - TFVS</descricao>
-                        <moeda>R$</moeda>
-                        <valorVariavel>De acordo com o porte da empresa</valorVariavel>
-                        <statusCustoVariavel>1</statusCustoVariavel>
-                    </custo>
-                </default>
+                <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6139" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="6140" tipo="presencial">
                         <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
                     </canal-de-prestacao>
@@ -61,14 +51,21 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6176">
-            <titulo>Receber autorização</titulo>
-            <descricao></descricao>
+        <etapa id="7703">
+            <titulo>Peticionar Código de Assunto</titulo>
+            <descricao>Ao final do processo de peticionamento será gerada a Guia de Recolhimento da União (GRU) para pagamento da taxa relacionada.</descricao>
             <documentos>
                 <default/>
             </documentos>
             <custos>
-                <default/>
+                <default>
+                    <custo id="762">
+                        <descricao>Taxa de Fiscalização em Vigilância Sanitária – TFVS</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>De acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
             </custos>
             <canais-de-prestacao>
                 <default>
@@ -84,14 +81,48 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
+        <etapa id="7704">
+            <titulo>Protocolar Documentação</titulo>
+            <descricao>Após o pagamento da GRU, juntar toda a documentação solicitada, conforme checklist do Código de Assunto escolhido e protocolar fisicamente na Anvisa. Nos casos de Farmácias e Drogarias, a documentação deverá ser protocolada eletronicamente.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8012" tipo="presencial">
+                        <descricao>**Agência Nacional de Vigilância Sanitária** - Endereço: SIA, trecho 5, área especial 57 - CEP 71.205-050 - Brasília – DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7705">
+            <titulo>Acompanhar andamento</titulo>
+            <descricao>Finalizada a petição, o interessado poderá acompanhar o andamento de seu pedido, por meio do sistema de Consulta a Situação de Documentos.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8013" tipo="web">
+                        <descricao>https://consultas.anvisa.gov.br/#/documentos/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6116">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="6117">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="6118">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="7625">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7626">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7627">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -100,8 +131,8 @@
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11600">Autorização de funcionamento</item>
-        <item id="11601">Autorização especial de empresa</item>
-        <item id="11602">ANVISA</item>
+        <item id="14153">Autorização de funcionamento</item>
+        <item id="14154">Autorização especial de empresa</item>
+        <item id="14155">ANVISA</item>
     </palavras-chave>
 </servico>
