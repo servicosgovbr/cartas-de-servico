@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-regularizacao-de-produtos-de-higiene-pessoal-perfumes-e-cosmeticos-isentos-de-registro-por-meio-de-notificacao</id>
+    <dbId>2623</dbId>
+    <nome>Obter regularização de produtos de higiene pessoal, perfumes e cosméticos isentos de registro por meio de notificação</nome>
+    <sigla></sigla>
+    <descricao>O detentor de um produto de higiene pessoal, perfume ou cosmético isento de registro pode comercializá-lo no País após sua notificação no sistema eletrônico SGAS da Anvisa.
+Nesse serviço a empresa previamente cadastrada na Anvisa acessa o Sistema SGAS, gera uma petição de notificação, submete as informações técnicas previstas nos regulamentos específicos, gera uma Guia de Recolhimento – GRU, paga essa guia, após a internalização do pagamento as informações do produto são disponibilizadas no portal eletrônico da Anvisa e a partir desse momento o mesmo pode ser comercializado.</descricao>
+    <contato>Responsável: JOÃO TAVARES NETO (coordenador GHCOS) 
+Email: joaot.neto@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br 
+Presencial: ANVISA - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4047">
+            <tipo>Empresas privadas que fornecem produtos e serviços de higiene pessoal, perfumes e cosméticos.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7711">
+            <titulo>Cadastrar a Empresa</titulo>
+            <descricao>É o primeiro passo para se ter acesso ao Sistema de Automação de Cosméticos (SGAS) e deve ser utilizado para cadastrar empresas privadas que fornecem produtos ou serviços regulados pela Anvisa e para cadastrar os usuários com vínculo de representação com essas empresas.</descricao>
+            <documentos>
+                <default>
+                    <item id="7654">CNPJ</item>
+                    <item id="7655">Comprovante de pagamento</item>
+                    <item id="7656">Procuração do representante legal</item>
+                    <item id="7657">Informações sobre o produto previstas em regulamentos específicos</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6179" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7712">
+            <titulo>Cadastrar o Produto</titulo>
+            <descricao>Acessar o Sistema de Automação de Cosméticos (SGAS)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8015" tipo="web">
+                        <descricao>https://cosmeticos.anvisa.gov.br/peticionamento/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7713">
+            <titulo>Pagar taxa por meio de Guia de Recolhimento da União (GRU).</titulo>
+            <descricao>Após o cadastro do produto, a empresa deverá realizar o pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS).</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="757">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária (TFVS)</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8003" tipo="web">
+                        <descricao>https://cosmeticos.anvisa.gov.br/peticionamento/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7714">
+            <titulo>Protocolizar documentação</titulo>
+            <descricao>Protocolização, que é feita on-line (pode durar até 48h)</descricao>
+            <documentos>
+                <default>
+                    <item id="10690">Não há necessidade de entrega física de documentação. Entretanto, os documentos gerados ao final do procedimento eletrônico devem ser impressos, assinados pelo Responsável Técnico e pelo Representante Legal, no caso do Termo de Responsabilidade, e arquivados na própria empresa, devendo ficar disponíveis para ações de vigilância sanitária.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8016" tipo="web">
+                        <descricao>https://cosmeticos.anvisa.gov.br/peticionamento/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7715">
+            <titulo>Acompanhar solicitação</titulo>
+            <descricao>O acompanhamento da solicitação de comunicação prévia deverá ser realizado por meio do Sistema de Automação Eletrônico (SGAS).</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8004" tipo="web-acompanhar">
+                        <descricao>https://cosmeticos.anvisa.gov.br/peticionamento/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7595">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14093">notificação</item>
+        <item id="14094">saneantes</item>
+        <item id="14095">cosméticos</item>
+    </palavras-chave>
+</servico>
