@@ -5,64 +5,60 @@
     <nome>Obter Anuência Prévia em Licença de Importação (LI)</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2592">LI</item>
+        <item id="2597">LI</item>
     </nomes-populares>
     <descricao>A Licença de Importação (LI) é um documento eletrônico registrado pelo importador ou seu representante legal no Sistema integrado de comércio exterior (Siscomex) para apresentar informações acerca da mercadoria a ser importada e da operação de importação de maneira geral, tais como importador, exportador, país de origem, procedência e aquisição, regime tributário, cobertura cambial, entre outras.
 No caso de produtos sujeitos à vigilância sanitária, o procedimento de licenciamento é realizado de maneira não-automática. Ou seja, para liberação da importação, todas as informações apresentadas deverão ser verificadas pelo fiscal sanitário previamente.
 Uma vez registrada a Licença de Importação no Siscomex, o interessado deverá aguardar a análise do(s) órgão(s) anuente(s), de modo a obter o deferimento da solicitação, que corresponde à anuência da importação.</descricao>
-    <contato></contato>
+    <contato>Responsável: RENATA DE MORAIS SOUZA (gerente)
+E-mail: ouvidoria@anvisa.gov.br 
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4048">
+        <solicitante id="4056">
             <tipo>Pessoas jurídicas importadoras</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="8" max="15" unidade="dias-corridos"/>
+        <ate max="15" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <tipo>Válido por</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao>Definida no Sistema Siscomex</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7657">
-            <titulo>Criar dossiê</titulo>
-            <descricao>Criação de dossiê no Vicomex</descricao>
+        <etapa id="7696">
+            <titulo>Registrar a LI no sistema Siscomex Web</titulo>
+            <descricao>Despachante aduaneiro que representa a empresa importadora deve proceder com o registro</descricao>
             <documentos>
-                <default>
-                    <item id="7628">CONFORME RDC n° 81/2008, a depender do tipo de substância a ser importada.</item>
-                    <item id="7629">Licença de Importação (LI)</item>
-                    <item id="7630">Comprovante de pagamento</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
-                <default>
-                    <custo id="286">
-                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
-                        <moeda>R$</moeda>
-                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
-                        <statusCustoVariavel>1</statusCustoVariavel>
-                    </custo>
-                </default>
+                <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="6159" tipo="web">
-                        <descricao>https://www.siscomex.gov.br/vicomex/public/index.jsf</descricao>
+                        <descricao>https://siscomex.desenvolvimento.gov.br/AnuenteWeb/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7658">
-            <titulo>Realizar peticionamento</titulo>
-            <descricao>Peticionamento eletrônico no Datavisa</descricao>
+        <etapa id="7697">
+            <titulo>Criar dossiê</titulo>
+            <descricao>Criação de dossiê no Vicomex</descricao>
             <documentos>
                 <default>
-                    <item id="7631">Nenhum</item>
+                    <item id="7631">CONFORME RDC n° 81/2008, a depender do tipo de substância a ser importada.</item>
+                    <item id="10693">Licença de Importação (LI)</item>
+                    <item id="10694">Comprovante de pagamento</item>
                 </default>
             </documentos>
             <custos>
@@ -71,6 +67,36 @@ Uma vez registrada a Licença de Importação no Siscomex, o interessado deverá
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="6160" tipo="web">
+                        <descricao>https://www.siscomex.gov.br/vicomex/public/index.jsf</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7698">
+            <titulo>Pagar a Guia de Recolhimento Único (GRU)</titulo>
+            <descricao>Acessar a Caixa Postal (caixa de mensagens) no sistema de peticionamento da ANVISA. Localizar e abrir a mensagem intitulada “Peticionamento de Importação –LI 0000000000 - Assunto: 0000”. Clicar no link indicado para a geração e pagamento da Guia de Recolhimento Único (GRU) e, até trinta dias de sua emissão.</descricao>
+            <documentos>
+                <default/>
+                <caso id="858" descricao="Quando ficará disponível o comprovante de protocolização?">
+                    <documento>
+                        <id>10695</id>
+                        <descricao>Após a compensação bancária, é gerado o comprovante de protocolização, que ficará disponível em formato eletrônico, na caixa postal (caixa de mensagens) do sistema de peticionamento da ANVISA. Posteriormente, o processo de importação será criado e distribuído para a caixa de documentos do Posto da ANVISA responsável pela análise dos processos.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="760">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>De acordo com o porte da empresa ou Guia de Recolhimento da União (GRU) isenta</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8008" tipo="web">
                         <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -81,9 +107,9 @@ Uma vez registrada a Licença de Importação no Siscomex, o interessado deverá
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7596">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="7597">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="7598">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="7613">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7614">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7615">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -95,8 +121,8 @@ Uma vez registrada a Licença de Importação no Siscomex, o interessado deverá
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14096">importação</item>
-        <item id="14097">ANVISA</item>
-        <item id="14098">anuência</item>
+        <item id="14128">importação</item>
+        <item id="14129">ANVISA</item>
+        <item id="14130">anuência</item>
     </palavras-chave>
 </servico>
