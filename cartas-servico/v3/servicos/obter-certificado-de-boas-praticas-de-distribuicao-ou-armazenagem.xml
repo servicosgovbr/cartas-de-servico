@@ -5,45 +5,45 @@
     <nome>Obter Certificado de Boas Práticas de Distribuição ou Armazenagem</nome>
     <sigla>CBPDA</sigla>
     <descricao>O Certificado de Boas Práticas de Distribuição e/ou Armazenagem (CBPDA) é o documento emitido pela Anvisa atestando que determinado estabelecimento cumpre com as Boas Práticas de Distribuição e Armazenagem ou Boas Práticas de Armazenagem dispostas na legislação em vigor.
-A norma que regulamenta a Certificação de Boas Práticas de Fabricação e de Distribuição e/ou Armazenagem é a RDC nº 39/2013. A inobservância ou desobediência ao disposto nesta Resolução configura infração de natureza sanitária, na forma da Lei n° 6.437/1977, sujeitando o infrator às penalidades previstas nesse diploma legal.
-A validade do Certificado de Boas Práticas de Distribuição e/ou Armazenagem (CPDA) será de dois anos, contados a partir da data de sua publicação no Diário Oficial da União (DOU).</descricao>
-    <contato></contato>
+A norma que regulamenta a Certificação de Boas Práticas de Fabricação e de Distribuição e/ou Armazenagem é a RDC nº 39/2013. A inobservância ou desobediência ao disposto nesta Resolução configura infração de natureza sanitária, na forma da Lei n° 6.437/1977, sujeitando o infrator às penalidades previstas nesse diploma legal.</descricao>
+    <contato>Responsável: MARCELO MARIO MATOS MOREIRA (Gerente Substituto GIMED)
+Email: gimed@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br 
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3195">
+        <solicitante id="4052">
             <tipo>Empresas privadas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="31" max="60" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <nao-estimado-ainda/>
+        <descricao>Nacional: diretamente dependente do envio dos relatórios de inspeção por parte do Sistema Nacional de Vigilância Sanitária.</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <tipo>Válido por</tipo>
+        <quantidade>2</quantidade>
+        <unidade>anos</unidade>
+        <descricao>Em conformidade com a RDC 39/2013 os CBPF e CBPDA, contados a partir da data de sua publicação no Diário Oficial da União (DOU)</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6191">
-            <titulo>Solicitar certificado</titulo>
-            <descricao></descricao>
+        <etapa id="7708">
+            <titulo>Cadastramento da empresa</titulo>
+            <descricao>É o primeiro passo para se ter acesso ao Sistema de Peticionamento e deve ser utilizado para cadastrar empresas privadas que fornecem produtos ou serviços regulados pela Anvisa e para cadastrar os usuários com vínculo de representação com essas empresas. Em seguida, promover a alteração, se necessário, do Porte da Empresa, que irá determinar o valor das taxas a serem pagas pelo interessado.</descricao>
             <documentos>
-                <default>
-                    <item id="7643">Formulario de petição;</item>
-                    <item id="7644">Comprovante de pagamento de taxa; e</item>
-                    <item id="7645">Documentos técnicos específicos</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default>
                     <custo id="290">
-                        <descricao>Taxa de certificado de boas práticas de distribuição ou armazenagem</descricao>
+                        <descricao>Taxa de certificado de boas práticas de distribuição e/ou armazenagem</descricao>
                         <moeda>R$</moeda>
-                        <valor>15.000,00</valor>
                         <valorVariavel></valorVariavel>
-                        <statusCustoVariavel>0</statusCustoVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -53,27 +53,52 @@ A validade do Certificado de Boas Práticas de Distribuição e/ou Armazenagem (
                         <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="6174" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="6175" tipo="postal">
-                        <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6192">
-            <titulo>Receber resultado</titulo>
-            <descricao></descricao>
+        <etapa id="7709">
+            <titulo>Peticionar</titulo>
+            <descricao>Antes de acessar o Sistema de Peticionamento é recomendável que o interessado identifique o Código de Assunto relacionado à sua petição, pois é a partir desse código que toda a transação do pedido irá se desenvolver. Durante o processo, o interessado será guiado para o tipo de peticionamento do Código de Assunto escolhido.</descricao>
             <documentos>
                 <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="761">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária (TFVS)</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>O valor da taxa é determinado pela Portaria Interministerial nº 701, de 31 de agosto de 2015.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="6176" tipo="web-consultar">
+                        <descricao>http://portal.anvisa.gov.br/sistema-consulta-de-assuntos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7710">
+            <titulo>Protocolar documentação</titulo>
+            <descricao>Após o pagamento da GRU, o interessado deverá juntar toda documentação solicitada, conforme lista de verificação (checklist) do Código de Assunto escolhido e protocolar junto à Anvisa, por via presencial ou postal.</descricao>
+            <documentos>
+                <default>
+                    <item id="10700">Formulário de petição;</item>
+                    <item id="10701">Comprovante de pagamento de taxa; e</item>
+                    <item id="10702">Documentos técnicos específicos.</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6176" tipo="web">
-                        <descricao>http://www.imprensanacional.gov.br/web/guest</descricao>
+                    <canal-de-prestacao id="8010" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-consulta-de-assuntos</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -83,7 +108,7 @@ A validade do Certificado de Boas Práticas de Distribuição e/ou Armazenagem (
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6137">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="7608">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -92,8 +117,8 @@ A validade do Certificado de Boas Práticas de Distribuição e/ou Armazenagem (
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11633">certidão</item>
-        <item id="11634">armazenamento</item>
-        <item id="11635">distribuição</item>
+        <item id="14113">certidão</item>
+        <item id="14114">armazenamento</item>
+        <item id="14115">distribuição</item>
     </palavras-chave>
 </servico>
