@@ -4,38 +4,67 @@
     <dbId>3088</dbId>
     <nome>Obter Autorização de Importação de Substância ou Medicamento</nome>
     <sigla>AI</sigla>
-    <descricao>Através deste serviço pessoas jurídicas podem requisitar autorização para importação de medicamentos ou substâncias controladas pela ANVISA.</descricao>
-    <contato></contato>
+    <nomes-populares>
+        <item id="2641">Obtenção de AI</item>
+    </nomes-populares>
+    <descricao>Por meio deste serviço pessoas jurídicas podem requisitar autorização para importação de medicamentos ou substâncias controladas pela Portaria 344/1998 e suas atualizações. Este documento é emitido pela ANVISA e é necessário para realizar a Importação de substâncias das listas A1, A2, A3, B1, B2, C3, D1, F1, F2, F3 e F4, e de plantas da lista E ou plantas que possam originar substâncias sujeitas a controle especial, bem como dos medicamentos que as contenham.</descricao>
+    <contato>Responsável: THIAGO BRASIL SILVÉRIO (Coordenador)
+Email: ouvidoria@anvisa.gov.br 
+61 3462-6792
+Presencial: ANVISA - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3675">
+        <solicitante id="4101">
             <tipo>Pessoas jurídicas</tipo>
-            <requisitos></requisitos>
+            <requisitos>Pessoas jurídicas devidamente autorizadas pela ANVISA que comercializem ou realizem pesquisas com substâncias das listas A1, A2, A3, B1, B2, C3, D1, F1, F2, F3 e F4, e de plantas da lista E ou plantas que possam originar substâncias sujeitas a controle especial, bem como dos medicamentos que as contenham.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <nao-estimado-ainda/>
+        <ate max="30" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao>•	Autorização de Importação de Substância/Medicamento: até 31 de dezembro de cada ano.
+•	Autorização de Importação de Substância/Medicamentos, destinados exclusivamente para fins de ensino ou pesquisa, análise e utilizados como padrão de referência: 6 meses
+•	Autorização de Importação Específica de Substância/Medicamento para órgãos de repressão a drogas, entidade importadora de controle de dopagem, laboratório de referência analítica, instituição de ensino ou pesquisa: 6 meses</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7039">
+        <etapa id="7783">
             <titulo>Realizar peticionamento eletrônico</titulo>
-            <descricao>Opção “Peticionamento Eletrônico e Pagamento de Taxas” e escolher código (produtos controlados): 7657 - Substâncias ou medicamentos destinados exclusivamente para fins de ensino, pesquisa, análise e padrão de referência; 7690 - Autorização específica para órgãos de repressão a drogas, entidade importadora de controle de dopagem, laboratório de referência analítica, instituição de ensino ou pesquisa; 7694 -Substância sujeita a controle especial (Portaria 344/98); 7656 - Demais casos.</descricao>
+            <descricao>Realizar o Peticionamento Eletrônico, com o Código de Assunto adequado. No sistema da Anvisa, deve ser selecionada a opção “Peticionamento Eletrônico e Pagamento de Taxas” e escolhido o código de Assunto adequado.</descricao>
             <documentos>
                 <default>
-                    <item id="9694">Documentos constantes das listas A1, A2, A3, B1, B2, C3, D1, E, F1, F2, F3, F4 da Portaria 344/1998.</item>
-                    <item id="9695">GRU (gerada pelo sistema)</item>
+                    <item id="10812">Preenchimento das informações do formulário eletrônico do sistema NDS</item>
+                    <item id="10813">GRU (gerada pelo sistema)</item>
                 </default>
+                <caso id="871" descricao="Para as petições pagas">
+                    <documento>
+                        <id>10809</id>
+                        <descricao>É necessária a geração de GRU e realização do pagamento.</descricao>
+                    </documento>
+                </caso>
+                <caso id="872" descricao="Para a petição 7694">
+                    <documento>
+                        <id>10810</id>
+                        <descricao>Para a petição 7694 mesmo esta sendo isenta de taxas, deverá ser gerada a Guia de Isenção de Pagamento e realizado o protocolo On-line. É fundamental o protocolo para a próxima etapa de solicitação no NDS (National Drug System).</descricao>
+                    </documento>
+                </caso>
+                <caso id="873" descricao="Escolher código de assunto adequado">
+                    <documento>
+                        <id>10811</id>
+                        <descricao>Códigos:
+7656 PRODUTOS CONTROLADOS: Autorização de Importação de Substância/Medicamento.
+7657 CONTROLADOS: Autorização de Importação de Substância/Medicamentos, destinados exclusivamente para fins de ensino ou pesquisa, análise e utilizados como padrão de referência.
+7690 CONTROLADOS: Autorização de Importação Específica de Substância/Medicamento para órgãos de repressão a drogas, entidade importadora de controle de dopagem, laboratório de referência analítica, instituição de ensino ou pesquisa.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo id="631">
+                    <custo id="789">
                         <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>Varia de acordo com o porte da empresa</valorVariavel>
@@ -45,21 +74,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7345" tipo="web">
+                    <canal-de-prestacao id="8118" tipo="web">
                         <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7040">
+        <etapa id="7784">
             <titulo>Solicitar AI</titulo>
-            <descricao></descricao>
+            <descricao>Posteriormente ao peticionamento eletrônico, o estabelecimento deverá solicitar a AI por meio do sistema NDS. No pedido, o estabelecimento deverá selecionar o mesmo código de assunto do peticionamento eletrônico.</descricao>
             <documentos>
                 <default>
-                    <item id="9696">Justificativa técnica detalhada assinada pelo responsável técnico, para o caso de importação de amostras para fins de análise ou fabricação de lotes-piloto;</item>
-                    <item id="9697">Declaração do importador prevista no §2º do art. 17 da RDC nº 11/2013; e</item>
-                    <item id="9698">Declaração do destinatário final, prevista no §3º do art. 16 da RDC nº 11/2013.</item>
-                    <item id="9699">Comprovante de pagamento</item>
+                    <item id="10799">Justificativa técnica detalhada assinada pelo responsável técnico, para o caso de importação de amostras para fins de análise ou fabricação de lotes-piloto;</item>
+                    <item id="10800">Declaração do importador prevista no §2º do art. 17 da RDC nº 11/2013; e</item>
+                    <item id="10801">Declaração do destinatário final, prevista no §3º do art. 16 da RDC nº 11/2013.</item>
                 </default>
             </documentos>
             <custos>
@@ -67,7 +95,7 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7346" tipo="web">
+                    <canal-de-prestacao id="8119" tipo="web">
                         <descricao>https://nds.anvisa.gov.br/Login.aspx</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -78,9 +106,9 @@
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6950">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="6951">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="6952">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="7694">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7695">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7696">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -92,8 +120,8 @@
         <item>Relações Internacionais</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12970">importação</item>
-        <item id="12971">medicamentos</item>
-        <item id="12972">drogas</item>
+        <item id="14257">importação</item>
+        <item id="14258">medicamentos</item>
+        <item id="14259">drogas</item>
     </palavras-chave>
 </servico>
