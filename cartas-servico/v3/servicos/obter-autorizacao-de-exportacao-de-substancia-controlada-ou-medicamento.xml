@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-de-exportacao-de-substancia-controlada-ou-medicamento</id>
+    <dbId>2260</dbId>
+    <nome>Obter autorização de exportação de substância controlada ou medicamento</nome>
+    <sigla>AEX</sigla>
+    <descricao>Por meio deste serviço pessoas jurídicas podem requisitar autorização para exportação de medicamentos ou substâncias controladas pela Portaria 344/1998 e suas atualizações. Este documento é emitido pela ANVISA e é necessário para realizar a Exportação de substâncias das listas A1, A2, A3, B1, B2, C3 e D1, bem como dos medicamentos que as contenham.</descricao>
+    <contato>Responsável: RENATA DE MORAIS SOUZA (gerente)
+Email: ouvidoria@anvisa.gov.br 
+61 3462-6792
+Presencial: ANVISA - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4103">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos>Pessoas jurídicas devidamente autorizadas pela ANVISA que comercializem ou realizem pesquisas com substâncias das listas A1, A2, A3, B1, B2, C3 e D1, bem como dos medicamentos que as contenham.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="30" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao>Validade do documento: a mesma da autorização de importação ou documento similar emitido pela autoridade competente do país importador, ou na ausência destes, válido por 6 meses.</descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7788">
+            <titulo>Realizar peticionamento</titulo>
+            <descricao>Realizar o Peticionamento Eletrônico, com o Código de Assunto adequado. No sistema da Anvisa, deve ser selecionada a opção “Peticionamento Eletrônico e Pagamento de Taxas” e escolhido o código de Assunto “7654 - PRODUTOS CONTROLADOS - Autorização de Exportação de Substância/Medicamento”. Esta petição é isenta de taxas, mas deverá ser gerada a Guia de Isenção de Pagamento e realizar o protocolo On-line.</descricao>
+            <documentos>
+                <default>
+                    <item id="10817">É fundamental o protocolo para a próxima etapa de solicitação no NDS (National Drug System).</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8124" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7789">
+            <titulo>Solicitar AEX</titulo>
+            <descricao>Posteriormente ao peticionamento eletrônico, o estabelecimento deverá solicitar a AEX por meio do sistema NDS. No pedido, o estabelecimento deverá selecionar o mesmo código de assunto do peticionamento eletrônico.</descricao>
+            <documentos>
+                <default>
+                    <item id="10816">O original da Autorização de Importação emitida pela autoridade competente do país importador deve ser protocolado fisicamente na Anvisa por meio do seguinte código de assunto: ”70272-PRODUTOS CONTROLADOS – Original da Autorização de Importação emitida pela autoridade competente do país importador”. A empresa deverá informar, na capa desta petição, o número do expediente do pedido de Autorização de Exportação ao qual o documento está sendo aditado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8125" tipo="web">
+                        <descricao>https://nds.anvisa.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7790">
+            <titulo>Acompanhar o status de análise</titulo>
+            <descricao>A empresa poderá acompanhar o status de análise da sua petição por meio do sistema NDS. Após a conclusão da Análise a empresa será comunicada do deferimento pelo envio das vias da Autorização pelo correio. Em caso de indeferimento, a empresa receberá mensagem por e-mail gerado pelo Sistema NDS, bem como ofício eletrônico com a motivação do Indeferimento.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8126" tipo="web-acompanhar">
+                        <descricao>https://nds.anvisa.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="7699">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="7700">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Pesquisa e Desenvolvimento</item>
+        <item>Saúde</item>
+        <item>Medicamentos e aparelhos</item>
+        <item>Relações Internacionais</item>
+        <item>Comercio externo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14263">Exportação de medicamento</item>
+        <item id="14264">psicotrópicos</item>
+        <item id="14265">entorpecentes</item>
+    </palavras-chave>
+</servico>
