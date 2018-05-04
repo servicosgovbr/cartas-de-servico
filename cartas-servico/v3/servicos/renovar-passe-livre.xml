@@ -1,38 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Renovar Passe Livre]]></nome>
-    <sigla/>
-    <nomes-populares/>
-    <descricao><![CDATA[Para renovação da credencial do Passe Livre, conforme determina à legislação, o beneficiário deverá requerer nova credencial até 30 (trinta) dias antes do término da validade do documento anterior, na forma do artigo 14, da Portaria nº 261 GM-MT, de 03/12/2012.]]></descricao>
-    <contato><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>renovar-passe-livre</id>
+    <dbId>78</dbId>
+    <nome>Renovar Passe Livre</nome>
+    <sigla></sigla>
+    <descricao>Para renovação da credencial do Passe Livre, conforme determina à legislação, o beneficiário deverá requerer nova credencial até 30 (trinta) dias antes do término da validade do documento anterior, na forma do artigo 14, da Portaria nº 261 GM-MT, de 03/12/2012.</descricao>
+    <contato>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF
 
  Telefones: (61) 2029-8035.
 
  e-mail: passelivre@transportes.gov.br
 
- Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></contato>
+ Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="4094">
             <tipo>Quem já é beneficiário do Passe Livre.</tipo>
-            <requisitos><![CDATA[Para que uma pessoa tenha direito a renovação é necessário:
+            <requisitos>Para que uma pessoa tenha direito a renovação é necessário:
 
 *Ser beneficiário do passe livre.
 
 *Possuir Deficiência física, mental, auditiva, visual ou múltipla.
 
 *Ser comprovadamente carente.
-Conheça como funciona o cálculo para definir se uma pessoa é ou não carente clicando [aqui](http://www.transportes.gov.br/direto-ao-cidadao/passe-livre.html#conheca_melhorPL_beneficiario)]]></requisitos>
+Conheça como funciona o cálculo para definir se uma pessoa é ou não carente clicando [aqui](http://portal.transportes.gov.br/passelivre/o-programa/index.html?como-pedir.html)</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="30" unidade="dias-corridos"/>
-        <descricao><![CDATA[O prazo estimado acima começa a contar a partir do recebimento dos documentos pelo Passe Livre.]]></descricao>
+        <descricao>O prazo estimado acima começa a contar a partir do recebimento dos documentos pelo Passe Livre.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="7765">
             <titulo>Preencher formulários para Renovação</titulo>
-            <descricao><![CDATA[O beneficiário preenche os formulários disponíveis no site do Ministério dos Transportes, Portos e Aviação Civil ou presencialmente.]]></descricao>
+            <descricao>O beneficiário preenche os formulários disponíveis no site do Ministério dos Transportes, Portos e Aviação Civil ou presencialmente.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -41,31 +48,55 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://www.transportes.gov.br/direto-ao-cidadao/passe-livre/2-uncategorised/2761-formularios-para-requisicao-passe-livre.html]]></descricao>
+                    <canal-de-prestacao id="8086" tipo="presencial">
+                        <descricao>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF]]></descricao>
+                    <canal-de-prestacao id="8087" tipo="web">
+                        <descricao>http://portal.transportes.gov.br/passelivre/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="7766">
             <titulo>Enviar formulários e documentação</titulo>
-            <descricao><![CDATA[Os formulários da etapa 1 e a documentação devem ser encaminhados via correios ou entregue pessoalmente.]]></descricao>
+            <descricao>Os formulários da etapa 1 e a documentação devem ser encaminhados via correios ou entregue pessoalmente.</descricao>
             <documentos>
                 <default/>
-                <caso descricao="Renovação de Benefício sem a necessidade de acompanhante">
-                    <item>Novo requerimento, acompanhado da Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes do rendimento indicado.</item>
-                    <item>Novo Atestado Médico, devendo os médicos indicar a Classificação Internacional de Doenças, ou seja, o CID.10, que caracteriza a deficiência.</item>
-                    <item>Cópia do documento de identificação.</item>
+                <caso id="861" descricao="Renovação de Benefício sem a necessidade de acompanhante">
+                    <documento>
+                        <id>1492</id>
+                        <descricao>Cópia do documento de identificação.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1491</id>
+                        <descricao>Novo Atestado Médico, devendo os médicos indicar a Classificação Internacional de Doenças, ou seja, o CID.10, que caracteriza a deficiência.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1490</id>
+                        <descricao>Novo requerimento, acompanhado da Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes do rendimento indicado.</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Renovação de Benefício com a necessidade de acompanhante">
-                    <item>Novo requerimento, acompanhado da Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes do rendimento indicado.</item>
-                    <item>Novo Atestado Médico, com a declaração do mesmo médico que atestou a deficiência, informando que é imprescindível à presença de Acompanhante durante a locomoção em viagem.</item>
-                    <item>Novo requerimento do acompanhante, com a Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes .</item>
-                    <item>Cópia do documento de identificação do Acompanhante.</item>
-                    <item>Cópia do documento de identificação do Beneficiário.</item>
+                <caso id="862" descricao="Renovação de Benefício com a necessidade de acompanhante">
+                    <documento>
+                        <id>1494</id>
+                        <descricao>Novo Atestado Médico, com a declaração do mesmo médico que atestou a deficiência, informando que é imprescindível à presença de Acompanhante durante a locomoção em viagem.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1493</id>
+                        <descricao>Novo requerimento, acompanhado da Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes do rendimento indicado.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1497</id>
+                        <descricao>Cópia do documento de identificação do Beneficiário.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1496</id>
+                        <descricao>Cópia do documento de identificação do Acompanhante.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1495</id>
+                        <descricao>Novo requerimento do acompanhante, com a Declaração da Composição e Renda Familiar, informando dados pessoais, declaração de rendimentos da família e o número de pessoas dependentes .</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -73,18 +104,18 @@ Conheça como funciona o cálculo para definir se uma pessoa é ou não carente 
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="postal">
-                        <descricao><![CDATA[Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF]]></descricao>
+                    <canal-de-prestacao id="8088" tipo="postal">
+                        <descricao>Caixa Postal - 9.600 - CEP 70.040-976 - Brasília/DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF]]></descricao>
+                    <canal-de-prestacao id="8089" tipo="presencial">
+                        <descricao>Posto de atendimento - SAN Quadra 3 Bloco N/O térreo - Brasília/DF</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="7767">
             <titulo>Aguardar análise do processo</titulo>
-            <descricao><![CDATA[Nesta etapa o beneficiário aguardará a análise dos formulários e da documentação enviada ao passe livre.
+            <descricao>Nesta etapa o beneficiário aguardará a análise dos formulários e da documentação enviada ao passe livre.
 
 Serão resultados desta etapa:
 
@@ -92,7 +123,7 @@ Serão resultados desta etapa:
 
 - **Benefício com pendências**(será comunicado via correio, quais pendências estão impossibilitando a emissão da credencial para o beneficiário);
 
-- **Benefício rejeitado**(será comunicado via correio que o solicitante não cumpre com os requisitos do programa passe livre).]]></descricao>
+- **Benefício rejeitado**(será comunicado via correio que o solicitante não cumpre com os requisitos do programa passe livre).</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -101,16 +132,18 @@ Serão resultados desta etapa:
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web-acompanhar">
-                        <descricao><![CDATA[http://sistemas3.transportes.gov.br/CAPPL/paginas/requerente/home.jsp]]></descricao>
+                    <canal-de-prestacao id="8090" tipo="web-acompanhar">
+                        <descricao>http://sistemas3.transportes.gov.br/CAPPL/paginas/requerente/home.jsp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2846" dbId="37548">
+        <nomeOrgao>Ministério dos Transportes, Portos e Aviação Civil (MTPA)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="7687">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transporte Rodoviário</item>
@@ -120,11 +153,11 @@ Serão resultados desta etapa:
         <item>Transportes</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>Passe Livre</item>
-        <item>Carteira</item>
-        <item>Credencial</item>
+        <item id="14236">Passe Livre</item>
+        <item id="14237">Carteira</item>
+        <item id="14238">Credencial</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)]]></item>
+        <item id="2486">[Legislação - Passe Livre](http://www.transportes.gov.br/conteudo/2764-passe-livre-legislacao.html)</item>
     </legislacoes>
 </servico>
