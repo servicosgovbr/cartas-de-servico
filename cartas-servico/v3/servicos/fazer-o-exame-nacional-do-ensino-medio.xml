@@ -5,8 +5,8 @@
     <nome>Fazer o Exame Nacional do Ensino Médio</nome>
     <sigla>ENEM</sigla>
     <nomes-populares>
-        <item id="2208">Fazer o ENEM</item>
-        <item id="2209">Prestar o ENEM</item>
+        <item id="2652">Fazer o ENEM</item>
+        <item id="2653">Prestar o ENEM</item>
     </nomes-populares>
     <descricao>O ENEM é uma prova aplicada pelo Governo Federal, ao final do Ensino Médio, que tem por objetivos:  
 
@@ -17,23 +17,23 @@
     <gratuito>false</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://enem.inep.gov.br/participante/#!/loginInscricao</link-servico-digital>
     <solicitantes>
-        <solicitante id="3388">
+        <solicitante id="4133">
             <tipo>Estudante de Escola da Rede Pública de Ensino</tipo>
             <requisitos>Cursando, no ano da prova, o terceiro ano do Ensino Médio.</requisitos>
         </solicitante>
-        <solicitante id="3389">
+        <solicitante id="4134">
             <tipo>Outros estudantes ou ex-estudantes</tipo>
             <requisitos>Desde que tenham concluído o Ensino Médio, ou vão concluir no ano da referida prova.</requisitos>
         </solicitante>
-        <solicitante id="3390">
+        <solicitante id="4135">
             <tipo>Pessoas em situação de carência sócio-econômica.</tipo>
             <requisitos>* Que seja parte de família com renda de até meio salário mínimo por pessoa, ou de 3 salários mínimos ou menos no total;
 * Ser parte de família que possua renda mensal de até 1,5 salários mínimos por pessoa, desde que tenha estudado todo o Ensino Médio na rede pública de ensino, em escola da rede privada com bolsa de estudos integral, ou partes em cada uma destas situações.</requisitos>
         </solicitante>
-        <solicitante id="3391">
+        <solicitante id="4136">
             <tipo>Integrantes do Cadastro Único de Programas Sociais</tipo>
             <requisitos>Que estejam [inscritas no Cadastro Único](http://aplicacoes.mds.gov.br/sagi/consulta_cidadao/)</requisitos>
         </solicitante>
@@ -46,15 +46,15 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6515">
+        <etapa id="7862">
             <titulo>Preencher o formulário de inscrição</titulo>
             <descricao>O candidato deverá acessar a página de inscrição do ENEM, ou o aplicativo para dispositivos móveis, e criar uma senha e preencher as informações requisitadas.   
 ***OBS:** Novas inscrições no site só são possíveis nas épocas de inscrição do ENEM*</descricao>
             <documentos>
                 <default>
-                    <item id="2415">Cadastro de Pessoa Física - CPF</item>
-                    <item id="2416">Documento de Identidade - RG</item>
-                    <item id="2417">Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
+                    <item id="10925">Cadastro de Pessoa Física - CPF</item>
+                    <item id="10926">Documento de Identidade - RG</item>
+                    <item id="10927">Informações pessoais, de escolaridade e sobre a instituição de ensino onde estuda ou onde estudou o Ensino Médio e meios de contato com o usuário.</item>
                 </default>
             </documentos>
             <custos>
@@ -62,10 +62,10 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2810" tipo="web">
-                        <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    <canal-de-prestacao id="8211" tipo="web">
+                        <descricao>https://enem.inep.gov.br/participante/#!/loginInscricao</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2809" tipo="aplicativo-movel">
+                    <canal-de-prestacao id="8212" tipo="aplicativo-movel">
                         <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)       
                   
 
@@ -75,31 +75,31 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6516">
+        <etapa id="7863">
             <titulo>Requerer a isenção de taxa</titulo>
             <descricao>**Para solicitantes do tipo 1, 3 e 4.** O candidato poderá requerer a isenção de taxa no ato da inscrição, prestando as informações requisitadas e enviando a documentação solicitada. A resposta sairá 48 horas após o pedido.</descricao>
             <documentos>
                 <default>
-                    <item id="2422">Cadastro de Pessoa Física - CPF</item>
-                    <item id="2423">Senha do Site do ENEM</item>
+                    <item id="10928">Cadastro de Pessoa Física - CPF</item>
+                    <item id="10929">Senha do Site do ENEM</item>
                 </default>
-                <caso id="356" descricao="Estudante de escola pública (solicitante 1)">
+                <caso id="882" descricao="Estudante de escola pública (solicitante 1)">
                     <documento>
                         <id>2418</id>
                         <descricao>Informar o nome da escola onde estuda no campo apropriado do formulário de inscrição;</descricao>
                     </documento>
                 </caso>
-                <caso id="357" descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)">
-                    <documento>
-                        <id>2420</id>
-                        <descricao>Enviar documentações que comprovem esta situação.</descricao>
-                    </documento>
+                <caso id="883" descricao="Pessoas em situação de carência sócio-econômica (solicitante 3)">
                     <documento>
                         <id>2419</id>
                         <descricao>Preencher a declaração de carência sócio-econômica junto ao formulário padrão da inscrição;</descricao>
                     </documento>
+                    <documento>
+                        <id>2420</id>
+                        <descricao>Enviar documentações que comprovem esta situação.</descricao>
+                    </documento>
                 </caso>
-                <caso id="358" descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)">
+                <caso id="884" descricao="Integrantes do Cadastro Único de Programas Sociais (solicitante 4)">
                     <documento>
                         <id>2421</id>
                         <descricao>NIS</descricao>
@@ -111,10 +111,10 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2811" tipo="web">
-                        <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    <canal-de-prestacao id="8213" tipo="web">
+                        <descricao>https://enem.inep.gov.br/participante/#!/loginParticipante</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2812" tipo="aplicativo-movel">
+                    <canal-de-prestacao id="8214" tipo="aplicativo-movel">
                         <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)       
                   
 
@@ -124,17 +124,17 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6517">
+        <etapa id="7864">
             <titulo>Pagar a taxa de inscrição</titulo>
             <descricao>**Para solicitantes tipo 2.** Na mesma página da inscrição, o usuário irá imprimir a Guia de Recolhimento da União (GRU) e irá pagá-la na rede bancária. É importante que nos dias seguintes ao pagamento, o usuário acesse o site para confirmar a realização da sua inscrição.</descricao>
             <documentos>
                 <default>
-                    <item id="2424">GRU</item>
+                    <item id="10930">GRU</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="87">
+                    <custo id="800">
                         <descricao>Taxa de Inscrição</descricao>
                         <moeda>R$</moeda>
                         <valor>82,00</valor>
@@ -145,20 +145,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2814" tipo="aplicativo-movel">
+                    <canal-de-prestacao id="8215" tipo="aplicativo-movel">
                         <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)       
                   
 
 
 * [iOS](https://itunes.apple.com/us/app/enem-2017/id1114622953)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2813" tipo="web">
-                        <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    <canal-de-prestacao id="8216" tipo="web">
+                        <descricao>https://enem.inep.gov.br/participante/#!/loginParticipante</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6518">
+        <etapa id="7865">
             <titulo>Obter o Cartão de Confirmação da Inscrição</titulo>
             <descricao>Na mesma página de acompanhamento do candidato, no site do ENEM, o usuário poderá consultar e imprimir seu cartão de confirmação de inscrição aproximadamente um mês antes da prova. O Cartão contém as seguintes informações:
 
@@ -170,8 +170,8 @@
 •	Solicitação de certificação (se for o caso)</descricao>
             <documentos>
                 <default>
-                    <item id="2425">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="2426">Senha do site do ENEM.</item>
+                    <item id="10931">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="10932">Senha do site do ENEM.</item>
                 </default>
             </documentos>
             <custos>
@@ -179,10 +179,10 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2815" tipo="web">
-                        <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    <canal-de-prestacao id="8217" tipo="web">
+                        <descricao>https://enem.inep.gov.br/participante/#!/loginParticipante</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2816" tipo="aplicativo-movel">
+                    <canal-de-prestacao id="8218" tipo="aplicativo-movel">
                         <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)       
                   
 
@@ -192,13 +192,13 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6519">
+        <etapa id="7866">
             <titulo>Prestar a prova</titulo>
             <descricao>No dia estabelecido pelo edital do ENEM do ano em questão, o candidato deverá se apresentar no local e hora indicado no Cartão de Confirmação, de posse de caneta de tinta preta fabricada em material transparente, para prestar a prova.</descricao>
             <documentos>
                 <default>
-                    <item id="2427">Documento de identificação válido, original e com foto;</item>
-                    <item id="2428">Cartão de Confirmação da Inscrição.</item>
+                    <item id="10933">Documento de identificação válido, original e com foto;</item>
+                    <item id="10934">Cartão de Confirmação da Inscrição.</item>
                 </default>
             </documentos>
             <custos>
@@ -206,21 +206,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2817" tipo="presencial">
+                    <canal-de-prestacao id="8219" tipo="presencial">
                         <descricao>Local e horário designados ao candidato no Cartão de Confirmação de Inscrição.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6520">
+        <etapa id="7867">
             <titulo>Receber o resultado da prova</titulo>
             <descricao>Em data que será divulgada durante o processo, o candidato poderá verificar o seu resultado individual no Exame.
 
 Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na página do [INEP](http://portal.inep.gov.br/enem) até o terceiro dia útil seguinte ao de realização das últimas provas.</descricao>
             <documentos>
                 <default>
-                    <item id="2429">Número do CPF ou número da inscrição;</item>
-                    <item id="2430">Senha do site do ENEM.</item>
+                    <item id="10935">Número do CPF ou número da inscrição;</item>
+                    <item id="10936">Senha do site do ENEM.</item>
                 </default>
             </documentos>
             <custos>
@@ -228,10 +228,10 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2818" tipo="web">
-                        <descricao>http://enem.inep.gov.br/participante/#!/inicial</descricao>
+                    <canal-de-prestacao id="8220" tipo="web">
+                        <descricao>https://enem.inep.gov.br/participante/#!/loginParticipante</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2819" tipo="aplicativo-movel">
+                    <canal-de-prestacao id="8221" tipo="aplicativo-movel">
                         <descricao>* [Android](https://play.google.com/store/apps/details?id=br.gov.inep.inepenem)       
                   
 
@@ -246,7 +246,7 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
         <nomeOrgao>Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6407">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="7750">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fomento ao Trabalho</item>
@@ -258,15 +258,15 @@ Os gabaritos das provas objetivas serão divulgados no aplicativo do ENEM e na p
         <item>Empregabilidade</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12198">prova</item>
-        <item id="12199">vestibular</item>
-        <item id="12200">faculdade</item>
-        <item id="12201">MEC</item>
-        <item id="12202">NIS</item>
-        <item id="12203">isenção</item>
-        <item id="12204">INEP</item>
+        <item id="14357">prova</item>
+        <item id="14358">vestibular</item>
+        <item id="14359">faculdade</item>
+        <item id="14360">MEC</item>
+        <item id="14361">NIS</item>
+        <item id="14362">isenção</item>
+        <item id="14363">INEP</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2416">[Edital](http://download.inep.gov.br/educacao_basica/enem/edital/2017/edital_enem_2017.pdf)</item>
+        <item id="2492">[Edital](http://download.inep.gov.br/educacao_basica/enem/edital/2017/edital_enem_2017.pdf)</item>
     </legislacoes>
 </servico>
