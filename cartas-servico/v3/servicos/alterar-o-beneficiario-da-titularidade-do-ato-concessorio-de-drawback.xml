@@ -4,42 +4,38 @@
     <dbId>1503</dbId>
     <nome>Alterar o beneficiário da titularidade do ato concessório de drawback</nome>
     <sigla></sigla>
-    <descricao>Analisar documentação remetida pela empresa solicitante e promover a alteração do beneficiário da titularidade do ato concessório de drawback nos casos em que houve sucessão legal entre empresas.</descricao>
+    <descricao>Alteração de titularidade de Ato Concessório de Drawback nos casos de sucessão legal ou entre filiais/matriz, no caso de extinção da beneficiária do ato (arts. 99 e 127 da Portaria Secex nº 23/2011).</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="1858">
+        <solicitante id="4140">
             <tipo>Empresas privadas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="15" unidade="dias-corridos"/>
+        <ate max="10" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3893">
+        <etapa id="7873">
             <titulo>Requerer alteração</titulo>
             <descricao>Apresentação de documentos previsto na legislação para a análise.</descricao>
             <documentos>
                 <default>
-                    <item id="5734">CNPJ</item>
-                    <item id="5735">Certidão de Receita Federal</item>
-                    <item id="5736">Contrato Social</item>
-                    <item id="5737">Procuração do representante legal</item>
-                    <item id="5738">Registro na junta comercial</item>
-                    <item id="5739">Carta/ofício solicitando a alteração de titularidade do ato concessório de drawback</item>
-                    <item id="5740">Mandato Público</item>
-                    <item id="5741">Deliberação da empresa sucessora (Alteração do Contrato Social ou Ata de Assembleia Geral)</item>
-                    <item id="5742">Deliberação da empresa sucedida (Alteração do Contrato Social ou Ata de Assembleia Geral)</item>
-                    <item id="5743">Protocolo e Justificação (da incorporação, fusão, cisão)</item>
-                    <item id="5744">Laudo de Avaliação Publicação em Diário Oficial (caso de Trespasse)</item>
+                    <item id="10958">Mandato público (procuração pública ou instrumento que confira ao titular do CPF solicitante poder de representação da pessoa jurídica requerente junto ao DECEX)</item>
+                    <item id="10959">Deliberação da empresa sucessora registrada em junta comercial competente (Alteração do Contrato Social, Ata de Assembleia Geral, etc.)</item>
+                    <item id="10960">Deliberação da empresa sucedida registrada em junta comercial competente (Alteração do Contrato Social, Ata de Assembleia Geral, etc.)</item>
+                    <item id="10961">Protocolo e Justificação da operação realizada registrado em junta comercial competente</item>
+                    <item id="10962">Laudo de Avaliação do patrimônio da empresa sucedida registrado em junta comercial competente</item>
+                    <item id="10963">Averbação do contrato de alienação do estabelecimento empresarial (apenas para os casos de trespasse)</item>
+                    <item id="10964">Publicação, em Diário Oficial, da alienação de estabelecimento comercial (apenas para os casos de trespasse)</item>
                 </default>
             </documentos>
             <custos>
@@ -47,11 +43,14 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4900" tipo="presencial">
+                    <canal-de-prestacao id="8233" tipo="presencial">
                         <descricao>Esplanada dos Ministérios, bloco J, Brasília - DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4901" tipo="postal">
+                    <canal-de-prestacao id="8234" tipo="postal">
                         <descricao>Esplanada dos Ministérios, bloco J, Brasília - DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8235" tipo="web">
+                        <descricao>https://solicitacao.servicos.gov.br/processos/iniciar?codServico=1503</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -61,7 +60,7 @@
         <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="3903">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="7756">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comercio externo</item>
@@ -69,8 +68,8 @@
         <item>Tributação</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="5989">drawback</item>
-        <item id="5990">transferência de titularidade</item>
-        <item id="5991">alteração</item>
+        <item id="14370">drawback</item>
+        <item id="14371">transferência de titularidade</item>
+        <item id="14372">alteração</item>
     </palavras-chave>
 </servico>
