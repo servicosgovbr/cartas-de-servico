@@ -15,41 +15,45 @@ A validade do Certificado de Boas Práticas de Fabricação será de dois anos, 
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3193">
+        <solicitante id="4057">
             <tipo>Empresas privadas</tipo>
-            <requisitos></requisitos>
-        </solicitante>
-        <solicitante id="3194">
-            <tipo>Empresas públicas ou de economia mista</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <nao-estimado-ainda/>
-        <descricao></descricao>
+        <em-media max="0" unidade=""/>
+        <descricao>Nacional diretamente dependente do envio dos relatórios de inspeção por parte do SNVS; Internacional em 7 meses (2017).</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <tipo>Válido por</tipo>
+        <quantidade>2</quantidade>
+        <unidade>anos</unidade>
+        <descricao>Em conformidade com a RDC 39/2013, contados a partir da data de sua publicação no Diário Oficial da União (DOU).</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6189">
-            <titulo>Solicitar certificado</titulo>
-            <descricao></descricao>
+        <etapa id="7675">
+            <titulo>Cadastrar a empresa</titulo>
+            <descricao>Cadastramento de Empresa é o primeiro passo para se ter acesso ao Sistema de Peticionamento e deve ser utilizado para cadastrar empresas privadas que fornecem produtos ou serviços regulados pela Anvisa e para cadastrar os usuários com vínculo de representação com essas empresas.</descricao>
             <documentos>
                 <default>
-                    <item id="7640">Formulario de petição;</item>
+                    <item id="7640">Formulário de petição;</item>
                     <item id="7641">Comprovante de pagamento de taxa; e</item>
-                    <item id="7642">Documentos técnicos específicos</item>
+                    <item id="7642">Documentos técnicos específicos.</item>
                 </default>
+                <caso id="859" descricao="Alteração do Porte">
+                    <documento>
+                        <id>10696</id>
+                        <descricao>Em seguida, promover a alteração, se necessário, do Porte da Empresa, que irá determinar o valor das taxas a serem pagas pelo interessado.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default>
                     <custo id="289">
                         <descricao>Taxa de certificado de boas práticas de fabricação</descricao>
                         <moeda>R$</moeda>
-                        <valor>15.000,00</valor>
                         <valorVariavel></valorVariavel>
-                        <statusCustoVariavel>0</statusCustoVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
@@ -58,18 +62,18 @@ A validade do Certificado de Boas Práticas de Fabricação será de dois anos, 
                     <canal-de-prestacao id="6169" tipo="presencial">
                         <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="6170" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
-                    </canal-de-prestacao>
                     <canal-de-prestacao id="6171" tipo="postal">
                         <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="6170" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6190">
-            <titulo>Receber resultado</titulo>
-            <descricao></descricao>
+        <etapa id="7676">
+            <titulo>Identificar o código de assunto</titulo>
+            <descricao>Antes de acessar o Sistema de Peticionamento é recomendável que o interessado identifique o Código de Assunto relacionado à sua petição, pois é a partir desse código que toda a transação do pedido irá se desenvolver. Durante o processo, o interessado será guiado para o tipo de peticionamento do Código de Assunto escolhido.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -79,7 +83,7 @@ A validade do Certificado de Boas Práticas de Fabricação será de dois anos, 
             <canais-de-prestacao>
                 <default>
                     <canal-de-prestacao id="6172" tipo="web">
-                        <descricao>http://www.imprensanacional.gov.br/web/guest</descricao>
+                        <descricao>http://portal.anvisa.gov.br/sistema-consulta-de-assuntos</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -89,7 +93,7 @@ A validade do Certificado de Boas Práticas de Fabricação será de dois anos, 
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6136">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="7616">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -99,8 +103,8 @@ A validade do Certificado de Boas Práticas de Fabricação será de dois anos, 
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11630">ANVISA</item>
-        <item id="11631">Certidão</item>
-        <item id="11632">Boas práticas</item>
+        <item id="14131">ANVISA</item>
+        <item id="14132">Certidão</item>
+        <item id="14133">Boas práticas</item>
     </palavras-chave>
 </servico>
