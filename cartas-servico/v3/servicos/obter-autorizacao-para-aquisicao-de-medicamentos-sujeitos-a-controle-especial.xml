@@ -4,39 +4,51 @@
     <dbId>2614</dbId>
     <nome>Obter Autorização para aquisição de medicamentos sujeitos a controle especial</nome>
     <sigla>AMC</sigla>
-    <descricao>A Autorização para Aquisição de Medicamentos Sujeitos a Controle Especial (AMC) é o documento que possibilita a aquisição dos medicamentos que contenham substâncias sujeitas ao controle especial da Portaria SVS/MS n. 344, de 1998, ou a que vier substituí-la, em drogarias e farmácias, por centros de equivalência farmacêutica habilitados ou pelos centros de bio    disponibilidade/bioequivalência certificados pela Anvisa.</descricao>
-    <contato></contato>
+    <descricao>Por meio deste serviço pessoas jurídicas podem requisitar Autorização para Aquisição de Medicamentos Sujeitos a Controle Especial (AMC) que é o documento que possibilita a aquisição dos medicamentos que contenham substâncias sujeitas ao controle especial das listas A1, A2, A3, B1, B2, C3, D1, F1, F2, F3 e F4 da Portaria SVS/MS n. 344, de 1998 e suas atualizações, em drogarias e farmácias, por centros de equivalência farmacêutica habilitados ou pelos centros de biodisponibilidade/bioequivalência certificados pela Anvisa.</descricao>
+    <contato>Responsável: Renata de Morais Souza (Coordenador)
+Email: ouvidoria@anvisa.gov.br 
+61 3462-5832
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3187">
+        <solicitante id="4104">
             <tipo>Empresas privadas</tipo>
-            <requisitos></requisitos>
+            <requisitos>Centros de equivalência farmacêutica habilitados ou pelos centros de biodisponibilidade/bioequivalência certificados pela Anvisa.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="16" max="30" unidade="dias-corridos"/>
+        <ate max="30" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>1</quantidade>
+        <unidade>anos</unidade>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6180">
-            <titulo>Requisitar autorização</titulo>
-            <descricao></descricao>
+        <etapa id="7941">
+            <titulo>Realizar peticionamento eletrônico</titulo>
+            <descricao>Realizar o Peticionamento Eletrônico, com o Código de Assunto adequado. No sistema da Anvisa, deve ser selecionada a opção “Peticionamento Eletrônico e Pagamento de Taxas” e escolhido o código de Assunto adequado: 70281-PRODUTOS CONTROLADOS - Autorização para Aquisição de Medicamentos Sujeitos a Controle Especial – AMC. Esta petição é isenta de taxas, mas deverá ser gerada a Guia de Isenção de Pagamento e realizar o protocolo On-line.</descricao>
             <documentos>
                 <default>
-                    <item id="7617">Formulário de petição preenchido, no que couber (ANEXO I);</item>
-                    <item id="7618">Resumo do(s) estudo(s) a ser(em) realizado(s); e</item>
-                    <item id="7619">Justificativa técnica detalhada com o objetivo do(s) estudo(s).</item>
+                    <item id="10819">Formulário de petição preenchido, no que couber (ANEXO I);</item>
+                    <item id="10820">Resumo do(s) estudo(s) a ser(em) realizado(s); e</item>
+                    <item id="10821">Justificativa técnica detalhada com o objetivo do(s) estudo(s).</item>
                 </default>
+                <caso id="874" descricao="Observação">
+                    <documento>
+                        <id>10818</id>
+                        <descricao>Após realizar com sucesso a petição, imprima os documentos gerados e anote o número da transação, pois ele servirá para consultas futuras ao processo.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo id="283">
+                    <custo id="790">
                         <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
@@ -46,11 +58,28 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6153" tipo="web">
+                    <canal-de-prestacao id="8128" tipo="web">
                         <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="6154" tipo="postal">
+                    <canal-de-prestacao id="8129" tipo="postal">
                         <descricao>SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7942">
+            <titulo>Acompanhar o status de análise</titulo>
+            <descricao>A empresa poderá acompanhar o status de análise da sua petição por meio das filas petições disponíveis no portal da Anvisa. Após a conclusão da Análise a empresa será comunicada do deferimento pelo envio das vias da Autorização pelo correio. Em caso de indeferimento, a empresa receberá ofício eletrônico com a motivação do Indeferimento.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8130" tipo="web-acompanhar">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -60,7 +89,7 @@
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6128">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="7701">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -70,8 +99,8 @@
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11612">ANVISA</item>
-        <item id="11613">Substituição</item>
-        <item id="11614">medicamentos controlados</item>
+        <item id="14266">ANVISA</item>
+        <item id="14267">Substituição</item>
+        <item id="14268">medicamentos controlados</item>
     </palavras-chave>
 </servico>
