@@ -8,39 +8,62 @@
 Para realizar a solicitação de Cota Anual de importação, o interessado deve realizar o procedimento de peticionamento. É necessário que o estabelecimento/instituição esteja cadastrado para ter acesso ao peticionamento eletrônico. Após realizar o cadastro, a empresa deverá acessar o peticionamento eletrônico com o login e senha cadastrados. Em seguida selecionar a opção “Petição manual e pagamento de taxa”. Conferir a relação de documentos de instrução, anotar o número da transação, confirmar as informações da guia e ler com atenção todas as informações presentes.
 A empresa importadora ficará obrigada a solicitar à Anvisa a fixação de Cota Anual para Importação das substâncias constantes das listas "A1" e "A2" (entorpecentes), "A3", "B1" e "B2" (psicotrópicos), “C3” (substâncias imunossupressoras) e "D1" (substâncias precursoras de entorpecentes e/ou psicotrópicos) da Portaria SVS/MS nº 344/1998 e de suas atualizações, bem como dos medicamentos que as contenham.
 Fixada a Cota Anual de Importação, a empresa importadora deverá requerer a Autorização de Importação até 30 de junho. A Cota Anual de Importação poderá ser importada de uma só vez ou parceladamente.</descricao>
-    <contato></contato>
+    <contato>Responsável: THIAGO BRASIL SILVÉRIO (Coordenador)
+Email: med.controlados@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br 
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3188">
+        <solicitante id="4123">
             <tipo>Empresas importadoras de substâncias controladas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="60" max="90" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <nao-estimado-ainda/>
+        <descricao>Até 31 de Janeiro de cada ano</descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao>Durante o ano de vigência</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6181">
-            <titulo>Requerer cota anual</titulo>
-            <descricao></descricao>
+        <etapa id="7943">
+            <titulo>Realizar peticionamento</titulo>
+            <descricao>Selecione a área “Funcionamento da Empresa” e escolha, em “pesquisar assunto”, o código referente à 7664 - PRODUTOS CONTROLADOS - Cota Anual de Importação por Substância. Acesse o link Formulário de Petição, para gerar o documento a ser preenchido e protocolado na ANVISA. Salve o documento, pois será necessário preenchê-lo posteriormente.</descricao>
             <documentos>
                 <default>
-                    <item id="7620">Formulário de petição preenchido, no que couber, (ANEXO I);</item>
-                    <item id="7621">Via Original do Comprovante de pagamento da taxa de Fiscalização de Vigilância Sanitária ou Guia da Vigilância Sanitária (GRU) Isenta;</item>
-                    <item id="7622">Justificativa técnica do pedido;</item>
-                    <item id="7623">Estimativa da utilização e distribuição da substância ou medicamento quando se tratar da primeira concessão de cota.</item>
+                    <item id="10861">Formulário de petição preenchido, no que couber, (ANEXO I);</item>
+                    <item id="10862">Via Original do Comprovante de pagamento da taxa de Fiscalização de Vigilância Sanitária ou Guia da Vigilância Sanitária (GRU) Isenta;</item>
+                    <item id="10863">Justificativa técnica do pedido;</item>
+                    <item id="10864">Estimativa da utilização e distribuição da substância ou medicamento quando se tratar da primeira concessão de cota.</item>
                 </default>
             </documentos>
             <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
                 <default>
-                    <custo id="284">
+                    <canal-de-prestacao id="8174" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8175" tipo="postal">
+                        <descricao>SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7944">
+            <titulo>Realizar pagamento de taxa</titulo>
+            <descricao>Selecione o tipo de assinatura de transação (com ou sem certificado digital). Em seguida, confira as informações do responsável pela transação. Selecione a opção de pagamento e clique em concluir para finalizar a transação e gerar a GRU.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="826">
                         <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
@@ -50,11 +73,25 @@ Fixada a Cota Anual de Importação, a empresa importadora deverá requerer a Au
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6155" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    <canal-de-prestacao id="8308" tipo="presencial">
+                        <descricao>Rede bancária</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="6156" tipo="postal">
-                        <descricao>SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7945">
+            <titulo>Consultar processo</titulo>
+            <descricao>Após realizar com sucesso a petição, imprima os documentos gerados e anote o número da transação, pois ele servirá para consultas futuras ao processo.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8176" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -64,7 +101,7 @@ Fixada a Cota Anual de Importação, a empresa importadora deverá requerer a Au
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6129">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="7741">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -74,8 +111,8 @@ Fixada a Cota Anual de Importação, a empresa importadora deverá requerer a Au
         <item>Fiscalização do Estado</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="11615">importação de substâncias controladas</item>
-        <item id="11616">psicotrópicos</item>
-        <item id="11617">ANVISA</item>
+        <item id="14326">importação de substâncias controladas</item>
+        <item id="14327">psicotrópicos</item>
+        <item id="14328">ANVISA</item>
     </palavras-chave>
 </servico>
