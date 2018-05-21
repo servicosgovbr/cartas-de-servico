@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>contratar-datavalid</id>
+    <dbId>3456</dbId>
+    <nome>Contratar Datavalid</nome>
+    <sigla>Datavalid</sigla>
+    <descricao>Contratação de solução de análise de informações de cadastro, identidade e biometria facial que permite a automatização do processo de validação e garante autenticidade às mesmas em tempo real. A solução é capaz de validar as informações diretamente do acervo de bases do Serpro, de acordo com a regra de negócio do cliente, e retornar um percentual de aderência e assertividade em relação aos dados originais.
+
+A partir dos dados recebidos, o serviço realiza uma análise baseada em algorítmos de validação, análise textual e reconhecimento facial e retorna o grau de assertividade (V/F ou 0% a 100%) da informação.
+
+Este serviço é comercializado em 2 tipos de pacotes diferentes:
+Pacote 1 - Cadastro: Validação de dados Cadastrais;
+Pacote 2 - Biometria: Validação de dados Cadastrais + dados Biométricos.</descricao>
+    <contato>* [página do serviço](https://servicos.serpro.gov.br/datavalid)
+* telefone: 0800-728-2323
+* e-mail: css.serpro@serpro
+* [formulário eletrônico](https://cssinter.serpro.gov.br/SCCDPortalWEB/pages/dynamicPortal.jsf?ITEMNUM=2898)</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4080">
+            <tipo>Instituições Financeiras públicas ou privadas, governo, locadoras de veículos, imobiliárias,
+empresas ou qualquer entidade que tenha CNPJ.</tipo>
+            <requisitos>A documentação com possibilidade de testar o serviço em ambiente de testes está disponível pela [documentação](https://devserpro.github.io/apis).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="10" unidade="dias-uteis"/>
+        <descricao>O serviço será disponibilizado no máximo de 10 dias após a assinatura do contrato.
+Não há atendimento presencial.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="7737">
+            <titulo>Assinar contrato</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8059" tipo="web">
+                        <descricao>https://servicos.serpro.gov.br/datavalid</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8060" tipo="e-mail">
+                        <descricao>comercial@serpro.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="7738">
+            <titulo>Acessar o serviço</titulo>
+            <descricao>Serpro disponibiliza acesso ao portal do Cliente onde tem a documentação necessária
+para acessar o serviço (máximo 10 dias).</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="776">
+                        <descricao>Conforme contrato</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8061" tipo="telefone">
+                        <descricao>0800-728-2323</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8062" tipo="e-mail">
+                        <descricao>css.serpro@serpro</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8063" tipo="web">
+                        <descricao>https://cssinter.serpro.gov.br/SCCDPortalWEB/pages/dynamicPortal.jsf?ITEMNUM=2898</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/90" dbId="43381">
+        <nomeOrgao>Serviço Federal de Processamento de Dados (SERPRO)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="4" idServicoSegmento="7657">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="7658">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="7659">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Sistema Financeiro</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14186">análise de informações cadastrais</item>
+        <item id="14187">biometria facial</item>
+        <item id="14188">validação de identidade</item>
+    </palavras-chave>
+</servico>
