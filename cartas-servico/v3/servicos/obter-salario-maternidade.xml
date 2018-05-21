@@ -5,22 +5,22 @@
     <nome>Obter Salário-Maternidade</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2692">licença maternidade.</item>
+        <item id="2693">licença maternidade.</item>
     </nomes-populares>
     <descricao>O salário-maternidade é um benefício pago às seguradas que acabaram de ter um filho, seja por parto ou adoção, ou aos segurados que adotem uma criança.</descricao>
     <contato>Central de Atendimento do INSS, número 135.</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://meu.inss.gov.br/central/index.html#/salmater</link-servico-digital>
     <solicitantes>
-        <solicitante id="4249">
+        <solicitante id="4251">
             <tipo>Mulheres</tipo>
             <requisitos>•	Que estejam grávidas, passaram por trabalho de parto recente, tenham sofrido aborto não-criminoso ou adotem um filho;
 •	Sejam seguradas do INSS;
 •	Tenham 10 meses trabalhados de carência.</requisitos>
         </solicitante>
-        <solicitante id="4250">
+        <solicitante id="4252">
             <tipo>Homens</tipo>
             <requisitos>•	Que adotem um filho ou que a cônjuge/companheira veio a falecer logo após o parto;
 •	Sejam seguradas do INSS;
@@ -35,26 +35,26 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8038">
+        <etapa id="8041">
             <titulo>Requerer benefício</titulo>
             <descricao>No Portal Meu INSS, você acessará o menu "Salário Maternidade Urbano", e informará os dados requisitados</descricao>
             <documentos>
                 <default>
-                    <item id="11179">Certidão de Nascimento da Criança</item>
+                    <item id="11188">Certidão de Nascimento da Criança</item>
                 </default>
-                <caso id="979" descricao="Por guarda">
+                <caso id="986" descricao="Por guarda">
                     <documento>
                         <id>11176</id>
                         <descricao>Termo de guarda com indicação de que a guarda se destina à adoção;</descricao>
                     </documento>
                 </caso>
-                <caso id="980" descricao="Por adoção">
+                <caso id="987" descricao="Por adoção">
                     <documento>
                         <id>11177</id>
                         <descricao>Nova certidão de nascimento expedida após o processo de adoção;</descricao>
                     </documento>
                 </caso>
-                <caso id="981" descricao="Por aborto não-criminoso">
+                <caso id="988" descricao="Por aborto não-criminoso">
                     <documento>
                         <id>11178</id>
                         <descricao>Atestado médico comprovando a situação.</descricao>
@@ -66,45 +66,45 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8351" tipo="web">
+                    <canal-de-prestacao id="8354" tipo="web">
                         <descricao>https://meu.inss.gov.br/central/index.html#/salmater</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8039">
+        <etapa id="8042">
             <titulo>Comparecer à Agência do INSS do dia e horário agendados (Caso necessário)</titulo>
             <descricao>Caso existam pendências ou necessidade de esclarecimento, você será direcionado para o agendamento de atendimento presencial</descricao>
             <documentos>
                 <default>
-                    <item id="11180">Documento de identificação válido e oficial com foto;</item>
-                    <item id="11181">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="11182">Carteiras de Trabalho e Previdência Social;</item>
-                    <item id="11183">Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
+                    <item id="11189">Documento de identificação válido e oficial com foto;</item>
+                    <item id="11190">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11191">Carteiras de Trabalho e Previdência Social;</item>
+                    <item id="11192">Carnês de contribuição e outros documentos que comprovem o pagamento ao INSS; e</item>
                 </default>
-                <caso id="982" descricao="Por nascimento">
-                    <documento>
-                        <id>1785</id>
-                        <descricao>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</descricao>
-                    </documento>
+                <caso id="989" descricao="Por nascimento">
                     <documento>
                         <id>1784</id>
                         <descricao>Certidão de nascimento (vivo ou morto) do dependente;</descricao>
                     </documento>
+                    <documento>
+                        <id>1785</id>
+                        <descricao>Para grávidas que vão se afastar 28 dias antes do parto, atestado médico específico para tal fim;</descricao>
+                    </documento>
                 </caso>
-                <caso id="983" descricao="Por guarda">
+                <caso id="990" descricao="Por guarda">
                     <documento>
                         <id>1786</id>
                         <descricao>Termo de guarda com indicação de que a guarda se destina à adoção;</descricao>
                     </documento>
                 </caso>
-                <caso id="984" descricao="Por adoção">
+                <caso id="991" descricao="Por adoção">
                     <documento>
                         <id>1787</id>
                         <descricao>Nova certidão de nascimento expedida após o processo de adoção;</descricao>
                     </documento>
                 </caso>
-                <caso id="985" descricao="Por aborto não-criminoso">
+                <caso id="992" descricao="Por aborto não-criminoso">
                     <documento>
                         <id>1788</id>
                         <descricao>Atestado médico comprovando a situação.</descricao>
@@ -116,21 +116,21 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8352" tipo="presencial">
+                    <canal-de-prestacao id="8355" tipo="presencial">
                         <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8040">
+        <etapa id="8043">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
             <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item id="11184">Número do benefício;</item>
-                    <item id="11185">Data de nascimento;</item>
-                    <item id="11186">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="11187">Documento de Identificação válido, original e com foto.</item>
+                    <item id="11193">Número do benefício;</item>
+                    <item id="11194">Data de nascimento;</item>
+                    <item id="11195">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11196">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -138,7 +138,7 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8353" tipo="telefone">
+                    <canal-de-prestacao id="8356" tipo="telefone">
                         <descricao>Você pode acompanhar sua solicitação pelo MEU INSS ou pelo telefone 135 de segunda a sábado das 7h às 22h.</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -149,7 +149,7 @@
         <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="7830">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="7831">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -159,11 +159,11 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14528">nascimento</item>
-        <item id="14529">filho</item>
-        <item id="14530">adoção</item>
+        <item id="14531">nascimento</item>
+        <item id="14532">filho</item>
+        <item id="14533">adoção</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2524">[Decreto-Lei nº 5.452, de 1º de maio de 1943](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        <item id="2525">[Decreto-Lei nº 5.452, de 1º de maio de 1943](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
     </legislacoes>
 </servico>
