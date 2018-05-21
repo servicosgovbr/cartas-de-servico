@@ -5,19 +5,19 @@
     <nome>Aposentar-se por idade (trabalhador urbano)</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2593">Aposentadoria por idade.</item>
-        <item id="2594">Encostar</item>
-        <item id="2595">Aposentadoria por idade.</item>
-        <item id="2596">Encostar</item>
+        <item id="2686">Aposentadoria por idade.</item>
+        <item id="2687">Encostar</item>
+        <item id="2688">Aposentadoria por idade.</item>
+        <item id="2689">Encostar</item>
     </nomes-populares>
     <descricao>A aposentadoria por idade é o benefício financeiro mensal a que tem direito o trabalhador que atinge a idade mínima para se aposentar e que tenha cumprido alguns outros requisitos.</descricao>
     <contato>Central de Atendimento do INSS – Telefone 135</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://meu.inss.gov.br/central/index.html#/aposaut</link-servico-digital>
     <solicitantes>
-        <solicitante id="4049">
+        <solicitante id="4232">
             <tipo>Segurado Regular</tipo>
             <requisitos>&amp;nbsp;        
 Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, que tenha:     
@@ -38,14 +38,15 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7659">
-            <titulo>Agendar atendimento em agência do INSS</titulo>
-            <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
+        <etapa id="8019">
+            <titulo>Requerer aposentadoria</titulo>
+            <descricao>No portal meu INSS, no menu "aposentadorias urbanas", você irá selecionar o item aposentadoria por idade e, não havendo impedimento no sistema, irá realizar a solicitação automática do benefício</descricao>
             <documentos>
                 <default>
-                    <item id="10667">Número do CPF;</item>
-                    <item id="10668">Data do Nascimento</item>
-                    <item id="10669">Informações de Contato.</item>
+                    <item id="11163">Número do CPF;</item>
+                    <item id="11164">Carteiras de trabalho;</item>
+                    <item id="11165">Carnês de contribuição;</item>
+                    <item id="11166">Outros documentos que comprovem pagamento ao INSS</item>
                 </default>
             </documentos>
             <custos>
@@ -53,22 +54,22 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7993" tipo="web-agendar">
-                        <descricao>http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml</descricao>
+                    <canal-de-prestacao id="8347" tipo="web">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/aposaut</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7660">
-            <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
-            <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
+        <etapa id="8020">
+            <titulo>Comparecer à Agência do INSS do dia e horário agendados (se necessário)</titulo>
+            <descricao>Caso haja alguma pendência ou necessidade de esclarecimento, você será direcionado para agendar uma visita presencial a uma agência do INSS</descricao>
             <documentos>
                 <default>
-                    <item id="10670">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="10671">Documento de identificação válido, original e com foto; e</item>
-                    <item id="10672">Carteiras de trabalho;</item>
-                    <item id="10673">Carnês de contribuição;</item>
-                    <item id="10674">Outros documentos que comprovem pagamento ao INSS</item>
+                    <item id="11167">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11168">Documento de identificação válido, original e com foto; e</item>
+                    <item id="11169">Carteiras de trabalho;</item>
+                    <item id="11170">Carnês de contribuição;</item>
+                    <item id="11171">Outros documentos que comprovem pagamento ao INSS</item>
                 </default>
             </documentos>
             <custos>
@@ -76,21 +77,21 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7994" tipo="presencial">
+                    <canal-de-prestacao id="8348" tipo="presencial">
                         <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7661">
+        <etapa id="8021">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
             <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item id="10675">Número do benefício;</item>
-                    <item id="10676">Data de Nascimento;</item>
-                    <item id="10677">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="10678">Documento de Identificação válido, original e com foto.</item>
+                    <item id="11172">Número do benefício;</item>
+                    <item id="11173">Data de Nascimento;</item>
+                    <item id="11174">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11175">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -98,10 +99,10 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7995" tipo="web">
+                    <canal-de-prestacao id="8349" tipo="web">
                         <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="7996" tipo="presencial">
+                    <canal-de-prestacao id="8350" tipo="presencial">
                         <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -112,7 +113,7 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
         <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="7599">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="7827">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -121,16 +122,16 @@ Trabalhador de entidades privadas, associado ao INSS e com as parcelas em dia, q
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14099">aposentadoria</item>
-        <item id="14100">velhice</item>
-        <item id="14101">idade mínima</item>
-        <item id="14102">aposentadoria</item>
-        <item id="14103">velhice</item>
-        <item id="14104">idade mínima</item>
+        <item id="14518">aposentadoria</item>
+        <item id="14519">velhice</item>
+        <item id="14520">idade mínima</item>
+        <item id="14521">aposentadoria</item>
+        <item id="14522">velhice</item>
+        <item id="14523">idade mínima</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2475">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
-        <item id="2476">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
+        <item id="2522">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
+        <item id="2523">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
     </legislacoes>
     <servicos-relacionados>
         <item>46</item>
