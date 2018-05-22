@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>aposentar-se-por-idade-pessoa-com-deficiencia</id>
+    <dbId>2994</dbId>
+    <nome>Aposentar-se por idade (pessoa com deficiência)</nome>
+    <sigla></sigla>
+    <descricao>Trata-se de benefício destinado a Pessoa com Deficiência (Com enquadramento pela Perícia Médica do INSS) e que preencha a condição da idade.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://meu.inss.gov.br/central/index.html#/agenda/informacoesServico</link-servico-digital>
+    <solicitantes>
+        <solicitante id="4270">
+            <tipo>Pessoas com deficiência conforme determinado em lei.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8069">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Após fazer o login no "Meu INSS", leia as informações e clique em "avançar".</descricao>
+            <documentos>
+                <default>
+                    <item id="11277">CPF</item>
+                    <item id="11278">Dados de contato</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8393" tipo="web-agendar">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/agenda/informacoesServico</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8070">
+            <titulo>Dar entrada no processo</titulo>
+            <descricao>Apresentação de documentos e formalização do requerimento; e marcação de avaliação técnica.</descricao>
+            <documentos>
+                <default>
+                    <item id="11279">Carteira de identidade</item>
+                    <item id="11280">Carteira de trabalho</item>
+                    <item id="11281">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8394" tipo="presencial">
+                        <descricao>Na [Unidade do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps) onde o atendimento foi agendado.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8071">
+            <titulo>Realizar avaliação técnica</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="11282">Documentação médica</item>
+                    <item id="11283">CPF</item>
+                    <item id="11284">Carteira de trabalho</item>
+                    <item id="11285">Carteira de identidade</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8395" tipo="presencial">
+                        <descricao>No local apontado durante o atendimento da etapa anterior.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7841">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Trabalho</item>
+        <item>Saúde dos portadores de deficiências</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14576">previdência</item>
+        <item id="14577">deficiência</item>
+        <item id="14578">aposentadoria</item>
+        <item id="14579">previdência</item>
+        <item id="14580">deficiência</item>
+        <item id="14581">aposentadoria</item>
+    </palavras-chave>
+</servico>
