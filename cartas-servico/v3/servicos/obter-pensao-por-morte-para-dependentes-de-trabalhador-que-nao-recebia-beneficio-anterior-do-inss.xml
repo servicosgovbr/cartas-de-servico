@@ -1,35 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servico xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://servicos.gov.br/v3/schema ../servico.xsd">
-    <nome><![CDATA[Obter pensão por morte para dependentes de trabalhador que não recebia benefício anterior do INSS.]]></nome>
-    <sigla/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-pensao-por-morte-para-dependentes-de-trabalhador-que-nao-recebia-beneficio-anterior-do-inss</id>
+    <dbId>50</dbId>
+    <nome>Obter pensão por morte para dependentes de trabalhador que não recebia benefício anterior do INSS.</nome>
+    <sigla></sigla>
     <nomes-populares>
-        <item>Pensão por morte de não beneficiado</item>
-        <item>pensão por morte</item>
-        <item>salário-viúva</item>
+        <item id="2737">Pensão por morte de não beneficiado</item>
+        <item id="2738">pensão por morte</item>
+        <item id="2739">salário-viúva</item>
     </nomes-populares>
-    <descricao><![CDATA[A pensão por morte é um benefício financeiro pago mensalmente aos dependentes do segurado do INSS que vier a falecer ou, em caso de desaparecimento, tiver sua morte presumida declarada judicialmente.
-Este caminho é destinado aos dependentes de segurado que não recebia benefício anterior do INSS.]]></descricao>
-    <contato><![CDATA[Central de Atendimento do INSS, no número 135.]]></contato>
+    <descricao>A pensão por morte é um benefício financeiro pago mensalmente aos dependentes do segurado do INSS que vier a falecer ou, em caso de desaparecimento, tiver sua morte presumida declarada judicialmente.
+Este caminho é destinado aos dependentes de segurado que não recebia benefício anterior do INSS.</descricao>
+    <contato>Central de Atendimento do INSS, no número 135.</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante>
+        <solicitante id="4309">
             <tipo>Dependentes de segurado não beneficiado</tipo>
-            <requisitos><![CDATA[Dependentes de trabalhador que possuísse inscrição no INSS e estivesse realizando as contribuições mensais à Previdência Social na data do óbito, mas que não recebesse ainda qualquer benefício do instituto.]]></requisitos>
+            <requisitos>Dependentes de trabalhador que possuísse inscrição no INSS e estivesse realizando as contribuições mensais à Previdência Social na data do óbito, mas que não recebesse ainda qualquer benefício do instituto.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="3" unidade="meses"/>
-        <descricao><![CDATA[Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.]]></descricao>
+        <descricao>Dependendo do fluxo de procura e do local de atendimento do requerente, o processo pode demorar até um ano.</descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa>
+        <etapa id="8149">
             <titulo>Agendar atendimento em agência do INSS</titulo>
-            <descricao><![CDATA[Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.]]></descricao>
+            <descricao>Você irá acessar o portal do INSS, preencher os dados necessários, agendar seu atendimento para o dia desejado na agência disponível desejada e imprimir o comprovante de agendamento.</descricao>
             <documentos>
                 <default>
-                    <item>Número do CPF;</item>
-                    <item>Data de nascimento;</item>
-                    <item>Informações de contato.</item>
+                    <item id="11515">Número do CPF;</item>
+                    <item id="11516">Data de nascimento;</item>
+                    <item id="11517">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
@@ -37,55 +45,113 @@ Este caminho é destinado aos dependentes de segurado que não recebia benefíci
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://agendamento.inss.gov.br/pages/agendamento/selecionarServico.xhtml]]></descricao>
+                    <canal-de-prestacao id="8525" tipo="web">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/agenda</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8526" tipo="aplicativo-movel">
+                        <descricao>&amp;nbsp;      
+[&lt;img src = " https://servicos.serpro.gov.br/cnh-digital/images/google-play-badge.png " width = " 84 " height = " 25 "&gt;](https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&amp;hl=pt_BR)  [&lt;img src = " https://servicos.serpro.gov.br/cnh-digital/images/apple-badge.png " width = " 84 " height = " 25 "&gt;](https://itunes.apple.com/br/app/meu-inss/id1243048358?mt=8)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="8150">
             <titulo>Comparecer à Agência do INSS do dia e horário agendados</titulo>
-            <descricao><![CDATA[Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.]]></descricao>
+            <descricao>Você irá à agência do INSS escolhida na data e horário definidos na etapa anterior. Tenha em mente que, dependendo da situação do seu cadastro no INSS e porque não é possível saber antes de analisar a documentação que você apresentará, pode ser pedido que você retorne à agência uma segunda vez para levar documentação adicional.</descricao>
             <documentos>
                 <default>
-                    <item>Documento de identificação válido com foto;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documentos de identificação do falecido;</item>
-                    <item>Certidão de óbito;</item>
-                    <item>CAT, em caso de óbito por acidente de trabalho;</item>
-                    <item>Documentos de comprovação de tempo de contribuição do segurado falecido, caso pedido pelo INSS; e</item>
+                    <item id="11518">Documento de identificação válido com foto;</item>
+                    <item id="11519">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11520">Documentos de identificação do falecido;</item>
+                    <item id="11521">Certidão de óbito;</item>
+                    <item id="11522">CAT, em caso de óbito por acidente de trabalho;</item>
+                    <item id="11523">Documentos de comprovação de tempo de contribuição do segurado falecido, caso pedido pelo INSS; e</item>
                 </default>
-                <caso descricao="Para cônjuges">
-                    <item>Certidão de casamento;</item>
+                <caso id="1001" descricao="Para cônjuges">
+                    <documento>
+                        <id>1696</id>
+                        <descricao>Certidão de casamento;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para filhos">
-                    <item>Certidão de nascimento;</item>
+                <caso id="1002" descricao="Para filhos">
+                    <documento>
+                        <id>1697</id>
+                        <descricao>Certidão de nascimento;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para companheiros e companheiras">
-                    <item>Comprovação de união estável;</item>
-                    <item>Certidão de casamento com averbação da separação judicial, divórcio ou certidão óbito, no caso de um dos companheiros, ou ambos, já tiverem sido casados;</item>
+                <caso id="1003" descricao="Para companheiros e companheiras">
+                    <documento>
+                        <id>1699</id>
+                        <descricao>Certidão de casamento com averbação da separação judicial, divórcio ou certidão óbito, no caso de um dos companheiros, ou ambos, já tiverem sido casados;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1698</id>
+                        <descricao>Comprovação de união estável;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para menores tutelados">
-                    <item>Certidão judicial de tutela;</item>
-                    <item>Declaração de não emancipação;</item>
-                    <item>Comprovação de dependência econômica do tutelado;</item>
+                <caso id="1004" descricao="Para menores tutelados">
+                    <documento>
+                        <id>1702</id>
+                        <descricao>Comprovação de dependência econômica do tutelado;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1701</id>
+                        <descricao>Declaração de não emancipação;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1700</id>
+                        <descricao>Certidão judicial de tutela;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para enteados">
-                    <item>Certidão de nascimento;</item>
-                    <item>Certidão de casamento ou provas de união estável do segurado com o(a) genitor(a) do enteado;</item>
-                    <item>Declaração de não emancipação;</item>
-                    <item>Comprovação de dependência econômica do tutelado;</item>
+                <caso id="1005" descricao="Para enteados">
+                    <documento>
+                        <id>1706</id>
+                        <descricao>Comprovação de dependência econômica do tutelado;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1705</id>
+                        <descricao>Declaração de não emancipação;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1704</id>
+                        <descricao>Certidão de casamento ou provas de união estável do segurado com o(a) genitor(a) do enteado;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1703</id>
+                        <descricao>Certidão de nascimento;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para pais e mães">
-                    <item>Certidão de nascimento do segurado falecido;</item>
-                    <item>Declaração de inexistência de dependentes preferenciais;</item>
-                    <item>Comprovação de dependência econômica;</item>
+                <caso id="1006" descricao="Para pais e mães">
+                    <documento>
+                        <id>1709</id>
+                        <descricao>Comprovação de dependência econômica;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1708</id>
+                        <descricao>Declaração de inexistência de dependentes preferenciais;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1707</id>
+                        <descricao>Certidão de nascimento do segurado falecido;</descricao>
+                    </documento>
                 </caso>
-                <caso descricao="Para irmãos e irmãs">
-                    <item>Certidão de nascimento do segurado falecido;</item>
-                    <item>Certidão de nascimento do dependente;</item>
-                    <item>Declaração de inexistência de dependentes preferenciais;</item>
-                    <item>Comprovação de dependência econômica.</item>
+                <caso id="1007" descricao="Para irmãos e irmãs">
+                    <documento>
+                        <id>1712</id>
+                        <descricao>Declaração de inexistência de dependentes preferenciais;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1711</id>
+                        <descricao>Certidão de nascimento do dependente;</descricao>
+                    </documento>
+                    <documento>
+                        <id>1713</id>
+                        <descricao>Comprovação de dependência econômica.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1710</id>
+                        <descricao>Certidão de nascimento do segurado falecido;</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
@@ -93,21 +159,21 @@ Este caminho é destinado aos dependentes de segurado que não recebia benefíci
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Agência do INSS próxima à sua residência e escolhida na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="8527" tipo="presencial">
+                        <descricao>Agência do INSS próxima à sua residência e escolhida na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa>
+        <etapa id="8151">
             <titulo>Saber o resultado do pedido e, caso seja aceito, começar a receber o benefício.</titulo>
-            <descricao><![CDATA[Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.]]></descricao>
+            <descricao>Você poderá acompanhar o processo de pedido pela página do INSS ou visitando a agência do INSS onde o pedido foi feito, até que saia o resultado. Caso seu pedido seja aprovado, o cidadão começará a receber o benefício no mês seguinte.</descricao>
             <documentos>
                 <default>
-                    <item>Número do benefício;</item>
-                    <item>Data de nascimento;</item>
-                    <item>Cadastro de Pessoa Física - CPF;</item>
-                    <item>Documento de Identificação válido, original e com foto.</item>
+                    <item id="11524">Número do benefício;</item>
+                    <item id="11525">Data de nascimento;</item>
+                    <item id="11526">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="11527">Documento de Identificação válido, original e com foto.</item>
                 </default>
             </documentos>
             <custos>
@@ -115,19 +181,21 @@ Este caminho é destinado aos dependentes de segurado que não recebia benefíci
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao tipo="web">
-                        <descricao><![CDATA[http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml]]></descricao>
+                    <canal-de-prestacao id="8528" tipo="web">
+                        <descricao>http://sipa.inss.gov.br/SipaINSS/pages/consit/consitInicio.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao tipo="presencial">
-                        <descricao><![CDATA[Na agência do INSS onde você foi atendido na etapa anterior.]]></descricao>
+                    <canal-de-prestacao id="8529" tipo="presencial">
+                        <descricao>Na agência do INSS onde você foi atendido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item>Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="7880">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -136,11 +204,11 @@ Este caminho é destinado aos dependentes de segurado que não recebia benefíci
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item>dependente</item>
-        <item>falecimento</item>
-        <item>arrimo de família</item>
+        <item id="14721">dependente</item>
+        <item id="14722">falecimento</item>
+        <item id="14723">arrimo de família</item>
     </palavras-chave>
     <legislacoes>
-        <item><![CDATA[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943]]></item>
+        <item id="2547">DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943</item>
     </legislacoes>
 </servico>
