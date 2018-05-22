@@ -2,29 +2,33 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>cadastrar-se-como-guia-de-turismo</id>
     <dbId>472</dbId>
-    <nome>Cadastrar-se como guia de turismo</nome>
+    <nome>Cadastrar-se como Guia de Turismo</nome>
     <sigla>Cadastur</sigla>
-    <descricao>Cadastro no Ministério do Turismo de pessoas físicas que atuam como Guia de Turismo. 
-É obrigatório e válido por 5 anos. O cadastro permite ao prestador atuar legalmente, de acordo com a Lei nº 8.623/93, por meio da emissão do Certificado Cadastur e crachá de Guia de Turismo, assim como oferece benefícios aos cadastrados.</descricao>
-    <contato>- Lista dos órgãos estaduais de turismo, responsáveis pelo Cadastur na UF, disponível no site [Cadastur](http://www.cadastur.turismo.gov.br) na aba
-[Como cadastrar](http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur), em "órgãos oficiais de turismo".     
+    <descricao>Cadastro no Ministério do Turismo de pessoas físicas e jurídicas (MEI) que atuam como Guia de Turismo. 
+É obrigatório e válido por 5 anos. O cadastro permite ao prestador atuar legalmente, de acordo com a Lei nº 8.623/93 e Decreto nº 946/1993, por meio da emissão do Certificado Cadastur e crachá de Guia de Turismo, assim como oferece benefícios aos cadastrados.</descricao>
+    <contato>O contato com os órgãos estaduais de turismo, responsáveis pelo Cadastur na UF, pode ser feito pelo endereço: https://cadastur.turismo.gov.br/hotsite/#!/public/duvidas-frequentes/inicio#faleConoscoAncora
+     
 Coordenação-Geral de Cadastramento e Fiscalização (MTur)      
 E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://cadastur.turismo.gov.br/hotsite/#!/public/sou-prestador/inicio</link-servico-digital>
     <solicitantes>
-        <solicitante id="510">
+        <solicitante id="4344">
             <tipo>Guia de Turismo</tipo>
             <requisitos>1. O exercício regular da atividade de Guia de Turismo depende de prévia realização de curso técnico de formação profissional e de cadastro no Ministério do Turismo (Cadastur).
 
-2. Permitido a brasileiros ou estrangeiros residentes no País e habilitados para o exercício da atividade profissional; maiores de dezoito anos; eleitor (em dia com as obrigações eleitorais); reservista (em dia com as obrigações militares).</requisitos>
+2. Permitido a brasileiros ou estrangeiros residentes no País e habilitados para o exercício da atividade profissional; maiores de dezoito anos; eleitor (em dia com as obrigações eleitorais); reservista (em dia com as obrigações militares).
+
+3. O CPF do guia de turismo deve estar com situação ativa na Receita Federal do Brasil.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="105" unidade="dias-corridos"/>
-        <descricao>1. 30 dias: prazo para a entrega, por parte do prestador, da documentação do cadastro ao órgão delegado do Ministério do Turismo.
+        <descricao>1. 90 dias: prazo para o envio, via sistema, por parte do prestador, do formulário de solicitação do cadastro ao órgão delegado do Ministério do Turismo.
 
-2. 30 dias seguintes: prazo para o órgão delegado analisar a documentação, homologar o cadastro e gerar o certificado.
+2. 05 dias seguintes: prazo para o órgão delegado analisar a documentação, deferir ou indeferir o cadastro e o sistema gerar o certificado.
 
 3. Até 45 dias após homologação: disponibilização do crachá de Guia de Turismo. Observação: o Guia de Turismo pode atuar nesse período sem o crachá, mas deverá portar o certificado Cadastur válido.</descricao>
     </tempo-total-estimado>
@@ -32,14 +36,14 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="1576">
+        <etapa id="8219">
             <titulo>Criar um "novo usuário"</titulo>
-            <descricao>1. Se o prestador nunca foi cadastrado no Cadastur, é necessário criar um “novo usuário” no sistema no sítio do [Cadastur](http://www.cadastur.turismo.gov.br). 
+            <descricao>1. Se o prestador nunca foi cadastrado no Cadastur, é necessário criar um “novo usuário” no sistema no sítio do [Cadastur] (http://cadastur.turismo.gov.br). 
 
-2. Após preencher os dados solicitados, o prestador receberá no e-mail cadastrado o login e a senha para acessar o sistema [Cadastur](http://www.cadastur.turismo.gov.br).</descricao>
+2. Após preencher os dados solicitados, o prestador receberá no e-mail cadastrado a senha para acessar o sistema [Cadastur](http://www.cadastur.turismo.gov.br).</descricao>
             <documentos>
                 <default>
-                    <item id="1396">CPF do responsável pelo cadastro</item>
+                    <item id="11612">CPF do responsável pelo cadastro</item>
                 </default>
             </documentos>
             <custos>
@@ -47,19 +51,18 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1959" tipo="web">
-                        <descricao>http://www.cadastur.turismo.gov.br/cadastur/novoUsuario.mtur</descricao>
+                    <canal-de-prestacao id="8611" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/sou-prestador/inicio</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1960" tipo="presencial">
-                        <descricao>Caso o solicitante não possua acesso ao computador/internet, poderá contatar o órgão estadual de turismo responsável pelo Cadastur. Acesse 
-[Como se cadastrar](http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur) em "órgãos oficiais de turismo".</descricao>
+                    <canal-de-prestacao id="8612" tipo="presencial">
+                        <descricao>Caso o solicitante não possua acesso ao computador/internet, poderá contatar o [órgão estadual de turismo responsável pelo Cadastur](https://cadastur.turismo.gov.br/hotsite/#!/public/contatos-regionais/inicio).</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1577">
+        <etapa id="8220">
             <titulo>Acessar o sistema Cadastur</titulo>
-            <descricao>Acessar a página inicial do site do Cadastur e digitar nos campos indicados o login e senha recebidos. O solicitante deverá mudar a senha. A tela seguinte apresentará o "Ambiente de Negócios" do prestador, onde se encontra o botão “meu cadastro”. Para iniciar o cadastramento é necessário clicar nessa opção.</descricao>
+            <descricao>Acessar a página inicial do site do Cadastur e digitar nos campos indicados o login (CPF) e senha recebida. O solicitante deverá mudar a senha. A tela seguinte apresentará o "Gerenciar Atividade"/"Cadastrar Prestador", onde deverá ser selecionada a atividade para cadastro e preencher os dados solicitados.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -68,19 +71,19 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1961" tipo="web-preencher">
-                        <descricao>http://www.cadastur.turismo.gov.br</descricao>
+                    <canal-de-prestacao id="8613" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1578">
+        <etapa id="8221">
             <titulo>Preencher o formulário eletrônico de cadastro (Dados pessoais)</titulo>
-            <descricao>Na próxima tela aparecerá o formulário eletrônico de cadastro. Ao lado de cada campo do formulário há um ponto de exclamação que, ao ser clicado, exibe as informações de preenchimento. Após preencher todos os campos solicitados clicar no botão “salvar” para registrar as informações. O sistema enviará uma confirmação por e-mail de que a operação foi realizada com sucesso.</descricao>
+            <descricao>Na próxima tela aparecerá o formulário eletrônico de cadastro. Ao clicar cada campo do formulário há uma legenda (tour guiado) que exibe as orientações de preenchimento. Após preencher todos os campos solicitados clicar no botão "prosseguir" para registrar as informações.</descricao>
             <documentos>
                 <default>
-                    <item id="1397">CPF do cadastrado</item>
-                    <item id="1398">RG do cadastrado</item>
+                    <item id="11613">CPF do cadastrado</item>
+                    <item id="11614">RG do cadastrado</item>
                 </default>
             </documentos>
             <custos>
@@ -88,18 +91,18 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1962" tipo="web-preencher">
-                        <descricao>http://www.cadastur.turismo.gov.br</descricao>
+                    <canal-de-prestacao id="8614" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1579">
+        <etapa id="8222">
             <titulo>Preencher formulário eletrônico de cadastro (Dados da atividade)</titulo>
             <descricao>Após preencher e salvar os dados pessoais, o solicitante deverá completar as informações na aba "Atividades" sobre a categoria de atuação (Guia Regional, Guia Nacional, Guia Especializado em Atrativos, Guia Internacional) e sobre os segmentos turísticos e idiomas.</descricao>
             <documentos>
                 <default>
-                    <item id="1399">Certificado de conclusão de curso técnico em Guia de Turismo com a devida categoria de atuação</item>
+                    <item id="11615">Certificado de conclusão de curso técnico em Guia de Turismo com a devida categoria de atuação deverá ser anexado no sistema.</item>
                 </default>
             </documentos>
             <custos>
@@ -107,15 +110,15 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1963" tipo="web-preencher">
-                        <descricao>http://www.cadastur.turismo.gov.br</descricao>
+                    <canal-de-prestacao id="8615" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1580">
-            <titulo>Imprimir e preencher documentos obrigatórios</titulo>
-            <descricao>Ao final do preenchimento de todas as abas e campos obrigatórios do formulário eletrônico, deverá ser impresso e preenchido o Requerimento e o Termo de Responsabilidade disponibilizados. Esses documentos deverão ser entregues ao órgão estadual de turismo responsável pelo Cadastur juntamente com outros necessários.</descricao>
+        <etapa id="8223">
+            <titulo>Aceitar Termo de Responsabilidade</titulo>
+            <descricao>Ao final do preenchimento de todas as abas e campos obrigatórios do formulário eletrônico, deverá ser aceito o Termo de Responsabilidade disponibilizado.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -124,53 +127,43 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1964" tipo="web-preencher">
-                        <descricao>http://www.cadastur.turismo.gov.br</descricao>
+                    <canal-de-prestacao id="8616" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1581">
-            <titulo>Encaminhar a documentação obrigatória</titulo>
-            <descricao>Junto com o Requerimento e o Termo de Responsabilidade, encaminhar a documentação obrigatória. Os documentos podem ser entregues pessoalmente  ou de forma remota (e-mail, Correios). O solicitante deverá entrar em contato com o órgão responsável para verificar os meios disponíveis.</descricao>
+        <etapa id="8224">
+            <titulo>Anexar documentação obrigatória</titulo>
+            <descricao>Anexar no sistema a documentação obrigatória.</descricao>
             <documentos>
                 <default>
-                    <item id="1401">Ficha de Cadastro eletrônica ou impressa devidamente preenchido</item>
-                    <item id="1402">Foto padrão 3x4 recente (plano de fundo e roupa contrastando com a cor da pele)</item>
-                    <item id="1403">Cópia do Certificado de conclusão de Curso Técnico de Formação Profissional de Guia de Turismo com carga horária mínima conforme estabelecido no Catálogo Nacional de Cursos Técnicos</item>
-                    <item id="1404">Cópia do CPF</item>
-                    <item id="1405">Cópia do RG</item>
-                    <item id="1406">RNE (Registro Nacional de Estrangeiro) ou CIE (Cédula de Identidade de Estrangeiro) para estrangeiro residente no país e habilitado para o exercício da atividade profissional</item>
-                    <item id="1407">Título de eleitor (e quitação de obrigações eleitorais)</item>
-                    <item id="1408">Comprovante de quitação militar</item>
-                    <item id="1409">Termo de Responsabilidade emitido pelo sistema, devidamente assinado</item>
-                    <item id="1410">Comprovante de residência</item>
+                    <item id="11616">Foto padrão 3x4 recente (plano de fundo e roupa contrastando com a cor da pele)</item>
+                    <item id="11617">Cópia do Certificado de conclusão de Curso Técnico de Formação Profissional de Guia de Turismo com carga horária mínima conforme estabelecido no Catálogo Nacional de Cursos Técnicos</item>
                 </default>
-                <caso id="246" descricao="Inclusão de idioma no cadastro">
-                    <documento>
-                        <id>1400</id>
-                        <descricao>Cópia de certificado/diploma de curso de idioma, ou comprovante de Exame de Proficiência ou Atestado de Fluência.</descricao>
-                    </documento>
-                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1965" tipo="presencial">
-                        <descricao>Caso o solicitante não possua acesso ao computador/internet, poderá contatar o órgão estadual de turismo responsável pelo Cadastur. Acesse 
-[Como se cadastrar](http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur) em "órgãos oficiais de turismo".</descricao>
+                    <canal-de-prestacao id="8617" tipo="presencial">
+                        <descricao>No [órgão estadual de turismo responsável pelo Cadastur](https://cadastur.turismo.gov.br/hotsite/#!/public/contatos-regionais/inicio).</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1966" tipo="postal">
-                        <descricao>Verificar procedimentos com o órgão estadual de turismo responsável pelo Cadastur na UF.</descricao>
+                    <canal-de-prestacao id="8618" tipo="postal">
+                        <descricao>Para o [órgão estadual de turismo responsável pelo Cadastur](https://cadastur.turismo.gov.br/hotsite/#!/public/contatos-regionais/inicio).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8619" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1582">
-            <titulo>Homologação do cadastro e disponibilização do certificado</titulo>
-            <descricao>A homologação do requerimento de cadastro e emissão do certificado serão realizadas após a análise e aprovação da documentação exigida. O requerente terá 30 dias para entregar essa documentação. No caso de não cumprimento do prazo acima estipulado, será necessário proceder a novo requerimento de cadastro. O cadastro é válido por 5 anos.</descricao>
+        <etapa id="8225">
+            <titulo>Receber certificado</titulo>
+            <descricao>O deferimento do requerimento de cadastro e emissão do certificado serão realizados após a análise e aprovação pelo órgão regional. O cadastro é válido por 5 anos.
+
+A disponibilização do certificado será feita somente dentro do sistema com o usuário logado.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -179,18 +172,18 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1967" tipo="web-acompanhar">
-                        <descricao>http://www.cadastur.turismo.gov.br/cadastur/Certificados.mtur</descricao>
+                    <canal-de-prestacao id="8620" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1583">
-            <titulo>Entrega do crachá de Guia de Turismo</titulo>
+        <etapa id="8226">
+            <titulo>Receber crachá de Guia de Turismo</titulo>
             <descricao>O crachá estará disponível para coleta no órgão estadual de turismo, responsável pelo Cadastur na UF,  até 45 dias após a homologação. Durante o período de confecção do documento, o guia de turismo pode atuar portando somente o certificado Cadastur válido.</descricao>
             <documentos>
                 <default>
-                    <item id="1411">RG</item>
+                    <item id="11618">RG</item>
                 </default>
             </documentos>
             <custos>
@@ -198,51 +191,37 @@ E-mail: snptur.ouvidoria@turismo.gov.br / 0800-2008484 (opção 04 - Cadastur)</
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1968" tipo="presencial">
-                        <descricao>http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur</descricao>
+                    <canal-de-prestacao id="8621" tipo="presencial">
+                        <descricao>No [órgão estadual de turismo responsável pelo Cadastur](https://cadastur.turismo.gov.br/hotsite/#!/public/contatos-regionais/inicio).</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="1969" tipo="postal">
-                        <descricao>Verificar disponibilidade e procedimentos diretamente com o órgão estadual de turismo responsável pelo Cadastur na UF. Acesse 
-[Como se cadastrar](http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur), em "órgãos oficiais de turismo".</descricao>
+                    <canal-de-prestacao id="8622" tipo="postal">
+                        <descricao>Endereço informado no Cadastro (se o órgão regional competente oferecer a opção)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1584">
-            <titulo>Renovação de Cadastro</titulo>
-            <descricao>Em função de readequação do sistema, a renovação online de cadastro está suspensa, sendo somente possível por meio de solicitação em formulário impresso. 
-Deverá ser feita por meio de requerimento junto ao Órgão Oficial de Turismo na UF. O prestador terá 30 dias para entregar a documentação exigida. A renovação do cadastro deverá ser solicitada a partir de 90 dias antes do término da validade do certificado.</descricao>
+        <etapa id="8227">
+            <titulo>Renovar Cadastro</titulo>
+            <descricao>Deverá ser feita por meio do sistema. A renovação do cadastro deverá ser solicitada a partir de 90 dias antes do término da validade do certificado e o deferimento estará condicionado a análise do órgão regional.</descricao>
             <documentos>
                 <default>
-                    <item id="1413">Termo de Responsabilidade assinado</item>
-                    <item id="1414">Formulário de Requerimento de Pessoa Física Guia de Turismo atualizado</item>
-                    <item id="1415">Cópia dos comprovantes de recolhimento da Guia de Recolhimento da Contribuição Sindical Urbana – GRCSU de período igual ao da credencial a ser renovada</item>
-                    <item id="1416">Foto 3x4 atual</item>
+                    <item id="11619">Termo de Responsabilidade aceito no sistema</item>
                 </default>
-                <caso id="247" descricao="Profissionais com relação empregatícia">
-                    <documento>
-                        <id>1412</id>
-                        <descricao>Para comprovação de contribuição sindical, poderá ser apresentanda a Carteira de Trabalho e Previdência Social com o respectivo registro do empregador.</descricao>
-                    </documento>
-                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1970" tipo="presencial">
-                        <descricao>Lista dos órgãos estaduais de turismo:  Acesse [Como se cadastrar] (http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur), em "órgãos oficiais de turismo".</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="1971" tipo="postal">
-                        <descricao>Verificar disponibilidade e procedimentos com órgão estadual de turismo.</descricao>
+                    <canal-de-prestacao id="8623" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1585">
-            <titulo>Alteração de cadastro</titulo>
-            <descricao>Em função de readequação do sistema, a alteração de cadastro online está suspensa, sendo somente possível por meio de solicitação junto ao órgão delegado de turismo na UF.</descricao>
+        <etapa id="8228">
+            <titulo>Alterar cadastro</titulo>
+            <descricao>Deverá ser feita por meio do sistema.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -251,8 +230,8 @@ Deverá ser feita por meio de requerimento junto ao Órgão Oficial de Turismo n
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="1972" tipo="presencial">
-                        <descricao>http://www.cadastur.turismo.gov.br/cadastur/ComoCadastrar.mtur</descricao>
+                    <canal-de-prestacao id="8624" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/capa/entrar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -262,10 +241,10 @@ Deverá ser feita por meio de requerimento junto ao Órgão Oficial de Turismo n
         <nomeOrgao>Ministério do Turismo (MTur)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="1819">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="1820">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="1821">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="1822">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="7916">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="7917">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="7918">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="7919">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Esporte e Lazer</item>
@@ -278,22 +257,22 @@ Deverá ser feita por meio de requerimento junto ao Órgão Oficial de Turismo n
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1279">Guia de Turismo</item>
-        <item id="1280">Turismo</item>
-        <item id="1281">Cadastro MTur</item>
-        <item id="1282">Cadastro Ministério do Turismo</item>
-        <item id="1283">Cadastro Embratur</item>
-        <item id="1284">Cadastro Guia de Turismo</item>
-        <item id="1285">Guia Turístico</item>
-        <item id="1286">Crachá Guia de Turismo</item>
-        <item id="1287">Credencial Guia de Turismo</item>
-        <item id="1288">Carteira Guia de Turismo</item>
+        <item id="14810">Turismo</item>
+        <item id="14809">Guia de Turismo</item>
+        <item id="14811">Cadastro MTur</item>
+        <item id="14812">Cadastro Ministério do Turismo</item>
+        <item id="14813">Cadastro Embratur</item>
+        <item id="14814">Cadastro Guia de Turismo</item>
+        <item id="14815">Guia Turístico</item>
+        <item id="14816">Crachá Guia de Turismo</item>
+        <item id="14817">Credencial Guia de Turismo</item>
+        <item id="14818">Carteira Guia de Turismo</item>
     </palavras-chave>
     <legislacoes>
-        <item id="384">Lei sobre a profissão de Guia de Turismo: &lt;a href="http://www.planalto.gov.br/ccivil_03/leis/L8623.htm"&gt;Lei nº 8.623/93&lt;/a&gt;</item>
-        <item id="385">Decreto que regulamenta a Lei nº 8.623/93: &lt;a href="http://www.planalto.gov.br/ccivil_03/decreto/Antigos/D0946.htm"&gt;Decreto nº 946/93&lt;/a&gt;</item>
-        <item id="386">Portaria que institui o Cadastur: &lt;a href="http://www.turismo.gov.br/legislacao/?p=112"&gt;Portaria MTur nº 130/2011&lt;/a&gt;</item>
-        <item id="387">Portaria que regulamenta o Cadastur: &lt;a href="http://www.turismo.gov.br/legislacao/?p=135"&gt;Portaria MTur nº 197/2013&lt;/a&gt;</item>
-        <item id="388">Portaria que estabelece requisitos e critérios para o exercício da atividade de Guia de Turismo: &lt;a href="http://www.turismo.gov.br/legislacao/?p=117"&gt;Portaria MTur nº 27/2014&lt;/a&gt;</item>
+        <item id="2577">Lei sobre a profissão de Guia de Turismo: &lt;a href="http://www.planalto.gov.br/ccivil_03/leis/L8623.htm"&gt;Lei nº 8.623/93&lt;/a&gt;</item>
+        <item id="2578">Decreto que regulamenta a Lei nº 8.623/93: &lt;a href="http://www.planalto.gov.br/ccivil_03/decreto/Antigos/D0946.htm"&gt;Decreto nº 946/93&lt;/a&gt;</item>
+        <item id="2579">Portaria que institui o Cadastur: &lt;a href="http://www.turismo.gov.br/legislacao/?p=112"&gt;Portaria MTur nº 130/2011&lt;/a&gt;</item>
+        <item id="2580">Portaria que regulamenta o Cadastur: &lt;a href="http://www.turismo.gov.br/legislacao/?p=135"&gt;Portaria MTur nº 197/2013&lt;/a&gt;</item>
+        <item id="2581">Portaria que estabelece requisitos e critérios para o exercício da atividade de Guia de Turismo: &lt;a href="http://www.turismo.gov.br/legislacao/?p=117"&gt;Portaria MTur nº 27/2014&lt;/a&gt;</item>
     </legislacoes>
 </servico>
