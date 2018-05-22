@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>desbloquear-pagamentos</id>
+    <dbId>2543</dbId>
+    <nome>Desbloquear pagamentos</nome>
+    <sigla></sigla>
+    <descricao>Trata-se de serviço disponível ao cidadão e tem por objetivo a correção de informações constantes na guia de recolhimento referente á: competência, código de pagamento, data de pagamento e o número de Identificação do Trabalhador - NIT. Destina-se ao desbloqueio de pagamentos que ainda não foram devolvidos pelos bancos. Via de regra o bloqueio pode ter sido motivado por ação do INSS ou alguma pendência cadastral que impossibilite o pagamento normal do benefício.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4285">
+            <tipo>Beneficiários do INSS</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8112">
+            <titulo>Requerer desbloqueio</titulo>
+            <descricao>Identificação do titular do benefício e do período não pago ou bloqueado para efetuar nova ordem de pagamento.</descricao>
+            <documentos>
+                <default>
+                    <item id="11418">Carteira de identidade</item>
+                    <item id="11419">Carteira de trabalho</item>
+                    <item id="11420">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8457" tipo="presencial">
+                        <descricao>Em uma [Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7856">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14641">benefício bloqueado</item>
+        <item id="14642">pagamento não caiu</item>
+        <item id="14643">benefício não foi depositado</item>
+        <item id="14644">desbloquear benefício</item>
+    </palavras-chave>
+</servico>
