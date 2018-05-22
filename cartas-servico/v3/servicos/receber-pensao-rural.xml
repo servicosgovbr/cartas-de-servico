@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>receber-pensao-rural</id>
+    <dbId>2530</dbId>
+    <nome>Receber Pensão Rural</nome>
+    <sigla></sigla>
+    <descricao>Atendimento no qual o cidadão tem seu requerimento de pensão por morte em que o instituidor era trabalhador rural, avaliado pelo INSS.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4315">
+            <tipo>Dependentes de trabalhador rural falecido.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <nao-estimado-ainda/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8160">
+            <titulo>Requerer pensão</titulo>
+            <descricao>Apresentação de documentos e formalização do requerimento.</descricao>
+            <documentos>
+                <default>
+                    <item id="11557">Carteira de identidade</item>
+                    <item id="11558">Carteira de trabalho</item>
+                    <item id="11559">Certidão de casamento</item>
+                    <item id="11560">Certidão de nascimento</item>
+                    <item id="11561">CPF</item>
+                    <item id="11562">Documentação da atividade rural</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8542" tipo="web">
+                        <descricao>https://meu.inss.gov.br/central/index.html#/agenda</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8543" tipo="presencial">
+                        <descricao>Em uma [Agência do INSS](https://meu.inss.gov.br/central/index.html#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="8544" tipo="aplicativo-movel">
+                        <descricao>&amp;nbsp;      
+[&lt;img src = " https://servicos.serpro.gov.br/cnh-digital/images/google-play-badge.png " width = " 84 " height = " 25 "&gt;](https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&amp;hl=pt_BR)  [&lt;img src = " https://servicos.serpro.gov.br/cnh-digital/images/apple-badge.png " width = " 84 " height = " 25 "&gt;](https://itunes.apple.com/br/app/meu-inss/id1243048358?mt=8)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="7885">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="14736">morte</item>
+        <item id="14737">falecimento</item>
+        <item id="14738">agricultor</item>
+        <item id="14739">pensão</item>
+    </palavras-chave>
+</servico>
