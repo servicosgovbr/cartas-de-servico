@@ -5,10 +5,10 @@
     <nome>Cadastrar-se e Licenciar-se para Controle de Produtos Químicos</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2812">AE - Autorização Especial</item>
-        <item id="2813">Solicitar Licença de Produtos Químicos</item>
-        <item id="2814">Certificado de Registro Cadastral - CRC</item>
-        <item id="2815">Certificado de Licença de Funcionamento - CLF</item>
+        <item id="2816">AE - Autorização Especial</item>
+        <item id="2817">Solicitar Licença de Produtos Químicos</item>
+        <item id="2818">Certificado de Registro Cadastral - CRC</item>
+        <item id="2819">Certificado de Licença de Funcionamento - CLF</item>
     </nomes-populares>
     <descricao>O Administrado (Empresas, Instituições e Órgãos que realizam atividades com produtos químicos controlados) poderá requerer a emissão, renovação ou alteração de Cadastro e/ou Licença para exercer atividades com produtos químicos controlados pela Polícia Federal</descricao>
     <contato></contato>
@@ -17,15 +17,15 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4411">
+        <solicitante id="4414">
             <tipo>Empresas públicas, privadas e de economia mista</tipo>
             <requisitos>que realizam atividades com produtos químicos controlados</requisitos>
         </solicitante>
-        <solicitante id="4412">
+        <solicitante id="4415">
             <tipo>Instituições de ensino públicas e privadas</tipo>
             <requisitos>que realizam atividades com produtos químicos controlados</requisitos>
         </solicitante>
-        <solicitante id="4413">
+        <solicitante id="4416">
             <tipo>Órgãos da administração direta e indireta</tipo>
             <requisitos>que realizam atividades com produtos químicos controlados</requisitos>
         </solicitante>
@@ -38,18 +38,18 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8359">
+        <etapa id="8362">
             <titulo>Requerer cadastro ou licença</titulo>
             <descricao>Requerer Cadastro e/ou Licença para Controle de Produtos Químicos (Certificado de Registro Cadastral - CRC e/ou Certificado de Licença de Funcionamento - CLF  ou  AE - Autorização Especial)</descricao>
             <documentos>
                 <default>
-                    <item id="12121">Documento de identificação oficial com foto</item>
-                    <item id="12122">CPF</item>
-                    <item id="12123">CNPJ</item>
-                    <item id="12124">Ata de Fundação</item>
-                    <item id="12125">Contrato Social</item>
-                    <item id="12126">Comprovante de endereço</item>
-                    <item id="12127">Procuração do representante legal</item>
+                    <item id="12130">Documento de identificação oficial com foto</item>
+                    <item id="12131">CPF</item>
+                    <item id="12132">CNPJ</item>
+                    <item id="12133">Ata de Fundação</item>
+                    <item id="12134">Contrato Social</item>
+                    <item id="12135">Comprovante de endereço</item>
+                    <item id="12136">Procuração do representante legal</item>
                 </default>
             </documentos>
             <custos>
@@ -57,37 +57,37 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8834" tipo="presencial">
+                    <canal-de-prestacao id="8837" tipo="presencial">
                         <descricao>Em uma [Unidade da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8360">
+        <etapa id="8363">
             <titulo>Realizar pagamento</titulo>
             <descricao>Emitir a GRU e realizar o pagamento da taxa</descricao>
             <documentos>
                 <default>
-                    <item id="12128">GRU</item>
+                    <item id="12137">GRU</item>
                 </default>
-                <caso id="1123" descricao="Para gerar a GRU">
+                <caso id="1125" descricao="Para gerar a GRU">
                     <documento>
-                        <id>4401</id>
-                        <descricao>CPF ou CNPJ</descricao>
+                        <id>4402</id>
+                        <descricao>Nome ou razão social</descricao>
                     </documento>
                     <documento>
                         <id>4403</id>
                         <descricao>Dados de endereço e contato</descricao>
                     </documento>
                     <documento>
-                        <id>4402</id>
-                        <descricao>Nome ou razão social</descricao>
+                        <id>4401</id>
+                        <descricao>CPF ou CNPJ</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo id="862">
+                    <custo id="863">
                         <descricao>Taxa de Controle e Fiscalização de Produtos Químicos</descricao>
                         <moeda>R$</moeda>
                         <valor>2.533,46</valor>
@@ -98,23 +98,23 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8835" tipo="presencial">
+                    <canal-de-prestacao id="8838" tipo="presencial">
                         <descricao>Rede bancária</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="1124" descricao="Para gerar e emitir a GRU">
+                <caso id="1126" descricao="Para gerar e emitir a GRU">
                     <canal-de-prestacao id="4151" tipo="web-emitir">
                         <descricao>http://siproquim.dpf.gov.br/smp/gru/EntradaGru.do</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8361">
+        <etapa id="8364">
             <titulo>Receber resultado</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="12129">Documento de identificação oficial com foto</item>
+                    <item id="12138">Documento de identificação oficial com foto</item>
                 </default>
             </documentos>
             <custos>
@@ -122,7 +122,7 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8836" tipo="presencial">
+                    <canal-de-prestacao id="8839" tipo="presencial">
                         <descricao>Em uma [Unidade da Polícia Federal](http://www.pf.gov.br/institucional/unidades/superintendencias-e-delegacias)</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -133,9 +133,9 @@
         <nomeOrgao>Ministério da Justiça  (MJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="8024">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="8025">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="8026">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="8027">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="8028">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="8029">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -148,11 +148,11 @@
         <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="15048">produtos químicos</item>
-        <item id="15049">cadastro</item>
-        <item id="15050">licença</item>
+        <item id="15051">produtos químicos</item>
+        <item id="15052">cadastro</item>
+        <item id="15053">licença</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2634">[Lei nº 10.357, de 27 de dezembro de 2001](http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10357.htm)</item>
+        <item id="2635">[Lei nº 10.357, de 27 de dezembro de 2001](http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10357.htm)</item>
     </legislacoes>
 </servico>
