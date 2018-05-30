@@ -7,9 +7,12 @@
     <descricao>Todas as empresas tem a obrigação de manter serviços especializados em segurança e medicina do trabalho (SESMTs), e devem registrar estes serviços junto ao Ministério do Trabalho.Para permitir que as empresas cumpram esta obrigação é que existe este serviço.</descricao>
     <contato>* E-mail: sesmt@mte.gov.br</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="850">
+        <solicitante id="4401">
             <tipo>Empresas que possuam empregados</tipo>
             <requisitos>Você pode saber quantos profissionais e SESMTs sua empresa deve ter consultando os quadros I e II da [Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</requisitos>
         </solicitante>
@@ -18,16 +21,18 @@
         <atendimento-imediato/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2222">
+        <etapa id="8345">
             <titulo>Cadastrar-se no sistema</titulo>
             <descricao>Em primeiro lugar você deve cadastrar um usuário e senha no sistema SESMT</descricao>
             <documentos>
                 <default>
-                    <item id="2355">CPF</item>
-                    <item id="2356">Data de Nascimento</item>
-                    <item id="2357">Endereço de e-mail</item>
+                    <item id="12070">CPF</item>
+                    <item id="12071">Data de Nascimento</item>
+                    <item id="12072">Endereço de e-mail</item>
                 </default>
             </documentos>
             <custos>
@@ -35,20 +40,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2782" tipo="web">
-                        <descricao>https://sesmt.mte.gov.br/Usuario/CadastrarUsuario.aspx</descricao>
+                    <canal-de-prestacao id="8820" tipo="web">
+                        <descricao>http://sesmt.mte.gov.br/Usuario/CadastrarUsuario.aspx</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2223">
+        <etapa id="8346">
             <titulo>Cadastrar serviços</titulo>
             <descricao>Realizada a inscrição no sistema, você agora irá cadastrar os dados dos SESMTs de sua empresa, assim como os dados dos profissionais que os compõem.</descricao>
             <documentos>
                 <default>
-                    <item id="2358">Dados da empresa</item>
-                    <item id="2359">Dados dos Serviços Especializados em Segurança e Medicina do Trabalho da Empresa</item>
-                    <item id="2360">Dados dos profissionais que compõe os serviços.</item>
+                    <item id="12073">Dados da empresa</item>
+                    <item id="12074">Dados dos Serviços Especializados em Segurança e Medicina do Trabalho da Empresa</item>
+                    <item id="12075">Dados dos profissionais que compõe os serviços.</item>
                 </default>
             </documentos>
             <custos>
@@ -56,13 +61,13 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2783" tipo="web">
-                        <descricao>https://sesmt.mte.gov.br/</descricao>
+                    <canal-de-prestacao id="8821" tipo="web">
+                        <descricao>http://sesmt.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2224">
+        <etapa id="8347">
             <titulo>Imprimir recibo</titulo>
             <descricao>Após a conclusão de cadastro do SESMT, o sistema irá gerar um recibo, que você poderá imprimir e que é o comprovante de cumprimento desta obrigação legal.</descricao>
             <documentos>
@@ -73,17 +78,19 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2784" tipo="web">
-                        <descricao>https://sesmt.mte.gov.br/</descricao>
+                    <canal-de-prestacao id="8822" tipo="web">
+                        <descricao>http://sesmt.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2448">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="2449">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="8009">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="8010">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
@@ -93,12 +100,12 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1980">Segurança</item>
-        <item id="1981">Medicina do Trabalho</item>
-        <item id="1982">Cadastro</item>
+        <item id="15030">Segurança</item>
+        <item id="15031">Medicina do Trabalho</item>
+        <item id="15032">Cadastro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="661">[Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</item>
-        <item id="662">[PORTARIA Nº 559, DE 3 DE AGOSTO DE 2016](http://trabalho.gov.br/images/Documentos/SST/sesmt/portaria-559.pdf)</item>
+        <item id="2629">[Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</item>
+        <item id="2630">[PORTARIA Nº 559, DE 3 DE AGOSTO DE 2016](http://trabalho.gov.br/images/Documentos/SST/sesmt/portaria-559.pdf)</item>
     </legislacoes>
 </servico>
