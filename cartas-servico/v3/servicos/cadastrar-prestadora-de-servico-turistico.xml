@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-prestadora-de-servico-turistico</id>
+    <dbId>1047</dbId>
+    <nome>Cadastrar prestadora de Serviço Turístico</nome>
+    <sigla>Cadastur PJ</sigla>
+    <nomes-populares>
+        <item id="2831">Cadastur</item>
+        <item id="2832">Cadastro Embratur</item>
+    </nomes-populares>
+    <descricao>Cadastro no Ministério do Turismo de pessoas jurídicas que atuam no setor turístico. É obrigatório para Meios de Hospedagem, Agências de Turismo, Transportadoras Turísticas, Organizadoras de Eventos, Parques Temáticos, Acampamentos Turísticos. Válido por 2 anos. Em caráter opcional outras atividades podem ser cadastradas. O cadastro permite ao prestador atuar legalmente, de acordo com a Lei do Turismo, por meio da emissão do Certificado Cadastur, assim como oferece benefícios aos cadastrados.</descricao>
+    <contato>¨ [Enviar mensagem](https://cadastur.turismo.gov.br/hotsite/#!/public/duvidas-frequentes/inicio#faleConoscoAncora)     
+¨ [Chat Online](http://chat.tellussa.com.br/mtur/chat.php?a=80685)     
+
+¨ **Telefone:**  0800 200 8484</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>https://cadastur.turismo.gov.br/hotsite/#!/public/sica/cadastrar-usuario</link-servico-digital>
+    <solicitantes>
+        <solicitante id="4445">
+            <tipo>As sociedades empresárias, sociedades simples, os empresários individuais e os serviços sociais autônomos que prestem serviços turísticos remunerados e que exerçam as atividades econômicas relacionadas à cadeia produtiva do turismo conforme Lei nº 11.771/2008.</tipo>
+            <requisitos>Os requisitos diferem quanto à atividade turística a ser cadastrada: meios de hospedagem; agências de turismo; transportadoras turísticas; organizadoras de eventos; parques temáticos; acampamentos turísticos e guias de turismo.
+Deve-se verificar o [site](http://cadastur.turismo.gov.br) para consultar os requisitos específicos de cada atividade.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="5" max="15" unidade="dias-uteis"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8398">
+            <titulo>Solicitar cadastro</titulo>
+            <descricao>Preenchimento de formulário online (por meio do sistema Cadastur) e anexo de documentos, caso necessário.</descricao>
+            <documentos>
+                <default>
+                    <item id="12209">CNPJ</item>
+                    <item id="12210">CPF</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8888" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/sou-prestador/inicio</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8399">
+            <titulo>Receber certificado</titulo>
+            <descricao>O certificado será disponibilizado para os cadastros em situação cadastral "Regular", após deferimento pelo órgão delegado de turismo. A visualização será permitida apenas ao usuário logado, que deverá imprimir o documento e o expor em local visível ao usuário.</descricao>
+            <documentos>
+                <default>
+                    <item id="12211">Nenhum</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8889" tipo="web">
+                        <descricao>https://cadastur.turismo.gov.br/hotsite/#!/public/sou-prestador/inicio#cadastrarAncora</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/72084" dbId="37547">
+        <nomeOrgao>Ministério do Turismo (MTur)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="8078">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
+        <item>Turismo</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="15130">Cadastur</item>
+        <item id="15131">Pessoa Jurídica</item>
+        <item id="15133">Agências de turismo</item>
+        <item id="15134">Transportadoras turísticas</item>
+        <item id="15132">Hóteis</item>
+        <item id="15135">Organizador de evento</item>
+        <item id="15136">Acampamentos turísticos</item>
+        <item id="15137">Parques temáticos</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="2652">Lei nº 11.771/2008</item>
+        <item id="2653">Lei nº 12.974/2014</item>
+        <item id="2654">Decreto nº 7.381/2010</item>
+        <item id="2655">Decreto nº 946/1993</item>
+        <item id="2656">Portaria MTur nº 197/2013</item>
+        <item id="2657">Lei nº 8.623/1993</item>
+    </legislacoes>
+</servico>
