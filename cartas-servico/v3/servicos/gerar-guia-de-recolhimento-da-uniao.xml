@@ -4,14 +4,14 @@
     <dbId>1465</dbId>
     <nome>Gerar Guia de Recolhimento da União</nome>
     <sigla>GRU</sigla>
-    <descricao>Documento instituído pelo Ministério da Fazenda para recolhimento das receitas de órgãos, fundos, autarquias, fundações e demais entidades integrantes dos orçamentos fiscal e da seguridade social, tais como taxas (custas judiciais, emissão de passaporte etc.), aluguéis de imóveis públicos, serviços administrativos e educacionais (inscrição de vestibular/concursos, expedição de certificados pelas Universidades Públicas Federais), multas (da Polícia Rodoviária Federal, do Código Eleitoral, do Serviço Militar etc.), entre outras.</descricao>
-    <contato></contato>
+    <descricao>&lt;p style="text-align:justify"&gt;A Guia de Recolhimento da União (GRU) é um dos documentos instituídos pelo Ministério da Fazenda para recolhimento das receitas de órgãos, fundos, autarquias, fundações e demais entidades integrantes dos orçamentos fiscal e da seguridade social, tais como taxas (custas judiciais, emissão de passaporte etc.), aluguéis de imóveis públicos, serviços administrativos e educacionais (inscrição de vestibular/concursos, expedição de certificados pelas Universidades Públicas Federais), multas (da Polícia Rodoviária Federal, do Código Eleitoral, do Serviço Militar etc.), entre outras.&lt;/p&gt;</descricao>
+    <contato>&lt;a href="https://www.tesouro.fazenda.gov.br/pt/gru"&gt;Mais informações sobre a GRU&lt;/a&gt;</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1820">
+        <solicitante id="4488">
             <tipo>Pessoas físicas e jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -24,9 +24,9 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3850">
+        <etapa id="8451">
             <titulo>Emitir GRU</titulo>
-            <descricao>Preencher os dados e imprimir</descricao>
+            <descricao>&lt;font color="red"&gt;&lt;b&gt;ATENÇÃO:&lt;/b&gt;&lt;/font&gt; &lt;b&gt;As informações para emissão da guia&lt;/b&gt; (Unidade Gestora, Gestão, Código de Recolhimento, Número de Referência e Valor) &lt;b&gt;deverão ser obtidas pelo contribuinte junto ao Órgão Público favorecido pelo pagamento&lt;/b&gt; (por exemplo, Tribunais, Universidades, Colégios Militares, Biblioteca Nacional, Comando da Marinha, Comando do Exército, Comando da Aeronáutica, entre outros).</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -35,8 +35,25 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4849" tipo="web">
+                    <canal-de-prestacao id="8963" tipo="web">
                         <descricao>http://consulta.tesouro.fazenda.gov.br/gru_novosite/gru_simples.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8452">
+            <titulo>Obter restituição ou retificar pagamento de GRU (se necessário)</titulo>
+            <descricao>&lt;p style="text-align:justify"&gt;Os Órgãos Públicos favorecidos pelo pagamento detêm competência para monitorar e gerenciar as suas receitas. Então, caso tenha feito um pagamento indevido ou digitado algum dado errado, é necessário entrar em contato com o Órgão Público favorecido pelo pagamento (consta na guia de recolhimento como Unidade Gestora) para solicitar a restituição do pagamento ou a retificação do registro em atendimento ao artigo 11 da Instrução Normativa STN nº 2 de 2009.&lt;/p&gt;</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8964" tipo="presencial">
+                        <descricao>Órgão público favorecido pelo pagamento da GRU.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -46,10 +63,10 @@
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3817">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="3818">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="3819">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="3820">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="8144">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="8145">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="8146">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="8147">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
@@ -57,8 +74,11 @@
         <item>Tributação</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="5871">GRU</item>
-        <item id="5872">boleto</item>
-        <item id="5873">darf</item>
+        <item id="15281">GRU</item>
+        <item id="15282">boleto</item>
+        <item id="15283">darf</item>
     </palavras-chave>
+    <legislacoes>
+        <item id="2670">&lt;a href="http://www.tesouro.fazenda.gov.br/documents/10180/113505/IN02_2009.pdf"&gt;Instrução Normativa STN Nº 02, DE 22 DE MAIO DE 2009.&lt;/a&gt;</item>
+    </legislacoes>
 </servico>
