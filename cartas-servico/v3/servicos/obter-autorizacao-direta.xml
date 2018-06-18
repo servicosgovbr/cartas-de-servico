@@ -4,45 +4,53 @@
     <dbId>2805</dbId>
     <nome>Obter Autorização Direta</nome>
     <sigla>AD</sigla>
-    <nomes-populares>
-        <item id="2204">Autorização para o Licenciamento Ambiental - ALA</item>
-        <item id="2205">Autorização ou Anuência para Supressão de Vegetação - ASV</item>
-        <item id="2206">Autorização para Coleta, Captura e Transporte de Material Biológico - ABio</item>
-    </nomes-populares>
-    <descricao>Para a obtenção de autorização direta é necessário encaminhar um requerimento para o ICMBio (entrega em qualquer unidade organizacional), com a descrição da atividade e da área afetada. Após análise técnica, é emitida uma comunicação oficial ao interessado informando o deferimento ou o indeferimento do pleito.</descricao>
+    <descricao>Procedimento administrativo para autorização de atividades condicionadas ao controle do poder Público, não sujeitas ao licenciamento ambiental e de atividades cuja autorização seja exigida por normas específicas.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3383">
+        <solicitante id="4526">
             <tipo>Pessoas físicas e jurídicas</tipo>
-            <requisitos></requisitos>
+            <requisitos>A atividade requerida não ser sujeita ao licenciamento ambiental</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="60" max="90" unidade="dias-corridos"/>
+        <entre min="30" max="60" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao>Podendo ser retificada ou cancelada a qualquer momento pelo gestor da unidade de conservação, mediante justificativa.</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6502">
+        <etapa id="8535">
             <titulo>Solicitar autorização</titulo>
-            <descricao>Envio do termo de referencia ou Estudo de impacto ambiental oriundo do órgão licenciador.</descricao>
+            <descricao>Solicitar autorização conforme Art. 3º da Instrução Normativa ICMBio 09/2009.</descricao>
             <documentos>
                 <default>
-                    <item id="8430">EIA RIMA</item>
-                    <item id="8431">Termo de Referencia</item>
-                    <item id="8432">FCA</item>
-                    <item id="8433">Documentação do Interessado.</item>
+                    <item id="12499">Descrição detalhada, com mapas ou croquis;</item>
+                    <item id="12500">Localização ou trajeto;</item>
+                    <item id="12501">Cronograma de atividades;</item>
+                    <item id="12502">Expectativa de duração;</item>
+                    <item id="12503">Dimensionamento do projeto ou atividade;</item>
+                    <item id="12504">Propostas para mitigação dos potenciais impactos à unidade de conservação;</item>
+                    <item id="12505">Apresentação de documentação que se fizer necessária visando atender legislação específica; e</item>
+                    <item id="12506">Demais informações pertinentes.</item>
                 </default>
+                <caso id="1141" descricao="Em caso de propriedade  particular">
+                    <documento>
+                        <id>12498</id>
+                        <descricao>Documento comprobatório de propriedade ou posse da área.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default>
-                    <custo id="514">
+                    <custo id="882">
                         <descricao>Taxa de análise e Autorização</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>conforme Portaria MMA-ICMBio 366/2009</valorVariavel>
@@ -52,8 +60,8 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6591" tipo="postal">
-                        <descricao>**DIRETORIA DE PESQUISA, AVALIAÇÃO E MONITORAMENTO DA BIODIVERSIDADE - Instituto Chico Mendes de Conservação da Biodiversidade** - Caixa Postal: 7993 CEP: 70673-970</descricao>
+                    <canal-de-prestacao id="9108" tipo="presencial">
+                        <descricao>Na &lt;a href="http://www.icmbio.gov.br/portal/unidades-de-conservacao" target="_blank"&gt;Unidade de Conservação&lt;/a&gt; onde se deseja realizar a atividade</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -63,16 +71,21 @@
         <nomeOrgao>Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6392">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="6393">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="6394">Órgãos e entidades públicas</item>
+        <item idSegmento="1" idServicoSegmento="8214">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="8215">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="8216">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="8217">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Meio ambiente</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12183">icmbio</item>
-        <item id="12184">autorização</item>
-        <item id="12185">permissão</item>
+        <item id="15425">icmbio</item>
+        <item id="15426">autorização</item>
+        <item id="15427">direta</item>
     </palavras-chave>
+    <legislacoes>
+        <item id="2687">&lt;a href="http://www.icmbio.gov.br/portal/images/stories/o-que-somos/in042009.pdf" target="_blank"&gt;Instrução Normativa ICMBio 4/2009&lt;/a&gt;</item>
+        <item id="2688">&lt;a href="http://www.icmbio.gov.br/flonaipanema/images/stories/Images_artigos/portaria366.pdf" target="_blank"&gt;Portaria MMA 366/2009&lt;/a&gt;</item>
+    </legislacoes>
 </servico>
