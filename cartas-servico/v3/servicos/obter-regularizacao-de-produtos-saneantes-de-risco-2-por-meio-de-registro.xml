@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-regularizacao-de-produtos-saneantes-de-risco-2-por-meio-de-registro</id>
+    <dbId>2627</dbId>
+    <nome>Obter regularização de produtos saneantes de risco 2 por meio de registro</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2868">Registro de Saneantes</item>
+    </nomes-populares>
+    <descricao>Estão sujeitos ao procedimento de registro os produtos saneantes de maior risco sanitário. As empresas podem solicitar alterações de seus registros (modificação de fórmula, alteração de rotulagem ou embalagem, etc.), seguindo o mesmo fluxo.  Nesse serviço a empresa previamente cadastrada protocola uma petição de registro com as informações técnicas previstas nos regulamentos específicos, gera uma Guia de Recolhimento – GRU, paga essa guia, após a internalização do pagamento as informações do produto são analisadas pela equipe técnica da Anvisa. Se as informações estiverem de acordo com as normas vigentes o registro é publicada em DOU e a partir desse momento o produto pode ser comercializado.</descricao>
+    <contato>Responsável: JAIMARA AZEVEDO OLIVEIRA (Coordenadora)
+Email: saneantes@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4520">
+            <tipo>Pessoas jurídicas</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="60" max="90" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>5</quantidade>
+        <unidade>anos</unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8529">
+            <titulo>Realizar peticionamento eletrônico no Portal da Anvisa</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9090" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8530">
+            <titulo>Protocolar na Agência</titulo>
+            <descricao>Juntamente com os laudos analíticos e outros documentos previstos na legislação.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9101" tipo="web">
+                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/Consultas/ConsultaAssuntoPersistir.asp</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9091" tipo="presencial">
+                        <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8531">
+            <titulo>Realizar pagamento</titulo>
+            <descricao>Ao final do processo de peticionamento será gerada a Guia de Recolhimento da União (GRU) para o pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS) proporcional ao porte da empresa.  Após realizar com sucesso a petição, imprima os documentos gerados e anote o número da transação, pois ele servirá para consultas futuras ao processo. Aguardar a análise da área técnica, com a respectiva publicação em D.O.U.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="879">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9102" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" dbId="914">
+        <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="8205">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Saúde</item>
+        <item>Vigilância Sanitária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="15407">higiente</item>
+        <item id="15408">ANVISA</item>
+        <item id="15409">registro</item>
+    </palavras-chave>
+</servico>
