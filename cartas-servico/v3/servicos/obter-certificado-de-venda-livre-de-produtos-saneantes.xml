@@ -5,31 +5,34 @@
     <nome>Obter Certificado de Venda Livre de Produtos Saneantes</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2483">CVL</item>
+        <item id="2872">CVL</item>
     </nomes-populares>
-    <descricao>O Certificado de Venda Livre é um documento outorgado pela autoridade sanitária competente ou organismos oficialmente reconhecidos no país de origem para atestar que o produto é livremente comercializado no mesmo.</descricao>
-    <contato></contato>
-    <gratuito>true</gratuito>
+    <descricao>O Certificado de Venda Livre é um documento outorgado pela autoridade sanitária competente ou por organismos oficialmente reconhecidos no país de origem para atestar que o produto é livremente comercializado no mesmo. Para o CVL, o interessado deverá clicar no assunto “Emissão de Certificado”, no menu esquerdo do sistema (colocar link). Após o recebimento do CVL, a área técnica irá analisar o documento e providenciar a assinatura do responsável. Quando a documentação estiver pronta, a empresa será diretamente comunicada por e-mail. O CVL deverá ser retirado na sede da Anvisa, em Brasília, na área de Protocolo. Após a protocolização do pedido, o interessado poderá acompanhar o andamento de seu pedido, por meio do sistema de Consulta à Situação de Documentos.</descricao>
+    <contato>Responsável: JAIMARA AZEVEDO OLIVEIRA (Coordenadora)
+Email: saneantes@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
+    <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3869">
-            <tipo>Fabricantes de produtos saneantes</tipo>
+        <solicitante id="4524">
+            <tipo>Pessoas jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="8" max="15" unidade="dias-corridos"/>
+        <entre min="15" max="30" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao>Não se aplica</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7380">
-            <titulo>Requisitar Certificado</titulo>
-            <descricao></descricao>
+        <etapa id="8525">
+            <titulo>Cadastramento da empresa</titulo>
+            <descricao>O primeiro passo para se ter acesso ao Sistema de Automação de Cosméticos (SGAS) e deve ser utilizado para cadastrar empresas privadas que fornecem produtos ou serviços regulados pela Anvisa e para cadastrar os usuários com vínculo de representação com essas empresas.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -38,21 +41,18 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7807" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
+                    <canal-de-prestacao id="9098" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/cadastramento-de-empresa</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7381">
-            <titulo>Retirar certificado</titulo>
-            <descricao></descricao>
+        <etapa id="8526">
+            <titulo>Realizar peticionamento</titulo>
+            <descricao>Realizar peticionamento eletrônico da importação. Antes de acessar o Sistema de Peticionamento é recomendável que o interessado identifique o Código de Assunto relacionado à sua petição, pois é a partir desse código que toda a transação do pedido irá se desenvolver. Durante o processo, o interessado será guiado para o tipo de peticionamento do Código de Assunto escolhido.</descricao>
             <documentos>
                 <default>
-                    <item id="10475">Carteira de identidade</item>
-                    <item id="10476">Carteira de trabalho</item>
-                    <item id="10477">CNPJ</item>
-                    <item id="10478">Procuração do representante legal</item>
+                    <item id="12493">Formulário de Petição</item>
                 </default>
             </documentos>
             <custos>
@@ -60,7 +60,48 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7808" tipo="presencial">
+                    <canal-de-prestacao id="9099" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8527">
+            <titulo>Realizar pagamento</titulo>
+            <descricao>Ao final do processo de peticionamento será gerada a Guia de Recolhimento da União (GRU) para o pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS) relacionada ao assunto escolhido.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="880">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária (TFVS)</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel>O valor da taxa é determinado pela Portaria Interministerial nº 701, de 31 de agosto de 2015.</valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9103" tipo="presencial">
+                        <descricao>Rede Bancária</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8528">
+            <titulo>Protocolar Agência</titulo>
+            <descricao>Após gerar a GRU, o interessado deverá juntar toda documentação solicitada, conforme lista de verificação (checklist) do Código de Assunto escolhido e protocolar fisicamente na Anvisa. Acessar o portal da Anvisa, baixar o arquivo com o modelo de Certificado de Venda Livre (CVL) para exportação de produtos de higiene pessoal registrados, preencher o CVL com os dados do produto e da empresa e enviar o CVL preenchido para o e-mail cvl.cosmeticos@anvisa.gov.br.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9100" tipo="presencial">
                         <descricao>**Sede Anvisa** - Sia, trecho 5, Área Especial 57), Brasília, DF, 71205-050</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -71,7 +112,7 @@
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7294">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="8208">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -83,8 +124,8 @@
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="13559">saneantes</item>
-        <item id="13560">exportação</item>
-        <item id="13561">certificado</item>
+        <item id="15419">saneantes</item>
+        <item id="15420">exportação</item>
+        <item id="15421">certificado</item>
     </palavras-chave>
 </servico>
