@@ -5,13 +5,13 @@
     <nome>Obter Restituição ou Compensação de Créditos</nome>
     <sigla></sigla>
     <descricao>Solicitação de restituição ou compensação de valores recolhidos em excesso ou indevidamente perante a taxa de fiscalização da CVM e das multas aplicadas pela CVM.</descricao>
-    <contato></contato>
+    <contato>gac@cvm.gov.br</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4533">
+        <solicitante id="4534">
             <tipo>Participantes e não participantes do mercado de valores mobiliários.</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -24,18 +24,28 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8547">
-            <titulo>Análise do protótipo validado pela CVM.</titulo>
+        <etapa id="8548">
+            <titulo>Registrar o pedido de restituição ou compensação.</titulo>
             <descricao></descricao>
             <documentos>
                 <default/>
+                <caso id="1147" descricao="Pedido de restituição ou compensação de pessoa jurídica">
+                    <documento>
+                        <id>12541</id>
+                        <descricao>(a) cópia do Contrato Social, Estatuto da empresa ou declaração de Empresário (firma individual). Estas deverão vir acompanhadas da última alteração, se for o caso. b.Cópia de documento de identidade do solicitante. No caso de Procurador: a. Cópia do instrumento de procuração particular com firma reconhecida do outorgante ou de procuração pública para representar o contribuinte junto à CVM; b.Cópia do documento de identidade que comprove a assinatura do outorgado.</descricao>
+                    </documento>
+                    <documento>
+                        <id>12540</id>
+                        <descricao>Fazer o download do formulário específico e após o preenchimento fazer o upload para registrar a solicitação.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="9123" tipo="e-mail">
+                    <canal-de-prestacao id="9124" tipo="e-mail">
                         <descricao>gac@cvm.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -46,17 +56,17 @@
         <nomeOrgao>Comissão de Valores Mobiliários (CVM)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="8228">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="8229">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="8230">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="8231">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração e Gestão Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="15457">Taxa de Fiscalização</item>
-        <item id="15458">Multas aplicadas pela CVM</item>
-        <item id="15459">Restituição ou compensação</item>
-        <item id="15460">Valor recolhido em excesso</item>
-        <item id="15461">Valor recolhido indevidamente</item>
+        <item id="15462">Taxa de Fiscalização</item>
+        <item id="15463">Multas aplicadas pela CVM</item>
+        <item id="15464">Restituição ou compensação</item>
+        <item id="15465">Valor recolhido em excesso</item>
+        <item id="15466">Valor recolhido indevidamente</item>
     </palavras-chave>
 </servico>
