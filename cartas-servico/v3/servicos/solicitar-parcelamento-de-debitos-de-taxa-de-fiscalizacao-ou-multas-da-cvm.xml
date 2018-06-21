@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-parcelamento-de-debitos-de-taxa-de-fiscalizacao-ou-multas-da-cvm</id>
+    <dbId>3199</dbId>
+    <nome>Solicitar Parcelamento de débitos de taxa de fiscalização ou multas da CVM</nome>
+    <sigla></sigla>
+    <descricao>Os débitos junto à Comissão de Valores Mobiliários (CVM), relativos à taxa de fiscalização da que trata a Lei 7.940/89, os débitos oriundos da aplicação de multa cominatória prevista no § 11, do art. 11, da Lei 6.385/76, e os débitos originários de penalidade de aplicação de multa, nos termos do inciso II, do mesmo art. 11, poderão ser parcelados em até 60 prestações mensais e sucessivas, a critério da autoridade, observadas as disposições da Deliberação CVM 447.</descricao>
+    <contato>gac@cvm.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4515">
+            <tipo>Regulados registrados na CVM</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8508">
+            <titulo>Solicitar o levantamento consolidado da dívida.</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9067" tipo="e-mail">
+                        <descricao>gac@cvm.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9163" tipo="web">
+                        <descricao>https://cvmweb.cvm.gov.br/SWB/default.asp?sg_sistema=sac</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8572">
+            <titulo>Solicitar Parcelamento</titulo>
+            <descricao>Conhecido o valor, se não houver parcelas em Dívida Ativa, deverá preencher o formulário Pedido de Parcelamento – PEPAR, anexo à Deliberação CVM 447/02, encaminhando os originais pelo protocolo geral da CVM, aos cuidados da Gerência de Arrecadação (GAC) com pedido de parcelamento ao Superintendente Geral (SGE).
+O devedor deverá se pautar pelas orientações dispostas na Deliberação CVM 447.</descricao>
+            <documentos>
+                <default/>
+                <caso id="1158" descricao="Divida em execução">
+                    <documento>
+                        <id>12597</id>
+                        <descricao>Se já houver sido remetida a dívida ao órgão jurídico para sua inscrição e execução, o devedor deverá consultar a Procuradoria Jurídica da CVM, Subprocuradoria Jurídica -3, pelos telefones (21) 3554-8308 / 3554-8382 / 3554-8447.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9164" tipo="presencial">
+                        <descricao>Em qualquer um dos protocolos da CVM no RJ, SP ou Brasília, aos cuidados da Gerência de Arrecadação (GAC) com pedido de parcelamento ao Superintendente Geral (SGE).</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9165" tipo="postal">
+                        <descricao>aos cuidados da Gerência de Arrecadação (GAC) com pedido de parcelamento ao Superintendente Geral (SGE).
+Rua Sete de Setembro, 111, 28° andar - Centro
+CEP: 20050-901 - Rio de Janeiro/RJ</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9166" tipo="web">
+                        <descricao>https://cvmweb.cvm.gov.br/SWB/default.asp?sg_sistema=sac</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/478" dbId="7907">
+        <nomeOrgao>Comissão de Valores Mobiliários (CVM)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="8194">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="8195">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Economia e Finanças</item>
+        <item>Finanças</item>
+        <item>Encargos financeiros</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="15388">multas</item>
+        <item id="15389">cvm</item>
+        <item id="15390">parcelamento</item>
+        <item id="15391">taxa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="2703">Deliberação CVM 447
+Lei 6.385/76: Dispõe sobre o mercado de valores mobiliários e cria a CVM.
+Lei 7.940/89: Institui a Taxa de Fiscalização dos mercados de títulos e valores mobiliários, e dá outras providências.</item>
+    </legislacoes>
+</servico>
