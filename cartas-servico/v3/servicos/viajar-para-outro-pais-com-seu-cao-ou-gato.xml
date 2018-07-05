@@ -5,7 +5,7 @@
     <nome>Viajar para outro país com seu cão ou gato</nome>
     <sigla>CVI</sigla>
     <nomes-populares>
-        <item id="2938">Certificado Veterinário Internacional</item>
+        <item id="2939">Certificado Veterinário Internacional</item>
     </nomes-populares>
     <descricao>&lt;div&gt;
 &lt;p style="text-align:justify"&gt;O trânsito de cães e gatos entre países exige documento emitido pela autoridade veterinária do país de origem e aceito pelos países de destino que ateste as condições e o histórico de saúde do animal de estimação, bem como o atendimento às exigências sanitárias do país de destino. No Brasil, o documento utilizado para essa finalidade é o CVI (Certificado Veterinário Internacional), que é expedido por Auditores Fiscais Federais Agropecuários – Médicos Veterinários - das unidades de Vigilância Agropecuária Internacional (Vigiagro), vinculadas à Secretaria de Defesa Agropecuária (SDA) do Ministério da Agricultura, Pecuária e Abastecimento (MAPA). Cada país tem requisitos específicos para autorizar o ingresso de cães e gatos no seu território. Com a automação desse processo, agora é possível a emissão online do Certificado Veterinário Internacional, com assinatura digital do Auditor Fiscal Federal Agropecuário, ou seja, sem a necessidade de deslocamento para solicitar e receber o documento. De início, a solicitação pode ser feita por meio digital se a viagem for para os Estados Unidos e em breve será expandida para outros países.&lt;/p&gt;
@@ -19,14 +19,16 @@
 &lt;p style="text-align:justify"&gt;Para mais detalhes sobre o funcionamento do e-CVI, consulte o &lt;a href="http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/animais-estimacao/arquivos/eCVIPassoaPassoCidadoVersoEUA.pdf" target="_blank"&gt;Manual de Acesso do e-CVI EUA.&lt;/a&gt; e veja o vídeo abaixo:&lt;/p&gt;
 &lt;br&gt;
 &lt;/div&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-bhwrT58TjQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</descricao>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-bhwrT58TjQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p style="text-align:justify"&gt;Vídeo publicado em 15 de maio de 2018&lt;/p&gt;</descricao>
     <contato>**Email:** vigiagro@agricultura.gov.br</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="4644">
+        <solicitante id="4646">
             <tipo>Qualquer cidadão</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -39,22 +41,22 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8690">
+        <etapa id="8697">
             <titulo>Cadastrar a solicitação</titulo>
             <descricao>Etapa destinada ao cidadão que vai abrir sua solicitação de Certificado Veterinário Internacional. Nessa etapa o cidadão deve preencher o destino para o qual ele deseja enviar o animal e as informações específicas conforme exigências do país de destino.</descricao>
             <documentos>
                 <default>
-                    <item id="12819">Documentos que comprovem o atendimento aos requisitos sanitários específicos do país de destino</item>
-                    <item id="12820">Carteira de vacinação do animal</item>
+                    <item id="12829">Documentos que comprovem o atendimento aos requisitos sanitários específicos do país de destino</item>
+                    <item id="12830">Carteira de vacinação do animal</item>
                 </default>
-                <caso id="1171" descricao="Se realizado pela Web">
-                    <documento>
-                        <id>4365</id>
-                        <descricao>Senha do Brasil Cidadão</descricao>
-                    </documento>
+                <caso id="1177" descricao="Se realizado pela Web">
                     <documento>
                         <id>4364</id>
                         <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>4365</id>
+                        <descricao>Senha do Brasil Cidadão</descricao>
                     </documento>
                 </caso>
             </documentos>
@@ -63,27 +65,27 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="9332" tipo="presencial">
+                    <canal-de-prestacao id="9341" tipo="presencial">
                         <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="9333" tipo="presencial">
+                    <canal-de-prestacao id="9342" tipo="presencial">
                         <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="1172" descricao="Se a viagem for para o Estados Unidos">
+                <caso id="1178" descricao="Se a viagem for para o Estados Unidos">
                     <canal-de-prestacao id="7990" tipo="web">
                         <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8691">
+        <etapa id="8698">
             <titulo>Acompanhar o processo</titulo>
             <descricao>Após a solicitação feita pelo cidadão, o processo é destinado a um Auditor Fiscal Federal Agropecuário que é responsável por analisar a solicitação e todos os documentos obrigatórios. Esse profissional emite seu parecer informando se a solicitação está aprovada ou indicando as adequações necessárias. O Auditor pode nessa etapa devolver ao cidadão solicitando mais informações ou correções.</descricao>
             <documentos>
                 <default>
-                    <item id="12821">CPF</item>
-                    <item id="12822">Senha do Brasil Cidadão</item>
+                    <item id="12831">CPF</item>
+                    <item id="12832">Senha do Brasil Cidadão</item>
                 </default>
             </documentos>
             <custos>
@@ -91,32 +93,32 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="9334" tipo="telefone">
+                    <canal-de-prestacao id="9343" tipo="telefone">
                         <descricao>No telefone informado no momento da requisição</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="1173" descricao="Se a viagem for para o Estados Unidos">
+                <caso id="1179" descricao="Se a viagem for para o Estados Unidos">
                     <canal-de-prestacao id="7991" tipo="web">
                         <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8692">
+        <etapa id="8699">
             <titulo>Receber o CVI</titulo>
             <descricao>Após aprovação da solicitação, o Auditor Fiscal Federal Agropecuário emite o Certificado Veterinário Internacional gerando um PDF que vai ser assinado digitalmente por ele. Após emissão no sistema, o cidadão deverá imprimir o documento e apresenta-lo à Autoridade Veterinária Oficial no país de destino, o qual poderá conferir a autencidade do CVI através de um código de verificação.</descricao>
             <documentos>
                 <default>
-                    <item id="12823">Documento de identificação oficial</item>
+                    <item id="12833">Documento de identificação oficial</item>
                 </default>
-                <caso id="1174" descricao="Se emitido via web">
-                    <documento>
-                        <id>4371</id>
-                        <descricao>Senha do Brasil Cidadão</descricao>
-                    </documento>
+                <caso id="1180" descricao="Se emitido via web">
                     <documento>
                         <id>4370</id>
                         <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>4371</id>
+                        <descricao>Senha do Brasil Cidadão</descricao>
                     </documento>
                 </caso>
             </documentos>
@@ -125,14 +127,14 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="9335" tipo="presencial">
+                    <canal-de-prestacao id="9344" tipo="presencial">
                         <descricao>Nas [unidades do VIGIAGRO](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/unidades)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="9336" tipo="presencial">
+                    <canal-de-prestacao id="9345" tipo="presencial">
                         <descricao>Nas [Superintendências Federais de Agricultura, Pecuária e Abastecimento da sua UF](http://www.agricultura.gov.br/sfa)</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="1175" descricao="Se a viagem for para o Estados Unidos">
+                <caso id="1181" descricao="Se a viagem for para o Estados Unidos">
                     <canal-de-prestacao id="7992" tipo="web">
                         <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=1159</descricao>
                     </canal-de-prestacao>
@@ -144,8 +146,8 @@
         <nomeOrgao>Ministério da Agricultura, Pecuária e Abastecimento (MAPA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="8342">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="8343">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="8347">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="8348">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Agropecuária</item>
@@ -158,18 +160,18 @@
         <item>Transporte Aéreo</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="15738">CVI</item>
-        <item id="15739">CZI</item>
-        <item id="15740">viajar com cachorro</item>
-        <item id="15741">viajar com gato</item>
-        <item id="15742">viagem</item>
+        <item id="15748">CVI</item>
+        <item id="15749">CZI</item>
+        <item id="15750">viajar com cachorro</item>
+        <item id="15751">viajar com gato</item>
+        <item id="15752">viagem</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2777">[Instrução Normativa nº 54, de 18 de novembro de 2013](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/animais-estimacao/arquivos/in-542013.pdf)</item>
-        <item id="2778">[Decreto 24.548/1934 ](http://www.planalto.gov.br/ccivil_03/decreto/1930-1949/d24548.htm)</item>
-        <item id="2779">[Instrução Normativa nº 36, de 14 de novembro de 2006](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=recuperarTextoAtoTematicaPortal&amp;codigoTematica=1265040)</item>
-        <item id="2780">[Decreto 5.741/2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
-        <item id="2781">[Instrução Normativa nº 5, de 7 de fevereiro de 2013](http://www.agricultura.gov.br/assuntos/sanidade-animal-e-vegetal/saude-animal/transito-animal/arquivos-transito-internacional/RequisitossanitriosparaingressaraoBrasilINMAPAN5de7defevereirode2013.pdf)</item>
+        <item id="2784">[Instrução Normativa nº 54, de 18 de novembro de 2013](http://www.agricultura.gov.br/assuntos/vigilancia-agropecuaria/animais-estimacao/arquivos/in-542013.pdf)</item>
+        <item id="2785">[Decreto 24.548/1934 ](http://www.planalto.gov.br/ccivil_03/decreto/1930-1949/d24548.htm)</item>
+        <item id="2786">[Instrução Normativa nº 36, de 14 de novembro de 2006](http://sistemasweb.agricultura.gov.br/sislegis/action/detalhaAto.do?method=recuperarTextoAtoTematicaPortal&amp;codigoTematica=1265040)</item>
+        <item id="2787">[Decreto 5.741/2006](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/decreto/d5741.htm)</item>
+        <item id="2788">[Instrução Normativa nº 5, de 7 de fevereiro de 2013](http://www.agricultura.gov.br/assuntos/sanidade-animal-e-vegetal/saude-animal/transito-animal/arquivos-transito-internacional/RequisitossanitriosparaingressaraoBrasilINMAPAN5de7defevereirode2013.pdf)</item>
     </legislacoes>
     <servicos-relacionados>
         <item>62</item>
