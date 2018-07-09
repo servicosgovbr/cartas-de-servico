@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-dados-em-registro-de-plano-de-saude</id>
+    <dbId>3086</dbId>
+    <nome>Alterar dados em registro de plano de saúde</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2883">Alteração de  produto</item>
+    </nomes-populares>
+    <descricao>Os planos privados de assistência à saúde a serem ofertados pelas operadoras deverão ser registrados na ANS como condição para sua comercialização, podendo este registro ser objeto de alteração, na forma prevista na instrução normativa da DIPRO. O pedido de alteração de dados nos registros de produtos somente poderá ser implementado nos produtos enviados para regularização em atendimento à RN nº 85/04 e suas posteriores alterações, e nos registros concedidos após a aludida resolução normativa. As alterações autorizadas pela ANS deverão alcançar a totalidade dos contratos vinculados ao plano.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4538">
+            <tipo>Operadoras de plano de saúde</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8554">
+            <titulo>Solicitar alteração</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="12550">Comprovante de pagamento</item>
+                    <item id="12551">Procuração do representante legal</item>
+                    <item id="12552">Solicitação formal, assinada e com identificação do representante da operadora junto à ANS</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="884">
+                        <descricao>Taxa de Alteração de Produtos (TAP)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>1.348,37</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9135" tipo="postal">
+                        <descricao>**Agência Nacional de Saúde Suplementar** - Av.  Augusto Severo, 84 - Glória - Rio de Janeiro (RJ) - CEP: 221031-072</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8555">
+            <titulo>Receber resposta</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="9136" tipo="postal">
+                        <descricao>Endereço cadastrado junto à ANS.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/45013" dbId="910">
+        <nomeOrgao>Agência Nacional de Saúde Suplementar (ANS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="8238">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="8239">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="8240">Demais segmentos (ONGs, organizações sociais, etc)</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Saúde</item>
+        <item>Comércio e Serviços</item>
+        <item>Fiscalização do Estado</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="15473">plano de saúde</item>
+        <item id="15474">alterar nome</item>
+        <item id="15475">alterar rede hospitalar</item>
+    </palavras-chave>
+</servico>
