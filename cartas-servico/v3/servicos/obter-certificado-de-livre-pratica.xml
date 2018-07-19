@@ -5,45 +5,56 @@
     <nome>Obter Certificado de Livre Prática</nome>
     <sigla>CLP</sigla>
     <nomes-populares>
-        <item id="2604">CLP</item>
+        <item id="2949">CLP</item>
     </nomes-populares>
     <descricao>A livre prática é a permissão emitida pela Anvisa para uma embarcação operar embarque e desembarque de viajantes, cargas ou suprimentos, de acordo com a RDC nº 72/2009 e está prevista no Regulamento Sanitário Internacional 2005 (RSI).
 O Certificado de Livre Prática (CLP) é um documento de caráter intransferível, emitido mediante análise das condições operacionais e higiênico-sanitárias da embarcação e do estado de saúde dos seus viajantes, a partir da análise documental das informações apresentadas quando da sua solicitação e/ou de uma inspeção sanitária realizada a bordo da embarcação. 
 Devem solicitar Certificado de Livre Prática (CLP) as embarcações que se destinam a um porto de controle sanitário.  A embarcação deve solicitar Livre Prática à autoridade sanitária em exercício no porto de controle sanitário ao qual se destina, quando não estiver portando CLP válido, por meio da Solicitação de Certificado.
 O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máxima de 48 horas e mínima de 24 horas do horário estimado de chegada da embarcação ao Porto. Nos portos onde os postos da Anvisa têm atendimento somente em dias úteis o CLP pode ser solicitado com antecedência máxima de 72 horas.</descricao>
-    <contato></contato>
+    <contato>Responsável: Viviane Vilela (Coordenadora) 
+Email: gimtv@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br
+Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3995">
-            <tipo>Embarcações de transporte de viajantes, cargas ou suprimentos.</tipo>
+        <solicitante id="4754">
+            <tipo>Pessoas Jurídicas: Embarcações de transporte de viajantes, cargas ou suprimentos.</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="2" max="7" unidade="dias-corridos"/>
+        <entre min="2" max="4" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <tipo>Válido por</tipo>
+        <quantidade>90</quantidade>
+        <unidade>dias</unidade>
+        <descricao>Como regra geral a livre pratica possui validade correspondente ao período de permanência da embarcação no porto. Entretanto para as embarcações que realizam navegação de apoio marítimo, apoio portuário, cabotagem de bandeira brasileira e interior de bandeira brasileira a livre pratica terá validade de 90 dias.</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7568">
-            <titulo>Solicitar Certificado</titulo>
-            <descricao>Entrega dos documentos para solicitação do certificado.</descricao>
+        <etapa id="8790">
+            <titulo>Solicitação de Livre Pratica no Sistema Porto sem Papel (PSP).</titulo>
+            <descricao>1 - Criação de documento único virtual (DUV) no sistema porto sem papel (PSP).
+2 - Peticionamento no sistema porto sem papel.
+3 - Pagamento da taxa de fiscalização e vigilância sanitária (TFVS).
+4 - Compensação bancária da taxa e geração do número de expediente no PSP.
+5 - Solicitação do certificado de livre pratica no PSP com apresentação dos documentos obrigatórios.  
+6 - Realização da inspeção sanitária da embarcação, se necessário.
+7 - Emissão do certificado de livre pratica.</descricao>
             <documentos>
                 <default>
-                    <item id="9702">Declaração Marítima de saúde assinada por representante da embarcação</item>
-                    <item id="9703">Lista de viajantes</item>
-                    <item id="9704">Certificado de Controle Sanitário de Bordo válido.</item>
-                    <item id="9705">GRU</item>
+                    <item id="12917">Declaração Marítima de Saúde, assinada pelo comandante ou por oficial tripulante por ele designado</item>
+                    <item id="12918">Lista de Viajantes, com respectivos locais e datas de embarque e desembarque;</item>
+                    <item id="12919">Certificado de Controle Sanitário de Bordo válido.</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="636">
+                    <custo id="888">
                         <descricao>Taxa de Fiscalização em Vigilância Sanitária</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>Variam de acordo com arqueação líquida (AL)  das embarcações e tipo de navegação</valorVariavel>
@@ -53,21 +64,28 @@ O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máx
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7351" tipo="presencial">
+                    <canal-de-prestacao id="9478" tipo="presencial">
                         <descricao>[Postos da Vigilância Sanitária](http://portal.anvisa.gov.br/documents/375992/0/Lista+de+endere%C3%A7os+GGPAF+20-12/c5efd32b-688d-423e-91da-c025ce2bf318)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="7352" tipo="web">
+                    <canal-de-prestacao id="9479" tipo="web">
                         <descricao>concentrador.portosempapel.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7569">
-            <titulo>Receber inspeção sanitária</titulo>
-            <descricao></descricao>
+        <etapa id="8834">
+            <titulo>Solicitação de Livre Pratica para os portos que não utilizam o Sistema Porto sem Papel (PSP)</titulo>
+            <descricao>1 - Geração da taxa de fiscalização e vigilância sanitária (TFVS) diretamente no sistema de peticionamento da Anvisa.
+2 - Pagamento da taxa de fiscalização e vigilância sanitária (TFVS).
+3 - Protocolar a solicitação do certificado de livre pratica  junto ao posto portuário da Anvisa com apresentação dos obrigatórios: 
+4 - Realização da inspeção sanitária da embarcação, se necessário.
+5 - Emissão do certificado de livre pratica.</descricao>
             <documentos>
                 <default>
-                    <item id="9706">Lista de documentos conforme RDC 72/09, Art. 8º</item>
+                    <item id="13007">Declaração Marítima de Saúde, assinada pelo comandante ou por oficial tripulante por ele designado</item>
+                    <item id="13008">Lista de Viajantes, com respectivos locais e datas de embarque e desembarque</item>
+                    <item id="13009">Certificado de Controle Sanitário de Bordo válido</item>
+                    <item id="13010">Comprovante de pagamento da taxa de fiscalização e vigilância sanitária (TFVS)</item>
                 </default>
             </documentos>
             <custos>
@@ -75,25 +93,8 @@ O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máx
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7353" tipo="presencial">
-                        <descricao>Embarcação solicitante</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="7570">
-            <titulo>Receber Certificado</titulo>
-            <descricao></descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="7354" tipo="presencial">
-                        <descricao>[Postos da Vigilância Sanitária](http://portal.anvisa.gov.br/documents/375992/0/Lista+de+endere%C3%A7os+GGPAF+20-12/c5efd32b-688d-423e-91da-c025ce2bf318)</descricao>
+                    <canal-de-prestacao id="9722" tipo="presencial">
+                        <descricao>Posto portuário da Anvisa</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -103,9 +104,9 @@ O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máx
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7512">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="7513">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="7514">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="8458">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="8459">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="8460">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Saúde</item>
@@ -114,8 +115,8 @@ O Certificado de Livre Prática (CLP) deve ser solicitado com antecedência máx
         <item>Transporte Hidroviário</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="13942">embarcação</item>
-        <item id="13943">vigilância sanitária</item>
-        <item id="13944">embarque e desembarque</item>
+        <item id="15937">embarcação</item>
+        <item id="15938">vigilância sanitária</item>
+        <item id="15939">embarque e desembarque</item>
     </palavras-chave>
 </servico>
