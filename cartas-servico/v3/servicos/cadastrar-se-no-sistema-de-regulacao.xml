@@ -4,16 +4,20 @@
     <dbId>1736</dbId>
     <nome>Cadastrar-se no Sistema de Regulação</nome>
     <sigla>SISREG</sigla>
-    <descricao>Sistema disponibilizado para as secretarias de saúde regularem o acesso aos procedimentos ambulatoriais e hospitalares, em seu âmbito de gestão</descricao>
+    <descricao>O Sistema de Regulação - SISREG é um sistema informatizado, disponibilizado pelo Ministério da Saúde (MS) a estados, Distrito Federal e municípios, com o objetivo de subsidiar o processo de regulação da saúde no âmbito local, na dimensão ambulatorial e hospitalar.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="2318">
-            <tipo>Secretarias estaduais e municipais de saúde</tipo>
-            <requisitos></requisitos>
+        <solicitante id="4901">
+            <tipo>A ferramenta SISREG pode ser utilizada no âmbito do Complexo Regulador e/ou Centrais de Regulação, além de Unidades Básicas de Saúde, Hospitais, Ambulatórios de Especialidades e demais estabelecimentos de saúde que atuam no processo de regulação. É importante destacar que o SISREG é configurado conforme a organização das ações e serviços de saúde local, com foco no agendamento e marcação de consultas, exames e internação hospitalar, de acordo com a disponibilidade de vagas existentes.</tipo>
+            <requisitos>É importante destacar que o cadastramento de usuários na ferramenta SISREG é realizado, exclusivamente, pelas unidades de saúde solicitantes que compõem a estrutura de regulação delimitada no âmbito local.
+
+O link disponibilizado no Portal de Serviços do Governo Federal (http://sisregiii.saude.gov.br), portanto, é direcionado a gestores municipais e estaduais que pretendem utilizar o SISREG nos processos de regulação sob sua administração e, não, diretamente aos usuários.
+
+O cidadão poderá acompanhar suas solicitações de consultas e exames, reguladas pelo SISREG, por meio do aplicativo de celular “Meu DigiSUS”, disponível para todos os smartphones e tablets que contenham os sistemas operacionais Android e IOS.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -24,9 +28,15 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4691">
-            <titulo>Realizar treinamento</titulo>
-            <descricao>Treinamento de operação do sistema</descricao>
+        <etapa id="8946">
+            <titulo>Solicitar Implantação do SISREG</titulo>
+            <descricao>O gestor local do SUS deve encaminhar ofício solicitando a implantação do SISREG, por meio físico ou eletrônico, a ser direcionado aos seguintes endereços:
+
+Esplanada dos Ministérios – Bloco G – Ala Norte – 2º andar,
+Departamento de Regulação, Avaliação e Controle de Sistemas. CEP: 70058-900.
+e-mail: cgra@saude.gov.br ou sisreg@saude.gov.br
+
+Após análise da solicitação de adesão ao SISREG, a equipe técnica da CGRA encaminhará, por e-mail, o formulário para cadastro do perfil administrador.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -35,37 +45,20 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="5058" tipo="presencial">
-                        <descricao>Lugar definido pela Secretaria de Saúde para a realização do treinamento</descricao>
+                    <canal-de-prestacao id="9729" tipo="presencial">
+                        <descricao>Esplanada dos Ministérios – Bloco G – Ala Norte – 2º andar,
+Departamento de Regulação, Avaliação e Controle de Sistemas. CEP: 70058-900.
+e-mail: cgra@saude.gov.br ou sisreg@saude.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9730" tipo="e-mail">
+                        <descricao>e-mail: cgra@saude.gov.br ou sisreg@saude.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4692">
-            <titulo>Requisitar cadastro</titulo>
-            <descricao></descricao>
-            <documentos>
-                <default>
-                    <item id="5836">Ofício requisitando a criação do perfil de acesso</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="5060" tipo="postal">
-                        <descricao>**Ministério da Saúde - Secretaria de Atenção à Saúde - Departamento de Regulação, Avaliação e Controle de Sistemas** - SAF/SUL, Quadra 2, Edifício Premium, Torre II – 3º Andar – Sala 302 – CEP 70070-600 - Brasília/DF</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="5059" tipo="presencial">
-                        <descricao>**Ministério da Saúde - Secretaria de Atenção à Saúde - Departamento de Regulação, Avaliação e Controle de Sistemas** - SAF/SUL, Quadra 2, Edifício Premium, Torre II – 3º Andar – Sala 302 – CEP 70070-600 - Brasília/DF</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="4693">
-            <titulo>Receber acesso</titulo>
-            <descricao></descricao>
+        <etapa id="8947">
+            <titulo>Realizar capacitação</titulo>
+            <descricao>As capacitações ofertadas pela Coordenação-Geral de Regulação e Avaliação (CGRA/DRAC/SAS/MS) são realizadas em Brasília (DF) e têm por objetivo capacitar os profissionais responsáveis pela configuração e implantação do SISREG nos estados, Distrito Federal e municípios.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -74,11 +67,8 @@
             </custos>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="5061" tipo="presencial">
-                        <descricao>**Ministério da Saúde - Secretaria de Atenção à Saúde - Departamento de Regulação, Avaliação e Controle de Sistemas** - SAF/SUL, Quadra 2, Edifício Premium, Torre II – 3º Andar – Sala 302 – CEP 70070-600 - Brasília/D</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="5062" tipo="postal">
-                        <descricao>**Ministério da Saúde - Secretaria de Atenção à Saúde - Departamento de Regulação, Avaliação e Controle de Sistemas** - SAF/SUL, Quadra 2, Edifício Premium, Torre II – 3º Andar – Sala 302 – CEP 70070-600 - Brasília/D</descricao>
+                    <canal-de-prestacao id="9731" tipo="presencial">
+                        <descricao>Coordenação-Geral de Regulação e Avaliação (CGRA/DRAC/SAS/MS)- Brasília (DF)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -88,14 +78,15 @@
         <nomeOrgao>Ministério da Saúde (MS)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="2" idServicoSegmento="4732">Órgãos e entidades públicas</item>
+        <item idSegmento="2" idServicoSegmento="8653">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Saúde</item>
+        <item>Ambiente e saúde</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="8739">......................</item>
-        <item id="8740">......................</item>
-        <item id="8741">......................</item>
+        <item id="16316">Atendimento</item>
+        <item id="16317">Saúde</item>
+        <item id="16318">Sistema</item>
     </palavras-chave>
 </servico>
