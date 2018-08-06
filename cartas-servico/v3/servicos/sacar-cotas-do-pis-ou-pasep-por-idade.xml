@@ -5,15 +5,17 @@
     <nome>Sacar cotas do PIS ou PASEP por idade</nome>
     <sigla>PIS</sigla>
     <nomes-populares>
-        <item id="858">MP 797/2017</item>
+        <item id="3015">MP 797/2017, PIS, PASEP</item>
     </nomes-populares>
     <descricao>Se você trabalhou de forma legal e oficial entre os anos de 1970 e 1988, se o seu empregador fez as contribuições previstas em lei e se você já não sacou suas cotas, você pode ter valores a receber provenientes das contribuições daquela época. Veja aqui como fazer isso.</descricao>
     <contato>¨[PIS](http://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre);        
 ¨[PASEP](http://www.bb.com.br/pbb/pagina-inicial/atendimento#/);</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1352">
+        <solicitante id="4892">
             <tipo>Trabalhador da iniciativa privada</tipo>
             <requisitos>¨Com mais de 65 anos, caso seja homem, ou mais de 62 anos, caso seja mulher;      
 
@@ -22,14 +24,14 @@
 ¨Cujo empregador tenha feito as contribuições ao PIS;       
 ¨Que tenha saldo não resgatado em sua conta do PIS.</requisitos>
         </solicitante>
-        <solicitante id="1353">
+        <solicitante id="4893">
             <tipo>Servidor Público</tipo>
             <requisitos>¨Com mais de 65 anos, caso seja homem, ou mais de 62 anos, caso seja mulher;      
 
 ¨Que tenha trabalhado entre os anos de 1970 e 1988;       
 ¨Que tenha saldo não resgatado em sua conta do PASEP.</requisitos>
         </solicitante>
-        <solicitante id="1354">
+        <solicitante id="4894">
             <tipo>Herdeiro de trabalhador da iniciativa privada ou de servidor público falecido</tipo>
             <requisitos>¨Que tenha trabalhado entre os anos de 1970 e 1988;       
 
@@ -37,7 +39,7 @@
 
 ¨Que tenha saldo não resgatado em sua conta do PIS ou PASEP.</requisitos>
         </solicitante>
-        <solicitante id="1355">
+        <solicitante id="4895">
             <tipo>Aposentado</tipo>
             <requisitos>¨Que tenha trabalhado entre os anos de 1970 e 1988;       
 
@@ -53,31 +55,34 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2900">
+        <etapa id="8935">
             <titulo>Consultar Saldo</titulo>
             <descricao>O seu primeiro passo deve ser o de consultar seu saldo no PIS ou no PASEP</descricao>
             <documentos>
                 <default>
-                    <item id="3794">CPF</item>
-                    <item id="3795">NIS/PIS/PASEP</item>
-                    <item id="3796">Data de Nascimento</item>
+                    <item id="13141">CPF</item>
+                    <item id="13142">NIS/PIS/PASEP</item>
+                    <item id="13143">Data de Nascimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <em-media max="1" unidade="dias-corridos"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3885" tipo="presencial">
-                        <descricao></descricao>
+                    <canal-de-prestacao id="9719" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>de acordo com os casos apresentados a seguir:</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="430" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                <caso id="1344" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                    <canal-de-prestacao id="3874" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="3873" tipo="web-consultar">
                         <descricao>https://cotasidade.caixa.gov.br/sipab_quotas/pages/#!/home</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="3874" tipo="presencial">
-                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="3875" tipo="aplicativo-movel">
                         <descricao>.       
@@ -86,17 +91,17 @@
 ¨[Windows Phone](https://www.microsoft.com/en-us/store/apps/caixa-trabalhador/9nblggh68vr3)</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="431" descricao="Para servidores públicos (PASEP)">
+                <caso id="1345" descricao="Para servidores públicos (PASEP)">
+                    <canal-de-prestacao id="3877" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
+                    </canal-de-prestacao>
                     <canal-de-prestacao id="3876" tipo="web-consultar">
                         <descricao>https://www36.bb.com.br/portalbb/pasep/pesquisa,802,17,505134,2,0,1.bbx?_ga=2.237701703.636344659.1508164566-1907625666.1493733904&amp;&amp;pk_vid=d9f4ad9535606e4415081659938bdedb</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="3877" tipo="presencial">
-                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2901">
+        <etapa id="8936">
             <titulo>Consultar calendário de recebimento.</titulo>
             <descricao>É importante consultar o calendário de saques porque as datas variam por razões de idade e situação. **Para herdeiros de trabalhador falecido o saque pode ser realizado a qualquer momento**, e para correntistas do banco em questão (Caixa para o PIS e Banco do Brasil para o PASEP) os valores serão depositados na conta dois dias antes da data estabelecida;</descricao>
             <documentos>
@@ -105,17 +110,20 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <em-media max="1" unidade="dias-corridos"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3886" tipo="presencial">
-                        <descricao></descricao>
+                    <canal-de-prestacao id="9720" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>De acordo com os casos listados a seguir:</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="432" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                <caso id="1346" descricao="Para trabalhadores da iniciativa privada (PIS)">
                     <canal-de-prestacao id="3878" tipo="web-consultar">
                         <descricao>https://cotasidade.caixa.gov.br/sipab_quotas/pages/#!/home</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="3879" tipo="presencial">
+                    <canal-de-prestacao id="3879" tipo="presencial" tempo-estimado-espera="15">
                         <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
                     </canal-de-prestacao>
                     <canal-de-prestacao id="3880" tipo="aplicativo-movel">
@@ -125,45 +133,45 @@
 ¨[Windows Phone](https://www.microsoft.com/en-us/store/apps/caixa-trabalhador/9nblggh68vr3)</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="433" descricao="Para servidores públicos (PASEP)">
+                <caso id="1347" descricao="Para servidores públicos (PASEP)">
                     <canal-de-prestacao id="3881" tipo="web-consultar">
                         <descricao>http://www.bb.com.br/pbb/pagina-inicial/setor-publico/governo-federal/gestao/gestao-de-recursos/pagamento-de-ordens-bancarias,-salarios-e-beneficios/pasep/calendario-de-pagamento-das-cotas-do-pasep#/</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="3882" tipo="presencial">
+                    <canal-de-prestacao id="3882" tipo="presencial" tempo-estimado-espera="15">
                         <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2902">
+        <etapa id="8937">
             <titulo>Receber valor da cota (para quem tiver saldo em conta)</titulo>
             <descricao>Existindo saldo em conta você poderá receber o dinheiro respeitando o calendário consultado na etapa anterior.</descricao>
             <documentos>
                 <default>
-                    <item id="3804">Documento de identificação válido com foto</item>
-                    <item id="3805">CPF</item>
-                    <item id="3806">NIS/PIS/PASEP</item>
-                    <item id="3807">Cartão Cidadão (caso tenha)</item>
+                    <item id="13144">Documento de identificação válido com foto</item>
+                    <item id="13145">CPF</item>
+                    <item id="13146">NIS/PIS/PASEP</item>
+                    <item id="13147">Cartão Cidadão (caso tenha)</item>
                 </default>
-                <caso id="434" descricao="Herdeiros de trabalhador falecido">
+                <caso id="1348" descricao="Herdeiros de trabalhador falecido">
                     <documento>
-                        <id>3797</id>
-                        <descricao>Certidão ou declaração de dependente com direito a pensão junto ao INSS</descricao>
-                    </documento>
-                    <documento>
-                        <id>3798</id>
-                        <descricao>Atestado fornecido pela entidade (em caso de servidor público)</descricao>
+                        <id>3800</id>
+                        <descricao>Formal de partilha ou escritura pública de inventário e partilha</descricao>
                     </documento>
                     <documento>
                         <id>3799</id>
                         <descricao>Alvará judicial determinando o sucessor ou representante legal</descricao>
                     </documento>
                     <documento>
-                        <id>3800</id>
-                        <descricao>Formal de partilha ou escritura pública de inventário e partilha</descricao>
+                        <id>3798</id>
+                        <descricao>Atestado fornecido pela entidade (em caso de servidor público)</descricao>
+                    </documento>
+                    <documento>
+                        <id>3797</id>
+                        <descricao>Certidão ou declaração de dependente com direito a pensão junto ao INSS</descricao>
                     </documento>
                 </caso>
-                <caso id="435" descricao="Saque por procuração">
+                <caso id="1349" descricao="Saque por procuração">
                     <documento>
                         <id>3801</id>
                         <descricao>Procuração legalmente instituída que dê poderes para realizar o saque</descricao>
@@ -181,19 +189,22 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <ate max="3" unidade="meses"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3887" tipo="presencial">
-                        <descricao></descricao>
+                    <canal-de-prestacao id="9721" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
+                        <descricao>de acordo com os casos apresentados a seguir:</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="436" descricao="Para trabalhadores da iniciativa privada (PIS)">
-                    <canal-de-prestacao id="3883" tipo="presencial">
+                <caso id="1350" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                    <canal-de-prestacao id="3883" tipo="presencial" tempo-estimado-espera="15">
                         <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="437" descricao="Para servidores públicos (PASEP)">
-                    <canal-de-prestacao id="3884" tipo="presencial">
+                <caso id="1351" descricao="Para servidores públicos (PASEP)">
+                    <canal-de-prestacao id="3884" tipo="presencial" tempo-estimado-espera="15">
                         <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
                     </canal-de-prestacao>
                 </caso>
@@ -204,7 +215,7 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2977">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="8640">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fomento ao Trabalho</item>
@@ -215,15 +226,18 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3375">PIS</item>
-        <item id="3376">PASEP</item>
-        <item id="3377">MP 797</item>
-        <item id="3378">saque</item>
-        <item id="3379">abono salarial</item>
+        <item id="16299">PIS</item>
+        <item id="16300">PASEP</item>
+        <item id="16301">MP 797</item>
+        <item id="16302">saque</item>
+        <item id="16303">abono salarial</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1012">[LEI COMPLEMENTAR Nº 7, DE 7 DE SETEMBRO DE 1970](http://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp07.htm)</item>
-        <item id="1013">[DECRETO Nº 4.524, DE 17 DE DEZEMBRO DE 2002](http://www.planalto.gov.br/ccivil_03/decreto/2002/D4524.htm)</item>
-        <item id="1014">[MEDIDA PROVISÓRIA Nº 797, DE 23 DE AGOSTO DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Mpv/mpv797.htm)</item>
+        <item id="2963">[LEI COMPLEMENTAR Nº 7, DE 7 DE SETEMBRO DE 1970](http://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp07.htm)</item>
+        <item id="2964">[DECRETO Nº 4.524, DE 17 DE DEZEMBRO DE 2002](http://www.planalto.gov.br/ccivil_03/decreto/2002/D4524.htm)</item>
+        <item id="2965">[MEDIDA PROVISÓRIA Nº 797, DE 23 DE AGOSTO DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Mpv/mpv797.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>-</condicoes-acessibilidade>
+    <tratamento-prioritario>-</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>-</tratamento-dispensado-atendimento>
 </servico>
