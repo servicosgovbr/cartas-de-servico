@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>sacar-cotas-do-pis-ou-pasep</id>
+    <dbId>1080</dbId>
+    <nome>Sacar cotas do PIS ou PASEP</nome>
+    <sigla>PIS</sigla>
+    <nomes-populares>
+        <item id="3131">MP 797/2017, PIS, PASEP</item>
+    </nomes-populares>
+    <descricao>Se você trabalhou de forma legal e oficial entre os anos de 1970 e 1988, se o seu empregador fez as contribuições previstas em lei e se você já não sacou suas cotas, você pode ter valores a receber provenientes das contribuições daquela época. Veja aqui como fazer isso.</descricao>
+    <contato>¨[PIS](http://www.caixa.gov.br/atendimento/Paginas/default.aspx#encontre);        
+¨[PASEP](http://www.bb.com.br/pbb/pagina-inicial/atendimento#/);</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5076">
+            <tipo>Aposentado</tipo>
+            <requisitos>¨Que tenha trabalhado entre os anos de 1970 e 1988;       
+
+¨Cujo empregador tenha feito as contribuições ao PIS;       
+¨Que tenha saldo não resgatado em sua conta do PIS.</requisitos>
+        </solicitante>
+        <solicitante id="5073">
+            <tipo>Trabalhador da iniciativa privada</tipo>
+            <requisitos>¨Com mais de 65 anos, caso seja homem, ou mais de 62 anos, caso seja mulher;      
+
+¨Que tenha trabalhado entre os anos de 1970 e 1988;       
+
+¨Cujo empregador tenha feito as contribuições ao PIS;       
+¨Que tenha saldo não resgatado em sua conta do PIS.</requisitos>
+        </solicitante>
+        <solicitante id="5074">
+            <tipo>Servidor Público</tipo>
+            <requisitos>¨Com mais de 65 anos, caso seja homem, ou mais de 62 anos, caso seja mulher;      
+
+¨Que tenha trabalhado entre os anos de 1970 e 1988;       
+¨Que tenha saldo não resgatado em sua conta do PASEP.</requisitos>
+        </solicitante>
+        <solicitante id="5075">
+            <tipo>Herdeiro de trabalhador da iniciativa privada ou de servidor público falecido</tipo>
+            <requisitos>¨Que tenha trabalhado entre os anos de 1970 e 1988;       
+
+¨Cujo empregador tenha feito as contribuições ao PIS ou PASEP;       
+
+¨Que tenha saldo não resgatado em sua conta do PIS ou PASEP.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="meses"/>
+        <descricao>O tempo vai variar de acordo com o calendário estabelecido</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9163">
+            <titulo>Consultar Saldo</titulo>
+            <descricao>O seu primeiro passo deve ser o de consultar seu saldo no PIS ou no PASEP</descricao>
+            <documentos>
+                <default>
+                    <item id="13393">CPF</item>
+                    <item id="13394">NIS/PIS/PASEP</item>
+                    <item id="13395">Data de Nascimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <em-media max="1" unidade="dias-corridos"/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10008" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>de acordo com os casos apresentados a seguir:</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="1407" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                    <canal-de-prestacao id="3873" tipo="web-consultar">
+                        <descricao>https://cotasidade.caixa.gov.br/sipab_quotas/pages/#!/home</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3875" tipo="aplicativo-movel">
+                        <descricao>.       
+¨[Android](https://play.google.com/store/apps/details?id=br.gov.caixa.trabalhador)         
+¨[iOS](https://itunes.apple.com/br/app/caixa-trabalhador/id1047323337?mt=8)       
+¨[Windows Phone](https://www.microsoft.com/en-us/store/apps/caixa-trabalhador/9nblggh68vr3)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3874" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="1408" descricao="Para servidores públicos (PASEP)">
+                    <canal-de-prestacao id="3877" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3876" tipo="web-consultar">
+                        <descricao>https://www36.bb.com.br/portalbb/pasep/pesquisa,802,17,505134,2,0,1.bbx?_ga=2.237701703.636344659.1508164566-1907625666.1493733904&amp;&amp;pk_vid=d9f4ad9535606e4415081659938bdedb</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9164">
+            <titulo>Consultar calendário de recebimento.</titulo>
+            <descricao>É importante consultar o calendário de saques porque as datas variam por razões de idade e situação. **Para herdeiros de trabalhador falecido o saque pode ser realizado a qualquer momento**, e para correntistas do banco em questão (Caixa para o PIS e Banco do Brasil para o PASEP) os valores serão depositados na conta dois dias antes da data estabelecida;</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <em-media max="1" unidade="dias-corridos"/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10009" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>De acordo com os casos listados a seguir:</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="1409" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                    <canal-de-prestacao id="3878" tipo="web-consultar">
+                        <descricao>https://cotasidade.caixa.gov.br/sipab_quotas/pages/#!/home</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3879" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3880" tipo="aplicativo-movel">
+                        <descricao>.      
+¨[Android](https://play.google.com/store/apps/details?id=br.gov.caixa.trabalhador)         
+¨[iOS](https://itunes.apple.com/br/app/caixa-trabalhador/id1047323337?mt=8)       
+¨[Windows Phone](https://www.microsoft.com/en-us/store/apps/caixa-trabalhador/9nblggh68vr3)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="1410" descricao="Para servidores públicos (PASEP)">
+                    <canal-de-prestacao id="3881" tipo="web-consultar">
+                        <descricao>http://www.bb.com.br/pbb/pagina-inicial/setor-publico/governo-federal/gestao/gestao-de-recursos/pagamento-de-ordens-bancarias,-salarios-e-beneficios/pasep/calendario-de-pagamento-das-cotas-do-pasep#/</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="3882" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9165">
+            <titulo>Receber valor da cota (para quem tiver saldo em conta)</titulo>
+            <descricao>Existindo saldo em conta você poderá receber o dinheiro respeitando o calendário consultado na etapa anterior.</descricao>
+            <documentos>
+                <default>
+                    <item id="13396">Documento de identificação válido com foto</item>
+                    <item id="13397">CPF</item>
+                    <item id="13398">NIS/PIS/PASEP</item>
+                    <item id="13399">Cartão Cidadão (caso tenha)</item>
+                </default>
+                <caso id="1411" descricao="Herdeiros de trabalhador falecido">
+                    <documento>
+                        <id>3800</id>
+                        <descricao>Formal de partilha ou escritura pública de inventário e partilha</descricao>
+                    </documento>
+                    <documento>
+                        <id>3797</id>
+                        <descricao>Certidão ou declaração de dependente com direito a pensão junto ao INSS</descricao>
+                    </documento>
+                    <documento>
+                        <id>3798</id>
+                        <descricao>Atestado fornecido pela entidade (em caso de servidor público)</descricao>
+                    </documento>
+                    <documento>
+                        <id>3799</id>
+                        <descricao>Alvará judicial determinando o sucessor ou representante legal</descricao>
+                    </documento>
+                </caso>
+                <caso id="1412" descricao="Saque por procuração">
+                    <documento>
+                        <id>3801</id>
+                        <descricao>Procuração legalmente instituída que dê poderes para realizar o saque</descricao>
+                    </documento>
+                    <documento>
+                        <id>3802</id>
+                        <descricao>Documento de identificação do procurador</descricao>
+                    </documento>
+                    <documento>
+                        <id>3803</id>
+                        <descricao>documentação comprobatória da impossibilidade do titular pelas razões instituídas em lei</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <ate max="3" unidade="meses"/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10010" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
+                        <descricao>de acordo com os casos apresentados a seguir:</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="1413" descricao="Para trabalhadores da iniciativa privada (PIS)">
+                    <canal-de-prestacao id="3883" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência da Caixa Econômica Federal](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+                <caso id="1414" descricao="Para servidores públicos (PASEP)">
+                    <canal-de-prestacao id="3884" tipo="presencial" tempo-estimado-espera="15">
+                        <descricao>Em uma [agência do Banco do Brasil](http://encontreobb.com.br/)</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="8862">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Fomento ao Trabalho</item>
+        <item>Fiscalização do Estado</item>
+        <item>Proteção e Benefícios ao Trabalhador</item>
+        <item>Previdência Social</item>
+        <item>Relações de Trabalho</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="16793">PIS</item>
+        <item id="16794">PASEP</item>
+        <item id="16795">MP 797</item>
+        <item id="16796">saque</item>
+        <item id="16797">abono salarial</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3018">[LEI COMPLEMENTAR Nº 7, DE 7 DE SETEMBRO DE 1970](http://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp07.htm)</item>
+        <item id="3019">[DECRETO Nº 4.524, DE 17 DE DEZEMBRO DE 2002](http://www.planalto.gov.br/ccivil_03/decreto/2002/D4524.htm)</item>
+        <item id="3020">[MEDIDA PROVISÓRIA Nº 797, DE 23 DE AGOSTO DE 2017](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Mpv/mpv797.htm)</item>
+    </legislacoes>
+    <condicoes-acessibilidade>-</condicoes-acessibilidade>
+    <tratamento-prioritario>-</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>-</tratamento-dispensado-atendimento>
+</servico>
