@@ -5,100 +5,160 @@
     <nome>Readquirir nacionalidade brasileira</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="921">Reaquisição da Nacionalidade Brasileira</item>
+        <item id="3135">Reaquisição da Nacionalidade Brasileira</item>
+        <item id="3136">Revogação da Perda da Nacionalidade Brasileira</item>
+        <item id="3137">Quem perdeu a nacionalidade brasileira em virtude de ter adquirido outra</item>
     </nomes-populares>
-    <descricao>É o ato pelo qual uma pessoa readquire voluntariamente a nacionalidade que tinha perdido, quando esta voltar a fixar residência no Brasil.</descricao>
-    <contato>Caso tenha dúvidas, preencha este [questionário](https://docs.google.com/forms/d/e/1FAIpQLScaKxNdutP22pF7FEX4aMgdIQjF2eWLyiao_X54y-hbfhshLA/viewform?c=0&amp;w=1)</contato>
+    <descricao>É o ato pelo qual uma pessoa readquire voluntariamente a nacionalidade que tinha perdido.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1470">
-            <tipo>Ex-cidadão brasileiro</tipo>
-            <requisitos>Que perdeu a nacionalidade em virtude de ter adquirido outra</requisitos>
+        <solicitante id="5105">
+            <tipo>REAQUISIÇÃO DE NACIONALIDADE BRASILEIRA - Quem perdeu a nacionalidade brasileira por ter adquirido outra nacionalidade, e que não tenha mais interesse na nacionalidade estrangeira, e pretenda readquirir a nacionalidade brasileira.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="5106">
+            <tipo>REVOGAÇÃO DE PERDA DE NACIONALIDADE BRASILEIRA - Quem, conservando a nacionalidade estrangeira, queira readquirir a nacionalidade brasileira poderá ter a revogação da perda, desde que comprove que sua outra nacionalidade é originária (nascido em solo estrangeiro ou filho de estrangeiro), ou sua naturalização foi imposta por norma estrangeira, como condição para permanência em seu território ou para o exercício de direitos civis.</tipo>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="60" max="90" unidade="dias-corridos"/>
+        <nao-estimado-ainda/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3151">
-            <titulo>Apresentar requerimento</titulo>
+        <etapa id="9213">
+            <titulo>Apresentar requerimento.</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="4418">Certidão de Nascimento</item>
-                    <item id="4419">Prova de residência no Brasil (conta de luz, telefone ou contrato de locação de imóvel)</item>
-                    <item id="4420">Cópia da carteira de identidade de estrangeiro permanente ou passaporte ou certificado de naturalização no exterior</item>
+                    <item id="13293">Certidão de nascimento ou de casamento atualizada.</item>
                 </default>
+                <caso id="1396" descricao="REVOGAÇÃO DE PERDA DE NACIONALIDADE BRASILEIRA:">
+                    <documento>
+                        <id>13298</id>
+                        <descricao>[Formulário] devidamente preenchido e assinado pelo requerente dirigido ao Ministro da Justiça solicitando a revogação da perda da nacionalidade brasileira; (http://www.justica.gov.br/seus-direitos/migracoes/formularios-de-requerimento)</descricao>
+                    </documento>
+                    <documento>
+                        <id>13299</id>
+                        <descricao>Comprovação de imposição de naturalização por estado estrangeiro ou comprovação de nacionalidade originária estrangeira.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1397" descricao="REAQUISIÇÃO DE NACIONALIDADE BRASILEIRA:">
+                    <documento>
+                        <id>13302</id>
+                        <descricao>Comprovação de perda da nacionalidade derivada no prazo de dezoito meses após a data da publicação da Portaria de concessão.</descricao>
+                    </documento>
+                    <documento>
+                        <id>13300</id>
+                        <descricao>[Formulário] devidamente preenchido e assinado pelo requerente dirigido ao Ministro da Justiça solicitando a revogação da perda da nacionalidade brasileira; (http://www.justica.gov.br/seus-direitos/migracoes/formularios-de-requerimento)</descricao>
+                    </documento>
+                    <documento>
+                        <id>13301</id>
+                        <descricao>Comprovação de que cessou a causa da perda da nacionalidade brasileira por meio de protocolo de pedido de renúncia da nacionalidade estrangeira;</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4168" tipo="web">
+                    <canal-de-prestacao id="9785" tipo="web">
                         <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4169" tipo="presencial">
-                        <descricao>**Ministério da Justiça e Cidadania** – Departamento de Migrações Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF.</descricao>
+                    <canal-de-prestacao id="9787" tipo="postal">
+                        <descricao>Departamento de Migrações do Ministério da Justiça, Esplanada dos Ministérios, Bloco T, Anexo II, sala T3, Brasília/DF, CEP: 70.064-900.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4170" tipo="postal">
-                        <descricao>**Ministério da Justiça e Cidadania** – Departamento de Migrações Esplanada dos Ministérios, Bloco T, anexo II, sala T3, Brasília - DF.</descricao>
+                    <canal-de-prestacao id="9792" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>**Protocolo do Ministério da Justiça** – Esplanada dos Ministérios, Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="3152">
-            <titulo>Acompanhar processo e receber resultado</titulo>
-            <descricao></descricao>
+        <etapa id="9214">
+            <titulo>Acompanhar processo</titulo>
+            <descricao>As dúvidas referentes a este tipo de pedido poderão ser encaminhadas para o e-mail processos.migracoes@mj.gov.br.</descricao>
             <documentos>
                 <default>
-                    <item id="4421">CPF</item>
-                    <item id="4422">Número do processo</item>
+                    <item id="13297">Número do processo.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4171" tipo="web">
-                        <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="4172" tipo="web-acompanhar">
+                    <canal-de-prestacao id="9789" tipo="web-acompanhar">
                         <descricao>http://formularios.mj.gov.br/limesurvey/index.php/998625/lang/pt-BR/newtest/Y</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4173" tipo="e-mail">
+                    <canal-de-prestacao id="9790" tipo="e-mail">
                         <descricao>processos.migracoes@mj.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4174" tipo="web">
-                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9215">
+            <titulo>Consulta no Diário Oficial da União</titulo>
+            <descricao>A consulta poderá ser feita digitando o seu nome no campo [Informe o termo que deseja pesquisar] (http://www.imprensanacional.gov.br/)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10073" tipo="web">
+                        <descricao>http://www.imprensanacional.gov.br/web/guest/inicio</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
-        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJ)</nomeOrgao>
+        <nomeOrgao>Ministério da Justiça  (MJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3215">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="8662">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
         <item>Emigrações e Imigrações</item>
         <item>Relações Internacionais</item>
+        <item>Pessoa</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3854">readquirir nacionalidade</item>
-        <item id="3855">voltar a ser brasileiro</item>
-        <item id="3856">voltar para o Brasil</item>
+        <item id="16888">voltar a ser brasileiro</item>
+        <item id="16889">voltar para o Brasil</item>
+        <item id="16890">readquirir nacionalidade brasileira</item>
+        <item id="16891">revogação de perda de nacionalidade brasileir</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1157">-</item>
+        <item id="3048">[Lei nº 13.445/2017] (http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/L13445.htm)</item>
+        <item id="3049">[Decreto nº 9.199/2017] (http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm)</item>
+        <item id="3050">[Portaria Interministerial nº 11, de 3 de maio de 2018;] (http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/05/2018&amp;jornal=515&amp;pagina=46)</item>
+        <item id="3051">[Constituição Federal] (http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm)</item>
     </legislacoes>
+    <servicos-relacionados>
+        <item>1164</item>
+    </servicos-relacionados>
+    <condicoes-acessibilidade>Além dos canais, correio e protocolo eletrônico, o serviço pode ser protocolado pessoalmente no Protocolo-Geral do Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF. O local apresenta 4 (quatro) vagas de estacionamento para deficientes, 1(uma) em frente à sala e 3 (três) próximas; e 4 (quatro) vagas para idosos próximas. Todas as vagas possuem rampas para acesso.</condicoes-acessibilidade>
+    <tratamento-prioritario>Pessoa com idade igual ou superior a 60 (sessenta) anos; portadoras de deficiência, física ou mental; e  as portadoras de uma das seguintes doenças: tuberculose ativa; esclerose múltipla; neoplasia maligna; hanseníase; paralisia irreversível e incapacitante; cardiopatia grave; doença de Parkinson; espondiloartrose anquilosante; nefropatia grave; hepatopatia grave; estados avançados da doença de Paget (osteíte deformante); contaminação por radiação; síndrome de imunodeficiência adquirida, ou outra doença grave. É necessária a apresentação de comprovação médica.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Disponibilização de informações no site do Ministério da Justiça em linguagem clara, que esclarecem o cidadão sobre seus direitos e deveres na requisição do serviço, além da disponibilização de modo de consulta processual, por meio do qual o interessado pode acompanhar o andamento do seu processo. Há também o e-mail: processos.migracoes@mj.gov.br, no qual o cidadão tem a comunicação direta com o setor responsável pelo serviço.</tratamento-dispensado-atendimento>
 </servico>
