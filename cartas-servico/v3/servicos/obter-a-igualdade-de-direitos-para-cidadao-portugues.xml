@@ -5,111 +5,169 @@
     <nome>Obter a igualdade de direitos para cidadão português</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="1728">Igualdade de direitos</item>
-        <item id="1729">Igualdade</item>
+        <item id="2987">Igualdade de direitos</item>
+        <item id="2988">Igualdade</item>
     </nomes-populares>
-    <descricao>É o ato pelo qual o português adquire voluntariamente os mesmos direitos civis e políticos que os brasileiros devido a acordo realizado entre Brasil e Portugal.</descricao>
-    <contato>Caso tenha dúvidas, preencha este [questionário](https://docs.google.com/forms/d/e/1FAIpQLScaKxNdutP22pF7FEX4aMgdIQjF2eWLyiao_X54y-hbfhshLA/viewform?c=0&amp;w=1)</contato>
+    <descricao>É o ato pelo qual o português adquire voluntariamente os mesmos direitos civis e políticos que os brasileiros devido a acordo realizado entre Brasil e Portugal, desde que o requeira, pois não é automático.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</link-servico-digital>
     <solicitantes>
-        <solicitante id="2629">
-            <tipo>Nacionais portugueses</tipo>
-            <requisitos>Civilmente capazes e com residência habitual no Brasil.</requisitos>
+        <solicitante id="5107">
+            <tipo>Nacionais portugueses civilmente capazes e com residência habitual há **três anos** no Brasil que já detenham a igualdade de direitos e obrigações civis e pretendam o **gozo de direitos políticos**.</tipo>
+            <requisitos>Ter nacionalidade portuguesa ativa; residir no Brasil há três anos;
+ser registrado no Brasil; ter o gozo de direitos políticos em Portugal;
+já deter a igualdade de direitos e obrigações civis, e apresentar requerimento.</requisitos>
+        </solicitante>
+        <solicitante id="5108">
+            <tipo>Nacionais portugueses civilmente capazes e com residência habitual no Brasil que pretendam igualdade de direitos e obrigações **civis**.</tipo>
+            <requisitos>Ter nacionalidade portuguesa ativa; residir no Brasil; ser registrado no Brasil, e apresentar requerimento.</requisitos>
+        </solicitante>
+        <solicitante id="5109">
+            <tipo>Nacionais portugueses civilmente capazes e com residência habitual há **três anos** no Brasil que pretendam igualdade de direitos e obrigações civis e **gozo de direitos políticos**.</tipo>
+            <requisitos>Ter nacionalidade portuguesa ativa; residir no Brasil há três anos; ser registrado no Brasil; ter o gozo de direitos políticos em Portugal, e apresentar requerimento.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <nao-estimado-ainda/>
-        <descricao></descricao>
+        <descricao>Depende da documentação apresentada pelo interessado.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="5239">
-            <titulo>Entregar requerimento</titulo>
+        <etapa id="9216">
+            <titulo>Apresentar requerimento</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="4406">Requerimento assinado pelo interessado dirigido ao Ministro da Justiça solicitando a igualdade de direitos e obrigações civis</item>
-                    <item id="4407">Cópia da cédula de identidade de estrangeiro atualizada</item>
-                    <item id="4408">Certidão consular atual de nacionalidade portuguesa da qual conste, expressamente, que se destina a instruir pedido de reconhecimento de igualdade de direitos e obrigações civis</item>
-                    <item id="4409">Comprovante de residência de onde reside ou residiu no período imediatamente anterior ao pedido, e estando este em nome de genitor, cônjuge ou companheiro, deve ser acompanhado certidão de nascimento, ou casamento, ou comprovação de união estável</item>
-                    <item id="4410">Atestado de antecedentes criminais expedido pela Policia Civil dos Estados onde residiu nos últimos cinco anos</item>
+                    <item id="13099">Formulário devidamente preenchido e assinado pelo requerente dirigido ao Ministro da Justiça solicitando a igualdade de direitos e obrigações, que poderá ser encontrado no [site].(http://www.justica.gov.br/seus-direitos/migracoes/formularios-de-requerimento)</item>
+                    <item id="13100">Cópia da [Carteira de Registro Nacional Migratório] (https://www.servicos.gov.br/servico/obter-autorizacao-de-residencia-e-carteira-de-registro-migratorio?campaign=busca) e via original para conferência.</item>
+                    <item id="13102">Comprovantes de residência habitual, podendo ser um dos [seguintes documentos]:(http://www.justica.gov.br/seus-direitos/migracoes/documentos/igualdade-de-direitos-e-obrigacoes-civis)</item>
                 </default>
+                <caso id="1352" descricao="Igualdade de direitos e obrigações civis">
+                    <documento>
+                        <id>13148</id>
+                        <descricao>Certidão consular atual de nacionalidade portuguesa da qual conste, expressamente, que se destina a instruir pedido de reconhecimento de igualdade de direitos e obrigações civis.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1353" descricao="Igualdade de direitos e obrigações civis e gozo dos direitos políticos.">
+                    <documento>
+                        <id>13149</id>
+                        <descricao>Certidão consular de nacionalidade portuguesa da qual conste, expressamente, que se destina a instruir pedido de reconhecimento de igualdade de direitos e obrigações civis em gozo de direitos políticos no Brasil;</descricao>
+                    </documento>
+                    <documento>
+                        <id>13150</id>
+                        <descricao>Certidão consular que declara, expressamente, estar o interessado no gozo dos direitos políticos em Portugal.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1354" descricao="Outorga do gozo de direitos políticos para quem já tem igualdade de direitos e obrigações civis.">
+                    <documento>
+                        <id>13151</id>
+                        <descricao>Certidão consular de nacionalidade portuguesa da qual conste, expressamente, que se destina a instruir pedido de reconhecimento de igualdade de direitos e obrigações civis em gozo de direitos políticos no Brasil;</descricao>
+                    </documento>
+                    <documento>
+                        <id>13152</id>
+                        <descricao>Certidão consular que declara, expressamente, estar o interessado no gozo dos direitos políticos em Portugal.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4154" tipo="web">
+                    <canal-de-prestacao id="9656" tipo="web">
                         <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4155" tipo="presencial">
-                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
+                    <canal-de-prestacao id="9658" tipo="postal">
+                        <descricao>Departamento de Migrações do Ministério da Justiça, Esplanada dos Ministérios, Bloco T, Anexo II, sala T3, Brasília/DF, CEP: 70.064-900.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4156" tipo="postal">
-                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
+                    <canal-de-prestacao id="9657" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios,Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="5240">
-            <titulo>Acompanhar processo e receber resultado</titulo>
-            <descricao></descricao>
+        <etapa id="9217">
+            <titulo>Acompanhar o processo</titulo>
+            <descricao>As dúvidas referentes a este tipo de pedido poderão ser encaminhadas para o e-mail processos.migracoes@mj.gov.br.</descricao>
             <documentos>
-                <default>
-                    <item id="4411">CPF</item>
-                    <item id="4412">Nº do processo</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4157" tipo="web">
+                    <canal-de-prestacao id="9659" tipo="web">
                         <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4158" tipo="web-acompanhar">
+                    <canal-de-prestacao id="9660" tipo="web-acompanhar">
                         <descricao>http://formularios.mj.gov.br/limesurvey/index.php/998625/lang/pt-BR/newtest/Y</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4159" tipo="e-mail">
+                    <canal-de-prestacao id="9661" tipo="e-mail">
                         <descricao>processos.migracoes@mj.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4160" tipo="web">
-                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9218">
+            <titulo>Consulta no Diário Oficial da União</titulo>
+            <descricao>A consulta poderá ser feita digitando o seu nome no campo [Informe o termo que deseja pesquisar] (http://www.imprensanacional.gov.br/)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10074" tipo="web">
+                        <descricao>http://www.imprensanacional.gov.br/web/guest/inicio</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
-        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJSP)</nomeOrgao>
+        <nomeOrgao>Ministério da Justiça  (MJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="5197">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="8573">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cooperação Internacional</item>
         <item>Emigrações e Imigrações</item>
         <item>Justiça e Segurança Pública</item>
         <item>Relações Internacionais</item>
+        <item>Pessoa</item>
+        <item>Relações Diplomáticas</item>
+        <item>Serviços Públicos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="9743">igualdade</item>
-        <item id="9744">naturalização</item>
-        <item id="9745">estatuto da igualdade de direitos</item>
-        <item id="9746">estatuto da amizade</item>
+        <item id="16208">igualdade</item>
+        <item id="16198">igualdade entre brasileiros e portugueses</item>
+        <item id="16200">igualdade de direitos</item>
+        <item id="16201">tratado de amizade</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2278">[DECRETO Nº 3.927, DE 19 DE SETEMBRO DE 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3927.htm)</item>
-        <item id="2279">[Portaria nº 1949 de 25.11.2015](http://www.stj.jus.br/internet_docs/biblioteca/novasaquisicoes/Prt_1949_2015_Min_justica.pdf)</item>
+        <item id="3052">[DECRETO Nº 3.927, DE 19 DE SETEMBRO DE 2001](http://www.planalto.gov.br/ccivil_03/decreto/2001/d3927.htm)</item>
+        <item id="3053">[Portaria Interministerial nº 11 de 03.05.2018] (http://www.imprensanacional.gov.br/web/guest/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/12936945/do1-2018-05-04-portaria-interministerial-n-11-de-3-de-maio-de-2018-12936941)</item>
+        <item id="3054">[Decreto nº 9.199/2017] (http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm)</item>
     </legislacoes>
-    <servicos-relacionados>
-        <item>4</item>
-    </servicos-relacionados>
+    <condicoes-acessibilidade>Além dos canais, correio e protocolo eletrônico, o serviço pode ser protocolado pessoalmente no Protocolo-Geral do Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF. O local apresenta 4 (quatro) vagas de estacionamento para deficientes, 1(uma) em frente à sala e 3 (três) próximas; e 4 (quatro) vagas para idosos próximas. Todas as vagas possuem rampas para acesso.</condicoes-acessibilidade>
+    <tratamento-prioritario>Pessoa com idade igual ou superior a 60 (sessenta) anos; portadoras de deficiência, física ou mental; e  as portadoras de uma das seguintes doenças: tuberculose ativa; esclerose múltipla; neoplasia maligna; hanseníase; paralisia irreversível e incapacitante; cardiopatia grave; doença de Parkinson; espondiloartrose anquilosante; nefropatia grave; hepatopatia grave; estados avançados da doença de Paget (osteíte deformante); contaminação por radiação; síndrome de imunodeficiência adquirida, ou outra doença grave. É necessária a apresentação de comprovação médica.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Disponibilização de informações no site do Ministério da Justiça em linguagem clara, que esclarecem o cidadão sobre seus direitos e deveres na requisição do serviço, além da disponibilização de modo de consulta processual, por meio do qual o interessado pode acompanhar o andamento do seu processo. Há também o e-mail: processos.migracoes@mj.gov.br, no qual o cidadão tem a comunicação direta com o setor responsável pelo serviço.</tratamento-dispensado-atendimento>
 </servico>
