@@ -5,14 +5,16 @@
     <nome>Optar pela perda de nacionalidade brasileira</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="920">Perda da Nacionalidade Brasileira</item>
+        <item id="3021">Perda da Nacionalidade Brasileira</item>
     </nomes-populares>
-    <descricao>É o ato pelo qual uma pessoa perde voluntariamente a sua nacionalidade brasileira. Só é possível perder a nacionalidade brasileira caso a pessoa já tenha adquirido outra nacionalidade.</descricao>
-    <contato>Caso tenha dúvidas, preencha este [questionário](https://docs.google.com/forms/d/e/1FAIpQLScaKxNdutP22pF7FEX4aMgdIQjF2eWLyiao_X54y-hbfhshLA/viewform?c=0&amp;w=1)</contato>
+    <descricao>É o ato pelo qual uma pessoa perde voluntariamente a nacionalidade brasileira, desde que a pessoa já tenha adquirido outra nacionalidade.</descricao>
+    <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1469">
+        <solicitante id="4909">
             <tipo>Cidadão brasileiro</tipo>
             <requisitos>Nato ou naturalizado que adquiriu outra nacionalidade e desejar perder a brasileira.</requisitos>
         </solicitante>
@@ -25,86 +27,122 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3149">
+        <etapa id="9210">
             <titulo>Apresentar requerimento</titulo>
-            <descricao></descricao>
+            <descricao>Preencher [formulário] (http://www.justica.gov.br/seus-direitos/migracoes/formularios-de-requerimento)</descricao>
             <documentos>
                 <default>
-                    <item id="4414">Certidão de nascimento</item>
-                    <item id="4415">Cópia do certificado de naturalização da outra nacionalidade, legalizado junto às autoridades consulares brasileiras no exterior e traduzido oficialmente</item>
+                    <item id="13168">Comprovante da aquisição da outra nacionalidade, legalizado junto às autoridades consulares brasileiras no exterior e traduzido oficialmente.</item>
                 </default>
-                <caso id="508" descricao="Brasileiro naturalizado">
+                <caso id="1364" descricao="Brasileiro nato">
                     <documento>
                         <id>4413</id>
-                        <descricao>Certificado de naturalização brasileira</descricao>
+                        <descricao>Certidão de nascimento ou de casamento atualizada.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1365" descricao="Brasileiro naturalizado">
+                    <documento>
+                        <id>13172</id>
+                        <descricao>Certificado de naturalização brasileira.</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4161" tipo="web">
+                    <canal-de-prestacao id="9746" tipo="postal">
+                        <descricao>Departamento de Migrações do Ministério da Justiça, Esplanada dos Ministérios, Bloco T, Anexo II, sala T3, Brasília/DF, CEP: 70.064-900.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="9744" tipo="web">
                         <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4162" tipo="presencial">
-                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="4163" tipo="postal">
-                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Palácio da Justiça, Bloco T, Edifício sede. Cep: 70064-900 / Brasília-DF</descricao>
+                    <canal-de-prestacao id="9745" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="5">
+                        <descricao>**Ministério da Justiça** - Esplanada dos Ministérios, Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="3150">
-            <titulo>Acompanhar processo e receber resultado</titulo>
+        <etapa id="9211">
+            <titulo>Acompanhar processo</titulo>
             <descricao></descricao>
             <documentos>
-                <default>
-                    <item id="4416">CPF</item>
-                    <item id="4417">Número do processo</item>
-                </default>
+                <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4164" tipo="web">
+                    <canal-de-prestacao id="9747" tipo="web">
                         <descricao>http://protocoloeletronico.mj.gov.br/protocolo_eletronico/pages/externo/login_externo.jsf</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4165" tipo="web-acompanhar">
+                    <canal-de-prestacao id="9748" tipo="web-acompanhar">
                         <descricao>http://formularios.mj.gov.br/limesurvey/index.php/998625/lang/pt-BR/newtest/Y</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4166" tipo="e-mail">
+                    <canal-de-prestacao id="9749" tipo="e-mail">
                         <descricao>processos.migracoes@mj.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4167" tipo="web">
-                        <descricao>http://portal.imprensanacional.gov.br/</descricao>
+                    <canal-de-prestacao id="9750" tipo="web">
+                        <descricao>A consulta poderá ser feita digitando o seu nome no campo [Informe o termo que deseja pesquisar] (http://www.imprensanacional.gov.br/)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9212">
+            <titulo>CONSULTA NO DIÁRIO OFICIAL DA UNIÃO</titulo>
+            <descricao>A consulta poderá ser feita digitando o seu nome no campo [Informe o termo que deseja pesquisar] (http://www.imprensanacional.gov.br/)</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10072" tipo="web">
+                        <descricao>http://www.imprensanacional.gov.br/web/guest/inicio</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/316" dbId="37532">
-        <nomeOrgao>Ministério da Justiça e Segurança Pública (MJ)</nomeOrgao>
+        <nomeOrgao>Ministério da Justiça  (MJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="3214">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="8655">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cidadania</item>
         <item>Emigrações e Imigrações</item>
         <item>Justiça e Segurança Pública</item>
         <item>Relações Internacionais</item>
+        <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3851">perda de nacionalidade brasileira</item>
-        <item id="3852">deixar de ser brasileiro</item>
-        <item id="3853">desisitir da nacionalidade brasileira</item>
+        <item id="16322">perda de nacionalidade brasileira</item>
+        <item id="16323">deixar de ser brasileiro</item>
+        <item id="16324">desisitir da nacionalidade brasileira</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1156">-</item>
+        <item id="3044">[Lei nº 13.445/2017] (http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/L13445.htm)</item>
+        <item id="3045">**[Portaria Interministerial nº 11, de 3 de maio de 2018;] (http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=04/05/2018&amp;jornal=515&amp;pagina=46)**</item>
+        <item id="3046">[Constituição Federal] (http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm)</item>
+        <item id="3047">[Decreto nº 9.199/2017] (http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9199.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>Além dos canais, correio e protocolo eletrônico, o serviço pode ser protocolado pessoalmente no Protocolo-Geral do Ministério da Justiça, Bloco T, Anexo II, Térreo, sala T3. Cep: 70064-900 / Brasília-DF. O local apresenta 4 (quatro) vagas de estacionamento para deficientes , 1(uma) em frente à sala e 3 (três) próximas; e 4 (quatro) vagas para idosos próximas. Todas as vagas possuem rampas para acesso.</condicoes-acessibilidade>
+    <tratamento-prioritario>Pessoa com idade igual ou superior a 60 (sessenta) anos; portadoras de deficiência, física ou mental; e  as portadoras de uma das seguintes doenças: tuberculose ativa; esclerose múltipla; neoplasia maligna; hanseníase; paralisia irreversível e incapacitante; cardiopatia grave; doença de Parkinson; espondiloartrose anquilosante; nefropatia grave; hepatopatia grave; estados avançados da doença de Paget (osteíte deformante); contaminação por radiação; síndrome de imunodeficiência adquirida, ou outra doença grave. 
+É necessária a apresentação de comprovação médica.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Disponibilização de informações no site do Ministério da Justiça em linguagem clara, que esclarecem o cidadão sobre seus direitos e deveres na requisição do serviço, além da disponibilização de modo de consulta processual, por meio do qual o interessado pode acompanhar o andamento do seu processo. Há também o e-mail: processos.migracoes@mj.gov.br, no qual o cidadão tem a comunicação direta com o setor responsável pelo serviço.</tratamento-dispensado-atendimento>
 </servico>
