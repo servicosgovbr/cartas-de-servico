@@ -4,15 +4,26 @@
     <dbId>848</dbId>
     <nome>Cadastrar bem arqueológico</nome>
     <sigla></sigla>
-    <descricao>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada pode solicitar o reconhecimento de um bem de natureza arqueológica – objetos isolados ou sítios arqueológicos –, em razão de descoberta fortuita (ao acaso), conforme disposto na Lei nº 3.924/1961. Ver item Autorização para Realização de Pesquisas Arqueológicas..</descricao>
+    <nomes-populares>
+        <item id="3190">Cadastro de bem arqueológico</item>
+    </nomes-populares>
+    <descricao>O cadastro é uma ferramenta administrativa utilizada pelo IPHAN para organizar e mapear os sítios registrados.
+Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada pode solicitar o reconhecimento de um bem de natureza arqueológica – objetos isolados ou sítios arqueológicos –, em razão de descoberta fortuita (ao acaso), conforme disposto na Lei nº 3.924/1961. Ver item Autorização para Realização de Pesquisas Arqueológicas.
+Através do SICG (Sistema Integrado de Conhecimento e Gestão) será possível realizar o cadastro, por arqueólogos, dos bens arqueológicos protegidos em conformidade à [Lei nº 3.924/1961](http://www.planalto.gov.br/ccivil_03/leis/1950-1969/L3924.htm "Lei n° 3.924/1961") e [Portaria nº 241/1998](http://portal.iphan.gov.br/portal/baixaFcdAnexo.do?id=4062 "Portaria n° 241/1998").</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="874">
+        <solicitante id="5209">
             <tipo>Qualquer cidadão, organização da sociedade civil ou instituição pública ou privada</tipo>
             <requisitos>Solicitação formal expressando a relevância do bem, contendo a documentação necessária.</requisitos>
+        </solicitante>
+        <solicitante id="5210">
+            <tipo>Arqueólogo</tipo>
+            <requisitos>Solicitação por meio do Sistema [SICG](http://sicg.iphan.gov.br/sicg/login "SICG").</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -23,7 +34,7 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2260">
+        <etapa id="9319">
             <titulo>Solicitação</titulo>
             <descricao>Recebida a solicitação, o Centro Nacional de Arqueologia – CNA dará início à instrução processual objetivando a identificação do bem, a elaboração da ficha de registro e a inserção no Cadastro Nacional de Sítios Arqueológicos – CNSA.</descricao>
             <documentos>
@@ -32,13 +43,19 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2827" tipo="e-mail">
+                    <canal-de-prestacao id="10218" tipo="e-mail">
                         <descricao>cna@iphan.gov.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2828" tipo="presencial">
+                    <canal-de-prestacao id="10219" tipo="presencial">
                         <descricao>Por ofício: Dirigido à Superintendência do IPHAN no estado em que o bem se localiza, ou ao CNA, em Brasília.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10220" tipo="web">
+                        <descricao>[Acessar o sistema SICG](http://sicg.iphan.gov.br/sicg/login "SICG")</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -48,20 +65,24 @@
         <nomeOrgao>Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2473">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="2474">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="2475">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="9021">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="9022">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="9023">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Cultura</item>
         <item>Patrimônio Cultural</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="2044">Arqueológicos</item>
-        <item id="2166">Cadastramento</item>
-        <item id="2167">Bens Arqueológicos</item>
+        <item id="17216">SICG</item>
+        <item id="17217">Arqueológicos</item>
+        <item id="17218">Cadastramento</item>
+        <item id="17219">Bens Arqueológicos</item>
     </palavras-chave>
     <legislacoes>
-        <item id="685">[Lei nº 3.924/1961](http://www.planalto.gov.br/ccivil_03/leis/1950-1969/L3924.htm)</item>
+        <item id="3122">[Lei nº 3.924/1961](http://www.planalto.gov.br/ccivil_03/leis/1950-1969/L3924.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>-</condicoes-acessibilidade>
+    <tratamento-prioritario>-</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário poderá acessar [a página do Centro Nacional de Arqueologia](http://portal.iphan.gov.br/cna "Centro Nacional de Arqueologia") para obter mais informações sobre o serviço.</tratamento-dispensado-atendimento>
 </servico>
