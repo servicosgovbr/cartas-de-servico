@@ -5,15 +5,18 @@
     <nome>Cadastrar empresas que utilizam Benzeno</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="660">CETRAB</item>
+        <item id="3220">CETRAB</item>
     </nomes-populares>
     <descricao>Este serviço permite o cadastro, junto ao Ministério do Trabalho, das empresas que produzem ou lidam com Benzeno, como demanda a legislação.</descricao>
     <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
 * Fone: (61) 2031-6689</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="852">
+        <solicitante id="5283">
             <tipo>Empresas</tipo>
             <requisitos>Que produzem, transportam, armazenam, utilizam ou manipulam o produto Benzeno e suas misturas líquidas contendo 1% ou mais de volume</requisitos>
         </solicitante>
@@ -22,29 +25,34 @@
         <entre min="7" max="15" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2229">
+        <etapa id="9437">
             <titulo>Preenchimento e entrega do formulário</titulo>
             <descricao>O representante da empresa irá retirar, preencher e entregar o formulário no local de atendimento.</descricao>
             <documentos>
                 <default>
-                    <item id="2365">Formulário</item>
-                    <item id="2366">Documentação da empresa</item>
+                    <item id="13532">Formulário</item>
+                    <item id="13533">Documentação da empresa</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2789" tipo="presencial">
+                    <canal-de-prestacao id="10359" tipo="presencial">
                         <descricao>Superintendências Regionais de Trabalho e Emprego</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2230">
+        <etapa id="9438">
             <titulo>Confirmação do registro</titulo>
             <descricao>A empresa receberá ofício confirmando seu cadastro.</descricao>
             <documentos>
@@ -53,29 +61,37 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2790" tipo="postal">
+                    <canal-de-prestacao id="10360" tipo="postal">
                         <descricao>Endereço informado da sede da empresa</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2452">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9147">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
         <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1986">Benzeno</item>
-        <item id="1987">Insalubridade</item>
-        <item id="1988">Norma Regulamentadora nº 15</item>
+        <item id="17455">Benzeno</item>
+        <item id="17456">Insalubridade</item>
+        <item id="17457">Norma Regulamentadora nº 15</item>
     </palavras-chave>
     <legislacoes>
-        <item id="665">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
+        <item id="3152">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>.</condicoes-acessibilidade>
+    <tratamento-prioritario>.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>.</tratamento-dispensado-atendimento>
 </servico>
