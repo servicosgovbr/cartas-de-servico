@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>parcelar-debitos-patrimoniais</id>
+    <dbId>4266</dbId>
+    <nome>Parcelar Débitos Patrimoniais</nome>
+    <sigla></sigla>
+    <descricao>Formalizar parcelamento de débitos patrimoniais não inscritos em Dívida Ativa da União, conforme definições da Portaria SPU nº 107, de 03/07/2017, bem como consultar e imprimir DARF de débitos parcelados. Inicialmente, o serviço está disponível para pessoa física, após o cadastro na Plataforma Brasil Cidadão</descricao>
+    <contato>__Coordenação-Geral de Cobrança__
+ 
+*E-mail*: faleconosco.spu@planejamento.gov.br
+ 
+Endereço: Esplanada dos Ministérios
+ 
+Bloco C, 2º andar, Brasília-DF
+ 
+CEP: 70.046-900</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5281">
+            <tipo>Pessoa Física</tipo>
+            <requisitos>Que possua débitos passíveis de parcelamento, na forma da Portaria SPU nº 107/2017, e possua cadastro na Plataforma Brasil Cidadão (https://portal.brasilcidadao.gov.br/servicos-cidadao/acesso/#/primeiro-acesso).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <atendimento-imediato/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <tipo>Sem validade</tipo>
+        <quantidade>0</quantidade>
+        <unidade></unidade>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9433">
+            <titulo>Efetuar o parcelamento de débitos</titulo>
+            <descricao>Clique no serviço Parcelar Débitos Patrimoniais e acesse ao Brasil Cidadão, para informar CPF e senha ou efetuar o cadastro inicial. Em seguida, selecione a opção parcelamento de débitos, marque "Não sou um Robô" e avançar. Visualize os débitos, clique em simular parcelamento e escolha a quantidade de parcelas que deseja para a operação. Em seguida, leia e confirme o "Termo de Confissão de Dívidas". Em seguida, conclua a operação e gere o DARF, para pagamento da primeira parcela.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10355" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/parcelamentoDebitos?servico=154</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9434">
+            <titulo>Consultar e emirt DARF de parcelamento de débitos</titulo>
+            <descricao>Clique no serviço Parcelar Débitos Patrimoniais e acesse ao Brasil Cidadão, para informar CPF e senha ou efetuar o cadastro inicial. Em seguida, selecione a opção Consulta de Parcelamento, informe novamente o CPF, marque Não sou um robô" e avançar. Visualize as parcelas e gere o DARF desejado.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10356" tipo="web">
+                        <descricao>http://www.patrimoniodetodos.gov.br/#/parcelamentoDebitos?servico=154</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981" dbId="37545">
+        <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="9145">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Patrimônio da União</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="17447">parcelar</item>
+        <item id="17448">renegociar</item>
+        <item id="17449">spu</item>
+        <item id="17450">débitos</item>
+        <item id="17451">união</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3150">[Lei nº 13.139, de 26 de junho de 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13139.htm)</item>
+    </legislacoes>
+    <condicoes-acessibilidade>As Superintendências do Patrimônio da União dispõem de condições de acessibilidade, com sinalização e espaço físico para atendimento presencial</condicoes-acessibilidade>
+    <tratamento-prioritario>Idosos e pessoas com doenças crônicas previstas em Lei.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Serviço totalmente online</tratamento-dispensado-atendimento>
+</servico>
