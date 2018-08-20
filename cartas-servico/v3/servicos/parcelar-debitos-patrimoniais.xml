@@ -19,9 +19,9 @@ CEP: 70.046-900</contato>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="5281">
+        <solicitante id="5298">
             <tipo>Pessoa Física</tipo>
-            <requisitos>Que possua débitos passíveis de parcelamento, na forma da Portaria SPU nº 107/2017, e possua cadastro na Plataforma Brasil Cidadão (https://portal.brasilcidadao.gov.br/servicos-cidadao/acesso/#/primeiro-acesso).</requisitos>
+            <requisitos>Que possua débitos passíveis de parcelamento, na forma da Portaria SPU nº 107/2017, e possua cadastro na Plataforma Brasil Cidadão.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -35,9 +35,9 @@ CEP: 70.046-900</contato>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="9433">
-            <titulo>Efetuar o parcelamento de débitos</titulo>
-            <descricao>Clique no serviço Parcelar Débitos Patrimoniais e acesse ao Brasil Cidadão, para informar CPF e senha ou efetuar o cadastro inicial. Em seguida, selecione a opção parcelamento de débitos, marque "Não sou um Robô" e avançar. Visualize os débitos, clique em simular parcelamento e escolha a quantidade de parcelas que deseja para a operação. Em seguida, leia e confirme o "Termo de Confissão de Dívidas". Em seguida, conclua a operação e gere o DARF, para pagamento da primeira parcela.</descricao>
+        <etapa id="9503">
+            <titulo>Acessar a plataforma Brasil Cidadão</titulo>
+            <descricao>Acesse a plataforma Brasil Cidadão. Se já possuir cadastro, informe CPF e senha. Caso não possua, efetue o cadastro, seguindo os passos solicitados.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -49,15 +49,35 @@ CEP: 70.046-900</contato>
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10355" tipo="web">
+                    <canal-de-prestacao id="10383" tipo="web">
+                        <descricao>https://portal.brasilcidadao.gov.br/servicos-cidadao/acesso/#/primeiro-acesso</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9504">
+            <titulo>Efetuar o parcelamento de débitos</titulo>
+            <descricao>Após acessar e entrar na plataforma Brasil Cidadão, selecione a opção parcelamento de débitos, marque "Não sou um Robô" e avançar. Visualize os débitos, clique em simular parcelamento e escolha a quantidade de parcelas que deseja para a operação. Em seguida, leia e confirme o "Termo de Confissão de Dívidas". Em seguida, conclua a operação e gere o DARF, para pagamento da primeira parcela.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10384" tipo="web">
                         <descricao>http://www.patrimoniodetodos.gov.br/#/parcelamentoDebitos?servico=154</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="9434">
+        <etapa id="9505">
             <titulo>Consultar e emirt DARF de parcelamento de débitos</titulo>
-            <descricao>Clique no serviço Parcelar Débitos Patrimoniais e acesse ao Brasil Cidadão, para informar CPF e senha ou efetuar o cadastro inicial. Em seguida, selecione a opção Consulta de Parcelamento, informe novamente o CPF, marque Não sou um robô" e avançar. Visualize as parcelas e gere o DARF desejado.</descricao>
+            <descricao>Após acessar e entrar na plataforma Brasil Cidadão, selecione a opção Consulta de Parcelamento, informe novamente o CPF, marque Não sou um robô" e avançar. Visualize as parcelas e gere o DARF desejado.</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -69,7 +89,7 @@ CEP: 70.046-900</contato>
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10356" tipo="web">
+                    <canal-de-prestacao id="10413" tipo="web">
                         <descricao>http://www.patrimoniodetodos.gov.br/#/parcelamentoDebitos?servico=154</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -80,20 +100,20 @@ CEP: 70.046-900</contato>
         <nomeOrgao>Ministério do Planejamento, Desenvolvimento e Gestão (MP)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="9145">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9174">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Patrimônio da União</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="17447">parcelar</item>
-        <item id="17448">renegociar</item>
-        <item id="17449">spu</item>
-        <item id="17450">débitos</item>
-        <item id="17451">união</item>
+        <item id="17527">parcelar</item>
+        <item id="17528">renegociar</item>
+        <item id="17529">spu</item>
+        <item id="17530">débitos</item>
+        <item id="17531">união</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3150">[Lei nº 13.139, de 26 de junho de 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13139.htm)</item>
+        <item id="3159">[Lei nº 13.139, de 26 de junho de 2015](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13139.htm)</item>
     </legislacoes>
     <condicoes-acessibilidade>As Superintendências do Patrimônio da União dispõem de condições de acessibilidade, com sinalização e espaço físico para atendimento presencial</condicoes-acessibilidade>
     <tratamento-prioritario>Idosos e pessoas com doenças crônicas previstas em Lei.</tratamento-prioritario>
