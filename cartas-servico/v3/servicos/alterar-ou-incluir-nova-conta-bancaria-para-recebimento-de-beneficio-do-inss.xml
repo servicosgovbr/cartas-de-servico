@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>alterar-ou-incluir-nova-conta-bancaria-para-recebimento-de-beneficio-do-inss</id>
+    <dbId>2549</dbId>
+    <nome>Alterar ou incluir nova conta bancária para recebimento de benefício do INSS</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="2799">Alteração de conta bancária</item>
+        <item id="2800">Inclusão de conta bancária</item>
+        <item id="2801">Mudar conta bancária</item>
+    </nomes-populares>
+    <descricao>É a possibilidade que o cidadão tem de alterar a forma ou a conta bancária em que recebe o seu benefício do INSS.
+
+Conta bancária: o cidadão pode optar por receber o seu benefício em uma conta-corrente ou poupança, desde que seja ele próprio o titular da conta. Vale lembrar que esta modalidade de pagamento pode gerar tarifas bancárias, ligadas à manutenção e movimentação da conta.
+    
+Cartão magnético do INSS: todo benefício concedido sem indicação de conta bancária é enviado a um banco conveniado do INSS, localizado em uma região bancária que abrange, preferencialmente, a área de residência do beneficiário. Caso deseje receber seu benefício em cartão do INSS, o cidadão pode indicar somente a região bancária. Já a agência será determinada pelo INSS, dentro da região escolhida pelo beneficiário.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="4400">
+            <tipo>Beneficiários do INSS.</tipo>
+            <requisitos>Ser titular da conta</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="2" max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="8343">
+            <titulo>Agendar o atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="12061">CPF</item>
+                </default>
+                <caso id="1118" descricao="Beneficiário não pode comparecer">
+                    <documento>
+                        <id>12069</id>
+                        <descricao>CPF do procurador ou representante</descricao>
+                    </documento>
+                    <documento>
+                        <id>12068</id>
+                        <descricao>Documento de identificação do procurador ou representante</descricao>
+                    </documento>
+                    <documento>
+                        <id>12067</id>
+                        <descricao>Procuração ou termo de representação</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8818" tipo="telefone">
+                        <descricao>135</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="8344">
+            <titulo>Comparecer ao atendimento</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default>
+                    <item id="12064">Carteira de identidade</item>
+                    <item id="12065">CPF</item>
+                    <item id="12066">Dados da conta para recebimento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="8819" tipo="presencial">
+                        <descricao>Em uma [Unidade de atendimento do INSS](https://meu.inss.gov.br/central/index.html?app=localizador#/localizador-aps)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/1934" dbId="36802">
+        <nomeOrgao>Instituto Nacional do Seguro Social (INSS)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="1" idServicoSegmento="8008">Cidadãos</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Previdência Social</item>
+        <item>Previdência</item>
+        <item>Sistema Financeiro</item>
+        <item>Finanças pessoais</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="15024">trocar conta</item>
+        <item id="15025">recebimento de benefício</item>
+        <item id="15026">conta do salário</item>
+        <item id="15027">trocar conta</item>
+        <item id="15028">recebimento de benefício</item>
+        <item id="15029">conta do salário</item>
+    </palavras-chave>
+    <condicoes-acessibilidade>.</condicoes-acessibilidade>
+    <tratamento-prioritario>.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>.</tratamento-dispensado-atendimento>
+</servico>
