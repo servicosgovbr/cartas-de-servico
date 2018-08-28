@@ -2,7 +2,7 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-doacao-de-mudas-do-jardim-botanico-do-rio-de-janeiro</id>
     <dbId>2570</dbId>
-    <nome>Obter doação de mudas do Jardim Botânico do Rio de Janeiro.</nome>
+    <nome>Obter doação de mudas do Jardim Botânico do Rio de Janeiro</nome>
     <sigla></sigla>
     <descricao>&lt;div style="text-align:jusfity"&gt;
 A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ n° 125/2018, e poderá ocorrer sempre que for de interesse público e estiver adequada aos objetivos conservacionistas do JBRJ e de acordo com a disponibilidade de mudas no Horto Florestal, com a finalidade de recomposição ou recuperação de áreas de interesse ambiental, no âmbito de programas de educação ou conscientização ambiental assistidos pelo poder público.&lt;/div&gt;</descricao>
@@ -12,7 +12,11 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="4175">
+        <solicitante id="5413">
+            <tipo>Pessoas jurídicas de direito público ou privado.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="5414">
             <tipo>Pessoas jurídicas de direito público ou privado.</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -25,12 +29,12 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7931">
+        <etapa id="9631">
             <titulo>Pedir doação</titulo>
             <descricao>O solicitante entra no sistema e preenche o formulário com seus dados e o que está sendo solicitado.</descricao>
             <documentos>
                 <default>
-                    <item id="11102">Ofício a ser carregado e enviado por meio do sistema.</item>
+                    <item id="13777">Ofício a ser carregado e enviado por meio do sistema.</item>
                 </default>
             </documentos>
             <custos>
@@ -41,13 +45,13 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10504" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, a solicitação pode ser feita presencialmente no Horto do JBRJ (Rua Pacheco Leão, 2040- Jardim Botânico - RJ) ou na DICAT - Diretoria de Conhecimento, Ambiente e Tecnologia do JBRJ (Rua Jardim Botânico, 1008, casa 9 - Jardim Botânico - CEP 22470-180).">
+                    <canal-de-prestacao id="10624" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, a solicitação pode ser feita presencialmente no Horto do JBRJ (Rua Pacheco Leão, 2040- Jardim Botânico - RJ) ou na DICAT - Diretoria de Conhecimento, Ambiente e Tecnologia do JBRJ (Rua Jardim Botânico, 1008, casa 9 - Jardim Botânico - CEP 22470-180).">
                         <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=3542</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7932">
+        <etapa id="9632">
             <titulo>Agendar recebimento das mudas</titulo>
             <descricao>Se a solicitação tiver sido aprovada, o solicitante agenda uma data pelo sistema para fazer a retirada das mudas no Horto Florestal.</descricao>
             <documentos>
@@ -61,19 +65,19 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10505" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, o agendamento poderá ser feito pelo telefone (21) 3874-6211">
+                    <canal-de-prestacao id="10625" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, o agendamento poderá ser feito pelo telefone (21) 3874-6211">
                         <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=3542</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7933">
+        <etapa id="9633">
             <titulo>Receber mudas</titulo>
             <descricao>Entrega das mudas selecionadas</descricao>
             <documentos>
                 <default>
-                    <item id="11103">Carteira de identidade</item>
-                    <item id="11105">Crachás</item>
+                    <item id="13778">Carteira de identidade</item>
+                    <item id="13779">Crachás</item>
                 </default>
             </documentos>
             <custos>
@@ -84,7 +88,72 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8301" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="1">
+                    <canal-de-prestacao id="10626" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="1">
+                        <descricao>No Horto do JBRJ - Rua Pacheco Leão, 2040 - Jardim Botânico - CEP 22470-180</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9634">
+            <titulo>Pedir doação</titulo>
+            <descricao>O solicitante entra no sistema e preenche o formulário com seus dados e o que está sendo solicitado.</descricao>
+            <documentos>
+                <default>
+                    <item id="13780">Ofício a ser carregado e enviado por meio do sistema.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10627" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, a solicitação pode ser feita presencialmente no Horto do JBRJ (Rua Pacheco Leão, 2040- Jardim Botânico - RJ) ou na DICAT - Diretoria de Conhecimento, Ambiente e Tecnologia do JBRJ (Rua Jardim Botânico, 1008, casa 9 - Jardim Botânico - CEP 22470-180).">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=3542</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9635">
+            <titulo>Agendar recebimento das mudas</titulo>
+            <descricao>Se a solicitação tiver sido aprovada, o solicitante agenda uma data pelo sistema para fazer a retirada das mudas no Horto Florestal.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10628" tipo="web" procedimento-sistema-indisponivel="Caso o sistema esteja indisponível, o agendamento poderá ser feito pelo telefone (21) 3874-6211">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?codServico=3542</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9636">
+            <titulo>Receber mudas</titulo>
+            <descricao>Entrega das mudas selecionadas</descricao>
+            <documentos>
+                <default>
+                    <item id="13781">Carteira de identidade</item>
+                    <item id="13782">Crachás</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10629" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="1">
                         <descricao>No Horto do JBRJ - Rua Pacheco Leão, 2040 - Jardim Botânico - CEP 22470-180</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -95,9 +164,9 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
         <nomeOrgao>Instituto de Pesquisas Jardim Botânico do Rio de Janeiro (JBRJ)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7808">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="7809">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="7810">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9366">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9367">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9368">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Meio ambiente</item>
@@ -107,12 +176,16 @@ A alienação por doação de mudas é um procedimento previsto na Portaria JBRJ
         <item>Pesquisa, Ciência, Inovação e Tecnologia</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14451">Meio-ambiente</item>
-        <item id="14452">muda</item>
-        <item id="14453">reflorestamento</item>
+        <item id="17963">Meio-ambiente</item>
+        <item id="17964">muda</item>
+        <item id="17965">reflorestamento</item>
+        <item id="17966">Meio-ambiente</item>
+        <item id="17967">muda</item>
+        <item id="17968">reflorestamento</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3208">[Portaria JBRJ n° 125/2018](http://aplicacoes.jbrj.gov.br/divulga/125.pdf "aplicacoes.jbrj.gov.br/divulga/125.pdf")</item>
+        <item id="3221">[Portaria JBRJ n° 125/2018](http://aplicacoes.jbrj.gov.br/divulga/125.pdf "aplicacoes.jbrj.gov.br/divulga/125.pdf")</item>
+        <item id="3222">[Portaria JBRJ n° 125/2018](http://aplicacoes.jbrj.gov.br/divulga/125.pdf "aplicacoes.jbrj.gov.br/divulga/125.pdf")</item>
     </legislacoes>
     <condicoes-acessibilidade>.</condicoes-acessibilidade>
     <tratamento-prioritario>.</tratamento-prioritario>
