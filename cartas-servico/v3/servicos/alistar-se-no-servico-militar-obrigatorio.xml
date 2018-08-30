@@ -5,9 +5,9 @@
     <nome>Alistar-se no Serviço Militar Obrigatório</nome>
     <sigla>SMO</sigla>
     <nomes-populares>
-        <item id="2784">Serviço Militar Obrigatório</item>
-        <item id="2785">Alistamento Militar</item>
-        <item id="2786">Serviço Militar</item>
+        <item id="3282">Serviço Militar Obrigatório</item>
+        <item id="3283">Alistamento Militar</item>
+        <item id="3284">Serviço Militar</item>
     </nomes-populares>
     <descricao>O Serviço Militar consiste no exercício de atividades específicas desempenhadas pelas Forças Armadas (Marinha, Exército e Aeronáutica) e compreenderá, na Mobilização de Pessoal, todos os encargos com a Defesa Nacional.
 
@@ -22,7 +22,7 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
     <servico-digital>true</servico-digital>
     <link-servico-digital>https://www.alistamento.eb.mil.br/alistamento.action</link-servico-digital>
     <solicitantes>
-        <solicitante id="4378">
+        <solicitante id="5439">
             <tipo>Cidadão Brasileiro Nato ou Naturalizado</tipo>
             <requisitos>* Jovem brasileiro do sexo masculino
 * Se alistar no período de 2 de janeiro até o último dia útil do mês de junho do ano em que o cidadão completar dezoito anos</requisitos>
@@ -36,37 +36,37 @@ A Diretoria de Serviço Militar (DSM) é o órgão de apoio técnico-normativo, 
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8299">
+        <etapa id="9680">
             <titulo>Cadastrar dados pessoais</titulo>
             <descricao>O cidadão deverá acessar a página do alistamento e preencher as informações requisitadas (mesmo que ele atenda a uma das condições que o exima de prestar o serviço militar obrigatório).         
 Alternativamente, o cadastro poderá também ser feito em uma Junta de Serviço Militar  próxima à sua residência.</descricao>
             <documentos>
                 <default>
-                    <item id="11903">certidão de nascimento ou no caso de brasileiro naturalizado ou por opção, a prova de naturalização ou certidão do termo de opção (prova equivalente)</item>
-                    <item id="11904">comprovante de residência ou declaração assinada; e</item>
-                    <item id="11905">convém estar de posse de um documento oficial com fotografia (carteira de identidade; carteira de trabalho; carteira profissional; passaporte; carteira de identificação funcional; ou outro documento público) que permita sua identificação, caso necessário</item>
+                    <item id="13853">certidão de nascimento ou no caso de brasileiro naturalizado ou por opção, a prova de naturalização ou certidão do termo de opção (prova equivalente)</item>
+                    <item id="13854">comprovante de residência ou declaração assinada; e</item>
+                    <item id="13855">convém estar de posse de um documento oficial com fotografia (carteira de identidade; carteira de trabalho; carteira profissional; passaporte; carteira de identificação funcional; ou outro documento público) que permita sua identificação, caso necessário</item>
                 </default>
-                <caso id="1060" descricao="Para cadastro feito pela internet">
-                    <documento>
-                        <id>5838</id>
-                        <descricao>Dados pessoais</descricao>
-                    </documento>
+                <caso id="1448" descricao="Para cadastro feito pela internet">
                     <documento>
                         <id>5837</id>
                         <descricao>CPF</descricao>
+                    </documento>
+                    <documento>
+                        <id>5838</id>
+                        <descricao>Dados pessoais</descricao>
                     </documento>
                     <documento>
                         <id>10157</id>
                         <descricao>Comprovante de residência, com CEP</descricao>
                     </documento>
                 </caso>
-                <caso id="1061" descricao="Para deficientes físicos">
+                <caso id="1449" descricao="Para deficientes físicos">
                     <documento>
                         <id>5839</id>
                         <descricao>Parecer médico (laudo médico), com o CRM do médico, sobre a deficiência</descricao>
                     </documento>
                 </caso>
-                <caso id="1062" descricao="Para arrimo de família">
+                <caso id="1450" descricao="Para arrimo de família">
                     <documento>
                         <id>5840</id>
                         <descricao>Documentos que comprovem essa situação, tais como: certidão de nascimento dos filhos, certidão de casamento, comprovante de renda e outras provas que achar necessárias.</descricao>
@@ -76,84 +76,96 @@ Alternativamente, o cadastro poderá também ser feito em uma Junta de Serviço 
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8739" tipo="web">
+                    <canal-de-prestacao id="10696" tipo="web">
                         <descricao>http://www.alistamento.eb.mil.br</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="8740" tipo="presencial">
+                    <canal-de-prestacao id="10697" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
                         <descricao>*O cidadão deverá procurar a Junta de Serviço Militar mais próxima de sua residência. Consulte [aqui](http://www.alistamento.eb.mil.br/services/jsm!input.action).</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8300">
+        <etapa id="9681">
             <titulo>Comparecer à Seleção Geral</titulo>
             <descricao>* O cidadão receberá um SMS ou e-mail para acessar o site do acompanhamento de sua situação, a fim de saber se irá para a Seleção Geral ou Dispensado ou considerado Excesso de Contingente.
 * Na seleção geral, o cidadão passará por exames médicos e entrevistas.
 * Caso o cidadão esteja cursando medicina, odontologia, veterinária ou farmácia poderá ter o alistamento adiado.</descricao>
             <documentos>
                 <default>
-                    <item id="11906">certidão de nascimento ou no caso de brasileiro naturalizado ou por opção, a prova de naturalização ou certidão do termo de opção (prova equivalente)</item>
-                    <item id="11907">comprovante de residência ou declaração assinada; e</item>
-                    <item id="11908">convém estar de posse de um documento oficial com fotografia (carteira de identidade; carteira de trabalho; carteira profissional; passaporte; carteira de identificação funcional; ou outro documento público) que permita sua identificação, caso necessário</item>
-                    <item id="11909">Impressão em papel com gramatura somente para quem já serviu (Certificado de Reservista), os demais certificados serão em folha de papel A4, contudo serão certificados nato digitais.</item>
-                    <item id="11910">Comprovação de matrícula em instituição superior de ensino (se for o caso)</item>
+                    <item id="13856">certidão de nascimento ou no caso de brasileiro naturalizado ou por opção, a prova de naturalização ou certidão do termo de opção (prova equivalente)</item>
+                    <item id="13857">comprovante de residência ou declaração assinada; e</item>
+                    <item id="13858">convém estar de posse de um documento oficial com fotografia (carteira de identidade; carteira de trabalho; carteira profissional; passaporte; carteira de identificação funcional; ou outro documento público) que permita sua identificação, caso necessário</item>
+                    <item id="13859">Impressão em papel com gramatura somente para quem já serviu (Certificado de Reservista), os demais certificados serão em folha de papel A4, contudo serão certificados nato digitais.</item>
+                    <item id="13860">Comprovação de matrícula em instituição superior de ensino (se for o caso)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8741" tipo="presencial">
+                    <canal-de-prestacao id="10698" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
                         <descricao>A Junta de Serviço Militar mais próxima de sua residência. Consultar site do [Exército Brasileiro](http://dsm.dgp.eb.mil.br/index.php/ouvidoria/recrutamento-militar).</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8301">
+        <etapa id="9682">
             <titulo>Se dispensado, Jurar à Bandeira Nacional</titulo>
             <descricao>Participar de solenidade de juramento à Bandeira Nacional para tornar público o processo de recebimento do Certificado de Dispensa de Incorporação (CDI).</descricao>
             <documentos>
                 <default>
-                    <item id="11911">Carteira de Identidade</item>
-                    <item id="11912">Comprovante de pagamento da taxa militar</item>
+                    <item id="13861">Carteira de Identidade</item>
+                    <item id="13862">Comprovante de pagamento da taxa militar</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="853">
+                    <custo id="912">
                         <descricao>Taxa militar (para quem não tem multas) ..................</descricao>
                         <moeda>R$</moeda>
-                        <valor>1,38</valor>
+                        <valor>4,20</valor>
                         <valorVariavel></valorVariavel>
                         <statusCustoVariavel>0</statusCustoVariavel>
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8742" tipo="presencial">
+                    <canal-de-prestacao id="10699" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
                         <descricao>Participar da cerimônia cívica de Juramento à Bandeira e receber o Certificado de Dispensa de Incorporação (CDI).</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8302">
+        <etapa id="9683">
             <titulo>Se apto, comparecer à seleção complementar</titulo>
             <descricao>O cidadão que for declarado apto deverá participar de seleções complementares se apresentando conforme informado durante as seleções nas Organizações Militares designadas.</descricao>
             <documentos>
                 <default>
-                    <item id="11913">Carteira de Identidade</item>
+                    <item id="13863">Carteira de Identidade</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8743" tipo="presencial">
+                    <canal-de-prestacao id="10700" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="0">
                         <descricao>O cidadão deverá se apresentar na Organização Militar designada durante a seleção complementar.</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -164,7 +176,7 @@ Alternativamente, o cadastro poderá também ser feito em uma Junta de Serviço 
         <nomeOrgao>Ministério da Defesa (MD)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="7961">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9401">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Defesa Nacional</item>
@@ -172,13 +184,16 @@ Alternativamente, o cadastro poderá também ser feito em uma Junta de Serviço 
         <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14936">alistamento</item>
-        <item id="14937">serviço-militar</item>
-        <item id="14938">militarismo</item>
-        <item id="14939">carreira militar</item>
-        <item id="14940">ingresso no serviço militar</item>
+        <item id="18032">alistamento</item>
+        <item id="18033">serviço-militar</item>
+        <item id="18034">militarismo</item>
+        <item id="18035">carreira militar</item>
+        <item id="18036">ingresso no serviço militar</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2610">[Lei 4.375/64](http://www.planalto.gov.br/ccivil_03/leis/L4375.htm)</item>
+        <item id="3237">[Lei 4.375/64](http://www.planalto.gov.br/ccivil_03/leis/L4375.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>.</condicoes-acessibilidade>
+    <tratamento-prioritario>.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>;</tratamento-dispensado-atendimento>
 </servico>
