@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-certificado-de-laudo-de-operacao</id>
+    <dbId>4262</dbId>
+    <nome>Obter Certificado de Laudo de Operação</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="3216">LO</item>
+    </nomes-populares>
+    <descricao>Emissão de Certificado pela Coordenação de Acompanhamento de Projetos Industriais e Análise de Processos Industriais (COAPI), firmado por dois Analistas, seu Coordenador(a), Coordenador(a) Geral de Acompanhamento de Projetos (CGAPI) e Superintendente Adjunto de Projetos (SAP), cujo objetivo é atestar que a empresa possui condições de fabricar determinado produto constante em projeto aprovado pelo Conselho de Administração da Suframa (CAS).</descricao>
+    <contato>Coordenação de Acompanhamento de Projetos Industriais e Análise de Processos Industriais (COAPI); Telefone:(92)3321-7208.</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5276">
+            <tipo>- Procuradores de empresas com projetos aprovados junto à Autarquia;
+- Sócios de empresas com projetos aprovados junto à Autarquia.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="15" unidade="dias-corridos"/>
+        <descricao>Tempo de realização depende da empresa apresentar documentação completa.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9420">
+            <titulo>Solicitar certificado de Laudo de Operação</titulo>
+            <descricao>Apresentação presencial junto à Seção de Protocolo e Movimentação de Documentos  (SEPRO) da Suframa  de solicitação firmada pelo procurador ou sócio da empresa em conjunto com documentos necessários, que iniciará processo no Sistema Eletrônico de informações (SEI), gerando numeração única de identificação.</descricao>
+            <documentos>
+                <default>
+                    <item id="13517">Formulário preenchido (http://site.suframa.gov.br/assuntos/servicos), CI do procurador ou sócio, procuração, cópia da última alteração contratual, planta baixa com layout das instalações (apresentando as áreas em metros quadrados),  Licença de Operação do IPAAM,  balanço patrimonial com a conta "máquinas e equipamento" aberta e contrato de locação ou documento de propriedade do imóvel.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10343" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="60">
+                        <descricao>Protocolo Geral: Av. Mário Andreazza n° 1424 - Distrito Industrial - Sede da Suframa - Manaus/AM.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9421">
+            <titulo>Realizar Inspeção no Local</titulo>
+            <descricao>Visita de dois analistas da Suframa in loco às instalações da empresa solicitante para confirmação da existência da infraestrutura necessária, em data aleatória.  Os técnicos devem apresentar Credenciamento de Inspeção a ser firmado pela pessoa que receber a equipe.</descricao>
+            <documentos>
+                <default>
+                    <item id="13518">Credenciamento de Inspeção conforme padrão Suframa.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10717" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="120">
+                        <descricao>Nas instalações da empresa.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9422">
+            <titulo>Receber certificado de Laudo de Operação</titulo>
+            <descricao>Uma vez completado o ciclo de aprovações, a Secretária da CGAPI envia à empresa solicitante por meio eletrônico (e-mail) mediante Ofício de Encaminhamento o Certificado de Laudo de Operação ou justificativa para a não concessão do mesmo.  Em seguida o processo SEI é encerrado.</descricao>
+            <documentos>
+                <default>
+                    <item id="13519">Ofício de Encaminhamento e Certificado do Laudo de Operação.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10344" tipo="e-mail">
+                        <descricao>cgapi@suframa.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/166" dbId="55699">
+        <nomeOrgao>Superintendência da Zona Franca de Manaus (SUFRAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9137">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Indústria</item>
+        <item>Produção Industrial</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="17428">Laudo</item>
+        <item id="17429">Operação</item>
+        <item id="17430">Projeto</item>
+        <item id="17431">Suframa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3146">Arts. 17 a 22 da Resolução CAS n° 203, de 10 de dezembro de 2012, disponível em http://www.suframa.gov.br/download/legislacao/outros_inst_legais/legi_reso_cas_203_10dez12_.pdf</item>
+    </legislacoes>
+    <condicoes-acessibilidade>Acesso para automóvel até a rampa de cadeirante, Placas de identificação das unidades, Ambiente limpo e arejado, Recepcionistas que auxiliam nas informações.</condicoes-acessibilidade>
+    <tratamento-prioritario>Os idosos a partir dos 60 anos, as grávidas, as lactentes, as pessoas com deficiência, os acompanhantes de criança de colo com idade igual ou inferior a 2 anos, os obesos.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Por ordem de chegada, com urbanidade, impessoalidade e eficiência.</tratamento-dispensado-atendimento>
+</servico>
