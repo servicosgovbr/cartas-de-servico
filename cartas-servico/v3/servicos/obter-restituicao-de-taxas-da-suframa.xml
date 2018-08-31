@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-restituicao-de-taxas-da-suframa</id>
+    <dbId>4023</dbId>
+    <nome>Obter Restituição de taxas da SUFRAMA</nome>
+    <sigla></sigla>
+    <descricao>O serviço é realizado para atender aos pedidos de restituição dos valores de taxas da SUFRAMA em casos de pagamento indevido, pagamento maior que o devido, duplicidade de pagamento e outros casos, quando couber.
+- Os pedidos de restituição deverão ser formalizados acessando o Sistema de Arrecadação, por meio do preenchimento de formulário e entrega no Protocolo da Suframa na sede em Manaus ou nas descentralizadas, dos documentos que comprovem a ocorrência do fato que motivou o pedido. Ou via correio endereçado à sede da SUFRAMA em Manaus.
+A restituição das taxas serão efetuadas por meio da compensação de débitos existentes ou abatimento em recolhimentos futuros referentes à mesma taxa.</descricao>
+    <contato>Coordenação de Arrecadação Fone: (92) 3321-7337 e-mail: coarr@suframa.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5486">
+            <tipo>Indústrias com ou sem Projeto Simplificado</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+        <solicitante id="5485">
+            <tipo>Indústrias com ou sem Projeto Aprovado</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+        <solicitante id="5487">
+            <tipo>Comércio</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+        <solicitante id="5488">
+            <tipo>Empresas prestadoras de serviços</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+        <solicitante id="5489">
+            <tipo>Entidades sem fins lucrativos</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+        <solicitante id="5490">
+            <tipo>Empresas do setor Agropecuário</tipo>
+            <requisitos>Empresas localizadas na área de atuação da Suframa; 
+Zona Franca de Manaus, Áreas de Livre Comércio e Amazônia Ocidental.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="120" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9778">
+            <titulo>Registro no Sistema de Arrecadação</titulo>
+            <descricao>Os pedidos de restituição deverão ser formalizados na opção "Solicitação" encontrado no menu Navegação do Sistema de Arrecadação, por meio do preenchimento de formulário eletrônico para a respectiva solicitação. No caso de pessoa jurídica sem acesso ao sistema de arrecadação a formalização do pedido será feita por procedimento interno com base no requerimento apresentado pelo interessado.</descricao>
+            <documentos>
+                <default>
+                    <item id="13996">Nenhuma.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10822" tipo="web-preencher" procedimento-sistema-indisponivel="Aguardar o retorno. Levando em consideração que o prazo de atendimento do serviço é longo. http://site.suframa.gov.br/assuntos/servicos  - Sistemas de Arrecadação">
+                        <descricao>http://site.suframa.gov.br/assuntos/servicos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9779">
+            <titulo>Entrega de documentos físicos</titulo>
+            <descricao>Apresentar no Protocolo da Suframa os documentos que comprovam a ocorrência do fato que motivou o pedido.</descricao>
+            <documentos>
+                <default>
+                    <item id="13997">1) Requerimento próprio com o motivo do pedido de restituição;
+2) Comprovante de pagamento com Guia de Recolhimento da União - GRU;
+3) A documentação relativa à taxa a ser restituída (PIN - Protocolo de Internamento de Mercadoria, DANFE - Documento Auxiliar de NF Eletrônica, PLI - Pedido de Licenc. de Importação); 
+4) A última alteração contratual da empresa;
+5) Se procurador(a) cópia autenticada da Procuração que confere o poder de representação da empresa;
+6) RG e CPF.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10823" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="60">
+                        <descricao>Protocolo Geral da Suframa, Av. Ministro Mário Andreazza, nº 1.424 - Distrito Industrial. CEP: 69.075-830.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/166" dbId="55699">
+        <nomeOrgao>Superintendência da Zona Franca de Manaus (SUFRAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9460">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Tributação</item>
+        <item>Indústria</item>
+        <item>Comércio e Serviços</item>
+        <item>Encargos financeiros</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18183">Restituição</item>
+        <item id="18184">Taxa</item>
+        <item id="18185">Suframa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3271">Lei n.º 13.451, de 23 de junho de 2017 e Portaria Suframa n.º 61 e 95 de 2017.</item>
+    </legislacoes>
+    <condicoes-acessibilidade>Acesso de automóvel até a rampa de cadeirante; Placas de identificação das unidades; Ambiente limpo e arejado; Recepcionistas que auxiliam nas informações.</condicoes-acessibilidade>
+    <tratamento-prioritario>Os idosos a partir dos 60 anos, as grávidas, as lactentes, as pessoas com deficiência, os acompanhantes de criança de colo com idade igual ou inferior a 2 anos, os obesos.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Por ordem de chegada, com urbanidade, impessoalidade e eficiência.</tratamento-dispensado-atendimento>
+</servico>
