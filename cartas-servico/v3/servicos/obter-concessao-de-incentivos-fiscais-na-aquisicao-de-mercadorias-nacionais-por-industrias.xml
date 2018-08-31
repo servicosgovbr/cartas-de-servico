@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-concessao-de-incentivos-fiscais-na-aquisicao-de-mercadorias-nacionais-por-industrias</id>
+    <dbId>4038</dbId>
+    <nome>Obter concessão de Incentivos Fiscais na aquisição de mercadorias nacionais por Indústrias</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="3329">Internamento</item>
+        <item id="3330">Internar</item>
+        <item id="3331">Suframar</item>
+        <item id="3332">Vistoriar</item>
+        <item id="3333">Autenticar</item>
+        <item id="3334">Desembaraçar</item>
+    </nomes-populares>
+    <descricao>Para que as indústrias localizadas na Zona Franca de Manaus e demais municípios da Amazônia Ocidental, além dos municípios de Macapá e Santana(Amapá), usufruam de incentivos fiscais na aquisição de mercadorias nacionais deverão estar com seu Cadastro Habilitado na SUFRAMA. Incentivos: Suspensão do IPI (aplicado a ZFM, demais municípios da Amazônia Ocidental, Macapá-Santana); Isenção da alíquota interestadual de ICMS(aplicado a ZFM, Macapá-Santana e Áreas de Livre Comércio localizadas na Amazônia Ocidental); Redução à 0(zero) das alíquotas do PIS/COFINS(aplicado a ZFM, demais municípios da Amazônia Ocidental, Macapá-Santana). Após a emissão da NF contendo os incentivos fiscais e no momento do ingresso das mercadorias na região incentivada, a NF deverá ser vistoriada pela SUFRAMA no prazo de 120 dias a partir da emissão da NF.
+- Nos casos em que a logística de transporte da operação não permita o cumprimento do prazo de 120 dias para que a NF seja vistoriada na SUFRAMA, a empresa poderá solicitar o procedimento excepcional de vistoria técnica em até 60 dias após o prazo de 120 dias ter expirado.</descricao>
+    <contato>- CODOF: e-mail: codof@suframa.gov.br, Whatsapp: (92) 98290-0041
+- COCIF: e-mail: cocif@suframa.gov.br, Whatsapp: (92) 98101-0289</contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5471">
+            <tipo>Transportador, Despachante, Destinatário.</tipo>
+            <requisitos>Indústrias localizadas  na Zona Franca de Manaus e demais municípios da Amazônia Ocidental, além dos municípios de Macapá e Santana(Amapá).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="120" unidade="dias-corridos"/>
+        <descricao>- A partir da emissão da NF-e.
+- Nos casos em que a logística de transporte da operação não permita o cumprimento do prazo de 120 dias para que a NF seja vistoriada na SUFRAMA, a empresa poderá solicitar o procedimento excepcional de vistoria técnica em até 60 dias após o prazo de 120 dias ter expirado.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9757">
+            <titulo>Protocolar Manifesto Suframa</titulo>
+            <descricao>O responsável deve entregar a documentação necessária para desembaraço das notas fiscais no respectivo posto de vistoria.</descricao>
+            <documentos>
+                <default>
+                    <item id="13976">**DOCUMENTOS COMUNS:**
+- Protocolo de entrega (http://www.suframa.gov.br/servicos_vistorias.cfm);
+- Manifesto Suframa; 
+- PIN ; 
+- NF-e ; 
+- CT-e;</item>
+                    <item id="13977">**DOCUMENTO QUANDO SE TRATAR DE TRANSPORTE VIA CORREIOS:**
+- Declaração de Transporte de Encomendas.</item>
+                    <item id="13978">**DOCUMENTO QUANDO A MERCADORIA FOR VEICULO COM CHASSI:**
+- Termo de Vistoria Física Externa.</item>
+                    <item id="13979">http://www.suframa.gov.br/servicos down documentacao.cfm (Inserir underline nos espaços do endereço).</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10796" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="2">
+                        <descricao>**Canal Verde:** Anexo II da Suframa Av. Ministro João G. de Souza - Distrito Industrial I, Manaus - AM, 69073-000;</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10797" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="2">
+                        <descricao>**Canal Vermelho:** Central de Fiscalização Rodoviária -  BR-174, 319 - Vila Buriti, Manaus - AM, 69075-830;</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10798" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="2">
+                        <descricao>**Canal Cinza:** Anexo II da Suframa, Av. Min. João G. de Souza - Distrito Industrial I, Manaus - AM, 69073-000.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9758">
+            <titulo>Apresentar mercadoria para ser vistoriada</titulo>
+            <descricao>O responsável deve apresentar a mercadoria para os vitoriadores da Suframa: no Canal Vermelho, basta apresentar o produto no Posto de Fiscalização da Suframa; no Canal Cinza, o Responsável deve ficar de prontidão para receber os vistoriadores no local indicado para vistoria.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10799" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="2">
+                        <descricao>**Canal Vermelho:** Central de Fiscalização Rodoviária -  BR-174, 319 - Vila Buriti, Manaus - AM, 69075-830;</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10800" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="2">
+                        <descricao>**Canal Cinza:** Anexo II da Suframa, Av. Min. João G. de Souza - Distrito Industrial I, Manaus - AM, 69073-000.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/166" dbId="55699">
+        <nomeOrgao>Superintendência da Zona Franca de Manaus (SUFRAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9443">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Tributação</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18152">Incentivos</item>
+        <item id="18153">Vistoria</item>
+        <item id="18154">Internamento</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3262">Convênio ICMS 23/08; Protocolo ICMS 80/08; Portaria nº 529/06</item>
+    </legislacoes>
+    <condicoes-acessibilidade>Acesso para automóvel até a rampa de cadeirante, placas de identificação das unidades, ambiente limpo e arejado, recepcionistas que auxiliam nas informações.</condicoes-acessibilidade>
+    <tratamento-prioritario>Os idosos a partir dos 60 anos, as grávidas, as lactentes, as pessoas com deficiência, os acompanhantes de criança de colo com idade igual ou inferior a 2 anos, os obesos.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Por ordem de chegada, com urbanidade, impessoalidade e eficiência.</tratamento-dispensado-atendimento>
+</servico>
