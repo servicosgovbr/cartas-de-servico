@@ -4,49 +4,65 @@
     <dbId>3730</dbId>
     <nome>Obter Restituição ou Compensação de Créditos - CVM</nome>
     <sigla></sigla>
-    <descricao>Solicitação de restituição ou compensação de valores recolhidos em excesso ou indevidamente perante a taxa de fiscalização da CVM e das multas aplicadas pela CVM.</descricao>
+    <descricao>&lt;div&gt;
+&lt;p style="text-align:justify"&gt;Solicitação de restituição ou compensação de valores recolhidos em excesso ou indevidamente referentes a taxa de fiscalização e multas aplicadas pela CVM.&lt;/p&gt;
+&lt;br&gt;
+&lt;p style="text-align:justify"&gt;Vídeo publicado em 31 de maio de 2018&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/IOGS5m4OPhM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</descricao>
     <contato>gac@cvm.gov.br</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="4548">
-            <tipo>Participantes e não participantes do mercado de valores mobiliários.</tipo>
+        <solicitante id="5448">
+            <tipo>Pessoas Físicas ou Jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <nao-estimado-ainda/>
+        <em-media max="45" unidade="dias-uteis"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8568">
-            <titulo>Registrar o pedido de restituição ou compensação.</titulo>
-            <descricao></descricao>
+        <etapa id="9697">
+            <titulo>Solicitar a restituição ou compensação</titulo>
+            <descricao>Preencher o formulário online
+
+Obs.: No caso de pessoa jurídica será necessário efetuar o download do formulário preenchido para assinatura dos representantes legais e posterior upload do documento digitalizado.</descricao>
             <documentos>
                 <default/>
-                <caso id="1155" descricao="Pedido de restituição ou compensação de pessoa jurídica">
+                <caso id="1452" descricao="Pessoa Física">
                     <documento>
-                        <id>12540</id>
-                        <descricao>Fazer o download do formulário específico e após o preenchimento fazer o upload para registrar a solicitação.</descricao>
+                        <id>13585</id>
+                        <descricao>P/ Procurador: Cópia do instrumento de mandato com cópia do documento de identificação do mandante</descricao>
                     </documento>
+                </caso>
+                <caso id="1453" descricao="Pessoa Jurídica">
                     <documento>
-                        <id>12541</id>
-                        <descricao>(a) cópia do Contrato Social, Estatuto da empresa ou declaração de Empresário (firma individual). Estas deverão vir acompanhadas da última alteração, se for o caso. b.Cópia de documento de identidade do solicitante. No caso de Procurador: a. Cópia do instrumento de procuração particular com firma reconhecida do outorgante ou de procuração pública para representar o contribuinte junto à CVM; b.Cópia do documento de identidade que comprove a assinatura do outorgado.</descricao>
+                        <id>13586</id>
+                        <descricao>Pessoa Jurídica: Cópia do Contrato Social, Estatuto ou Declaração do empresário(firma individual)
+
+P/ Procurador: Cópia do instrumento de mandato com cópia do documento de identificação do mandante</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="9152" tipo="e-mail">
-                        <descricao>gac@cvm.gov.br</descricao>
+                    <canal-de-prestacao id="10718" tipo="web">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar?CodServico=4337</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -56,20 +72,24 @@
         <nomeOrgao>Comissão de Valores Mobiliários (CVM)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="8248">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="8249">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="9414">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="9415">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração e Gestão Pública</item>
         <item>Finanças</item>
         <item>Economia e Finanças</item>
         <item>Sistema Financeiro</item>
+        <item>Administração financeira</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="15490">Taxa de Fiscalização</item>
-        <item id="15491">Multas aplicadas pela CVM</item>
-        <item id="15492">Restituição ou compensação</item>
-        <item id="15493">Valor recolhido em excesso</item>
-        <item id="15494">Valor recolhido indevidamente</item>
+        <item id="18073">Taxa</item>
+        <item id="18074">Multa</item>
+        <item id="18075">Restituição</item>
+        <item id="18076">Compensação</item>
+        <item id="18077">Fiscalização</item>
     </palavras-chave>
+    <condicoes-acessibilidade>.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tratamento prioritário conforme legislação vigente.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>.</tratamento-dispensado-atendimento>
 </servico>
