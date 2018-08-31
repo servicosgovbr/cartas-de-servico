@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>realizar-importacao-sob-o-regime-da-zfm-alcs-e-amoc-para-o-comercio-e-servicos</id>
+    <dbId>4163</dbId>
+    <nome>Realizar Importação sob o regime da ZFM,ALCs e AMOC para o Comércio e Serviços</nome>
+    <sigla></sigla>
+    <descricao>O importador terá isenção ou suspensão do Imposto de Importação e Imposto sobre Produto Industrializado que é concedido por meio de preenchimento do Pedido de Licença de Importação.</descricao>
+    <contato>Coordenação-Geral de Controle de Importação e Exportação - CGIEX, Tel.: (92) 3182-1550.</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5157">
+            <tipo>Pessoa Jurídica e Representante Legal.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="48" unidade="horas"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9274">
+            <titulo>Preenchimento do Pedido de Licença de Importação</titulo>
+            <descricao>O importador terá que fazer o download do software de pedido de licença de importação "PLI", depois de realizar este procedimento terá que preencher o PLI e enviar para Suframa.</descricao>
+            <documentos>
+                <default>
+                    <item id="13475">Fatura Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10147" tipo="web" procedimento-sistema-indisponivel="ftp://ftp.suframa.gov.br/publico/pli2000/   - Selecionar o arquivo: SetupPLI50.exe">
+                        <descricao>ftp://ftp.suframa.gov.br/publico/pli2000/   - Selecionar o arquivo: SetupPLI50.exe</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9275">
+            <titulo>Processamento do PLI</titulo>
+            <descricao>O PLI é processado no Sistema de Mercadoria Estrangeira, atendendo as regras de negocio, é gerado Autorização de Licença de Importação "ALI", que é enviado ao Siscomex para analise, autorizado pelo Siscomex é gerado a Licença de Importação.</descricao>
+            <documentos>
+                <default>
+                    <item id="13476">**INFORMAÇÕES SOBRE O CUSTO:** 
+- Por cada PLI para atividade **de serviço**, será cobrado o valor de R$ 200,00 (duzentos reais), limitando-se a 0,5% (cinco décimos por cento). Por cada mercadoria constante do PLI, será cobrado o valor de R$ 30,00 (trinta reais), limitando-se cada parcela a 0,5% (cinco décimos por cento) do valor individual da mercadoria. 
+- Para a atividade **de Comércio**, importação destinada para ZFM e ALC o PLI é isento de TCIF. Destinada à AMOC, é idêntica ao de Serviço.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="910">
+                        <descricao>Custo do Pedido de Licenciamento de Importação</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>1</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10148" tipo="web" procedimento-sistema-indisponivel="https://portal1.suframa.gov.br/pmerecebimento/rotinas.do">
+                        <descricao>https://portal1.suframa.gov.br/pmerecebimento/rotinas.do</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/166" dbId="55699">
+        <nomeOrgao>Superintendência da Zona Franca de Manaus (SUFRAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="8975">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comercio externo</item>
+        <item>Serviços Públicos</item>
+        <item>Comércio e Serviços</item>
+        <item>Tributação</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18053">Licença importação</item>
+        <item id="18054">Incentivos fiscais</item>
+        <item id="17060">Pedido</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3091">Decreto Lei 288/67, Portaria Interministerial 300/96, Decreto Lei 356/68, Lei 13.451/17, Portaria Secex 23/11, Lei 8256/91, Lei 1357/94, Lei 843/93, Lei 517/92 e Lei 7964/89.</item>
+    </legislacoes>
+    <condicoes-acessibilidade>Não aplicável.</condicoes-acessibilidade>
+    <tratamento-prioritario>Não aplicável.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Não aplicável.</tratamento-dispensado-atendimento>
+</servico>
