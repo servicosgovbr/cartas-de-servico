@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-listagem-de-taxa-cobrada-pela-suframa</id>
+    <dbId>4017</dbId>
+    <nome>Obter listagem de taxa cobrada pela SUFRAMA</nome>
+    <sigla></sigla>
+    <descricao>O serviço é realizado para atender às empresas que necessitam dos valores pagos da taxa nos últimos cinco anos.</descricao>
+    <contato>Coordenação de Arrecadação- COARR, Fone: (92) 3321-7337, e-mail: coarr@suframa.gov.br</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5502">
+            <tipo>Governo</tipo>
+            <requisitos>Federal,Estadual e Municipal.</requisitos>
+        </solicitante>
+        <solicitante id="5503">
+            <tipo>Entidades sem fins lucrativos</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+        <solicitante id="5504">
+            <tipo>Indústrias com ou sem Projeto Aprovado</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+        <solicitante id="5505">
+            <tipo>Indústrias com ou sem Projeto Simplificado</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+        <solicitante id="5506">
+            <tipo>Comércio</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+        <solicitante id="5507">
+            <tipo>Empresas prestadoras de serviços</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+        <solicitante id="5508">
+            <tipo>Empresas do setor Agropecuário</tipo>
+            <requisitos>Empresas do Distrito Industrial e Áreas de Livre Comércio;
+Qualquer empresa que possua cadastro ou credenciamento junto à Suframa.</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="90" unidade="dias-corridos"/>
+        <descricao>A empresa que solicitar listagem de valores pagos de taxas que não são mais cobradas pela Suframa há mais de 5 anos ou que necessite de abertura de Ordem de Serviço para ser atendida será cobrado o valor que a Suframa pagará para a empresa que presta o serviço terceirizado elaborar o documento solicitado.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9793">
+            <titulo>Entrega de documentos físicos no Protocolo da Suframa</titulo>
+            <descricao>Entregar no Protocolo da SUFRAMA os documentos necessários para a emissão da listagem.  No caso de pessoa jurídica em localidades onde não houver unidade administrativa da SUFRAMA poderá enviar os documentos pelo correio  e a formalização da entrega dos documentos será feita por procedimento interno com base no requerimento apresentado pelo interessado.</descricao>
+            <documentos>
+                <default>
+                    <item id="14019">1) Requerimento com carimbo da empresa;
+2) Última alteração do contrato social da empresa (JUCEA);
+3) Procuração autenticada no Cartório do Amazonas se a solicitação for do Amazonas;
+4) CPF  e RG do requerente (proprietário ou procurador);
+5) Recolhimento da uma GRU simples emitida no site da STN com os seguintes informações, códigos: UG 193028, GESTAO 19205 e CÓDIGO DE RECOLHIMENTO 11.113-9, o número referencia  pode ser a inscrição SUFRAMA da empresa, recolhido no banco do Brasil.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="944">
+                        <descricao>Pagamento de taxa conforme a Lei 13.451/2017</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10839" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="60">
+                        <descricao>Protocolo Geral, Sede da Suframa, Av. Ministro Mário Andreazza, 1.424, Distrito Industrial- CEP: 69.075-830; ou nas Unidades Descentralizadas da Suframa.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10838" tipo="postal">
+                        <descricao>Avenida Ministro Mário Andreazza, 1.424, Distrito Industrial - CEP: 69.075-830</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/166" dbId="55699">
+        <nomeOrgao>Superintendência da Zona Franca de Manaus (SUFRAMA)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9470">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Tributação</item>
+        <item>Economia e Finanças</item>
+        <item>Indústria</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18209">Coordenação de Arrecadação</item>
+        <item id="18210">Solicitação de Listagem</item>
+        <item id="18211">Taxa Suframa</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3277">Lei n.º 13.451, de 23 de junho de 2017. Portaria Suframa n.º 95, de 29 de março de 2017.</item>
+    </legislacoes>
+    <condicoes-acessibilidade>Acesso de automóvel até a rampa de cadeirante,Placas de identificação das unidades, Ambiente limpo e arejado, Recepcionistas que auxiliam nas informações.</condicoes-acessibilidade>
+    <tratamento-prioritario>Os idosos a partir dos 60 anos, as grávidas, as lactentes, as pessoas com deficiência, os acompanhantes de criança de colo com idade igual ou inferior a 2 anos, os obesos.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Por ordem de chegada, com urbanidade, impessoalidade e eficiência.</tratamento-dispensado-atendimento>
+</servico>
