@@ -5,10 +5,10 @@
     <nome>Cadastrar empresas que utilizam Amianto</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="3286">Amianto</item>
+        <item id="3371">Amianto</item>
     </nomes-populares>
     <descricao>Este serviço permite o cadastro, junto ao Ministério do Trabalho, das empresas que produzem ou lidam com Amianto, como demanda a legislação.</descricao>
-    <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
+    <contato>Para mais informações ou dúvidas sobre este serviço, entre em contato com a Coordenação-Geral de Normatização e Programas – CGNOR.
 * Fone: (61) 2031-6689</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
@@ -16,26 +16,31 @@
     <servico-digital>true</servico-digital>
     <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="5441">
-            <tipo>Empresas Utilizadoras de Asbestos</tipo>
-            <requisitos>que produzem, utilizam ou comercializam fibras de asbesto e as responsáveis pela remoção de sistemas que contêm ou podem liberar fibras de asbesto para o ambiente.</requisitos>
+        <solicitante id="5523">
+            <tipo>Empresas Públicas ou Privadas</tipo>
+            <requisitos>que produzem, utilizam ou comercializam fibras de asbesto;
+e as responsáveis pela remoção de sistemas que contêm ou podem liberar fibras de asbesto para o ambiente.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="15" max="30" unidade="dias-corridos"/>
+        <entre min="7" max="10" unidade="dias-uteis"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="9686">
-            <titulo>Preenchimento e entrega do formulário</titulo>
-            <descricao></descricao>
+        <etapa id="9855">
+            <titulo>Cadastrar a solicitação</titulo>
+            <descricao>Etapa destinada às empresas que desejam se cadastrar junto ao Departamento de Segurança e Saúde no Trabalho (DSST), na Secretaria de Inspeção do Trabalho (SIT), conforme previsto no Anexo 12 da Norma Regulamentadora 15. 
+Esse cadastro deverá ser atualizado obrigatoriamente a cada 2 (dois) anos.</descricao>
             <documentos>
                 <default>
-                    <item id="13866">Formulário</item>
-                    <item id="13867">Documentação da empresa</item>
+                    <item id="14050">- inscrição regular no CNPJ
+- preenchimento de formulário, contendo diversas informações, entre as quais a identificação da empresa e os dados de produção.</item>
+                    <item id="14051">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
                 </default>
             </documentos>
             <custos>
@@ -46,17 +51,26 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10704" tipo="web" procedimento-sistema-indisponivel="Superintendências Regionais de Trabalho e Emprego">
+                    <canal-de-prestacao id="10878" tipo="presencial" procedimento-sistema-indisponivel="Superintendências Regionais de Trabalho e Emprego" tempo-estimado-periodo="dias úteis" tempo-estimado-espera="20">
+                        <descricao>Nas Superintendências Regionais do Trabalho ou Gerências Regionais do Trabalho.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10879" tipo="web">
                         <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-amianto?campaign=orgao</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="9687">
-            <titulo>Confirmação do registro</titulo>
-            <descricao>A empresa receberá ofício confirmando seu cadastro.</descricao>
+        <etapa id="9856">
+            <titulo>Acompanhar o pedido</titulo>
+            <descricao>Após a solicitação realizada pelo interessado, o processo é enviado a um analista da Coordenação-Geral de Normatização e Programas (CGNOR), do DSST/SIT, a fim de analisar a solicitação. Após a análise, o pedido pode ser:
+- deferido: será enviado ofício ao interessado, contendo o número de registro gerado;
+- indeferido: a solicitação será devolvida à empresa, solicitando mais ou informações ou correções.</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="14052">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -66,7 +80,31 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10705" tipo="web">
+                    <canal-de-prestacao id="10880" tipo="web">
+                        <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-amianto?campaign=orgao</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9857">
+            <titulo>Receber resposta sobre o pedido</titulo>
+            <descricao>Sendo deferido o pedido, após a análise realizada pela CGNOR, será enviado ofício ao interessado, assinado pelo Diretor do DSST, contendo o número de registro gerado.</descricao>
+            <documentos>
+                <default>
+                    <item id="14053">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10881" tipo="web">
                         <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-amianto?campaign=orgao</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -77,22 +115,22 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="9405">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9483">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
         <item>Segurança e Ordem Pública</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="18045">Asbesto</item>
-        <item id="18046">insalubridade</item>
-        <item id="18047">Norma Regulamentadora nº 15</item>
-        <item id="18048">Amianto</item>
-        <item id="18049">Trabalho</item>
-        <item id="18050">Cadastro</item>
+        <item id="18258">Asbesto</item>
+        <item id="18259">insalubridade</item>
+        <item id="18260">Norma Regulamentadora nº 15</item>
+        <item id="18261">Amianto</item>
+        <item id="18262">Trabalho</item>
+        <item id="18263">Cadastro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3239">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
+        <item id="3292">[Anexo 12 da Norma Regulamentadora 15 do Ministério do Trabalho](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/normatizacao/normas-regulamentadoras)</item>
     </legislacoes>
     <condicoes-acessibilidade>.</condicoes-acessibilidade>
     <tratamento-prioritario>.</tratamento-prioritario>
