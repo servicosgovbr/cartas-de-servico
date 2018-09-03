@@ -5,21 +5,24 @@
     <nome>Obter Certificado de Aprovação de Equipamento de Proteção Individual</nome>
     <sigla>CA</sigla>
     <nomes-populares>
-        <item id="655">CA do EPI</item>
+        <item id="3376">CA do EPI</item>
     </nomes-populares>
     <descricao>Se um produto será utilizado como Equipamento de Proteção de Individual (EPI) e encontra-se listado no Anexo I da [Norma Regulamentadora 06 (NR-06)](http://trabalho.gov.br/images/Documentos/SST/NR/NR6.pdf), então há necessidade de emissão de Certificado de Aprovação - CA, através deste serviço, para que ele possa ser comercializado.</descricao>
-    <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
-* Fone: (61) 2031 6689
-* Endereço: Esplanada dos Ministérios Bloco F, Ed. Anexo, Ala B, Brasília-DF
-* CEP: 70056-900,</contato>
+    <contato>**Coordenação-Geral de Normatização e Programas - CGNOR / Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
+Fone: (61) 2031 6689
+Endereço: Esplanada dos Ministérios Bloco F, Ed. Anexo, Ala B, Brasília-DF
+CEP: 70056-900.**</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="846">
+        <solicitante id="5543">
             <tipo>Empresa fabricante</tipo>
             <requisitos>De produto que pretende ser comercializado como Equipamento de Proteção Individual (EPI) listado no Anexo I da NR-06.</requisitos>
         </solicitante>
-        <solicitante id="847">
+        <solicitante id="5544">
             <tipo>Empresa importadora</tipo>
             <requisitos>De produto que pretende ser comercializado como Equipamento de Proteção Individual (EPI) listado no Anexo I da NR-06.</requisitos>
         </solicitante>
@@ -32,10 +35,12 @@
         <tipo>Válido por</tipo>
         <quantidade>5</quantidade>
         <unidade>anos</unidade>
-        <descricao></descricao>
+        <descricao>Segundo a Norma Regulamentadora 06:
+- de 5 (cinco) anos, para aqueles equipamentos com laudos de ensaio que não tenham sua conformidade avaliada no âmbito do SINMETRO;
+- do prazo vinculado à avaliação da conformidade no âmbito do SINMETRO, quando for o caso.</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2208">
+        <etapa id="9867">
             <titulo>Obter e preencher os formulários necessários</titulo>
             <descricao>Será preciso preencher 3 formulários: 
 * Cadastro de Usuário CAEPI;
@@ -43,123 +48,145 @@
 * Requerimento de Emissão do CA;</descricao>
             <documentos>
                 <default>
-                    <item id="2308">Dados do produto</item>
-                    <item id="2309">Dados da empresa</item>
-                    <item id="2310">Dados do representante da empresa</item>
+                    <item id="14063">Dados do produto</item>
+                    <item id="14064">Dados da empresa</item>
+                    <item id="14065">Dados do representante da empresa</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2768" tipo="web">
+                    <canal-de-prestacao id="10923" tipo="web">
                         <descricao>http://trabalho.gov.br/seguranca-e-saude-no-trabalho/equipamentos-de-protecao-individual-epi/cadastramento-de-empresas-e-emissao-de-ca</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2209">
+        <etapa id="9868">
             <titulo>Envio da documentação ao Ministério do Trabalho</titulo>
             <descricao>Preenchidos os formulários, você deve reunir a documentação necessária e enviá-la para o Ministério do Trabalho.</descricao>
             <documentos>
                 <default>
-                    <item id="2317">Formulário de Cadastro de Usuário CAEPI</item>
-                    <item id="2318">Formulário de Cadastro da Empresa no Sistema CAEPI</item>
-                    <item id="2319">Formulário de Requerimento de Emissão do CA</item>
-                    <item id="2320">Cópia autenticada do ato constitutivo da empresa, no qual conste expressamente, dentre os objetivos sociais da empresa, a fabricação e/ou a importação de EPI.</item>
-                    <item id="2321">Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da Norma Regulamentadora n.º 6 - NR-6;</item>
-                    <item id="2322">Cópia autenticada do relatório de ensaio, emitido por laboratório credenciado pelo DSST em nome da empresa requerente do CA, quando o equipamento não tiver sua conformidade avaliada no âmbito do SINMETRO;</item>
-                    <item id="2323">Cópia autenticada do certificado de conformidade, emitido em nome da empresa requerente do CA, que comprove que o produto teve sua conformidade avaliada no âmbito do SINMETRO, quando for o caso</item>
-                    <item id="2324">Cópia autenticada do certificado de origem e da declaração do fabricante estrangeiro que autorize o importador a comercializar o produto no Brasil, quando se tratar de EPI importado, ambos com tradução juramentada para língua portuguesa.</item>
+                    <item id="14066">Formulário de Cadastro de Usuário CAEPI</item>
+                    <item id="14067">Formulário de Cadastro da Empresa no Sistema CAEPI</item>
+                    <item id="14068">Formulário de Requerimento de Emissão do CA</item>
+                    <item id="14069">Cópia autenticada do ato constitutivo da empresa, no qual conste expressamente, dentre os objetivos sociais da empresa, a fabricação e/ou a importação de EPI.</item>
+                    <item id="14070">Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da Norma Regulamentadora n.º 6 - NR-6;</item>
+                    <item id="14071">Cópia autenticada do relatório de ensaio, emitido por laboratório credenciado pelo DSST em nome da empresa requerente do CA, quando o equipamento não tiver sua conformidade avaliada no âmbito do SINMETRO;</item>
+                    <item id="14072">Cópia autenticada do certificado de conformidade, emitido em nome da empresa requerente do CA, que comprove que o produto teve sua conformidade avaliada no âmbito do SINMETRO, quando for o caso</item>
+                    <item id="14073">Cópia autenticada do certificado de origem e da declaração do fabricante estrangeiro que autorize o importador a comercializar o produto no Brasil, quando se tratar de EPI importado, ambos com tradução juramentada para língua portuguesa.</item>
                 </default>
-                <caso id="353" descricao="º Para a emissão ou renovação do CA de equipamentos ensaiados ou certificados por laboratório ou organismo certificador estrangeiro">
+                <caso id="1454" descricao="º Para a emissão ou renovação do CA de equipamentos ensaiados ou certificados por laboratório ou organismo certificador estrangeiro">
                     <documento>
-                        <id>2311</id>
-                        <descricao>Memorial descritivo do EPI, conforme disposto na Portaria DSST/SIT n.º 452, de 20/11/2014</descricao>
-                    </documento>
-                    <documento>
-                        <id>2312</id>
-                        <descricao>Cópia do manual de instruções do EPI, conforme na Portaria DSST/SIT n.º 452, de 20/11/2014;</descricao>
-                    </documento>
-                    <documento>
-                        <id>2313</id>
-                        <descricao>Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da NR-6;</descricao>
+                        <id>2315</id>
+                        <descricao>Cópia autenticada dos certificados de conformidade ou relatórios de ensaios realizados no exterior, emitidos em nome da empresa requerente do CA, com tradução juramentada para língua portuguesa.</descricao>
                     </documento>
                     <documento>
                         <id>2314</id>
                         <descricao>Cópia autenticada do certificado de origem e da declaração do fabricante estrangeiro que autorize o importador a comercializar o produto no Brasil, quando se tratar de EPI importado, ambos com tradução juramentada para língua portuguesa;</descricao>
                     </documento>
                     <documento>
-                        <id>2315</id>
-                        <descricao>Cópia autenticada dos certificados de conformidade ou relatórios de ensaios realizados no exterior, emitidos em nome da empresa requerente do CA, com tradução juramentada para língua portuguesa.</descricao>
+                        <id>2312</id>
+                        <descricao>Cópia do manual de instruções do EPI, conforme na Portaria DSST/SIT n.º 452, de 20/11/2014;</descricao>
+                    </documento>
+                    <documento>
+                        <id>2311</id>
+                        <descricao>Memorial descritivo do EPI, conforme disposto na Portaria DSST/SIT n.º 452, de 20/11/2014</descricao>
+                    </documento>
+                    <documento>
+                        <id>2313</id>
+                        <descricao>Fotografias nítidas e coloridas do EPI, que evidenciem todo o equipamento de proteção, bem como as marcações previstas no item 6.9.3 da NR-6;</descricao>
                     </documento>
                 </caso>
-                <caso id="354" descricao="Para emissão ou renovação de CA de equipamento de proteção individual conjugado cujos dispositivos são fabricados por empresas distintas">
-                    <documento>
-                        <id>2316</id>
-                        <descricao>Declaração de autorização de utilização em dispositivo conjungado, firmada pelo representante legal do fabricante e/ou importador detentor do CA do dispositivo que será conjugado com o equipamento do requerente, com firma reconhecida em cartório.</descricao>
-                    </documento>
+                <caso id="1455" descricao="Para emissão ou renovação de CA de equipamento de proteção individual conjugado cujos dispositivos são fabricados por empresas distintas">
                     <documento>
                         <id>2325</id>
                         <descricao>Cópia autenticada do relatório de ensaio comprovando a eficácia das conexões e junções</descricao>
+                    </documento>
+                    <documento>
+                        <id>2316</id>
+                        <descricao>Declaração de autorização de utilização em dispositivo conjungado, firmada pelo representante legal do fabricante e/ou importador detentor do CA do dispositivo que será conjugado com o equipamento do requerente, com firma reconhecida em cartório.</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2769" tipo="postal">
-                        <descricao>Coordenação-Geral de Normatização e Programas – CGNOR/ DSST/ SIT/MTb
+                    <canal-de-prestacao id="10924" tipo="postal">
+                        <descricao>Coordenação-Geral de Normatização e Programas – CGNOR/DSST/SIT/MTb
 * Endereço: Esplanada dos Ministérios Bloco F, Ed. Anexo, Ala B, Brasília-DF
 * CEP: 70056-900,</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2210">
+        <etapa id="9869">
             <titulo>Confirmar recebimento da documentação pelo Ministério do Trabalho (opcional)</titulo>
             <descricao>Você pode confirmar o recebimento pelo Ministério do Trabalho da documentação enviada pela sua empresa, através do canal abaixo.</descricao>
             <documentos>
                 <default>
-                    <item id="2326">Número do protocolo</item>
-                    <item id="2327">Nome da empresa ou do representante legal</item>
+                    <item id="14074">Número do protocolo</item>
+                    <item id="14075">Nome da empresa ou do representante legal</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2770" tipo="web-consultar">
+                    <canal-de-prestacao id="10926" tipo="web" procedimento-sistema-indisponivel="****Por meio do Sistema CAEPI:  - CPF  - Senha">
+                        <descricao>http://caepi.mte.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10925" tipo="web">
                         <descricao>http://consulta.mte.gov.br/cprodweb/consulta_externa.asp?cmdCommand=Novo</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2211">
-            <titulo>Receber resultado e o Certificado, se aprovado.</titulo>
-            <descricao>Após a análise, o Ministério enviará o resultado e, se aprovado, o CA para você.</descricao>
+        <etapa id="9870">
+            <titulo>Receber resposta sobre o pedido</titulo>
+            <descricao>Após a análise da documentação, o pedido pode ser:
+- deferido: nesse caso, o documento não será enviado à empresa, mas disponibilizado para consulta no endereço eletrônico (http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx). 
+- indeferido: será encaminhado ofício à empresa, solicitando mais informações ou correções.</descricao>
             <documentos>
                 <default/>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2771" tipo="postal">
-                        <descricao>Endereço da empresa cadastrado junto à Receita Federal.</descricao>
+                    <canal-de-prestacao id="10927" tipo="web">
+                        <descricao>http://caepi.mte.gov.br/internet/ConsultaCAInternet.aspx</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10928" tipo="postal">
+                        <descricao>Em caso de indeferimento: envio de ofício ao endereço da empresa cadastrado junto à Receita Federal.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2443">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9513">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
@@ -170,12 +197,15 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1970">segurança do trabalho</item>
-        <item id="1971">equipamento de proteção</item>
-        <item id="1972">Aprovação de equipamentos</item>
+        <item id="18331">segurança do trabalho</item>
+        <item id="18332">equipamento de proteção</item>
+        <item id="18333">Aprovação de equipamentos</item>
     </palavras-chave>
     <legislacoes>
-        <item id="658">[Norma Regulamentadora 06](http://trabalho.gov.br/images/Documentos/SST/NR/NR6.pdf)</item>
-        <item id="657">[PORTARIA N.º 451, DE 20 DE NOVEMBRO DE 2014](http://trabalho.gov.br/images/Documentos/SST/EPI/Portaria451Sistema-CAEPI.pdf)</item>
+        <item id="3309">[Norma Regulamentadora 06](http://trabalho.gov.br/images/Documentos/SST/NR/NR6.pdf)</item>
+        <item id="3310">[PORTARIA N.º 451, DE 20 DE NOVEMBRO DE 2014 e PORTARIA N.º 452, DE 20 DE NOVEMBRO DE 2014](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/legislacao/itemlist/category/703-sst-portarias-2014)</item>
     </legislacoes>
+    <condicoes-acessibilidade>****</condicoes-acessibilidade>
+    <tratamento-prioritario>****</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>****</tratamento-dispensado-atendimento>
 </servico>
