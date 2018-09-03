@@ -4,9 +4,6 @@
     <dbId>1467</dbId>
     <nome>Cancelar Habilitação ao Programa Leite Mais Saudável.</nome>
     <sigla></sigla>
-    <nomes-populares>
-        <item id="1550">Cancelamento da Habilitação Definitiva</item>
-    </nomes-populares>
     <descricao>Solicitar o cancelamento de habilitação ao Programa Mais Leite Saudável mediante juntada do pedido ao dossiê digital atendimento em que a decisão de habilitação foi proferida. A desistência do requerimento de habilitação definitiva antes da decisão de deferimento ou indeferimento produzirá os mesmos efeitos do indeferimento da habilitação.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
@@ -14,35 +11,46 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="2321">
-            <tipo>Empresas habilitadas no Leite Mais Saudável</tipo>
+        <solicitante id="4839">
+            <tipo>Pessoa Jurídica</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <nao-estimado-ainda/>
+        <atendimento-imediato/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4696">
-            <titulo>Requerer cancelamento</titulo>
+        <etapa id="8879">
+            <titulo>Cancelar Habilitação no Programa Mais Leite Saudável</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="5685">CNPJ</item>
-                    <item id="5686">Certificado digital</item>
+                    <item id="14149">Pedido de cancelamento pelo interessado dirigido à RFB;
+&lt;br&gt;
+&lt;i&gt;&lt;b&gt;Obs:&lt;/b&gt; O pedido de cancelamento da habilitação deverá ser juntado, mediante o uso do PGS disponível no sítio da RFB, ao dossiê digital de atendimento em que a decisão da habilitação foi proferida. Veja mais detalhes &lt;a href="http://idg.receita.fazenda.gov.br/interface/entrega-de-documentos-digitais" target="_blank"&gt;aqui&lt;/a&gt;</item>
+                    <item id="14150">Documento de Identificação oficial (cópia autenticada ou cópia Simples acompanhada do original) do contribuinte e do seu representante legal, se for o caso, sendo dispensado quando houver reconhecimento de firma;</item>
                 </default>
+                <caso id="1456" descricao="Se procurador">
+                    <documento>
+                        <id>14148</id>
+                        <descricao>Procuração (cópia autenticada ou cópia Simples acompanhada do original), se for o caso.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4851" tipo="web">
-                        <descricao>https://cav.receita.fazenda.gov.br/eCAC/publico/login.aspx</descricao>
+                    <canal-de-prestacao id="9631" tipo="web">
+                        <descricao>http://idg.receita.fazenda.gov.br/interface/entrega-de-documentos-digitais</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -52,7 +60,7 @@
         <nomeOrgao>Ministério da Fazenda (MF)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="4737">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="8553">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
@@ -62,12 +70,25 @@
         <item>Tributação</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="8750">cancelar habilitação</item>
-        <item id="8751">desistir de habilitação</item>
-        <item id="8752">leite mais saudável</item>
-        <item id="8753">mais leite saudável</item>
+        <item id="16147">cancelar habilitação</item>
+        <item id="16148">desistir de habilitação</item>
+        <item id="16149">leite mais saudável</item>
+        <item id="16150">mais leite saudável</item>
     </palavras-chave>
+    <legislacoes>
+        <item id="3317">Instrução Normativa RFB nº 1590/2015
+Decreto nº 8.533/2015</item>
+    </legislacoes>
     <servicos-relacionados>
         <item>1468</item>
     </servicos-relacionados>
+    <condicoes-acessibilidade>.</condicoes-acessibilidade>
+    <tratamento-prioritario>A Lei 10048 de 08/11/2000 criou a obrigatoriedade de atendimento prioritário a pessoas:
+- Pessoas com Deficiência, 
+- Idosos com idade superior a 60 anos;
+- Gestantes, 
+- Lactantes, 
+- Pessoas com crianças de colo e
+- Obesos.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>.</tratamento-dispensado-atendimento>
 </servico>
