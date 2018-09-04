@@ -2,18 +2,18 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-autorizacao-para-trabalhar-como-comissario-de-voo</id>
     <dbId>3059</dbId>
-    <nome>Obter autorização  para trabalhar como Comissário de Voo</nome>
+    <nome>Obter autorização  para trabalhar como comissário de voo</nome>
     <sigla></sigla>
-    <descricao>Consiste na realização, junto à ANAC, de exame teórico de comissário de voo, após a obtenção do Certificado Médico Aeronáutico e a conclusão do curso de comissário de voo e a respectiva aprovação, em escola de aviação homologada pela ANAC.</descricao>
+    <descricao>Consiste na realização, junto à ANAC, de exame teórico de comissário de voo, após a obtenção do Certificado Médico Aeronáutico e da conclusão de curso de comissário de voo, e respectiva aprovação, em escola de aviação homologada pela ANAC.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3644">
-            <tipo>Alunos que tenham sido aprovados no curso de Comissário de Vôo em escola de aviação homologada pela ANAC e que tenham o Certificado Médico Aeronáutico.</tipo>
-            <requisitos>Para pesquisas as escolas homologadas pela ANAC e os cursos que elas estão autorizadas a ministrar, clique [aqui](https://sistemas.anac.gov.br/educator/)</requisitos>
+        <solicitante id="5580">
+            <tipo>Alunos que tenham sido aprovados no curso de Comissário de Voo em escola de aviação homologada pela ANAC e que tenham o Certificado Médico Aeronáutico.</tipo>
+            <requisitos>Para pesquisar as escolas homologadas pela ANAC e os cursos que elas estão autorizadas a ministrar, clique [aqui](https://sistemas.anac.gov.br/educator/)</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -24,17 +24,17 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6979">
+        <etapa id="9937">
             <titulo>Agendar prova</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="9487">GRU</item>
+                    <item id="14312">GRU</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="598">
+                    <custo id="972">
                         <descricao>Taxa de Fiscalização e Aviação Civil (TFAC)</descricao>
                         <moeda>R$</moeda>
                         <valor>68,21</valor>
@@ -43,38 +43,44 @@
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7259" tipo="e-mail">
+                    <canal-de-prestacao id="11023" tipo="e-mail">
                         <descricao>agendamento.exame@anac.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="810" descricao="Para gerar a GRU">
+                <caso id="1463" descricao="Para gerar a GRU">
                     <canal-de-prestacao id="7258" tipo="web">
                         <descricao>http://www.anac.gov.br/assuntos/setor-regulado/empresas/acesso-rapido/guia-de-recolhimento-da-uniao</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6980">
+        <etapa id="9938">
             <titulo>Fazer prova</titulo>
             <descricao>Para obter o modelo do formulário a ser preenchido, clique [aqui](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/processo-de-licencas-e-habilitacoes/exame-teorico)</descricao>
             <documentos>
                 <default>
-                    <item id="9488">Formulário para realização de exames preenchido e assinado;</item>
-                    <item id="9489">Cédula de identidade ou outro documento oficial de identificação válido, com foto recente;</item>
-                    <item id="9490">CPF;</item>
-                    <item id="9491">Original ou cópia autenticada de conclusão de curso homologado pela ANAC;</item>
-                    <item id="9492">1 (uma) foto 3x4 colorida, recente e com fundo claro; e</item>
-                    <item id="9493">Comprovante de pagamento da GRU.</item>
+                    <item id="14313">Formulário para realização de exames preenchido e assinado;</item>
+                    <item id="14314">Cédula de identidade ou outro documento oficial de identificação válido, com foto recente;</item>
+                    <item id="14315">CPF;</item>
+                    <item id="14316">Original ou cópia autenticada de conclusão de curso homologado pela ANAC;</item>
+                    <item id="14317">1 (uma) foto 3x4 colorida, recente e com fundo claro; e</item>
+                    <item id="14318">Comprovante de pagamento da GRU.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7260" tipo="presencial">
+                    <canal-de-prestacao id="11024" tipo="presencial">
                         <descricao>Em uma das [salas de prova da ANAC](http://www.anac.gov.br/assuntos/setor-regulado/profissionais-da-aviacao-civil/arquivos/enderecos-telefones-uteis)</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -85,7 +91,7 @@
         <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6887">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9577">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação</item>
@@ -94,8 +100,11 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12880">comissário</item>
-        <item id="12881">aeromoça</item>
-        <item id="12882">avião</item>
+        <item id="18456">comissário</item>
+        <item id="18457">aeromoça</item>
+        <item id="18458">avião</item>
     </palavras-chave>
+    <condicoes-acessibilidade>Não disponíveis.</condicoes-acessibilidade>
+    <tratamento-prioritario>Não disponível.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível.</tratamento-dispensado-atendimento>
 </servico>
