@@ -2,10 +2,10 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-autorizacao-de-fabricacao-para-fim-exclusivo-de-exportacao</id>
     <dbId>2262</dbId>
-    <nome>Obter Autorização de Fabricação para fim Exclusivo de Exportação</nome>
+    <nome>Obter autorização de fabricação para fim exclusivo de exportação</nome>
     <sigla>AFEX</sigla>
     <nomes-populares>
-        <item id="2601">AFEX</item>
+        <item id="3387">AFEX</item>
     </nomes-populares>
     <descricao>A Autorização de Fabricação para Fim Exclusivo de Exportação (AFEX) é um Documento que autoriza a empresa solicitante a fabricar medicamentos sujeitos ao controle especial que não possuem registro no Brasil, com a finalidade exclusiva de exportação para o país onde possui registro. Deverá ser realizado o peticionamento manual através do sistema padrão de peticionamento disponível no portal da Anvisa. Esta petição é isenta de taxas, mas deverá ser gerada a Guia de Isenção de Pagamento.
 A Anvisa não emite AFEX para medicamentos que possuem registro no Brasil.</descricao>
@@ -17,7 +17,7 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4063">
+        <solicitante id="5568">
             <tipo>Empresas que fabricam medicamentos para exportação</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -33,54 +33,60 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7689">
+        <etapa id="9913">
             <titulo>Requerer autorização e gerar Guia de Isenção de Pagamento</titulo>
             <descricao>Selecionar a opção “Peticionamento Manual e Pagamento de Taxas” e escolhido o código de Assunto “7655 - PRODUTOS CONTROLADOS - Autorização de Fabricação p/ fim Exclusivo de Exportação”.</descricao>
             <documentos>
                 <default>
-                    <item id="6158">Formulário de petição preenchido, no que couber;</item>
-                    <item id="6159">Cópia do Certificado de Registro do Medicamento ou documento similar emitido pela Autoridade Sanitária do país importador no qual devem constar as apresentações comercializadas e que a empresa brasileira é a fabricante do medicamento;</item>
-                    <item id="6160">Declaração assinada pelo responsável técnico constando à fórmula completa do medicamento;</item>
-                    <item id="6161">Via original do comprovante de isenção do pagamento da taxa de fiscalização de vigilância sanitária.</item>
+                    <item id="14246">Formulário de petição preenchido, no que couber;</item>
+                    <item id="14247">Cópia do Certificado de Registro do Medicamento ou documento similar emitido pela Autoridade Sanitária do país importador no qual devem constar as apresentações comercializadas e que a empresa brasileira é a fabricante do medicamento;</item>
+                    <item id="14248">Declaração assinada pelo responsável técnico constando à fórmula completa do medicamento;</item>
+                    <item id="14249">Via original do comprovante de isenção do pagamento da taxa de fiscalização de vigilância sanitária.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="5311" tipo="web">
+                    <canal-de-prestacao id="10988" tipo="web">
                         <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="5312" tipo="postal">
+                    <canal-de-prestacao id="10989" tipo="postal">
                         <descricao>**ANVISA** - SIA Trecho 5/Área especial 57 - Guará, Brasília - DF, 71205-050</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7690">
+        <etapa id="9914">
             <titulo>Realizar protocolo da documentação</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="10689">A lista de documentos obrigatórios será exibida ao realizar o peticionamento.</item>
+                    <item id="14250">A lista de documentos obrigatórios será exibida ao realizar o peticionamento.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8000" tipo="presencial">
+                    <canal-de-prestacao id="10990" tipo="presencial">
                         <descricao>ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="8001" tipo="postal">
+                    <canal-de-prestacao id="10991" tipo="postal">
                         <descricao>ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7691">
+        <etapa id="9915">
             <titulo>Acompanhar o status da petição</titulo>
             <descricao>O usuário poderá acompanhar o status no sítio eletrônico da Anvisa, no Sistema de Consulta à Situação de Documentos, bem como acompanhar a ordem de análise da petição no Sistema de Fila de Petições. Se a petição for deferida, será enviada para empresa a Autorização por correio.  Caso contrário, a empresa será comunicada da motivação por meio de ofício eletrônico.</descricao>
             <documentos>
@@ -89,9 +95,12 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8002" tipo="web-acompanhar">
+                    <canal-de-prestacao id="10992" tipo="web-acompanhar">
                         <descricao>http://portal.anvisa.gov.br/sistema-consulta-de-assuntos</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -102,7 +111,7 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7624">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9556">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -111,8 +120,11 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <item>Comercio externo</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14150">medicamento</item>
-        <item id="14151">exportação</item>
-        <item id="14152">autorização</item>
+        <item id="18419">medicamento</item>
+        <item id="18420">exportação</item>
+        <item id="18421">autorização</item>
     </palavras-chave>
+    <condicoes-acessibilidade>não disponíveis</condicoes-acessibilidade>
+    <tratamento-prioritario>não disponível</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível</tratamento-dispensado-atendimento>
 </servico>
