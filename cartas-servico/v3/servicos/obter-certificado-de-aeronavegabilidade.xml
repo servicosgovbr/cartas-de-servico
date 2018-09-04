@@ -2,49 +2,48 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-certificado-de-aeronavegabilidade</id>
     <dbId>2893</dbId>
-    <nome>Obter Certificado de Aeronavegabilidade</nome>
+    <nome>Obter certificado de aeronavegabilidade</nome>
     <sigla>CA</sigla>
-    <descricao>Um certificado de aeronavegabilidade certifica que uma aeronave homologada se encontra em condições de operar. O serviço pode ser solicitado pela pessoa que adquiriu o direito de operar a aeronave.
-Prazo de atendimento: o prazo para o processamento do registro é de 30 dias, a partir da data de protocolo dos documentos. A validade do certificado varia de três a seis anos, de acordo com a categoria da aeronave.</descricao>
+    <descricao>Um certificado de aeronavegabilidade certifica que uma aeronave homologada se encontra em condições de operar.</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3474">
+        <solicitante id="5561">
             <tipo>Pessoa que possui o direito de operar a aeronave.</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="8" max="15" unidade="dias-corridos"/>
+        <ate max="30" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
-        <descricao></descricao>
+        <descricao>A validade do certificado varia de três a seis anos, de acordo com a categoria da aeronave.</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6723">
+        <etapa id="9893">
             <titulo>Requerer certificado</titulo>
-            <descricao>Agendar Vistoria para a Aeronave. Para gerar o boleto de pagamento da vistoria, clique [aqui](https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/geraBoleto.asp)</descricao>
+            <descricao>Agendar vistoria para a aeronave. Para gerar o boleto de pagamento da vistoria, clique [aqui](https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/geraBoleto.asp)</descricao>
             <documentos>
                 <default>
-                    <item id="8905">Ata de fundação</item>
-                    <item id="8906">Carteira de identidade</item>
-                    <item id="8907">Carteira de trabalho</item>
-                    <item id="8908">Certidões da Receita Federal</item>
-                    <item id="8909">Comprovante de endereço/residência</item>
-                    <item id="8910">Contrato Social</item>
-                    <item id="8911">CPF</item>
-                    <item id="8912">Registro em Cartório</item>
-                    <item id="8913">Registro no RAB</item>
-                    <item id="8914">GRU</item>
+                    <item id="14216">Ata de fundação</item>
+                    <item id="14217">Carteira de identidade</item>
+                    <item id="14218">Carteira de trabalho</item>
+                    <item id="14219">Certidões da Receita Federal</item>
+                    <item id="14220">Comprovante de endereço/residência</item>
+                    <item id="14221">Contrato Social</item>
+                    <item id="14222">CPF</item>
+                    <item id="14223">Registro em Cartório</item>
+                    <item id="14224">Registro no RAB</item>
+                    <item id="14225">GRU</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="590">
+                    <custo id="959">
                         <descricao>Taxa de Fiscalização da Aviação Civil</descricao>
                         <moeda>R$</moeda>
                         <valor>4.182,00</valor>
@@ -53,12 +52,15 @@ Prazo de atendimento: o prazo para o processamento do registro é de 30 dias, a 
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="6951" tipo="web">
+                    <canal-de-prestacao id="10958" tipo="web">
                         <descricao>https://sistemas.anac.gov.br/saci/sva/agendamentoVistoria/geraBoleto.asp</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="6952" tipo="e-mail">
+                    <canal-de-prestacao id="10959" tipo="e-mail">
                         <descricao>vistorias@anac.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -69,10 +71,10 @@ Prazo de atendimento: o prazo para o processamento do registro é de 30 dias, a 
         <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6614">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="6615">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="6616">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="6617">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="9542">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="9543">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9544">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9545">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -80,8 +82,12 @@ Prazo de atendimento: o prazo para o processamento do registro é de 30 dias, a 
         <item>Transporte Aéreo</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12442">piloto</item>
-        <item id="12443">avião</item>
-        <item id="12444">anac</item>
+        <item id="18396">piloto</item>
+        <item id="18397">avião</item>
+        <item id="18398">anac</item>
+        <item id="18399">aeronavegabilidade</item>
     </palavras-chave>
+    <condicoes-acessibilidade>Não disponíveis.</condicoes-acessibilidade>
+    <tratamento-prioritario>Não disponível.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível.</tratamento-dispensado-atendimento>
 </servico>
