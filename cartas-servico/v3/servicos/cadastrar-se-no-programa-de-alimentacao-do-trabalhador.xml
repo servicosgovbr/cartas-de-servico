@@ -5,23 +5,25 @@
     <nome>Cadastrar-se no Programa de Alimentação do Trabalhador</nome>
     <sigla>PAT</sigla>
     <nomes-populares>
-        <item id="644">Cadastro no PAT</item>
+        <item id="3380">Cadastro no PAT</item>
     </nomes-populares>
-    <descricao>Através deste serviço o empregador e profissionais de nutrição habilitados podem aderir ao Programa de Alimentação do Trabalhador, que permite ao empregador deduzir parte destes gastos do Imposto de Renda. Ao final do processo, as empresas beneficiárias recebem um comprovante com o seu número de INSCRIÇÃO no PAT, e as empresas prestadoras e de responsáveis técnicos nutricionistas recebem um comprovante com o seu número de REGISTRO.</descricao>
-    <contato>Divisão do Programa de Alimentação do Trabalhador - 
-(61) 2031-6613 (de 08h às 12h e de 14h às 18h).</contato>
+    <descricao>Os empregadores que fornecem alimentação a seus trabalhadores (refeições prontas, cestas de alimentos, refeição-convênio e alimentação-convênio) podem se inscrever no Programa de Alimentação do Trabalhador-PAT e usufruir de deduções no Imposto de Renda da Pessoa Jurídica, no caso de tributação pelo lucro real.  No âmbito do PAT, os benefícios não têm natureza salarial e não se incorporam à remuneração para quaisquer efeitos. Esse serviço  também é utilizado pelas empresas  fornecedoras de alimentação coletiva, prestadoras de serviços de alimentação coletiva e profissionais legalmente habilitados em nutrição que desejam exercer suas atividades no PAT.</descricao>
+    <contato>Divisão do Programa de Alimentação do Trabalhador - e-mail: atendimento.pat@mte.gov.br</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="821">
+        <solicitante id="5554">
             <tipo>Empresas Públicas, Privadas ou de Economia Mista</tipo>
             <requisitos></requisitos>
         </solicitante>
-        <solicitante id="822">
+        <solicitante id="5555">
             <tipo>Pessoas jurídicas de direito privado sem fins lucrativos</tipo>
             <requisitos></requisitos>
         </solicitante>
-        <solicitante id="823">
+        <solicitante id="5556">
             <tipo>Fundações e Autarquias de Direito Público</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -37,35 +39,42 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2177">
+        <etapa id="9885">
             <titulo>Cadastrar informações</titulo>
             <descricao>O representante da empresa irá fornecer as informações necessárias ao cadastro.</descricao>
             <documentos>
                 <default>
-                    <item id="2223">CNPJ</item>
-                    <item id="2224">Contrato Social</item>
-                    <item id="2225">Registro na Junta Comercial (se aplicado ao caso)</item>
-                    <item id="2226">ontrato com profissional legalmente habilitado em nutrição para atuar como responsável técnico</item>
-                    <item id="2227">mídias físicas de documentos de legitimação</item>
-                    <item id="2228">declaração sobre mecanismos de segurança contra fraudes</item>
-                    <item id="2229">declarações sobre filiais,  abrangência de atuação e demais dados da empresa.</item>
+                    <item id="14164">CNPJ</item>
+                    <item id="14165">Contrato Social ou Estatuto Social</item>
+                    <item id="14166">Registro na Junta Comercial (se aplicado ao caso)</item>
+                    <item id="14167">Relação contratual ou empregatícia com profissional legalmente habilitado em nutrição, com registro no PAT, para atuar como responsável técnico (empresas fornecedoras e prestadoras de serviços de alimentação coletiva, assim como empresas beneficiárias na modalidade autogestão)</item>
+                    <item id="14168">Contrato de prestação de serviços com fornecedora e prestadora de serviços de alimentação coletiva devidamente registradas no PAT (empresas beneficiárias)</item>
                 </default>
+                <caso id="1457" descricao="Registro de prestadoras de serviços de alimentação coletiva">
+                    <documento>
+                        <id>14163</id>
+                        <descricao>Nesse caso, a relação dos  documentos necessários está disponível no endereço eletrônico http://www.trabalho.gov.br/pat, no link: Como se cadastrar no PAT e Empresas Prestadoras de Serviços de Alimentação Coletiva.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2720" tipo="web">
+                    <canal-de-prestacao id="10949" tipo="web">
                         <descricao>http://pat.mte.gov.br/login/login.asp#</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="339" descricao="Caso sua empresa ainda não tenha cadastro no sistema">
+                <caso id="1458" descricao="Caso sua empresa ainda não tenha cadastro no sistema">
                     <canal-de-prestacao id="2719" tipo="web-inscrever-se">
                         <descricao>http://pat.mte.gov.br/login/cad_usuario.asp</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="355" descricao="empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
+                <caso id="1459" descricao="empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
                     <canal-de-prestacao id="2805" tipo="postal">
                         <descricao>Esplanada dos Ministérios
 Anexo B do Bloco F - 1ª Andar, Sala 150
@@ -74,7 +83,7 @@ Brasília-DF - CEP 70059-900</descricao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2178">
+        <etapa id="9886">
             <titulo>Receber comprovante de inscrição</titulo>
             <descricao>O representante receberá o comprovante de inscrição no PAT.</descricao>
             <documentos>
@@ -83,13 +92,16 @@ Brasília-DF - CEP 70059-900</descricao>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2722" tipo="web-acompanhar">
+                    <canal-de-prestacao id="10950" tipo="web-acompanhar">
                         <descricao>http://pat.mte.gov.br/login/login.asp#</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="340" descricao="Empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
+                <caso id="1460" descricao="Empresas prestadoras de serviço de alimentação coletiva (cartões eletrônicos e vouchers de vale alimentação e refeição)">
                     <canal-de-prestacao id="2721" tipo="postal">
                         <descricao>O comprovante será enviado para o endereço da sede da empresa, conforme informado no cadastro.</descricao>
                     </canal-de-prestacao>
@@ -97,11 +109,13 @@ Brasília-DF - CEP 70059-900</descricao>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2420">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="2421">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="2" idServicoSegmento="2422">Órgãos e entidades públicas</item>
+        <item idSegmento="3" idServicoSegmento="9529">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="9530">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="2" idServicoSegmento="9531">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração</item>
@@ -110,12 +124,17 @@ Brasília-DF - CEP 70059-900</descricao>
         <item>Relações de Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1938">Vale alimentação</item>
-        <item id="1939">Nutrição</item>
-        <item id="1940">cartão alimentação</item>
+        <item id="18367">Vale alimentação</item>
+        <item id="18368">Nutrição</item>
+        <item id="18369">cartão alimentação</item>
     </palavras-chave>
     <legislacoes>
-        <item id="644">[LEI No 6.321, DE 14 DE ABRIL DE 1976](http://www.planalto.gov.br/ccivil_03/leis/L6321.htm)</item>
-        <item id="645">[DECRETO No 5, DE 14 DE JANEIRO DE 1991](http://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0005.htm)</item>
+        <item id="3345">[LEI No 6.321, DE 14 DE ABRIL DE 1976](http://www.planalto.gov.br/ccivil_03/leis/L6321.htm)</item>
+        <item id="3346">[DECRETO No 5, DE 14 DE JANEIRO DE 1991](http://www.planalto.gov.br/ccivil_03/decreto/1990-1994/d0005.htm)</item>
+        <item id="3347">[PORTARIA INTERMINISTERIAL Nº 05, DE 30 DE NOVEMBRO DE 1999](http://trabalho.gov.br/pat/legislacao-pat)</item>
+        <item id="3348">[PORTARIA SIT/DSST Nº 03, de 1º de MARÇO DE 2002](http://trabalho.gov.br/pat/legislacao-pat)</item>
     </legislacoes>
+    <condicoes-acessibilidade>****</condicoes-acessibilidade>
+    <tratamento-prioritario>****</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>****</tratamento-dispensado-atendimento>
 </servico>
