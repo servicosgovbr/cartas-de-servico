@@ -2,10 +2,10 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-anuencia-previa-em-licenca-de-importacao</id>
     <dbId>2617</dbId>
-    <nome>Obter Anuência Prévia em Licença de Importação</nome>
+    <nome>Obter anuência prévia em licença de importação</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="2638">LI</item>
+        <item id="3381">LI</item>
     </nomes-populares>
     <descricao>A Licença de Importação (LI) é um documento eletrônico registrado pelo importador ou seu representante legal no Sistema integrado de comércio exterior (Siscomex) para apresentar informações acerca da mercadoria a ser importada e da operação de importação de maneira geral, tais como importador, exportador, país de origem, procedência e aquisição, regime tributário, cobertura cambial, entre outras.
 No caso de produtos sujeitos à vigilância sanitária, o procedimento de licenciamento é realizado de maneira não-automática. Ou seja, para liberação da importação, todas as informações apresentadas deverão ser verificadas pelo fiscal sanitário previamente.
@@ -18,7 +18,7 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4115">
+        <solicitante id="5558">
             <tipo>Pessoas jurídicas importadoras</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -31,7 +31,7 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <descricao>Definida no Sistema Siscomex</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7809">
+        <etapa id="9888">
             <titulo>Registrar a LI no sistema Siscomex Web</titulo>
             <descricao>Despachante aduaneiro que representa a empresa importadora deve proceder com o registro</descricao>
             <documentos>
@@ -40,41 +40,47 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8144" tipo="web">
+                    <canal-de-prestacao id="10952" tipo="web">
                         <descricao>https://siscomex.desenvolvimento.gov.br/AnuenteWeb/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7810">
+        <etapa id="9889">
             <titulo>Criar dossiê</titulo>
             <descricao>Criação de dossiê no Vicomex</descricao>
             <documentos>
                 <default>
-                    <item id="10832">CONFORME RDC n° 81/2008, a depender do tipo de substância a ser importada.</item>
-                    <item id="10833">Licença de Importação (LI)</item>
-                    <item id="10834">Comprovante de pagamento</item>
+                    <item id="14169">CONFORME RDC n° 81/2008, a depender do tipo de substância a ser importada.</item>
+                    <item id="14170">Licença de Importação (LI)</item>
+                    <item id="14171">Comprovante de pagamento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8145" tipo="web">
+                    <canal-de-prestacao id="10953" tipo="web">
                         <descricao>https://www.siscomex.gov.br/vicomex/public/index.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="7811">
+        <etapa id="9890">
             <titulo>Pagar a Guia de Recolhimento Único (GRU)</titulo>
             <descricao>Acessar a Caixa Postal (caixa de mensagens) no sistema de peticionamento da ANVISA. Localizar e abrir a mensagem intitulada “Peticionamento de Importação –LI 0000000000 - Assunto: 0000”. Clicar no link indicado para a geração e pagamento da Guia de Recolhimento Único (GRU) e, até trinta dias de sua emissão.</descricao>
             <documentos>
                 <default/>
-                <caso id="875" descricao="Quando ficará disponível o comprovante de protocolização?">
+                <caso id="1461" descricao="Quando ficará disponível o comprovante de protocolização?">
                     <documento>
                         <id>10695</id>
                         <descricao>Após a compensação bancária, é gerado o comprovante de protocolização, que ficará disponível em formato eletrônico, na caixa postal (caixa de mensagens) do sistema de peticionamento da ANVISA. Posteriormente, o processo de importação será criado e distribuído para a caixa de documentos do Posto da ANVISA responsável pela análise dos processos.</descricao>
@@ -83,7 +89,7 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
             </documentos>
             <custos>
                 <default>
-                    <custo id="791">
+                    <custo id="957">
                         <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
                         <moeda>R$</moeda>
                         <valorVariavel>De acordo com o porte da empresa ou Guia de Recolhimento da União (GRU) isenta</valorVariavel>
@@ -91,9 +97,12 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8146" tipo="web">
+                    <canal-de-prestacao id="10954" tipo="web">
                         <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -104,9 +113,9 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="7719">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="7720">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="7721">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9534">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9535">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9536">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Indústria</item>
@@ -118,11 +127,14 @@ Presencial: ANVISA - Protocolo - SIA Trecho 5 - Área especial 57 - Guará I, Br
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="14294">importação</item>
-        <item id="14295">ANVISA</item>
-        <item id="14296">anuência</item>
-        <item id="14297">importação</item>
-        <item id="14298">ANVISA</item>
-        <item id="14299">anuência</item>
+        <item id="18375">importação</item>
+        <item id="18376">ANVISA</item>
+        <item id="18377">anuência</item>
+        <item id="18378">importação</item>
+        <item id="18379">ANVISA</item>
+        <item id="18380">anuência</item>
     </palavras-chave>
+    <condicoes-acessibilidade>Não disponiveis</condicoes-acessibilidade>
+    <tratamento-prioritario>Não disponível</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível</tratamento-dispensado-atendimento>
 </servico>
