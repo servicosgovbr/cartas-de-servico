@@ -2,16 +2,25 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-certificado-de-credenciamento-e-homologacao-de-entidade-de-ensino</id>
     <dbId>3056</dbId>
-    <nome>Obter Certificado de Credenciamento e Homologação de Entidade de Ensino</nome>
+    <nome>Obter certificado de credenciamento e homologação de entidade de ensino</nome>
     <sigla>CHE</sigla>
-    <descricao>Uma nova entidade de ensino deve ser autorizada pela ANAC. Para isso ela deve submeter a documentação de acordo com a Instrução Suplementar 175-002. Isso inclui os documentos dos instrutores a serem credenciados. O processo é realizado em 5 fases. A fase 1 inclui o conhecimento da norma e a relização de reunião, se necessário. A Fase 2 inclui o envio da documentação para a ANAC. A Fase 3 inclui a avaliação do conteúdo do material enviado. A Fase 4 inclui as provas teóricas e práticas dos instrutores. A fase 5 inclui a emissão do Certificado de Credenciamentos e Homologações de Entidade de Ensino (CHE).</descricao>
+    <descricao>Uma nova entidade de ensino deve ser autorizada pela ANAC. Para isso, ela deve submeter a documentação de acordo com a Instrução Suplementar 175-002. Isso inclui os documentos dos instrutores a serem credenciados. O processo é realizado em 5 fases. 
+A **fase 1** inclui o conhecimento da norma e a realização de reunião, se necessário. 
+A **fase 2** inclui o envio da documentação para a ANAC. 
+A **fase 3** inclui a avaliação do conteúdo do material enviado. 
+A **fase 4** inclui as provas teóricas e práticas dos instrutores. 
+A **fase 5** inclui a emissão do Certificado de Credenciamentos e Homologações de Entidade de Ensino (CHE).</descricao>
     <contato></contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3641">
+        <solicitante id="5563">
+            <tipo>Entidades de ensino aeronáutico</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+        <solicitante id="5564">
             <tipo>Entidades de ensino aeronáutico</tipo>
             <requisitos></requisitos>
         </solicitante>
@@ -24,19 +33,19 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="6971">
+        <etapa id="9898">
             <titulo>Solicitar certificação</titulo>
             <descricao>Enviar documentação</descricao>
             <documentos>
                 <default>
-                    <item id="9470">Carteira de identidade</item>
-                    <item id="9471">Carteira de trabalho</item>
-                    <item id="9472">CNPJ</item>
+                    <item id="14229">Carteira de identidade</item>
+                    <item id="14230">Carteira de trabalho</item>
+                    <item id="14231">CNPJ</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="595">
+                    <custo id="961">
                         <descricao>Taxa de Fiscalização de Aviação Civil (TFAC)</descricao>
                         <moeda>R$</moeda>
                         <valor>3.601,49</valor>
@@ -45,21 +54,24 @@
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7246" tipo="presencial">
-                        <descricao>Em uma [Unidade de Protocolo da ANAC](http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="7247" tipo="web">
+                    <canal-de-prestacao id="10967" tipo="web">
                         <descricao>https://sistemas.anac.gov.br/sei</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="7248" tipo="postal">
+                    <canal-de-prestacao id="10968" tipo="postal">
                         <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10966" tipo="presencial">
+                        <descricao>Em uma [Unidade de Protocolo da ANAC](http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6972">
+        <etapa id="9899">
             <titulo>Agendar exame teórico</titulo>
             <descricao></descricao>
             <documentos>
@@ -68,15 +80,18 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7249" tipo="e-mail">
+                    <canal-de-prestacao id="10969" tipo="e-mail">
                         <descricao>artigo.perigoso@anac.gov.br</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6973">
+        <etapa id="9900">
             <titulo>Realizar exame teórico</titulo>
             <descricao></descricao>
             <documentos>
@@ -85,15 +100,18 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7250" tipo="presencial">
+                    <canal-de-prestacao id="10970" tipo="presencial">
                         <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="6974">
+        <etapa id="9901">
             <titulo>Realizar exame prático</titulo>
             <descricao></descricao>
             <documentos>
@@ -102,9 +120,110 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7251" tipo="presencial">
+                    <canal-de-prestacao id="10971" tipo="presencial">
+                        <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9902">
+            <titulo>Solicitar certificação</titulo>
+            <descricao>Enviar documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="14232">Carteira de identidade</item>
+                    <item id="14233">Carteira de trabalho</item>
+                    <item id="14234">CNPJ</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="962">
+                        <descricao>Taxa de Fiscalização de Aviação Civil (TFAC)</descricao>
+                        <moeda>R$</moeda>
+                        <valor>3.601,49</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10972" tipo="presencial">
+                        <descricao>Em uma [Unidade de Protocolo da ANAC](http://www.anac.gov.br/acesso-a-informacao/carta-de-servicos-ao-cidadao/pagamentos-e-multas/servico-de-protocolo)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10973" tipo="web">
+                        <descricao>https://sistemas.anac.gov.br/sei</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="10974" tipo="postal">
+                        <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9903">
+            <titulo>Agendar exame teórico</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10975" tipo="e-mail">
+                        <descricao>artigo.perigoso@anac.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9904">
+            <titulo>Realizar exame teórico</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10976" tipo="presencial">
+                        <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9905">
+            <titulo>Realizar exame prático</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="10977" tipo="presencial">
                         <descricao>**ANAC** - Avenida Presidente Vargas, 850 – Centro Rio de Janeiro - RJ - CEP 20.071/001</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -115,7 +234,7 @@
         <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="6884">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9547">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação</item>
@@ -124,8 +243,14 @@
         <item>Fiscalização do Estado</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12871">instrutor</item>
-        <item id="12872">horas de vôo</item>
-        <item id="12873">curso de piloto</item>
+        <item id="18403">instrutor</item>
+        <item id="18404">horas de vôo</item>
+        <item id="18405">curso de piloto</item>
+        <item id="18406">instrutor</item>
+        <item id="18407">horas de vôo</item>
+        <item id="18408">curso de piloto</item>
     </palavras-chave>
+    <condicoes-acessibilidade>Não disponíveis.</condicoes-acessibilidade>
+    <tratamento-prioritario>Não disponível.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível.</tratamento-dispensado-atendimento>
 </servico>
