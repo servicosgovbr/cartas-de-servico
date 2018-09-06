@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>cadastrar-se-como-empresa-usuaria-ou-empresa-fabricante-de-registro-de-ponto-eletronico-rep</id>
+    <dbId>821</dbId>
+    <nome>Cadastrar-se como empresa usuária ou empresa fabricante de registro de ponto eletrônico - REP</nome>
+    <sigla>CAREP</sigla>
+    <descricao>Se a sua empresa pretende fabricar e comercializar registros de ponto eletrônicos (REP) ela deve ser registrada, assim como registrar cada modelo de REP fabricado,  junto ao Ministério do Trabalho através deste serviço.</descricao>
+    <contato>Secretaria de Inspeção do Trabalho
+e-mail carep.sit@mte.gov.br</contato>
+    <gratuito>true</gratuito>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5599">
+            <tipo>Empresas Privadas, Públicas ou de Economia Mista</tipo>
+            <requisitos>Que fabriquem ou pretendam fabricar registros de ponto eletrônico (REP).</requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="15" unidade="minutos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="9967">
+            <titulo>Cadastrar-se no CAREP</titulo>
+            <descricao>Você deverá acessar o sistema CAREP e preencher as informações pedidas</descricao>
+            <documentos>
+                <default>
+                    <item id="14379">Dados da empresa</item>
+                    <item id="14380">CPF do responsável pela empresa junto à Receita Federal</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11066" tipo="web-inscrever-se">
+                        <descricao>http://novocarep.mte.gov.br/</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="9968">
+            <titulo>Cadastrar modelos de REP utilizados/fabricados</titulo>
+            <descricao>Sua empresa deverá cadastrar todos os modelos de REP por ela utilizados/fabricados.</descricao>
+            <documentos>
+                <default>
+                    <item id="14381">Dados de Login no sistema CAREP (criados na etapa anterior)</item>
+                    <item id="14382">Dados do Programa de Tratamento e do modelo de REP a ser cadastrado.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11067" tipo="web">
+                        <descricao>http://carep.mte.gov.br/sistemas/carep/login/login.asp</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9631">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Produção Industrial</item>
+        <item>Recursos humanos</item>
+        <item>Trabalho</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18516">REP</item>
+        <item id="18517">cadastro de empresa</item>
+        <item id="18518">Ponto eletrônico</item>
+    </palavras-chave>
+    <legislacoes>
+        <item id="3386">[Portaria Ministerial 1.510/2009](http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&amp;pagina=63&amp;data=25/08/2009)</item>
+        <item id="3387">[Informações úteis para o empregador v. 1.2](http://trabalho.gov.br/images/Documentos/SIT/SREP/info_empregador.pdf)</item>
+        <item id="3388">[Manual CAREP - Instruções para Cadastramento v. 1.0.2](www.trabalho.gov.br/images/Documentos/carep-manual-do-usuario.pdf "")</item>
+        <item id="3389">[Informações úteis para o Fabricante de Programa de Tratamento de Registro de Ponto v. 2.0](http://trabalho.gov.br/images/Documentos/SIT/SREP/info-fabricantes.pdf)</item>
+    </legislacoes>
+    <condicoes-acessibilidade>****</condicoes-acessibilidade>
+    <tratamento-prioritario>****</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>****</tratamento-dispensado-atendimento>
+</servico>
