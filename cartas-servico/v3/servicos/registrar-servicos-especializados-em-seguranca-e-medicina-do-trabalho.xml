@@ -4,17 +4,19 @@
     <dbId>831</dbId>
     <nome>Registrar Serviços Especializados em Segurança e Medicina do Trabalho</nome>
     <sigla>SESMT</sigla>
-    <descricao>Todas as empresas tem a obrigação de manter serviços especializados em segurança e medicina do trabalho (SESMTs), e devem registrar estes serviços junto ao Ministério do Trabalho.Para permitir que as empresas cumpram esta obrigação é que existe este serviço.</descricao>
-    <contato>* E-mail: sesmt@mte.gov.br</contato>
+    <descricao>SESMT – Serviço Especializado em Segurança e Medicina do Trabalho, como o próprio nome já diz, é uma equipe de profissionais em segurança e saúde do trabalho que estão dentro de várias empresas – conforme quantidade de trabalhadores e risco das atividades - para a prevenção de acidentes e doenças decorrentes do exercício do trabalho.
+Sua constituição está prevista no Art. 162 da Consolidação das Leis do Trabalho e todo o processo de constituição está na Norma Regulamentadora nº 04, do MTb.</descricao>
+    <contato>**E-mail**: sesmt@mte.gov.br</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="4401">
+        <solicitante id="5582">
             <tipo>Empresas que possuam empregados</tipo>
-            <requisitos>Você pode saber quantos profissionais e SESMTs sua empresa deve ter consultando os quadros I e II da [Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</requisitos>
+            <requisitos>O SESMT deve ser constituído nas empresas em razão da quantidade de empregados e do risco da atividade. Você pode saber quantos profissionais tem no SESMT de sua empresa consultando os quadros I e II da [Norma Regulamentadora nº 4](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/normatizacao/normas-regulamentadoras).  
+As empresas que têm SESMT tem que fazer registrá-los no Ministério do Trabalho, de forma eletrônica.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -25,49 +27,62 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="8345">
+        <etapa id="9942">
             <titulo>Cadastrar-se no sistema</titulo>
             <descricao>Em primeiro lugar você deve cadastrar um usuário e senha no sistema SESMT</descricao>
             <documentos>
                 <default>
-                    <item id="12070">CPF</item>
-                    <item id="12071">Data de Nascimento</item>
-                    <item id="12072">Endereço de e-mail</item>
+                    <item id="14334">CPF</item>
+                    <item id="14335">Data de Nascimento</item>
+                    <item id="14336">Endereço de e-mail</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8820" tipo="web">
+                    <canal-de-prestacao id="11028" tipo="web">
                         <descricao>http://sesmt.mte.gov.br/Usuario/CadastrarUsuario.aspx</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8346">
+        <etapa id="9943">
             <titulo>Cadastrar serviços</titulo>
             <descricao>Realizada a inscrição no sistema, você agora irá cadastrar os dados dos SESMTs de sua empresa, assim como os dados dos profissionais que os compõem.</descricao>
             <documentos>
                 <default>
-                    <item id="12073">Dados da empresa</item>
-                    <item id="12074">Dados dos Serviços Especializados em Segurança e Medicina do Trabalho da Empresa</item>
-                    <item id="12075">Dados dos profissionais que compõe os serviços.</item>
+                    <item id="14338">Dados da empresa</item>
+                    <item id="14339">Dados dos Serviços Especializados em Segurança e Medicina do Trabalho da Empresa</item>
+                    <item id="14340">Dados dos profissionais que compõe os serviços.</item>
                 </default>
+                <caso id="1468" descricao="Outros">
+                    <documento>
+                        <id>14337</id>
+                        <descricao>Você pode encontrar o Manual do usuário do SESMT e um guia de perguntas e respostas na página do [Ministério do Trabalho](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/sistema-sesmt-servicos-especializados-em-engenharia-de-seguranca-e-em-medicina-do-trabalho). 
+Acesse e tire as suas dúvidas a respeito do funcionamento do Sistema SESMT.</descricao>
+                    </documento>
+                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8821" tipo="web">
+                    <canal-de-prestacao id="11029" tipo="web">
                         <descricao>http://sesmt.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="8347">
+        <etapa id="9944">
             <titulo>Imprimir recibo</titulo>
             <descricao>Após a conclusão de cadastro do SESMT, o sistema irá gerar um recibo, que você poderá imprimir e que é o comprovante de cumprimento desta obrigação legal.</descricao>
             <documentos>
@@ -76,9 +91,12 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <atendimento-imediato/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="8822" tipo="web">
+                    <canal-de-prestacao id="11030" tipo="web">
                         <descricao>http://sesmt.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -89,8 +107,8 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="8009">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="8010">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9582">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="9583">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
@@ -100,12 +118,16 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="15030">Segurança</item>
-        <item id="15031">Medicina do Trabalho</item>
-        <item id="15032">Cadastro</item>
+        <item id="18462">Segurança</item>
+        <item id="18463">Medicina do Trabalho</item>
+        <item id="18464">Cadastro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2629">[Norma Regulamentadora nº 4](http://sislex.previdencia.gov.br/paginas/05/mtb/4.htm)</item>
-        <item id="2630">[PORTARIA Nº 559, DE 3 DE AGOSTO DE 2016](http://trabalho.gov.br/images/Documentos/SST/sesmt/portaria-559.pdf)</item>
+        <item id="3394">[Consolidação das Leis do Trabalho - CLT - art. 162](http://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm )</item>
+        <item id="3395">[Norma Regulamentadora nº 4](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/normatizacao/normas-regulamentadoras)</item>
+        <item id="3396">[Portaria SIT nº 559, DE 3 DE AGOSTO DE 2016](http://trabalho.gov.br/images/Documentos/SST/sesmt/portaria-559.pdf)</item>
     </legislacoes>
+    <condicoes-acessibilidade>****</condicoes-acessibilidade>
+    <tratamento-prioritario>****</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>****</tratamento-dispensado-atendimento>
 </servico>
