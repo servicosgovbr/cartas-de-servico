@@ -2,14 +2,14 @@
 <servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id>obter-autorizacao-especial-de-voo</id>
     <dbId>3071</dbId>
-    <nome>Obter autorização especial de Voo</nome>
+    <nome>Obter autorização especial de voo</nome>
     <sigla>AEV</sigla>
-    <descricao>A AEV é uma situação excepcional que se enquadra como uma permissão especial perante o art. 20 do Código Brasileiro de Aeronáutica - CBAer. Entre essas excepcionalidades que podem ocorrer está a falta do Certificado de Matrícula da aeronave, situação em que se enquadram, por exemplo, os voos de produção e de entrega ao comprador.
+    <descricao>A AEV é uma situação excepcional que se enquadra como uma permissão especial perante o art. 20 do Código Brasileiro de Aeronáutica - CBAer. Entre essas excepcionalidades, está a falta do certificado de matrícula da aeronave, situação em que se enquadram, por exemplo, os voos de produção e de entrega ao comprador.
 Dentro da concepção estabelecida pelo CBAer, autorizações especiais de voo são emitidas para aeronaves que não cumprem todos os requisitos de aeronavegabilidade, mas que apresentam condições de operação segura, observadas as limitações operacionais da respectiva autorização. A AEV não exime a aeronave do cumprimento com os requisitos do RBAC 91.
 A ANAC poderá emitir uma AEV para os seguintes propósitos:
 (1) Translado de aeronave para uma base onde reparos, modificações ou serviços de manutenção serão executados ou para uma base onde a aeronave será armazenada;
 (2) Voo de experiência após manutenção;
-(3) Teste de Voo para cumprimento de requisito de VTI ou VTE;
+(3) Teste de voo para cumprimento de requisito de VTI ou VTE;
 (4) Deslocamento de aeronave para aeródromo onde será realizada a sua VTI, VTE ou vistoria pela Receita Federal;
 (5) Entrega ou exportação da aeronave ao seu comprador;
 (6) Ensaios em voo de produção de aeronaves recém-fabricadas;
@@ -24,8 +24,8 @@ A ANAC poderá emitir uma AEV para os seguintes propósitos:
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="3656">
-            <tipo>Proprietários e operadores de aeronaves que não cumprem todos os requisitos de aeronavegabilidade, mas que apresentam condições de operação segura, observadas as limitações operacionais da respectiva autorização.</tipo>
+        <solicitante id="5589">
+            <tipo>Proprietários e operadores de aeronaves que não cumpram todos os requisitos de aeronavegabilidade, mas apresentem condições de operação segura, observadas as limitações operacionais da respectiva autorização.</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
@@ -37,19 +37,19 @@ A ANAC poderá emitir uma AEV para os seguintes propósitos:
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="7003">
+        <etapa id="9955">
             <titulo>Requisitar Autorização especial</titulo>
             <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="9575">Comprovante de pagamento</item>
-                    <item id="9576">Procuração do representante legal</item>
-                    <item id="9577">Documentação relativa à situação técnica da aeronave</item>
+                    <item id="14362">Comprovante de pagamento</item>
+                    <item id="14363">Procuração do representante legal</item>
+                    <item id="14364">Documentação relativa à situação técnica da aeronave</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="614">
+                    <custo id="975">
                         <descricao>Certificado de Autorização de Voo (CAV)</descricao>
                         <moeda>R$</moeda>
                         <valor>657,54</valor>
@@ -58,15 +58,18 @@ A ANAC poderá emitir uma AEV para os seguintes propósitos:
                     </custo>
                 </default>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="7293" tipo="presencial">
+                    <canal-de-prestacao id="11044" tipo="presencial">
                         <descricao>Em uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="7294" tipo="postal">
+                    <canal-de-prestacao id="11045" tipo="postal">
                         <descricao>Para uma [Unidade da ANAC](http://www.anac.gov.br/A_Anac/institucional/unidades-da-anac)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="7295" tipo="e-mail">
+                    <canal-de-prestacao id="11046" tipo="e-mail">
                         <descricao>INSPECAO@ANAC.GOV.BR</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -77,10 +80,10 @@ A ANAC poderá emitir uma AEV para os seguintes propósitos:
         <nomeOrgao>Agência Nacional de Aviação Civil (ANAC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="6914">Cidadãos</item>
-        <item idSegmento="3" idServicoSegmento="6915">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="6916">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="6917">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="9597">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="9598">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9599">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9600">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Transportes</item>
@@ -88,8 +91,11 @@ A ANAC poderá emitir uma AEV para os seguintes propósitos:
         <item>Fiscalização do Estado</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="12916">autorização especial</item>
-        <item id="12917">excepcionalmente</item>
-        <item id="12918">vôo</item>
+        <item id="18480">autorização especial</item>
+        <item id="18481">excepcionalmente</item>
+        <item id="18482">voo</item>
     </palavras-chave>
+    <condicoes-acessibilidade>Não disponíveis.</condicoes-acessibilidade>
+    <tratamento-prioritario>Não disponível.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>Informação não disponível.</tratamento-dispensado-atendimento>
 </servico>
