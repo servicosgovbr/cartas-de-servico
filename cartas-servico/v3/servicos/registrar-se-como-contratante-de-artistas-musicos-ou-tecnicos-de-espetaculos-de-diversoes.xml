@@ -5,22 +5,25 @@
     <nome>Registrar-se como contratante de artistas, músicos ou técnicos de espetáculos de diversões</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="656">SIRPWEB</item>
+        <item id="3413">SIRPWEB</item>
+        <item id="3414">Contratante</item>
     </nomes-populares>
-    <descricao>Se você deseja contratar artistas, músicos e/ou técnicos de espetáculos de diversões, o Ministério do Trabalho fornece a você este serviço, para que você se registre como contratante.</descricao>
+    <descricao>Se você deseja contratar artistas, músicos e/ou técnicos em espetáculos de diversões, o Ministério do Trabalho fornece a você este serviço, para que você se registre como contratante.</descricao>
     <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="848">
-            <tipo>Cidadãos brasileiros ou estrangeiros, empresas e outras entidades de direito privado</tipo>
-            <requisitos>Que queiram contratar artistas, músicos e/ou técnicos de espetáculo de diversões no país.</requisitos>
+        <solicitante id="5616">
+            <tipo>Pessoas físicas ou Jurídicas que tiverem a seu serviço Artista ou Técnico em Espetáculos de Diversões ou Músicos para realização de espetáculos, programas, produções ou mensagens publicitárias deverão ser previamente inscritas no Ministério do Trabalho.</tipo>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="15" max="30" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao>De até 30 dias, podendo ser prorrogado por igual período, mediante justificativa, segundo a Lei n° 9.784/99.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <tipo>Sem validade</tipo>
@@ -29,103 +32,122 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2212">
-            <titulo>Agendar atendimento</titulo>
-            <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
-            <documentos>
-                <default>
-                    <item id="2328">CPF/CNPJ</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2772" tipo="web-agendar">
-                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="2213">
+        <etapa id="10006">
             <titulo>Preencher Solicitação de Registro</titulo>
-            <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB **antes de comparecer ao seu atendimento presencial**</descricao>
+            <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB antes de comparecer ao seu atendimento presencial.</descricao>
             <documentos>
                 <default>
-                    <item id="2329">CNPJ/CEI</item>
-                    <item id="2330">Dados da Empresa e sua atividade</item>
+                    <item id="14438">CNPJ/CEI</item>
+                    <item id="14515">Dados da Empresa e sua atividade</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2773" tipo="web-preencher">
+                    <canal-de-prestacao id="11117" tipo="web-preencher">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/solicitacoes/empresa/solicitarRegistro.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2214">
-            <titulo>Comparecer à unidade de atendimento</titulo>
-            <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+        <etapa id="10007">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
             <documentos>
                 <default>
-                    <item id="2331">Carteira de Identidade</item>
-                    <item id="2332">CNPJ/CEI</item>
-                    <item id="2333">CPF</item>
-                    <item id="2334">Certidão de Casamento (se houver)</item>
-                    <item id="2335">Comprovante de endereço</item>
-                    <item id="2336">Registro na Junta Comercial</item>
+                    <item id="14439">Número do CPF;</item>
+                    <item id="14516">Data de nascimento;</item>
+                    <item id="14517">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2774" tipo="presencial">
+                    <canal-de-prestacao id="11118" tipo="web-agendar">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10008">
+            <titulo>Comparecer à unidade de atendimento</titulo>
+            <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+            <documentos>
+                <default>
+                    <item id="14440">Original e cópia da Carteira de Identidade</item>
+                    <item id="14518">Original e cópia do CNPJ/CEI</item>
+                    <item id="14519">Original e cópia do CPF</item>
+                    <item id="14520">Original e cópia da Certidão de Casamento (se houver)</item>
+                    <item id="14521">Original e cópia do Comprovante de endereço</item>
+                    <item id="14522">Original e cópia do Registro na Junta Comercial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11119" tipo="presencial">
                         <descricao>Unidade do Ministério do Trabalho escolhida no agendamento</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2215">
+        <etapa id="10009">
             <titulo>Verificar o andamento da solicitação</titulo>
             <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
             <documentos>
                 <default>
-                    <item id="2337">CNPJ/CEI</item>
-                    <item id="2338">Número da solicitação</item>
+                    <item id="14441">CNPJ/CEI</item>
+                    <item id="14523">Número da solicitação</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2775" tipo="web-acompanhar">
+                    <canal-de-prestacao id="11120" tipo="web-acompanhar">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/consultas/acompanharSolicitacaoEmpresa.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2216">
+        <etapa id="10010">
             <titulo>Emitir Cartão de Registro de Contratante</titulo>
             <descricao>Quando o processo for finalizado, você deve emitir o seu Cartão de Registro de Contratante no SIRPWEB, que é o documento que irá permitir a contratação dos profissionais.</descricao>
             <documentos>
                 <default>
-                    <item id="2339">CNPJ/CEI</item>
+                    <item id="14442">CNPJ</item>
+                    <item id="14524">Razão Social</item>
+                    <item id="14525">CEI</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2776" tipo="web-emitir">
+                    <canal-de-prestacao id="11121" tipo="web-emitir">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/impressoes/emitircartao/contratante/main.seam</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -133,12 +155,12 @@
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
-        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2444">Empresas</item>
-        <item idSegmento="1" idServicoSegmento="2445">Cidadãos</item>
-        <item idSegmento="4" idServicoSegmento="2446">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9650">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="9651">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="9652">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -149,12 +171,28 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1973">Técnicos em espetáculos de diversões</item>
-        <item id="1974">artistas</item>
-        <item id="1975">músicos</item>
-        <item id="1976">contratação</item>
+        <item id="18603">Técnicos em espetáculos de diversões</item>
+        <item id="18604">artistas</item>
+        <item id="18605">músicos</item>
+        <item id="18606">contratação</item>
+        <item id="18607">contratante</item>
     </palavras-chave>
     <legislacoes>
-        <item id="659">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
+        <item id="3405">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
 </servico>
