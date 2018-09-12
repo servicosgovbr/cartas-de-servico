@@ -5,36 +5,42 @@
     <nome>Registrar-se como profissional para atividades exigidas em lei</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="658">SIRPWEB</item>
-        <item id="657">DRT</item>
+        <item id="3402">SIRPWEB</item>
+        <item id="3403">RP</item>
     </nomes-populares>
-    <descricao>O registro profissional é exigido de trabalhadores de 14 categorias para ingressarem no mercado de trabalho. Se você é um profissional de uma delas, você deve utilizar este serviço para obter o seu Cartão de Registro Profissional.</descricao>
+    <descricao>O registro profissional é a identificação dos profissionais de 14 categorias regulamentadas por Lei Federal, garantindo que o exercício profissional se dê da maneira estabelecida na Lei. Se você é um profissional de uma delas, você deve utilizar este serviço para obter o seu Cartão de Registro Profissional.</descricao>
     <contato>[Endereços de contato](http://sirpweb.mte.gov.br/sirpweb/Fale_conosco.pdf)</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="849">
+        <solicitante id="5615">
             <tipo>Profissional das categorias regulamentadas por leis federais</tipo>
-            <requisitos>* Agenciador de propaganda;
-* Arquivista;
-* Artista;
-* Atuário;
-* Guardador e lavador de veículos;
-* Jornalista;
-* Publicitário;
-* Radialista;
-* Secretário;
-* Sociólogo;
-* Técnico em arquivo;
-* Técnico em espetáculos de diversões;
-* Técnico de segurança do trabalho; e
-* Técnico em secretariado.</requisitos>
+            <requisitos>&lt;ul&gt;
+&lt;li&gt;Agenciador de propaganda;&lt;/li&gt;
+&lt;li&gt;Arquivista;&lt;/li&gt;
+&lt;li&gt;Artista;&lt;/li&gt;
+&lt;li&gt;Atuário;&lt;/li&gt;
+&lt;li&gt;Guardador e lavador de veículos;&lt;/li&gt;
+&lt;li&gt;Jornalista;&lt;/li&gt;
+&lt;li&gt;Publicitário;&lt;/li&gt;
+&lt;li&gt;Radialista;&lt;/li&gt;
+&lt;li&gt;Secretário;&lt;/li&gt;
+&lt;li&gt;Sociólogo;&lt;/li&gt;
+&lt;li&gt;Técnico em arquivo;&lt;/li&gt;
+&lt;li&gt;Técnico em espetáculos de diversões;&lt;/li&gt;
+&lt;li&gt;Técnico de segurança do trabalho; e&lt;/li&gt;
+&lt;li&gt;Técnico em secretariado.&lt;/li&gt;
+&lt;/ul&gt;</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="15" max="30" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <entre min="30" max="60" unidade="dias-corridos"/>
+        <descricao>Quanto tempo leva?
+
+De até 30 dias, podendo ser prorrogado por igual período, mediante justificativa, segundo a Lei n° 9.784/99.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <tipo>Sem validade</tipo>
@@ -43,106 +49,124 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2217">
-            <titulo>Agendar atendimento</titulo>
-            <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
-            <documentos>
-                <default>
-                    <item id="2340">CPF</item>
-                </default>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="2777" tipo="web-agendar">
-                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="2218">
+        <etapa id="10001">
             <titulo>Preencher Solicitação de Registro</titulo>
-            <descricao>Você deve preencher o formulário de solicitação do registro de contratante no sistema SIRPWEB **antes de comparecer ao seu atendimento presencial**</descricao>
+            <descricao>Você deve preencher o formulário de solicitação do registro de Profissional no sistema SIRPWEB antes de comparecer ao seu atendimento presencial.</descricao>
             <documentos>
                 <default>
-                    <item id="2341">CPF</item>
-                    <item id="2342">Dados pessoais e de escolaridade</item>
-                    <item id="2343">Dados de sua profissão</item>
+                    <item id="14488">CPF</item>
+                    <item id="14489">Nome</item>
+                    <item id="14490">Nome da Mãe</item>
+                    <item id="14491">Data de Nascimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2778" tipo="web-preencher">
+                    <canal-de-prestacao id="11112" tipo="web">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/solicitacoes/solicitarRegistro.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2219">
-            <titulo>Comparecer à unidade de atendimento</titulo>
-            <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
+        <etapa id="10002">
+            <titulo>Agendar atendimento</titulo>
+            <descricao>Você deve acessar o sistema de agendamento do Ministério do Trabalho e agendar uma data e horário na unidade do Ministério do Trabalho de sua preferência.</descricao>
             <documentos>
                 <default>
-                    <item id="2344">Requerimento em 2 (duas) vias, devidamente assinado;</item>
-                    <item id="2345">Fotocópia autenticada do documento de identificação que será apresentado ao órgão;</item>
-                    <item id="2346">Fotocópia autenticada do Cadastro de Pessoa Física (CPF);</item>
-                    <item id="2347">Fotocópia autenticada do número, série e qualificação civil da Carteira de Trabalho e Previdência Social (CTPS); e</item>
-                    <item id="2348">Documentos de capacitação específicos da profissão.</item>
+                    <item id="14492">Número do CPF;</item>
+                    <item id="14493">Data de nascimento;</item>
+                    <item id="14494">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2779" tipo="presencial">
-                        <descricao>Unidade do Ministério do Trabalho escolhida no agendamento</descricao>
+                    <canal-de-prestacao id="11113" tipo="web-agendar">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2220">
-            <titulo>Verificar o andamento da solicitação</titulo>
-            <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
+        <etapa id="10003">
+            <titulo>Comparecer à unidade de atendimento</titulo>
+            <descricao>Você deve então ir, no dia e horário agendados, à Unidade do Ministério do Trabalho que você escolheu, levando a documentação necessária.</descricao>
             <documentos>
                 <default>
-                    <item id="2349">CPF</item>
-                    <item id="2350">Número da solicitação</item>
+                    <item id="14435">Requerimento em 2 (duas) vias, devidamente assinado;</item>
+                    <item id="14495">Original e cópia do documento de identificação que será apresentado ao órgão;</item>
+                    <item id="14496">Original e cópia do Cadastro de Pessoa Física (CPF);</item>
+                    <item id="14497">Original e cópia do número, série e qualificação civil da Carteira de Trabalho e Previdência Social (CTPS); e</item>
+                    <item id="14498">Original e cópia do Documentos de capacitação específicos da profissão.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2780" tipo="web-acompanhar">
+                    <canal-de-prestacao id="11114" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="1">
+                        <descricao>Unidade do Ministério do Trabalho escolhida no agendamento.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10004">
+            <titulo>Verificar o andamento da solicitação</titulo>
+            <descricao>Você deve acompanhar, pelo sistema SIRPWEB, o andamento da sua solicitação.</descricao>
+            <documentos>
+                <default>
+                    <item id="14499">CPF</item>
+                    <item id="14500">Número da solicitação</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11115" tipo="web-acompanhar">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/consultas/acompanharSolicitacao.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2221">
+        <etapa id="10005">
             <titulo>Emitir Cartão de Registro Profissional</titulo>
             <descricao>Quando o processo for finalizado, você deve emitir o seu Cartão de Registro de Contratante no SIRPWEB, que é o documento que irá permitir a contratação dos profissionais.</descricao>
             <documentos>
                 <default>
-                    <item id="2351">CPF</item>
-                    <item id="2352">Nome</item>
-                    <item id="2353">Nome da Mãe</item>
-                    <item id="2354">Data de Nascimento</item>
+                    <item id="14437">CPF</item>
+                    <item id="14501">Nome</item>
+                    <item id="14502">Nome da Mãe</item>
+                    <item id="14503">Data de Nascimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2781" tipo="web-emitir">
+                    <canal-de-prestacao id="11116" tipo="web-emitir">
                         <descricao>http://sirpweb.mte.gov.br/sirpweb/pages/impressoes/emitircartao/profissional/main.seam</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -150,10 +174,10 @@
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
-        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2447">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9649">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Empregabilidade</item>
@@ -164,11 +188,27 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1977">Licença para exercer profissão</item>
-        <item id="1978">Cartão profissional</item>
-        <item id="1979">regulamentação</item>
+        <item id="18593">Licença para exercer profissão</item>
+        <item id="18594">Cartão profissional</item>
+        <item id="18595">regulamentação</item>
+        <item id="18596">registro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="660">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
+        <item id="3404">[Lei 6.533/78](http://www.planalto.gov.br/ccivil_03/leis/L6533.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
 </servico>
