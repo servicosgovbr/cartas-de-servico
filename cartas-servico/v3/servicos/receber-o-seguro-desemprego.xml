@@ -4,15 +4,30 @@
     <dbId>1045</dbId>
     <nome>Receber o Seguro Desemprego</nome>
     <sigla>SD</sigla>
+    <nomes-populares>
+        <item id="3415">seguro desemprego</item>
+        <item id="3416">benefício</item>
+        <item id="3417">desemprego</item>
+    </nomes-populares>
     <descricao>O Seguro-Desemprego é um benefício integrante da seguridade social, garantido pelo art. 7º dos Direitos Sociais da Constituição Federal e tem por finalidade prover assistência financeira temporária ao trabalhador dispensado involuntariamente.
 O trabalhador dispensado sem justa causa recebe do empregador o Requerimento do Seguro-Desemprego devidamente preenchido, que deve ser levado, junto com o restante da documentação, a um posto de atendimento do Ministério do Trabalho.</descricao>
-    <contato></contato>
+    <contato>Para maiores informações quanto à como proceder para requerer a prestação desse serviço público, o cidadão poderá ligar no telefone n.º 156 , opção “seguro-desemprego” ou acessar o site do Ministério do Trabalho disponível em http://trabalho.gov.br/ ou ainda consultar endereço e telefone das unidades descentralizadas no link http://trabalho.gov.br/rede-de-atendimento</contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="1295">
-            <tipo>Cidadão dispensado de seu emprego</tipo>
-            <requisitos></requisitos>
+        <solicitante id="5631">
+            <tipo>Também podem se habilitar trabalhadores domésticos demitidos sem justa causa</tipo>
+            <requisitos>Requisitos estabelecidos no art. 26 &lt;a href="http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp150.htm" target="_blank"&gt;Lei Complementar n.º 150/2015&lt;/a&gt;</requisitos>
+        </solicitante>
+        <solicitante id="5632">
+            <tipo>E também pescadores artesanais</tipo>
+            <requisitos>Requisitos estabelecidos na &lt;a href="http://www.planalto.gov.br/ccivil_03/LEIS/2003/L10.779.htm" target="_blank"&gt;Lei n.º 10.779/2003&lt;/a&gt;</requisitos>
+        </solicitante>
+        <solicitante id="5633">
+            <tipo>Pessoas que foram demitidas sem justa causa.</tipo>
+            <requisitos>Requisitos estabelecidos no art. 3º, da &lt;a href="http://www.planalto.gov.br/ccivil_03/LEIS/L7998.htm" target="_blank"&gt;Lei n.º 7.998/90.&lt;/a&gt;</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -23,103 +38,125 @@ O trabalhador dispensado sem justa causa recebe do empregador o Requerimento do 
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2812">
+        <etapa id="10020">
             <titulo>Agendar atendimento</titulo>
-            <descricao>Agendar atendimento em um posto do Ministério do Trabalho.</descricao>
+            <descricao>**Agendar atendimento no telefone 156.**</descricao>
             <documentos>
                 <default>
-                    <item id="3491">CPF</item>
-                    <item id="3492">Data de nascimento e telefone</item>
+                    <item id="14485">Nome;</item>
+                    <item id="14526">CPF;</item>
+                    <item id="14527">NIS;</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3712" tipo="telefone">
-                        <descricao>Central 158 ou Central 156</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="3713" tipo="web">
-                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
+                    <canal-de-prestacao id="11136" tipo="telefone" tempo-estimado-periodo="minutos" tempo-estimado-espera="15">
+                        <descricao>Central 156</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2813">
+        <etapa id="10021">
             <titulo>Ir ao atendimento</titulo>
-            <descricao>Comparecer ao Posto de Atendimento com os documentos necessários para dar entrada no Seguro-Desemprego.</descricao>
+            <descricao>Após a dispensa imotivada e emissão do Comunicado de Dispensa por parte do empregador, o trabalhador deverá se dirigir a um dos postos de atendimento do Ministério do Trabalho (Posto SINE, Agência, Gerência ou Superintendência Regional do Trabalho) mais próximo de sua residência - [Endereços aqui](http://trabalho.gov.br/rede-de-atendimento)</descricao>
             <documentos>
                 <default>
-                    <item id="3493">Documentos de Identificação válido com foto</item>
-                    <item id="3494">Carteira de trabalho</item>
-                    <item id="3495">Comprovante de endereço/residência</item>
-                    <item id="3496">Três últimos contracheques, dos três meses anteriores ao mês de demissão</item>
-                    <item id="3497">CPF</item>
-                    <item id="3498">Documento de levantamento dos depósitos do FGTS (CPFGTS) ou extrato comprobatório dos depósitos ou relatório da fiscalização ou documento judicial</item>
-                    <item id="3499">NIT / PIS / PASEP</item>
-                    <item id="3500">Comprovante de escolaridade</item>
-                    <item id="3501">Requerimento do Seguro-Desemprego devidamente preenchido (duas vias)</item>
-                    <item id="3502">Termo de Rescisão do Contrato de Trabalho - TRCT devidamente quitado</item>
+                    <item id="14486">Documentos de Identificação válido com foto;</item>
+                    <item id="14528">Carteira de trabalho;</item>
+                    <item id="14529">Comprovante de endereço/residência;</item>
+                    <item id="14530">Três últimos contracheques, dos três meses anteriores ao mês de demissão;</item>
+                    <item id="14531">CPF;</item>
+                    <item id="14532">Documento de levantamento dos depósitos do FGTS (CPFGTS) ou extrato dos depósitos;  ou relatório da fiscalização ou documento judicial;</item>
+                    <item id="14533">NIT / PIS / PASEP;</item>
+                    <item id="14534">Comprovante de escolaridade;</item>
+                    <item id="14535">Requerimento do Seguro-Desemprego preenchido (2 vias);</item>
+                    <item id="14536">Termo de Rescisão do Contrato de Trabalho - TRCT devidamente quitado.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3714" tipo="presencial">
+                    <canal-de-prestacao id="11137" tipo="presencial">
                         <descricao>Posto de Atendimento do Ministério do trabalho para onde foi realizado o agendamento *(consulte os endereços [aqui](http://trabalho.gov.br/rede-de-atendimento))*</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2814">
+        <etapa id="10022">
             <titulo>Receber as parcelas</titulo>
             <descricao>As parcelas são pagas via Caixa Econômica Federal.</descricao>
             <documentos>
                 <default>
-                    <item id="3503">Cartão do Cidadão;</item>
-                    <item id="3504">Cartão da Caixa Econômica, caso possua conta no banco.</item>
+                    <item id="14487">Cartão do Cidadão;</item>
+                    <item id="14537">Cartão da Caixa Econômica, caso possua conta no banco.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="3715" tipo="presencial">
-                        <descricao>Agência da Caixa Econômica Federal ou Casa Lotérica.</descricao>
+                    <canal-de-prestacao id="11138" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="15">
+                        <descricao>Agência da Caixa Econômica Federal.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
     <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
-        <nomeOrgao>Ministério do Trabalho (MTB)</nomeOrgao>
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2908">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9668">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
+        <item>Administração</item>
+        <item>Recursos humanos</item>
         <item>Proteção Social</item>
         <item>Trabalho</item>
         <item>Empregabilidade</item>
         <item>Emergências e Urgências</item>
         <item>Fomento ao Trabalho</item>
         <item>Proteção e Benefícios ao Trabalhador</item>
-        <item>Recursos humanos</item>
         <item>Relações de Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="3155">Seguro</item>
-        <item id="3156">desemprego</item>
-        <item id="3157">demissão</item>
-        <item id="3158">desempregado</item>
-        <item id="3159">dispensado</item>
+        <item id="18588">Seguro</item>
+        <item id="18589">desemprego</item>
+        <item id="18590">demissão</item>
+        <item id="18591">desempregado</item>
+        <item id="18592">dispensado</item>
     </palavras-chave>
     <legislacoes>
-        <item id="959">[Constituição Federal](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm)</item>
-        <item id="960">[LEI Nº 7.998, DE 11 DE JANEIRO DE 1990](https://www.planalto.gov.br/ccivil_03/Leis/L7998.htm)</item>
+        <item id="3407">Legislação aplicável: CF, art. 7º, II; Lei n.º 7.998/90, Lei Complementar n.º 150/15; Lei n.º 10.779/03; Resolução CODEFAT n.º 467/05.</item>
     </legislacoes>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
 </servico>
