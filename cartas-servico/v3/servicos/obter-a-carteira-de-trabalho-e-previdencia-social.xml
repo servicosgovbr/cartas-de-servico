@@ -5,11 +5,10 @@
     <nome>Obter a Carteira de Trabalho e Previdência Social</nome>
     <sigla>CTPS</sigla>
     <nomes-populares>
-        <item id="1478">carta de trabalho</item>
-        <item id="1479">carteira de trabalho.</item>
-        <item id="1480">documento de trabalho</item>
+        <item id="3400">CTPS</item>
+        <item id="3401">Carteira de Trabalho</item>
     </nomes-populares>
-    <descricao>Permite a obtenção da carteira de trabalho, documento para habilitação do trabalhador brasileiro e estrangeiro no mercado de trabalho formal. É o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador.</descricao>
+    <descricao>Permite a obtenção da Carteira de Trabalho, documento para habilitação do trabalhador brasileiro e estrangeiro no mercado de trabalho formal. A Carteira de Trabalho é o principal instrumento para garantir o acesso aos direitos trabalhistas garantidos em lei ao trabalhador, emitida de forma presencial.</descricao>
     <contato>Central 158</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
@@ -17,25 +16,17 @@
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="2234">
-            <tipo>Cidadão Brasileiro</tipo>
-            <requisitos>Brasileiro nato ou naturalizado com 14 anos ou mais de idade.</requisitos>
+        <solicitante id="5614">
+            <tipo>Estrangeiro que cumpre os requisitos estabelecidos em legislação vigente.</tipo>
+            <requisitos></requisitos>
         </solicitante>
-        <solicitante id="2235">
-            <tipo>Estrangeiro residente permanente ou Cidadão do Mercosul</tipo>
-            <requisitos>Estrangeiro com visto permanente, que seja cidadão de país que faz parte do Acordo do Mercosul ou que seja residente refugiado e tenha 14 anos ou mais de idade.</requisitos>
-        </solicitante>
-        <solicitante id="2236">
-            <tipo>Estrangeiro temporário</tipo>
-            <requisitos>Estrangeiro com visto temporário que tenha 14 anos ou mais de idade.</requisitos>
-        </solicitante>
-        <solicitante id="2237">
-            <tipo>Candidato a refúgio</tipo>
-            <requisitos>Estrangeiro com processo de pedido de refúgio que tenha 14 anos ou mais de idade.</requisitos>
+        <solicitante id="5613">
+            <tipo>Brasileiro nato ou naturalizado com 14 anos ou mais de idade.</tipo>
+            <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="8" max="15" unidade="dias-corridos"/>
+        <nao-estimado-ainda/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
@@ -45,123 +36,96 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4485">
+        <etapa id="9998">
             <titulo>Agendar atendimento</titulo>
-            <descricao>Você irá acessar a página do Sistema de Atendimento Agendado do MTPS, preencher os dados necessários e agendar seu atendimento.</descricao>
+            <descricao>Algumas unidades de atendimento de emissão de CTPS requerem agendamento prévio. Você poderá acessar a página do Sistema de Atendimento Agendado do MTb, preencher os dados necessários e agendar seu atendimento.</descricao>
             <documentos>
                 <default>
-                    <item id="1674">Número do CPF;</item>
-                    <item id="1675">Data de nascimento;</item>
-                    <item id="1676">Informações de contato.</item>
+                    <item id="14427">Número do CPF;</item>
+                    <item id="14506">Data de nascimento;</item>
+                    <item id="14507">Informações de contato.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2300" tipo="web">
-                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam?conversationPropagation=none</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2729" tipo="telefone">
+                    <canal-de-prestacao id="11109" tipo="telefone" tempo-estimado-periodo="minutos" tempo-estimado-espera="15">
                         <descricao>Central 158, opção "agendamento".</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11108" tipo="web">
+                        <descricao>http://saaweb.mte.gov.br/inter/saa/pages/agendamento/main.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4486">
+        <etapa id="9999">
             <titulo>Realizar o cadastro</titulo>
             <descricao>Você irá ao local escolhido na data e horário definidos na etapa anterior, levando a documentação necessária para requisitar a CTPS, e lá fornecerá as informações requisitadas.</descricao>
             <documentos>
                 <default>
-                    <item id="1689">Cadastro de Pessoa Física - CPF;</item>
-                    <item id="1690">Comprovante de residência com CEP;</item>
-                    <item id="1691">Foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante; para o caso de ser necessária a emissão manual da CTPS; e</item>
+                    <item id="14428">Cadastro de Pessoa Física - CPF;</item>
+                    <item id="14512">Comprovante de residência com CEP;</item>
+                    <item id="14513">Para as localidades no estado de São Paulo, que ainda emitem a CTPS do modelo manual, requer foto 3x4, com fundo branco, com ou sem data, colorida e recente, que identifique plenamente o solicitante.</item>
                 </default>
-                <caso id="285" descricao="Cidadão Brasileiro">
+                <caso id="1471" descricao="Cidadão Brasileiro">
                     <documento>
-                        <id>1678</id>
+                        <id>14509</id>
                         <descricao>Comprovação obrigatória do estado civil por meio de Certidão de Nascimento (se solteiro) ou Casamento (se casado). - com averbação, se for o caso (se separado, divorciado ou viúvo);</descricao>
                     </documento>
                     <documento>
-                        <id>1677</id>
-                        <descricao>Documento oficial de identificação civil que contenha nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</descricao>
+                        <id>14508</id>
+                        <descricao>Documento oficial de identificação civil que contenha foto; nome do interessado; data, município e estado de nascimento; filiação; nome e número do documento com órgão emissor e data de emissão;</descricao>
                     </documento>
                 </caso>
-                <caso id="286" descricao="Estrangeiro residente permanente ou Cidadão do Mercosul">
+                <caso id="1472" descricao="Estrangeiro que cumpre os requisitos estabelecidos em legislação vigente">
                     <documento>
-                        <id>1679</id>
-                        <descricao>Cédula de identidade de estrangeiro - CIE; ou</descricao>
+                        <id>14511</id>
+                        <descricao>Diário Oficial da União - em caso de autorização de Residência concedida pelo Ministério do Trabalho.</descricao>
                     </documento>
                     <documento>
-                        <id>1682</id>
-                        <descricao>Documento com foto.</descricao>
-                    </documento>
-                    <documento>
-                        <id>1681</id>
-                        <descricao>Sincre da Polícia Federal, se tiver;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1680</id>
-                        <descricao>Protocolo da PF ou publicação completa do DOU contendo a qualificação civil e prazo de vigência (caso as informações de qualificação civil não estejam presentes, apresentar certidão de andamento e qualquer outra documentação que contenha os dados); e</descricao>
-                    </documento>
-                </caso>
-                <caso id="287" descricao="Estrangeiro temporário">
-                    <documento>
-                        <id>1687</id>
-                        <descricao>Documento com foto.</descricao>
-                    </documento>
-                    <documento>
-                        <id>1686</id>
-                        <descricao>Sincre – caso o protocolo esteja incompleto na qualificação civil;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1685</id>
-                        <descricao>Diário Oficial da União -completo com a qualificação civil;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1684</id>
-                        <descricao>Protocolo da Polícia Federal;</descricao>
-                    </documento>
-                    <documento>
-                        <id>1683</id>
-                        <descricao>Cédula de Identidade de Estrangeiro;</descricao>
-                    </documento>
-                </caso>
-                <caso id="288" descricao="Candidato a refúgio">
-                    <documento>
-                        <id>1688</id>
-                        <descricao>Protocolo da Polícia Federal.</descricao>
+                        <id>14510</id>
+                        <descricao>Carteira de Registro Nacional Migratório – CRNM (antiga CIE) ou Protocolo da Polícia Federal;</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2301" tipo="presencial">
+                    <canal-de-prestacao id="11110" tipo="presencial">
                         <descricao>Local escolhido no agendamento.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4487">
+        <etapa id="10000">
             <titulo>Receber a CTPS</titulo>
             <descricao>Dentro do prazo informado, você comparecerá ao local onde realizou a etapa anterior para receber sua carteira de trabalho personalizada.</descricao>
             <documentos>
                 <default>
-                    <item id="1692">Informação biométrica (cadastrada no local)</item>
-                    <item id="2244">Protocolo de cadastro de atendimento (recebido na etapa anterior)</item>
+                    <item id="14431">Informação biométrica (cadastrada no local)</item>
+                    <item id="14514">Protocolo de cadastro de atendimento (recebido na etapa anterior)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <ate max="15" unidade="dias-uteis"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2302" tipo="presencial">
-                        <descricao>No local escolhido no agendamento</descricao>
+                    <canal-de-prestacao id="11111" tipo="presencial" tempo-estimado-periodo="horas" tempo-estimado-espera="1">
+                        <descricao>No local escolhido no agendamento.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -171,7 +135,7 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="4632">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9648">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
@@ -181,11 +145,26 @@
         <item>Previdência Social</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="8416">emprego</item>
-        <item id="8417">carteira assinada</item>
-        <item id="8418">direitos dos trabalhador</item>
+        <item id="18553">emprego</item>
+        <item id="18554">carteira assinada</item>
+        <item id="18555">direitos dos trabalhador</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2017">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)</item>
+        <item id="3403">[DECRETO-LEI Nº 5.452, DE 1º DE MAIO DE 1943](https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del5452.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
 </servico>
