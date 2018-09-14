@@ -5,14 +5,17 @@
     <nome>Inscrever-se no Cadastro Nacional de Empreendimentos Econômicos Solidários e Comércio Justo</nome>
     <sigla>CADSOL</sigla>
     <nomes-populares>
-        <item id="659">DCSOL</item>
+        <item id="3418">DCSOL</item>
     </nomes-populares>
-    <descricao>Através deste serviço sua empresa pode requerer a Declaração de Empreendimento Econômico Solidário, que permite acesso a diversas políticas e programas públicos de Economia Solidária.</descricao>
+    <descricao>O CADSOL é um cadastro dos empreendimentos solidários. A inscrição no CADSOL permite à sua empresa requerer a Declaração de Empreendimento Econômico Solidário a qual permite o acesso a diversas políticas e programas públicos de Economia Solidária.</descricao>
     <contato>E-mail: dados.senaes@mte.gov.br</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="851">
+        <solicitante id="5634">
             <tipo>Empreendimentos que atendam aos seguintes requisitos:</tipo>
             <requisitos>* Ser uma organização coletiva, formada por pessoas físicas ou formada por outros empreendimentos;
 * Exercer atividades de natureza econômica permanentes;
@@ -25,89 +28,105 @@
         <ate max="30" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2225">
-            <titulo>Verificar se o seu empreendimento não está cadastrado</titulo>
+        <etapa id="10027">
+            <titulo>Verificar se o seu empreendimento está cadastrado no CADSOL</titulo>
             <descricao>Os empreendimentos visitados na última rodada do mapeamento nacional do SIES (Sistema Nacional de Informações em Economia Solidária), realizada entre 2009 e 2013, já estão cadastrados no CADSOL e podem emitir a declaração, que nesse caso é válida somente até 24 de setembro de 2017. Assim, você deve primeiro verificar que o seu empreendimento já não está cadastrado.</descricao>
             <documentos>
                 <default>
-                    <item id="2361">Nome e localização do empreendimento</item>
+                    <item id="14538">Apenas o nome e localização do empreendimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2785" tipo="web-consultar">
+                    <canal-de-prestacao id="11145" tipo="web-consultar">
                         <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/main.seam?cid=162</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2226">
+        <etapa id="10028">
             <titulo>Preencher o formulário de cadastro</titulo>
             <descricao>Se o seu empreendimento ainda não está cadastrado, você pode requisitar o inscrição preenchendo e enviando o formulário de cadastro no Sistema CADSOL</descricao>
             <documentos>
                 <default>
-                    <item id="2362">Informações sobre o empreendimento</item>
+                    <item id="14539">Informações sobre o empreendimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2786" tipo="web">
+                    <canal-de-prestacao id="11146" tipo="web">
                         <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/formulario/main.seam</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2227">
+        <etapa id="10029">
             <titulo>Verificar situação de seu empreendimento</titulo>
             <descricao>Você deve verificar com frequência a situação em que se encontra sua requisição, porque pode ser necessário complementar ou corrigir informações e dados.</descricao>
             <documentos>
                 <default>
-                    <item id="2363">Nome e localização do empreendimento</item>
+                    <item id="14540">Apenas o nome e localização do empreendimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2787" tipo="web-consultar">
+                    <canal-de-prestacao id="11147" tipo="web-consultar">
                         <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/main.seam?cid=162</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2228">
+        <etapa id="10030">
             <titulo>Emitir a DECSOL</titulo>
             <descricao>Quando o seu cadastro for aprovado, você poderá imprimir no sistema a  Declaração de Empreendimento Econômico Solidário (DCSOL), que é o comprovante do cadastro do seu empreendimento.</descricao>
             <documentos>
                 <default>
-                    <item id="2364">IDSOL, CNPJ ou nome do empreendimento</item>
+                    <item id="14541">IDSOL, CNPJ ou nome do empreendimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2788" tipo="web-emitir">
+                    <canal-de-prestacao id="11148" tipo="web-emitir">
                         <descricao>http://cadsol.mte.gov.br/inter/cadsol/view/empreendimento/geral/main.seam?cid=164</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2450">Empresas</item>
-        <item idSegmento="4" idServicoSegmento="2451">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9671">Empresas</item>
+        <item idSegmento="4" idServicoSegmento="9672">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Combate a epidemias</item>
@@ -120,12 +139,25 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1983">Economia solidária</item>
-        <item id="1984">SIES</item>
-        <item id="1985">cooperação</item>
+        <item id="18608">Economia solidária</item>
+        <item id="18609">SIES</item>
+        <item id="18610">cooperação</item>
     </palavras-chave>
     <legislacoes>
-        <item id="663">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 1](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B31C050C5/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.1.pdf)</item>
-        <item id="664">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 2](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B4CE451B6/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.2.pdf)</item>
+        <item id="3408">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 1](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B31C050C5/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.1.pdf)</item>
+        <item id="3409">[PORTARIA Nº 1.780, DE 19 DE NOVEMBRO DE 2014 - Página 2](http://acesso.mte.gov.br/data/files/FF8080814B2784E5014B6F9B4CE451B6/Portaria%20MTE%201.780-2014%20-%20CADSOL%20pg.2.pdf)</item>
     </legislacoes>
+    <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+
+Urbanidade;
+Respeito;
+Acessibilidade;
+Cortesia;
+Presunção da boa-fé do usuário;
+Igualdade;
+Eficiência;
+Segurança; e
+Ética.</tratamento-dispensado-atendimento>
 </servico>
