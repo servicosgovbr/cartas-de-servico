@@ -5,18 +5,20 @@
     <nome>Obter Regularização de produtos de higiene pessoal, perfumes e cosméticos por meio de Registro</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="3399">Registro de produtos de higiene pessoal, perfumes e cosméticos</item>
+        <item id="3419">Registro de produtos de higiene pessoal, perfumes e cosméticos</item>
     </nomes-populares>
-    <descricao>O detentor de um produto de higiene pessoal, perfume ou cosmético sujeito a registro pode comercializá-lo no País concessão do registro no DOU.
-Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de protocolo da Anvisa, gera uma petição de registro, submete as informações técnicas previstas nos regulamentos específicos, gera uma Guia de Recolhimento – GRU, paga essa guia, após a internalização do pagamento as informações do produto são analisadas pela equipe técnica da Anvisa e se atenderam às normas vigentes o registro é publicado em DOU. A partir desse momento o produto pode ser comercializado no país.</descricao>
-    <contato></contato>
+    <descricao>O detentor de um produto de higiene pessoal, perfume ou cosmético sujeito a registro pode comercializá-lo no País após concessão do registro no DOU. Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de protocolo da Anvisa, gera uma petição de registro, submete as informações técnicas previstas nos regulamentos específicos, gera uma Guia de Recolhimento – GRU, paga essa guia, após a internalização do pagamento as informações do produto são analisadas pela equipe técnica da Anvisa e se atenderam às normas vigentes o registro é publicado em DOU. A partir desse momento o produto pode ser comercializado no país.</descricao>
+    <contato>Responsável: ANA CLEIRE FERREIRA DE OLIVEIRA GOMES ARAUJO (Coordenadora)
+Email: ana.araujo@anvisa.gov.br
+Email: ouvidoria@anvisa.gov.br 
+Presencial: ANVISA - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</contato>
     <gratuito>false</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="5609">
-            <tipo>Fabricantes e comerciantes de produtos de higiene pessoal, perfumes e cosméticos</tipo>
+        <solicitante id="5635">
+            <tipo>Pessoas Jurídicas</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
@@ -25,27 +27,72 @@ Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de pr
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
+        <tipo>Válido por</tipo>
+        <quantidade>5</quantidade>
+        <unidade>anos</unidade>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="9993">
-            <titulo>Requerer registro</titulo>
-            <descricao></descricao>
+        <etapa id="10049">
+            <titulo>Cadastramento da Empresa</titulo>
+            <descricao>É o primeiro passo para se ter acesso ao Sistema utilizado para peticionar as solicitações de registro (DATAVISA). O cadastro das empresas privadas que fornecem produtos ou serviços regulados pela Anvisa, bem como os usuários com vínculo de representação com essas empresas devem ser solicitados inicialmente. As alterações dos dados da empresa devem ser atualizadas frequentemente, inclusive o Porte da Empresa que irá determinar o valor das taxas a serem pagas pelo interessado.</descricao>
             <documentos>
                 <default>
-                    <item id="14419">Carteira de identidade</item>
-                    <item id="14420">Carteira de trabalho</item>
-                    <item id="14421">Certidões da Receita Federal</item>
-                    <item id="14422">CNPJ</item>
-                    <item id="14423">Comprovante de pagamento</item>
+                    <item id="14542">Verificar check list apresentado após indicação do Código de Assunto.</item>
                 </default>
             </documentos>
             <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
                 <default>
-                    <custo id="979">
-                        <descricao>Taxa de Fiscalização de Vigilância Sanitária</descricao>
+                    <canal-de-prestacao id="11149" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10050">
+            <titulo>Realizar Peticionamento</titulo>
+            <descricao>Antes de acessar o Sistema de Peticionamento é recomendável que o interessado identifique o Código de Assunto relacionado à sua petição, pois é a partir desse código que toda a transação do pedido irá se desenvolver. Durante o processo, o interessado será guiado para o tipo de peticionamento do Código de Assunto escolhido.</descricao>
+            <documentos>
+                <default/>
+                <caso id="1473" descricao="Os Códigos de Assunto relacionados ao registro de cosméticos, produtos de higiene pessoal e perfumes GRAU2 são">
+                    <documento>
+                        <id>14543</id>
+                        <descricao>2871 – Registro de Produto Grau 2 – Importado; 287 – Registro de Produto Grau 2 – Nacional.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11150" tipo="web" procedimento-sistema-indisponivel="http://portal.anvisa.gov.br/sistema-de-peticionamento">
+                        <descricao>http://200.198.201.89/sistema-consulta-de-assuntos</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10051">
+            <titulo>Realizar Pagamento</titulo>
+            <descricao>Ao final do processo de peticionamento será gerada a Guia de Recolhimento da União (GRU) para o pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS) relacionada ao assunto escolhido.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="987">
+                        <descricao>Taxa de Fiscalização de Vigilância Sanitária (TFVS)</descricao>
                         <moeda>R$</moeda>
-                        <valorVariavel>Variável de acordo com o porte da empresa</valorVariavel>
+                        <valorVariavel>O valor da taxa é determinado pela Portaria Interministerial nº 701, de 31 de agosto de 2015.</valorVariavel>
                         <statusCustoVariavel>1</statusCustoVariavel>
                     </custo>
                 </default>
@@ -55,14 +102,28 @@ Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de pr
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11101" tipo="presencial">
-                        <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                    <canal-de-prestacao id="11152" tipo="web">
+                        <descricao>http://portal.anvisa.gov.br/sistema-de-peticionamento</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="11100" tipo="web">
-                        <descricao>https://www9.anvisa.gov.br/peticionamento/sat/global/acesso.asp</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="11102" tipo="postal">
-                        <descricao>**ANVISA** - SIA - Trecho 5 - Área Especial 57 - Bloco D - CEP 71.205.050 - BRASÍLIA/DF</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10052">
+            <titulo>Protocolar na Agência</titulo>
+            <descricao>Após gerar a GRU, o interessado deverá juntar toda documentação solicitada, conforme lista de verificação (checklist) do Código de Assunto escolhido e protocolar na Anvisa por via presencial ou postal.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11153" tipo="presencial">
+                        <descricao>Presencial: ANVISA - SIA Trecho 5 - Área especial 57 - Guará I, Brasília - DF, CEP: 71205-050</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -72,7 +133,7 @@ Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de pr
         <nomeOrgao>Agência Nacional de Vigilância Sanitária (ANVISA)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="9644">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9673">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Comércio e Serviços</item>
@@ -81,9 +142,9 @@ Nesse serviço a empresa previamente cadastrada na Anvisa acessa o sistema de pr
         <item>Vigilância Sanitária</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="18546">saneantes</item>
-        <item id="18547">cosméticos</item>
-        <item id="18548">registro</item>
+        <item id="18611">saneantes</item>
+        <item id="18612">cosméticos</item>
+        <item id="18613">registro</item>
     </palavras-chave>
     <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
     <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
