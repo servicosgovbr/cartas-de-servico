@@ -3,12 +3,12 @@
     <id>sacar-o-fgts</id>
     <dbId>61</dbId>
     <nome>Sacar o FGTS</nome>
-    <sigla></sigla>
+    <sigla>FGTS</sigla>
     <nomes-populares>
-        <item id="543">Receber meus direitos</item>
-        <item id="544">Fundo de Garantia</item>
-        <item id="585">Contas Inativas do FGTS</item>
-        <item id="542">Sacar dinheiro do Fundo de Garantia do Tempo de Serviço (FGTS)</item>
+        <item id="3424">Receber meus direitos</item>
+        <item id="3425">Fundo de Garantia</item>
+        <item id="3426">Contas Inativas do FGTS</item>
+        <item id="3427">Sacar dinheiro do Fundo de Garantia do Tempo de Serviço (FGTS)</item>
     </nomes-populares>
     <descricao>Para você que é trabalhador com carteira assinada, regido pela CLT (Consolidação das Leis de Trabalho), o FGTS serve como seguro no caso de demissão sem justa causa e outras situações, tais como:
 
@@ -17,40 +17,56 @@
 * No término do contrato por prazo determinado;
 * No falecimento do empregador individual ou decretação de nulidade do contrato de trabalho 
 * No falecimento do trabalhador;
-* Outras situações no [Portal do FGTS](http://www.fgts.gov.br/trabalhador/quando_sacar_o_FGTS.asp)</descricao>
+* Outras situações no [Portal do FGTS](http://www.fgts.gov.br/Pages/sou-trabalhador/como-sacar.aspx)</descricao>
     <contato>* [Mais Informações](http://www.fgts.gov.br/)
 * [Detalhes sobre documentações específicas](http://www.fgts.gov.br/trabalhador/quando_sacar_o_FGTS.asp)</contato>
     <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="642">
-            <tipo>Trabalhador com carteira assinada.</tipo>
-            <requisitos>Trabalhadores regidos pela CTL (Consolidação das Leis do Trabalho).</requisitos>
-        </solicitante>
-        <solicitante id="640">
+        <solicitante id="5641">
             <tipo>Outros beneficiários</tipo>
             <requisitos>Também têm direito ao FGTS os trabalhadores rurais, os temporários, os avulsos, os safreiros (operários rurais, que trabalham apenas no período de colheita) e os atletas profissionais (jogadores de futebol, vôlei, etc.). O diretor não-empregado também poderá ser equiparado aos demais trabalhadores sujeitos ao regime do FGTS. Para o trabalhador doméstico, o recolhimento obrigatório começou a valer a partir de outubro de 2015.</requisitos>
+        </solicitante>
+        <solicitante id="5640">
+            <tipo>Trabalhador com carteira assinada.</tipo>
+            <requisitos>Trabalhadores regidos pela CTL (Consolidação das Leis do Trabalho).</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
         <ate max="15" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="1896">
+        <etapa id="10046">
             <titulo>Consultar saldo</titulo>
             <descricao>Dirija-se à rede de atendimento da Caixa (Agência, Lotérica ou Correspondente Caixa Aqui) ou acesse os portais e aplicativos para celular para consultar o saldo e extrato da sua conta de FGTS</descricao>
             <documentos>
                 <default>
-                    <item id="1873">Número do NIS.</item>
-                    <item id="2016">Número do CPF (caso a conta esteja inativa pelos termos da medida provisória 763/16)</item>
+                    <item id="14563">Número do NIS.</item>
+                    <item id="14564">Número do CPF (caso a conta esteja inativa pelos termos da medida provisória 763/16)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2376" tipo="presencial">
+                    <canal-de-prestacao id="11172" tipo="aplicativo-movel">
+                        <descricao>* Android: [Disponível na Google Play](https://play.google.com/store/apps/details?id=br.gov.caixa.fgts.trabalhador&amp;hl=pt_BR)
+
+* iPhone/IOS: [Disponível na Apple Store](https://itunes.apple.com/br/app/fgts/id1038441027?mt=8)
+
+* Windows Phone [Disponível na Windows Store](https://www.microsoft.com/pt-br/store/p/fgts-caixa/9nblggh4rfls)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11173" tipo="presencial">
                         <descricao>Rede de atendimento da Caixa Econômica Federal
 
  [Consulte aqui](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)
@@ -59,38 +75,40 @@
 
 * Web: [Consultar contas inativas](https://www.contasinativas.caixa.gov.br/pages/inter/home.html)</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2521" tipo="aplicativo-movel">
-                        <descricao>* Android: [Disponível na Google Play](https://play.google.com/store/apps/details?id=br.gov.caixa.fgts.trabalhador&amp;hl=pt_BR)
-
-* iPhone/IOS: [Disponível na Apple Store](https://itunes.apple.com/br/app/fgts/id1038441027?mt=8)
-
-* Windows Phone [Disponível na Windows Store](https://www.microsoft.com/pt-br/store/p/fgts-caixa/9nblggh4rfls)</descricao>
-                    </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1897">
+        <etapa id="10047">
             <titulo>Dar entrada no pedido</titulo>
             <descricao>Dirija-se à rede de atendimento da Caixa (Agência, Lotérica ou Correspondente Caixa Aqui), com a documentação necessária, para dar entrada no pedido de retirada do dinheiro.</descricao>
             <documentos>
                 <default>
-                    <item id="1876">Documento oficial de identificação com foto;</item>
-                    <item id="1877">Carteira de Trabalho e Previdência Social;</item>
-                    <item id="1878">Número de inscrição no PIS/PASEP;</item>
-                    <item id="1879">Cartão Cidadão, Cartão do Bolsa Família ou outro Cartão de programas sociais, se tiver;</item>
-                    <item id="1880">Documentos de comprovação da condição específica que permite o saque do FGTS</item>
+                    <item id="14565">Documento oficial de identificação com foto;</item>
+                    <item id="14566">Carteira de Trabalho e Previdência Social;</item>
+                    <item id="14567">Número de inscrição no PIS/PASEP;</item>
+                    <item id="14568">Cartão Cidadão, Cartão do Bolsa Família ou outro Cartão de programas sociais, se tiver;</item>
+                    <item id="14569">Documentos de comprovação da condição específica que permite o saque do FGTS</item>
                 </default>
-                <caso id="324" descricao="Se você está residindo no exterior">
-                    <item id="1874">Cópia junto aos originais da documentação exigida;</item>
-                    <item id="1875">Solicitação de Saque preenchida e assinada na presença do representante consular.</item>
+                <caso id="1474" descricao="Se você está residindo no exterior">
+                    <documento>
+                        <id>1875</id>
+                        <descricao>Solicitação de Saque preenchida e assinada na presença do representante consular.</descricao>
+                    </documento>
+                    <documento>
+                        <id>1874</id>
+                        <descricao>Cópia junto aos originais da documentação exigida;</descricao>
+                    </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2377" tipo="presencial">
+                    <canal-de-prestacao id="11174" tipo="presencial">
                         <descricao>Rede de atendimento da Caixa Econômica Federal
 
   [Consulte aqui](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
@@ -98,35 +116,40 @@
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="1898">
+        <etapa id="10048">
             <titulo>Receber o dinheiro</titulo>
             <descricao>Durante o pedido da etapa anterior, você poderá escolher se quer sacar o dinheiro na Caixa ou que ele seja depositado em sua conta bancária. Se sua documentação estiver toda regular e você tiver direito ao saque, você irá então à Caixa (Agência, Lotérica ou Correspondente Caixa Aqui) para receber o dinheiro, ou o mesmo cairá direto na conta bancária informada.</descricao>
             <documentos>
                 <default>
-                    <item id="1881">Cadastro de Pessoa Física;</item>
-                    <item id="1882">Documento válido e original de identificação com foto.</item>
+                    <item id="14570">Cadastro de Pessoa Física;</item>
+                    <item id="14571">Documento válido e original de identificação com foto.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2378" tipo="presencial">
+                    <canal-de-prestacao id="11175" tipo="presencial">
+                        <descricao>Rede bancária indicada para depósito do dinheiro.</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11176" tipo="presencial">
                         <descricao>Rede de atendimento da Caixa Econômica Federal
 
   [Consulte aqui](http://www.caixa.gov.br/atendimento/Paginas/encontre-a-caixa.aspx)</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2522" tipo="presencial">
-                        <descricao>Rede bancária indicada para depósito do dinheiro.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="2160">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9680">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Previdência Social</item>
@@ -135,14 +158,27 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1755">fgts</item>
-        <item id="1756">sacar</item>
-        <item id="1555">direitos</item>
-        <item id="1556">demissão</item>
-        <item id="1557">sem justa causa</item>
+        <item id="18629">fgts</item>
+        <item id="18630">sacar</item>
+        <item id="18631">direitos</item>
+        <item id="18632">demissão</item>
+        <item id="18633">sem justa causa</item>
     </palavras-chave>
     <legislacoes>
-        <item id="502">[LEI Nº 8.036, DE 11 DE MAIO DE 1990.](https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm)</item>
-        <item id="569">[Busca em outras legislações do FGTS](https://webp.caixa.gov.br/Portal/Legislacao/legislacao.asp)</item>
+        <item id="3414">[LEI Nº 8.036, DE 11 DE MAIO DE 1990.](https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm)</item>
+        <item id="3415">[Busca em outras legislações do FGTS](https://webp.caixa.gov.br/Portal/Legislacao/legislacao.asp)</item>
     </legislacoes>
+    <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+
+Urbanidade;
+Respeito;
+Acessibilidade;
+Cortesia;
+Presunção da boa-fé do usuário;
+Igualdade;
+Eficiência;
+Segurança; e
+Ética.</tratamento-dispensado-atendimento>
 </servico>
