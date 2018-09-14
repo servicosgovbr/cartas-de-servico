@@ -5,8 +5,8 @@
     <nome>Encontrar emprego no Serviço de Intermediação de Mão de Obra do SINE</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="1652">SINE</item>
-        <item id="1653">Mais Emprego</item>
+        <item id="3422">SINE</item>
+        <item id="3423">Emprega Brasil</item>
     </nomes-populares>
     <descricao>Este serviço permite que você busque um trabalho entre as vagas cadastradas no sistema.</descricao>
     <contato>Você pode tirar dúvidas sobre o serviço na [rede de atendimento do Ministério do Trabalho](http://trabalho.gov.br/rede-de-atendimento) ou nos [Postos do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</contato>
@@ -16,7 +16,7 @@
     <servico-digital>true</servico-digital>
     <link-servico-digital>https://imo.maisemprego.mte.gov.br/imoweb/login.xhtml</link-servico-digital>
     <solicitantes>
-        <solicitante id="2493">
+        <solicitante id="5639">
             <tipo>Todo cidadão.</tipo>
             <requisitos>Que tenha a Carteira de Trabalho e Previdência Social.</requisitos>
         </solicitante>
@@ -29,99 +29,120 @@
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="4959">
+        <etapa id="10042">
             <titulo>Cadastrar-se no sistema</titulo>
             <descricao>Você deve se cadastrar no serviço de Intermediação de Mão de Obra para poder encontrar e concorrer às vagas oferecidas.</descricao>
             <documentos>
                 <default>
-                    <item id="2379">PIS / PASEP / NIS / NIT</item>
-                    <item id="2380">CPF</item>
-                    <item id="2381">E-mail</item>
-                    <item id="2382">Dados Pessoais</item>
+                    <item id="14546">PIS / PASEP / NIS / NIT</item>
+                    <item id="14547">Cadastro de Pessoa Física (CPF)</item>
+                    <item id="14548">Endereço eletrônico (e-mail)</item>
+                    <item id="14549">Dados Pessoais</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <em-media max="15" unidade="minutos"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2797" tipo="web">
-                        <descricao>https://imo.maisemprego.mte.gov.br/imoweb/login.xhtml</descricao>
+                    <canal-de-prestacao id="11163" tipo="web" tempo-estimado-periodo="minutos" tempo-estimado-espera="30">
+                        <descricao>https://servicos.mte.gov.br/#/loginfailed/redirect=</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2798" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                    <canal-de-prestacao id="11162" tipo="aplicativo-movel">
+                        <descricao>[Aplicativo SINE Fácil](https://empregabrasil.mte.gov.br/passo-a-passo/obter-qr-code.html "Aplicativo SINE Fácil")</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11161" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="30">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf "Postos de Atendimento do SINE")</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4960">
+        <etapa id="10043">
             <titulo>Consultar vagas</titulo>
-            <descricao>Você deve consultar as vagas disponíveis de emprego ou estágio no sistema</descricao>
+            <descricao>Você deve consultar as vagas disponíveis de emprego ou estágio no sistema.</descricao>
             <documentos>
                 <default>
-                    <item id="2383">PIS / PASEP / NIS / NIT</item>
-                    <item id="2384">CPF</item>
-                    <item id="2385">RG</item>
-                    <item id="2386">Carteira de Trabalho e Previdência Social</item>
-                    <item id="2387">E-mail</item>
+                    <item id="14550">PIS / PASEP / NIS / NIT</item>
+                    <item id="14551">Cadastro de Pessoa Física (CPF)</item>
+                    <item id="14552">Carteira de Identidade (Registro Geral - RG)</item>
+                    <item id="14553">Carteira de Trabalho e Previdência Social (CTPS)</item>
+                    <item id="14554">Endereço eletrônico (e-mail)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <em-media max="30" unidade="minutos"/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2799" tipo="web">
-                        <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                    <canal-de-prestacao id="11164" tipo="web">
+                        <descricao>https://servicos.mte.gov.br/#/loginfailed/redirect=</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2800" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                    <canal-de-prestacao id="11165" tipo="aplicativo-movel" tempo-estimado-periodo="minutos" tempo-estimado-espera="30">
+                        <descricao>[Aplicativo SINE Fácil](https://empregabrasil.mte.gov.br/passo-a-passo/obter-qr-code.html "Aplicativo SINE Fácil")</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11166" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="30">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf "Postos de Atendimento do SINE")</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4961">
+        <etapa id="10044">
             <titulo>Se candidatar</titulo>
-            <descricao>Escolhida a vaga desejada, você pode se candidatar para participar do processo de intermediação</descricao>
+            <descricao>Escolhida a vaga desejada, você pode se candidatar para participar do processo de intermediação.</descricao>
             <documentos>
                 <default>
-                    <item id="2388">PIS / PASEP / NIS / NIT</item>
-                    <item id="2389">CPF</item>
-                    <item id="2390">RG</item>
-                    <item id="2391">Carteira de Trabalho e Previdência Social</item>
+                    <item id="14555">PIS / PASEP / NIS / NIT</item>
+                    <item id="14556">Cadastro de Pessoa Física (CPF)</item>
+                    <item id="14557">Carteira de Identidade (Registro Geral - RG)</item>
+                    <item id="14558">Carteira de Trabalho e Previdência Social (CTPS)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2801" tipo="web">
-                        <descricao>https://imo.maisemprego.mte.gov.br/imoweb/</descricao>
+                    <canal-de-prestacao id="11167" tipo="web">
+                        <descricao>https://servicos.mte.gov.br/#/loginfailed/redirect=</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2802" tipo="presencial">
-                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
+                    <canal-de-prestacao id="11169" tipo="aplicativo-movel">
+                        <descricao>[Aplicativo SINE Fácil](https://empregabrasil.mte.gov.br/passo-a-passo/obter-qr-code.html "Aplicativo SINE Fácil")</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11171" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="30">
+                        <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf "Postos de Atendimento do SINE")</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="4962">
+        <etapa id="10045">
             <titulo>Participar de entrevista</titulo>
-            <descricao>Sendo selecionado pelo empregador disponibilizando a vaga, você participará de entrevista com ele, onde será decidido se você ocupará a vaga.</descricao>
+            <descricao>Sendo selecionado você participará de entrevista com empregador onde será decidido se você ocupará a vaga.</descricao>
             <documentos>
                 <default>
-                    <item id="2392">PIS / PASEP / NIS / NIT</item>
-                    <item id="2393">CPF</item>
-                    <item id="2394">RG</item>
-                    <item id="2395">Carteira de Trabalho e Previdência Social</item>
+                    <item id="14559">PIS / PASEP / NIS / NIT</item>
+                    <item id="14560">Cadastro de Pessoa Física (CPF)</item>
+                    <item id="14561">Carteira de Identidade (Registro Geral - RG)</item>
+                    <item id="14562">Carteira de Trabalho e Previdência Social (CTPS)</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2803" tipo="presencial">
+                    <canal-de-prestacao id="11170" tipo="presencial" tempo-estimado-periodo="minutos" tempo-estimado-espera="40">
                         <descricao>[Postos de Atendimento do SINE](http://trabalho.gov.br/images/Documentos/SINE/postos-sine-jan2016.pdf)</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -132,7 +153,7 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="1" idServicoSegmento="5013">Cidadãos</item>
+        <item idSegmento="1" idServicoSegmento="9679">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Empregabilidade</item>
@@ -142,15 +163,30 @@
         <item>Recursos humanos</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="9272">SINE</item>
-        <item id="9273">Emprego</item>
-        <item id="9274">Estágio</item>
-        <item id="9275">Vagas de trabalho</item>
+        <item id="18653">SINE</item>
+        <item id="18654">Emprego</item>
+        <item id="18655">Estágio</item>
+        <item id="18656">Vagas de trabalho</item>
+        <item id="18657">SINE FACIL</item>
+        <item id="18658">IMO</item>
     </palavras-chave>
     <legislacoes>
-        <item id="2159">[Decreto Nº 76.403 de 08/10/1975](http://portalfat.mte.gov.br/programas-e-acoes-2/sistema-nacional-de-emprego-sine/rede-sine/legislacao-sine/decreto-no-76-403-de-08101975-cria-o-sistema-nacional-de-emprego-sine-e-da-outras-providencias/)</item>
+        <item id="3413">[Decreto Nº 76.403 de 08/10/1975](http://portalfat.mte.gov.br/programas-e-acoes-2/sistema-nacional-de-emprego-sine/rede-sine/legislacao-sine/decreto-no-76-403-de-08101975-cria-o-sistema-nacional-de-emprego-sine-e-da-outras-providencias/)</item>
     </legislacoes>
     <servicos-relacionados>
         <item>60</item>
     </servicos-relacionados>
+    <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.-</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+  
+  Urbanidade;
+  Respeito;
+  Acessibilidade;
+  Cortesia;
+  Presunção da boa-fé do usuário;
+  Igualdade;
+  Eficiência;
+  Segurança; e
+  Ética.</tratamento-dispensado-atendimento>
 </servico>
