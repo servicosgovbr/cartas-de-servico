@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>solicitar-despachos-de-operacoes-de-comercio-exterior</id>
+    <dbId>1022</dbId>
+    <nome>Solicitar despachos de operações de comércio exterior</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="3452">Despacho DECEX</item>
+    </nomes-populares>
+    <descricao>Agendamento de atendimentos individualizados realizados por técnicos do Departamento de Operações de Comércio Exterior (DECEX) a empresas que apresentem dificuldades em casos  concretos relacionados às competências do Departamento, com posterior avaliação desses atendimentos pelos usuários.</descricao>
+    <contato></contato>
+    <gratuito>true</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5656">
+            <tipo>Operadores de comércio exterior</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <em-media max="7" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="10092">
+            <titulo>Preencher formulário requisitando atendimento</titulo>
+            <descricao>Fazer _download_ e preencher formulário disponível no endereço eletrônico do MDIC. As datas disponíveis para o agendamento do atendimento, podem ser consultadas [aqui](http://www.mdic.gov.br/index.php/comercio-exterior/despachos-de-comercio-exterior "Calendário para agendamento dos despachos").</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11228" tipo="web">
+                        <descricao>http://www.mdic.gov.br/images/Formul%C3%A1rio_para_solicita%C3%A7%C3%A3o_de_despacho_executivo_com_termo_de_encerramento_V3.odt</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10093">
+            <titulo>Enviar formulário por email ao DECEX</titulo>
+            <descricao>O formulário preenchido deve ser enviado por _email_ ao Departamento de Operações de Comércio Exterior.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11229" tipo="e-mail">
+                        <descricao>decex.despachos@mdic.gov.br</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10094">
+            <titulo>Receber resposta sobre o agendamento</titulo>
+            <descricao>O interessado recebe por _email_ confirmação do agendamento, com definição de data, local e horário para o despacho.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11230" tipo="e-mail">
+                        <descricao>informado na solicitação.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10095">
+            <titulo>Ser atendido para despacho de operações de comércio exterior</titulo>
+            <descricao>Obs.: Após o atendimento, deve ser preenchido o "Termo de encerramento do Despacho Executivo", documento que contém a avaliação sobre o serviço prestado.</descricao>
+            <documentos>
+                <default>
+                    <item id="14647">Instrumento de representação: procuração, contrato ou estatuto social **de cada representante**.</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <ate max="45" unidade="minutos"/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11231" tipo="presencial">
+                        <descricao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)    
+Secretaria de Comércio Exterior - SECEX     
+Departamento de Operações de Comércio Exterior - DECEX
+Esplanada dos Ministérios, Bloco "J", 4º andar, 
+CEP 70.053.900</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/3162" dbId="37530">
+        <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9717">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Indústria</item>
+        <item>Comercio externo</item>
+        <item>Produção Industrial</item>
+        <item>Produção agropecuária</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18701">Despacho</item>
+        <item id="18702">DECEX</item>
+        <item id="18703">Demandas</item>
+    </palavras-chave>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
+</servico>
