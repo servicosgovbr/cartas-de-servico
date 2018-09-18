@@ -10,9 +10,12 @@
 * Correspondência para: Ministério do Trabalho e Emprego - Secretaria de Políticas Públicas de Emprego - Departamento de Emprego e Salário - Coordenação-Geral de Estatísticas do Trabalho - Esplanada dos Ministérios, Bloco “F”, Edifício-Anexo, Ala “B” – Sala 211
 CEP:70059-900 – Brasília/DF.</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="837">
+        <solicitante id="5659">
             <tipo>Empresas e Empregadores</tipo>
             <requisitos>Que tenham admitido, desligado ou transferido empregados com contrato de trabalho regido pela CLT, Contrato de Trabalho por Prazo Determinado (Lei 9.601/98), trabalhadores regidos pelo Estatuo do Trabalhador Rural ou aprendizes.</requisitos>
         </solicitante>
@@ -28,7 +31,7 @@ CEP:70059-900 – Brasília/DF.</contato>
         <descricao>A declaração deve ser realizada todos os meses onde houver qualquer alteração no quadro de pessoal regido pela CLT</descricao>
     </validade-documento>
     <etapas>
-        <etapa id="2189">
+        <etapa id="10104">
             <titulo>Baixar o programa gerador da declaração ou do layout padrão do arquivo da declaração (opcional)</titulo>
             <descricao>Você deve baixar e instalar o programa CAGED Net.</descricao>
             <documentos>
@@ -37,136 +40,147 @@ CEP:70059-900 – Brasília/DF.</contato>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2744" tipo="web">
+                    <canal-de-prestacao id="11240" tipo="web">
                         <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/layout/TL_layout.xhtml#</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2743" tipo="aplicativo-movel">
-                        <descricao>[Programa CAGEDNet](https://caged.maisemprego.mte.gov.br/portalcaged/paginas/TL_downloads.xhtml?download=cagednet)</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2190">
+        <etapa id="10105">
             <titulo>Preencher a declaração</titulo>
             <descricao>Você irá preencher os dados pedidos, informando as movimentações no seu quadro de pessoal.</descricao>
             <documentos>
                 <default>
-                    <item id="2268">Dados da empresa/empregador</item>
-                    <item id="2269">Dados sobre as movimentações no quadro de pessoal</item>
-                    <item id="2270">Dados dos empregados que sofreram movimentação</item>
+                    <item id="14650">Dados da empresa/empregador</item>
+                    <item id="14651">Dados sobre as movimentações no quadro de pessoal</item>
+                    <item id="14652">Dados dos empregados que sofreram movimentação</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2747" tipo="presencial">
+                    <canal-de-prestacao id="11242" tipo="presencial">
                         <descricao>Em documento com o layout obtido na etapa anterior.</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2746" tipo="web-declarar">
+                    <canal-de-prestacao id="11241" tipo="web-declarar">
                         <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/fec/TL_FEC_Inicial.xhtml</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2745" tipo="aplicativo-movel">
-                        <descricao>No aplicativo obtido na etapa anterior.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2191">
+        <etapa id="10106">
             <titulo>Transmitir a declaração</titulo>
             <descricao>Terminado o preenchimento, você deve enviar a declaração ao Ministério do Trabalho.</descricao>
             <documentos>
                 <default>
-                    <item id="2271">Declaração do CAGED</item>
+                    <item id="14653">Declaração do CAGED</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2750" tipo="web">
-                        <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/recepcao/TL_022_TransmitirArquivoWeb.xhtml</descricao>
-                    </canal-de-prestacao>
-                    <canal-de-prestacao id="2749" tipo="web-declarar">
+                    <canal-de-prestacao id="11243" tipo="web-declarar">
                         <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/fec/TL_FEC_Inicial.xhtml</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="2748" tipo="aplicativo-movel">
-                        <descricao>O aplicativo obtido na primeira etapa permite o envio do arquivo após o preenchimento.</descricao>
+                    <canal-de-prestacao id="11244" tipo="web">
+                        <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/recepcao/TL_022_TransmitirArquivoWeb.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2192">
+        <etapa id="10107">
             <titulo>Receber o recibo de entrega</titulo>
             <descricao>Um arquivo com o recibo da entrega é gerado automaticamente após o envio mas, caso você não consiga gravá-lo ou ele se extravie, você pode obter uma segunda via no canal abaixo.</descricao>
             <documentos>
                 <default>
-                    <item id="2272">Protocolo de Transmissão de Arquivo (gerado e fornecido no ato da trasmissão)</item>
-                    <item id="2273">CNPJ/CEI</item>
+                    <item id="14654">Protocolo de Transmissão de Arquivo (gerado e fornecido no ato da trasmissão)</item>
+                    <item id="14655">CNPJ/CEI</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2751" tipo="web">
+                    <canal-de-prestacao id="11245" tipo="web">
                         <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/recibos/TL_022_ReciboDeclaracoesProcessadas.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2193">
+        <etapa id="10108">
             <titulo>Consultar o extrato de movimentações processadas</titulo>
             <descricao>O Extrato é disponibilizado após o dia 20 de cada mês, e permite que você verifique se as informações prestadas foram todas processadas de forma correta.</descricao>
             <documentos>
                 <default>
-                    <item id="2274">CNPJ/CEI</item>
-                    <item id="2275">Recibo de entrega da declaração do CAGED</item>
+                    <item id="14656">CNPJ/CEI</item>
+                    <item id="14657">Recibo de entrega da declaração do CAGED</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2752" tipo="web-acompanhar">
+                    <canal-de-prestacao id="11246" tipo="web-acompanhar">
                         <descricao>https://caged.maisemprego.mte.gov.br/portalcaged/paginas/extrato/TL_23_AberturaExtrato.xhtml</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2194">
+        <etapa id="10109">
             <titulo>Consertar informações incorretas</titulo>
             <descricao>Caso haja informações incorretas ou incompletas na sua declaração, você poderá consertá-las repetindo as fases anteriores, mas escolhendo a opção "ACERTO" no preenchimento das declarações. Caso haja multas a serem pagas, você deve calcular o valor de acordo com [estas regras](http://portalfat.mte.gov.br/programas-e-acoes-2/caged-3/sobre-o-caged/multa-do-caged/) e emitir a DARF no canal abaixo.</descricao>
             <documentos>
                 <default>
-                    <item id="2276">Dados da empresa</item>
-                    <item id="2277">Dados das movimentações do quadro de pessoal</item>
-                    <item id="2278">Recibo de entrega da declaração original</item>
+                    <item id="14658">Dados da empresa</item>
+                    <item id="14659">Dados das movimentações do quadro de pessoal</item>
+                    <item id="14660">Recibo de entrega da declaração original</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2753" tipo="web-emitir">
+                    <canal-de-prestacao id="11247" tipo="web-emitir">
                         <descricao>http://idg.receita.fazenda.gov.br/interface/lista-de-servicos/pagamentos-e-parcelamentos/pagamento/emissao-de-darf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2429">Empresas</item>
-        <item idSegmento="1" idServicoSegmento="2430">Cidadãos</item>
-        <item idSegmento="4" idServicoSegmento="2431">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9720">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="9721">Cidadãos</item>
+        <item idSegmento="4" idServicoSegmento="9722">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Empregabilidade</item>
@@ -177,12 +191,25 @@ CEP:70059-900 – Brasília/DF.</contato>
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1954">quadro de pessoal</item>
-        <item id="1955">demissão</item>
-        <item id="1956">contratação</item>
+        <item id="18716">quadro de pessoal</item>
+        <item id="18717">demissão</item>
+        <item id="18718">contratação</item>
     </palavras-chave>
     <legislacoes>
-        <item id="650">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
-        <item id="651">[Lei 4.923/65](http://www.planalto.gov.br/ccivil_03/leis/L4923.htm)</item>
+        <item id="3423">[CLT](http://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm)</item>
+        <item id="3424">[Lei 4.923/65](http://www.planalto.gov.br/ccivil_03/leis/L4923.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+
+•	Urbanidade;
+•	Respeito;
+•	Acessibilidade;
+•	Cortesia;
+•	Presunção da boa-fé do usuário;
+•	Igualdade;
+•	Eficiência;
+•	Segurança; e
+•	Ética.</tratamento-dispensado-atendimento>
 </servico>
