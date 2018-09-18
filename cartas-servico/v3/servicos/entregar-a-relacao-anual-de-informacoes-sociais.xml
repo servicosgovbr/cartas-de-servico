@@ -10,29 +10,32 @@
 * E-mail: rais.sppe@mte.gov.br
 * Telefone: (61) 2031-6667</contato>
     <gratuito>true</gratuito>
-    <porcentagem-digital>0</porcentagem-digital>
+    <porcentagem>0</porcentagem>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="827">
+        <solicitante id="5664">
             <tipo>Pessoas Jurídicas</tipo>
             <requisitos>Que tenham ou não empregados (no caso de não ter empregados, a PJ entregará a RAIS Negativa.</requisitos>
         </solicitante>
-        <solicitante id="828">
+        <solicitante id="5665">
             <tipo>Empregadores</tipo>
             <requisitos>Com exceção dos empregadores domésticos</requisitos>
         </solicitante>
-        <solicitante id="829">
+        <solicitante id="5666">
             <tipo>Órgãos Públicos</tipo>
             <requisitos>Da Administração Direta e Indireta, das esferas federais, estaduais e municipais</requisitos>
         </solicitante>
-        <solicitante id="830">
+        <solicitante id="5667">
             <tipo>Condomínios e Sociedades Civis</tipo>
             <requisitos></requisitos>
         </solicitante>
-        <solicitante id="831">
+        <solicitante id="5668">
             <tipo>Empregadores Rurais</tipo>
             <requisitos>Que mantiveram empregados no ano base.</requisitos>
         </solicitante>
-        <solicitante id="832">
+        <solicitante id="5669">
             <tipo>Pessoa Jurídica domiciliada no Exterior</tipo>
             <requisitos>Caso tenha filiais, agências, sucursais, representações ou quaisquer outras formas de entidades vinculadas (deve apresentar as informações relacionadas aos empregados no pais).</requisitos>
         </solicitante>
@@ -41,74 +44,82 @@
         <entre min="60" max="90" unidade="dias-corridos"/>
         <descricao></descricao>
     </tempo-total-estimado>
-    <validade-documento/>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
     <etapas>
-        <etapa id="2183">
+        <etapa id="10114">
             <titulo>Fazer download do programa de preenchimento da RAIS</titulo>
             <descricao>Você deve baixar e instalar o programa gerador da RAIS no seu computador.</descricao>
             <documentos>
                 <default>
-                    <item id="2248">Não há documentação necessária nesta etapa</item>
+                    <item id="14667">Não há documentação necessária nesta etapa</item>
                 </default>
-                <caso id="345" descricao="Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
+                <caso id="1476" descricao="Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
                     <documento>
-                        <id>2245</id>
-                        <descricao>Dados do estabelecimento.</descricao>
+                        <id>2247</id>
+                        <descricao>Dados do responsável pelo estabelecimento</descricao>
                     </documento>
                     <documento>
                         <id>2246</id>
                         <descricao>Dados da entidade sindical a que a atividade está associada</descricao>
                     </documento>
                     <documento>
-                        <id>2247</id>
-                        <descricao>Dados do responsável pelo estabelecimento</descricao>
+                        <id>2245</id>
+                        <descricao>Dados do estabelecimento.</descricao>
                     </documento>
                 </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2733" tipo="web">
+                    <canal-de-prestacao id="11252" tipo="web">
                         <descricao>http://www.rais.gov.br/sitio/rais_ftp/GDRAIS2016-1.2-Setup.exe</descricao>
                     </canal-de-prestacao>
                 </default>
-                <caso id="346" descricao="Para computadores Linux">
+                <caso id="1477" descricao="Para computadores Linux">
                     <canal-de-prestacao id="2731" tipo="web">
                         <descricao>http://www.rais.gov.br/sitio/rais_ftp/GDRAIS2016-1.2-Linux-x86-Install.bin</descricao>
                     </canal-de-prestacao>
                 </caso>
-                <caso id="347" descricao="Para Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
+                <caso id="1478" descricao="Para Estabelecimentos que não tiveram empregados no ano base (RAIS NEGATIVA)">
                     <canal-de-prestacao id="2732" tipo="web">
                         <descricao>http://www.rais.gov.br/sitio/negativa.jsf</descricao>
                     </canal-de-prestacao>
                 </caso>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2184">
+        <etapa id="10115">
             <titulo>Preencher os dados da RAIS (Exceto RAIS Negativa)</titulo>
             <descricao>Você irá informar aqui os dados do seu estabelecimento (ou seus dados, no caso de empregador pessoa física) e fazer a relação de seus empregados no ano base, com suas informações funcionais.</descricao>
             <documentos>
                 <default>
-                    <item id="2249">Dados do estabelecimento/empregador</item>
-                    <item id="2250">Dados dos funcionários no ano-base</item>
-                    <item id="2251">Dados da entidade sindical a que estão associados os funcionários.</item>
-                    <item id="2252">Dados do responsável pelo estabelecimento</item>
+                    <item id="14668">Dados do estabelecimento/empregador</item>
+                    <item id="14669">Dados dos funcionários no ano-base</item>
+                    <item id="14670">Dados da entidade sindical a que estão associados os funcionários.</item>
+                    <item id="14671">Dados do responsável pelo estabelecimento</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2734" tipo="presencial">
+                    <canal-de-prestacao id="11253" tipo="presencial">
                         <descricao>Programa próprio do serviço obtido na etapa anterior</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2185">
+        <etapa id="10116">
             <titulo>Enviar a RAIS e emitir o protocolo de entrega (Exceto RAIS NEGATIVA)</titulo>
             <descricao>Terminado o preenchimento, você deverá salvar e enviar o arquivo, e em seguida imprimir o Protocolo de Entrega da RAIS</descricao>
             <documentos>
@@ -117,40 +128,48 @@
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2735" tipo="presencial">
+                    <canal-de-prestacao id="11254" tipo="presencial">
                         <descricao>Programa próprio do serviço obtido na primeira etapa.</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="2186">
+        <etapa id="10117">
             <titulo>Obter o Recibo de Entrega da RAIS</titulo>
             <descricao>Após 5 dias úteis do envio, você poderá imprimir o Recibo de Entrega da RAIS, que é o comprovante definitivo do cumprimento de sua obrigação naquele ano. O recibo só é disponibilizado no site do serviço.</descricao>
             <documentos>
                 <default>
-                    <item id="2253">Protocolo de entrega obtido no ato de envio da declaração.</item>
+                    <item id="14672">Protocolo de entrega obtido no ato de envio da declaração.</item>
                 </default>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="2736" tipo="web">
+                    <canal-de-prestacao id="11255" tipo="web">
                         <descricao>http://www.rais.gov.br/sitio/recibo_identificacao.jsf</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
     </etapas>
-    <orgao id="2844"/>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2844" dbId="37546">
+        <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
+    </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="2425">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="2426">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="2427">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="1" idServicoSegmento="2428">Cidadãos</item>
+        <item idSegmento="3" idServicoSegmento="9730">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9731">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9732">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="1" idServicoSegmento="9733">Cidadãos</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Fiscalização do Estado</item>
@@ -162,11 +181,24 @@
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="1948">Lista de funcionários</item>
-        <item id="1949">Fiscalização</item>
-        <item id="1950">Obrigações do empregador</item>
+        <item id="18725">Lista de funcionários</item>
+        <item id="18726">Fiscalização</item>
+        <item id="18727">Obrigações do empregador</item>
     </palavras-chave>
     <legislacoes>
-        <item id="648">[Decreto 76.900 de 23 de dezembro de 1975](http://www.planalto.gov.br/ccivil_03/decreto/antigos/d76900.htm)</item>
+        <item id="3427">[Decreto 76.900 de 23 de dezembro de 1975](http://www.planalto.gov.br/ccivil_03/decreto/antigos/d76900.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
+    <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+
+Urbanidade;
+Respeito;
+Acessibilidade;
+Cortesia;
+Presunção da boa-fé do usuário;
+Igualdade;
+Eficiência;
+Segurança; e
+Ética.</tratamento-dispensado-atendimento>
 </servico>
