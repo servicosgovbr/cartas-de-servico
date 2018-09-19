@@ -3,39 +3,42 @@
     <id>cadastrar-empresas-que-utilizam-benzeno</id>
     <dbId>833</dbId>
     <nome>Cadastrar empresas que utilizam Benzeno</nome>
-    <sigla>CETRAB</sigla>
+    <sigla></sigla>
     <nomes-populares>
-        <item id="3256">Benzeno</item>
+        <item id="3460">Benzeno</item>
     </nomes-populares>
     <descricao>Este serviço permite o cadastro, junto ao Ministério do Trabalho, das empresas que produzem ou lidam com Benzeno, como demanda a legislação.</descricao>
-    <contato>Departamento de Segurança e Saúde no Trabalho (Secretaria de Inspeção do Trabalho)
-* Fone: (61) 2031-6689</contato>
+    <contato>com a Coordenação-Geral de Normatização e Programas – CGNOR.
+Fone: (61) 2031-6689</contato>
     <gratuito>true</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
+    <servico-digital>true</servico-digital>
     <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="5351">
+        <solicitante id="5674">
             <tipo>Empresas</tipo>
-            <requisitos>Que produzem, transportam, armazenam, utilizam ou manipulam o produto Benzeno e suas misturas líquidas contendo 1% ou mais de volume</requisitos>
+            <requisitos>Que produzem, transportam, armazenam, utilizam ou manipulam o produto Benzeno e suas misturas líquidas contendo 1% (um por cento) ou mais de volume e aquelas por elas contratadas, no que couber.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="7" max="15" unidade="dias-corridos"/>
+        <em-media max="15" unidade="dias-uteis"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="9530">
-            <titulo>Preenchimento e entrega do formulário</titulo>
-            <descricao></descricao>
+        <etapa id="10130">
+            <titulo>Preenchimento e envio/entrega do formulário</titulo>
+            <descricao>Etapa destinada às empresas que desejam se cadastrar junto ao Departamento de Segurança e Saúde no Trabalho (DSST), da Secretaria de Inspeção do Trabalho (SIT), conforme previsto no Anexo 13-A da Norma Regulamentadora 15 e na Portaria SIT nº 207, de 11 de março de 2011.</descricao>
             <documentos>
                 <default>
-                    <item id="13583">* Formulário
-* Documentação da empresa</item>
+                    <item id="14720">- inscrição regular no CNPJ
+- preenchimento de formulário, contendo diversas informações, entre as quais a identificação da empresa, os dados de produção e o documento-base do Programa de Prevenção de Exposição Ocupacional ao Benzeno - PPEOB.</item>
+                    <item id="14721">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
                 </default>
             </documentos>
             <custos>
@@ -46,17 +49,50 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10475" tipo="web" procedimento-sistema-indisponivel="Superintendências Regionais de Trabalho e Emprego">
+                    <canal-de-prestacao id="11273" tipo="web">
+                        <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-benzeno?campaign=orgao</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11274" tipo="presencial" procedimento-sistema-indisponivel="Superintendências Regionais de Trabalho e Emprego" tempo-estimado-periodo="dias úteis" tempo-estimado-espera="1">
+                        <descricao>Nas Superintendências Regionais do Trabalho ou Gerências Regionais do Trabalho.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10131">
+            <titulo>Acompanhar o pedido</titulo>
+            <descricao>Após a solicitação realizada pelo interessado, o processo é enviado à Coordenação-Geral de Normatização e Programas (CGNOR), do DSST/SIT, e encaminhado à unidade de Segurança e Saúde do Trabalho, da Superintendência Regional do Trabalho, da unidade da Federação onde se localiza o estabelecimento ou instalação objeto do pedido, a fim de ser realizada inspeção nas instalações da empresa.</descricao>
+            <documentos>
+                <default>
+                    <item id="14722">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11275" tipo="web">
                         <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-benzeno?campaign=orgao</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="9531">
-            <titulo>Confirmação do registro</titulo>
-            <descricao>A empresa receberá ofício confirmando seu cadastro.</descricao>
+        <etapa id="10132">
+            <titulo>Receber resposta sobre o pedido</titulo>
+            <descricao>Após a inspeção, o pedido pode ser:
+- deferido: será enviado ofício ao interessado, assinado pelo Diretor do DSST;
+- indeferido: a solicitação será devolvida à empresa, solicitando mais informações ou correções.</descricao>
             <documentos>
-                <default/>
+                <default>
+                    <item id="14723">**Se realizado pela Web**
+- CPF
+- Senha do Brasil Cidadão</item>
+                </default>
             </documentos>
             <custos>
                 <default/>
@@ -66,7 +102,7 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="10476" tipo="web">
+                    <canal-de-prestacao id="11276" tipo="web">
                         <descricao>https://www.servicos.gov.br/servico/cadastrar-empresas-que-utilizam-benzeno?campaign=orgao</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -77,22 +113,23 @@
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="9253">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9741">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Combustíveis</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="17724">Benzeno</item>
-        <item id="17725">Insalubridade</item>
-        <item id="17726">Norma Regulamentadora nº 15</item>
-        <item id="17727">empresa</item>
-        <item id="17728">cadastro</item>
+        <item id="18742">Benzeno</item>
+        <item id="18743">Insalubridade</item>
+        <item id="18744">Norma Regulamentadora nº 15</item>
+        <item id="18745">empresa</item>
+        <item id="18746">cadastro</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3169">[NR-15 ATIVIDADES E OPERAÇÕES INSALUBRES (115.000-6)](http://sislex.previdencia.gov.br/paginas/05/mtb/15.htm)</item>
+        <item id="3432">[Anexo 13-A da Norma Regulamentadora 15 do Ministério do Trabalho](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/normatizacao/normas-regulamentadoras)</item>
+        <item id="3433">[Portaria SIT nº 207, de 11 de março de 2011](http://trabalho.gov.br/seguranca-e-saude-no-trabalho/legislacao/itemlist/category/700-sst-portarias-2011)</item>
     </legislacoes>
-    <condicoes-acessibilidade>.</condicoes-acessibilidade>
-    <tratamento-prioritario>.</tratamento-prioritario>
-    <tratamento-dispensado-atendimento>.</tratamento-dispensado-atendimento>
+    <condicoes-acessibilidade>****</condicoes-acessibilidade>
+    <tratamento-prioritario>****</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>****</tratamento-dispensado-atendimento>
 </servico>
