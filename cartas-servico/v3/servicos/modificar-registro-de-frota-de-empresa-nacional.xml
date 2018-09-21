@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>modificar-registro-de-frota-de-empresa-nacional</id>
+    <dbId>4566</dbId>
+    <nome>Modificar registro de frota de empresa nacional</nome>
+    <sigla></sigla>
+    <descricao>&lt;p style="justify"&gt;Compreende a solicitação de inclusão, exclusão ou alteração de dados de veículos da frota de transportador brasileiro que detenha Licença Originária, concedida pela Agência Nacional de Transportes Terrestres – ANTT, para realização de transporte rodoviário internacional de cargas.&lt;/p&gt;</descricao>
+    <contato>Entre em contato com a Ouvidoria da ANTT por meio do site www.antt.gov.br ou pelo telefone 166.</contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5706">
+            <tipo>Empresas e cooperativas de transportadores rodoviários internacionais de cargas já autorizados pela ANTT.</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <ate max="3" unidade="dias-uteis"/>
+        <descricao>Esse prazo começa a contar a partir do recebimento dos documentos pela ANTT.</descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="10209">
+            <titulo>Verificar requisitos dos veículos</titulo>
+            <descricao>&lt;p style="justify"&gt;Os veículos devem atender os requisitos em termos de estabelecidos em acordos internacionais previsto nas Resoluções MERCOSUL/GMC/RES. nº 25/11 e nº 26/11, aprovadas na LXXXVI Reunião do Grupo Mercado Comum – GMC em 18 de novembro de 2011, considerando os valores de carga útil informados &lt;a href="https://servicos.nuvem.gov.br/pagina-tematica/requisitos-de-veiculos-para-frotas-nacionais" target="_blank"&gt;aqui&lt;/a&gt;.&lt;/p&gt;</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11386" tipo="presencial">
+                        <descricao>Local onde se encontram os veículos da frota objeto do serviço.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10210">
+            <titulo>Gerar boleto e Pagar a taxa</titulo>
+            <descricao>&lt;p&gt;A GRU deve ser emitida utilizando-se os seguintes dados:&lt;/p&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Unidade favorecida&lt;/b&gt;: 393001/39250 - Agência Nacional de Transportes Terrestres&lt;/li&gt;&lt;li&gt;&lt;b&gt;Código de recolhimento&lt;/b&gt;: 28830-6&lt;/li&gt;&lt;li&gt;&lt;b&gt;Número de referência&lt;/b&gt;: 105&lt;/li&gt;&lt;li&gt;&lt;b&gt;Nome do contribuinte&lt;/b&gt;: Informar o nome do recolhedor, pessoa física ou jurídica.&lt;/li&gt;&lt;li&gt;&lt;b&gt;CPF ou CNPJ&lt;/b&gt;: informar o CPF ou CNPJ do recolhedor, conforme o caso.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Valor total&lt;/b&gt;: valor calculado para pagamento.&lt;/li&gt;&lt;/ul&gt;</descricao>
+            <documentos>
+                <default>
+                    <item id="14782">GRU</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="992">
+                        <descricao>Emolumento Para cada ligação: R$10,00 + (nº de placas x R$5,00)</descricao>
+                        <moeda>R$</moeda>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11388" tipo="presencial">
+                        <descricao>Exclusivamente em &lt;a href="https://www36.bb.com.br/encontreobb/s001t026p001,500830,500831,1,1,1,1.bb#/" target="_blank"&gt;uma agência do Banco do Brasil&lt;/a&gt;.</descricao>
+                    </canal-de-prestacao>
+                </default>
+                <caso id="1491" descricao="Para gerar a GRU">
+                    <canal-de-prestacao id="11387" tipo="web">
+                        <descricao>https://appweb.antt.gov.br/gru/index.asp</descricao>
+                    </canal-de-prestacao>
+                </caso>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10211">
+            <titulo>Enviar formulários e documentação</titulo>
+            <descricao>Devem ser encaminhados o formulário e anexados os documentos.</descricao>
+            <documentos>
+                <default>
+                    <item id="14792">Comprovante de pagamento de emolumento. Não são aceitos comprovantes de agendamento.</item>
+                    <item id="14793">Cópia do CRLV vigente (ano em curso ou ano anterior)</item>
+                </default>
+                <caso id="1492" descricao="Veículos de cooperados:">
+                    <documento>
+                        <id>14783</id>
+                        <descricao>Cópia autenticada do CRLV vigente (ano em curso ou ano anterior), juntamente com a comprovação de que o proprietário é cooperado.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1493" descricao="Veículos arrendados/locados:">
+                    <documento>
+                        <id>14784</id>
+                        <descricao>Além disso, o contrato deverá apresentar as seguintes informações dos veículos: tipo, ano, marca, modelo, chassis, número de eixos e placa</descricao>
+                    </documento>
+                    <documento>
+                        <id>14785</id>
+                        <descricao>"A LOCATÁRIA obriga-se à contratação de Seguro Obrigatório de Responsabilidade Civil, nos termos da legislação específica vigente e destinado à reparação dos danos causados a terceiros, em decorrência da utilização dos veículos locados.
+Parágrafo único. A LOCATÁRIA responderá pelos prejuízos que excederem os limites previstos em lei, para o mencionado seguro compulsório."</descricao>
+                    </documento>
+                    <documento>
+                        <id>14786</id>
+                        <descricao>Cópia autenticada do CRLV vigente (ano em curso ou ano anterior), constando a anotação do contrato de aluguel ou arrendamento não vinculado ao financiamento do veículo ou;</descricao>
+                    </documento>
+                    <documento>
+                        <id>14787</id>
+                        <descricao>Cópia autenticada dos contratos de locação dos veículos firmados entre o proprietário do veículo e a empresa, registrado em cartório. Nesse caso, o contrato de locação deve conter a seguinte cláusula contratual:</descricao>
+                    </documento>
+                    <documento>
+                        <id>14788</id>
+                        <descricao>Caso a anotação não esteja registrada no CRLV vigente, encaminhar a certidão de arrendamento, por meio eletrônico, e advinda diretamente do órgão competente ou;</descricao>
+                    </documento>
+                </caso>
+                <caso id="1494" descricao="Veículos que apresentem no campo de observações pendência judicial:">
+                    <documento>
+                        <id>14789</id>
+                        <descricao>Permissão expressa do Juízo</descricao>
+                    </documento>
+                </caso>
+                <caso id="1495" descricao="Veículos que apresentem no campo de observações pendência judicial/administrativa:">
+                    <documento>
+                        <id>14790</id>
+                        <descricao>Documento comprovando se tratar de pendência administrativa ou permissão expressa do Juízo, para o caso de pendência judicial.</descricao>
+                    </documento>
+                </caso>
+                <caso id="1496" descricao="Veículos que não possuem CRLV">
+                    <documento>
+                        <id>14791</id>
+                        <descricao>Licença para trânsito vigente.</descricao>
+                    </documento>
+                </caso>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11389" tipo="postal">
+                        <descricao>Para uma &lt;a href="http://www.antt.gov.br/textogeral/Enderecos.html" target="_blank"&gt;unidade da ANTT&lt;/a&gt;.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10212">
+            <titulo>Receber resultado</titulo>
+            <descricao>O resultado poderá ser deferimento, pendências ou indeferimento. Se deferido o pedido, será emitida a Licença Originária.</descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11390" tipo="e-mail">
+                        <descricao>E-mail informado pelo usuário no formulário.</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/54793" dbId="913">
+        <nomeOrgao>Agência Nacional de Transportes Terrestres (ANTT)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9796">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Transporte Rodoviário</item>
+        <item>Transportes</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="18869">frota</item>
+        <item id="18870">registro</item>
+        <item id="18871">caminhão</item>
+    </palavras-chave>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000​&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
+</servico>
