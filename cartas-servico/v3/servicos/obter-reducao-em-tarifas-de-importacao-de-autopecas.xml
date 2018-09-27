@@ -5,56 +5,87 @@
     <nome>Obter redução em tarifas de importação de autopeças</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="1109">Regime Automotivo (ACE 14)</item>
+        <item id="3519">Regime Automotivo (ACE 14)</item>
     </nomes-populares>
-    <descricao>Habilitação de usuário no Regime Automotivo (ACE 14) para usufruto de redução em tarifas de importação de autopeças.</descricao>
+    <descricao>Habilitação de empresas automotivas para acesso a benefícios de redução tarifária previstos no acordo sobre a Política Automotiva Comum, firmado entre Brasil e Argentina (anexo ao Trigésimo Oitavo Protocolo Adicional ao Acordo de Complementação Econômica nº 14, internalizado na ordem jurídica nacional pelo Decreto nº 6.500, de 2 de julho de 2008), e na Resolução Camex nº 61, de 23 de junho de 2015.</descricao>
     <contato></contato>
     <gratuito>true</gratuito>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://solicitacao.servicos.gov.br/processos/iniciar</link-servico-digital>
     <solicitantes>
-        <solicitante id="1682">
+        <solicitante id="5745">
             <tipo>Empresas do setor automotivo</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <ate max="7" unidade="dias-corridos"/>
+        <ate max="10" unidade="dias-uteis"/>
         <descricao></descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="3578">
-            <titulo>Protocolar requerimento</titulo>
-            <descricao>Encaminhamento da solicitação e abertura de processo;</descricao>
+        <etapa id="10323">
+            <titulo>Preencher formulário eletrônico</titulo>
+            <descricao></descricao>
             <documentos>
                 <default>
-                    <item id="5146">Carta/ofício solicitando a habilitação (assinado por mandatário da empresa – ver a ata de assembleia geral ou contrato social, conforme o caso - ou por detentor de procuração pública)</item>
-                    <item id="5147">Anexo II da Portaria MDIC nº 160/2008, devidamente preenchido</item>
-                    <item id="5148">Cópia do cartão de identificação de inscrição no Cadastro Nacional de Pessoa Jurídica – CNPJ</item>
-                    <item id="5149">Cópia da Certidão Negativa (ou Positiva com efeito de Negativa) de Débitos Relativos aos Tributos Federais e à Dívida Ativa da União</item>
-                    <item id="5150">Certificado de Regularidade do FGTS, emitido pela Caixa Econômica Federal</item>
+                    <item id="14949">Procuração pública (ou particular com firma reconhecida) ou instrumento jurídico válido que confira ao titular do CPF solicitante poder de representação da pessoa jurídica requerente junto ao DECEX;</item>
+                    <item id="14950">Declaração, firmada pelos representantes legais da empresa, de que mais de 25% do valor de seu faturamento líquido anual é decorrente de venda de bens de sua produção de “Produtos Automotivos” e/ou ao mercado de reposição (APENAS PARA EMPRESAS FABRICANTES DE AUTOPEÇAS – ver art. 2º, inciso IV, e art. 6º, § 2º, da Portaria MDIC nº 160/2008).</item>
                 </default>
-                <caso id="581" descricao="Fabricantes de peças, conjuntos e subconjuntos">
-                    <documento>
-                        <id>5145</id>
-                        <descricao>Declaração de que mais de 25% do valor de seu faturamento líquido anual é decorrente de venda de bens de sua produção dos “Produtos Automotivos”, e/ou ao mercado de reposição de autopeças.</descricao>
-                    </documento>
-                </caso>
             </documentos>
             <custos>
                 <default/>
             </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="4571" tipo="presencial">
-                        <descricao>**Ministério da Indústria e Comércio Exterior e Serviços** - Esplanada dos Ministérios, Bloco J, Protocolo - Brasília/DF - CEP 70.053.900</descricao>
+                    <canal-de-prestacao id="11515" tipo="web">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar</descricao>
                     </canal-de-prestacao>
-                    <canal-de-prestacao id="4572" tipo="postal">
-                        <descricao>**Ministério da Indústria e Comércio Exterior e Serviços** - Esplanada dos Ministérios, Bloco J, Protocolo - Brasília/DF - CEP 70.053.900</descricao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10324">
+            <titulo>Aguardar análise técnica</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11516" tipo="web-acompanhar">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10325">
+            <titulo>Receber resultado da análise</titulo>
+            <descricao></descricao>
+            <documentos>
+                <default/>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11517" tipo="web">
+                        <descricao>http://solicitacao.servicos.gov.br/processos/iniciar</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -64,7 +95,7 @@
         <nomeOrgao>Ministério da Indústria, Comércio Exterior e Serviços (MDIC)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="3564">Empresas</item>
+        <item idSegmento="3" idServicoSegmento="9869">Empresas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Administração financeira</item>
@@ -75,11 +106,26 @@
         <item>Comercio externo</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="4963">tarifas de importação</item>
-        <item id="4964">redução</item>
-        <item id="4965">ace14</item>
+        <item id="18988">tarifas de importação</item>
+        <item id="18989">redução</item>
+        <item id="18990">ace14</item>
     </palavras-chave>
     <legislacoes>
-        <item id="1460">[DECRETO Nº 6.500, DE 2 DE JULHO DE 2008](http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Decreto/D6500.htm)</item>
+        <item id="3458">[DECRETO Nº 6.500, DE 2 DE JULHO DE 2008](http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Decreto/D6500.htm)</item>
     </legislacoes>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
 </servico>
