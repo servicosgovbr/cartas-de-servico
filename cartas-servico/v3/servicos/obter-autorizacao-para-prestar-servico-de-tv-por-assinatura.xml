@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servico xsi:schemaLocation="http://servicos.gov.br/v3/schema.../servico.xsd" xmlns="http://servicos.gov.br/v3/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>obter-autorizacao-para-prestar-servico-de-tv-por-assinatura</id>
+    <dbId>3081</dbId>
+    <nome>Obter autorização para prestar serviço de TV por Assinatura</nome>
+    <sigla></sigla>
+    <nomes-populares>
+        <item id="3559">Serviço de Acesso Condicionado (SeAC)</item>
+    </nomes-populares>
+    <descricao>É o serviço de telecomunicações de interesse coletivo prestado no regime privado, destinado à distribuição de conteúdos audiovisuais na forma de pacotes de canais de programação.</descricao>
+    <contato></contato>
+    <gratuito>false</gratuito>
+    <porcentagem-manual>false</porcentagem-manual>
+    <servico-digital>false</servico-digital>
+    <link-servico-digital></link-servico-digital>
+    <solicitantes>
+        <solicitante id="5792">
+            <tipo>Operadoras de TV por assinatura</tipo>
+            <requisitos></requisitos>
+        </solicitante>
+    </solicitantes>
+    <tempo-total-estimado>
+        <entre min="31" max="60" unidade="dias-corridos"/>
+        <descricao></descricao>
+    </tempo-total-estimado>
+    <validade-documento>
+        <descricao></descricao>
+    </validade-documento>
+    <etapas>
+        <etapa id="10410">
+            <titulo>Requisitar autorização</titulo>
+            <descricao>Entrega da documentação</descricao>
+            <documentos>
+                <default>
+                    <item id="15144">CNPJ</item>
+                    <item id="15145">Contrato Social</item>
+                    <item id="15146">Procuração do representante legal</item>
+                    <item id="15147">Registro da Junta Comercial</item>
+                    <item id="15148">Comprovante de inscrição estadual e municipal</item>
+                    <item id="15149">Declarações</item>
+                    <item id="15150">ART</item>
+                    <item id="15151">Certidão de registro no CREA</item>
+                    <item id="15152">Projeto Técnico</item>
+                    <item id="15153">Demonstrações contábeis do último exercício</item>
+                    <item id="15154">Certidão negativa de falência/concordada/recuperação judicial</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11683" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10411">
+            <titulo>Pagar taxa do serviço</titulo>
+            <descricao>Realizar pagamento na rede bancária e enviar comprovante pelos canais abaixo apontados.</descricao>
+            <documentos>
+                <default>
+                    <item id="15155">Comprovante de pagamento</item>
+                </default>
+            </documentos>
+            <custos>
+                <default>
+                    <custo id="1027">
+                        <descricao>Preço Público pelo Direito de Exploração de Serviços de Telecomunicações e pelo Direito de Exploração de Satélite</descricao>
+                        <moeda>R$</moeda>
+                        <valor>9.000,00</valor>
+                        <valorVariavel></valorVariavel>
+                        <statusCustoVariavel>0</statusCustoVariavel>
+                    </custo>
+                </default>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11684" tipo="e-mail">
+                        <descricao>orle@anatel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11685" tipo="web">
+                        <descricao>http://sistemas.anatel.gov.br/se</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+        <etapa id="10412">
+            <titulo>Assinar termo de autorização</titulo>
+            <descricao>Assinatura do Termo de autorização e comprovação da regularidade fiscal</descricao>
+            <documentos>
+                <default>
+                    <item id="15156">Certidões da Receita Federal</item>
+                    <item id="15157">Certidões de regularidade perante as receitas estadual e municipal</item>
+                    <item id="15158">Certificado de Regularidade do FGTS - CRF</item>
+                    <item id="15159">Certidão referente a débitos trabalhistas.</item>
+                    <item id="15160">Termo de autorização</item>
+                </default>
+            </documentos>
+            <custos>
+                <default/>
+            </custos>
+            <tempo-total-estimado>
+                <nao-estimado-ainda/>
+            </tempo-total-estimado>
+            <canais-de-prestacao>
+                <default>
+                    <canal-de-prestacao id="11687" tipo="web">
+                        <descricao>http://www.anatel.gov.br/institucional/processo-eletronico</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11686" tipo="presencial">
+                        <descricao>Em uma [Unidade da ANATEL](http://www.anatel.gov.br/institucional/institucional-menu/estrutura-organizacional/87-lei-de-acesso-a-informacao/institucional/145-superintendencia-de-fiscalizacao)</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11688" tipo="e-mail">
+                        <descricao>orle@anatel.gov.br</descricao>
+                    </canal-de-prestacao>
+                    <canal-de-prestacao id="11689" tipo="postal">
+                        <descricao>Para uma [Unidade da ANATEL](http://www.anatel.gov.br/institucional/institucional-menu/estrutura-organizacional/87-lei-de-acesso-a-informacao/institucional/145-superintendencia-de-fiscalizacao)</descricao>
+                    </canal-de-prestacao>
+                </default>
+            </canais-de-prestacao>
+        </etapa>
+    </etapas>
+    <orgao id="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/25064" dbId="911">
+        <nomeOrgao>Agência Nacional de Telecomunicações (ANATEL)</nomeOrgao>
+    </orgao>
+    <segmentos-da-sociedade>
+        <item idSegmento="3" idServicoSegmento="9946">Empresas</item>
+    </segmentos-da-sociedade>
+    <areas-de-interesse>
+        <item>Comércio e Serviços</item>
+        <item>Comunicações</item>
+        <item>Telecomunicações</item>
+    </areas-de-interesse>
+    <palavras-chave>
+        <item id="19200">tv a cabo</item>
+        <item id="19201">tv paga</item>
+        <item id="19202">canais pagos</item>
+    </palavras-chave>
+    <condicoes-acessibilidade>&lt;p style="text-align:justify"&gt;O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.&lt;/p&gt;</condicoes-acessibilidade>
+    <tratamento-prioritario>&lt;p style="text-align:justify"&gt;Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000.&lt;/p&gt;</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>&lt;p style="text-align:justify"&gt;O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:&lt;/p&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Urbanidade;&lt;/li&gt;
+&lt;li&gt;Respeito;&lt;/li&gt;
+&lt;li&gt;Acessibilidade;&lt;/li&gt;
+&lt;li&gt;Cortesia;&lt;/li&gt;
+&lt;li&gt;Presunção da boa-fé do usuário;&lt;/li&gt;
+&lt;li&gt;Igualdade;&lt;/li&gt;
+&lt;li&gt;Eficiência;&lt;/li&gt;
+&lt;li&gt;Segurança; e&lt;/li&gt;
+&lt;li&gt;Ética.&lt;/li&gt;
+&lt;/ul&gt;</tratamento-dispensado-atendimento>
+</servico>
