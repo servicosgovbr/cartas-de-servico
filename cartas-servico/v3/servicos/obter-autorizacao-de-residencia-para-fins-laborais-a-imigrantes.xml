@@ -5,47 +5,44 @@
     <nome>Obter autorização de residência para fins laborais a imigrantes</nome>
     <sigla></sigla>
     <nomes-populares>
-        <item id="3500">Migranteweb</item>
+        <item id="3501">Autorização de Trabalho</item>
     </nomes-populares>
-    <descricao>Serviço que proporciona ao imigrante ou interessado obter autorização de residência para fins laborais nos termos da Lei de Migração.</descricao>
-    <contato>Ramais de telefones exclusivos para atendimento ao imigrante ou interessado
-•	(61) 2031-6216
-•	(61) 2031-4193
-        Portal do Ministério do Trabalho – Página imigração
-•	http://www.trabalho.gov.br/trabalho-estrangeiro</contato>
+    <descricao>Este serviço proporciona ao imigrante ou interessado obter autorização de residência para fins laborais nos termos da Lei de Migração 13.445/2017.</descricao>
+    <contato>Portal do Ministério do Trabalho – Página imigração: http://www.trabalho.gov.br/trabalho-estrangeiro</contato>
     <gratuito>false</gratuito>
     <porcentagem>0</porcentagem>
     <porcentagem-manual>false</porcentagem-manual>
-    <servico-digital>false</servico-digital>
-    <link-servico-digital></link-servico-digital>
+    <servico-digital>true</servico-digital>
+    <link-servico-digital>http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</link-servico-digital>
     <solicitantes>
-        <solicitante id="5700">
-            <tipo>Imigrantes que pretendam exercer atividade laboral no Brasil.</tipo>
-            <requisitos></requisitos>
+        <solicitante id="5702">
+            <tipo>Imigrante que pretenda exercer atividade laboral no Brasil.</tipo>
+            <requisitos>[Clique aqui](http://trabalho.gov.br/trabalho-estrangeiro "Clique aqui")</requisitos>
         </solicitante>
-        <solicitante id="5701">
+        <solicitante id="5703">
             <tipo>Interessado ou pessoas físicas ou jurídicas que desejam utilizar mão de obra imigrante.</tipo>
             <requisitos></requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
-        <entre min="20" max="40" unidade="dias-corridos"/>
-        <descricao></descricao>
+        <ate max="30" unidade="dias-corridos"/>
+        <descricao>- Processos instruídos corretamente: até 30 (trinta) dias, prorrogáveis se necessário.
+ 
+- Processos que entram “em exigência”: até 60 (trinta), prorrogáveis se necessário.</descricao>
     </tempo-total-estimado>
     <validade-documento>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="10197">
-            <titulo>Cadastro no Sistema de Gestão e Controle de Imigração (MIGRANTEWEB)</titulo>
-            <descricao>Acessar http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</descricao>
+        <etapa id="10201">
+            <titulo>Realizar o cadastro no Sistema de Gestão e Controle de Imigração (MIGRANTEWEB)</titulo>
+            <descricao>Acessar o Sistema [MIGRANTEWEB](http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web "Clique aqui") e preencher o formulário eletrônico com as informações solicitadas.</descricao>
             <documentos>
                 <default>
-                    <item id="14778">Preencher o formulário eletrônico, com as seguintes informações:
-•	CPF, documento de viagem ou Registro Nacional Migratório;
-•	Nome;
-•	E-mail;
-•	Telefone.</item>
+                    <item id="14780">CPF, documento de viagem ou Registro Nacional Migratório</item>
+                    <item id="15487">Nome</item>
+                    <item id="15488">E-mail</item>
+                    <item id="15489">Telefone</item>
                 </default>
             </documentos>
             <custos>
@@ -56,25 +53,25 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11373" tipo="web">
-                        <descricao>O pedido deve ser protocolado por meio de correio eletrônico documentos.cgig@mte.gov.br.</descricao>
+                    <canal-de-prestacao id="11377" tipo="web" procedimento-sistema-indisponivel="Entrar em contato com a Coordenação Geral de imigração por meio do e-mail migranteweb@mte.gov.br enviando &quot;print&quot; das telas demonstrando o erro ou a indisponibilidade.">
+                        <descricao>http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="10198">
+        <etapa id="10202">
             <titulo>Protocolar o pedido de autorização de residência para fins laborais no Sistema de Gestão e Controle de Imigração (MIGRANTEWEB)</titulo>
-            <descricao>Acessar http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</descricao>
+            <descricao>Acessar o Sistema [MIGRANTEWEB](http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web "Clique aqui") para protocolar o pedido de autorização de residência para fins laborais.</descricao>
             <documentos>
                 <default>
-                    <item id="14779">•	Certificado digital;
-•	Documentos exigidos pela Resolução Normativa que fundamenta o pedido, que pode ser consultada em:  http://www.trabalho.gov.br/trabalho-estrangeiro/nova-legislacao/itemlist/category/734-resolucoes-normativas-nova-lei
-•	Cópia da Guia de Recolhimento da União referente à taxa de processamento e avaliação de pedido de autorização de residência e do comprovante de pagamento. A guia pode ser gerada em: https://bit.ly/2NTsjhr</item>
+                    <item id="14781">Certificado digital;</item>
+                    <item id="15490">Documentos exigidos pela Resolução Normativa nº 01/2017 que pode ser consultada [Aqui](http://www.trabalho.gov.br/trabalho-estrangeiro "Clique aqui");</item>
+                    <item id="15491">Cópia da Guia de Recolhimento da União referente à taxa de processamento e avaliação de pedido de autorização de residência e do comprovante de pagamento. A guia pode ser gerada [Aqui](https://bit.ly/2NTsjhr "Clique aqui")</item>
                 </default>
             </documentos>
             <custos>
                 <default>
-                    <custo id="990">
+                    <custo id="991">
                         <descricao>Taxa de processamento e avaliação de pedido de autorização de residência</descricao>
                         <moeda>R$</moeda>
                         <valor>168,13</valor>
@@ -88,19 +85,21 @@
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11374" tipo="web">
-                        <descricao>O pedido deve ser protocolado por meio de correio eletrônico documentos.cgig@mte.gov.br.</descricao>
+                    <canal-de-prestacao id="11378" tipo="web" procedimento-sistema-indisponivel="O interessado deve comunicar o erro ou a indisponibilidade no e-mail migranteweb@mte.gov.br e aguardar o restabelecimento do sistema.">
+                        <descricao>http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="10199">
-            <titulo>Processamento e concessão da autorização de residência</titulo>
-            <descricao>a)	Análise feita pela equipe técnica.
-b)	O pedido instruído corretamente será deferido.
-c)	Detectada falha na instrução, o processo entra “em exigência” e será aberto prazo para as devidas correções.
-•	O imigrante/interessado receberá a notificação por e-mail, no endereço cadastrado no momento da protocolização do pedido.
-d)	Após as correções, haverá reanálise e consequentemente o deferimento ou o indeferimento do pedido. Consulta dos trâmites do processo é feita no: https://bit.ly/2NQo2LK</descricao>
+        <etapa id="10203">
+            <titulo>Receber concessão da autorização de residência</titulo>
+            <descricao>Após a análise feita pela equipe técnica, o pedido instruído corretamente será deferido. 
+
+Detectada falha na instrução, o processo entra “em exigência” e será aberto prazo para as devidas correções. 
+
+O imigrante/interessado receberá a notificação por e-mail, no endereço cadastrado no momento da protocolização do pedido. 
+
+Após as correções, haverá reanálise e o deferimento ou o indeferimento do pedido. Consulte os trâmites dos processos [Aqui](https://bit.ly/2NQo2LK "Clique aqui")</descricao>
             <documentos>
                 <default/>
             </documentos>
@@ -112,33 +111,8 @@ d)	Após as correções, haverá reanálise e consequentemente o deferimento ou 
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11375" tipo="web">
-                        <descricao>A etapa de processamento é realizada pelo MTb por meio de análise de documento digital apresentado anteriormente no Sistema MIGRANTEWEB.</descricao>
-                    </canal-de-prestacao>
-                </default>
-            </canais-de-prestacao>
-        </etapa>
-        <etapa id="10200">
-            <titulo>Tempo previsto entre a solicitação e o deferimento</titulo>
-            <descricao>•	Processos instruídos corretamente: entre 20 e 30 dias
-•	Processos que entram “em exigência”: entre 30 e 40 dias</descricao>
-            <documentos>
-                <default/>
-            </documentos>
-            <custos>
-                <default/>
-            </custos>
-            <tempo-total-estimado>
-                <nao-estimado-ainda/>
-            </tempo-total-estimado>
-            <canais-de-prestacao>
-                <default>
-                    <canal-de-prestacao id="11376" tipo="web" procedimento-sistema-indisponivel="Informações ao imigrante ou interessado:  • e-mail: imigrante@mte.gov.br  Orientação ou esclarecimento de ordem geral. Ou seja, procedimentos, legislação, prazos, entre outros.  • e-mail: migranteweb@mte.gov.br  Orientação para acessar o sistema MIGRANTEWEB ou orientações para o primeiro acesso.  • e-mail: documentos.cgig@mte.gov.br  Envio documentos (em casos excepcionais), solicitação de retificações de publicações do Diário Oficial da União, solicitar reconsideração do indeferimento de solicitação de autorização de residência.  • e-mail: cancelamento.cgig@mte.gov.br">
-                        <descricao>Canal para solicitação do cancelamento da autorização de residência concedida pelo MTb, o arquivamento do processo de solicitação de autorização de residência, cessação de autorização de residência, entre outros.
-
-•	e-mail: suporte.imigração@mte.gov.br
-
-Canal direto entre a Coordenação Geral de Imigração do MTb e as Unidades do Ministério localizadas nos outros estados para dirimir dúvidas de atendimento e comunicação a respeito de atualização de legislação, procedimentos e avisos em geral.</descricao>
+                    <canal-de-prestacao id="11379" tipo="web" procedimento-sistema-indisponivel="Comunicar a indisponibilidade no e-mail: migranteweb@mte.gov.br e aguardar as  orientações.">
+                        <descricao>http://www.trabalho.gov.br/trabalho-estrangeiro/migrante-web</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
@@ -148,10 +122,10 @@ Canal direto entre a Coordenação Geral de Imigração do MTb e as Unidades do 
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="3" idServicoSegmento="9783">Empresas</item>
-        <item idSegmento="1" idServicoSegmento="9784">Cidadãos</item>
-        <item idSegmento="2" idServicoSegmento="9785">Órgãos e entidades públicas</item>
-        <item idSegmento="4" idServicoSegmento="9786">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9787">Empresas</item>
+        <item idSegmento="1" idServicoSegmento="9788">Cidadãos</item>
+        <item idSegmento="2" idServicoSegmento="9789">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9790">Demais segmentos (ONGs, organizações sociais, etc)</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Trabalho</item>
@@ -161,22 +135,28 @@ Canal direto entre a Coordenação Geral de Imigração do MTb e as Unidades do 
         <item>Relações de Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="18855">permissão</item>
-        <item id="18856">visto</item>
-        <item id="18857">imigrante</item>
+        <item id="18860">imigrante</item>
+        <item id="18858">estrangeiro</item>
+        <item id="18859">autorização</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3447">LEI Nº 13.445, DE 24 DE MAIO DE 2017 - hhttp://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Lei/L13445.htm#art124
-DECRETO Nº 9.199, DE 20 DE NOVEMBRO DE 2017 - http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9199.html
-Resoluções Normativas do Conselho Nacional de Imigração - http://www.trabalho.gov.br/trabalho-estrangeiro/nova-legislacao/itemlist/category/734-resolucoes-normativas-nova-lei</item>
+        <item id="3522">DECRETO Nº 9.199, DE 20 DE NOVEMBRO DE 2017 [Acessar](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9199.html)</item>
+        <item id="3523">Resoluções Normativas do Conselho Nacional de Imigração [Acessar](http://www.trabalho.gov.br/trabalho-estrangeiro/nova-legislacao/itemlist/category/734-resolucoes-normativas-nova-lei)</item>
+        <item id="3524">LEI Nº 13.445, DE 24 DE MAIO DE 2017 [Acessar](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Lei/L13445.htm#art124)</item>
     </legislacoes>
-    <condicoes-acessibilidade>O sistema é totalmente eletrônico não necessitando de atendimento presencial, exceto em casos especiais, nos quais o imigrante/interessado deve comparecer ao Ministério do Trabalho para atendimento presencial.</condicoes-acessibilidade>
-    <tratamento-prioritario>Devido à natureza não-presencial da prestação do serviço, os casos que demandam atendimento preferencial são avaliados pelo Coordenador Geral de Imigração.</tratamento-prioritario>
-    <tratamento-dispensado-atendimento>O imigrante/interessado dispõe dos canais de comunicação abaixo, além de atendimento presencial.
-imigrante@mte.gov.br
+    <condicoes-acessibilidade>O sistema é totalmente eletrônico, não necessitando de atendimento presencial.</condicoes-acessibilidade>
+    <tratamento-prioritario>Devido à natureza não-presencial da prestação do serviço, os casos que demandam atendimento preferencial são avaliados pelo Coordenador Geral de Imigração, nos termos da legislação aplicável.</tratamento-prioritario>
+    <tratamento-dispensado-atendimento>O usuário deverá receber, conforme os princípios expressos na lei nº 13.460/17, um atendimento pautado nas seguintes diretrizes:
+Urbanidade;
+Respeito;
+Acessibilidade;
+Cortesia;
+Presunção da boa-fé do usuário;
+Igualdade;
+Eficiência;
+Segurança; e
+Ética.
+Canais de comunicação: 
 migranteweb@mte.gov.br
-suporte.imigração@mte.gov.br
-Ramais de telefones exclusivos para atendimento ao imigrante ou interessado
-(61) 2031-6216
-(61) 2031-4193</tratamento-dispensado-atendimento>
+imigrante.cgig@mte.gov.br</tratamento-dispensado-atendimento>
 </servico>
