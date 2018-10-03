@@ -5,11 +5,11 @@
     <nome>Cadastrar entidades e cursos no Cadastro Nacional de Aprendizagem Profissional</nome>
     <sigla>CNAP</sigla>
     <nomes-populares>
-        <item id="3455">Juventudeweb</item>
-        <item id="3456">Mais Aprendiz</item>
-        <item id="3457">Aprendizagem</item>
+        <item id="3489">Juventudeweb</item>
+        <item id="3490">Mais Aprendiz</item>
+        <item id="3491">Aprendizagem</item>
     </nomes-populares>
-    <descricao>É um serviço para as entidades que oferecem cursos técnico-profissionais possam cumprir a obrigação de se inscrever, e inscrever a seus cursos, no Cadastro Nacional de Aprendizagem.</descricao>
+    <descricao>É um serviço para que as entidades que oferecem cursos técnico-profissionais possam cumprir a obrigação de se inscrever, bem como de inscrever seus cursos, no Cadastro Nacional de Aprendizagem (CNAP).</descricao>
     <contato>Departamento de Políticas e Empregabilidade
 fone: (61) 2031 6816 (08h às 12h e 14h às 18h)</contato>
     <gratuito>true</gratuito>
@@ -18,21 +18,26 @@ fone: (61) 2031 6816 (08h às 12h e 14h às 18h)</contato>
     <servico-digital>false</servico-digital>
     <link-servico-digital></link-servico-digital>
     <solicitantes>
-        <solicitante id="5661">
-            <tipo>Escolas técnicas de educação (inclusive agrotécnicas)</tipo>
+        <solicitante id="5849">
+            <tipo>Escolas técnicas de educação (inclusive escolas agrotécnicas)</tipo>
             <requisitos></requisitos>
         </solicitante>
-        <solicitante id="5662">
-            <tipo>Entidades Sem fins lucrativos</tipo>
-            <requisitos>Que tenham por objetivos a assistência ao adolescente e à educação profissional, registradas no Conselho Municipal dos Direitos da Criança e do Adolescente, e com estrutura adequada ao Programa proposto.</requisitos>
+        <solicitante id="5850">
+            <tipo>Entidades de prática desportiva das diversas modalidades</tipo>
+            <requisitos>Entidades filiadas ao Sistema Nacional do Desporto e aos Sistemas de Desportos dos estados, DF e municípios</requisitos>
         </solicitante>
-        <solicitante id="5660">
-            <tipo>Serviços Nacionais de Aprendizagem</tipo>
-            <requisitos>Serviço Nacional de Aprendizagem Industrial - SENAI;
+        <solicitante id="5851">
+            <tipo>Entidades Sem Fins Lucrativos</tipo>
+            <requisitos>Que tenham por objetivo a assistência ao adolescente e à educação profissional, registradas no Conselho Municipal dos Direitos da Criança e do Adolescente, e com estrutura adequada ao Programa proposto.</requisitos>
+        </solicitante>
+        <solicitante id="5852">
+            <tipo>Serviços Nacionais de Aprendizagem (Sistema S)</tipo>
+            <requisitos>Ser parte dos Serviços Nacionais de Aprendizagem (Sistema S):
+Serviço Nacional de Aprendizagem Industrial - SENAI;
 Serviço Nacional de Aprendizagem Comercial - SENAC;
 Serviço Nacional de Aprendizagem Rural - SENAR;
 Serviço Nacional de Aprendizagem do Transporte - SENAT; e
-Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
+Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP.</requisitos>
         </solicitante>
     </solicitantes>
     <tempo-total-estimado>
@@ -43,12 +48,12 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
         <descricao></descricao>
     </validade-documento>
     <etapas>
-        <etapa id="10110">
+        <etapa id="10179">
             <titulo>Cadastrar a entidade</titulo>
             <descricao>Os dados da entidade devem ser cadastrados no sistema e a senha para o portal gerada.</descricao>
             <documentos>
                 <default>
-                    <item id="14661">Dados da entidade</item>
+                    <item id="14762">Dados da entidade</item>
                 </default>
             </documentos>
             <custos>
@@ -59,19 +64,19 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11248" tipo="web">
+                    <canal-de-prestacao id="11350" tipo="web">
                         <descricao>http://www.juventudeweb.mte.gov.br/solicitacao_senha.asp</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="10111">
+        <etapa id="10180">
             <titulo>Cadastrar cursos no sistema</titulo>
             <descricao>A entidade cadastrada poderá cadastrar os cursos técnicos-profissionalizantes que pretende oferecer, para análise e aprovação do Ministério do Trabalho.</descricao>
             <documentos>
                 <default>
-                    <item id="14662">Programa e demais dados do curso</item>
-                    <item id="14663">Informações e documentação adicional podem ser pedidos pelo Ministério do Trabalho, cada caso.</item>
+                    <item id="14763">Programa e demais dados do curso</item>
+                    <item id="14764">Informações e documentação adicional podem ser pedidos pelo Ministério do Trabalho, cada caso.</item>
                 </default>
             </documentos>
             <custos>
@@ -82,19 +87,19 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11249" tipo="web">
+                    <canal-de-prestacao id="11351" tipo="web">
                         <descricao>http://www.juventudeweb.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
             </canais-de-prestacao>
         </etapa>
-        <etapa id="10112">
-            <titulo>Cadastro de Turmas e Alunos</titulo>
+        <etapa id="10181">
+            <titulo>Cadastro de turmas e alunos</titulo>
             <descricao>Após a análise do Ministério, a entidade deve cadastrar as turmas e alunos daqueles cursos classificados como "validados" ou "validados com recomendação".</descricao>
             <documentos>
                 <default>
-                    <item id="14664">Dados das turmas</item>
-                    <item id="14665">Dados dos alunos</item>
+                    <item id="14765">Dados das turmas</item>
+                    <item id="14766">Dados dos alunos</item>
                 </default>
             </documentos>
             <custos>
@@ -105,7 +110,7 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
             </tempo-total-estimado>
             <canais-de-prestacao>
                 <default>
-                    <canal-de-prestacao id="11250" tipo="web">
+                    <canal-de-prestacao id="11352" tipo="web">
                         <descricao>http://www.juventudeweb.mte.gov.br/</descricao>
                     </canal-de-prestacao>
                 </default>
@@ -116,9 +121,9 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
         <nomeOrgao>Ministério do Trabalho  (MTB)</nomeOrgao>
     </orgao>
     <segmentos-da-sociedade>
-        <item idSegmento="4" idServicoSegmento="9723">Demais segmentos (ONGs, organizações sociais, etc)</item>
-        <item idSegmento="3" idServicoSegmento="9724">Empresas</item>
-        <item idSegmento="2" idServicoSegmento="9725">Órgãos e entidades públicas</item>
+        <item idSegmento="4" idServicoSegmento="9759">Demais segmentos (ONGs, organizações sociais, etc)</item>
+        <item idSegmento="3" idServicoSegmento="9760">Empresas</item>
+        <item idSegmento="2" idServicoSegmento="9761">Órgãos e entidades públicas</item>
     </segmentos-da-sociedade>
     <areas-de-interesse>
         <item>Educação profissionalizante</item>
@@ -129,13 +134,14 @@ Serviço Nacional de Aprendizagem do Cooperativismo - SESCOOP</requisitos>
         <item>Trabalho</item>
     </areas-de-interesse>
     <palavras-chave>
-        <item id="18721">profissionalização</item>
-        <item id="18719">curso técnico</item>
-        <item id="18720">estágio</item>
+        <item id="18820">profissionalização</item>
+        <item id="18821">curso técnico</item>
+        <item id="18822">estágio</item>
     </palavras-chave>
     <legislacoes>
-        <item id="3425">[DECRETO Nº 5.598, DE 1º DE DEZEMBRO DE 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5598.htm)</item>
-        <item id="3426">[DECRETO Nº 8.740, DE 4 DE MAIO DE 2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Decreto/D8740.htm#art1)</item>
+        <item id="3503">[Portaria MTb 723/2012](http://trabalho.gov.br/images/Documentos/Aprendizagem/PORTARIA_723_2.pdf "Portaria MTb 723/2012")</item>
+        <item id="3504">[DECRETO Nº 5.598, DE 1º DE DEZEMBRO DE 2005](http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5598.htm)</item>
+        <item id="3505">[DECRETO Nº 8.740, DE 4 DE MAIO DE 2016](http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Decreto/D8740.htm#art1)</item>
     </legislacoes>
     <condicoes-acessibilidade>O usuário do serviço público, conforme estabelecido pela lei nº13.460/17, tem direito a atendimento presencial, quando necessário, em instalações salubres, seguras, sinalizadas, acessíveis e adequadas ao serviço e ao atendimento.</condicoes-acessibilidade>
     <tratamento-prioritario>Tem direito a atendimento prioritário as pessoas com deficiência, os idosos com idade igual ou superior a 60 anos, as gestantes, as lactantes, as pessoas com crianças de colo e os obesos, conforme estabelecido pela lei 10.048, de 8 de novembro de 2000</tratamento-prioritario>
